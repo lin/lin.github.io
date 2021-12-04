@@ -1,0 +1,15 @@
+baseURL = 'http://lin.github.io/'
+languageCode = 'en-us'
+title = "A Curious Mind"
+theme = "hugo-ink"
+
+copyright = "© Copyright Albert Innovation"
+
+[params]
+    subtitle = "Essays by Yingkui Lin"
+    avatar = "/logo-ai.jpg"
+
+[[params.social]]
+    name = "Github"
+    icon = "github"
+    url = "https://github.com/lin/essays"
