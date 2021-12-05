@@ -1,0 +1,10 @@
+.highlight {
+    background-color: #272822;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    background-color: #272822 !important;
+}
