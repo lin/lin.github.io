@@ -8,8 +8,12 @@ copyright = "© Copyright Albert Innovation"
 [params]
     subtitle = "Essays by Yingkui Lin"
     avatar = "/logo-ai.jpg"
+    customCSS = "css/custom.css"  # Custom CSS applied to default styles.
 
 [[params.social]]
     name = "Github"
     icon = "github"
-    url = "https://github.com/lin/essays"
+    url = "https://github.com/lin/lin.github.io"
+
+[permalinks]
+  posts = '/:filename'
