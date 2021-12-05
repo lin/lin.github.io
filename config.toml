@@ -1,4 +1,4 @@
-baseURL = 'https://lin.github.io/'
+baseURL = 'http://albert.cn/'
 languageCode = 'en-us'
 title = "A Curious Mind"
 theme = "hugo-ink"
