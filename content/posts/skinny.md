@@ -109,9 +109,68 @@ end
 
 更多例子：
 
-1，[Array counting](https://github.com/linyingkui/skinny/blob/master/generalize/count.rb)
+1，Array counting
 
-2，[jQuery selector](https://github.com/linyingkui/skinny/blob/master/generalize/jquery.coffee)
+```ruby
+# ============================================ #
+# ================== DRY ===================== #
+# ============================================ #
+
+# how many orders you have that has a total amount larger than $100
+def expensive_orders_count
+  self.orders.count { |order| order.total > 10000 }
+end
+
+# how many people you have referred have made their first orders.
+def success_refers_count
+  self.refers.count { |refer| refer.orders.count > 0 }
+end
+
+# array helper
+class Array
+  def count block
+    counter = 0
+    self.each { |a| counter ++ if block a  }
+    counter
+  end
+end
+
+# ============================================ #
+# ================== WET ===================== #
+# ============================================ #
+
+# how many orders you have that has a total amount larger than $100
+def expensive_orders_count
+  counter = 0
+  self.orders.each { |order| counter += 1 if order.total > 10000 }
+  counter
+end
+
+# how many people you have referred have made their first orders.
+def success_refers_count
+  counter = 0
+  self.refers.count { |refer|  counter += 1 if refer.orders.count > 0 }
+  counter
+end
+```
+
+2，jQuery selector
+
+```coffee
+# dry codes
+$form = $('#add-item-form')
+
+$form[0].reset()
+$form.find(".success").removeClass("success")
+$form.find(".success-message").remove()
+$form.submit()
+
+# wet codes
+$('#add-item-form')[0].reset()
+$('#add-item-form').find(".success").removeClass("success")
+$('#add-item-form').find(".success-message").remove()
+$('#add-item-form').submit()
+```
 
 #### 2, Convention over configuration.
 
@@ -143,7 +202,7 @@ BaseModel.DATABASE_TABLE_NAME= self.class.name.pluralize.lower
 
 #### 3, 抽象出一个处理通用逻辑的基类 （特殊的DRY）
 
-例如，[一个RESTful API的基类](https://blog.codelation.com/rails-restful-api-just-add-water/)：
+例如，[一个RESTful API的基类](https://codelation.com/restful-rails-api-just-add-water/)：
 
 ```ruby
 class API::BaseController
@@ -188,8 +247,6 @@ end
 
 这样做的好处是，便于程序的理解、测试、debug以及保养
 
-====
-
 在一个函数里，应该：
 
 1，只表述有别于其他任何函数的逻辑
@@ -197,8 +254,6 @@ end
 2，只表述同一层面的逻辑
 
 3，只做一件事，并把它做好
-
-====
 
 举例说明，一个要把大象装冰箱的函数
 
@@ -276,7 +331,7 @@ end
 ```
 #### 2, 一个类要短，并且只做一类事
 
-类所要追从的是[Single Responsibility Principle](https://github.com/linyingkui/skinny/blob/master/split-responsibilities/srp.pdf), 也就是说：
+类所要追从的是[Single Responsibility Principle](/pdf/srp.pdf), 也就是说：
 
 "There should never be more than one reason for a class to change."
 
@@ -346,9 +401,96 @@ $(".post").click(function(){sayHello()});
 ```
 两个更加具体的例子：
 
-1，[Model-View-Controller](https://github.com/linyingkui/skinny/blob/master/split-responsibilities/mvc.rb)
+1，Model-View-Controller
 
-2，[HTML-CSS-JavaScript](https://github.com/linyingkui/skinny/blob/master/split-responsibilities/hcj.coffee)
+```ruby
+# ============================================== #
+# ================== Model ===================== #
+# ============================================== #
+
+Tweet:
+  id:, user:, text:
+  url: -> "/#{user.name}/tweets/#{id}"
+
+# ============================================= #
+# ================== View ===================== #
+# ============================================= #
+
+.tweet
+  .left.thumb
+    = @user.thumb.url
+  .right
+    .name
+      = @user.name
+    .text
+      = link @tweet.text, to: @tweet.url
+
+# =================================================== #
+# ================== Controller ===================== #
+# =================================================== #
+
+TweetsController:
+  show: ->
+    @tweet = Tweet.find params.id
+    @user  = @tweet.user
+```
+
+2，HTML-CSS-JavaScript
+
+```coffee
+# ========================================================= #
+# ================== HTML / Structure ===================== #
+# ========================================================= #
+
+.tweet
+  .left.thumb
+    = image user.thumb.url, height: "50px"
+  .right
+    .name
+      = user.name
+    .text
+      = link tweet.text, to: tweet.url
+  .message
+
+
+# ===================================================== #
+# ================== CSS / Styles ===================== #
+# ===================================================== #
+
+# generic
+.left, .right
+  display: inline-block
+
+# tweet
+.tweet < .card
+
+  .message
+    color: green
+    padding: 8px
+    resize: (event) ->
+
+      # based on properties
+      if self.text.count > 10
+        self.padding = "15px"
+
+      # based on events
+      if event == "click"
+        self.padding = "20px"
+
+
+# ============================================================ #
+# ================== Javascript / Events ===================== #
+# ============================================================ #
+
+# locate layers
+layers = $ ".tweet"
+
+# how to response to events
+layers.click -> message.text "You clicked the tweet!"
+layers.on "fancy event", (event) ->
+  name = self.find ".name"
+  name.text "I am fancy #{event}!"
+```
 
 #### 4, 任何包含逻辑的文件都应该短，任何文件夹（根目录下）里的文件也应该少
 
@@ -532,15 +674,11 @@ app/
 
 ### 4. 突出重点，消除杂音
 
-====
-
 这个原则的目的是，降低阅读程序的压力，用简短清晰的符号来表达逻辑。
 
 也就是，Reduce learning time, Remove distractions, Avoid stress.
 
 晕头假设：假设你现在比较迷糊，却要在短时间理解一个程序，如何才能让这时的你更好的理解程序
-
-====
 
 #### 1，同一等级的逻辑占用同样行数的代码，最好都是一行，例如:
 
@@ -571,8 +709,6 @@ checkout: ->
 ```
 
 第二个策略的问题在于，喧宾夺主，alert并不是逻辑主要解决的问题，却要抢夺大量的注意力。
-
-===
 
 #### 2，在不引起歧义的前提下，尽量减少字符数（对常用函数，使用4-7个字符的单一单词最佳）
 

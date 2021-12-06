@@ -13,7 +13,7 @@ copyright = "© Copyright Albert Innovation"
 [[params.social]]
     name = "Github"
     icon = "github"
-    url = "https://github.com/lin/lin.github.io"
+    url = "https://github.com/lin"
 
 [permalinks]
   posts = '/:filename'
