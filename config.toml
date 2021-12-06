@@ -1,12 +1,12 @@
 baseURL = 'https://albert.cn/'
 languageCode = 'en-us'
-title = "A Curious Mind"
+title = "Essays"
 theme = "hugo-ink"
 
 copyright = "© Copyright Albert Innovation"
 
 [params]
-    subtitle = "Essays by Yingkui Lin"
+    subtitle = "Albert Yingkui Lin / 林英魁"
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
 
@@ -17,3 +17,7 @@ copyright = "© Copyright Albert Innovation"
 
 [permalinks]
   posts = '/:filename'
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
