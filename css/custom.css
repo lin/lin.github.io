@@ -1,3 +1,24 @@
+body {
+    font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.post-header h1.title {
+    margin: 4px 0 0 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+h4 a {
+    font-weight: normal;
+}
+
 .highlight {
     background-color: #272822;
 }
@@ -7,4 +28,32 @@
     margin-top: 0;
     padding: 20px;
     background-color: #272822 !important;
+}
+
+strong {
+    color: #ff3502;
+}
+
+::selection {
+    color: #fff;
+    background: #1890ff;
+}
+
+blockquote {
+    color: rgb(91,91,91);
+    border-left: 5px solid #3700ff;
+    background: rgba(158, 158, 158, 0.1);
+    padding: 1px 0px 1px 10px;
+    margin: 30px 0px;
+    font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+blockquote p {
+    color: #3f3f3f;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 10px;
+    padding: 0px;
 }
