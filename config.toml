@@ -1,9 +1,29 @@
 baseURL = 'https://albert.cn/'
 languageCode = 'en-us'
-title = "Essays"
+title = "Output"
 theme = "hugo-ink"
 
-copyright = "© Copyright Albert Innovation"
+copyright = "© Copyright albert.cn All Rights Reserved"
+
+[[menu.main]]
+name = "Recent"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Edu"
+url = "/edu"
+weight = 2
+
+[[menu.main]]
+name = "Poems"
+url = "/poems"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
 
 [params]
     subtitle = "Albert Yingkui Lin / 林英魁"
