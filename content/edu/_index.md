@@ -1,6 +1,5 @@
 ---
 title: "《论教学》"
-draft: true
 isCJKLanguage: true
 ---
 
