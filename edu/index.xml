@@ -64,7 +64,9 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 过于复杂，觉得复杂传播的多，不愿意处理复杂，希望学生快点懂
 缺乏题目，和复杂原因一样，认为太简单没水平
 缺乏思路讲解，不知道什么是搜索和验证
-缺乏精益求精的态度，总是求新的直播课</description></item><item><title/><link>https://albert.cn/edu/2-1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1-3/</guid><description>2.1.3 关注点的分离 Each layer is solving a set of problems in certain level of abstraction. Here we borrow the concept of abstraction layers from computer systems and computer networking.</description></item><item><title/><link>https://albert.cn/edu/2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1/</guid><description>2.1 存在的问题</description></item><item><title/><link>https://albert.cn/edu/2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-2/</guid><description/></item><item><title/><link>https://albert.cn/edu/2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-3/</guid><description>2.3 技能层 粗糙的讲，技能训练就是让学生看懂讲解，做得上题，然后记住
+缺乏精益求精的态度，总是求新的直播课
+教学者的急躁，缺乏智力加工的材料，一厢情愿的认为复杂的题目达到效果</description></item><item><title/><link>https://albert.cn/edu/2-1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1-3/</guid><description>2.1.3 关注点的分离 Each layer is solving a set of problems in certain level of abstraction. Here we borrow the concept of abstraction layers from computer systems and computer networking.
+Intuitively, 人们并不是能轻易的分离关注点，而是希望用一个方法一股脑的迅速解决，相当于是对复杂处理的一种慌乱和逃避。</description></item><item><title/><link>https://albert.cn/edu/2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1/</guid><description>2.1 存在的问题</description></item><item><title/><link>https://albert.cn/edu/2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-2/</guid><description/></item><item><title/><link>https://albert.cn/edu/2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-3/</guid><description>2.3 技能层 粗糙的讲，技能训练就是让学生看懂讲解，做得上题，然后记住
 2.3.1 讲测辅趣 2.3.2 必要性和完备性</description></item><item><title/><link>https://albert.cn/edu/2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-4/</guid><description>2.4 激励层 相对来说，是比较容易解决的一环，但对学习效果可能有很大影响 需要技能层，给予激励层一个学习吃力程度的判断，激励层负责对学生进行奖励</description></item><item><title/><link>https://albert.cn/edu/3-1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-1/</guid><description>3.1.1 学习过程的信息处理 这里直接给出学习内容的三个类型：
 接受并记忆某个计算的初设，类似于给计算机输入程序，例如，定义一个变量或者提出某个概念
 验证并记忆某个可以达到某个目的的计算过程，类似于计算机执行程序过程，例如，乘法运算
@@ -118,7 +120,14 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 任务的分割：《超级马力欧》通过地形高度以及敌人的攻击范围，隔离各个挑战；《塞尔达传说》通过地牢房间，隔离各个挑战，让玩家每次只需解决一到两个问题。日常学校中，在初期就做综合题，可以认为是游戏设计中，一上来就打Boss
 搜索和验证：在《塞尔达传说：旷野之息》中，很多神庙的发现是需要和NPC交流，或者根据各种其他提示得到的，也就是通用的解决这个问题需要玩家主动搜索；而如果看攻略，会直接告诉玩家去什么位置，采取什么操作可以发现神庙，也就变成了验证，少了很多计算的复杂度。如果老师上课按照答案去讲，不去讲解思路，就如同一个攻略书，能够解决孤立的问题，却无法掌握通用的技能
 解决问题的类型：对于游戏中的常规挑战，一般采用的识别-执行的简单的膝跳反射操作，可以通过刻意练习提高熟练度；在《超级马力欧》中，经常出现多个挑战同时出现的情景，也就是简单的结合题；在《塞尔达传说》，为了解谜，常需要考虑在新鲜的场景下，如何利用已有的工具，甚至对工具的变形应用（宝箱作为重物压住机关）；在游戏中，新出现的敌人或者挑战，需要玩家通过观察，归纳规律后，进行解题
-易于解析的信号设计：在《超级马力欧》和《塞尔达传说》中，神庙的颜色是明亮的橙色，需要撞击的方块也是明亮的橙色，等得到金币没有东西之后就变成了无聊的深褐色。相比之下，很多书籍，文字都是差不多一样的样式，需要读者自己去解析、区分、整理信息</description></item><item><title/><link>https://albert.cn/edu/4-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-1/</guid><description>4.1 如何解决问题？ 一般来说，很难在一开始就明确生成验收测试题的算法 $G$，但却可以找到或是想出验收测试题的样本，例如，往年的考试真题或者模拟题。如果考题缺乏变化，无非是随机抽样或者简单的更换数字或场景，那么就很容易明确生成测试题的算法，也就容易准备需要学习者掌握的元素化的知识点。但如果考试题富于变化，是某些通用性解决问题策略的考察，那么如果采用强健技术的方式，就会使得备考工作量巨大却仍有所疏漏。
+易于解析的信号设计：在《超级马力欧》和《塞尔达传说》中，神庙的颜色是明亮的橙色，需要撞击的方块也是明亮的橙色，等得到金币没有东西之后就变成了无聊的深褐色。相比之下，很多书籍，文字都是差不多一样的样式，需要读者自己去解析、区分、整理信息</description></item><item><title/><link>https://albert.cn/edu/3-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-5/</guid><description>3.5 教学过程的软件化 3.5.1 互联网化的局限 是无法实现讲测辅趣的各种原则的，不是教学的信息化，而是教学的计算学化，是对教学内容的革新，不是信息变现形式的革新。
+3.5.2 面向内容生产者 软件应该如同互联网协议一样，能够灵活的应用于广泛情景。像内容生产者提供如同乐高零件一样的，小型组建，留给内容生产者来随意组装这些必要的零件。
+基于之前的讨论，讲测辅趣体系所具有必要性和完备性，对于软件提供者，就是要对讲测辅趣的完备展示，但是又不要提供更多的细节。
+细节类型少但完备使用，然后对每一个细节都追求精致。
+3.5.3 面向学习者 能够让学习者，也就是软件的直接使用者，界面清晰柔和，操作流畅，符合使用预期。
+作为软件，无需解决内容生产者所解决的问题，尤其是课程结构或是单一知识点的结构，不用担心是不是软件使得用户不能理解，不能练好。
+而是关心：
+当用户需要辅助的时候，能否更快的定位辅助 是否能够避免过多的设计细节造成的噪音 同类功能的连贯易用，降低使用软件的学习曲线</description></item><item><title/><link>https://albert.cn/edu/4-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-1/</guid><description>4.1 如何解决问题？ 一般来说，很难在一开始就明确生成验收测试题的算法 $G$，但却可以找到或是想出验收测试题的样本，例如，往年的考试真题或者模拟题。如果考题缺乏变化，无非是随机抽样或者简单的更换数字或场景，那么就很容易明确生成测试题的算法，也就容易准备需要学习者掌握的元素化的知识点。但如果考试题富于变化，是某些通用性解决问题策略的考察，那么如果采用强健技术的方式，就会使得备考工作量巨大却仍有所疏漏。
 这一章的目的就是，在拥有测试材料样本的情况下，如何准备元素化的教学知识点？教学者要知道如何使用恰当的办法解决这些问题。这样问题就转化成了：如何解决问题？在解决问题之前，我们要明确什么是问题，和为什么问题可以被解决？这就不得不去明确什么是思考的界限。本章将从计算学的角度逐层分析这些问题。
 4.1.1 计算 这里将对计算进行讨论，这里使用图灵（1936）的模型：
 可区分性：存在可以区分的不同对象，是计算最本质的基础。
@@ -148,4 +157,4 @@ $$A_{fe}(x) == d_f$$
 拓展阶段的学习，在日常教学的使用频率不是很高，就是让学生积累更多的频率更低的技能，理解更为抽象的通用解决问题的办法。拓展阶段的技能要么使用场景少，要么可训练度很低，并不是很容易吸收掌握。可训练度低是技能本身的特性，可以认为无论教学形式如何变化，在有限时间、有限训练样本内，其适用的学生群体比例都是有明显上限的。
 一般来说，可以按照这样的结构，逐步增加解决问题的范围：
 给出定义和概念，传授最常见的性质和技巧 训练使用频率和强健程度都高的知识点技能，提高熟悉感和建立信心 能够通过单一（或者少数）变量的积累变化来解释的简单抽象规律，包括了基于变量思想的应用 能够通过对已有技能的近距变形或迁移，可以在少数步骤内探索到的区域 需要遍历穷举，尝试归纳，需要更多的步骤来探索的区域 以及，从词汇积累和抽象程度上的逐步扩大解决问题的范围：
-积累更多的、使用频率较低的词汇 学习解决范围较大却抽象程度较高、不易训练的技能 综上所述，课程结构的设计，既要考虑解决问题半径的逐步扩大，也要考虑学生学习效果的最大化。</description></item></channel></rss>
+积累更多的、使用频率较低的词汇 学习解决范围较大却抽象程度较高、不易训练的技能 综上所述，课程结构的设计，既要考虑解决问题半径的逐步扩大，也要考虑学生学习效果的最大化。</description></item><item><title/><link>https://albert.cn/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/4-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-5/</guid><description/></item></channel></rss>
