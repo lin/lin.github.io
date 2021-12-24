@@ -1,1 +1,4 @@
-## 智力要素
+---
+title: "《智力要素》"
+isCJKLanguage: true
+---

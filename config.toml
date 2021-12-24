@@ -11,14 +11,24 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Life"
-url = "/life"
+name = "Edu"
+url = "/edu"
 weight = 2
 
 [[menu.main]]
-name = "Edu"
-url = "/edu"
+name = "Life"
+url = "/life"
 weight = 3
+
+[[menu.main]]
+name = "Design"
+url = "/design"
+weight = 3
+
+# [[menu.main]]
+# name = "Intel"
+# url = "/intel"
+# weight = 3
 
 [[menu.main]]
 name = "Poems"
