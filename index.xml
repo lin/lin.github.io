@@ -248,7 +248,7 @@ $$ \begin{aligned} e^{ix} = \cos{x} + i\sin{x} \end{aligned} $$ 1.</description>
 1.3 上帝因为一群小孩嘲笑他的先知是秃子，就派熊把这四十二个小孩撕碎了。
 以利沙从那里上伯特利去。正上去的时候，有些童子从城里出来，戏笑他说：“秃头的，上去吧！秃头的，上去吧！” 他回头看见，就奉耶和华的名咒诅他们。于是有两个母熊从林中出来，撕裂他们中间四十二个童子。（列王纪下 2：23 - 24）
 1.4 有人跟上帝抱怨，说上帝你杀人了，上帝便不开心了，弄死了14000人。
-第二天，以色列全会众都向摩西、亚伦发怨言说：“你们杀了耶和华的百姓了！” 会众聚集攻击摩西、亚伦的时候，向会幕观看，不料，有云彩遮盖了，耶和华的荣光显现。摩西、亚伦就来到会幕前。耶和华吩咐摩西说：“你们离开这会众，我好在转眼之间把他们灭绝。”他们二人就俯伏于地。 （民数记 16：41 - 45）</description></item><item><title>诗歌汇总 (2003-2010)</title><link>https://albert.cn/album/</link><pubDate>Sat, 12 Jun 2010 00:00:00 +0000</pubDate><guid>https://albert.cn/album/</guid><description>卜算子 2003.9.11 绥棱
+第二天，以色列全会众都向摩西、亚伦发怨言说：“你们杀了耶和华的百姓了！” 会众聚集攻击摩西、亚伦的时候，向会幕观看，不料，有云彩遮盖了，耶和华的荣光显现。摩西、亚伦就来到会幕前。耶和华吩咐摩西说：“你们离开这会众，我好在转眼之间把他们灭绝。”他们二人就俯伏于地。 （民数记 16：41 - 45）</description></item><item><title>十九岁的人生哲学</title><link>https://albert.cn/19/</link><pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate><guid>https://albert.cn/19/</guid><description>⼗九岁时，我在⼈⽣哲学领域，凭着兴趣做了⼀些实在的思考。 在这里，我将把这些独立思考概要的写出来。我将主要解决两个问题： 我们存在的原因是什么？</description></item><item><title>诗歌汇总 (2003-2010)</title><link>https://albert.cn/album/</link><pubDate>Sat, 12 Jun 2010 00:00:00 +0000</pubDate><guid>https://albert.cn/album/</guid><description>卜算子 2003.9.11 绥棱
 落木染秋心，心上田消瘦。思也不逢愁断肠，痛把君来候。
 梦里难相留，空得伤盈昼。多少情愁为汝流，白了少年头。
 除夕夜 2004.1.21 绥棱
@@ -511,7 +511,7 @@ $$ \begin{aligned} e^{ix} = \cos{x} + i\sin{x} \end{aligned} $$ 1.</description>
 验收材料 学习者（也就是学生） 教学材料 本文要讨论的，就是在对验收材料和学生进行了一定的要求后，为了达到一定的指标（接下来会具体讨论），如何提供更好的教学材料（例如，课堂讲授、教材编写、测试等）。</description></item><item><title/><link>https://albert.cn/edu/1-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/1-2/</guid><description>1.2 验收材料 对于一些较为机械化的教学目的，验收材料也就比较明确，例如，学生能够对一段音频进行背景降噪处理。但例如高考数学，对学生的要求较高，不少是对解决问题的通用策略的考察，验收材料就不那么容易准备。
 我们这里对验收材料的类型进行一定的限制：验收的题目应该是可以被一个固定的生成器生成的。
 定义 $t$ 是验收材料，$G$ 是一个生成验收测试题的算法，$r$ 是一个随机数（是生成题目算法的一个自变量），$S$ 是一个已知的解决问题的某个算法（或者算法集合）：
-$$\forall t.\exists G. \exists r.\exists S. t\in G(r) &amp;amp; St$$
+$$ \forall t.\exists G. \exists r.\exists S. t\in G(r) \&amp;amp; St $$
 虽然很多情境下试卷尚不能用算法完全生成，但是头脑中存在这样一个严格的数学要求，可以减少许多情景的不适用。通俗的讲，就是考题的考察范围、考察难度、各题型考察频率，稳定性强，波动不大。
 例如，对于一个综合性的考试（高考），各部分的占比应该有一个稳定的概率密度分布，但是验收材料（某一年高考）却只考查了一个知识模块（例如，全是三角函数的题目），就不符合验收材料的要求。
 再例如，如果有教师在课堂上讲课的时候，是按照一个题型分布去讲解，而课下独自给学生补课时确实另外一个题型分布，验收测试的题目都是在课下学生补课的题型，就不符合我们对验收材料的约定。
@@ -544,18 +544,24 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 但是，现有的学习材料大多数都达不到功能性标准，也就是会有大比例的学生会被卡住，或者要忍受大量的理解教学材料的痛苦。与此同时，很多形式的学习材料，缺乏测试环节，学习效果通常由学习者感性得到，但人会有学会错觉（Illusion of Competence），从而错估了学习效果。
 本文的主要目的就是要阐述如何让学习材料达到功能性的标准，并尽可能对学习增添娱乐性糖分。在接下来讨论的过程中，我们用掌握程度来描述 $r$ 值，用疲惫程度和娱乐程度来表示 $p$（根据其正负来定）。对于娱乐性，如果学习过程带来了痛苦，那可能会让学生放弃和回避，增加下一次学习的启动成本；如果带来的是成就感就可能促使学生想主动的进行更多尝试。
 在学习效果的定义中，我们借鉴了机器学习中的字母表示，机器学习和教学过程有着一定的相关性：
-机器学习是在明确了可训练数据 $d$ 的情况下，去寻找某个可以识别样式的 $\mathcal{H}$ 教学过程是在拥有一个强大识别样式的算法 $\mathcal{H}$，去准备提高训练效率的数据 $d$ 在教学过程中，我们同样会遇到统计学中所出现的概念，例如，交叉验证以及偏差和方差之间的权衡等。进行这样的计算学表述，将对后文中发现教学问题并改善教学效率有着直接本质的分析效果</description></item><item><title/><link>https://albert.cn/edu/2-1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1-1/</guid><description>2.1.1 学习者的需求和苦恼 作为学习者的苦恼：
+机器学习是在明确了可训练数据 $d$ 的情况下，去寻找某个可以识别样式的 $\mathcal{H}$ 教学过程是在拥有一个强大识别样式的算法 $\mathcal{H}$，去准备提高训练效率的数据 $d$ 在教学过程中，我们同样会遇到统计学中所出现的概念，例如，交叉验证以及偏差和方差之间的权衡等。进行这样的计算学表述，将对后文中发现教学问题并改善教学效率有着直接本质的分析效果</description></item><item><title/><link>https://albert.cn/edu/2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1/</guid><description>2.1.1 学习者的需求和苦恼 学习者的需求：
+能够轻松的学会和掌握 能够有便利的结构列表 能够灵活的自测和复习 作为学习者的苦恼：
 看不明白，卡顿，劝退（难以解析） 过于抽象 逻辑断链 存在孤儿概念 理解费劲，不流畅（解析计算量大） 抓不住重点（鱼龙混杂，喧宾夺主） 噪音太多，额外的时序区分（书本之于视频） 需要额外的分类区分（设计起到的效果） 需要太多的短时记忆（乘法中间值） 记不住，学完就忘 学会错觉，模棱两可，其实没懂 不熟练，很快就遗忘了 学习乐趣不足，没有动力 难度过大，卡关弃坑（用容易换频率） 重在辅助过关，而不是为了难为和惩罚 避免挫败感，降低对学习的信心和乐趣 相比如娱乐，不想去学习，没有源动力 总结：
 最大的问题是，是根本看不懂，听不明白，看明白（解析）太困难，进不去
 第二大问题是，训练量不足，不能理解透，不能记得牢，不能形成达标的技能，存不下来
 第三大问题是，娱乐性不强，学习太痛苦，没有动力去学习，不愿意去容忍复杂度，被动
 作为学习者的娱乐点：
-能看明白就是一种享受 能做上题就是一种享受 能有那么多辅助是一种愉悦 简单，只要跟随就行了，不用自己研究怎么学 不用自己去制定计划，不用自己想着怎么学的比较快 所有的指令，都非常的清晰易懂，一种虚假的自由和成就感 游戏的策略是一样的，就是给人给轻易就可以理解做上的感觉</description></item><item><title/><link>https://albert.cn/edu/2-1-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1-2/</guid><description>2.1.2 常见的教学失误 教学上的失误，可以是课程设计上的，也可以是具体知识点的课时设计上的。
+能看明白就是一种享受
+能做上题就是一种享受
+能有那么多辅助是一种愉悦
+简单，只要跟随就行了，不用自己研究怎么学
+不用自己去制定计划，不用自己想着怎么学的比较快
+所有的指令，都非常的清晰易懂，一种虚假的自由和成就感</description></item><item><title/><link>https://albert.cn/edu/2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-2/</guid><description>2.1.2 常见的教学失误 教学上的失误，可以是课程设计上的，也可以是具体知识点的课时设计上的。
 对于课程设计，
 课程上没有结构设计，知识点安排混乱随意，没有复杂度和抽象程度的逐步提高
 多个知识点过早的进行综合性的讲授或训练，增加了学生解析和记忆负担，不够清晰专注
 对知识点没有进行归纳区分，导致需要积累的词汇量过大，没有注意到检验和解决的复杂度区别
-对于课时设计，尤其是在学生对教学材料的信息处理过程中，按照解析率以及记忆存留率的逐步提高：
+对于课时设计，尤其是在学生对教学材料的信息处理过程中，按照解析率以及记忆存留率的逐步提高：（解析困难 + 计算困难）
 信息解析困难：出现了难以解析的新鲜或者不熟悉的术语，一般是由于信息过于或过早抽象表达导致的，使得学生感到指代不明，或缺乏实例积累的清晰度不高
 逻辑存在断链：在对信息处理时，不能接纳其计算上的逻辑，一般是由于推导步骤过于简洁，或者是某个转换规则不为学生所知
 解析计算量过大：没必要的信息量，也就是噪音过多，喧宾夺主；学生依旧能获得信息，但是需要分配计算力去分辨和抓取需要留存的信息；极端的情况就是所讲与所考毫无关联，解题时，先验后验分布一致。
@@ -568,9 +574,14 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 缺乏题目，和复杂原因一样，认为太简单没水平
 缺乏思路讲解，不知道什么是搜索和验证
 缺乏精益求精的态度，总是求新的直播课
-教学者的急躁，缺乏智力加工的材料，一厢情愿的认为复杂的题目达到效果</description></item><item><title/><link>https://albert.cn/edu/2-1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1-3/</guid><description>2.1.3 关注点的分离 Each layer is solving a set of problems in certain level of abstraction. Here we borrow the concept of abstraction layers from computer systems and computer networking.
-Intuitively, 人们并不是能轻易的分离关注点，而是希望用一个方法一股脑的迅速解决，相当于是对复杂处理的一种慌乱和逃避。</description></item><item><title/><link>https://albert.cn/edu/2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1/</guid><description>2.1 存在的问题</description></item><item><title/><link>https://albert.cn/edu/2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-2/</guid><description/></item><item><title/><link>https://albert.cn/edu/2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-3/</guid><description>2.3 技能层 粗糙的讲，技能训练就是让学生看懂讲解，做得上题，然后记住
-2.3.1 讲测辅趣 2.3.2 必要性和完备性</description></item><item><title/><link>https://albert.cn/edu/2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-4/</guid><description>2.4 激励层 相对来说，是比较容易解决的一环，但对学习效果可能有很大影响 需要技能层，给予激励层一个学习吃力程度的判断，激励层负责对学生进行奖励</description></item><item><title/><link>https://albert.cn/edu/3-1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-1/</guid><description>3.1.1 学习过程的信息处理 这里直接给出学习内容的三个类型：
+教学者的急躁，缺乏智力加工的材料，一厢情愿的认为复杂的题目达到效果
+2.2.2 教学者直觉的弱点 教学者直觉的弱点，可以总结为：不想对教学材料进行足够加工处理，同时又想快速传授知识。 其结果，就是使用一种“硬拔式教学”法，让一部分学习能力强的学习迅速提高，而不适用于大多数普通学生。
+基于想快速传授知识，教学者常常采用 抽象的语言，总结性的语言 来传授知识。抽象描述，简洁、美观、通用、精准，是教学者作为学习者学习过程中智力上加工后的结果（但不是为了教学而加工）。
+作为教学者，进行抽象的表达和传递，可以减少表达量，如果学生对抽象术语熟悉，学生可以迅速和准确的获取信息，教学者也有把自己深刻理解、独到见解迅速传递的成就感，越是教学经验多的教学者，因为对知识理解的加深，更容易犯这样的错误，也就是不站在初学者的角度，避免抽象，而是在一个掌握者的角度，去描述知识。
+这种在缺乏实例支撑的学习初期，频繁的使用抽象的术语描述，极大的增加了初学者解析信息的痛苦，造成挫败感。如果不加以一定的测试练习，很容易让学生模棱两可，产生学会错觉。做题的时候，还会遇到挫败。</description></item><item><title/><link>https://albert.cn/edu/2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-3/</guid><description>2.1.3 关注点的分离 Each layer is solving a set of problems in certain level of abstraction. Here we borrow the concept of abstraction layers from computer systems and computer networking.
+Intuitively, 人们并不是能轻易的分离关注点，而是希望用一个方法一股脑的迅速解决，相当于是对复杂处理的一种慌乱和逃避。
+噪音要少，辅助要多 什么是最重要的信息？最不容易被理解的特殊特征？要把这样的信息凸显出来，着重展示和讲解。把重点突出，就是要减少信息 学习执行运算的时候，需要辅助，逻辑上的断链，为了不给学生逻辑的挫败感，需要提供更多的信息，就像地板一样，都是平面，没有坑。让学生把注意力放在重点和难点上。</description></item><item><title/><link>https://albert.cn/edu/2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/2-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-5/</guid><description>2.3 技能层 粗糙的讲，技能训练就是让学生看懂讲解，做得上题，然后记住
+2.3.1 讲测辅趣 2.3.2 必要性和完备性</description></item><item><title/><link>https://albert.cn/edu/2-6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-6/</guid><description>2.4 激励层 相对来说，是比较容易解决的一环，但对学习效果可能有很大影响 需要技能层，给予激励层一个学习吃力程度的判断，激励层负责对学生进行奖励</description></item><item><title/><link>https://albert.cn/edu/3-1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-1/</guid><description>3.1.1 学习过程的信息处理 这里直接给出学习内容的三个类型：
 接受并记忆某个计算的初设，类似于给计算机输入程序，例如，定义一个变量或者提出某个概念
 验证并记忆某个可以达到某个目的的计算过程，类似于计算机执行程序过程，例如，乘法运算
 直接记忆某个计算的结果，例如，记住勾股定理
@@ -588,12 +599,15 @@ Intuitively, 人们并不是能轻易的分离关注点，而是希望用一个�
 在学生没有足够数量或者足够典型的实例做支撑的前提下，使用抽象术语，会让学生感到指代不明，对术语所表达的含义进行模糊的猜测，并对实例中体现的各个特征进行尝试比对，来验证自己的猜想，学生对实例越熟悉，对实例特征的提取就轻松，捕捉实例特征的能力就越熟练。如果学生连回想一个实例都吃力，那么让其凭空对实例进行特征剥离，可谓难上加难。
 为了解决由于抽象带来的解析困难和复杂度陡增，实际教学中可以采取如下办法：
 选择学生熟悉的、相关特征比较明显的实例进行教学，尤其是使用图形化（包括动画）的方式 减少抽象的、追求规范（formal）的表述，相比一步到位，可以逐步提高清晰度，从粗糙到精细 对术语使用极为敏感，考虑学生是否对新鲜的概念术语有足够的实例积累 多为学生提供实例，让其在多个实例中抽象，也有利于学生对猜想交叉验证（cross validation） 对于多变量的情景，可以提供实验室或虚拟的软件实验室，让学生在大量实例中把玩探究</description></item><item><title/><link>https://albert.cn/edu/3-1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-3/</guid><description>3.1.3 对逻辑计算的执行 是否是最简化的？是否过于简化，以至于抽象，以至于需要短时存储过多，以至于需要同时计算量太大 是否噪音太多，没有突出重点 应该说，要把最重要的信息留在页面，而多余的信息尽可能的剥离开来 不一定更多的信息就更好，简化的充分信息就可以了，可能需要一些中间、便于查询的辅助信息 （视频）当前意识的，最重要的位置 （视频）和当前意识有最近相关性的，辅助的位置 （辅助）和当前意识有相关性的复杂且不全部有价值的信息，隐藏的位置 一个是传递信息的方式，一个是辅助传递信息的方式，要区分开来
-迅速定位，收藏，额外辅助</description></item><item><title/><link>https://albert.cn/edu/3-1-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-4/</guid><description>3.1.4 信号和噪音的区分 在不太用心的教学（Effortless Teaching）中，可以采取一种硬拔式的教育，也就是把归纳总结、尝试探索的任务交给学生，给学生发一本带答案的综合题练习册，就如同把刚到一个新城市的人让其自行找路，或者直接给学生一把吉他让其自行探索演奏，再或者把一个成年人放在非母语的国外无助力的学习新语言。这样做也是可行的，只不过即使学生能够通过这种方法达到教育目的，也要走许多弯路，复杂度高，痛苦感强烈。最为重要的是，这样的办法会极大的提高教育的门槛，很多没有足够学习动力或者时间的潜在学生，被这种缺乏智力加工的方案拒之门外，丧失了自我提高的机会。
+迅速定位，收藏，额外辅助</description></item><item><title/><link>https://albert.cn/edu/3-1-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-4/</guid><description>3.1.4 信号和噪音的区分 硬拔式或者综合题：
+自己写一个compiler，如果能写出来，就算能力通关 自己刷题，往年题，自己总结知识点 在不太用心的教学（Effortless Teaching）中，可以采取一种硬拔式的教育，也就是把归纳总结、尝试探索的任务交给学生，给学生发一本带答案的综合题练习册，就如同把刚到一个新城市的人让其自行找路，或者直接给学生一把吉他让其自行探索演奏，再或者把一个成年人放在非母语的国外无助力的学习新语言。这样做也是可行的，只不过即使学生能够通过这种方法达到教育目的，也要走许多弯路，复杂度高，痛苦感强烈。最为重要的是，这样的办法会极大的提高教育的门槛，很多没有足够学习动力或者时间的潜在学生，被这种缺乏智力加工的方案拒之门外，丧失了自我提高的机会。
 在日常学习中，不太用心的教学并不会完全硬拔式的教育，而是过早进行复杂度高的综合训练，这样的效果在于可以通过一两个题目的讲解，同时传递多个技能和知识点，并且是在实战（或者真题）中出现的情景。以国内的高考数学为例，由于考试时长有限，考查内容繁多，又要起到明显的区分选拔作用，高考题通常采用多个知识点技能考察的方式，来达到目的，但日常教学中采用高考原题就会给学生带来很大的解析剥离和计算上的负担，对于接受能力强的学生来说，如同硬拔式教学，或许可以缩短学习时间，但对于更广泛的学生来说，即使能够接纳，课后存留的也多是混乱的、片段化的、模糊的或是过于特例的知识点，没有交叉验证和刻意练习的机会，若是过于复杂、难以接纳，这种做法同样是提高了学生获得更多技能、释放潜能的门槛。
 对于专注和职能剥离，在非教学的场景有许多被广泛采用的原则。例如，在编程中，为了使程序易读易扩展，采用一次只做一件事，并将其做好的原则；在平面设计中，为了高效的传递信息，有少即是多（less is more）的原则；在产品设计中，有细节要少但在关键细节上精益求精的原则；在体育训练中，有把某项技能剥离开来的刻意练习原则。刻意练习就是直面不足，其对立面就是效率低下的自我安慰。
 减少噪音的干扰，突出起主要作用的信号，更加迅速的定位重点和难点，更加有效地利用人脑有限的注意力和对复杂程度的容忍度，提高发现抽象规律和技巧的几率，易于学生消化（可以类比为经过加工的食品），让信息传递效率更高，也让接受者减少解决问题的痛苦，通过训练提高熟练度，增加信心和成就感，从而降低使用产品的门槛，提高学生再次尝试的积极性。
 为了降低噪音，减少复杂度，可以采用的如下的几种办法：
-尽可能把技能元素化，分解成可消化的小块份（bitable size），分摊任务 选择的例题不仅典型，还需简短，甚至体现出简洁干净的美感 如有必要，简短的同时还要别扭，突出需要学会区分的信号 无论是为了更好的归纳，还是为了更好的区分，都要提供相似度较高的题目 为了减少对题目的解析，可以保持基本题目的一致，略作变化，便成一新题 值得一提的是，熟悉实例是要给予更多的信息，使得后验的分布更为集中，而简化降噪是要减少信息的提供，让噪音变少信号增强。</description></item><item><title/><link>https://albert.cn/edu/3-1-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-5/</guid><description>3.1.5 平面设计和动画</description></item><item><title/><link>https://albert.cn/edu/3-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-1/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-2/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-3/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2/</guid><description>3.2 频繁测试 所谓频繁测试，就是在教学过程中不断让学生主动去回答问题，而不是被动的吸收信息。
+尽可能把技能元素化，分解成可消化的小块份（bitable size），分摊任务 选择的例题不仅典型，还需简短，甚至体现出简洁干净的美感 如有必要，简短的同时还要别扭，突出需要学会区分的信号 无论是为了更好的归纳，还是为了更好的区分，都要提供相似度较高的题目 为了减少对题目的解析，可以保持基本题目的一致，略作变化，便成一新题 值得一提的是，熟悉实例是要给予更多的信息，使得后验的分布更为集中，而简化降噪是要减少信息的提供，让噪音变少信号增强。</description></item><item><title/><link>https://albert.cn/edu/3-1-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1-5/</guid><description>3.1.5 通过设计降低解析难度 3.1.5.1 平面设计原则 书籍的缺点，也就是看教科书的缺点，相对于视频，不容易parse
+3.1.5.2 互动设计原则 信息的隐藏，popup，
+3.1.5.3 动画设计原则</description></item><item><title/><link>https://albert.cn/edu/3-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-1/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-1/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-2/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-3/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/3-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2/</guid><description>3.2 频繁测试 所谓频繁测试，就是在教学过程中不断让学生主动去回答问题，而不是被动的吸收信息。
 在前两节的原则中，着重于对信息解决困难、解析计算量过大的问题。通过频繁测试，可以同时解决学会错觉、不熟练或遗忘以及娱乐性不足的问题：
 通过测试，学生必须给出明确的答案，强迫学生提高理解的精细程度，避免有自以为学会但实际还有许多漏洞的学会错觉情形发生，学习中在得到成就感前有避免不了的痛苦，那就选择一个回报率高的痛苦
 通过测试，达到刻意练习的目的，集中且略有间歇得面对多个链接卡顿，提高学生对信号的反应速度以及解决相关问题的搜索效率，积累实践经验，加深抽象理解。
@@ -610,7 +624,7 @@ Intuitively, 人们并不是能轻易的分离关注点，而是希望用一个�
 对于频繁测试，应该用简单换频率，而不是用痛苦换效率，这样会提高学习的门槛，极大降低受众面。</description></item><item><title/><link>https://albert.cn/edu/3-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-3/</guid><description>3.3 辅助工具 对于课时设计的教学失误，还有一个就是逻辑链存在断链没有着重解决，一般来说，在一对一的辅导中，如果学生积极主动，不容易出现逻辑链的断链，因为一旦有所疑惑，学生会和教师沟通解决。
 但在编写纸质教材，或者录播课，以及大班课的环境下，很容易产生部分学生出现逻辑链断链的情况。
 为此，可以采取如下的一些办法：
-尽可能没有断链，宁可烦一点，也不在逻辑上有大的跳步 尽可能多的提供额外解释的材料（Q &amp;amp; A） 尽可能多的提供更多的实例 尽可能多为学生提供答疑的机会</description></item><item><title/><link>https://albert.cn/edu/3-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-4/</guid><description>3.4 趣味糖分 3.4.1 电子游戏的启发 前几章所述，多为了能够在功能性上达标，但为了使得教学效果进一步提升，需要在娱乐性进行改善，提高学生学习的积极性。
+尽可能没有断链，宁可烦一点，也不在逻辑上有大的跳步 尽可能多的提供额外解释的材料（Q &amp;amp; A） 尽可能多的提供更多的实例 尽可能多为学生提供答疑的机会 3.3.1 辅助信息的几种类型 显而易见，可以解决的推导过程 可以不知道，直接记住的结论的推导过程，例如，$(e^x)' = e^x$ 更多的实例，更加详尽的解释或动画 自由度比较高的实验室 一些术语的扩展知识，例如，科学轶事</description></item><item><title/><link>https://albert.cn/edu/3-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-4/</guid><description>3.4 趣味糖分 3.4.1 电子游戏的启发 前几章所述，多为了能够在功能性上达标，但为了使得教学效果进一步提升，需要在娱乐性进行改善，提高学生学习的积极性。
 很多人对电子游戏痴迷，而电子游戏也存在一定的知识积累和技能培养。不少电子游戏，是玩家花钱并投入时间培养没有实际应用价值的技能，从而去解决没必要的麻烦。全世界各年龄段的玩家都为之乐此不疲。
 电子游戏的广泛受到欢迎，说明人是愿意接受挑战的，也是愿意通过主动解决问题获得成就感的，只不过对于这样的问题有一些限制，这也就是游戏相对于学习或者现实问题的优势：
 现实教学中，失败有决定性的色彩，例如，考试成绩不好，被误解为能力的不足，试错的成本比较高；相比之下，游戏中即使发生了“死亡”事件，仍然可以重新尝试，允许试错，注意力被放在了提高技能上，而不是证明自我上；也就是说，游戏有惩罚却又不致命（Punish but not fatal）
@@ -660,4 +674,6 @@ $$A_{fe}(x) == d_f$$
 拓展阶段的学习，在日常教学的使用频率不是很高，就是让学生积累更多的频率更低的技能，理解更为抽象的通用解决问题的办法。拓展阶段的技能要么使用场景少，要么可训练度很低，并不是很容易吸收掌握。可训练度低是技能本身的特性，可以认为无论教学形式如何变化，在有限时间、有限训练样本内，其适用的学生群体比例都是有明显上限的。
 一般来说，可以按照这样的结构，逐步增加解决问题的范围：
 给出定义和概念，传授最常见的性质和技巧 训练使用频率和强健程度都高的知识点技能，提高熟悉感和建立信心 能够通过单一（或者少数）变量的积累变化来解释的简单抽象规律，包括了基于变量思想的应用 能够通过对已有技能的近距变形或迁移，可以在少数步骤内探索到的区域 需要遍历穷举，尝试归纳，需要更多的步骤来探索的区域 以及，从词汇积累和抽象程度上的逐步扩大解决问题的范围：
-积累更多的、使用频率较低的词汇 学习解决范围较大却抽象程度较高、不易训练的技能 综上所述，课程结构的设计，既要考虑解决问题半径的逐步扩大，也要考虑学生学习效果的最大化。</description></item><item><title/><link>https://albert.cn/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/4-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-5/</guid><description/></item><item><title>About</title><link>https://albert.cn/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/about/</guid><description>A Curious Mind.</description></item></channel></rss>
+积累更多的、使用频率较低的词汇 学习解决范围较大却抽象程度较高、不易训练的技能 综上所述，课程结构的设计，既要考虑解决问题半径的逐步扩大，也要考虑学生学习效果的最大化。</description></item><item><title/><link>https://albert.cn/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/4-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-5/</guid><description>教学的目的 积累词汇，解决实际问题
+积累通用的解决问题的办法
+积累不同类型的情景，为创新、结合和借鉴做池子</description></item><item><title>About</title><link>https://albert.cn/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/about/</guid><description>A Curious Mind.</description></item></channel></rss>
