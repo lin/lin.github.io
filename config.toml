@@ -6,7 +6,7 @@ theme = "hugo-ink"
 copyright = "© Copyright albert.cn All Rights Reserved"
 
 [[menu.main]]
-name = "Essays"
+name = "随想"
 url = "/"
 weight = 1
 
@@ -15,20 +15,20 @@ name = "教学"
 url = "/edu"
 weight = 2
 
-# [[menu.main]]
-# name = "Life"
-# url = "/life"
-# weight = 3
+[[menu.main]]
+name = "人生"
+url = "/life"
+weight = 3
 
-# [[menu.main]]
-# name = "Design"
-# url = "/design"
-# weight = 3
+[[menu.main]]
+name = "设计"
+url = "/design"
+weight = 3
 
-# [[menu.main]]
-# name = "Intel"
-# url = "/intel"
-# weight = 3
+[[menu.main]]
+name = "智力"
+url = "/intel"
+weight = 3
 
 [[menu.main]]
 name = "诗歌"
@@ -36,7 +36,7 @@ url = "/poems"
 weight = 4
 
 [[menu.main]]
-name = "About"
+name = "关于"
 url = "/about"
 weight = 5
 
