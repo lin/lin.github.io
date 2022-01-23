@@ -433,7 +433,7 @@ $$ \begin{aligned} e^{ix} = \cos{x} + i\sin{x} \end{aligned} $$ 1.</description>
 有时，内心里充满了伤怀与痛楚，伤痛在高考后达到了高峰。
 高考结束，紫梦破散，内心极度的苦痛，但一直都憋闷在心里。直到忽一日，望着满地的残花败叶，内心猛地一热，诗意才由此而生。
 花飘成泪有人怜，
-我心如碎谁想念。
+我心如碎谁相念。
 临秋怨，临秋怨，只缘愁满无人怨。
 重压难释是有的，苦怨心愁也是有的，但这些总是一时的。
 真正去面对这一次次失败与不意的，是我那永怀的强硬的心。
@@ -501,8 +501,20 @@ $$ \begin{aligned} e^{ix} = \cos{x} + i\sin{x} \end{aligned} $$ 1.</description>
 梦里难相留，
 空得伤盈昼。
 多少情愁为汝流，
-白了少年头。</description></item><item><title/><link>https://albert.cn/edu/1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/1-1/</guid><description>1.1 结果导向的教学 教育是一个包涵很广泛的概念，使用的场景也很多。不同的场景下教育的目的也不尽相同。为了使问题更为明确，我们将注意力放在一些特定范畴或满足一定条件的教育活动，并称之为教学。
-本文中讨论的教学，包括了备考标准化考试的情景，例如，中学教育中，数学、物理、化学等学科；也包括了基于逻辑学和数学（或其他明确具体理论）的理论学习，例如，高等教育中，数学、计算机科学、物理学、化学等学科；还包含了实际应用中传授明确具体技能的学习，例如，软件工程中，编程语言（例如，Python）、库（例如，jQuery）、软件（例如，Photoshop）等。
+白了少年头。</description></item><item><title/><link>https://albert.cn/design/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/design/1/</guid><description>第一章：目的 1.1 明确设计 这里讨论的设计，并不是为了追求艺术美的设计，而是日常生活中，实用的设计技巧和理念。
+而且把设计局限在了有关传递信息的平面设计，例如，海报设计，文章排版设计，网页设计，宣传文稿设计，信号牌匾设计，产品包装设计等。
+1.2 设计要达到的四个目的 设计的第一步，应该是明确设计所要起到的功能。一般来说，都是希望更快更准确的传递大多数用户想要得到的信息。那么就要思考，大多数用户想在某个情景下等到什么信息（或者是你希望传递给用户什么信息）。如果只能传递最简化的信息是什么？如果信息量限制在十个字以内，你想传递什么？如果用户只能忍耐三秒钟时间来解析信息，你会呈现给TA什么？值得注意的是，我们并不是要吸引眼球，去勾起用户的注意，而是希望用户能够解决他想解决的问题。
+这里的设计的首要目的是功能性的，实现至少有路径能够实现，也就是functionality。第二的目的，是功能实现的易用性，usability。第三个目的，就是艺术上的美感，娱乐性，delight。第四个目的，是对于设计师而言，实现一个设计所需要的周期，可执行性，implementation。
+对于功能性，如果一个婚礼请帖，没有标注婚礼日期，即使使用了成熟的配色，精美的字体，这也是一个失败的设计。相反的，即使日期字体小，不易识别，这也是一个可用的设计。
+对于易用性，就是便于使用者识别，这应该是本文着重强调的部分。可以千篇一律的采用同样规定的字体和配色，都可以实现易用性。易用性体现在对于一类事物的迅速识别，体现在对重点信号的突出等等。例如，刚才举例的婚礼日期，做放大处理，让人一目了然就是一个合理的设计。一般来说，这属于产品设计的范畴，如何简化流程，降低使用者的解析计算量。
+对于娱乐性，就是对于设计要素的选择，要从大量可选项中筛选出精致的那一款，同时还要有一定的创新，给人新鲜感。例如，对于婚期日期的字体选择什么样的字体，字体的颜色等等。娱乐性，在本文里，更多体现的是一种用心的专业性，而不是为了别出心裁，本文后面将提供一些保险的设计元素选择。不为了创新而创新，而只是提供一个足够优质的设计。
+对于可执行性，就是设计师实现一款设计所用的时间。例如，扁平化设计，相对于拟物化设计，更加容易实现和设计。
+1.3 追求简洁的KISS原则 KISS, keep it simple stupid, 也就是 Less is more 的原则。应该是这种要传递信息设计的最重要原则。
+简洁有一系列的好处，简洁能够逼迫设计者去思考什么才是更重要的信息（例如，婚礼的日期），简洁使得用户更容易识别和领会（例如，对求职者有什么要求），简洁能够让重要的功能更加突出易用（例如，下一个地铁还有多久能到），简洁带来的放松和成就感，也是一种娱乐体验（例如，扫码支付），简洁也有利于设计师更快的进行设计。</description></item><item><title/><link>https://albert.cn/design/2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/design/2/</guid><description>第二章：排版 2.1 突出重点 这里讨论的设计，并不是为了追求艺术美的设计，而是日常生活中，实用的设计技巧和理念。
+而且把设计局限在了有关传递信息的平面设计，例如，海报设计，文章排版设计，网页设计，宣传文稿设计，信号牌匾设计，产品包装设计等。
+2.2 易于归类 2.3 易于区分</description></item><item><title/><link>https://albert.cn/design/3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/design/3/</guid><description>第三章：颜色 3.1 常见颜色 3.2 配色 3.2.1 背景和文字 黄色和褐色
+3.2.1 背景色和边框色 3.3</description></item><item><title/><link>https://albert.cn/design/4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/design/4/</guid><description/></item><item><title/><link>https://albert.cn/edu/1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/1-1/</guid><description>1.1 结果导向的教学 教育是一个包涵很广泛的概念，使用的场景也很多。不同的场景下教育的目的也不尽相同。为了使问题更为明确，我们将注意力放在一些特定范畴或满足一定条件的教育活动，并称之为教学。
+本文中讨论的教学，包括了备考标准化考试的情景，例如，中学教育中，数学、物理、化学等学科；也包括了基于逻辑学和数学（或其他明确具体理论）的理论学习，例如，高等教育中，数学、计算机科学、物理学、化学等学科；还包含了实际应用中传授明确具体技能的学习，例如，软件工程中，编程语言（例如，Python）、库（例如，React）、软件（例如，Photoshop）等。
 但对于一些比较不那么明确的、不容易测试或培养周期较长的教育目的，例如，对学生道德品质的培养，对学生创造力和探索能力的培养，对学生艺术鉴赏力的提升等，将会在教学中有所倾斜，或是在其他教育活动中不断渗透，但不是本文中讨论的核心方向。
 所谓结果导向的教学，可以类比测试驱动开发（Test-driven development），也就是先明确教学的目的并且写好了检验教学成果的测试，才开始进行教学。也就是讲授者在讲授前，就对学习者能力改变有着明确的预期，并且可以通过量化的方式对其测量。
 结果导向的教学，并不是意味着应试教育，虽然形式上追求的都是提高某个量化指标。正如上节所述，除了应付标准化考试外，结果导向的教学还适用于理论和技能的学习，例如，理解并娴熟的应用贝叶斯公式，从而更新本能的统计学直觉偏差。再例如，学习After Effects，从而进行动画或者视频的编辑。在教学前后，我们能看到学生解决问题半径的扩大，知识储备的增加，学习效果有着可以被区分的方法，都是可以明确测量和验证的，也同时达到了教育者和受教育者的预期。例如，学习者通过驾校的学习，可以在日常生活中开车代步。
@@ -514,9 +526,9 @@ $$ \begin{aligned} e^{ix} = \cos{x} + i\sin{x} \end{aligned} $$ 1.</description>
 $$ \forall t.\exists G. \exists r.\exists S. t\in G(r) \&amp;amp; St $$
 虽然很多情境下试卷尚不能用算法完全生成，但是头脑中存在这样一个严格的数学要求，可以减少许多情景的不适用。通俗的讲，就是考题的考察范围、考察难度、各题型考察频率，稳定性强，波动不大。
 例如，对于一个综合性的考试（高考），各部分的占比应该有一个稳定的概率密度分布，但是验收材料（某一年高考）却只考查了一个知识模块（例如，全是三角函数的题目），就不符合验收材料的要求。
-再例如，如果有教师在课堂上讲课的时候，是按照一个题型分布去讲解，而课下独自给学生补课时确实另外一个题型分布，验收测试的题目都是在课下学生补课的题型，就不符合我们对验收材料的约定。
-一般来说，概念传授和技能培养类的教学，考察的题目类型的分布会比较集中，变化比较小。而选拔性的考试，题目变化大，综合性强，有一些不容易传授的策略性技巧。但只要验收材料是统一的标准下，不偏不倚，难度分布一定的，都可以在本文的讨论范围之内（虽然不能用程序直接写成，只能感性的感知）。
-另一方面，测试题目的难度应该是可以被解决的，作为教学来说，一般来说，传递的都是已经被人类探索过的领域，是比较成熟的理论概念和技术成果的传递，而不是要求学生探索新的研究（可以是调动积极性的短距离的、信号强烈的尝试探索，而不是深入的、信号很少的科研探究行为），也不是要求学生解决未解之谜（虽然有时教学目的要培养这样的能力）。在第二章中，会对此进行展开，通俗的讲，就是考题难度系数不能过高，以至于无法找到有效的传授方式。</description></item><item><title/><link>https://albert.cn/edu/1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/1-3/</guid><description>1.3 对学生能力的假设 学生，也就是一个个区别很大的智力媒介，装载了不同数据和程序（软件差异）的有机图灵机，甚至存在着先天的智力差异（硬件差异，可参考冯·诺依曼）。这里举例说明，在教学过程中，值得注意的学生特征。
+再例如，如果有教师在课堂上讲课的时候，是按照一个题型分布去讲解，而课下独自给学生补课时却是另外一个题型分布，验收测试的题目都是在课下学生补课的题型，就不符合我们对验收材料的约定。
+一般来说，概念传授和技能培养类的教学，考察的题目类型的分布会比较集中，变化比较小。而选拔性的考试，题目变化大，综合性强，有一些不容易传授的策略性技巧。但只要验收材料是统一的标准下，不偏不倚，难度分布一定的，都可以在本文的讨论范围之内（虽然不能用程序直接写成，只能模糊的感知）。
+另一方面，测试题目的难度应该是可以被解决的，作为教学来说，一般来说，传递的都是已经被人类探索过的领域，是比较成熟的理论概念和技术成果的传递，而不是要求学生探索新的研究（可以是调动积极性的短距离的、信号强烈的尝试探索，而不是深入的、信号很少的科研探究行为），也不是要求学生解决未解之谜（虽然有时教学目的要培养这样的能力）。通俗的讲，就是考题难度系数不能过高，以至于无法找到有效的传授方式。</description></item><item><title/><link>https://albert.cn/edu/1-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/1-3/</guid><description>1.3 对学生能力的假设 学生，也就是一个个区别很大的智力媒介，装载了不同数据和程序（软件差异）的有机图灵机，甚至存在着先天的智力差异（硬件差异）。这里举例说明，在教学过程中，值得注意的学生特征。
 1.3.1 前置知识储备 如果一个已经开了十年车的人，为了通过驾照考试而去驾校学习，对于教练来说，是一件非常轻松的事。
 这里讨论的前置知识储备，一方面，有可能学生已经可以轻松通过验收测试，也就是达到了技能上的掌握；另一方面，学生的前置知识储备对教学材料也有很大的要求，极端的例子，如果学生不识字，那么一门高中物理课的教学材料就几乎很难编写成功。
 所以，本文中假设学生的前置知识储备在特定的学习内容上是大体一致的，例如，我们如果对一个高中生或者一个中年人讲解Photoshop的使用，我们假设他们都熟悉一定的计算机操作常识（例如，如何使用鼠标），同时又很少使用过Adobe CC系列的软件。
@@ -545,7 +557,7 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 本文的主要目的就是要阐述如何让学习材料达到功能性的标准，并尽可能对学习增添娱乐性糖分。在接下来讨论的过程中，我们用掌握程度来描述 $r$ 值，用疲惫程度和娱乐程度来表示 $p$（根据其正负来定）。对于娱乐性，如果学习过程带来了痛苦，那可能会让学生放弃和回避，增加下一次学习的启动成本；如果带来的是成就感就可能促使学生想主动的进行更多尝试。
 在学习效果的定义中，我们借鉴了机器学习中的字母表示，机器学习和教学过程有着一定的相关性：
 机器学习是在明确了可训练数据 $d$ 的情况下，去寻找某个可以识别样式的 $\mathcal{H}$ 教学过程是在拥有一个强大识别样式的算法 $\mathcal{H}$，去准备提高训练效率的数据 $d$ 在教学过程中，我们同样会遇到统计学中所出现的概念，例如，交叉验证以及偏差和方差之间的权衡等。进行这样的计算学表述，将对后文中发现教学问题并改善教学效率有着直接本质的分析效果</description></item><item><title/><link>https://albert.cn/edu/2-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/2-1/</guid><description>2.1 学习者的需求和苦恼 2.1.1 学习者的需求 作为一名学习者，其参加技能训练的目的有很多，例如：
-参加标准化考试，通过考试或者取得高成绩 掌握一项技能，并能在实践中应用，解决实际问题 并对技能的学习和训练，常有如下的需求：
+参加标准化考试，通过考试或者取得高成绩 掌握一项技能，并能在实践中应用，解决实际问题 并对单一技能的学习和训练，常有如下的需求：
 能够轻松的学懂并理解 能够在实践中独立解决问题 能够反复训练，扎实记牢 能够灵活结构化的自测和复习 能够有足够的学习动力或激励措施 但对于如上的需求，存在递进的需求强度，其中最重要的指标，就是能够通过学习，能够解决之前无法解决的问题，能够通过实践中的测试评价，如果可以达到这个目标，就希望可以学的过程更加轻松愉悦，有更强的成就感，有更强烈的学习动力。
 如果简而言之，可以认为学习者的基本学习需求是：
 清晰易懂，扎实掌握
@@ -629,7 +641,8 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$
 减少噪音的干扰，突出起主要作用的信号，更加迅速的定位重点和难点，更加有效地利用人脑有限的注意力和对复杂程度的容忍度，提高发现抽象规律和技巧的几率，易于学生消化（可以类比为经过加工的食品），让信息传递效率更高，也让接受者减少解决问题的痛苦，通过训练提高熟练度，增加信心和成就感，从而降低使用产品的门槛，提高学生再次尝试的积极性。
 为了降低噪音，减少复杂度，可以采用的如下的几种办法：
 尽可能把技能元素化，分解成可消化的小块份（bitable size），分摊任务 选择的例题不仅典型，还需简短，甚至体现出简洁干净的美感 如有必要，简短的同时还要别扭，突出需要学会区分的信号 无论是为了更好的归纳，还是为了更好的区分，都要提供相似度较高的题目 为了减少对题目的解析，可以保持基本题目的一致，略作变化，便成一新题 值得一提的是，熟悉实例是要给予更多的信息，使得后验的分布更为集中，而简化降噪是要减少信息的提供，让噪音变少信号增强。 噪音要少，辅助要多 什么是最重要的信息？最不容易被理解的特殊特征？要把这样的信息凸显出来，着重展示和讲解。把重点突出，就是要减少信息 学习执行运算的时候，需要辅助，逻辑上的断链，为了不给学生逻辑的挫败感，需要提供更多的信息，就像地板一样，都是平面，没有坑。让学生把注意力放在重点和难点上。</description></item><item><title/><link>https://albert.cn/edu/3-2-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2-4/</guid><description>3.2.4 通过设计降低解析难度 3.1.5.1 平面设计原则 书籍的缺点，也就是看教科书的缺点，相对于视频，不容易parse
-3.1.5.2 互动设计原则 信息的隐藏，popup，
+字体 字体大小和重量 不要画蛇添足，而是恰当时刻使用
+背景色 3.1.5.2 互动设计原则 信息的隐藏，popup，
 3.1.5.3 动画设计原则</description></item><item><title/><link>https://albert.cn/edu/3-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/3-2/</guid><description>3.2 讲授知识 3.2 讲授知识
 如何让学生以 更小的痛苦，更少的计算量，流畅的理解 知识点？
 噪音要少；辅助要多 是否是最简化的？是否过于简化，以至于抽象，以至于需要短时存储过多，以至于需要同时计算量太大
@@ -715,4 +728,17 @@ $$A_{fe}(x) == d_f$$
 给出定义和概念，传授最常见的性质和技巧 训练使用频率和强健程度都高的知识点技能，提高熟悉感和建立信心 能够通过单一（或者少数）变量的积累变化来解释的简单抽象规律，包括了基于变量思想的应用 能够通过对已有技能的近距变形或迁移，可以在少数步骤内探索到的区域 需要遍历穷举，尝试归纳，需要更多的步骤来探索的区域 以及，从词汇积累和抽象程度上的逐步扩大解决问题的范围：
 积累更多的、使用频率较低的词汇 学习解决范围较大却抽象程度较高、不易训练的技能 综上所述，课程结构的设计，既要考虑解决问题半径的逐步扩大，也要考虑学生学习效果的最大化。</description></item><item><title/><link>https://albert.cn/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-4/</guid><description/></item><item><title/><link>https://albert.cn/edu/4-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/4-5/</guid><description>4.5 教学的目的 积累词汇，解决实际问题，技能的娴熟
 积累通用的解决问题的办法，认知能力，智力水平的提高
-积累不同类型的情景，为创新、结合和类比借鉴做池子，增加知识容量，增加抽象概念的池子</description></item><item><title/><link>https://albert.cn/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/examples/</guid><description>实例库 金融类：虚拟货币 概念 什么是 Hash ？ 什么是 Stake ？ 数理类：高中数学或者物理 概念 什么是复数？ 工程类：计算机科学</description></item><item><title>About</title><link>https://albert.cn/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/about/</guid><description>A Curious Mind.</description></item></channel></rss>
+积累不同类型的情景，为创新、结合和类比借鉴做池子，增加知识容量，增加抽象概念的池子</description></item><item><title/><link>https://albert.cn/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/edu/examples/</guid><description>实例库 金融类：虚拟货币 概念 什么是 Hash ？ 什么是 Stake ？ 数理类：高中数学或者物理 概念 什么是复数？ 工程类：计算机科学</description></item><item><title/><link>https://albert.cn/intel/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/intel/outline/</guid><description>Outline preface
+Computation Distinguishability Composition Transformation Max Computation Freedom (Solving Boundary, Fundamental Limitation) Meta-Computation (Facts beyond deterministic) Reverse Computation Abstraction Top-Down Bottom-Up Accumulation of Same Objects Probability: the Indistinguishable Incomplete Information Computation with Abstraction Solving by Searching Guessing by Searching Nearby First Reduction by Computed Result Reduction by Abstract Computed Result Learning without Specific Goals Remembering Object Remember the experienced distinguishable objects Remembering Association Remembering Pattern Generic Solving Algorithm The Robustness v.</description></item><item><title/><link>https://albert.cn/intel/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/intel/preface/</guid><description>Preface The necessity of Turing complete, but not its completeness.
+To do all possible computations, we need freedoms that include a few for-all sentences.
+The ability to distinguish (has boundary) The ability to recognize The ability to reproduce The ability to use internal representations Access its neighbors freely. Store information freely. The ability to distinguish stuffs is the most fundamental ability for any intelligent agents.
+All it cares is that these two objects are different.</description></item><item><title/><link>https://albert.cn/life/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/life/outline/</guid><description>全书章节纲要 对于以上三个觉醒，每一个觉醒都会占据两章的内容。
+第一章：醒目的美味 这一章是世俗的一章，是老百姓比较感兴趣的一章。是对功利主义的正面价值的辩护。而这一章提出的计算学角度，将是一个极为有力的判断工具（在我看来，有如牛顿-莱布尼茨公式之于微积分），原本这一章是第二章，而第一章是对这一章的理论支持，也就是prerequisite。但是，为了更早的吸引读者，本书作者在顺序上进行了调整，一上来就来点干货。
+呼吸的代价 挣钱和花钱的本质是什么？（简述需求的满足） 为什么多数人要不情愿的去工作？(某种程度的奴役状态) 贴身的枷锁 如何积累财富？ 如何提供更好的产品和服务？ 第二章：得失的幻象 这一章，就是对功利主义的反驳
+迟钝的味蕾 生活中的需求层级有哪些？ 需求层级有哪些规律假设？ 智者的游戏 为什么功利主义是肤浅的？ 为什么要建立一个包容、多元、高分辨率}的社会？ 对日常行为进行计算学上的归类定义 第三章：提神的迷药 前两章抨击完了“利”，接下来的两章开始驳斥“名”。虚荣心被放在了和财富一样的高度，就说明了这种需求的特殊和中心地位。
+什么是虚荣？是为了证明自己，还是为了提高自己 为什么虚荣是最大的毒品？ 如何警惕和抵制虚荣？ 如何安抚和回避他人的虚荣？ 第四章：来世的回报 这一章最后要说的就是群体性的虚荣心，也就是种族主义或者激进的爱国主义。本书主要强调的是虚荣，而不是描述社会学的基本规律不是本书的要点，但为了驳斥群体利益不能无限放大，前几节仍要对群体生活对个人的积极影响。
+社会是如何进步的？ 什么是社会阶层？统治者是贪婪的强盗还是称职的公仆？ 统治阶级的压迫手段 文明的进展与平凡的小人物有着什么样的关联？农耕，工业，智能 什么是集体性的虚荣？为什么集体性的虚荣让人癫狂？ 为什么群体性的虚荣破坏性极大？ 第五章：木制的利刃 前四章解决了人生当中，两个特别大的bug，一个是对财富的狂热，一个是对虚荣的狂热。接下来的两章，是智力上的提高，原则上来说，应该先写下一章，也就是智力的理论基础，但是为了不使读者提前感到痛苦，这里做了调整。
+进化的意外：这一章其实是我个人非常感兴趣的一节， 进化遗留问题 对信息处理的过分简化（这里只讲抽象和关联的两个动作） 只考虑：$\forall x.f(x)\rightarrow g(x)$ 信息获取：对信息来源的甄别 特征提取$f(x)$：同类特征种类的细致程度（二分法，光谱法，渐进法） 特征提取$g(x)$：是否考虑同类特征的分布（标签化思考，名校毕业，商业成功，大媒体报道） 特征简单关联：毫无因果性依据（星座，生辰八字） 特征简单关联：模型缺乏因果和数据支持（白人主义，种族主义，自恋的爱国主义，人参，红糖，日本人都是战争犯，祈祷有效） 特征模型关联：二分法，线性模型 前提是不是分析的准确细致，结论是否准确细致，关联是不是有因果性或者是统计上的相关性 前提的特征是不是一定可以得到结论的特征，还是其他的特征是主导？ 是否有其他的可能性，其他的因素，其他的原因？穷不一定推得出不努力 是否可以更加细致化的特征剖析？ 能否尝试因果性的解释？ 是否观察样本量不够大？ 自己固有的观点、情绪、虚荣，是否会影响到判断？ 虚荣对信息处理的影响 常见的思维误区有哪些？ 对简单粗暴解决方案的推崇 如何在日常生活中避开这些误区？ 绕路的捷径 传统和保守是如何产生的？其积极意义有哪些？ 为什么要不轻信盲从（甚至要挑战）传统与保守？ 为什么崇旧尚古以及标签化思考是知识匮乏和虚荣的体现？ 五彩的磨石 为什么要接受学校的教育？其优点有哪些？局限和副作用有哪些？ 为什么要持续不断的学习和提高智力？ 如何更加快速的学习新知识，掌握新技能？ 第六章：必要的偏执 这一章就是对各种伪科学的集中驳斥。</description></item><item><title/><link>https://albert.cn/life/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/life/preface/</guid><description>前言 本书的写作初衷：
+能够作为一门研究生课程 CS 498: Computational Life 的教材。本书作者学习了大量的数理和人文知识，但是发现一些基本的人生规律却没学到 使用较为严格的数学语言和尽可能精准的逻辑学和统计学论证，从计算学和人工智能（尤其机器学习）的角度，去理解和分析人生中的常见现象 本书包含的内容广泛，每一章都可以独立成书展开，本文主要想传递给读者的主旨思想：
+财富觉醒： 什么是财富创造的本质？（计算学视角） 为什么功利主义是浅薄狭隘的？ 虚荣觉醒： 为什么虚荣对人生有着巨大的负面影响？ 如何警惕虚荣？如何戒掉虚荣？ 群体性生活对个体的意义？个体值得为群体付出多少？ 为什么要警惕统治阶级？统治阶级的压迫手段？ 什么是群体性虚荣？为什么要警惕群体性虚荣的癫狂？ 智力觉醒 人脑在处理新鲜信息时，存在的局限和常见误区有哪些？如何规避？ 什么是科学？为什么要接纳科学，反对迷信和宗教，挑战传统与保守？</description></item><item><title>1.1 Distinguishability</title><link>https://albert.cn/intel/1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/intel/1-1/</guid><description>It seems to me that I am rewriting Turing’s paper in a new perspective. The whole first chapter is to reclaim Turing’s idea, but in a way to discuss its necessity but not its completeness. The set of Turing’s abilities is the subset of the total abilities. Distinguishability is</description></item><item><title>About</title><link>https://albert.cn/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://albert.cn/about/</guid><description>A Curious Mind.
+20岁左右 2008 - 《诗行记》 2008 - 《人类的进化》 2008 - 《存在的价值》 2010 - 《个人诗歌集》 25岁左右 2014 - 《论人与人的差别》 2014 - 《今年25岁》 2014 - 《自然而然》 30岁左右 2018 -《人生指南》 2019 -《智力要素》 2021 -《论教学》</description></item></channel></rss>
