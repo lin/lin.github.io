@@ -20,15 +20,15 @@ name = "人生"
 url = "/life"
 weight = 3
 
-[[menu.main]]
-name = "设计"
-url = "/design"
-weight = 3
+# [[menu.main]]
+# name = "设计"
+# url = "/design"
+# weight = 3
 
-[[menu.main]]
-name = "智力"
-url = "/intel"
-weight = 3
+# [[menu.main]]
+# name = "智力"
+# url = "/intel"
+# weight = 3
 
 [[menu.main]]
 name = "诗歌"
