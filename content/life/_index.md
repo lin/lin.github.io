@@ -1,5 +1,5 @@
 ---
-title: "《人生指南》"
+title: "《人生入门》"
 isCJKLanguage: true
 math: true
 ---

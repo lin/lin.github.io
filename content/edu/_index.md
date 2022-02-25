@@ -3,6 +3,8 @@ title: "《论教学》"
 isCJKLanguage: true
 ---
 
+## Teaching: A Computational Perspective
+
 [_Version 3.0 - 2022.02.22_](./version)
 
 #### 第一章 教学的定义
