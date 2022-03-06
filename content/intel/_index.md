@@ -3,6 +3,6 @@ title: "《智力要素》"
 isCJKLanguage: true
 ---
 
-## Elements of Intelligence
+## Intelligence: A Computational Perspective
 
 _Started From Apr. 2019_
