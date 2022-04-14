@@ -36,12 +36,17 @@ url = "/poems"
 weight = 4
 
 [[menu.main]]
+name = "规划"
+url = "/todo"
+weight = 5
+
+[[menu.main]]
 name = "关于"
 url = "/about"
 weight = 5
 
 [params]
-    subtitle = "Albert Yingkui Lin / 林英魁"
+    subtitle = "Albert Lin / 一周一文"
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']
@@ -53,6 +58,7 @@ weight = 5
 
 [permalinks]
   posts = '/:filename'
+  notes = '/notes/:filename'
 
 [markup.goldmark]
     [markup.goldmark.renderer]
