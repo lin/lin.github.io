@@ -35,10 +35,10 @@ name = "诗歌"
 url = "/poems"
 weight = 4
 
-[[menu.main]]
-name = "规划"
-url = "/todo"
-weight = 5
+# [[menu.main]]
+# name = "规划"
+# url = "/todo"
+# weight = 5
 
 [[menu.main]]
 name = "关于"
