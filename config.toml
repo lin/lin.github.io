@@ -1,6 +1,6 @@
 baseURL = 'https://albert.cn/'
 languageCode = 'en-us'
-title = "Output"
+title = "Yingkui"
 theme = "hugo-ink"
 
 copyright = "© Copyright albert.cn All Rights Reserved"
@@ -46,7 +46,7 @@ url = "/about"
 weight = 5
 
 [params]
-    subtitle = "Albert Lin / 一周一文"
+    subtitle = "Ship w/o Greed. Grow w/o Ego. Fail w/o Fear."
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']
