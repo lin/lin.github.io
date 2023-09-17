@@ -158,6 +158,10 @@ draft: True
 
 胡玉龙老师（上面照片上留言的就是胡老师）
 
+<!-- 2010年6月底，在微博上，和刘翔互动
+
+<img src="../img/childhood/2010-hu-liu.png" width="600"> -->
+
 #### 2007年6月4日，高中合影
 
 <img src="../img/childhood/2007-gao.png" width="100%">
