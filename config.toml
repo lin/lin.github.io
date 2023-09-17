@@ -20,6 +20,11 @@ name = "人生"
 url = "/life"
 weight = 3
 
+[[menu.main]]
+name = "编程"
+url = "/cs"
+weight = 4
+
 # [[menu.main]]
 # name = "设计"
 # url = "/design"
@@ -30,23 +35,18 @@ weight = 3
 # url = "/intel"
 # weight = 3
 
-[[menu.main]]
-name = "诗歌"
-url = "/poems"
-weight = 4
-
 # [[menu.main]]
-# name = "规划"
-# url = "/todo"
-# weight = 5
+# name = "诗歌"
+# url = "/poems"
+# weight = 7
 
 [[menu.main]]
 name = "关于"
 url = "/about"
-weight = 5
+weight = 8
 
 [params]
-    subtitle = "Ship w/o Greed. Grow w/o Ego. Fail w/o Fear."
+    subtitle = "Ship w/o Greed. Fail w/o Fear. Grow w/o Ego. "
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']

@@ -1,13 +1,13 @@
 ---
-title: "《人生启蒙》"
+title: "《人生指南》"
 isCJKLanguage: true
 math: true
 ---
 
-## Life: A Computational Perspective
+## An Introduction to Life: A Computational Perspective
 
 _Started From August 2018_
 
-_Would Resume in Q3 2022_
+_Would Resume in July 2023_
 
 [前言](preface) & [提纲](outline)
