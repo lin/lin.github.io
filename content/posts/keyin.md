@@ -2,7 +2,6 @@
 title: "克音的童年往事（1989-1998）"
 date: 1998-06-20
 isCJKLanguage: true
-draft: True
 ---
 
 #### 1989-07-27 出生
