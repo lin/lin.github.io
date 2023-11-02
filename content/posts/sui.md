@@ -50,7 +50,7 @@ isCJKLanguage: true
 
 五排右一，林英魁
 
-四排左六，大哥 - 范琪光，下图是2002年在我家拍的，手拿的书是我最喜欢的《古文观止》，还有一本在地摊买的二手[《诗词入门》](https://book.douban.com/subject/1090172/)，同样爱不释手。
+四排左六，大哥 - 范琪光，下图是2002年在我家拍的，手拿的书是我最喜欢的《唐诗鉴赏》，还有一本在地摊买的二手[《诗词入门》](https://book.douban.com/subject/1090172/)，同样爱不释手。
 
 <img src="../img/childhood/2002-fan.png" width="600">
 

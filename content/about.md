@@ -3,30 +3,19 @@ title: "About"
 type: "page"
 ---
 
-A Curious Mind.
+A Logical Phenomenon. A Mathematical Object. A Curious Mind. 
 
-## 20岁之前
+[A Poet](../poems). [A Designer](../design). [A Coder](../code). [A Gamer](../games). [A Founder](https://albert.com.cn)
 
-- [1989年至1998年 - 克音童年](../keyin)
+- [1989年至1998年 - 童年](../keyin)
 
-- [1998年至2007年 - 中学少年](../sui)
+- [1998年至2007年 - 中学](../sui)
 
-- [2003年至2010年 - 诗歌创作](../poems)
+- 2008年 - [《诗行记》](../tripasapoet/) [《人类的进化》](../humanevolution/) [《存在的价值》](../valueofliving/)
 
-## 20岁左右
+- 2014年 - [《论人与人的差别》](../diff/) [《今年25岁》](../25/) [《自然而然》](../naturally/)
 
-- [2008 - 《诗行记》](../tripasapoet/)
-- [2008 - 《人类的进化》](../humanevolution/)
-- [2008 - 《存在的价值》](../valueofliving/)
+- [2016年 - ~2024年 -《论教学》](../edu/)
+- [2018年 - ~2026年 -《论人生》](../life/)
+- [2019年 - ~2029年 -《论智力》](../intel/)
 
-## 25岁左右
-
-- [2014 - 《论人与人的差别》](../diff/)
-- [2014 - 《今年25岁》](../25/)
-- [2014 - 《自然而然》](../naturally/)
-
-## 30岁左右
-
-- [2018 -《人生启蒙》](../life/)
-- [2019 -《智力要素》](../intel/)
-- [2021 -《论教学》](../edu/)
