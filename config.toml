@@ -46,7 +46,7 @@ url = "/about"
 weight = 8
 
 [params]
-    subtitle = "Ship w/o Greed. Fail w/o Fear. Grow w/o Ego. "
+    subtitle = "Getting Better. Getting Done."
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']

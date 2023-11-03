@@ -3,6 +3,8 @@ title: "About"
 type: "page"
 ---
 
+Ship w/o Greed. Fail w/o Fear. Grow w/o Ego.
+
 A Logical Phenomenon. A Mathematical Object. A Curious Mind. 
 
 [A Poet](../poems). [A Designer](../design). [A Coder](../code). [A Gamer](../games). [A Founder](https://albert.com.cn)
