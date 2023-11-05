@@ -1,5 +1,5 @@
 ---
-title: "Games"
+title: "Beated Games"
 type: "page"
 ---
 
@@ -39,16 +39,18 @@ type: "page"
 1. ⏳ The Legend of Zelda: Tears of the Kingdom
 
 
-## 🎬 剧情冒险 🎬
+## 经典之作
 
+1. ⏳  Grand Theft Auto IV
 1. Grand Theft Auto V
+1. ⏳  Red Dead Redemption
 1. Red Dead Redemption II
 1. The Last of Us Part I
 1. God of War (2018)
 1. God of War: Ragnarök
 1. The Witcher 3: Wild Hunt
-1. ⏳  Grand Theft Auto IV
-1. Elden Ring
+1. ⏳  Elden Ring
+1. ⏳  Resident Evil 4
 
 ## 其他
 
