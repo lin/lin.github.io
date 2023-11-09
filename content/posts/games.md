@@ -7,59 +7,60 @@ type: "page"
 
 ## 🍄  超级马力欧 🍄
 
-1. Super Mario Bros.
-1. Super Mario Bros. Lost Levels
-1. Super Mario Bros. 2
-1. Super Mario Bros. 3
-1. Super Mario World
-1. Super Mario Land
-1. Super Mario Land 2
-1. New Super Mario Bros.
-1. ⏳ New Super Mario Bros. Wii
-1. New Super Mario Bros. 2
-1. New Super Mario Bros. U
-1. Super Mario 3D Land
-1. Super Mario 3D World
-1. Super Mario Galaxy
-1. Super Mario Galaxy 2
-1. Super Mario Odessey
-1. Super Mario Maker 2
-1. ⏳ Super Mario Bros. Wonder
+1. [FC / NS] Super Mario Bros.
+1. [NS] Super Mario Bros. Lost Levels
+1. [NS] Super Mario Bros. 2
+1. [NS / 3DS] Super Mario Bros. 3
+1. [NS / 3DS] Super Mario World
+1. [3DS] Super Mario Land
+1. [NS] Super Mario Land 2
+1. [3DS] New Super Mario Bros.
+1. [Wii U]⏳ New Super Mario Bros. Wii
+1. [3DS] New Super Mario Bros. 2
+1. [Wii U] New Super Mario Bros. U
+1. [3DS] Super Mario 3D Land
+1. [Wii U / NS] Super Mario 3D World
+1. [NS] Super Mario Galaxy
+1. [Wii U] ⏳  Super Mario Galaxy 2
+1. [NS] Super Mario Odessey
+1. [NS] Super Mario Maker 2
+1. [NS] ⏳ Super Mario Bros. Wonder
 
 ## 🛡 塞尔达传说 🛡
 
-1. ⏳ The Legend of Zelda: A Link to the Past
-1. The Legend of Zelda: Link's Awakening
-1. ⏳ The Legend of Zelda: Ocarina of Time
-1. ⏳ The Legend of Zelda: Majora's Mask
-1. ⏳ The Legend of Zelda: The Wind Waker
-1. ⏳ The Legend of Zelda: Twilight Princess
-1. ⏳ The Legend of Zelda: A Link Between Worlds
-1. The Legend of Zelda: Breath of the Wild
-1. ⏳ The Legend of Zelda: Tears of the Kingdom
+1. [NS] ⏳ The Legend of Zelda: A Link to the Past
+1. [NS / 3DS] The Legend of Zelda: Link's Awakening
+1. [3DS] ⏳ The Legend of Zelda: Ocarina of Time
+1. [3DS] ⏳ The Legend of Zelda: Majora's Mask
+1. [Wii U] ⏳ The Legend of Zelda: The Wind Waker
+1. [Wii U] ⏳ The Legend of Zelda: Twilight Princess
+1. [3DS] ⏳ The Legend of Zelda: A Link Between Worlds
+1. [NS] The Legend of Zelda: Breath of the Wild
+1. [NS] ⏳ The Legend of Zelda: Tears of the Kingdom
 
 
 ## 经典之作
 
-1. ⏳  Grand Theft Auto IV
-1. Grand Theft Auto V
-1. ⏳  Red Dead Redemption
-1. Red Dead Redemption II
-1. The Last of Us Part I
-1. God of War (2018)
-1. God of War: Ragnarök
-1. The Witcher 3: Wild Hunt
-1. ⏳  Elden Ring
-1. ⏳  Resident Evil 4
+1. [PC] ⏳ Grand Theft Auto IV
+1. [PC] Grand Theft Auto V
+1. [NS] ⏳  Red Dead Redemption
+1. [PC / PS5] Red Dead Redemption II
+1. [PS5] The Last of Us Part I
+1. [PS5] God of War (2018)
+1. [PS5] God of War: Ragnarök
+1. [PS5] The Witcher 3: Wild Hunt
+1. [PS5] ⏳  Elden Ring
+1. [PS5] ⏳  Resident Evil 4
+1. [Mac] ⏳  Disco Elysium
 
 ## 其他
 
-1. Pokémon X and Y
-1. Sid Meier's Civilization VI
-1. Animal Crossing: New Horizons
-1. Sniper Elite 4
-1. Astro's Playroom
-1. Gran Turismo 7
+1. [3DS] Pokémon X and Y
+1. [Mac / iPad] Sid Meier's Civilization VI
+1. [NS] Animal Crossing: New Horizons
+1. [NS] Sniper Elite 4
+1. [PS5] Astro's Playroom
+1. [PS5] Gran Turismo 7
 
 ## 小时候玩过的游戏
 

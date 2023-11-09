@@ -3,6 +3,6 @@ title: "《论智力》"
 isCJKLanguage: true
 ---
 
-## Intelligence: A Computational Perspective
+## A Theory of Intelligence
 
 _Started From Apr. 2019_
