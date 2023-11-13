@@ -1,6 +1,7 @@
 ---
 title: "年度最佳游戏"
 date: 2023-11-13
+draft: true
 ---
 
 ### 参考列表
@@ -8,10 +9,13 @@ date: 2023-11-13
 1. MC 评分和排名：[https://www.metacritic.com/browse/game/](https://www.metacritic.com/browse/game/)
 1. IGN 评分和排名：[https://www.ign.com/playlist/igneditorial/lists/top-100-games-of-all-time-2022-edition](https://www.ign.com/playlist/igneditorial/lists/top-100-games-of-all-time-2022-edition)
 1. GQ 排名：[https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time](https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time)
-1. TGA 获奖和提名
 1. GameRankings.com 历史分数：[https://gr.blade.sk/](https://gr.blade.sk/)
 1. 综合榜单排名1：[https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time](https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time)
 1. 综合榜单排名2：[https://www.acclaimedvideogames.com/games/](https://www.acclaimedvideogames.com/games/)
+
+### 选择标准
+
+1. 
 
 
 | 年份      | 游戏            | 游戏            | 游戏             | 
@@ -42,7 +46,7 @@ date: 2023-11-13
 | 1999    |  |   |
 | 1998    | 《塞尔达传说：时之笛》 | 《合金装备》  |
 | 1997    | 《最终幻想 7》 |  《007：黄金眼》 |
-| 1996    | 《马里奥 64》 |  《精灵宝可梦：红 / 蓝》 |
+| 1996    | 《马里奥 64》 |  《精灵宝可梦：红 / 绿》 |
 | 1995    |  |   |
 | 1994    | 《超级密特罗德》 |   |
 | 1993    | 《毁灭战士》 |   |
