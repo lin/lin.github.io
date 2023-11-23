@@ -24,16 +24,14 @@ type: "page"
 1. [Wii U] ⏳  Super Mario Galaxy 2
 1. [NS] Super Mario Odessey
 1. [NS] Super Mario Maker 2
-1. [NS] ⏳ Super Mario Bros. Wonder
+1. [NS] Super Mario Bros. Wonder
 
 ## 🛡 塞尔达传说 🛡
 
 1. [NS] ⏳ The Legend of Zelda: A Link to the Past
 1. [NS / 3DS] The Legend of Zelda: Link's Awakening
 1. [3DS] ⏳ The Legend of Zelda: Ocarina of Time
-1. [3DS] ⏳ The Legend of Zelda: Majora's Mask
 1. [Wii U] ⏳ The Legend of Zelda: The Wind Waker
-1. [Wii U] ⏳ The Legend of Zelda: Twilight Princess
 1. [3DS] ⏳ The Legend of Zelda: A Link Between Worlds
 1. [NS] The Legend of Zelda: Breath of the Wild
 1. [NS] ⏳ The Legend of Zelda: Tears of the Kingdom
@@ -43,13 +41,13 @@ type: "page"
 
 1. [PC] ⏳ Grand Theft Auto IV
 1. [PC] [Grand Theft Auto V](./gta)
-1. [NS] ⏳  [Red Dead Redemption](./reddead)
+1. [NS] ⏳  [Red Dead Redemption](./red-dead)
 1. [PC / PS5] Red Dead Redemption II
 1. [PS5] The Last of Us Part I
 1. [PS5] God of War (2018)
 1. [PS5] God of War: Ragnarök
 1. [PS5] The Witcher 3: Wild Hunt
-1. [PS5] [Elden Ring](./eldenring)
+1. [PS5] [Elden Ring](./elden-ring)
 1. [PS5] ⏳  Resident Evil 4
 1. [Mac] ⏳  Disco Elysium
 
@@ -61,6 +59,7 @@ type: "page"
 1. [NS] Sniper Elite 4
 1. [PS5] Astro's Playroom
 1. [PS5] Gran Turismo 7
+1. [PC] Braid
 
 ## 小时候玩过的游戏
 
@@ -96,10 +95,10 @@ SFC，PS的游戏应该都没有玩过，接下来就是在网吧或者街机店
 1. 《三国志2》，1998年
 1. 《拳皇99》
 1. 《街头霸王》
-1. 《黑白棋》
-1. 《红警》，2000年
-1. 《CS 1.5》
+1. 《黑白棋》，1999年，小学五年级中午去
+1. 《红警》，2000年，小学毕业的暑假，在网吧待了很久
+1. 《CS 1.5》，2005年，一次期末考试后的包宿中学会的
 1. 《抢滩登陆》
 1. 《魔兽争霸》，2004年
-1. 《三国群英传》，2005年
-1. 《跑跑卡丁车》，2006年
+1. 《三国群英传》，2005年，一次期末考试后的包宿中，在红河谷网吧
+1. 《跑跑卡丁车》，2006年，用自己家的电脑玩的
