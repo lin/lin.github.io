@@ -3,102 +3,107 @@ title: "Beated Games"
 type: "page"
 ---
 
-[HowLongToBeat](https://howlongtobeat.com/user/yingkui/) @yingkui
+## [《论教学》](./edu)时期
 
-## 🍄  超级马力欧 🍄
+| 完成度    | 游戏                                    | 平台            |  用时 | 通关年月|
+|:--------:|-----------------------------------------|:---------------:|:-----:|:-----:|
+|   ✅   | Super Mario Bros.                     | NS             |        | 2023/09 |
+|   ✅   | Super Mario Bros. Lost Levels         | NS             |        | 2023/09 |
+|   ✅   | Super Mario Bros. 2                   | NS             |        | 2023/09 |
+|   ✅   | Super Mario Bros. 3                   | NS             |        | 2023/09 |
+|   ✅   | Super Mario World                     | NS             |        | 2023/09 |
+|   ✅   | Super Mario Land                      | 3DS            |        | 2023/09 |
+|   ✅   | Super Mario Land 2                    | NS             |        | 2023/09 |
+|   ✅   | New Super Mario Bros.                 | 3DS            |        | 2023/09 |
+|   ✅   | New Super Mario Bros. 2               | 3DS            |        | 2023/09 |
+|   ✅   | [New Super Mario Bros. Wii](./soul-mario) | Wii U      | 13h    | 2023/11|
+|   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|
+|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03|
+|   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|
+|   ✅   | **All 2D Super Mario Games**          |                |        | 2023/11|
+|   ✅   | Super Mario 3D Land                   | 3DS            | 16h    | 2021/02|
+|   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12|
+|   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08|
+|   ✅   | Super Mario Odessey                   | NS             | 45h    | 2020/08|
+|   ⏳   | [Super Mario RPG](./mario-rpg)        | NS             |        |        |
+|   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01|
+|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |
+|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |
+|   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12|
+|   ✅   | Pokémon Y                              | 3DS           | 30h    | 2021/02|
+|   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10|
+|   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09|
+|   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11|
+|   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06|
+|   ✅   | Astro's Playroom                       | PS5           | 8h     | 2023/08|
+|   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08|
+|   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09|
+|   ✅   | God of War: Ragnarök                   | PS5           | 23h    | 2023/09|
+|   ✅   | The Last of Us Part I                  | PS5           | 17h    | 2023/10|
+|   ✅   | Gran Turismo 7                         | PS5           | 25h    | 2023/10|
+|   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|
+|   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|
+|   ⏳   | Resident Evil 4                        | PS5           | 
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 
 
-1. [FC / NS] Super Mario Bros.
-1. [NS] Super Mario Bros. Lost Levels
-1. [NS] Super Mario Bros. 2
-1. [NS / 3DS] Super Mario Bros. 3
-1. [NS / 3DS] Super Mario World
-1. [3DS] Super Mario Land
-1. [NS] Super Mario Land 2
-1. [3DS] New Super Mario Bros.
-1. [Wii U]⏳ New Super Mario Bros. Wii
-1. [3DS] New Super Mario Bros. 2
-1. [Wii U] New Super Mario Bros. U
-1. [3DS] Super Mario 3D Land
-1. [Wii U / NS] Super Mario 3D World
-1. [NS] Super Mario Galaxy
-1. [Wii U] ⏳  Super Mario Galaxy 2
-1. [NS] Super Mario Odessey
-1. [NS] Super Mario Maker 2
-1. [NS] Super Mario Bros. Wonder
-
-## 🛡 塞尔达传说 🛡
-
-1. [NS] ⏳ The Legend of Zelda: A Link to the Past
-1. [NS / 3DS] The Legend of Zelda: Link's Awakening
-1. [3DS] ⏳ The Legend of Zelda: Ocarina of Time
-1. [Wii U] ⏳ The Legend of Zelda: The Wind Waker
-1. [3DS] ⏳ The Legend of Zelda: A Link Between Worlds
-1. [NS] The Legend of Zelda: Breath of the Wild
-1. [NS] ⏳ The Legend of Zelda: Tears of the Kingdom
-
-
-## 经典之作
-
-1. [PC] ⏳ Grand Theft Auto IV
-1. [PC] [Grand Theft Auto V](./gta)
-1. [NS] ⏳  [Red Dead Redemption](./red-dead)
-1. [PC / PS5] Red Dead Redemption II
-1. [PS5] The Last of Us Part I
-1. [PS5] God of War (2018)
-1. [PS5] God of War: Ragnarök
-1. [PS5] The Witcher 3: Wild Hunt
-1. [PS5] [Elden Ring](./elden-ring)
-1. [PS5] ⏳  Resident Evil 4
-1. [Mac] ⏳  Disco Elysium
-
-## 其他
-
-1. [3DS] Pokémon X and Y
-1. [Mac / iPad] Sid Meier's Civilization VI
-1. [NS] Animal Crossing: New Horizons
-1. [NS] Sniper Elite 4
-1. [PS5] Astro's Playroom
-1. [PS5] Gran Turismo 7
-1. [PC] Braid
-
-## 小时候玩过的游戏
+## 上学时玩过的游戏
 
 我记忆里得最早的游戏就是《超级玛丽》，1994年或者1995年左右，还在幼儿班的我，可能是小霸王游戏非常火，在小卖店可以五毛钱玩半个小时，我是没有机会尝试的，因为家里的经济条件有限，倒不是父母不让我玩，只能看别的大一点的孩子玩。小学二年级（1997年），我和同学一起去游戏厅观玩，也就是街机店玩，但不记得街机店的游戏有哪些了，可能也就是看一个热闹，被老师抓到，老师让我面壁了一节课，当时只是觉得这种犯错不是很严重，没意识到老师这么做的僵化。
 
-1998年，来到县里后，好多县里的同学都有游戏机，我能记住的FC游戏有：
+1998年，来到县里后，好多县里的同学都有游戏机。SFC，PS的游戏应该都没有玩过，接下来就是在网吧或者街机店玩的游戏了，范琪光家有电脑，也看过他玩的电脑游戏，但不知道是什么游戏。
 
-1. 《大金刚》
-1. 《马力欧兄弟》 
-1. 《超级马力欧兄弟》
-1. 《网球》
-1. 《打鸭子》，2002年左右玩到
-1. 《淘金者》
-1. 《F1赛车》
-1. 《越野摩托车》，1998年田亮家
-1. 《马戏团》，1998年田亮家
-1. 《足球》，1998年田亮家
-1. 《坦克大战》，假期，经验激动的玩一整个下午
-1. 《影子传说》，杨大伟家
-1. 《蝙蝠侠》，杨大伟家
-1. 《冒险岛》
-1. 《忍者神龟3》，2001年暑假，和老妈在家一起通关
-1. 《兔八哥》，老妈最爱玩的游戏
-1. 《魂斗罗》
-1. 《赤色要塞》，李飞鸿家
-1. 《三目童子》，李飞鸿家，在我看来属于高端游戏，一个盗版卡带只能放三个
-1. 《双截龙》，2000年左右在家
-1. 《松鼠大作战》，1998年田亮家
+大学期间主要在看书，接触过的游戏也不少，到都是浅尝辄止，印象深刻的只有几部。在美国的时候主要在用 Mac，所以PC游戏也没玩过，MOBA类游戏可能不足百把，手机游戏玩一些。
 
-SFC，PS的游戏应该都没有玩过，接下来就是在网吧或者街机店玩的游戏了，范琪光家有电脑，也看过他玩的电脑游戏，但不知道是什么游戏。
-
-1. 《西游释厄传》，1998年
-1. 《三国志2》，1998年
-1. 《拳皇99》
-1. 《街头霸王》
-1. 《黑白棋》，1999年，小学五年级中午去
-1. 《红警》，2000年，小学毕业的暑假，在网吧待了很久
-1. 《CS 1.5》，2005年，一次期末考试后的包宿中学会的
-1. 《抢滩登陆》
-1. 《魔兽争霸》，2004年
-1. 《三国群英传》，2005年，一次期末考试后的包宿中，在红河谷网吧
-1. 《跑跑卡丁车》，2006年，用自己家的电脑玩的
+| 游戏                     | 时间      | 备注           |
+|--------------------------|:---------:|---------------|
+|《超级马力欧兄弟》         | 1995年夏  | 在克音卫生院门口的小卖店   |
+|《大金刚》                 |           |               |
+|《马力欧兄弟》             |           |               |
+|《网球》                   |           |               |
+|《淘金者》                 |            |               |
+|《F1赛车》                 |            |               |
+|《魂斗罗》                 |            |               |
+|《冒险岛》                |            |               |
+|《影子传说》                 |          |     三姨杨大伟家      |
+|《蝙蝠侠》                 |          |     三姨杨大伟家      |
+|《俄罗斯方块》               |   1998年暑假 | 老妈的同学有一个游戏机     |
+|《马戏团》                 |  1998年寒假   | 田亮家（也就是宋青茹家）     | 
+|《松鼠大作战》              |  1998年寒假   | 田亮家（也就是宋青茹家）     | 
+|《越野摩托车》             |             |   田亮家（也就是宋青茹家）   |
+|《西游释厄传》             |  1998年   |   绥棱一小身后的游戏厅  | 
+|《三国志2》                |  1998年   |   绥棱一小身后的游戏厅  | 
+|《足球》                  |  1998年寒假   |     | 
+|《赤色要塞》               | 1999年左右  |     李飞鸿家      |
+|《黑白棋》                | 1999年左右  |   绥棱税务局家属楼下的游戏厅     |
+|《拳皇99》                |  2000年左右   |  绥棱一中附近的游戏厅  | 
+|《街头霸王》                |  2000年左右   |  绥棱一中附近的游戏厅  | 
+|《三目童子》               | 2000年左右  |     李飞鸿家，当时觉得很高端 |
+|《红警》                 | 2000年暑期  |     和李飞鸿一起，绥棱步行街的网吧 |
+|《打鸭子》                 | 2001年左右   |     自己家里       |
+|《坦克大战》                 | 2001年左右   |    不记得哪年假期，痛快的玩了一个下午       |
+|《兔八哥》                | 2001年暑期   |     老妈最爱      |
+|《忍者神龟3》              | 2001年暑期  |     和老妈在家一起通关      |
+|《英雄坛说》              | 2004年  |  去自习室通宵过关     |
+|《CS 1.5》               | 2005年  |    期末考试后的包宿中学会的     |
+|《抢滩登陆》              | 大约2005年 |       |
+|《魔兽争霸》              | 2005年  |       |
+|《三国群英传》             | 2005年  |   期末考试后的包宿中，在红河谷网吧    |
+|《跑跑卡丁车》            | 2006年暑期   |   用自己家的电脑玩的，水平很差   |
+|《诛仙》                 | 2007年暑期  |  唯一玩过的一款网游    |
+|《战地 2》                 | 2009年  |  和曹磊一起玩  |
+|《全面战争：拿破仑》       | 2009年  |  和曹磊一起玩  |
+|《纪元 1404》               | 2009年  |  和曹磊一起玩  |
+|《时空幻境》               | 2009年  |  记忆最深刻的游戏    |
+|《Fruit Ninja》            | 2011年  |  去奥兰多的时候在玩    |
+|《实况足球》               | 2012年暑期  |  和孙堃在那个暑假一起玩的 |
+|《[Draw Something](https://www.ign.com/games/draw-something/)》  | 2012年  |  上课的时候玩 |
+|《Candy Crush》            | 2012年  |  向姐最爱   |
+|《Temple Run》             | 2012年  |  武立言最爱 |
+|《Clash of Clans》         | 2014年  |            |
+|《SimCity BuildIt》        | 2014年  |            |
+|《The Room》               | 2015年  |            |
+|《王者荣耀》                | 2016年  |            |
+|《Ballz Break》            | 2017年   | 体会了很多小游戏 |
+|《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
+|《荒野行动》                | 2017年  |            |
+|《荒野行动》                | 2017年  |            |

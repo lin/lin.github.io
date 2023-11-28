@@ -10,6 +10,8 @@ math: true
 
 _Started From August 2018_
 
+_2023年年末，开始写全书的提纲_
+
 _Would Resume in 2024_
 
 [前言](preface) & [提纲](outline)

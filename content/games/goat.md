@@ -4,59 +4,74 @@ date: 2023-11-13
 draft: true
 ---
 
-| 游戏                       | 拥有平台         |用时   | MC   | IGN   |GQ     | GR    |AVG     |
-|----------------------------|:---------------:|:----:|:----:|:-----:|:-----:|:-----:|:-------:|
-| ✅ 《塞尔达传说：旷野之息》     | NS              |110h|    5  | 1（10）| 1|3 | 1|
-| 🎮《塞尔达传说：时之笛》       | 3DS             |30h|  1   | 34（10）| 13| 6| 6|
-| 🎮《塞尔达传说：众神的三角力量》| NS              |16h|   29   | 4| 26| | 9|
-| 🎮《塞尔达传说：风之杖》       | Wii U           |30h|   20   | |67 | | 58|
-| ✅ 《超级马力欧：银河》          | NS            |22h|   9  |（10） | 40| 1| 62|
-| ✅ 《超级马力欧：奥德赛》       | NS              |45h|    11  | | 87| 2| 45|
-| ✅ 《超级马力欧：兄弟 3》         | NS           | 6h|    |11 | 36| | 32|
-| ✅ 《超级马力欧：世界》         | NS              |4h|     | 2|14 | | 16|
-| 🎮《超级马力欧：64》           | NS              | 13h|     | 7| 18| 12| 7|
-| 《超级马力欧：银河 2》        | Wii U           |15h|    12  |（10） | |5 | 75|
-| ✅ 《超级马力欧：兄弟》         | NS             |2h|      |21 | 96| | 54|
-| ✅ 《侠盗猎车手：5》            | PC              |40h|   4   | 12（10）| 48| 4| 15|
-| 《侠盗猎车手：4》            | PC              |30h|    10  | | 91| 7| 73|
-|🎮 《侠盗猎车手：3》            | NS              |18h|    10  | | 61| 19| 67|
-| 《侠盗猎车手：圣安地列斯》   | NS              |35h|   33   | 66| | 21| 88|
-| ✅ 《荒野大镖客：救赎 2》       | PS5              |44h|    3  | 8（10）|15 | 8| 36|
-| 🎮《荒野大镖客：救赎 》       | NS              | 20h|    28 | 37| | | 28|
-| 🎮《超级密特罗德》             | NS              |8h|      | 5| 60| 10|14 |
-| 《密特罗德：究极》           | 无              |15h|   8  | 42| |75 | 38|
+### 个人最喜欢的游戏：
+
+1. 《塞尔达传说：旷野之息》
+1. 《超级马力欧：奥德赛》
+1. 《最后生还者》
+1. 《荒野大镖客：救赎 2》 
+1. 《侠盗猎车手：5》 
+1. 《塞尔达传说：风之杖》
+1. 《塞尔达传说：织梦岛》
+1. 《超级马力欧：3D 世界》
+
+| 游戏                       | 平台         |用时   | MC   | IGN   |GQ     | GR    |AVG     | 
+|----------------------------|:---------------:|:----:|:----:|:-----:|:-----:|:-----:|:---:|
+| ✅ 《塞尔达传说：旷野之息》     | NS              |110h|    14 (97) | 1（10）| 1|3 | 1|
+| 🎮《塞尔达传说：时之笛》       | 3DS             |30h|  1 (99)   | 34（10）| 13| 6| 6|
+| ✅ 《超级马力欧：银河》          | NS            |22h|   9 (97) |（10） | 40| 1| 62| 
+| 《超级马力欧：银河 2》        | Wii U           |15h|    12 (97) |（10） | |5 | 75|
+| ✅ 《超级马力欧：奥德赛》       | NS              |45h|    16 (97)  | | 87| 2| 45|
+| 《侠盗猎车手：4》            | PC              |30h|   3 (98) | | 91| 7| 73|
+| ✅ 《侠盗猎车手：5》            | PC              |40h|   11 (97)  | 12（10）| 48| 4| 15|
+| ✅ 《荒野大镖客：救赎 2》       | PS5              |44h|    15 (97)  | 8（10）|15 | 8| 36|
 | ✅ 《俄罗斯方块》               | NS             |3h|      | 28|3 | |3 |
-| 《质量效应：2》             | 无              | 25h|   20  | 6|6 |14 | 10|
-| ✅ 《艾尔登法环》              | PS5              | 60h|   22  | | 20| | 23|
-| 《血源诅咒》                | 无              | 35h|     | 19| 4| | 19|
-| 《黑暗之魂》                | 无              |45h|      | 80| 9| | 22|
-| ✅ 《最后生还者》              | PS5              |18h|    26  | 17（10）| 2|16 | 2|
-| 《神秘海域：2 纵横四海》     | 无              |11h|   14   | 57| |9 | 34|
-| ✅ 《战神：2018》            | PS5              |17h|   31   |25（10） | 47| | 20|
-| ✅ 《巫师：3 狂猎》            | PS5              | 36h| 32   | 16| 5| |4 |
-| 🎮《极乐迪斯科》              | PC              |25h|   6   | 10| 12| | 63|
-| 《传送门》                 | NS              |4h|   16   | 23| 8|11 |29 |
-| 《传送门：2》              | NS              |9h|   29   | 3| 35| | 18|
-| 《半条命：2》              | 无              |15h|    17  | 9|10 | 11| 5|
-| 🎮《生化危机：4》            | PS5              |18h|  18   | 40| 11|13 |8 |
-| 《最终幻想：7》            | 无              |35h|      | 98| 17| |17 |
-| 《生化奇兵》               | NS              |13h|   13  |18 | 23| | 11|
-| 《光环：战斗进化》          | 无              |10h|    7  | 32|21 | 17| 37|
-| 《合金装备》                | 无              |12h|      | 38| 7| | 30|
-| 《哈迪斯》                  | NS             |25h|   42   | 13| 38| | 42|
-| 《上古卷轴：5 天际》         | 无             |30h|  19   | 42| 16| | 13|
-| 《塞尔达传说：王国之泪》      | NS             |50h|   12  | | | | |
-| 《博多之门：3》              | NS             |60h|   23  | | | | |
+| 🎮《超级密特罗德》             | NS              |8h|      | 5| 60| 10|14 |
+| 《密特罗德：究极》           | 无              |15h|   8 (97)  | 42| |75 | 38|
+| 《质量效应：2》             | 无              | 25h|   33 (96)  | 6|6 |14 | 10|
+| 🎮《极乐迪斯科》              | PC              |25h|   13 (97)  | 10| 12| | 63|
+| ✅ 《最后生还者》              | PS5              |18h|    46 (95)  | 17（10）| 2|16 | 2|
+| 《光环：战斗进化》          | 无              |10h|    7 (97)  | 32|21 | 17| 37|
+| 《生化奇兵》               | NS              |13h|   27 (96)  |18 | 23| | 11|
+| 《合金装备》                | 无              |12h|   19 (96)   | 38| 7| | 30|
+| 《半条命：2》              | 无              |15h|   31 (96)   | 9|10 | 11| 5|
+| 《传送门：2》              | NS              |9h|   49 (95)   | 3| 35| | 18|
+| 🎮 《生化危机：4》            | PS5              |18h|  23 (96)   | 40| 11|13 |8 |
+| ✅ 《艾尔登法环》              | PS5              | 60h|   34 (96)  | | 20| | 23|
+| ✅ 《巫师：3 狂猎》            | PS5              | 36h|  (94)  | 16| 5| |4 |
+| 《上古卷轴：5 天际》         | 无             |30h|  26 (96)   | 42| 16| | 13|
+| 《博多之门：3》              | NS             |60h|   37 (96) | | | | |
+| 《神秘海域：2 纵横四海》     | 无              |11h|   32 (96)   | 57| |9 | 34|
+| ✅ 《超级马力欧：兄弟 3》         | NS           | 6h|  (94)  |11 | 36| | 32|
+| ✅ 《超级马力欧：世界》         | NS              |4h|   (92)   | 2|14 | | 16|
+| 🎮《超级马力欧：64》           | NS              | 13h|   (94)    | 7| 18| 12| 7|
+| ✅ 《超级马力欧：兄弟》         | NS             |2h|      |21 | 96| | 54|
+| 🎮 《塞尔达传说：风之杖》       | Wii U           |30h|   22 (96)   | |67 | | 58| |
+| 《塞尔达传说：王国之泪》      | NS             |50h|   35 (96)  | | | | |
+| 🎮《塞尔达传说：众神的三角力量》| NS              |16h|   43 (95)  | 4| 26| | 9| 
+|🎮 《侠盗猎车手：3》            | NS              |18h|    17 (97) | | 61| 19| 67|
+| 《侠盗猎车手：圣安地列斯》   | NS              |35h|   50 (85)   | 66| | 21| 88|
+| 🎮《荒野大镖客：救赎 》       | NS              | 20h|    45 (95) | 37| | | 28|
+| ✅ 《战神：2018》            | PS5              |17h|    (94)  |25（10） | 47| | 20|
+| 《传送门》                 | NS              |4h|   (90)   | 23| 8|11 |29 |
+| 《最终幻想：7》            | 无              |35h|   (89)   | 98| 17| |17 |
+| 《哈迪斯》                  | NS             |25h|   (93)   | 13| 38| | 42|
+| 《血源诅咒》                | 无              | 35h|  (92)   | 19| 4| | 19|
+| 《黑暗之魂》                | 无              |45h|  (89)   | 80| 9| | 22|
 
 
 ### 参考列表
 
-1. MC 2023年9月 评分和排名：[https://www.metacritic.com/browse/game/](https://www.metacritic.com/browse/game/) [B站备份](https://www.bilibili.com/video/BV1j34y1V7i4/)
+1. MC 2023年11月 评分和排名：[https://www.metacritic.com/browse/game/](https://www.metacritic.com/browse/game/)
 1. IGN 2022年排名：[https://www.ign.com/playlist/igneditorial/lists/top-100-games-of-all-time-2022-edition](https://www.ign.com/playlist/igneditorial/lists/top-100-games-of-all-time-2022-edition)
 1. GQ 2023年排名：[https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time](https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time)
 1. GameRankings.com 2019年12月最终分数：[https://gr.blade.sk/](https://gr.blade.sk/)
 1. 综合榜单Acclaimed Video Games 2023年11月排名：[https://www.acclaimedvideogames.com/games/](https://www.acclaimedvideogames.com/games/)
 1. 综合榜单数学算法排名：[https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time](https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time)
+1. D.I.C.E. [https://en.wikipedia.org/wiki/D.I.C.E._Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/D.I.C.E._Award_for_Game_of_the_Year)
+1. The Game Awards [https://en.wikipedia.org/wiki/The_Game_Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/The_Game_Award_for_Game_of_the_Year)
+1. Game Developers Choice Awards [https://en.wikipedia.org/wiki/Game_Developers_Choice_Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/Game_Developers_Choice_Award_for_Game_of_the_Year)
+1. Golden Joystick Awards [https://en.wikipedia.org/wiki/Golden_Joystick_Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/Golden_Joystick_Award_for_Game_of_the_Year)
 
 
 | 年份      | 游戏            | 游戏            | 游戏             | 

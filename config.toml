@@ -20,9 +20,14 @@ name = "人生"
 url = "/life"
 weight = 3
 
+# [[menu.main]]
+# name = "编程"
+# url = "/cs"
+# weight = 4
+
 [[menu.main]]
-name = "编程"
-url = "/cs"
+name = "游戏"
+url = "/games"
 weight = 4
 
 # [[menu.main]]
