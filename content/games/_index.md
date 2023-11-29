@@ -1,35 +1,38 @@
 ---
-title: "Beated Games"
+title: "Played Games"
 type: "page"
 ---
 
 ## [《论教学》](./edu)时期
 
+✅  通关 ；⏳ 正在进行；☑️ 流程过半但未通关
+
 | 完成度    | 游戏                                    | 平台            |  用时 | 通关年月|
 |:--------:|-----------------------------------------|:---------------:|:-----:|:-----:|
-|   ✅   | Super Mario Bros.                     | NS             |        | 2023/09 |
-|   ✅   | Super Mario Bros. Lost Levels         | NS             |        | 2023/09 |
-|   ✅   | Super Mario Bros. 2                   | NS             |        | 2023/09 |
-|   ✅   | Super Mario Bros. 3                   | NS             |        | 2023/09 |
-|   ✅   | Super Mario World                     | NS             |        | 2023/09 |
-|   ✅   | Super Mario Land                      | 3DS            |        | 2023/09 |
-|   ✅   | Super Mario Land 2                    | NS             |        | 2023/09 |
-|   ✅   | New Super Mario Bros.                 | 3DS            |        | 2023/09 |
-|   ✅   | New Super Mario Bros. 2               | 3DS            |        | 2023/09 |
+|   ✅   | Super Mario Bros.                     | NS             |   2h    | 2023/09 |
+|   ✅   | Super Mario Bros. Lost Levels         | NS             |   4h    | 2023/09 |
+|   ✅   | Super Mario Bros. 2                   | NS             | 3h     | 2023/09 |
+|   ✅   | Super Mario Bros. 3                   | NS             | 6h     | 2023/09 |
+|   ✅   | Super Mario World                     | NS             | 5h     | 2023/09 |
+|   ✅   | Super Mario Land                      | 3DS            |  2h    | 2023/09 |
+|   ✅   | Super Mario Land 2                    | NS             |  2h    | 2023/09 |
+|   ✅   | New Super Mario Bros.                 | 3DS            | 11h    | 2023/09 |
+|   ✅   | New Super Mario Bros. 2               | 3DS            |  5h    | 2023/09 |
 |   ✅   | [New Super Mario Bros. Wii](./soul-mario) | Wii U      | 13h    | 2023/11|
 |   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|
-|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03|
 |   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|
 |   ✅   | **All 2D Super Mario Games**          |                |        | 2023/11|
 |   ✅   | Super Mario 3D Land                   | 3DS            | 16h    | 2021/02|
 |   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12|
 |   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08|
 |   ✅   | Super Mario Odessey                   | NS             | 45h    | 2020/08|
+|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03|
 |   ⏳   | [Super Mario RPG](./mario-rpg)        | NS             |        |        |
 |   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01|
-|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |
-|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |
+|   ☑️   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |
+|   ☑️   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |
 |   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12|
+|   ☑️   | Pokémon Yellow                         | 3DS           | 15h    | 2023/07|
 |   ✅   | Pokémon Y                              | 3DS           | 30h    | 2021/02|
 |   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10|
 |   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09|
@@ -43,10 +46,13 @@ type: "page"
 |   ✅   | Gran Turismo 7                         | PS5           | 25h    | 2023/10|
 |   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|
-|   ⏳   | Resident Evil 4                        | PS5           | 
-|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 
+|   ⏳   | Resident Evil 4                        | PS5           | 16h  |
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h |
+|   ⏳   | Final Fantasy VII                      | PS5           | ~33h |
+|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h |
+|   ⏳   | Uncharted 4: A Thief's End             | PS5           | ~15h |
 
-## 上学时玩过的游戏
+## 其他游戏
 
 我记忆里得最早的游戏就是《超级玛丽》，1994年或者1995年左右，还在幼儿班的我，可能是小霸王游戏非常火，在小卖店可以五毛钱玩半个小时，我是没有机会尝试的，因为家里的经济条件有限，倒不是父母不让我玩，只能看别的大一点的孩子玩。小学二年级（1997年），我和同学一起去游戏厅观玩，也就是街机店玩，但不记得街机店的游戏有哪些了，可能也就是看一个热闹，被老师抓到，老师让我面壁了一节课，当时只是觉得这种犯错不是很严重，没意识到老师这么做的僵化。
 
@@ -91,7 +97,7 @@ type: "page"
 |《跑跑卡丁车》            | 2006年暑期   |   用自己家的电脑玩的，水平很差   |
 |《诛仙》                 | 2007年暑期  |  唯一玩过的一款网游    |
 |《战地 2》                 | 2009年  |  和曹磊一起玩  |
-|《全面战争：拿破仑》       | 2009年  |  和曹磊一起玩  |
+|《全面战争：拿破仑》       | 2009年  |    |
 |《纪元 1404》               | 2009年  |  和曹磊一起玩  |
 |《时空幻境》               | 2009年  |  记忆最深刻的游戏    |
 |《Fruit Ninja》            | 2011年  |  去奥兰多的时候在玩    |
@@ -105,5 +111,4 @@ type: "page"
 |《王者荣耀》                | 2016年  |            |
 |《Ballz Break》            | 2017年   | 体会了很多小游戏 |
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
-|《荒野行动》                | 2017年  |            |
 |《荒野行动》                | 2017年  |            |

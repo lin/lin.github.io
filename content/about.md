@@ -5,7 +5,7 @@ type: "page"
 
 正在用煎熬与折磨，来换取进展与提高
 
-Strive for excellence in making and thinking, but not for vanity to please mediocre minds.
+Determined to achieve excellence, but not for vanity to please mediocre minds.
 
 Keep Shipping w/o Greed. Keep Failing w/o Fear. Keep Growing w/o Ego.
 
