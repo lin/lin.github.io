@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = "Yingkui"
 theme = "hugo-ink"
 
-copyright = "© Copyright albert.cn All Rights Reserved"
+copyright = "© Copyright albert.cn / Yingkui.com All Rights Reserved"
 
 [[menu.main]]
 name = "随想"

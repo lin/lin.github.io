@@ -18,7 +18,7 @@ type: "page"
 |   ✅   | Super Mario Land 2                    | NS             |  2h    | 2023/09 |
 |   ✅   | New Super Mario Bros.                 | 3DS            | 11h    | 2023/09 |
 |   ✅   | New Super Mario Bros. 2               | 3DS            |  5h    | 2023/09 |
-|   ✅   | [New Super Mario Bros. Wii](./soul-mario) | Wii U      | 13h    | 2023/11|
+|   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U      | 13h    | 2023/11|
 |   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|
 |   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|
 |   ✅   | **All 2D Super Mario Games**          |                |        | 2023/11|
@@ -50,7 +50,7 @@ type: "page"
 |   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h |
 |   ⏳   | Final Fantasy VII                      | PS5           | ~33h |
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h |
-|   ⏳   | Uncharted 4: A Thief's End             | PS5           | ~15h |
+|   ⏳   | [Uncharted 4: A Thief's End](./uncharted)             | PS5           | ~15h |
 
 ## 其他游戏
 
