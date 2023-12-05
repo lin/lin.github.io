@@ -3,54 +3,58 @@ title: "Played Games"
 type: "page"
 ---
 
-## [《论教学》](./edu)时期
+## [《论教学》](/edu)和疫情时期
 
 ✅  通关 ；⏳ 正在进行；☑️ 流程过半但未通关
 
-| 完成度    | 游戏                                    | 平台            |  用时 | 通关年月|
-|:--------:|-----------------------------------------|:---------------:|:-----:|:-----:|
-|   ✅   | Super Mario Bros.                     | NS             |   2h    | 2023/09 |
-|   ✅   | Super Mario Bros. Lost Levels         | NS             |   4h    | 2023/09 |
-|   ✅   | Super Mario Bros. 2                   | NS             | 3h     | 2023/09 |
-|   ✅   | Super Mario Bros. 3                   | NS             | 6h     | 2023/09 |
-|   ✅   | Super Mario World                     | NS             | 5h     | 2023/09 |
-|   ✅   | Super Mario Land                      | 3DS            |  2h    | 2023/09 |
-|   ✅   | Super Mario Land 2                    | NS             |  2h    | 2023/09 |
-|   ✅   | New Super Mario Bros.                 | 3DS            | 11h    | 2023/09 |
-|   ✅   | New Super Mario Bros. 2               | 3DS            |  5h    | 2023/09 |
-|   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U      | 13h    | 2023/11|
-|   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|
-|   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|
-|   ✅   | **All 2D Super Mario Games**          |                |        | 2023/11|
-|   ✅   | Super Mario 3D Land                   | 3DS            | 16h    | 2021/02|
-|   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12|
-|   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08|
-|   ✅   | Super Mario Odessey                   | NS             | 45h    | 2020/08|
-|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03|
-|   ⏳   | [Super Mario RPG](./mario-rpg)        | NS             |        |        |
-|   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01|
-|   ☑️   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |
-|   ☑️   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |
-|   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12|
-|   ☑️   | Pokémon Yellow                         | 3DS           | 15h    | 2023/07|
-|   ✅   | Pokémon Y                              | 3DS           | 30h    | 2021/02|
-|   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10|
-|   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09|
-|   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11|
-|   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06|
-|   ✅   | Astro's Playroom                       | PS5           | 8h     | 2023/08|
-|   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08|
-|   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09|
-|   ✅   | God of War: Ragnarök                   | PS5           | 23h    | 2023/09|
-|   ✅   | The Last of Us Part I                  | PS5           | 17h    | 2023/10|
-|   ✅   | Gran Turismo 7                         | PS5           | 25h    | 2023/10|
-|   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|
-|   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|
-|   ⏳   | Resident Evil 4                        | PS5           | 16h  |
-|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h |
-|   ⏳   | Final Fantasy VII                      | PS5           | ~33h |
-|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h |
-|   ⏳   | [Uncharted 4: A Thief's End](./uncharted)             | PS5           | ~15h |
+| 完成度    | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
+|:--------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
+|   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11| 4X |
+|   ✅   | Super Mario Odyssey                   | NS             | 45h    | 2020/08| AAVG|
+|   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10| SIM |
+|   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
+|   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01| AAVG |
+|   ✅   | Super Mario 3D Land                    | 3DS            | 16h    | 2021/02| 平台 |
+|   ✅   | Pokémon Y                              | 3DS           | 30h    | 2021/02| JRPG |
+|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03| 平台 |
+|   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08| 平台 |
+|   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09| AAVG|
+|   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12| 平台 |
+|   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06| AAVG|
+|   ✅   | Tetrix Axis                           | 3DS           | 10h     | 2023/07| PLG |
+|   ✅   | Astro's Playroom                       | PS5           | 8h     | 2023/08| 平台 |
+|   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08| AAVG|
+|   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09| AAVG|
+|   ✅   | God of War: Ragnarök                   | PS5           | 23h    | 2023/09| AAVG|
+|   ✅   | Super Mario Bros.                     | NS             |   2h    | 2023/09 | 平台 |
+|   ✅   | Super Mario Bros. Lost Levels         | NS             |   4h    | 2023/09 |平台 |
+|   ✅   | Super Mario Bros. 2                   | NS             | 3h     | 2023/09 |平台 |
+|   ✅   | Super Mario Bros. 3                   | NS             | 6h     | 2023/09 |平台 |
+|   ✅   | Super Mario World                     | NS             | 5h     | 2023/09 |平台 |
+|   ✅   | Super Mario Land                      | 3DS            |  2h    | 2023/09 |平台 |
+|   ✅   | Super Mario Land 2                    | NS             |  2h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros.                 | 3DS            | 11h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros. 2               | 3DS            |  5h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|平台 |
+|   ✅   | The Last of Us Part I                  | PS5           | 17h    | 2023/10|AAVG|
+|   ✅   | Gran Turismo 7                         | PS5           | 25h    | 2023/10| 竞速 |
+|   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|ARPG|
+|   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|平台|
+|   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
+|   ✅   | _**All 2D Super Mario Games**_        |                |        | 2023/11|平台|
+|   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
+|   ✅   | [Uncharted](./uncharted)  4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
+|   ✅    | Super Mario Run                       | iOS            |        | 2023/12 |平台|
+|   ⏳   | [Super Mario RPG](./mario-rpg)        | NS             |        |        |JRPG|
+|   ☑️   | Pokémon Yellow                         | 3DS           | 15h    | 2023/07| JRPG|
+|   ☑️   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |AAVG|
+|   ☑️   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |AAVG|
+|   ⏳   | [Resident Evil](./re) 4                | PS5           | ~16h    |      |AAVG|
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h   |       |AAVG|
+|   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
+|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
+|   ⏳   | Metroid Dread                          | NS            |        |       |MVG|
+|   ⏳   | Hades                                  | NS            |        |       |Rogue|
 
 ## 其他游戏
 
