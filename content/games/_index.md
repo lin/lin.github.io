@@ -44,15 +44,16 @@ type: "page"
 |   ✅   | _**All 2D Super Mario Games**_        |                |        | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted)  4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
-|   ✅    | Super Mario Run                       | iOS            |        | 2023/12 |平台|
-|   ⏳   | [Super Mario RPG](./mario-rpg)        | NS             |        |        |JRPG|
-|   ☑️   | Pokémon Yellow                         | 3DS           | 15h    | 2023/07| JRPG|
-|   ☑️   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |AAVG|
-|   ☑️   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |AAVG|
+|   ✅    | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
+|   🎮   | Uncharted: The Lost Legacy             | PS5            | ~8h    | 2023/12|AAVG|
+|   🎮   | [Super Mario RPG](./mario-rpg)        | NS             |         |        |JRPG|
+|   🎮   | Pokémon Yellow                         | 3DS           | ~20h    |        | JRPG|
+|   🎮   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |AAVG|
+|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |AAVG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | ~16h    |      |AAVG|
+|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
 |   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h   |       |AAVG|
 |   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
-|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
 |   ⏳   | Metroid Dread                          | NS            |        |       |MVG|
 |   ⏳   | Hades                                  | NS            |        |       |Rogue|
 

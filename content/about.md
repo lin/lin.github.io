@@ -3,17 +3,13 @@ title: "About"
 type: "page"
 ---
 
-正在用煎熬与折磨，来换取进展与提高
-
-Determined to achieve excellence, but not for vanity to please mediocre minds.
-
-Keep Shipping w/o Greed. Keep Failing w/o Fear. Keep Growing w/o Ego.
-
-A Logical Phenomenon. A Mathematical Object. A Curious Mind. 
+> Keep Shipping w/o Greed. Keep Failing w/o Fear. Keep Growing w/o Ego.
 
 [A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books).
 
-[Blueprint](https://www.bilibili.com/video/BV12b411u7LJ/)：[A founder](https://albert.com.cn). [A thinker](../life). A would-be [scientist](../ai).
+[A founder](https://albert.com.cn). [A thinker](../life). A would-be [scientist](../ai).
+
+A Logical Phenomenon. A Mathematical Object. A Curious Mind. 
 
 - [1989年 - 1998年 - 克音童年](../keyin)
 
@@ -26,4 +22,8 @@ A Logical Phenomenon. A Mathematical Object. A Curious Mind.
 - [2017年 - 2023年 -《论教学》](../edu/)，2023年底，结束创作后，开始全力[新一轮创业](../a23)
 - [2018年 - ~2026年 -《论人生》](../life/)，2023年底，结束《论教学》后，开始写提纲
 - [2019年 - ~2029年 -《论智力》](../ai/)，待教学与人生都有了显著进展后，开启智力复杂度之旅
+
+
+
+
 

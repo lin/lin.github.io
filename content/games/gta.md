@@ -1,12 +1,11 @@
 ---
-title: "GTA 发行历史和销量"
-date: 2023-11-08
+title: "GTA"
+date: 2023-12-05
 ---
 
-[All Grand Theft Auto games in release order](https://dotesports.com/gta/news/all-grand-theft-auto-games-in-release-order)
+> \- Lucia, do you know why you are here? \- Bad luck, I guess.
 
-GTA History
-
+> Love Is A Long Road
 
 | 游戏     | 发售日期         | 销量     | 首支预告片日期   |
 |----------|:---------------:|:--------:|:---------------:|
