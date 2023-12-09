@@ -5,17 +5,17 @@ type: "page"
 
 ## [《论教学》](/edu)和疫情时期
 
-✅  通关 ；⏳ 正在进行；☑️ 流程过半但未通关
+✅  已经通关；🎮 正在进行
 
-| 完成度    | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
-|:--------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
+| 进展  | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
+|:------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
 |   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11| 4X |
 |   ✅   | Super Mario Odyssey                   | NS             | 45h    | 2020/08| AAVG|
 |   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10| SIM |
 |   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
 |   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01| AAVG |
 |   ✅   | Super Mario 3D Land                    | 3DS            | 16h    | 2021/02| 平台 |
-|   ✅   | Pokémon Y                              | 3DS           | 30h    | 2021/02| JRPG |
+|   ✅   | [Pokémon](./pokemon) Y                              | 3DS           | 30h    | 2021/02| JRPG |
 |   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03| 平台 |
 |   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08| 平台 |
 |   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09| AAVG|
@@ -44,20 +44,26 @@ type: "page"
 |   ✅   | _**All 2D Super Mario Games**_        |                |        | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted)  4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
-|   ✅    | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
-|   🎮   | Uncharted: The Lost Legacy             | PS5            | ~8h    | 2023/12|AAVG|
-|   🎮   | [Super Mario RPG](./mario-rpg)        | NS             |         |        |JRPG|
+|   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
+|   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
 |   🎮   | Pokémon Yellow                         | 3DS           | ~20h    |        | JRPG|
+|   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |         |        |JRPG|
 |   🎮   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |AAVG|
 |   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |AAVG|
-|   ⏳   | [Resident Evil](./re) 4                | PS5           | ~16h    |      |AAVG|
+|   🎮   | [Resident Evil](./re) 4                | PS5           | ~16h    |      |AAVG|
+|   🎮   | Red Dead Redemption                    | NS            |        |       | AAVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
 |   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h   |       |AAVG|
 |   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
 |   ⏳   | Metroid Dread                          | NS            |        |       |MVG|
+|   ⏳   | Disco Elysium                          | PS5           | ~60h   |       |CRPG|
+|   ⏳   | Metroid Prime                          | NS            |        |       |MVG|
 |   ⏳   | Hades                                  | NS            |        |       |Rogue|
+|   ⏳   | Portal                                 | NS            |        |       |PLG|
+|   ⏳   | Diablo 3                               | NS            |        |       |ARPG|
+|   ⏳   | Anno 1800                              | PC            |        |       |SLG|
 
-## 其他游戏
+## 早年玩的游戏
 
 我记忆里得最早的游戏就是《超级玛丽》，1994年或者1995年左右，还在幼儿班的我，可能是小霸王游戏非常火，在小卖店可以五毛钱玩半个小时，我是没有机会尝试的，因为家里的经济条件有限，倒不是父母不让我玩，只能看别的大一点的孩子玩。小学二年级（1997年），我和同学一起去游戏厅观玩，也就是街机店玩，但不记得街机店的游戏有哪些了，可能也就是看一个热闹，被老师抓到，老师让我面壁了一节课，当时只是觉得这种犯错不是很严重，没意识到老师这么做的僵化。
 
@@ -117,3 +123,29 @@ type: "page"
 |《Ballz Break》            | 2017年   | 体会了很多小游戏 |
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
 |《荒野行动》                | 2017年  |            |
+
+## 通过的游戏系列
+
+1. ✅ 《塞尔达传说》
+1. ✅ 《超级马力欧》
+1. ✅ 《精灵宝可梦》
+1. ✅ 《动物森友会》
+1. ✅ 《侠盗猎车手》
+1. ✅ 《荒野大镖客》
+1. ✅ 《战神》
+1. ✅ 《最后生还者》
+1. ✅ 《神秘海域》
+1. ✅ 《巫师》
+1. ✅ 《文明》
+1. ✅ 《GT 赛车》
+1. 《密特罗德》
+1. 《勇者斗恶龙》
+1. 《刺客信条》
+1. 《最终幻想》
+1. 《生化危机》
+1. 《博德之门》
+1. 《暗黑破坏神》
+1. 《生化奇兵》
+1. 《合金装备》
+1. 《使命召唤》
+1. 《上古卷轴》
