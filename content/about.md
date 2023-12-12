@@ -3,7 +3,7 @@ title: "About"
 type: "page"
 ---
 
-> Keep Shipping w/o Greed. Keep Failing w/o Fear. Keep Growing w/o Ego.
+> Keep Shipping w/o Greed. Keep Failing w/o Fear. Keep Learning w/o Ego.
 
 [A founder](../edu). [A thinker](../life). A would-be [scientist](../ai).
 

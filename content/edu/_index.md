@@ -5,7 +5,7 @@ isCJKLanguage: true
 
 ## On Teaching
 
-[_Version 4.0 - 2023.11.28_](./version)
+[_Version 4.1 - 2023.12.11_](./version)
 
 #### 第一章 教学的定义
 

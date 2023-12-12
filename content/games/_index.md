@@ -46,22 +46,25 @@ type: "page"
 |   ✅   | [Uncharted](./uncharted)  4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
-|   🎮   | Pokémon Yellow                         | 3DS           | ~20h    |        | JRPG|
-|   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |         |        |JRPG|
-|   🎮   | The Legend of Zelda: Ocarina of Time   | 3DS           |        |        |AAVG|
-|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |        |        |AAVG|
-|   🎮   | [Resident Evil](./re) 4                | PS5           | ~16h    |      |AAVG|
-|   🎮   | Red Dead Redemption                    | NS            |        |       | AAVG|
+|   🎮   | Pokémon Yellow                         | 3DS           | 20h / ~27h   |        | JRPG|
+|   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
+|   🎮   | Call of Duty: WWII                    | PS5            |   3h / ~7h     |       | FPS |
+|   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |   2h /  ~12h     |        |JRPG|
+|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |     10h / ~27h    |        |AAVG|
+|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h    |        |AAVG|
+|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
-|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | ~30h   |       |AAVG|
-|   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
-|   ⏳   | Metroid Dread                          | NS            |        |       |MVG|
 |   ⏳   | Disco Elysium                          | PS5           | ~60h   |       |CRPG|
-|   ⏳   | Metroid Prime                          | NS            |        |       |MVG|
-|   ⏳   | Hades                                  | NS            |        |       |Rogue|
-|   ⏳   | Portal                                 | NS            |        |       |PLG|
-|   ⏳   | Diablo 3                               | NS            |        |       |ARPG|
-|   ⏳   | Anno 1800                              | PC            |        |       |SLG|
+|   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
+|   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
+|   ⏳   | Metroid Prime                          | NS            | ~13h   |       |MVG|
+|   ⏳   | Hades                                  | NS            |   ~23h     |       |Rogue|
+|   ⏳   | Portal                                 | NS            |     ~3h  |       |PLG|
+|   ⏳   | Portal 2                                | NS            |     ~8h   |       |PLG|
+|   ⏳   | Mass Effect 2                          | PS5            |  ~24h      |       |SLG|
+|   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
+|   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 
 ## 早年玩的游戏
 
