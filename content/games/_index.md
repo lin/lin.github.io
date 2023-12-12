@@ -7,7 +7,7 @@ type: "page"
 
 ✅  已经通关；🎮 正在进行
 
-| 进展  | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
+| 进展   | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
 |   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11| 4X |
 |   ✅   | Super Mario Odyssey                   | NS             | 45h    | 2020/08| AAVG|
@@ -15,7 +15,7 @@ type: "page"
 |   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
 |   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01| AAVG |
 |   ✅   | Super Mario 3D Land                    | 3DS            | 16h    | 2021/02| 平台 |
-|   ✅   | [Pokémon](./pokemon) Y                              | 3DS           | 30h    | 2021/02| JRPG |
+|   ✅   | [Pokémon](./pokemon) Y                | 3DS           | 30h    | 2021/02| JRPG |
 |   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03| 平台 |
 |   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08| 平台 |
 |   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09| AAVG|
@@ -43,18 +43,18 @@ type: "page"
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
 |   ✅   | _**All 2D Super Mario Games**_        |                |        | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
-|   ✅   | [Uncharted](./uncharted)  4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
+|   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
-|   🎮   | Pokémon Yellow                         | 3DS           | 20h / ~27h   |        | JRPG|
+|   🎮   | [Pokémon Yellow](./pokemon-yellow)     | 3DS           | 23h / ~27h   |        | JRPG|
 |   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
-|   🎮   | Call of Duty: WWII                    | PS5            |   3h / ~7h     |       | FPS |
 |   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |   2h /  ~12h     |        |JRPG|
+|   🎮   | [Call of Duty: WWII](./cod)            | PS5            |   3h / ~7h     |       | FPS |
 |   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |     10h / ~27h    |        |AAVG|
 |   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h    |        |AAVG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
-|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
 |   ⏳   | Disco Elysium                          | PS5           | ~60h   |       |CRPG|
 |   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
 |   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
@@ -65,6 +65,8 @@ type: "page"
 |   ⏳   | Mass Effect 2                          | PS5            |  ~24h      |       |SLG|
 |   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
 |   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
+
+2023年8月16日开始，至今（2023年12月12日）118天，共通关22个游戏，平均5.5天一部游戏
 
 ## 早年玩的游戏
 
@@ -127,7 +129,7 @@ type: "page"
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
 |《荒野行动》                | 2017年  |            |
 
-## 通过的游戏系列
+## 通关的游戏系列
 
 1. ✅ 《塞尔达传说》
 1. ✅ 《超级马力欧》
