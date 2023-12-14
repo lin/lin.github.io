@@ -41,17 +41,16 @@ type: "page"
 |   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|ARPG|
 |   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|平台|
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
-|   ✅   | _**All 2D Super Mario Games**_        |                |        | ||
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
 |   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h   | 2023/12   | JRPG|
+|   🎮   | [Super Mario RPG](./mario-rpg)         | NS            |   2h /  ~12h   |        |JRPG|
 |   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
-|   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |   2h /  ~12h     |        |JRPG|
-|   🎮   | [Call of Duty: WWII](./cod)            | PS5            |   3h / ~7h     |       | FPS |
-|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |     10h / ~27h    |        |AAVG|
-|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h    |        |AAVG|
+|   🎮   | [Call of Duty: WWII](./cod)            | PS5           |   3h / ~7h     |       | FPS |
+|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
+|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
 |   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
@@ -61,12 +60,12 @@ type: "page"
 |   ⏳   | Metroid Prime                          | NS            | ~13h   |       |MVG|
 |   ⏳   | Hades                                  | NS            |   ~23h     |       |Rogue|
 |   ⏳   | Portal                                 | NS            |     ~3h  |       |PLG|
-|   ⏳   | Portal 2                                | NS            |     ~8h   |       |PLG|
+|   ⏳   | Portal 2                               | NS            |     ~8h   |       |PLG|
 |   ⏳   | Mass Effect 2                          | PS5            |  ~24h      |       |SLG|
 |   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
 |   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 
-2023年8月16日拥有 PS5 开始，至今（2023年12月14日）120天，共通关24个游戏，平均5天一部游戏
+2023年8月16日拥有 PS5 开始，至今（2023年12月14日）120天，共通关24个游戏，平均5天一部游戏。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份前半月四部
 
 ## 早年玩的游戏
 
