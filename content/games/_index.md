@@ -41,7 +41,7 @@ type: "page"
 |   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|ARPG|
 |   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|平台|
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
-|   ✅   | _**All 2D Super Mario Games**_        |                |        | 2023/11|平台|
+|   ✅   | _**All 2D Super Mario Games**_        |                |        | ||
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
@@ -133,7 +133,7 @@ type: "page"
 
 1. ✅ 《超级马力欧》
 1. ✅ 《塞尔达传说》
-1. ✅ 《精灵宝可梦》
+1. ✅ 《宝可梦》
 1. ✅ 《侠盗猎车手》
 1. ✅ 《荒野大镖客》
 1. ✅  魂类游戏
