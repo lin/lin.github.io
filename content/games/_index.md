@@ -22,7 +22,7 @@ type: "page"
 |   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12| 平台 |
 |   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06| AAVG|
 |   ✅   | Tetrix Axis                           | 3DS           | 10h     | 2023/07| PLG |
-|   ✅   | Astro's Playroom                       | PS5           | 8h     | 2023/08| 平台 |
+|   ✅   | Astro's Playroom                       | PS5           | 9h     | 2023/08| 平台 |
 |   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08| AAVG|
 |   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09| AAVG|
 |   ✅   | God of War: Ragnarök                   | PS5           | 23h    | 2023/09| AAVG|
@@ -46,7 +46,7 @@ type: "page"
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
-|   🎮   | [Pokémon Yellow](./rgby)               | 3DS           | 27h / ~27h   |        | JRPG|
+|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h   | 2023/12   | JRPG|
 |   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
 |   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |   2h /  ~12h     |        |JRPG|
 |   🎮   | [Call of Duty: WWII](./cod)            | PS5            |   3h / ~7h     |       | FPS |
@@ -66,7 +66,7 @@ type: "page"
 |   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
 |   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 
-2023年8月16日开始，至今（2023年12月12日）118天，共通关22个游戏，平均5.5天一部游戏
+2023年8月16日拥有 PS5 开始，至今（2023年12月14日）120天，共通关24个游戏，平均5天一部游戏
 
 ## 早年玩的游戏
 
