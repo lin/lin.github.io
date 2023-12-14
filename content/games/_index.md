@@ -46,7 +46,7 @@ type: "page"
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
-|   🎮   | [Pokémon Yellow](./pokemon-yellow)     | 3DS           | 23h / ~27h   |        | JRPG|
+|   🎮   | [Pokémon Yellow](./rgby)               | 3DS           | 27h / ~27h   |        | JRPG|
 |   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
 |   🎮   | [Super Mario RPG](./mario-rpg)         | NS             |   2h /  ~12h     |        |JRPG|
 |   🎮   | [Call of Duty: WWII](./cod)            | PS5            |   3h / ~7h     |       | FPS |
@@ -131,12 +131,13 @@ type: "page"
 
 ## 通关的游戏系列
 
-1. ✅ 《塞尔达传说》
 1. ✅ 《超级马力欧》
+1. ✅ 《塞尔达传说》
 1. ✅ 《精灵宝可梦》
-1. ✅ 《动物森友会》
 1. ✅ 《侠盗猎车手》
 1. ✅ 《荒野大镖客》
+1. ✅  魂类游戏
+1. ✅ 《动物森友会》
 1. ✅ 《战神》
 1. ✅ 《最后生还者》
 1. ✅ 《神秘海域》

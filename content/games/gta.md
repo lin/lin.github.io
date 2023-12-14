@@ -3,9 +3,6 @@ title: "GTA"
 date: 2023-12-05
 ---
 
-> \- Lucia, do you know why you are here? \- Bad luck, I guess.
-
-> Love Is A Long Road
 
 | 游戏     | 发售日期         | 销量     | 首支预告片日期   |
 |----------|:---------------:|:--------:|:---------------:|
