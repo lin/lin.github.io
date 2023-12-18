@@ -1,6 +1,5 @@
 ---
 title: "出生前的老爸和老妈（1983-1988）"
-date: 1988-11-20
 isCJKLanguage: true
 draft: true
 ---

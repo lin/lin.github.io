@@ -46,9 +46,9 @@ type: "page"
 |   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
 |   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h   | 2023/12   | JRPG|
-|   🎮   | [Super Mario RPG](./mario-rpg)         | NS            |   2h /  ~12h   |        |JRPG|
-|   🎮   | Red Dead Redemption                    | NS            |  5h /  ~18h     |       | AAVG|
+|   ✅   | Red Dead Redemption                    | NS            |  14.5h  | 2023/12  | AAVG|
 |   🎮   | [Call of Duty: WWII](./cod)            | PS5           |   3h / ~7h     |       | FPS |
+|   🎮   | [Super Mario RPG](./mario-rpg)         | NS            |   2h /  ~12h   |        |JRPG|
 |   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
 |   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
@@ -65,7 +65,7 @@ type: "page"
 |   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
 |   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 
-2023年8月16日拥有 PS5 开始，至今（2023年12月14日）120天，共通关24个游戏，平均5天一部游戏。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份前半月四部
+2023年8月16日拥有 PS5 开始，至今（2023年12月18日）124天，共通关25个游戏，用时386.5小时，平均5天一部游戏，每天3.11小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份前半月四部
 
 ## 早年玩的游戏
 

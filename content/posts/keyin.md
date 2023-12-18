@@ -4,6 +4,8 @@ date: 1998-06-20
 isCJKLanguage: true
 ---
 
+<img src="../img/childhood/gb.jpeg" >
+
 ## 1989年以前
 
 #### 1790年 - 1983年 [闯关东林家](/linjia)
@@ -47,6 +49,8 @@ isCJKLanguage: true
 老爸，二姨夫 张福祥，大姨夫 孙江（1954年 - 2021年4月），三姨夫 杨靖忠
 
 ## 1992年，三周岁
+
+<img src="../img/childhood/1992.jpeg" >
 
 1992年2月29日，从草房搬家到砖房，第一次去砖房，是三姨夫 杨靖忠（约1962年）赶毛驴车把我送回家的，现在的砖房仍有人居住，是当时的邻居张家。这一年是[巴塞罗那奥运会](https://www.bilibili.com/video/BV1pk4y1k7XK/)，也就是射箭点火和梦之队的那届奥运会，和老爸一起看电视，对爸爸讲越位的概念比较深刻。
 
@@ -157,12 +161,6 @@ isCJKLanguage: true
 
 大嫂 郑丽芳，大哥 孙立民
 
-<img src="../img/childhood/2005-yang.jpg" width="600">
-
-三姨家表哥 杨大伟，我自己，二姨家表哥 张龙，大姨家表哥 孙立东，大姨家表哥 孙立民
-
-在2005年5月杨大伟的婚礼上的合影。
-
 #### 1996-08-09 农历生日
 
 <img src="../img/childhood/1996-bday-1.png" height="600">
@@ -253,7 +251,7 @@ isCJKLanguage: true
 
 ## 1998年，九周岁
 
-<img src="../img/childhood/1998.jpeg" width="600">
+<img src="../img/childhood/1998.jpeg">
 
 1998年1月8日，《水浒传》首播，现在还记得趴在小窗上看水浒的情景，同年还有《时间飞船》《玩具之家》《小糊涂神》。1998年，还是印象深刻的世界杯，第一次喝可乐，收集《小虎队球星卡》。
 

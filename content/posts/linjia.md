@@ -1,6 +1,5 @@
 ---
 title: "闯关东林家历史（1790-1983）"
-date: 1983-01-01
 isCJKLanguage: true
 ---
 

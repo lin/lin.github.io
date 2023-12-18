@@ -3,7 +3,7 @@ title: "About"
 type: "page"
 ---
 
-> [进展](/weeks) 不比较不评价，煎熬不逃避不贪心。虚荣即弱智，感性即低能。
+> 煎熬换 [进展](/weeks)，虚荣即弱智，不比较，不评价，不逃避，不贪心
 
 [A founder](../edu). [A thinker](../life). A would-be [scientist](../ai).
 
