@@ -5,7 +5,7 @@ type: "page"
 
 > 煎熬换 [进展](/weeks)，虚荣即弱智，不比较，不评价，不逃避，不贪心
 
-[A founder](../edu). [A thinker](../life). A would-be [scientist](../ai).
+[A founder](../edu). [A thinker](../life). A would-be [scientist](../ai). Solving the problem of solving.
 
 [A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books).
 
