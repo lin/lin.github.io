@@ -1,4 +1,4 @@
-## 参考书籍和网站
+## 主要参考书籍和网站
 
 ### 第五章：
 
@@ -10,4 +10,3 @@ _本章中有许多作者从个人经验中总结的结论_
 
 1. Raph Koster:《Theory of Fun for Game Design》(2013年10周年版)
 1. 王亚晖：《游戏为什么这么好玩：游戏设计的奥秘》（第1版）
-1. Jesper Juul: 《The art of failure : an essay on the pain of playing video games》
