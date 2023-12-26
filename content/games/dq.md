@@ -13,13 +13,13 @@
 1. DQ 2
 1. DQ 7, remake
 1. DQ 8, remake
-1. DQ 10
-1. DQ 11
+1. DQ 10, JPN
+1. DQ 11, JPN
 
 ## NS
 
 1. DQ 1
 1. DQ 2
 1. DQ 3
-1. DQ 10
-1. DQ 11
+1. DQ 10, JPN
+1. DQ 11 S

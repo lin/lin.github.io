@@ -1,8 +1,8 @@
 ## 周记录
 
-- 08-08 Work Like Hell
-- 08-10 Read & Write
-- 10-12 Relax
+- 08-08 Ship Like a Dog
+- 08-10 Read & Write & Grow
+- 10-12 Relax & Fun & Expand
 
 ### 2023年
 

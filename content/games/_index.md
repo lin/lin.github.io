@@ -49,8 +49,8 @@ type: "page"
 |   ✅   | Red Dead Redemption                    | NS            |  14.5h  | 2023/12  | AAVG|
 |   🎮   | [Call of Duty: WWII](./cod)            | PS5           |   3h / ~7h     |       | FPS |
 |   🎮   | [Super Mario RPG](./mario-rpg)         | NS            |   2h /  ~12h   |        |JRPG|
-|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
 |   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
+|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
 |   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|

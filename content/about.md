@@ -9,7 +9,7 @@ type: "page"
 
 [A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books).
 
-A Logical Phenomenon. A Mathematical Object. A Curious Mind. 
+A Logical Phenomenon. A Mathematical Object. A Curious Mind.
 
 - [1989年 - 1998年 - 克音童年](../keyin)
 
