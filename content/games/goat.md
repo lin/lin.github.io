@@ -69,6 +69,7 @@ draft: true
 1. GQ 2023年排名：[https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time](https://www.ign.com/playlist/igneditorial/lists/gqs-top-100-video-games-of-all-time)
 1. GameRankings.com 2019年12月最终分数：[https://gr.blade.sk/](https://gr.blade.sk/)
 1. 综合榜单Acclaimed Video Games 2023年11月排名：[https://www.acclaimedvideogames.com/games/](https://www.acclaimedvideogames.com/games/)
+1. Game of the Year Award Tracker, [https://goty.gamefa.com/]
 1. 综合榜单数学算法排名：[https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time](https://www.ign.com/playlist/Zehai/lists/the-mathematically-derived-500-best-video-games-of-all-time)
 1. D.I.C.E. [https://en.wikipedia.org/wiki/D.I.C.E._Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/D.I.C.E._Award_for_Game_of_the_Year)
 1. The Game Awards [https://en.wikipedia.org/wiki/The_Game_Award_for_Game_of_the_Year](https://en.wikipedia.org/wiki/The_Game_Award_for_Game_of_the_Year)
@@ -127,7 +128,6 @@ draft: true
 1. 使命召唤（年货）
 1. 侠盗猎车手
 1. FIFA（年货）
-、
 
 ### 年度最佳游戏提名游戏类型
 

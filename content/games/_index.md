@@ -21,7 +21,7 @@ type: "page"
 |   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09| AAVG|
 |   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12| 平台 |
 |   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06| AAVG|
-|   ✅   | Tetrix Axis                           | 3DS           | 10h     | 2023/07| PLG |
+|   ✅   | Tetris Axis                           | 3DS           | 10h     | 2023/07| PLG |
 |   ✅   | Astro's Playroom                       | PS5           | 9h     | 2023/08| 平台 |
 |   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08| AAVG|
 |   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09| AAVG|
@@ -47,27 +47,27 @@ type: "page"
 |   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
 |   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h   | 2023/12   | JRPG|
 |   ✅   | Red Dead Redemption                    | NS            |  14.5h  | 2023/12  | AAVG|
-|   🎮   | [Call of Duty: WWII](./cod)            | PS5           |   3h / ~7h     |       | FPS |
-|   🎮   | [Super Mario RPG](./mario-rpg)         | NS            |   2h /  ~12h   |        |JRPG|
-|   ⏳   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
-|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
-|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h    |      |AAVG|
-|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h   |       |CRPG|
-|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
-|   ⏳   | Disco Elysium                          | PS5           | ~60h   |       |CRPG|
-|   ⏳   | Final Fantasy VII                      | PS5           | ~33h   |       |JRPG|
-|   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
-|   ⏳   | Metroid Prime                          | NS            | ~13h   |       |MVG|
-|   ⏳   | Hades                                  | NS            |   ~23h     |       |Rogue|
-|   ⏳   | Portal                                 | NS            |     ~3h  |       |PLG|
-|   ⏳   | Portal 2                               | NS            |     ~8h   |       |PLG|
-|   ⏳   | Mass Effect 2                          | PS5            |  ~24h      |       |SLG|
+|   ✅   | [Call of Duty](./cod): WWII            | PS5           |   8h     |  2023/12     | FPS |
+|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h   |  2023/12    |JRPG|
+|   ✅   | Portal                                 | NS            | 4h      | 2024/01      |PLG|
+|   🎮   | Portal 2                               | NS            | ~8h      |       |PLG|
+|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
+|   🎮   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
+|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
 |   ⏳   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
+|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
+|   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
+|   ⏳   | Metroid Prime                          | NS            | ~13h      |       |MVG|
+|   ⏳   | Final Fantasy VII                      | PS5           | ~33h     |       |JRPG|
+|   ⏳   | Disco Elysium                          | PS5           | ~60h     |       |CRPG|
+|   ⏳   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
+|   ⏳   | Hades                                  | NS            |   ~23h     |       |Rogue|
+|   ⏳   | Mass Effect 2                          | PS5           |  ~24h      |       |SLG|
 |   ⏳   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 
-2023年8月16日拥有 PS5 开始，至今（2023年12月18日）124天，共通关25个游戏，用时386.5小时，平均5天一部游戏，每天3.11小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份前半月四部
+2023年8月16日拥有 PS5 开始，至今（2023年12月30日）136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。
 
-## 早年玩的游戏
+## 小时候和深度体验的游戏
 
 我记忆里得最早的游戏就是《超级玛丽》，1994年或者1995年左右，还在幼儿班的我，可能是小霸王游戏非常火，在小卖店可以五毛钱玩半个小时，我是没有机会尝试的，因为家里的经济条件有限，倒不是父母不让我玩，只能看别的大一点的孩子玩。小学二年级（1997年），我和同学一起去游戏厅观玩，也就是街机店玩，但不记得街机店的游戏有哪些了，可能也就是看一个热闹，被老师抓到，老师让我面壁了一节课，当时只是觉得这种犯错不是很严重，没意识到老师这么做的僵化。
 
@@ -127,6 +127,8 @@ type: "page"
 |《Ballz Break》            | 2017年   | 体会了很多小游戏 |
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
 |《荒野行动》                | 2017年  |            |
+|《Cookie Clicker》         | 2023年12月  |            |
+|《Suika Game》             | 2023年12月  |        |
 
 ## 通关的游戏系列
 
@@ -143,6 +145,7 @@ type: "page"
 1. ✅ 《巫师》
 1. ✅ 《文明》
 1. ✅ 《GT 赛车》
+1. ✅ 《使命召唤》
 1. 《密特罗德》
 1. 《勇者斗恶龙》
 1. 《刺客信条》
@@ -152,5 +155,4 @@ type: "page"
 1. 《暗黑破坏神》
 1. 《生化奇兵》
 1. 《合金装备》
-1. 《使命召唤》
 1. 《上古卷轴》
