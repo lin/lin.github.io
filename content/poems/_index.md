@@ -8,6 +8,7 @@ isCJKLanguage: true
 - 2003: [《卜算子》](./busuanzi)
 - 2004: [《除夕夜》](./chuxi)
 - 2004: [《无题》](./untitled04)
+- [其他诗作](./others)
 
 #### 高中时代
 
@@ -27,3 +28,4 @@ isCJKLanguage: true
 - 2008: [《醉梦呓》](./zuimeng)
 - 2009: [《八韵诗》](./bayun)
 - 2010: [《双心令》](./heart)
+
