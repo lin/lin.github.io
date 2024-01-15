@@ -3,7 +3,7 @@ title: "About"
 type: "page"
 ---
 
-> 煎熬换 [进展](/weeks)，虚荣即弱智，不比较，不评价，不逃避，不贪心
+> 煎熬换进展，虚荣即弱智
 
 [A founder](../edu). [A thinker](../life). A would-be [scientist](../ai). Solving the problem of solving.
 
