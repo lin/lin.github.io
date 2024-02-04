@@ -52,11 +52,12 @@ type: "page"
 |   ✅   | Portal                                 | NS            | 4h      | 2024/01      |PLG|
 |   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
 |   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
-|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
-|   🎮   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
-|   🎮   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
+|   🎮   | Diablo 3                               | NS            |   3h / ~18h    |       |ARPG|
+|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
+|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
+|   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
-<!-- |   🗄   | Diablo 3                               | NS            |    ~18h    |       |ARPG|
+<!-- 
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
 |   🗄   | Hades                                  | NS            |   ~23h     |       |Rogue|
 |   🗄   | Disco Elysium                          | PS5           | ~60h     |       |CRPG|

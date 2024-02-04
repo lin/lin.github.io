@@ -2,8 +2,8 @@
 title: "《实用设计原则》"
 isCJKLanguage: true
 ---
-
-## Good Enough Design
+ 
+## Good Enough Design with Tailwind CSS
 
 [1. 目的](./1)
 

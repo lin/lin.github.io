@@ -3,9 +3,9 @@ title: "About"
 type: "page"
 ---
 
-> 煎熬换进展，虚荣即弱智
+> 煎熬快进展，虚荣即弱智
 
-[A founder](../edu). [A thinker](../life). A would-be [scientist](../ai). Solving the problem of solving.
+[A founder](../edu). [A thinker](../life). A would-be [scientist](../ai) who would solve the problem of solving.
 
 [A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books). 快吸收，快榨干. 
 
