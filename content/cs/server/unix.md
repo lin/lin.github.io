@@ -28,3 +28,13 @@
 1. ssh / scp
 1. curl / wget
 1. history / clear
+
+### History
+
+1. Unix, 1970s
+1. Linux, Unix-like, 1991
+1. Debian, a linux distribution, 1993
+1. Ubuntu, based on debian, 2004
+1. BSD, based on unix, 1978
+1. FreeBSD, based on BSD, 1993
+1. Darwin, based on bsd, 2000
