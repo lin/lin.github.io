@@ -21,3 +21,9 @@ type: "page"
 1. 追求进展
 1. 出世科学
 
+### 规律
+
+1. 08a - 08p, Core Work
+1. 08p - 10p, Read & Write
+1. 10p - 12p, Indulge
+
