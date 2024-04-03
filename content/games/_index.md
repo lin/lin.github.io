@@ -49,14 +49,15 @@ type: "page"
 |   ✅   | Red Dead Redemption                    | NS            |  14.5h  | 2023/12  | AAVG|
 |   ✅   | [Call of Duty](./cod): WWII            | PS5           |   8h     |  2023/12     | FPS |
 |   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h   |  2023/12    |JRPG|
-|   ✅   | Portal                                 | NS            | 4h      | 2024/01      |PLG|
+|   ✅   | Portal                                 | NS            |  4h      | 2024/01      |PLG|
 |   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
-|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
-|   🎮   | Diablo 3                               | NS            |   3h / ~18h    |       |ARPG|
-|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
+|   🎮   | [Resident Evil](./re) 4                | PS5           |  1h / ~16h      |         |AAVG|
+|   ⏳  | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
+|   ⏳   | Diablo 3                               | NS            |  3h / ~18h    |       |ARPG|
 |   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
 |   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
+|   ⏳   | Palworld                               | PS5           | ~35h     |       |CRPG|
 <!-- 
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
 |   🗄   | Hades                                  | NS            |   ~23h     |       |Rogue|
@@ -66,7 +67,7 @@ type: "page"
 |   🗄   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 |   🗄   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG| -->
 
-2023年8月16日拥有 PS5 开始，至今（2023年12月30日）136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。剩余游戏345小时，大约需要半年时间完成。
+2023年8月16日拥有 PS5 开始，至今2023年12月30日136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。剩余游戏345小时，大约需要半年时间完成。
 
 ## 其他曾深度体验过的游戏
 
