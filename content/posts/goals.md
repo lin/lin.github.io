@@ -13,11 +13,11 @@ type: "page"
 
 ## Entertainment
 
-|Type                       | Goal            | Due |
-|---------------------------|-----------------|--------|
-| [Games](/games)           | RE 4           | 2024年3月底 |
-| Leetcode                  | Guardian        | 2024年底 |
-| CodeForces                | Expert          | 2024年底 |
-| Kaggle                    | Start           | 2024年底 |
-| [Books & Movies](/books)  |            |  |
-| Travel                    |            |  |
+|Type                       | Goal            | Due        |
+|---------------------------|-----------------|------------|
+| [Games](/games)           | RE 4            | 2024年3月底 |
+| Leetcode                  | Guardian        | 2024年底    |
+| CodeForces                | Expert          | 2024年底    |
+| Kaggle                    | Start           | 2024年底    |
+| [Books & Movies](/books)  |                 |             |
+| Travel                    |                 |             |
