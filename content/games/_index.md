@@ -51,13 +51,12 @@ type: "page"
 |   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h   |  2023/12    |JRPG|
 |   ✅   | Portal                                 | NS            |  4h      | 2024/01      |PLG|
 |   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
-|   🎮   | [Resident Evil](./re) 4                | PS5           |  1h / ~16h      |         |AAVG|
-|   ⏳  | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
-|   ⏳   | Diablo 3                               | NS            |  3h / ~18h    |       |ARPG|
+|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
+|   🎮   | Diablo 3                               | NS            |   3h / ~18h    |       |ARPG|
+|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
 |   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
 |   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
-|   ⏳   | Palworld                               | PS5           | ~35h     |       |CRPG|
 <!-- 
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
 |   🗄   | Hades                                  | NS            |   ~23h     |       |Rogue|

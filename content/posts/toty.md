@@ -28,7 +28,7 @@
 | 2010 | iPad                                       |    
 | 2011 | 21                                         |    
 | 2012 | Higgs Boson                                |   
-| 2013 | Breaking Bad                               |    
+| 2013 | Breaking Bad / GTA V                       |    
 | 2014 | Game of Thrones / MH370                    |            
 | 2015 | CRISPR                                     |   
 | 2016 | Gravitational Waves / US Election          |   
