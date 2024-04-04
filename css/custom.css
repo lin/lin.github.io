@@ -86,3 +86,8 @@ blockquote p {
     content: ">";
     padding: 0.3rem;
   }
+
+figcaption {
+    color: #aaa;
+    font-size: 0.75em;
+}
