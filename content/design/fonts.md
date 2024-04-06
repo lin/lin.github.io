@@ -108,6 +108,7 @@
 1. Suez One
 <img style="max-height: 100px;" src='../imgs/font-suez-one.png'>
 1. Phosphate Solid
+<img style="max-height: 100px;" src='../imgs/font-phosphate-solid.png'>
 1. Intro
 <img style="max-height: 100px;" src='../imgs/font-intro.png'>
 1. Montserrat
@@ -119,8 +120,11 @@
 [字由按热度排序](https://www.hellofont.cn/font-list)的字体
 
 - Dela Gothic One （支持中文）
+<img style="max-height: 100px;" src='../imgs/font-dela-gothic-one.png'>
 - 问藏书房（典雅）
+<img style="max-height: 100px;" src='../imgs/font-wencang.png'>
 - Arsenica
+<img style="max-height: 100px;" src='../imgs/font-arsenica.png'>
 - 点字刻宋（需授权）
 
 <img style="max-height: 100px;" src='../imgs/font-kesong.png'>
