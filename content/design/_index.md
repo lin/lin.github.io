@@ -3,7 +3,9 @@ title: "《实用设计原则》"
 isCJKLanguage: true
 ---
  
-## Good Enough Design with Tailwind CSS
+## Good Enough Design
+
+> 不要精益求精，得体够用就行
 
 [1. 目的](./goals)
 
