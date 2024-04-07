@@ -1,13 +1,8 @@
 ## 第三章：颜色
 
-
-<img height='500px' src='../imgs/bg-text-1.png'>
-
-<img height='500px' src='../imgs/bg-text-2.png'>
+<img width='100%' src='../imgs/text-bg.svg'>
 
 颜色要克制，尽可能要用一些枯燥却实用的颜色，例如，使用小字体低饱和度的颜色，让信息开起来更舒适，而不是为了使用颜色而使用颜色。
-
-<img height='300px' src='../imgs/text-blue-red.png'>
 
 ## 3.1 常见颜色
 

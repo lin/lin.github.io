@@ -2,19 +2,19 @@
 
 ## 个人喜好
 
-| 情境               | 可商用字体                      | 预览       |  
-|-------------------|---------------------------------|:--------------:|
-| 标题英文           | Suez One                        |   <img style="width: 220px;" src='../imgs/font-suez-one.png'>          |
-| 正文英文           | Open Sans                       |     <img style="width: 220px;" src='../imgs/font-open-sans.png'>          |
+| 情境               | 可商用字体                            | 预览                                                           |  
+|-------------------|---------------------------------------|:------------------------------------------------------------------:|
+| 标题英文           | Suez One                              |   <img style="width: 220px;" src='../imgs/font-suez-one.png'>          |
+| 正文英文           | Open Sans                             |     <img style="width: 220px;" src='../imgs/font-open-sans.png'>          |
 | 个性标题英文       | Montserrat Black / Dela Gothic One    |   <img style="width: 220px;" src='../imgs/font-dela-gothic-one.png'>          |  
 | 标题中文           | 苹方 / Noto Sans SC / 思源黑体         |    <img style="width: 220px;" src='../imgs/font-siyuan-hei.png'>          |
-| 正文中文           | 苹方 / Noto Sans SC             |     <img style="width: 220px;" src='../imgs/font-pingfang.png'>        |
-| 个性标题中文       | Dela Gothic One (标小智无界黑)   |       <img style="width: 220px;" src='../imgs/font-wujiehei.png'> |
-| 全大写英文大写      | Montserrat Black               |   <img style="width: 220px;" src='../imgs/font-montserrat-bold.png'>      |
+| 正文中文           | 苹方 / Noto Sans SC                    |     <img style="width: 220px;" src='../imgs/font-pingfang.png'>        |
+| 个性标题中文       | Dela Gothic One (标小智无界黑)          |       <img style="width: 220px;" src='../imgs/font-wujiehei.png'> |
+| 全大写英文大写      | Montserrat Black                       |   <img style="width: 220px;" src='../imgs/font-montserrat-bold.png'>      |
 | 全大写英文小字      | Montserrat Black / Poppins Bold        |      <img style="width: 220px;" src='../imgs/font-poppins-bold.png'>        |
 | 数字（粗大）       |  Montserrat Black / League Spartan      |   <img style="width: 220px;" src='../imgs/font-league-spartan-bold.png'>     |
-| 数字（细长）       |  Barlow Condensed              |   <img style="width: 220px;" src='../imgs/font-barlow-condensed.png'>     |
-| 斜体英文           |  Lato                          |   <img style="width: 220px;" src='../imgs/font-lato-italic.png'>      |
+| 数字（细长）       |  Barlow Condensed                       |   <img style="width: 220px;" src='../imgs/font-barlow-condensed.png'>     |
+| 斜体英文           |  Lato                                  |   <img style="width: 220px;" src='../imgs/font-lato-italic.png'>      |
 
 #### 正文：Sans Serif
 
