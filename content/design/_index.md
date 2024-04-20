@@ -1,5 +1,5 @@
 ---
-title: "《实用设计原则》"
+title: "《克制的设计》"
 isCJKLanguage: true
 ---
  
@@ -7,11 +7,17 @@ isCJKLanguage: true
 
 > 不要精益求精，得体够用就行
 
+> Move fast and good enough.
+
 [1. 目的](./goals)
 
 [2. 排版](./space)
 
 Layout
+
+Start with less until it requires more.
+
+Start with big until it requires small.
 
 1. 易于归类
 1. 易于区分
@@ -19,6 +25,10 @@ Layout
 1. 大即是好
 1. 少即是多
 1. 间距
+1. 提供冗余设计信息
+1. 减少默认信息
+1. 既要冗余，又要一石二鸟，又要默认省去
+1. 不需要过分的注意细节
 
 [3. 颜色](./colors)
 
@@ -36,12 +46,15 @@ Fonts
 
 Decor
 
+Visual Guidance
+
 1. 圆角矩形
 1. 一侧border
 1. 低透明度背景
 1. flat design
 1. 阴影，空间感
 1. 插画，3d图形
+1. Grid outline
 
 <!-- [6. 平衡](./balance)
 
