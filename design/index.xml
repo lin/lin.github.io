@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《实用设计原则》 on Yingkui</title><link>https://yingkui.com/design/</link><description>Recent content in 《实用设计原则》 on Yingkui</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/design/big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/big/</guid><description>大即是好 大不仅是突出，也是缩减，是设计者对信息处理之后的体现，是帮助使用者去除烦恼的一个智力处理和操作
-大数字 左上要突出</description></item><item><title/><link>https://yingkui.com/design/colors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/colors/</guid><description>第三章：颜色 颜色要克制，尽可能要用一些枯燥却实用的颜色，例如，使用小字体低饱和度的颜色，让信息开起来更舒适，而不是为了使用颜色而使用颜色。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《克制的设计》 on Yingkui</title><link>https://yingkui.com/design/</link><description>Recent content in 《克制的设计》 on Yingkui</description><generator>Hugo 0.125.2</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/design/big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/big/</guid><description>大即是好 大不仅是突出，也是缩减，是设计者对信息处理之后的体现，是帮助使用者去除烦恼的一个智力处理和操作
+大数字 能大的千万别小
+能推断的就不要展示
+左上要突出 更大量的留白，越关键越留白 尽可能的给出留白
+大的留白，有时候，需要更小的字体，字体并不是越大越好，反而是多使用1rem的字体更合理
+总是有大的字体，让人觉得都是重点，有很大的压迫感，解析上的压力更多，让人抓狂
+快速检索的目录，才不要大留白 狭小的 padding 空间，给人一种不出众的感觉，不会让人提起重视的态度和意愿，
+Invest right amount money.
+The world is utterly competitive, and the attention of the users are very scarce, so you have limited time to catch their attention, that means you have to invest wisely.
+Design a page is like write a business plan.</description></item><item><title/><link>https://yingkui.com/design/colors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/colors/</guid><description>第三章：颜色 颜色要克制，尽可能用枯燥却实用的颜色，例如，使用小字体低饱和度的颜色，让信息看起来更舒适。
+而且本书中的思维，并不是要研究颜色理论，以及不同的颜色带来的复杂的情绪变化，而是提供几个不那么差的选项，以供选择参考。
+对于一个复杂的系统，你并没有那么多的选择
+多用蓝色，210 次选用橙黄色，绿蓝色 保留绿色，给人安全 保留黄色，作为抓取注意力的颜色 保留红色，进行危险动作提示，或是强烈的冲击 保留金色，给人以高级感
+蓝色，墨绿方向（青色hue），紫色方向
 3.1 常见颜色 3.1.1 白色背景 3.1.1.1 黑灰色 最为保险和实用的情景，
 3.1.1.2 红色 3.1.1.3 蓝色 3.1.1.4 橙色（红色的延伸） 3.1.1.5 绿色 3.1.1.4 金色 3.1.1.6 紫色（红色 + 蓝色） 3.1.1.4 褐色（黄色的延伸） 3.1.2 黑色背景 3.1.2.1 白色 3.1.2.2 金色 3.1.2.2 绿色 3.1.3 黄色背景 3.1.3.4 黑色 经典常见的配色搭配，黄色明亮，黑色清晰，就是在白色的基础上，增加了一份乐趣
 3.2 配色 3.2.1 背景和文字 黄色和褐色
@@ -18,8 +30,13 @@ Open Sans Source Sans / 思源黑体 苹方 Lato Noto Sans Roboto Montserrat Int
 对于易用性，就是便于使用者识别，这应该是本文着重强调的部分。可以千篇一律的采用同样规定的字体和配色，都可以实现易用性。易用性体现在对于一类事物的迅速识别，体现在对重点信号的突出等等。例如，刚才举例的婚礼日期，做放大处理，让人一目了然就是一个合理的设计。一般来说，这属于产品设计的范畴，如何简化流程，降低使用者的解析计算量。
 对于娱乐性，就是对于设计要素的选择，要从大量可选项中筛选出精致的那一款，同时还要有一定的创新，给人新鲜感。例如，对于婚期日期的字体选择什么样的字体，字体的颜色等等。娱乐性，在本文里，更多体现的是一种用心的专业性，而不是为了别出心裁，本文后面将提供一些保险的设计元素选择。不为了创新而创新，而只是提供一个足够优质的设计。
 对于可执行性，就是设计师实现一款设计所用的时间。例如，扁平化设计，相对于拟物化设计，更加容易实现和设计。
+而这里的设计，并不是为了凸显出特色，而刻意的创新，甚至是追求完美。克制的设计，就是可以更好，但是选择不做，把更多的精力放在效率和提供其他的产品和服务上，而克制的设计又不是不做，只不过有所节制，不在更多的细节上羁绊太多。不是要品牌的特色，而是要克制的足够好。
 1.3 追求简洁的KISS原则 KISS, keep it simple stupid, 也就是 Less is more 的原则。应该是这种要传递信息设计的最重要原则。
-简洁有一系列的好处，简洁能够逼迫设计者去思考什么才是更重要的信息（例如，婚礼的日期），简洁使得用户更容易识别和领会（例如，对求职者有什么要求），简洁能够让重要的功能更加突出易用（例如，下一个地铁还有多久能到），简洁带来的放松和成就感，也是一种娱乐体验（例如，扫码支付），简洁也有利于设计师更快的进行设计。</description></item><item><title/><link>https://yingkui.com/design/grid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/grid/</guid><description>Grid When to use grid Always use flex first. Grid of options. Grid of items / products. Will change cols in different screen size.</description></item><item><title/><link>https://yingkui.com/design/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/icons/</guid><description/></item><item><title/><link>https://yingkui.com/design/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/less/</guid><description>少即是多 克制贪婪和自我限制
+简洁有一系列的好处，简洁能够逼迫设计者去思考什么才是更重要的信息（例如，婚礼的日期），简洁使得用户更容易识别和领会（例如，对求职者有什么要求），简洁能够让重要的功能更加突出易用（例如，下一个地铁还有多久能到），简洁带来的放松和成就感，也是一种娱乐体验（例如，扫码支付），简洁也有利于设计师更快的进行设计。
+平衡，如果这里介绍的技巧过于复杂，那么说明生产的成本就过高，如果不介绍很多想法，那么设计的能力就不会提高</description></item><item><title/><link>https://yingkui.com/design/grid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/grid/</guid><description>Grid When to use grid Always use flex first. Grid of options. Grid of items / products. Will change cols in different screen size.</description></item><item><title/><link>https://yingkui.com/design/hsv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/hsv/</guid><description>HSV Hue For RGB, one is 0 and another is 255.
+For HSL, S is 100% and L is 50%.
+0 =&amp;gt; Red 40 =&amp;gt; Orange 50 =&amp;gt; Gold 60 =&amp;gt; Yellow 75 =&amp;gt; Lime 120 =&amp;gt; Green 170 =&amp;gt; Turquoise 180 =&amp;gt; Cyan 195 =&amp;gt; Deep Sky Blue 210 =&amp;gt; Azure 240 =&amp;gt; Blue 285 =&amp;gt; Purple 300 =&amp;gt; Magenta 330 =&amp;gt; Pink #1abc9c
+HSV def hsv_to_rgb(rgb, s, v): return [(1 - (1 - rgb[i]) * s) * v for i in range(3)] def rgb_to_hsv(rgb): mn, md, mx = sorted(rgb) # one of the r g b is 1 at full saturation and maximum value v = mx # one of the r g b is 0 at full saturation and maximum value s = mx / (mx - mn) # (0, 1, alpha) # now blending 1 and alpha gives you hue alpha = (md - mn) / (mx - mn)</description></item><item><title/><link>https://yingkui.com/design/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/icons/</guid><description/></item><item><title/><link>https://yingkui.com/design/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/less/</guid><description>少即是多 克制贪婪和自我限制
 Good enough is better than being perfect, speed of execution is more important than endless perfection.
 不要冗余的信息 能不要标签，就不要标签。用户默认知道的，就不要展示。原因主要在于，重复使用的情况下，使用者很容易知道标签的含义，而无需标签的辅助，从而标签成了需要区分和剔除的信息，增加了解析负担，而标签只是在明确信号，和区分一些近距离的信号
 甚至应该从手机界面开始设计，束缚自己的选择，克制自己的完美或者画蛇添足的冲动，也会减少非必要信息过分的占比
@@ -31,8 +48,16 @@ Teen boy reading math textbook under a tree by Randolph Caldecott
 Design a sticker, cartoon character style, Tech genius teenage girl, Still frame from documentary film by Dziga Vertov</description></item><item><title/><link>https://yingkui.com/design/space/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/space/</guid><description>第二章：排版 从功能性上来说，设计的第一要务应该是快速的传递信息，有些设计之所以不好看，是从工程学的角度来看的，也就是说AI来识别一个设计作品，它的能效也会很高。
 这里讨论的设计，并不是为了追求艺术美的设计，而是日常生活中，实用的设计技巧和理念。
 而且把设计局限在了有关传递信息的平面设计，例如，海报设计，文章排版设计，网页设计，宣传文稿设计，信号牌匾设计，产品包装设计等。
-2.1 突出重点 2.2 易于归类 Source: Canva - Peach and Mint Fashion Sales/Product Trifold Brochure 同类的信息，
-样式上保持一致 距离上，较其他的类别信息，更为接近 颜色/字体上，也尽可能接近 Source: Canva - Peach and Mint Fashion Sales/Product Trifold Brochure 2.3 易于区分 强调，Emphasize 高对比度 更大的字体 饱和度高的颜色 弱化，De-emphasize 饱和度低的颜色 更小的字体 阴影区，意味着弱价值 结合 小标题：鲜艳的颜色 + 更小的字体 + 大写 2.4 尽可能多留白 更多的留白，意味着解析的轻松，减少解析带来的压迫感，</description></item><item><title/><link>https://yingkui.com/design/style/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/style/</guid><description>我的设计风格 特色 大字，淡 清凉，蓝色 Icons Gamer Life Icon Pack Evericons</description></item><item><title/><link>https://yingkui.com/design/tailwind/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/tailwind/</guid><description>Tailwind ./bin/bundle add tailwindcss-rails ./bin/rails tailwindcss:install bin/dev class names space-x-1 p, m, w, h, size font: family, weight, text: size, align, color tracking: letter spacing rounded: radius corner divide: divider border styling</description></item><item><title/><link>https://yingkui.com/design/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/workflow/</guid><description>Workflow Define Stage and Don&amp;rsquo;t Rush.
+2.1 突出重点，降低解析成本 因为好用，所以好看
+反复需要问的就是，必要性有多强，能省则省，重要的疯狂投入资源，不重要的能省就省
+用户的注意力就是有限的资源，而设计就是在优化投资，提高投资回报率，加注减码
+有必要，但是多有必要？
+分类设计，宏观设计，区块化，慢慢细节
+类别信息, 50% sure what you are talking about. Hinted enough. 总结性的特点, 100% not sure that you are talking about. Easy to scan. Unguessable. 进一步展开的文字, 50% not sure whether it worth to be known furthur. 形象化的视觉辅助, easy to understand but expensive to make. 有时必要，多数时间不必要的信息 补白的平衡要素，点缀要素, for aesthetic purpose only 突出特色的点缀之笔, 为什么要用文字？
+pyramid of importance
+因为文字传递的信息量更大更精准，图片传递的信息更加容易分类，还有一个重要的原因就是，文字的制作更加低廉。
+如果没有合理的区分，那么就会让各种元素增加用户的心智负担，让人迷惑不堪。
+emphasize the important. add more design techniques to make it easier to standout.</description></item><item><title/><link>https://yingkui.com/design/style/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/style/</guid><description>我的设计风格 特色 大字，淡 清凉，蓝色 Icons Gamer Life Icon Pack Evericons</description></item><item><title/><link>https://yingkui.com/design/tailwind/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/tailwind/</guid><description>Tailwind ./bin/bundle add tailwindcss-rails ./bin/rails tailwindcss:install bin/dev class names space-x-1 p, m, w, h, size font: family, weight, text: size, align, color tracking: letter spacing rounded: radius corner divide: divider border styling</description></item><item><title/><link>https://yingkui.com/design/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/workflow/</guid><description>Workflow Define Stage and Don&amp;rsquo;t Rush.
 Endure and restrained
 list information order classify information Extraction Structure / Order Convenient Engineer first, art second 1. Start with Grayscale color design Design as if you only have ten minutes.
 Design as if you have two hours.
