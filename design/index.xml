@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《克制的设计》 on Yingkui</title><link>https://yingkui.com/design/</link><description>Recent content in 《克制的设计》 on Yingkui</description><generator>Hugo 0.125.2</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/design/big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/big/</guid><description>大即是好 大不仅是突出，也是缩减，是设计者对信息处理之后的体现，是帮助使用者去除烦恼的一个智力处理和操作
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《克制的设计》 on Yingkui</title><link>https://yingkui.com/design/</link><description>Recent content in 《克制的设计》 on Yingkui</description><generator>Hugo 0.125.2</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/design/allocation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/allocation/</guid><description>资源分配 设计并不是一种美学上的感觉，而是理性上的分析和资源的分配。
+需要问的问题也不是好不好看，而是容易不容易捕捉到关键信息。
+注意力的逐步吸引
+3秒内，建立兴趣 一分钟内，选择进一步了解 三分钟内，选择尝试产品 分析受众心理
+最应该传递的信息
+哪些是最重要的信息
+哪些是用户最想得到的信息
+哪些功能更加的常用
+哪些信息是辅助的支撑用的，是有必要存在，但又不应该喧宾夺主的。
+哪些信息可以容易的推理出来，严谨可以，但是必要性不大。
+$$ a_n = n \cdot 2^n, \text {what is } S_n? $$
+信息的强调 信息的弱化 信息的冗余确认 信息的显然指向 偶尔有用的必要信息</description></item><item><title/><link>https://yingkui.com/design/big/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/big/</guid><description>大即是好 大不仅是突出，也是缩减，是设计者对信息处理之后的体现，是帮助使用者去除烦恼的一个智力处理和操作
 大数字 能大的千万别小
 能推断的就不要展示
 左上要突出 更大量的留白，越关键越留白 尽可能的给出留白
@@ -12,32 +23,34 @@ Design a page is like write a business plan.</description></item><item><title/><
 对于一个复杂的系统，你并没有那么多的选择
 多用蓝色，210 次选用橙黄色，绿蓝色 保留绿色，给人安全 保留黄色，作为抓取注意力的颜色 保留红色，进行危险动作提示，或是强烈的冲击 保留金色，给人以高级感
 蓝色，墨绿方向（青色hue），紫色方向
+克制自己使用灰色的shades开始，或者克制自己只用蓝色（H值在180 - 240），而调整SL或者SV值
 3.1 常见颜色 3.1.1 白色背景 3.1.1.1 黑灰色 最为保险和实用的情景，
 3.1.1.2 红色 3.1.1.3 蓝色 3.1.1.4 橙色（红色的延伸） 3.1.1.5 绿色 3.1.1.4 金色 3.1.1.6 紫色（红色 + 蓝色） 3.1.1.4 褐色（黄色的延伸） 3.1.2 黑色背景 3.1.2.1 白色 3.1.2.2 金色 3.1.2.2 绿色 3.1.3 黄色背景 3.1.3.4 黑色 经典常见的配色搭配，黄色明亮，黑色清晰，就是在白色的基础上，增加了一份乐趣
 3.2 配色 3.2.1 背景和文字 黄色和褐色
 3.2.1 背景色和边框色 3.3 Gray 灰色（#xx）是最实用的颜色，甚至应该尝试着都用灰色设计，然后必要的地方增添其他的颜色，再接着根据主色调分配颜色
 用灰色作背景，
-table的header card的header form/modal的footer page的footer secondary region bg color Colors 红金：Red BG and Yellow (Gold) 绿金：Dark Green BG ang Gold 黑金：Black BG and Gold 黄褐：Yellow BG and Brown 黄黑：Yellow BG and Black 黑绿： 白红 白蓝 白褐 白绿 白X灰 水墨灰 和纯脆的灰色（#xx）相比，加入一定青蓝色的灰色，给人以高级的质感。</description></item><item><title/><link>https://yingkui.com/design/decor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/decor/</guid><description>点缀 弥补留白区域 给留白区域一个不需要解析的
+table的header card的header form/modal的footer page的footer secondary region bg color Colors 红金：Red BG and Yellow (Gold) 绿金：Dark Green BG ang Gold 黑金：Black BG and Gold 黄褐：Yellow BG and Brown 黄黑：Yellow BG and Black 黑绿： 白红 白蓝 白褐 白绿 白X灰 水墨灰 和纯脆的灰色（#xx）相比，加入一定青蓝色的灰色，给人以高级的质感。</description></item><item><title/><link>https://yingkui.com/design/decoration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/decoration/</guid><description>点缀 弥补留白区域 给留白区域一个不需要解析的
 点缀：万绿丛中一点红 节制：动人春色不须多</description></item><item><title/><link>https://yingkui.com/design/figma/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/figma/</guid><description>Quick Review Figma https://www.youtube.com/watch?v=FTFaQWZBqQ8 Frame - artboard Rectangle / Elicpse alt to show distance alt to copy</description></item><item><title/><link>https://yingkui.com/design/flex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/flex/</guid><description>Flex with Tailwind Always thinking in one dimensional. For two dimensional situations, using flex inside a flex.
 align-items Just like align items in design software. Or vertical-align for text
 if flex flex-row means Align Top, Align Vertical Center, Align Center if flex flex-col means Align Left, Align Horizontal Center, Align Right Tailwind: items-start, items-center, items-end justify-content Just like align text in a paragraph, consider each 汉字 as an item. Or text-align for text</description></item><item><title/><link>https://yingkui.com/design/fonts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/fonts/</guid><description>字体 个人喜好 情境 可商用字体 预览 标题英文 Suez One 正文英文 Open Sans 个性标题英文 Montserrat Black / Dela Gothic One 标题中文 苹方 / Noto Sans SC / 思源黑体 正文中文 苹方 / Noto Sans SC 个性标题中文 Dela Gothic One (标小智无界黑) 全大写英文大写 Montserrat Black 全大写英文小字 Montserrat Black / Poppins Bold 数字（粗大） Montserrat Black / League Spartan 数字（细长） Barlow Condensed 斜体英文 Lato 正文：Sans Serif 网页常用字体，选择很多，
 Google Fonts 最流行的几个字体都是典型且保险的字体
-Open Sans Source Sans / 思源黑体 苹方 Lato Noto Sans Roboto Montserrat Inter Osward Poppins Barlow Raleway 数字 DIN Condensed 斜体 Lato Futura, Nike 常用 Gill Sans 全大写小标题 / 粗字体 Poppins Bold League Spartan Montserrat 正文：Slab Serif Roboto Slab / Rockwell Clarendon 正文：Serif Garamond，书籍印刷常用字体 Baskerville Optima 标题：Serif 思源宋体 Bodoni / Didot Noto Serif 标题（全大写）：San Serif Suez One Phosphate Solid Intro Montserrat 个性标题 字由按热度排序的字体</description></item><item><title/><link>https://yingkui.com/design/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/goals/</guid><description>第一章：目的 1.1 明确设计 这里讨论的设计，并不是为了追求艺术美的设计，而是日常生活中，实用的设计技巧和理念。
-而且把设计局限在了有关传递信息的平面设计，例如，海报设计，文章排版设计，网页设计，宣传文稿设计，信号牌匾设计，产品包装设计等。
-1.2 设计要达到的四个目的 设计的第一步，应该是明确设计所要起到的功能。一般来说，都是希望更快更准确的传递大多数用户想要得到的信息。那么就要思考，大多数用户想在某个情景下等到什么信息（或者是你希望传递给用户什么信息）。如果只能传递最简化的信息是什么？如果信息量限制在十个字以内，你想传递什么？如果用户只能忍耐三秒钟时间来解析信息，你会呈现给TA什么？值得注意的是，我们并不是要吸引眼球，去勾起用户的注意，而是希望用户能够解决他想解决的问题。
+Open Sans Source Sans / 思源黑体 苹方 Lato Noto Sans Roboto Montserrat Inter Osward Poppins Barlow Raleway 数字 DIN Condensed 斜体 Lato Futura, Nike 常用 Gill Sans 全大写小标题 / 粗字体 Poppins Bold League Spartan Montserrat 正文：Slab Serif Roboto Slab / Rockwell Clarendon 正文：Serif Garamond，书籍印刷常用字体 Baskerville Optima 标题：Serif 思源宋体 Bodoni / Didot Noto Serif 标题（全大写）：San Serif Suez One Phosphate Solid Intro Montserrat 个性标题 字由按热度排序的字体</description></item><item><title/><link>https://yingkui.com/design/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/goals/</guid><description>克制的设计 Move fast and good enough.
+第一节：目的 这里讨论的设计，并不是为了追求艺术美的设计，而是日常生活中，实用的设计技巧和理念。同时把设计局限在了有关传递信息的平面设计，例如，海报设计，文章排版设计，网页设计，宣传文稿设计，信号牌匾设计，产品包装设计等。
+设计的第一步，应该是明确设计所要起到的功能。一般来说，就是希望更快更准确的传递大多数用户想要得到的信息。
+大多数用户想在某个情景下等到什么信息（或者是你希望传递给用户什么信息），如果只能传递最简化的信息是什么？如果信息量限制在十个字以内，设计者想传递什么？如果用户只能忍耐三秒钟时间来解析信息，你会呈现给TA什么？值得注意的是，我们并不是要吸引眼球，去勾起用户的注意，而是希望用户能够解决他想解决的问题。
 这里的设计的首要目的是功能性的，实现至少有路径能够实现，也就是functionality。第二的目的，是功能实现的易用性，usability。第三个目的，就是艺术上的美感，娱乐性，delight。第四个目的，是对于设计师而言，实现一个设计所需要的周期，可执行性，implementation。
-对于功能性，如果一个婚礼请帖，没有标注婚礼日期，即使使用了成熟的配色，精美的字体，这也是一个失败的设计。相反的，即使日期字体小，不易识别，这也是一个可用的设计。
-对于易用性，就是便于使用者识别，这应该是本文着重强调的部分。可以千篇一律的采用同样规定的字体和配色，都可以实现易用性。易用性体现在对于一类事物的迅速识别，体现在对重点信号的突出等等。例如，刚才举例的婚礼日期，做放大处理，让人一目了然就是一个合理的设计。一般来说，这属于产品设计的范畴，如何简化流程，降低使用者的解析计算量。
-对于娱乐性，就是对于设计要素的选择，要从大量可选项中筛选出精致的那一款，同时还要有一定的创新，给人新鲜感。例如，对于婚期日期的字体选择什么样的字体，字体的颜色等等。娱乐性，在本文里，更多体现的是一种用心的专业性，而不是为了别出心裁，本文后面将提供一些保险的设计元素选择。不为了创新而创新，而只是提供一个足够优质的设计。
+对于功能性，如果一个婚礼请帖，没有标注婚礼日期，即使使用了成熟的配色，精美的字体，这也是一个功能上有严重缺失的设计。相反的，即使日期字体小，不易识别，这也是一个可用的设计。
+对于易用性，就是便于使用者识别，这应该是本文着重强调的部分。可以千篇一律的采用同样规定的字体和配色，都可以实现易用性。易用性体现在对于一类事物的迅速识别，体现在对重点信号的突出等等。例如，刚才举例的婚礼日期，做放大处理，让人一目了然就是一个合理的设计。
+对于娱乐性，就是对于设计要素的选择，要从大量可选项中筛选出精致的那一款，同时还要有一定的创新，给人新鲜感。例如，对于婚期日期的字体选择什么样的字体，字体的颜色等等。娱乐性，在本文里，更多体现的是一种足够用心的专业性，而不是为了别出心裁，本文后面将提供一些保险的设计元素选择。不为了创新而创新，而只是提供一个足够优质的设计。
 对于可执行性，就是设计师实现一款设计所用的时间。例如，扁平化设计，相对于拟物化设计，更加容易实现和设计。
-而这里的设计，并不是为了凸显出特色，而刻意的创新，甚至是追求完美。克制的设计，就是可以更好，但是选择不做，把更多的精力放在效率和提供其他的产品和服务上，而克制的设计又不是不做，只不过有所节制，不在更多的细节上羁绊太多。不是要品牌的特色，而是要克制的足够好。
-1.3 追求简洁的KISS原则 KISS, keep it simple stupid, 也就是 Less is more 的原则。应该是这种要传递信息设计的最重要原则。
-简洁有一系列的好处，简洁能够逼迫设计者去思考什么才是更重要的信息（例如，婚礼的日期），简洁使得用户更容易识别和领会（例如，对求职者有什么要求），简洁能够让重要的功能更加突出易用（例如，下一个地铁还有多久能到），简洁带来的放松和成就感，也是一种娱乐体验（例如，扫码支付），简洁也有利于设计师更快的进行设计。
-平衡，如果这里介绍的技巧过于复杂，那么说明生产的成本就过高，如果不介绍很多想法，那么设计的能力就不会提高</description></item><item><title/><link>https://yingkui.com/design/grid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/grid/</guid><description>Grid When to use grid Always use flex first. Grid of options. Grid of items / products. Will change cols in different screen size.</description></item><item><title/><link>https://yingkui.com/design/hsv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/hsv/</guid><description>HSV Hue For RGB, one is 0 and another is 255.
+而这里的设计，并不是为了凸显出特色，而刻意的创新，甚至是追求完美。克制的设计，就是投入更多的时间确实可以做的更好，但却故意选择不去这么做，把更多的精力放在效率和提供其他的产品和服务上。对于一个商业品牌，为了凸显品牌的独特而加入的点缀和创新，也不在本文的讨论之中，不是要品牌的特色，而是要克制的足够好。</description></item><item><title/><link>https://yingkui.com/design/grid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/grid/</guid><description>Grid When to use grid Always use flex first. Grid of options. Grid of items / products. Will change cols in different screen size.</description></item><item><title/><link>https://yingkui.com/design/hsv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/hsv/</guid><description>HSV Hue For RGB, one is 0 and another is 255.
 For HSL, S is 100% and L is 50%.
 0 =&amp;gt; Red 40 =&amp;gt; Orange 50 =&amp;gt; Gold 60 =&amp;gt; Yellow 75 =&amp;gt; Lime 120 =&amp;gt; Green 170 =&amp;gt; Turquoise 180 =&amp;gt; Cyan 195 =&amp;gt; Deep Sky Blue 210 =&amp;gt; Azure 240 =&amp;gt; Blue 285 =&amp;gt; Purple 300 =&amp;gt; Magenta 330 =&amp;gt; Pink #1abc9c
 HSV def hsv_to_rgb(rgb, s, v): return [(1 - (1 - rgb[i]) * s) * v for i in range(3)] def rgb_to_hsv(rgb): mn, md, mx = sorted(rgb) # one of the r g b is 1 at full saturation and maximum value v = mx # one of the r g b is 0 at full saturation and maximum value s = mx / (mx - mn) # (0, 1, alpha) # now blending 1 and alpha gives you hue alpha = (md - mn) / (mx - mn)</description></item><item><title/><link>https://yingkui.com/design/icons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/icons/</guid><description/></item><item><title/><link>https://yingkui.com/design/less/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/less/</guid><description>少即是多 克制贪婪和自我限制
 Good enough is better than being perfect, speed of execution is more important than endless perfection.
+1.3 追求简洁的KISS原则 KISS, keep it simple stupid, 也就是 Less is more 的原则。应该是这种要传递信息设计的最重要原则。
+简洁有一系列的好处，简洁能够逼迫设计者去思考什么才是更重要的信息（例如，婚礼的日期），简洁使得用户更容易识别和领会（例如，对求职者有什么要求），简洁能够让重要的功能更加突出易用（例如，下一个地铁还有多久能到），简洁带来的放松和成就感，也是一种娱乐体验（例如，扫码支付），简洁也有利于设计师更快的进行设计。
+平衡，如果这里介绍的技巧过于复杂，那么说明生产的成本就过高，如果不介绍很多想法，那么设计的能力就不会提高
 不要冗余的信息 能不要标签，就不要标签。用户默认知道的，就不要展示。原因主要在于，重复使用的情况下，使用者很容易知道标签的含义，而无需标签的辅助，从而标签成了需要区分和剔除的信息，增加了解析负担，而标签只是在明确信号，和区分一些近距离的信号
 甚至应该从手机界面开始设计，束缚自己的选择，克制自己的完美或者画蛇添足的冲动，也会减少非必要信息过分的占比
 解决问题不恋战 如果可以用留白解决区分，就不用边界，或者用清淡的边界
