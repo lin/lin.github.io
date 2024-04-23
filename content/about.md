@@ -3,7 +3,7 @@ title: "About"
 type: "page"
 ---
 
-> 眼里只有进展，心中毫无情绪
+> 痛苦拉满，情绪全无
 
 [A founder](../edu). [A thinker](../life). A would-be [scientist](../ai) who would solve the problem of solving.
 
