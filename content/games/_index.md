@@ -51,6 +51,8 @@ type: "page"
 |   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h   |  2023/12    |JRPG|
 |   ✅   | Portal                                 | NS            |  4h      | 2024/01      |PLG|
 |   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
+|   ✅   | Anno 1800                              | PC            |  12.5h   |   2024/05    |SLG|
+|   ✅   | Hades                                  | NS            |   16h    |   2024/05    |Rogue|
 |   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
 |   🎮   | Diablo 3                               | NS            |   3h / ~18h    |       |ARPG|
 |   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
@@ -59,11 +61,9 @@ type: "page"
 |   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
 <!-- 
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
-|   🗄   | Hades                                  | NS            |   ~23h     |       |Rogue|
 |   🗄   | Disco Elysium                          | PS5           | ~60h     |       |CRPG|
 |   🗄   | Final Fantasy VII                      | PS5           | ~33h     |       |JRPG|
 |   🗄   | Mass Effect 2                          | PS5           |  ~24h      |       |SLG|
-|   🗄   | Anno 1800                              | PC            |     ~14h   |       |SLG|
 |   🗄   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG| -->
 
 2023年8月16日拥有 PS5 开始，至今2023年12月30日136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。剩余游戏345小时，大约需要半年时间完成。
