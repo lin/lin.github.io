@@ -43,28 +43,33 @@ type: "page"
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
-|   ✅   | Super Mario Run                       | iOS            |  4h    | 2023/12 |平台|
-|   ✅   | Uncharted: The Lost Legacy             | PS5            | 6.5h    | 2023/12|AAVG|
-|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h   | 2023/12   | JRPG|
-|   ✅   | Red Dead Redemption                    | NS            |  14.5h  | 2023/12  | AAVG|
+|   ✅   | Super Mario Run                        | iOS           |  4h    | 2023/12 |平台|
+|   ✅   | Uncharted: The Lost Legacy             | PS5           | 6.5h    | 2023/12|AAVG|
+|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h    | 2023/12   | JRPG|
+|   ✅   | Red Dead Redemption                    | NS            |  14.5h   | 2023/12  | AAVG|
 |   ✅   | [Call of Duty](./cod): WWII            | PS5           |   8h     |  2023/12     | FPS |
-|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h   |  2023/12    |JRPG|
+|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h    |  2023/12    |JRPG|
 |   ✅   | Portal                                 | NS            |  4h      | 2024/01      |PLG|
 |   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
 |   ✅   | Anno 1800                              | PC            |  12.5h   |   2024/05    |SLG|
 |   ✅   | Hades                                  | NS            |   16h    |   2024/05    |Rogue|
-|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         |  10h /  ~29h   |        |AAVG|
-|   🎮   | Diablo 3                               | NS            |   3h / ~18h    |       |ARPG|
-|   ⏳   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
-|   ⏳   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
-|   ⏳   | Metroid Dread                          | NS            |  ~9h    |       |MVG|
-|   ⏳   | Baldur's Gate 3                        | PS5           | ~60h     |       |CRPG|
-<!-- 
+|   ✅   | Pokémon Brilliant Diamond              | NS            | 31.5h    | 2024/05      | JRPG|
+|   ✅   | Palworld                               | NS            | 82h      |  2024/06     |ARPG|
+|   ✅   | Diablo 3                               | NS            | 15h      |   2024/06    |ARPG|
+|   🎮   | Metroid Dread                          | NS            |  ~9h     |       |MVG|
+|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         | 10h /  ~29h   |        |AAVG|
+|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
+|   🗄   | Monster Hunter Rise                    | NS            | ~22h      |       |MVG|
+|   🗄   | Baldur's Gate 3                        | Mac           | ~60h     |       |CRPG|
+|   🗄   | Pentiment                              | NS            | ~22h      |       |MVG|
+<!--
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
-|   🗄   | Disco Elysium                          | PS5           | ~60h     |       |CRPG|
+|   🗄   | Disco Elysium                          | Mac           | ~60h     |       |CRPG|
 |   🗄   | Final Fantasy VII                      | PS5           | ~33h     |       |JRPG|
 |   🗄   | Mass Effect 2                          | PS5           |  ~24h      |       |SLG|
-|   🗄   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG| -->
+|   🗄   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
+|   🗄   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h / ~27h    |      |AAVG|
+ -->
 
 2023年8月16日拥有 PS5 开始，至今2023年12月30日136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。剩余游戏345小时，大约需要半年时间完成。
 
@@ -113,10 +118,10 @@ type: "page"
 |《跑跑卡丁车》            | 2006年暑期   |   用自己家的电脑玩的，水平很差   |
 |《诛仙》                 | 2007年暑期  |  唯一玩过的一款网游    |
 |《战地 2》                 | 2009年  |  和曹磊一起玩  |
-|《全面战争：拿破仑》       | 2009年  |    |
-|《纪元 1404》               | 2009年  |  和曹磊一起玩  |
+|《全面战争：拿破仑》        | 2009年    |  和曹磊一起玩  |
+|《纪元 1404》              | 2009年  |  和曹磊一起玩  |
 |《时空幻境》               | 2009年  |  记忆最深刻的游戏    |
-|《Fruit Ninja》            | 2011年  |  去奥兰多的时候在玩    |
+|《Fruit Ninja》           | 2011年  |  去奥兰多的时候在玩    |
 |《实况足球》               | 2012年暑期  |  和孙堃在那个暑假一起玩的 |
 |《[Draw Something](https://www.ign.com/games/draw-something/)》  | 2012年  |  上课的时候玩 |
 |《Candy Crush》            | 2012年  |  向姐最爱   |
@@ -130,8 +135,8 @@ type: "page"
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
 |《荒野行动》                | 2017年  |            |
 |《Cookie Clicker》         | 2023年12月  |            |
-|《Suika Game》             | 2023年12月  |        |
-|《原神》                   | 2023年1月  |        |
+|《Suika Game》             | 2023年12月  |  和媳妇一共玩了50小时  |
+|《原神》                   | 2024年1月  |        |
 
 ## 通关的游戏系列
 

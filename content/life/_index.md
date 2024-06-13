@@ -1,5 +1,5 @@
 ---
-title: "《论人生》"
+title: "《人生入门》"
 isCJKLanguage: true
 math: true
 ---
@@ -20,16 +20,15 @@ _Would Resume in 2024_
 
 [前言](preface) & [提纲](outline)
 
-1. 矫枉过正的偏激语风
+1. 矫枉过正的偏激语风，虚荣即弱智，统治即强盗，大众即低能
+1. 乱序的结构，章节被打乱
 1. 不求全，但是结构化，能一石二鸟的事情多一点
 1. 不求完整，但求关键信息能够深入人心，我觉得《快思慢想》信息太多了
 
 ---
 
-1. 
 1. Pride is low intelligence. / 虚荣即弱智
 1. The only one alive.
-
 1. Larger than you think
 
 ### 财富的本质
