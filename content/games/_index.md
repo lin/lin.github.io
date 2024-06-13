@@ -43,24 +43,24 @@ type: "page"
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
-|   ✅   | Super Mario Run                        | iOS           |  4h    | 2023/12 |平台|
-|   ✅   | Uncharted: The Lost Legacy             | PS5           | 6.5h    | 2023/12|AAVG|
-|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h    | 2023/12   | JRPG|
-|   ✅   | Red Dead Redemption                    | NS            |  14.5h   | 2023/12  | AAVG|
-|   ✅   | [Call of Duty](./cod): WWII            | PS5           |   8h     |  2023/12     | FPS |
-|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            |   19h    |  2023/12    |JRPG|
-|   ✅   | Portal                                 | NS            |  4h      | 2024/01      |PLG|
-|   ✅   | Portal 2                               | NS            | 10h      |  2024/01     |PLG|
-|   ✅   | Anno 1800                              | PC            |  12.5h   |   2024/05    |SLG|
-|   ✅   | Hades                                  | NS            |   16h    |   2024/05    |Rogue|
-|   ✅   | Pokémon Brilliant Diamond              | NS            | 31.5h    | 2024/05      | JRPG|
-|   ✅   | Palworld                               | NS            | 82h      |  2024/06     |ARPG|
-|   ✅   | Diablo 3                               | NS            | 15h      |   2024/06    |ARPG|
-|   🎮   | Metroid Dread                          | NS            |  ~9h     |       |MVG|
+|   ✅   | Super Mario Run                        | iOS           | 4h     | 2023/12 |平台|
+|   ✅   | Uncharted: The Lost Legacy             | PS5           | 6.5h   | 2023/12|AAVG|
+|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h  | 2023/12   | JRPG|
+|   ✅   | Red Dead Redemption                    | NS            | 14.5h  | 2023/12  | AAVG|
+|   ✅   | [Call of Duty](./cod): WWII            | PS5           | 8h     |  2023/12     | FPS |
+|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            | 19h    |  2023/12    |JRPG|
+|   ✅   | Portal                                 | NS            | 4h     | 2024/01      |PLG|
+|   ✅   | Portal 2                               | NS            | 10h    |  2024/01     |PLG|
+|   ✅   | Anno 1800                              | PC            | 12.5h  |   2024/05    |SLG|
+|   ✅   | Hades                                  | NS            | 16h    |   2024/05    |Rogue|
+|   ✅   | Pokémon Brilliant Diamond              | NS            | 31.5h  | 2024/05      | JRPG|
+|   ✅   | Palworld                               | NS            | 82h    |  2024/06     |ARPG|
+|   ✅   | Diablo 3                               | NS            | 15h    |   2024/06    |ARPG|
+|   🎮   | Metroid Dread                          | NS            |        |             |MVG|
 |   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         | 10h /  ~29h   |        |AAVG|
-|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h      |         |AAVG|
+|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h     |         |AAVG|
 |   🗄   | Monster Hunter Rise                    | NS            | ~22h      |       |MVG|
-|   🗄   | Baldur's Gate 3                        | Mac           | ~60h     |       |CRPG|
+|   🗄   | Baldur's Gate 3                        | Mac           | ~60h      |       |CRPG|
 |   🗄   | Pentiment                              | NS            | ~22h      |       |MVG|
 <!--
 |   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
