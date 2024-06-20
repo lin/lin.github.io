@@ -9,65 +9,59 @@ type: "page"
 
 | 进展   | 游戏                                    | 平台            |  用时 | 通关年月| 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
-|   ✅   | Sid Meier's Civilization VI            | PC            | 116h   | 2019/11| 4X |
-|   ✅   | Super Mario Odyssey                   | NS             | 45h    | 2020/08| AAVG|
-|   ✅   | Animal Crossing: New Horizons          | NS            | 150h   | 2020/10| SIM |
+|   ✅   | Sid Meier's Civilization VI             | PC            | 116h   | 2019/11| 4X |
+|   ✅   | Super Mario Odyssey                     | NS             | 45h    | 2020/08| AAVG|
+|   ✅   | Animal Crossing: New Horizons           | NS            | 150h   | 2020/10| SIM |
 |   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
-|   ✅   | The Legend of Zelda: Link's Awakening | NS             | 20h    | 2021/01| AAVG |
-|   ✅   | Super Mario 3D Land                    | 3DS           | 16h    | 2021/02| 平台 |
-|   ✅   | [Pokémon](./pokemon) Y                | 3DS            | 30h    | 2021/02| JRPG |
-|   ✅   | Super Mario Maker 2                   | NS             | 5h     | 2021/03| 平台 |
-|   ✅   | Super Mario Galaxy                    | NS             | 22h    | 2021/08| 平台 |
-|   ✅   | Sniper Elite 4                         | NS            | 20h    | 2021/09| AAVG|
-|   ✅   | Super Mario 3D World                  | NS             | 12h    | 2022/12| 平台 |
-|   ✅   | [Grand Theft Auto](./gta) V            | PC            | 40h    | 2023/06| AAVG|
-|   ✅   | Tetris Axis                           | 3DS            | 10h     | 2023/07| PLG |
-|   ✅   | Astro's Playroom                       | PS5           | 9h     | 2023/08| 平台 |
-|   ✅   | [Red Dead Redemption](./red-dead) 2    | PS5           | 44h    | 2023/08| AAVG|
-|   ✅   | God of War (2018)                      | PS5           | 17h    | 2023/09| AAVG|
-|   ✅   | God of War: Ragnarök                   | PS5           | 23h    | 2023/09| AAVG|
-|   ✅   | Super Mario Bros.                    | NS             |   2h   | 2023/09 | 平台 |
-|   ✅   | Super Mario Bros. Lost Levels         | NS             |   4h   | 2023/09 |平台 |
-|   ✅   | Super Mario Bros. 2                   | NS             | 3h     | 2023/09 |平台 |
-|   ✅   | Super Mario Bros. 3                   | NS             | 6h     | 2023/09 |平台 |
-|   ✅   | Super Mario World                     | NS             | 5h     | 2023/09 |平台 |
-|   ✅   | Super Mario Land                      | 3DS            |  2h    | 2023/09 |平台 |
-|   ✅   | Super Mario Land 2                    | NS             |  2h    | 2023/09 |平台 |
-|   ✅   | New Super Mario Bros.                 | 3DS            | 11h    | 2023/09 |平台 |
-|   ✅   | New Super Mario Bros. 2               | 3DS            |  5h    | 2023/09 |平台 |
-|   ✅   | New Super Mario Bros. U               | Wii U          | 19h    | 2023/10|平台 |
-|   ✅   | The Last of Us Part I                  | PS5           | 17h    | 2023/10|AAVG|
-|   ✅   | Gran Turismo 7                         | PS5           | 25h    | 2023/10| 竞速 |
-|   ✅   | The Witcher 3: Wild Hunt               | PS5           | 36h    | 2023/10|ARPG|
-|   ✅   | Super Mario Bros. Wonder              | NS             | 12h    | 2023/11|平台|
+|   ✅   | The Legend of Zelda: Link's Awakening   | NS             | 20h    | 2021/01| AAVG |
+|   ✅   | Super Mario 3D Land                     | 3DS           | 16h    | 2021/02| 平台 |
+|   ✅   | [Pokémon](./pokemon) Y                  | 3DS            | 30h    | 2021/02| JRPG |
+|   ✅   | Super Mario Maker 2                     | NS             | 5h     | 2021/03| 平台 |
+|   ✅   | Super Mario Galaxy                      | NS             | 22h    | 2021/08| 平台 |
+|   ✅   | Sniper Elite 4                          | NS            | 20h    | 2021/09| AAVG|
+|   ✅   | Super Mario 3D World                    | NS             | 12h    | 2022/12| 平台 |
+|   ✅   | [Grand Theft Auto](./gta) V             | PC            | 40h    | 2023/06| AAVG|
+|   ✅   | Tetris Axis                             | 3DS            | 10h     | 2023/07| PLG |
+|   ✅   | Astro's Playroom                        | PS5           | 9h     | 2023/08| 平台 |
+|   ✅   | [Red Dead Redemption](./red-dead) 2     | PS5           | 44h    | 2023/08| AAVG|
+|   ✅   | God of War (2018)                       | PS5           | 17h    | 2023/09| AAVG|
+|   ✅   | God of War: Ragnarök                    | PS5           | 23h    | 2023/09| AAVG|
+|   ✅   | Super Mario Bros.                       | NS              | 2h     | 2023/09 | 平台 |
+|   ✅   | Super Mario Bros. Lost Levels           | NS             | 4h     | 2023/09 |平台 |
+|   ✅   | Super Mario Bros. 2                     | NS             | 3h     | 2023/09 |平台 |
+|   ✅   | Super Mario Bros. 3                     | NS             | 6h     | 2023/09 |平台 |
+|   ✅   | Super Mario World                       | NS             | 5h     | 2023/09 |平台 |
+|   ✅   | Super Mario Land                        | 3DS            |  2h    | 2023/09 |平台 |
+|   ✅   | Super Mario Land 2                      | NS             |  2h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros.                   | 3DS            | 11h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros. 2                 | 3DS            |  5h    | 2023/09 |平台 |
+|   ✅   | New Super Mario Bros. U                 | Wii U          | 19h    | 2023/10|平台 |
+|   ✅   | The Last of Us Part I                   | PS5           | 17h    | 2023/10|AAVG|
+|   ✅   | Gran Turismo 7                          | PS5           | 25h    | 2023/10| 竞速 |
+|   ✅   | The Witcher 3: Wild Hunt                | PS5           | 36h    | 2023/10|ARPG|
+|   ✅   | Super Mario Bros. Wonder                | NS             | 12h    | 2023/11|平台|
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
-|   ✅   | [Elden Ring](./elden-ring)             | PS5           | 60h    | 2023/11|Soul|
+|   ✅   | [Elden Ring](./elden-ring)               | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
-|   ✅   | Super Mario Run                        | iOS           | 4h     | 2023/12 |平台|
-|   ✅   | Uncharted: The Lost Legacy             | PS5           | 6.5h   | 2023/12|AAVG|
-|   ✅   | [Pokémon Yellow](./rgby)               | 3DS           | 31.5h  | 2023/12   | JRPG|
-|   ✅   | Red Dead Redemption                    | NS            | 14.5h  | 2023/12  | AAVG|
-|   ✅   | [Call of Duty](./cod): WWII            | PS5           | 8h     | 2023/12     | FPS |
-|   ✅   | [Super Mario RPG](./mario-rpg)         | NS            | 19h    | 2023/12    |JRPG|
-|   ✅   | Portal                                 | NS            | 4h     | 2024/01      |PLG|
-|   ✅   | Portal 2                               | NS            | 10h    | 2024/01     |PLG|
-|   ✅   | Anno 1800                              | PC            | 12.5h  | 2024/05    |SLG|
-|   ✅   | Hades                                  | NS            | 16h    | 2024/05    |Rogue|
-|   ✅   | Pokémon Brilliant Diamond              | NS            | 31.5h  | 2024/05      | JRPG|
-|   ✅   | Palworld                               | NS            | 82h    |  2024/06     |ARPG|
-|   ✅   | Diablo 3                               | NS            | 15h    |   2024/06    |ARPG|
-|   🎮   | Metroid Dread                          | NS            |        |             |MVG|
-|   🎮   | The Legend of Zelda: The Wind Waker    | Wii U         | 10h (Earth) /  ~29h   |        |AAVG|
-|   🎮   | [Resident Evil](./re) 4                | PS5           | 1h / ~16h     |         |AAVG|
-|   🎁   | Monster Hunter Rise                    | NS            | ~22h      |       |MVG|
-|   🎁   | Baldur's Gate 3 (Act 1)                | Mac           | ~30h      |       |CRPG|
-|   🗄   | Pentiment                              | NS            | ~22h      |       |MVG|
-|   🗄   | The Legend of Zelda: Ocarina of Time   | 3DS           |  10h (Forest) / ~27h    | 2023/10  |AAVG|
-|   🗄   | Metroid Prime                          | NS            | ~13h      |       |MVG|
-|   🗄   | Disco Elysium                          | Mac           | ~60h     |       |CRPG|
-|   🗄   | Final Fantasy VII                      | PS5           | ~33h     |       |JRPG|
-|   🗄   | Mass Effect 2                          | PS5           |  ~24h      |       |SLG|
-|   🗄   | [Assassin's Creed](./ac) Origins       | PS5           | 2h / ~30h   |       |AAVG|
+|   ✅   | Super Mario Run                          | iOS           | 4h     | 2023/12 |平台|
+|   ✅   | Uncharted: The Lost Legacy               | PS5           | 6.5h   | 2023/12|AAVG|
+|   ✅   | [Pokémon Yellow](./rgby)                 | 3DS           | 31.5h  | 2023/12   | JRPG|
+|   ✅   | Red Dead Redemption                      | NS            | 14.5h  | 2023/12  | AAVG|
+|   ✅   | [Call of Duty](./cod): WWII              | PS5           | 8h     | 2023/12     | FPS |
+|   ✅   | [Super Mario RPG](./mario-rpg)           | NS            | 19h    | 2023/12    |JRPG|
+|   ✅   | Portal                                   | NS            | 4h     | 2024/01      |PLG|
+|   ✅   | Portal 2                                 | NS            | 10h    | 2024/01     |PLG|
+|   ✅   | Anno 1800                                | PC            | 12.5h  | 2024/05    |SLG|
+|   ✅   | Hades                                    | NS            | 16h    | 2024/05    |Rogue|
+|   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05      | JRPG|
+|   ✅   | Palworld                                 | NS            | 82h    | 2024/06     |ARPG|
+|   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06    |ARPG|
+|   🎮   | Metroid Dread                            | NS            |        |             |MVG|
+|   🎮   | The Legend of Zelda: The Wind Waker      | Wii U         | 10h (Earth) /  ~29h   |        |AAVG|
+|   🎮   | [Resident Evil](./re) 4                  | PS5           | 1h / ~16h     |         |AAVG|
+|   🎁   | Monster Hunter Rise                      | NS            | ~22h      |       |MVG|
+|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac           | ~30h      |       |CRPG|
+
 
 2023年8月16日拥有 PS5 开始，至今2023年12月30日136天，共通关27个游戏，用时413.5小时，平均5.037天一部游戏，每天3.04小时。其中八月份两部，九月份两部战神，九部马力欧（相当于两部20小时的游戏），十月份四部，十一月份三部，十二月份七部。剩余游戏345小时，大约需要半年时间完成。
 
@@ -163,3 +157,14 @@ type: "page"
 1. 《生化奇兵》
 1. 《合金装备》
 1. 《上古卷轴》
+
+### 可能要玩的游戏
+
+| 进展   | 游戏                                     | 平台           |  用时                   | 最后游玩时间  | 类型|
+|   🗄   | Disco Elysium                            | Mac           | ~60h                    |              |CRPG|
+|   🗄   | Pentiment                                | NS            | ~22h                    |              |MVG|
+|   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS           |  10h (Forest) / ~27h    | 2023/10      |AAVG|
+|   🗄   | Metroid Prime                            | NS            | ~13h                    |              |MVG|
+|   🗄   | Final Fantasy VII                        | PS5           | ~33h                    |              |JRPG|
+|   🗄   | Mass Effect 2                            | PS5           | ~24h                    |              |SLG|
+|   🗄   | [Assassin's Creed](./ac) Origins         | PS5           | 2h / ~30h               |              |AAVG|
