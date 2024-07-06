@@ -26,14 +26,16 @@ type: "page"
 | Fortune     | Create / Write     | Read / Learn              | Indulge / Entertainment  |
 |:------------|:-------------------|:--------------------------|:-------------------------|
 | 7a - 9p     | 9p - 11p           | 9p - 11p                  | 11p - 12a                |
-| 体验游戏     |  游戏              |                           |                          |
-| 游戏化测试   |  人生              | 《Hooked》                 |                          |
-| 游戏化改版   |  设计              | 《Brave New Words》       | 《Wind Waker》            |
-| 游戏化内容   |                    |                           | 《Monster Hunter Rise》   |
+| ✅ 体验游戏  |  游戏文章           |                           |   Duolingo Japanese      |
+| ---         |                    |                           |                           |
+| 游戏化测试   |  设计              | 《Hooked》                 |                          |
+| 游戏化改版   |                   | 《Brave New Words》       | 《Wind Waker》            |
+| 游戏化内容   | 人生               |                           | 《Monster Hunter Rise》   |
+| ---         |                    |                           |                           |
 | AIGC        |  智力              |                           | 《Resident Evil 4》       |
 |             |                    |                           | 《Baldur's Gate 3》       |
 |             |                    |                           | 《Pentiment》             |
-|             |                    |                           | 《DRAGON QUEST III 》     |
+|             |                    |                           | 《DRAGON QUEST III》      |
 
 ## Deadlines
 
@@ -44,5 +46,7 @@ type: "page"
 
 ## Habits
 
-1. Finish what you start
-1. Document everything
+1. Eat the frog.
+1. Do things scary.
+1. Document everything.
+1. Finish what you start.

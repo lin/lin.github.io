@@ -33,8 +33,8 @@ type: "page"
 |   ✅   | Gran Turismo 7                          | PS5           | 25h    | 2023/10| 竞速 |
 |   ✅   | The Witcher 3: Wild Hunt                | PS5           | 36h    | 2023/10|ARPG|
 |   ✅   | Super Mario Bros. Wonder                | NS             | 12h    | 2023/11|平台|
-|   ✅   | [New Super Mario Bros. Wii](/soul-mario) | Wii U       | 13h    | 2023/11|平台|
-|   ✅   | [Elden Ring](./elden-ring)               | PS5           | 60h    | 2023/11|Soul|
+|   ✅   | [New Super Mario Bros. Wii](/soul-mario)   | Wii U       | 13h    | 2023/11|平台|
+|   ✅   | [Elden Ring](./elden-ring)                 | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                          | iOS           | 4h     | 2023/12 |平台|
 |   ✅   | Uncharted: The Lost Legacy               | PS5           | 6.5h   | 2023/12|AAVG|
@@ -50,10 +50,6 @@ type: "page"
 |   ✅   | Palworld                                 | NS            | 82h    | 2024/06     |ARPG|
 |   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06    |ARPG|
 |   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06        |MVG|
-|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac           | ~30h   |       |CRPG|
-|   🎁   | The Legend of Zelda: The Wind Waker      | Wii U         | ~29h   |       |AAVG|
-|   🎁   | Metroid Prime                            | NS            | ~15h   |       |MVG|
-|   🎁   | Monster Hunter Rise                      | NS            | ~22h   |       |MVG|
 
 ## 其他曾深度体验过的游戏
 
@@ -142,7 +138,6 @@ type: "page"
 1. 《生化危机》
 1. 《博德之门》
 1. 《怪物猎人》
-1. ---------
 1. 《最终幻想》
 1. 《刺客信条》
 1. 《勇者斗恶龙》
@@ -152,12 +147,17 @@ type: "page"
 
 ### 可能要玩的游戏
 
-| 进展   | 游戏                                     | 平台           |  用时                   | 最后游玩时间  | 类型|
-|   🗄   | Disco Elysium                            | Mac           | ~60h                    |              |CRPG|
-|   🗄   | Pentiment                                | NS            | ~22h                    |              |MVG|
-|   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS           |  10h (Forest) / ~27h    | 2023/10      |AAVG|
-|   🗄   | Metroid Prime                            | NS            | ~13h                    |              |MVG|
-|   🗄   | Final Fantasy VII                        | PS5           | ~33h                    |              |JRPG|
-|   🗄   | Mass Effect 2                            | PS5           | ~24h                    |              |SLG|
-|   🗄   | [Assassin's Creed](./ac) Origins         | PS5           | 2h / ~30h               |              |AAVG|
-|   🗄   | [Resident Evil](./re) 4                  | PS5           | ~16h |         |AAVG|
+| 进展   | 游戏                                     | 平台            |  用时 | 最后游玩时间  | 类型|
+|:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
+|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
+|   🎁   | The Legend of Zelda: The Wind Waker      | Wii U          | ~29h   |            |AAVG|
+|   🎁   | Metroid Prime                            | NS             | ~15h   |            |MVG|
+|   🎁   | Monster Hunter Rise                      | NS             | ~22h   |            |MVG|
+|   🎁   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
+|   🗄   | Disco Elysium                            | Mac            | ~60h   |            |CRPG|
+|   🗄   | Pentiment                                | NS             | ~22h   |            |MVG|
+|   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS            |  ~27h  | 2023/10    |AAVG|
+|   🗄   | Metroid Prime                            | NS             | ~13h   |            |MVG|
+|   🗄   | Final Fantasy VII                        | PS5            | ~33h   |            |JRPG|
+|   🗄   | Mass Effect 2                            | PS5            | ~24h   |            |SLG|
+|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | ~30h   |            |AAVG|

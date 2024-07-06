@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Yingkui</title>
+    <link>https://yingkui.com/notes/</link>
+    <description>Recent content in Notes on Yingkui</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yingkui.com/notes/2022-03-21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/notes/2022-03-21/</guid>
+      <description>2022-03-21  kex means Key Exchange  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/notes/2023-12-22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/notes/2023-12-22/</guid>
+      <description>MidJourney   U means upscale / separation
+  V means variation
+   /imagine
+  /blend
+  Advanced  image url text prompt params    Subject: person, animal, character, location, object, etc. Medium: photo, painting, illustration, sculpture, doodle, tapestry, etc. Environment: indoors, outdoors, on the moon, in Narnia, underwater, the Emerald City, etc. Lighting: soft, ambient, overcast, neon, studio lights, etc Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -19,6 +19,7 @@ Starts from unit 9 from section 2.
 - Units: 16/16, 8/40, 0/54
 - Lessons:  ~450/1973
 - Words: 1025/4141
+- XP: 7066 Lv: 14
 
 #### Remaining if finished the duolingo
 
@@ -30,5 +31,18 @@ Starts from unit 9 from section 2.
 #### July 4th 2024
 
 1. use one hour to finish 2-9
-1. 
+1. finish 2-10, half 2-11
+1. 3020 xp, record
+1. perfect 18 lessions, record
 
+#### July 5th 2024
+
+Goal: 
+
+1. ✅ 2-12, 4am
+1. ✅ 2-13
+1. ✅ 2-14
+1. 2-15
+1. 2-16
+1. 2-17
+1. 2-18 

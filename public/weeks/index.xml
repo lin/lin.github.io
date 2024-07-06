@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yingkui</title>
+    <link>https://yingkui.com/weeks/</link>
+    <description>Recent content on Yingkui</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/weeks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yingkui.com/weeks/23122/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/weeks/23122/</guid>
+      <description>2023年12月第二周  创业：完成了 《论教学》第五章第四节的写作 游戏：通关 《Pokémon Yellow》 书籍：重读 《What Is ChatGPT Doing … and Why Does It Work?》 影视：《It Happened One Night》《Zootopia》  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/weeks/23123/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/weeks/23123/</guid>
+      <description>2023年12月第三周  创业：重新写了《游戏为什么好玩》，理解了游戏的本质 读书：无 写作：争取每天都能更新几百字的《论教学》 游戏：《Cookie Clicker》 编程：无 设计：无 影视：无  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/weeks/24011/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/weeks/24011/</guid>
+      <description>2024年1月第一周  创业： 书籍： 技能： 写作： 游戏： 影视：  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/weeks/24012/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/weeks/24012/</guid>
+      <description>2024年1月份第2周 01/14 Sunday 10:50
+15:30 Learn and apply Tailwind for 3 hours.
+01/12 Friday 17:00
+Get Start with Rails https://guides.rubyonrails.org/getting_started.html
+ Ruby 3.0.0 Rails 7.1.2  Models   information: subjects, courses, chapters, skills
+  tasks: levels
+  Skills List, today
+  Users, weekends
+  </description>
+    </item>
+    
+  </channel>
+</rss>

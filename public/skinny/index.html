@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>一切从简 - Yingkui</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="一切从简">
+<meta itemprop="description" content="Skinny Everything
+ 最重要的应该是readable，而不是cool或者为了简化而简化,你的目的是减少脑力消耗（思考量）
+一切从简的好处:
+工程角度: 减少程序的复杂度，减轻工作量（这是从数学角度，也就是计算量的缩减）
+商业角度: 节约时间，降低成本（这是从神经科学角度，也就是工作量的减轻，大脑计算量的缩减）
+数学角度：整体复合方式（模块化），抽象的方式。
+工作量角度：工具化类比，图像化形象
+一切从简的四个方法:
+1. 避免反复解决那些反复出现的问题 1, Don’t repeat yourself. 把出现多次的重复代码整理起来。
+例子:
+# ==================================================================# # ========== An example of making codes dry and skinny =============# # ==================================================================# # =============================================================== # # ================== 1, Django&#39;s controller ===================== # # =============================================================== # def show product = Product.find params[:id] render &#39;products/show.html&#39;, variables: { product: product } end # ================================================================ # # ================== 2, set default directory ==================== # # ================================================================ # # set default folder to &#39;products/&#39;, set default file extension to html def show product = Product."><meta itemprop="datePublished" content="2015-07-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2015-07-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1480">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="一切从简" />
+<meta property="og:description" content="Skinny Everything
+ 最重要的应该是readable，而不是cool或者为了简化而简化,你的目的是减少脑力消耗（思考量）
+一切从简的好处:
+工程角度: 减少程序的复杂度，减轻工作量（这是从数学角度，也就是计算量的缩减）
+商业角度: 节约时间，降低成本（这是从神经科学角度，也就是工作量的减轻，大脑计算量的缩减）
+数学角度：整体复合方式（模块化），抽象的方式。
+工作量角度：工具化类比，图像化形象
+一切从简的四个方法:
+1. 避免反复解决那些反复出现的问题 1, Don’t repeat yourself. 把出现多次的重复代码整理起来。
+例子:
+# ==================================================================# # ========== An example of making codes dry and skinny =============# # ==================================================================# # =============================================================== # # ================== 1, Django&#39;s controller ===================== # # =============================================================== # def show product = Product.find params[:id] render &#39;products/show.html&#39;, variables: { product: product } end # ================================================================ # # ================== 2, set default directory ==================== # # ================================================================ # # set default folder to &#39;products/&#39;, set default file extension to html def show product = Product." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yingkui.com/skinny/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2015-07-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-07-09T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="一切从简"/>
+<meta name="twitter:description" content="Skinny Everything
+ 最重要的应该是readable，而不是cool或者为了简化而简化,你的目的是减少脑力消耗（思考量）
+一切从简的好处:
+工程角度: 减少程序的复杂度，减轻工作量（这是从数学角度，也就是计算量的缩减）
+商业角度: 节约时间，降低成本（这是从神经科学角度，也就是工作量的减轻，大脑计算量的缩减）
+数学角度：整体复合方式（模块化），抽象的方式。
+工作量角度：工具化类比，图像化形象
+一切从简的四个方法:
+1. 避免反复解决那些反复出现的问题 1, Don’t repeat yourself. 把出现多次的重复代码整理起来。
+例子:
+# ==================================================================# # ========== An example of making codes dry and skinny =============# # ==================================================================# # =============================================================== # # ================== 1, Django&#39;s controller ===================== # # =============================================================== # def show product = Product.find params[:id] render &#39;products/show.html&#39;, variables: { product: product } end # ================================================================ # # ================== 2, set default directory ==================== # # ================================================================ # # set default folder to &#39;products/&#39;, set default file extension to html def show product = Product."/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://yingkui.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://yingkui.com/css/main.css" />
+	
+
+    <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://yingkui.com/css/dark.css" />
+        <link rel="stylesheet" type="text/css" href="https://yingkui.com/css/custom.css" />
+    
+
+	<script src="https://yingkui.com/js/feather.min.js"></script>
+	
+		<script src="https://yingkui.com/js/main.js"></script>
+
+
+    
+
+    
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://yingkui.com/">
+				<img src="/logo-ai.jpg" alt="Yingkui" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://yingkui.com/">Yingkui</a></h1>
+	<div class="site-description"><p>Solving Problems. Making Progress.</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/lin" title="Github"><i data-feather="github"></i></a></li><li><a href="https://youtube.com/@yingkui" title="YouTube"><i data-feather="youtube"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">随想</a>
+			</li>
+			
+			<li>
+				<a href="/edu">《教学》</a>
+			</li>
+			
+			<li>
+				<a href="/life">《人生》</a>
+			</li>
+			
+			<li>
+				<a href="/ai">《智力》</a>
+			</li>
+			
+			<li>
+				<a href="/about">关于</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">09</span>
+							<span class="rest">Jul 2015</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">一切从简</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<blockquote>
+<p>Skinny Everything</p>
+</blockquote>
+<p>最重要的应该是readable，而不是cool或者为了简化而简化,你的目的是减少脑力消耗（思考量）</p>
+<p>一切从简的好处:</p>
+<p><strong>工程角度</strong>: 减少程序的复杂度，减轻工作量（这是从数学角度，也就是计算量的缩减）</p>
+<p><strong>商业角度</strong>: 节约时间，降低成本（这是从神经科学角度，也就是工作量的减轻，大脑计算量的缩减）</p>
+<p>数学角度：整体复合方式（模块化），抽象的方式。</p>
+<p>工作量角度：工具化类比，图像化形象</p>
+<p>一切从简的四个方法:</p>
+<h3 id="1-避免反复解决那些反复出现的问题">1. 避免反复解决那些反复出现的问题</h3>
+<h4 id="1-dont-repeat-yourself">1, Don’t repeat yourself.</h4>
+<p>把出现多次的重复代码整理起来。</p>
+<p>例子:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ==================================================================#</span>
+<span style="color:#75715e"># ========== An example of making codes dry and skinny =============#</span>
+<span style="color:#75715e"># ==================================================================#</span>
+
+
+<span style="color:#75715e"># =============================================================== #</span>
+<span style="color:#75715e"># ================== 1, Django&#39;s controller ===================== #</span>
+<span style="color:#75715e"># =============================================================== #</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show</span>
+  product <span style="color:#f92672">=</span> <span style="color:#66d9ef">Product</span><span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+  render <span style="color:#e6db74">&#39;products/show.html&#39;</span>, <span style="color:#e6db74">variables</span>: { <span style="color:#e6db74">product</span>: product }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ================================================================ #</span>
+<span style="color:#75715e"># ================== 2, set default directory ==================== #</span>
+<span style="color:#75715e"># ================================================================ #</span>
+
+<span style="color:#75715e"># set default folder to &#39;products/&#39;, set default file extension to html</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show</span>
+  product <span style="color:#f92672">=</span> <span style="color:#66d9ef">Product</span><span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+  render <span style="color:#e6db74">:show</span>, <span style="color:#e6db74">variables</span>: { <span style="color:#e6db74">product</span>: product }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ==================================================================== #</span>
+<span style="color:#75715e"># ================== 3, remove variables argument ==================== #</span>
+<span style="color:#75715e"># ==================================================================== #</span>
+
+<span style="color:#75715e"># use instance variable instead of passing variables argument</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show</span>
+  @product <span style="color:#f92672">=</span> <span style="color:#66d9ef">Product</span><span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+  render <span style="color:#e6db74">:show</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ======================================================= #</span>
+<span style="color:#75715e"># ================== 4, use callback ==================== #</span>
+<span style="color:#75715e"># ======================================================= #</span>
+
+<span style="color:#75715e"># use before_action callback to do this repeated task.</span>
+before_action <span style="color:#e6db74">:set_product</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show</span>
+  <span style="color:#75715e"># product = Product.find params[:id]</span>
+  render <span style="color:#e6db74">:show</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>
+  <span style="color:#75715e"># product = Product.find params[:id]</span>
+  render <span style="color:#e6db74">:index</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">edit</span>
+  <span style="color:#75715e"># product = Product.find params[:id]</span>
+  render <span style="color:#e6db74">:edit</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">private</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_product</span>
+  @product <span style="color:#f92672">=</span> <span style="color:#66d9ef">Product</span><span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ============================================================ #</span>
+<span style="color:#75715e"># ================== 5, use function name ==================== #</span>
+<span style="color:#75715e"># ============================================================ #</span>
+
+<span style="color:#75715e"># use function name (show) to call render method</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ============================================================ #</span>
+
+<span style="color:#75715e"># THE END: write nothing</span>
+<span style="color:#75715e"># Note: This is the rails way to deal with normal controller actions.</span>
+</code></pre></div><p>极端的假设：如果一段代码，需要你反复写一千次，你会怎么减轻自己重复敲代码（甚至是重复思考和解决）的痛苦。</p>
+<p>更多例子：</p>
+<p>1，Array counting</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ============================================ #</span>
+<span style="color:#75715e"># ================== DRY ===================== #</span>
+<span style="color:#75715e"># ============================================ #</span>
+
+<span style="color:#75715e"># how many orders you have that has a total amount larger than $100</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">expensive_orders_count</span>
+  self<span style="color:#f92672">.</span>orders<span style="color:#f92672">.</span>count { <span style="color:#f92672">|</span>order<span style="color:#f92672">|</span> order<span style="color:#f92672">.</span>total <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10000</span> }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># how many people you have referred have made their first orders.</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">success_refers_count</span>
+  self<span style="color:#f92672">.</span>refers<span style="color:#f92672">.</span>count { <span style="color:#f92672">|</span>refer<span style="color:#f92672">|</span> refer<span style="color:#f92672">.</span>orders<span style="color:#f92672">.</span>count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># array helper</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Array</span>
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count</span> block
+    counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    self<span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>a<span style="color:#f92672">|</span> counter <span style="color:#f92672">++</span> <span style="color:#66d9ef">if</span> block a  }
+    counter
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ============================================ #</span>
+<span style="color:#75715e"># ================== WET ===================== #</span>
+<span style="color:#75715e"># ============================================ #</span>
+
+<span style="color:#75715e"># how many orders you have that has a total amount larger than $100</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">expensive_orders_count</span>
+  counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  self<span style="color:#f92672">.</span>orders<span style="color:#f92672">.</span>each { <span style="color:#f92672">|</span>order<span style="color:#f92672">|</span> counter <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> order<span style="color:#f92672">.</span>total <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10000</span> }
+  counter
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># how many people you have referred have made their first orders.</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">success_refers_count</span>
+  counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  self<span style="color:#f92672">.</span>refers<span style="color:#f92672">.</span>count { <span style="color:#f92672">|</span>refer<span style="color:#f92672">|</span>  counter <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> refer<span style="color:#f92672">.</span>orders<span style="color:#f92672">.</span>count <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> }
+  counter
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>2，jQuery selector</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-coffee" data-lang="coffee"><span style="color:#75715e"># dry codes
+</span><span style="color:#75715e"></span>$form = <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#add-item-form&#39;</span>)
+
+<span style="color:#a6e22e">$form</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">reset</span>()
+<span style="color:#a6e22e">$form</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.success&#34;</span>).<span style="color:#a6e22e">removeClass</span>(<span style="color:#e6db74">&#34;success&#34;</span>)
+<span style="color:#a6e22e">$form</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.success-message&#34;</span>).<span style="color:#a6e22e">remove</span>()
+<span style="color:#a6e22e">$form</span>.<span style="color:#a6e22e">submit</span>()
+
+<span style="color:#75715e"># wet codes
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#add-item-form&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">reset</span>()
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#add-item-form&#39;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.success&#34;</span>).<span style="color:#a6e22e">removeClass</span>(<span style="color:#e6db74">&#34;success&#34;</span>)
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#add-item-form&#39;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.success-message&#34;</span>).<span style="color:#a6e22e">remove</span>()
+<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#add-item-form&#39;</span>).<span style="color:#a6e22e">submit</span>()
+</code></pre></div><h4 id="2-convention-over-configuration">2, Convention over configuration.</h4>
+<p>把大多数人在大多数情况下所采取的设置，定为默认设置。</p>
+<p>例如，自动生成数据库里table的名字：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ===================================================== #</span>
+<span style="color:#75715e"># ================== Configuration ==================== #</span>
+<span style="color:#75715e"># ===================================================== #</span>
+
+<span style="color:#75715e"># models/user.rb</span>
+<span style="color:#66d9ef">User</span><span style="color:#f92672">.</span>DATABASE_TABLE_NAME     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;users&#34;</span>
+
+<span style="color:#75715e"># models/post.rb</span>
+<span style="color:#66d9ef">Post</span><span style="color:#f92672">.</span>DATABASE_TABLE_NAME     <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;posts&#34;</span>
+
+<span style="color:#75715e"># models/product.rb</span>
+<span style="color:#66d9ef">Product</span><span style="color:#f92672">.</span>DATABASE_TABLE_NAME <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;products&#34;</span>
+
+<span style="color:#75715e"># ================================================== #</span>
+<span style="color:#75715e"># ================== Convention ==================== #</span>
+<span style="color:#75715e"># ================================================== #</span>
+
+<span style="color:#75715e"># models/base.rb</span>
+<span style="color:#66d9ef">BaseModel</span><span style="color:#f92672">.</span>DATABASE_TABLE_NAME<span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>class<span style="color:#f92672">.</span>name<span style="color:#f92672">.</span>pluralize<span style="color:#f92672">.</span>lower
+</code></pre></div><h4 id="3-抽象出一个处理通用逻辑的基类-特殊的dry">3, 抽象出一个处理通用逻辑的基类 （特殊的DRY）</h4>
+<p>例如，<a href="https://codelation.com/restful-rails-api-just-add-water/">一个RESTful API的基类</a>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">API</span><span style="color:#f92672">::</span><span style="color:#66d9ef">BaseController</span>
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>
+    create_resource(params)
+    render <span style="color:#e6db74">:show</span>, <span style="color:#e6db74">status</span>: <span style="color:#e6db74">:created</span>
+  <span style="color:#66d9ef">end</span>
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read</span>
+    @resource <span style="color:#f92672">=</span> resource_class<span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+    render <span style="color:#e6db74">:show</span>
+  <span style="color:#66d9ef">end</span>
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update</span>
+    @resource <span style="color:#f92672">=</span> resource_class<span style="color:#f92672">.</span>find params<span style="color:#f92672">[</span><span style="color:#e6db74">:id</span><span style="color:#f92672">]</span>
+    @resource<span style="color:#f92672">.</span>update params
+    render <span style="color:#e6db74">:show</span>
+  <span style="color:#66d9ef">end</span>
+
+  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">destroy</span>
+    @resource<span style="color:#f92672">.</span>destroy
+    render <span style="color:#e6db74">:no_content</span>
+  <span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">end</span>
+</code></pre></div><h3 id="2-把问题归类成相互独立的几部分各司其职">2. 把问题归类成相互独立的几部分，各司其职</h3>
+<h4 id="1-函数要短最好五行以内尽量不超过20行">1, 函数要短，最好五行以内，尽量不超过20行</h4>
+<p>把程序分解成函数主要有三个目的：</p>
+<p>1，反复使用相同的逻辑，也就是第一节讨论的话题</p>
+<p>2，提高逻辑的抽象等级(raise the level of abstraction)，以便更好的理解</p>
+<p>如果一个函数里有多个等级的逻辑混杂在一起，就会使得程序更加难以理解（受到污染，变得不纯净）</p>
+<p>3，把复杂的问题切割成更好处理的小块，也就是第三节将要讨论的话题</p>
+<p>这样做的好处是，便于程序的理解、测试、debug以及保养</p>
+<p>在一个函数里，应该：</p>
+<p>1，只表述有别于其他任何函数的逻辑</p>
+<p>2，只表述同一层面的逻辑</p>
+<p>3，只做一件事，并把它做好</p>
+<p>举例说明，一个要把大象装冰箱的函数</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ================================================== #</span>
+<span style="color:#75715e"># ================== Fat Codes ===================== #</span>
+<span style="color:#75715e"># ================================================== #</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put_elephant_into_fridge</span>
+  <span style="color:#75715e"># open</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>hold @fridge<span style="color:#f92672">.</span>door
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>pull <span style="color:#e6db74">&#34;10cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>clear
+  <span style="color:#75715e"># put</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>hold @elephant
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>up <span style="color:#e6db74">&#34;30cm&#34;</span>
+  @user<span style="color:#f92672">.</span>body<span style="color:#f92672">.</span>move <span style="color:#e6db74">&#34;forward&#34;</span>, <span style="color:#e6db74">by</span>: <span style="color:#e6db74">&#34;30cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>down <span style="color:#e6db74">&#34;30cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>clear
+  <span style="color:#75715e"># close</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>hold @fridge<span style="color:#f92672">.</span>door
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>push <span style="color:#e6db74">&#34;10cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>clear
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ======================================================= #</span>
+<span style="color:#75715e"># ================== Polluted Codes ===================== #</span>
+<span style="color:#75715e"># ======================================================= #</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put_elephant_into_fridge</span>
+  <span style="color:#75715e"># open</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>hold @fridge<span style="color:#f92672">.</span>door
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>pull <span style="color:#e6db74">&#34;10cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>clear
+  <span style="color:#75715e"># put</span>
+  @user<span style="color:#f92672">.</span>put @elephant, <span style="color:#e6db74">into</span>: @fridge
+  <span style="color:#75715e"># close</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>hold @fridge<span style="color:#f92672">.</span>door
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>push <span style="color:#e6db74">&#34;10cm&#34;</span>
+  @user<span style="color:#f92672">.</span>hand<span style="color:#f92672">.</span>clear
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ===================================================== #</span>
+<span style="color:#75715e"># ================== Skinny Codes ===================== #</span>
+<span style="color:#75715e"># ===================================================== #</span>
+<span style="color:#75715e"># this is super easy to understand,</span>
+<span style="color:#75715e"># it only has three lines, each line means a clear step</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put_elephant_into_fridge</span>
+  @user<span style="color:#f92672">.</span>open_door @fridge<span style="color:#f92672">.</span>door
+  @user<span style="color:#f92672">.</span>put @elephant, <span style="color:#e6db74">into</span>: @fridge
+  @user<span style="color:#f92672">.</span>close_door @fridge<span style="color:#f92672">.</span>door
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#75715e"># ===================================================== #</span>
+<span style="color:#75715e"># ================== Better Codes ===================== #</span>
+<span style="color:#75715e"># ===================================================== #</span>
+
+<span style="color:#75715e"># open/close fridge is a common task.</span>
+<span style="color:#75715e"># this piece of logic is shared by multiple functions.</span>
+<span style="color:#75715e"># so it should have its own function.</span>
+<span style="color:#75715e"># by this way, we reduced 11 lines to one line.</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put_elephant_into_fridge</span>
+  operate_fridge { <span style="color:#f92672">|</span>user, fridge<span style="color:#f92672">|</span> user<span style="color:#f92672">.</span>put @elephant, <span style="color:#e6db74">into</span>: fridge }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">grab_coke_from_fridge</span>
+  operate_fridge { <span style="color:#f92672">|</span>user, fridge<span style="color:#f92672">|</span> user<span style="color:#f92672">.</span>grab @coke, <span style="color:#e6db74">from</span>: fridge }
+<span style="color:#66d9ef">end</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">operate_fridge</span> <span style="color:#f92672">&amp;</span>block
+  @user<span style="color:#f92672">.</span>open @fridge<span style="color:#f92672">.</span>door
+  block<span style="color:#f92672">.</span>call @user, @fridge
+  @user<span style="color:#f92672">.</span>close @fridge<span style="color:#f92672">.</span>door
+<span style="color:#66d9ef">end</span>
+</code></pre></div><h4 id="2-一个类要短并且只做一类事">2, 一个类要短，并且只做一类事</h4>
+<p>类所要追从的是<a href="/pdf/srp.pdf">Single Responsibility Principle</a>, 也就是说：</p>
+<p>&ldquo;There should never be more than one reason for a class to change.&rdquo;</p>
+<p>更直接的，一个类只做一类事，多了不干。木匠做家具，瓦匠砌墙。</p>
+<p>举例说明， 比如在一个卖地皮的网站上，要标注面积和价格信息</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/*
+</span><span style="color:#75715e">  # ================================================== #
+</span><span style="color:#75715e">  # ================== Fat Codes ===================== #
+</span><span style="color:#75715e">  # ================================================== #
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">square_sides_length</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+<span style="color:#a6e22e">price_in_cents</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Area: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">square_sides_length</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Price: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;$&#34;</span> <span style="color:#f92672">+</span> (<span style="color:#a6e22e">price_in_cents</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>).<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>))
+
+
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">  # ===================================================== #
+</span><span style="color:#75715e">  # ================== Skinny Codes ===================== #
+</span><span style="color:#75715e">  # ===================================================== #
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">square_sides_length</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+<span style="color:#a6e22e">price_in_cents</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>
+
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Area: &#34;</span>  <span style="color:#f92672">+</span>  Math.<span style="color:#a6e22e">Square</span>.<span style="color:#a6e22e">calculate_area</span>(<span style="color:#a6e22e">square_sides_length</span>));
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Price: &#34;</span> <span style="color:#f92672">+</span>  <span style="color:#a6e22e">Currency</span>.<span style="color:#a6e22e">cents_to_string</span>(<span style="color:#a6e22e">price_in_cents</span>));
+</code></pre></div><p>第一个方案的职责是输出数值，但它又承担了计算正方形面积和生成货币字符的任务.</p>
+<p>第一个方案虽然比较快，但是污染了类的职责，其主要弊端在于:</p>
+<p>不便于理解程序，在这个层面上，程序员只需要知道这是在计算面积，而无需理解计算面积的方式.</p>
+<h4 id="3-宏观的模块化每一大块负责一个具体的任务">3, 宏观的模块化，每一大块负责一个具体的任务</h4>
+<p>不在一个文件里处理两个模块的问题，彻底把责任分开。例如，在html里：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+<span style="color:#75715e">&lt;!--
+</span><span style="color:#75715e">  # ================================================== #
+</span><span style="color:#75715e">  # ================== Fat Codes ===================== #
+</span><span style="color:#75715e">  # ================================================== #
+</span><span style="color:#75715e">--&gt;</span>
+<span style="color:#75715e">&lt;!-- it has too much responsibilities, 3 rather than 1 --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: red&#34;</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sayHello()&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+
+<span style="color:#75715e">&lt;!--
+</span><span style="color:#75715e">  # ===================================================== #
+</span><span style="color:#75715e">  # ================== Skinny Codes ===================== #
+</span><span style="color:#75715e">  # ===================================================== #
+</span><span style="color:#75715e">--&gt;</span>
+<span style="color:#75715e">&lt;!-- post.html  --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+
+<span style="color:#75715e">&lt;!-- post.css  --&gt;</span>
+.post {
+  background-color: red
+}
+
+<span style="color:#75715e">&lt;!-- post.js  --&gt;</span>
+$(&#34;.post&#34;).click(function(){sayHello()});
+</code></pre></div><p>两个更加具体的例子：</p>
+<p>1，Model-View-Controller</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ============================================== #</span>
+<span style="color:#75715e"># ================== Model ===================== #</span>
+<span style="color:#75715e"># ============================================== #</span>
+
+<span style="color:#e6db74">Tweet</span>:
+  id:, <span style="color:#e6db74">user</span>:, <span style="color:#e6db74">text</span>:
+  <span style="color:#e6db74">url</span>: <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;/</span><span style="color:#e6db74">#{</span>user<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">/tweets/</span><span style="color:#e6db74">#{</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># ============================================= #</span>
+<span style="color:#75715e"># ================== View ===================== #</span>
+<span style="color:#75715e"># ============================================= #</span>
+
+<span style="color:#f92672">.</span>tweet
+  <span style="color:#f92672">.</span>left<span style="color:#f92672">.</span>thumb
+    <span style="color:#f92672">=</span> @user<span style="color:#f92672">.</span>thumb<span style="color:#f92672">.</span>url
+  <span style="color:#f92672">.</span>right
+    <span style="color:#f92672">.</span>name
+      <span style="color:#f92672">=</span> @user<span style="color:#f92672">.</span>name
+    <span style="color:#f92672">.</span>text
+      <span style="color:#f92672">=</span> link @tweet<span style="color:#f92672">.</span>text, <span style="color:#e6db74">to</span>: @tweet<span style="color:#f92672">.</span>url
+
+<span style="color:#75715e"># =================================================== #</span>
+<span style="color:#75715e"># ================== Controller ===================== #</span>
+<span style="color:#75715e"># =================================================== #</span>
+
+<span style="color:#e6db74">TweetsController</span>:
+  <span style="color:#e6db74">show</span>: <span style="color:#f92672">-&gt;</span>
+    @tweet <span style="color:#f92672">=</span> <span style="color:#66d9ef">Tweet</span><span style="color:#f92672">.</span>find params<span style="color:#f92672">.</span>id
+    @user  <span style="color:#f92672">=</span> @tweet<span style="color:#f92672">.</span>user
+</code></pre></div><p>2，HTML-CSS-JavaScript</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-coffee" data-lang="coffee"><span style="color:#75715e"># ========================================================= #
+</span><span style="color:#75715e"># ================== HTML / Structure ===================== #
+</span><span style="color:#75715e"># ========================================================= #
+</span><span style="color:#75715e"></span>
+.<span style="color:#a6e22e">tweet</span>
+  .left.thumb
+    = <span style="color:#a6e22e">image</span> <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">thumb</span>.<span style="color:#a6e22e">url</span>, height: <span style="color:#e6db74">&#34;50px&#34;</span>
+  .<span style="color:#a6e22e">right</span>
+    .name
+      = <span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">name</span>
+    .text
+      = <span style="color:#a6e22e">link</span> <span style="color:#a6e22e">tweet</span>.<span style="color:#a6e22e">text</span>, to: <span style="color:#a6e22e">tweet</span>.<span style="color:#a6e22e">url</span>
+  .<span style="color:#a6e22e">message</span>
+
+
+<span style="color:#75715e"># ===================================================== #
+</span><span style="color:#75715e"># ================== CSS / Styles ===================== #
+</span><span style="color:#75715e"># ===================================================== #
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># generic
+</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">left</span>, .<span style="color:#a6e22e">right</span>
+  display: <span style="color:#a6e22e">inline</span><span style="color:#f92672">-</span><span style="color:#a6e22e">block</span>
+
+<span style="color:#75715e"># tweet
+</span><span style="color:#75715e"></span>.<span style="color:#a6e22e">tweet</span> <span style="color:#f92672">&lt;</span> .<span style="color:#a6e22e">card</span>
+
+  .<span style="color:#a6e22e">message</span>
+    color: <span style="color:#a6e22e">green</span>
+    padding: <span style="color:#ae81ff">8</span><span style="color:#a6e22e">px</span>
+    resize: <span style="color:#a6e22e">(event) -&gt;</span>
+
+      <span style="color:#75715e"># based on properties
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">text</span>.<span style="color:#a6e22e">count</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">10</span>
+        self.padding = <span style="color:#e6db74">&#34;15px&#34;</span>
+
+      <span style="color:#75715e"># based on events
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">event</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;click&#34;</span>
+        self.padding = <span style="color:#e6db74">&#34;20px&#34;</span>
+
+
+<span style="color:#75715e"># ============================================================ #
+</span><span style="color:#75715e"># ================== Javascript / Events ===================== #
+</span><span style="color:#75715e"># ============================================================ #
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># locate layers
+</span><span style="color:#75715e"></span>layers = <span style="color:#a6e22e">$</span> <span style="color:#e6db74">&#34;.tweet&#34;</span>
+
+<span style="color:#75715e"># how to response to events
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">layers</span>.<span style="color:#a6e22e">click</span> <span style="color:#a6e22e">-&gt;</span> <span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">text</span> <span style="color:#e6db74">&#34;You clicked the tweet!&#34;</span>
+<span style="color:#a6e22e">layers</span>.<span style="color:#a6e22e">on</span> <span style="color:#e6db74">&#34;fancy event&#34;</span>, <span style="color:#a6e22e">(event) -&gt;</span>
+  name = <span style="color:#a6e22e">self</span>.<span style="color:#a6e22e">find</span> <span style="color:#e6db74">&#34;.name&#34;</span>
+  <span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">text</span> <span style="color:#e6db74">&#34;I am fancy </span><span style="color:#e6db74">#{</span><span style="color:#a6e22e">event</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!&#34;</span>
+</code></pre></div><h4 id="4-任何包含逻辑的文件都应该短任何文件夹根目录下里的文件也应该少">4, 任何包含逻辑的文件都应该短，任何文件夹（根目录下）里的文件也应该少</h4>
+<p>任何手工写的文件，或是要人读的文件都应该非常简短，<strong>最好限制在200行以内</strong>。</p>
+<p>这样其他人阅读的时候可以减少压力感(avoid overwhelming feeling)，提高理解程序的效率。</p>
+<p>Less is more，写的短，往往意味着写的精简，不罗嗦，不重复。</p>
+<p>除了单一文件外，文件夹根目录下的文件数量也要少（不多于10个？）.</p>
+<p>只把最核心的文件放在根目录下，其他的文件分类整理到文件夹里，这样便于其他人阅读和查找。</p>
+<h3 id="3-把问题细化成较为简单的小问题逐个突破">3. 把问题细化成较为简单的小问题，逐个突破</h3>
+<p>这是最简单的一个原则.</p>
+<h4 id="1-把特别长的文件切割成多个短小的文件例如">1, 把特别长的文件，切割成多个短小的文件。例如，</h4>
+<p>一个网页的主页有三个部分，把三个部分的逻辑分别放到不同的文件：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">views<span style="color:#f92672">/</span>
+  <span style="color:#960050;background-color:#1e0010">├──</span> home<span style="color:#f92672">/</span>
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> hero<span style="color:#f92672">.</span>html
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> how<span style="color:#f92672">-</span>it<span style="color:#f92672">-</span>works<span style="color:#f92672">.</span>html
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">└──</span> press<span style="color:#f92672">.</span>html
+  <span style="color:#960050;background-color:#1e0010">└──</span> home<span style="color:#f92672">.</span>html
+</code></pre></div><h4 id="2-把包含特别多文件的文件夹整理到少数几个文件夹里例如">2, 把包含特别多文件的文件夹，整理到少数几个文件夹里，例如</h4>
+<p>把放字体的文件夹整理起来：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># ================================================== #</span>
+<span style="color:#75715e"># ================== Fat Codes ===================== #</span>
+<span style="color:#75715e"># ================================================== #</span>
+fonts<span style="color:#f92672">/</span>
+  <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensed<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensedbold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensedboldobl<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>bold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>light<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>semibold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>regular<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> raleway<span style="color:#f92672">-</span>bold<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">└──</span> raleway<span style="color:#f92672">-</span>regular<span style="color:#f92672">.</span>woff
+
+<span style="color:#75715e"># ===================================================== #</span>
+<span style="color:#75715e"># ================== Skinny Codes ===================== #</span>
+<span style="color:#75715e"># ===================================================== #</span>
+fonts<span style="color:#f92672">/</span>
+  <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensed<span style="color:#f92672">/</span>
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensed<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> futurastd<span style="color:#f92672">-</span>condensedbold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">└──</span> futurastd<span style="color:#f92672">-</span>condensedboldobl<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">/</span>
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>bold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>light<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">├──</span> proximanova<span style="color:#f92672">-</span>semibold<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#f92672">|</span>   <span style="color:#960050;background-color:#1e0010">└──</span> proximanova<span style="color:#f92672">-</span>regular<span style="color:#f92672">-</span>webfont<span style="color:#f92672">.</span>woff
+  <span style="color:#960050;background-color:#1e0010">└──</span> raleway<span style="color:#f92672">/</span>
+      <span style="color:#960050;background-color:#1e0010">├──</span> raleway<span style="color:#f92672">-</span>bold<span style="color:#f92672">.</span>woff
+      <span style="color:#960050;background-color:#1e0010">└──</span> raleway<span style="color:#f92672">-</span>regular<span style="color:#f92672">.</span>woff
+</code></pre></div><p>在写这个文章的过程中，为了更好的放置不同的文件夹，我设计了一个针对GUI的框架(framework)：</p>
+<h4 id="scenarios-based-framework-for-gui-softwares">Scenarios based framework for GUI softwares</h4>
+<h3 id="scenarios-based-framework-for-gui-softwares-1">Scenarios based framework for GUI softwares</h3>
+<p>这个框架方案的理念就是：把写程序当成是按照剧本（设计图稿）拍电影</p>
+<p>Scenario指的是场景，Scene指的是场景里的一个画面</p>
+<p>为什么会出现scenario？是因为数据的相似性，也就是信息出现的频率，还是计算缩减的一部分。</p>
+<p>计算缩减包括了完整信息的缩减，也包括了模糊信息的缩减（所谓模糊就是指的，信息的外延，变形，但是变得不是很大）</p>
+<p>接下来举例说明。</p>
+<p>这个是程序主目录的列表，（借鉴Rails的设计）</p>
+<pre tabindex="0"><code>twitter/
+  ├── app/
+  ├── bin/
+  ├── config/
+  ├── lib/
+  ├── log/
+  ├── test/
+  └── vendor/
+</code></pre><p>其中，<code>app</code>是和这个软件直接相关的逻辑</p>
+<p>在<code>app</code>文件夹里：</p>
+<pre tabindex="0"><code>app/
+  ├── models/
+  ├── controllers/
+  ├── helpers/
+  └── views/
+</code></pre><p>按照MVVMC的设计理念分为四个部分，其中<code>helpers</code>就是View Model（把view里重复的逻辑放到helpers里）</p>
+<p>在<code>model</code>文件夹里：</p>
+<pre tabindex="0"><code>models/
+  ├── generic/
+  ├── vendor/
+  |   ├── stripe.rb
+  |   ├── shopify.rb
+  |   └── instagram.rb
+  ├── user/
+  ├── product/
+  |   ├── properties.rb
+  |   ├── relationships.rb
+  |   └── callbacks.rb
+  ├── user.rb
+  └── product.rb
+</code></pre><p>值得注意的是：1，把一个大的class分解成小的部分，2，把相近的model归纳到一个文件夹里</p>
+<p><strong>接下来进入主题</strong>，</p>
+<p>对于与views相关的：view，controller和helper，它们都是按照scenarios的不同来建立文件夹。</p>
+<p>其中generic就是多个scenarios共用的逻辑。</p>
+<pre tabindex="0"><code>app/
+  ├── models/
+  ├── controllers/
+  |   ├── generic/
+  |   ├── auth/
+  |   ├── checkout/
+  |   └── site/
+  ├── helpers/
+  |   ├── generic/
+  |   ├── auth/
+  |   ├── checkout/
+  |   └── site/
+  └── views/
+      ├── generic/
+      |   ├── styles/
+      |   ├── events/
+      |   ├── layouts/
+      |   └── scenes/
+      ├── auth/
+      ├── checkout/
+      └── site/
+          ├── styles/
+          ├── events/
+          ├── layouts/
+          └── scenes/
+              ├── home/
+              |   ├── hero.html
+              |   ├── how-it-works.html
+              |   └── press.html
+              ├── home.html
+              ├── about-us.html
+              └── contact.html
+</code></pre><p>这样整理的优点在于：</p>
+<p>1，Consistency is king。这样的结构相对比较清晰，便于理解和查找逻辑</p>
+<p>2，同一场景里的多个画面，许多设计元素以及需要处理的动作是非常接近的（甚至是一致的）</p>
+<p>应该说，正因为这些设计元素和需要处理的动作非常接近，我们才归纳这些画面为一个场景</p>
+<p>3，用户操作时，同一场景的多个画面是连续的，有利于将程序切割成相互独立、关联性较小的模块</p>
+<h3 id="4-突出重点消除杂音">4. 突出重点，消除杂音</h3>
+<p>这个原则的目的是，降低阅读程序的压力，用简短清晰的符号来表达逻辑。</p>
+<p>也就是，Reduce learning time, Remove distractions, Avoid stress.</p>
+<p>晕头假设：假设你现在比较迷糊，却要在短时间理解一个程序，如何才能让这时的你更好的理解程序</p>
+<h4 id="1同一等级的逻辑占用同样行数的代码最好都是一行例如">1，同一等级的逻辑占用同样行数的代码，最好都是一行，例如:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># clear way</span>
+<span style="color:#e6db74">checkout</span>: <span style="color:#f92672">-&gt;</span>
+  <span style="color:#66d9ef">if</span> order<span style="color:#f92672">.</span>charge<span style="color:#f92672">.</span>
+    send_order_email<span style="color:#f92672">.</span>
+    success_alert <span style="color:#e6db74">&#34;You are awesome!&#34;</span>
+  <span style="color:#66d9ef">else</span>
+    error_alert <span style="color:#e6db74">&#34;Error!&#34;</span>
+
+<span style="color:#75715e"># distracting way</span>
+<span style="color:#e6db74">checkout</span>: <span style="color:#f92672">-&gt;</span>
+  <span style="color:#66d9ef">if</span> order<span style="color:#f92672">.</span>charge<span style="color:#f92672">.</span>
+    send_order_email<span style="color:#f92672">.</span>
+    <span style="color:#66d9ef">AlertViewController</span><span style="color:#f92672">.</span>presentAlert
+      self,
+      <span style="color:#e6db74">title</span>: <span style="color:#e6db74">&#34;Success&#34;</span>
+      <span style="color:#e6db74">message</span>: <span style="color:#e6db74">&#34;You are awesome!&#34;</span>
+      <span style="color:#e6db74">actions</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;close&#34;</span><span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">else</span>
+    <span style="color:#66d9ef">AlertViewController</span><span style="color:#f92672">.</span>presentAlert
+      self,
+      <span style="color:#e6db74">title</span>: <span style="color:#e6db74">&#34;Error&#34;</span>
+      <span style="color:#e6db74">message</span>: <span style="color:#e6db74">&#34;Error!&#34;</span>
+      <span style="color:#e6db74">actions</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;close&#34;</span><span style="color:#f92672">]</span>
+</code></pre></div><p>第二个策略的问题在于，喧宾夺主，alert并不是逻辑主要解决的问题，却要抢夺大量的注意力。</p>
+<h4 id="2在不引起歧义的前提下尽量减少字符数对常用函数使用4-7个字符的单一单词最佳">2，在不引起歧义的前提下，尽量减少字符数（对常用函数，使用4-7个字符的单一单词最佳）</h4>
+<p>例如:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># clean</span>
+<span style="color:#66d9ef">UserMail</span><span style="color:#f92672">.</span>welcome(current_user)<span style="color:#f92672">.</span>deliver
+
+<span style="color:#75715e"># verbose</span>
+<span style="color:#66d9ef">MSEmailController</span><span style="color:#f92672">.</span>SendEmailMessage(currentUser<span style="color:#f92672">.</span>emailAddress,
+                                   <span style="color:#e6db74">withTemplateNamed</span>: <span style="color:#960050;background-color:#1e0010">“</span>welcome<span style="color:#960050;background-color:#1e0010">”</span>,
+                                   <span style="color:#e6db74">withLocalVariables</span>: { <span style="color:#e6db74">user</span>:  currentUser })
+
+<span style="color:#75715e"># ugly</span>
+mail <span style="color:#f92672">=</span> <span style="color:#66d9ef">MSMail</span><span style="color:#f92672">.</span>new
+
+mail<span style="color:#f92672">.</span>addTo(currentUser<span style="color:#f92672">.</span>emailAddress)
+mail<span style="color:#f92672">.</span>setSubject(<span style="color:#e6db74">&#39;Welcome to Our Site&#39;</span>)
+
+template <span style="color:#f92672">=</span> <span style="color:#66d9ef">MSTemplate</span><span style="color:#f92672">.</span>new(locateTemplate(<span style="color:#e6db74">&#39;includes/mail/user-welcome.php&#39;</span>))
+template<span style="color:#f92672">.</span>setVar(<span style="color:#e6db74">&#39;userName&#39;</span>, $currentUser<span style="color:#f92672">.</span>name)
+bodyStr <span style="color:#f92672">=</span> template<span style="color:#f92672">.</span>render
+
+mail<span style="color:#f92672">.</span>setHTMLBody(bodyStr)
+
+mail<span style="color:#f92672">.</span>send
+</code></pre></div><p>最后一个方案的问题还在于：没有把责任分担给其他的类。</p>
+<p>在这个场景下，唯一要表达的信息就是”给用户发一封欢迎邮件“，具体怎么发的（尤其是发邮件的逻辑），那是其他类需要解决的问题。</p>
+<h4 id="3选择或设计一个减少键盘敲击的编程语言">3，选择或设计一个减少键盘敲击的编程语言</h4>
+<p>例如：python, ruby，scala, coffeescript</p>
+<h3 id="结束语">结束语</h3>
+<h3 id="结束语-1">结束语</h3>
+<p>写程序的时候，无需从一开始就严格的按照简洁的方法写，而是先想着实现，然后再整理 (Make it work, then make it better)。也就是，</p>
+<p>第一步：Get it to work - 第二步：Make it skinny</p>
+<p>第一步的快感是实现目标的成就感，目的是做出雏形。第二步的快感是清晰简洁的美感，目的是成品上市。</p>
+<h4 id="2018年更新">2018年更新：</h4>
+<p>1，笨拙实现。通过穷举的方式，以最为笨拙的方式进行实现，也就是在最底层的方式，混乱的，每一个concern纠缠的形式实现</p>
+<p>而且我推荐初学者如此去做（当然也要掌握好分寸，既不能让初学者丧失了解决问题的乐趣，又不能让人失去了解决底层问题的能力）</p>
+<p>2，分块整理。把各个concern通过文件或者文件夹的方式割裂开来，让每一个文件尽可能的小一些，所知道的信息少一些，以便于区分职能，各个突破。</p>
+<p>3，减少重复。DYI的过程，把重复出现的信息用一个函数也好，把大家约定俗成的用一个函数实现</p>
+<p>但是问题是：不要过分的依赖DYI，因为不仅仅是计算量的减少，还要兼顾工作量的减少，也是就说，要考虑到人的因素。</p>
+<p>如果DYI不能显著的增加计算量，却使得工作量，无论是新人（自己长时间不看，也算新人）的学习，或者是文档的数量，都变得更加长和抽象，那人理解起来的时间增加，那么在工程上，就增加了工作累，毕竟人是程序员，而不是机器编程，故而，要必要时缩减。</p>
+<p>4，避免 magic number。定义一个变量，而不是定义一个奇怪的突兀的数字，这个的好处在于，人的因素，大家思考问题的时间减少了，让人一目了然，清晰明了，也是节约了工作量</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2024  © Copyright Yingkui.com All Rights Reserved </div>
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

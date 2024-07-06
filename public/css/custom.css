@@ -1,0 +1,129 @@
+body {
+    font-family: OpenSans-Regular, Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.post-header h1.title {
+    margin: 4px 0 0 0;
+}
+
+/* code {
+    background: #ffff4d;
+    padding: 0 5px;
+} */
+
+h2 {
+    text-align: center;
+    margin: 40px 0 30px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+h4 a {
+    font-weight: normal;
+}
+
+.highlight {
+    background-color: #272822;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+    background-color: #272822 !important;
+}
+
+strong {
+    color: #ff3502;
+}
+
+::selection {
+    color: #fff;
+    background: #1890ff;
+}
+
+blockquote {
+    color: rgb(91,91,91);
+    border-left: 5px solid #3700ff;
+    background: rgba(158, 158, 158, 0.1);
+    padding: 1px 0px 1px 10px;
+    margin: 30px 0px;
+    font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+blockquote p {
+    color: #3f3f3f;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 20px;
+    padding: 0px;
+}
+
+.breadcrumb {
+    list-style: none;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  
+  .breadcrumb li {
+    display: inline;
+    white-space: nowrap;
+  }
+  
+  .breadcrumb li + li:before {
+    content: ">";
+    padding: 0.3rem;
+  }
+
+/* 2024 */
+
+figcaption {
+    color: #aaa;
+    font-size: 0.75em;
+}
+
+table {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+}
+
+table thead th {
+    color: rgb(107 114 128);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-align: left;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom: 1 solid #e5e7eb;
+    background-color: rgb(249 250 251);
+}
+
+table tbody td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+    border-bottom: 1 solid #e5e7eb;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #F9FAFB;
+}
