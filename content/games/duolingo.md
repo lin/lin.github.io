@@ -12,6 +12,13 @@ Learning Japanese using Chinese
 
 ### 15 Days Challenge
 
+#### XP
+
+1. 7/4, 3020xp
+1. 7/5, 2135xp
+1. 7/6, 37xp
+1. 7/7, 1286xp
+
 #### Situation
 
 Starts from unit 9 from section 2.
@@ -42,7 +49,12 @@ Goal:
 1. ✅ 2-12, 4am
 1. ✅ 2-13
 1. ✅ 2-14
-1. 2-15
-1. 2-16
-1. 2-17
-1. 2-18 
+1. ✅ 2-15
+
+#### July 8th 2024
+
+1. ✅ 2-17
+
+#### July 10th 2024
+
+1. ✅ 2-18
