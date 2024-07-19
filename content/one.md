@@ -39,14 +39,13 @@ type: "page"
 
 ## Deadlines
 
-1. 07月08日前，下周一之前，必须要能够给行行提供一个可以执行的版本
-1. 07月19日前，两周之内，必须要把MVP开发完毕
-1. 07月19日前，必须要把游戏化的新文章写完
+1. 最快的速度，把所有要通关的游戏通关
 1. 今年暑假，必须要把游戏化测试的数据拿到手里
 
 ## Habits
 
 1. Eat the frog.
 1. Do things scary.
+1. Embarrass yourself.
 1. Document everything.
 1. Finish what you start.

@@ -172,12 +172,12 @@ type: "page"
 |   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
 |   🎁   | The Legend of Zelda: The Wind Waker      | Wii U          | ~29h   |            |AAVG|
 |   🎁   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
-|   🗄   | Metroid Prime                            | NS             | ~15h   |            |MVG|
+|   🗄   | Metroid Prime                            | NS             | 2h/~15h   |            |MVG|
+|   🗄   | Sekiro                                   | PS5            | 7h/~30h   |            |MVG|
 |   🗄   | Monster Hunter Rise                      | NS             | ~22h   |            |MVG|
 |   🗄   | Disco Elysium                            | Mac            | ~60h   |            |CRPG|
 |   🗄   | Pentiment                                | NS             | ~22h   |            |MVG|
 |   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS            | ~27h   | 2023/10    |AAVG|
-|   🗄   | Metroid Prime                            | NS             | ~13h   |            |MVG|
 |   🗄   | Final Fantasy VII                        | PS5            | ~33h   |            |JRPG|
 |   🗄   | Mass Effect 2                            | PS5            | ~24h   |            |SLG|
 |   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | ~30h   |            |AAVG|
