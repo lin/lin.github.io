@@ -48,8 +48,9 @@ type: "page"
 |   ✅   | Hades                                    | NS            | 16h    | 2024/05    |Rogue|
 |   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05      | JRPG|
 |   ✅   | Palworld                                 | NS            | 82h    | 2024/06     |ARPG|
-|   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06    |ARPG|
-|   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06        |MVG|
+|   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06     |AAVG|
+|   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
+|   ✅   | Sekiro                                   | PS5           | 53h    | 2024/07     |MVG|
 
 ## 其他曾深度体验过的游戏
 
@@ -135,6 +136,7 @@ type: "page"
 1. ✅ 《传送门》
 1. ✅ 《暗黑破坏神》
 1. ✅ 《密特罗德》
+1. ✅ 《魂类》
 1. 《生化危机》
 1. 《博德之门》
 1. 《怪物猎人》
@@ -167,17 +169,21 @@ type: "page"
 
 ### 可能要玩的游戏
 
+| 进展   | 游戏                                     | 平台            |  用时 | 时间  | 类型|
+|:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
+|   🗄   | Metroid Prime                            | NS             | 10h    |            |MVG|
+|   🗄   | Monster Hunter Rise                      | NS             | 20h    |            |MVG|
+|   🎁   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h    |            |AAVG|
+|   🎁   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
+|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
+
+<!-- ### 短期内不会玩的游戏
+
 | 进展   | 游戏                                     | 平台            |  用时 | 最后游玩时间  | 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
-|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
-|   🎁   | The Legend of Zelda: The Wind Waker      | Wii U          | ~29h   |            |AAVG|
-|   🎁   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
-|   🗄   | Metroid Prime                            | NS             | 2h/~15h   |            |MVG|
-|   🗄   | Sekiro                                   | PS5            | 7h/~30h   |            |MVG|
-|   🗄   | Monster Hunter Rise                      | NS             | ~22h   |            |MVG|
 |   🗄   | Disco Elysium                            | Mac            | ~60h   |            |CRPG|
 |   🗄   | Pentiment                                | NS             | ~22h   |            |MVG|
 |   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS            | ~27h   | 2023/10    |AAVG|
 |   🗄   | Final Fantasy VII                        | PS5            | ~33h   |            |JRPG|
 |   🗄   | Mass Effect 2                            | PS5            | ~24h   |            |SLG|
-|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | ~30h   |            |AAVG|
+|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | ~30h   |            |AAVG| -->

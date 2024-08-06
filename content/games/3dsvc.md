@@ -1,12 +1,13 @@
 ### 3DS Virtual Console Games
 
 1. [NSO] Donkey Kong
+1. ❌ [NSO] Mario Bros.
 1. [NSO] Super Mario Bros.
 1. [NSO] Super Mario Bros. 2
 1. [NSO] Super Mario Bros.: The Lost Levels
 1. [NSO] Super Mario Bros. 3
 1. [NSO] Super Mario World
-1. Super Mario Land
+1. [NSO] Super Mario Land
 1. [NSO] Super Mario Land 2: 6 Golden Coins
 1. [NSO] Yoshi's Island: Super Mario Advance 3
 1. [NSO] Dr. Mario
@@ -21,4 +22,4 @@
 1. [NSO] Metroid
 1. [NSO] Super Metroid
 1. [NSO] Metroid II - Return of Samus
-1. Metroid Fusion
+1. [NSOX] Metroid Fusion
