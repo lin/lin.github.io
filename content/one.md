@@ -29,7 +29,7 @@ type: "page"
 | ✅ 体验游戏  |  游戏文章           |                           |   Duolingo Japanese      |
 | ---         |                    |                           |                           |
 | 游戏化测试   |  设计              | 《Hooked》                 |                          |
-| 游戏化改版   |                   | 《Brave New Words》       | 《Wind Waker》            |
+| 游戏化改版   |                   | 《Brave New Words》        | 《Wind Waker》            |
 | 游戏化内容   | 人生               |                           | 《Monster Hunter Rise》   |
 | ---         |                    |                           |                           |
 | AIGC        |  智力              |                           | 《Resident Evil 4》       |
