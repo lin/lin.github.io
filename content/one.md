@@ -26,7 +26,7 @@ type: "page"
 | Fortune     | Create / Write     | Read / Learn              | Indulge / Entertainment  |
 |:------------|:-------------------|:--------------------------|:-------------------------|
 | 7a - 9p     | 9p - 11p           | 9p - 11p                  | 11p - 12a                |
-| ✅ 体验游戏  |  游戏文章           |                           |   Duolingo Japanese      |
+| ✅ 体验游戏  |  游戏文章           |                           |  Duolingo Japanese       |
 | ---         |                    |                           |                           |
 | 游戏化测试   |  设计              | 《Hooked》                 |                          |
 | 游戏化改版   |                   | 《Brave New Words》        | 《Wind Waker》            |

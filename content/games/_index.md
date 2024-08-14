@@ -171,10 +171,10 @@ type: "page"
 
 | 进展   | 游戏                                     | 平台            |  用时 | 时间  | 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
+|   🗄   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
 |   🗄   | Metroid Prime                            | NS             | 10h    |            |MVG|
-|   🗄   | Monster Hunter Rise                      | NS             | 20h    |            |MVG|
-|   🎁   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h    |            |AAVG|
-|   🎁   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
+|   🗄   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h    |            |AAVG|
+|   🎁   | Monster Hunter Rise                      | NS             | 20h    |            |MVG|
 |   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
 
 <!-- ### 短期内不会玩的游戏
