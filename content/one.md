@@ -1,51 +1,45 @@
 ---
-title: "One Page Guide"
+title: "Goals & Principles"
 type: "page"
 ---
 
-## Principle: Helcalm
+## Goals
 
-> Hell & Calm
+| One Life               | Three Goals                                   | Due     |             |
+|:-----------------------|:----------------------------------------------|:--------|:------------|
+| One EdTech Company     |  [Albert Education](./edu)                     | 2029年  | 8a-8p       |
+| One Philosophy Book    |  [Life: An Introduction](./life)               | 2029年  | 8p-12a      |
+| One AGI Paper           |  [A Theory of Intelligence](./ai)             |         |             |
 
-1. Work Like Hell. Disciplined. Finish what you start.
-1. Move Fast. Keep Shipping. Keep Failing.
-1. Calm w/o Pride, Sloth and Greed.
+## Principles
 
-## Overall Goals: Laifedu
+1. 无情拉满：No Emotions. Only Progress. Full Speed. Hard Deadlines.
+1. 追逐痛苦：Eat the frog. Do things scary. Embarrass yourself.
+1. 持续输出：Keep Shipping. Keep Failing.
+1. 闭环建档：Document everything. Finish what you start.
+1. 情绪稳定：不评价，不对比，不焦虑，不懊悔，不忧愁，不逃避
 
-> EdTech & Life & Intelligence
+## Facts
 
-| One Life    | Three Goals                                   | Due     | Principle   |
-|:------------|:----------------------------------------------|:--------|:------------|
-| One Company | [Albert Education](./edu)                     | 2029年  | Fun > Fast  |
-| One Book    | [Life: An Introduction](./life)               | 2029年  |             |
-| One Paper   | [A Theory of Intelligence](./ai)              | 2029年  |             |
+1. Pride is for low intelligence.
+1. Most people are not smart.
+1. Three Sins: Pride. Fear. Greed.
 
-## Goals Queue
+## Deadlines
 
-| Fortune     | Create / Write     | Read / Learn              | Indulge / Entertainment  |
+1. 最快的速度，把所有要通关的游戏通关
+1. 九月份之前，把文章写完
+
+## Queue
+
+| Fortune / 入世   | Create / 出世   | Learn / 摄入              | Indulge / 享乐  |
 |:------------|:-------------------|:--------------------------|:-------------------------|
-| 7a - 9p     | 9p - 11p           | 9p - 11p                  | 11p - 12a                |
+| 8a - 8p     | 8p - 10p           | 8p - 10p                  | 10p - 12a                |
 | ✅ 体验游戏  |  游戏文章           |                           |  Duolingo Japanese       |
 | ---         |                    |                           |                           |
 | 游戏化测试   |  设计              | 《Hooked》                 |                          |
 | 游戏化改版   |                   | 《Brave New Words》        | 《Wind Waker》            |
 | 游戏化内容   | 人生               |                           | 《Monster Hunter Rise》   |
 | ---         |                    |                           |                           |
-| AIGC        |  智力              |                           | 《Resident Evil 4》       |
+| AIGC        |  智力              |                           |                           |
 |             |                    |                           | 《Baldur's Gate 3》       |
-|             |                    |                           | 《Pentiment》             |
-|             |                    |                           | 《DRAGON QUEST III》      |
-
-## Deadlines
-
-1. 最快的速度，把所有要通关的游戏通关
-1. 今年暑假，必须要把游戏化测试的数据拿到手里
-
-## Habits
-
-1. Eat the frog.
-1. Do things scary.
-1. Embarrass yourself.
-1. Document everything.
-1. Finish what you start.

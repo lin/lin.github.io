@@ -42,15 +42,18 @@ type: "page"
 |   ✅   | Red Dead Redemption                      | NS            | 14.5h  | 2023/12  | AAVG|
 |   ✅   | [Call of Duty](./cod): WWII              | PS5           | 8h     | 2023/12     | FPS |
 |   ✅   | [Super Mario RPG](./mario-rpg)           | NS            | 19h    | 2023/12    |JRPG|
+|   ✅   | Suika Game                               | NS            | 20h    | 2024/01      |PLG|
 |   ✅   | Portal                                   | NS            | 4h     | 2024/01      |PLG|
 |   ✅   | Portal 2                                 | NS            | 10h    | 2024/01     |PLG|
 |   ✅   | Anno 1800                                | PC            | 12.5h  | 2024/05    |SLG|
 |   ✅   | Hades                                    | NS            | 16h    | 2024/05    |Rogue|
-|   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05      | JRPG|
+|   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05     | JRPG|
 |   ✅   | Palworld                                 | NS            | 82h    | 2024/06     |ARPG|
 |   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06     |AAVG|
 |   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
 |   ✅   | Sekiro                                   | PS5           | 53h    | 2024/07     |MVG|
+|   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
+|   ✅   | 桃太郎電鉄 ～昭和 平成 令和も定番！～       | NS            | 15h     |2024/08     |SLG|
 
 ## 其他曾深度体验过的游戏
 
@@ -113,6 +116,7 @@ type: "page"
 |《Ballz Break》            | 2017年   | 体会了很多小游戏 |
 |《Fidget Spinner》         | 2017年   | 体会了很多小游戏 |
 |《荒野行动》                | 2017年  |            |
+|《Overcooked 2》           | 2020年  |            |
 |《Cookie Clicker》         | 2023年12月  |            |
 |《Suika Game》             | 2023年12月  |  和媳妇一共玩了50小时  |
 |《原神》                   | 2024年1月  |        |
@@ -137,11 +141,13 @@ type: "page"
 1. ✅ 《暗黑破坏神》
 1. ✅ 《密特罗德》
 1. ✅ 《魂类》
-1. 《生化危机》
+1. ✅ 《生化危机》
+1. ✅ 《FIFA》/《2K NBA》
 1. 《博德之门》
 1. 《怪物猎人》
 1. 《最终幻想》
 1. 《刺客信条》
+1. -------------
 1. 《勇者斗恶龙》
 1. 《生化奇兵》
 1. 《合金装备》
@@ -167,23 +173,14 @@ type: "page"
 1. 💰《卡坦岛》
 1. 💰《车票之旅》
 
-### 可能要玩的游戏
+### 可能要玩的游戏（还需200小时，）
 
 | 进展   | 游戏                                     | 平台            |  用时 | 时间  | 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
-|   🗄   | [Resident Evil](./re) 4                  | PS5            | ~16h   |            |AAVG|
-|   🗄   | Metroid Prime                            | NS             | 10h    |            |MVG|
-|   🗄   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h    |            |AAVG|
-|   🎁   | Monster Hunter Rise                      | NS             | 20h    |            |MVG|
-|   🎁   | Baldur's Gate 3 (Act 1)                  | Mac            | ~30h   |            |CRPG|
-
-<!-- ### 短期内不会玩的游戏
-
-| 进展   | 游戏                                     | 平台            |  用时 | 最后游玩时间  | 类型|
-|:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
-|   🗄   | Disco Elysium                            | Mac            | ~60h   |            |CRPG|
-|   🗄   | Pentiment                                | NS             | ~22h   |            |MVG|
-|   🗄   | The Legend of Zelda: Ocarina of Time     | 3DS            | ~27h   | 2023/10    |AAVG|
-|   🗄   | Final Fantasy VII                        | PS5            | ~33h   |            |JRPG|
-|   🗄   | Mass Effect 2                            | PS5            | ~24h   |            |SLG|
-|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | ~30h   |            |AAVG| -->
+|   🗄   | Baldur's Gate 3 (Act 1)                  | Mac            | 30h   |            |CRPG|
+|   🗄   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h   |            |AAVG|
+|   🗄   | Metroid Prime                            | NS             | 10h   |            |MVG|
+|   🗄   | Monster Hunter Rise                      | NS             | 20h   |            |MVG|
+|   🗄   | Final Fantasy VII                        | PS5            | 33h   |            |JRPG|
+|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | 30h   |            |AAVG|
+|   🗄   | Pokémon Scarlet                          | NS             | 35h   |            |JRPG|
