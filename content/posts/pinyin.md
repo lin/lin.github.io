@@ -10,7 +10,7 @@ isCJKLanguage: true
 1. 把汉字当成emoji看待，强调呼出的速度，而不是读音精准
 1. 容易被读出来，利于商业标识，利于传播，soni，konami
 1. 不要求准确的普通话读音，近似即可
-1. a /ɑː/, i /iː/, u /uː/, e /e/，o /əʊ/，er /ə/， or /ɔː/, ur/uːə/, ir /iːə/
+1. a /ɑː/, i /iː/, u /uː/, e /e/，o /əʊ/，er /ə/， or /ɔː/, ur/uːə/(uer的缩写), ir /iːə/ (ier的缩写)
 1. 尽可能四个字母表示一个拼音，a/i/u/e/o, ir/er/or/ur/sh/ch/ts，有时当成是一个字母看待
 1. 摒弃 j q x 的标音，例如，ki这个组合在拼音中，不读成/kʰi/，而读成 /tɕʰi/
 1. 为了达到易读简短的目的，甚至出现了改音（用e/o来近似），其实也可以考虑并音或者换音，删去一些使用频率低的音，例如，diu去除变成dio，qiong变成kio，xiong和xiu合并成sio，推广普通话就是让大家重新适应发音，更改读音并不是那么不能接受
@@ -18,6 +18,7 @@ isCJKLanguage: true
 1. 元音：an/ang, en/eng, in/ing, un/ong，把ng变成m
 1. 元音：yi/wu/yu，变化比较大，yu比较难改
 1. 如果为了更加简短，输入时可以认为r就是/ə/，drgur(德国)
+1. 因为呼出的
 
 ## 规则
 
@@ -28,10 +29,10 @@ isCJKLanguage: true
 | 🤔 |ai        | e                                    | pe / me / de / te / ne                                        | bedu / 简短      |
 | 😎 |ou        | o                                    | ko / to / do / po / do                                        | doban / 简短      |
 | 🤔 |ao        | or                                   | tor / por / dor / dior / nior                                 | torbor / 易读     |
-| 😎 |e         | er                                   | ber / mer / bern / chern                                      | kerdo / 易读    |
-| 🤔 |ng        | m                                    | bam / bim / berm  / cherm / sherm                             | ng 连写成 m      |
+| 😎 |e         | er (n<4)                             | ber / mer / bern / chen / shen                                | kerdo / 易读    |
+| 🤔 |ng        | m                                    | bam / bim / berm  / chem / shem                               | ng 连写成 m      |
 | 😎 |uo        | ur                                   | dur / jur / shur / zur / yur                                  |    |
-| 😎 |ie        | ir                                   | kir / sir / pir / gir                                         |    |
+| 😎 |ie        | ier                                  | kier / sier / pier / gier                                    |    |
 | 😎 |ji        | gi                                   | gi / gia                                                      | 易读            |
 | 😎 |qi        | ki                                   | ki / kia / kin / kim                                          |  不用ch，是因为长     |
 | 😎 |xi        | si                                   | sia / sior / sin / sim                                        |  不用sh，是因为长     |

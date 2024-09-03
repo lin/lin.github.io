@@ -53,7 +53,7 @@ type: "page"
 |   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
 |   ✅   | Sekiro                                   | PS5           | 53h    | 2024/07     |MVG|
 |   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
-|   ✅   | 桃太郎電鉄 ～昭和 平成 令和も定番！～       | NS            | 15h     |2024/08     |SLG|
+|   ✅   | Monotetsu Teiban                         | NS            | 15h     |2024/08     |SLG|
 
 ## 其他曾深度体验过的游戏
 
@@ -102,10 +102,10 @@ type: "page"
 |《战地 2》                 | 2009年  |  和曹磊一起玩  |
 |《全面战争：拿破仑》        | 2009年    |  和曹磊一起玩  |
 |《纪元 1404》              | 2009年  |  和曹磊一起玩  |
-|《时空幻境》               | 2009年  |  记忆最深刻的游戏    |
+|《时空幻境》               | 2009年  |  大学记忆最深刻的游戏    |
 |《Fruit Ninja》           | 2011年  |  去奥兰多的时候在玩    |
 |《实况足球》               | 2012年暑期  |  和孙堃在那个暑假一起玩的 |
-|《[Draw Something](https://www.ign.com/games/draw-something/)》  | 2012年  |  上课的时候玩 |
+|《Draw Something》         | 2012年  |  上课的时候玩 |
 |《Candy Crush》            | 2012年  |  向姐最爱   |
 |《Temple Run》             | 2012年  |  武立言最爱 |
 |《Clash of Clans》         | 2014年  |            |
@@ -177,10 +177,10 @@ type: "page"
 
 | 进展   | 游戏                                     | 平台            |  用时 | 时间  | 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
-|   🗄   | Baldur's Gate 3 (Act 1)                  | Mac            | 30h   |            |CRPG|
-|   🗄   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h   |            |AAVG|
-|   🗄   | Metroid Prime                            | NS             | 10h   |            |MVG|
-|   🗄   | Monster Hunter Rise                      | NS             | 20h   |            |MVG|
-|   🗄   | Final Fantasy VII                        | PS5            | 33h   |            |JRPG|
-|   🗄   | [Assassin's Creed](./ac) Origins         | PS5            | 30h   |            |AAVG|
-|   🗄   | Pokémon Scarlet                          | NS             | 35h   |            |JRPG|
+|   ▶️   | Baldur's Gate 3 (Act 1)                  | Mac            | 30h   |            |CRPG|
+|   ▶️   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h   |            |AAVG|
+|   ▶️   | Metroid Prime                            | NS             | 10h   |            |MVG|
+|   🗄  | Final Fantasy VII                        | PS5            | 33h   |            |JRPG|
+|   🗄  | Monster Hunter Rise                      | NS             | 20h   |            |MVG|
+|   🗄  | [Assassin's Creed](./ac) Origins         | PS5            | 30h   |            |AAVG|
+|   🗄  | Pokémon Scarlet                          | NS             | 35h   |            |JRPG|
