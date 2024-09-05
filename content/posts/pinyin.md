@@ -1,8 +1,10 @@
 ---
-title: "短化拼音"
+title: "四字母拼音"
 date: 2024-08-27
 isCJKLanguage: true
 ---
+
+> Simplified Pinyin
 
 ## 原则
 
@@ -11,14 +13,12 @@ isCJKLanguage: true
 1. 容易被读出来，利于商业标识，利于传播，soni，konami
 1. 不要求准确的普通话读音，近似即可
 1. a /ɑː/, i /iː/, u /uː/, e /e/，o /əʊ/，er /ə/， or /ɔː/, ur/uːə/(uer的缩写), ir /iːə/ (ier的缩写)
-1. 尽可能四个字母表示一个拼音，a/i/u/e/o, ir/er/or/ur/sh/ch/ts，有时当成是一个字母看待
+1. 必须用四个字母以内表示一个拼音，a/i/u/e/o, ir/er/or/ur/sh/ch/ts
 1. 摒弃 j q x 的标音，例如，ki这个组合在拼音中，不读成/kʰi/，而读成 /tɕʰi/
 1. 为了达到易读简短的目的，甚至出现了改音（用e/o来近似），其实也可以考虑并音或者换音，删去一些使用频率低的音，例如，diu去除变成dio，qiong变成kio，xiong和xiu合并成sio，推广普通话就是让大家重新适应发音，更改读音并不是那么不能接受
 1. 辅音：j/q/x/zh/c，c在英语和法语里是 k/s 的音，而不读成ts，好在c的音不多，改成ts影响不大
 1. 元音：an/ang, en/eng, in/ing, un/ong，把ng变成m
 1. 元音：yi/wu/yu，变化比较大，yu比较难改
-1. 如果为了更加简短，输入时可以认为r就是/ə/，drgur(德国)
-1. 因为呼出的
 
 ## 规则
 
@@ -30,14 +30,15 @@ isCJKLanguage: true
 | 😎 |ou        | o                                    | ko / to / do / po / do                                        | doban / 简短      |
 | 🤔 |ao        | or                                   | tor / por / dor / dior / nior                                 | torbor / 易读     |
 | 😎 |e         | er (n<4)                             | ber / mer / bern / chen / shen                                | kerdo / 易读    |
-| 🤔 |ng        | m                                    | bam / bim / berm  / chem / shem                               | ng 连写成 m      |
+| 🤔 |ng        | m (n>4)                              | berm  / chem / shem                                           | ng 连写成 m      |
+| 😔 |ong       | um (n>4)                             | chum / tsum                                                   |                 |
 | 😎 |uo        | ur                                   | dur / jur / shur / zur / yur                                  |    |
-| 😎 |ie        | ier                                  | kier / sier / pier / gier                                    |    |
+| 😎 |ie        | ier                                  | kier / sier / pier / gier                                     |    |
 | 😎 |ji        | gi                                   | gi / gia                                                      | 易读            |
 | 😎 |qi        | ki                                   | ki / kia / kin / kim                                          |  不用ch，是因为长     |
 | 😎 |xi        | si                                   | sia / sior / sin / sim                                        |  不用sh，是因为长     |
 | 😎 |xi        | hi                                   |                                                               |  区分 si 和 xi     |
-| 😎 |zh        | j                                    | ji / ja / je / jan / jam / jer                               |  简短 易读      |
+| 😎 |zh        | j                                    | ji / ja / je / jan / jam / jer                                |  简短 易读      |
 | 😔 |iu        | io                                   | dio / mio / nio / lio                                         | 易读           |
 | 🤔 |iong      | io                                   | kio / sio / gio                                               | sionu / 简短  |
 | 😱 |ian       | en                                   | ten / den / men / gen / sen / ken                             | lamen / 简短 易读   |
@@ -46,5 +47,49 @@ isCJKLanguage: true
 | 😱 |uang      | om                                   | gom / kom / jom / shom                                        | 简短 |
 | 😎 |ü         | yu                                   | nyu / lyu / gyu / kyu / syu / gyun / kyun / syun              | 易输入    |
 | 🤔 |üe        | yur                                  | nyur / lyur / gyur / kyur / syur                              | syurhi / 易输入    |
-| 😱 |üan       | yen                                  | gyen / kyen / syen                                            | 易输入    |
+| 😱 |üan       | yon                                  | gyon / kyon / syon                                            | 易输入    |
 | 😔 |c         | ts                                   | tse / tsam / tsu / tsi / tso                                  | tsankor / 易读    |
+
+### 四字母拼音表
+
+<div style='width:1800px;margin-left: -500px;'>
+
+|      | y/w  |b     |p     |m     |f     |d    |t    |n    |l    |g      |k     |h     |j      |q    |x    |zh    |ch     |sh     |r    |z    |c    |s    |
+|------|------|------|------|------|------|-----|-----|-----|-----|-------|------|------|-------|-----|-----|------|-------|-------|-----|-----|-------|-----|
+|a     |a     |ba    |pa    |ma    |fa    |da   |ta   |na   | la  | ga    | ka   | ha   |       |     |     | ja   | cha   |sha    |     | za  | tsa | sa  | 
+|ai    |e     |be    |pe    |me    |      |de   |te   |ne   | le  | ge    | ke   | he   |       |     |     | je   | che   |she    |     | ze  | tse | se  | 
+|an    |an    |ban   |pan   |man   | fan  |dan  |tan  |nan  | lan | gan   | kan  | han  |       |     |     | jan  | chan  |shan   | ran | zan | tsan | san  | 
+|ang   |ang   |bang  |pang  |mang  | fang |dang |tang |nang | lang | gang | kang | hang |       |     |     | jang | cham  |sham   | rang | zang | tsam | sang  | 
+|ao    |or   |bor   |por   |mor   |       |dor  |tor  |nor | lor   | gor  | kor  | hor  |       |     |     | jor  | chor  | shor  | ror  | zor | tsor | sor  | 
+|e     |er   |      |      |mer   |       |der  |ter  |ner | ler   | ger  | ker  | her  |       |     |     | jer  | cher  | sher  | rer  | zer | tser | ser  | 
+|ei    |ei   | bei  |pei   |mei   |fei   |dei   |     |nei | lei   | gei  |       | hei  |      |     |     |      |       | shei  |        | zei |      |   |
+|en    |ern  | bern |pern  |mern  |fern  |dern  |     |nern |      | gern  |  kern | hern |      |      |    | jern | chen  | shen  | rern   | zern | tsen  | sern  |
+|eng   |     | berm |perm  |merm  |ferm |derm  | term |nerm |lerm  | germ  |  kerm | herm |      |      |    | jerm | chem  | shem  | rerm   | zerm | tsem  | serm  |
+|i     |yi   | bi   |pi    |mi    |       |di   | ti   |ni | li    |      |         |     | gi   |  ki  | hi   | ji | chi  | shi  | ri   | zi | tsi  | si  |
+|ia    |ya   |      |     |     |        |dia    |      |   | lia    |      |         |     | gia   |  kia  | sia   |  |   |   |    |  |   |   |
+|ian   |yan | ben  |pen  | men    |     |den   | ten | nen  | len   |      |         |     | gen   |  ken  | sen   |  |   |   |    |  |   |   |
+|iang  |yang |     |    |        |     |       |     | nem  | lem   |      |         |     | gem   |  kem  | sem  |  |   |   |    |  |   |   |
+|iao   |yor |  bior | pior | mior    |  | dior  | tior | nior  | lior   |      |         |     | gior   |  kior  | sior  |  |   |   |    |  |   |   |
+|ie   |yer |  bier | pier | mier    |  | dier  | tier | nier  | lier   |      |         |     | gier   |  kier  | sier  |  |   |   |    |  |   |   |
+|ie   |yer |  bier | pier | mier    |  | dier  | tier | nier  | lier   |      |         |     | gier   |  kier  | sier  |  |   |   |    |  |   |   |
+|in   |yin |  bin | pin | min    |  |          |      | nin  | lin   |      |         |     | gin   |  kin  | sin  |  |   |   |    |  |   |   |
+|ing   |ying |  bing | ping | ming |  |  ding  |  ting | ning  | ling   |      |         |     | ging   |  king  | sing  |  |   |   |    |  |   |   |
+|io   |yo |   |  |  |  |    |   |   |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
+|iong  |yio |   |  |  |  |    |   |   |    |      |         |                                 |  gio  |  kio  |  sio |  |   |   |    |  |   |   |
+|iu    |yo |   |  |          mio      |    |  dio   |   |    nio   | lio   |      |         |     |  gio  |  kio  |  sio |  |   |   |    |  |   |   |
+|o    |er |  ber | per  |   mer    | fer   |       |   |        |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
+|ong    |werm |   |   |      |          | dong   | tong  | nong  | long  | gong  |  kong  | hong  |    |    |   | jong  | chum  |   | rong  |  zong |  tsum  | song  |
+|ou    |o  |   | po  | mo      | fo         | do  | to  | no  | lo  | go  |  ko  | ho  |    |    |   | jo | cho  | sho   | ro  |  zo |  tso  | so  |
+|u    |wu | bu   | pu  | mu      | fu         | du  | tu  | nu  | lu | gu |  ku  | hu  |    |    |   | ju| chu  | shu   | ru  |  zu |  tsu  | su  |
+|ua    |wa |  |   |       |          |   |   |   |  | gua |  kua  | hua  |    |    |   | jua|   | shua   |   |   |    |   |
+|uai  |we |  |   |       |          |   |   |   |  | gue|  kue  | hue  |    |    |   | | chue  | shue   |   |   |    |   |
+|uan  |wan |  |   |       |          |  don | ton   | non  | lon  | gon |  kon  | hon  |    |    |   | jon | chon  | shon   | ron  | zon  |  tson  | son  |
+|uang  |wang |  |   |       |          |   |    |   |   | gom |  kom  | hom  |    |    |   | jom | chom  | shom   |   |   |    |   |
+|ue  |yur |  |   |       |          |   |    |nyur   | lyur  |  |    |   |  gyur  | kyur   | syur  |  |   |    |   |   |    |   |
+|ui  |wei |  |   |       |          | dui  | tui   |  |  |gui  |kui    | hui  |    |    |   | jui | chui  | shui   | rui  | zui  | tsui   | sui  |
+|un  |wern |  |   |       |          | dun | tun   |  | lun |gun  |kun    | hun  |    |    |   | jun | chun  | shun   | run  | zun  | tsun   | sun  |
+|uo  |wer |  |   |       |          | dur | tur  | nur | lur |gur  |kur    | hur  |    |    |   | jur| chur  | shur   | rur  | zur  | tsur   | sur  |
+|ü  |yu  |  |   |       |          |  |   | nyu | lyu |  |    |   |    gyu | kyu | syu   |   |   |    |   ||    |   | 
+|üan |yon  |  |   |       |          |  |   |  |  |  |    |   |     gyon | kyon | syon   |   |   |    |   ||    |   | |    |   | 
+|ün |yun  |  |   |       |          |  |   |  |  |  |    |   |     gyun | kyun | syun   |   |   |    |   ||    |   | 
+</div>

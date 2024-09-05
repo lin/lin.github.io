@@ -7,7 +7,7 @@ type: "page"
 
 ✅  已经通关；🎮 正在进行
 
-| 进展   | 游戏                                    | 平台            |  用时 | 时间| 类型|
+|        | 游戏                                    | 平台            |  用时 | 时间| 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
 |   ✅   | Sid Meier's Civilization VI             | PC            | 116h   | 2019/11| 4X |
 |   ✅   | Super Mario Odyssey                     | NS             | 45h    | 2020/08| AAVG|
@@ -28,12 +28,12 @@ type: "page"
 |   ✅   | God of War: Ragnarök                    | PS5           | 23h    | 2023/09| AAVG|
 |   ✅   | Super Mario Bros. 1 & Lost Levels & 2 & 3 & World & Land & Land 2 | NS              | 24h     | 2023/09 | 平台 |
 |   ✅   | New Super Mario Bros. 1 & 2             | 3DS            | 16h    | 2023/09 |平台 |
-|   ✅   | New Super Mario Bros. U                 | Wii U          | 19h    | 2023/10|平台 |
+|   ✅   | New Super Mario Bros. U                 | WiiU          | 19h    | 2023/10|平台 |
 |   ✅   | The Last of Us Part I                   | PS5           | 17h    | 2023/10|AAVG|
 |   ✅   | Gran Turismo 7                          | PS5           | 25h    | 2023/10| 竞速 |
 |   ✅   | The Witcher 3: Wild Hunt                | PS5           | 36h    | 2023/10|ARPG|
 |   ✅   | Super Mario Bros. Wonder                | NS             | 12h    | 2023/11|平台|
-|   ✅   | [New Super Mario Bros. Wii](/soul-mario)   | Wii U       | 13h    | 2023/11|平台|
+|   ✅   | [New Super Mario Bros. Wii](/soul-mario)   | WiiU       | 13h    | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)                 | PS5           | 60h    | 2023/11|Soul|
 |   ✅   | [Uncharted](./uncharted) 4: A Thief's End  | PS5       | 15h    | 2023/12|AAVG|
 |   ✅   | Super Mario Run                          | iOS           | 4h     | 2023/12 |平台|
@@ -53,7 +53,12 @@ type: "page"
 |   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
 |   ✅   | Sekiro                                   | PS5           | 53h    | 2024/07     |MVG|
 |   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
-|   ✅   | Monotetsu Teiban                         | NS            | 15h     |2024/08     |SLG|
+|   ✅   | Monotetsu Teiban                         | NS            | 15h    |2024/08     |SLG|
+|   🎮   | The Legend of Zelda: The Wind Waker      | WiiU         | 15h    |2024/09      |AAVG|
+|   🎮️   | Metroid Prime                            | NS            | 10h    |2024/09      |MVG|
+|   🎮️   | Baldur's Gate 3 (Act 1)                  | Mac           | 30h    |2024/09      |CRPG|
+
+Total: 55 games
 
 ## 其他曾深度体验过的游戏
 
@@ -144,10 +149,10 @@ type: "page"
 1. ✅ 《生化危机》
 1. ✅ 《FIFA》/《2K NBA》
 1. 《博德之门》
+1. -------------
 1. 《怪物猎人》
 1. 《最终幻想》
 1. 《刺客信条》
-1. -------------
 1. 《勇者斗恶龙》
 1. 《生化奇兵》
 1. 《合金装备》
@@ -172,15 +177,3 @@ type: "page"
 1. 💰《大富翁》
 1. 💰《卡坦岛》
 1. 💰《车票之旅》
-
-### 可能要玩的游戏（还需200小时，）
-
-| 进展   | 游戏                                     | 平台            |  用时 | 时间  | 类型|
-|:------:|-----------------------------------------|:---------------:|:-----:|:----------:|:---:|
-|   ▶️   | Baldur's Gate 3 (Act 1)                  | Mac            | 30h   |            |CRPG|
-|   ▶️   | The Legend of Zelda: The Wind Waker      | Wii U          | 15h   |            |AAVG|
-|   ▶️   | Metroid Prime                            | NS             | 10h   |            |MVG|
-|   🗄  | Final Fantasy VII                        | PS5            | 33h   |            |JRPG|
-|   🗄  | Monster Hunter Rise                      | NS             | 20h   |            |MVG|
-|   🗄  | [Assassin's Creed](./ac) Origins         | PS5            | 30h   |            |AAVG|
-|   🗄  | Pokémon Scarlet                          | NS             | 35h   |            |JRPG|
