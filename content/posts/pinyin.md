@@ -50,7 +50,7 @@ isCJKLanguage: true
 | 😱 |üan       | yon                                  | gyon / kyon / syon                                            | 易输入    |
 | 😔 |c         | ts                                   | tse / tsam / tsu / tsi / tso                                  | tsankor / 易读    |
 
-### 四字母拼音表
+## 四字母拼音表
 
 <div style='width:1800px;margin-left: -500px;'>
 
@@ -71,7 +71,6 @@ isCJKLanguage: true
 |iang  |yang |     |    |        |     |       |     | nem  | lem   |      |         |     | gem   |  kem  | sem  |  |   |   |    |  |   |   |
 |iao   |yor |  bior | pior | mior    |  | dior  | tior | nior  | lior   |      |         |     | gior   |  kior  | sior  |  |   |   |    |  |   |   |
 |ie   |yer |  bier | pier | mier    |  | dier  | tier | nier  | lier   |      |         |     | gier   |  kier  | sier  |  |   |   |    |  |   |   |
-|ie   |yer |  bier | pier | mier    |  | dier  | tier | nier  | lier   |      |         |     | gier   |  kier  | sier  |  |   |   |    |  |   |   |
 |in   |yin |  bin | pin | min    |  |          |      | nin  | lin   |      |         |     | gin   |  kin  | sin  |  |   |   |    |  |   |   |
 |ing   |ying |  bing | ping | ming |  |  ding  |  ting | ning  | ling   |      |         |     | ging   |  king  | sing  |  |   |   |    |  |   |   |
 |io   |yo |   |  |  |  |    |   |   |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
@@ -85,7 +84,7 @@ isCJKLanguage: true
 |uai  |we |  |   |       |          |   |   |   |  | gue|  kue  | hue  |    |    |   | | chue  | shue   |   |   |    |   |
 |uan  |wan |  |   |       |          |  don | ton   | non  | lon  | gon |  kon  | hon  |    |    |   | jon | chon  | shon   | ron  | zon  |  tson  | son  |
 |uang  |wang |  |   |       |          |   |    |   |   | gom |  kom  | hom  |    |    |   | jom | chom  | shom   |   |   |    |   |
-|ue  |yur |  |   |       |          |   |    |nyur   | lyur  |  |    |   |  gyur  | kyur   | syur  |  |   |    |   |   |    |   |
+|ue  |yur |  |   |       |          |   |    |niur   | liur  |  |    |   |  giur  | kiur   | siur  |  |   |    |   |   |    |   |
 |ui  |wei |  |   |       |          | dui  | tui   |  |  |gui  |kui    | hui  |    |    |   | jui | chui  | shui   | rui  | zui  | tsui   | sui  |
 |un  |wern |  |   |       |          | dun | tun   |  | lun |gun  |kun    | hun  |    |    |   | jun | chun  | shun   | run  | zun  | tsun   | sun  |
 |uo  |wer |  |   |       |          | dur | tur  | nur | lur |gur  |kur    | hur  |    |    |   | jur| chur  | shur   | rur  | zur  | tsur   | sur  |

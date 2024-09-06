@@ -9,7 +9,7 @@ type: "page"
 |:-----------------------|:----------------------------------------------|:--------|:------------|
 | One EdTech Company     |  [Albert Education](./edu)                     | 2029年  | 8a-8p       |
 | One Philosophy Book    |  [Life: An Introduction](./life)               | 2029年  | 8p-12a      |
-| One AGI Paper          |  [A Theory of Intelligence](./ai)             |  After edu    |             |
+| One AGI Paper          |  [A Theory of Intelligence](./ai)              |  After edu   |             |
 
 ## Principles
 
@@ -27,9 +27,6 @@ type: "page"
 1. Pride. Laziness. Cowardice. Greed.
 
 ## Deadlines
-
-1. 最快的速度，把所有要通关的游戏通关
-1. 九月份之前，把文章写完
 
 ## Queue
 
