@@ -54,11 +54,7 @@ type: "page"
 |   ✅   | Sekiro                                   | PS5           | 53h    | 2024/07     |MVG|
 |   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
 |   ✅   | Monotetsu Teiban                         | NS            | 15h    |2024/08     |SLG|
-|   🎮   | The Legend of Zelda: The Wind Waker      | WiiU         | 15h    |2024/09      |AAVG|
-|   🎮️   | Metroid Prime                            | NS            | 10h    |2024/09      |MVG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | Mac           | 30h    |2024/09      |CRPG|
-
-Total: 55 games
 
 ## 其他曾深度体验过的游戏
 
