@@ -5,45 +5,32 @@ type: "page"
 
 ## Goals
 
-| One Life               | Three Goals                                   | Due     |             |
-|:-----------------------|:----------------------------------------------|:--------|:------------|
-| One EdTech Company     |  [Albert Education](./edu)                     | 2029年  | 8a-8p       |
-| One Philosophy Book    |  [A Guide to Life](./life)                     | 2029年  | 8p-12a      |
-| One AGI Paper          |  [A Theory of Intelligence](./ai)              |         |             |
+| One Life               | Three Goals                                   | Due               |             |
+|:-----------------------|:----------------------------------------------|:------------------|:------------|
+| One EdTech Company     |  [Albert Education](./edu)                     | 2029年            | Easy & Fun |
+| One Philosophy Book    |  [An Introduction to Life](./life)             | EdTech 开发MVP后  |            |
+| One AGI Paper          |  [A Theory of Intelligence](./ai)              | Life 写完         |   Solving Machine  / PNP      |
+
+> 学习变得像游戏一样上头
+
+> 《人生要义》成为一门大学课程
+
+> AI 可以自动解决数学难题（AIMO）
+
+> An Informational Perspective on Fundamental Physics.
 
 ## Principles
 
-没有情绪，速度拉满，完成目标，追逐痛苦
+> 快，Fast，满，Hell，严，Rigor，淡，Calm
 
-1. 无情拉满：No Emotions. Only Progress. Full Speed. Hard Deadlines.
-1. 痛苦达标：Eat the frog. Do things scary. Embarrass yourself.
-1. 持续输出：Keep Shipping. Keep Failing. Seek Rejections. Seek Failures.
-1. 闭环建档：Document everything. Finish what you start.
-1. 情绪稳定：情绪名利，不评价，不对比，不焦虑，不懊悔，不忧愁，不逃避
-1. 虚荣即弱智，逃避即低能。进展不评价，煎熬不畏难。
+> 发疯拉满做事快，自律淡定不评价
+
+> 8a - 8p, 8p - 12a
 
 ## Facts
 
-1. Pride is for low intelligence.
-1. Most people are not smart.
-1. Pride. Laziness. Cowardice. Greed.
+> Pride is for low intelligence.
 
-## Deadlines
+> Most people are not smart.
 
-## Queue
-
-1. 多邻国：2-35，2-36，2-37，2-38，2-39，2-40
-1. 多邻国：3-1 ~ 3-54（2024年年底）
-
-| Fortune / 入世   | Create / 出世   | Learn / 摄入              | Indulge / 享乐  |
-|:------------|:-------------------|:--------------------------|:-------------------------|
-| 8a - 8p     | 8p - 10p - 12a     | 8p - 10p - 12a            | 10p - 12a                |
-| 体验游戏     |  游戏文章           |                           |  Duolingo Japanese       |
-|             |                    |                           |                           |
-| 游戏化改版   |                   | 《Brave New Words》        |                          |
-| 游戏化内容   | 人生               |                           |                           |
-|             |                    |                           |                           |
-| AIGC        |  智力              |                           |                           |
-|             |                    |                           | 《Baldur's Gate 3》       |
-| 8a - 8p     | Sun 1p - 5p       | Sun 1p - 5p                | 10p - 12a                |
-| 游戏化测试   | 周总结规划         | 杂志 Econ/Time/            |                          |
+> You will die soon. And you are the only one living.

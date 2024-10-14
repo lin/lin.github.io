@@ -92,3 +92,86 @@ isCJKLanguage: true
 |üan |yon  |  |   |       |          |  |   |  |  |  |    |   |     gyon | kyon | syon   |   |   |    |   ||    |   | |    |   | 
 |ün |yun  |  |   |       |          |  |   |  |  |  |    |   |     gyun | kyun | syun   |   |   |    |   ||    |   | 
 </div>
+
+## 表音符号（phonetic）
+
+<div style='width:1800px;margin-left: -500px;'>
+
+|      | y/w  |b     |p     |m     |f     |d    |t    |n    |l    |g      |k     |h     |j      |q    |x    |zh    |ch     |sh     |r    |z    |c    |s    |
+|------|------|------|------|------|------|-----|-----|-----|-----|-------|------|------|-------|-----|-----|------|-------|-------|-----|-----|-------|-----|
+|a     |阿     |八    |扒    |马    |法    |大   |它   |呐   | 拉 | 咖    | 卡   | 哈   |       |     |     | 乍   | 叉   |杀    |     | 匝  | 擦/𰓣 | 卅  | 
+|ai    |艾     |白    |排    |买    |     |代   |太   |乃   | 来  | 该    | 开   | 亥   |       |     |     | 宅   | 拆   |晒    |     | 在  | 才 | 塞  | 
+|an    |安    |半     |潘    |曼   | 反  |旦  |覃  |南  | 兰 | 干   | 看  | 汗  |       |     |     | 占 | 产  |山   | 冉 | 咱 | 参/歺 | 三  | 
+|ang   |卬    |邦     |旁    |亡    | 方 |当 |唐 | 囊/𰀉 | 浪 | 冈 | 亢 | 夯 |       |     |     | 章 | 常  |上   | 让 | 庄 | 仓 | 桑/𰗑  | 
+|ao    |敖   |包      |泡    |毛   |       |刀  |桃  |闹 | 老   | 高  | 考  | 好  |       |     |     | 交  | 吵  | 少  | 扰  | 早 | 草 | 扫  | 
+|e     |儿   |      |      |末   |       |的  |忒  |讷 | 乐   | 个  | 可  | 合  |       |     |     | 折  | 车  | 舌  | 热  | 仄 | 册 | 色  | 
+|ei    |欸   | 北  |pei  |毎  |fei   |dei   |     |nei | lei   | gei  |       | hei  |      |     |     |      |       | shei  |        | zei |      |   |
+|en    |ern  | bern |pern  |mern  |fern  |dern  |     |nern |      | gern  |  kern | hern |      |      |    | jern | chen  | shen  | rern   | zern | tsen  | sern  |
+|eng   |     | berm |perm  |merm  |ferm |derm  | term |nerm |lerm  | germ  |  kerm | herm |      |      |    | jerm | chem  | shem  | rerm   | zerm | tsem  | serm  |
+|i     |yi   | bi   |pi    |mi    |       |di   | ti   |ni | li    |      |         |     | gi   |  ki  | hi   | ji | chi  | shi  | ri   | zi | tsi  | si  |
+|ia    |ya   |      |     |     |        |dia    |      |   | lia    |      |         |     | gia   |  kia  | sia   |  |   |   |    |  |   |   |
+|ian   |yan | ben  |pen  | men    |     |den   | ten | nen  | len   |      |         |     | gen   |  ken  | sen   |  |   |   |    |  |   |   |
+|iang  |yang |     |    |        |     |       |     | nem  | lem   |      |         |     | gem   |  kem  | sem  |  |   |   |    |  |   |   |
+|iao   |yor |  bior | pior | mior    |  | dior  | tior | nior  | lior   |      |         |     | gior   |  kior  | sior  |  |   |   |    |  |   |   |
+|ie   |yer |  bier | pier | mier    |  | dier  | tier | nier  | lier   |      |         |     | gier   |  kier  | sier  |  |   |   |    |  |   |   |
+|in   |yin |  bin | pin | min    |  |          |      | nin  | lin   |      |         |     | gin   |  kin  | sin  |  |   |   |    |  |   |   |
+|ing   |ying |  bing | ping | ming |  |  ding  |  ting | ning  | ling   |      |         |     | ging   |  king  | sing  |  |   |   |    |  |   |   |
+|io   |yo |   |  |  |  |    |   |   |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
+|iong  |yio |   |  |  |  |    |   |   |    |      |         |                                 |  gio  |  kio  |  sio |  |   |   |    |  |   |   |
+|iu    |yo |   |  |          mio      |    |  dio   |   |    nio   | lio   |      |         |     |  gio  |  kio  |  sio |  |   |   |    |  |   |   |
+|o    |er |  ber | per  |   mer    | fer   |       |   |        |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
+|ong    |werm |   |   |      |          | dong   | tong  | nong  | long  | gong  |  kong  | hong  |    |    |   | jong  | chum  |   | rong  |  zong |  tsum  | song  |
+|ou    |o  |   | po  | mo      | fo         | do  | to  | no  | lo  | go  |  ko  | ho  |    |    |   | jo | cho  | sho   | ro  |  zo |  tso  | so  |
+|u    |wu | bu   | pu  | mu      | fu         | du  | tu  | nu  | lu | gu |  ku  | hu  |    |    |   | ju| chu  | shu   | ru  |  zu |  tsu  | su  |
+|ua    |wa |  |   |       |          |   |   |   |  | gua |  kua  | hua  |    |    |   | jua|   | shua   |   |   |    |   |
+|uai  |we |  |   |       |          |   |   |   |  | gue|  kue  | hue  |    |    |   | | chue  | shue   |   |   |    |   |
+|uan  |wan |  |   |       |          |  don | ton   | non  | lon  | gon |  kon  | hon  |    |    |   | jon | chon  | shon   | ron  | zon  |  tson  | son  |
+|uang  |wang |  |   |       |          |   |    |   |   | gom |  kom  | hom  |    |    |   | jom | chom  | shom   |   |   |    |   |
+|ue  |yur |  |   |       |          |   |    |niur   | liur  |  |    |   |  giur  | kiur   | siur  |  |   |    |   |   |    |   |
+|ui  |wei |  |   |       |          | dui  | tui   |  |  |gui  |kui    | hui  |    |    |   | jui | chui  | shui   | rui  | zui  | tsui   | sui  |
+|un  |wern |  |   |       |          | dun | tun   |  | lun |gun  |kun    | hun  |    |    |   | jun | chun  | shun   | run  | zun  | tsun   | sun  |
+|uo  |wer |  |   |       |          | dur | tur  | nur | lur |gur  |kur    | hur  |    |    |   | jur| chur  | shur   | rur  | zur  | tsur   | sur  |
+|ü  |yu  |  |   |       |          |  |   | nyu | lyu |  |    |   |    gyu | kyu | syu   |   |   |    |   ||    |   | 
+|üan |yon  |  |   |       |          |  |   |  |  |  |    |   |     gyon | kyon | syon   |   |   |    |   ||    |   | |    |   | 
+|ün |yun  |  |   |       |          |  |   |  |  |  |    |   |     gyun | kyun | syun   |   |   |    |   ||    |   | 
+</div>
+
+## 表音字
+
+|      |    |y    |w      |b     |p     |m     |f     |d    |t    |n    |l    |g      |k     |h     |j      |q    |x    |zh    |ch     |sh     |r    |z    |c    |s    |
+|------|----|-----|-------|-----|------|------|------|-----|-----|-----|-----|-------|------|------|-------|-----|-----|------|-------|-------|-----|-----|-------|-----|-----|-----|
+|a     |大、八 | 讠 | 𤣩   |冫    | 丬    | 冖   | 阝  | 刂   |土   |女   | 扌、力    |  工   | 口   |  火  | 几、巾  | 犭、七  |  忄  | ⻌    |  彳   |山     |亻   | 子  |  艹  | 纟  | 
+|ai    |才     |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|an    |山、三    |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ang   |上、方 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ao    |刀  |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|e     |儿 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ei    |内 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|en    |人 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|eng   |生 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|i     |匕 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ia    |丫 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ian   |天|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|iang  |羊 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|iao   |幺|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ie   |也 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|in   |心 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ing   |丁 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|io   |又 |   |  |  |  |    |   |   |    |      |         |     |    |    |   |  |   |   |    |  |   |   |
+|iong  |兄 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|iu    |牛|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|o    |卜 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ong    |工|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ou    |又 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|u    |土 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ua    |化 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|uai  | 夬|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|uan  | 关 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|uang  |光|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ui  |亏 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|un  |分 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|uo  |火 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ü  |于 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|üe  |月|    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|üan |元  |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 
+|ün |云 |    |    |   |     |   |  |   |  |   |  |   |       |     |     |    |    |    |     |   |  |   | 

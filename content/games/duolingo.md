@@ -9,7 +9,6 @@ Learning Japanese using Chinese
 - 1025 words (1863 jp from en)
 - 58485 xp (56688 jp from en)
 
-
 ### 15 Days Challenge
 
 #### XP
@@ -58,3 +57,8 @@ Goal:
 #### July 10th 2024
 
 1. ✅ 2-18
+
+#### Sep 12th 2024
+
+1. ✅ 2-35, half
+1. ✅ 2-36, golden, 83298 xp, 2703 words, 343 days
