@@ -1,18 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《人生入门》 on Yingkui</title><link>https://yingkui.com/life/</link><description>Recent content in 《人生入门》 on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/life/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/life/center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/center/</guid><description>每个人都是宇宙的中心</description></item><item><title/><link>https://yingkui.com/life/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/outline/</guid><description>全书章节纲要 没有主题，主题散落在四处，没有章节，而是偶遇各种话题
-《低俗小说》一样的乱序写法
-第一章第一节，第三章第一节，第一章第二节，第四章第三节
-地图（）
-经济，政治，学术，哲学
-需求作为起源 财富（工匠） 情绪与商业（节目效果，good enough, less evil 妥协） 意外的惊喜（SurPrize） 虚荣即弱智 统治者的财富（强盗） 懒散与贪婪 权威与传统 威逼与利诱（集体主义） 推理与抽象（贝叶斯） 深度与广度 计算与解决 严苛与包容 唯一活着的人 表达与求知（证明自己，） 服务与享受（他人的人生，自我的人生） 恶意从善（恶意学习） 割喉降血压，自杀止痛法（崇尚专制就是此类） 钱与刀 工程与思想 好用的狭隘（DFS） 苦行机器人（Be a Slave or a Slacker） 外儒内法，外腐内屎 风险投资（一切都是） 暴富密码（暴涨的使用量） 娱乐是天 in and out 乱加因果，迷惑过天 （法家） 稀有度（商业） 对于以上三个觉醒，每一个觉醒都会占据两章的内容。
-第一章：醒目的美味 从死亡的恐怖，到呼吸的代价
-从贴身的枷锁，到恐慌的关联
-从财富的积累，到线性的实用
-四大觉醒：财富，虚荣即弱智，集体主义，传统权威
-把智力的模型，分散到第一章和第二章当中，而不是后面单独讲
-前面是觉醒，后面两章是解答，一是智力层面的解答，二是需求层面的解答，亦可能这两章混为一章，交错来说
-这一章是世俗的一章，是老百姓比较感兴趣的一章。是对功利主义的正面价值的辩护。而这一章提出的计算学角度，将是一个极为有力的判断工具（在我看来，有如牛顿-莱布尼茨公式之于微积分），原本这一章是第二章，而第一章是对这一章的理论支持，也就是prerequisite。但是，为了更早的吸引读者，本书作者在顺序上进行了调整，一上来就来点干货。
-呼吸的代价 挣钱和花钱的本质是什么？（简述需求的满足） 为什么多数人要不情愿的去工作？(某种程度的奴役状态) 贴身的枷锁 如何积累财富？ 如何提供更好的产品和服务？ 第二章：得失的幻象 这一章，就是对功利主义的反驳
-迟钝的味蕾 生活中的需求层级有哪些？ 需求层级有哪些规律假设？ 智者的游戏 为什么功利主义是肤浅的？ 为什么要建立一个包容、多元、高分辨率}的社会？ 对日常行为进行计算学上的归类定义 第三章：提神的迷药 前两章抨击完了“利”，接下来的两章开始驳斥“名”。虚荣心被放在了和财富一样的高度，就说明了这种需求的特殊和中心地位。</description></item><item><title/><link>https://yingkui.com/life/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/preface/</guid><description>前言 本书的写作初衷：
-能够作为一门研究生课程 CS 498: Computational Life 的教材。本书作者学习了大量的数理和人文知识，但是发现一些基本的人生规律却没学到 使用较为严格的数学语言和尽可能精准的逻辑学和统计学论证，从计算学和人工智能（尤其机器学习）的角度，去理解和分析人生中的常见现象 本书包含的内容广泛，每一章都可以独立成书展开，本文主要想传递给读者的主旨思想：
-为什么人会狭隘？以及狭隘浅薄之害：
-财富觉醒： 什么是财富创造的本质？（计算学视角） 为什么功利主义是浅薄狭隘的？ 虚荣觉醒： 为什么虚荣对人生有着巨大的负面影响？ 如何警惕虚荣？如何戒掉虚荣？ 集体主义觉醒： 群体性生活对个体的意义？个体值得为群体付出多少？ 为什么要警惕统治阶级？统治阶级的压迫手段？ 什么是群体性虚荣？为什么要警惕群体性虚荣的癫狂？ 传统权威觉醒 人脑在处理新鲜信息时，存在的局限和常见误区有哪些？如何规避？ 去中心化，去权威化，多元化，包容的心态 什么是科学？为什么要接纳科学，反对迷信和宗教，挑战传统与保守？</description></item><item><title/><link>https://yingkui.com/life/pride/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/pride/</guid><description>毫无虚荣</description></item><item><title/><link>https://yingkui.com/life/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/random/</guid><description>随想 节目效果拉满</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《人生要义》 on Yingkui</title><link>https://yingkui.com/life/</link><description>Recent content in 《人生要义》 on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/life/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/life/center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/center/</guid><description>&lt;h2 id="每个人都是宇宙的中心">每个人都是宇宙的中心&lt;/h2></description></item><item><title/><link>https://yingkui.com/life/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/outline/</guid><description>&lt;h3 id="全书章节纲要">全书章节纲要&lt;/h3>
+&lt;p>没有主题，主题散落在四处，没有章节，而是偶遇各种话题&lt;/p>
+&lt;p>《低俗小说》一样的乱序写法&lt;/p>
+&lt;p>第一章第一节，第三章第一节，第一章第二节，第四章第三节&lt;/p>
+&lt;p>地图（）&lt;/p>
+&lt;p>经济，政治，学术，哲学&lt;/p>
+&lt;ol>
+&lt;li>需求作为起源&lt;/li>
+&lt;li>财富（工匠）&lt;/li>
+&lt;li>情绪与商业（节目效果，good enough, less evil 妥协）&lt;/li>
+&lt;li>意外的惊喜（SurPrize）&lt;/li>
+&lt;li>虚荣即弱智&lt;/li>
+&lt;li>统治者的财富（强盗）&lt;/li>
+&lt;li>懒散与贪婪&lt;/li>
+&lt;li>权威与传统&lt;/li>
+&lt;li>威逼与利诱（集体主义）&lt;/li>
+&lt;li>推理与抽象（贝叶斯）&lt;/li>
+&lt;li>深度与广度&lt;/li>
+&lt;li>计算与解决&lt;/li>
+&lt;li>严苛与包容&lt;/li>
+&lt;li>唯一活着的人&lt;/li>
+&lt;li>表达与求知（证明自己，）&lt;/li>
+&lt;li>服务与享受（他人的人生，自我的人生）&lt;/li>
+&lt;li>恶意从善（恶意学习）&lt;/li>
+&lt;li>割喉降血压，自杀止痛法（崇尚专制就是此类）&lt;/li>
+&lt;li>钱与刀&lt;/li>
+&lt;li>工程与思想&lt;/li>
+&lt;li>好用的狭隘（DFS）&lt;/li>
+&lt;li>苦行机器人（Be a Slave or a Slacker）&lt;/li>
+&lt;li>外儒内法，外腐内屎&lt;/li>
+&lt;li>风险投资（一切都是）&lt;/li>
+&lt;li>暴富密码（暴涨的使用量）&lt;/li>
+&lt;li>娱乐是天&lt;/li>
+&lt;li>in and out&lt;/li>
+&lt;li>乱加因果，迷惑过天&lt;/li>
+&lt;li>（法家）&lt;/li>
+&lt;li>稀有度（商业）&lt;/li>
+&lt;/ol>
+&lt;p>对于以上三个觉醒，每一个觉醒都会占据两章的内容。&lt;/p>
+&lt;h4 id="第一章醒目的美味">第一章：醒目的美味&lt;/h4>
+&lt;p>从死亡的恐怖，到呼吸的代价&lt;/p>
+&lt;p>从贴身的枷锁，到恐慌的关联&lt;/p>
+&lt;p>从财富的积累，到线性的实用&lt;/p>
+&lt;p>四大觉醒：财富，虚荣即弱智，集体主义，传统权威&lt;/p>
+&lt;p>把智力的模型，分散到第一章和第二章当中，而不是后面单独讲&lt;/p>
+&lt;p>前面是觉醒，后面两章是解答，一是智力层面的解答，二是需求层面的解答，亦可能这两章混为一章，交错来说&lt;/p>
+&lt;p>这一章是世俗的一章，是老百姓比较感兴趣的一章。是对功利主义的正面价值的辩护。而这一章提出的计算学角度，将是一个极为有力的判断工具（在我看来，有如牛顿-莱布尼茨公式之于微积分），原本这一章是第二章，而第一章是对这一章的理论支持，也就是prerequisite。但是，为了更早的吸引读者，本书作者在顺序上进行了调整，一上来就来点干货。&lt;/p>
+&lt;ul>
+&lt;li>呼吸的代价
+&lt;ul>
+&lt;li>挣钱和花钱的本质是什么？（简述需求的满足）&lt;/li>
+&lt;li>为什么多数人要不情愿的去工作？(某种程度的奴役状态)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>贴身的枷锁
+&lt;ul>
+&lt;li>如何积累财富？&lt;/li>
+&lt;li>如何提供更好的产品和服务？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="第二章得失的幻象">第二章：得失的幻象&lt;/h4>
+&lt;p>这一章，就是对功利主义的反驳&lt;/p>
+&lt;ul>
+&lt;li>迟钝的味蕾
+&lt;ul>
+&lt;li>生活中的需求层级有哪些？&lt;/li>
+&lt;li>需求层级有哪些规律假设？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>智者的游戏
+&lt;ul>
+&lt;li>为什么功利主义是肤浅的？&lt;/li>
+&lt;li>为什么要建立一个包容、多元、高分辨率}的社会？&lt;/li>
+&lt;li>对日常行为进行计算学上的归类定义&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="第三章提神的迷药">第三章：提神的迷药&lt;/h4>
+&lt;p>前两章抨击完了“利”，接下来的两章开始驳斥“名”。虚荣心被放在了和财富一样的高度，就说明了这种需求的特殊和中心地位。&lt;/p></description></item><item><title/><link>https://yingkui.com/life/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/preface/</guid><description>&lt;h3 id="前言">前言&lt;/h3>
+&lt;p>本书的写作初衷：&lt;/p>
+&lt;ul>
+&lt;li>能够作为一门研究生课程 CS 498: Computational Life 的教材。本书作者学习了大量的数理和人文知识，但是发现一些基本的人生规律却没学到&lt;/li>
+&lt;li>使用较为严格的数学语言和尽可能精准的逻辑学和统计学论证，从计算学和人工智能（尤其机器学习）的角度，去理解和分析人生中的常见现象&lt;/li>
+&lt;/ul>
+&lt;p>本书包含的内容广泛，每一章都可以独立成书展开，本文主要想传递给读者的主旨思想：&lt;/p>
+&lt;p>为什么人会狭隘？以及狭隘浅薄之害：&lt;/p>
+&lt;ol>
+&lt;li>财富觉醒：
+&lt;ul>
+&lt;li>什么是财富创造的本质？（计算学视角）&lt;/li>
+&lt;li>为什么功利主义是浅薄狭隘的？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>虚荣觉醒：
+&lt;ul>
+&lt;li>为什么虚荣对人生有着巨大的负面影响？&lt;/li>
+&lt;li>如何警惕虚荣？如何戒掉虚荣？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>集体主义觉醒：
+&lt;ul>
+&lt;li>群体性生活对个体的意义？个体值得为群体付出多少？&lt;/li>
+&lt;li>为什么要警惕统治阶级？统治阶级的压迫手段？&lt;/li>
+&lt;li>什么是群体性虚荣？为什么要警惕群体性虚荣的癫狂？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>传统权威觉醒
+&lt;ul>
+&lt;li>人脑在处理新鲜信息时，存在的局限和常见误区有哪些？如何规避？&lt;/li>
+&lt;li>去中心化，去权威化，多元化，包容的心态&lt;/li>
+&lt;li>什么是科学？为什么要接纳科学，反对迷信和宗教，挑战传统与保守？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/life/pride/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/pride/</guid><description>&lt;h2 id="毫无虚荣">毫无虚荣&lt;/h2>
+&lt;ol>
+&lt;li>&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/life/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/life/random/</guid><description>&lt;h3 id="随想">随想&lt;/h3>
+&lt;ol>
+&lt;li>节目效果拉满&lt;/li>
+&lt;/ol></description></item></channel></rss>

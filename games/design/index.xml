@@ -1,7 +1,259 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/games/design/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/games/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/games/design/items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/items/</guid><description>道具</description></item><item><title/><link>https://yingkui.com/games/design/loop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/loop/</guid><description>Addiction Loop 必须在一个loop内，让学生感到喜欢，否则就会loop断掉</description></item><item><title/><link>https://yingkui.com/games/design/map/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/map/</guid><description>图：房间-地图-存档点-传送点 地图是游戏中谜题的容器
-游戏中的案例 《艾尔登法环》中的箱庭设计，赐福点，可以传送 2D《密特罗德》中的房间，保存点，无法传送 《超级马力欧：奥德赛》中的区域，旗帜，可以传送 《宝可梦》中的区域，随处都是保存点，城市间可以传送 为什么这么做？ 新鲜感 进展感 释放压力 中奖感觉 节点的明确（等级的积累），目标明确 其他做法的缺点 缺少明确的进展，进度松散
-主要就是没有那么多可以利用的优点，乐趣不足
-肉鸽：缺乏进展感觉 关卡：线性完成，有点做作业的感觉 解谜：目标有点松散，俄罗斯方块，就像是设计很好的一个boss， 这种做法的缺点 感觉像是做作业 未来的压力，感觉还有好多烦躁的事情要做</description></item><item><title/><link>https://yingkui.com/games/design/ta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/ta/</guid><description/></item><item><title/><link>https://yingkui.com/games/design/theory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/theory/</guid><description>理论 要解决什么问题？ 要解决的问题，有三个
-让人在乎游戏所设定的目标 让人为了游戏目标，能够长时间的 刷题，也就是怪/道具，练习题 考级，打BOSS，谜题的容器 探索，新的区域，观景剧情内容 解谜，零散的谜题 如果可以，让人认可游戏所做出的评价或奖牌 驱动力有哪些？ 好奇心，猎奇心，赌博心态 样式识别，弄清楚，掌握链接 成就感，完成欲，求胜心，进展满足 虚荣心，验证自己，证明自己 规避损失，loss aversion，迫近的成功 让人上瘾的事情有哪些？ 飞来横财，斯金纳盒 难度的调节 其他 为什么想玩游戏？
-为什么上头？
-为什么能够上时间想玩？</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/games/design/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/games/design/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/games/design/buff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/buff/</guid><description>&lt;h2 id="power-up">Power Up&lt;/h2>
+&lt;ol>
+&lt;li>选择buff，hades&lt;/li>
+&lt;li>遇到buff，mario&lt;/li>
+&lt;li>抽到buff，卡牌游戏&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/design/bullets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/bullets/</guid><description>&lt;h2 id="bullets">Bullets&lt;/h2>
+&lt;p>游戏中子弹（进攻单元）的类型：&lt;/p>
+&lt;ol>
+&lt;li>无限供应，魂类，马力欧&lt;/li>
+&lt;li>回商店补满，宝可梦，魂类的药品&lt;/li>
+&lt;li>捡素材合成，最后生还者，帕鲁&lt;/li>
+&lt;li>击杀敌人给，密特罗德&lt;/li>
+&lt;li>有消耗耐久，塞尔达&lt;/li>
+&lt;li>超长装弹时长，PTCG&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/design/desire/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/desire/</guid><description>&lt;h2 id="不同类型的渴望">不同类型的渴望&lt;/h2>
+&lt;h3 id="card">Card&lt;/h3>
+&lt;p>不仅要收集，而且要使用&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>宝可梦&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Boss / Elite Enemy&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>英雄卡牌&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>一说就想经历的渴望&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>当时停不下来的渴望（文明6）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>想再次体验的美好经历（抓宝可梦，美食）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>强烈的渴望（短期）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>强烈的渴望（长期）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>成就感，领证的快乐，满足感&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>好奇心，随机的快乐，猎奇心&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>当下的强烈程度&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>维持多长时间&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>多少次数开始弱化&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>简单的看到想要得到的事情发生，灭火队长&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>造物主，灭火队长，成就感源泉&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>易：颗粒化简单，降低门槛（轻松有进展）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>塔：目标网络，强化成就感（有成就感）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>奇：增加随机性，提高乐趣（有乐趣感）&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="system">System&lt;/h2>
+&lt;ol>
+&lt;li>you think you can win.&lt;/li>
+&lt;li>you think you can do better.&lt;/li>
+&lt;li>simple mechanics&lt;/li>
+&lt;li>not easy to fail or win&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/design/items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/items/</guid><description>&lt;h2 id="道具">道具&lt;/h2></description></item><item><title/><link>https://yingkui.com/games/design/loop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/loop/</guid><description>&lt;h2 id="addiction-loop">Addiction Loop&lt;/h2>
+&lt;p>必须在一个loop内，让学生感到喜欢，否则就会loop断掉&lt;/p></description></item><item><title/><link>https://yingkui.com/games/design/map/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/map/</guid><description>&lt;h2 id="图房间-地图-存档点-传送点">图：房间-地图-存档点-传送点&lt;/h2>
+&lt;p>地图是游戏中谜题的容器&lt;/p>
+&lt;h3 id="游戏中的案例">游戏中的案例&lt;/h3>
+&lt;ol>
+&lt;li>《艾尔登法环》中的箱庭设计，赐福点，可以传送&lt;/li>
+&lt;li>2D《密特罗德》中的房间，保存点，无法传送&lt;/li>
+&lt;li>《超级马力欧：奥德赛》中的区域，旗帜，可以传送&lt;/li>
+&lt;li>《宝可梦》中的区域，随处都是保存点，城市间可以传送&lt;/li>
+&lt;/ol>
+&lt;h3 id="为什么这么做">为什么这么做？&lt;/h3>
+&lt;ol>
+&lt;li>新鲜感&lt;/li>
+&lt;li>进展感&lt;/li>
+&lt;li>释放压力&lt;/li>
+&lt;li>中奖感觉&lt;/li>
+&lt;li>节点的明确（等级的积累），目标明确&lt;/li>
+&lt;/ol>
+&lt;h3 id="其他做法的缺点">其他做法的缺点&lt;/h3>
+&lt;blockquote>
+&lt;p>缺少明确的进展，进度松散&lt;/p>
+&lt;/blockquote>
+&lt;p>主要就是没有那么多可以利用的优点，乐趣不足&lt;/p>
+&lt;ol>
+&lt;li>肉鸽：缺乏进展感觉&lt;/li>
+&lt;li>关卡：线性完成，有点做作业的感觉&lt;/li>
+&lt;li>解谜：目标有点松散，俄罗斯方块，就像是设计很好的一个boss，&lt;/li>
+&lt;/ol>
+&lt;h3 id="这种做法的缺点">这种做法的缺点&lt;/h3>
+&lt;ol>
+&lt;li>感觉像是做作业&lt;/li>
+&lt;li>未来的压力，感觉还有好多烦躁的事情要做&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/design/new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/new/</guid><description>&lt;h3 id="游戏化">游戏化&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>强渴望，大满足&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>增强渴望，劝退&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>营造满足，失望&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>求胜，求知（无法满足情色食欲这种）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>塔（令人渴望的目标）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>从信息的角度来说，人就是想证明自己，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>塔，明确的，可以明确的目标，有评价标准的胜负&lt;/p>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ol>
+&lt;p>强烈的渴望，得到了大满足，就会再次尝试，如果是超出预期的渴望得到了大满足，就会上瘾。&lt;/p>
+&lt;ol>
+&lt;li>增加渴望的程度，减少劝退的环节&lt;/li>
+&lt;li>营造&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/design/structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/structure/</guid><description>&lt;h2 id="结构">结构&lt;/h2>
+&lt;ol>
+&lt;li>渴望（信息）&lt;/li>
+&lt;li>
+&lt;hr>
+&lt;/li>
+&lt;li>求胜心&lt;/li>
+&lt;li>求知欲&lt;/li>
+&lt;li>
+&lt;hr>
+&lt;/li>
+&lt;li>目标&lt;/li>
+&lt;li>进展&lt;/li>
+&lt;li>核心循环&lt;/li>
+&lt;li>
+&lt;hr>
+&lt;/li>
+&lt;/ol>
+&lt;p>驱动力有哪些，强烈程度如何，为了达到一定强烈程度的驱动力，可以应用的策略有哪些？&lt;/p>
+&lt;h3 id="第一节欲驱动力">第一节，欲，驱动力&lt;/h3>
+&lt;p>渴望强烈，满足感强烈&lt;/p>
+&lt;p>求胜心，求知欲&lt;/p>
+&lt;p>求胜衍生证明自己，求知衍生假设验证&lt;/p>
+&lt;p>愿望就是目标的达成，问题的解决&lt;/p>
+&lt;p>求知就是新鲜信息的摄入，新的样式的更新&lt;/p>
+&lt;p>验证也是求知的一部分，只不过是主动的去设立情景&lt;/p>
+&lt;p>什么事情令人想要？从而费力追求？&lt;/p>
+&lt;p>什么事情令人强烈渴望？从而耐得住痛苦？&lt;/p>
+&lt;p>即时制，回合制，有足够的决策时间。&lt;/p>
+&lt;p>即时制，需要在短暂的时间内，找到精准的操作。&lt;/p>
+&lt;p>什么事情令人反复体验？从而耐得住无聊？&lt;/p>
+&lt;p>什么事情令人上瘾？从而梦寐以求？&lt;/p>
+&lt;p>什么事情令人厌恶？&lt;/p>
+&lt;p>复杂度高的运算&lt;/p>
+&lt;p>让人没有头绪的&lt;/p>
+&lt;p>不能及时得到满足的渴望&lt;/p>
+&lt;p>原生阻力，寄生阻力&lt;/p>
+&lt;p>动力的等级&lt;/p>
+&lt;ol>
+&lt;li>+1，解闷，尝试&lt;/li>
+&lt;li>+2，在乎，坚持&lt;/li>
+&lt;li>+3，渴望，忍耐&lt;/li>
+&lt;li>+4，上瘾，魔怔&lt;/li>
+&lt;li>-1，无聊&lt;/li>
+&lt;li>-2，厌恶&lt;/li>
+&lt;li>-3，痛苦&lt;/li>
+&lt;li>-4，逃避&lt;/li>
+&lt;/ol>
+&lt;h3 id="第二节招实现手段">第二节，招，实现手段&lt;/h3>
+&lt;h4 id="塔">塔&lt;/h4>
+&lt;p>目标的建立&lt;/p>
+&lt;p>随机性&lt;/p>
+&lt;p>进展&lt;/p>
+&lt;p>面包屑&lt;/p>
+&lt;p>收集&lt;/p>
+&lt;p>空间，系统，技能&lt;/p>
+&lt;p>难度的增加&lt;/p>
+&lt;p>核心循环单元&lt;/p>
+&lt;p>强化难度符号&lt;/p>
+&lt;p>强化成就符号&lt;/p>
+&lt;p>赏重险急&lt;/p>
+&lt;p>巨大的压抑得到释放&lt;/p>
+&lt;p>要么是时间久的压抑（久攻不下）&lt;/p>
+&lt;p>要么是强烈的压抑（失而复得）&lt;/p>
+&lt;h4 id="易">易&lt;/h4>
+&lt;h4 id="题">题&lt;/h4>
+&lt;h4 id="器">器&lt;/h4>
+&lt;p>塔的派生，增加塔的数量&lt;/p>
+&lt;p>最重要的核心的易，就是器&lt;/p>
+&lt;p>数据升级&lt;/p>
+&lt;p>道具&lt;/p>
+&lt;p>卡牌&lt;/p>
+&lt;ol>
+&lt;li>进攻招式&lt;/li>
+&lt;li>增益效果&lt;/li>
+&lt;li>减益效果&lt;/li>
+&lt;/ol>
+&lt;h4 id="悬">悬&lt;/h4>
+&lt;p>随机的掉落&lt;/p>
+&lt;p>SurPrize，幸，预期低频率的事件发生&lt;/p>
+&lt;h3 id="第三节用应用于教学">第三节，用，应用于教学&lt;/h3></description></item><item><title/><link>https://yingkui.com/games/design/ta/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/ta/</guid><description/></item><item><title/><link>https://yingkui.com/games/design/theory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/design/theory/</guid><description>&lt;h2 id="理论">理论&lt;/h2>
+&lt;h3 id="要解决什么问题">要解决什么问题？&lt;/h3>
+&lt;p>要解决的问题，有两个 (Care &amp;amp; Endure)&lt;/p>
+&lt;ol>
+&lt;li>让人 &lt;strong>在乎&lt;/strong> 游戏所设定的目标，让人认可游戏所做出的评价&lt;/li>
+&lt;li>让人为了游戏目标，能够 长时间的享受或 &lt;strong>忍受&lt;/strong>
+&lt;ul>
+&lt;li>刷题，也就是怪/道具，练习题&lt;/li>
+&lt;li>考级，打BOSS，谜题的容器&lt;/li>
+&lt;li>探索，新的区域，观景剧情内容&lt;/li>
+&lt;li>解谜，零散的谜题，任务剧情的推进&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="驱动力有哪些">驱动力有哪些？&lt;/h3>
+&lt;ol>
+&lt;li>好奇心，猎奇心，赌博心态&lt;/li>
+&lt;li>样式识别，弄清楚，掌握关联&lt;/li>
+&lt;li>成就感，完成欲，求胜心，进展满足&lt;/li>
+&lt;li>虚荣心，验证自己，证明自己&lt;/li>
+&lt;li>规避损失，loss aversion，迫近的成功&lt;/li>
+&lt;/ol>
+&lt;h3 id="让人上瘾的事情有哪些">让人上瘾的事情有哪些？&lt;/h3>
+&lt;ol>
+&lt;li>飞来横财，斯金纳盒&lt;/li>
+&lt;/ol>
+&lt;h3 id="难度的调节">难度的调节&lt;/h3>
+&lt;h3 id="其他">其他&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>为什么想玩游戏？&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>为什么上头？&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>为什么能够长时间想玩？&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

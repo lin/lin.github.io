@@ -1,1 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cps on Yingkui</title><link>https://yingkui.com/cp/</link><description>Recent content in Cps on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/cp/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/cp/lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cp/lists/</guid><description>Good Problems Selected [https://atcoder.jp/contests/abc294/tasks/abc294_e] Backtrack with tricks [https://leetcode.com/problems/partition-to-k-equal-sum-subsets/] Binary Search https://codeforces.com/contest/1794/problem/C : 10^5 can be nlog(n) [https://leetcode.com/contest/weekly-contest-331/problems/house-robber-iv/] House Robber Enumerate All [https://atcoder.jp/contests/abc289/tasks/abc289_c] set to cover them all. DSU root not 1 to n [https://atcoder.jp/contests/abc277/tasks/abc277_c] [https://atcoder.jp/contests/abc285/tasks/abc285_d] interval covering [https://atcoder.jp/contests/abc294/tasks/abc294_e] AC-792 / LC-1310 [https://leetcode.com/contest/weekly-contest-336/problems/minimum-time-to-complete-all-tasks/] LC-2380 DP Knapsack / Coin Change [https://leetcode.com/problems/number-of-ways-to-earn-points/] LC-1909 [https://atcoder.jp/contests/abc286/tasks/abc286_d] AC-607 / CF-1107 [https://leetcode.com/problems/coin-change-ii/] [https://leetcode.com/problems/profitable-schemes/] Substring Patterns [https://leetcode.com/contest/weekly-contest-332/problems/substring-xor-queries/] - reduce from N^2 to 30*N DP matrix path: [https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/] Modular Arithmetic [https://leetcode.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cps on Yingkui</title><link>https://yingkui.com/cp/</link><description>Recent content in Cps on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/cp/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/cp/lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cp/lists/</guid><description>&lt;h2 id="good-problems">Good Problems&lt;/h2>
+&lt;h3 id="selected">Selected&lt;/h3>
+&lt;ul>
+&lt;li>[https://atcoder.jp/contests/abc294/tasks/abc294_e]&lt;/li>
+&lt;/ul>
+&lt;h3 id="backtrack-with-tricks">Backtrack with tricks&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/partition-to-k-equal-sum-subsets/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="binary-search">Binary Search&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="">https://codeforces.com/contest/1794/problem/C&lt;/a> : &lt;strong>10^5&lt;/strong> can be &lt;strong>nlog(n)&lt;/strong>&lt;/li>
+&lt;li>[https://leetcode.com/contest/weekly-contest-331/problems/house-robber-iv/] House Robber&lt;/li>
+&lt;/ul>
+&lt;h3 id="enumerate-all">Enumerate All&lt;/h3>
+&lt;ul>
+&lt;li>[https://atcoder.jp/contests/abc289/tasks/abc289_c] set to cover them all.&lt;/li>
+&lt;/ul>
+&lt;h3 id="dsu-root-not-1-to-n">DSU root not 1 to n&lt;/h3>
+&lt;ul>
+&lt;li>[https://atcoder.jp/contests/abc277/tasks/abc277_c]&lt;/li>
+&lt;li>[https://atcoder.jp/contests/abc285/tasks/abc285_d]&lt;/li>
+&lt;/ul>
+&lt;h3 id="interval-covering">interval covering&lt;/h3>
+&lt;ul>
+&lt;li>[https://atcoder.jp/contests/abc294/tasks/abc294_e] AC-792 / LC-1310&lt;/li>
+&lt;li>[https://leetcode.com/contest/weekly-contest-336/problems/minimum-time-to-complete-all-tasks/] LC-2380&lt;/li>
+&lt;/ul>
+&lt;h3 id="dp-knapsack--coin-change">DP Knapsack / Coin Change&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/number-of-ways-to-earn-points/] LC-1909&lt;/li>
+&lt;li>[https://atcoder.jp/contests/abc286/tasks/abc286_d] AC-607 / CF-1107&lt;/li>
+&lt;li>[https://leetcode.com/problems/coin-change-ii/]&lt;/li>
+&lt;li>[https://leetcode.com/problems/profitable-schemes/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="substring-patterns">Substring Patterns&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/contest/weekly-contest-332/problems/substring-xor-queries/] - reduce from N^2 to 30*N&lt;/li>
+&lt;/ul>
+&lt;h3 id="dp-matrix-path">DP matrix path:&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="modular-arithmetic">Modular Arithmetic&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="increasing-subsequence">Increasing Subsequence:&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/count-increasing-quadruplets/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="subarray-contribution">Subarray Contribution&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/contest/weekly-contest-266/problems/vowels-of-all-substrings/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="heap">Heap&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/maximum-subsequence-score/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="multi-step-dp">Multi-Step DP&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/minimum-cost-for-tickets/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="dfs-to-collect-data-for-each-node">DFS to collect data for each node&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/contest/weekly-contest-264/problems/count-nodes-with-the-highest-score/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="prefix-sum-and-suffix-sum">prefix sum and suffix sum&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/contest/biweekly-contest-62/problems/maximum-number-of-ways-to-partition-an-array/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="hidden-prefix-sum">Hidden Prefix Sum&lt;/h3>
+&lt;ul>
+&lt;li>[https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/]&lt;/li>
+&lt;/ul>
+&lt;h3 id="distance-in-tree">distance in tree&lt;/h3>
+&lt;ul>
+&lt;li>[https://codeforces.com/contest/1805/problem/D]&lt;/li>
+&lt;/ul>
+&lt;h3 id="pair-distance">Pair Distance&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>[https://leetcode.com/problems/intervals-between-identical-elements/description/]&lt;/p></description></item></channel></rss>
