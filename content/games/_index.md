@@ -57,8 +57,10 @@ type: "page"
 |   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
 |   ✅   | Monotetsu Teiban                         | NS            | 15h    |2024/08     |SLG|
 |   ✅   | Braid                                    | PC            | 6h    |2024/10     |PLG|
-|   ✅   | Shawarma Legend (35%)                    | PC            | 3h    |2024/10     |PLG|
-|   ✅   | 黑神话悟空 (虎先锋)                       | PC            | 6h    |2024/10     |PLG|
+|   😊   | Shawarma Legend (35%)                    | PC            | 3h    |2024/10     |PLG|
+|   😊   | 黑神话悟空 (虎先锋)                        | PC            | 6h    |2024/10     |PLG|
+|   ✅   | Pentiment                                | NS            | 14.5h    |2024/10     |AVG|
+|   ✅   | Slime Rancher                            | PC            | 11.5h    |2024/10     |RPG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | PC           | 30h    |2024/09      |CRPG|
 
 ## 其他曾深度体验过的游戏
