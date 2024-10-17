@@ -439,29 +439,29 @@ or
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Operation&lt;/th>
+ &lt;th>Operation&lt;/th>
  &lt;th style="text-align: center">Big-O&lt;/th>
  &lt;th style="text-align: left">Notes&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Insert&lt;/td>
+ &lt;td>Insert&lt;/td>
  &lt;td style="text-align: center">O(log n)&lt;/td>
  &lt;td style="text-align: left">1. insert at last; 2, heapifyUp&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Remove&lt;/td>
+ &lt;td>Remove&lt;/td>
  &lt;td style="text-align: center">O(log n)&lt;/td>
  &lt;td style="text-align: left">1. swap first and last; 2, heapifyDown&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">buildHeap&lt;/td>
+ &lt;td>buildHeap&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;td style="text-align: left">from parent(last) to 1, heapifyDown&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">heap sort&lt;/td>
+ &lt;td>heap sort&lt;/td>
  &lt;td style="text-align: center">O(n log n)&lt;/td>
  &lt;td style="text-align: left">1.build need n, 2, removeMin need lg n&lt;/td>
  &lt;/tr>
@@ -471,34 +471,34 @@ or
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Operation&lt;/th>
+ &lt;th>Operation&lt;/th>
  &lt;th style="text-align: center">Array&lt;/th>
  &lt;th style="text-align: center">Linked List&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">InsertFront&lt;/td>
+ &lt;td>InsertFront&lt;/td>
  &lt;td style="text-align: center">O(1)*&lt;/td>
  &lt;td style="text-align: center">O(1)&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">InsertAfter&lt;/td>
+ &lt;td>InsertAfter&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;td style="text-align: center">O(1)&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">RemoveAfter&lt;/td>
+ &lt;td>RemoveAfter&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;td style="text-align: center">O(1)&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Find&lt;/td>
+ &lt;td>Find&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Access&lt;/td>
+ &lt;td>Access&lt;/td>
  &lt;td style="text-align: center">O(1)&lt;/td>
  &lt;td style="text-align: center">O(n)&lt;/td>
  &lt;/tr>
@@ -1263,118 +1263,118 @@ B -&amp;gt; z.
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">Cue&lt;/th>
- &lt;th style="text-align: left">Response&lt;/th>
+ &lt;th>Cue&lt;/th>
+ &lt;th>Response&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Sum + Subarray&lt;/td>
- &lt;td style="text-align: left">Prefix Sum&lt;/td>
+ &lt;td>Sum + Subarray&lt;/td>
+ &lt;td>Prefix Sum&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Largest / Smallest / k-th in sorted&lt;/td>
- &lt;td style="text-align: left">Heap / Quickselect&lt;/td>
+ &lt;td>Largest / Smallest / k-th in sorted&lt;/td>
+ &lt;td>Heap / Quickselect&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Arrange to Find Max / Min&lt;/td>
- &lt;td style="text-align: left">Heap / Sort with Compare&lt;/td>
+ &lt;td>Arrange to Find Max / Min&lt;/td>
+ &lt;td>Heap / Sort with Compare&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Competing Choices / Select or Skip&lt;/td>
- &lt;td style="text-align: left">Dynamic Programming&lt;/td>
+ &lt;td>Competing Choices / Select or Skip&lt;/td>
+ &lt;td>Dynamic Programming&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Remember Seen&lt;/td>
- &lt;td style="text-align: left">Hashset / Hashmap&lt;/td>
+ &lt;td>Remember Seen&lt;/td>
+ &lt;td>Hashset / Hashmap&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">String Prefix&lt;/td>
- &lt;td style="text-align: left">Trie&lt;/td>
+ &lt;td>String Prefix&lt;/td>
+ &lt;td>Trie&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Pattern / Substring Matching&lt;/td>
- &lt;td style="text-align: left">Rolling Hash / KMP&lt;/td>
+ &lt;td>Pattern / Substring Matching&lt;/td>
+ &lt;td>Rolling Hash / KMP&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Repeated Sorting&lt;/td>
- &lt;td style="text-align: left">Sorted List / Ordered Set&lt;/td>
+ &lt;td>Repeated Sorting&lt;/td>
+ &lt;td>Sorted List / Ordered Set&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Binary Tree&lt;/td>
- &lt;td style="text-align: left">Recursive Traverse / DFS&lt;/td>
+ &lt;td>Binary Tree&lt;/td>
+ &lt;td>Recursive Traverse / DFS&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Count Steps in Graph / Matrix&lt;/td>
- &lt;td style="text-align: left">BFS&lt;/td>
+ &lt;td>Count Steps in Graph / Matrix&lt;/td>
+ &lt;td>BFS&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Connectivity / Groups in Graph&lt;/td>
- &lt;td style="text-align: left">Disjointed Set&lt;/td>
+ &lt;td>Connectivity / Groups in Graph&lt;/td>
+ &lt;td>Disjointed Set&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Cycle Detection in Graph&lt;/td>
- &lt;td style="text-align: left">Disjointed Set&lt;/td>
+ &lt;td>Cycle Detection in Graph&lt;/td>
+ &lt;td>Disjointed Set&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Hash On or Off&lt;/td>
- &lt;td style="text-align: left">Bitmask&lt;/td>
+ &lt;td>Hash On or Off&lt;/td>
+ &lt;td>Bitmask&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">DAG / Dependency / Causation&lt;/td>
- &lt;td style="text-align: left">Topological Sort&lt;/td>
+ &lt;td>DAG / Dependency / Causation&lt;/td>
+ &lt;td>Topological Sort&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Next Greater / Smaller&lt;/td>
- &lt;td style="text-align: left">Mono Stack&lt;/td>
+ &lt;td>Next Greater / Smaller&lt;/td>
+ &lt;td>Mono Stack&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">In-place&lt;/td>
- &lt;td style="text-align: left">Swap / Sorting / Two Pointers&lt;/td>
+ &lt;td>In-place&lt;/td>
+ &lt;td>Swap / Sorting / Two Pointers&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Perm / Subset / Matrix Traverse / On or Off&lt;/td>
- &lt;td style="text-align: left">Backtracking&lt;/td>
+ &lt;td>Perm / Subset / Matrix Traverse / On or Off&lt;/td>
+ &lt;td>Backtracking&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Find First / Last Good Candidate&lt;/td>
- &lt;td style="text-align: left">Binary Search&lt;/td>
+ &lt;td>Find First / Last Good Candidate&lt;/td>
+ &lt;td>Binary Search&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Given &lt;code>k&lt;/code>, find max / min&lt;/td>
- &lt;td style="text-align: left">Binary Search&lt;/td>
+ &lt;td>Given &lt;code>k&lt;/code>, find max / min&lt;/td>
+ &lt;td>Binary Search&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Find kth Element&lt;/td>
- &lt;td style="text-align: left">Binary Search&lt;/td>
+ &lt;td>Find kth Element&lt;/td>
+ &lt;td>Binary Search&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Range Sum / Count in Rolling Sorted Array&lt;/td>
- &lt;td style="text-align: left">Binary Index Tree / Segment Tree&lt;/td>
+ &lt;td>Range Sum / Count in Rolling Sorted Array&lt;/td>
+ &lt;td>Binary Index Tree / Segment Tree&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Range Max / Min&lt;/td>
- &lt;td style="text-align: left">Segment Tree&lt;/td>
+ &lt;td>Range Max / Min&lt;/td>
+ &lt;td>Segment Tree&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Balance / Last Few / Deletion&lt;/td>
- &lt;td style="text-align: left">Stack&lt;/td>
+ &lt;td>Balance / Last Few / Deletion&lt;/td>
+ &lt;td>Stack&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Count / Min / Max Subarray&lt;/td>
- &lt;td style="text-align: left">Sliding Window&lt;/td>
+ &lt;td>Count / Min / Max Subarray&lt;/td>
+ &lt;td>Sliding Window&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Count / Min / Max Subseq&lt;/td>
- &lt;td style="text-align: left">Dynamic Programming&lt;/td>
+ &lt;td>Count / Min / Max Subseq&lt;/td>
+ &lt;td>Dynamic Programming&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Subseq Pattern Matching&lt;/td>
- &lt;td style="text-align: left">Dynamic Programming&lt;/td>
+ &lt;td>Subseq Pattern Matching&lt;/td>
+ &lt;td>Dynamic Programming&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Partition to k Subset / Knapsack&lt;/td>
- &lt;td style="text-align: left">Dynamic Programming&lt;/td>
+ &lt;td>Partition to k Subset / Knapsack&lt;/td>
+ &lt;td>Dynamic Programming&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item></channel></rss>

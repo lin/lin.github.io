@@ -51,22 +51,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">日期&lt;/th>
- &lt;th style="text-align: left">记录&lt;/th>
- &lt;th style="text-align: left">读书&lt;/th>
- &lt;th style="text-align: left">写作&lt;/th>
- &lt;th style="text-align: left">财务&lt;/th>
- &lt;th style="text-align: left">技能&lt;/th>
+ &lt;th>日期&lt;/th>
+ &lt;th>记录&lt;/th>
+ &lt;th>读书&lt;/th>
+ &lt;th>写作&lt;/th>
+ &lt;th>财务&lt;/th>
+ &lt;th>技能&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">09/23&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">✅&lt;/td>
- &lt;td style="text-align: left">✅&lt;/td>
+ &lt;td>09/23&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>✅&lt;/td>
+ &lt;td>✅&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>

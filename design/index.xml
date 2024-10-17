@@ -144,65 +144,65 @@ $$&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">情境&lt;/th>
- &lt;th style="text-align: left">可商用字体&lt;/th>
+ &lt;th>情境&lt;/th>
+ &lt;th>可商用字体&lt;/th>
  &lt;th style="text-align: center">预览&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">标题英文&lt;/td>
- &lt;td style="text-align: left">Suez One&lt;/td>
+ &lt;td>标题英文&lt;/td>
+ &lt;td>Suez One&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-suez-one.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">正文英文&lt;/td>
- &lt;td style="text-align: left">Open Sans&lt;/td>
+ &lt;td>正文英文&lt;/td>
+ &lt;td>Open Sans&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-open-sans.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">个性标题英文&lt;/td>
- &lt;td style="text-align: left">Montserrat Black / Dela Gothic One&lt;/td>
+ &lt;td>个性标题英文&lt;/td>
+ &lt;td>Montserrat Black / Dela Gothic One&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-dela-gothic-one.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">标题中文&lt;/td>
- &lt;td style="text-align: left">苹方 / Noto Sans SC / 思源黑体&lt;/td>
+ &lt;td>标题中文&lt;/td>
+ &lt;td>苹方 / Noto Sans SC / 思源黑体&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-siyuan-hei.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">正文中文&lt;/td>
- &lt;td style="text-align: left">苹方 / Noto Sans SC&lt;/td>
+ &lt;td>正文中文&lt;/td>
+ &lt;td>苹方 / Noto Sans SC&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-pingfang.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">个性标题中文&lt;/td>
- &lt;td style="text-align: left">Dela Gothic One (标小智无界黑)&lt;/td>
+ &lt;td>个性标题中文&lt;/td>
+ &lt;td>Dela Gothic One (标小智无界黑)&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-wujiehei.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">全大写英文大写&lt;/td>
- &lt;td style="text-align: left">Montserrat Black&lt;/td>
+ &lt;td>全大写英文大写&lt;/td>
+ &lt;td>Montserrat Black&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-montserrat-bold.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">全大写英文小字&lt;/td>
- &lt;td style="text-align: left">Montserrat Black / Poppins Bold&lt;/td>
+ &lt;td>全大写英文小字&lt;/td>
+ &lt;td>Montserrat Black / Poppins Bold&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-poppins-bold.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">数字（粗大）&lt;/td>
- &lt;td style="text-align: left">Montserrat Black / League Spartan&lt;/td>
+ &lt;td>数字（粗大）&lt;/td>
+ &lt;td>Montserrat Black / League Spartan&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-league-spartan-bold.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">数字（细长）&lt;/td>
- &lt;td style="text-align: left">Barlow Condensed&lt;/td>
+ &lt;td>数字（细长）&lt;/td>
+ &lt;td>Barlow Condensed&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-barlow-condensed.png'>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">斜体英文&lt;/td>
- &lt;td style="text-align: left">Lato&lt;/td>
+ &lt;td>斜体英文&lt;/td>
+ &lt;td>Lato&lt;/td>
  &lt;td style="text-align: center">&lt;img style="width: 220px;" src='../imgs/font-lato-italic.png'>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
