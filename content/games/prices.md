@@ -43,28 +43,28 @@
 
 | 时间      | 游戏                                     | Unit Price           |  折扣 | 用时| 
 |-----------|-----------------------------------------|:---------------:|:-----:|:-----:|
-| 10/25/2024 | ARK: Survival Evolved                             | $7.99        |    |   |
-| 06/11/2024 | Pentiment                             | $11.99         |    |  ✅     |
-| 06/07/2024 | Monster Hunter Rise                             | $9.99        |    |   |
-| 05/07/2024 | Fall Guys                             | $0.00         |    |   |
-| 02/22/2024 | Suika Game Expansion Pack                             | $2.25       |    |  ✅ |
-| 01/28/2024 | Undertale                                           | $10.04         |    |   |
-| 01/08/2024 | Celeste                                      | $5.99        |    |   |
-| 12/22/2023 | Suika Game                                   | $2.99        |    | ✅  |
-| 11/20/2023 | Portal: Companion Collection                 | $6.79         |    |  ✅ |
-| 11/03/2023 | Hades                                        | $12.49        |    | ✅  |
-| 10/19/2023 | XCOM® 2 Collection                            | $7.49        |    |   |
-| 10/14/2023 | Diablo® Prime Evil Collection                 | $19.79       |    | ✅  |
-| 10/08/2023 | INSIDE                                        | $1.99       |    |   |
-| 09/27/2023 | Grand Theft Auto: The Trilogy                 | $29.99        |    |   |
-| 09/27/2023 | BioShock: The Collection                      | $9.99       |    |   |
-| 07/03/2023 | Link’s Awakening        | $53.30        |    | ✅  |
-| 07/03/2023 | Tears of the Kingdom    | $53.30        |    |   |
-| 12/13/2020 | Breath of the Wild Expansion Pass    | $19.99       |    |   |
-| 10/18/2020 | 51 Worldwide Classics    | $39.99      |    | ✅  |
-| 12/13/2020 | Minecraft    | $29.99       |    |   |
-| 08/25/2020 | FIFA 20    | $14.99       |    |   |
-| 08/25/2020 | NBA 2K20    | $4.99      |    |   |
-| 07/23/2020 | Breath of the Wild    | $59.99       |    | ✅  |
-| 07/20/2020 | Overcooked! 2    | $14.99       |    |   |
-| 07/20/2020 | Animal Crossing™: New Horizons    | $59.99       |    |  ✅ |
+| 10/25/2024 | ARK: Survival Evolved                      | $7.99        |  60%  |   |
+| 06/11/2024 | Pentiment                                    | $11.99         | 40%   |  ✅     |
+| 06/07/2024 | Monster Hunter Rise                         | $9.99        |  75%  |   |
+| 05/07/2024 | Fall Guys                                   | $0.00         |    |   |
+| 02/22/2024 | Suika Game Expansion Pack                   | $2.25       |  0  |  ✅ |
+| 01/28/2024 | Undertale                                    | $9.89         |  33% |   |
+| 01/08/2024 | Celeste                                      | $5.99        |  70%  |   |
+| 12/22/2023 | Suika Game                                   | $2.99        |  0  | ✅  |
+| 11/20/2023 | Portal: Companion Collection                 | $6.79         |  67%  |  ✅ |
+| 11/03/2023 | Hades                                        | $12.49        |  50%  | ✅  |
+| 10/19/2023 | XCOM® 2 Collection                            | $7.49        |  85%  |   |
+| 10/14/2023 | Diablo® II & III Prime Evil                 | $19.79       |  67% | ✅  |
+| 10/08/2023 | INSIDE                                        | $1.99       |   90% |   |
+| 09/27/2023 | Grand Theft Auto: The Trilogy                 | $29.99        |  50%  |   |
+| 09/27/2023 | BioShock: The Collection                      | $9.99       | 80%   |   |
+| 07/03/2023 | Link’s Awakening        | $53.30        | 0   | ✅  |
+| 07/03/2023 | Tears of the Kingdom    | $53.30        | 0  |   |
+| 12/13/2020 | Breath of the Wild Expansion Pass    | $19.99       | 0   |   |
+| 10/18/2020 | 51 Worldwide Classics    | $39.99      |  0  | ✅  |
+| 12/13/2020 | Minecraft    | $29.99       | 0   |   |
+| 08/25/2020 | FIFA 20    | $14.99       |  70%  |   |
+| 08/25/2020 | NBA 2K20    | $4.99      |  90%  |   |
+| 07/23/2020 | Breath of the Wild    | $59.99       |  0  | ✅  |
+| 07/20/2020 | Overcooked! 2    | $14.99       |  60%  |   |
+| 07/20/2020 | Animal Crossing™: New Horizons    | $59.99       |  0  |  ✅ |
