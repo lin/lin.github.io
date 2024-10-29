@@ -23,10 +23,10 @@
 | 05/10/2024 | Europa Universalis IV                   | ¥ 98.10	     |  55%  |      |
 | 05/04/2024 | Don't Starve Together                   | ¥ 12.00	     |  50%  |      |
 | 05/03/2024 | Total War: Shogun 2                     | ¥ 26.60	     |  80%  |      |
-| 05/03/2024 | Hades                                   | ¥ 31.28     |  66%  |  ✅    |
-| 05/03/2024 | Total War: THREE KINGDOMS               |¥ 91.12     |  66%  |      |
-| 04/27/2024 | Manor Lords                             | ¥ 111.75     |  25%  |      |
-| 04/23/2024 | Anno 1404 - History Edition             | ¥ 22.50	     |  70%  |     |
+| 05/03/2024 | Hades                                   | ¥ 31.28         |  66%  |  ✅    |
+| 05/03/2024 | Total War: THREE KINGDOMS               | ¥ 91.12          |  66%  |      |
+| 04/27/2024 | Manor Lords                             | ¥ 111.75        |  25%  |      |
+| 04/23/2024 | Anno 1404 - History Edition             | ¥ 22.50	     |  70%  | ✅    |
 | 01/26/2024 | Palworld                                | ¥ 97.20	     |  10%  |   ✅   |
 | 11/10/2023 | Crusader Kings III Launch               | ¥ 89.00	     |  50%  |      |
 | 09/28/2023 | Grand Theft Auto IV                     | ¥ 29.70	     |  70%  |      |
@@ -34,39 +34,39 @@
 | 03/17/2023 | Disco Elysium - The Final Cut           | ¥ 29.00	     |  75%  |      |
 | 03/05/2023 | Red Dead Redemption 2                   | ¥ 92.07	     |  67%  |   ✅   |
 | 03/04/2023 | Anno 1800                               | ¥ 74.50	     |  75%  |    ✅  |
-| 03/28/2021 | Portal 2                                | ¥ 7.00     |  81%  |      |
+| 03/28/2021 | Portal 2                                | ¥ 7.00     |  81%  |  ✅    |
 | 03/28/2021 | Grand Theft Auto V                      | ¥ 44.03     |  63%  |   ✅   |
 | 03/28/2021 | GTA V - Criminal Enterprise             | ¥ 14.43     |  63%  | ✅     |
 | 03/25/2021 | Stardew Valley                          | ¥ 38.00    |  20%  |      |
-| 07/30/2019 | PUBG                                    | ¥ 49.00	     |  50%  |      |
-| 02/13/2018 | Sid Meier's Civilization VI             | ¥ 99.00	     |  50%  |      |
+| 07/30/2019 | PUBG                                    | ¥ 49.00	     |  50%  |  ✅    |
+| 02/13/2018 | Sid Meier's Civilization VI             | ¥ 99.00	     |  50%  |   ✅   |
 
 ## Nintendo Switch Purchase History
 
 | 时间       | 游戏                                     | Unit Price           |  折扣 | 用时| 
 |------------|-----------------------------------------|---------------:|:-----:|:-----:|
 | 10/25/2024 | ARK: Survival Evolved                   | $7.99        |  60%  |   |
-| 06/11/2024 | Pentiment                               | $11.99         | 40%   |  ✅     |
+| 06/11/2024 | Pentiment                               | $11.99       | 40%   |  ✅     |
 | 06/07/2024 | Monster Hunter Rise                     | $9.99        |  75%  |   |
-| 05/07/2024 | Fall Guys                               | $0.00         |    |   |
-| 02/22/2024 | Suika Game Expansion Pack               | $2.25       |  0  |  ✅ |
-| 01/28/2024 | Undertale                               | $9.89         |  33% |   |
+| 05/07/2024 | Fall Guys                               | $0.00        |    |   |
+| 02/22/2024 | Suika Game Expansion Pack               | $2.25        |  0  |  ✅ |
+| 01/28/2024 | Undertale                               | $9.89        |  33% |   |
 | 01/08/2024 | Celeste                                 | $5.99        |  70%  |   |
 | 12/22/2023 | Suika Game                              | $2.99        |  0  | ✅  |
-| 11/20/2023 | Portal: Companion Collection            | $6.79         |  67%  |  ✅ |
-| 11/03/2023 | Hades                                   | $12.49        |  50%  | ✅  |
+| 11/20/2023 | Portal: Companion Collection            | $6.79        |  67%  |  ✅ |
+| 11/03/2023 | Hades                                   | $12.49       |  50%  | ✅  |
 | 10/19/2023 | XCOM® 2 Collection                      | $7.49        |  85%  |   |
 | 10/14/2023 | Diablo® II & III Prime Evil             | $19.79       |  67% | ✅  |
-| 10/08/2023 | INSIDE                                  | $1.99       |   90% |   |
-| 09/27/2023 | Grand Theft Auto: The Trilogy           | $29.99        |  50%  |   |
-| 09/27/2023 | BioShock: The Collection                | $9.99       | 80%   |   |
-| 07/03/2023 | Link’s Awakening                        | $53.30        | 0   | ✅  |
-| 07/03/2023 | Tears of the Kingdom                    | $53.30        | 0  |   |
+| 10/08/2023 | INSIDE                                  | $1.99        |   90% |   |
+| 09/27/2023 | Grand Theft Auto: The Trilogy           | $29.99       |  50%  |   |
+| 09/27/2023 | BioShock: The Collection                | $9.99        | 80%   |   |
+| 07/03/2023 | Link’s Awakening                        | $53.30       | 0   | ✅  |
+| 07/03/2023 | Tears of the Kingdom                    | $53.30       | 0  |   |
 | 12/13/2020 | Breath of the Wild Expansion Pass       | $19.99       | 0   |   |
-| 10/18/2020 | 51 Worldwide Classics                   | $39.99      |  0  | ✅  |
+| 10/18/2020 | 51 Worldwide Classics                   | $39.99       |  0  | ✅  |
 | 12/13/2020 | Minecraft                               | $29.99       | 0   |   |
-| 08/25/2020 | FIFA 20                                 | $14.99       |  70%  |   |
-| 08/25/2020 | NBA 2K20                                | $4.99      |  90%  |   |
+| 08/25/2020 | FIFA 20                                 | $14.99       |  70%  |  ✅ |
+| 08/25/2020 | NBA 2K20                                | $4.99        |  90%  |   |
 | 07/23/2020 | Breath of the Wild                      | $59.99       |  0  | ✅  |
 | 07/20/2020 | Overcooked! 2                           | $14.99       |  60%  |   |
 | 07/20/2020 | Animal Crossing™: New Horizons          | $59.99       |  0  |  ✅ |

@@ -8,29 +8,23 @@ type: "page"
 | One Life               | Three Goals                                   | Due               |             |
 |:-----------------------|:----------------------------------------------|:------------------|:------------|
 | One EdTech Company     |  [Albert Education](./edu)                     | 2029年            | Easy & Fun |
-| One Philosophy Book    |  [An Introduction to Life](./life)             | EdTech 开发MVP后  |            |
-| One AGI Paper          |  [A Theory of Intelligence](./ai)              | Life 写完         |   Solving Machine  / PNP      |
-
-> 学习变得像游戏一样上头
-
-> 《人生要义》成为一门大学课程
-
-> AI 可以自动解决数学难题（AIMO）
-
-> An Informational Perspective on Fundamental Physics.
+| One Philosophy Book    |  [An Introduction to Life](./life)             |                   | CS 498     |
+| One AGI Paper          |  [A Theory of Intelligence](./ai)              |                   | Solving Machine |
 
 ## Principles
 
-> 快，Fast，满，Hell，严，Rigor，淡，Calm
+> Move fast and hell. Act rigor and calm.
 
-> 发疯拉满做事快，无情淡定不评价
-
-> 8a - 8p, 8p - 12a
+> 快行而不多思，严满而不松拖，淡然而不愁虑，外实而不虚空，专注而不富欲
 
 ## Facts
 
-> Pride is for low intelligence.
+- Pride is for low intelligence.
+- Most people are not smart.
+- You will die soon. You are the only one living.
+- Life is too short and limited. Death is too long.
 
-> Most people are not smart.
+## Hobbies
 
-> You will die soon. And you are the only one living.
+1. CF Rating, Kaggle Rating
+1. 书法，日语，古典诗词
