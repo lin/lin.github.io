@@ -1270,6 +1270,11 @@
 &lt;li>不想用太多时间&lt;/li>
 &lt;li>半娱乐，半严肃&lt;/li>
 &lt;/ol>
+&lt;p>玩家可能自发找到快乐的，不需要游戏化的加持&lt;/p>
+&lt;ol>
+&lt;li>玩家自己想刻意练习的时候，没有收益也愿意执行&lt;/li>
+&lt;li>大量的文字说明，在有大的收益时，显得没那么疼&lt;/li>
+&lt;/ol>
 &lt;h3 id="类比">类比&lt;/h3>
 &lt;ol>
 &lt;li>Technique：宝可梦碎片，宝可梦TM，存档点，传送点&lt;/li>
@@ -1548,7 +1553,7 @@
 &lt;/ol>
 &lt;h3 id="难点或者冲突点">难点或者冲突点&lt;/h3>
 &lt;ol>
-&lt;li>想让玩家更早接触高级技能（传送门），又希望玩家能通过解锁来奖励（大门打开）&lt;/li>
+&lt;li>想让玩家更早接触高级技能（传送门），又希望玩家能通过解锁来奖励（大门打开），有的房间的奖励，就是解锁一个传送门&lt;/li>
 &lt;li>想让玩家接触到更多的技能（可以解锁区域），又希望玩家能够反复锤炼基本功（捉宠物，养成宠物）&lt;/li>
 &lt;li>想让玩家挑战难题（想证明自己），但又希望他们能多做基础题（需要积累足够的证书）&lt;/li>
 &lt;li>想通过积累（财富或者人口）来简化驱动（可以捕捉更多的宠物），又希望通过探索和挑战关卡实现（有boss战，以及考证赛）&lt;/li>
@@ -1626,6 +1631,18 @@
 既有挑战，也有目标感，可以按需索取&lt;/p>
 &lt;ol>
 &lt;li>知识点，考察频率，重要程度，复杂程度&lt;/li>
+&lt;/ol>
+&lt;h4 id="objects">Objects&lt;/h4>
+&lt;ol>
+&lt;li>Door&lt;/li>
+&lt;li>Room, task&lt;/li>
+&lt;li>Problem, xp, lv&lt;/li>
+&lt;li>Boss, task, trophy, cert&lt;/li>
+&lt;li>Skill&lt;/li>
+&lt;li>&lt;strong>Pet&lt;/strong>, requirements&lt;/li>
+&lt;li>Food, reward from problem, task&lt;/li>
+&lt;li>Product&lt;/li>
+&lt;li>Currency, Coins, Money&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/desires/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/desires/</guid><description>&lt;h2 id="日常和游戏中的需求实例">日常和游戏中的需求实例&lt;/h2>
 &lt;h3 id="八卦赌徒求知欲">八卦赌徒，求知欲&lt;/h3>
 &lt;ol>
@@ -1793,7 +1810,68 @@
 &lt;p>时间：题目形式&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/simple/</guid><description/></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
+&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/short/</guid><description>&lt;h2 id="short">Short&lt;/h2>
+&lt;h3 id="需求">需求&lt;/h3>
+&lt;ol>
+&lt;li>求知欲，适当难度解题，挑战成功，取得进展&lt;/li>
+&lt;li>量化的评价，努力的积累和勋章&lt;/li>
+&lt;li>不想做苦活，不想计算，想总结，想发表意见&lt;/li>
+&lt;/ol>
+&lt;h3 id="方案">方案&lt;/h3>
+&lt;ol>
+&lt;li>简单，没压力，容易推进，有进展&lt;/li>
+&lt;li>目标多，目标令人在乎，有证书评级&lt;/li>
+&lt;li>随着能力的提高，逐步的解锁畅快感&lt;/li>
+&lt;/ol>
+&lt;h2 id="translations">Translations&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Concept&lt;/th>
+ &lt;th>Translation&lt;/th>
+ &lt;th>Why&lt;/th>
+ &lt;th>Pros&lt;/th>
+ &lt;th>Cons&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Door&lt;/td>
+ &lt;td>探图，故事&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Progression&lt;/td>
+ &lt;td>Lack of Freedom, have to unlock to use&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Problem&lt;/td>
+ &lt;td>解谜&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Solving&lt;/td>
+ &lt;td>Not easy and smooth&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="pet-problet-door-skill">Pet, Problet, Door, Skill&lt;/h3>
+&lt;ol>
+&lt;li>Problet, key to open a path door&lt;/li>
+&lt;li>Door&lt;/li>
+&lt;li>Skill&lt;/li>
+&lt;li>Pet&lt;/li>
+&lt;/ol>
+&lt;h3 id="设计">设计&lt;/h3>
+&lt;ol>
+&lt;li>扭蛋盲盒的设计&lt;/li>
+&lt;li>wii u 和 switch 的对比&lt;/li>
+&lt;/ol>
+&lt;h3 id="problem-设计">Problem 设计&lt;/h3>
+&lt;ol>
+&lt;li>可以生成大量的小问题，提高内容的复用率，也可以让学生有感觉（Reduce to another problem）&lt;/li>
+&lt;li>部分信号的处理（求导），使用道具，就会有反应（如果有ai就好了，把所有题目都能自动解决）&lt;/li>
+&lt;li>增加制作内容的周期&lt;/li>
+&lt;li>problem as part of the solution&lt;/li>
+&lt;li>吃卡可以到下一步&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/simple/</guid><description/></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
 &lt;ol>
 &lt;li>1个story point，一个小时以内&lt;/li>
 &lt;li>2个story point，大约两个小时&lt;/li>
