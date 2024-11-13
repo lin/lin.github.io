@@ -17,6 +17,10 @@ type: "page"
 
 > 快行而不多思，严满而不松拖，淡然而不愁虑，外实而不虚空，专注而不富欲
 
+> 完成每日任务，优先解决恶心题
+
+> 不要评价，不要对比，专注当下，取得进展，清脑思考
+
 ## Facts
 
 - Pride is for low intelligence.
@@ -26,5 +30,11 @@ type: "page"
 
 ## Hobbies
 
+每天，十点之后，可以obsess，主要是读书写作
+每周，六或者日，obsess on one hobby
+每次，大块任务结束，obsess几天
+
 1. CF Rating, Kaggle Rating
 1. 书法，日语，古典诗词
+1. crypto，ai, solving machine
+1. history, economics, politics

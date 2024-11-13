@@ -47,6 +47,11 @@ weight = 8
     icon = "youtube"
     url = "https://youtube.com/@yingkui"
 
+[[params.social]]
+    name = "Bluesky"
+    icon = "twitter"
+    url = "https://bsky.app/profile/yingkui.com"
+
 [permalinks]
   posts = '/:filename'
   notes = '/notes/:filename'

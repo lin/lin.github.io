@@ -55,13 +55,15 @@ type: "page"
 |   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
 |   ✅   | Sekiro: Shadows Die Twice                | PS5           | 53h    | 2024/07     |MVG|
 |   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
-|   ✅   | Monotetsu Teiban                         | NS            | 15h    |2024/08     |SLG|
+|   ✅   | 桃太郎電鉄 定番                        | NS            | 15h    |2024/08     |SLG|
 |   ✅   | Braid                                    | PC            | 6h    |2024/10     |PLG|
 |   😊   | Shawarma Legend (35%)                    | PC            | 3h    |2024/10     |PLG|
 |   😊   | 黑神话悟空 (虎先锋)                        | PC            | 6h    |2024/10     |PLG|
 |   ✅   | Pentiment                                | NS            | 14.5h    |2024/10     |AVG|
 |   ✅   | Slime Rancher                            | PC            | 11.5h    |2024/10     |RPG|
-|   🎮️   | Baldur's Gate 3 (Act 1)                  | PC           | 30h    |2024/09      |CRPG|
+|   ✅   | The Witness                              | PC            | 14.7h    |2024/11     |RPG|
+|   ✅   | Balatro                                  | PC           | 20h    |2024/11     |RPG|
+|   🎮️   | Baldur's Gate 3 (Act 1)                  | PC           | 30h    |2024/11      |CRPG|
 
 ## 其他曾深度体验过的游戏
 
@@ -151,14 +153,15 @@ type: "page"
 1. ✅ 《魂类》
 1. ✅ 《生化危机》
 1. ✅ 《FIFA》/《2K NBA》
-1. 《博德之门》
-1. 《怪物猎人》
-1. 《最终幻想》
-1. 《刺客信条》
+1. 🛍《博德之门》
+1. 🛍《怪物猎人》
+1. 🛍《最终幻想》
+1. 🛍《刺客信条》
+1. 🛍《生化奇兵》
+1. 🛍《合金装备》
+1. 🛍《上古卷轴》
+1. 🛍《牧场物语》
 1. 《勇者斗恶龙》
-1. 《生化奇兵》
-1. 《合金装备》
-1. 《上古卷轴》
 
 ## 深度体验的桌游
 
