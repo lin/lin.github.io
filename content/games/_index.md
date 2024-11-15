@@ -28,7 +28,7 @@ type: "page"
 |   ✅   | [Red Dead Redemption](./red-dead) 2     | PS5           | 44h    | 2023/08| AAVG|
 |   ✅   | God of War (2018)                       | PS5           | 17h    | 2023/09| AAVG|
 |   ✅   | God of War: Ragnarök                    | PS5           | 23h    | 2023/09| AAVG|
-|   ✅   | Super Mario Bros. 1 & Lost Levels & 2 & 3 & World & Land & Land 2 | NS              | 24h     | 2023/09 | 平台 |
+|   ✅   | Super Mario Bros. 1 & Lost Levels & 2 & 3 & World & Land & Land 2 | NS  | 24h| 2023/09 | 平台 |
 |   ✅   | New Super Mario Bros. 1 & 2             | 3DS            | 16h    | 2023/09 |平台 |
 |   ✅   | New Super Mario Bros. U                 | WiiU          | 19h    | 2023/10|平台 |
 |   ✅   | The Last of Us Part I                   | PS5           | 17h    | 2023/10|AAVG|

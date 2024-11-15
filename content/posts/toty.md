@@ -38,4 +38,5 @@
 | 2020 | Covid-19                                   |   
 | 2021 | Avengers                                   |    
 | 2022 | Invasion of Ukraine / FIFA World Cup Final |          
-| 2023 | GPT 4                                      |    
+| 2023 | GPT 4                                      |
+| 2024 | US Election                                |    
