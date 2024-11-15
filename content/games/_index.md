@@ -5,20 +5,19 @@ type: "page"
 
 ## [《论教学》](/edu)和疫情时期
 
-2023-08 - 2024-08
-
-✅  已经通关；🎮 正在进行
+✅  通关；😊 满意；🎮 进行
 
 |        | 游戏                                    | 平台            |  用时 | 时间| 类型|
 |:------:|-----------------------------------------|:---------------:|:-----:|:-----:|:---:|
 |   ✅   | Sid Meier's Civilization VI             | PC            | 116h   | 2019/11| 4X |
 |   ✅   | Super Mario Odyssey                     | NS             | 45h    | 2020/08| AAVG|
 |   ✅   | Animal Crossing: New Horizons           | NS            | 150h   | 2020/10| SIM |
-|   ✅   | The Legend of Zelda: Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
+|   ✅   | [The Legend of Zelda](./zelda): Breath of the Wild | NS           | 110h   | 2020/12| AAVG |
 |   ✅   | The Legend of Zelda: Link's Awakening   | NS             | 20h    | 2021/01| AAVG |
 |   ✅   | Super Mario 3D Land                     | 3DS           | 16h    | 2021/02| 平台 |
 |   ✅   | [Pokémon](./pokemon) Y                  | 3DS            | 30h    | 2021/02| JRPG |
 |   ✅   | Super Mario Maker 2                     | NS             | 5h     | 2021/03| 平台 |
+|   😊   | Wind Waker (Hyrule Castle)              | WiiU         | 15h    | 2021/03| AAVG |
 |   ✅   | Super Mario Galaxy                      | NS             | 22h    | 2021/08| 平台 |
 |   ✅   | Sniper Elite 4                          | NS            | 20h    | 2021/09| AAVG|
 |   ✅   | Super Mario 3D World                    | NS             | 12h    | 2022/12| 平台 |
@@ -47,22 +46,22 @@ type: "page"
 |   ✅   | Suika Game                               | NS            | 20h    | 2024/01      |PLG|
 |   ✅   | Portal                                   | NS            | 4h     | 2024/01      |PLG|
 |   ✅   | Portal 2                                 | NS            | 10h    | 2024/01     |PLG|
-|   ✅   | Anno 1800                                | PC            | 12.5h  | 2024/05    |SLG|
+|   ✅   | [Anno](./anno) 1800                                | PC            | 12.5h  | 2024/05    |SLG|
 |   ✅   | Hades                                    | NS            | 16h    | 2024/05    |Rogue|
 |   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05     | JRPG|
-|   ✅   | Palworld                                 | NS            | 82h    | 2024/06     |ARPG|
+|   ✅   | [Palworld](./palworld)                                 | NS            | 82h    | 2024/06     |ARPG|
 |   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06     |AAVG|
-|   ✅   | Metroid Dread                            | NS            | 25h    | 2024/06     |MVG|
-|   ✅   | Sekiro: Shadows Die Twice                | PS5           | 53h    | 2024/07     |MVG|
-|   ✅   | Resident Evil 4                          | PS5           | 19h    | 2024/08     |MVG|
+|   ✅   | [Metroid](./metroid) Dread                            | NS            | 25h    | 2024/06     |MVG|
+|   ✅   | [Sekiro: Shadows Die Twice](./sekiro)                | PS5           | 53h    | 2024/07     |MVG|
+|   ✅   | [Resident Evil](./re.md) 4                          | PS5           | 19h    | 2024/08     |MVG|
 |   ✅   | 桃太郎電鉄 定番                        | NS            | 15h    |2024/08     |SLG|
 |   ✅   | Braid                                    | PC            | 6h    |2024/10     |PLG|
 |   😊   | Shawarma Legend (35%)                    | PC            | 3h    |2024/10     |PLG|
-|   😊   | 黑神话悟空 (虎先锋)                        | PC            | 6h    |2024/10     |PLG|
+|   😊   | [黑神话悟空](./wukong) (虎先锋)                        | PC            | 6h    |2024/10     |PLG|
 |   ✅   | Pentiment                                | NS            | 14.5h    |2024/10     |AVG|
 |   ✅   | Slime Rancher                            | PC            | 11.5h    |2024/10     |RPG|
 |   ✅   | The Witness                              | PC            | 14.7h    |2024/11     |RPG|
-|   ✅   | Balatro                                  | PC           | 20h    |2024/11     |RPG|
+|   ✅   | [Balatro](./balatro)                                  | PC           | 20h    |2024/11     |RPG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | PC           | 30h    |2024/11      |CRPG|
 
 ## 其他曾深度体验过的游戏

@@ -3,9 +3,13 @@ title: "双心令"
 date: 2010-05-10
 ---
 
-### 双心令
+## 双心令
 
-*2010.05.10 哈尔滨*
+<div style="text-align:center;margin: 30px auto;">
+2010.05.10 哈尔滨
+</div>
+
+<div style="text-align:center;letter-spacing: 30px;">
 
 深夜，无眠
 
@@ -32,3 +36,6 @@ date: 2010-05-10
 只一字
 
 爱
+</div>
+
+
