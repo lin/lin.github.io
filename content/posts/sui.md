@@ -2,6 +2,7 @@
 title: "绥棱绥化的少年时代（1998-2007）"
 date: 2007-08-07
 isCJKLanguage: true
+draft: true
 ---
 
 #### 2000年7月16日，小学毕业照

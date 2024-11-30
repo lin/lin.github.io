@@ -33,6 +33,7 @@ type: "page"
 |   ✅   | The Last of Us Part I                   | PS5           | 17h    | 2023/10|AAVG|
 |   ✅   | Gran Turismo 7                          | PS5           | 25h    | 2023/10| 竞速 |
 |   ✅   | The Witcher 3: Wild Hunt                | PS5           | 36h    | 2023/10|ARPG|
+|   😊   | Ocarina of Time (Forest Temple)         | 3DS         | 15h    | 2021/03| AAVG |
 |   ✅   | Super Mario Bros. Wonder                | NS             | 12h    | 2023/11|平台|
 |   ✅   | [New Super Mario Bros. Wii](/soul-mario)   | WiiU       | 13h    | 2023/11|平台|
 |   ✅   | [Elden Ring](./elden-ring)                 | PS5           | 60h    | 2023/11|Soul|
@@ -46,23 +47,26 @@ type: "page"
 |   ✅   | Suika Game                               | NS            | 20h    | 2024/01      |PLG|
 |   ✅   | Portal                                   | NS            | 4h     | 2024/01      |PLG|
 |   ✅   | Portal 2                                 | NS            | 10h    | 2024/01     |PLG|
-|   ✅   | [Anno](./anno) 1800                                | PC            | 12.5h  | 2024/05    |SLG|
+|   ✅   | [Anno](./anno) 1800                      | PC            | 12.5h  | 2024/05    |SLG|
 |   ✅   | Hades                                    | NS            | 16h    | 2024/05    |Rogue|
 |   ✅   | Pokémon Brilliant Diamond                | NS            | 31.5h  | 2024/05     | JRPG|
-|   ✅   | [Palworld](./palworld)                                 | NS            | 82h    | 2024/06     |ARPG|
+|   ✅   | [Palworld](./palworld)                   | NS            | 82h    | 2024/06     |ARPG|
 |   ✅   | Diablo 3                                 | NS            | 15h    | 2024/06     |AAVG|
-|   ✅   | [Metroid](./metroid) Dread                            | NS            | 25h    | 2024/06     |MVG|
-|   ✅   | [Sekiro: Shadows Die Twice](./sekiro)                | PS5           | 53h    | 2024/07     |MVG|
-|   ✅   | [Resident Evil](./re.md) 4                          | PS5           | 19h    | 2024/08     |MVG|
-|   ✅   | 桃太郎電鉄 定番                        | NS            | 15h    |2024/08     |SLG|
+|   ✅   | [Metroid](./metroid) Dread               | NS            | 25h    | 2024/06     |MVG|
+|   ✅   | [Sekiro: Shadows Die Twice](./sekiro)    | PS5           | 53h    | 2024/07     |MVG|
+|   ✅   | [Resident Evil](./re.md) 4               | PS5           | 19h    | 2024/08     |MVG|
+|   ✅   | 桃太郎電鉄 定番                           | NS            | 15h    |2024/08     |SLG|
 |   ✅   | Braid                                    | PC            | 6h    |2024/10     |PLG|
 |   😊   | Shawarma Legend (35%)                    | PC            | 3h    |2024/10     |PLG|
-|   😊   | [黑神话悟空](./wukong) (虎先锋)                        | PC            | 6h    |2024/10     |PLG|
+|   😊   | [黑神话悟空](./wukong) (虎先锋)           | PC            | 6h    |2024/10     |PLG|
 |   ✅   | Pentiment                                | NS            | 14.5h    |2024/10     |AVG|
 |   ✅   | Slime Rancher                            | PC            | 11.5h    |2024/10     |RPG|
-|   ✅   | The Witness                              | PC            | 14.7h    |2024/11     |RPG|
-|   ✅   | [Balatro](./balatro)                                  | PC           | 20h    |2024/11     |RPG|
-|   🎮️   | Baldur's Gate 3 (Act 1)                  | PC           | 30h    |2024/11      |CRPG|
+|   ✅   | The Witness                              | PC            | 14.7h    |2024/11     |PLG|
+|   ✅   | [Balatro](./balatro)                     | NS            | 25h    |2024/11     |Rogue|
+|   ✅   | Uncharted 2: Among Thieves               | PS5           | 11h    |2024/11     |AAVG|
+|   🎮️   | Baldur's Gate 3 (Act 1)                  | PC            | 30h    |2024/11      |CRPG|
+
+
 
 ## 其他曾深度体验过的游戏
 
