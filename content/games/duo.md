@@ -2,17 +2,20 @@
 
 Three Units per Week, Two days for One Unit
 
-|时间      |进度                                     |备注                     |
-|:---------|:---------------------------------------|:-----------------------|
-|2024-11-24|  416 Days, 99481xp, 15855 Gems  |       3-11-2，200 days w/o freeze                  |
-|2024-11-20|  400 Quests (100 more to level up)                       |       3-10-Done                  |
-|2024-11-17|  409 Days, 98035xp, 15706 Gems  |       3-09-Done, 20 Perfect weeks                  |
-|2024-11-16|   20 Perfect Weeks (5 more to level up)   |                    |
+|时间      |进度                                        |备注                                     |
+|:---------|:------------------------------------------|:----------------------------------------|
+|2024-12-18|  440 Days, 100617xp, 16142 Gems           |       3-15-Done                    |
+|2024-12-04|  426 Days, 100617xp, 16142 Gems           |       4-4 (3-13-2)                    |
+|2024-12-04|  426 Days, 100617xp, 16142 Gems           |       3-12-Done                         |
+|2024-11-24|  416 Days, 99481xp, 15855 Gems            |       3-11-2，200 days w/o freeze       |
+|2024-11-20|  400 Quests (100 more to level up)        |       3-10-Done                         |
+|2024-11-17|  409 Days, 98035xp, 15706 Gems            |       3-09-Done, 20 Perfect weeks       |
+|2024-11-16|   20 Perfect Weeks (5 more to level up)   |                                         |
 |2024-11-01|  393 Days, 96739xp, 2703 Words, 15185 Gems  |                         |
 |2024-10-29|                                         |           3-7 Half              |
 |2024-10-04|  365 Days                               |                         |
 |2024-09-19|  25 Legendary Lessons (25 more to level up)                     |             |
-|2024-09-12|   343 days, 83298 xp, 2703 Words, Golden |  2-25, 2-26            |
+|2024-09-12|  343 days, 83298 xp, 2703 Words, Golden |  2-25, 2-26            |
 |**2024-07-20** | PB: 4006xp a day                          |  去日本前一天            |
 |2024-07-10| 1286xp                                  |   2-18                   |
 |2024-07-08|                                         |   2-17                     |

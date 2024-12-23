@@ -19,14 +19,17 @@ type: "page"
 
 > 完成每日任务，优先解决恶心题
 
-> 不要评价，不要对比，专注当下，取得进展，清脑思考
+> 不要评价，不要对比，不要在乎别人，专注当下，取得进展，清脑思考
+
+> 不要追求完美，找到问题的关键，集中力量，解决当下难题
 
 ## Facts
 
 - Pride is for low intelligence.
-- Most people are not smart.
+- Most people are not smart and ignore their judges.
 - You will die soon. You are the only one living.
 - Life is too short and limited. Death is too long.
+- Less is More. Ship Fast. Fail Fast. Try Harder.
 
 ## Hobbies
 

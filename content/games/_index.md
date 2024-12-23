@@ -64,9 +64,8 @@ type: "page"
 |   ✅   | The Witness                              | PC            | 14.7h    |2024/11     |PLG|
 |   ✅   | [Balatro](./balatro)                     | NS            | 25h    |2024/11     |Rogue|
 |   ✅   | Uncharted 2: Among Thieves               | PS5           | 11h    |2024/11     |AAVG|
+|   😊   | Cuphead (54%, World 2)                   | NS            | 20h    |2024/11     |AAVG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | PC            | 30h    |2024/11      |CRPG|
-
-
 
 ## 其他曾深度体验过的游戏
 

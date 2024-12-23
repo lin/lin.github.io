@@ -7,4 +7,4 @@ type: "page"
 
 [A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books).
 
-A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.
+A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.x

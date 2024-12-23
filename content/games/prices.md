@@ -85,7 +85,7 @@
 
 | 时间       | 游戏                                          | Price           |  折扣 | 用时| 
 |------------|----------------------------------------------|---------------:|:-----:|:-----:|
-| 01/04/2024 | UNCHARTED™ The Nathan Drake Collection       | $10.65        |  50%  | 8/10/9  |
+| 01/04/2024 | UNCHARTED™ The Nathan Drake Collection       | $10.65        |  50%  | 8/✅/9  |
 | 12/24/2024 | The Elder Scrolls V: Skyrim                  | $8.52        |  84%  | 26h  |
 | 12/24/2024 | Red Dead Redemption 2                        | $21.10        |  67%  | ✅  |
 | 12/24/2024 | Grand Theft Auto V                           | $9.9        |  83%  |  ✅ |
