@@ -1,9 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>感时</title><link>https://yingkui.com/poems/ganshi/</link><pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/ganshi/</guid><description>&lt;h3 id="感时">感时&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条帖子，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，用来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
+&lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
+&lt;p>&lt;img src="../img/fang-2.jpg" alt="">&lt;/p>
+&lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子是有些吃惊的，因为在过去的几天内，我频繁尝试使用 Deepseek V3 (通过 API 请求就超过200次)，其对于数学问题的处理效果一直很出色，觉得不该对这个小数比大小出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com &lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
+&lt;p>但为了排除样本小带来的偏见，我自己在 Google Colab 上写了&lt;a href="https://colab.research.google.com/drive/13tJsMwOZfKJl2Lcvxjc_dj3Dv7_PUQZQ">一段程序&lt;/a>，并测试了上百次，在这超过一百次的测试中，Deepseek 并没有出现任何一次幻觉现象。&lt;/p>
+&lt;p>&lt;img src="../img/fang-3.jpg" alt="">&lt;/p>
+&lt;p>这时，我觉得自己有信心认为，方舟子所发的第一个截屏并没有真实的表现 Deepseek 的性能，就给方舟子回复，分享给方舟子这个事实。&lt;/p>
+&lt;p>&lt;img src="../img/fang-4.png" alt="">&lt;/p>
+&lt;p>这之后，我开始用相同的循环写程序测试 GPT-4o 和 Claude-3.5-sonnet 的反馈，毕竟这是一个要比较不同模型之间性能的话题。&lt;/p>
+&lt;h2 id="方舟子的第一条回复">方舟子的第一条回复&lt;/h2>
+&lt;p>在我回复十分钟后，方舟子回复我说：&lt;/p>
+&lt;p>&lt;img src="../img/fang-5.png" alt="">&lt;/p>
+&lt;blockquote>
+&lt;p>你啥毛病，竟然拿在问题暴露出来之后紧急改正过的结果来指控我造谣？最烦的就是这种人，等一会拉黑。&lt;/p>
+&lt;/blockquote>
+&lt;p>第一，方舟子认为我对事实的描述，是在指控他造谣，我毫无此意，造成误解可能是我表达上考虑不周&lt;/p>
+&lt;p>第二，方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致&lt;/p>
+&lt;p>且先不说紧急修改的可能性，我们是可以验证 Deepseek 是否紧急修改的。因为 Deepseek 的这几个模型都是开源的，放在了 &lt;a href="https://github.com/deepseek-ai/DeepSeek-V3">GitHub&lt;/a> 和 &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">Hugging Face&lt;/a>上，参数是公开的，他们或许可以紧急修改网页服务器端的反馈，这些已经发布的模型，是无法作弊的。&lt;/p>
+&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有优化，性能更好是可以接受的假设。&lt;/p>
+&lt;p>&lt;img src="../img/fang-6.png" alt="">&lt;/p>
+&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致，是一个错误的臆断。&lt;/strong>&lt;/p>
+&lt;p>因为方舟子误解了我回复的本意，他认为我是在指控他造谣，为了消除这个歧义，我给方舟子回复说，“我没有指控方老师造谣”。&lt;/p>
+&lt;p>与此同时，因为 Deepseek 对这个提示词反馈整体上是很出色的，便提出了，是否第一个截屏有选择性截屏的可能，也就是在大量的测试中，找出一个低概率发生幻觉的截屏。这也进一步解释了，我没有指控造谣的本意，而是对第一个截屏说服力的质疑。&lt;/p>
+&lt;p>&lt;img src="../img/fang-7.png" alt="">&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
+&lt;p>2024-12-26&lt;/p>
+&lt;p>听闻盛景也登峰，缓钝笨拙若老翁&lt;/p>
+&lt;p>怎因险阻容退意，却为谜难更欲争&lt;/p>
+&lt;p>不畏前途多漫路，但求今日未轻松&lt;/p>
+&lt;p>少怀远志勤一世，岂敢庸平愧余生&lt;/p></description></item><item><title>冬至</title><link>https://yingkui.com/poems/dongzhi/</link><pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/dongzhi/</guid><description>&lt;h3 id="冬至">冬至&lt;/h3>
+&lt;p>2024-12-25&lt;/p>
+&lt;p>夜捧贤书意正浓，晨霜冷月残枝登&lt;/p>
+&lt;p>辗转无眠盼入梦，万家灯起为先争&lt;/p>
+&lt;p>冬至岂因花有罪，春风不辨童与翁&lt;/p>
+&lt;p>担虑功名老病死，不如今事快完工&lt;/p></description></item><item><title>感时</title><link>https://yingkui.com/poems/ganshi/</link><pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/ganshi/</guid><description>&lt;h3 id="感时">感时&lt;/h3>
 &lt;p>2024-11-30&lt;/p>
 &lt;p>金满箱来勋满墙，为得笏棒吃人忙&lt;/p>
 &lt;p>驴羊低首嫌稀草，敢请狼王坐庙堂&lt;/p>
 &lt;p>无染青空蓝鸟聚，心灼忍看火烧狂&lt;/p>
-&lt;p>但求大痛使顽醒，不必春来鬓两霜&lt;/p></description></item><item><title>Yingkui's Top 10</title><link>https://yingkui.com/top/</link><pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;h2 id="games">Games&lt;/h2>
+&lt;p>但求大痛使顽醒，不必春来鬓两霜&lt;/p>
+&lt;ul>
+&lt;li>青空是Bluesky，蓝鸟是Twitter&lt;/li>
+&lt;/ul></description></item><item><title>Yingkui's Top 10</title><link>https://yingkui.com/top/</link><pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;h2 id="games">Games&lt;/h2>
 &lt;ol>
 &lt;li>《ゼルダの伝説 Breath of the Wild》&lt;/li>
 &lt;li>《Red Dead Redemption 2》&lt;/li>
@@ -3387,6 +3424,17 @@ or
 &lt;li>Sqrt&lt;/li>
 &lt;li>Integral&lt;/li>
 &lt;li>Sin / Cos / Log&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/leetcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/leetcode/</guid><description>&lt;h2 id="leetcode">Leetcode&lt;/h2>
+&lt;ol>
+&lt;li>CF 和 LC 的 rating 差大约是 650 ± 50&lt;/li>
+&lt;li>AC 和 CF 的 rating 差大约是 400&lt;/li>
+&lt;li>LC 的 Knight 大约是 CF 的 Pupil，LC比赛5000名以内&lt;/li>
+&lt;li>LC 的 Guardian 大约是 CF 的 Specialist，LC比赛1000以内&lt;/li>
+&lt;li>LC 要达到 Knight (美区 1850) 大约需要 半年&lt;/li>
+&lt;li>LC 要达到 Guardian (美区 2150) 大约再需要 一年&lt;/li>
+&lt;li>LC 比赛，前500，2400&lt;/li>
+&lt;li>LC 比赛，前1000，2250&lt;/li>
+&lt;li>LC 比赛，前2000，2000&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/mds/parsers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/mds/parsers/</guid><description>&lt;h3 id="1-grammar-that-is-slr1-but-not-lr0">1. Grammar that is &lt;code>SLR(1)&lt;/code>, but not &lt;code>LR(0)&lt;/code>&lt;/h3>
 &lt;pre tabindex="0">&lt;code>S -&amp;gt; a A c | a B d.
 A -&amp;gt; z.
@@ -5829,6 +5877,66 @@ $$&lt;/p>
 &lt;li>Food, reward from problem, task&lt;/li>
 &lt;li>Product&lt;/li>
 &lt;li>Currency, Coins, Money&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/a30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/a30/</guid><description>&lt;h2 id="short">Short&lt;/h2>
+&lt;h3 id="需求">需求&lt;/h3>
+&lt;ol>
+&lt;li>求知欲，适当难度解题，挑战成功，取得进展&lt;/li>
+&lt;li>量化的评价，努力的积累和勋章&lt;/li>
+&lt;li>不想做苦活，不想计算，想总结，想发表意见&lt;/li>
+&lt;/ol>
+&lt;h3 id="方案">方案&lt;/h3>
+&lt;ol>
+&lt;li>简单，没压力，容易推进，有进展&lt;/li>
+&lt;li>目标多，目标令人在乎，有证书评级&lt;/li>
+&lt;li>随着能力的提高，逐步的解锁畅快感&lt;/li>
+&lt;/ol>
+&lt;h2 id="translations">Translations&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Concept&lt;/th>
+ &lt;th>Translation&lt;/th>
+ &lt;th>Why&lt;/th>
+ &lt;th>Pros&lt;/th>
+ &lt;th>Cons&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Door&lt;/td>
+ &lt;td>探图，故事&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Progression&lt;/td>
+ &lt;td>Lack of Freedom, have to unlock to use&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Problem&lt;/td>
+ &lt;td>解谜&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Solving&lt;/td>
+ &lt;td>Not easy and smooth&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="pet-problet-door-skill">Pet, Problet, Door, Skill&lt;/h3>
+&lt;ol>
+&lt;li>Problet, key to open a path door&lt;/li>
+&lt;li>Door&lt;/li>
+&lt;li>Skill&lt;/li>
+&lt;li>Pet&lt;/li>
+&lt;/ol>
+&lt;h3 id="设计">设计&lt;/h3>
+&lt;ol>
+&lt;li>扭蛋盲盒的设计&lt;/li>
+&lt;li>wii u 和 switch 的对比&lt;/li>
+&lt;/ol>
+&lt;h3 id="problem-设计">Problem 设计&lt;/h3>
+&lt;ol>
+&lt;li>可以生成大量的小问题，提高内容的复用率，也可以让学生有感觉（Reduce to another problem）&lt;/li>
+&lt;li>部分信号的处理（求导），使用道具，就会有反应（如果有ai就好了，把所有题目都能自动解决）&lt;/li>
+&lt;li>增加制作内容的周期&lt;/li>
+&lt;li>problem as part of the solution&lt;/li>
+&lt;li>吃卡可以到下一步&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/card/</guid><description>&lt;h2 id="card">Card&lt;/h2>
 &lt;ol>
 &lt;li>card is only because they are a way to learn that is good for students&lt;/li>
@@ -5855,8 +5963,7 @@ $$&lt;/p>
 &lt;h3 id="落袋为安成就感完成欲">落袋为安，成就感，完成欲&lt;/h3>
 &lt;p>对于网购，即使是那些我已经拥有的笔、咖啡，之类，我也在乎它的到来，甚至惦记和期待。也就是担心，怕出问题，所以惦记，落袋为安&lt;/p>
 &lt;h3 id="意外之财">意外之财&lt;/h3>
-&lt;h3 id="险中得胜">险中得胜&lt;/h3></description></item><item><title/><link>https://yingkui.com/edu/duo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/duo/</guid><description>&lt;p>多邻国的缺点：没有游戏化的 涨分或者获得证书 的乐趣，没有多层次的敌人系统&lt;/p>
-&lt;p>多邻国的缺点，是对能力的评级不具体，缺乏类似 Codeforces 评分技能的明确数值化。&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/examples/</guid><description>&lt;h2 id="实例库">实例库&lt;/h2>
+&lt;h3 id="险中得胜">险中得胜&lt;/h3></description></item><item><title/><link>https://yingkui.com/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/examples/</guid><description>&lt;h2 id="实例库">实例库&lt;/h2>
 &lt;h3 id="金融类虚拟货币">金融类：虚拟货币&lt;/h3>
 &lt;h4 id="概念">概念&lt;/h4>
 &lt;ol>
@@ -6065,75 +6172,35 @@ $$&lt;/p>
 &lt;p>时间：题目形式&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/short/</guid><description>&lt;h2 id="short">Short&lt;/h2>
-&lt;h3 id="需求">需求&lt;/h3>
-&lt;ol>
-&lt;li>求知欲，适当难度解题，挑战成功，取得进展&lt;/li>
-&lt;li>量化的评价，努力的积累和勋章&lt;/li>
-&lt;li>不想做苦活，不想计算，想总结，想发表意见&lt;/li>
-&lt;/ol>
-&lt;h3 id="方案">方案&lt;/h3>
-&lt;ol>
-&lt;li>简单，没压力，容易推进，有进展&lt;/li>
-&lt;li>目标多，目标令人在乎，有证书评级&lt;/li>
-&lt;li>随着能力的提高，逐步的解锁畅快感&lt;/li>
-&lt;/ol>
-&lt;h2 id="translations">Translations&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Concept&lt;/th>
- &lt;th>Translation&lt;/th>
- &lt;th>Why&lt;/th>
- &lt;th>Pros&lt;/th>
- &lt;th>Cons&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Door&lt;/td>
- &lt;td>探图，故事&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>Progression&lt;/td>
- &lt;td>Lack of Freedom, have to unlock to use&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Problem&lt;/td>
- &lt;td>解谜&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>Solving&lt;/td>
- &lt;td>Not easy and smooth&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="pet-problet-door-skill">Pet, Problet, Door, Skill&lt;/h3>
-&lt;ol>
-&lt;li>Problet, key to open a path door&lt;/li>
-&lt;li>Door&lt;/li>
-&lt;li>Skill&lt;/li>
-&lt;li>Pet&lt;/li>
-&lt;/ol>
-&lt;h3 id="设计">设计&lt;/h3>
-&lt;ol>
-&lt;li>扭蛋盲盒的设计&lt;/li>
-&lt;li>wii u 和 switch 的对比&lt;/li>
-&lt;/ol>
-&lt;h3 id="problem-设计">Problem 设计&lt;/h3>
-&lt;ol>
-&lt;li>可以生成大量的小问题，提高内容的复用率，也可以让学生有感觉（Reduce to another problem）&lt;/li>
-&lt;li>部分信号的处理（求导），使用道具，就会有反应（如果有ai就好了，把所有题目都能自动解决）&lt;/li>
-&lt;li>增加制作内容的周期&lt;/li>
-&lt;li>problem as part of the solution&lt;/li>
-&lt;li>吃卡可以到下一步&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/simple/</guid><description/></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
+&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
 &lt;ol>
 &lt;li>1个story point，一个小时以内&lt;/li>
 &lt;li>2个story point，大约两个小时&lt;/li>
 &lt;li>3个story point，大约一上午&lt;/li>
 &lt;li>5个story point，大约一整天&lt;/li>
 &lt;li>8个story point，大约两三天&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/todo/</guid><description>&lt;h2 id="todo">Todo&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/sure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sure/</guid><description>&lt;h3 id="sure-thing">Sure thing&lt;/h3>
+&lt;ol>
+&lt;li>people want low barrier, include each start&lt;/li>
+&lt;li>people want to climb the ladder of expertise&lt;/li>
+&lt;li>certificate to ignore many problems is a sure thing. match the skill level problems&lt;/li>
+&lt;li>score has to be two fold: avg and var, the needles&lt;/li>
+&lt;li>has to downgrade the cert even the user may see it as setbacks&lt;/li>
+&lt;li>people want the feeling of progress and knighted.&lt;/li>
+&lt;/ol>
+&lt;h3 id="two-sides">Two Sides&lt;/h3>
+&lt;ol>
+&lt;li>功劳 与 苦劳&lt;/li>
+&lt;li>刷题 与 考级&lt;/li>
+&lt;li>证书 与 信度&lt;/li>
+&lt;/ol>
+&lt;h3 id="tools">Tools&lt;/h3>
+&lt;ol>
+&lt;li>learn / collect direct skill&lt;/li>
+&lt;li>certificate challenge&lt;/li>
+&lt;li>skill level evaluation&lt;/li>
+&lt;/ol>
+&lt;p>功劳和苦劳的矛盾，一直都在&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/todo/</guid><description>&lt;h2 id="todo">Todo&lt;/h2>
 &lt;ol>
 &lt;li>需求分析&lt;/li>
 &lt;li>完整化，解题的过程&lt;/li>
@@ -6875,6 +6942,26 @@ $$&lt;/p>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2024-12-28&lt;/td>
+ &lt;td style="text-align: left">450 Days, 103258xp, 14940 Gems&lt;/td>
+ &lt;td style="text-align: left">3-17-2&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2024-12-21&lt;/td>
+ &lt;td style="text-align: left">25 Perfect Weeks (5 more to level up)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2024-12-18&lt;/td>
+ &lt;td style="text-align: left">440 Days, 100617xp, 16142 Gems&lt;/td>
+ &lt;td style="text-align: left">3-15-Done&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2024-12-04&lt;/td>
+ &lt;td style="text-align: left">426 Days, 100617xp, 16142 Gems&lt;/td>
+ &lt;td style="text-align: left">3-12-Done&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2024-11-24&lt;/td>
  &lt;td style="text-align: left">416 Days, 99481xp, 15855 Gems&lt;/td>
@@ -8462,7 +8549,7 @@ $$&lt;/p>
  &lt;td>UNCHARTED™ The Nathan Drake Collection&lt;/td>
  &lt;td style="text-align: right">$10.65&lt;/td>
  &lt;td style="text-align: center">50%&lt;/td>
- &lt;td style="text-align: center">8/10/9&lt;/td>
+ &lt;td style="text-align: center">8/✅/9&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>12/24/2024&lt;/td>
@@ -9653,7 +9740,7 @@ $$&lt;/p>
 &lt;p>The set of Turing’s abilities is the subset of the total abilities.&lt;/p>
 &lt;p>Distinguishability is the most fundamental ability of intelligence.&lt;/p></description></item><item><title>About</title><link>https://yingkui.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/about/</guid><description>&lt;p>&lt;a href="../edu">A founder&lt;/a>. &lt;a href="../life">A thinker&lt;/a>. A would-be &lt;a href="../ai">scientist&lt;/a> who would solve the problem of solving.&lt;/p>
 &lt;p>&lt;a href="../poems">A poet&lt;/a>. &lt;a href="../design">A designer&lt;/a>. &lt;a href="../cs">A coder&lt;/a>. &lt;a href="../games">A gamer&lt;/a>. &lt;a href="../books">A reader&lt;/a>.&lt;/p>
-&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.&lt;/p></description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># check&lt;/span>
+&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.x&lt;/p></description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># check&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">^&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># remove&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">|&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># set&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="arrangements-maxmincnt">Arrangements max/min/cnt&lt;/h4>
@@ -9829,14 +9916,18 @@ $$&lt;/p>
 &lt;p>完成每日任务，优先解决恶心题&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>不要评价，不要对比，专注当下，取得进展，清脑思考&lt;/p>
+&lt;p>不要评价，不要对比，不要在乎别人，专注当下，取得进展，清脑思考&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>不要追求完美，找到问题的关键，集中力量，解决当下难题&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="facts">Facts&lt;/h2>
 &lt;ul>
 &lt;li>Pride is for low intelligence.&lt;/li>
-&lt;li>Most people are not smart.&lt;/li>
+&lt;li>Most people are not smart and ignore their judges.&lt;/li>
 &lt;li>You will die soon. You are the only one living.&lt;/li>
 &lt;li>Life is too short and limited. Death is too long.&lt;/li>
+&lt;li>Less is More. Ship Fast. Fail Fast. Try Harder.&lt;/li>
 &lt;/ul>
 &lt;h2 id="hobbies">Hobbies&lt;/h2>
 &lt;p>每天，十点之后，可以obsess，主要是读书写作

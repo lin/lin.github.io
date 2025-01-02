@@ -1643,6 +1643,66 @@
 &lt;li>Food, reward from problem, task&lt;/li>
 &lt;li>Product&lt;/li>
 &lt;li>Currency, Coins, Money&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/a30/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/a30/</guid><description>&lt;h2 id="short">Short&lt;/h2>
+&lt;h3 id="需求">需求&lt;/h3>
+&lt;ol>
+&lt;li>求知欲，适当难度解题，挑战成功，取得进展&lt;/li>
+&lt;li>量化的评价，努力的积累和勋章&lt;/li>
+&lt;li>不想做苦活，不想计算，想总结，想发表意见&lt;/li>
+&lt;/ol>
+&lt;h3 id="方案">方案&lt;/h3>
+&lt;ol>
+&lt;li>简单，没压力，容易推进，有进展&lt;/li>
+&lt;li>目标多，目标令人在乎，有证书评级&lt;/li>
+&lt;li>随着能力的提高，逐步的解锁畅快感&lt;/li>
+&lt;/ol>
+&lt;h2 id="translations">Translations&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Concept&lt;/th>
+ &lt;th>Translation&lt;/th>
+ &lt;th>Why&lt;/th>
+ &lt;th>Pros&lt;/th>
+ &lt;th>Cons&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Door&lt;/td>
+ &lt;td>探图，故事&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Progression&lt;/td>
+ &lt;td>Lack of Freedom, have to unlock to use&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Problem&lt;/td>
+ &lt;td>解谜&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>Solving&lt;/td>
+ &lt;td>Not easy and smooth&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="pet-problet-door-skill">Pet, Problet, Door, Skill&lt;/h3>
+&lt;ol>
+&lt;li>Problet, key to open a path door&lt;/li>
+&lt;li>Door&lt;/li>
+&lt;li>Skill&lt;/li>
+&lt;li>Pet&lt;/li>
+&lt;/ol>
+&lt;h3 id="设计">设计&lt;/h3>
+&lt;ol>
+&lt;li>扭蛋盲盒的设计&lt;/li>
+&lt;li>wii u 和 switch 的对比&lt;/li>
+&lt;/ol>
+&lt;h3 id="problem-设计">Problem 设计&lt;/h3>
+&lt;ol>
+&lt;li>可以生成大量的小问题，提高内容的复用率，也可以让学生有感觉（Reduce to another problem）&lt;/li>
+&lt;li>部分信号的处理（求导），使用道具，就会有反应（如果有ai就好了，把所有题目都能自动解决）&lt;/li>
+&lt;li>增加制作内容的周期&lt;/li>
+&lt;li>problem as part of the solution&lt;/li>
+&lt;li>吃卡可以到下一步&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/card/</guid><description>&lt;h2 id="card">Card&lt;/h2>
 &lt;ol>
 &lt;li>card is only because they are a way to learn that is good for students&lt;/li>
@@ -1669,8 +1729,7 @@
 &lt;h3 id="落袋为安成就感完成欲">落袋为安，成就感，完成欲&lt;/h3>
 &lt;p>对于网购，即使是那些我已经拥有的笔、咖啡，之类，我也在乎它的到来，甚至惦记和期待。也就是担心，怕出问题，所以惦记，落袋为安&lt;/p>
 &lt;h3 id="意外之财">意外之财&lt;/h3>
-&lt;h3 id="险中得胜">险中得胜&lt;/h3></description></item><item><title/><link>https://yingkui.com/edu/duo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/duo/</guid><description>&lt;p>多邻国的缺点：没有游戏化的 涨分或者获得证书 的乐趣，没有多层次的敌人系统&lt;/p>
-&lt;p>多邻国的缺点，是对能力的评级不具体，缺乏类似 Codeforces 评分技能的明确数值化。&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/examples/</guid><description>&lt;h2 id="实例库">实例库&lt;/h2>
+&lt;h3 id="险中得胜">险中得胜&lt;/h3></description></item><item><title/><link>https://yingkui.com/edu/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/examples/</guid><description>&lt;h2 id="实例库">实例库&lt;/h2>
 &lt;h3 id="金融类虚拟货币">金融类：虚拟货币&lt;/h3>
 &lt;h4 id="概念">概念&lt;/h4>
 &lt;ol>
@@ -1879,75 +1938,35 @@
 &lt;p>时间：题目形式&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/short/</guid><description>&lt;h2 id="short">Short&lt;/h2>
-&lt;h3 id="需求">需求&lt;/h3>
-&lt;ol>
-&lt;li>求知欲，适当难度解题，挑战成功，取得进展&lt;/li>
-&lt;li>量化的评价，努力的积累和勋章&lt;/li>
-&lt;li>不想做苦活，不想计算，想总结，想发表意见&lt;/li>
-&lt;/ol>
-&lt;h3 id="方案">方案&lt;/h3>
-&lt;ol>
-&lt;li>简单，没压力，容易推进，有进展&lt;/li>
-&lt;li>目标多，目标令人在乎，有证书评级&lt;/li>
-&lt;li>随着能力的提高，逐步的解锁畅快感&lt;/li>
-&lt;/ol>
-&lt;h2 id="translations">Translations&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Concept&lt;/th>
- &lt;th>Translation&lt;/th>
- &lt;th>Why&lt;/th>
- &lt;th>Pros&lt;/th>
- &lt;th>Cons&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Door&lt;/td>
- &lt;td>探图，故事&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>Progression&lt;/td>
- &lt;td>Lack of Freedom, have to unlock to use&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Problem&lt;/td>
- &lt;td>解谜&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>Solving&lt;/td>
- &lt;td>Not easy and smooth&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h3 id="pet-problet-door-skill">Pet, Problet, Door, Skill&lt;/h3>
-&lt;ol>
-&lt;li>Problet, key to open a path door&lt;/li>
-&lt;li>Door&lt;/li>
-&lt;li>Skill&lt;/li>
-&lt;li>Pet&lt;/li>
-&lt;/ol>
-&lt;h3 id="设计">设计&lt;/h3>
-&lt;ol>
-&lt;li>扭蛋盲盒的设计&lt;/li>
-&lt;li>wii u 和 switch 的对比&lt;/li>
-&lt;/ol>
-&lt;h3 id="problem-设计">Problem 设计&lt;/h3>
-&lt;ol>
-&lt;li>可以生成大量的小问题，提高内容的复用率，也可以让学生有感觉（Reduce to another problem）&lt;/li>
-&lt;li>部分信号的处理（求导），使用道具，就会有反应（如果有ai就好了，把所有题目都能自动解决）&lt;/li>
-&lt;li>增加制作内容的周期&lt;/li>
-&lt;li>problem as part of the solution&lt;/li>
-&lt;li>吃卡可以到下一步&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/simple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/simple/</guid><description/></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
+&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
 &lt;ol>
 &lt;li>1个story point，一个小时以内&lt;/li>
 &lt;li>2个story point，大约两个小时&lt;/li>
 &lt;li>3个story point，大约一上午&lt;/li>
 &lt;li>5个story point，大约一整天&lt;/li>
 &lt;li>8个story point，大约两三天&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/todo/</guid><description>&lt;h2 id="todo">Todo&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/sure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sure/</guid><description>&lt;h3 id="sure-thing">Sure thing&lt;/h3>
+&lt;ol>
+&lt;li>people want low barrier, include each start&lt;/li>
+&lt;li>people want to climb the ladder of expertise&lt;/li>
+&lt;li>certificate to ignore many problems is a sure thing. match the skill level problems&lt;/li>
+&lt;li>score has to be two fold: avg and var, the needles&lt;/li>
+&lt;li>has to downgrade the cert even the user may see it as setbacks&lt;/li>
+&lt;li>people want the feeling of progress and knighted.&lt;/li>
+&lt;/ol>
+&lt;h3 id="two-sides">Two Sides&lt;/h3>
+&lt;ol>
+&lt;li>功劳 与 苦劳&lt;/li>
+&lt;li>刷题 与 考级&lt;/li>
+&lt;li>证书 与 信度&lt;/li>
+&lt;/ol>
+&lt;h3 id="tools">Tools&lt;/h3>
+&lt;ol>
+&lt;li>learn / collect direct skill&lt;/li>
+&lt;li>certificate challenge&lt;/li>
+&lt;li>skill level evaluation&lt;/li>
+&lt;/ol>
+&lt;p>功劳和苦劳的矛盾，一直都在&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/todo/</guid><description>&lt;h2 id="todo">Todo&lt;/h2>
 &lt;ol>
 &lt;li>需求分析&lt;/li>
 &lt;li>完整化，解题的过程&lt;/li>

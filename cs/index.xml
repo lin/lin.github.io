@@ -661,6 +661,17 @@ or
 &lt;li>Sqrt&lt;/li>
 &lt;li>Integral&lt;/li>
 &lt;li>Sin / Cos / Log&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/leetcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/leetcode/</guid><description>&lt;h2 id="leetcode">Leetcode&lt;/h2>
+&lt;ol>
+&lt;li>CF 和 LC 的 rating 差大约是 650 ± 50&lt;/li>
+&lt;li>AC 和 CF 的 rating 差大约是 400&lt;/li>
+&lt;li>LC 的 Knight 大约是 CF 的 Pupil，LC比赛5000名以内&lt;/li>
+&lt;li>LC 的 Guardian 大约是 CF 的 Specialist，LC比赛1000以内&lt;/li>
+&lt;li>LC 要达到 Knight (美区 1850) 大约需要 半年&lt;/li>
+&lt;li>LC 要达到 Guardian (美区 2150) 大约再需要 一年&lt;/li>
+&lt;li>LC 比赛，前500，2400&lt;/li>
+&lt;li>LC 比赛，前1000，2250&lt;/li>
+&lt;li>LC 比赛，前2000，2000&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/mds/parsers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/mds/parsers/</guid><description>&lt;h3 id="1-grammar-that-is-slr1-but-not-lr0">1. Grammar that is &lt;code>SLR(1)&lt;/code>, but not &lt;code>LR(0)&lt;/code>&lt;/h3>
 &lt;pre tabindex="0">&lt;code>S -&amp;gt; a A c | a B d.
 A -&amp;gt; z.
