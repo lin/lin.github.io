@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
-&lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条帖子，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
+&lt;p>方舟子对我的评价：弱智、妄人、人格卑贱的人渣&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Suppression of dissent is an enemy of both science and democracy!&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst">帖子&lt;/a>，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
 &lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
 &lt;p>&lt;img src="../img/fang-2.jpg" alt="">&lt;/p>
 &lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com &lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
@@ -17,20 +23,7 @@
 &lt;p>第一，方舟子认为我对事实的描述，是在指控他造谣，我毫无此意，造成误解可能是我表达上考虑不周&lt;/p>
 &lt;p>第二，方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致&lt;/p>
 &lt;p>且先不说紧急修改的可能性，我们是可以验证 Deepseek 是否紧急修改的。因为 Deepseek 的这几个模型都是开源的，放在了 &lt;a href="https://github.com/deepseek-ai/DeepSeek-V3">GitHub&lt;/a> 和 &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">Hugging Face&lt;/a>上，参数是公开的，他们或许可以紧急修改网页服务器端的反馈，这些已经发布的模型，是无法作弊的。&lt;/p>
-&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p>
-&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致，是一个错误的臆断。&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../img/fang-6.png" alt="">&lt;/p>
-&lt;p>因为方舟子误解了我回复的本意，他认为我是在指控他造谣，为了消除这个误解，我给方舟子回复说，“我没有指控方老师造谣”。&lt;/p>
-&lt;p>与此同时，因为 Deepseek 对这个提示词反馈整体上是很出色的，便提出了，是否第一个截屏有选择性截屏的可能，也就是在大量的测试中，找出一个低概率发生幻觉的截屏。&lt;/p>
-&lt;p>&lt;img src="../img/fang-7.png" alt="">&lt;/p>
-&lt;h2 id="方舟子的第二条回复">方舟子的第二条回复&lt;/h2>
-&lt;p>在我发出第二个回复的七分钟后，方舟子发了第二条回复&lt;/p>
-&lt;p>&lt;img src="../img/fang-8.png" alt="">&lt;/p></description></item><item><title>Yingkui's Top 10</title><link>https://yingkui.com/top/</link><pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;h2 id="games">Games&lt;/h2>
-&lt;ol>
-&lt;li>《ゼルダの伝説 Breath of the Wild》&lt;/li>
-&lt;li>《Red Dead Redemption 2》&lt;/li>
-&lt;li>《》&lt;/li>
-&lt;/ol></description></item><item><title>四字母拼音</title><link>https://yingkui.com/pinyin/</link><pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/pinyin/</guid><description>&lt;blockquote>
+&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p></description></item><item><title>四字母拼音</title><link>https://yingkui.com/pinyin/</link><pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/pinyin/</guid><description>&lt;blockquote>
 &lt;p>Simplified Pinyin&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="原则">原则&lt;/h2>
@@ -1383,7 +1376,28 @@ $$
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>建平白山林氏历史</title><link>https://yingkui.com/lin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lin/</guid><description>&lt;style>
+&lt;/table></description></item><item><title>Yingkui's Top Lists</title><link>https://yingkui.com/top/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;p>Last Updated: 2025.01.03&lt;/p>
+&lt;h2 id="games">Games&lt;/h2>
+&lt;ul>
+&lt;li>《ゼルダの伝説 ブレス オブ ザ ワイルド》&lt;/li>
+&lt;li>《スーパーマリオ オデッセイ》&lt;/li>
+&lt;li>《Red Dead Redemption 2》&lt;/li>
+&lt;li>《Grand Theft Auto V》&lt;/li>
+&lt;li>《The Last of Us》&lt;/li>
+&lt;/ul>
+&lt;h2 id="movies--tv-shows">Movies &amp;amp; TV Shows&lt;/h2>
+&lt;ul>
+&lt;li>《Godfather》&lt;/li>
+&lt;li>《Breaking Bad》&lt;/li>
+&lt;li>《The Shawshank Redemption》&lt;/li>
+&lt;li>《The Last Emperor》&lt;/li>
+&lt;li>《Forrest Gump》&lt;/li>
+&lt;/ul>
+&lt;h2 id="books">Books&lt;/h2>
+&lt;ul>
+&lt;li>《Thinking, Fast and Slow》&lt;/li>
+&lt;li>《Cien años de soledad》&lt;/li>
+&lt;/ul></description></item><item><title>建平白山林氏历史</title><link>https://yingkui.com/lin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lin/</guid><description>&lt;style>
 strong {
  color: black;
  font-size: 22px;

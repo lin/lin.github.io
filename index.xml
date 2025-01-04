@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
-&lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条帖子，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
+&lt;p>方舟子对我的评价：弱智、妄人、人格卑贱的人渣&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Suppression of dissent is an enemy of both science and democracy!&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="起因">起因&lt;/h2>
+&lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst">帖子&lt;/a>，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
 &lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
 &lt;p>&lt;img src="../img/fang-2.jpg" alt="">&lt;/p>
 &lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com &lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
@@ -17,15 +23,7 @@
 &lt;p>第一，方舟子认为我对事实的描述，是在指控他造谣，我毫无此意，造成误解可能是我表达上考虑不周&lt;/p>
 &lt;p>第二，方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致&lt;/p>
 &lt;p>且先不说紧急修改的可能性，我们是可以验证 Deepseek 是否紧急修改的。因为 Deepseek 的这几个模型都是开源的，放在了 &lt;a href="https://github.com/deepseek-ai/DeepSeek-V3">GitHub&lt;/a> 和 &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">Hugging Face&lt;/a>上，参数是公开的，他们或许可以紧急修改网页服务器端的反馈，这些已经发布的模型，是无法作弊的。&lt;/p>
-&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p>
-&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致，是一个错误的臆断。&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../img/fang-6.png" alt="">&lt;/p>
-&lt;p>因为方舟子误解了我回复的本意，他认为我是在指控他造谣，为了消除这个误解，我给方舟子回复说，“我没有指控方老师造谣”。&lt;/p>
-&lt;p>与此同时，因为 Deepseek 对这个提示词反馈整体上是很出色的，便提出了，是否第一个截屏有选择性截屏的可能，也就是在大量的测试中，找出一个低概率发生幻觉的截屏。&lt;/p>
-&lt;p>&lt;img src="../img/fang-7.png" alt="">&lt;/p>
-&lt;h2 id="方舟子的第二条回复">方舟子的第二条回复&lt;/h2>
-&lt;p>在我发出第二个回复的七分钟后，方舟子发了第二条回复&lt;/p>
-&lt;p>&lt;img src="../img/fang-8.png" alt="">&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
+&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
 &lt;p>2024-12-26&lt;/p>
 &lt;p>听闻盛景也登峰，缓钝笨拙若老翁&lt;/p>
 &lt;p>怎因险阻容退意，却为谜难更欲争&lt;/p>
@@ -43,12 +41,7 @@
 &lt;p>但求大痛使顽醒，不必春来鬓两霜&lt;/p>
 &lt;ul>
 &lt;li>青空是Bluesky，蓝鸟是Twitter&lt;/li>
-&lt;/ul></description></item><item><title>Yingkui's Top 10</title><link>https://yingkui.com/top/</link><pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;h2 id="games">Games&lt;/h2>
-&lt;ol>
-&lt;li>《ゼルダの伝説 Breath of the Wild》&lt;/li>
-&lt;li>《Red Dead Redemption 2》&lt;/li>
-&lt;li>《》&lt;/li>
-&lt;/ol></description></item><item><title>《生化危机 4》(2023) 玩法总结</title><link>https://yingkui.com/games/re4/</link><pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/re4/</guid><description>&lt;h2 id="要素">要素&lt;/h2>
+&lt;/ul></description></item><item><title>《生化危机 4》(2023) 玩法总结</title><link>https://yingkui.com/games/re4/</link><pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/re4/</guid><description>&lt;h2 id="要素">要素&lt;/h2>
 &lt;ol>
 &lt;li>探图，exploration，fomo&lt;/li>
 &lt;li>舔图，loot，到处是黄色油漆宝箱&lt;/li>
@@ -9289,7 +9282,12 @@ $$&lt;/p>
 &lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
 &lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
 &lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/poems/others/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/others/</guid><description>&lt;h2 id="贺中国男子足球队入围世界杯决赛圈2001年10月">贺中国男子足球队入围世界杯决赛圈（2001年10月）&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/poems/misc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/misc/</guid><description>&lt;p>无题&lt;/p>
+&lt;p>尺人辱贬如猿啸&lt;/p>
+&lt;p>走肉乏聊为愤争&lt;/p>
+&lt;p>岂因名望求学问&lt;/p>
+&lt;p>岂畏人言&lt;/p>
+&lt;p>愿为理真苦一生&lt;/p></description></item><item><title/><link>https://yingkui.com/poems/others/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/others/</guid><description>&lt;h2 id="贺中国男子足球队入围世界杯决赛圈2001年10月">贺中国男子足球队入围世界杯决赛圈（2001年10月）&lt;/h2>
 &lt;p>四十四载春秋梦&lt;/p>
 &lt;p>七次出征未凯归&lt;/p>
 &lt;p>今朝圣报三奇乐&lt;/p>
@@ -9743,7 +9741,7 @@ $$&lt;/p>
 &lt;p>The set of Turing’s abilities is the subset of the total abilities.&lt;/p>
 &lt;p>Distinguishability is the most fundamental ability of intelligence.&lt;/p></description></item><item><title>About</title><link>https://yingkui.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/about/</guid><description>&lt;p>&lt;a href="../edu">A founder&lt;/a>. &lt;a href="../life">A thinker&lt;/a>. A would-be &lt;a href="../ai">scientist&lt;/a> who would solve the problem of solving.&lt;/p>
 &lt;p>&lt;a href="../poems">A poet&lt;/a>. &lt;a href="../design">A designer&lt;/a>. &lt;a href="../cs">A coder&lt;/a>. &lt;a href="../games">A gamer&lt;/a>. &lt;a href="../books">A reader&lt;/a>.&lt;/p>
-&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.x&lt;/p></description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># check&lt;/span>
+&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.&lt;/p></description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">&amp;amp;&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># check&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">^&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># remove&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mask &lt;span style="color:#f92672">|&lt;/span> (&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>j) &lt;span style="color:#75715e"># set&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="arrangements-maxmincnt">Arrangements max/min/cnt&lt;/h4>
@@ -9894,21 +9892,37 @@ $$&lt;/p>
  &lt;td style="text-align: left">2029年&lt;/td>
  &lt;td style="text-align: left">Easy &amp;amp; Fun&lt;/td>
  &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="future-goals">Future Goals&lt;/h2>
+&lt;table>
+ &lt;thead>
  &lt;tr>
- &lt;td style="text-align: left">One Philosophy Book&lt;/td>
- &lt;td style="text-align: left">&lt;a href="./life">An Introduction to Life&lt;/a>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">CS 498&lt;/td>
+ &lt;th style="text-align: left">One Life&lt;/th>
+ &lt;th style="text-align: left">Three Goals&lt;/th>
+ &lt;th style="text-align: left">Due&lt;/th>
+ &lt;th style="text-align: left">&lt;/th>
  &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
  &lt;tr>
  &lt;td style="text-align: left">One AGI Paper&lt;/td>
  &lt;td style="text-align: left">&lt;a href="./ai">A Theory of Intelligence&lt;/a>&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">Solving Machine&lt;/td>
  &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">One Philosophy Book&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="./life">An Introduction to Life&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">CS 498&lt;/td>
+ &lt;/tr>
  &lt;/tbody>
 &lt;/table>
 &lt;h2 id="principles">Principles&lt;/h2>
+&lt;blockquote>
+&lt;p>担虑功名老病死，不如今日快完工&lt;/p>
+&lt;/blockquote>
 &lt;blockquote>
 &lt;p>Move fast and hell. Act rigor and calm.&lt;/p>
 &lt;/blockquote>
@@ -10135,7 +10149,28 @@ $$&lt;/p>
 &lt;li>《多元与包容》，不仅品味不同，顺序也可能不一样，不要年龄歧视，不要急于评价&lt;/li>
 &lt;li>《同理心的成长》，变得越来越同情他人，越来越在乎别人的苦难&lt;/li>
 &lt;li>《》&lt;/li>
-&lt;/ol></description></item><item><title>建平白山林氏历史</title><link>https://yingkui.com/lin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lin/</guid><description>&lt;style>
+&lt;/ol></description></item><item><title>Yingkui's Top Lists</title><link>https://yingkui.com/top/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;p>Last Updated: 2025.01.03&lt;/p>
+&lt;h2 id="games">Games&lt;/h2>
+&lt;ul>
+&lt;li>《ゼルダの伝説 ブレス オブ ザ ワイルド》&lt;/li>
+&lt;li>《スーパーマリオ オデッセイ》&lt;/li>
+&lt;li>《Red Dead Redemption 2》&lt;/li>
+&lt;li>《Grand Theft Auto V》&lt;/li>
+&lt;li>《The Last of Us》&lt;/li>
+&lt;/ul>
+&lt;h2 id="movies--tv-shows">Movies &amp;amp; TV Shows&lt;/h2>
+&lt;ul>
+&lt;li>《Godfather》&lt;/li>
+&lt;li>《Breaking Bad》&lt;/li>
+&lt;li>《The Shawshank Redemption》&lt;/li>
+&lt;li>《The Last Emperor》&lt;/li>
+&lt;li>《Forrest Gump》&lt;/li>
+&lt;/ul>
+&lt;h2 id="books">Books&lt;/h2>
+&lt;ul>
+&lt;li>《Thinking, Fast and Slow》&lt;/li>
+&lt;li>《Cien años de soledad》&lt;/li>
+&lt;/ul></description></item><item><title>建平白山林氏历史</title><link>https://yingkui.com/lin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lin/</guid><description>&lt;style>
 strong {
  color: black;
  font-size: 22px;
