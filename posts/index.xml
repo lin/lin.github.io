@@ -1,16 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>傲慢自大的方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
-&lt;p>方舟子对我的评价：弱智、妄人、人格卑贱的人渣&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Suppression of dissent is an enemy of both science and democracy!&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="起因">起因&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
 &lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst">帖子&lt;/a>，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
 &lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
-&lt;p>&lt;img src="../img/fang-2.jpg" alt="">&lt;/p>
+&lt;blockquote>
+&lt;p>“AI天才女子”的数学的确与众不同，雄辩地证明9.11大于9.9。阿里巴巴的人工智能这么便宜，连美国人都震惊了。最该震惊的是天才的数学啊&lt;/p>
+&lt;/blockquote>
 &lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com &lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
 &lt;p>但为了排除样本小带来的偏见，我自己在 Google Colab 上写了&lt;a href="https://colab.research.google.com/drive/13tJsMwOZfKJl2Lcvxjc_dj3Dv7_PUQZQ">一段程序&lt;/a>，并测试了上百次，在这超过一百次的测试中，Deepseek 并没有出现任何一次幻觉现象。&lt;/p>
-&lt;p>&lt;img src="../img/fang-3.jpg" alt="">&lt;/p>
 &lt;p>这时，我觉得自己有信心认为，方舟子所发的第一个截屏并没有真实的表现 Deepseek 的性能，就给方舟子回复，分享给方舟子这个事实。&lt;/p>
 &lt;p>&lt;img src="../img/fang-4.png" alt="">&lt;/p>
 &lt;p>这之后，我开始用相同的循环写程序测试 GPT-4o 和 Claude-3.5-sonnet 的反馈，毕竟这是一个要比较不同模型之间性能的话题。&lt;/p>
@@ -23,7 +18,17 @@
 &lt;p>第一，方舟子认为我对事实的描述，是在指控他造谣，我毫无此意，造成误解可能是我表达上考虑不周&lt;/p>
 &lt;p>第二，方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致&lt;/p>
 &lt;p>且先不说紧急修改的可能性，我们是可以验证 Deepseek 是否紧急修改的。因为 Deepseek 的这几个模型都是开源的，放在了 &lt;a href="https://github.com/deepseek-ai/DeepSeek-V3">GitHub&lt;/a> 和 &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">Hugging Face&lt;/a>上，参数是公开的，他们或许可以紧急修改网页服务器端的反馈，这些已经发布的模型，是无法作弊的。&lt;/p>
-&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p></description></item><item><title>四字母拼音</title><link>https://yingkui.com/pinyin/</link><pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/pinyin/</guid><description>&lt;blockquote>
+&lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p>
+&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致，是一个错误的臆断。&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="../img/fang-6.png" alt="">&lt;/p>
+&lt;p>因为方舟子误解了我回复的本意，他认为我是在指控他造谣，为了消除这个误解，我给方舟子回复说，“我没有指控方老师造谣”。&lt;/p>
+&lt;p>与此同时，因为 Deepseek 对这个提示词反馈整体上是很出色的，便提出了，是否第一个截屏有选择性截屏的可能，也就是在大量的测试中，找出一个低概率发生幻觉的截屏。&lt;/p>
+&lt;p>&lt;img src="../img/fang-7.png" alt="">&lt;/p>
+&lt;h2 id="方舟子的第二条回复">方舟子的第二条回复&lt;/h2>
+&lt;p>在我发出第二个回复的七分钟后，方舟子发了第二条回复&lt;/p>
+&lt;p>&lt;img src="../img/fang-8.png" alt="">&lt;/p>
+&lt;blockquote>
+&lt;p>什么样的选择性截屏能截出这种结果？一个连被截屏之后能紧急改正的常识都没有的弱智，却能浮想联翩。&lt;/p></description></item><item><title>四字母拼音</title><link>https://yingkui.com/pinyin/</link><pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/pinyin/</guid><description>&lt;blockquote>
 &lt;p>Simplified Pinyin&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="原则">原则&lt;/h2>
@@ -995,7 +1000,11 @@ $$
 &lt;li>.vip&lt;/li>
 &lt;li>.fun&lt;/li>
 &lt;li>.online&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/fandui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/fandui/</guid><description>&lt;h2 id="当你不敢反对的时候你怕的是什么">当你不敢反对的时候，你怕的是什么？&lt;/h2></description></item><item><title/><link>https://yingkui.com/grad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/grad/</guid><description>&lt;h3 id="提前毕业提前死">提前毕业，提前死&lt;/h3></description></item><item><title/><link>https://yingkui.com/human/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/human/</guid><description>&lt;h3 id="不要指望人类">不要指望人类&lt;/h3>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/fandui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/fandui/</guid><description>&lt;h2 id="当你不敢反对的时候你怕的是什么">当你不敢反对的时候，你怕的是什么？&lt;/h2></description></item><item><title/><link>https://yingkui.com/gongshi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/gongshi/</guid><description>&lt;p>共识维系着社会的运转，文明的进步，科学是对客观规律的共识，而民主是对政策制定的共识，共识的建立，不该是强制，而是沟通，不该是争高低，而是共求真&lt;/p>
+&lt;p>谁压制反对和质疑的声音，谁就是那个自私自恋的独裁者，谁不在社交中维持礼节，换位思考，尊重对方，谁就是阻挠社会进步的粘滞剂，谁就是撕裂社会的推车人&lt;/p>
+&lt;p>虚荣自恋，个人形象的维护，阻碍着信息的流通，尤其是批判和反对的声音；无论是在宗教，在极权，在饭圈，在诈骗传销，受迷惑者无一不觉得自己是真理的化身，无一不毫无留情的压制对方的声音&lt;/p>
+&lt;p>拥有一个开放、包容的心态，诚恳的接纳批评，先换位在反对方的立场去思考，忍住本能的冲动，判定一个人的在建立共识上的品质，就是要看一个人在面对反对自己的事情上的态度，是否他把质疑声当成了诋毁声，并屏蔽所有反对的声音&lt;/p>
+&lt;p>给自己一个清净舒心的代价，就是对建立共识的逃避，对更进步社会的阻挠，而社交上，表现的尊敬 Courtesy，就是提高共识的润滑剂&lt;/p></description></item><item><title/><link>https://yingkui.com/grad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/grad/</guid><description>&lt;h3 id="提前毕业提前死">提前毕业，提前死&lt;/h3></description></item><item><title/><link>https://yingkui.com/human/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/human/</guid><description>&lt;h3 id="不要指望人类">不要指望人类&lt;/h3>
 &lt;ol>
 &lt;li>指责一个人的道德，不如指责制度&lt;/li>
 &lt;li>指望一个人的能力，不如指望设计&lt;/li>
