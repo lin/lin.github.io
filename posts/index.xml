@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui Lin</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
 &lt;p>方舟子在这个互动里所表现的，“很无知，又一脑子浆糊很糊涂”，“不知藏拙，偏爱跨领域乱说”，“没有严谨的思维”，也就是他总爱说的，&lt;strong>“无知无畏的妄人”&lt;/strong>。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="起因">起因&lt;/h2>
@@ -7,7 +7,7 @@
 &lt;blockquote>
 &lt;p>“AI天才女子”的数学的确与众不同，雄辩地证明9.11大于9.9。阿里巴巴的人工智能这么便宜，连美国人都震惊了。最该震惊的是天才的数学啊&lt;/p>
 &lt;/blockquote>
-&lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com &lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
+&lt;p>大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出问题，我拿出手机通过 &lt;a href="https://chat.deepseek.com/">chat.deepseek.com&lt;/a> 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p>
 &lt;p>但为了排除样本小带来的偏见，我自己在 Google Colab 上写了&lt;a href="https://colab.research.google.com/drive/13tJsMwOZfKJl2Lcvxjc_dj3Dv7_PUQZQ">一段程序&lt;/a>，并测试了上百次，在这超过一百次的测试中，Deepseek 并没有出现任何一次幻觉现象。&lt;/p>
 &lt;p>这时，我觉得自己有信心认为，方舟子所发的第一个截屏并没有真实的表现 Deepseek 的性能，就给方舟子回复，分享给方舟子这个事实。&lt;/p>
 &lt;p>&lt;img src="../img/fang-4.png" alt="">&lt;/p>
