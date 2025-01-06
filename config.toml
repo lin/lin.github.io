@@ -1,6 +1,6 @@
 baseURL = 'https://yingkui.com/'
 languageCode = 'en-us'
-title = "Yingkui"
+title = "Yingkui Lin"
 theme = "hugo-ink"
 
 copyright = "© Copyright Yingkui.com All Rights Reserved"
@@ -31,7 +31,7 @@ copyright = "© Copyright Yingkui.com All Rights Reserved"
 # weight = 8
 
 [params]
-    subtitle = "Solving Problems. Making Progress."
+    subtitle = "Essays"
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']
@@ -47,10 +47,10 @@ copyright = "© Copyright Yingkui.com All Rights Reserved"
 #     icon = "youtube"
 #     url = "https://youtube.com/@yingkui"
 
-[[params.social]]
-    name = "Bluesky"
-    icon = "twitter"
-    url = "https://bsky.app/profile/yingkui.bsky.social"
+# [[params.social]]
+#     name = "Bluesky"
+#     icon = "twitter"
+#     url = "https://bsky.app/profile/yingkui.bsky.social"
 
 [permalinks]
   posts = '/:filename'
