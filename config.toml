@@ -5,30 +5,30 @@ theme = "hugo-ink"
 
 copyright = "© Copyright Yingkui.com All Rights Reserved"
 
-[[menu.main]]
-name = "随想"
-url = "/"
-weight = 1
+# [[menu.main]]
+# name = "随想"
+# url = "/"
+# weight = 1
 
-[[menu.main]]
-name = "《教学》"
-url = "/edu"
-weight = 2
+# [[menu.main]]
+# name = "《教学》"
+# url = "/edu"
+# weight = 2
 
-[[menu.main]]
-name = "《人生》"
-url = "/life"
-weight = 3
+# [[menu.main]]
+# name = "《人生》"
+# url = "/life"
+# weight = 3
 
-[[menu.main]]
-name = "《智力》"
-url = "/ai"
-weight = 4
+# [[menu.main]]
+# name = "《智力》"
+# url = "/ai"
+# weight = 4
 
-[[menu.main]]
-name = "关于"
-url = "/about"
-weight = 8
+# [[menu.main]]
+# name = "关于"
+# url = "/about"
+# weight = 8
 
 [params]
     subtitle = "Solving Problems. Making Progress."
@@ -36,21 +36,21 @@ weight = 8
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']
 
-[[params.social]]
-    name = "Github"
-    icon = "github"
-    url = "https://github.com/lin"
+# [[params.social]]
+#     name = "Github"
+#     icon = "github"
+#     url = "https://github.com/lin"
 
-# https://feathericons.com/
-[[params.social]]
-    name = "YouTube"
-    icon = "youtube"
-    url = "https://youtube.com/@yingkui"
+# # https://feathericons.com/
+# [[params.social]]
+#     name = "YouTube"
+#     icon = "youtube"
+#     url = "https://youtube.com/@yingkui"
 
 [[params.social]]
     name = "Bluesky"
     icon = "twitter"
-    url = "https://bsky.app/profile/yingkui.com"
+    url = "https://bsky.app/profile/yingkui.bsky.social"
 
 [permalinks]
   posts = '/:filename'
