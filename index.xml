@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui</title><link>https://yingkui.com/</link><description>Recent content on Yingkui</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;blockquote>
+&lt;p>方舟子在这个互动里所表现的，“很无知，又一脑子浆糊很糊涂”，“不知藏拙，偏爱跨领域乱说”，“没有严谨的思维”，也就是他总爱说的，&lt;strong>“无知无畏的妄人”&lt;/strong>。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="起因">起因&lt;/h2>
 &lt;p>2025年新年正午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst">帖子&lt;/a>，通过 Deepseek 对 &lt;strong>9.9和9.11哪个大&lt;/strong> 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p>
 &lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
 &lt;blockquote>
@@ -20,7 +23,6 @@
 &lt;p>且先不说紧急修改的可能性，我们是可以验证 Deepseek 是否紧急修改的。因为 Deepseek 的这几个模型都是开源的，放在了 &lt;a href="https://github.com/deepseek-ai/DeepSeek-V3">GitHub&lt;/a> 和 &lt;a href="https://huggingface.co/deepseek-ai/DeepSeek-V3">Hugging Face&lt;/a>上，参数是公开的，他们或许可以紧急修改网页服务器端的反馈，这些已经发布的模型，是无法作弊的。&lt;/p>
 &lt;p>有许多在线服务可以帮我们在线跑这些大模型，后来，我在 &lt;a href="https://glhf.chat/chat/create">GLHF.chat&lt;/a> 对 DeepSeek-V2.5-1210 提问了十次，没有一次发生幻觉，在 &lt;a href="https://fireworks.ai/models/fireworks/deepseek-v3">Fireworks AI&lt;/a> 对 DeepSeek-V3 提问了十次，发生了两次幻觉，因为官方商用 API 或者 官方在线的聊天服务 对模型或许有所优化，性能更好是可以接受的假设。&lt;/p>
 &lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致，是一个错误的臆断。&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="../img/fang-6.png" alt="">&lt;/p>
 &lt;p>因为方舟子误解了我回复的本意，他认为我是在指控他造谣，为了消除这个误解，我给方舟子回复说，“我没有指控方老师造谣”。&lt;/p>
 &lt;p>与此同时，因为 Deepseek 对这个提示词反馈整体上是很出色的，便提出了，是否第一个截屏有选择性截屏的可能，也就是在大量的测试中，找出一个低概率发生幻觉的截屏。&lt;/p>
 &lt;p>&lt;img src="../img/fang-7.png" alt="">&lt;/p>
