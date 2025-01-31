@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 02 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>"妄人" 方舟子</title><link>https://yingkui.com/fang/</link><pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/fang/</guid><description>&lt;h2 id="起因">起因&lt;/h2>
 &lt;p>2025年新年中午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst">帖子&lt;/a>。&lt;/p>
-&lt;p>通过 Deepseek 对提示词 &lt;strong>9.9和9.11哪个大&lt;/strong> 的幻觉反馈，来佐证 Deepseek 是一个性能较差的大模型。&lt;/p>
+&lt;p>通过 DeepSeek 对提示词 &lt;strong>9.9和9.11哪个大&lt;/strong> 的幻觉反馈，来佐证 DeepSeek 是一个性能较差的大模型。&lt;/p>
 &lt;p>&lt;img src="../img/fang-1.png" alt="">&lt;/p>
 &lt;h2 id="紧急修改">紧急修改&lt;/h2>
-&lt;p>我测试了 Deepseek 的反馈，发现并没有出现高比例的幻觉反馈，便留言分享这个事实。方舟子回复到：&lt;/p>
+&lt;p>我测试了 DeepSeek 的反馈，发现并没有出现高比例的幻觉反馈，便留言分享这个事实。方舟子回复到：&lt;/p>
 &lt;p>&lt;img src="../img/fang-5.png" alt="">&lt;/p>
-&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致。&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能变化是 DeepSeek 的紧急修改所致。&lt;/strong>&lt;/p>
 &lt;p>方舟子的图是直接从 &lt;a href="https://archive.ph/yYF6h">网友的评论&lt;/a> 里拿来的，网友是当日11点13的评论，且说是她早晨测试的，方舟子是12点36/40发的贴，我看到并测试是在12点50左右，方舟子大概都懒得去独立验证，便随手把网友的截屏发了出来。这个截屏基本可以确定是 v3 的，而且方舟子是第一个有影响力发这张截屏的人。&lt;/p>
-&lt;p>Deepseek 团队必须要在元旦假日的午休期间，在业内对数学计算出现幻觉可以接受的情况下，作为开源模型，在大家可以随意独立验证在这个提示词上比 GPT-4o 和 Claude-3.5-Sonnet 表现的还要好的情况下，在国际上已经满是美誉的情况下，因为方舟子发帖，要在十分钟内，从团队看到并做出了紧急修改，可能性有多高呢？&lt;/p>
-&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能骤变是 Deepseek 的紧急修改所致，是一个想当然的臆断。&lt;/strong>&lt;/p>
+&lt;p>DeepSeek 团队必须要在元旦假日的午休期间，在业内对数学计算出现幻觉可以接受的情况下，作为开源模型，在大家可以随意独立验证在这个提示词上比 GPT-4o 和 Claude-3.5-Sonnet 表现的还要好的情况下，在国际上已经满是美誉的情况下，因为方舟子发帖，要在十分钟内，从团队看到并做出了紧急修改，可能性有多高呢？&lt;/p>
+&lt;p>&lt;strong>方舟子以较为确信的口吻，说性能骤变是 DeepSeek 的紧急修改所致，是一个想当然的臆断。&lt;/strong>&lt;/p>
 &lt;h2 id="选择性截屏">选择性截屏&lt;/h2>
 &lt;p>&lt;img src="../img/fang-8.png" alt="">&lt;/p>
 &lt;p>大模型并不是稳定地给出一致的答案，也就是存在选择性的截屏，允许人以偏概全来评价性能。&lt;/p>
@@ -17,7 +17,8 @@
 &lt;h2 id="换话题">换话题&lt;/h2>
 &lt;p>我和方舟子说， GPT-4o 和 Claude-3.5-Sonnet，在这个提示词上并没有表现的更好。对此方舟子回复说：&lt;/p>
 &lt;p>&lt;img src="../img/fang-10.png" alt="">&lt;/p>
-&lt;p>&lt;strong>“现在要换话题比烂了” 是一句非常糊涂的话，Deepseek 的性能是否相比之下更差就是话题本身&lt;/strong>，似乎方舟子是想说我在指责转移，Whataboutism，AlphaFold 也有幻觉，我们去找大模型的缺陷难道是这个帖子的主题？一个 “智商高于180” 的天才，为什么会在讨论过程中连论点是什么都能搞糊涂？因为他认知能力没他吹嘘的那么高。&lt;/p>
+&lt;p>&lt;strong>“现在要换话题比烂了” 是一句非常糊涂的话，DeepSeek 的性能是否相比之下更差就是话题本身&lt;/strong>，似乎方舟子是想说我在指责转移，Whataboutism，AlphaFold 也有幻觉，我们去找大模型的缺陷难道是这个帖子的主题？一个 “智商高于180” 的天才，为什么会在讨论过程中连论点是什么都能搞糊涂？因为他认知能力没他吹嘘的那么高。&lt;/p>
+&lt;p>方舟子自诩科学精神，却同时使用了两次 Cherry Picking 的诡辩，首先，他选择了大模型里普遍存在的、常见的幻觉提示词来嘲讽性能，其次，即使 DeepSeek 在这个幻觉上表现比其他大模型更出色，他却找了一个发生概率低的单一样本来佐证。&lt;/p>
 &lt;h2 id="妄人-方舟子">“妄人” 方舟子&lt;/h2>
 &lt;p>对论据，方舟子自己懒得求证，觉得没啥大问题，就拿来嘲讽 ”天才“ ，那为什么方舟子这么确信骂我没常识、确信紧急修改、无法选择性截屏呢？因为他对大模型很不了解，在这个领域，他在这个互动里所表现的“很无知，又一脑子浆糊很糊涂”，“不知藏拙，偏爱跨领域乱说”，“没有严谨的思维”，也就是他总爱说别人的，是一个 &lt;strong>无知无畏的 ”妄人“&lt;/strong>。&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
 &lt;p>2024-12-26&lt;/p>
@@ -9527,6 +9528,7 @@ $$&lt;/p>
 &lt;li>Notes (Apple)&lt;/li>
 &lt;li>Hugo (VS Code / iA Writer)&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/toty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/toty/</guid><description>&lt;h2 id="thing-of-the-year">Thing of the Year&lt;/h2>
+&lt;p>If you mention that year, what I remember most.&lt;/p>
 &lt;p>历史事件 / 科学进展 / 工程产品 / 艺术娱乐&lt;/p>
 &lt;table>
  &lt;thead>
@@ -9570,7 +9572,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">1997&lt;/td>
- &lt;td>Harry Potter&lt;/td>
+ &lt;td>Asian Financial Crisis&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">1998&lt;/td>
@@ -9586,7 +9588,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2001&lt;/td>
- &lt;td>9/11 / Wikipedia&lt;/td>
+ &lt;td>9/11 Attacks&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2002&lt;/td>
@@ -9606,7 +9608,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2006&lt;/td>
- &lt;td>Poincaré Conjecture&lt;/td>
+ &lt;td>Twitter&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2007&lt;/td>
@@ -9614,11 +9616,11 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2008&lt;/td>
- &lt;td>Great Recession&lt;/td>
+ &lt;td>Global Financial Crisis&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2009&lt;/td>
- &lt;td>Bitcoin / Avatar&lt;/td>
+ &lt;td>Bitcoin&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2010&lt;/td>
@@ -9626,7 +9628,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2011&lt;/td>
- &lt;td>21&lt;/td>
+ &lt;td>Arab Spring&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2012&lt;/td>
@@ -9634,11 +9636,11 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2013&lt;/td>
- &lt;td>Breaking Bad / GTA V&lt;/td>
+ &lt;td>Breaking Bad&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2014&lt;/td>
- &lt;td>Game of Thrones / MH370&lt;/td>
+ &lt;td>Interstellar&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2015&lt;/td>
@@ -9646,7 +9648,7 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2016&lt;/td>
- &lt;td>Gravitational Waves / US Election&lt;/td>
+ &lt;td>Brexit Referendum&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2017&lt;/td>
@@ -9662,15 +9664,15 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2020&lt;/td>
- &lt;td>Covid-19&lt;/td>
+ &lt;td>COVID-19 Pandemic&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2021&lt;/td>
- &lt;td>Avengers&lt;/td>
+ &lt;td>NFT&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2022&lt;/td>
- &lt;td>Invasion of Ukraine / FIFA World Cup Final&lt;/td>
+ &lt;td>Russian Invasion of Ukraine&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2023&lt;/td>
@@ -9678,7 +9680,11 @@ $$&lt;/p>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: center">2024&lt;/td>
- &lt;td>US Election&lt;/td>
+ &lt;td>U.S. Presidential Election&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">2025&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title/><link>https://yingkui.com/reinvent/rails/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/rails/</guid><description/></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周">2023年12月第二周&lt;/h2>
