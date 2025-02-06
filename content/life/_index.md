@@ -18,6 +18,8 @@ _Would Resume in 2024_
 
 开始进入能写一点是一点的堆料阶段
 
+250 pages, 70000 words, 150 days
+
 [前言](preface) & [提纲](outline)
 
 1. 矫枉过正的偏激语风，虚荣即弱智，统治即强盗，大众即低能
