@@ -104,6 +104,8 @@ Many wisdom is to distinguish two indistinguishable things or make two distingui
 
 ### 科学的事实 / High Resolution
 
+### 模型的建立
+
 ### 如何解决问题
 
 学习即记忆，解题即搜索. To learn is to memorize. To solve is to search.
@@ -120,6 +122,10 @@ Distinguishable and reliable signals.
 
 知识就是力量，原子弹威力很大，但是求知欲的满足不能填饱肚子。
 
+精细化的认知会消耗资源和机会成本，而不精细化的认知会浪费资源和没有机会。
+
+既不做孔乙己，也不做葛朗台，做富兰克林式的人物，会让生命更加优化。
+
 ### 权威的危险
 
 ## 核心矛盾：精准与效率 / Balance
@@ -132,7 +138,9 @@ Distinguishable and reliable signals.
 
 ### Imperfect by design
 
-## 虚荣 / Drug
+## 虚荣情绪，节目效果 / Drugs
+
+割喉降血压
 
 自恋是一个巨大的毒品欲望（Ego and Pride）
 
@@ -141,6 +149,10 @@ Distinguishable and reliable signals.
 ### 稀有度
 
 评价是可以的，但是别自恋
+
+### 节目效果
+
+### 情绪价值
 
 ### 财富高傲
 
