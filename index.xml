@@ -1492,7 +1492,7 @@
 &lt;li>I can&amp;rsquo;t solve DIV2B for the very first time! (except for the rejudge and the second contest about input)&lt;/li>
 &lt;li>&lt;a href="https://codeforces.com/contest/1838/problem/B">B. Minimize Permutation Subarrays&lt;/a>, I spent 115 minutes for this problem. And the solution is quite simple. It seems like if I don&amp;rsquo;t realize the trick, I may solve this problem for another two hours. What a sad day!&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10">Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4>
+&lt;h3>&lt;/h3></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10">Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4>
 &lt;ul>
 &lt;li>$2^{30} \approx 10^9$&lt;/li>
 &lt;li>$\log_2 10^9 \approx 30$&lt;/li>
@@ -1513,12 +1513,12 @@
 &lt;li>&lt;a href="https://leetcode.com/problems/number-of-different-subsequences-gcds/">1819. Number of Different Subsequences GCDs&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Next time, when I see GCD problems, I will think about harmonic series first.&lt;/p></description></item><item><title>刷题一周年纪念</title><link>https://yingkui.com/cs/cp/05-24-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-24-2023/</guid><description>&lt;h2 id="当时觉得很难的题目">当时觉得很难的题目&lt;/h2>
-&lt;h4 id="1---binary-search-33-search-in-rotated-sorted-arrayhttpsleetcodecomproblemssearch-in-rotated-sorted-array">1 - Binary Search &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in Rotated Sorted Array&lt;/a>&lt;/h4>
+&lt;h4 id="1---binary-search-33-search-in-rotated-sorted-array">1 - Binary Search &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in Rotated Sorted Array&lt;/a>&lt;/h4>
 &lt;p>简化之后的题：&lt;a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153. Find Minimum in Rotated Sorted Array&lt;/a>，今日用时12分钟，也不是很快，相当于1550的题&lt;/p>
 &lt;p>在做完上题之后，&lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">本题&lt;/a> 今日用时8分钟，还是容易出bug，因为逻辑比较脆弱&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-23-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-23-2023/</guid><description>&lt;p>今天是开始刷题一周年纪念日，就从今天开始记录一些总结。&lt;/p>
 &lt;h3 id="1---3d-dp-with-small-numbers">1 - 3D dp with small numbers&lt;/h3>
 &lt;p>&lt;a href="https://leetcode.com/problems/number-of-distinct-roll-sequences/">Leetcode 2318. Number of Distinct Roll Sequences&lt;/a>&lt;/p>
-&lt;p>很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code>6*6*n&lt;/code> 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sumhttpsleetcodecomproblemstwo-sum">1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/">1. Two Sum&lt;/a>&lt;/h3>
+&lt;p>很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code>6*6*n&lt;/code> 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sum">1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/">1. Two Sum&lt;/a>&lt;/h3>
 &lt;p>Normally, we may use brute force to find the solution.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">twoSum&lt;/span>(self, nums: List[int], target: int) &lt;span style="color:#f92672">-&amp;gt;&lt;/span> List[int]:
@@ -2634,7 +2634,8 @@ $$
 &lt;p>Simple yet useful.&lt;/p>
 &lt;p>Intangible Fortune. Complex Cooperation.&lt;/p>
 &lt;p>Drug Desires (Show Effets). False Knowleges. Fake Progress.&lt;/p>
-&lt;p>虚荣，认知&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/1-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/1-structure/</guid><description>&lt;h2 id="基本框架">基本框架&lt;/h2>
+&lt;p>虚荣，认知&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/1-desires/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/1-desires/</guid><description>&lt;h2 id="基本框架">基本框架&lt;/h2>
+&lt;p>desires and goals&lt;/p>
 &lt;p>人有需求，通过解决问题才能满足需求&lt;/p>
 &lt;p>解决问题需要对世界有认知（认知）&lt;/p>
 &lt;p>解决问题需要和人合作，提高效率（合作）&lt;/p>
@@ -2643,13 +2644,14 @@ $$
 &lt;h3 id="reward-exceeds-expectation">reward exceeds expectation&lt;/h3>
 &lt;h3 id="variety-and-delta-gains">variety and delta gains&lt;/h3>
 &lt;p>Slope and the value. We have a higher value but deeper sloper.&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/2-fortune/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/2-fortune/</guid><description>&lt;h2 id="财富">财富&lt;/h2>
+&lt;p>money and burdens&lt;/p>
 &lt;p>制造财富就是解决问题。&lt;/p>
 &lt;h3 id="财富的直接制造者和衍生品">财富的直接制造者和衍生品&lt;/h3>
 &lt;h3 id="创立新体制">创立新体制&lt;/h3>
 &lt;h3 id="体制内">体制内&lt;/h3>
 &lt;p>合作的一个高效工具就是钱（财富）&lt;/p>
 &lt;p>帝国的居民，抗风险的能力，内部的调整，稳定的收入，虚荣的满足&lt;/p>
-&lt;p>官方资助的探险队&lt;/p>
+&lt;p>官方资助的探险队，半学半工&lt;/p>
 &lt;h3 id="服务业">服务业&lt;/h3>
 &lt;h3 id="内容生产">内容生产&lt;/h3>
 &lt;p>Collective curiosity&lt;/p>
@@ -2662,6 +2664,8 @@ $$
 &lt;h3 id="隐形的财富">隐形的财富&lt;/h3>
 &lt;p>Let&amp;rsquo;s always use money as a metaphor.&lt;/p>
 &lt;h4 id="courtesy">Courtesy&lt;/h4></description></item><item><title/><link>https://yingkui.com/basics/3-society/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/3-society/</guid><description>&lt;h2 id="群体">群体&lt;/h2>
+&lt;p>collective consensus and interactions&lt;/p>
+&lt;p>Courtesy and Scam&lt;/p>
 &lt;h3 id="小范围的互助">小范围的互助&lt;/h3>
 &lt;h3 id="范围大了就变了">范围大了就变了&lt;/h3>
 &lt;h3 id="共识建立">共识建立&lt;/h3>
@@ -2675,12 +2679,13 @@ $$
 &lt;p>You may not care about politics, they care about you.&lt;/p>
 &lt;p>不平衡的交换，一方是盗贼，一方是奴役&lt;/p>
 &lt;h3 id="偷盗">偷盗&lt;/h3>
-&lt;h4 id="马太效应和阶级的建立">马太效应和阶级的建立&lt;/h4>
-&lt;h3 id="预设邪恶约束反制">预设邪恶，约束反制&lt;/h3>
-&lt;p>The nice acts may not always be the right actions.&lt;/p>
-&lt;p>专制的优势和民主的必要&lt;/p>
-&lt;h3 id="礼节货币">礼节货币&lt;/h3>
-&lt;p>专制的巨蟒&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/4-intelligence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/4-intelligence/</guid><description>&lt;h2 id="认知--distinguish">认知 / Distinguish&lt;/h2>
+&lt;p>Steal and Cheat&lt;/p>
+&lt;h3 id="每个人都想做贼">每个人都想做贼&lt;/h3>
+&lt;p>当贼光荣的集体夙愿&lt;/p>
+&lt;h3 id="普通百姓的金色手铐">普通百姓的金色手铐&lt;/h3>
+&lt;h3 id="义和团式的宗教狂热">义和团式的宗教狂热&lt;/h3>
+&lt;p>So easy to slide back to darkness. our critical faculties in decline, unable to distinguish between what feels good and what&amp;rsquo;s true, we slide, almost without noticing, back into superstition and darkness.&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/4-intelligence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/4-intelligence/</guid><description>&lt;h2 id="认知--distinguish">认知 / Distinguish&lt;/h2>
+&lt;p>knowledge acquisition and solving techniques&lt;/p>
 &lt;p>Danger lies in indistinguishable situations, at least indistinguishable to you.&lt;/p>
 &lt;p>混为一谈，模棱两可，拿看似正确的理论来忽悠你。&lt;/p>
 &lt;p>Many wisdom is to distinguish two indistinguishable things or make two distinguishable things indistinguishable.&lt;/p>
@@ -2690,20 +2695,18 @@ $$
 &lt;p>缺乏批判性思维的错误陷阱和巨额智商税（bias）&lt;/p>
 &lt;h3 id="科学的事实--high-resolution">科学的事实 / High Resolution&lt;/h3>
 &lt;h3 id="模型的建立">模型的建立&lt;/h3>
-&lt;h4 id="贝叶斯的因果">贝叶斯的因果&lt;/h4>
-&lt;h4 id="关键特征分析--pca">关键特征分析 / PCA&lt;/h4>
-&lt;p>种族主义的狭隘&lt;/p>
-&lt;h3 id="如何解决问题">如何解决问题&lt;/h3>
-&lt;p>学习即记忆，解题即搜索. To learn is to memorize. To solve is to search.&lt;/p>
-&lt;h4 id="low-hanging-fruit">Low Hanging Fruit&lt;/h4>
-&lt;h3 id="看不见的进展">看不见的进展&lt;/h3>
-&lt;p>切肤之痛的感受，转化成需求，转化成钱，转化成投资收益&lt;/p>
-&lt;p>External validation with testing cases and benchmarks.&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/5-tradeoffs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/5-tradeoffs/</guid><description>&lt;h2 id="核心矛盾精准与效率--balance">核心矛盾：精准与效率 / Balance&lt;/h2>
-&lt;p>因为掌握不好分寸，喜欢二元论导致的失衡（dilemma）&lt;/p>
-&lt;p>为了一时欲望的满足，而造成长期利益的受损（drug）反例就是 invest&lt;/p>
-&lt;p>本书的策略也是，为了提高传播效率，而损失了语言描述的精准&lt;/p>
-&lt;h3 id="imperfect-by-design-flawed-in-purpose">Imperfect by design. Flawed in purpose.&lt;/h3>
-&lt;h3 id="波浪型的进展总想把步子迈太大">波浪型的进展，总想把步子迈太大&lt;/h3></description></item><item><title/><link>https://yingkui.com/basics/6-drugs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/6-drugs/</guid><description>&lt;p>割喉降血压&lt;/p>
+&lt;p>人造的直觉，bias over variance, efficiency over accuracy&lt;/p>
+&lt;p>Simplistic Views and confirmation bias and social conformity&lt;/p>
+&lt;p>Emotional Bad Investment&lt;/p>
+&lt;p>Short cuts&lt;/p>
+&lt;p>&amp;ldquo;unable to distinguish between what feels good and what&amp;rsquo;s true.&amp;rdquo; They try to learn sth new that feels right&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/5-drugs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/5-drugs/</guid><description>&lt;h2 id="虚荣和情绪化">虚荣和情绪化&lt;/h2>
+&lt;p>We have Paleolithic emotions, medieval institutions and godlike technology.&lt;/p>
+&lt;p>Until some point, it&amp;rsquo;s all about money.&lt;/p>
+&lt;p>Until some point, it&amp;rsquo;s all about intelligence.&lt;/p>
+&lt;p>Until some point, it&amp;rsquo;s all about emotions.&lt;/p>
+&lt;p>manipulated by emotional illusion.&lt;/p>
+&lt;p>The Show Chaser, what drives people to unintentional place&lt;/p>
+&lt;p>割喉降血压&lt;/p>
 &lt;p>自恋是一个巨大的毒品欲望（Ego and Pride）&lt;/p>
 &lt;p>集体主义的虚荣自然是放大的毒品&lt;/p>
 &lt;h3 id="稀有度">稀有度&lt;/h3>
@@ -2718,23 +2721,10 @@ $$
 &lt;p>忧虑不能让你更好的准备。&lt;/p>
 &lt;p>情绪的积极作用是提醒，而不是消耗太多的时间。&lt;/p>
 &lt;h3 id="财富高傲">财富高傲&lt;/h3>
-&lt;p>arrogant rich&lt;/p>
-&lt;h3 id="智力高傲">智力高傲&lt;/h3>
-&lt;p>arrogant intellectual&lt;/p>
-&lt;h3 id="权力高傲">权力高傲&lt;/h3>
-&lt;h3 id="偶像高傲">偶像高傲&lt;/h3>
-&lt;h3 id="标签高傲">标签高傲&lt;/h3>
-&lt;h3 id="懊悔和幻想">懊悔和幻想&lt;/h3>
-&lt;p>减少评价对人的影响，就像破除一个紧箍咒，这种情绪上的收益，是使得降低进展，缩小一个人的人生视野的因小失大的情绪债务。&lt;/p>
-&lt;h4 id="种族和民族">种族和民族&lt;/h4>
-&lt;h4 id="伟大指的是斜率而不是位移">伟大指的是斜率，而不是位移&lt;/h4>
-&lt;p>守着过往的成就而鸣鸣得意&lt;/p>
-&lt;h3 id="多样性">多样性&lt;/h3>
-&lt;p>挣钱和求知过程，有很反人性的痛苦行为，如果多数赚钱如游戏般快乐，就不会这么多人去体制内独木桥，如果多数学习如同游戏般快乐，就不会有这么多的愚众。&lt;/p>
-&lt;p>尊重每个人的选择，每个人的喜好、能力，以及野心程度&lt;/p>
-&lt;p>但相对来说，人们还是对求胜的渴求更为强烈，也就是对赚钱的欲望更为直接，而对于相对看不见的认知提高不会投入太多的资源。但求知对效率的改变有着很大的影响，很多人缺乏基础的思辨教育，以及对世界的恰当认识角度，让很多人缺乏判断力，做出了因小失大的错误决定。&lt;/p>
-&lt;p>改变这一情况的办法，就是增加教育，像达到基本生活标准一样的基本教育标准，这本书就是一次关键认知上的补充。&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/7-death/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/7-death/</guid><description>&lt;h2 id="死亡的哲学意义--death">死亡的哲学意义 / Death&lt;/h2>
+&lt;p>arrogant rich&lt;/p></description></item><item><title/><link>https://yingkui.com/basics/6-death/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/6-death/</guid><description>&lt;h2 id="死亡的哲学意义--death">死亡的哲学意义 / Death&lt;/h2>
 &lt;h3 id="唯一活着的人">唯一活着的人&lt;/h3>
+&lt;p>Every living person can say, the existence of the whole is the side effect of its own existence.&lt;/p>
+&lt;p>Because there are so many other possibilities. And everyone are simply better AI NPCs to interact.&lt;/p>
 &lt;h3 id="现实残酷荒诞死亡深邃庞大">现实残酷荒诞，死亡深邃庞大&lt;/h3>
 &lt;h3 id="一场虚拟游戏不必入戏太深">一场虚拟游戏，不必入戏太深&lt;/h3>
 &lt;h3 id="活着没价值人死如灯灭">活着没价值，人死如灯灭&lt;/h3>
@@ -4100,7 +4090,7 @@ $$&lt;/p>
 &lt;li>Always use flex first.&lt;/li>
 &lt;li>Grid of options. Grid of items / products. Will change cols in different screen size.&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/design/hsv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/hsv/</guid><description>&lt;h2 id="hsv">HSV&lt;/h2>
-&lt;h2 id="heading">&lt;/h2>
+&lt;h2>&lt;/h2>
 &lt;h3 id="hue">Hue&lt;/h3>
 &lt;p>For RGB, one is 0 and another is 255.&lt;/p>
 &lt;p>For HSL, S is 100% and L is 50%.&lt;/p>
@@ -6105,39 +6095,39 @@ $$&lt;/p>
 &lt;li>证，Easy to Pwn，富二代创业，不能全程无参与，但解决简单题，从而获得fake成就感&lt;/li>
 &lt;li>悬，Full of Uncertainty，充满对随机奖励的期盼，以及对随机退步的担忧&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>软失败：并不是只有胜负两极的评价，而是更细致的评价&lt;/p>
 &lt;ol>
 &lt;li>时间用的越久，奖励越少，可能达不到既定目标，甚至时间太长，直接判定失败&lt;/li>
 &lt;li>道具用的越多，奖励越少，但是玩家可以利用这个契机，来提高自己，学习新的知识&lt;/li>
 &lt;/ol>
 &lt;p>也就是说，游戏多为硬失败，道具基本就是纯作弊，而可以考虑降低难度的惩罚成本&lt;/p>
-&lt;h3 id="heading-1">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>人的快乐，来自于对低投入却有高回报活动带来的满足。&lt;/p>
 &lt;p>成就感：塔多，证服，赏亮（ego）&lt;/p>
 &lt;p>低成本：易进，器用&lt;/p>
 &lt;p>好奇心：悬勾，幸有（高回报）&lt;/p>
-&lt;h3 id="heading-2">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>我以为玩《桃太郎电铁》会让我记住很多日本城市的方位&lt;/p>
 &lt;p>但实际上效果很差，因为奖励系统里，没有让我有对地理知识记住的必要，距离和方向都是被提供了帮助的。&lt;/p>
 &lt;p>只有六大都市（札幌、東京、横浜、名古屋、大阪、福岡）的方位记得很牢，因为 6 大都市カード 实在太好用了。&lt;/p>
 &lt;p>也就是说，要想增加记忆的效果，就要增加使用这个记忆所带来的收益，让人在乎记忆的必要。&lt;/p>
 &lt;p>相比之下，《车票之旅》让我记住了很多美国城市的方位，因为会反复看目标城市的位置。&lt;/p>
-&lt;h3 id="heading-3">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>娱乐设计就是让玩家体验低成本迅速推进进度条，必要时，&lt;/p>
 &lt;ol>
 &lt;li>要帮助玩家建立起认可的、在乎的、有价值的目标&lt;/li>
 &lt;li>要帮助玩家建立或理解初始参考点的低洼&lt;/li>
 &lt;li>要帮助玩家建立一个预期的低进展速度作为对比对象&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading-4">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>人的快乐来自于进展带来的成就感，越是小投入大回报的投资行为越让人兴奋，甚至上瘾。衍生出的三种主要进展&lt;/p>
 &lt;ol>
 &lt;li>成就感：目标的完成&lt;/li>
 &lt;li>求知欲：知识的学习，有利于完成目标&lt;/li>
 &lt;li>虚荣心：个人价值的评价和对比&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading-5">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>塔，成就感，有进度，证是塔的升级，增强成就感
 易，低成本，高回报，器是易的升级，增加塔种类
 悬，好奇心，随机性，幸是悬的升级，同时体现易&lt;/p>
@@ -6151,7 +6141,7 @@ $$&lt;/p>
 &lt;li>得到超出预期的惊喜&lt;/li>
 &lt;/ol>
 &lt;p>塔证易，悬幸器&lt;/p>
-&lt;h3 id="heading-6">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;p>其实很多大获成功的信息化商业，好听的说，是降低了使用者的门槛，难听的说，就是弱智保姆软件（弱保软），所谓的弱智不一定是智力水平低下，而是在这个领域内缺乏经验的新手，老戴被称作戴妈妈，就是保姆，中和一下，菜保软（菜鸟保姆软件&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/refs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/refs/</guid><description>&lt;h2 id="主要参考书籍和网站">主要参考书籍和网站&lt;/h2>
 &lt;h3 id="第五章">第五章：&lt;/h3>
 &lt;p>游戏与学习的一体两面，学戏二面性&lt;/p>
@@ -6346,7 +6336,7 @@ $$&lt;/p>
 &lt;li>人口产出金币，工厂需要&lt;/li>
 &lt;li>工厂需要产出产品，人口需要&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3></description></item><item><title/><link>https://yingkui.com/games/backlog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/backlog/</guid><description>&lt;h2 id="backlog">Backlog&lt;/h2>
+&lt;h3>&lt;/h3></description></item><item><title/><link>https://yingkui.com/games/backlog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/backlog/</guid><description>&lt;h2 id="backlog">Backlog&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -9314,7 +9304,7 @@ $$&lt;/p>
 &lt;li>text prompt&lt;/li>
 &lt;li>params&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3>
+&lt;h3>&lt;/h3>
 &lt;ol>
 &lt;li>Subject: person, animal, character, location, object, etc.&lt;/li>
 &lt;li>Medium: photo, painting, illustration, sculpture, doodle, tapestry, etc.&lt;/li>
@@ -10514,7 +10504,7 @@ h3 {
  &lt;td>Dynamic Programming&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>题型总结</title><link>https://yingkui.com/cs/cp/topic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/topic/</guid><description>&lt;h3 id="sorttsort">&lt;a href="../t/sort">Sort&lt;/a>&lt;/h3>
+&lt;/table></description></item><item><title>题型总结</title><link>https://yingkui.com/cs/cp/topic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/topic/</guid><description>&lt;h3 id="sort">&lt;a href="../t/sort">Sort&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>Merge Sort and Quick Sort&lt;/li>
 &lt;li>Heap&lt;/li>
@@ -10556,7 +10546,7 @@ h3 {
 &lt;h3 id="subsequence">Subsequence&lt;/h3>
 &lt;h3 id="partition">Partition&lt;/h3>
 &lt;h3 id="bitmask">Bitmask&lt;/h3>
-&lt;h3 id="dp-bitmask--subsettdp-bitmask">&lt;a href="../t/dp-bitmask">DP Bitmask / Subset&lt;/a>&lt;/h3>
+&lt;h3 id="dp-bitmask--subset">&lt;a href="../t/dp-bitmask">DP Bitmask / Subset&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://leetcode.com/discuss/general-discussion/1125779/dynamic-programming-on-subsets-with-examples-explained">Leetcode Post&lt;/a>&lt;/li>
 &lt;/ul>

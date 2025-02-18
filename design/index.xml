@@ -223,7 +223,7 @@ $$&lt;/p>
 &lt;li>Always use flex first.&lt;/li>
 &lt;li>Grid of options. Grid of items / products. Will change cols in different screen size.&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/design/hsv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/design/hsv/</guid><description>&lt;h2 id="hsv">HSV&lt;/h2>
-&lt;h2 id="heading">&lt;/h2>
+&lt;h2>&lt;/h2>
 &lt;h3 id="hue">Hue&lt;/h3>
 &lt;p>For RGB, one is 0 and another is 255.&lt;/p>
 &lt;p>For HSL, S is 100% and L is 50%.&lt;/p>

@@ -14,7 +14,7 @@
 &lt;li>I can&amp;rsquo;t solve DIV2B for the very first time! (except for the rejudge and the second contest about input)&lt;/li>
 &lt;li>&lt;a href="https://codeforces.com/contest/1838/problem/B">B. Minimize Permutation Subarrays&lt;/a>, I spent 115 minutes for this problem. And the solution is quite simple. It seems like if I don&amp;rsquo;t realize the trick, I may solve this problem for another two hours. What a sad day!&lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10">Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4>
+&lt;h3>&lt;/h3></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10">Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4>
 &lt;ul>
 &lt;li>$2^{30} \approx 10^9$&lt;/li>
 &lt;li>$\log_2 10^9 \approx 30$&lt;/li>
@@ -35,12 +35,12 @@
 &lt;li>&lt;a href="https://leetcode.com/problems/number-of-different-subsequences-gcds/">1819. Number of Different Subsequences GCDs&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Next time, when I see GCD problems, I will think about harmonic series first.&lt;/p></description></item><item><title>刷题一周年纪念</title><link>https://yingkui.com/cs/cp/05-24-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-24-2023/</guid><description>&lt;h2 id="当时觉得很难的题目">当时觉得很难的题目&lt;/h2>
-&lt;h4 id="1---binary-search-33-search-in-rotated-sorted-arrayhttpsleetcodecomproblemssearch-in-rotated-sorted-array">1 - Binary Search &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in Rotated Sorted Array&lt;/a>&lt;/h4>
+&lt;h4 id="1---binary-search-33-search-in-rotated-sorted-array">1 - Binary Search &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in Rotated Sorted Array&lt;/a>&lt;/h4>
 &lt;p>简化之后的题：&lt;a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153. Find Minimum in Rotated Sorted Array&lt;/a>，今日用时12分钟，也不是很快，相当于1550的题&lt;/p>
 &lt;p>在做完上题之后，&lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">本题&lt;/a> 今日用时8分钟，还是容易出bug，因为逻辑比较脆弱&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-23-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-23-2023/</guid><description>&lt;p>今天是开始刷题一周年纪念日，就从今天开始记录一些总结。&lt;/p>
 &lt;h3 id="1---3d-dp-with-small-numbers">1 - 3D dp with small numbers&lt;/h3>
 &lt;p>&lt;a href="https://leetcode.com/problems/number-of-distinct-roll-sequences/">Leetcode 2318. Number of Distinct Roll Sequences&lt;/a>&lt;/p>
-&lt;p>很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code>6*6*n&lt;/code> 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sumhttpsleetcodecomproblemstwo-sum">1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/">1. Two Sum&lt;/a>&lt;/h3>
+&lt;p>很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code>6*6*n&lt;/code> 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sum">1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/">1. Two Sum&lt;/a>&lt;/h3>
 &lt;p>Normally, we may use brute force to find the solution.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">twoSum&lt;/span>(self, nums: List[int], target: int) &lt;span style="color:#f92672">-&amp;gt;&lt;/span> List[int]:
@@ -72,7 +72,7 @@
 &lt;p>:exclamation: :books: &lt;a href="https://www.amazon.com/Merrie-Bergmann-Associated-Professor-Emeritus/dp/0078038413">The Logic Book&lt;/a>, Nov. 2017, Jul. 2019, Sep. 2020&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>:books: &lt;a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055/">The Annotated Turing&lt;/a>, Nov. 2017, Sep. 2020&lt;/p></description></item><item><title>题型总结</title><link>https://yingkui.com/cs/cp/topic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/topic/</guid><description>&lt;h3 id="sorttsort">&lt;a href="../t/sort">Sort&lt;/a>&lt;/h3>
+&lt;p>:books: &lt;a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055/">The Annotated Turing&lt;/a>, Nov. 2017, Sep. 2020&lt;/p></description></item><item><title>题型总结</title><link>https://yingkui.com/cs/cp/topic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/topic/</guid><description>&lt;h3 id="sort">&lt;a href="../t/sort">Sort&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>Merge Sort and Quick Sort&lt;/li>
 &lt;li>Heap&lt;/li>
@@ -114,7 +114,7 @@
 &lt;h3 id="subsequence">Subsequence&lt;/h3>
 &lt;h3 id="partition">Partition&lt;/h3>
 &lt;h3 id="bitmask">Bitmask&lt;/h3>
-&lt;h3 id="dp-bitmask--subsettdp-bitmask">&lt;a href="../t/dp-bitmask">DP Bitmask / Subset&lt;/a>&lt;/h3>
+&lt;h3 id="dp-bitmask--subset">&lt;a href="../t/dp-bitmask">DP Bitmask / Subset&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>&lt;a href="https://leetcode.com/discuss/general-discussion/1125779/dynamic-programming-on-subsets-with-examples-explained">Leetcode Post&lt;/a>&lt;/li>
 &lt;/ul>
