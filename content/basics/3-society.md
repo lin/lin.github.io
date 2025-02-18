@@ -1,5 +1,9 @@
 ## 群体
 
+collective consensus and interactions
+
+Courtesy and Scam
+
 ### 小范围的互助
 
 ### 范围大了就变了
@@ -25,6 +29,20 @@ You may not care about politics, they care about you.
 不平衡的交换，一方是盗贼，一方是奴役
 
 ### 偷盗
+
+Steal and Cheat
+
+### 每个人都想做贼
+
+当贼光荣的集体夙愿
+
+### 普通百姓的金色手铐
+
+### 义和团式的宗教狂热
+
+So easy to slide back to darkness. our critical faculties in decline, unable to distinguish between what feels good and what's true, we slide, almost without noticing, back into superstition and darkness.
+
+Simple (sometimes wrong) solutions with extremely high cost. (Nazis, central planning)
 
 #### 马太效应和阶级的建立
 

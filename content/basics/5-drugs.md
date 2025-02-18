@@ -1,3 +1,16 @@
+## 虚荣和情绪化
+
+We have Paleolithic emotions, medieval institutions and godlike technology. 
+
+Until some point, it's all about money. 
+
+Until some point, it's all about intelligence.
+
+Until some point, it's all about emotions.
+
+manipulated by emotional illusion.
+
+The Show Chaser, what drives people to unintentional place
 
 割喉降血压
 
@@ -18,6 +31,7 @@
 ### 不让情绪干扰进展
 
 Be addictive to progressions, and be alert to emotions.
+
 
 #### 专注当下，珍惜今日
 
@@ -50,6 +64,8 @@ arrogant intellectual
 #### 伟大指的是斜率，而不是位移
 
 守着过往的成就而鸣鸣得意
+
+Not a person full of luck, but a person full of characters.
 
 ### 多样性
 
