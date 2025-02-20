@@ -22,6 +22,8 @@ money and burdens
 
 Collective curiosity
 
+Facebook: algorithm (content)
+
 ### 先讨论钱，直到不用
 
 If you don't own money, money might own you.
