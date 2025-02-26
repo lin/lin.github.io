@@ -8,12 +8,6 @@ type: "page"
 | One Life               | Three Goals                                   | Due               |             |
 |:-----------------------|:----------------------------------------------|:------------------|:------------|
 | One EdTech Company     |  [Albert Education](./edu)                     | 2029年            | Easy & Fun |
-
-## Future Goals
-
-| One Life               | Three Goals                                   | Due               |             |
-|:-----------------------|:----------------------------------------------|:------------------|:------------|
-| One AGI Paper          |  [A Theory of Intelligence](./ai)              |                   | Solving Machine |
 | One Philosophy Book    |  [An Introduction to Life](./life)             |                   | CS 498     |
 
 ## Principles
@@ -48,3 +42,4 @@ type: "page"
 1. 书法，日语，古典诗词
 1. crypto，ai, solving machine
 1. history, economics, politics
+1. One AGI Paper,  [A Theory of Intelligence](./ai)

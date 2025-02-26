@@ -1,5 +1,7 @@
 ## 虚荣和情绪化
 
+Emotional Drugs
+
 We have Paleolithic emotions, medieval institutions and godlike technology. 
 
 Until some point, it's all about money. 
