@@ -913,7 +913,283 @@ $$
 &lt;p>孤傲是黑夜的光，前行是脚下的路。&lt;/p>
 &lt;p>目有清泉柔似铁，胸流大气落缠绵。坦荡行大道，潇洒此一遭。&lt;/p>
 &lt;p>大路何漫漫，而大抵今日才刚刚启程，但不论前方路途其何，在我身边决不会缺了这一曲曲沁心的天乐，这一曲曲沁心的轻之灵之韵。&lt;/p></description></item><item><title>我的18周岁生日</title><link>https://yingkui.com/18/</link><pubDate>Thu, 09 Aug 2007 00:00:00 +0000</pubDate><guid>https://yingkui.com/18/</guid><description>&lt;p>今天是农历六廿五，而且是07年的六廿五。过了今日我就真正的成年了。&lt;/p>
-&lt;p>昨天下午4时为了生日我急忙从大连赶回。今天早晨又到一中取回了通知书，这也就彻底的标志我高中生活的结束。&lt;/p></description></item><item><title/><link>https://yingkui.com/2023/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2023/</guid><description/></item><item><title/><link>https://yingkui.com/agi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/agi/</guid><description>&lt;h2 id="智力要素文章版">智力要素（文章版）&lt;/h2>
+&lt;p>昨天下午4时为了生日我急忙从大连赶回。今天早晨又到一中取回了通知书，这也就彻底的标志我高中生活的结束。&lt;/p></description></item><item><title/><link>https://yingkui.com/2023/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2023/</guid><description/></item><item><title/><link>https://yingkui.com/3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3/</guid><description>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+ &lt;meta charset="utf-8">
+ &lt;title>3D Phenol Molecule with Three.js&lt;/title>
+ &lt;style>
+ body { margin: 0; overflow: hidden; background-color: #f0f0f0; }
+ canvas { display: block; }
+ #info {
+ position: absolute;
+ top: 10px;
+ width: 100%;
+ text-align: center;
+ color: #000;
+ font-family: Arial, sans-serif;
+ z-index: 100;
+ text-shadow: 0 0 5px white;
+ }
+ &lt;/style>
+&lt;/head>
+&lt;body>
+ &lt;div id="info">3D Phenol Molecule&lt;br>Click and drag to rotate. Scroll to zoom.&lt;/div>
+ &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js">&lt;/script>
+ &lt;script>
+ // Main Three.js code
+ let scene, camera, renderer;
+ let controls;
+
+ function init() {
+ // Create scene
+ scene = new THREE.Scene();
+ scene.background = new THREE.Color(0xf0f0f0);
+ 
+ // Create camera
+ camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+ camera.position.z = 8;
+ 
+ // Create renderer
+ renderer = new THREE.WebGLRenderer({ antialias: true });
+ renderer.setSize(window.innerWidth, window.innerHeight);
+ renderer.setPixelRatio(window.devicePixelRatio);
+ document.body.appendChild(renderer.domElement);
+ 
+ // Add lighting
+ const ambientLight = new THREE.AmbientLight(0x404040);
+ scene.add(ambientLight);
+ 
+ const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.8);
+ directionalLight1.position.set(1, 1, 1);
+ scene.add(directionalLight1);
+ 
+ const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+ directionalLight2.position.set(-1, -1, -1);
+ scene.add(directionalLight2);
+ 
+ // Set up OrbitControls manually since we can't import it directly
+ setupOrbitControls();
+ 
+ // Create molecule
+ createPhenolMolecule();
+ 
+ // Handle window resize
+ window.addEventListener('resize', onWindowResize);
+ 
+ // Start animation loop
+ animate();
+ }
+ 
+ function createPhenolMolecule() {
+ // Materials for different atoms
+ const carbonMaterial = new THREE.MeshPhongMaterial({ 
+ color: 0x444444, 
+ specular: 0x888888,
+ shininess: 100
+ });
+ 
+ const oxygenMaterial = new THREE.MeshPhongMaterial({ 
+ color: 0xff0000, 
+ specular: 0xffffff,
+ shininess: 100
+ });
+ 
+ const hydrogenMaterial = new THREE.MeshPhongMaterial({ 
+ color: 0xeeeeff, 
+ specular: 0xffffff,
+ shininess: 100
+ });
+ 
+ const bondMaterial = new THREE.MeshPhongMaterial({ 
+ color: 0x888888, 
+ specular: 0x222222,
+ shininess: 30
+ });
+ 
+ const oxygenBondMaterial = new THREE.MeshPhongMaterial({ 
+ color: 0xaa3333, 
+ specular: 0x222222,
+ shininess: 30
+ });
+ 
+ // Geometries for atoms
+ const carbonGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+ const oxygenGeometry = new THREE.SphereGeometry(0.45, 32, 32);
+ const hydrogenGeometry = new THREE.SphereGeometry(0.25, 32, 32);
+ 
+ // Create a group for the molecule
+ const moleculeGroup = new THREE.Group();
+ 
+ // Define atom positions
+ const C1 = new THREE.Vector3(0, 0, 0);
+ const C2 = new THREE.Vector3(1.2, 0.2, 0.3);
+ const C3 = new THREE.Vector3(1.5, 1.5, 0.1);
+ const C4 = new THREE.Vector3(0.6, 2.6, -0.2);
+ const C5 = new THREE.Vector3(-0.6, 2.4, -0.5);
+ const C6 = new THREE.Vector3(-0.9, 1.1, -0.3);
+ 
+ // Hydroxyl group
+ const O = new THREE.Vector3(-2.2, 0.9, -0.6);
+ 
+ // Hydrogen positions
+ const H1 = new THREE.Vector3(2.0, -0.6, 0.5); // On C2
+ const H2 = new THREE.Vector3(2.5, 1.7, 0.3); // On C3
+ const H3 = new THREE.Vector3(0.8, 3.6, -0.3); // On C4
+ const H4 = new THREE.Vector3(-1.3, 3.2, -0.8); // On C5
+ const HO = new THREE.Vector3(-2.8, 1.7, -0.8); // On O
+ 
+ // Add carbon atoms
+ const atomPositions = [C1, C2, C3, C4, C5, C6];
+ atomPositions.forEach(pos => {
+ const atom = new THREE.Mesh(carbonGeometry, carbonMaterial);
+ atom.position.copy(pos);
+ moleculeGroup.add(atom);
+ });
+ 
+ // Add oxygen atom
+ const oAtom = new THREE.Mesh(oxygenGeometry, oxygenMaterial);
+ oAtom.position.copy(O);
+ moleculeGroup.add(oAtom);
+ 
+ // Add hydrogen atoms
+ const hPositions = [H1, H2, H3, H4, HO];
+ hPositions.forEach(pos => {
+ const atom = new THREE.Mesh(hydrogenGeometry, hydrogenMaterial);
+ atom.position.copy(pos);
+ moleculeGroup.add(atom);
+ });
+ 
+ // Add bonds
+ addBond(moleculeGroup, C1, C2, bondMaterial);
+ addBond(moleculeGroup, C2, C3, bondMaterial);
+ addBond(moleculeGroup, C3, C4, bondMaterial);
+ addBond(moleculeGroup, C4, C5, bondMaterial);
+ addBond(moleculeGroup, C5, C6, bondMaterial);
+ addBond(moleculeGroup, C6, C1, bondMaterial);
+ addBond(moleculeGroup, C1, O, oxygenBondMaterial);
+ 
+ // Add hydrogen bonds (thinner)
+ addBond(moleculeGroup, C2, H1, bondMaterial, 0.07);
+ addBond(moleculeGroup, C3, H2, bondMaterial, 0.07);
+ addBond(moleculeGroup, C4, H3, bondMaterial, 0.07);
+ addBond(moleculeGroup, C5, H4, bondMaterial, 0.07);
+ addBond(moleculeGroup, O, HO, bondMaterial, 0.07);
+ 
+ // Center and rotate the molecule
+ moleculeGroup.position.set(0, -1.3, 0);
+ moleculeGroup.rotation.x = 0.2;
+ moleculeGroup.rotation.y = -0.5;
+ 
+ scene.add(moleculeGroup);
+ }
+ 
+ function addBond(group, start, end, material, radius = 0.1) {
+ const direction = new THREE.Vector3().subVectors(end, start);
+ const length = direction.length();
+ 
+ const bondGeometry = new THREE.CylinderGeometry(radius, radius, length, 16, 1);
+ const bond = new THREE.Mesh(bondGeometry, material);
+ 
+ // Position and orient the cylinder
+ const midpoint = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
+ bond.position.copy(midpoint);
+ 
+ // Orient the cylinder to point from start to end
+ if (direction.y > 0.99999) {
+ bond.quaternion.set(0, 0, 0, 1);
+ } else if (direction.y &lt; -0.99999) {
+ bond.quaternion.set(1, 0, 0, 0);
+ } else {
+ const axis = new THREE.Vector3().crossVectors(new THREE.Vector3(0, 1, 0), direction).normalize();
+ const radians = Math.acos(direction.y / length);
+ bond.quaternion.setFromAxisAngle(axis, radians);
+ }
+ 
+ group.add(bond);
+ }
+ 
+ function setupOrbitControls() {
+ // A simple implementation of OrbitControls
+ controls = {
+ rotateSpeed: 1.0,
+ zoomSpeed: 1.2,
+ target: new THREE.Vector3(),
+ update: function() {}
+ };
+ 
+ let isDragging = false;
+ let previousMousePosition = {
+ x: 0,
+ y: 0
+ };
+ 
+ document.addEventListener('mousedown', function(e) {
+ isDragging = true;
+ });
+ 
+ document.addEventListener('mousemove', function(e) {
+ const deltaMove = {
+ x: e.clientX - previousMousePosition.x,
+ y: e.clientY - previousMousePosition.y
+ };
+ 
+ if (isDragging) {
+ const deltaRotationQuaternion = new THREE.Quaternion()
+ .setFromEuler(new THREE.Euler(
+ toRadians(deltaMove.y * 0.5),
+ toRadians(deltaMove.x * 0.5),
+ 0,
+ 'XYZ'
+ ));
+ 
+ scene.quaternion.multiplyQuaternions(deltaRotationQuaternion, scene.quaternion);
+ }
+ 
+ previousMousePosition = {
+ x: e.clientX,
+ y: e.clientY
+ };
+ });
+ 
+ document.addEventListener('mouseup', function(e) {
+ isDragging = false;
+ });
+ 
+ // Zoom with scroll
+ document.addEventListener('wheel', function(e) {
+ e.preventDefault();
+ 
+ if (e.deltaY &lt; 0) {
+ camera.position.z -= 0.5;
+ } else {
+ camera.position.z += 0.5;
+ }
+ 
+ camera.position.z = Math.max(2, Math.min(20, camera.position.z));
+ });
+ 
+ function toRadians(angle) {
+ return angle * (Math.PI / 180);
+ }
+ }
+ 
+ function onWindowResize() {
+ camera.aspect = window.innerWidth / window.innerHeight;
+ camera.updateProjectionMatrix();
+ renderer.setSize(window.innerWidth, window.innerHeight);
+ }
+ 
+ function animate() {
+ requestAnimationFrame(animate);
+ renderer.render(scene, camera);
+ }
+ 
+ // Start the application
+ init();
+ &lt;/script>
+&lt;/body>
+&lt;/html></description></item><item><title/><link>https://yingkui.com/agi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/agi/</guid><description>&lt;h2 id="智力要素文章版">智力要素（文章版）&lt;/h2>
 &lt;ol>
 &lt;li>训练量少，找到特征&lt;/li>
 &lt;li>多个抽象层级的保存&lt;/li>
