@@ -24,6 +24,8 @@ type: "page"
 
 > 不要追求完美，找到问题的关键，集中力量，解决当下难题
 
+> Do things scary. Learn the hard way. Finish what you start.
+
 ## Facts
 
 - Pride is for low intelligence.
