@@ -680,7 +680,10 @@ B -&amp;gt; z.
 &lt;p>&lt;code>13, 0x000D&lt;/code> is Carriage Return (CR) &lt;code>\r&lt;/code>&lt;/p>
 &lt;p>Among the first 128, the next 96 are basic latin, notably:&lt;/p>
 &lt;p>&lt;code>32, 0x0020&lt;/code> is space, &lt;code> &lt;/code>. One of the most important charcodes.&lt;/p>
-&lt;p>&lt;code>48, 0x0030&lt;/code> is 0, between space and zero are: &lt;code>!&amp;quot;#$%&amp;amp;'()*+,-./&lt;/code>&lt;/p></description></item><item><title/><link>https://yingkui.com/cs/notes/algorithms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/notes/algorithms/</guid><description>&lt;ol>
+&lt;p>&lt;code>48, 0x0030&lt;/code> is 0, between space and zero are: &lt;code>!&amp;quot;#$%&amp;amp;'()*+,-./&lt;/code>&lt;/p></description></item><item><title/><link>https://yingkui.com/cs/next/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/next/1/</guid><description>&lt;h2 id="nextjs">Next.js&lt;/h2>
+&lt;ol>
+&lt;li>&lt;code>npm install -g pnpm&lt;/code>&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/notes/algorithms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/notes/algorithms/</guid><description>&lt;ol>
 &lt;li>
 &lt;p>insertion sort&lt;/p>
 &lt;/li>
