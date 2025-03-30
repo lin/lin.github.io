@@ -8,6 +8,8 @@ Danger lies in indistinguishable situations, at least indistinguishable to you.
 
 Many wisdom is to distinguish two indistinguishable things or make two distinguishable things indistinguishable.
 
+孔乙己的无能，发财的代价
+
 ### 暴力简化 / Increase vocabulary
 
 ### 批判性思维 / Large Context Window

@@ -34,4 +34,5 @@ isCJKLanguage: true
 - 2024: [《感时》](./ganshi)
 - 2024: [《冬至》](./dongzhi)
 - 2024: [《知其不可而为》](./buke)
+- 2025: [《更衣》](./change)
 
