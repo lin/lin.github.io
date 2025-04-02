@@ -68,8 +68,6 @@ date: 2025-03-30
   <figcaption>阪神梅田本店</figcaption>
 </figure>
 
-
-
 <figure>
   <img src="../img/anime/donki.PNG" style="max-height:700px">
   <figcaption>ドン・キホーテ 梅田本店</figcaption>
@@ -78,6 +76,11 @@ date: 2025-03-30
 <figure>
   <img src="../img/anime/kyotoeki.PNG" style="max-height:700px">
   <figcaption>京都駅</figcaption>
+</figure>
+
+<figure>
+  <img src="../img/anime/kiyomizu2.PNG" style="max-height:700px">
+  <figcaption>清水寺</figcaption>
 </figure>
 
 
