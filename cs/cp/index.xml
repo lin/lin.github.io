@@ -1,140 +1,132 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/cs/cp/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/cs/cp/index.xml" rel="self" type="application/rss+xml"/><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/06-15-2023/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/06-15-2023/</guid><description>&lt;h3 id="cf-edu-150">CF Edu 150&lt;/h3>
-&lt;p>Can&amp;rsquo;t solve the problem because I didn&amp;rsquo;t realize negative test cases.&lt;/p>
-&lt;h3 id="codechef-94">Codechef 94&lt;/h3>
-&lt;p>Was chatting with friends while competing, could solve that 2204 problem if another 5 minutes was given.&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/06-07-2022/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/06-07-2022/</guid><description>&lt;h3 id="codechef-palindrome-xor">Codechef Palindrome XOR&lt;/h3>
-&lt;p>Attended Codechef after a day of hard work, unable to solve the first problem due to miscalculation.&lt;/p>
-&lt;p>I thought &lt;code>O(Prime Number Count * N)&lt;/code> which I correctly estimated as &lt;code>10**7&lt;/code> is TLE, so I rejected the idea.&lt;/p>
-&lt;h3 id="codeforces-div-3">Codeforces DIV 3&lt;/h3>
-&lt;p>This contest is basically Leetcode-like, sliding window and binary search. And I got my best performance here.&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/06-05-2023/</link><pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/06-05-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/06-04-2023/</link><pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/06-04-2023/</guid><description>&lt;h3 id="the-week-of-disasters">The Week of Disasters&lt;/h3>
-&lt;ol>
-&lt;li>I solved Leetcode WC 348 Q3 in 5 mins after corrected my misunderstanding, I thought I have to sum up every query. Should be in top 1000.&lt;/li>
-&lt;li>So tired when solving CF 876, solving Q1 after 20+ minutes.&lt;/li>
-&lt;li>Doing pretty good at ABC 304, but that contest ends up unrated due to slow scoring.&lt;/li>
-&lt;li>I am getting negative delta at LC for three contests. Wish myself luck for next week!&lt;/li>
-&lt;li>I can&amp;rsquo;t solve DIV2B for the very first time! (except for the rejudge and the second contest about input)&lt;/li>
-&lt;li>&lt;a href="https://codeforces.com/contest/1838/problem/B">B. Minimize Permutation Subarrays&lt;/a>, I spent 115 minutes for this problem. And the solution is quite simple. It seems like if I don&amp;rsquo;t realize the trick, I may solve this problem for another two hours. What a sad day!&lt;/li>
-&lt;/ol>
-&lt;h3>&lt;/h3></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10">Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4>
-&lt;ul>
-&lt;li>$2^{30} \approx 10^9$&lt;/li>
-&lt;li>$\log_2 10^9 \approx 30$&lt;/li>
-&lt;li>$\log_2 10^8 \approx 27$&lt;/li>
-&lt;li>$\log_2 10^7 \approx 23$&lt;/li>
-&lt;li>$\log_2 10^6 \approx 20$&lt;/li>
-&lt;li>$\log_2 10^5 \approx 17$&lt;/li>
-&lt;li>$\log_2 10^4 \approx 13$&lt;/li>
-&lt;li>$\log_2 10^3 \approx 10$&lt;/li>
-&lt;li>$2^{10} \approx 10^3$&lt;/li>
-&lt;/ul></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-27-2023/</link><pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-27-2023/</guid><description>&lt;p>Both Q4 from this week is at the boundary of my ability.&lt;/p>
-&lt;h3 id="biweekly-contest-105---q4---reached-917--921">Biweekly Contest 105 - Q4 - reached 917 / 921&lt;/h3>
-&lt;p>&lt;a href="https://leetcode.com/contest/biweekly-contest-105/problems/greatest-common-divisor-traversal/">2709. Greatest Common Divisor Traversal&lt;/a>&lt;/p>
-&lt;p>I know this is DSU with primes for sure in the first minute. But I couldn&amp;rsquo;t find it out using the same technique as in the sieve of Eratosthenes.&lt;/p>
-&lt;p>Actually I have solved similar problems before:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://leetcode.com/problems/sum-of-floored-pairs/">1862. Sum of Floored Pairs&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/number-of-different-subsequences-gcds/">1819. Number of Different Subsequences GCDs&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Next time, when I see GCD problems, I will think about harmonic series first.&lt;/p></description></item><item><title>刷题一周年纪念</title><link>https://yingkui.com/cs/cp/05-24-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-24-2023/</guid><description>&lt;h2 id="当时觉得很难的题目">当时觉得很难的题目&lt;/h2>
-&lt;h4 id="1---binary-search-33-search-in-rotated-sorted-array">1 - Binary Search &lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">33. Search in Rotated Sorted Array&lt;/a>&lt;/h4>
-&lt;p>简化之后的题：&lt;a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">153. Find Minimum in Rotated Sorted Array&lt;/a>，今日用时12分钟，也不是很快，相当于1550的题&lt;/p>
-&lt;p>在做完上题之后，&lt;a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">本题&lt;/a> 今日用时8分钟，还是容易出bug，因为逻辑比较脆弱&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-23-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-23-2023/</guid><description>&lt;p>今天是开始刷题一周年纪念日，就从今天开始记录一些总结。&lt;/p>
-&lt;h3 id="1---3d-dp-with-small-numbers">1 - 3D dp with small numbers&lt;/h3>
-&lt;p>&lt;a href="https://leetcode.com/problems/number-of-distinct-roll-sequences/">Leetcode 2318. Number of Distinct Roll Sequences&lt;/a>&lt;/p>
-&lt;p>很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code>6*6*n&lt;/code> 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sum">1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/">1. Two Sum&lt;/a>&lt;/h3>
-&lt;p>Normally, we may use brute force to find the solution.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Solution&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">twoSum&lt;/span>(self, nums: List[int], target: int) &lt;span style="color:#f92672">-&amp;gt;&lt;/span> List[int]:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> n &lt;span style="color:#f92672">=&lt;/span> len(nums)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> i &lt;span style="color:#f92672">in&lt;/span> range(n):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span> j &lt;span style="color:#f92672">in&lt;/span> range(i&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>, n):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> nums[i] &lt;span style="color:#f92672">+&lt;/span> nums[j] &lt;span style="color:#f92672">==&lt;/span> target:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> [i, j]
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>But for &lt;code>i&lt;/code> after first &lt;code>j&lt;/code>, we have seen them and we can remember them while we progress to higher &lt;code>i&lt;/code>.&lt;/p>
-&lt;p>Or we can precompute the position for a seen number&lt;/p></description></item><item><title/><link>https://yingkui.com/cs/cp/gaokao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/gaokao/</guid><description>&lt;p>&lt;a href="https://atcoder.jp/contests/abc307/tasks/abc307_e">https://atcoder.jp/contests/abc307/tasks/abc307_e&lt;/a>&lt;/p></description></item><item><title/><link>https://yingkui.com/cs/cp/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/readme/</guid><description>&lt;h1 id="learning-the-basics-of-cs">Learning the Basics of CS&lt;/h1>
-&lt;hr>
-&lt;p>:books: Books, :mortar_board: Formal Courses, :tv: YouTube Videos, :male_detective: Cracking Source Codes&lt;/p>
-&lt;hr>
-&lt;h2 id="core-goals">Core Goals:&lt;/h2>
-&lt;p>Internalize the following subjects:&lt;/p>
-&lt;ol>
-&lt;li>:balance_scale: - Mathematical Logic&lt;/li>
-&lt;li>:abacus:	- Theory of Computation&lt;/li>
-&lt;li>:electric_plug: - Computer Systems&lt;/li>
-&lt;li>:robot: - Artificial Intelligence&lt;/li>
-&lt;/ol>
-&lt;h2 id="stage-i-mathematical-logic--computation-theory">Stage I: Mathematical Logic &amp;amp; Computation Theory&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>:exclamation: :books: &lt;a href="https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X">Introduction to the Theory of Computation&lt;/a>, Feb. 2019, Sep. 2020&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>:exclamation: :books: &lt;a href="https://www.amazon.com/Merrie-Bergmann-Associated-Professor-Emeritus/dp/0078038413">The Logic Book&lt;/a>, Nov. 2017, Jul. 2019, Sep. 2020&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>:books: &lt;a href="https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055/">The Annotated Turing&lt;/a>, Nov. 2017, Sep. 2020&lt;/p></description></item><item><title>题型总结</title><link>https://yingkui.com/cs/cp/topic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/topic/</guid><description>&lt;h3 id="sort">&lt;a href="../t/sort">Sort&lt;/a>&lt;/h3>
-&lt;ol>
-&lt;li>Merge Sort and Quick Sort&lt;/li>
-&lt;li>Heap&lt;/li>
-&lt;li>&lt;a href="../t/sort-key">Sort Keys&lt;/a>&lt;/li>
-&lt;li>SortedContainers / SortedList&lt;/li>
-&lt;/ol>
-&lt;h3 id="prime">Prime&lt;/h3>
-&lt;ol>
-&lt;li>Prime factorization&lt;/li>
-&lt;li>Sieve of Eratosthenes&lt;/li>
-&lt;/ol>
-&lt;h3 id="disjoint-set">Disjoint Set&lt;/h3>
-&lt;ol>
-&lt;li>Groups&lt;/li>
-&lt;li>Loop check&lt;/li>
-&lt;/ol>
-&lt;h3 id="intervals--range">Intervals / Range&lt;/h3>
-&lt;ol>
-&lt;li>merge / insert / remove&lt;/li>
-&lt;li>line sweeping&lt;/li>
-&lt;/ol>
-&lt;h3 id="dp">DP&lt;/h3>
-&lt;ol>
-&lt;li>Knapsack&lt;/li>
-&lt;li>Select / Skip&lt;/li>
-&lt;li>Coin Change&lt;/li>
-&lt;/ol>
-&lt;h3 id="dp-knapsack">DP Knapsack&lt;/h3>
-&lt;ol>
-&lt;li>&lt;/li>
-&lt;/ol>
-&lt;h3 id="heap">Heap&lt;/h3>
-&lt;h3 id="on-subarray">O(n) Subarray&lt;/h3>
-&lt;ol>
-&lt;li>Mono Stack&lt;/li>
-&lt;li>Prev / Next Smaller / Greater&lt;/li>
-&lt;li>Contribution for one element&lt;/li>
-&lt;/ol>
-&lt;h3 id="subsequence">Subsequence&lt;/h3>
-&lt;h3 id="partition">Partition&lt;/h3>
-&lt;h3 id="bitmask">Bitmask&lt;/h3>
-&lt;h3 id="dp-bitmask--subset">&lt;a href="../t/dp-bitmask">DP Bitmask / Subset&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://leetcode.com/discuss/general-discussion/1125779/dynamic-programming-on-subsets-with-examples-explained">Leetcode Post&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="trees">Trees&lt;/h3>
-&lt;ol>
-&lt;li>use stack for dfs&lt;/li>
-&lt;li>edges to tree graph&lt;/li>
-&lt;/ol>
-&lt;h3 id="palindrome">Palindrome&lt;/h3>
-&lt;ol>
-&lt;li>dp for substring check&lt;/li>
-&lt;/ol>
-&lt;h3 id="graphs">Graphs&lt;/h3>
-&lt;ol>
-&lt;li>Topological Sort (DAG)&lt;/li>
-&lt;li>Dijkstra&lt;/li>
-&lt;li>&lt;a href="https://leetcode.com/problems/is-graph-bipartite/">Bipartite Checks&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;h3 id="sliding-window">Sliding Window&lt;/h3>
-&lt;h3 id="array">Array&lt;/h3>
-&lt;ol>
-&lt;li>K Sum&lt;/li>
-&lt;/ol></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yingkui</title>
+    <link>https://yingkui.com/cs/cp/</link>
+    <description>Recent content on Yingkui</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Yingkui.com All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/cs/cp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/06-15-2023/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/06-15-2023/</guid>
+      <description>CF Edu 150 Can&amp;rsquo;t solve the problem because I didn&amp;rsquo;t realize negative test cases. Codechef 94 Was chatting with friends while competing, could solve that 2204 problem if another 5 minutes was given.</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/06-07-2022/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/06-07-2022/</guid>
+      <description>Codechef Palindrome XOR Attended Codechef after a day of hard work, unable to solve the first problem due to miscalculation. I thought O(Prime Number Count * N) which I correctly estimated as 10**7 is TLE, so I rejected the idea. Codeforces DIV 3 This contest is basically Leetcode-like, sliding window and binary search. And I got my best performance here.</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/06-05-2023/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/06-05-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/06-04-2023/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/06-04-2023/</guid>
+      <description>The Week of Disasters I solved Leetcode WC 348 Q3 in 5 mins after corrected my misunderstanding, I thought I have to sum up every query. Should be in top 1000. So tired when solving CF 876, solving Q1 after 20+ minutes. Doing pretty good at ABC 304, but that contest ends up unrated due to slow scoring. I am getting negative delta at LC for three contests. Wish myself</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/05-30-2023/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-30-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/05-29-2023/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-29-2023/</guid>
+      <description>Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10 $2^{30} \approx 10^9$ $\log_2 10^9 \approx 30$ $\log_2 10^8 \approx 27$ $\log_2 10^7 \approx 23$ $\log_2 10^6 \approx 20$ $\log_2 10^5 \approx 17$ $\log_2 10^4 \approx 13$ $\log_2 10^3 \approx 10$ $2^{10} \approx 10^3$</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/05-27-2023/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-27-2023/</guid>
+      <description>Both Q4 from this week is at the boundary of my ability. Biweekly Contest 105 - Q4 - reached 917 / 921 2709. Greatest Common Divisor Traversal I know this is DSU with primes for sure in the first minute. But I couldn&amp;rsquo;t find it out using the same technique as in the sieve of Eratosthenes. Actually I have solved similar problems before: 1862. Sum of Floored Pairs 1819. Number</description>
+    </item>
+    
+    <item>
+      <title>刷题一周年纪念</title>
+      <link>https://yingkui.com/cs/cp/05-24-2023/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-24-2023/</guid>
+      <description>当时觉得很难的题目 1 - Binary Search 33. Search in Rotated Sorted Array 简化之后的题：153. Find Minimum in Rotated Sorted Array，今日用时12分钟，也不是很快，相当于1550的题 在做完上题</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/05-23-2023/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-23-2023/</guid>
+      <description>今天是开始刷题一周年纪念日，就从今天开始记录一些总结。 1 - 3D dp with small numbers Leetcode 2318. Number of Distinct Roll Sequences 很快就想到了要用dp，也找到了关系式，但没有很快意识到原来</description>
+    </item>
+    
+    <item>
+      <title>每日刷题总结</title>
+      <link>https://yingkui.com/cs/cp/05-25-2023/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/05-25-2023/</guid>
+      <description>1 - Precomputation: 1. Two Sum Normally, we may use brute force to find the solution. class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: n = len(nums) for i in range(n): for j in range(i+1, n): if nums[i] + nums[j] == target: return [i, j] But for i after first j, we have seen them and we can remember them while we progress to higher i. Or we</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/cs/cp/gaokao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/gaokao/</guid>
+      <description>https://atcoder.jp/contests/abc307/tasks/abc307_e</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yingkui.com/cs/cp/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/readme/</guid>
+      <description>Learning the Basics of CS  :books: Books, :mortar_board: Formal Courses, :tv: YouTube Videos, :male_detective: Cracking Source Codes
+ Core Goals: Internalize the following subjects:
+ :balance_scale: - Mathematical Logic :abacus:	- Theory of Computation :electric_plug: - Computer Systems :robot: - Artificial Intelligence  Stage I: Mathematical Logic &amp;amp; Computation Theory   :exclamation: :books: Introduction to the Theory of Computation, Feb. 2019, Sep. 2020
+  :exclamation: :books: The Logic Book, Nov.</description>
+    </item>
+    
+    <item>
+      <title>题型总结</title>
+      <link>https://yingkui.com/cs/cp/topic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yingkui.com/cs/cp/topic/</guid>
+      <description>Sort Merge Sort and Quick Sort Heap Sort Keys SortedContainers / SortedList Prime Prime factorization Sieve of Eratosthenes Disjoint Set Groups Loop check Intervals / Range merge / insert / remove line sweeping DP Knapsack Select / Skip Coin Change DP Knapsack Heap O(n) Subarray Mono Stack Prev / Next Smaller / Greater Contribution for one element Subsequence Partition Bitmask DP Bitmask / Subset Leetcode Post Trees use stack for</description>
+    </item>
+    
+  </channel>
+</rss>
