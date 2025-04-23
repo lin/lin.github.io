@@ -5,10 +5,15 @@ theme = "hugo-ink"
 
 copyright = "© Copyright Yingkui.com All Rights Reserved"
 
-# [[menu.main]]
-# name = "随想"
-# url = "/"
-# weight = 1
+[[menu.main]]
+name = "Essays"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Pages"
+url = "/single"
+weight = 2
 
 # [[menu.main]]
 # name = "《教学》"
@@ -31,7 +36,7 @@ copyright = "© Copyright Yingkui.com All Rights Reserved"
 # weight = 8
 
 [params]
-    subtitle = "Essays"
+    subtitle = "A Curious Mind."
     avatar = "/logo-ai.jpg"
     customCSS = "css/custom.css"  # Custom CSS applied to default styles.
     mainSections = ['posts']
@@ -54,7 +59,7 @@ copyright = "© Copyright Yingkui.com All Rights Reserved"
 
 [permalinks]
   posts = '/:filename'
-  notes = '/notes/:filename'
+  pages = '/:filename'
 
 [markup.goldmark]
     [markup.goldmark.renderer]

@@ -14,7 +14,7 @@ If you mention that year, what I remember most.
 | 1994 | Shawshank Redemption                       |
 | 1995 | Toy Story                                  |
 | 1996 | Pokémon                                    |
-| 1997 | Asian Financial Crisis                     | 
+| 1997 | Handover of Hong Kong                      | 
 | 1998 | Google                                     | 
 | 1999 | The Matrix                                 | 
 | 2000 | Dot-com Bubble                             | 
@@ -33,7 +33,7 @@ If you mention that year, what I remember most.
 | 2013 | Breaking Bad                               |    
 | 2014 | Interstellar                               |            
 | 2015 | CRISPR                                     |   
-| 2016 | Brexit Referendum                          |   
+| 2016 | U.S. Presidential Election                 |   
 | 2017 | The Breath of the Wild                     |    
 | 2018 | MeToo                                      |   
 | 2019 | Image of a Black Hole                      |   

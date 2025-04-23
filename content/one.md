@@ -7,10 +7,16 @@ type: "page"
 
 | One Life               | Three Goals                                   | Due               |             |
 |:-----------------------|:----------------------------------------------|:------------------|:------------|
-| One EdTech Company     |  [Albert Education](./edu)                     | 2029年            | Easy & Fun |
-| One Philosophy Book    |  [An Introduction to Life](./life)             |                   | CS 498     |
+| One EdTech Company     |  [Albert Education](./edu)                     | 2029年            | Fun & Solid |
+| One Philosophy Book    |  [An Introduction to Life](./life)             |                   | CS 498      |
 
-## Principles
+## Hell & Fast & Calm
+
+早规划，先吃屎；八点始，十点止
+
+一章书，三篇文；多自律，少情绪
+
+Keep Shipping. Keep Failing.
 
 > 担虑功名老病死，不如今日快完工
 

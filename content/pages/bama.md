@@ -4,7 +4,6 @@ isCJKLanguage: true
 draft: true
 ---
 
-
 <img src="../img/childhood/1983-mom-1.jpg" height="300">
 
 <img src="../img/childhood/1983-mom-2.jpg" height="300">

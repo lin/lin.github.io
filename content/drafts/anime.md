@@ -79,7 +79,7 @@ date: 2025-03-30
 </figure>
 
 <figure>
-  <img src="../img/anime/kiyomizu2.PNG" style="max-height:700px">
+  <img src="../img/anime/kiyomizu2.png" style="max-height:700px">
   <figcaption>清水寺</figcaption>
 </figure>
 

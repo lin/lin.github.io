@@ -1,5 +1,5 @@
 ---
-title: "克音的童年往事（1989-1998）"
+title: "童年（1989-1998）"
 date: 1998-06-20
 isCJKLanguage: true
 draft: true

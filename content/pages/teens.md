@@ -1,5 +1,5 @@
 ---
-title: "绥棱绥化的少年时代（1998-2007）"
+title: "青少年（2000-2007）"
 date: 2007-08-07
 isCJKLanguage: true
 draft: true
