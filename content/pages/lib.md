@@ -48,9 +48,11 @@ Presence on this list does not imply endorsement.
 | 📒   | Life & Work Principles (Ray Dalio)   |
 | 📒   | Outliers   |
 | 📒   | Pour Your Heart Into It   |
+| 📒   | The Wealth of Nations   |
 | 📒   | What I wish to know when I was 20   |
+| 📒   | Principles of Economics   |
 
-## 行为经济
+## 行为心理
 
 | 格式 | 名称                                                      | 
 |:----|:--------------------------------------------------------|
@@ -66,6 +68,9 @@ Presence on this list does not imply endorsement.
 |📒    | Amusing Ourselves to Death                |
 |📒    | 数学领域的发明心理学               |
 |🔥    |Behavioural Economics: A Very Short Introduction|
+|📒    | 数学领域的发明心理学               |
+|📒    | Blink              |
+
 
 ## 政治历史
 
@@ -111,11 +116,12 @@ Presence on this list does not imply endorsement.
 | 📒   | [Introduction to the Theory of Computation](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/) |
 | 📒   | [A New Kind of Science](https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088) |
 | 📒   | [Probably Approximately Correct](https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465032710) |
-| 📒   | [The Master Algorithm](https://www.amazon.com/dp/B012271YB2/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) |
+| 📒   | [The Master Algorithm](https://www.amazon.com/dp/B012271YB2/) |
 | 📒   | [The Annotated Turing](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055) |
 | 📒   | [Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/dp/B00JDMPOK2/) |
-| 📒   | [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618?ref_=fsclp_pl_dp_1) |
-
+| 📒   | [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) |
+| 📒   | Linear Algebra (Gilbert)                  |
+| 📒   | [A Course in Mathematical Logic](https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302)                    |
 
 ## 文学小说
 
@@ -169,4 +175,6 @@ Presence on this list does not imply endorsement.
 | 📒   |苏菲的世界                |
 | 📒   |Beyond good and evil                                          |
 
-Last updated 2025/04/23
+---
+
+_Last updated 2025/04/23_
