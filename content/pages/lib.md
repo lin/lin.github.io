@@ -71,13 +71,17 @@ Presence on this list does not imply endorsement.
 |📒    | 数学领域的发明心理学               |
 |📒    | Blink              |
 
-
 ## 政治历史
 
 | 格式  | 名称                                                      | 
 |:-----|:--------------------------------------------------------|
 | 📒   |政治秩序的起源                                            |
-| 📒   |独裁者手册                                             |
+| 🔥   |文明的冲突与世界秩序的重建                              |
+| 🔥   |古代人的自由与现代人的自由                             |
+| 🔥   |独裁者手册                                             |
+| 🔥   |通往奴役之路                                            |
+| 🔥   |自由秩序原理                                           |
+| 🔥   |致命的自负                                           |
 | 🔥   |万历十五年                                             |
 | 🔥   |制度基因                                            |
 | 🔥   |Why Nations Fail                                            |
@@ -93,6 +97,11 @@ Presence on this list does not imply endorsement.
 | 📒   |Western Civilization (Jackson J. Spielvogel)             |
 | 📒   |理解和改变世界                                        |
 | 📒   |世界是概率的（伊藤）                                        |
+| 🔥   |Enlightenment Now                           |
+| 📒   |历史三调 作为事件、经历和神话的义和团                        |
+| 🔥   |晚清四大谴责小说                        |
+| 🔥   |走出帝制                     |
+
 
 ## 数理科技
 
@@ -122,6 +131,8 @@ Presence on this list does not imply endorsement.
 | 📒   | [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) |
 | 📒   | Linear Algebra (Gilbert)                  |
 | 📒   | [A Course in Mathematical Logic](https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302)                    |
+| 🔥   | Sync: How Order Emerges From Chaos|
+
 
 ## 文学小说
 
@@ -155,12 +166,14 @@ Presence on this list does not imply endorsement.
 | 📒   |堂吉诃德                 |
 | 📒   |茶花女                  |
 | 🔥   |Ready Player One                       |
+| 🔥   |美丽新世界                    |
 
 ##  提高哲学
 
 | 格式 | 名称                                                      | 
 |:----|:--------------------------------------------------------|
 | 🔥   |How to Talk to Anyone                                 |
+| 🔥   |Atomic Habits                                 |
 | 📒   |The Willpower Instinct                    |
 | 📒   |The Power of Habit                   |
 | 📒   |Eat that Frog                   |
