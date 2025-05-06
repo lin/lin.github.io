@@ -8,6 +8,9 @@ Three Units per Week, Two days for One Unit
 
 |时间      |进度                                        |备注                                     |
 |:---------|:------------------------------------------|:----------------------------------------|
+|2025-05-04|  578 Days, 153364 xp, 9815 Gems           |      3-47-1                             |
+|2025-05-04|  5000 XP in timed challenges              |                                         |
+|2025-04-29|  200 Legendary (50 to go)                 |                                         |
 |2025-04-23|  566 Days, 146273 xp, 16781 Gems          |       3-39-1                            |
 |2025-04-05|  40 Perfect Weeks                         |                                         |
 |2025-03-16|  528 Days, 132117 xp, 17569 Gems          |       3-39-1                            |
@@ -59,3 +62,26 @@ Three Units per Week, Two days for One Unit
 |**2021-02-19**| Start Japanese                          |                         |
 |2017-07-27| First time to use                             |                         |
 |2017-07-26| Day of Registration                                   |                         |
+
+
+## Year in Review
+
+![](../pages/img/duo2021.PNG)
+
+![](../pages/img/duo2022.jpeg)
+
+![](../pages/img/duo2023.JPG)
+
+![](../pages/img/duo2024.PNG)
+
+2021年，学了 5410 分钟
+
+2022年，学了 2270 分钟
+
+2023年，学了 1110 分钟
+
+2024年， 学了 2821 分钟
+
+共计 11611 分钟，193个半小时
+
+每天平均8分钟学习时长，达到了约N4的日语水平

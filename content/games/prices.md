@@ -2,7 +2,13 @@
 
 | 时间       | 游戏                                     | 价钱           |  折扣 | 用时| 
 |------------|-----------------------------------------|---------------:|:-----:|:-----:|
-| 11/28/2024 | Assassin's Creed Odyssey               | ¥ 29.80         |  90%  | 45h    |
+| 04/29/2025 | Total War: Napoleon - Definitive Edition  | ¥ 28.00       |  75%  |     |
+| 04/29/2025 | 逸剑风云决                               | ¥ 62.40         |  20%  |     |
+| 01/25/2025 | Humankind                               | ¥ 29.85         |  85%  |     |
+| 12/20/2024 | Mass Effect Legendary Edition           | ¥ 19.84         |  85%  |     |
+| 12/20/2024 | Assassin's Creed Origins                | ¥ 29.80         |  85%  |     |
+| 12/20/2024 | TCG Card Shop Simulator                 | ¥ 39.00         |  85%  |     |
+| 11/28/2024 | Assassin's Creed Odyssey                | ¥ 29.80         |  90%  | 45h    |
 | 11/28/2024 |  Hollow Knight                         | ¥ 29.00         |  50%  | 27h    |
 | 11/16/2024 | Half Life 2                             | ¥ 0.00         |  100%  |  13h    |
 | 11/16/2024 | Half Life                               | ¥ 3.70         |  90%  |  13h    |
