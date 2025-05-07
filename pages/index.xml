@@ -895,7 +895,140 @@ h3 {
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
+&lt;/table></description></item><item><title>CEFR Ranks</title><link>https://yingkui.com/cefr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cefr/</guid><description>&lt;div style='width:1200px;margin-left: -200px;'>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">CEFR&lt;/th>
+ &lt;th style="text-align: left">IELTS&lt;/th>
+ &lt;th style="text-align: left">TOEFL&lt;/th>
+ &lt;th style="text-align: left">duo&lt;/th>
+ &lt;th style="text-align: left">JLPT&lt;/th>
+ &lt;th style="text-align: left">CET&lt;/th>
+ &lt;th style="text-align: left">Vocab&lt;/th>
+ &lt;th style="text-align: left">title&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">A1&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">0-30 (3)&lt;/td>
+ &lt;td style="text-align: left">N5 (初上)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">900&lt;/td>
+ &lt;td style="text-align: left">新手 🥉 青铜I&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">A2&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">30-55 (4)&lt;/td>
+ &lt;td style="text-align: left">N4（初下）&lt;/td>
+ &lt;td style="text-align: left">中考 高分&lt;/td>
+ &lt;td style="text-align: left">1600&lt;/td>
+ &lt;td style="text-align: left">业余 🥉 青铜II&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B1&lt;/td>
+ &lt;td style="text-align: left">4.0&lt;/td>
+ &lt;td style="text-align: left">14-25&lt;/td>
+ &lt;td style="text-align: left">55-65 (6)&lt;/td>
+ &lt;td style="text-align: left">N3 (中上)&lt;/td>
+ &lt;td style="text-align: left">高考 120&lt;/td>
+ &lt;td style="text-align: left">3500&lt;/td>
+ &lt;td style="text-align: left">专业 🥈 白银I&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B1+&lt;/td>
+ &lt;td style="text-align: left">4.5&lt;/td>
+ &lt;td style="text-align: left">26-26&lt;/td>
+ &lt;td style="text-align: left">65-80&lt;/td>
+ &lt;td style="text-align: left">N2 (中下)&lt;/td>
+ &lt;td style="text-align: left">过四级&lt;/td>
+ &lt;td style="text-align: left">4000&lt;/td>
+ &lt;td style="text-align: left">专业 🥈 白银II&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B1+&lt;/td>
+ &lt;td style="text-align: left">5.0&lt;/td>
+ &lt;td style="text-align: left">37-41&lt;/td>
+ &lt;td style="text-align: left">80-90&lt;/td>
+ &lt;td style="text-align: left">N2 (中下)&lt;/td>
+ &lt;td style="text-align: left">四级 500&lt;/td>
+ &lt;td style="text-align: left">4500&lt;/td>
+ &lt;td style="text-align: left">专业 🥈 白银III&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B2&lt;/td>
+ &lt;td style="text-align: left">5.5&lt;/td>
+ &lt;td style="text-align: left">42-59&lt;/td>
+ &lt;td style="text-align: left">95-100 (8)&lt;/td>
+ &lt;td style="text-align: left">N2 (&amp;gt;112)&lt;/td>
+ &lt;td style="text-align: left">过五级&lt;/td>
+ &lt;td style="text-align: left">5000&lt;/td>
+ &lt;td style="text-align: left">专家 🏆 黄金I&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B2+&lt;/td>
+ &lt;td style="text-align: left">6.0&lt;/td>
+ &lt;td style="text-align: left">60-78&lt;/td>
+ &lt;td style="text-align: left">105-110&lt;/td>
+ &lt;td style="text-align: left">N1 (中下)&lt;/td>
+ &lt;td style="text-align: left">过六级&lt;/td>
+ &lt;td style="text-align: left">6000&lt;/td>
+ &lt;td style="text-align: left">专家 🏆 黄金II&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B2+&lt;/td>
+ &lt;td style="text-align: left">6.5&lt;/td>
+ &lt;td style="text-align: left">79-93&lt;/td>
+ &lt;td style="text-align: left">120-125&lt;/td>
+ &lt;td style="text-align: left">N1 (&amp;lt;142)&lt;/td>
+ &lt;td style="text-align: left">雅思&lt;/td>
+ &lt;td style="text-align: left">7000&lt;/td>
+ &lt;td style="text-align: left">专家 🏆 黄金III&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">C1&lt;/td>
+ &lt;td style="text-align: left">7.0&lt;/td>
+ &lt;td style="text-align: left">94-101&lt;/td>
+ &lt;td style="text-align: left">130-135&lt;/td>
+ &lt;td style="text-align: left">N1 (&amp;gt;142)&lt;/td>
+ &lt;td style="text-align: left">托福&lt;/td>
+ &lt;td style="text-align: left">8000&lt;/td>
+ &lt;td style="text-align: left">大师 💎 钻石I&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">C1+&lt;/td>
+ &lt;td style="text-align: left">7.5&lt;/td>
+ &lt;td style="text-align: left">102-109&lt;/td>
+ &lt;td style="text-align: left">140-145&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">过七级&lt;/td>
+ &lt;td style="text-align: left">10000&lt;/td>
+ &lt;td style="text-align: left">大师 💎 钻石II&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">C2&lt;/td>
+ &lt;td style="text-align: left">8.0&lt;/td>
+ &lt;td style="text-align: left">110-117&lt;/td>
+ &lt;td style="text-align: left">150-155&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">GRE (过八级)&lt;/td>
+ &lt;td style="text-align: left">12000&lt;/td>
+ &lt;td style="text-align: left">宗师 👑 皇冠I&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;p>&lt;img src="../img/ielts-cefr.webp" alt="">
+&lt;img src="../img/toefl-cefr.png" alt="">
+&lt;img src="../img/duolingo-cefr.png" alt="">
+&lt;img src="../img/jlpt-cefr.png" alt="">
+&lt;img src="../img/toefl-ielts.png" alt="">
+&lt;img src="../img/ces-ielts.avif" alt="">&lt;/p></description></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
