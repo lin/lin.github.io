@@ -2,4 +2,4 @@
 1. [Games](/games) & [Duolingo](/duo) & [CEFR](/cefr) & [Games Library](/games/lib)
 1. [IMDb](/imdb) & [Douban](/douban) & [Theaters](/movies) 
 1. [Top Rated](/top) & [Things](/toty) & [Oscars](/oscars)
-1. [Family Tree](/lin)
+1. [Family Tree](/lin) & [GPT Anime](/anime)
