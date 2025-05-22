@@ -78,6 +78,7 @@ Pokemon：中心道具，词汇技能的信号表征
 1. 傻瓜机制，不费脑; 简单题目，反复做; 不能回退，只长进
 1. 大多数人不会学习，不复习，不总结，爱做新题，爱做难题
 1. 不要想着快速提高，搞工具化，想着如何提高动力，提高做题乐趣和频率
+1. 考试是为了区分，有故意难为成分；我们是为了重复，减少不必要的思维压力
 1. 简单的投入，放大的成就；新鲜的好奇，意外的奖励
 1. 苦劳必须有奖励，不能惩罚后退；功劳必须要合理，不能幻象胡说
 1. 两层皮：干净稳健一套，复杂多变一套
@@ -87,6 +88,7 @@ Pokemon：中心道具，词汇技能的信号表征
 1. 让人做事可以，要给人以回报（玩家想要的东西）
 1. People don't invest on things with low reward.
 1. People are excited about low invest with huge reward.
+1. Teach when people care about or want to know.
 1. 求快不求易，求全不求稳（学不好，教不好的源头）
 1. Goal-Gradient Effect: The tendency to approach a goal increases with proximity to the goal.
 1. Endowed Progress Effect: more likely to complete a task when they believe they've already made some progress towards it.
