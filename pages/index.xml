@@ -115,6 +115,11 @@ h3 {
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td style="text-align: left">2025-05-17&lt;/td>
+ &lt;td style="text-align: left">Finish Japanese Course&lt;/td>
+ &lt;td style="text-align: left">DONE!&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">2025-05-09&lt;/td>
  &lt;td style="text-align: left">Chess Course&lt;/td>
  &lt;td style="text-align: left">3-49-0&lt;/td>
@@ -759,6 +764,10 @@ h3 {
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td style="text-align: left">情书&lt;/td>
+ &lt;td style="text-align: left">2025年5月22日&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">🏆 哪吒之魔童闹海&lt;/td>
  &lt;td style="text-align: left">2025年2月22日&lt;/td>
  &lt;/tr>
@@ -1342,7 +1351,7 @@ h3 {
  &lt;th style="text-align: left">CEFR&lt;/th>
  &lt;th style="text-align: left">IELTS&lt;/th>
  &lt;th style="text-align: left">TOEFL&lt;/th>
- &lt;th style="text-align: left">duo&lt;/th>
+ &lt;th style="text-align: left">duo (sec)&lt;/th>
  &lt;th style="text-align: left">JLPT&lt;/th>
  &lt;th style="text-align: left">CET&lt;/th>
  &lt;th style="text-align: left">Vocab&lt;/th>
@@ -1371,7 +1380,7 @@ h3 {
  &lt;td style="text-align: left">B1&lt;/td>
  &lt;td style="text-align: left">4.0&lt;/td>
  &lt;td style="text-align: left">14-25&lt;/td>
- &lt;td style="text-align: left">55-65 (6)&lt;/td>
+ &lt;td style="text-align: left">55-65 (4)&lt;/td>
  &lt;td style="text-align: left">N3 (中上)&lt;/td>
  &lt;td style="text-align: left">高考 120&lt;/td>
  &lt;td style="text-align: left">3500&lt;/td>
@@ -1380,7 +1389,7 @@ h3 {
  &lt;td style="text-align: left">B1+&lt;/td>
  &lt;td style="text-align: left">4.5&lt;/td>
  &lt;td style="text-align: left">26-26&lt;/td>
- &lt;td style="text-align: left">65-80&lt;/td>
+ &lt;td style="text-align: left">65-80 (5)&lt;/td>
  &lt;td style="text-align: left">N2 (中下)&lt;/td>
  &lt;td style="text-align: left">过四级&lt;/td>
  &lt;td style="text-align: left">4000&lt;/td>
@@ -1389,7 +1398,7 @@ h3 {
  &lt;td style="text-align: left">B1+&lt;/td>
  &lt;td style="text-align: left">5.0&lt;/td>
  &lt;td style="text-align: left">37-41&lt;/td>
- &lt;td style="text-align: left">80-90&lt;/td>
+ &lt;td style="text-align: left">80-90 (6)&lt;/td>
  &lt;td style="text-align: left">N2 (中下)&lt;/td>
  &lt;td style="text-align: left">四级 500&lt;/td>
  &lt;td style="text-align: left">4500&lt;/td>
@@ -1398,7 +1407,7 @@ h3 {
  &lt;td style="text-align: left">B2&lt;/td>
  &lt;td style="text-align: left">5.5&lt;/td>
  &lt;td style="text-align: left">42-59&lt;/td>
- &lt;td style="text-align: left">95-100 (8)&lt;/td>
+ &lt;td style="text-align: left">95-100 (6)&lt;/td>
  &lt;td style="text-align: left">N2 (&amp;gt;112)&lt;/td>
  &lt;td style="text-align: left">过五级&lt;/td>
  &lt;td style="text-align: left">5000&lt;/td>
@@ -1407,7 +1416,7 @@ h3 {
  &lt;td style="text-align: left">B2+&lt;/td>
  &lt;td style="text-align: left">6.0&lt;/td>
  &lt;td style="text-align: left">60-78&lt;/td>
- &lt;td style="text-align: left">105-110&lt;/td>
+ &lt;td style="text-align: left">105-110 (7)&lt;/td>
  &lt;td style="text-align: left">N1 (高)&lt;/td>
  &lt;td style="text-align: left">过六级&lt;/td>
  &lt;td style="text-align: left">6000&lt;/td>
@@ -1416,7 +1425,7 @@ h3 {
  &lt;td style="text-align: left">B2+&lt;/td>
  &lt;td style="text-align: left">6.5&lt;/td>
  &lt;td style="text-align: left">79-93&lt;/td>
- &lt;td style="text-align: left">120-125&lt;/td>
+ &lt;td style="text-align: left">120-125 (8)&lt;/td>
  &lt;td style="text-align: left">N1 (&amp;lt;142)&lt;/td>
  &lt;td style="text-align: left">雅思&lt;/td>
  &lt;td style="text-align: left">7000&lt;/td>
@@ -10016,6 +10025,321 @@ table th:first-child, table td:first-child {
  &lt;td style="text-align: right">9.3&lt;/td>
  &lt;/tr>
  &lt;/tbody>
+&lt;/table></description></item><item><title>Learned Courses</title><link>https://yingkui.com/courses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/courses/</guid><description>&lt;h2 id="语数外">语数外&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>课程&lt;/th>
+ &lt;th style="text-align: center">时期&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Language and Literature&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Mathematics&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Calculus (Mathematical Analysis)&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Linear Algebra&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Probability and Statistics&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Mathematical and Physical Methods&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Numerical Methods&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Mathematics for Materials Science&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>English (CEFR B2)&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>English (CEFR C1 / IELTS 7.0)&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>French (CEFR A1)&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Japanese (CEFR A2 / N4)&lt;/td>
+ &lt;td style="text-align: center">Duolingo&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="理材化生工">理(材)化生工&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>课程&lt;/th>
+ &lt;th style="text-align: center">时期&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Physics&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>College Physics&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>College Physics Experiments&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Electromechanics and Electronic Technique&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Thermodynamics and Statistical Physics&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Theoretical Mechanics&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Mechanics of Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Physical Properties of Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Fundamentals of Mechanical Design&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Introducation of Solid Physics&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Principles of Transmission&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Introduction of Material Science&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Metal Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ceramic Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Bio-Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Composite Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Functional Materials&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Heat Processing&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Material Analysis and Test Methods&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Structure of Materials (Thermodynamics)&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Mechanical Properties of Materials&lt;/td>
+ &lt;td style="text-align: center">本科/研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Physics of Materials (Quantum Mechanics)&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Quantum Mechanics (Advanced)&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>General Relativity&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Quantum Field Theory&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Chemistry&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>College Chemistry&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Physical Chemistry&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Organic Chemistry&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Structure Chemistry&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Biology&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Engineering Drawing (CAD)&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Engineering Training&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="csai">CSAI&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>课程&lt;/th>
+ &lt;th style="text-align: center">时期&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Fundamentals of Computer Application&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>C Programming Language&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Programming Languages and Techniques&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Data Structures and Algorithms&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Computation Theory&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Computer Systems&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Languages and Compilers&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Interactive Computer Graphic&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Methods of Applied Statistics&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Applied Machine Learning&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Advanced Bayesian Modeling&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Cloud Networking&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Introduction to Data Mining&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Practical Statistical Learning&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Scientific Visualization&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Database Systems&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="政商史地美育">政商史地美育&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>课程&lt;/th>
+ &lt;th style="text-align: center">时期&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Corporate Finance&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>History&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Geography&lt;/td>
+ &lt;td style="text-align: center">中学&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Engineering Geology&lt;/td>
+ &lt;td style="text-align: center">本科&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Digital Design Foundations&lt;/td>
+ &lt;td style="text-align: center">研究生&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Foundations of Educational Science&lt;/td>
+ &lt;td style="text-align: center">工作&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Educational Psychology&lt;/td>
+ &lt;td style="text-align: center">工作&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
 &lt;/table></description></item><item><title>Library</title><link>https://yingkui.com/lib/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lib/</guid><description>&lt;style>
  td:first-child,
  th:first-child {
@@ -10676,7 +11000,96 @@ table th:first-child, table td:first-child {
 &lt;li>《The Legend of Zelda: Breath of the Wild》&lt;/li>
 &lt;li>《Grand Theft Auto V》&lt;/li>
 &lt;li>《The Last of Us》&lt;/li>
-&lt;/ul></description></item><item><title>雅思考试记录</title><link>https://yingkui.com/ielts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ielts/</guid><description>&lt;h2 id="正式">正式&lt;/h2>
+&lt;/ul></description></item><item><title>単語</title><link>https://yingkui.com/dango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/dango/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>単語&lt;/th>
+ &lt;th>解釈&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>ときどき&lt;/td>
+ &lt;td>時時 Sometimes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>おっと&lt;/td>
+ &lt;td>夫&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>つま&lt;/td>
+ &lt;td>妻&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>むすこ&lt;/td>
+ &lt;td>息子 son&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>むすめ&lt;/td>
+ &lt;td>娘 daughter&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>おしゃれ&lt;/td>
+ &lt;td>御洒落 Stylish&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>うるさい&lt;/td>
+ &lt;td>煩い Noisy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>たかい / やすい&lt;/td>
+ &lt;td>高い 安い&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>すてき&lt;/td>
+ &lt;td>素敵 Lovely&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ダサい&lt;/td>
+ &lt;td>Lame&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>しずか&lt;/td>
+ &lt;td>静か&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>にぎやか&lt;/td>
+ &lt;td>賑やか Busy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ちかてつ&lt;/td>
+ &lt;td>地下鉄&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>おもしろい&lt;/td>
+ &lt;td>面白い&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>あかるい&lt;/td>
+ &lt;td>明るい&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ちいさい&lt;/td>
+ &lt;td>小さい&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>おんがく&lt;/td>
+ &lt;td>音楽&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>かっこいい&lt;/td>
+ &lt;td>格好いい&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>やさしい&lt;/td>
+ &lt;td>優しい Kind&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>いそがしい&lt;/td>
+ &lt;td>忙しい&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>雅思考试记录</title><link>https://yingkui.com/ielts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ielts/</guid><description>&lt;h2 id="正式">正式&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
