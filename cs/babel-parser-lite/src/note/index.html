@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>- Yingkui Lin</title><meta name=viewport content="width=device-width,initial-scale=1">
-<meta itemprop=name content="Yingkui Lin"><meta itemprop=description content="Hard Part about Babel Parser noIn This is what means for noIn:
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>- Yingkui Lin</title><meta name=viewport content="width=device-width,initial-scale=1"><meta itemprop=name content="Yingkui Lin"><meta itemprop=description content="Hard Part about Babel Parser noIn This is what means for noIn:
 Not OK to say: for (a in b;;) {} All other expressions are fit for the first position. So a single lookahead is hard to tell the difference.
 refShorthandDefaultPos This is what means for it: let {a, b = 3} = {a: 1} or x = {a, b} or function func({ a, b = 3}) {}
 So {a, b = 3} can be interpreted { expr -> exprList -> id, Assignment -> id, id = literal }"><meta itemprop=wordCount content="206"><meta property="og:url" content="https://yingkui.com/cs/babel-parser-lite/src/note/"><meta property="og:site_name" content="Yingkui Lin"><meta property="og:title" content="Yingkui Lin"><meta property="og:description" content="Hard Part about Babel Parser noIn This is what means for noIn:
