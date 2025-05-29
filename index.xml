@@ -1,4 +1,295 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>shua.ai</title><link>https://yingkui.com/shua/</link><pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/shua/</guid><description>&lt;p>剧情 + 肉鸽 + 技能 + AI&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Duolingo</title><link>https://yingkui.com/duolingo/</link><pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/duolingo/</guid><description>&lt;style>
+table {
+ overflow-x: auto;
+ white-space: nowrap;
+}
+&lt;/style>
+&lt;h2 id="containers">Containers&lt;/h2>
+&lt;ul>
+&lt;li>course/section/unit/lesson/lexeme&lt;/li>
+&lt;li>30 lexemes per unit&lt;/li>
+&lt;li>60 lexemes per 1 duolingo score&lt;/li>
+&lt;li>3.5 lexemes per word&lt;/li>
+&lt;li>15 exercises in each lesson&lt;/li>
+&lt;li>each unit have 24 lessons&lt;/li>
+&lt;/ul>
+&lt;h2 id="time-cost">Time Cost&lt;/h2>
+&lt;ul>
+&lt;li>60 minutes per unit&lt;/li>
+&lt;li>each exercises takes 10 seconds to solve&lt;/li>
+&lt;li>each lesson takes 2.5 minutes to solve&lt;/li>
+&lt;li>each lexeme costs 2 minutes to retain&lt;/li>
+&lt;li>5 minutes per lexeme for total learning time.&lt;/li>
+&lt;/ul>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">CEFR, Sec, Lex&lt;/th>
+ &lt;th style="text-align: left">total&lt;/th>
+ &lt;th style="text-align: left">3m/d (1Ls)&lt;/th>
+ &lt;th style="text-align: left">15m/d (6Ls)&lt;/th>
+ &lt;th style="text-align: left">10h/w (1u)&lt;/th>
+ &lt;th style="text-align: left">50h/w (7u)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">A1, 3, 1600&lt;/td>
+ &lt;td style="text-align: left">55h&lt;/td>
+ &lt;td style="text-align: left">3 years&lt;/td>
+ &lt;td style="text-align: left">7 months&lt;/td>
+ &lt;td style="text-align: left">1.5 months&lt;/td>
+ &lt;td style="text-align: left">1 week&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">A2, 4, 3200&lt;/td>
+ &lt;td style="text-align: left">105h&lt;/td>
+ &lt;td style="text-align: left">6 years&lt;/td>
+ &lt;td style="text-align: left">14 months&lt;/td>
+ &lt;td style="text-align: left">2.5 months&lt;/td>
+ &lt;td style="text-align: left">2 weeks&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B1, 6, 6400&lt;/td>
+ &lt;td style="text-align: left">205h&lt;/td>
+ &lt;td style="text-align: left">11 years&lt;/td>
+ &lt;td style="text-align: left">2.5 years&lt;/td>
+ &lt;td style="text-align: left">5 months&lt;/td>
+ &lt;td style="text-align: left">1 month&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">B2, 8, 8500&lt;/td>
+ &lt;td style="text-align: left">275h&lt;/td>
+ &lt;td style="text-align: left">15 years&lt;/td>
+ &lt;td style="text-align: left">3 years&lt;/td>
+ &lt;td style="text-align: left">6 months&lt;/td>
+ &lt;td style="text-align: left">1.5 months&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="spanish-from-en">Spanish from EN&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>units_in_each_section &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#ae81ff">8&lt;/span>,&lt;span style="color:#ae81ff">26&lt;/span>,&lt;span style="color:#ae81ff">28&lt;/span>,&lt;span style="color:#ae81ff">52&lt;/span>,&lt;span style="color:#ae81ff">50&lt;/span>,&lt;span style="color:#ae81ff">50&lt;/span>,&lt;span style="color:#ae81ff">36&lt;/span>,&lt;span style="color:#ae81ff">36&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Section&lt;/th>
+ &lt;th style="text-align: left">Units&lt;/th>
+ &lt;th style="text-align: left">Lexemes&lt;/th>
+ &lt;th style="text-align: left">Duo / CEFR&lt;/th>
+ &lt;th style="text-align: left">Cost&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 1&lt;/td>
+ &lt;td style="text-align: left">8&lt;/td>
+ &lt;td style="text-align: left">240 / 240&lt;/td>
+ &lt;td style="text-align: left">10 (A1)&lt;/td>
+ &lt;td style="text-align: left">8h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 2&lt;/td>
+ &lt;td style="text-align: left">26&lt;/td>
+ &lt;td style="text-align: left">780 / 1020&lt;/td>
+ &lt;td style="text-align: left">20 (A1)&lt;/td>
+ &lt;td style="text-align: left">34h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 3&lt;/td>
+ &lt;td style="text-align: left">28&lt;/td>
+ &lt;td style="text-align: left">840 / 1860&lt;/td>
+ &lt;td style="text-align: left">30 (A1)&lt;/td>
+ &lt;td style="text-align: left">62h / 100h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 4&lt;/td>
+ &lt;td style="text-align: left">52&lt;/td>
+ &lt;td style="text-align: left">1560 / 3420&lt;/td>
+ &lt;td style="text-align: left">60 (A2)&lt;/td>
+ &lt;td style="text-align: left">114h / 200h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 5&lt;/td>
+ &lt;td style="text-align: left">50&lt;/td>
+ &lt;td style="text-align: left">1500 / 4920&lt;/td>
+ &lt;td style="text-align: left">80 (B1)&lt;/td>
+ &lt;td style="text-align: left">164h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 6&lt;/td>
+ &lt;td style="text-align: left">50&lt;/td>
+ &lt;td style="text-align: left">1500 / 6420&lt;/td>
+ &lt;td style="text-align: left">100 (B1)&lt;/td>
+ &lt;td style="text-align: left">214h / 400h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 7&lt;/td>
+ &lt;td style="text-align: left">36&lt;/td>
+ &lt;td style="text-align: left">1080 / 7500&lt;/td>
+ &lt;td style="text-align: left">115 (B2)&lt;/td>
+ &lt;td style="text-align: left">250h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 8&lt;/td>
+ &lt;td style="text-align: left">36&lt;/td>
+ &lt;td style="text-align: left">1080 / 8580&lt;/td>
+ &lt;td style="text-align: left">130 (B2)&lt;/td>
+ &lt;td style="text-align: left">286h / 600h&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="french-from-en">French from EN&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>units_in_each_section &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#ae81ff">10&lt;/span>,&lt;span style="color:#ae81ff">22&lt;/span>,&lt;span style="color:#ae81ff">21&lt;/span>,&lt;span style="color:#ae81ff">46&lt;/span>,&lt;span style="color:#ae81ff">51&lt;/span>,&lt;span style="color:#ae81ff">49&lt;/span>,&lt;span style="color:#ae81ff">36&lt;/span>,&lt;span style="color:#ae81ff">37&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Section&lt;/th>
+ &lt;th style="text-align: left">Units&lt;/th>
+ &lt;th style="text-align: left">Lexemes&lt;/th>
+ &lt;th style="text-align: left">Duo / CEFR&lt;/th>
+ &lt;th style="text-align: left">Cost&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 1&lt;/td>
+ &lt;td style="text-align: left">10&lt;/td>
+ &lt;td style="text-align: left">300 / 300&lt;/td>
+ &lt;td style="text-align: left">10 (A1)&lt;/td>
+ &lt;td style="text-align: left">10h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 2&lt;/td>
+ &lt;td style="text-align: left">22&lt;/td>
+ &lt;td style="text-align: left">760 / 960&lt;/td>
+ &lt;td style="text-align: left">20 (A1)&lt;/td>
+ &lt;td style="text-align: left">32h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 3&lt;/td>
+ &lt;td style="text-align: left">21&lt;/td>
+ &lt;td style="text-align: left">840 / 1590&lt;/td>
+ &lt;td style="text-align: left">30 (A1)&lt;/td>
+ &lt;td style="text-align: left">53h / 100h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 4&lt;/td>
+ &lt;td style="text-align: left">46&lt;/td>
+ &lt;td style="text-align: left">1560 / 2970&lt;/td>
+ &lt;td style="text-align: left">60 (A2)&lt;/td>
+ &lt;td style="text-align: left">99h / 200h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 5&lt;/td>
+ &lt;td style="text-align: left">51&lt;/td>
+ &lt;td style="text-align: left">1500 / 4500&lt;/td>
+ &lt;td style="text-align: left">80 (B1)&lt;/td>
+ &lt;td style="text-align: left">150h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 6&lt;/td>
+ &lt;td style="text-align: left">49&lt;/td>
+ &lt;td style="text-align: left">1500 / 5970&lt;/td>
+ &lt;td style="text-align: left">100 (B1)&lt;/td>
+ &lt;td style="text-align: left">199h / 400h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 7&lt;/td>
+ &lt;td style="text-align: left">36&lt;/td>
+ &lt;td style="text-align: left">1080 / 7050&lt;/td>
+ &lt;td style="text-align: left">115 (B2)&lt;/td>
+ &lt;td style="text-align: left">235h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 8&lt;/td>
+ &lt;td style="text-align: left">37&lt;/td>
+ &lt;td style="text-align: left">1080 / 8160&lt;/td>
+ &lt;td style="text-align: left">130 (B2)&lt;/td>
+ &lt;td style="text-align: left">272h / 600h&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="english-from-es">English from ES&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>units_in_each_section &lt;span style="color:#f92672">=&lt;/span> [&lt;span style="color:#ae81ff">10&lt;/span>,&lt;span style="color:#ae81ff">26&lt;/span>,&lt;span style="color:#ae81ff">20&lt;/span>,&lt;span style="color:#ae81ff">48&lt;/span>,&lt;span style="color:#ae81ff">50&lt;/span>,&lt;span style="color:#ae81ff">52&lt;/span>,&lt;span style="color:#ae81ff">36&lt;/span>,&lt;span style="color:#ae81ff">36&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Section&lt;/th>
+ &lt;th style="text-align: left">Units&lt;/th>
+ &lt;th style="text-align: left">Lexemes&lt;/th>
+ &lt;th style="text-align: left">Duo / CEFR&lt;/th>
+ &lt;th style="text-align: left">Cost&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 1&lt;/td>
+ &lt;td style="text-align: left">10&lt;/td>
+ &lt;td style="text-align: left">300 / 300&lt;/td>
+ &lt;td style="text-align: left">10 (A1)&lt;/td>
+ &lt;td style="text-align: left">10h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 2&lt;/td>
+ &lt;td style="text-align: left">22&lt;/td>
+ &lt;td style="text-align: left">780 / 1080&lt;/td>
+ &lt;td style="text-align: left">20 (A1)&lt;/td>
+ &lt;td style="text-align: left">36h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 3&lt;/td>
+ &lt;td style="text-align: left">21&lt;/td>
+ &lt;td style="text-align: left">600 / 1680&lt;/td>
+ &lt;td style="text-align: left">30 (A1)&lt;/td>
+ &lt;td style="text-align: left">56h / 100h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 4&lt;/td>
+ &lt;td style="text-align: left">46&lt;/td>
+ &lt;td style="text-align: left">1440 / 3120&lt;/td>
+ &lt;td style="text-align: left">60 (A2)&lt;/td>
+ &lt;td style="text-align: left">104h / 200h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 5&lt;/td>
+ &lt;td style="text-align: left">51&lt;/td>
+ &lt;td style="text-align: left">1500 / 4620&lt;/td>
+ &lt;td style="text-align: left">80 (B1)&lt;/td>
+ &lt;td style="text-align: left">154h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 6&lt;/td>
+ &lt;td style="text-align: left">49&lt;/td>
+ &lt;td style="text-align: left">1560 / 6180&lt;/td>
+ &lt;td style="text-align: left">100 (B1)&lt;/td>
+ &lt;td style="text-align: left">206h / 400h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 7&lt;/td>
+ &lt;td style="text-align: left">36&lt;/td>
+ &lt;td style="text-align: left">1080 / 7260&lt;/td>
+ &lt;td style="text-align: left">115 (B2)&lt;/td>
+ &lt;td style="text-align: left">242h&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Section 8&lt;/td>
+ &lt;td style="text-align: left">37&lt;/td>
+ &lt;td style="text-align: left">1080 / 8340&lt;/td>
+ &lt;td style="text-align: left">130 (B2)&lt;/td>
+ &lt;td style="text-align: left">278h / 600h&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="improvement">Improvement&lt;/h2>
+&lt;ol>
+&lt;li>15 lexemes 30 minutes 15 lessons per unit (4443)&lt;/li>
+&lt;li>10 units 5 scores 5 hours per section&lt;/li>
+&lt;li>5 sections 25 hours 1500 lexemes per level or course&lt;/li>
+&lt;li>5 courses to reach CEFR B2&lt;/li>
+&lt;li>each hour of learning, you may expose to 15-20 valuable lexemes&lt;/li>
+&lt;li>each week in university, you learn 50-65 lexemes&lt;/li>
+&lt;li>each semester in university, you learn 800-1000 lexemes&lt;/li>
+&lt;/ol></description></item><item><title>shua.ai</title><link>https://yingkui.com/shua/</link><pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/shua/</guid><description>&lt;p>剧情 + 肉鸽 + 技能 + AI&lt;/p>
 &lt;h2 id="おすすめ推剧情">おすすめ，推剧情&lt;/h2>
 &lt;p>Candy Crash：傻瓜目标傻瓜关，降低思维压力，易于形成习惯&lt;/p>
 &lt;ol>
@@ -528,7 +819,7 @@ h3 {
 &lt;img src='../img/pokemon-drive.png'>
 &lt;h2 id="名称">名称&lt;/h2>
 &lt;blockquote>
-&lt;p>The é is not silenced.&lt;/p></description></item><item><title>《任天堂哲学》和《岩田先生》</title><link>https://yingkui.com/books/nintendo/</link><pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/books/nintendo/</guid><description>&lt;ol>
+&lt;p>The é is not silenced.&lt;/p></description></item><item><title>《任天堂哲学》和《岩田先生》</title><link>https://yingkui.com/read/nintendo/</link><pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/nintendo/</guid><description>&lt;ol>
 &lt;li>&lt;strong>降低用户心智负担&lt;/strong>
 &lt;ul>
 &lt;li>NDS 的脑锻炼&lt;/li>
@@ -1918,7 +2209,7 @@ h3 {
 &lt;h3 id="3-更为直接的佐证">3 更为直接的佐证&lt;/h3>
 &lt;p>大家都选择了吉日作为标准，但离婚率却稳步提升。&lt;strong>如果选择好日子对婚后幸福有很大影响，难道不应该离婚率显著下降吗？&lt;/strong>&lt;/p>
 &lt;p>如果选择吉日有效，为什么没有文明国家或地区制定标准化的结婚日期指南呢？（如果有效，民政局就应该领证时发个小日历）&lt;/p>
-&lt;p>很难找到没选择吉日而导致的婚姻不幸福；却很容易找到 &lt;strong>虽然选择了吉日，却依旧要离婚或者婚姻不幸福的例子&lt;/strong>&lt;/p></description></item><item><title>Duolingo</title><link>https://yingkui.com/duo/</link><pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate><guid>https://yingkui.com/duo/</guid><description>&lt;table>
+&lt;p>很难找到没选择吉日而导致的婚姻不幸福；却很容易找到 &lt;strong>虽然选择了吉日，却依旧要离婚或者婚姻不幸福的例子&lt;/strong>&lt;/p></description></item><item><title>Duolingo Journey</title><link>https://yingkui.com/duo/</link><pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate><guid>https://yingkui.com/duo/</guid><description>&lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th style="text-align: left">时间&lt;/th>
@@ -1927,6 +2218,11 @@ h3 {
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-05-29&lt;/td>
+ &lt;td style="text-align: left">602 Days, 183403 xp, 10532 Gems&lt;/td>
+ &lt;td style="text-align: left">JP 2-14 (401) FR 1-6 (139)&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2025-05-17&lt;/td>
  &lt;td style="text-align: left">Finish Japanese Course&lt;/td>
@@ -2349,7 +2645,33 @@ h3 {
 &lt;p>让新人感受一次众星捧月的快乐。不仅有婚庆公司给你明星般的服务，还有亲朋好友“巴结富贵”的既视感。&lt;/p>
 &lt;p>虽然我的好朋友都是人品极好的人，但总有人品极差的举办婚礼当天，TA也能感到世界对TA的重视，感觉倍儿棒。&lt;/p>
 &lt;p>婚礼似乎是一次大号的生日Party，只是参与者感到特别累，繁琐，无聊，又不得不接受这个礼节，勉强欢笑。&lt;/p>
-&lt;p>我知道自己就是一个无名小辈，没啥能耐，也没啥成就，没给大众解决过大的问题，参加婚礼的亲友，要么是给我父母面子，要么就是朋友情谊的体现，大家只是客串了一天《楚门的游戏》。&lt;/p></description></item><item><title>Be Focused. Be Fast. Be Determined.</title><link>https://yingkui.com/three/</link><pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate><guid>https://yingkui.com/three/</guid><description>&lt;h3 id="1-be-focused">1. Be Focused:&lt;/h3>
+&lt;p>我知道自己就是一个无名小辈，没啥能耐，也没啥成就，没给大众解决过大的问题，参加婚礼的亲友，要么是给我父母面子，要么就是朋友情谊的体现，大家只是客串了一天《楚门的游戏》。&lt;/p></description></item><item><title>云南之旅</title><link>https://yingkui.com/trips/yunnan/</link><pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/yunnan/</guid><description>&lt;h2 id="07月04日路上">07月04日，路上&lt;/h2>
+&lt;p>在天津转机，等了很久，晚上十一点到的丽江&lt;/p>
+&lt;p>媳妇约了一个导游，他从机场接的我们到的民宿，那个民宿的房间顶上有一个窗户&lt;/p>
+&lt;h2 id="07月05日丽江">07月05日，丽江&lt;/h2>
+&lt;p>第二天换了一家民宿，然后在丽江古城玩&lt;/p>
+&lt;h2 id="07月06日去香格里拉">07月06日，去香格里拉&lt;/h2>
+&lt;p>上午被导游骗去了一个卖茶的地方，又去了束河古镇&lt;/p>
+&lt;h2 id="07月07日普达措">07月07日，普达措&lt;/h2>
+&lt;p>中午出发开始了三日的普达措之旅，从丽江被接走&lt;/p>
+&lt;p>下午到达普达措，下着小雨，没有那么的美丽&lt;/p>
+&lt;p>晚上到达迪庆香格里拉市&lt;/p>
+&lt;h2 id="07月08日迪庆--虎跳峡">07月08日，迪庆 &amp;amp; 虎跳峡&lt;/h2>
+&lt;p>独克宗古城购物溜达，中午的时候往回走&lt;/p>
+&lt;p>中间路过虎跳峡，停下来去合影&lt;/p>
+&lt;p>回到丽江之后，又住了一个晚上&lt;/p>
+&lt;h2 id="07月09日大理">07月09日，大理&lt;/h2>
+&lt;p>第二天七点，出发去大理，路上开了三个小时的车&lt;/p>
+&lt;p>大理一直在下雨，中午去了一家火锅，没有人，价格还很贵&lt;/p>
+&lt;p>就没有就留，去了别的店去吃，那天阴雨天&lt;/p>
+&lt;p>在大理古城附近溜达了一阵，也就回去住了&lt;/p>
+&lt;h2 id="07月10日洱海">07月10日，洱海&lt;/h2>
+&lt;p>从早晨九点开到晚上九点，开了一天的车，绕着洱海开了一圈&lt;/p>
+&lt;p>洱海真的很美，希望有机会再去一次&lt;/p>
+&lt;h2 id="07月11日大理">07月11日，大理&lt;/h2>
+&lt;p>在大理古城玩了一整天，要比丽江有意思&lt;/p>
+&lt;h2 id="07月12日归程">07月12日，归程&lt;/h2>
+&lt;p>早晨出发去机场，回家&lt;/p></description></item><item><title>Be Focused. Be Fast. Be Determined.</title><link>https://yingkui.com/three/</link><pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate><guid>https://yingkui.com/three/</guid><description>&lt;h3 id="1-be-focused">1. Be Focused:&lt;/h3>
 &lt;p>一，专注是指目标明确而不是模糊。不要被突如其来的欲望，而打乱了自己有规划的长远目标。&lt;/p>
 &lt;p>二，专注是指 do one thing, eat that frog. 明确当前最重要问题，坚决的把它解决掉。&lt;/p>
 &lt;h3 id="2-be-fast">2. Be Fast:&lt;/h3>
@@ -2791,7 +3113,13 @@ $$
 &lt;p>第二天，以色列全会众都向摩西、亚伦发怨言说：“你们杀了耶和华的百姓了！” 会众聚集攻击摩西、亚伦的时候，向会幕观看，不料，有云彩遮盖了，耶和华的荣光显现。摩西、亚伦就来到会幕前。耶和华吩咐摩西说：“你们离开这会众，我好在转眼之间把他们灭绝。”他们二人就俯伏于地。 （民数记 16：41 - 45）&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;p>除了因可拉事情死的以外，遭瘟疫死的，共有一万四千七百人。（民数记 16：49）&lt;/p>&lt;/blockquote>
-&lt;p>那么，《圣经》里的上帝一共杀了多少人呢？&lt;/p></description></item><item><title>十九岁的人生哲学</title><link>https://yingkui.com/19/</link><pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate><guid>https://yingkui.com/19/</guid><description>&lt;p>⼗九岁时，我在⼈⽣哲学领域，凭着兴趣做了⼀些实在的思考。&lt;/p>
+&lt;p>那么，《圣经》里的上帝一共杀了多少人呢？&lt;/p></description></item><item><title>佛罗里达之旅</title><link>https://yingkui.com/trips/florida/</link><pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/florida/</guid><description>&lt;h2 id="1月2日到达奥兰多">1月2日，到达奥兰多&lt;/h2>
+&lt;p>&lt;img src="https://yingkui.com/img/florida-1.png" alt="">&lt;/p>
+&lt;p>晚上到达的奥兰多的迪士尼酒店 (Disney&amp;rsquo;s All-Star Sports Resort)，有官方的大巴车，而且房费比较便宜&lt;/p>
+&lt;h2 id="1月3日迪士尼未来之城">1月3日，迪士尼未来之城&lt;/h2>
+&lt;h2 id="1月4日环球影城">1月4日，环球影城&lt;/h2>
+&lt;h2 id="1月5日环球影城">1月5日，环球影城&lt;/h2>
+&lt;h2 id="1月6日去迈阿密">1月6日，去迈阿密&lt;/h2></description></item><item><title>十九岁的人生哲学</title><link>https://yingkui.com/19/</link><pubDate>Sun, 05 Sep 2010 00:00:00 +0000</pubDate><guid>https://yingkui.com/19/</guid><description>&lt;p>⼗九岁时，我在⼈⽣哲学领域，凭着兴趣做了⼀些实在的思考。&lt;/p>
 &lt;p>在这里，我将把这些独立思考概要的写出来。我将主要解决两个问题：&lt;/p>
 &lt;ol>
 &lt;li>我们存在的原因是什么？&lt;/li>
@@ -3464,14 +3792,7 @@ $$
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/basics/life/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/life/random/</guid><description>&lt;h3 id="随想">随想&lt;/h3>
 &lt;ol>
 &lt;li>节目效果拉满&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/books/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/books/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
-&lt;ol>
-&lt;li>$Y = f(X) + \epsilon$&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/books/shelf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/books/shelf/</guid><description>&lt;h1 id="bookshelf">Bookshelf&lt;/h1>
-&lt;p>More and more, I realize that my interests are lying between the foundation of mathematics and computer science.&lt;/p>
-&lt;p>I like to create stuff out of nothing by coding and designing and figure out the nature of things.&lt;/p>
-&lt;p>Intelligence, both artificial and educational, are core to my lifelong pursuit. Building a solver will be my next project when I succeed in online education.&lt;/p>
-&lt;p>History is another topic that I am thrilled at, finding the patterns occurs in the past has a hugh impact to understand the current affairs and reduces the complexity of real world problems.&lt;/p></description></item><item><title/><link>https://yingkui.com/cs/annotatedturing/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/annotatedturing/readme/</guid><description>&lt;p>&lt;code>node --stack-size=8000 5.1&lt;/code>&lt;/p>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/annotatedturing/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/annotatedturing/readme/</guid><description>&lt;p>&lt;code>node --stack-size=8000 5.1&lt;/code>&lt;/p>
 &lt;p>In the paper, Turing proposed a machine which he argued is capable to do whatever a human computer could do.&lt;/p>
 &lt;p>And this machine has some limitations. Notably no machine can determine whether a given machine ever prints a zero or not.&lt;/p>
 &lt;p>But in first order logic (FOL), we don&amp;rsquo;t have the limitation to construct such a formula (whether a machine ever prints a zero).&lt;/p>
@@ -10803,22 +11124,14 @@ $$&lt;/p>
 &lt;li>多个抽象层级的保存，一个 data，分解成多个信号&lt;/li>
 &lt;li>不同的精准程度的搜索&lt;/li>
 &lt;li>attention is all you have，如何游戏化，fun，训练过程自己移动 attention&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/trips/florida/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/florida/</guid><description>&lt;h2 id="佛罗里达之旅">佛罗里达之旅&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/read/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
 &lt;ol>
-&lt;li>奥兰多&lt;/li>
-&lt;li>迪士尼&lt;/li>
-&lt;li>环球&lt;/li>
-&lt;li>游轮&lt;/li>
-&lt;li>拿骚&lt;/li>
-&lt;li>小岛&lt;/li>
-&lt;li>归程&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/trips/yunnan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/yunnan/</guid><description>&lt;h2 id="云南">云南&lt;/h2>
-&lt;ol>
-&lt;li>丽江&lt;/li>
-&lt;li>香格里拉&lt;/li>
-&lt;li>大理&lt;/li>
-&lt;li>洱海&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周">2023年12月第二周&lt;/h2>
+&lt;li>$Y = f(X) + \epsilon$&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/read/shelf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/shelf/</guid><description>&lt;h1 id="bookshelf">Bookshelf&lt;/h1>
+&lt;p>More and more, I realize that my interests are lying between the foundation of mathematics and computer science.&lt;/p>
+&lt;p>I like to create stuff out of nothing by coding and designing and figure out the nature of things.&lt;/p>
+&lt;p>Intelligence, both artificial and educational, are core to my lifelong pursuit. Building a solver will be my next project when I succeed in online education.&lt;/p>
+&lt;p>History is another topic that I am thrilled at, finding the patterns occurs in the past has a hugh impact to understand the current affairs and reduces the complexity of real world problems.&lt;/p></description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周">2023年12月第二周&lt;/h2>
 &lt;ul>
 &lt;li>创业：完成了 《论教学》第五章第四节的写作&lt;/li>
 &lt;li>游戏：通关 《&lt;a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Yellow_Version">Pokémon Yellow&lt;/a>》&lt;/li>
@@ -10904,7 +11217,7 @@ $$&lt;/p>
 &lt;p>The set of Turing’s abilities is the subset of the total abilities.&lt;/p>
 &lt;p>Distinguishability is the most fundamental ability of intelligence.&lt;/p></description></item><item><title>About</title><link>https://yingkui.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/about/</guid><description>&lt;p>&lt;a href="../edu">A founder&lt;/a>. &lt;a href="../life">A thinker&lt;/a>. A would-be &lt;a href="../ai">scientist&lt;/a> who would solve the problem of solving.&lt;/p>
 &lt;p>&lt;a href="../poems">A poet&lt;/a>. &lt;a href="../design">A designer&lt;/a>. &lt;a href="../cs">A coder&lt;/a>. &lt;a href="../games">A gamer&lt;/a>. &lt;a href="../books">A reader&lt;/a>.&lt;/p>
-&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.&lt;/p></description></item><item><title>Books Read in 2023</title><link>https://yingkui.com/books/2023/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/books/2023/</guid><description>&lt;h2 id="读书记录">读书记录&lt;/h2>
+&lt;p>A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.&lt;/p></description></item><item><title>Books Read in 2023</title><link>https://yingkui.com/read/2023/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/2023/</guid><description>&lt;h2 id="读书记录">读书记录&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -11032,16 +11345,24 @@ $$&lt;/p>
  &lt;/tbody>
 &lt;/table>
 &lt;h3 id="计划阅读">计划阅读&lt;/h3>
-&lt;p>一本没有读，去搞游戏化了&lt;/p></description></item><item><title>CEFR Ranks</title><link>https://yingkui.com/cefr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cefr/</guid><description>&lt;table>
+&lt;p>一本没有读，去搞游戏化了&lt;/p></description></item><item><title>CEFR Ranks</title><link>https://yingkui.com/cefr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cefr/</guid><description>&lt;style>
+table {
+ overflow-x: auto;
+ white-space: nowrap;
+}
+&lt;/style>
+&lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th style="text-align: left">CEFR&lt;/th>
  &lt;th style="text-align: left">IELTS&lt;/th>
  &lt;th style="text-align: left">TOEFL&lt;/th>
- &lt;th style="text-align: left">duo (sec)&lt;/th>
+ &lt;th style="text-align: left">duo (sections)&lt;/th>
  &lt;th style="text-align: left">JLPT&lt;/th>
- &lt;th style="text-align: left">CET&lt;/th>
- &lt;th style="text-align: left">Vocab&lt;/th>
+ &lt;th style="text-align: left">CSE&lt;/th>
+ &lt;th style="text-align: left">Vocab (15m/w)&lt;/th>
+ &lt;th style="text-align: left">Cost(total, 15m/d, 10h/w, 50h/w)&lt;/th>
+ &lt;th style="text-align: left">Percentile/Rarity&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
@@ -11049,10 +11370,34 @@ $$&lt;/p>
  &lt;td style="text-align: left">A1&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">0-30 (3)&lt;/td>
+ &lt;td style="text-align: left">0-10 (1)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">300&lt;/td>
+ &lt;td style="text-align: left">80h&lt;/td>
+ &lt;td style="text-align: left">&amp;lt;0.1%&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">A1&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">10-20 (2)&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">600&lt;/td>
+ &lt;td style="text-align: left">150h&lt;/td>
+ &lt;td style="text-align: left">&amp;lt;0.1%&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">A1&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">20-30 (3)&lt;/td>
  &lt;td style="text-align: left">N5 (初上)&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">900&lt;/td>
+ &lt;td style="text-align: left">200h, 7m, 1.5m, 1w&lt;/td>
+ &lt;td style="text-align: left">&amp;lt;0.1%&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">A2&lt;/td>
@@ -11062,6 +11407,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">N4（初下）&lt;/td>
  &lt;td style="text-align: left">中考 高分&lt;/td>
  &lt;td style="text-align: left">1600&lt;/td>
+ &lt;td style="text-align: left">400h, 14m, 2.5m, 2w&lt;/td>
+ &lt;td style="text-align: left">0.1%	/ 740&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B1&lt;/td>
@@ -11071,6 +11418,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">N3 (中上)&lt;/td>
  &lt;td style="text-align: left">高考 120&lt;/td>
  &lt;td style="text-align: left">3500&lt;/td>
+ &lt;td style="text-align: left">850h, 2.5y, 5m, 1m&lt;/td>
+ &lt;td style="text-align: left">1% / 101&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B1+&lt;/td>
@@ -11080,6 +11429,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">N2 (中下)&lt;/td>
  &lt;td style="text-align: left">过四级&lt;/td>
  &lt;td style="text-align: left">4000&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">10% / 10&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B1+&lt;/td>
@@ -11087,8 +11438,10 @@ $$&lt;/p>
  &lt;td style="text-align: left">37-41&lt;/td>
  &lt;td style="text-align: left">80-90 (6)&lt;/td>
  &lt;td style="text-align: left">N2 (中下)&lt;/td>
- &lt;td style="text-align: left">四级 500&lt;/td>
+ &lt;td style="text-align: left">四级 500 分&lt;/td>
  &lt;td style="text-align: left">4500&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">25% / 4&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B2&lt;/td>
@@ -11098,6 +11451,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">N2 (&amp;gt;112)&lt;/td>
  &lt;td style="text-align: left">过五级&lt;/td>
  &lt;td style="text-align: left">5000&lt;/td>
+ &lt;td style="text-align: left">1300h, 3y, 6m, 1.5m&lt;/td>
+ &lt;td style="text-align: left">50% / 2&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B2+&lt;/td>
@@ -11107,6 +11462,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">N1 (高)&lt;/td>
  &lt;td style="text-align: left">过六级&lt;/td>
  &lt;td style="text-align: left">6000&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">75%	/ 4&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">B2+&lt;/td>
@@ -11114,8 +11471,10 @@ $$&lt;/p>
  &lt;td style="text-align: left">79-93&lt;/td>
  &lt;td style="text-align: left">120-125 (8)&lt;/td>
  &lt;td style="text-align: left">N1 (&amp;lt;142)&lt;/td>
- &lt;td style="text-align: left">雅思&lt;/td>
+ &lt;td style="text-align: left">雅思 IELTS&lt;/td>
  &lt;td style="text-align: left">7000&lt;/td>
+ &lt;td style="text-align: left">95% / 20&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">C1&lt;/td>
@@ -11123,8 +11482,10 @@ $$&lt;/p>
  &lt;td style="text-align: left">94-101&lt;/td>
  &lt;td style="text-align: left">130-135&lt;/td>
  &lt;td style="text-align: left">N1 (&amp;gt;142)&lt;/td>
- &lt;td style="text-align: left">托福&lt;/td>
+ &lt;td style="text-align: left">托福 TOEFL&lt;/td>
  &lt;td style="text-align: left">8000&lt;/td>
+ &lt;td style="text-align: left">2000h, 5y, 1y, 3m&lt;/td>
+ &lt;td style="text-align: left">98% / 43&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">C1+&lt;/td>
@@ -11134,6 +11495,8 @@ $$&lt;/p>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">过七级&lt;/td>
  &lt;td style="text-align: left">10000&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;td style="text-align: left">99.9% / 740&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">C2&lt;/td>
@@ -11143,16 +11506,24 @@ $$&lt;/p>
  &lt;td style="text-align: left">&lt;/td>
  &lt;td style="text-align: left">GRE (过八级)&lt;/td>
  &lt;td style="text-align: left">12000&lt;/td>
+ &lt;td style="text-align: left">3000h, 8y, 1.5y, 6m&lt;/td>
+ &lt;td style="text-align: left">&amp;gt;99.9%&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
+&lt;ul>
+&lt;li>15 mins per word learning rate, 3.5 leximes per word, each lexime cost about 4 minutes.&lt;/li>
+&lt;li>Cost: total, 15 mins per day or 2 hours per week, 10 hours per week, 50 hours per week&lt;/li>
+&lt;/ul>
+&lt;hr>
 &lt;ol>
-&lt;li>新手 🔰 普通&lt;/li>
-&lt;li>业余 🥉 青铜&lt;/li>
-&lt;li>专业 🥈 白银&lt;/li>
-&lt;li>专家 🏆 黄金&lt;/li>
-&lt;li>大师 💎 钻石&lt;/li>
-&lt;li>宗师 👑 皇冠&lt;/li>
+&lt;li>新手 🔰 普通, top 90%&lt;/li>
+&lt;li>业余 🥉 青铜, top 75%&lt;/li>
+&lt;li>专业 🥈 白银, top 50%&lt;/li>
+&lt;li>专家 🏆 黄金, top 25%&lt;/li>
+&lt;li>大师 💎 钻石, top 10%&lt;/li>
+&lt;li>宗师 👑 皇冠, top 1%&lt;/li>
+&lt;li>传奇 🦄 传奇, top 0.1%&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="../img/ielts-cefr.webp" alt="">
 &lt;img src="../img/toefl-cefr.png" alt="">
@@ -11161,8 +11532,8 @@ $$&lt;/p>
 &lt;img src="../img/toefl-ielts.png" alt="">
 &lt;img src="../img/ces-ielts.avif" alt="">&lt;/p></description></item><item><title>Douban Ratings</title><link>https://yingkui.com/douban/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/douban/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
 &lt;style>
-table th:first-child, table td:first-child {
- width: 100px;
+table {
+ overflow-x: auto;
  white-space: nowrap;
 }
 &lt;/style>
@@ -15684,10 +16055,614 @@ table th:first-child, table td:first-child {
 &lt;h2 id="hobbies">Hobbies&lt;/h2>
 &lt;p>每天，十点之后，可以obsess，主要是读书写作
 每周，六或者日，obsess on one hobby
-每次，大块任务结束，obsess几天&lt;/p></description></item><item><title>IMDb Ratings</title><link>https://yingkui.com/imdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/imdb/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
+每次，大块任务结束，obsess几天&lt;/p></description></item><item><title>Goodreads Ratings</title><link>https://yingkui.com/goodreads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goodreads/</guid><description>&lt;p>Last Update: 2025/05/26&lt;/p>
 &lt;style>
-table th:first-child, table td:first-child {
- width: 100px;
+table {
+ overflow-x: auto;
+ white-space: nowrap;
+}
+&lt;/style>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Date Added&lt;/th>
+ &lt;th style="text-align: left">Title&lt;/th>
+ &lt;th style="text-align: left">Author&lt;/th>
+ &lt;th style="text-align: right">My Rating&lt;/th>
+ &lt;th style="text-align: right">Avg Rating&lt;/th>
+ &lt;th style="text-align: left">Bookshelves&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-03-09&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/199809440">Supremacy&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Parmy Olson&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.08&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-06&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/835623">How the Mind Works&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Steven Pinker&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.99&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-06&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/204927599">Nexus&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Yuval Noah Harari&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.18&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-06&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/10245602">Poor Economics&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Abhijit V. Banerjee&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.28&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-06&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/1713426">Predictably Irrational&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Dan Ariely&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.12&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-02-06&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/4959061">Why Don&amp;rsquo;t Students Like School?&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Daniel T. Willingham&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.04&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-01-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/127441416">The Diary of a Young Girl&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Anne Frank&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.2&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-01-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/299215">The Road to Serfdom&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Friedrich A. Hayek&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4.15&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-09-20&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/196727">History in Three Keys&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Paul A. Cohen&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">3.97&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-06-25&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/123245371">What Is ChatGPT Doing&amp;hellip; and Why Does It Work?&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Stephen Wolfram&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">3.86&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-05-29&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/42280533">Surrounded by Idiots&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Thomas Erikson&lt;/td>
+ &lt;td style="text-align: right">2&lt;/td>
+ &lt;td style="text-align: right">3.51&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-05-25&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/75567786">ChatGPT for Nonfiction Authors&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Hassan Osman&lt;/td>
+ &lt;td style="text-align: right">2&lt;/td>
+ &lt;td style="text-align: right">4.06&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-12&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/23507632">中国古代文化常识&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">王力&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">4.52&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-12&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/6317155">笑傲江湖 (全八冊)&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Jin Yong&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.58&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-12&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/31799">The Problems of Philosophy&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Bertrand Russell&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">3.9&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-12&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/18663411">朝花夕拾&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Lu Xun&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.38&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-09&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/575801">The Russians&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Hedrick Smith&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.02&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/338798">Ulysses&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">James Joyce&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.77&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/1953">A Tale of Two Cities&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Charles Dickens&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.87&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/910789">The Elements Of Computing Systems&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Noam Nisan&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4.54&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/211439">Modern Quantum Mechanics&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">J.J. Sakurai&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4.2&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/13839366">Introduction to the Theory of Computation&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Michael Sipser&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4.24&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/5129">Brave New World&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Aldous Huxley&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.99&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/6934913">The Shortest History of Europe&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">John Hirst&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">4.03&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/157993">The Little Prince&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Antoine de Saint-Exupéry&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.33&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/45269616">Meditations&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Marcus Aurelius&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.28&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-08&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/10210">Jane Eyre&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Charlotte Brontë&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.15&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/25698">An Inquiry into the Nature and Causes of the Wealth of Nations&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Adam Smith&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.88&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/35261321">Pride and Prejudice&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Jane Austen&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.29&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/133539">Swann’s Way (In Search of Lost Time, #1)&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Marcel Proust&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.15&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/5107">The Catcher in the Rye&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">J.D. Salinger&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.8&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/6185">Wuthering Heights&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Emily Brontë&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.9&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-04-03&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/8349198">Animal Farm&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">George Orwell&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/36064445">Skin in the Game&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Nassim Nicholas Taleb&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.91&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/13530973">Antifragile&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Nassim Nicholas Taleb&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.1&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/38315">Fooled by Randomness&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Nassim Nicholas Taleb&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.08&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-22&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/11297">Norwegian Wood&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Haruki Murakami&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/48581422">Stop Reading the News&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Rolf Dobelli&lt;/td>
+ &lt;td style="text-align: right">2&lt;/td>
+ &lt;td style="text-align: right">3.71&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/45356450">人生的智慧 (叔本华系列) (Chinese Edition)&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Arthur Schopenhauer&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.07&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-03-10&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/59107858">1984&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">George Orwell&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.2&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-02-18&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/29965800">The Subtle Art of Not Giving a F*ck&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Mark Manson&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">3.87&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-02-05&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/2657">To Kill a Mockingbird&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Harper Lee&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.26&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-02-04&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/134798">Capitalism, Socialism and Democracy&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Joseph A. Schumpeter&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.99&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-02-04&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/41881472">The Psychology of Money&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Morgan Housel&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.29&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/12609433">The Power of Habit&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Charles Duhigg&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.13&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/3228917">Outliers&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Malcolm Gladwell&lt;/td>
+ &lt;td style="text-align: right">3&lt;/td>
+ &lt;td style="text-align: right">4.19&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/7170627">The Emperor of All Maladies&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Siddhartha Mukherjee&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.34&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/4069">Man&amp;rsquo;s Search for Meaning&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Viktor E. Frankl&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.37&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/14743">The God Delusion&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Richard Dawkins&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.9&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/43369">God Is Not Great&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Christopher Hitchens&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.96&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/1842">Guns, Germs, and Steel&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Jared Diamond&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.04&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/35696171">Enlightenment Now&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Steven Pinker&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.2&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/28815">Influence&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Robert B. Cialdini&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.22&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/4936457">The Time Traveller&amp;rsquo;s Guide to Medieval England&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Ian Mortimer&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.01&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/21">A Short History of Nearly Everything&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Bill Bryson&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.22&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/61539">The Structure of Scientific Revolutions&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Thomas S. Kuhn&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.03&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/27220736">Shoe Dog&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Phil Knight&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.46&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/35167685">&amp;ldquo;Surely You&amp;rsquo;re Joking, Mr. Feynman!&amp;rdquo;&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Richard P. Feynman&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.27&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/11468377">Thinking, Fast and Slow&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Daniel Kahneman&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.17&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/242472">The Black Swan&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Nassim Nicholas Taleb&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.96&lt;/td>
+ &lt;td style="text-align: left">currently-reading&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/25666050">Algorithms to Live By&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Brian Christian&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.13&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-31&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/23692271">Sapiens&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Yuval Noah Harari&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4.34&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/190065">Monkey&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Wu Cheng&amp;rsquo;en&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.04&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-30&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/303615">The General Theory of Employment, Interest, and Money&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">John Maynard Keynes&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.84&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/14662">The Red and the Black&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Stendhal&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">3.86&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/30597">The Hunchback of Notre-Dame&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Victor Hugo&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.02&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/18405">Gone with the Wind&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Margaret Mitchell&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.31&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/15823480">Anna Karenina&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Leo Tolstoy&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.1&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/48565615">Don Quixote&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Miguel de Cervantes Saavedra&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">3.9&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/4671">The Great Gatsby&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">F. Scott Fitzgerald&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">3.93&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/48725100">War and Peace&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Leo Tolstoy&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.17&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/320">One Hundred Years of Solitude&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Gabriel García Márquez&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">4.12&lt;/td>
+ &lt;td style="text-align: left">nan&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2023-01-19&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.goodreads.com/book/show/24280">Les Misérables&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">Victor Hugo&lt;/td>
+ &lt;td style="text-align: right">0&lt;/td>
+ &lt;td style="text-align: right">4.21&lt;/td>
+ &lt;td style="text-align: left">to-read&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>IMDb Ratings</title><link>https://yingkui.com/imdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/imdb/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
+&lt;style>
+table {
+ overflow-x: auto;
  white-space: nowrap;
 }
 &lt;/style>
@@ -15837,7 +16812,7 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2024-09-02&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt0057012">Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt0057012">Dr. Strangelove &lt;/a>&lt;/td>
  &lt;td style="text-align: right">1964&lt;/td>
  &lt;td style="text-align: right">9&lt;/td>
  &lt;td style="text-align: right">8.3&lt;/td>
@@ -16502,7 +17477,7 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2023-02-21&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1274790">Beijing 2008: Games of the XXIX Olympiad: Beijing 2008 Olympics Games Opening Ceremony&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1274790">Beijing 2008&lt;/a>&lt;/td>
  &lt;td style="text-align: right">2008&lt;/td>
  &lt;td style="text-align: right">8&lt;/td>
  &lt;td style="text-align: right">8.3&lt;/td>
@@ -17160,7 +18135,7 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2022-07-22&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt3148020">Attack on Titan: Crushing Blow: The 57th Exterior Scouting Mission, Part 5&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt3148020">Attack on Titan&lt;/a>&lt;/td>
  &lt;td style="text-align: right">2013&lt;/td>
  &lt;td style="text-align: right">10&lt;/td>
  &lt;td style="text-align: right">9.6&lt;/td>
@@ -17293,14 +18268,14 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2021-11-24&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1204264">Avatar: The Last Airbender: Sozin&amp;rsquo;s Comet, Part 3: Into the Inferno&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1204264">Avatar Part 3: Into the Inferno&lt;/a>&lt;/td>
  &lt;td style="text-align: right">2008&lt;/td>
  &lt;td style="text-align: right">10&lt;/td>
  &lt;td style="text-align: right">9.8&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2021-11-24&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1204265">Avatar: The Last Airbender: Sozin&amp;rsquo;s Comet, Part 4: Avatar Aang&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt1204265">Avatar Part 4: Avatar Aang&lt;/a>&lt;/td>
  &lt;td style="text-align: right">2008&lt;/td>
  &lt;td style="text-align: right">10&lt;/td>
  &lt;td style="text-align: right">9.9&lt;/td>
@@ -19847,7 +20822,7 @@ table th:first-child, table td:first-child {
  &lt;td style="text-align: center">研究生&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>English (CEFR B2)&lt;/td>
+ &lt;td>English (CEFR B2 / Gaokao 140+)&lt;/td>
  &lt;td style="text-align: center">中学&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -19855,12 +20830,12 @@ table th:first-child, table td:first-child {
  &lt;td style="text-align: center">本科&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>French (CEFR A1)&lt;/td>
+ &lt;td>French (CEFR early A1)&lt;/td>
  &lt;td style="text-align: center">本科&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>Japanese (CEFR A2 / N4)&lt;/td>
- &lt;td style="text-align: center">Duolingo&lt;/td>
+ &lt;td>Japanese (CEFR early A2 / N5)&lt;/td>
+ &lt;td style="text-align: center">工作&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -20120,7 +21095,7 @@ table th:first-child, table td:first-child {
  &lt;td style="text-align: center">工作&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Library</title><link>https://yingkui.com/lib/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/lib/</guid><description>&lt;style>
+&lt;/table></description></item><item><title>Library</title><link>https://yingkui.com/books/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/books/</guid><description>&lt;style>
  td:first-child,
  th:first-child {
  width: 30px;
@@ -20129,6 +21104,7 @@ table th:first-child, table td:first-child {
  }
 &lt;/style>
 &lt;p>Presence on this list does not imply endorsement.&lt;/p>
+&lt;p>For textbooks, go to &lt;a href="https://yingkui.com/textbooks">yingkui.com/textbooks&lt;/a>&lt;/p>
 &lt;h2 id="经济管理">经济管理&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -20331,10 +21307,6 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">数学领域的发明心理学&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
  &lt;td style="text-align: left">Blink&lt;/td>
  &lt;/tr>
  &lt;/tbody>
@@ -20426,10 +21398,6 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">Western Civilization (Jackson J. Spielvogel)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
  &lt;td style="text-align: left">理解和改变世界&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -20513,22 +21481,6 @@ table th:first-child, table td:first-child {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628">The C Programming Language&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686">The Elements of Computer Systems (Nand2Tetris)&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X">Computer Systems: A Programmer&amp;rsquo;s Perspective&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/">Introduction to the Theory of Computation&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088">A New Kind of Science&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -20546,18 +21498,6 @@ table th:first-child, table td:first-child {
  &lt;tr>
  &lt;td style="text-align: left">📒&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/dp/B00JDMPOK2/">Code: The Hidden Language of Computer Hardware and Software&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">Linear Algebra (Gilbert)&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">📒&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302">A Course in Mathematical Logic&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">🔥&lt;/td>
@@ -20955,7 +21895,101 @@ table th:first-child, table td:first-child {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> teams&lt;span style="color:#f92672">.&lt;/span>sort(key&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">lambda&lt;/span> x:count[ord(x)&lt;span style="color:#f92672">-&lt;/span>ord(&lt;span style="color:#e6db74">&amp;#39;A&amp;#39;&lt;/span>)],reverse &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">True&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>join(teams)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>To Do</title><link>https://yingkui.com/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/todo/</guid><description>&lt;ol>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Textbooks</title><link>https://yingkui.com/textbooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/textbooks/</guid><description>&lt;h2 id="生物学">生物学&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">学科&lt;/th>
+ &lt;th style="text-align: left">教材&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Cognitive Science&lt;/td>
+ &lt;td style="text-align: left">From Conditioning to Conscious Recollection&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="数学">数学&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">学科&lt;/th>
+ &lt;th style="text-align: left">教材&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Mathematics&lt;/td>
+ &lt;td style="text-align: left">Linear Algebra (Gilbert)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Mathematics&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302">A Course in Mathematical Logic&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="csai">CSAI&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">学科&lt;/th>
+ &lt;th style="text-align: left">教材&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628">The C Programming Language&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686">The Elements of Computer Systems (Nand2Tetris)&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X">Computer Systems: A Programmer&amp;rsquo;s Perspective&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/">Introduction to the Theory of Computation&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="经济学">经济学&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">学科&lt;/th>
+ &lt;th style="text-align: left">教材&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Economics&lt;/td>
+ &lt;td style="text-align: left">Principles of Economics&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="历史">历史&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">学科&lt;/th>
+ &lt;th style="text-align: left">教材&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">History&lt;/td>
+ &lt;td style="text-align: left">Western Civilization (Jackson J. Spielvogel)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>To Do</title><link>https://yingkui.com/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/todo/</guid><description>&lt;ol>
 &lt;li>《拼音改革》，做了一半&lt;/li>
 &lt;li>《模拟人生》，看纪录片的感觉越来越好，因为可以通过模拟去体验&lt;/li>
 &lt;li>《历史离我们有多近》，疫情以来，看了很多二战的电影，时间的跨度问题&lt;/li>
@@ -20979,7 +22013,88 @@ table th:first-child, table td:first-child {
 &lt;li>《The Legend of Zelda: Breath of the Wild》&lt;/li>
 &lt;li>《Grand Theft Auto V》&lt;/li>
 &lt;li>《The Last of Us》&lt;/li>
-&lt;/ul></description></item><item><title>単語</title><link>https://yingkui.com/dango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/dango/</guid><description>&lt;table>
+&lt;/ul></description></item><item><title>単語</title><link>https://yingkui.com/dango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/dango/</guid><description>&lt;h2 id="section-2">Section 2&lt;/h2>
+&lt;h2 id="section-2-8">Section 2-8&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>単語&lt;/th>
+ &lt;th>解釈&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>でぐち&lt;/td>
+ &lt;td>出口&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>じはんき&lt;/td>
+ &lt;td>自販機&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>かいだん&lt;/td>
+ &lt;td>階段&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>でぐち&lt;/td>
+ &lt;td>出口&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>コンセント&lt;/td>
+ &lt;td>Outlet&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>とおい&lt;/td>
+ &lt;td>遠い&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ちかい&lt;/td>
+ &lt;td>近い&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ちか&lt;/td>
+ &lt;td>地下&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>おてあらい&lt;/td>
+ &lt;td>お手洗い&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ゴミばこ&lt;/td>
+ &lt;td>ゴミ箱&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>のりかえ&lt;/td>
+ &lt;td>乗り換え&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>かいさつ&lt;/td>
+ &lt;td>改札&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>からて&lt;/td>
+ &lt;td>空手&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>でかけます&lt;/td>
+ &lt;td>出かける&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>しゅうまつ&lt;/td>
+ &lt;td>週末&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ひとりで&lt;/td>
+ &lt;td>一人で&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>すこし&lt;/td>
+ &lt;td>少し&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="section-1-10">Section 1-10&lt;/h2>
+&lt;table>
  &lt;thead>
  &lt;tr>
  &lt;th>単語&lt;/th>
