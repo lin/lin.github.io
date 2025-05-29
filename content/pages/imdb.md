@@ -6,8 +6,8 @@ type: "page"
 Last Update: 2025/05/12
 
 <style>
-table th:first-child, table td:first-child {
-  width: 100px;
+table {
+  overflow-x: auto;
   white-space: nowrap;
 }
 </style>
@@ -33,7 +33,7 @@ table th:first-child, table td:first-child {
 | 2024-09-07 | [Metropolis](https://www.imdb.com/title/tt0017136)                                                                             |   1927 |           8 |    8.3 |
 | 2024-09-07 | [The Treasure of the Sierra Madre](https://www.imdb.com/title/tt0040897)                                                       |   1948 |           8 |    8.2 |
 | 2024-09-02 | [Inside Out 2](https://www.imdb.com/title/tt22022452)                                                                          |   2024 |           9 |    7.5 |
-| 2024-09-02 | [Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb](https://www.imdb.com/title/tt0057012)                   |   1964 |           9 |    8.3 |
+| 2024-09-02 | [Dr. Strangelove ](https://www.imdb.com/title/tt0057012)                   |   1964 |           9 |    8.3 |
 | 2024-08-21 | [Jumanji](https://www.imdb.com/title/tt0113497)                                                                                |   1995 |           7 |    7.1 |
 | 2024-06-25 | [Full Metal Jacket](https://www.imdb.com/title/tt0093058)                                                                      |   1987 |           9 |    8.2 |
 | 2024-06-11 | [No Time to Die](https://www.imdb.com/title/tt2382320)                                                                         |   2021 |           7 |    7.3 |
@@ -128,7 +128,7 @@ table th:first-child, table td:first-child {
 | 2023-02-21 | [Everything Everywhere All at Once](https://www.imdb.com/title/tt6710474)                                                      |   2022 |           8 |    7.8 |
 | 2023-02-21 | [Die Hard](https://www.imdb.com/title/tt0095016)                                                                               |   1988 |           8 |    8.2 |
 | 2023-02-21 | [Oldboy](https://www.imdb.com/title/tt0364569)                                                                                 |   2003 |           8 |    8.3 |
-| 2023-02-21 | [Beijing 2008: Games of the XXIX Olympiad: Beijing 2008 Olympics Games Opening Ceremony](https://www.imdb.com/title/tt1274790) |   2008 |           8 |    8.3 |
+| 2023-02-21 | [Beijing 2008](https://www.imdb.com/title/tt1274790) |   2008 |           8 |    8.3 |
 | 2023-02-21 | [Back to the Future Part II](https://www.imdb.com/title/tt0096874)                                                             |   1989 |           8 |    7.8 |
 | 2023-02-21 | [Up](https://www.imdb.com/title/tt1049413)                                                                                     |   2009 |           8 |    8.3 |
 | 2023-02-21 | [Fast & Furious 6](https://www.imdb.com/title/tt1905041)                                                                       |   2013 |           7 |    7   |
@@ -222,7 +222,7 @@ table th:first-child, table td:first-child {
 | 2022-08-05 | [Attack on Titan: Scream](https://www.imdb.com/title/tt6723710)                                                                |   2017 |          10 |    9.7 |
 | 2022-07-22 | [Attack on Titan](https://www.imdb.com/title/tt2560140)                                                                        |   2013 |          10 |    9.1 |
 | 2022-07-22 | [Better Call Saul: Plan and Execution](https://www.imdb.com/title/tt12187040)                                                  |   2022 |          10 |    9.9 |
-| 2022-07-22 | [Attack on Titan: Crushing Blow: The 57th Exterior Scouting Mission, Part 5](https://www.imdb.com/title/tt3148020)             |   2013 |          10 |    9.6 |
+| 2022-07-22 | [Attack on Titan](https://www.imdb.com/title/tt3148020)                                                                        |   2013 |          10 |    9.6 |
 | 2022-07-13 | [Seinfeld](https://www.imdb.com/title/tt0098904)                                                                               |   1989 |           8 |    8.9 |
 | 2022-07-12 | [Better Call Saul: Point and Shoot](https://www.imdb.com/title/tt12187044)                                                     |   2022 |          10 |    9.8 |
 | 2022-04-11 | [Nomadland](https://www.imdb.com/title/tt9770150)                                                                              |   2020 |           7 |    7.3 |
@@ -241,8 +241,8 @@ table th:first-child, table td:first-child {
 | 2021-12-12 | [Bicycle Thieves](https://www.imdb.com/title/tt0040522)                                                                        |   1948 |           9 |    8.2 |
 | 2021-12-07 | [The Kid](https://www.imdb.com/title/tt0012349)                                                                                |   1921 |           9 |    8.2 |
 | 2021-12-07 | [M](https://www.imdb.com/title/tt0022100)                                                                                      |   1931 |           7 |    8.3 |
-| 2021-11-24 | [Avatar: The Last Airbender: Sozin's Comet, Part 3: Into the Inferno](https://www.imdb.com/title/tt1204264)                    |   2008 |          10 |    9.8 |
-| 2021-11-24 | [Avatar: The Last Airbender: Sozin's Comet, Part 4: Avatar Aang](https://www.imdb.com/title/tt1204265)                         |   2008 |          10 |    9.9 |
+| 2021-11-24 | [Avatar Part 3: Into the Inferno](https://www.imdb.com/title/tt1204264)                    |   2008 |          10 |    9.8 |
+| 2021-11-24 | [Avatar Part 4: Avatar Aang](https://www.imdb.com/title/tt1204265)                         |   2008 |          10 |    9.9 |
 | 2021-11-14 | [Avatar: The Last Airbender](https://www.imdb.com/title/tt0417299)                                                             |   2005 |          10 |    9.3 |
 | 2021-11-11 | [Arrival](https://www.imdb.com/title/tt2543164)                                                                                |   2016 |           7 |    7.9 |
 | 2021-11-10 | [House of Cards](https://www.imdb.com/title/tt1856010)                                                                         |   2013 |           8 |    8.6 |

@@ -15,10 +15,10 @@ type: "page"
 | Mathematical and Physical Methods                  | 本科            |
 | Numerical Methods                                  | 本科            |
 | Mathematics for Materials Science                  | 研究生          |
-| English (CEFR B2)                                  | 中学            |
+| English (CEFR B2 / Gaokao 140+)                    | 中学            |
 | English (CEFR C1 / IELTS 7.0)                      | 本科            |
-| French (CEFR A1)                                   | 本科            |
-| Japanese (CEFR A2 / N4)                            | Duolingo        |  
+| French (CEFR early A1)                             | 本科            |
+| Japanese (CEFR early A2 / N5)                      | 工作            |  
 
 ## 理(材)化生工
 

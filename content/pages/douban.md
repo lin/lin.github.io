@@ -6,8 +6,8 @@ type: "page"
 Last Update: 2025/05/12
 
 <style>
-table th:first-child, table td:first-child {
-  width: 100px;
+table {
+  overflow-x: auto;
   white-space: nowrap;
 }
 </style>

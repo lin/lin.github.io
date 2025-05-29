@@ -3,7 +3,7 @@ title: "Played Games"
 type: "page"
 ---
 
-## [《论教学》](/edu)和疫情时期
+[Non-Physical Games Library](./lib)
 
 ✅  通关；😊 满意；🎮 进行
 

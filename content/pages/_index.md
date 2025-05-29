@@ -1,5 +1,5 @@
-1. [Books Library](/lib) & [Poems](/poems) & [Courses](/courses)
-1. [Games](/games) & [Duolingo](/duo) & [CEFR](/cefr) & [Games Library](/games/lib)
+1. [Books](/books) & [Poems](/poems) & [Courses](/courses) & [Goodreads](/goodreads)
+1. [Games](/games) & [Duolingo](/duo) & [CEFR](/cefr) 
 1. [IMDb](/imdb) & [Douban](/douban) & [In Theaters](/movies) & [Trips](/trips)
 1. [Top Rated](/top) & [Things](/toty) & [Oscars](/oscars)
 1. [Family Tree](/lin) & [GPT Anime](/anime)

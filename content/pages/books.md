@@ -14,6 +14,8 @@ type: "page"
 
 Presence on this list does not imply endorsement.
 
+For textbooks, go to [yingkui.com/textbooks](/textbooks)
+
 ## 经济管理
 
 | 格式 | 名称                                                    | 
@@ -68,7 +70,6 @@ Presence on this list does not imply endorsement.
 |📒    | Amusing Ourselves to Death                |
 |📒    | 数学领域的发明心理学               |
 |🔥    |Behavioural Economics: A Very Short Introduction|
-|📒    | 数学领域的发明心理学               |
 |📒    | Blink              |
 
 ## 政治历史
@@ -94,14 +95,12 @@ Presence on this list does not imply endorsement.
 | 🔥   |The Rise and Fall of the East                           |
 | 📒   |历史：地图上的世界简史                           |
 | 📒   |DK：时间线上的全球史                           |
-| 📒   |Western Civilization (Jackson J. Spielvogel)             |
 | 📒   |理解和改变世界                                        |
 | 📒   |世界是概率的（伊藤）                                        |
 | 🔥   |Enlightenment Now                           |
 | 📒   |历史三调 作为事件、经历和神话的义和团                        |
 | 🔥   |晚清四大谴责小说                        |
 | 🔥   |走出帝制                     |
-
 
 ## 数理科技
 
@@ -119,20 +118,12 @@ Presence on this list does not imply endorsement.
 | 📒   |魔鬼数学                                   |
 | 📒   |Scale                   |
 | 📒   |The Book of Why                    |
-| 📒   | [The C Programming Language](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628) |
-| 📒   | [The Elements of Computer Systems (Nand2Tetris)](https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686) |
-| 📒   | [Computer Systems: A Programmer's Perspective](https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X) |
-| 📒   | [Introduction to the Theory of Computation](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/) |
 | 📒   | [A New Kind of Science](https://www.amazon.com/New-Kind-Science-Stephen-Wolfram/dp/1579550088) |
 | 📒   | [Probably Approximately Correct](https://www.amazon.com/Probably-Approximately-Correct-Algorithms-Prospering/dp/0465032710) |
 | 📒   | [The Master Algorithm](https://www.amazon.com/dp/B012271YB2/) |
 | 📒   | [The Annotated Turing](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055) |
 | 📒   | [Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/dp/B00JDMPOK2/) |
-| 📒   | [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) |
-| 📒   | Linear Algebra (Gilbert)                  |
-| 📒   | [A Course in Mathematical Logic](https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302)                    |
 | 🔥   | Sync: How Order Emerges From Chaos|
-
 
 ## 文学小说
 
