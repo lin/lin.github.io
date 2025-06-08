@@ -13,6 +13,7 @@ Last Updated: 2025.04.22
 ## Movies & TV Shows
 
 - 《Godfather》
+- 《Chernobyl》
 - 《Breaking Bad》
 
 ## Games

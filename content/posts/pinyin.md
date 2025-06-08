@@ -2,6 +2,7 @@
 title: "四字母拼音"
 date: 2024-08-27
 isCJKLanguage: true
+draft: true
 ---
 
 > Simplified Pinyin

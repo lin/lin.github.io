@@ -1,3 +1,9 @@
+---
+title: "智力要素（文章版）"
+isCJKLanguage: true
+draft: true
+---
+
 2025-04-22
 
 ## 智力要素（文章版）

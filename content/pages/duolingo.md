@@ -95,3 +95,8 @@ units_in_each_section = [10,26,20,48,50,52,36,36]
 1. each hour of learning, you may expose to 15-20 valuable lexemes
 1. each week in university, you learn 50-65 lexemes
 1. each semester in university, you learn 800-1000 lexemes
+1. score 300 to reach A2, 6 lexemes per score, 1800 lexemes
+1. score 600 to reach B1, 6 lexemes per score, 3600 lexemes
+1. score 900 to reach B2, 8 lexemes per score, 6000 lexemes
+1. score 1200 to reach C1, 8 lexemes per score, 8400 lexemes
+1. score 1500 to reach C2, 10 lexemes per score, 11400 lexemes

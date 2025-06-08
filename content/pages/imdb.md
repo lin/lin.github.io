@@ -14,6 +14,7 @@ table {
 
 | Date       | Title                                                                                                                          |   Year |         My |   IMDb |
 |:-----------|:-------------------------------------------------------------------------------------------------------------------------------|-------:|------------:|-------:|
+| 2025-04-18 | [Mission: Impossible - The Final Reckoning](https://www.imdb.com/title/tt9603208/)                                             |   2025 |           7 |    7.5 |
 | 2025-04-18 | [There Will Be Blood](https://www.imdb.com/title/tt0469494)                                                                    |   2007 |           8 |    8.2 |
 | 2025-04-13 | [Anora](https://www.imdb.com/title/tt28607951)                                                                                 |   2024 |           8 |    7.5 |
 | 2025-01-02 | [The Handmaiden](https://www.imdb.com/title/tt4016934)                                                                         |   2016 |           8 |    8.1 |

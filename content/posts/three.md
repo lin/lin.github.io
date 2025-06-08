@@ -1,6 +1,7 @@
 ---
 title: "Be Focused. Be Fast. Be Determined."
 date: 2017-02-02
+draft: true
 ---
 
 ### 1. Be Focused:
