@@ -289,6 +289,11 @@ table {
 &lt;li>each hour of learning, you may expose to 15-20 valuable lexemes&lt;/li>
 &lt;li>each week in university, you learn 50-65 lexemes&lt;/li>
 &lt;li>each semester in university, you learn 800-1000 lexemes&lt;/li>
+&lt;li>score 300 to reach A2, 6 lexemes per score, 1800 lexemes&lt;/li>
+&lt;li>score 600 to reach B1, 6 lexemes per score, 3600 lexemes&lt;/li>
+&lt;li>score 900 to reach B2, 8 lexemes per score, 6000 lexemes&lt;/li>
+&lt;li>score 1200 to reach C1, 8 lexemes per score, 8400 lexemes&lt;/li>
+&lt;li>score 1500 to reach C2, 10 lexemes per score, 11400 lexemes&lt;/li>
 &lt;/ol></description></item><item><title>shua.ai</title><link>https://yingkui.com/shua/</link><pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/shua/</guid><description>&lt;p>剧情 + 肉鸽 + 技能 + AI&lt;/p>
 &lt;h2 id="おすすめ推剧情">おすすめ，推剧情&lt;/h2>
 &lt;p>Candy Crash：傻瓜目标傻瓜关，降低思维压力，易于形成习惯&lt;/p>
@@ -486,7 +491,7 @@ table {
 &lt;p>我和方舟子说， GPT-4o 和 Claude-3.5-Sonnet，在这个提示词上并没有表现的更好。对此方舟子回复说：&lt;/p>
 &lt;p>&lt;img src="../img/fang-10.png" alt="">&lt;/p>
 &lt;p>&lt;strong>“现在要换话题比烂了” 是一句非常糊涂的话，DeepSeek 的性能是否相比之下更差就是话题本身&lt;/strong>，似乎方舟子是想说我在指责转移，Whataboutism，AlphaFold 也有幻觉，我们去找大模型的缺陷难道是这个帖子的主题？一个 “智商高于180” 的天才，为什么会在讨论过程中连论点是什么都能搞糊涂？因为他认知能力没他吹嘘的那么高。&lt;/p>
-&lt;p>方舟子自诩科学精神，却同时使用了两次 Cherry Picking 的诡辩，首先，他选择了大模型里普遍存在的、常见的幻觉提示词来嘲讽性能，其次，即使 DeepSeek 在这个幻觉上表现比其他大模型更出色，他却找了一个发生概率低的单一样本来佐证。&lt;/p>
+&lt;p>方舟子自诩科学精神，却同时使用了两次 Cherry Picking 的诡辩，首先，他选择了大模型里&lt;a href="https://www.youtube.com/watch?v=7xTGNNLPyMI&amp;amp;t=7574s">普遍存在的、常见的幻觉提示词&lt;/a>来嘲讽性能，其次，即使 DeepSeek 在这个幻觉上表现比其他大模型更出色，他却找了一个发生概率低的单一样本来佐证。&lt;/p>
 &lt;p>&lt;strong>通过一次飞机失事，来嘲笑飞机的安全性不如私家车，这就是方舟子自诩的科学精神吗？&lt;/strong>&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
 &lt;p>2024-12-26&lt;/p>
 &lt;p>听闻盛景也登峰，缓钝笨拙若老翁&lt;/p>
@@ -537,24 +542,7 @@ table {
 &lt;li>资源限制，刀有耗损，子弹稀缺，血量不回复&lt;/li>
 &lt;li>敌人不重生&lt;/li>
 &lt;li>&lt;/li>
-&lt;/ol></description></item><item><title>四字母拼音</title><link>https://yingkui.com/pinyin/</link><pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/pinyin/</guid><description>&lt;blockquote>
-&lt;p>Simplified Pinyin&lt;/p>&lt;/blockquote>
-&lt;h2 id="原则">原则&lt;/h2>
-&lt;ol>
-&lt;li>书写的场景变少，键盘输入的场景变多，字母数量少&lt;/li>
-&lt;li>把汉字当成emoji看待，强调呼出的速度，而不是读音精准&lt;/li>
-&lt;li>容易被读出来，利于商业标识，利于传播，soni，konami&lt;/li>
-&lt;li>不要求准确的普通话读音，近似即可&lt;/li>
-&lt;li>a /ɑː/, i /iː/, u /uː/, e /e/，o /əʊ/，er /ə/， or /ɔː/, ur/uːə/(uer的缩写), ir /iːə/ (ier的缩写)&lt;/li>
-&lt;li>必须用四个字母以内表示一个拼音，a/i/u/e/o, ir/er/or/ur/sh/ch/ts&lt;/li>
-&lt;li>摒弃 j q x 的标音，例如，ki这个组合在拼音中，不读成/kʰi/，而读成 /tɕʰi/&lt;/li>
-&lt;li>为了达到易读简短的目的，甚至出现了改音（用e/o来近似），其实也可以考虑并音或者换音，删去一些使用频率低的音，例如，diu去除变成dio，qiong变成kio，xiong和xiu合并成sio，推广普通话就是让大家重新适应发音，更改读音并不是那么不能接受&lt;/li>
-&lt;li>辅音：j/q/x/zh/c，c在英语和法语里是 k/s 的音，而不读成ts，好在c的音不多，改成ts影响不大&lt;/li>
-&lt;li>元音：an/ang, en/eng, in/ing, un/ong，把ng变成m&lt;/li>
-&lt;li>元音：yi/wu/yu，变化比较大，yu比较难改&lt;/li>
-&lt;/ol>
-&lt;h2 id="规则">规则&lt;/h2>
-&lt;p>😎：满意，🤔：犹豫，😱：激进，😔：不是很满意&lt;/p></description></item><item><title>日本之旅</title><link>https://yingkui.com/trips/japan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/japan/</guid><description>&lt;h2 id="7月21日">7月21日&lt;/h2>
+&lt;/ol></description></item><item><title>日本之旅</title><link>https://yingkui.com/trips/japan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/japan/</guid><description>&lt;h2 id="7月21日">7月21日&lt;/h2>
 &lt;ol>
 &lt;li>出发：早晨四点半起床，五点十分出门，司机有点迷糊，去北门，又从正门进入，走的土路到机场&lt;/li>
 &lt;li>飞机：六点前就到了，六点半导游还没有交代清楚，八点起飞，十一点到达东京&lt;/li>
@@ -1982,18 +1970,7 @@ h3 {
 &lt;li>FIFA（年货）&lt;/li>
 &lt;/ol>
 &lt;h3 id="年度最佳游戏提名游戏类型">年度最佳游戏提名游戏类型&lt;/h3>
-&lt;p>模拟策略游戏，体育竞速游戏，格斗游戏，动作游戏&lt;/p></description></item><item><title>[儿屎] 一个巴掌拍不响</title><link>https://yingkui.com/bazhang/</link><pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/bazhang/</guid><description>&lt;p>一个巴掌拍不响的含义是：当一个恶性事件的发生，两方参与者都有促使事件升级的责任，需要我们同时谴责施害者和受害者双方，这是明显的以偏概全。&lt;/p>
-&lt;p>当你用一个巴掌，去主动拍另外一个静止的巴掌时，就可以拍响，而无需两个手掌同时发力。&lt;/p>
-&lt;p>一个巴掌拍的响是胡扯的实例：&lt;/p>
-&lt;ol>
-&lt;li>强奸事件中，被强奸者作为女性有让事件升级的责任，是她没有假扮成男性。&lt;/li>
-&lt;li>在大型枪击案的现场，受害者有责任，不应该出现在公共场合。&lt;/li>
-&lt;li>法院判决时，大多数情况下，也要对原告做出惩罚。&lt;/li>
-&lt;/ol>
-&lt;p>两个巴掌拍出响的时候有，但不是大多数时候，日常生活中，即使施害者一方有过分的举动，受害者还是尽可能的让矛盾不去升级，但那些靠强力手段去获得不当利益的人，是伸出巴掌打在受害者身上发出的响声。拿出一个巴掌拍不响作为论据，是对施暴者恶行的包庇。&lt;/p>
-&lt;!-- 1. 盗窃事件中，被盗者有让事件升级的责任，不应该在屋内放值钱的东西。
-1. 校园凌霸事件中，被欺辱的一方有让事件升级的责任，平时应该多练习搏击。 
-1. 土匪强盗或者黑社会强行收取保护费中，商家有让事件升级的责任，应该以暴制暴。--></description></item><item><title>R星游戏《荒野大镖客》名字的由来</title><link>https://yingkui.com/games/red-dead/</link><pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/red-dead/</guid><description>&lt;h3 id="red-dead---瑞德死亡">Red Dead - 瑞德死亡&lt;/h3>
+&lt;p>模拟策略游戏，体育竞速游戏，格斗游戏，动作游戏&lt;/p></description></item><item><title>R星游戏《荒野大镖客》名字的由来</title><link>https://yingkui.com/games/red-dead/</link><pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/red-dead/</guid><description>&lt;h3 id="red-dead---瑞德死亡">Red Dead - 瑞德死亡&lt;/h3>
 &lt;p>如果对英文 Red Dead 直译应该是《瑞德死亡》，其中，瑞德是游戏主角，死亡是主角的特殊技能死亡之眼。之所以主角叫做瑞德（《肖申克的救赎》里摩根·弗里曼饰演的角色昵称就是瑞德），是因为卡普空觉得英文 Red Dead 的发音听起来很炫酷，也就是日语的 “レッド・デッド”（瑞德·对德），而R星沿用了这个名称。这和《艾尔登法环》的构成一致，名字 + 道具。《超级马力欧》也可以理解成类似的命名结构，超级指的是特殊状态下的马力欧，这个超级是由于游戏中道具蘑菇 🍄 产生的，也就是 道具 + 主角名字。而系列第一部《Red Dead Revolver》就更加的直接了，《瑞德致命左轮》就是很明确的主角 + 关键道具的命名法，既有独特的IP名称，也有西部世界的要素。这种命名法和侠客称号很像，例如，大刀王五，金枪手徐宁，双鞭呼延灼，而水浒中，这种形容角色出手致命的称号也很多，例如，活阎罗，催命判官。而翻译成《红色死亡》也很贴切，&lt;a href="https://www.bilibili.com/video/BV1i24y1U7sH/">西部片&lt;/a>以及这个系列的主色调（尤其&lt;a href="https://www.bilibili.com/video/BV1vJ411L7Tw/">片头&lt;/a>）都是红色底色。&lt;/p>
 &lt;h3 id="用心棒与大镖客">《用心棒》与《大镖客》&lt;/h3>
 &lt;p>黑泽明在1961年拍摄了电影《用心棒》，而用心棒是日语汉字，对应中文的保镖，用心棒本身的意思是&lt;a href="https://ja.wikipedia.org/wiki/%E7%94%A8%E5%BF%83%E6%A3%92_(%E6%9B%96%E6%98%A7%E3%81%95%E5%9B%9E%E9%81%BF)">门闩&lt;/a>，也就是用心警戒保护安全的意思，衍生成了花钱雇人保护安全的保镖，在《用心棒》电影中，主角可以认为是保镖，但更像是雇佣兵，而《用心棒》中主角在当地两派斗争中相互帮忙也是《救赎2》中第三章罗德镇的灵感来源。而中文镖客一词，是镖局用来保护押运财物的武士，和现如今日常的保镖还是有所区别的，更像是运钞车旁的守卫。镖局本来叫做標行，看起来像是用木棒来保护钞票的意思。&lt;/p>
@@ -2218,6 +2195,11 @@ h3 {
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-05-30&lt;/td>
+ &lt;td style="text-align: left">750 Quests&lt;/td>
+ &lt;td style="text-align: left">Finish All Achievements&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2025-05-29&lt;/td>
  &lt;td style="text-align: left">602 Days, 183403 xp, 10532 Gems&lt;/td>
@@ -2671,17 +2653,7 @@ h3 {
 &lt;h2 id="07月11日大理">07月11日，大理&lt;/h2>
 &lt;p>在大理古城玩了一整天，要比丽江有意思&lt;/p>
 &lt;h2 id="07月12日归程">07月12日，归程&lt;/h2>
-&lt;p>早晨出发去机场，回家&lt;/p></description></item><item><title>Be Focused. Be Fast. Be Determined.</title><link>https://yingkui.com/three/</link><pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate><guid>https://yingkui.com/three/</guid><description>&lt;h3 id="1-be-focused">1. Be Focused:&lt;/h3>
-&lt;p>一，专注是指目标明确而不是模糊。不要被突如其来的欲望，而打乱了自己有规划的长远目标。&lt;/p>
-&lt;p>二，专注是指 do one thing, eat that frog. 明确当前最重要问题，坚决的把它解决掉。&lt;/p>
-&lt;h3 id="2-be-fast">2. Be Fast:&lt;/h3>
-&lt;p>一，快就是不拖延，不找借口。&lt;/p>
-&lt;p>二，快就是情绪上的稳定。&lt;/p>
-&lt;p>三，快就是好。快就是无坚不摧。快就是打开一扇新的门。&lt;/p>
-&lt;h3 id="3-be-determined">3. Be Determined:&lt;/h3>
-&lt;p>一，坚韧不拔的品质是所有品质中最重要的。&lt;/p>
-&lt;p>二，只有坚韧不拔，才能稳步前进。&lt;/p>
-&lt;p>这三个品质是涉及了完成一件难事的三个阶段：一，明确目标，二，执行规划，三，达到目标。&lt;/p></description></item><item><title>创业初期的一些策略</title><link>https://yingkui.com/startup/</link><pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate><guid>https://yingkui.com/startup/</guid><description>&lt;p>这里讨论的创业并不包含所有不受他人雇佣、自己创造财富的商业行为（也就是经商）。&lt;/p>
+&lt;p>早晨出发去机场，回家&lt;/p></description></item><item><title>创业初期的一些策略</title><link>https://yingkui.com/startup/</link><pubDate>Mon, 24 Aug 2015 00:00:00 +0000</pubDate><guid>https://yingkui.com/startup/</guid><description>&lt;p>这里讨论的创业并不包含所有不受他人雇佣、自己创造财富的商业行为（也就是经商）。&lt;/p>
 &lt;p>更具体的，也就是并不包含传统的小商业户，例如，奶茶店、化妆品店或是婚纱店（无论是线上还是线下）。&lt;/p>
 &lt;p>因为小商业户所从事的领域相对成熟，风险较低，回报相对较少，商业规模也很有限。&lt;/p>
 &lt;p>这里讨论的创业指的是一项高风险、高回报的商业行为，创业者要提供一个从未存在或是进行过极大改良的产品或服务。&lt;/p>
@@ -10426,7 +10398,7 @@ $$&lt;/p>
  init();
  &lt;/script>
 &lt;/body>
-&lt;/html></description></item><item><title/><link>https://yingkui.com/hugo-change-domain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/hugo-change-domain/</guid><description>&lt;h2 id="change-domain-names">Change Domain Names&lt;/h2>
+&lt;/html></description></item><item><title/><link>https://yingkui.com/howlongtobeat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/howlongtobeat/</guid><description/></item><item><title/><link>https://yingkui.com/hugo-change-domain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/hugo-change-domain/</guid><description>&lt;h2 id="change-domain-names">Change Domain Names&lt;/h2>
 &lt;ol>
 &lt;li>&lt;code>static/CNAME&lt;/code> file&lt;/li>
 &lt;li>add domain&lt;/li>
@@ -10492,11 +10464,15 @@ $$&lt;/p>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td style="text-align: left">碟中谍8&lt;/td>
+ &lt;td style="text-align: left">2025年5月31日&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">情书&lt;/td>
  &lt;td style="text-align: left">2025年5月22日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 哪吒之魔童闹海&lt;/td>
+ &lt;td style="text-align: left">哪吒之魔童闹海&lt;/td>
  &lt;td style="text-align: left">2025年2月22日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10508,11 +10484,11 @@ $$&lt;/p>
  &lt;td style="text-align: left">2024年4月30日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 沙丘2&lt;/td>
+ &lt;td style="text-align: left">沙丘2&lt;/td>
  &lt;td style="text-align: left">2024年3月8日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 奥本海默&lt;/td>
+ &lt;td style="text-align: left">奥本海默&lt;/td>
  &lt;td style="text-align: left">2023年9月5日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10524,7 +10500,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2023年8月2日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 蜘蛛侠&lt;/td>
+ &lt;td style="text-align: left">蜘蛛侠&lt;/td>
  &lt;td style="text-align: left">2023年6月8日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10568,7 +10544,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2019年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 复仇者联盟-终局之战&lt;/td>
+ &lt;td style="text-align: left">复仇者联盟-终局之战&lt;/td>
  &lt;td style="text-align: left">2019年4月29日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10600,7 +10576,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2018年6月26日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 复仇者联盟-无限战争&lt;/td>
+ &lt;td style="text-align: left">复仇者联盟-无限战争&lt;/td>
  &lt;td style="text-align: left">2018年5月12日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10608,7 +10584,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2018年2月14日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 寻梦环游记&lt;/td>
+ &lt;td style="text-align: left">寻梦环游记&lt;/td>
  &lt;td style="text-align: left">2017年11月27日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10632,7 +10608,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2016年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 头脑特工队&lt;/td>
+ &lt;td style="text-align: left">头脑特工队&lt;/td>
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10648,11 +10624,11 @@ $$&lt;/p>
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 疯狂的麦克斯4&lt;/td>
+ &lt;td style="text-align: left">疯狂的麦克斯4&lt;/td>
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 消失的爱人&lt;/td>
+ &lt;td style="text-align: left">消失的爱人&lt;/td>
  &lt;td style="text-align: left">2014年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10660,7 +10636,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2014年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 星际穿越&lt;/td>
+ &lt;td style="text-align: left">星际穿越&lt;/td>
  &lt;td style="text-align: left">2014年11月&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10720,7 +10696,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 蝙蝠侠 黑暗骑士崛起&lt;/td>
+ &lt;td style="text-align: left">蝙蝠侠 黑暗骑士崛起&lt;/td>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10736,7 +10712,7 @@ $$&lt;/p>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 被解救的姜戈&lt;/td>
+ &lt;td style="text-align: left">被解救的姜戈&lt;/td>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -10764,11 +10740,11 @@ $$&lt;/p>
  &lt;td style="text-align: left">2010年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 盗梦空间&lt;/td>
+ &lt;td style="text-align: left">盗梦空间&lt;/td>
  &lt;td style="text-align: left">2010年9月&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 驯龙高手&lt;/td>
+ &lt;td style="text-align: left">驯龙高手&lt;/td>
  &lt;td style="text-align: left">2010年5月&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -11117,14 +11093,7 @@ $$&lt;/p>
 &lt;p>水打浮萍巧相逢&lt;/p>
 &lt;p>随风稍逊各西东&lt;/p>
 &lt;p>劝君莫言花谢早&lt;/p>
-&lt;p>你我互映到永恒&lt;/p></description></item><item><title/><link>https://yingkui.com/agi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/agi/</guid><description>&lt;p>2025-04-22&lt;/p>
-&lt;h2 id="智力要素文章版">智力要素（文章版）&lt;/h2>
-&lt;ol>
-&lt;li>训练量少，找到特征&lt;/li>
-&lt;li>多个抽象层级的保存，一个 data，分解成多个信号&lt;/li>
-&lt;li>不同的精准程度的搜索&lt;/li>
-&lt;li>attention is all you have，如何游戏化，fun，训练过程自己移动 attention&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/read/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
+&lt;p>你我互映到永恒&lt;/p></description></item><item><title/><link>https://yingkui.com/read/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
 &lt;ol>
 &lt;li>$Y = f(X) + \epsilon$&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/read/shelf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/shelf/</guid><description>&lt;h1 id="bookshelf">Bookshelf&lt;/h1>
@@ -16009,53 +15978,7 @@ table {
  &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Goals &amp; Principles</title><link>https://yingkui.com/one/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/one/</guid><description>&lt;h2 id="goals">Goals&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">One Life&lt;/th>
- &lt;th style="text-align: left">Three Goals&lt;/th>
- &lt;th style="text-align: left">Due&lt;/th>
- &lt;th style="text-align: left">&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">One EdTech Company&lt;/td>
- &lt;td style="text-align: left">&lt;a href="../edu">Albert Education&lt;/a>&lt;/td>
- &lt;td style="text-align: left">2029年&lt;/td>
- &lt;td style="text-align: left">Fun &amp;amp; Solid&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">One Philosophy Book&lt;/td>
- &lt;td style="text-align: left">&lt;a href="../basics">Basics&lt;/a>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
- &lt;td style="text-align: left">CS 498&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="hell--fast--calm">Hell &amp;amp; Fast &amp;amp; Calm&lt;/h2>
-&lt;p>早规划，先吃屎；八点始，十点止&lt;/p>
-&lt;p>一章书，三篇文；多自律，少情绪&lt;/p>
-&lt;p>Keep Shipping. Keep Failing.&lt;/p>
-&lt;blockquote>
-&lt;p>担虑功名老病死，不如今日快完工&lt;/p>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Move fast and hell. Act rigor and calm.&lt;/p>&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Do things scary. Learn the hard way. Finish what you start. Document Everything.&lt;/p>&lt;/blockquote>
-&lt;h2 id="facts">Facts&lt;/h2>
-&lt;ul>
-&lt;li>Pride is for low intelligence.&lt;/li>
-&lt;li>Most people are not smart and ignore their judges.&lt;/li>
-&lt;li>You will die soon. You are the only one living.&lt;/li>
-&lt;li>Life is too short and limited. Death is too long.&lt;/li>
-&lt;li>Less is More. Ship Fast. Fail Fast. Try Harder.&lt;/li>
-&lt;/ul>
-&lt;h2 id="hobbies">Hobbies&lt;/h2>
-&lt;p>每天，十点之后，可以obsess，主要是读书写作
-每周，六或者日，obsess on one hobby
-每次，大块任务结束，obsess几天&lt;/p></description></item><item><title>Goodreads Ratings</title><link>https://yingkui.com/goodreads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goodreads/</guid><description>&lt;p>Last Update: 2025/05/26&lt;/p>
+&lt;/table></description></item><item><title>Goodreads Ratings</title><link>https://yingkui.com/goodreads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goodreads/</guid><description>&lt;p>Last Update: 2025/05/26&lt;/p>
 &lt;style>
 table {
  overflow-x: auto;
@@ -16659,6 +16582,144 @@ table {
  &lt;td style="text-align: left">to-read&lt;/td>
  &lt;/tr>
  &lt;/tbody>
+&lt;/table></description></item><item><title>Hell &amp; Fast</title><link>https://yingkui.com/one/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/one/</guid><description>&lt;h2 id="痛快少严淡">痛，快，少，严，淡&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Time&lt;/th>
+ &lt;th style="text-align: left">Action&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">每日早晨&lt;/td>
+ &lt;td style="text-align: left">记录昨日，规划今日&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">每日优先&lt;/td>
+ &lt;td style="text-align: left">Get shit done. Eat the frog.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">每日晚上&lt;/td>
+ &lt;td style="text-align: left">一章书，三篇文&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">每周周末&lt;/td>
+ &lt;td style="text-align: left">总结本周，规划下周&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">每周周末&lt;/td>
+ &lt;td style="text-align: left">读杂志，看新闻&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="media-diet">Media Diet&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Freq&lt;/th>
+ &lt;th style="text-align: left">Media&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Weekly&lt;/td>
+ &lt;td style="text-align: left">The Economist&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Weekly&lt;/td>
+ &lt;td style="text-align: left">TIME&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Weekly&lt;/td>
+ &lt;td style="text-align: left">New Scientist&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Monthly&lt;/td>
+ &lt;td style="text-align: left">Businessweek&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Monthly&lt;/td>
+ &lt;td style="text-align: left">Scientific American&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Monthly&lt;/td>
+ &lt;td style="text-align: left">Foreign Affairs&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="life-goals">Life Goals&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">One Life&lt;/th>
+ &lt;th style="text-align: left">Three Goals&lt;/th>
+ &lt;th style="text-align: left">Due&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">One EdTech Company&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="../edu">Education&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">2029年&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">One Philosophy Book&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="../basics">Basics&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">One AGI Paper&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="../ai">Intelligence&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="principles">Principles&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Principles&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Keep Shipping. Keep Failing. Ship Like a Dog. Fight Like a Warrior&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">担虑功名老病死，不如今事快完工&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Do things scary. Learn the hard way. Finish what you start. Document Everything.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">快行而不多思，严满而不松拖，淡然而不愁虑，外实而不虚空，专注而不富欲&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">完成每日任务，优先解决恶心题&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">不要评价，不要对比，不要在乎别人，专注当下，取得进展，清脑思考&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">不要追求完美，找到问题的关键，集中力量，解决当下难题&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Pride is for low intelligence.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Most people are not smart and ignore their judges.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">You will die soon. You are the only one living.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Life is too short and limited. Death is too long.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Less is More. Ship Fast. Fail Fast. Try Harder.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
 &lt;/table></description></item><item><title>IMDb Ratings</title><link>https://yingkui.com/imdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/imdb/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
 &lt;style>
 table {
@@ -16677,6 +16738,13 @@ table {
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-04-18&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt9603208/">Mission: Impossible - The Final Reckoning&lt;/a>&lt;/td>
+ &lt;td style="text-align: right">2025&lt;/td>
+ &lt;td style="text-align: right">7&lt;/td>
+ &lt;td style="text-align: right">7.5&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2025-04-18&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt0469494">There Will Be Blood&lt;/a>&lt;/td>
@@ -22006,6 +22074,7 @@ table {
 &lt;h2 id="movies--tv-shows">Movies &amp;amp; TV Shows&lt;/h2>
 &lt;ul>
 &lt;li>《Godfather》&lt;/li>
+&lt;li>《Chernobyl》&lt;/li>
 &lt;li>《Breaking Bad》&lt;/li>
 &lt;/ul>
 &lt;h2 id="games">Games&lt;/h2>

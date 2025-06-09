@@ -289,6 +289,11 @@ table {
 &lt;li>each hour of learning, you may expose to 15-20 valuable lexemes&lt;/li>
 &lt;li>each week in university, you learn 50-65 lexemes&lt;/li>
 &lt;li>each semester in university, you learn 800-1000 lexemes&lt;/li>
+&lt;li>score 300 to reach A2, 6 lexemes per score, 1800 lexemes&lt;/li>
+&lt;li>score 600 to reach B1, 6 lexemes per score, 3600 lexemes&lt;/li>
+&lt;li>score 900 to reach B2, 8 lexemes per score, 6000 lexemes&lt;/li>
+&lt;li>score 1200 to reach C1, 8 lexemes per score, 8400 lexemes&lt;/li>
+&lt;li>score 1500 to reach C2, 10 lexemes per score, 11400 lexemes&lt;/li>
 &lt;/ol></description></item><item><title>shua.ai</title><link>https://yingkui.com/shua/</link><pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/shua/</guid><description>&lt;p>剧情 + 肉鸽 + 技能 + AI&lt;/p>
 &lt;h2 id="おすすめ推剧情">おすすめ，推剧情&lt;/h2>
 &lt;p>Candy Crash：傻瓜目标傻瓜关，降低思维压力，易于形成习惯&lt;/p>
@@ -405,6 +410,11 @@ h3 {
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-05-30&lt;/td>
+ &lt;td style="text-align: left">750 Quests&lt;/td>
+ &lt;td style="text-align: left">Finish All Achievements&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">2025-05-29&lt;/td>
  &lt;td style="text-align: left">602 Days, 183403 xp, 10532 Gems&lt;/td>
@@ -994,7 +1004,7 @@ h3 {
  init();
  &lt;/script>
 &lt;/body>
-&lt;/html></description></item><item><title/><link>https://yingkui.com/hugo-change-domain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/hugo-change-domain/</guid><description>&lt;h2 id="change-domain-names">Change Domain Names&lt;/h2>
+&lt;/html></description></item><item><title/><link>https://yingkui.com/howlongtobeat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/howlongtobeat/</guid><description/></item><item><title/><link>https://yingkui.com/hugo-change-domain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/hugo-change-domain/</guid><description>&lt;h2 id="change-domain-names">Change Domain Names&lt;/h2>
 &lt;ol>
 &lt;li>&lt;code>static/CNAME&lt;/code> file&lt;/li>
 &lt;li>add domain&lt;/li>
@@ -1060,11 +1070,15 @@ h3 {
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
+ &lt;td style="text-align: left">碟中谍8&lt;/td>
+ &lt;td style="text-align: left">2025年5月31日&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">情书&lt;/td>
  &lt;td style="text-align: left">2025年5月22日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 哪吒之魔童闹海&lt;/td>
+ &lt;td style="text-align: left">哪吒之魔童闹海&lt;/td>
  &lt;td style="text-align: left">2025年2月22日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1076,11 +1090,11 @@ h3 {
  &lt;td style="text-align: left">2024年4月30日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 沙丘2&lt;/td>
+ &lt;td style="text-align: left">沙丘2&lt;/td>
  &lt;td style="text-align: left">2024年3月8日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 奥本海默&lt;/td>
+ &lt;td style="text-align: left">奥本海默&lt;/td>
  &lt;td style="text-align: left">2023年9月5日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1092,7 +1106,7 @@ h3 {
  &lt;td style="text-align: left">2023年8月2日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 蜘蛛侠&lt;/td>
+ &lt;td style="text-align: left">蜘蛛侠&lt;/td>
  &lt;td style="text-align: left">2023年6月8日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1136,7 +1150,7 @@ h3 {
  &lt;td style="text-align: left">2019年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 复仇者联盟-终局之战&lt;/td>
+ &lt;td style="text-align: left">复仇者联盟-终局之战&lt;/td>
  &lt;td style="text-align: left">2019年4月29日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1168,7 +1182,7 @@ h3 {
  &lt;td style="text-align: left">2018年6月26日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 复仇者联盟-无限战争&lt;/td>
+ &lt;td style="text-align: left">复仇者联盟-无限战争&lt;/td>
  &lt;td style="text-align: left">2018年5月12日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1176,7 +1190,7 @@ h3 {
  &lt;td style="text-align: left">2018年2月14日&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 寻梦环游记&lt;/td>
+ &lt;td style="text-align: left">寻梦环游记&lt;/td>
  &lt;td style="text-align: left">2017年11月27日&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1200,7 +1214,7 @@ h3 {
  &lt;td style="text-align: left">2016年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 头脑特工队&lt;/td>
+ &lt;td style="text-align: left">头脑特工队&lt;/td>
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1216,11 +1230,11 @@ h3 {
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 疯狂的麦克斯4&lt;/td>
+ &lt;td style="text-align: left">疯狂的麦克斯4&lt;/td>
  &lt;td style="text-align: left">2015年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 消失的爱人&lt;/td>
+ &lt;td style="text-align: left">消失的爱人&lt;/td>
  &lt;td style="text-align: left">2014年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1228,7 +1242,7 @@ h3 {
  &lt;td style="text-align: left">2014年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 星际穿越&lt;/td>
+ &lt;td style="text-align: left">星际穿越&lt;/td>
  &lt;td style="text-align: left">2014年11月&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1288,7 +1302,7 @@ h3 {
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 蝙蝠侠 黑暗骑士崛起&lt;/td>
+ &lt;td style="text-align: left">蝙蝠侠 黑暗骑士崛起&lt;/td>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1304,7 +1318,7 @@ h3 {
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 被解救的姜戈&lt;/td>
+ &lt;td style="text-align: left">被解救的姜戈&lt;/td>
  &lt;td style="text-align: left">2012年&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -1332,11 +1346,11 @@ h3 {
  &lt;td style="text-align: left">2010年&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 盗梦空间&lt;/td>
+ &lt;td style="text-align: left">盗梦空间&lt;/td>
  &lt;td style="text-align: left">2010年9月&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">🏆 驯龙高手&lt;/td>
+ &lt;td style="text-align: left">驯龙高手&lt;/td>
  &lt;td style="text-align: left">2010年5月&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -6882,6 +6896,13 @@ table {
  &lt;tbody>
  &lt;tr>
  &lt;td style="text-align: left">2025-04-18&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt9603208/">Mission: Impossible - The Final Reckoning&lt;/a>&lt;/td>
+ &lt;td style="text-align: right">2025&lt;/td>
+ &lt;td style="text-align: right">7&lt;/td>
+ &lt;td style="text-align: right">7.5&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2025-04-18&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.imdb.com/title/tt0469494">There Will Be Blood&lt;/a>&lt;/td>
  &lt;td style="text-align: right">2007&lt;/td>
  &lt;td style="text-align: right">8&lt;/td>
@@ -12010,6 +12031,7 @@ table {
 &lt;h2 id="movies--tv-shows">Movies &amp;amp; TV Shows&lt;/h2>
 &lt;ul>
 &lt;li>《Godfather》&lt;/li>
+&lt;li>《Chernobyl》&lt;/li>
 &lt;li>《Breaking Bad》&lt;/li>
 &lt;/ul>
 &lt;h2 id="games">Games&lt;/h2>
