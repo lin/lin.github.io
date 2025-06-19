@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui Lin</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Speed 的少林寺直播</title><link>https://yingkui.com/speed/</link><pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/speed/</guid><description>&lt;p>&lt;a href="https://www.youtube.com/watch?v=zBL_5DkiXCk">Speed 去少林寺习武&lt;/a> 是我人生第一次看网红的直播，节目很精彩，但也有不少疑惑。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui Lin</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Gödel's Proof</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style>
+p code {
+ font-family: 'Fira Code', 'Courier New', Courier, monospace;
+ font-size: 0.95em;
+ background-color: #f5f5f5;
+ color: #c7254e;
+ padding: 0.2em 0.4em;
+ border-radius: 4px;
+ border: 1px solid #e1e1e8;
+ white-space: pre-wrap;
+ word-break: break-word;
+}
+ &lt;/style>
+&lt;h2 id="mathematical-statements">Mathematical Statements&lt;/h2>
+&lt;p>Following are some mathemtical statements:&lt;/p>
+&lt;p>$$
+\begin{aligned}
+\textbf{1.}\quad &amp;amp; \forall n \in \mathbb{N}, \exists p &amp;gt; n, p \in \mathbb{P}\newline
+\textbf{2.}\quad &amp;amp; \forall n &amp;gt; 2, \nexists a, b, c \in \mathbb{N}^{+}, a^n + b^n = c^n \newline
+\textbf{3.}\quad &amp;amp; \forall n \in \mathbb{N}, n &amp;gt; 2 \wedge n \bmod 2 = 0 \Rightarrow \exists p, q \in \mathbb{P}, n = p + q
+\end{aligned}
+$$&lt;/p></description></item><item><title>Speed 的少林寺直播</title><link>https://yingkui.com/speed/</link><pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/speed/</guid><description>&lt;p>&lt;a href="https://www.youtube.com/watch?v=zBL_5DkiXCk">Speed 去少林寺习武&lt;/a> 是我人生第一次看网红的直播，节目很精彩，但也有不少疑惑。&lt;/p>
 &lt;h2 id="第一个师傅选的没问题">第一个师傅选的没问题&lt;/h2>
 &lt;p>&lt;img src="../img/ishowspeed/wuseng.png" alt="">&lt;/p>
 &lt;p>&lt;img src="../img/ishowspeed/baishi.png" alt="">&lt;/p>
