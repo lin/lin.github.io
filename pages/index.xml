@@ -1488,7 +1488,12 @@ h3 {
 &lt;li>读书：一周一本&lt;/li>
 &lt;li>写书：《人生指南》&lt;/li>
 &lt;li>娱乐：大落时再研究&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/tools/</guid><description>&lt;h3 id="tools">Tools&lt;/h3>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/time/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/time/</guid><description>&lt;h2 id="time-cost">Time Cost&lt;/h2>
+&lt;p>看一季的美剧，大约12个小时&lt;/p>
+&lt;p>看一部小说，大约20个小时&lt;/p>
+&lt;p>看一本非小说类，大约8个小时&lt;/p>
+&lt;p>玩一个大型游戏，大约35个小时&lt;/p>
+&lt;p>玩一个小型游戏，大约15个小时&lt;/p></description></item><item><title/><link>https://yingkui.com/tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/tools/</guid><description>&lt;h3 id="tools">Tools&lt;/h3>
 &lt;h4 id="writing">Writing&lt;/h4>
 &lt;ol>
 &lt;li>Things 3&lt;/li>
@@ -11058,7 +11063,7 @@ table {
  &lt;td style="text-align: center">本科&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td>Japanese (CEFR early A2 / N5)&lt;/td>
+ &lt;td>Japanese (CEFR early A2)&lt;/td>
  &lt;td style="text-align: center">工作&lt;/td>
  &lt;/tr>
  &lt;/tbody>
@@ -11928,98 +11933,146 @@ table {
  &lt;/tbody>
 &lt;/table>
 &lt;hr>
-&lt;p>&lt;em>Last updated 2025/04/23&lt;/em>&lt;/p></description></item><item><title>Textbooks</title><link>https://yingkui.com/textbooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/textbooks/</guid><description>&lt;h2 id="生物学">生物学&lt;/h2>
+&lt;p>&lt;em>Last updated 2025/04/23&lt;/em>&lt;/p></description></item><item><title>Textbooks</title><link>https://yingkui.com/textbooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/textbooks/</guid><description>&lt;h2 id="intelligence">Intelligence&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">学科&lt;/th>
  &lt;th style="text-align: left">教材&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Cognitive Science&lt;/td>
- &lt;td style="text-align: left">From Conditioning to Conscious Recollection&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.statlearning.com/">An Introduction to Statistical Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576">The Elements of Statistical Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Probabilistic-Machine-Learning-Introduction-Computation/dp/0262046822">Probabilistic Machine Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738">Pattern Recognition and Machine Learning&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Neuroscience-Exploring-Mark-F-Bear/dp/0781778174">Neuroscience: Exploring the Brain&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Life-Science-Biology-David-Sadava/dp/1319010164">Life: The Science of Biology&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="数学">数学&lt;/h2>
+&lt;h2 id="mathematics">Mathematics&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">学科&lt;/th>
  &lt;th style="text-align: left">教材&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Mathematics&lt;/td>
- &lt;td style="text-align: left">Linear Algebra (Gilbert)&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Calculus-James-Stewart/dp/1285740629">Calculus&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Mathematics&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://math.mit.edu/~gs/linearalgebra/ila6/indexila6.html">Introduction to Linear Algebra&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Probability-Statistics-4th-Morris-DeGroot/dp/0321500466">Probability and Statistics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elementary-Differential-Equations-Boundary-Problems/dp/1119820510/">Elementary Differential Equations&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Mathematical-Logic-course-Chinese-John-Bell/dp/7510086302">A Course in Mathematical Logic&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="csai">CSAI&lt;/h2>
+&lt;h2 id="computation">Computation&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">学科&lt;/th>
  &lt;th style="text-align: left">教材&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628">The C Programming Language&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686">The Elements of Computer Systems (Nand2Tetris)&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686">The Elements of Computer Systems&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X">Computer Systems: A Programmer&amp;rsquo;s Perspective&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X/">Introduction to the Theory of Computation&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">Artificial Intelligence&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149">Computer Networking: A Top-Down Approach&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Fundamentals-Computer-Graphics-Steve-Marschner/dp/0367505037/">Fundamentals of Computer Graphics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Information-Theory-Tutorial-Introduction-2nd/dp/1739672704/">Information Theory: A Tutorial Introduction&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="经济学">经济学&lt;/h2>
+&lt;h2 id="physics">Physics&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">学科&lt;/th>
  &lt;th style="text-align: left">教材&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">Economics&lt;/td>
- &lt;td style="text-align: left">Principles of Economics&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.feynmanlectures.caltech.edu/">The Feynman Lectures on Physics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Classical-Dynamics-Particles-Systems-Thornton/dp/8131518477/">Classical Dynamics of Particles and Systems&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Heat-Thermodynamics-Intermediate-Textbook-Zemansky/dp/0070728089/">Heat and Thermodynamics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/dp/B07G15LW25/">Introduction to Quantum Mechanics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/dp/1108473229/">Modern Quantum Mechanics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Quantum-Mechanics-Scientists-Engineers-Miller-ebook/dp/B00444400Y/">Quantum Mechanics for Scientists and Engineers&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/dp/B07T9MCTWF/">Spacetime and Geometry&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Foundations-Electromagnetic-Theory-John-Reitz/dp/0321581741">Foundations of Electromagnetic Theory&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Fundamentals-Physics-Binder-Ready-Version/dp/1118230647">Fundamentals of Physics&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="历史">历史&lt;/h2>
+&lt;h2 id="business">Business&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">学科&lt;/th>
  &lt;th style="text-align: left">教材&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">History&lt;/td>
- &lt;td style="text-align: left">Western Civilization (Jackson J. Spielvogel)&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Principles-Economics-N-Gregory-Mankiw/dp/1305585127/">Principles of Economics&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Principles-Corporate-Finance-Mcgraw-hill-Insurance/dp/1259144380">Principles of Corporate Finance&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Western-Civilization-Mindtap-Course-List/dp/0357987012/">Western Civilization&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>Yingkui's Top 3</title><link>https://yingkui.com/top/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;p>Last Updated: 2025.04.22&lt;/p>
