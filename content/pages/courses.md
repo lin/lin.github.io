@@ -18,7 +18,7 @@ type: "page"
 | English (CEFR B2 / Gaokao 140+)                    | 中学            |
 | English (CEFR C1 / IELTS 7.0)                      | 本科            |
 | French (CEFR early A1)                             | 本科            |
-| Japanese (CEFR early A2 / N5)                      | 工作            |  
+| Japanese (CEFR early A2)                           | 工作            |  
 
 ## 理(材)化生工
 

@@ -4,6 +4,8 @@ collective consensus and interactions
 
 Courtesy and Scam
 
+（权、骗、奴）
+
 ### 小范围的互助
 
 ### 范围大了就变了
