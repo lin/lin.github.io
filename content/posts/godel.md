@@ -1,7 +1,6 @@
 ---
 title: "Gödel's Proof"
 date: 2025-06-16
-draft: true
 math: true
 ---
 
@@ -35,9 +34,9 @@ Normally we care about general statements about all numbers since they can save 
 
 ## An Algorithm
 
-Godel shows that checking a proof for a statement is an algorithm that can be run on a computer.
+Gödel shows that checking a proof for a statement is an algorithm that can be run on a computer.
 
-So if you give me a proof of Goldbach's conjecture, I can directly put it into a computer and wait for the computer to tell me whether this proof is valid or not.
+So if you give me a proof of Goldbach's conjecture, I can directly put it into a computer and wait for the computer to tell me whether this proof is valid or not. This can be decided in bounded time.
 
 ## A Class of Numbers
 
@@ -47,11 +46,15 @@ $$
 \mathrm{isNotProvable}(x) := \neg ( \exists y\, \mathrm{isProof}(y, x) ) \newline
 $$
 
-so again, it means that there is a class of number called `isNotProvable` numbers.
+There is a class of number called `isNotProvable` numbers, just like prime numbers. There is a statement about a property of `isNotProvable` numbers that is true but can't be proved.
 
 ## The Unprovable Statement
 
-The true statement $\theta(\text{encode}(\theta))$ is not provable in the system, where $\theta$ is a function that is defined as $\theta(x) = \mathrm{isNotProvable}(\text {encode} ( \text {decode} (x)(x)))$
+The true statement $\theta(\text{encode}(\theta))$ is not provable in the system,
+
+where $\theta$ is defined as:
+
+$$\theta(x) = \mathrm{isNotProvable}(\text {encode} ( \text {decode} (x)(x)))$$
 
 We can say there is a class of number called `theta` numbers. Then you can't prove the number encodes `theta` function is a `theta` number, even though it is true.
 
@@ -76,3 +79,15 @@ We know $\theta(\text{encode}(\theta))$ should return `true` or `false`
 If $\theta(\text{encode}(\theta))$ returns `false`, that implies $\mathrm{isNotProvable}(\text{encode}(\theta(\text{encode}(\theta))))$ returns `false`, which says it is provable, but this is a false statement. That means we have a contradiction here.
 
 So if the system can't contain contradiction, $\theta(\text{encode}(\theta))$ has to return `true`, that implies $\mathrm{isNotProvable}(\text{encode}(\theta(\text{encode}(\theta))))$, which says it is not provable. There is a true statement you can't prove.
+
+---
+
+Note 1: To avoid a function call error, the input $x$ in $\theta (x)$ has to be a Gödel number that encodes a formula with exactly one free variable. So $\theta (x)$ should really be:
+
+$$
+ \mathrm{isGodelNumberOfOneFreeVariableFormula}(x) \\, \\& \\, \mathrm{isNotProvable}(\text {encode} ( \text {decode} (x)(x)))
+$$
+
+Since $\text{encode}(\theta (x))$ indeed is a Gödel number that encodes a formula with exactly one free variable, the following arguments are not affected.
+
+Note 2: Why introduce $\theta (x)$, because $\mathrm{isNotProvable}(x)$ is not taken a Gödel number that encodes a formula with exactly one free variable as the argument, so it can't talk things about itself.
