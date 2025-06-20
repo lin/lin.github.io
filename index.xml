@@ -10,16 +10,22 @@ p code {
  white-space: pre-wrap;
  word-break: break-word;
 }
- &lt;/style>
-&lt;h2 id="mathematical-statements">Mathematical Statements&lt;/h2>
-&lt;p>Following are some mathemtical statements:&lt;/p>
+&lt;/style>
+&lt;h2 id="encoding-and-decoding">Encoding and Decoding&lt;/h2>
+&lt;h3 id="encoding-statements">Encoding Statements&lt;/h3>
+&lt;p>The statement $1+1=2$ can be expressed using one unique number:&lt;/p>
 &lt;p>$$
-\begin{aligned}
-\textbf{1.}\quad &amp;amp; \forall n \in \mathbb{N}, \exists p &amp;gt; n, p \in \mathbb{P}\newline
-\textbf{2.}\quad &amp;amp; \forall n &amp;gt; 2, \nexists a, b, c \in \mathbb{N}^{+}, a^n + b^n = c^n \newline
-\textbf{3.}\quad &amp;amp; \forall n \in \mathbb{N}, n &amp;gt; 2 \wedge n \bmod 2 = 0 \Rightarrow \exists p, q \in \mathbb{P}, n = p + q
-\end{aligned}
-$$&lt;/p></description></item><item><title>Duolingo</title><link>https://yingkui.com/duolingo/</link><pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/duolingo/</guid><description>&lt;style>
+2^{2}
+\times3^{1}
+\times5^{3}
+\times7^{2}
+\times11^{1}
+\times13^{5}
+\times17^{2}
+\times19^{2}
+\times23^{1}.
+$$&lt;/p>
+&lt;p>The statement $\forall x(x + 0 = x)$ means for all natural number, if you add zero to it, it will give you the same number, e.g. $2 +0 = 2$, $32093+0=32093$. And this simple statement can be expressed using one unique number (extremely long number):&lt;/p></description></item><item><title>Duolingo</title><link>https://yingkui.com/duolingo/</link><pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/duolingo/</guid><description>&lt;style>
 table {
  overflow-x: auto;
  white-space: nowrap;
