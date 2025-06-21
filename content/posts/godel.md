@@ -328,6 +328,54 @@ with the statement $G$ as:
 
 $$ G =  \rho(\epsilon(\rho(x))) $$
 
-### Make $\phi$ and $\epsilon$ and $\delta$ Precise
+## Gödel's Paper
 
-TODO
+This article is an explanation for the following paragraphs in the Gödel's 1931 paper.
+
+![](../img/godel-1.png)
+
+The $[\text{R}(x); y]$ is defined as:
+
+$$
+[\text{R}(x); y]:=\text{decode}(x)(y)
+$$
+
+And $[\text{R}(x); x]$ is  
+
+$$
+[\text{R}(x); x]= \text{decode}(x)(x)
+$$
+
+And $\overline {\text{Bew}}$ is $\text{isNotProvable}$, and $\text {S} (x)$ is same as above $\theta (x)$:
+
+$$
+\text{S}(x) := \text{isNotProvable}(\text{encode}([\text{R}(x); x])) \newline
+$$
+
+$$
+\text{S}(x) = \text{isNotProvable}(\text{encode}(\text{decode}(x)(x)))
+$$
+
+![](../img/godel-2.png)
+
+And $\text K$ means when $n \in \text{K}$, $\text{S}(n)$ is true. The number $q$ is the Gödel number:
+
+$$
+q := \text{encode}(\text{S}(x))
+$$
+
+The unprovable statement is:
+
+$$
+\begin{aligned}
+[\text{R}(q); q] &= \text{decode}(q)(q) \newline
+& = \text{decode}(\text{encode}(\text{S}(x)))(\text{encode}(\text{S}(x))) \newline
+& = \text{S}(\text{encode}(\text{S}(x)))
+\end{aligned}
+$$
+
+It is easy to show:
+
+$$
+[\text{R}(q); q]  = \text{isNotProvable}(\text{encode}([\text{R}(q); q]))
+$$
