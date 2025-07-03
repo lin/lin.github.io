@@ -11,21 +11,59 @@ p code {
  word-break: break-word;
 }
 &lt;/style>
-&lt;h2 id="encoding-and-decoding">Encoding and Decoding&lt;/h2>
-&lt;h3 id="encoding-statements">Encoding Statements&lt;/h3>
-&lt;p>The statement $1+1=2$ can be expressed using one unique number:&lt;/p>
+&lt;h2 id="goal-of-the-task">Goal of the Task&lt;/h2>
+&lt;p>The statement &lt;em>7 is a prime number.&lt;/em> is true and we can prove it formally using axioms and inference rules. So is the statemtents like &lt;em>2209 is a square number.&lt;/em> and &lt;em>1597 is a Fibonacci number.&lt;/em>.&lt;/p></description></item><item><title>Linear Algebra Notes</title><link>https://yingkui.com/notes/la/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/la/</guid><description>&lt;h2 id="vector">Vector&lt;/h2>
+&lt;p>Each vector is an object with many features values.&lt;/p>
+&lt;h2 id="matrix">Matrix&lt;/h2>
+&lt;p>Rows are an object with many features, Alice&amp;rsquo;s age gender height weight. Columns are Features for many objects, age of Alice Bob Chris David.&lt;/p>
 &lt;p>$$
-2^{2}
-\times3^{1}
-\times5^{3}
-\times7^{2}
-\times11^{1}
-\times13^{5}
-\times17^{2}
-\times19^{2}
-\times23^{1}.
+A = \begin{bmatrix}
+\vec{c}_1 &amp;amp; \vec{c}_2 &amp;amp; \cdots &amp;amp; \vec{c}_n
+\end{bmatrix}
 $$&lt;/p>
-&lt;p>The statement $\forall x(x + 0 = x)$ means for all natural number, if you add zero to it, it will give you the same number, e.g. $2 +0 = 2$, $32093+0=32093$. And this simple statement can be expressed using one unique number (extremely long number):&lt;/p></description></item><item><title>Duolingo</title><link>https://yingkui.com/duolingo/</link><pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/duolingo/</guid><description>&lt;style>
+&lt;p>$\vec{c}_1, \vec{c}_2, \cdots, \vec{c}_n$ are the base vectors after transformation described in current axis.&lt;/p>
+&lt;p>Apply matrix to a vector $\vec{v}$ means you get what $\vec{v}$ means in current axis.&lt;/p></description></item><item><title>日本流行文化</title><link>https://yingkui.com/jpop/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/jpop/</guid><description>&lt;h2 id="流行音乐">流行音乐&lt;/h2>
+&lt;iframe src="//player.bilibili.com/player.html?bvid=BV1E84y1j75M" 
+ border="0"
+ autoplay="0"
+ scrolling="no" 
+ frameborder="no" 
+ framespacing="0" 
+ allowfullscreen="true" 
+ width="100%" 
+ height="480"
+ danmuke="0">
+&lt;/iframe>
+&lt;p>翻唱或抄袭：《最初的梦想》《千千阙歌》《红日》《青苹果乐园》《流星雨》《盛夏的果实》《水手》《老男孩》《嘻唰唰》《我们能不能不分手》《青春纪念册》《原来你也在这里》《天涯》《后来》《伤心太平洋》《人间》《很爱很爱你》《爱你一万年》《容易受伤的女人》《红蜻蜓》《漫步人生路》《花心》&lt;/p>
+&lt;p>熟知的纯音乐：《故乡的原风景》《故宫的深思》《遥远的旅程》《Rain》（电影《末代皇帝》插曲）《太阳照常升起》（电影《让子弹飞》插曲）&lt;/p>
+&lt;h2 id="电子游戏">电子游戏&lt;/h2>
+&lt;p>《超级玛丽》《魂斗罗》《街头霸王》《口袋妖怪》《冒险岛》《影子传说》《马戏团》《越野摩托车》《拳皇》《赤色要塞》《1942》《三目童子》《打鸭子》《坦克大战》《跑跑卡丁车》（韩国游戏，抄袭《马力欧赛车》）《实况足球》&lt;/p>
+&lt;h2 id="动漫">动漫&lt;/h2>
+&lt;p>《铁臂阿童木》《聪明的一休》《足球小将》《美少女战士》《灌篮高手》《龙珠》《战神金刚》（美版）《宠物小精灵》《名侦探柯南》《哆啦A梦》《四驱兄弟》《千与千寻》《龙猫》《天空之城》《时间飞船》《樱桃小丸子》《海贼王》《火影忍者》《铁胆火车侠》《佐罗的传说》&lt;/p>
+&lt;h2 id="仿日式品牌">仿日式品牌&lt;/h2>
+&lt;figure>
+ &lt;img src="../img/niconico.png" style="max-height:140px">
+ &lt;figcaption>Bilibili 和 Nico Nico 的 LOGO 对比&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>哔哩哔哩&lt;/strong> 是日语拟声词 “びりびり” 的音译，形容电流流过身体时“刺痛、电击”的感觉，哔哩哔哩是日本二次元网站 ニコニコ動画 的中文翻版，ビリビリ取自日本动漫人物御坂美琴的昵称&lt;/p>
+&lt;p>&lt;strong>呷哺呷哺&lt;/strong> 是日语拟声词 “しゃぶしゃぶ” 的音译，指日式火锅 “涮涮锅”（源自内蒙古火锅）&lt;/p>
+&lt;figure>
+ &lt;img src="../img/uniqlo.png" style="max-height:240px">
+ &lt;figcaption>名創優品 和 优衣库 的 LOGO 对比&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>名创优品&lt;/strong> 是一个伪装成日本设计品牌的中国公司，其名字是借鉴日本品牌“無印良品”，原LOGO是对日本品牌“优衣库”的高仿，其中，英文名 メイソウ 是对 ユニクロ 的高仿，其宣传的创立人之一 “三宅顺也”，也是对日本设计师三宅一生的擦边球，这些都是为了迷惑消费者，让人以为这是一家日本的品牌&lt;/p>
+&lt;figure>
+ &lt;img src="../img/fujiya.jpg" style="max-height:300px">
+ &lt;figcaption> 元气森林乳茶 和 不二家乳饮料 对比&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>元気森林&lt;/strong> 同样是主打日式风格，使用日式简化汉字“気”，使用江户时代的髭文字广告字体，使用“无糖专门家”，包装上写的 &amp;ldquo;日本国 株式会社元気森林 监制” 同样是为了迷惑消费者，其出品的乳茶，抄袭不二家的乳饮料&lt;/p>
+&lt;p>&lt;strong>奈雪の茶&lt;/strong> 其英文品牌NAYUKI，即日语なゆき（奈雪），同样营造日式品牌形象&lt;/p>
+&lt;p>&lt;strong>上好佳&lt;/strong>（菲律宾品牌），虾条以 Oishi（日语：おいしい）命名，寓意“好吃”；虾片以 Kirei（日语：きれい）命名，寓意“好看”&lt;/p>
+&lt;figure>
+ &lt;img src="../img/santori.png" style="max-height:300px">
+ &lt;figcaption> 康师傅乌龙茶 和 三得利乌龙茶 对比&lt;/figcaption>
+&lt;/figure>
+&lt;p>&lt;strong>康师傅&lt;/strong> 饮品系列，鲜の每日C，使用假名作为品牌名，康师傅乌龙茶包装抄袭三得利乌龙茶&lt;/p></description></item><item><title>Duolingo</title><link>https://yingkui.com/duolingo/</link><pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/duolingo/</guid><description>&lt;style>
 table {
  overflow-x: auto;
  white-space: nowrap;
@@ -3617,6 +3655,8 @@ $$
 &lt;p>collective consensus and interactions&lt;/p>
 &lt;p>Courtesy and Scam&lt;/p>
 &lt;p>（权、骗、奴）&lt;/p>
+&lt;p>rarity means good&lt;/p>
+&lt;p>expect good rare things happen to yourself.&lt;/p>
 &lt;h3 id="小范围的互助">小范围的互助&lt;/h3>
 &lt;h3 id="范围大了就变了">范围大了就变了&lt;/h3>
 &lt;h3 id="共识建立">共识建立&lt;/h3>
@@ -8456,7 +8496,10 @@ $$&lt;/p>
 &lt;h3 id="解谜">解谜&lt;/h3>
 &lt;ol>
 &lt;li>✅《传送门》&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/goty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/goty/</guid><description>&lt;h2 id="game-of-the-year">Game of the Year&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/games/geo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/geo/</guid><description>&lt;p>&lt;a href="https://www.reddit.com/r/ChatGPTJailbreak/comments/1kd6qbc/this_prompt_turns_chatgpt_into_a_geoguessr_god/">&lt;/a>&lt;/p>
+&lt;p>Prompt: High-Precision Image-Based Geolocation Analysis&lt;/p>
+&lt;p>You are a multi-disciplinary AI system with deep expertise in: • Geographic visual analysis • Architecture, signage systems, and transportation norms across countries • Natural vegetation, terrain types, atmospheric cues, and shadow physics • Global cultural, linguistic, and urban design patterns • GeoGuessr-style probabilistic reasoning&lt;/p>
+&lt;p>I will upload a photograph. Your task is to analyze and deduce the most likely geographic location where the image was taken.&lt;/p></description></item><item><title/><link>https://yingkui.com/games/goty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/goty/</guid><description>&lt;h2 id="game-of-the-year">Game of the Year&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://www.metacritic.com/pictures/every-metacritic-game-of-the-year-winner/">https://www.metacritic.com/pictures/every-metacritic-game-of-the-year-winner/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://goty.gamefa.com/">https://goty.gamefa.com/&lt;/a>&lt;/li>
@@ -8957,7 +9000,49 @@ $$&lt;/p>
  &lt;td>November 25, 1998&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title/><link>https://yingkui.com/games/lib/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/lib/</guid><description>&lt;h2 id="steam-pc-purchase-history">Steam PC Purchase History&lt;/h2>
+&lt;/table></description></item><item><title/><link>https://yingkui.com/games/lib/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/games/lib/</guid><description>&lt;h2 id="physical-copies">Physical Copies&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>平台&lt;/th>
+ &lt;th>游戏&lt;/th>
+ &lt;th style="text-align: right">价钱&lt;/th>
+ &lt;th style="text-align: center">折扣&lt;/th>
+ &lt;th style="text-align: center">购买时间&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>NS&lt;/td>
+ &lt;td>Super Mario 3D All-star (胡)&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>NS&lt;/td>
+ &lt;td>Super Mario Odyssey&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>NS&lt;/td>
+ &lt;td>It Takes Two&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>NS&lt;/td>
+ &lt;td>Metroid Prime Remastered&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="steam-pc-purchase-history">Steam PC Purchase History&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -10463,7 +10548,28 @@ $$&lt;/p>
 &lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
 &lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
 &lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MIBfKJHMWHU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="newtonian">Newtonian&lt;/h2>
+&lt;p>$$
+\vec{F} = \frac{\text d\vec{p}}{\text dt}
+$$&lt;/p>
+&lt;h2 id="lagrangian">Lagrangian&lt;/h2>
+&lt;p>$$
+L(q_i, \dot q_i, t) \;=\; T(q_i, \dot q_i) \;-\; V(q_i)
+$$&lt;/p>
+&lt;p>Kinetic energy minus the potential energy. And Euler–Lagrange equation:&lt;/p>
+&lt;p>$$
+\frac{d}{dt}\!\left(\frac{\partial L}{\partial \dot q_i}\right)
+- \frac{\partial L}{\partial q_i}
+= 0
+$$&lt;/p>
+&lt;h2 id="hamiltionian">Hamiltionian&lt;/h2>
+&lt;p>$$
+p_i \;=\; \frac{\partial L}{\partial \dot q_i}
+$$&lt;/p></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
  &lt;meta charset="utf-8">
@@ -11447,7 +11553,8 @@ $$&lt;/p>
 &lt;p>More and more, I realize that my interests are lying between the foundation of mathematics and computer science.&lt;/p>
 &lt;p>I like to create stuff out of nothing by coding and designing and figure out the nature of things.&lt;/p>
 &lt;p>Intelligence, both artificial and educational, are core to my lifelong pursuit. Building a solver will be my next project when I succeed in online education.&lt;/p>
-&lt;p>History is another topic that I am thrilled at, finding the patterns occurs in the past has a hugh impact to understand the current affairs and reduces the complexity of real world problems.&lt;/p></description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周">2023年12月第二周&lt;/h2>
+&lt;p>History is another topic that I am thrilled at, finding the patterns occurs in the past has a hugh impact to understand the current affairs and reduces the complexity of real world problems.&lt;/p></description></item><item><title/><link>https://yingkui.com/read/shogun/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/shogun/</guid><description>&lt;h2 id="shogun-将軍">Shogun 将軍&lt;/h2>
+&lt;p>&lt;img src="../../img/shogun.jpg" alt="">&lt;/p></description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周">2023年12月第二周&lt;/h2>
 &lt;ul>
 &lt;li>创业：完成了 《论教学》第五章第四节的写作&lt;/li>
 &lt;li>游戏：通关 《&lt;a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Yellow_Version">Pokémon Yellow&lt;/a>》&lt;/li>
@@ -16238,7 +16345,20 @@ table {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> res
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">return&lt;/span> dp(&lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">1&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
+&lt;p>$$
+a, \mu, m = \arg\min F(\tilde{s}, \mu \mid m)
+$$&lt;/p>
+&lt;p>Where:&lt;/p>
+&lt;ol>
+&lt;li>$F(\tilde{s}, \mu \mid m)$ is the variational free energy, a quantity that bounds surprise.&lt;/li>
+&lt;li>$\tilde{s}$: sensory inputs (possibly generalized coordinates of sensations).&lt;/li>
+&lt;li>$\mu$: internal states (like beliefs or expectations).&lt;/li>
+&lt;li>$m$: the model or structure used to generate predictions.&lt;/li>
+&lt;li>$a$: actions that can influence the sensory input.&lt;/li>
+&lt;li>$\arg\min$: denotes the values of $a, \mu, m$ that minimize the free energy.&lt;/li>
+&lt;/ol>
+&lt;p>This means that an agent (e.g. a brain) is constantly trying to:&lt;/p></description></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
