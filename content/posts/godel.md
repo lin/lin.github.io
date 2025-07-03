@@ -18,6 +18,16 @@ p code {
 }
 </style>
 
+## Goal of the Task
+
+The statement _7 is a prime number._ is true and we can prove it formally using axioms and inference rules. So is the statemtents like _2209 is a square number._ and _1597 is a Fibonacci number._.
+
+Gödel showed us there a type of number $\theta$ with a  number $q$.
+
+**$q$ is a $\theta$ number**, the same as 7 is a prime number, but we can't prove.
+
+The whole idea is to define the $\theta$, and find the $q$.
+
 ## Encoding and Decoding
 
 ### Encoding Statements
@@ -50,7 +60,7 @@ $$
 23^{11}
 $$
 
-The statement $3$ is a prime number can be expressed a little big longer:
+The statement `3 is a prime number` can be expressed a little big longer:
 
 $$
 \forall x (\forall y(x\times y = 3 \to
@@ -70,9 +80,7 @@ $$
 \end{aligned}
 $$
 
-Yet it is still a unique number for that statement.
-
-Statements are also called sentences.
+Yet it is still a unique number for that statement. Statements are also called sentences.
 
 ### Encoding Formulas
 
@@ -156,6 +164,8 @@ $$
 \end{aligned}
 $$
 
+
+
 ### Decoding
 
 Not every number can be decoded as a valid statement or formula, for example, $118098 = 2^1\times 3^{10}$ means $0=$, which has no real value to us. So the number that can be decoded has to be a valid one.
@@ -178,13 +188,59 @@ In the coming arguments, Gödel never used an invalid number when decoding prese
 
 ## The Unprovable Statement
 
-### Checking proofs is an algorithm
+### Statements
+
+Godel only used seven constants:
+
+$$
+\begin{align*}
+\text{1. } & \neg && \text{(logical negation)} \newline
+\text{2. } & \vee && \text{(logical or)} \newline
+\text{3. } & \forall && \text{(universal quantifier)} \newline
+\text{4. } & 0 && \text{(zero)}\newline
+\text{5. } &  S && \text{(successor function)}\newline
+\text{6. } &  ( && \text{(opening parenthesis)}  \newline
+\text{7. } &  ) && \text{(closing parenthesis)}
+\end{align*}
+$$
+
+### Checking proofs is a definable formula
 
 Gödel shows that checking a proof for a statement is an algorithm that can be run on a computer.
 
 So if you give me a proof of Goldbach's conjecture, I can directly put it into a computer and wait for the computer to tell me whether this proof is valid or not. This can be decided in bounded time.
 
-And each proof can be encoded as a Gödel number as well.
+That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encodes a statement and $y$ is a number that encodes a proof, can be written as a formula in terms of the above seven constants. To give you a hint, the formula $\text{isPower}(a, b, c)$ which checks whether $c = a^b$ can be expressed as following:
+
+$$
+\exists x \exists y \Bigg[
+  \exists n_0 \Big(
+    x = S(y \cdot S(0)) \cdot n_0 + S0 \;\land\;
+    \exists m_0 \big( S(S0) + m_0 = S(y \cdot S(0)) \big)
+  \Big) \;\land
+  \newline
+  \exists n_1 \Big(
+    x = S(y \cdot S(b)) \cdot n_1 + c \;\land\;
+    \exists m_1 \big( S(c) + m_1 = S(y \cdot S(b)) \big)
+  \Big) \;\land
+  \newline
+  \forall k \forall z \Bigg(
+    \exists m_k \big( S(k) + m_k = b \big) \;\land\;
+    \exists n_k \Big(
+      x = S(y \cdot S(k)) \cdot n_k + z \;\land\;
+      \exists m_z \big( S(z) + m_z = S(y \cdot S(k)) \big)
+    \Big)
+    \;\rightarrow\;
+    \newline
+    \exists n_s \Big(
+      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \;\land\;
+      \exists m_s \big( S(a \cdot z) + m_s = S(y \cdot S(S(k))) \big)
+    \Big)
+  \Bigg)
+\Bigg]
+$$
+
+All you need to know here is that $\mathrm{isProof}(y, x)$ is a long sequence of symbols that can be precisely written down, like a python function is a long sequence of symbols that can be precisely written down. And it can be encoded as a single integer number, like a python function can be represented by a binary number.
 
 ### A New Class of Numbers
 

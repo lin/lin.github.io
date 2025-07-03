@@ -6,6 +6,10 @@ Courtesy and Scam
 
 （权、骗、奴）
 
+rarity means good
+
+expect good rare things happen to yourself.
+
 ### 小范围的互助
 
 ### 范围大了就变了

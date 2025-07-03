@@ -66,6 +66,8 @@ type: "page"
 |   ✅   | Uncharted 2: Among Thieves               | PS5           | 11h    |2024/11     |AAVG|
 |   😊   | Cuphead (54%, World 2)                   | NS            | 20h    |2024/11     |AAVG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | PC            | 30h    |2024/11      |CRPG|
+|   ✅   | Mario Kart World                         | NS2            | 3h    |2025/06      |竞速|
+
 
 ## 其他曾深度体验过的游戏
 

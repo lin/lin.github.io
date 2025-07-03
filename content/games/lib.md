@@ -1,3 +1,12 @@
+## Physical Copies
+
+| 平台       | 游戏                                     | 价钱           |  折扣 | 购买时间|
+|------------|-----------------------------------------|---------------:|:-----:|:-----:|
+| NS         | Super Mario 3D All-star (胡)            |                |       |       |
+| NS         | Super Mario Odyssey                     |                |       |       |
+| NS         | It Takes Two                            |                |       |       |
+| NS         | Metroid Prime Remastered                |                |       |       |
+
 ## Steam PC Purchase History
 
 | 时间       | 游戏                                     | 价钱           |  折扣 | 用时| 
