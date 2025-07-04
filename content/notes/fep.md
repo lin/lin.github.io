@@ -10,7 +10,6 @@ $$
 a, \mu, m = \arg\min F(\tilde{s}, \mu \mid m)
 $$
 
-
 Where:
 
 1. $F(\tilde{s}, \mu \mid m)$ is the variational free energy, a quantity that bounds surprise.

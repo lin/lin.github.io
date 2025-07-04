@@ -41,9 +41,9 @@ h4 a {
     background-color: #272822 !important;
 }
 
-strong {
+/* strong {
     color: #ff3502;
-}
+} */
 
 ::selection {
     color: #fff;

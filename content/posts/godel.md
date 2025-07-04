@@ -188,7 +188,7 @@ In the coming arguments, Gödel never used an invalid number when decoding prese
 
 ## The Unprovable Statement
 
-### Statements
+<!-- ### Statements
 
 Godel only used seven constants:
 
@@ -202,7 +202,7 @@ $$
 \text{6. } &  ( && \text{(opening parenthesis)}  \newline
 \text{7. } &  ) && \text{(closing parenthesis)}
 \end{align*}
-$$
+$$ -->
 
 ### Checking proofs is a definable formula
 
@@ -210,7 +210,7 @@ Gödel shows that checking a proof for a statement is an algorithm that can be r
 
 So if you give me a proof of Goldbach's conjecture, I can directly put it into a computer and wait for the computer to tell me whether this proof is valid or not. This can be decided in bounded time.
 
-That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encodes a statement and $y$ is a number that encodes a proof, can be written as a formula in terms of the above seven constants. To give you a hint, the formula $\text{isPower}(a, b, c)$ which checks whether $c = a^b$ can be expressed as following:
+That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encodes a statement and $y$ is a number that encodes a proof, can be written as a formula in terms of the normal logical statement in metamathematics. To give you a hint, the formula $\text{isPower}(a, b, c)$ which checks whether $c = a^b$ can be expressed as following:
 
 $$
 \exists x \exists y \Bigg[
