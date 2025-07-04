@@ -76,4 +76,17 @@ $$&lt;/p>
 &lt;li>$a$: actions that can influence the sensory input.&lt;/li>
 &lt;li>$\arg\min$: denotes the values of $a, \mu, m$ that minimize the free energy.&lt;/li>
 &lt;/ol>
-&lt;p>This means that an agent (e.g. a brain) is constantly trying to:&lt;/p></description></item></channel></rss>
+&lt;p>This means that an agent (e.g. a brain) is constantly trying to:&lt;/p></description></item><item><title>Hopfield Networks Example</title><link>https://yingkui.com/notes/hopfield/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/hopfield/</guid><description>&lt;p>&lt;em>Generated from GPT-4o&lt;/em>&lt;/p>
+&lt;p>It converges to a stable situation that is pre-defined.&lt;/p>
+&lt;h2 id="step-by-step-example">Step-by-Step Example&lt;/h2>
+&lt;p>Let’s say we want to store &lt;strong>two 4-bit patterns&lt;/strong>:&lt;/p>
+&lt;p>$$
+\text{Pattern A: } \xi^1 = [+1, -1, +1, -1] \newline
+\text{Pattern B: } \xi^2 = [-1, +1, -1, +1]
+$$&lt;/p>
+&lt;h3 id="step-1-compute-the-weight-matrix">Step 1: Compute the Weight Matrix&lt;/h3>
+&lt;p>Using the Hebbian learning rule:&lt;/p>
+&lt;p>$$
+w_{ij} = \frac{1}{N} \sum_{\mu=1}^P \xi_i^\mu \xi_j^\mu \quad \text{for } i \ne j
+$$&lt;/p>
+&lt;p>Here, $N = 4$, $P = 2$&lt;/p></description></item></channel></rss>

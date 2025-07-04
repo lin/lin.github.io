@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Gödel's Proof</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Human Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
+strong {
+ font-weight: bold;
+ color: black;
+ background-color: #fff200;
+ padding: 0 4px;
+}
+&lt;/style>
+&lt;h2 id="words-compressed-associations">Words: Compressed Associations&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>$P(t \mid p)$&lt;/strong>, given a prompt $p$, the distribution of the generated tokens&lt;/li>
+&lt;li>$h^{(l)}_i$, means the $i$-th word (feature) in $l$-th layer of abstraction.&lt;/li>
+&lt;/ol>
+&lt;p>Markov Blanket as you can assign a symbol to a compression of some class of information.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ol>
+&lt;li>If you can&amp;rsquo;t see enough examples, it is hard to mine out a deeper level pattern.&lt;/li>
+&lt;/ol>
+&lt;h2 id="free-energy-principle">Free Energy Principle&lt;/h2>
+&lt;p>The Free Energy Principle is a mathematical framework that explains how biological systems resist disorder and maintain their structure by minimizing free energy.&lt;/p></description></item><item><title>Gödel's Proof</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style>
 p code {
  font-family: 'Fira Code', 'Courier New', Courier, monospace;
  font-size: 0.95em;
@@ -17187,7 +17206,20 @@ table {
  &lt;td style="text-align: left">Less is More. Ship Fast. Fail Fast. Try Harder.&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>IMDb Ratings</title><link>https://yingkui.com/imdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/imdb/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
+&lt;/table></description></item><item><title>Hopfield Networks Example</title><link>https://yingkui.com/notes/hopfield/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/hopfield/</guid><description>&lt;p>&lt;em>Generated from GPT-4o&lt;/em>&lt;/p>
+&lt;p>It converges to a stable situation that is pre-defined.&lt;/p>
+&lt;h2 id="step-by-step-example">Step-by-Step Example&lt;/h2>
+&lt;p>Let’s say we want to store &lt;strong>two 4-bit patterns&lt;/strong>:&lt;/p>
+&lt;p>$$
+\text{Pattern A: } \xi^1 = [+1, -1, +1, -1] \newline
+\text{Pattern B: } \xi^2 = [-1, +1, -1, +1]
+$$&lt;/p>
+&lt;h3 id="step-1-compute-the-weight-matrix">Step 1: Compute the Weight Matrix&lt;/h3>
+&lt;p>Using the Hebbian learning rule:&lt;/p>
+&lt;p>$$
+w_{ij} = \frac{1}{N} \sum_{\mu=1}^P \xi_i^\mu \xi_j^\mu \quad \text{for } i \ne j
+$$&lt;/p>
+&lt;p>Here, $N = 4$, $P = 2$&lt;/p></description></item><item><title>IMDb Ratings</title><link>https://yingkui.com/imdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/imdb/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
 &lt;style>
 table {
  overflow-x: auto;
