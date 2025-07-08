@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Human Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
 strong {
  font-weight: bold;
  color: black;
@@ -6,18 +6,12 @@ strong {
  padding: 0 4px;
 }
 &lt;/style>
-&lt;h2 id="words-compressed-associations">Words: Compressed Associations&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>$P(t \mid p)$&lt;/strong>, given a prompt $p$, the distribution of the generated tokens&lt;/li>
-&lt;li>$h^{(l)}_i$, means the $i$-th word (feature) in $l$-th layer of abstraction.&lt;/li>
-&lt;/ol>
-&lt;p>Markov Blanket as you can assign a symbol to a compression of some class of information.&lt;/p>
-&lt;h2 id="features">Features&lt;/h2>
-&lt;ol>
-&lt;li>If you can&amp;rsquo;t see enough examples, it is hard to mine out a deeper level pattern.&lt;/li>
-&lt;/ol>
-&lt;h2 id="free-energy-principle">Free Energy Principle&lt;/h2>
-&lt;p>The Free Energy Principle is a mathematical framework that explains how biological systems resist disorder and maintain their structure by minimizing free energy.&lt;/p></description></item><item><title>Gödel's Proof</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style>
+&lt;h2 id="relations-between-topics">Relations between Topics&lt;/h2>
+&lt;p>&lt;img src="../img/learn.svg" alt="">&lt;/p>
+&lt;p>The &lt;strong>reality&lt;/strong> makes it possible to reduce complexity by &lt;strong>compression&lt;/strong>, and can be expressed in terms of atomic &lt;strong>lexemes&lt;/strong>.&lt;/p>
+&lt;p>The &lt;strong>lexemes&lt;/strong> have different &lt;strong>abstraction levels&lt;/strong>, &lt;strong>complexity levels&lt;/strong> and &lt;strong>utility levels&lt;/strong>.&lt;/p>
+&lt;p>The &lt;strong>frequence of exposures&lt;/strong> determines the compression quality and the utility levels of lexemes.&lt;/p>
+&lt;p>The human &lt;strong>cogitive learning&lt;/strong> is the process of lexemes &lt;strong>retention&lt;/strong>.&lt;/p></description></item><item><title>Gödel's Proof</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style>
 p code {
  font-family: 'Fira Code', 'Courier New', Courier, monospace;
  font-size: 0.95em;
