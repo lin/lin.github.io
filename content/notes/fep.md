@@ -25,7 +25,6 @@ This means that an agent (e.g. a brain) is constantly trying to:
 1. Act to bring the world in line with its expectations (change $a$),
 1. Adapt its generative model of the world $m$ to better predict future inputs.
 
-
 ## The Bayesian brain hypothesis
 
 $$

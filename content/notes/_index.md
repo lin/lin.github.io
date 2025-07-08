@@ -1,5 +1,9 @@
 ## Notes
 
+Information decides the compressable patterns.
+
+Energy decides which direction to find them.
+
 1. [Gödel Incompleteness Theorem](../godel)
 1. Turing Undecidability
 1. Quantum Interpretation
