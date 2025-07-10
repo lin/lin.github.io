@@ -25,6 +25,8 @@ The **frequence of exposures** determines the compression quality and the utilit
 
 The human **cogitive learning** is the process of lexemes **retention**. 
 
+The goal of education is to have high quality **retentions** in short period for high utility **lexemes**, and this goal relies on high **motivation**.
+
 The quality of retention is measured by **KL divergence** and influenced by the quality of **training data** and agent **motivation**.
 
 The motivation level of an agent of changing actions and internal models are described by **Free Energy Principle** (FEP).
@@ -48,6 +50,8 @@ Some agents might have a higher **rate of retention** using lower exposure count
 1. $h^{(l)}_i$, means the $i$-th word (feature) in $l$-th layer of abstraction.
 
 Markov Blanket as you can assign a symbol to a compression of some class of information.
+
+redundancy-reduction
 
 To generalize is to compress, stripped away part of the information you get.
 
@@ -128,6 +132,8 @@ $\theta' = \theta - \eta \nabla_\theta \mathcal{L}(f_\theta(x), y)$
 
 while reading, people are processing the word one by one and try to make sense from each word, while reading the reader will compress the information by remove much details of the sentences. At the same time, it will also valuate the gains and costs to determine how many interest it will devote to the knowledge.
 
+### Zipping and Unzipping
+
 ## Retention
 
 > Repeated exposure to a pattern leads to better retention
@@ -147,6 +153,8 @@ So that only account for a low level of exposure.
 But by doing exercise, it will increase the agent perceived pragmatic value when the correct answer exposed especially they can see the benefits of solving the problem correctly and the discrepency of required level of resolution of the problem answer.
 
 The neurals fire together wire together, 
+
+### First Few Examples
 
 ### Spaced Repetition
 
