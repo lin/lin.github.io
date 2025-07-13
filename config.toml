@@ -61,6 +61,7 @@ weight = 2
   posts = '/:filename'
   pages = '/:filename'
 
-[markup.goldmark]
+[markup]
+  [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

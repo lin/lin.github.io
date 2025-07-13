@@ -41,7 +41,6 @@ The **intelligence of an agent** is measured by the summation of all its lexeme 
 
 Some agents might have a higher **rate of retention** using lower exposure count and poorer exposure quality. 
 
-
 ## Atomic Lexemes
 
 ### Compressed Associations
@@ -131,6 +130,8 @@ $\theta' = \theta - \eta \nabla_\theta \mathcal{L}(f_\theta(x), y)$
 ## Reading a Learning Material
 
 while reading, people are processing the word one by one and try to make sense from each word, while reading the reader will compress the information by remove much details of the sentences. At the same time, it will also valuate the gains and costs to determine how many interest it will devote to the knowledge.
+
+Fast searching instead of skill acquisition, illusion of fluency or mastery, epistemic foraging
 
 ### Zipping and Unzipping
 

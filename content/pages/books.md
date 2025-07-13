@@ -16,6 +16,14 @@ Presence on this list does not imply endorsement.
 
 For textbooks, go to [yingkui.com/textbooks](/textbooks)
 
+
+## Four Magzines
+
+1. The Economist
+1. The TIME Magazine
+1. Scientific American
+1. New Scientist
+
 ## 经济管理
 
 | 格式 | 名称                                                    | 
