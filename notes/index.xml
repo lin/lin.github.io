@@ -42,7 +42,285 @@ $$&lt;/p>
 &lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
 &lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
 &lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZuvK-od647c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="hidden-variable">Hidden Variable&lt;/h2>
+&lt;h3 id="alice-and-bobs-has-eight-possible-plans">Alice and Bobs has eight possible plans&lt;/h3>
+&lt;ol>
+&lt;li>↑↑↑ &amp;amp; ↓↓↓&lt;/li>
+&lt;li>↑↑↓ &amp;amp; ↓↓↑&lt;/li>
+&lt;li>↑↓↑ &amp;amp; ↓↑↓&lt;/li>
+&lt;li>↑↓↓ &amp;amp; ↓↑↑&lt;/li>
+&lt;li>↓↑↑ &amp;amp; ↑↓↓&lt;/li>
+&lt;li>↓↑↓ &amp;amp; ↑↓↑&lt;/li>
+&lt;li>↓↓↑ &amp;amp; ↑↑↓&lt;/li>
+&lt;li>↓↓↓ &amp;amp; ↑↑↑&lt;/li>
+&lt;/ol>
+&lt;h3 id="plan-1">Plan 1&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-2">Plan 2&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-3">Plan 3&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-4">Plan 4&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-5">Plan 5&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-6">Plan 6&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-7">Plan 7&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-8">Plan 8&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
+strong {
+ font-weight: bold;
+ color: black;
+ background-color: #fff200;
+ padding: 0 4px;
+}
+&lt;/style>
+&lt;h2 id="information-theory">Information Theory&lt;/h2>
+&lt;p>In &lt;strong>Reality&lt;/strong>, High &lt;strong>Frequency&lt;/strong> means high &lt;strong>Compresstion&lt;/strong>, high &lt;strong>Certainty&lt;/strong>.&lt;/p>
+&lt;p>Before &lt;strong>Action&lt;/strong>, High &lt;strong>Uncertainty&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Entropy&lt;/strong>, high &lt;strong>Work&lt;/strong> to identify.&lt;/p>
+&lt;p>After &lt;strong>Action&lt;/strong>, High &lt;strong>Surprise&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Information Gain&lt;/strong>.&lt;/p>
+&lt;p>Low &lt;strong>Energy&lt;/strong> means high &lt;strong>Probable&lt;/strong>, high &lt;strong>Frequency&lt;/strong>.&lt;/p>
+&lt;p>To change &lt;strong>Reality&lt;/strong>, you need to spend energy, change low &lt;strong>Probable&lt;/strong> to high &lt;strong>Probable&lt;/strong>. One action agent provides &lt;strong>Surprise&lt;/strong> to the other non-action agent.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MIBfKJHMWHU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
@@ -63,7 +341,59 @@ $$&lt;/p>
 &lt;h2 id="hamiltionian">Hamiltionian&lt;/h2>
 &lt;p>$$
 p_i \;=\; \frac{\partial L}{\partial \dot q_i}
-$$&lt;/p></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
+$$&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/predicates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/predicates/</guid><description>&lt;p>Generated by AI.&lt;/p>
+&lt;h2 id="predicates">Predicates&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Zero&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Zero}(x)\;\equiv\;x=0.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Successor&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Succ}(x,y)\;\equiv\;y=S(x).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>One&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{One}(x)\;\equiv\;x=S(0)\;=\;\overline{1}.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Addition&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Add}(x,y,z)\;\equiv\;x + y = z.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Multiplication&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Mul}(x,y,z)\;\equiv\;x \times y = z.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Less-than&lt;/strong>&lt;/p>
+&lt;p>$$
+x &amp;lt; y \;\equiv\;\exists z\bigl(z \neq0\;\wedge\; x + z = y\bigr).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Less-or-equal&lt;/strong>&lt;/p>
+&lt;p>$$
+x \le y \;\equiv\;\exists z\,(x + z = y).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Divisibility&lt;/strong>&lt;/p>
+&lt;p>$$
+x\mid y \;\equiv\;\exists z\,(x \times z = y).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Evenness&lt;/strong>&lt;/p></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
 &lt;p>$$
 a, \mu, m = \arg\min F(\tilde{s}, \mu \mid m)
 $$&lt;/p>

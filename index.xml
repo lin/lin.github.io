@@ -2629,7 +2629,8 @@ h3 {
 &lt;img src="https://yingkui.com/img/dayi/dayi-2021-01-18-dalle.png" alt="">&lt;/p>
 &lt;h2 id="2021-01-20">2021-01-20&lt;/h2>
 &lt;p>&lt;img src="https://yingkui.com/img/dayi/dayi-2021-01-20.jpg" alt="Cat">
-&lt;img src="https://yingkui.com/img/dayi/dayi-2021-01-20-dalle.jpg" alt="">&lt;/p></description></item><item><title>为什么发达国家都不建议戴口罩？</title><link>https://yingkui.com/facemask/</link><pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate><guid>https://yingkui.com/facemask/</guid><description>&lt;p>代表着世界上最先进医学科技的美国、日本和德国，均&lt;strong>不建议健康的人带口罩&lt;/strong>，而只有生病的人才应该佩戴口罩。&lt;/p>
+&lt;img src="https://yingkui.com/img/dayi/dayi-2021-01-20-dalle.jpg" alt="">&lt;/p></description></item><item><title>为什么发达国家都不建议戴口罩？</title><link>https://yingkui.com/facemask/</link><pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate><guid>https://yingkui.com/facemask/</guid><description>&lt;p>注：本文的写作均出自早期疫情研究和防控策略思考，但当时对“无症状／潜伏期”传播、气溶胶传播的认识尚不充分&lt;/p>
+&lt;p>代表着世界上最先进医学科技的美国、日本和德国，均&lt;strong>不建议健康的人带口罩&lt;/strong>，而只有生病的人才应该佩戴口罩。&lt;/p>
 &lt;p>原因当然不是因为口罩不够用。&lt;/p>
 &lt;p>在&lt;a href="https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment-chinese.html" title="美国CDC有关新型冠状病毒的预防和治疗">美国CDC的预防建议&lt;/a>中指明：&lt;/p>
 &lt;blockquote>
@@ -3872,6 +3873,10 @@ $$
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/basics/life/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/life/random/</guid><description>&lt;h3 id="随想">随想&lt;/h3>
 &lt;ol>
 &lt;li>节目效果拉满&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/basics/ref/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/basics/ref/</guid><description>&lt;h2 id="books">Books&lt;/h2>
+&lt;h3 id="word">Word&lt;/h3>
+&lt;ol>
+&lt;li>The Book of Why&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/cs/annotatedturing/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/annotatedturing/readme/</guid><description>&lt;p>&lt;code>node --stack-size=8000 5.1&lt;/code>&lt;/p>
 &lt;p>In the paper, Turing proposed a machine which he argued is capable to do whatever a human computer could do.&lt;/p>
 &lt;p>And this machine has some limitations. Notably no machine can determine whether a given machine ever prints a zero or not.&lt;/p>
@@ -10561,7 +10566,285 @@ $$&lt;/p>
 &lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
 &lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
 &lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZuvK-od647c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="hidden-variable">Hidden Variable&lt;/h2>
+&lt;h3 id="alice-and-bobs-has-eight-possible-plans">Alice and Bobs has eight possible plans&lt;/h3>
+&lt;ol>
+&lt;li>↑↑↑ &amp;amp; ↓↓↓&lt;/li>
+&lt;li>↑↑↓ &amp;amp; ↓↓↑&lt;/li>
+&lt;li>↑↓↑ &amp;amp; ↓↑↓&lt;/li>
+&lt;li>↑↓↓ &amp;amp; ↓↑↑&lt;/li>
+&lt;li>↓↑↑ &amp;amp; ↑↓↓&lt;/li>
+&lt;li>↓↑↓ &amp;amp; ↑↓↑&lt;/li>
+&lt;li>↓↓↑ &amp;amp; ↑↑↓&lt;/li>
+&lt;li>↓↓↓ &amp;amp; ↑↑↑&lt;/li>
+&lt;/ol>
+&lt;h3 id="plan-1">Plan 1&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-2">Plan 2&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-3">Plan 3&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-4">Plan 4&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↑&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-5">Plan 5&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-6">Plan 6&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↓&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-7">Plan 7&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↓&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↑&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="plan-8">Plan 8&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">Bob 1 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 2 ↑&lt;/th>
+ &lt;th style="text-align: center">Bob 3 ↑&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 1 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 2 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">Alice 3 ↓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
+strong {
+ font-weight: bold;
+ color: black;
+ background-color: #fff200;
+ padding: 0 4px;
+}
+&lt;/style>
+&lt;h2 id="information-theory">Information Theory&lt;/h2>
+&lt;p>In &lt;strong>Reality&lt;/strong>, High &lt;strong>Frequency&lt;/strong> means high &lt;strong>Compresstion&lt;/strong>, high &lt;strong>Certainty&lt;/strong>.&lt;/p>
+&lt;p>Before &lt;strong>Action&lt;/strong>, High &lt;strong>Uncertainty&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Entropy&lt;/strong>, high &lt;strong>Work&lt;/strong> to identify.&lt;/p>
+&lt;p>After &lt;strong>Action&lt;/strong>, High &lt;strong>Surprise&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Information Gain&lt;/strong>.&lt;/p>
+&lt;p>Low &lt;strong>Energy&lt;/strong> means high &lt;strong>Probable&lt;/strong>, high &lt;strong>Frequency&lt;/strong>.&lt;/p>
+&lt;p>To change &lt;strong>Reality&lt;/strong>, you need to spend energy, change low &lt;strong>Probable&lt;/strong> to high &lt;strong>Probable&lt;/strong>. One action agent provides &lt;strong>Surprise&lt;/strong> to the other non-action agent.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MIBfKJHMWHU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
@@ -10582,7 +10865,59 @@ $$&lt;/p>
 &lt;h2 id="hamiltionian">Hamiltionian&lt;/h2>
 &lt;p>$$
 p_i \;=\; \frac{\partial L}{\partial \dot q_i}
-$$&lt;/p></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
+$$&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/predicates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/predicates/</guid><description>&lt;p>Generated by AI.&lt;/p>
+&lt;h2 id="predicates">Predicates&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Zero&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Zero}(x)\;\equiv\;x=0.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Successor&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Succ}(x,y)\;\equiv\;y=S(x).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>One&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{One}(x)\;\equiv\;x=S(0)\;=\;\overline{1}.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Addition&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Add}(x,y,z)\;\equiv\;x + y = z.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Multiplication&lt;/strong>&lt;/p>
+&lt;p>$$
+\mathrm{Mul}(x,y,z)\;\equiv\;x \times y = z.
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Less-than&lt;/strong>&lt;/p>
+&lt;p>$$
+x &amp;lt; y \;\equiv\;\exists z\bigl(z \neq0\;\wedge\; x + z = y\bigr).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Less-or-equal&lt;/strong>&lt;/p>
+&lt;p>$$
+x \le y \;\equiv\;\exists z\,(x + z = y).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Divisibility&lt;/strong>&lt;/p>
+&lt;p>$$
+x\mid y \;\equiv\;\exists z\,(x \times z = y).
+$$&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Evenness&lt;/strong>&lt;/p></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
  &lt;meta charset="utf-8">
@@ -21666,6 +22001,13 @@ table {
 &lt;/style>
 &lt;p>Presence on this list does not imply endorsement.&lt;/p>
 &lt;p>For textbooks, go to &lt;a href="https://yingkui.com/textbooks">yingkui.com/textbooks&lt;/a>&lt;/p>
+&lt;h2 id="four-magzines">Four Magzines&lt;/h2>
+&lt;ol>
+&lt;li>The Economist&lt;/li>
+&lt;li>The TIME Magazine&lt;/li>
+&lt;li>Scientific American&lt;/li>
+&lt;li>New Scientist&lt;/li>
+&lt;/ol>
 &lt;h2 id="经济管理">经济管理&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -22598,7 +22940,18 @@ table {
  &lt;td style="text-align: left">&lt;a href="https://www.amazon.com/Western-Civilization-Mindtap-Course-List/dp/0357987012/">Western Civilization&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>To Do</title><link>https://yingkui.com/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/todo/</guid><description>&lt;ol>
+&lt;/table></description></item><item><title>The Triumph of the Idiots</title><link>https://yingkui.com/aigc/idiots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/aigc/idiots/</guid><description>&lt;p>Quotes from the book: &lt;a href="https://www.goodreads.com/book/show/95940169-understanding-and-changing-the-world">Understanding and Changing the World&lt;/a> by Joseph Sifakis&lt;/p>
+&lt;p>Contents from the GPT-4o.&lt;/p>
+&lt;blockquote>
+&lt;p>Idiots are mistrustful by nature, especially of those who surpass them intellectu-ally. When they do not understand something, they entrench themselves in predetermined views and do not even listen to their interlocutors.&lt;/p>&lt;/blockquote>
+&lt;h2 id="认知失调">认知失调&lt;/h2>
+&lt;p>&lt;strong>认知失调（Cognitive Dissonance&lt;/strong> 是Festinger于1957年提出的经典社会心理学理论，用以解释人们在面对相互冲突的信念、态度或行为时，所产生的不适与应对策略。&lt;/p>
+&lt;p>当外界信息与其既有信念冲突（比如：新观念、新证据）时，为减轻内心不适，他们宁愿否认或贬低对方。&lt;/p>
+&lt;p>失调（Dissonance）：指同时持有两种以上相互矛盾或不一致的认知（包括信念、态度、价值观、知识等）时，个体内心体验到的不舒适感。&lt;/p>
+&lt;p>失调驱动（Dissonance Arousal）：这种心理不适会自动激发动机，促使个体寻求“降低失调”的途径。&lt;/p>
+&lt;p>失调消除（Dissonance Reduction）：为恢复心理平衡，个体会通过改变信念、强化某些认知或回避矛盾信息等方式，减轻甚至消除不适。&lt;/p>
+&lt;blockquote>
+&lt;p>First, they become systematically mistrustful, particularly of what exceeds their intellect, and especially of intelligent people, whom they avoid like the plague. An encounter with an intelligent person, however brief, can be very painful to them. One natural reaction is to reject them one way or another, to entrench themselves in derogatory or arrogant behavior.&lt;/p></description></item><item><title>To Do</title><link>https://yingkui.com/todo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/todo/</guid><description>&lt;ol>
 &lt;li>《拼音改革》，做了一半&lt;/li>
 &lt;li>《模拟人生》，看纪录片的感觉越来越好，因为可以通过模拟去体验&lt;/li>
 &lt;li>《历史离我们有多近》，疫情以来，看了很多二战的电影，时间的跨度问题&lt;/li>
