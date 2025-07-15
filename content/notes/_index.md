@@ -5,7 +5,7 @@ Information decides the compressable patterns.
 Energy decides which direction to find them.
 
 1. [Information Theory](./info)
-1. [Gödel](../godel) & Turing
+1. [Gödel](../godel) & Turing & Computations
 1. Quantum Interpretation & [Bell's Inequality](./bell)
 1. Field Theory
 1. [Linear Algebra](./la)

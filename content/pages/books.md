@@ -16,7 +16,6 @@ Presence on this list does not imply endorsement.
 
 For textbooks, go to [yingkui.com/textbooks](/textbooks)
 
-
 ## Four Magzines
 
 1. The Economist
@@ -28,23 +27,15 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 
 | 格式 | 名称                                                    | 
 |:----|:--------------------------------------------------------|
-| 🔥   |Supremacy: AI, ChatGPT, and the Race                    |
-| 🔥   |Why Greatness Cannot Be Planned                    |
 | 📒   |俄国人（上 & 下）                    |
 | 📒   |Poor Economics                    |
 | 📒   |The Closing of American Mind                    |
 | 📒   |The Lean Startup                    |
 | 📒   |Traction                    |
 | 📒   |Range                   |
-| 🔥   |The WEIRDest People in the World                   |
-| 🔥   |Coming Wave                |
 | 📒   |小岛经济学                                              |
 | 📒   |[任天堂哲学](./nintendo/)                                |
 | 📒   |[岩田先生](./nintendo/)                   |
-| 🔥   | The Personal MBA                 |
-| 🔥   |That will never work the birth of Netflix                    |
-| 🔥   |Benjamin Franklin                                       |
-| 🔥   |Lucky Loser (Donald Trump)  |
 | 📒   |腾讯传                          |
 | 📒   |创京东                                                |
 | 📒   |经营沉浮录                                                |
@@ -52,8 +43,6 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 | 📒   |任天堂哲学                                                |
 | 📒   |自来水哲学                                                |
 | 📒   |寻找下一个独角兽                                           |
-| 🔥   |How to Get Rich (Felix Dennis )                          |
-| 🔥   | The Intelligent Investor |
 | 📒   | Rich Dad Poor Dad   |
 | 📒   | Life & Work Principles (Ray Dalio)   |
 | 📒   | Outliers   |
@@ -66,10 +55,6 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 
 | 格式 | 名称                                                      | 
 |:----|:--------------------------------------------------------|
-| 🔥   |A Theory of Fun for Game Design                       |
-|🔥    | Factfulness: Ten Reasons We're Wrong About the World |
-|🔥    | The Crowd A Study of the Popular Mind                |
-|📒    | Hooked                |
 |📒    | Made to Stick                |
 |📒    | 游戏化实战                |
 |📒    | 游戏化思维                |
@@ -77,7 +62,6 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 |📒    | How We Learn                |
 |📒    | Amusing Ourselves to Death                |
 |📒    | 数学领域的发明心理学               |
-|🔥    |Behavioural Economics: A Very Short Introduction|
 |📒    | Blink              |
 
 ## 政治历史
@@ -85,30 +69,13 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 | 格式  | 名称                                                      | 
 |:-----|:--------------------------------------------------------|
 | 📒   |政治秩序的起源                                            |
-| 🔥   |文明的冲突与世界秩序的重建                              |
-| 🔥   |古代人的自由与现代人的自由                             |
-| 🔥   |独裁者手册                                             |
-| 🔥   |通往奴役之路                                            |
-| 🔥   |自由秩序原理                                           |
-| 🔥   |致命的自负                                           |
-| 🔥   |万历十五年                                             |
-| 🔥   |制度基因                                            |
-| 🔥   |Why Nations Fail                                            |
-| 🔥   |The Power Game: How Washington Works                 |
-| 🔥   |谁偷走了美国梦                |
-| 🔥   |Nexus A Brief History of Information                    |
 | 📒   |智人之上                           |
 | 📒   |Sapien A Brief History of Humankind                           |
-| 🔥   |Sapien A Brief History of Humankind                           |
-| 🔥   |The Rise and Fall of the East                           |
 | 📒   |历史：地图上的世界简史                           |
 | 📒   |DK：时间线上的全球史                           |
 | 📒   |理解和改变世界                                        |
 | 📒   |世界是概率的（伊藤）                                        |
-| 🔥   |Enlightenment Now                           |
 | 📒   |历史三调 作为事件、经历和神话的义和团                        |
-| 🔥   |晚清四大谴责小说                        |
-| 🔥   |走出帝制                     |
 
 ## 数理科技
 
@@ -131,30 +98,17 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 | 📒   | [The Master Algorithm](https://www.amazon.com/dp/B012271YB2/) |
 | 📒   | [The Annotated Turing](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055) |
 | 📒   | [Code: The Hidden Language of Computer Hardware and Software](https://www.amazon.com/dp/B00JDMPOK2/) |
-| 🔥   | Sync: How Order Emerges From Chaos|
 
 ## 文学小说
 
 | 格式 | 名称                                                      | 
 |:----|:--------------------------------------------------------|
-| 🔥   |战争与和平                                          |
 | 📒   |战争与和平                                          |
-| 🔥   | To Kill A Mocking Bird                          |
-| 🔥   | 百年孤独                                |
 | 📒   | 百年の孤独                                |
-| 🔥   | One Hundred Years of Solitude         |
 | 📒   | 沉思录                                |
-| 🔥   | 了不起的盖茨比                           |
-| 🔥   | 朝花夕拾                                |
-| 🔥   | 挪威的森林                              |
-| 🔥   | 1984                                |
 | 📒   | 1984                                |
-| 🔥   | Animal Farm                                |
 | 📒   | Animal Farm                                |
 | 📒   | Anne Frank's Dairy                 |
-| 🔥   | 俄国人                                  |
-| 🔥   | 小王子                                  |
-| 🔥   | 安妮日记                                |  
 | 📒   |Brave New World                   |
 | 📒   |Surely You're Joking, Mr. Feynman                    |
 | 📒   |The Alchemists                    |
@@ -164,15 +118,11 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 | 📒   |约翰·克里斯朵夫                   |
 | 📒   |堂吉诃德                 |
 | 📒   |茶花女                  |
-| 🔥   |Ready Player One                       |
-| 🔥   |美丽新世界                    |
 
 ##  提高哲学
 
 | 格式 | 名称                                                      | 
 |:----|:--------------------------------------------------------|
-| 🔥   |How to Talk to Anyone                                 |
-| 🔥   |Atomic Habits                                 |
 | 📒   |The Willpower Instinct                    |
 | 📒   |The Power of Habit                   |
 | 📒   |Eat that Frog                   |
@@ -189,4 +139,4 @@ For textbooks, go to [yingkui.com/textbooks](/textbooks)
 
 ---
 
-_Last updated 2025/04/23_
+_Last updated 2025/07/13_

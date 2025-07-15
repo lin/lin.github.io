@@ -23,6 +23,14 @@ Low **Energy** means high **Probable**, high **Frequency**.
 
 To change **Reality**, you need to spend energy, change low **Probable** to high **Probable**. One action agent provides **Surprise** to the other non-action agent.
 
+Agent changes the local **Vocabulary** of the reality.
+
+Energy is the money you pay to change env vocabulary to match your dictionary, shibun vs nyusu.
+
+A stable state is a high probable situation.
+
+You want your vocabulary to be more probable to let the env learn a new word with high probable.
+
 ## Abstration
 
 if many **states** leads to few **attractors**, make these states form a **class**.

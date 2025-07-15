@@ -215,25 +215,25 @@ That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encode
 $$
 \exists x \exists y \Bigg[
   \exists n_0 \Big(
-    x = S(y \cdot S(0)) \cdot n_0 + S0 \;\land\;
+    x = S(y \cdot S(0)) \cdot n_0 + S0 \\;\land\\;
     \exists m_0 \big( S(S0) + m_0 = S(y \cdot S(0)) \big)
-  \Big) \;\land
+  \Big) \\;\land
   \newline
   \exists n_1 \Big(
-    x = S(y \cdot S(b)) \cdot n_1 + c \;\land\;
+    x = S(y \cdot S(b)) \cdot n_1 + c \\;\land\\;
     \exists m_1 \big( S(c) + m_1 = S(y \cdot S(b)) \big)
-  \Big) \;\land
+  \Big) \\;\land
   \newline
   \forall k \forall z \Bigg(
-    \exists m_k \big( S(k) + m_k = b \big) \;\land\;
+    \exists m_k \big( S(k) + m_k = b \big) \\;\land\\;
     \exists n_k \Big(
-      x = S(y \cdot S(k)) \cdot n_k + z \;\land\;
+      x = S(y \cdot S(k)) \cdot n_k + z \\;\land\\;
       \exists m_z \big( S(z) + m_z = S(y \cdot S(k)) \big)
     \Big)
-    \;\rightarrow\;
+    \\;\rightarrow\\;
     \newline
     \exists n_s \Big(
-      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \;\land\;
+      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \\;\land\\;
       \exists m_s \big( S(a \cdot z) + m_s = S(y \cdot S(S(k))) \big)
     \Big)
   \Bigg)
@@ -241,6 +241,29 @@ $$
 $$
 
 All you need to know here is that $\mathrm{isProof}(y, x)$ is a long sequence of symbols that can be precisely written down, like a python function is a long sequence of symbols that can be precisely written down. And it can be encoded as a single integer number, like a python function can be represented by a binary number.
+
+Why is this important? Let's say, if something you can proof with finite steps mechanically, it seems less interesting, like checking whether 6911 is a prime number or not, it can be tedious, but not too magical. But if you can show that for every rectangle triangles, $a^2 + b^2 = c^2$, this is amazing and magical for the first you see, and find it useful as well. For those Euclidean (plane) geometry statements, every such statement ($a^2 + b^2 = c^2$) is either provable or its negation is provable from the axioms.
+
+But for the Peano Arithmetic, something like Twin Prime Conjecture 
+
+$$
+\forall n\\;\exists p\\;\bigl(n < p \\;\wedge\\; \mathrm{Prime}(p)\\;\wedge\\;\mathrm{Prime}(p + 2)\bigr)
+$$
+
+Or in its expanded long form:
+
+$$
+\forall n\\;\exists p\\;\exists k\\;
+\Bigl(
+  n + S(k) = p
+  \\;\wedge\\;
+  \bigl(2 \le p \\;\wedge\\;\forall a\\,\forall b\\,(p = a\cdot b \to (a=1\lor b=1))\bigr)
+  \\;\wedge\\;
+  \bigl(2 \le p + S(S(0))\\;\wedge\\;\forall a\\,\forall b\\,(p + S(S(0)) = a\cdot b \to (a=1\lor b=1))\bigr)
+\Bigr)
+$$
+
+is interesting and we can mechanically check its correctness. We hope PA has the potential to proof this from axioms. But PA is not powerful enough.
 
 ### A New Class of Numbers
 
