@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>See A, Think B</title><link>https://yingkui.com/pba/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/pba/</guid><description>&lt;h2 id="pbmid-a">$P(B\mid A)$&lt;/h2>
+&lt;p>The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as&lt;/p>
+&lt;p>$$
+P(B\mid A) =\frac{\text{count}(A\cap B)}{\text{count}(A)}
+$$&lt;/p>
+&lt;p>the probability of $B$ given that $A$ has occurred provides a versatile, widely applicable tool for updating beliefs and guiding decisions in countless real‑world situations.&lt;/p></description></item><item><title>Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
 strong {
  font-weight: bold;
  color: black;
@@ -11871,7 +11876,7 @@ $$&lt;/p>
 &lt;p>水打浮萍巧相逢&lt;/p>
 &lt;p>随风稍逊各西东&lt;/p>
 &lt;p>劝君莫言花谢早&lt;/p>
-&lt;p>你我互映到永恒&lt;/p></description></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world">Brave New World&lt;/h2>
+&lt;p>你我互映到永恒&lt;/p></description></item><item><title/><link>https://yingkui.com/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ego/</guid><description>&lt;h2 id="the-cost-of-ego">The Cost of Ego&lt;/h2></description></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world">Brave New World&lt;/h2>
 &lt;p>&lt;strong>Shallow gratifications&lt;/strong> are quick, surface-level pleasures that deliver an immediate hit of satisfaction but fade almost as soon as they arrive. They tend to rely on external stimuli or “easy wins,” rather than nourishing our deeper psychological needs. Below we’ll unpack what they are, give concrete examples, and explain why relying on them too much can undermine our long-term well-being.&lt;/p>
 &lt;hr>
 &lt;h2 id="1-key-features-of-shallow-gratifications">1. Key Features of Shallow Gratifications&lt;/h2>
