@@ -224,3 +224,5 @@ It doesn't matter the association is right or not, maybe the school teachs you t
 There is no system 1 and system 2, it only means fluent words and inarticulate fresh situations.
 
 repeat at the high utility features, the more abstract feature, the more exposure it needs, and 
+
+## Tradeoff of Active Recalls and Frequent Exposures

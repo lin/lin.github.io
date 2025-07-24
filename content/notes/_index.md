@@ -4,13 +4,13 @@ Information decides the compressable patterns.
 
 Energy decides which direction to find them.
 
-1. [Information Theory](./info)
-1. [Gödel](../godel) & Turing & Computations
+1. [Bayes' Theorem](./bayes) & [Information Theory](./info)
+1. [Peano Arithmetic](./pa) & [Gödel's Theorem](../godel) & Turing & Computation
 1. Quantum Interpretation & [Bell's Inequality](./bell)
-1. Field Theory
+1. Field Theory & Thermodynamics
 1. [Linear Algebra](./la)
 1. [Hopfield Networks](./hopfield) & Neural Networks
-1. [Free Energy Principle](./fep)
+1. Predictive Process & [Free Energy Principle](./fep)
 
 ## Education
 

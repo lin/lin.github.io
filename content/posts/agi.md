@@ -7,6 +7,18 @@ draft: true
 
 > New/Entropy, Useful/Utility, Fun/Attention, Explore/Mining
 
+## PP
+
+1. signal arousing lexemes
+1. aroused lexemes will affect next prediction
+1. if brain pay more attention, the precision will go up.
+1. brain don't have habits to consider important things more carefully
+1. change perspective (word connections) can lead to dramatic error reduction.
+1. analogy exposure / lightup
+1. novelty learning / update existing (wrong ideas talk 1000 times)
+1. information loss gives you classes, 
+1. itch of creating a new lexeme
+
 ## Nature
 
 Distinguish

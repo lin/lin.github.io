@@ -5,6 +5,13 @@ theme = "hugo-ink"
 
 copyright = "© Copyright Yingkui.com All Rights Reserved"
 
+[params]
+  subtitle = "A Curious Mind."
+  avatar = "/logo-ai.jpg"
+  customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+  mainSections = ['posts']
+  math = true
+
 [[menu.main]]
 name = "Essays"
 url = "/"
@@ -35,11 +42,7 @@ weight = 2
 # url = "/about"
 # weight = 8
 
-[params]
-    subtitle = "A Curious Mind."
-    avatar = "/logo-ai.jpg"
-    customCSS = "css/custom.css"  # Custom CSS applied to default styles.
-    mainSections = ['posts']
+
 
 # [[params.social]]
 #     name = "Github"
@@ -65,3 +68,9 @@ weight = 2
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]

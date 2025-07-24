@@ -1,5 +1,7 @@
 ## 虚荣和情绪化
 
+> Fall in love with the problem, not yourself.
+
 Emotional Drugs
 
 We have Paleolithic emotions, medieval institutions and godlike technology. 

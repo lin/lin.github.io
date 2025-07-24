@@ -16,86 +16,21 @@ the probability of $B$ given that $A$ has occurred provides a versatile, widely 
 
 The deductive world of logic and computation only means all $P(B\mid A)$ is always near 1 or near 0.
 
-## Brain Counting Updates
+![](../img/awb.svg)
 
-## Bayes’ Theorem
+## Naive Frequency Updates
 
-Imagine a population divided into four groups:
+The position order is important in this senario, given "Name: Jordan", you may think about "Michael", but given "Name: Michael", your response will not as high as the previous one. 
 
-1. Male, Adult
-2. Female, Adult
-3. Male, Child
-4. Female, Child
+## Bayes' Theorem
 
-We want to know: if a randomly chosen person is male, what is the probability that they are an adult?
+[Bayes’ Theorem](./notes/bayes) provides a framework for encoding information in a normalized form, which reduces the effort required for updating and managing data. For example, we might categorize and update records by gender—an easily identifiable feature—while handling other attributes through more systematic bookkeeping. This is analogous to choosing a convenient basis (for instance, projecting onto easy‑to‑compute eigenvectors) in linear algebra or adopting a common “lingua franca” for data‑management tasks.
 
-1. By definition,
-
-   $$
-   P(\text{Adult}\mid \text{Male})
-   = \frac{\text{number of Male Adults}}{\text{number of Males}}.
-   $$
-
-2. Similarly,
-
-   $$
-   P(\text{Male}\mid \text{Adult})
-   = \frac{\text{number of Male Adults}}{\text{number of Adults}}.
-   $$
-
-3. Since
-
-   $$
-   \text{number of Male Adults}
-   = P(\text{Male}\mid \text{Adult}) \times \text{number of Adults},
-   $$
-
-   we can write
-
-   $$
-   P(\text{Adult}\mid \text{Male})
-   = \frac{P(\text{Male}\mid \text{Adult})\\;\times\\;\text{number of Adults}}
-          {\text{number of Males}}.
-   $$
-
-4. Dividing numerator and denominator by the total population size $N$, we get
-
-   $$
-   P(\text{Adult}\mid \text{Male})
-   = \frac{P(\text{Male}\mid \text{Adult})\\;\times\\;\dfrac{\text{number of Adults}}{N}}
-          {\dfrac{\text{number of Males}}{N}}
-   = \frac{P(\text{Male}\mid \text{Adult})\\;P(\text{Adult})}{P(\text{Male})}.
-   $$
-
-This is **Bayes’ theorem** in its classic form:
+In both our brains and pattern‑recognition models, incoming information is compressed by an internal model that keeps track of what we have observed, extracts regularities, and filters out redundant details. By centralizing data management in this way, Bayes’ Theorem becomes the natural mechanism for updating our beliefs or models, reflecting a fundamental aspect of how we interact with reality.
 
 $$
-\boxed{
-P(\mathrm{Adult}\mid \mathrm{Male})
-= \frac{
-    \overset{\text{likelihood}}{P(\mathrm{Male}\mid \mathrm{Adult})}
-    \\;\times\\;
-    \overset{\text{prior}}{P(\mathrm{Adult})}
-  }{
-    \overset{\text{evidence}}{P(\mathrm{Male})}
-  }
-}
+P(H \mid D) = \frac{P(D \mid H) \cdot P(H)}{P(D)}
 $$
-
-* **Prior** $P(\text{Adult})$: your initial belief about how likely someone is an adult.
-* **Likelihood** $P(\text{Male}\mid \text{Adult})$: how probable it is to observe “male” among adults.
-* **Evidence** $P(\text{Male})$: the overall chance of picking a male.
-* **Posterior** $P(\text{Adult}\mid \text{Male})$: your updated belief in “adult” once you know “male.”
-
-### Why it matters
-
-Bayes’ rule tells you exactly how to **update** your prior belief in light of new evidence. In this example:
-
-$$
-\text{posterior} \\;\longleftarrow\\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
-$$
-
-The more informative your likelihood, the more your posterior shifts away from the prior.
 
 ## Class Level Observations
 
@@ -191,7 +126,64 @@ $$
 $$
 
 
+## Lexemes
+
+> Lexemes are the currency of intelligence.
+
+In statistics, we may focus on continuously digit flow, but in daily life, a discrete view using lexemes as atomic buidling blocks are very rewarding.
+
+The creation of a new lexeme is just the brain expanding its generative model to explain a cluster of sensory regularities that no existing latent cause can account for. The reason it works is precisely that, once you introduce the right new cause, the myriad features you’ve been observing become conditionally independent of each other and of the rest of the world conditional only on that cause.
+
+Once $z_{\rm new}$ is in place, all those features become independent of one another conditional on $z_{\rm new}$. In graphical‑model terms, the Markov blanket of $z_{\rm new}$ “insulates” its children (the sensory feature nodes) from external states. That factorization is precisely what makes the world more compressible and predictions more accurate.
+
+Forming new concepts is essentially the brain’s way of compressing rich sensory data into compact, useful summaries. In probabilistic and information‐theoretic terms, each concept acts as a latent variable that explains away many degrees of freedom in the raw inputs, thereby reducing entropy and making inference tractable.
+
+Limited exposures let you pick up the “low‑hanging fruit.” As you accumulate more data, rarer co‑occurrences (second‑order correlations) get sampled enough times so their prediction errors can drive synaptic updates. Thus the generative map $g$ grows richer, encoding subtler patterns that only emerge over many exposures.More exposures leads to better understaning, better retentions and better emotions.
+
+As in learning, we may find knowledge that is less dependent to existing knowledge, makes us hard to attach to a scheme easily, which give you a sense of conceptual leap, like in quantum mechanics.
+
+
+### Benefits of Lexemes Perspective
+
+1. Productivity gains depend primarily on the lexemes we master.
+2. Educational success hinges on both the quantity and the quality of one’s lexemes.
+3. Individuals are limited by the size of their vocabulary.
+4. Poor judgments generate low‑resolution lexemes, which undermine shared understanding.
+5. We can predict how long it takes students to internalize a lexeme fluently.
+6. Altering core lexemes within a culture can bring about profound social change.
+7. Academia’s role is to discover and refine lexemes.
+8. The time required to “mine” a lexeme correlates with its level of abstraction.
+9. Consciously improving key lexemes in everyday life leads to better decision making.
+10. Adult vocabulary size doesn’t grow much with age.
+11. Adults often cling to erroneous beliefs and become less flexible in assimilating new ideas
+12. Rapidly reducing the entropy of a subject’s core concepts can dramatically boost learners’ competence and ease.
+
+### Benefits of Ample Exposures
+
+1. Fluency and Skill Mastery
+1. Comfort and Confidence
+1. Increased Interest and Motivation
+1. Deep Features Extractions and Understanding
+1. Closing Learning Gaps
+
+Each time students retrieve or review the material, it strengthens the neural pathways associated with that knowledge, making future recall faster and more automatic. When we repeat an action or recall, our brain’s neural network becomes more efficient (often by strengthening connections and even adding myelin around neurons), which makes the skill faster and easier to perform
+
+Repetition builds fluency and automaticity: With enough practice, skills that once took effort can become second nature. Think of how a new driver has to concentrate on every move, but an experienced driver operates the car almost on autopilot. In learning, the same happens – repetition can turn slow, halting efforts into smooth, fluent performance. For example, practicing mental math or vocabulary frequently will eventually let students perform calculations or recall words without having to think through each step.
+
+Importantly, seeing material repeatedly also makes it feel easier. New topics can be intimidating, but each subsequent exposure tends to increase a student’s comfort level. The exposure effect, which is the tendency for people to develop a preference for things simply because they’ve become familiar with them. This familiarity can lower anxiety, making students more willing to engage with the material instead of avoiding it.
+
+High utility lexemes are hard to mine, it is used everday but can't be recognized as a universal tool these are the exact reason why such lexemes are hard to notice.
+
+2. Fluent Computation
+3. Fluent Abstract Computation 
+
+Especially Active Exposures
+
+1. increase pragmatic gain
+2. attention allocation
+
 ## Features
 
-## Conceptual Leaps
+Less precise
 
+### shared features
