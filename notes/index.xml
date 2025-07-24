@@ -1,13 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/notes/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Linear Algebra Notes</title><link>https://yingkui.com/notes/la/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/la/</guid><description>&lt;h2 id="vector">Vector&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/notes/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Bayes’ Theorem</title><link>https://yingkui.com/notes/bayes/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bayes/</guid><description>&lt;p>Imagine a population divided into four groups:&lt;/p>
+&lt;ol>
+&lt;li>Male, Gamer&lt;/li>
+&lt;li>Female, Gamer&lt;/li>
+&lt;li>Male, Non-Gamer&lt;/li>
+&lt;li>Female, Non-Gamer&lt;/li>
+&lt;/ol>
+&lt;p>We want to know: if a randomly chosen person is male, what is the probability that they are an Gamer?&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>By definition,&lt;/p>
+$$
+ P(\text{Male}\mid \text{Gamer})
+ = \frac{\text{number of Male Gamers}}{\text{number of Gamers}}.
+ $$&lt;/li>
+&lt;li>
+&lt;p>Similarly,&lt;/p>
+$$
+ P(\text{Gamer}\mid \text{Male})
+ = \frac{\text{number of Male Gamers}}{\text{number of Males}}.
+ $$&lt;/li>
+&lt;li>
+&lt;p>Since&lt;/p>
+$$
+ \text{number of Male Gamers}
+ = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males},
+ $$&lt;p>we can write&lt;/p></description></item><item><title>Machine Learning Terms</title><link>https://yingkui.com/notes/ml/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/ml/</guid><description>&lt;h2 id="fx-theta">$f(x; \theta)$&lt;/h2>
+&lt;h3 id="models-prediction">Model&amp;rsquo;s Prediction&lt;/h3>
+&lt;p>The function $f(x; \theta)$ represents the model&amp;rsquo;s output given input $x$ and parameters $\theta$. It defines how the model maps an input to a prediction.&lt;/p>
+&lt;ul>
+&lt;li>$x$ is the input&lt;/li>
+&lt;li>$\theta$ is the model’s parameters&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example:&lt;/strong>&lt;br>
+If $f(x; \theta) = \theta_1 x + \theta_0$, with $\theta_1 = 2$, $\theta_0 = 1$, and $x = 3$, then:&lt;br>
+$f(3; \theta) = 2 \cdot 3 + 1 = 7$&lt;/p>
+&lt;hr>
+&lt;h2 id="x">$x$&lt;/h2>
+&lt;h3 id="input-features">Input Features&lt;/h3>
+&lt;p>$x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task.&lt;/p></description></item><item><title>Linear Algebra Notes</title><link>https://yingkui.com/notes/la/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/la/</guid><description>&lt;h2 id="vector">Vector&lt;/h2>
 &lt;p>Each vector is an object with many features values.&lt;/p>
 &lt;h2 id="matrix">Matrix&lt;/h2>
 &lt;p>Rows are an object with many features, Alice&amp;rsquo;s age gender height weight. Columns are Features for many objects, age of Alice Bob Chris David.&lt;/p>
-&lt;p>$$
+$$
 A = \begin{bmatrix}
-\vec{c}_1 &amp;amp; \vec{c}_2 &amp;amp; \cdots &amp;amp; \vec{c}_n
+\vec{c}_1 &amp; \vec{c}_2 &amp; \cdots &amp; \vec{c}_n
 \end{bmatrix}
-$$&lt;/p>
-&lt;p>$\vec{c}_1, \vec{c}_2, \cdots, \vec{c}_n$ are the base vectors after transformation described in current axis.&lt;/p>
+$$&lt;p>$\vec{c}_1, \vec{c}_2, \cdots, \vec{c}_n$ are the base vectors after transformation described in current axis.&lt;/p>
 &lt;p>Apply matrix to a vector $\vec{v}$ means you get what $\vec{v}$ means in current axis.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/2022-03-21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/2022-03-21/</guid><description>&lt;h2 id="2022-03-21">2022-03-21&lt;/h2>
 &lt;ol>
 &lt;li>&lt;code>kex&lt;/code> means &lt;code>Key Exchange&lt;/code>&lt;/li>
@@ -320,61 +358,73 @@ strong {
 &lt;p>Before &lt;strong>Action&lt;/strong>, High &lt;strong>Uncertainty&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Entropy&lt;/strong>, high &lt;strong>Work&lt;/strong> to identify.&lt;/p>
 &lt;p>After &lt;strong>Action&lt;/strong>, High &lt;strong>Surprise&lt;/strong> means low &lt;strong>Probable&lt;/strong>, high &lt;strong>Information Gain&lt;/strong>.&lt;/p>
 &lt;p>Low &lt;strong>Energy&lt;/strong> means high &lt;strong>Probable&lt;/strong>, high &lt;strong>Frequency&lt;/strong>.&lt;/p>
-&lt;p>To change &lt;strong>Reality&lt;/strong>, you need to spend energy, change low &lt;strong>Probable&lt;/strong> to high &lt;strong>Probable&lt;/strong>. One action agent provides &lt;strong>Surprise&lt;/strong> to the other non-action agent.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;p>To change &lt;strong>Reality&lt;/strong>, you need to spend energy, change low &lt;strong>Probable&lt;/strong> to high &lt;strong>Probable&lt;/strong>. One action agent provides &lt;strong>Surprise&lt;/strong> to the other non-action agent.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/lexemes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/lexemes/</guid><description>&lt;h2 id="lexemes--schemes">Lexemes &amp;amp; Schemes&lt;/h2>
+&lt;ol>
+&lt;li>Michael Jordan&lt;/li>
+&lt;li>Antifragile &amp;amp; Blackswan&lt;/li>
+&lt;li>Chess Positions&lt;/li>
+&lt;li>Unilever Logo&lt;/li>
+&lt;/ol>
+&lt;h2 id="class">Class&lt;/h2>
+$$
+\bigl(R\subseteq A\\;\wedge\\;P(B\mid A,H)\ge1-\varepsilon\bigr)\\;\Longrightarrow\\;P(B\mid R,H)\ge1-\varepsilon.
+$$</description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MIBfKJHMWHU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;h2 id="newtonian">Newtonian&lt;/h2>
-&lt;p>$$
+$$
 \vec{F} = \frac{\text d\vec{p}}{\text dt}
-$$&lt;/p>
-&lt;h2 id="lagrangian">Lagrangian&lt;/h2>
-&lt;p>$$
-L(q_i, \dot q_i, t) \;=\; T(q_i, \dot q_i) \;-\; V(q_i)
-$$&lt;/p>
-&lt;p>Kinetic energy minus the potential energy. And Euler–Lagrange equation:&lt;/p>
-&lt;p>$$
-\frac{d}{dt}\!\left(\frac{\partial L}{\partial \dot q_i}\right)
-- \frac{\partial L}{\partial q_i}
+$$&lt;h2 id="lagrangian">Lagrangian&lt;/h2>
+$$
+L(q_i, \dot q_i, t) \\;=\\; T(q_i, \dot q_i) \\;-\\; V(q_i)
+$$&lt;p>Kinetic energy minus the potential energy. And Euler–Lagrange equation:&lt;/p>
+$$
+\frac{d}{dt}\\!\left(\frac{\partial L}{\partial \dot q_i}\right)
+\- \frac{\partial L}{\partial q_i}
 = 0
-$$&lt;/p>
-&lt;h2 id="hamiltionian">Hamiltionian&lt;/h2>
-&lt;p>$$
-p_i \;=\; \frac{\partial L}{\partial \dot q_i}
-$$&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/pa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/pa/</guid><description>&lt;p>Generated by AI.&lt;/p>
+$$&lt;h2 id="hamiltionian">Hamiltionian&lt;/h2>
+$$
+p_i \\;=\\; \frac{\partial L}{\partial \dot q_i}
+$$$$
+H(q_i, p_i, t)
+\\;=\\;
+\sum_i p_i\\,\dot q_i
+\\;-\\;
+L\bigl(q_i,\dot q_i,t\bigr)
+$$</description></item><item><title/><link>https://yingkui.com/notes/pa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/pa/</guid><description>&lt;h2 id="addition">Addition&lt;/h2>
+$$
+\begin{aligned}
+&amp;\forall x \\;f(x, 0 ) =x \newline 
+&amp;\forall x \forall y \\;f(x, S(y)) = S(f(x, y))
+\end{aligned}
+$$&lt;h2 id="multiplication">Multiplication&lt;/h2>
+$$
+\begin{aligned}
+&amp;h(x,0)\\;:=\\;0\newline 
+&amp;h\bigl(x,S(y)\bigr) \\;:=\\;f\bigl(h(x,y),\\,x\bigr)
+\end{aligned}
+$$&lt;p>Generated by AI.&lt;/p>
 &lt;h2 id="statements">Statements&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Zero is neutral for addition&lt;/strong>&lt;/p>
-&lt;p>$$
-\forall x;\bigl(x + 0 = x\bigr).
-$$&lt;/p>
-&lt;p>&lt;em>Every number plus zero is itself.&lt;/em>&lt;/p>
+$$
+ \forall x\;\bigl(x + 0 = x\bigr).
+ $$&lt;p>&lt;em>Every number plus zero is itself.&lt;/em>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Successor distributes over addition&lt;/strong>&lt;/p>
-&lt;p>$$
-\forall x,\forall y;\bigl(x + S(y) = S(x + y)\bigr).
-$$&lt;/p>
-&lt;p>&lt;em>Adding the successor of $y$ to $x$ is the successor of $(x+y)$.&lt;/em>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Zero annihilates multiplication&lt;/strong>&lt;/p>
-&lt;p>$$
-\forall x;\bigl(x \cdot 0 = 0\bigr).
-$$&lt;/p>
-&lt;p>&lt;em>Any number times zero is zero.&lt;/em>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Successor distributes over multiplication&lt;/strong>&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/politics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/politics/</guid><description>&lt;h2 id="politics">Politics&lt;/h2>
+$$
+ \forall x\,\forall y\;\bigl(x + S(y) = S(x + y)\bigr).
+ $$&lt;p>&lt;em>Adding the successor of $y$ to $x$ is the successor of $(x+y)$.&lt;/em>&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/politics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/politics/</guid><description>&lt;h2 id="politics">Politics&lt;/h2>
 &lt;ol>
 &lt;li>Machiavellianism, Narcissism, and Psychopathy&lt;/li>
 &lt;li>checks and balances (legislative, executive, judicial)&lt;/li>
 &lt;/ol></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
-&lt;p>$$
+$$
 a, \mu, m = \arg\min F(\tilde{s}, \mu \mid m)
-$$&lt;/p>
-&lt;p>Where:&lt;/p>
+$$&lt;p>Where:&lt;/p>
 &lt;ol>
 &lt;li>$F(\tilde{s}, \mu \mid m)$ is the variational free energy, a quantity that bounds surprise.&lt;/li>
 &lt;li>$\tilde{s}$: sensory inputs (possibly generalized coordinates of sensations).&lt;/li>
@@ -387,13 +437,11 @@ $$&lt;/p>
 &lt;p>It converges to a stable situation that is pre-defined.&lt;/p>
 &lt;h2 id="step-by-step-example">Step-by-Step Example&lt;/h2>
 &lt;p>Let’s say we want to store &lt;strong>two 4-bit patterns&lt;/strong>:&lt;/p>
-&lt;p>$$
+$$
 \text{Pattern A: } \xi^1 = [+1, -1, +1, -1] \newline
 \text{Pattern B: } \xi^2 = [-1, +1, -1, +1]
-$$&lt;/p>
-&lt;h3 id="step-1-compute-the-weight-matrix">Step 1: Compute the Weight Matrix&lt;/h3>
+$$&lt;h3 id="step-1-compute-the-weight-matrix">Step 1: Compute the Weight Matrix&lt;/h3>
 &lt;p>Using the Hebbian learning rule:&lt;/p>
-&lt;p>$$
+$$
 w_{ij} = \frac{1}{N} \sum_{\mu=1}^P \xi_i^\mu \xi_j^\mu \quad \text{for } i \ne j
-$$&lt;/p>
-&lt;p>Here, $N = 4$, $P = 2$&lt;/p></description></item></channel></rss>
+$$&lt;p>Here, $N = 4$, $P = 2$&lt;/p></description></item></channel></rss>

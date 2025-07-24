@@ -1,0 +1,77 @@
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Bayes’ Theorem - Yingkui Lin</title><meta name=viewport content="width=device-width,initial-scale=1"><meta itemprop=name content="Bayes’ Theorem"><meta itemprop=description content="Imagine a population divided into four groups:
+Male, Gamer Female, Gamer Male, Non-Gamer Female, Non-Gamer We want to know: if a randomly chosen person is male, what is the probability that they are an Gamer?
+By definition,
+$$ P(\text{Male}\mid \text{Gamer}) = \frac{\text{number of Male Gamers}}{\text{number of Gamers}}. $$ Similarly,
+$$ P(\text{Gamer}\mid \text{Male}) = \frac{\text{number of Male Gamers}}{\text{number of Males}}. $$ Since
+$$ \text{number of Male Gamers} = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males}, $$we can write"><meta itemprop=datePublished content="2025-07-20T00:00:00+00:00"><meta itemprop=dateModified content="2025-07-20T00:00:00+00:00"><meta itemprop=wordCount content="395"><meta property="og:url" content="https://yingkui.com/notes/bayes/"><meta property="og:site_name" content="Yingkui Lin"><meta property="og:title" content="Bayes’ Theorem"><meta property="og:description" content="Imagine a population divided into four groups:
+Male, Gamer Female, Gamer Male, Non-Gamer Female, Non-Gamer We want to know: if a randomly chosen person is male, what is the probability that they are an Gamer?
+By definition,
+$$ P(\text{Male}\mid \text{Gamer}) = \frac{\text{number of Male Gamers}}{\text{number of Gamers}}. $$ Similarly,
+$$ P(\text{Gamer}\mid \text{Male}) = \frac{\text{number of Male Gamers}}{\text{number of Males}}. $$ Since
+$$ \text{number of Male Gamers} = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males}, $$we can write"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="notes"><meta property="article:published_time" content="2025-07-20T00:00:00+00:00"><meta property="article:modified_time" content="2025-07-20T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Bayes’ Theorem"><meta name=twitter:description content="Imagine a population divided into four groups:
+Male, Gamer Female, Gamer Male, Non-Gamer Female, Non-Gamer We want to know: if a randomly chosen person is male, what is the probability that they are an Gamer?
+By definition,
+$$ P(\text{Male}\mid \text{Gamer}) = \frac{\text{number of Male Gamers}}{\text{number of Gamers}}. $$ Similarly,
+$$ P(\text{Gamer}\mid \text{Male}) = \frac{\text{number of Male Gamers}}{\text{number of Males}}. $$ Since
+$$ \text{number of Male Gamers} = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males}, $$we can write"><link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel=stylesheet type=text/css><link rel=stylesheet type=text/css media=screen href=https://yingkui.com/css/normalize.css><link rel=stylesheet type=text/css media=screen href=https://yingkui.com/css/main.css><link id=dark-scheme rel=stylesheet type=text/css href=https://yingkui.com/css/dark.css><link rel=stylesheet type=text/css href=https://yingkui.com/css/custom.css><script src=https://yingkui.com/js/main.js></script><link rel=stylesheet href=https://yingkui.com/css/katex.min.css><script defer src=https://yingkui.com/js/katex.min.js></script><script defer src=https://yingkui.com/js/mhchem.min.js></script><script defer src=https://yingkui.com/js/auto-render.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1})})</script></head><body><div class="container wrapper"><div class=header><div class=avatar><a href=https://yingkui.com/><img src=/logo-ai.jpg alt="Yingkui Lin"></a></div><h1 class=site-title><a href=https://yingkui.com/>Yingkui Lin</a></h1><div class=site-description><p>A Curious Mind.</p><nav class="nav social"><ul class=flat></ul></nav></div><nav class=nav><ul class=flat><li><a href=/>Essays</a></li><li><a href=/pages>Pages</a></li></ul></nav></div><div class=post><div class=post-header><div class=meta><div class=date><span class=day>20</span>
+<span class=rest>Jul 2025</span></div></div><div class=matter><h1 class=title>Bayes’ Theorem</h1></div></div><div class=markdown><p>Imagine a population divided into four groups:</p><ol><li>Male, Gamer</li><li>Female, Gamer</li><li>Male, Non-Gamer</li><li>Female, Non-Gamer</li></ol><p>We want to know: if a randomly chosen person is male, what is the probability that they are an Gamer?</p><ol><li><p>By definition,</p>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{\text{number of Male Gamers}}{\text{number of Gamers}}.
+$$</li><li><p>Similarly,</p>$$
+P(\text{Gamer}\mid \text{Male})
+= \frac{\text{number of Male Gamers}}{\text{number of Males}}.
+$$</li><li><p>Since</p>$$
+\text{number of Male Gamers}
+= P(\text{Gamer}\mid \text{Male}) \times \text{number of Males},
+$$<p>we can write</p>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\text{number of Males}}
+{\text{number of Gamers}}.
+$$</li><li><p>Dividing numerator and denominator by the total population size $N$, we get</p>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\dfrac{\text{number of Males}}{N}}
+{\dfrac{\text{number of Gamers}}{N}}
+= \frac{P(\text{Gamer}\mid \text{Male})\\;P(\text{Male})}{P(\text{Gamer})}.
+$$</li></ol><p>This is <strong>Bayes’ theorem</strong> in its classic form:</p>$$
+\boxed{
+P(\mathrm{Male}\mid \mathrm{Gamer})
+= \frac{
+\overset{\text{likelihood}}{P(\mathrm{Gamer}\mid \mathrm{Male})}
+\\;\times\\;
+\overset{\text{prior}}{P(\mathrm{Male})}
+}{
+\overset{\text{evidence}}{P(\mathrm{Gamer})}
+}
+}
+$$<ul><li><strong>Prior</strong> $P(\text{Male})$: your initial belief about how likely someone is an Male.</li><li><strong>Likelihood</strong> $P(\text{Gamer}\mid \text{Male})$: how probable it is to observe “Gamer” among Males.</li><li><strong>Evidence</strong> $P(\text{Gamer})$: the overall chance of picking a Gamer.</li><li><strong>Posterior</strong> $P(\text{Male}\mid \text{Gamer})$: your updated belief in “Male” once you know “Gamer.”</li></ul><h3 id=with-numbers>With Numbers</h3><p>Here’s the same survey broken down again:</p><table><thead><tr><th style=text-align:right></th><th style=text-align:right>Gamer</th><th style=text-align:right>Non‑Gamer</th><th style=text-align:right>Total</th></tr></thead><tbody><tr><td style=text-align:right><strong>Male</strong></td><td style=text-align:right>30</td><td style=text-align:right>70</td><td style=text-align:right>100</td></tr><tr><td style=text-align:right><strong>Female</strong></td><td style=text-align:right>50</td><td style=text-align:right>50</td><td style=text-align:right>100</td></tr><tr><td style=text-align:right><strong>Total</strong></td><td style=text-align:right>80</td><td style=text-align:right>120</td><td style=text-align:right>200</td></tr></tbody></table><p>We now want</p>$$
+P(\text{Male}\mid \text{Gamer}).
+$$<hr><h2 id=1-direct-calculation>1. Direct calculation</h2><p>By definition of conditional probability,</p>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{\text{Male \\& Gamer}}{\text{Gamer}}
+= \frac{30}{80}
+= 0.375
+$$<hr><h2 id=2-via-bayes-theorem>2. Via Bayes’ theorem</h2><p>Bayes says</p>$$
+P(A\mid B)
+= \frac{P(B\mid A)\,P(A)}{P(B)}.
+$$<p>Let</p><ul><li>$A={\text{Male}}$,</li><li>$B={\text{Gamer}}$.</li></ul><p>So</p>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{P(\text{Gamer}\mid \text{Male})\,P(\text{Male})}{P(\text{Gamer})}.
+$$<p>We already know:</p><ul><li>$P(\text{Gamer}\mid \text{Male}) = \dfrac{30}{100} = 0.30.$</li><li>$P(\text{Male}) = \dfrac{100}{200} = 0.50.$</li></ul><h3 id=21-computing-the-evidence-ptextgamer>2.1. Computing the evidence $P(\text{Gamer})$</h3><p>Using the law of total probability over Male/Female:</p>$$
+P(\text{Gamer})
+= P(\text{Gamer}\mid \text{Male})\,P(\text{Male})
++P(\text{Gamer}\mid \text{Female})\,P(\text{Female}).
+$$<p>We have</p><ul><li>$P(\text{Gamer}\mid \text{Female}) = \dfrac{50}{100} = 0.50,$</li><li>$P(\text{Female}) = 0.50.$</li></ul><p>Hence</p>$$
+P(\text{Gamer})
+= 0.30\times0.50 + 0.50\times0.50
+= 0.15 + 0.25
+= 0.40.
+$$<h3 id=22-plug-in-and-finish>2.2. Plug in and finish</h3>$$
+P(\text{Male}\mid \text{Gamer})
+= \frac{0.30 \times 0.50}{0.40}
+= \frac{0.15}{0.40}
+= 0.375.
+$$<hr><h2 id=3-conclusion>3. Conclusion</h2><p>Whether by direct counting or by Bayes’ theorem (with the evidence computed via male/female breakdown), we get</p>$$
+\boxed{P(\text{Male}\mid \text{Gamer}) = 0.375.}
+$$<h3 id=why-it-matters>Why it matters</h3><p>Bayes’ rule tells you exactly how to <strong>update</strong> your prior belief in light of new evidence. In this example:</p>$$
+\text{posterior} \\;\longleftarrow\\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
+$$<p>The more informative your likelihood, the more your posterior shifts away from the prior.</p></div><div class=tags></div></div></div><div class="footer wrapper"><nav class=nav><div>2025 © Copyright Yingkui.com All Rights Reserved</div></nav></div></body></html>
