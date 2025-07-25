@@ -234,3 +234,78 @@ $$
 Let $P = [0.8, 0.2]$, $Q = [0.5, 0.5]$  
 Then  
 $D_{\mathrm{KL}}(P \Vert Q) = 0.8 \log \frac{0.8}{0.5} + 0.2 \log \frac{0.2}{0.5} \approx 0.257$
+
+---
+
+## Maximum Likelihood Estimation
+
+Suppose you have data $D = \{x_1, x_2, ..., x_n\}$, and a model with parameter $\theta$. The **likelihood function** is:
+
+$$
+L(\theta) = P(D|\theta)
+$$
+
+MLE finds the $\theta$ that **maximizes** this:
+
+$$
+\hat{\theta}_{\text{MLE}} = \arg\max _{\theta} P(D|\theta)
+$$
+
+It just picks the parameter that makes the observed data most probable.
+
+You flip a coin 10 times, and observe 7 heads and 3 tails.
+Let $\theta$ be the probability of heads.
+
+We want to find the value of $\theta$ that **maximizes the likelihood** of seeing exactly 7 heads.
+
+The binomial likelihood for $k$ heads in $n$ trials is:
+
+$$
+P(k \text{ heads} \mid \theta) = \binom{n}{k} \cdot \theta^k \cdot (1 - \theta)^{n - k}
+$$
+
+In our case:
+
+$$
+L(\theta) = P(7 \text{ heads} \mid \theta) = \binom{10}{7} \cdot \theta^7 \cdot (1 - \theta)^3
+$$
+
+Let’s ignore the constant $\binom{10}{7}$, since it doesn’t depend on $\theta$. So we just maximize:
+
+$$
+L(\theta) \propto \theta^7 \cdot (1 - \theta)^3
+$$
+
+To maximize $\theta^7 (1 - \theta)^3$, we take the **derivative**, set it to zero, and solve.
+
+$$
+\ell(\theta) = \log L(\theta) = 7 \log \theta + 3 \log(1 - \theta)
+$$
+
+Take derivative:
+
+$$
+\frac{d\ell}{d\theta} = \frac{7}{\theta} - \frac{3}{1 - \theta}
+$$
+
+Set it to zero:
+
+$$
+\frac{7}{\theta} = \frac{3}{1 - \theta}
+$$
+
+Multiply both sides:
+
+$$
+7(1 - \theta) = 3\theta
+\Rightarrow 7 - 7\theta = 3\theta
+\Rightarrow 7 = 10\theta
+\Rightarrow \theta = \frac{7}{10}
+$$
+
+The **MLE estimate** for $\theta$, the probability of heads, is:
+
+$$
+\boxed{\theta_{\text{MLE}} = \frac{7}{10}}
+$$
+

@@ -19,4 +19,17 @@ Human minds are prone to holding on to false arguments and wrong ideas for sever
 1. **Information overload**, Faced with vast amounts of conflicting information online, it’s easier to latch onto a simple narrative—even if it’s false.
 1. **Halo effect**. You form a strong positive (or negative) impression of a person, group or brand based on one salient trait. In Bayesian terms, that gives you an overly precise prior $p(z)$ about anything they say or do.  New evidence from that source is up‑weighted—prediction errors are down‑weighted—so you keep believing them even when they’re wrong.
 1. **Cognitive dissonance**, When new evidence $x$ conflicts sharply with a held belief (prior $μ_{\rm prior}$), it generates large prediction error. To minimize that error the brain can either update its belief or reinterpret/ignore the evidence.  Often it “chooses” the latter, twisting the data to fit the prior rather than admit error.
+1. **Motivated search**, We actively seek out or cherry‑pick sources, arguments, and data that confirm our existing beliefs, browsing only familiar websites, watching only friendly commentators, and ignoring broader evidence that might challenge us.
+1. **Biased assimilation**, We interpret ambiguous or even disconfirming information in a way that reinforces our priors, explaining away criticism as “fake news,” reframing inconvenient facts as exceptions, or dismissing them as misunderstandings rather than updating our beliefs.
 1. Strong priors (from repetition, emotion, expertise, halo) plus error‑minimizing drives (disfavoring belief change under dissonance) lock you into false ideas. Under stress, group polarization or fatigue, precision on priors skyrockets and the brain leans even harder on these biases, making belief revision very unlikely.
+
+
+In hierarchical inference, each prediction comes with a precision (confidence).  When the brain assigns too much precision to a prior belief, it under‑weights sensory evidence and produces a biased posterior.
+
+Mathematically, if $\Sigma_{\rm prior}\ll\Sigma_{\rm sens}$, then the Kalman gain
+
+$$
+K=\frac{\Sigma_{\rm prior}}{\Sigma_{\rm prior}+\Sigma_{\rm sens}}
+$$
+
+becomes very small and you barely update—this is a formal way to see how strong priors lead to biases.

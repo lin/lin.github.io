@@ -9,18 +9,30 @@ math: true
 The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as
 
 $$
-P(B\mid A) =\frac{\text{count}(A\cap B)}{\text{count}(A)}
+P(B\mid A)
 $$
 
 the probability of $B$ given that $A$ has occurred provides a versatile, widely applicable tool for updating beliefs and guiding decisions in countless real‑world situations.
 
 The deductive world of logic and computation only means all $P(B\mid A)$ is always near 1 or near 0.
 
-![](../img/awb.svg)
+<img src='/img/awb.svg' height="100">
 
 ## Naive Frequency Updates
 
+In the above expression, $P(B\mid A)$ denotes the conditional probability of $B$ given $A$, which, in the absence of full information, can be approximated by the empirical frequency:
+
+$$
+\frac{\text{count}(A\cap B)}{\text{count}(A)}
+$$
+
+The frequency is a fact to summarize what we are seeing. When predicting a new observation, however, we instead rely on a parameterized hypothesis distribution.
+
 The position order is important in this senario, given "Name: Jordan", you may think about "Michael", but given "Name: Michael", your response will not as high as the previous one. 
+
+This naive frequency is simply stating a fact or a computation, it doesn't provide a high level generating machine for future instance, to do so we need an assumption of data distribution so we could predict next instance based on what we have at hand. This naive frequency corresponds to doing inference without a prior, or equivalently, a flat prior.
+
+At first, the brain might count co-occurrences (a simple Hebbian rule: “what fires together wires together”). Over time, the brain adjusts precision, forms structured priors, and learns latent causes. So frequency counts could be the brain’s initial or fast path to an approximation of likelihoods. Later, more abstract layers build causal models and priors — and inference becomes more Bayesian.
 
 ## Bayes' Theorem
 
@@ -31,6 +43,8 @@ In both our brains and pattern‑recognition models, incoming information is com
 $$
 P(H \mid D) = \frac{P(D \mid H) \cdot P(H)}{P(D)}
 $$
+
+Why prediction is important? Wherever direct measurement is impossible, impractical or prohibitively expensive whether because the sample would be destroyed, there are too few examples, the cost per measurement is too high, the environment is inaccessible or the time horizon is too long organizations turn to predictive modeling. By training on cheaper, proxy data and learning the hidden relationships, you gain actionable insight without ever touching or wasting the precious thing you wish to know.
 
 ## Class Level Observations
 
@@ -130,7 +144,26 @@ $$
 
 > Lexemes are the currency of intelligence.
 
-In statistics, we may focus on continuously digit flow, but in daily life, a discrete view using lexemes as atomic buidling blocks are very rewarding.
+In statistics we often work with continuous streams of numbers, but in everyday life it can be far more effective to think in discrete units (lexemes) as our atomic building blocks. When we learn or fit a model, we update its parameters to reduce prediction errors, for example by computing
+
+$$
+P(\text{model}\mid \text{signal}, \text{response}, \text{context})
+$$
+
+after observing new data. A lexeme plays the same role as a feature: it links an observable cue (signal) to a likely outcome (response). We can formalize this as
+
+$$
+P(\text{response}\mid \text{signal}, \text{context}, \text{model})
+$$
+
+Whenever a particular response has very high probability given its signal and context, we treat that signal–response pair as a lexeme. In practice lexemes sharpen our predictions, reduce ambiguity, and boost our chances of success, while remaining simple to manage. Examples include:
+
+1. At a road intersection (signal), predicting which direction you are most likely to turn (response).
+2. Faced with a Japanese word (signal), selecting its English equivalent (response).
+3. In a Zelda dungeon room (signal), choosing which door to open next (response).
+4. Encountering the term “entropy” in a textbook (signal), activating related concepts or formulas (response).
+
+By organizing knowledge into lexemes, we convert a complex, continuous world into a set of reliable, discrete predictions that are easy to store, retrieve, and apply.
 
 The creation of a new lexeme is just the brain expanding its generative model to explain a cluster of sensory regularities that no existing latent cause can account for. The reason it works is precisely that, once you introduce the right new cause, the myriad features you’ve been observing become conditionally independent of each other and of the rest of the world conditional only on that cause.
 
@@ -141,6 +174,21 @@ Forming new concepts is essentially the brain’s way of compressing rich sensor
 Limited exposures let you pick up the “low‑hanging fruit.” As you accumulate more data, rarer co‑occurrences (second‑order correlations) get sampled enough times so their prediction errors can drive synaptic updates. Thus the generative map $g$ grows richer, encoding subtler patterns that only emerge over many exposures.More exposures leads to better understaning, better retentions and better emotions.
 
 As in learning, we may find knowledge that is less dependent to existing knowledge, makes us hard to attach to a scheme easily, which give you a sense of conceptual leap, like in quantum mechanics.
+
+In the brain, model updating happens in parallel with inference:
+
+1. **Exposure‑driven strengthening**
+   Every repetition of a given signal–response pairing incrementally potentiates the synaptic connections that encode that association.
+
+2. **Feedback‑driven reinforcement**
+   When a response produces strong retention, through reward, surprise, or other salient feedback, the corresponding signal–response link is further consolidated.
+
+3. **Decay‑driven weakening**
+   In the absence of repeated exposure or feedback, synaptic connections gradually depotentiate, causing rarely used associations to weaken or be pruned over time.
+
+> Bayesian inference is leading the way towards efficient, goal‑directed reasoning.
+
+In feature extraction, Bayesian inference gives us a principled way to compress raw observations into a compact, informative representation by updating our model’s parameters to best explain the data.  Then, when computing features for prediction, Bayesian inference steers us toward the most relevant variables and highest‑reward outcomes, guiding decisions that solve the task at hand as effectively as possible.
 
 
 ### Benefits of Lexemes Perspective
@@ -157,6 +205,7 @@ As in learning, we may find knowledge that is less dependent to existing knowled
 10. Adult vocabulary size doesn’t grow much with age.
 11. Adults often cling to erroneous beliefs and become less flexible in assimilating new ideas
 12. Rapidly reducing the entropy of a subject’s core concepts can dramatically boost learners’ competence and ease.
+13. The lexeme perspective is powerful because it applies across all levels of knowledge and contexts, offering a consistent lens for analysis.
 
 ### Benefits of Ample Exposures
 
@@ -187,3 +236,5 @@ Especially Active Exposures
 Less precise
 
 ### shared features
+
+## Bias Prone Machine

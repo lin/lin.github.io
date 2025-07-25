@@ -155,6 +155,8 @@ But by doing exercise, it will increase the agent perceived pragmatic value when
 
 The neurals fire together wire together, 
 
+boost synaptic plasticity in the hippocampus and amygdala, noradrenaline and dopamine provide the “tag” that something important happened, acetylcholine focuses encoding resources, and stress hormones fine‑tune consolidation, making surprise or trauma into long‑lasting memories.
+
 ### First Few Examples
 
 ### Spaced Repetition
