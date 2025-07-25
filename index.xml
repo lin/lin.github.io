@@ -13,8 +13,11 @@
 &lt;li>&lt;strong>Information overload&lt;/strong>, Faced with vast amounts of conflicting information online, it’s easier to latch onto a simple narrative—even if it’s false.&lt;/li>
 &lt;li>&lt;strong>Halo effect&lt;/strong>. You form a strong positive (or negative) impression of a person, group or brand based on one salient trait. In Bayesian terms, that gives you an overly precise prior $p(z)$ about anything they say or do. New evidence from that source is up‑weighted—prediction errors are down‑weighted—so you keep believing them even when they’re wrong.&lt;/li>
 &lt;li>&lt;strong>Cognitive dissonance&lt;/strong>, When new evidence $x$ conflicts sharply with a held belief (prior $μ_{\rm prior}$), it generates large prediction error. To minimize that error the brain can either update its belief or reinterpret/ignore the evidence. Often it “chooses” the latter, twisting the data to fit the prior rather than admit error.&lt;/li>
+&lt;li>&lt;strong>Motivated search&lt;/strong>, We actively seek out or cherry‑pick sources, arguments, and data that confirm our existing beliefs, browsing only familiar websites, watching only friendly commentators, and ignoring broader evidence that might challenge us.&lt;/li>
+&lt;li>&lt;strong>Biased assimilation&lt;/strong>, We interpret ambiguous or even disconfirming information in a way that reinforces our priors, explaining away criticism as “fake news,” reframing inconvenient facts as exceptions, or dismissing them as misunderstandings rather than updating our beliefs.&lt;/li>
 &lt;li>Strong priors (from repetition, emotion, expertise, halo) plus error‑minimizing drives (disfavoring belief change under dissonance) lock you into false ideas. Under stress, group polarization or fatigue, precision on priors skyrockets and the brain leans even harder on these biases, making belief revision very unlikely.&lt;/li>
-&lt;/ol></description></item><item><title>Bayes’ Theorem</title><link>https://yingkui.com/notes/bayes/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bayes/</guid><description>&lt;p>Imagine a population divided into four groups:&lt;/p>
+&lt;/ol>
+&lt;p>In hierarchical inference, each prediction comes with a precision (confidence). When the brain assigns too much precision to a prior belief, it under‑weights sensory evidence and produces a biased posterior.&lt;/p></description></item><item><title>Bayes’ Theorem</title><link>https://yingkui.com/notes/bayes/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bayes/</guid><description>&lt;p>Imagine a population divided into four groups:&lt;/p>
 &lt;ol>
 &lt;li>Male, Gamer&lt;/li>
 &lt;li>Female, Gamer&lt;/li>
@@ -56,7 +59,7 @@ $f(3; \theta) = 2 \cdot 3 + 1 = 7$&lt;/p>
 &lt;p>$x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task.&lt;/p></description></item><item><title>See A, Think B</title><link>https://yingkui.com/pba/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/pba/</guid><description>&lt;h2 id="pbmid-a">$P(B\mid A)$&lt;/h2>
 &lt;p>The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as&lt;/p>
 $$
-P(B\mid A) =\frac{\text{count}(A\cap B)}{\text{count}(A)}
+P(B\mid A)
 $$&lt;p>the probability of $B$ given that $A$ has occurred provides a versatile, widely applicable tool for updating beliefs and guiding decisions in countless real‑world situations.&lt;/p></description></item><item><title>Cognitive Learning</title><link>https://yingkui.com/learn/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/learn/</guid><description>&lt;style>
 strong {
  font-weight: bold;
@@ -540,7 +543,7 @@ table {
  &lt;figcaption>きしめん（碁子麺） あまの @ ホワイティうめだ&lt;/figcaption>
 &lt;/figure> --></description></item><item><title>无题</title><link>https://yingkui.com/poems/susheng/</link><pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/susheng/</guid><description>&lt;p>&lt;img src="https://yingkui.com/img/susheng.jpg" alt="">&lt;/p>
 &lt;p>少时深陷圣贤念，处处迷茫总彷徨&lt;/p>
-&lt;p>早已闻道不畏死，却怕俗胜未曾尝&lt;/p>
+&lt;p>早已闻道不畏死，也怕俗胜未曾尝&lt;/p>
 &lt;hr>
 &lt;h3 id="更衣">更衣&lt;/h3>
 &lt;p>2024-12-25&lt;/p>
@@ -12056,6 +12059,7 @@ Because the pleasure is so short-lived, we chase it again and again, often escal
 &lt;li>2012-01&lt;/li>
 &lt;li>2012-05&lt;/li>
 &lt;li>2012-10&lt;/li>
+&lt;li>2013-05&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/read/expection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/expection/</guid><description>&lt;h2 id="the-expectation-effect">The Expectation Effect&lt;/h2>
 &lt;p>&lt;strong>Overview&lt;/strong>
 &lt;em>The Expectation Effect&lt;/em> by David Robson explores how our beliefs shape our reality. Robson introduces “expectation effects,” showing that the brain actively constructs perception by blending sensory input with prior beliefs. Consequently, what we expect—about our health, abilities, and emotions—can become our reality.&lt;/p>

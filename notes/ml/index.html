@@ -2,7 +2,7 @@
 $x$ is the input $\theta$ is the model’s parameters Example:
 If $f(x; \theta) = \theta_1 x + \theta_0$, with $\theta_1 = 2$, $\theta_0 = 1$, and $x = 3$, then:
 $f(3; \theta) = 2 \cdot 3 + 1 = 7$
-$x$ Input Features $x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task."><meta itemprop=datePublished content="2025-07-20T00:00:00+00:00"><meta itemprop=dateModified content="2025-07-20T00:00:00+00:00"><meta itemprop=wordCount content="866"><meta property="og:url" content="https://yingkui.com/notes/ml/"><meta property="og:site_name" content="Yingkui Lin"><meta property="og:title" content="Machine Learning Terms"><meta property="og:description" content="$f(x; \theta)$ Model’s Prediction The function $f(x; \theta)$ represents the model’s output given input $x$ and parameters $\theta$. It defines how the model maps an input to a prediction.
+$x$ Input Features $x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task."><meta itemprop=datePublished content="2025-07-20T00:00:00+00:00"><meta itemprop=dateModified content="2025-07-20T00:00:00+00:00"><meta itemprop=wordCount content="1111"><meta property="og:url" content="https://yingkui.com/notes/ml/"><meta property="og:site_name" content="Yingkui Lin"><meta property="og:title" content="Machine Learning Terms"><meta property="og:description" content="$f(x; \theta)$ Model’s Prediction The function $f(x; \theta)$ represents the model’s output given input $x$ and parameters $\theta$. It defines how the model maps an input to a prediction.
 $x$ is the input $\theta$ is the model’s parameters Example:
 If $f(x; \theta) = \theta_1 x + \theta_0$, with $\theta_1 = 2$, $\theta_0 = 1$, and $x = 3$, then:
 $f(3; \theta) = 2 \cdot 3 + 1 = 7$
@@ -35,4 +35,28 @@ $$<p><strong>Example:</strong><br>If $Y$ is a fair coin: $p(H) = p(T) = 0.5$, th
 I(X; Y) = H(Y) - H(Y \mid X)
 $$<p><strong>Example:</strong><br>If $X$ and $Y$ are independent, $I(X; Y) = 0$<br>If $Y = X$, then knowing $X$ fully determines $Y$, and $I(X; Y) = H(Y)$</p><hr><h2 id=d_mathrmklp-vert-q>$D_{\mathrm{KL}}(P \Vert Q)$</h2><h3 id=kl-divergence-kullbackleibler>KL Divergence (Kullback–Leibler)</h3><p>$D_{\mathrm{KL}}(P \Vert Q)$ measures how one probability distribution $P$ diverges from another distribution $Q$. It is asymmetric and non-negative.</p>$$
 D_{\mathrm{KL}}(P \Vert Q) = \sum_x P(x) \log \frac{P(x)}{Q(x)}
-$$<p><strong>Example:</strong><br>Let $P = [0.8, 0.2]$, $Q = [0.5, 0.5]$<br>Then<br>$D_{\mathrm{KL}}(P \Vert Q) = 0.8 \log \frac{0.8}{0.5} + 0.2 \log \frac{0.2}{0.5} \approx 0.257$</p></div><div class=tags></div></div></div><div class="footer wrapper"><nav class=nav><div>2025 © Copyright Yingkui.com All Rights Reserved</div></nav></div></body></html>
+$$<p><strong>Example:</strong><br>Let $P = [0.8, 0.2]$, $Q = [0.5, 0.5]$<br>Then<br>$D_{\mathrm{KL}}(P \Vert Q) = 0.8 \log \frac{0.8}{0.5} + 0.2 \log \frac{0.2}{0.5} \approx 0.257$</p><hr><h2 id=maximum-likelihood-estimation>Maximum Likelihood Estimation</h2><p>Suppose you have data $D = {x_1, x_2, &mldr;, x_n}$, and a model with parameter $\theta$. The <strong>likelihood function</strong> is:</p>$$
+L(\theta) = P(D|\theta)
+$$<p>MLE finds the $\theta$ that <strong>maximizes</strong> this:</p>$$
+\hat{\theta}_{\text{MLE}} = \arg\max _{\theta} P(D|\theta)
+$$<p>It just picks the parameter that makes the observed data most probable.</p><p>You flip a coin 10 times, and observe 7 heads and 3 tails.
+Let $\theta$ be the probability of heads.</p><p>We want to find the value of $\theta$ that <strong>maximizes the likelihood</strong> of seeing exactly 7 heads.</p><p>The binomial likelihood for $k$ heads in $n$ trials is:</p>$$
+P(k \text{ heads} \mid \theta) = \binom{n}{k} \cdot \theta^k \cdot (1 - \theta)^{n - k}
+$$<p>In our case:</p>$$
+L(\theta) = P(7 \text{ heads} \mid \theta) = \binom{10}{7} \cdot \theta^7 \cdot (1 - \theta)^3
+$$<p>Let’s ignore the constant $\binom{10}{7}$, since it doesn’t depend on $\theta$. So we just maximize:</p>$$
+L(\theta) \propto \theta^7 \cdot (1 - \theta)^3
+$$<p>To maximize $\theta^7 (1 - \theta)^3$, we take the <strong>derivative</strong>, set it to zero, and solve.</p>$$
+\ell(\theta) = \log L(\theta) = 7 \log \theta + 3 \log(1 - \theta)
+$$<p>Take derivative:</p>$$
+\frac{d\ell}{d\theta} = \frac{7}{\theta} - \frac{3}{1 - \theta}
+$$<p>Set it to zero:</p>$$
+\frac{7}{\theta} = \frac{3}{1 - \theta}
+$$<p>Multiply both sides:</p>$$
+7(1 - \theta) = 3\theta
+\Rightarrow 7 - 7\theta = 3\theta
+\Rightarrow 7 = 10\theta
+\Rightarrow \theta = \frac{7}{10}
+$$<p>The <strong>MLE estimate</strong> for $\theta$, the probability of heads, is:</p>$$
+\boxed{\theta_{\text{MLE}} = \frac{7}{10}}
+$$</div><div class=tags></div></div></div><div class="footer wrapper"><nav class=nav><div>2025 © Copyright Yingkui.com All Rights Reserved</div></nav></div></body></html>
