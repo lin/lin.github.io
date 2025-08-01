@@ -18,18 +18,14 @@ type: "page"
 | Freq     | Media                            | 
 |:---------|:---------------------------------|
 | Weekly   |  The Economist                   |
-| Weekly   |  TIME                            |
-| Weekly   |  New Scientist                   |
-| Monthly  |  Businessweek                    |
-| Monthly  |  Scientific American             |
-| Monthly  |  Foreign Affairs                 |
+| Weekly   |  Nature                          |
 
 ## Life Goals
 
 | One Life               | Three Goals                                   | Due               |
 |:-----------------------|:----------------------------------------------|:------------------|
 | One EdTech Company     |  [Education](../edu)                          | 2029年          | 
-| One Philosophy Book    |  [Basics](../basics)                          |                 |
+| One Philosophy Book    |  [Money and Vocabulary](../basics)                          |                 |
 | One AGI Paper          |  [Intelligence](../ai)                         |                 | 
 
 ## Principles

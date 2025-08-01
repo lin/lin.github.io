@@ -33,3 +33,25 @@ K=\frac{\Sigma_{\rm prior}}{\Sigma_{\rm prior}+\Sigma_{\rm sens}}
 $$
 
 becomes very small and you barely update—this is a formal way to see how strong priors lead to biases.
+
+1. **Economy Over Exhaustiveness**
+   Every activation of a lexeme saves enormous effort. Once your brain finds a plausible concept that “explains” incoming data, it collapses myriad details into that one unit and moves on. That avoids endless searching for better patterns—but it also means you can stop sampling prematurely and cling to a coarse or even spurious lexeme.
+
+2. **Precision-Weighted Closure**
+   In predictive-processing terms, when a candidate lexeme yields a strong match (low prediction error), the brain ramps up its confidence (precision) in that lexeme. High precision suppresses further error signals, effectively **shutting down** exploration of alternative explanations and enforcing a quick closure.
+
+3. **Lateral Inhibition of Alternatives**
+   Neurally, once a lexeme’s assembly fires, it inhibits competing assemblies. This winner-takes-all dynamic makes the selected concept dominant—and any rival interpretations weak or silent—so you “see” only what fits your chosen lexeme.
+
+4. **Approximate Inference and Mode-Seeking**
+   Exact Bayesian inference over all possible lexemes is intractable. The brain uses **point estimates** or “modes” of the posterior—essentially picking the single most likely cause. That is efficient but prone to **anchoring** on the first or strongest candidate, rather than maintaining a full distribution of possibilities.
+
+5. **Biases as Mis-mined Lexemes**
+   Heuristics like the availability bias, representativeness, and base-rate neglect arise when lexemes form too quickly from salient but unrepresentative samples. Because lexemes feel “real,” we give them the same weight as fully vetted concepts, leading to **false beliefs** and overconfidence.
+
+6. **Free-Energy Minimization Drives Closure**
+   The brain constantly seeks to minimize surprise (free energy). Activating a lexeme that explains most inputs—even imperfectly—is energetically cheaper than keeping multiple hypotheses alive. This imperative for quick surprise reduction favors rapid commitment to a single explanation.
+
+7. **Social and Cultural Reinforcement**
+   Once a lexeme takes root (e.g. a label or stereotype), social feedback often confirms it. Sharing the same lexeme within a group further entrenches it, making it feel even more “obvious” and discouraging reconsideration.
+
