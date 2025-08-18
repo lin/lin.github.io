@@ -630,8 +630,7 @@ table {
 &lt;p>我和方舟子说， GPT-4o 和 Claude-3.5-Sonnet，在这个提示词上并没有表现的更好。对此方舟子回复说：&lt;/p>
 &lt;p>&lt;img src="../img/fang-10.png" alt="">&lt;/p>
 &lt;p>&lt;strong>“现在要换话题比烂了” 是一句非常糊涂的话，DeepSeek 的性能是否相比之下更差就是话题本身&lt;/strong>，似乎方舟子是想说我在指责转移，Whataboutism，AlphaFold 也有幻觉，我们去找大模型的缺陷难道是这个帖子的主题？一个 “智商高于180” 的天才，为什么会在讨论过程中连论点是什么都能搞糊涂？因为他认知能力没他吹嘘的那么高。&lt;/p>
-&lt;p>方舟子自诩科学精神，却同时使用了两次 Cherry Picking 的诡辩，首先，他选择了大模型里&lt;a href="https://www.youtube.com/watch?v=7xTGNNLPyMI&amp;amp;t=7574s">普遍存在的、常见的幻觉提示词&lt;/a>来嘲讽性能，其次，即使 DeepSeek 在这个幻觉上表现比其他大模型更出色，他却找了一个发生概率低的单一样本来佐证。&lt;/p>
-&lt;p>&lt;strong>通过一次飞机失事，来嘲笑飞机的安全性不如私家车，这就是方舟子自诩的科学精神吗？&lt;/strong>&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
+&lt;p>方舟子自诩科学精神，却同时使用了两次 Cherry Picking 的诡辩，首先，他选择了大模型里&lt;a href="https://www.youtube.com/watch?v=7xTGNNLPyMI&amp;amp;t=7574s">普遍存在的、常见的幻觉提示词&lt;/a>来嘲讽性能，其次，即使 DeepSeek 在这个幻觉上表现比其他大模型更出色，他却找了一个发生概率低的单一样本来佐证。(2025年八月初发布的 GPT-5 同样会对这个提示词产生幻觉)&lt;/p></description></item><item><title>知其不可而为</title><link>https://yingkui.com/poems/buke/</link><pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/buke/</guid><description>&lt;h3 id="知其不可而为">知其不可而为&lt;/h3>
 &lt;p>2024-12-26&lt;/p>
 &lt;p>听闻盛景也登峰，缓钝笨拙若老翁&lt;/p>
 &lt;p>怎因险阻容退意，却为谜难更欲争&lt;/p>
@@ -2143,7 +2142,22 @@ h3 {
 &lt;li>R星的《瑞德死亡》或者《红色死亡》，作为《枪·烟》精神续作而被译成《荒野大镖客》&lt;/li>
 &lt;/ol>
 &lt;p>在我看来，《荒野大镖客》/ 《The Bodyguards in Wilderness》 / 《荒野の用心棒》，就是指在西部荒野靠暴力技能维持生计的人，可以是护送货物的镖师，可以是为政府工作的赏金猎人，可以是靠抢劫为生的土匪帮派，也就成了西部动作片的指代名称。&lt;/p>
-&lt;p>荒野和红色都是西部世界的象征符号，镖和死亡之眼都是令人畏惧的击杀武器。&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/06-15-2023/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/06-15-2023/</guid><description>&lt;h3 id="cf-edu-150">CF Edu 150&lt;/h3>
+&lt;p>荒野和红色都是西部世界的象征符号，镖和死亡之眼都是令人畏惧的击杀武器。&lt;/p></description></item><item><title>胡说八道的俗语</title><link>https://yingkui.com/su/</link><pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/su/</guid><description>&lt;h2 id="一个巴掌拍不响">一个巴掌拍不响&lt;/h2>
+&lt;p>一个巴掌拍不响的含义是：当一个恶性事件的发生，两方参与者都有促使事件升级的责任，需要我们同时谴责施害者和受害者双方，这是明显的以偏概全。&lt;/p>
+&lt;p>当你用一个巴掌，去主动拍另外一个静止的巴掌时，就可以拍响，而无需两个手掌同时发力。&lt;/p>
+&lt;p>一个巴掌拍的响是胡扯的实例：&lt;/p>
+&lt;ol>
+&lt;li>强奸事件中，被强奸者作为女性有让事件升级的责任，是她没有假扮成男性。&lt;/li>
+&lt;li>在大型枪击案的现场，受害者有责任，不应该出现在公共场合。&lt;/li>
+&lt;li>法院判决时，大多数情况下，也要对原告做出惩罚。&lt;/li>
+&lt;li>盗窃事件中，被盗者有让事件升级的责任，不应该在屋内放值钱的东西。&lt;/li>
+&lt;li>校园凌霸事件中，被欺辱的一方有让事件升级的责任，平时应该多练习搏击。&lt;/li>
+&lt;li>土匪强盗或者黑社会强行收取保护费中，商家有让事件升级的责任，应该以暴制暴。&lt;/li>
+&lt;/ol>
+&lt;p>两个巴掌拍出响的时候有，但不是大多数时候，日常生活中，即使施害者一方有过分的举动，受害者还是尽可能的让矛盾不去升级，但那些靠强力手段去获得不当利益的人，是伸出巴掌打在受害者身上发出的响声。拿出一个巴掌拍不响作为论据，是对施暴者恶行的包庇。&lt;/p>
+&lt;h2 id="屁股决定脑袋">屁股决定脑袋&lt;/h2>
+&lt;p>环境或者立场确实对思维有影响，但影响不等于决定，这种说法就是在夸大归因，把个体复杂的认知、情感、价值观，简单归结为坐在哪里，而不考虑更多的因素。&lt;/p>
+&lt;h2 id="解铃还须系铃人">解铃还须系铃人&lt;/h2></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/06-15-2023/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/06-15-2023/</guid><description>&lt;h3 id="cf-edu-150">CF Edu 150&lt;/h3>
 &lt;p>Can&amp;rsquo;t solve the problem because I didn&amp;rsquo;t realize negative test cases.&lt;/p>
 &lt;h3 id="codechef-94">Codechef 94&lt;/h3>
 &lt;p>Was chatting with friends while competing, could solve that 2204 problem if another 5 minutes was given.&lt;/p></description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/06-07-2022/</link><pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/06-07-2022/</guid><description>&lt;h3 id="codechef-palindrome-xor">Codechef Palindrome XOR&lt;/h3>
@@ -3903,7 +3917,7 @@ $$
 &lt;li>智者的游戏
 &lt;ul>
 &lt;li>为什么功利主义是肤浅的？&lt;/li>
-&lt;li>为什么要建立一个包容、多元、高分辨率}的社会？&lt;/li>
+&lt;li>为什么要建立一个包容、多元、高分辨率的社会？&lt;/li>
 &lt;li>对日常行为进行计算学上的归类定义&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -7795,7 +7809,16 @@ $$\Sigma r_i - \Sigma a_i > \delta$$&lt;p>当用户潜意识预估（felt）的 
 &lt;p>时间：题目形式&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
+&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/shua/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/shua/</guid><description>&lt;h1 id="albert-education-2026">Albert Education 2026&lt;/h1>
+&lt;h2 id="mvp">MVP&lt;/h2>
+&lt;ol>
+&lt;li>2025.08.11 BE: create an api server using ruby on rails&lt;/li>
+&lt;li>2025.08.12 BE: design all kind of schema for the api&lt;/li>
+&lt;li>2025.08.13 BE: activeadmin auth, make front-end and back-end work together&lt;/li>
+&lt;li>2025.08.14 APP: Learned React Native. Build one simple home page.&lt;/li>
+&lt;li>2025.08.15 Rest Day.&lt;/li>
+&lt;li>2025.08.16&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
 &lt;ol>
 &lt;li>1个story point，一个小时以内&lt;/li>
 &lt;li>2个story point，大约两个小时&lt;/li>
@@ -10605,41 +10628,63 @@ $$\Sigma r_i - \Sigma a_i > \delta$$&lt;p>当用户潜意识预估（felt）的 
  &lt;td>86&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title/><link>https://yingkui.com/notes/2022-03-21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/2022-03-21/</guid><description>&lt;h2 id="2022-03-21">2022-03-21&lt;/h2>
-&lt;ol>
-&lt;li>&lt;code>kex&lt;/code> means &lt;code>Key Exchange&lt;/code>&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/2023-12-22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/2023-12-22/</guid><description>&lt;h3 id="midjourney">MidJourney&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>U means upscale / separation&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>V means variation&lt;/p>
-&lt;/li>
-&lt;li>&lt;/li>
-&lt;li>
-&lt;p>/imagine&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>/blend&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="advanced">Advanced&lt;/h3>
-&lt;ol>
-&lt;li>image url&lt;/li>
-&lt;li>text prompt&lt;/li>
-&lt;li>params&lt;/li>
-&lt;/ol>
-&lt;h3>&lt;/h3>
-&lt;ol>
-&lt;li>Subject: person, animal, character, location, object, etc.&lt;/li>
-&lt;li>Medium: photo, painting, illustration, sculpture, doodle, tapestry, etc.&lt;/li>
-&lt;li>Environment: indoors, outdoors, on the moon, in Narnia, underwater, the Emerald City, etc.&lt;/li>
-&lt;li>Lighting: soft, ambient, overcast, neon, studio lights, etc&lt;/li>
-&lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
-&lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
-&lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
+&lt;/table></description></item><item><title/><link>https://yingkui.com/mv/bias/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/bias/</guid><description>&lt;h2 id="确认偏差">确认偏差&lt;/h2>
+&lt;blockquote>
+&lt;p>习惯性的站在自己观点的对立面&lt;/p>&lt;/blockquote>
+&lt;h4 id="什么是确认偏差">什么是确认偏差？&lt;/h4>
+&lt;p>人们更倾向于寻找、记住、解释那些支持自己已有信念或观点的信息，而忽略或轻视与自己信念相矛盾的信息。&lt;/p>
+&lt;p>例如，如果你相信星座性格分析，说“射手座外向爱自由”，你就会特别注意到射手座朋友外向的一面，而忽略他们安静、不爱社交的时刻。
+结果是，你感觉“星座真的很准”，但其实只是确认偏差在起作用。&lt;/p>
+&lt;p>如果某人强烈爱国，他会更愿意相信强调国家成就、民族团结的新闻或评论，并觉得这些信息可信。
+但当他看到批评国家的问题（腐败、环境污染、人权问题等）的报道时，就会觉得“不真实”“这是外国势力抹黑”，甚至直接不去看。&lt;/p>
+&lt;p>如果某人强烈反感专制，他会更愿意相信揭露专制体制弊端的新闻，并觉得这些信息合乎事实。
+当他看到一些强调“稳定”“秩序”或专制制度带来经济发展好处的文章时，就会觉得“这是洗地”“有偏见”，甚至拒绝阅读。&lt;/p>
+&lt;h4 id="为什么会有确认偏差">为什么会有确认偏差？&lt;/h4>
+&lt;p>智能有机体更新内部世界模型（belief revision）是一件代价极高的事情，需要耗费大量认知资源。&lt;/p>
+&lt;p>因此，系统更倾向于保持原有模型稳定，只要还能合理解释当下数据。确认偏差可以起到“延缓大规模修正”的作用。&lt;/p>
+&lt;p>当一个人同时持有 两个相互矛盾的信念、态度或行为 时，会产生心理上的紧张和不适，这种状态就叫 认知失调。在情绪上，符合预期的信息会带来“模型正确”的确认感，降低惊讶，生理上产生奖励体验，相反的信息会引起不安、不适，意味着要面对新的世界模型，因此人会主动回避。如果承认自己错了，会产生认知失调（心理痛苦）。为了减少痛苦，人们往往更愿意找支持证据来“证明自己没错”，&lt;/p>
+&lt;p>确认偏差不仅是认知上的自由能最小化，也是 情感上减少不适 的一种表现。&lt;/p>
+&lt;p>虚荣心的自我保护，虚荣心的一个核心功能是维持“我是正确的”“我是有价值的”这种自我形象。当出现相反证据时，虚荣心会感到威胁，于是大脑会通过确认偏差来过滤掉“打脸”的信息。在某些社会环境中，“认错”意味着丢面子或社会地位下降。于是个体更倾向坚持原有观点，哪怕事实在眼前。&lt;/p>
+&lt;h4 id="确认偏差的害处">确认偏差的害处&lt;/h4>
+&lt;p>个人层面，妨碍学习和成长，总是只接受符合自己观点的信息，导致视野狭窄。知识结构难以更新，思维停留在固有模式里。&lt;/p>
+&lt;p>降低决策质量，在做重要选择（买房、择业、投资等）时，忽略不利证据，容易高估利好，低估风险，最后可能做出错误甚至灾难性的决定。&lt;/p>
+&lt;p>自我欺骗与情绪困境，只接受让自己舒服的信息，从而短期减少焦虑，但长期可能导致与现实脱节。当现实“打脸”时，心理冲击会更大。&lt;/p>
+&lt;p>与他人沟通障碍，在争论时，不是听对方的理由，而是不断寻找反驳的证据。结果是对话失效，双方更固执。&lt;/p>
+&lt;p>加剧偏见和刻板印象，比如“某一类人都怎样”，只记得符合偏见的个案，忽视反例，导致误解、歧视，滋生没有必要的矛盾。&lt;/p>
+&lt;p>信息茧房，人们只在同类群体里交流，互相强化同样的观点。结果是立场越来越极端，对立越来越尖锐。公民若只接收“有利于自己立场”的新闻，会加深社会撕裂，难以达成共识。极端情况下，可能导致群体对抗甚至冲突。&lt;/p>
+&lt;h4 id="认知模型复杂度不足">认知模型复杂度不足&lt;/h4>
+&lt;p>认知模型简单的人，他们的大脑倾向于用单一框架解释世界，只能容纳一种答案。&lt;/p>
+&lt;p>当遇到矛盾证据时，就会产生不适，因为这意味着模型需要拆解和重建，而这对他们来说很困难或几乎不可能。&lt;/p>
+&lt;p>所以，他们会下意识拒绝“打脸证据”，只保留符合预期的信息，也就确认偏差更强。&lt;/p>
+&lt;p>认知模型简单的人更容易陷入“非黑即白”的思维，无法处理失调，从而依赖确认偏差来保护自己&lt;/p>
+&lt;p>认知模型复杂的人，他们能够在头脑中并行存储多个可能的解释，甚至允许矛盾观点共存。&lt;/p>
+&lt;p>这种情况下，遇到冲突信息不会立刻造成巨大心理负担，因此确认偏差的倾向会相对弱一些。&lt;/p>
+&lt;p>认知模型复杂的人能容忍失调，把冲突当作信息源，而不是威胁。&lt;/p>
+&lt;p>一个简单模型的人，像一个“怕冷的人”，总要立刻关掉冷风（短期舒适），哪怕因此永远待在狭小的屋子里。&lt;/p>
+&lt;p>一个复杂模型的人，像一个“能忍短期寒冷的人”，敢于走出去收集木柴和食物。虽然一时不舒服（短期自由能高），但最终获得更大安全感（长期自由能低）。&lt;/p>
+&lt;h4 id="提高认知复杂度">提高认知复杂度&lt;/h4>
+&lt;p>大脑的默认模式是倾向于“快思维”，也就是追求确定性，简化模型，快速降低自由能。&lt;/p>
+&lt;p>一个人越常接触复杂信息、矛盾观点，大脑就越会重塑连接，也就更容易形成分层模型。&lt;/p>
+&lt;p>需要容忍不确定、接受矛盾、不断修正，这和大脑的“节能本能”是相反的，也就是需要刻意的训练，来取代本能的低效和偏差。&lt;/p>
+&lt;p>接触多元信息，主动去看不同立场的观点（比如一条新闻的正反评论），而不是只泡在信息茧房&lt;/p>
+&lt;p>练习批判性思维，对同一问题，尝试列出两种或更多解释，并检验各自的证据，这训练大脑能“并行存储多个假设”&lt;/p>
+&lt;p>培养不确定性耐受力，刻意去面对模棱两可的问题，不急着下结论，而不是逃避思考，认为思考是无意义和徒劳的&lt;/p>
+&lt;h4 id="统计学理解">统计学理解&lt;/h4>
+&lt;p>在确认偏差下，人类的“更新公式”并不是完整的，而是带有偏权重：&lt;/p>
+$$
+P^*(H \mid D) \propto 
+\begin{cases} 
+w_1 \cdot P(D \mid H) P(H), &amp; D \ \text{支持原有信念} \newline
+w_2 \cdot P(D \mid H) P(H), &amp; D \ \text{反对原有信念} 
+\end{cases}
+$$&lt;p>其中：&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/fraud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/fraud/</guid><description>&lt;h2 id="都是为了你好">都是为了你好&lt;/h2>
+&lt;h2 id="永远战时状态">永远战时状态&lt;/h2>
+&lt;h2 id="割喉降血压">割喉降血压&lt;/h2>
+&lt;h2 id="都是一家人">都是一家人&lt;/h2>
+&lt;h2 id="身上满是标签">身上满是标签&lt;/h2>
+&lt;h2 id="黑社会手段">黑社会手段&lt;/h2></description></item><item><title/><link>https://yingkui.com/mv/halo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/halo/</guid><description>&lt;h2 id="光环效应">光环效应&lt;/h2>
+&lt;blockquote>
+&lt;p>特征显著不代表是主要原因&lt;/p>&lt;/blockquote></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZuvK-od647c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
@@ -10904,7 +10949,30 @@ $$\Sigma r_i - \Sigma a_i > \delta$$&lt;p>当用户潜意识预估（felt）的 
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
+&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/complexity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/complexity/</guid><description>&lt;h2 id="complexity">Complexity&lt;/h2>
+&lt;h2 id="p">P&lt;/h2>
+&lt;ol>
+&lt;li>PATH(G, s, t) is P. PATH: is there a path between s node and t node in a directed graph G.&lt;/li>
+&lt;li>COPRIME(x,y) is P.&lt;/li>
+&lt;li>CFG(G, str) is P.&lt;/li>
+&lt;/ol>
+&lt;h2 id="np-complete">NP-complete&lt;/h2>
+&lt;ol>
+&lt;li>SAT(formula) is NP. Check whether a Boolean formula can return 1.&lt;/li>
+&lt;li>SUBSET-SUM(S, target) is NP. Find a set to sum to target.&lt;/li>
+&lt;li>HAM_PATH(G, s, t) is NP. A Hamiltonian path in a directed graph G is a directed path that goes through
+each node exactly once.&lt;/li>
+&lt;li>3SAT(formula) is NP.&lt;/li>
+&lt;/ol>
+$$
+ (x_{1}\lor \lnot x_{2}\lor x_{3})
+ \land
+ (x_{3}\lor x_{5}\lor \lnot x_{6})
+ \land
+ (x_{3}\lor \lnot x_{6}\lor x_{4})
+ \land
+ (\lnot x_{4}\lor x_{5}\lor x_{6})
+$$</description></item><item><title/><link>https://yingkui.com/notes/compression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/compression/</guid><description>&lt;h2 id="compression">Compression&lt;/h2></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
 strong {
  font-weight: bold;
  color: black;
@@ -10980,7 +11048,14 @@ $$
 &lt;ol>
 &lt;li>Machiavellianism, Narcissism, and Psychopathy&lt;/li>
 &lt;li>checks and balances (legislative, executive, judicial)&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/pp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/pp/</guid><description>&lt;h2 id="predictive-process">Predictive Process&lt;/h2></description></item><item><title/><link>https://yingkui.com/notes/quantum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/quantum/</guid><description>&lt;h2 id="quantum">Quantum&lt;/h2>
+&lt;p>Imagine you have a group of people from all over the world.&lt;/p>
+&lt;ol>
+&lt;li>First, you divide them into two groups based on which hemisphere they’re from: the &lt;strong>Northern Hemisphere&lt;/strong> and the &lt;strong>Southern Hemisphere&lt;/strong>.&lt;/li>
+&lt;li>Then, you take only the &lt;strong>Northern Hemisphere&lt;/strong> group and split it again into two: those from the &lt;strong>Eastern Hemisphere&lt;/strong> and those from the &lt;strong>Western Hemisphere&lt;/strong>.&lt;/li>
+&lt;li>Finally, you take the group from the &lt;strong>Eastern Hemisphere&lt;/strong> (which originally came from the Northern Hemisphere) and split it once more into &lt;strong>Northern Hemisphere&lt;/strong> and &lt;strong>Southern Hemisphere&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;p>Now here’s the strange part: in this final split, you somehow end up with &lt;strong>roughly equal numbers of people from the Northern and Southern Hemispheres&lt;/strong>, even though you had already filtered out the Southern Hemisphere in step 1!&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/web/</guid><description>&lt;h2 id="web">Web&lt;/h2></description></item><item><title/><link>https://yingkui.com/3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/3d/</guid><description>&lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
  &lt;meta charset="utf-8">
@@ -12042,6 +12117,7 @@ Because the pleasure is so short-lived, we chase it again and again, often escal
 &lt;/ol>
 &lt;hr>
 &lt;ol>
+&lt;li>2001-02&lt;/li>
 &lt;li>2004-11&lt;/li>
 &lt;li>2005-11&lt;/li>
 &lt;li>2006-01&lt;/li>
@@ -12064,7 +12140,8 @@ Because the pleasure is so short-lived, we chase it again and again, often escal
 &lt;p>&lt;strong>Overview&lt;/strong>
 &lt;em>The Expectation Effect&lt;/em> by David Robson explores how our beliefs shape our reality. Robson introduces “expectation effects,” showing that the brain actively constructs perception by blending sensory input with prior beliefs. Consequently, what we expect—about our health, abilities, and emotions—can become our reality.&lt;/p>
 &lt;p>&lt;strong>Mechanisms of Expectation Effects&lt;/strong>
-Robson draws on predictive‐processing neuroscience to explain that the brain generates predictions about incoming sensory data, prioritizing information that confirms expectations and downplaying surprises. This predictive coding underlies both placebo effects (belief in a treatment triggers real physiological change) and nocebo effects (expecting harm induces genuine symptoms).&lt;/p></description></item><item><title/><link>https://yingkui.com/read/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
+Robson draws on predictive‐processing neuroscience to explain that the brain generates predictions about incoming sensory data, prioritizing information that confirms expectations and downplaying surprises. This predictive coding underlies both placebo effects (belief in a treatment triggers real physiological change) and nocebo effects (expecting harm induces genuine symptoms).&lt;/p></description></item><item><title/><link>https://yingkui.com/read/guerre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/guerre/</guid><description>&lt;h2 id="guerre">Guerre&lt;/h2>
+&lt;p>&lt;img src="../../img/guerre.png" alt="Guerre Relationship">&lt;/p></description></item><item><title/><link>https://yingkui.com/read/isl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/isl/</guid><description>&lt;h2 id="ch1">Ch1&lt;/h2>
 &lt;ol>
 &lt;li>$Y = f(X) + \epsilon$&lt;/li>
 &lt;/ol></description></item><item><title/><link>https://yingkui.com/read/read/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/read/</guid><description>&lt;h2 id="read-books">Read books&lt;/h2>
@@ -12536,7 +12613,23 @@ table {
 &lt;img src="../img/duolingo-cefr.png" alt="">
 &lt;img src="../img/jlpt-cefr.png" alt="">
 &lt;img src="../img/toefl-ielts.png" alt="">
-&lt;img src="../img/ces-ielts.avif" alt="">&lt;/p></description></item><item><title>Douban Ratings</title><link>https://yingkui.com/douban/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/douban/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
+&lt;img src="../img/ces-ielts.avif" alt="">&lt;/p></description></item><item><title>Computation</title><link>https://yingkui.com/notes/computation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/computation/</guid><description>&lt;h2 id="dfa--regular">DFA / Regular&lt;/h2>
+&lt;p>A finite automaton is a 5-tuple&lt;br>
+&lt;/p>
+$$
+M = (Q, \Sigma, \delta, q_{0}, F),
+$$&lt;p>&lt;br>
+where:&lt;/p>
+&lt;ol>
+&lt;li>$Q$ is a finite set called the set of states,&lt;/li>
+&lt;li>$\Sigma$ is a finite set called the input alphabet,&lt;/li>
+&lt;li>$\delta: Q \times \Sigma \to Q$ is the transition function,&lt;/li>
+&lt;li>$q_{0}\in Q$ is the start state,&lt;/li>
+&lt;li>$F \subseteq Q$ is the set of accepting states.&lt;/li>
+&lt;/ol>
+&lt;h2 id="nfa--regular">NFA / Regular&lt;/h2>
+&lt;p>A nondeterministic finite automaton is a 5-tuple&lt;br>
+&lt;/p></description></item><item><title>Douban Ratings</title><link>https://yingkui.com/douban/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/douban/</guid><description>&lt;p>Last Update: 2025/05/12&lt;/p>
 &lt;style>
 table {
  overflow-x: auto;
@@ -16940,7 +17033,7 @@ $$&lt;p>Where:&lt;/p>
 &lt;li>$a$: actions that can influence the sensory input.&lt;/li>
 &lt;li>$\arg\min$: denotes the values of $a, \mu, m$ that minimize the free energy.&lt;/li>
 &lt;/ol>
-&lt;p>This means that an agent (e.g. a brain) is constantly trying to:&lt;/p></description></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
+&lt;p>This means that an agent (e.g. a brain) is constantly trying to:&lt;/p></description></item><item><title>Fun Things Did</title><link>https://yingkui.com/fun/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/fun/</guid><description/></item><item><title>Goals</title><link>https://yingkui.com/goals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goals/</guid><description>&lt;h2 id="laifedu">Laifedu&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -16952,79 +17045,18 @@ $$&lt;p>Where:&lt;/p>
  &lt;tbody>
  &lt;tr>
  &lt;td style="text-align: left">One Company&lt;/td>
- &lt;td style="text-align: left">&lt;a href="http://albert.education">Albert Education&lt;/a>&lt;/td>
- &lt;td style="text-align: left">2024年 - 2029年&lt;/td>
+ &lt;td style="text-align: left">Albert Education&lt;/td>
+ &lt;td style="text-align: left">2025年 - 2030年&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">One Book&lt;/td>
- &lt;td style="text-align: left">&lt;a href="./life">Life: An Introducation&lt;/a>&lt;/td>
- &lt;td style="text-align: left">2024年3月 - 2028年&lt;/td>
+ &lt;td style="text-align: left">Money and Vocabulary&lt;/td>
+ &lt;td style="text-align: left">2025年 - 2030年&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">One Paper&lt;/td>
  &lt;td style="text-align: left">&lt;a href="./ai">A Theory of Intelligence&lt;/a>&lt;/td>
- &lt;td style="text-align: left">2029年&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="queue">Queue&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Fortune&lt;/th>
- &lt;th style="text-align: left">Create&lt;/th>
- &lt;th style="text-align: left">Read&lt;/th>
- &lt;th style="text-align: left">Ent&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">游戏化测试&lt;/td>
- &lt;td style="text-align: left">设计文章&lt;/td>
- &lt;td style="text-align: left">《Hooked》&lt;/td>
- &lt;td style="text-align: left">游戏&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;h2 id="entertainment">Entertainment&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Type&lt;/th>
- &lt;th>Goal&lt;/th>
- &lt;th>Due&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>&lt;a href="https://yingkui.com/games">Games&lt;/a>&lt;/td>
- &lt;td>RE 4&lt;/td>
- &lt;td>2024年3月底&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Leetcode&lt;/td>
- &lt;td>Guardian&lt;/td>
- &lt;td>2024年底&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>CodeForces&lt;/td>
- &lt;td>Expert&lt;/td>
- &lt;td>2024年底&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Kaggle&lt;/td>
- &lt;td>Start&lt;/td>
- &lt;td>2024年底&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>&lt;a href="https://yingkui.com/books">Books &amp;amp; Movies&lt;/a>&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Travel&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;/td>
+ &lt;td style="text-align: left">2030年&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>Goodreads Ratings</title><link>https://yingkui.com/goodreads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/goodreads/</guid><description>&lt;p>Last Update: 2025/05/26&lt;/p>
@@ -17631,7 +17663,8 @@ table {
  &lt;td style="text-align: left">to-read&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Hell &amp; Fast</title><link>https://yingkui.com/one/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/one/</guid><description>&lt;h2 id="痛快少严淡">痛，快，少，严，淡&lt;/h2>
+&lt;/table></description></item><item><title>Hell &amp; Fast</title><link>https://yingkui.com/one/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/one/</guid><description>&lt;h2 id="痛快少严无情拉满">痛快少严，无情拉满&lt;/h2>
+&lt;h2 id="创造价值不断写作持续学习">创造价值，不断写作，持续学习&lt;/h2>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -17662,41 +17695,6 @@ table {
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h2 id="media-diet">Media Diet&lt;/h2>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th style="text-align: left">Freq&lt;/th>
- &lt;th style="text-align: left">Media&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td style="text-align: left">Weekly&lt;/td>
- &lt;td style="text-align: left">The Economist&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Weekly&lt;/td>
- &lt;td style="text-align: left">TIME&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Weekly&lt;/td>
- &lt;td style="text-align: left">New Scientist&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Monthly&lt;/td>
- &lt;td style="text-align: left">Businessweek&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Monthly&lt;/td>
- &lt;td style="text-align: left">Scientific American&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td style="text-align: left">Monthly&lt;/td>
- &lt;td style="text-align: left">Foreign Affairs&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
 &lt;h2 id="life-goals">Life Goals&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -17714,7 +17712,7 @@ table {
  &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">One Philosophy Book&lt;/td>
- &lt;td style="text-align: left">&lt;a href="../basics">Basics&lt;/a>&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="../basics">Money and Vocabulary&lt;/a>&lt;/td>
  &lt;td style="text-align: left">&lt;/td>
  &lt;/tr>
  &lt;tr>
@@ -17724,6 +17722,11 @@ table {
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
+&lt;h2 id="media-digest">Media Digest&lt;/h2>
+&lt;ol>
+&lt;li>The Economist / TIME / 三联 / Businessweek&lt;/li>
+&lt;li>Scientif American / New Scientist / Nature&lt;/li>
+&lt;/ol>
 &lt;h2 id="principles">Principles&lt;/h2>
 &lt;table>
  &lt;thead>
@@ -17732,6 +17735,9 @@ table {
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Hell Fast Less Calm&lt;/td>
+ &lt;/tr>
  &lt;tr>
  &lt;td style="text-align: left">Keep Shipping. Keep Failing. Ship Like a Dog. Fight Like a Warrior&lt;/td>
  &lt;/tr>

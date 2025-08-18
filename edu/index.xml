@@ -1905,7 +1905,16 @@ $$\Sigma r_i - \Sigma a_i > \delta$$&lt;p>当用户潜意识预估（felt）的 
 &lt;p>时间：题目形式&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
+&lt;p>人其实是害怕丢失进度，这是一种假象&lt;/p></description></item><item><title/><link>https://yingkui.com/edu/sar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sar/</guid><description>&lt;h2 id="situation-action-result">Situation, Action, Result&lt;/h2></description></item><item><title/><link>https://yingkui.com/edu/shua/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/shua/</guid><description>&lt;h1 id="albert-education-2026">Albert Education 2026&lt;/h1>
+&lt;h2 id="mvp">MVP&lt;/h2>
+&lt;ol>
+&lt;li>2025.08.11 BE: create an api server using ruby on rails&lt;/li>
+&lt;li>2025.08.12 BE: design all kind of schema for the api&lt;/li>
+&lt;li>2025.08.13 BE: activeadmin auth, make front-end and back-end work together&lt;/li>
+&lt;li>2025.08.14 APP: Learned React Native. Build one simple home page.&lt;/li>
+&lt;li>2025.08.15 Rest Day.&lt;/li>
+&lt;li>2025.08.16&lt;/li>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/edu/sp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/sp/</guid><description>&lt;h2 id="story-point">Story Point&lt;/h2>
 &lt;ol>
 &lt;li>1个story point，一个小时以内&lt;/li>
 &lt;li>2个story point，大约两个小时&lt;/li>

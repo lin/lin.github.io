@@ -46,41 +46,7 @@ A = \begin{bmatrix}
 \vec{c}_1 &amp; \vec{c}_2 &amp; \cdots &amp; \vec{c}_n
 \end{bmatrix}
 $$&lt;p>$\vec{c}_1, \vec{c}_2, \cdots, \vec{c}_n$ are the base vectors after transformation described in current axis.&lt;/p>
-&lt;p>Apply matrix to a vector $\vec{v}$ means you get what $\vec{v}$ means in current axis.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/2022-03-21/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/2022-03-21/</guid><description>&lt;h2 id="2022-03-21">2022-03-21&lt;/h2>
-&lt;ol>
-&lt;li>&lt;code>kex&lt;/code> means &lt;code>Key Exchange&lt;/code>&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/2023-12-22/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/2023-12-22/</guid><description>&lt;h3 id="midjourney">MidJourney&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>U means upscale / separation&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>V means variation&lt;/p>
-&lt;/li>
-&lt;li>&lt;/li>
-&lt;li>
-&lt;p>/imagine&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>/blend&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="advanced">Advanced&lt;/h3>
-&lt;ol>
-&lt;li>image url&lt;/li>
-&lt;li>text prompt&lt;/li>
-&lt;li>params&lt;/li>
-&lt;/ol>
-&lt;h3>&lt;/h3>
-&lt;ol>
-&lt;li>Subject: person, animal, character, location, object, etc.&lt;/li>
-&lt;li>Medium: photo, painting, illustration, sculpture, doodle, tapestry, etc.&lt;/li>
-&lt;li>Environment: indoors, outdoors, on the moon, in Narnia, underwater, the Emerald City, etc.&lt;/li>
-&lt;li>Lighting: soft, ambient, overcast, neon, studio lights, etc&lt;/li>
-&lt;li>Color: vibrant, muted, bright, monochromatic, colorful, black and white, pastel, etc.&lt;/li>
-&lt;li>Mood: Sedate, calm, raucous, energetic, etc.&lt;/li>
-&lt;li>Composition: Portrait, headshot, closeup, birds-eye view, etc.&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
+&lt;p>Apply matrix to a vector $\vec{v}$ means you get what $\vec{v}$ means in current axis.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/bell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/bell/</guid><description>&lt;h2 id="bells-inequality">Bell&amp;rsquo;s Inequality&lt;/h2>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZuvK-od647c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
  &lt;/div>
@@ -345,7 +311,30 @@ $$&lt;p>$\vec{c}_1, \vec{c}_2, \cdots, \vec{c}_n$ are the base vectors after tra
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
+&lt;p>There are 48 ✓ and 24 ✗ above, total is 8*9 = 72 possibilities.&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/complexity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/complexity/</guid><description>&lt;h2 id="complexity">Complexity&lt;/h2>
+&lt;h2 id="p">P&lt;/h2>
+&lt;ol>
+&lt;li>PATH(G, s, t) is P. PATH: is there a path between s node and t node in a directed graph G.&lt;/li>
+&lt;li>COPRIME(x,y) is P.&lt;/li>
+&lt;li>CFG(G, str) is P.&lt;/li>
+&lt;/ol>
+&lt;h2 id="np-complete">NP-complete&lt;/h2>
+&lt;ol>
+&lt;li>SAT(formula) is NP. Check whether a Boolean formula can return 1.&lt;/li>
+&lt;li>SUBSET-SUM(S, target) is NP. Find a set to sum to target.&lt;/li>
+&lt;li>HAM_PATH(G, s, t) is NP. A Hamiltonian path in a directed graph G is a directed path that goes through
+each node exactly once.&lt;/li>
+&lt;li>3SAT(formula) is NP.&lt;/li>
+&lt;/ol>
+$$
+ (x_{1}\lor \lnot x_{2}\lor x_{3})
+ \land
+ (x_{3}\lor x_{5}\lor \lnot x_{6})
+ \land
+ (x_{3}\lor \lnot x_{6}\lor x_{4})
+ \land
+ (\lnot x_{4}\lor x_{5}\lor x_{6})
+$$</description></item><item><title/><link>https://yingkui.com/notes/compression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/compression/</guid><description>&lt;h2 id="compression">Compression&lt;/h2></description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style>
 strong {
  font-weight: bold;
  color: black;
@@ -421,7 +410,30 @@ $$
 &lt;ol>
 &lt;li>Machiavellianism, Narcissism, and Psychopathy&lt;/li>
 &lt;li>checks and balances (legislative, executive, judicial)&lt;/li>
-&lt;/ol></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
+&lt;/ol></description></item><item><title/><link>https://yingkui.com/notes/pp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/pp/</guid><description>&lt;h2 id="predictive-process">Predictive Process&lt;/h2></description></item><item><title/><link>https://yingkui.com/notes/quantum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/quantum/</guid><description>&lt;h2 id="quantum">Quantum&lt;/h2>
+&lt;p>Imagine you have a group of people from all over the world.&lt;/p>
+&lt;ol>
+&lt;li>First, you divide them into two groups based on which hemisphere they’re from: the &lt;strong>Northern Hemisphere&lt;/strong> and the &lt;strong>Southern Hemisphere&lt;/strong>.&lt;/li>
+&lt;li>Then, you take only the &lt;strong>Northern Hemisphere&lt;/strong> group and split it again into two: those from the &lt;strong>Eastern Hemisphere&lt;/strong> and those from the &lt;strong>Western Hemisphere&lt;/strong>.&lt;/li>
+&lt;li>Finally, you take the group from the &lt;strong>Eastern Hemisphere&lt;/strong> (which originally came from the Northern Hemisphere) and split it once more into &lt;strong>Northern Hemisphere&lt;/strong> and &lt;strong>Southern Hemisphere&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;p>Now here’s the strange part: in this final split, you somehow end up with &lt;strong>roughly equal numbers of people from the Northern and Southern Hemispheres&lt;/strong>, even though you had already filtered out the Southern Hemisphere in step 1!&lt;/p></description></item><item><title/><link>https://yingkui.com/notes/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/web/</guid><description>&lt;h2 id="web">Web&lt;/h2></description></item><item><title>Computation</title><link>https://yingkui.com/notes/computation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/computation/</guid><description>&lt;h2 id="dfa--regular">DFA / Regular&lt;/h2>
+&lt;p>A finite automaton is a 5-tuple&lt;br>
+&lt;/p>
+$$
+M = (Q, \Sigma, \delta, q_{0}, F),
+$$&lt;p>&lt;br>
+where:&lt;/p>
+&lt;ol>
+&lt;li>$Q$ is a finite set called the set of states,&lt;/li>
+&lt;li>$\Sigma$ is a finite set called the input alphabet,&lt;/li>
+&lt;li>$\delta: Q \times \Sigma \to Q$ is the transition function,&lt;/li>
+&lt;li>$q_{0}\in Q$ is the start state,&lt;/li>
+&lt;li>$F \subseteq Q$ is the set of accepting states.&lt;/li>
+&lt;/ol>
+&lt;h2 id="nfa--regular">NFA / Regular&lt;/h2>
+&lt;p>A nondeterministic finite automaton is a 5-tuple&lt;br>
+&lt;/p></description></item><item><title>Free Energy Principle</title><link>https://yingkui.com/notes/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/fep/</guid><description>&lt;h2 id="the-free-energy-principle">The Free Energy Principle&lt;/h2>
 $$
 a, \mu, m = \arg\min F(\tilde{s}, \mu \mid m)
 $$&lt;p>Where:&lt;/p>
