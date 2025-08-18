@@ -17,6 +17,10 @@ Energy decides which direction to find them.
 1. Compression & Association
 1. Field Theory & Thermodynamics
 
+## Technologies
+
+1. [Web](./web)
+
 ### Gödel vs Turing
 
 Gödel: There exist true mathematical statements that cannot be proven within that system

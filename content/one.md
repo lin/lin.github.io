@@ -3,7 +3,9 @@ title: "Hell & Fast"
 type: "page"
 ---
 
-## 痛，快，少，严，淡
+## 痛快少严，无情拉满
+
+## 创造价值，不断写作，持续学习
 
 | Time   | Action             |
 |:------|:-----------------------|
@@ -13,13 +15,6 @@ type: "page"
 |每周周末    |总结本周，规划下周 | 
 |每周周末    |读杂志，看新闻 | 
 
-## Media Diet
-
-| Freq     | Media                            | 
-|:---------|:---------------------------------|
-| Weekly   |  The Economist                   |
-| Weekly   |  Nature                          |
-
 ## Life Goals
 
 | One Life               | Three Goals                                   | Due               |
@@ -28,11 +23,16 @@ type: "page"
 | One Philosophy Book    |  [Money and Vocabulary](../basics)                          |                 |
 | One AGI Paper          |  [Intelligence](../ai)                         |                 | 
 
-## Principles
+## Media Digest
 
+1. The Economist / TIME / 三联 / Businessweek
+1. Scientif American / New Scientist / Nature
+
+## Principles
 
 | Principles             |
 |:-----------------------|
+|Hell Fast Less Calm| 
 |Keep Shipping. Keep Failing. Ship Like a Dog. Fight Like a Warrior| 
 |担虑功名老病死，不如今事快完工| 
 |Do things scary. Learn the hard way. Finish what you start. Document Everything.|

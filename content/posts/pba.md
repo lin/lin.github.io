@@ -271,6 +271,12 @@ Especially Active Exposures
 
 ### Benefits of Key Lexemes Fluency
 
+> Less is more.
+
+> Exposure matters most.
+
+> Motivation is king.
+
 Most domains follow a Pareto‑like distribution: roughly 20 percent of concepts account for 80 percent of the results. By zeroing in on that vital 20 percent, the core lexemes you capture the backbone of the subject. Everything else becomes a variation on those fundamentals. When you’ve internalized the key lexemes, your brain can automatically bundle new information into those existing “chunks.” Instead of processing every detail from scratch, you slot new data into familiar patterns. That slashes cognitive load and makes learning novel material feel intuitive. Think of those lexemes as pillars in a building. Once they are in place and sturdy, you can add floors and rooms without worrying about the foundation. In practice, that means advanced topics become accessible sooner, because they rest on concepts you already own. They provide exponential returns on practice.
 
 By mastering a small set of core ideas up front, you can remove the heaviest roadblocks in learning and make the entire process more rewarding, smoother, and long‑lasting. Focusing on a few pivotal concepts lets you ignore peripheral details. You free up working memory to connect new information directly to those anchors, rather than juggling dozens of loosely related facts. Early wins from drilling high‑impact patterns build confidence. As those lexemes become second nature, you navigate more complex material without hesitation, turning once‑effortful steps into instinctive actions. Each core concept generalizes across many problems. Instead of hundreds of specialized exercises, a handful of signal–response drills covers most of the terrain, slashing practice time by orders of magnitude.
