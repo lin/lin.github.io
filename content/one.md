@@ -25,8 +25,8 @@ type: "page"
 
 ## Media Digest
 
-1. The Economist / TIME / 三联 / Businessweek
-1. Scientif American / New Scientist / Nature
+1. ✅ The Economist / Businessweek / TIME / 三联 
+1. ✅ New Scientist / Scientif American / Nature
 
 ## Principles
 

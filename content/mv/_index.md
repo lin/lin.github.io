@@ -33,18 +33,18 @@ When you think, you should always think in terms of words and dollars, which are
 - [《词汇分级：为什么我们学了太多没用的知识？》](./levels)
 - [《产品即词典：把学会的词汇变成便于执行的工具》](./product) All products are dictionaries.
 - [《钱词转化：学会一个词值多少钱？》](./convert)
-- [《钱与词：人生最重要的两个单词》](./mnv) 学词，挖词，用词
+- [✅《钱与词：人生最重要的两个单词》](./core) 学词，挖词，用词，幻觉
 
 ### 思考误区
 
-- [《确认偏差：习惯性的自我反驳》](./confirm)
-- [《光环效应：特征显著不代表贡献就大》](./halo)
+- [✅《确认偏差：习惯性的自我反驳》](./confirm)
+- [✅《光环效应：特征显著不代表贡献就大》](./halo)
 - [《稀缺盲区：为什么要少看垃圾新闻？》](./rarity)
 - [《急于归纳：还是再多看看几个样本再说吧》](./jump)
 - [《懒散、恐慌、贪婪：为了情绪价值而因小失大》](./emo)
 - [《急于反驳：求知欲大于表达欲》](./express)
 - [《绕路的捷径：对各种思维误区的总结》](./bias)
-- [《宗教迷信：为什么要有科学的思维？》](./wrong)
+- [✅《宗教迷信：认知市场中的庞氏骗局》](./wrong)
 
 ### 万事皆财富
 
@@ -69,7 +69,7 @@ When you think, you should always think in terms of words and dollars, which are
 
 ### 高阶毒药
 
-- [《可杀不可辱：虚荣心的核心地位》](./ego)
+- [《✅ 可杀不可辱：虚荣心的核心地位》](./ego)
 - [《合法自恋：集体虚荣的魔力》](./tribalism)
 - [《只顾自己：同理心匮乏等效于爱吃霸王餐》](./empathy)
 - [《逃避失败：虚荣心大于进取心》](./escape)
@@ -77,6 +77,7 @@ When you think, you should always think in terms of words and dollars, which are
 - [《进化不背锅：现代文明超出了智能体的使用条件》](./conditions)
 - [《关注斜率：少点没必要的对比，多点具体的进展》](./slope)
 - [《词汇焦虑：对陌生词汇的过分在意》](./anxiety)
+- [《词汇拦截：评价、完美、焦虑》](./intercept)
 
 ### 纠结：探索和开发
 
