@@ -15,9 +15,9 @@ When you think, you should always think in terms of words and dollars, which are
 
 ### 理论框架
 
-- [《智能体与自由能：模型与预测就是人生的一切》](./agent)
+- [《自由能原则：模型与预测就是人生的一切》](./agent)
 - [《条件概率与贝叶斯公式：最重要的万能表达式》](./bayes)
-- [《语言即边界：为什么零散的词汇如此关键？》](./lexemes)
+- [✅《语言即边界：为什么零散的词汇如此关键？》](./lexemes)
 - [《游戏为什么好玩？：是什么让你人生充满幸福和渴望？》](./game)
 - [《替他人解题：赚钱的本质是什么？》](./solve)
 - [《超预期奖励：强烈的渴望和做贼的动力》](./surprize)
@@ -25,8 +25,8 @@ When you think, you should always think in terms of words and dollars, which are
 
 ### 万物皆词汇
 
-- [《惊讶骤降：学习新词汇的威力》](./surprise)
-- [《少走弯路：学习的本质是背单词》](./learn)
+- [✅《惊讶骤降：学习新词汇的威力》](./surprise)
+- [✅《少走弯路：学习的本质是背单词》](./learn)
 - [《强力先验：普通人学习科学知识有什么用？》](./prior)
 - [《图灵和P/NP：确定性的极限和不可缩减的复杂》](./turing)
 - [《知识图谱：各个学科之间的关系》](./knowledge)
@@ -50,7 +50,7 @@ When you think, you should always think in terms of words and dollars, which are
 
 - [《呼吸的代价：为了回馈他人的艰辛》](./breath)
 - [《集资探矿：科研的本质是挖词》](./academia)
-- [《主题公园：按部就班的虚拟人生》](./standard)
+- [《主题公园：按部就班的打工人》](./standard)
 - [《叛舰喋血：创新型创业的九死一生》](./startup)
 - [《剥削许可：成熟体系内的资源分配》](./established)
 - [《用钱生钱：投资和复利效应》](./invest)
@@ -69,7 +69,7 @@ When you think, you should always think in terms of words and dollars, which are
 
 ### 高阶毒药
 
-- [《✅ 可杀不可辱：虚荣心的核心地位》](./ego)
+- [✅《 可杀不可辱：虚荣心的核心地位》](./ego)
 - [《合法自恋：集体虚荣的魔力》](./tribalism)
 - [《只顾自己：同理心匮乏等效于爱吃霸王餐》](./empathy)
 - [《逃避失败：虚荣心大于进取心》](./escape)
@@ -106,7 +106,7 @@ When you think, you should always think in terms of words and dollars, which are
 
 Thermodynamics of Sapiens
 
-- [《集体粗鄙：专制社会表现的就像一个粗俗低智的个体》](./authoritarian) Collectively Vulgar
+- [✅《集体粗鄙：专制社会表现的就像一个粗俗低智的个体》](./authoritarian) Collectively Vulgar
 - [《无利不起早：没有反馈机制的懒散体系》](./incentive)
 - [《当爹上瘾和命里缺爹：神化个体的愚昧崇拜》](./worship)
 - [《运气成分：不要对成功者过分神化》](./luck)
@@ -159,6 +159,10 @@ function countMarkdownLinks() {
   // 使用HTML链接结果作为主要结果
   const links = htmlLinks.length > 0 ? htmlLinks : markdownLinks;
   
+  // 统计蓝勾链接 (✅)
+  const blueCheckLinks = links.filter(link => link.text.includes('✅'));
+  const blueCheckCount = blueCheckLinks.length;
+  
   // 统计结果
   const totalLinks = links.length;
   const uniqueUrls = new Set(links.map(link => link.url)).size;
@@ -182,6 +186,21 @@ function countMarkdownLinks() {
   const counterDiv = document.getElementById('link-counter');
   counterDiv.innerHTML = `
     <h3>📊 链接统计结果</h3>
+    
+    <div style="background: #e3f2fd; border: 1px solid #2196f3; padding: 15px; border-radius: 8px; margin: 15px 0;">
+      <h4>✅ 蓝勾链接统计</h4>
+      <p><strong>蓝勾链接数量：${blueCheckCount} 个</strong></p>
+      <p><strong>完成进度：${totalLinks > 0 ? Math.round((blueCheckCount / totalLinks) * 100) : 0}%</strong></p>
+      
+      <div style="background: #e0e0e0; border-radius: 10px; height: 20px; margin: 10px 0; overflow: hidden;">
+        <div style="background: linear-gradient(90deg, #2196f3, #64b5f6); height: 100%; width: ${totalLinks > 0 ? (blueCheckCount / totalLinks) * 100 : 0}%; border-radius: 10px; transition: width 0.5s ease; display: flex; align-items: center; justify-content: center;">
+          <span style="color: white; font-weight: bold; font-size: 12px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+            ${blueCheckCount}/${totalLinks}
+          </span>
+        </div>
+      </div>
+    </div>
+    
     <p><strong>检测方法:</strong> ${htmlLinks.length > 0 ? 'HTML链接 (Hugo转换后)' : 'Markdown链接 (原始格式)'}</p>
     <p><strong>总链接数:</strong> ${totalLinks}</p>
     <p><strong>唯一URL数:</strong> ${uniqueUrls}</p>
