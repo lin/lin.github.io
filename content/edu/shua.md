@@ -7,4 +7,10 @@
 1. 2025.08.13 BE: activeadmin auth, make front-end and back-end work together
 1. 2025.08.14 APP: Learned React Native. Build one simple home page.
 1. 2025.08.15 Rest Day.
-1. 2025.08.16 
+1. 2025.08.16 No work.
+1. 2025.08.17 No work.
+1. 2025.08.18 
+1. 2025.08.19
+1. 2025.08.20
+1. 2025.08.21
+1. 2025.08.22 The practice page on mobile.

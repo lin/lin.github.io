@@ -21,19 +21,18 @@ When you think, you should always think in terms of words and dollars, which are
 - [《游戏为什么好玩？：是什么让你人生充满幸福和渴望？》](./game)
 - [《替他人解题：赚钱的本质是什么？》](./solve)
 - [《超预期奖励：强烈的渴望和做贼的动力》](./surprize)
-- [《类比天堂：原生态的词汇有哪些细节？》](./language) context, frequency, fluency, lexemes, CEFR, time to master
+- [《类比天堂：原生态的词汇有哪些细节？》](./language) 
 
 ### 万物皆词汇
 
 - [✅《惊讶骤降：学习新词汇的威力》](./surprise)
 - [✅《少走弯路：学习的本质是背单词》](./learn)
-- [《强力先验：普通人学习科学知识有什么用？》](./prior)
+- [✅《强力先验：普通人学习科学知识有什么用？》](./prior)
 - [《图灵和P/NP：确定性的极限和不可缩减的复杂》](./turing)
-- [《知识图谱：各个学科之间的关系》](./knowledge)
 - [《词汇分级：为什么我们学了太多没用的知识？》](./levels)
-- [《产品即词典：把学会的词汇变成便于执行的工具》](./product) All products are dictionaries.
+- [《产品即词典：把学会的词汇变成便于执行的工具》](./product) .
 - [《钱词转化：学会一个词值多少钱？》](./convert)
-- [✅《钱与词：人生最重要的两个单词》](./core) 学词，挖词，用词，幻觉
+- [✅《钱与词：人生最重要的两个单词》](./core) 
 
 ### 思考误区
 
@@ -41,7 +40,7 @@ When you think, you should always think in terms of words and dollars, which are
 - [✅《光环效应：特征显著不代表贡献就大》](./halo)
 - [《稀缺盲区：为什么要少看垃圾新闻？》](./rarity)
 - [《急于归纳：还是再多看看几个样本再说吧》](./jump)
-- [《懒散、恐慌、贪婪：为了情绪价值而因小失大》](./emo)
+- [《坑人的代理：为了情绪价值而因小失大》](./emo)
 - [《急于反驳：求知欲大于表达欲》](./express)
 - [《绕路的捷径：对各种思维误区的总结》](./bias)
 - [✅《宗教迷信：认知市场中的庞氏骗局》](./wrong)
@@ -50,13 +49,14 @@ When you think, you should always think in terms of words and dollars, which are
 
 - [《呼吸的代价：为了回馈他人的艰辛》](./breath)
 - [《集资探矿：科研的本质是挖词》](./academia)
-- [《主题公园：按部就班的打工人》](./standard)
+- [《工具人：按部就班的看剧打卡》](./standard)
 - [《叛舰喋血：创新型创业的九死一生》](./startup)
 - [《剥削许可：成熟体系内的资源分配》](./established)
 - [《用钱生钱：投资和复利效应》](./invest)
 - [《无形资产：道德和礼节也是钱》](./intangible)
 - [《地基指标：先谈钱，直到不用》](./foundation)
 - [《局限指标：为什么不能什么是都用钱衡量》](./metric)
+- [《神化崇拜：钱好搞，词难学，人性不好抗拒》](./worship)
 
 ### 集体共识
 
@@ -65,7 +65,8 @@ When you think, you should always think in terms of words and dollars, which are
 - [《富甲愚民：该不该允许有巨额财富？认知低下该不该有决策权？》](./limit)
 - [《盲目从众：社交遵从的收益和代价》](./follow)
 - [《违背人性：为什么读书和搞钱都是令人头疼的？》](./against)
-- [《强迫背诵：为什么严肃教育是最划算的投资？》](./edu)
+- [《五彩的磨石：为什么严肃教育是最划算的投资？》](./edu)
+- [《外界认可：为了更好的销售》](./external)
 
 ### 高阶毒药
 
@@ -78,8 +79,9 @@ When you think, you should always think in terms of words and dollars, which are
 - [《关注斜率：少点没必要的对比，多点具体的进展》](./slope)
 - [《词汇焦虑：对陌生词汇的过分在意》](./anxiety)
 - [《词汇拦截：评价、完美、焦虑》](./intercept)
+- [《本末倒置：专注于问题，而不是方案》](./solution)
 
-### 纠结：探索和开发
+### 纠结：探索还是开发
 
 - [《深度还是广度：无处不在的权衡》](./bd)
 - [《求胜压抑求知：为什么有钱并不意味着有智慧？》](./rich)
@@ -100,13 +102,12 @@ When you think, you should always think in terms of words and dollars, which are
 - [《都是为了你好：骗子如何骗你？》](./fraud)
 - [《邪门的傲慢：是你能力不行还是环境太差？》](./elite)
 - [《学而优择贼：知识分子心中高人一等的恶念》](./services)
-- [《模糊地带：好用的一石二鸟》](./ambiguity)
+- [《模糊与等效：好用的不易区分》](./ambiguity)
+- [《衡量损失：如何等效的理解巨大的灾难？》](./lost)
 
-### 智人热力学
+### 群体动力学
 
-Thermodynamics of Sapiens
-
-- [✅《集体粗鄙：专制社会表现的就像一个粗俗低智的个体》](./authoritarian) Collectively Vulgar
+- [✅《集体粗鄙：专制社会表现的就像一个粗俗低智的个体》](./authoritarian)
 - [《无利不起早：没有反馈机制的懒散体系》](./incentive)
 - [《当爹上瘾和命里缺爹：神化个体的愚昧崇拜》](./worship)
 - [《运气成分：不要对成功者过分神化》](./luck)
@@ -116,7 +117,7 @@ Thermodynamics of Sapiens
 
 - [《死的无穷大：为什么人们高估了死亡的多样性却低估了严重性？》](./death)
 - [《唯一活着的人：这个世界因你而骤起，也会因你而彻底坍塌》](./living)
-- [《生命的意义：为什么能存在？为什么要存在？》](./existance) The reasons of being and the reasons of to be.
+- [《生命的意义：为什么能存在？为什么要存在？》](./existance) 
 - [《天梯的尽头：那应该怎么办？》](./end)
 
 ---

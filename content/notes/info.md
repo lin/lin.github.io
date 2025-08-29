@@ -41,6 +41,8 @@ $$
 H = - p_i \log_2 p_i
 $$
 
+## Surprise
+
 ### Morse Code / Huffman Coding
 
 High frequency means shorter encoding.
