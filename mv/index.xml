@@ -1,395 +1,462 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/mv/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/mv/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/mv/authoritarian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/authoritarian/</guid><description>&lt;h2 id="集体粗鄙">集体粗鄙&lt;/h2>
-&lt;p>在人类社会中，个体的精神缺陷往往是局部的，但当权力机制将这些缺陷放大到集体层面时，整个社会就会表现得像一个庞大而迟钝的低智个体。专制体制之下，国家、社会、群体的行为模式，常常与一个人格障碍者相似：自恋、粗俗、短视、无趣。这种“集体粗鄙”既是一种病理，也是专制统治不可避免的副产物。&lt;/p>
-&lt;p>一、自恋：膨胀的自我幻象
-专制社会的第一个特征是自恋。它强调自身的伟大与独特，拒绝承认缺陷，害怕比较与竞争。正如自恋个体需要不断的外部赞美来维持脆弱的自我，专制社会依赖宣传机器和控制舆论来构筑幻象。它的自信并非基于真实的成就，而是通过否认、遮蔽和粉饰维持的脆弱表象。这种集体自恋让社会失去了自我反思的能力，只能陷入不断自我陶醉的闭环。&lt;/p>
-&lt;p>二、品味低下：庸俗的文化审美
-当社会的最高标准不是自由、真理与创造，而是“听话”“服从”“讨好”，文化必然走向粗鄙化。专制体制下的文艺往往流于媚俗、献媚、迎合权力，失去了独立精神与批判锋芒。像低智个体沉迷于浮夸的装饰与炫耀，专制社会的文化品味也被庸俗的符号和廉价的感官刺激所占据。真正深刻的思想与艺术被边缘化，整个社会审美退化为浅薄、空洞的娱乐化。&lt;/p>
-&lt;p>三、社会达尔文主义：弱肉强食的伪理性
-在专制语境下，“适者生存”被误读为赤裸的强者逻辑。社会失去了对弱者的怜悯与保护，取而代之的是对权力与财富的盲目崇拜。人与人之间的关系，不再是基于平等与尊严的契约，而是赤裸裸的等级支配。这种逻辑像低智个体的思维方式：非黑即白，唯强是尊。它掩盖了合作、共情和制度正义的重要性，把社会推向犬儒与冷酷。&lt;/p>
-&lt;p>四、拜金：认钱、认劝的庸俗算计
-专制社会往往将金钱与权力视为唯一的衡量标准。社会成员逐渐丧失了独立判断力，把“谁更有钱、谁更能说服权力”当作唯一真理。这种价值观是一种“低维度”的生存策略，类似低智个体的短视本能：只懂得追逐眼前利益，而无法理解长期价值与公共善。结果是社会整体陷入庸俗的功利主义，精神与道德被彻底边缘化。&lt;/p>
-&lt;p>五、集体粗鄙的逻辑
-为什么专制社会会退化为一个“粗俗低智的个体”？原因在于权力结构本身消解了复杂性与多样性。自由社会像一个多元的网络，思想可以交锋、价值能够互补，因此智慧得以涌现。而专制则像一个单向度的脑回路，所有输入与输出必须经过权力核心的过滤，复杂被简化，深度被压扁。最终，社会集体的智力水平不再是众人智慧的总和，而是退化为最低层次的“本能反应”。&lt;/p>
-&lt;p>结语
-一个自恋、庸俗、短视、拜金的个体，也许只会在私人生活中制造混乱。但当整个社会沦为这样的集体人格时，灾难就是必然。所谓“集体粗鄙”，正是专制社会最深层的写照。它提醒我们：真正的文明，不仅在于科技与财富的积累，更在于能否建立起一个使集体智慧超越个体本能的制度结构。&lt;/p>
-&lt;p>自恋：关闭外部反馈，降低 surprise 的“廉价办法”&lt;/p>
-&lt;p>在 FEP 中，系统要不断修正模型来匹配现实。但专制社会往往拒绝面对真实世界的复杂反馈，因为那会增加认知 dissonance（预测误差）。于是它选择最“省力”的办法：通过宣传、信息控制来强行消除预测误差。&lt;/p>
-&lt;p>例如，社会宣称“我们是最优越的文明”，即使现实与之矛盾，也通过屏蔽证据来维持“低 surprise”。&lt;/p>
-&lt;p>这种自恋不是智慧的体现，而是懒惰的模型修正：不通过学习来改进模型，而是通过否认现实来减少预测误差。&lt;/p>
-&lt;p>换句话说，这是 一种病态的最小化自由能：追求表面的低惊讶，而牺牲长期的学习与适应。&lt;/p>
-&lt;p>品味低下：选择低复杂度的 generative model&lt;/p>
-&lt;p>在 FEP 中，学习需要构建足够复杂的生成模型去解释数据。但复杂的模型需要能量、需要算力。专制社会倾向于选取最简单、最粗鄙的解释框架，因为这能降低计算成本。&lt;/p>
-&lt;p>高雅的思想、艺术、批判会带来高熵和不可预测性。&lt;/p>
-&lt;p>粗鄙的口号、低俗的娱乐、审美媚俗，反而是低复杂度的“模型”，可以快速被大多数人接受，减少认知负担。&lt;/p>
-&lt;p>因此，文化粗俗化是一种“低能量解法”：以牺牲深度与多样性，来维持最低限度的“预测成功率”。&lt;/p>
-&lt;p>社会达尔文主义：把不确定性转嫁给个体&lt;/p>
-&lt;h2 id="专制的逻辑">专制的逻辑&lt;/h2>
-&lt;p>FEP 强调系统要减少 surprise。但专制政体往往把这种负担转嫁给个体：&lt;/p>
-&lt;p>体制本身不优化结构，而是通过社会达尔文主义告诉个人“成败全在你自己”。&lt;/p>
-&lt;p>这样，系统不用承担复杂的环境预测，只要维持等级秩序，个体之间的竞争与淘汰自然会“减少不确定性”。&lt;/p>
-&lt;p>这类似于一个粗暴的神经网络：它不改进整体结构，而是通过丢弃大量“错误样本”来减少误差。&lt;/p>
-&lt;p>拜金主义（认钱、认劝）：使用单一 reward signal&lt;/p>
-&lt;p>在一个健全的社会，预测误差的校正需要多维度的奖励信号（公平、真理、美感、合作）。&lt;/p>
-&lt;p>但专制社会会把 reward 简化为单一维度：金钱或权力。&lt;/p>
-&lt;p>因为多维价值会带来高复杂度的建模成本。&lt;/p>
-&lt;p>用钱和权力作为唯一的“precision weighting”（权重），整个社会的学习过程就变成了“谁有资源，谁说得算”。&lt;/p>
-&lt;p>这是一种 低维度的世界建模：虽然简单，但导致社会智力退化，只剩下最庸俗的追逐。&lt;/p>
-&lt;p>从 Markov Blanket 的视角看，专制的存在方式就是用最低智力的办法守住边界&lt;/p>
-&lt;p>整个系统在运作时刻意压低复杂度，把认知、文化、制度的精细度压缩到最低层次。这样反而有利于权力集中和压迫&lt;/p>
-&lt;p>高智社会需要复杂的 generative model 来解释世界：科学、批判、新闻、司法等多维机制。&lt;/p>
-&lt;p>这些高复杂度输入会带来大量 prediction error，需要不断修正内部模型。这样，权力中心也会被迫接受挑战。&lt;/p>
-&lt;p>专制选择“低智模型”：只允许单一维度解释世界。这样 Markov Blanket 的边界变得简单，输入输出关系容易控制。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/confirm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/confirm/</guid><description>&lt;h2 id="确认偏差">确认偏差&lt;/h2>
-&lt;blockquote>
-&lt;p>习惯性的站在自己观点的对立面&lt;/p>&lt;/blockquote>
-&lt;h3 id="什么是确认偏差">什么是确认偏差？&lt;/h3>
-&lt;p>人们更倾向于寻找、记住、解释那些支持自己已有信念或观点的信息，而忽略或轻视与自己信念相矛盾的信息。&lt;/p>
-&lt;p>例如，如果你相信星座性格分析，说“射手座外向爱自由”，你就会特别注意到射手座朋友外向的一面，而忽略他们安静、不爱社交的时刻。
-结果是，你感觉“星座真的很准”，但其实只是确认偏差在起作用。&lt;/p>
-&lt;p>如果某人强烈爱国，他会更愿意相信强调国家成就、民族团结的新闻或评论，并觉得这些信息可信。
-但当他看到批评国家的问题（腐败、环境污染、人权问题等）的报道时，就会觉得“不真实”“这是外国势力抹黑”，甚至直接不去看。&lt;/p>
-&lt;p>如果某人强烈反感专制，他会更愿意相信揭露专制体制弊端的新闻，并觉得这些信息合乎事实。
-当他看到一些强调“稳定”“秩序”或专制制度带来经济发展好处的文章时，就会觉得“这是洗地”“有偏见”，甚至拒绝阅读。&lt;/p>
-&lt;h3 id="为什么会有确认偏差">为什么会有确认偏差？&lt;/h3>
-&lt;p>智能有机体更新内部世界模型（belief revision）是一件代价极高的事情，需要耗费大量认知资源。&lt;/p>
-&lt;p>因此，系统更倾向于保持原有模型稳定，只要还能合理解释当下数据。确认偏差可以起到“延缓大规模修正”的作用。&lt;/p>
-&lt;p>当一个人同时持有 两个相互矛盾的信念、态度或行为 时，会产生心理上的紧张和不适，这种状态就叫 认知失调。在情绪上，符合预期的信息会带来“模型正确”的确认感，降低惊讶，生理上产生奖励体验，相反的信息会引起不安、不适，意味着要面对新的世界模型，因此人会主动回避。如果承认自己错了，会产生认知失调（心理痛苦）。为了减少痛苦，人们往往更愿意找支持证据来“证明自己没错”，&lt;/p>
-&lt;p>确认偏差不仅是认知上的自由能最小化，也是 情感上减少不适 的一种表现。&lt;/p>
-&lt;p>虚荣心的自我保护，虚荣心的一个核心功能是维持“我是正确的”“我是有价值的”这种自我形象。当出现相反证据时，虚荣心会感到威胁，于是大脑会通过确认偏差来过滤掉“打脸”的信息。在某些社会环境中，“认错”意味着丢面子或社会地位下降。于是个体更倾向坚持原有观点，哪怕事实在眼前。&lt;/p>
-&lt;h3 id="确认偏差的害处">确认偏差的害处&lt;/h3>
-&lt;p>个人层面，妨碍学习和成长，总是只接受符合自己观点的信息，导致视野狭窄。知识结构难以更新，思维停留在固有模式里。&lt;/p>
-&lt;p>降低决策质量，在做重要选择（买房、择业、投资等）时，忽略不利证据，容易高估利好，低估风险，最后可能做出错误甚至灾难性的决定。&lt;/p>
-&lt;p>自我欺骗与情绪困境，只接受让自己舒服的信息，从而短期减少焦虑，但长期可能导致与现实脱节。当现实“打脸”时，心理冲击会更大。&lt;/p>
-&lt;p>与他人沟通障碍，在争论时，不是听对方的理由，而是不断寻找反驳的证据。结果是对话失效，双方更固执。&lt;/p>
-&lt;p>加剧偏见和刻板印象，比如“某一类人都怎样”，只记得符合偏见的个案，忽视反例，导致误解、歧视，滋生没有必要的矛盾。&lt;/p>
-&lt;p>信息茧房，人们只在同类群体里交流，互相强化同样的观点。结果是立场越来越极端，对立越来越尖锐。公民若只接收“有利于自己立场”的新闻，会加深社会撕裂，难以达成共识。极端情况下，可能导致群体对抗甚至冲突。&lt;/p>
-&lt;h3 id="认知模型复杂度不足">认知模型复杂度不足&lt;/h3>
-&lt;p>认知模型简单的人，他们的大脑倾向于用单一框架解释世界，只能容纳一种答案。&lt;/p>
-&lt;p>当遇到矛盾证据时，就会产生不适，因为这意味着模型需要拆解和重建，而这对他们来说很困难或几乎不可能。&lt;/p>
-&lt;p>所以，他们会下意识拒绝“打脸证据”，只保留符合预期的信息，也就确认偏差更强。&lt;/p>
-&lt;p>认知模型简单的人更容易陷入“非黑即白”的思维，无法处理失调，从而依赖确认偏差来保护自己&lt;/p>
-&lt;p>认知模型复杂的人，他们能够在头脑中并行存储多个可能的解释，甚至允许矛盾观点共存。&lt;/p>
-&lt;p>这种情况下，遇到冲突信息不会立刻造成巨大心理负担，因此确认偏差的倾向会相对弱一些。&lt;/p>
-&lt;p>认知模型复杂的人能容忍失调，把冲突当作信息源，而不是威胁。&lt;/p>
-&lt;p>一个简单模型的人，像一个“怕冷的人”，总要立刻关掉冷风（短期舒适），哪怕因此永远待在狭小的屋子里。&lt;/p>
-&lt;p>一个复杂模型的人，像一个“能忍短期寒冷的人”，敢于走出去收集木柴和食物。虽然一时不舒服（短期自由能高），但最终获得更大安全感（长期自由能低）。&lt;/p>
-&lt;h3 id="提高认知复杂度">提高认知复杂度&lt;/h3>
-&lt;p>大脑的默认模式是倾向于“快思维”，也就是追求确定性，简化模型，快速降低自由能。&lt;/p>
-&lt;p>一个人越常接触复杂信息、矛盾观点，大脑就越会重塑连接，也就更容易形成分层模型。&lt;/p>
-&lt;p>需要容忍不确定、接受矛盾、不断修正，这和大脑的“节能本能”是相反的，也就是需要刻意的训练，来取代本能的低效和偏差。&lt;/p>
-&lt;p>接触多元信息，主动去看不同立场的观点（比如一条新闻的正反评论），而不是只泡在信息茧房&lt;/p>
-&lt;p>练习批判性思维，对同一问题，尝试列出两种或更多解释，并检验各自的证据，这训练大脑能“并行存储多个假设”&lt;/p>
-&lt;p>培养不确定性耐受力，刻意去面对模棱两可的问题，不急着下结论，而不是逃避思考，认为思考是无意义和徒劳的&lt;/p>
-&lt;h3 id="统计学理解">统计学理解&lt;/h3>
-&lt;p>在确认偏差下，人类的“更新公式”并不是完整的，而是带有偏权重：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/mv/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/mv/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/mv/authoritarian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/authoritarian/</guid><description>&lt;h2 id="集体粗鄙"&gt;集体粗鄙&lt;/h2&gt;
+&lt;p&gt;Collectively Vulgar&lt;/p&gt;
+&lt;p&gt;在人类社会中，个体的精神缺陷往往是局部的，但当权力机制将这些缺陷放大到集体层面时，整个社会就会表现得像一个庞大而迟钝的低智个体。专制体制之下，国家、社会、群体的行为模式，常常与一个人格障碍者相似：自恋、粗俗、短视、无趣。这种“集体粗鄙”既是一种病理，也是专制统治不可避免的副产物。&lt;/p&gt;
+&lt;p&gt;一、自恋：膨胀的自我幻象
+专制社会的第一个特征是自恋。它强调自身的伟大与独特，拒绝承认缺陷，害怕比较与竞争。正如自恋个体需要不断的外部赞美来维持脆弱的自我，专制社会依赖宣传机器和控制舆论来构筑幻象。它的自信并非基于真实的成就，而是通过否认、遮蔽和粉饰维持的脆弱表象。这种集体自恋让社会失去了自我反思的能力，只能陷入不断自我陶醉的闭环。&lt;/p&gt;
+&lt;p&gt;二、品味低下：庸俗的文化审美
+当社会的最高标准不是自由、真理与创造，而是“听话”“服从”“讨好”，文化必然走向粗鄙化。专制体制下的文艺往往流于媚俗、献媚、迎合权力，失去了独立精神与批判锋芒。像低智个体沉迷于浮夸的装饰与炫耀，专制社会的文化品味也被庸俗的符号和廉价的感官刺激所占据。真正深刻的思想与艺术被边缘化，整个社会审美退化为浅薄、空洞的娱乐化。&lt;/p&gt;
+&lt;p&gt;三、社会达尔文主义：弱肉强食的伪理性
+在专制语境下，“适者生存”被误读为赤裸的强者逻辑。社会失去了对弱者的怜悯与保护，取而代之的是对权力与财富的盲目崇拜。人与人之间的关系，不再是基于平等与尊严的契约，而是赤裸裸的等级支配。这种逻辑像低智个体的思维方式：非黑即白，唯强是尊。它掩盖了合作、共情和制度正义的重要性，把社会推向犬儒与冷酷。&lt;/p&gt;
+&lt;p&gt;四、拜金：认钱、认劝的庸俗算计
+专制社会往往将金钱与权力视为唯一的衡量标准。社会成员逐渐丧失了独立判断力，把“谁更有钱、谁更能说服权力”当作唯一真理。这种价值观是一种“低维度”的生存策略，类似低智个体的短视本能：只懂得追逐眼前利益，而无法理解长期价值与公共善。结果是社会整体陷入庸俗的功利主义，精神与道德被彻底边缘化。&lt;/p&gt;
+&lt;p&gt;五、集体粗鄙的逻辑
+为什么专制社会会退化为一个“粗俗低智的个体”？原因在于权力结构本身消解了复杂性与多样性。自由社会像一个多元的网络，思想可以交锋、价值能够互补，因此智慧得以涌现。而专制则像一个单向度的脑回路，所有输入与输出必须经过权力核心的过滤，复杂被简化，深度被压扁。最终，社会集体的智力水平不再是众人智慧的总和，而是退化为最低层次的“本能反应”。&lt;/p&gt;
+&lt;p&gt;结语
+一个自恋、庸俗、短视、拜金的个体，也许只会在私人生活中制造混乱。但当整个社会沦为这样的集体人格时，灾难就是必然。所谓“集体粗鄙”，正是专制社会最深层的写照。它提醒我们：真正的文明，不仅在于科技与财富的积累，更在于能否建立起一个使集体智慧超越个体本能的制度结构。&lt;/p&gt;
+&lt;p&gt;自恋：关闭外部反馈，降低 surprise 的“廉价办法”&lt;/p&gt;
+&lt;p&gt;在 FEP 中，系统要不断修正模型来匹配现实。但专制社会往往拒绝面对真实世界的复杂反馈，因为那会增加认知 dissonance（预测误差）。于是它选择最“省力”的办法：通过宣传、信息控制来强行消除预测误差。&lt;/p&gt;
+&lt;p&gt;例如，社会宣称“我们是最优越的文明”，即使现实与之矛盾，也通过屏蔽证据来维持“低 surprise”。&lt;/p&gt;
+&lt;p&gt;这种自恋不是智慧的体现，而是懒惰的模型修正：不通过学习来改进模型，而是通过否认现实来减少预测误差。&lt;/p&gt;
+&lt;p&gt;换句话说，这是 一种病态的最小化自由能：追求表面的低惊讶，而牺牲长期的学习与适应。&lt;/p&gt;
+&lt;p&gt;品味低下：选择低复杂度的 generative model&lt;/p&gt;
+&lt;p&gt;在 FEP 中，学习需要构建足够复杂的生成模型去解释数据。但复杂的模型需要能量、需要算力。专制社会倾向于选取最简单、最粗鄙的解释框架，因为这能降低计算成本。&lt;/p&gt;
+&lt;p&gt;高雅的思想、艺术、批判会带来高熵和不可预测性。&lt;/p&gt;
+&lt;p&gt;粗鄙的口号、低俗的娱乐、审美媚俗，反而是低复杂度的“模型”，可以快速被大多数人接受，减少认知负担。&lt;/p&gt;
+&lt;p&gt;因此，文化粗俗化是一种“低能量解法”：以牺牲深度与多样性，来维持最低限度的“预测成功率”。&lt;/p&gt;
+&lt;p&gt;社会达尔文主义：把不确定性转嫁给个体&lt;/p&gt;
+&lt;h2 id="专制的逻辑"&gt;专制的逻辑&lt;/h2&gt;
+&lt;p&gt;FEP 强调系统要减少 surprise。但专制政体往往把这种负担转嫁给个体：&lt;/p&gt;
+&lt;p&gt;体制本身不优化结构，而是通过社会达尔文主义告诉个人“成败全在你自己”。&lt;/p&gt;
+&lt;p&gt;这样，系统不用承担复杂的环境预测，只要维持等级秩序，个体之间的竞争与淘汰自然会“减少不确定性”。&lt;/p&gt;
+&lt;p&gt;这类似于一个粗暴的神经网络：它不改进整体结构，而是通过丢弃大量“错误样本”来减少误差。&lt;/p&gt;
+&lt;p&gt;拜金主义（认钱、认劝）：使用单一 reward signal&lt;/p&gt;
+&lt;p&gt;在一个健全的社会，预测误差的校正需要多维度的奖励信号（公平、真理、美感、合作）。&lt;/p&gt;
+&lt;p&gt;但专制社会会把 reward 简化为单一维度：金钱或权力。&lt;/p&gt;
+&lt;p&gt;因为多维价值会带来高复杂度的建模成本。&lt;/p&gt;
+&lt;p&gt;用钱和权力作为唯一的“precision weighting”（权重），整个社会的学习过程就变成了“谁有资源，谁说得算”。&lt;/p&gt;
+&lt;p&gt;这是一种 低维度的世界建模：虽然简单，但导致社会智力退化，只剩下最庸俗的追逐。&lt;/p&gt;
+&lt;p&gt;从 Markov Blanket 的视角看，专制的存在方式就是用最低智力的办法守住边界&lt;/p&gt;
+&lt;p&gt;整个系统在运作时刻意压低复杂度，把认知、文化、制度的精细度压缩到最低层次。这样反而有利于权力集中和压迫&lt;/p&gt;
+&lt;p&gt;高智社会需要复杂的 generative model 来解释世界：科学、批判、新闻、司法等多维机制。&lt;/p&gt;
+&lt;p&gt;这些高复杂度输入会带来大量 prediction error，需要不断修正内部模型。这样，权力中心也会被迫接受挑战。&lt;/p&gt;
+&lt;p&gt;专制选择“低智模型”：只允许单一维度解释世界。这样 Markov Blanket 的边界变得简单，输入输出关系容易控制。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/bd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/bd/</guid><description>&lt;h2 id="广度还是深度"&gt;广度还是深度&lt;/h2&gt;
+&lt;h3 id="偏差与方差"&gt;偏差与方差&lt;/h3&gt;
+&lt;h3 id="决策权绩优主义与反智主义"&gt;决策权：绩优主义与反智主义&lt;/h3&gt;
+&lt;h3 id="治理方式紧急状态和无政府主义"&gt;治理方式：紧急状态和无政府主义&lt;/h3&gt;
+&lt;h3 id="科研经费基础科学与集邮主义"&gt;科研经费：基础科学与集邮主义&lt;/h3&gt;
+&lt;h3 id="英雄崇拜还是去中心化"&gt;英雄崇拜还是去中心化&lt;/h3&gt;
+&lt;h3 id="节目效果还是苦行僧"&gt;节目效果还是苦行僧&lt;/h3&gt;
+&lt;h3 id="不确定原理"&gt;不确定原理&lt;/h3&gt;
+&lt;h3 id="最小能量原理"&gt;最小能量原理&lt;/h3&gt;</description></item><item><title/><link>https://yingkui.com/mv/confirm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/confirm/</guid><description>&lt;h2 id="确认偏差"&gt;确认偏差&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;习惯性的站在自己观点的对立面&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="什么是确认偏差"&gt;什么是确认偏差？&lt;/h3&gt;
+&lt;p&gt;人们更倾向于寻找、记住、解释那些支持自己已有信念或观点的信息，而忽略或轻视与自己信念相矛盾的信息。&lt;/p&gt;
+&lt;p&gt;例如，如果你相信星座性格分析，说“射手座外向爱自由”，你就会特别注意到射手座朋友外向的一面，而忽略他们安静、不爱社交的时刻。
+结果是，你感觉“星座真的很准”，但其实只是确认偏差在起作用。&lt;/p&gt;
+&lt;p&gt;如果某人强烈爱国，他会更愿意相信强调国家成就、民族团结的新闻或评论，并觉得这些信息可信。
+但当他看到批评国家的问题（腐败、环境污染、人权问题等）的报道时，就会觉得“不真实”“这是外国势力抹黑”，甚至直接不去看。&lt;/p&gt;
+&lt;p&gt;如果某人强烈反感专制，他会更愿意相信揭露专制体制弊端的新闻，并觉得这些信息合乎事实。
+当他看到一些强调“稳定”“秩序”或专制制度带来经济发展好处的文章时，就会觉得“这是洗地”“有偏见”，甚至拒绝阅读。&lt;/p&gt;
+&lt;h3 id="为什么会有确认偏差"&gt;为什么会有确认偏差？&lt;/h3&gt;
+&lt;p&gt;智能有机体更新内部世界模型（belief revision）是一件代价极高的事情，需要耗费大量认知资源。&lt;/p&gt;
+&lt;p&gt;因此，系统更倾向于保持原有模型稳定，只要还能合理解释当下数据。确认偏差可以起到“延缓大规模修正”的作用。&lt;/p&gt;
+&lt;p&gt;当一个人同时持有 两个相互矛盾的信念、态度或行为 时，会产生心理上的紧张和不适，这种状态就叫 认知失调。在情绪上，符合预期的信息会带来“模型正确”的确认感，降低惊讶，生理上产生奖励体验，相反的信息会引起不安、不适，意味着要面对新的世界模型，因此人会主动回避。如果承认自己错了，会产生认知失调（心理痛苦）。为了减少痛苦，人们往往更愿意找支持证据来“证明自己没错”，&lt;/p&gt;
+&lt;p&gt;确认偏差不仅是认知上的自由能最小化，也是 情感上减少不适 的一种表现。&lt;/p&gt;
+&lt;p&gt;虚荣心的自我保护，虚荣心的一个核心功能是维持“我是正确的”“我是有价值的”这种自我形象。当出现相反证据时，虚荣心会感到威胁，于是大脑会通过确认偏差来过滤掉“打脸”的信息。在某些社会环境中，“认错”意味着丢面子或社会地位下降。于是个体更倾向坚持原有观点，哪怕事实在眼前。&lt;/p&gt;
+&lt;h3 id="确认偏差的害处"&gt;确认偏差的害处&lt;/h3&gt;
+&lt;p&gt;个人层面，妨碍学习和成长，总是只接受符合自己观点的信息，导致视野狭窄。知识结构难以更新，思维停留在固有模式里。&lt;/p&gt;
+&lt;p&gt;降低决策质量，在做重要选择（买房、择业、投资等）时，忽略不利证据，容易高估利好，低估风险，最后可能做出错误甚至灾难性的决定。&lt;/p&gt;
+&lt;p&gt;自我欺骗与情绪困境，只接受让自己舒服的信息，从而短期减少焦虑，但长期可能导致与现实脱节。当现实“打脸”时，心理冲击会更大。&lt;/p&gt;
+&lt;p&gt;与他人沟通障碍，在争论时，不是听对方的理由，而是不断寻找反驳的证据。结果是对话失效，双方更固执。&lt;/p&gt;
+&lt;p&gt;加剧偏见和刻板印象，比如“某一类人都怎样”，只记得符合偏见的个案，忽视反例，导致误解、歧视，滋生没有必要的矛盾。&lt;/p&gt;
+&lt;p&gt;信息茧房，人们只在同类群体里交流，互相强化同样的观点。结果是立场越来越极端，对立越来越尖锐。公民若只接收“有利于自己立场”的新闻，会加深社会撕裂，难以达成共识。极端情况下，可能导致群体对抗甚至冲突。&lt;/p&gt;
+&lt;h3 id="认知模型复杂度不足"&gt;认知模型复杂度不足&lt;/h3&gt;
+&lt;p&gt;认知模型简单的人，他们的大脑倾向于用单一框架解释世界，只能容纳一种答案。&lt;/p&gt;
+&lt;p&gt;当遇到矛盾证据时，就会产生不适，因为这意味着模型需要拆解和重建，而这对他们来说很困难或几乎不可能。&lt;/p&gt;
+&lt;p&gt;所以，他们会下意识拒绝“打脸证据”，只保留符合预期的信息，也就确认偏差更强。&lt;/p&gt;
+&lt;p&gt;认知模型简单的人更容易陷入“非黑即白”的思维，无法处理失调，从而依赖确认偏差来保护自己&lt;/p&gt;
+&lt;p&gt;认知模型复杂的人，他们能够在头脑中并行存储多个可能的解释，甚至允许矛盾观点共存。&lt;/p&gt;
+&lt;p&gt;这种情况下，遇到冲突信息不会立刻造成巨大心理负担，因此确认偏差的倾向会相对弱一些。&lt;/p&gt;
+&lt;p&gt;认知模型复杂的人能容忍失调，把冲突当作信息源，而不是威胁。&lt;/p&gt;
+&lt;p&gt;一个简单模型的人，像一个“怕冷的人”，总要立刻关掉冷风（短期舒适），哪怕因此永远待在狭小的屋子里。&lt;/p&gt;
+&lt;p&gt;一个复杂模型的人，像一个“能忍短期寒冷的人”，敢于走出去收集木柴和食物。虽然一时不舒服（短期自由能高），但最终获得更大安全感（长期自由能低）。&lt;/p&gt;
+&lt;h3 id="提高认知复杂度"&gt;提高认知复杂度&lt;/h3&gt;
+&lt;p&gt;大脑的默认模式是倾向于“快思维”，也就是追求确定性，简化模型，快速降低自由能。&lt;/p&gt;
+&lt;p&gt;一个人越常接触复杂信息、矛盾观点，大脑就越会重塑连接，也就更容易形成分层模型。&lt;/p&gt;
+&lt;p&gt;需要容忍不确定、接受矛盾、不断修正，这和大脑的“节能本能”是相反的，也就是需要刻意的训练，来取代本能的低效和偏差。&lt;/p&gt;
+&lt;p&gt;接触多元信息，主动去看不同立场的观点（比如一条新闻的正反评论），而不是只泡在信息茧房&lt;/p&gt;
+&lt;p&gt;练习批判性思维，对同一问题，尝试列出两种或更多解释，并检验各自的证据，这训练大脑能“并行存储多个假设”&lt;/p&gt;
+&lt;p&gt;培养不确定性耐受力，刻意去面对模棱两可的问题，不急着下结论，而不是逃避思考，认为思考是无意义和徒劳的&lt;/p&gt;
+&lt;h3 id="统计学理解"&gt;统计学理解&lt;/h3&gt;
+&lt;p&gt;在确认偏差下，人类的“更新公式”并不是完整的，而是带有偏权重：&lt;/p&gt;
 $$
 P^*(H \mid D) \propto 
 \begin{cases} 
 w_1 \cdot P(D \mid H) P(H), &amp; D \ \text{支持原有信念} \newline
 w_2 \cdot P(D \mid H) P(H), &amp; D \ \text{反对原有信念} 
 \end{cases}
-$$&lt;p>其中：&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/convert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/convert/</guid><description>&lt;h2 id="钱词转化">钱词转化&lt;/h2>
-&lt;p>Lexeme = 投资标的&lt;/p>
-&lt;p>词位 (lexeme) 就像一只股票或资产：它代表着一种“解释力 + 压缩力”。&lt;/p>
-&lt;p>当大脑获得一个 lexeme，就像投资者买入了一种“快速压缩世界的工具”。&lt;/p>
-&lt;p>比如：&lt;/p>
-&lt;p>买了 “爱” 这个 lexeme → 很多复杂的体验瞬间能打包。&lt;/p>
-&lt;p>买了 “外部眼光” 这个 lexeme → 很多行为都能用“别人怎么看”解释&lt;/p>
-&lt;p>投资收益 = 认知回报&lt;/p>
-&lt;p>高价值 lexeme：能长期降低自由能，帮助你压缩复杂经验，解释范围广且稳定。&lt;/p>
-&lt;p>类似“价值股”，虽然短期没有强烈刺激，但长期复利。&lt;/p>
-&lt;p>例子：长期价值、真实兴趣、成长、因果。&lt;/p>
-&lt;p>低价值 lexeme：只能带来短期快感，长期没有复利效应，甚至让模型越来越脆弱。&lt;/p>
-&lt;p>类似“骗子股”或“垃圾股”。&lt;/p>
-&lt;p>例子：外部眼光、面子至上、他人评价。&lt;/p>
-&lt;p>投资成本 = 认知消耗&lt;/p>
-&lt;p>每买一个 lexeme，实际上要付出：&lt;/p>
-&lt;p>注意力（要反复调用）&lt;/p>
-&lt;p>认知资源（要用它来解释输入）&lt;/p>
-&lt;p>情绪能量（要承担波动带来的影响）&lt;/p>
-&lt;p>如果一个 lexeme 带来的是 持续消耗 + 偶尔的小回报，那就是亏本投资。&lt;/p>
-&lt;p>投资决策：需求与陷阱&lt;/p>
-&lt;p>你说的“需求就是想得到一个 lexeme，但这个 lexeme 不值得你得到”，可以类比为：&lt;/p>
-&lt;p>需求：就像投资者渴望一个“解释世界的工具”，因为没有 lexeme 会很焦虑。&lt;/p>
-&lt;p>陷阱：市场上有很多“低质 lexeme”，它们看似能立刻满足需求，但长期价值为负。&lt;/p>
-&lt;p>就像投资人渴望一支能涨的股票，于是被骗子公司画的大饼吸引。&lt;/p>
-&lt;p>外部眼光就是这样的 lexeme → 它满足了“我是谁”的焦虑，却带来长期负债。&lt;/p>
-&lt;p>从投资角度看，lexeme 是一种“认知资产”。&lt;/p>
-&lt;p>好的 lexeme = 长期价值股 → 持有越久越划算。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/core/</guid><description>&lt;h2 id="钱与词">钱与词&lt;/h2>
-&lt;h3 id="lexeme-的定义">Lexeme 的定义&lt;/h3>
-&lt;p>Lexeme 是指：人类在学习与思考过程中形成的、具有压缩性和预测力的认知单位。&lt;/p>
-&lt;p>它通过建立一个 Markov blanket（边界），在内部形成稳定的结构，用于减少外部世界带来的 surprise（预测误差）。&lt;/p>
-&lt;p>换句话说，lexeme 就是一个 能显著降低不确定性、提高预测效率的“知识粒子”。&lt;/p>
-&lt;p>它既可以是一个单词（如“能量”）、一个抽象概念（如“博弈”）、一条定理（如“熵增定律”），甚至可以是一个模式（如“供需曲线”）。&lt;/p>
-&lt;p>压缩性 (Compression)&lt;/p>
-&lt;p>能把大量复杂的信息压缩成一个简洁的符号或概念。&lt;/p>
-&lt;p>例如“重力”一词就压缩了苹果落地、潮汐变化、行星轨道等现象。&lt;/p>
-&lt;p>预测力 (Predictive Power)&lt;/p>
-&lt;p>一个 lexeme 的价值在于它能帮助我们更准确地预测未来，降低 surprise。&lt;/p>
-&lt;p>比如“供需关系”能让我们预测价格变动。&lt;/p>
-&lt;p>Markov Blanket 性质 (Boundary Property)&lt;/p>
-&lt;p>每个 lexeme 都像一个局部模型，有自己的输入（外部刺激）、内部状态（结构）、输出（预测/行动）。&lt;/p>
-&lt;p>通过与环境交互，它形成一个“边界”，在边界内自洽运作。&lt;/p>
-&lt;p>可组合性 (Composability)&lt;/p>
-&lt;p>lexeme 可以彼此组合，形成更复杂的表达或理论。&lt;/p>
-&lt;p>例如“能量 + 守恒”组合成“能量守恒定律”。&lt;/p>
-&lt;p>分层性 (Hierarchical Nature)&lt;/p>
-&lt;p>lexeme 之间有层级：底层 lexeme（具体词汇/经验） → 高层 lexeme（抽象理论/范式）。&lt;/p>
-&lt;p>高层 lexeme 学习慢但压缩更强。&lt;/p>
-&lt;p>学习成本 (Acquisition Cost)&lt;/p>
-&lt;p>每个 lexeme 都有学习门槛，取决于先验知识、复杂度和抽象程度。&lt;/p>
-&lt;p>简单 lexeme 学得快（“苹果”），复杂 lexeme 需要共识与长期学习（“相对论”）。&lt;/p>
-&lt;p>情感与动机附着 (Affective Stickiness)&lt;/p>
-&lt;p>lexeme 往往带有情感色彩或价值意义，使其在记忆与传播中更稳定。&lt;/p>
-&lt;p>如“自由”既是认知单元，也是情感驱动的词汇。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/ego/</guid><description>&lt;h2 id="虚荣心降低对他人评价的过拟合">虚荣心：降低对他人评价的过拟合&lt;/h2>
-&lt;h3 id="高层">高层&lt;/h3>
-&lt;p>在 FEP 框架下，个体大脑维护一个分层的 生成模型：&lt;/p>
-&lt;p>低层：感官输入、即时威胁（生理上的危险、疼痛、死亡风险）。&lt;/p>
-&lt;p>中层：社会评价、自我价值感、他人眼光。&lt;/p>
-&lt;p>高层：核心自我模型、意义、身份认同（“我是一个体面的人”“我有尊严”）。&lt;/p>
-&lt;p>虚荣心（对外部评价的高度敏感）其实是高层模型稳定性的关键部分：它将“外界他人看法”内化为“自我存在的正确性”。&lt;/p>
-&lt;p>生物体的目标是最小化自由能（即惊讶/预测误差）。&lt;/p>
-&lt;p>肉体死亡：&lt;/p>
-&lt;p>在高层模型里，死亡是可能的“终点事件”，有某种程度的可预测性（比如战争、疾病、风险本身已被纳入世界模型）。&lt;/p>
-&lt;p>所以“被杀”虽然是负面，但并不必然撕裂身份模型的核心结构。&lt;/p>
-&lt;p>羞辱/侮辱：&lt;/p>
-&lt;p>羞辱直接冲击高层身份模型：“我是谁”的预测和现实彻底不符。&lt;/p>
-&lt;p>当别人公开否认、贬低、嘲笑时，个体的社会存在感、价值感被颠覆，导致极大自由能增加，因为高层模型无法再解释低层证据。&lt;/p>
-&lt;p>换句话说，辱会动摇整套生成模型的顶层假设，比死亡更难以“吸收”。&lt;/p>
-&lt;p>所以“可杀不可辱”是说：与其承受整个身份模型崩塌的预测误差，还不如终止生命模型本身。&lt;/p>
-&lt;p>在自由能原则的层级推理框架下，“可杀不可辱”揭示了 虚荣心作为高层自我模型核心 的地位。&lt;/p>
-&lt;p>它不仅仅是“情绪”或“面子”，而是大脑维持预测闭合、压缩世界模型的最高级支柱。&lt;/p>
-&lt;h3 id="历史上的极端">历史上的极端&lt;/h3>
-&lt;p>中国传统：“名节”高于生命。文天祥《正气歌》“人生自古谁无死，留取丹心照汗青”。&lt;/p>
-&lt;p>日本武士道：受辱即切腹。肉体毁灭可以被接受，但身份污损不可。&lt;/p>
-&lt;p>西方骑士 / 贵族：决斗文化。如果名誉受损，必须用生死对抗来修复模型。&lt;/p>
-&lt;h3 id="原因">原因&lt;/h3>
-&lt;p>群体生存依赖合作与承认。&lt;/p>
-&lt;p>社会评价 ≈ 生存先验概率。&lt;/p>
-&lt;p>因此虚荣心不仅是“爱面子”，而是演化出的自我模型的基石：丢了面子 ≈ 丢了社会生存条件。&lt;/p>
-&lt;p>进化论角度：群居生物的适应机制&lt;/p>
-&lt;p>个体生存靠群体
-人类并非独居动物，生存与繁衍高度依赖群体协作。&lt;/p>
-&lt;p>社会评价决定生存概率
-在远古部落，如果你被群体排斥（被羞辱、失去地位），那几乎等于死亡（没食物、没人保护）。&lt;/p>
-&lt;p>虚荣心 = 适应性信号
-所以对他人眼光高度敏感，是一种本能的“早期预警系统”。&lt;/p>
-&lt;p>面子 ≈ 生存先验概率&lt;/p>
-&lt;p>失去尊重 ≈ 生存风险上升&lt;/p>
-&lt;p>因此，ego 是演化出来的“社会生存本能”。&lt;/p>
-&lt;p>它是多层叠加的结果：&lt;/p>
-&lt;p>生物层 → 群居演化的生存策略&lt;/p>
-&lt;p>认知层 → 高层模型需要社会角色闭合&lt;/p>
-&lt;p>心理层 → 成长过程中不断内化的“他人眼光”&lt;/p>
-&lt;h3 id="危害">危害&lt;/h3>
-&lt;p>过度精确化（precision overweighting）
-在 FEP 里，每个预测都带有精度（置信度）。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/fep/</guid><description>&lt;h2 id="自由能原则">自由能原则&lt;/h2>
-&lt;ol>
-&lt;li>Reward / Utility / Score / Value&lt;/li>
-&lt;li>Surprise / Prediction Error / Chunkify&lt;/li>
-&lt;/ol>
-&lt;h3 id="two-kinds-of-predictin-errors">Two Kinds of Predictin Errors&lt;/h3>
-&lt;ol>
-&lt;li>Pragmatic or Reward Prediction Error&lt;/li>
-&lt;li>Epistemic or Lexeme Prediction Error&lt;/li>
-&lt;/ol>
-&lt;p>But they are the same:&lt;/p>
-&lt;p>In reinforcement learning or decision theory, the complement of surprise is often called value (or utility).&lt;/p>
-&lt;p>Low surprise = high expected value (your predictions about the world are confirmed).&lt;/p>
-&lt;p>High surprise = low value (your model didn’t anticipate what happened).&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/fraud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/fraud/</guid><description>&lt;h2 id="都是为了你好">都是为了你好&lt;/h2>
-&lt;h2 id="永远战时状态">永远战时状态&lt;/h2>
-&lt;h2 id="割喉降血压">割喉降血压&lt;/h2>
-&lt;h2 id="都是一家人">都是一家人&lt;/h2>
-&lt;h2 id="身上满是标签">身上满是标签&lt;/h2>
-&lt;h2 id="黑社会手段">黑社会手段&lt;/h2>
-&lt;h2 id="通过洗脑注入新词">通过洗脑，注入新词&lt;/h2></description></item><item><title/><link>https://yingkui.com/mv/halo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/halo/</guid><description>&lt;h2 id="光环效应">光环效应&lt;/h2>
-&lt;blockquote>
-&lt;p>特征显著不代表是主要原因&lt;/p>&lt;/blockquote>
-&lt;h3 id="什么是光环效应">什么是光环效应&lt;/h3>
-&lt;p>光环效应是指人们在认知和评价他人或事物时，往往会因为某一个突出的特征（优点或缺点）而对整体产生偏颇的印象。如果一个人有显著的优点，人们容易高估他在其他方面的表现。如果一个人有明显的缺点，人们也容易低估他在其他方面的能力。&lt;/p>
-&lt;p>例如：&lt;/p>
-&lt;ol>
-&lt;li>长得好看的人常常被认为更聪明、更善良。&lt;/li>
-&lt;li>知名公司出身的人，在新工作中更容易被认为能力强。&lt;/li>
-&lt;li>广告代言：明星的光环会让人以为产品本身也优秀。&lt;/li>
-&lt;/ol>
-&lt;h3 id="为什么会有光环效应">为什么会有光环效应&lt;/h3>
-&lt;p>认知经济性（Cognitive Economy），人类大脑在面对复杂信息时，倾向于寻找捷径。&lt;/p>
-&lt;p>大脑里的知识网络是联想式的：“漂亮”常与“聪明”“善良”“受欢迎”一起被激活。“地位高”常与“能力强”“值得信赖”联系在一起。这种自动的语义联结让某一个特质的光环影响了整体判断。&lt;/p>
-&lt;p>快速归纳提高了生存效率。缺点是，现代社会复杂化后，这种机制容易导致偏差。&lt;/p>
-&lt;p>光环效应产生，是因为大脑为了节省能量，会用局部特征推断整体；情绪、联想、进化需要和社会文化又共同放大了这种倾向。&lt;/p>
-&lt;p>光环效应是大脑在自由能原理下的一种“认知压缩”：通过一个显著特征覆盖其他特征，降低了信息处理的复杂度，却牺牲了准确性。&lt;/p>
-&lt;h3 id="光环效应的害处">光环效应的害处&lt;/h3>
-&lt;p>在感情中，人们容易被对方某个优点吸引，而忽视潜在风险。&lt;/p>
-&lt;p>一个领导人因为在某一方面有突出成就（如战争胜利、经济建设、个人魅力），大众就倾向于认为他在其他方面同样正确、无懈可击。这种“光环”逐渐被放大成全能化、神化，导致社会缺乏理性批判，最终形成个人崇拜。&lt;/p>
-&lt;p>希特勒因演讲能力和民族主义口号获得光环，被认定为“民族拯救者”。结果导致德国社会整体陷入非理性，最终引发二战和大规模屠杀。&lt;/p>
-&lt;p>邪教领袖往往利用光环效应，把自己塑造成“神圣化身”，追随者完全丧失独立思考，最终甚至付出生命代价（如琼斯镇惨案）。&lt;/p>
-&lt;p>消灭异议：光环效应让人们对批评充耳不闻，甚至敌视反对意见。&lt;/p>
-&lt;p>失去纠错机制：任何政策或决策都被当成“正确”，错误会被无限放大。&lt;/p>
-&lt;p>集体非理性：大众不再根据事实判断，而是盲从“光环”。&lt;/p>
-&lt;h3 id="如何避免">如何避免&lt;/h3>
-&lt;p>不要用单一特质（外貌、学历、职位）来推断整体，而是把评价分解为多个独立维度（能力、责任心、沟通力、成果）&lt;/p>
-&lt;p>不要凭第一印象做决定，给自己更多观察和收集证据的机会。复盘思考：在做决定后问自己：“我是不是被某个突出的点吸引，从而忽视了其他证据？”&lt;/p>
-&lt;h3 id="贝叶斯解释">贝叶斯解释&lt;/h3>
-&lt;p>代价敏感的最优性：在有限时间与评估成本下，使用强线索进行快速决策能提高期望效用（少采样也能足够好）。&lt;/p>
-&lt;p>光环效应之所以“看似合理”，是因为在真实相关存在、成本受限时，用强线索做贝叶斯更新能快速降低不确定性。它的局限在于人们常把先验与似然比高估，忽略基率与情境依赖，并在代价敏感的任务中过早停止采样，最终从“合理的启发式”滑向“系统性偏差”。&lt;/p>
-&lt;p>在分层贝叶斯或卡尔曼更新里，把先验或单一线索的精度设得太高，会让后续证据进不来，形成自我强化的“光环”&lt;/p>
-&lt;p>多维证据，分条件更新：把“显著特征”与独立证据分开更新，避免单一线索吞没一切。&lt;/p>
-&lt;p>代价敏感采样：在高代价决策里，提高证据阈值，延迟决策。&lt;/p>
-&lt;p>抑制过度精度：在模型里限制先验或单一线索的精度权重，保证后续证据能改写判断。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/learn/</guid><description>&lt;h3 id="熟练lexeme的价值">熟练lexeme的价值&lt;/h3>
-&lt;p>大多数学习领域都遵循帕累托分布：大约 20% 的核心概念能带来 80% 的成果。如果能专注于那关键的 20%，也就是核心 lexeme，你就掌握了这门学科的“脊梁”。其余的一切都是这些核心的变体和扩展。&lt;/p>
-&lt;p>当核心 lexeme 被牢固内化后，大脑会自动把新信息“打包”进这些已有的模式里。你不必从零开始处理每个细节，而是把新数据归入熟悉的“类目”。这极大减轻了认知负荷，让学习新材料变得直观。就像搭建大楼：只要地基和支柱稳固，后续的楼层和房间就能顺理成章地加上去。&lt;/p>
-&lt;p>这意味着高阶主题能更快被掌握，因为它们依托在你已经拥有的基础上。核心 lexeme 的收益是指数级的：它们像杠杆一样，能让练习的每一分钟产出更大效果。&lt;/p>
-&lt;p>学习效率的提升&lt;/p>
-&lt;p>移除瓶颈：通过优先掌握少数关键概念，你能绕开学习中最重的阻碍。&lt;/p>
-&lt;p>释放工作记忆：你不用记忆和拼凑大量分散的事实，而是直接把新知识与核心锚点挂钩。&lt;/p>
-&lt;p>快速正反馈：高价值 lexeme 训练带来的早期成果，能增强信心与动力。&lt;/p>
-&lt;p>自动化技能：一旦内化，它们会从费力的步骤变为直觉反应。&lt;/p>
-&lt;p>自动化与模式识别&lt;/p>
-&lt;p>核心 lexeme 的练习最终会发展成 信号—反应反射：看到信号，大脑几乎自动给出反应。这就像认字或识别棋局形态一样，不再消耗太多注意力。&lt;/p>
-&lt;p>这种 自动提取 能释放工作记忆，把注意力转向更复杂的问题层面，加速技能掌握。&lt;/p>
-&lt;p>限定假设空间与降低歧义&lt;/p>
-&lt;p>每次学会一个 lexeme，相当于在缩小解释新信息的可能性空间。你不再需要在几十种可能性中做选择，而只需在已有 lexeme 对应的有限几种里判断。&lt;/p>
-&lt;p>标签化作用：lexeme 像给信息流打上“标签”，帮助大脑聚焦关键信息，忽略无关细节。&lt;/p>
-&lt;p>跨领域桥梁：核心 lexeme 往往具备迁移性，能在不同情境下发挥作用，提升类比与创造力。&lt;/p>
-&lt;p>抗遗忘性与错误修正&lt;/p>
-&lt;p>高效 lexeme 在频繁曝光与反馈中不断被强化，逐渐成为 抗衰减节点。&lt;/p>
-&lt;p>这种节点更难被遗忘。&lt;/p>
-&lt;p>当出错时，只需调整该 lexeme，本体模型不会被大面积破坏，保证整体连贯性。&lt;/p>
-&lt;p>传统学习方式的问题&lt;/p>
-&lt;p>传统教材往往：&lt;/p>
-&lt;p>把每个定理、推论、特例一股脑呈现。&lt;/p>
-&lt;p>让学生淹没在符号和边角知识中，难以辨别重点。&lt;/p>
-&lt;p>导致工作记忆过载，只能记住零散事实，却难以流畅调用关键概念。&lt;/p>
-&lt;p>这种方式平等对待每个细节，结果是把大量时间浪费在低价值内容上，反而忽视了能打开 80% 大门的 20% 核心。&lt;/p>
-&lt;p>课堂学习里，师生常陷入“欲速则不达”的陷阱：&lt;/p>
-&lt;p>错觉的简单：专家眼里的直观概念，对初学者可能暗藏陷阱。&lt;/p>
-&lt;p>话题推进过快：学生没能整合核心，就被迫切换话题，导致碎片化学习。&lt;/p>
-&lt;p>频繁失败：基础不牢固，面对进阶内容时屡屡受挫，信心下降。&lt;/p>
-&lt;p>高效练习的意义&lt;/p>
-&lt;p>与其被动跟随教材的海量练习，不如专注于少量 信号—反应训练。它们能产生最大化的回报。&lt;/p>
-&lt;p>噪音剔除：非核心细节统统当作噪音忽略。&lt;/p>
-&lt;p>积极反馈：每次练习都带来可见进步，增强成就感。&lt;/p>
-&lt;p>神经机制视角&lt;/p>
-&lt;p>学习中的每个特征都有变异和噪音。要想真正编码为 lexeme，需要足够多的样本来使模式信号高于噪音。&lt;/p>
-&lt;p>稳定阈值：只有当大脑对某模式的置信度超过某一阈值，才会分配资源把它固化为持久记忆。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/levels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/levels/</guid><description>&lt;h1 id="分级">分级&lt;/h1>
-&lt;h2 id="词汇太多">词汇太多&lt;/h2>
-&lt;h2 id="最关键的词汇">最关键的词汇&lt;/h2>
-&lt;p>你不必知道那么多的词汇，&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/lexemes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/lexemes/</guid><description>&lt;h2 id="lexemes">Lexemes&lt;/h2>
-&lt;h3 id="人脑的工作原理">人脑的工作原理&lt;/h3>
-&lt;h3 id="markov-blanket">Markov Blanket&lt;/h3>
-&lt;p>如果变化环境，这个词汇还是能够独立出现并稳定存在。&lt;/p>
-&lt;p>在一个系统里，马尔可夫毯定义了一个节点（变量）与外部世界之间的边界。
-给定马尔可夫毯，节点与其他所有节点条件独立。&lt;/p>
-&lt;p>也就是说，知道了马尔可夫毯，就不需要知道更远的节点信息，因为它们对其不再有额外的影响。这就像是一个“信息屏障”。&lt;/p>
-&lt;p>感官输入（视觉）进入马尔可夫毯&lt;/p>
-&lt;p>内部状态推断 latent variable：“这是猫”&lt;/p>
-&lt;p>大脑用 lexeme “猫” 来编码它（压缩 + 可交流）&lt;/p>
-&lt;p>行动输出（比如抚摸或喂食）再通过毯子反馈到外部&lt;/p>
-&lt;p>只要知道了 X 的马尔可夫毯，世界上其他变量对 X 的因果影响都被“屏蔽”了。&lt;/p>
-&lt;p>所以马尔可夫毯可以看成是 因果作用的边界。&lt;/p>
-&lt;p>在因果推理里（Pearl 的 do-calculus），当你对某个节点施加干预 其因果效应只会通过 马尔可夫毯定义的通路 往外扩散。&lt;/p>
-&lt;p>毯子之外的因果路径要么被阻断，要么只能间接体现。&lt;/p>
-&lt;p>所以你可以把 因果效应的传播半径 看作是 Markov Blanket 的边界。&lt;/p>
-&lt;p>烧开的水壶 → 水与空气的接触面就是一个边界，热量可以通过蒸汽扩散出去，但分子不会穿透金属壁。&lt;/p>
-&lt;p>半导体芯片 → 边界条件定义了电流如何输入输出，内部电荷的动力学必须遵守边界约束。&lt;/p>
-&lt;p>总结：边界条件决定了 能量、物质和信息 的流入流出。&lt;/p>
-&lt;p>Karl Friston 的自由能原理其实就是把“热力学边界”套用到认知系统：&lt;/p>
-&lt;p>生物体（系统）必须与外界交换能量和信息才能维持稳定（homeostasis）。&lt;/p>
-&lt;p>这种交换不是无限的，而是被马尔可夫毯限定。&lt;/p>
-&lt;p>自由能最小化就像物理里的熵增约束：&lt;/p>
-&lt;p>系统要保持结构不崩溃，就必须通过边界调节输入输出，把不确定性压缩。&lt;/p>
-&lt;p>在物理里，你不会追踪每个分子的状态，只看边界上的平均量（温度、压力）。&lt;/p>
-&lt;p>在认知里，你不会追踪世界所有变量，只压缩成 lexeme（“猫”“桌子”“敌意”）。&lt;/p>
-&lt;p>Lexeme 就是大脑给马尔可夫毯的“边界条件”做的符号化压缩：&lt;/p>
-&lt;p>内部潜变量太复杂&lt;/p>
-&lt;p>外部输入太庞杂&lt;/p>
-&lt;p>必须压缩成可操作的 lexeme，才能降低 surprise 并进行因果推理。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/passive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/passive/</guid><description>&lt;h2 id="passive-income-levels">Passive Income Levels&lt;/h2>
-&lt;p>1万每个月，需要本金250万&lt;/p>
-&lt;p>2万每个月，需要本金500万，财富自由底线，“不怕失业”&lt;/p>
-&lt;p>5万每个月，需要本金1500万，高净值家庭（HNWI），百分之一（中国有2000万HNWI）&lt;/p>
-&lt;p>10万每个月，需要本金2500万，高档次的财富自由&lt;/p>
-&lt;p>50万每个月，需要本金1.5亿，超高净值家庭（UHNW），两万分之一&lt;/p>
-&lt;p>中国有10万UHNW，美国有22万，全球有50万人。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/prior/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/prior/</guid><description>&lt;h1 id="科学">科学&lt;/h1>
-&lt;h2 id="没用的词汇">没用的词汇&lt;/h2>
-&lt;p>我们把爱因斯坦放的很高的位置，但了解爱因斯坦，学会下面的方程&lt;/p>
+$$&lt;p&gt;其中：&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/convert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/convert/</guid><description>&lt;h2 id="钱词转化"&gt;钱词转化&lt;/h2&gt;
+&lt;p&gt;Lexeme = 投资标的&lt;/p&gt;
+&lt;p&gt;词位 (lexeme) 就像一只股票或资产：它代表着一种“解释力 + 压缩力”。&lt;/p&gt;
+&lt;p&gt;当大脑获得一个 lexeme，就像投资者买入了一种“快速压缩世界的工具”。&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;p&gt;买了 “爱” 这个 lexeme → 很多复杂的体验瞬间能打包。&lt;/p&gt;
+&lt;p&gt;买了 “外部眼光” 这个 lexeme → 很多行为都能用“别人怎么看”解释&lt;/p&gt;
+&lt;p&gt;投资收益 = 认知回报&lt;/p&gt;
+&lt;p&gt;高价值 lexeme：能长期降低自由能，帮助你压缩复杂经验，解释范围广且稳定。&lt;/p&gt;
+&lt;p&gt;类似“价值股”，虽然短期没有强烈刺激，但长期复利。&lt;/p&gt;
+&lt;p&gt;例子：长期价值、真实兴趣、成长、因果。&lt;/p&gt;
+&lt;p&gt;低价值 lexeme：只能带来短期快感，长期没有复利效应，甚至让模型越来越脆弱。&lt;/p&gt;
+&lt;p&gt;类似“骗子股”或“垃圾股”。&lt;/p&gt;
+&lt;p&gt;例子：外部眼光、面子至上、他人评价。&lt;/p&gt;
+&lt;p&gt;投资成本 = 认知消耗&lt;/p&gt;
+&lt;p&gt;每买一个 lexeme，实际上要付出：&lt;/p&gt;
+&lt;p&gt;注意力（要反复调用）&lt;/p&gt;
+&lt;p&gt;认知资源（要用它来解释输入）&lt;/p&gt;
+&lt;p&gt;情绪能量（要承担波动带来的影响）&lt;/p&gt;
+&lt;p&gt;如果一个 lexeme 带来的是 持续消耗 + 偶尔的小回报，那就是亏本投资。&lt;/p&gt;
+&lt;p&gt;投资决策：需求与陷阱&lt;/p&gt;
+&lt;p&gt;你说的“需求就是想得到一个 lexeme，但这个 lexeme 不值得你得到”，可以类比为：&lt;/p&gt;
+&lt;p&gt;需求：就像投资者渴望一个“解释世界的工具”，因为没有 lexeme 会很焦虑。&lt;/p&gt;
+&lt;p&gt;陷阱：市场上有很多“低质 lexeme”，它们看似能立刻满足需求，但长期价值为负。&lt;/p&gt;
+&lt;p&gt;就像投资人渴望一支能涨的股票，于是被骗子公司画的大饼吸引。&lt;/p&gt;
+&lt;p&gt;外部眼光就是这样的 lexeme → 它满足了“我是谁”的焦虑，却带来长期负债。&lt;/p&gt;
+&lt;p&gt;从投资角度看，lexeme 是一种“认知资产”。&lt;/p&gt;
+&lt;p&gt;好的 lexeme = 长期价值股 → 持有越久越划算。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/core/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/core/</guid><description>&lt;h2 id="钱与词"&gt;钱与词&lt;/h2&gt;
+&lt;p&gt;学词，挖词，用词，幻觉&lt;/p&gt;
+&lt;h3 id="lexeme-的定义"&gt;Lexeme 的定义&lt;/h3&gt;
+&lt;p&gt;Lexeme 是指：人类在学习与思考过程中形成的、具有压缩性和预测力的认知单位。&lt;/p&gt;
+&lt;p&gt;它通过建立一个 Markov blanket（边界），在内部形成稳定的结构，用于减少外部世界带来的 surprise（预测误差）。&lt;/p&gt;
+&lt;p&gt;换句话说，lexeme 就是一个 能显著降低不确定性、提高预测效率的“知识粒子”。&lt;/p&gt;
+&lt;p&gt;它既可以是一个单词（如“能量”）、一个抽象概念（如“博弈”）、一条定理（如“熵增定律”），甚至可以是一个模式（如“供需曲线”）。&lt;/p&gt;
+&lt;p&gt;压缩性 (Compression)&lt;/p&gt;
+&lt;p&gt;能把大量复杂的信息压缩成一个简洁的符号或概念。&lt;/p&gt;
+&lt;p&gt;例如“重力”一词就压缩了苹果落地、潮汐变化、行星轨道等现象。&lt;/p&gt;
+&lt;p&gt;预测力 (Predictive Power)&lt;/p&gt;
+&lt;p&gt;一个 lexeme 的价值在于它能帮助我们更准确地预测未来，降低 surprise。&lt;/p&gt;
+&lt;p&gt;比如“供需关系”能让我们预测价格变动。&lt;/p&gt;
+&lt;p&gt;Markov Blanket 性质 (Boundary Property)&lt;/p&gt;
+&lt;p&gt;每个 lexeme 都像一个局部模型，有自己的输入（外部刺激）、内部状态（结构）、输出（预测/行动）。&lt;/p&gt;
+&lt;p&gt;通过与环境交互，它形成一个“边界”，在边界内自洽运作。&lt;/p&gt;
+&lt;p&gt;可组合性 (Composability)&lt;/p&gt;
+&lt;p&gt;lexeme 可以彼此组合，形成更复杂的表达或理论。&lt;/p&gt;
+&lt;p&gt;例如“能量 + 守恒”组合成“能量守恒定律”。&lt;/p&gt;
+&lt;p&gt;分层性 (Hierarchical Nature)&lt;/p&gt;
+&lt;p&gt;lexeme 之间有层级：底层 lexeme（具体词汇/经验） → 高层 lexeme（抽象理论/范式）。&lt;/p&gt;
+&lt;p&gt;高层 lexeme 学习慢但压缩更强。&lt;/p&gt;
+&lt;p&gt;学习成本 (Acquisition Cost)&lt;/p&gt;
+&lt;p&gt;每个 lexeme 都有学习门槛，取决于先验知识、复杂度和抽象程度。&lt;/p&gt;
+&lt;p&gt;简单 lexeme 学得快（“苹果”），复杂 lexeme 需要共识与长期学习（“相对论”）。&lt;/p&gt;
+&lt;p&gt;情感与动机附着 (Affective Stickiness)&lt;/p&gt;
+&lt;p&gt;lexeme 往往带有情感色彩或价值意义，使其在记忆与传播中更稳定。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/ego/</guid><description>&lt;h2 id="虚荣心降低对他人评价的过拟合"&gt;虚荣心：降低对他人评价的过拟合&lt;/h2&gt;
+&lt;h3 id="高层"&gt;高层&lt;/h3&gt;
+&lt;p&gt;在 FEP 框架下，个体大脑维护一个分层的 生成模型：&lt;/p&gt;
+&lt;p&gt;低层：感官输入、即时威胁（生理上的危险、疼痛、死亡风险）。&lt;/p&gt;
+&lt;p&gt;中层：社会评价、自我价值感、他人眼光。&lt;/p&gt;
+&lt;p&gt;高层：核心自我模型、意义、身份认同（“我是一个体面的人”“我有尊严”）。&lt;/p&gt;
+&lt;p&gt;虚荣心（对外部评价的高度敏感）其实是高层模型稳定性的关键部分：它将“外界他人看法”内化为“自我存在的正确性”。&lt;/p&gt;
+&lt;p&gt;生物体的目标是最小化自由能（即惊讶/预测误差）。&lt;/p&gt;
+&lt;p&gt;肉体死亡：&lt;/p&gt;
+&lt;p&gt;在高层模型里，死亡是可能的“终点事件”，有某种程度的可预测性（比如战争、疾病、风险本身已被纳入世界模型）。&lt;/p&gt;
+&lt;p&gt;所以“被杀”虽然是负面，但并不必然撕裂身份模型的核心结构。&lt;/p&gt;
+&lt;p&gt;羞辱/侮辱：&lt;/p&gt;
+&lt;p&gt;羞辱直接冲击高层身份模型：“我是谁”的预测和现实彻底不符。&lt;/p&gt;
+&lt;p&gt;当别人公开否认、贬低、嘲笑时，个体的社会存在感、价值感被颠覆，导致极大自由能增加，因为高层模型无法再解释低层证据。&lt;/p&gt;
+&lt;p&gt;换句话说，辱会动摇整套生成模型的顶层假设，比死亡更难以“吸收”。&lt;/p&gt;
+&lt;p&gt;所以“可杀不可辱”是说：与其承受整个身份模型崩塌的预测误差，还不如终止生命模型本身。&lt;/p&gt;
+&lt;p&gt;在自由能原则的层级推理框架下，“可杀不可辱”揭示了 虚荣心作为高层自我模型核心 的地位。&lt;/p&gt;
+&lt;p&gt;它不仅仅是“情绪”或“面子”，而是大脑维持预测闭合、压缩世界模型的最高级支柱。&lt;/p&gt;
+&lt;h3 id="历史上的极端"&gt;历史上的极端&lt;/h3&gt;
+&lt;p&gt;中国传统：“名节”高于生命。文天祥《正气歌》“人生自古谁无死，留取丹心照汗青”。&lt;/p&gt;
+&lt;p&gt;日本武士道：受辱即切腹。肉体毁灭可以被接受，但身份污损不可。&lt;/p&gt;
+&lt;p&gt;西方骑士 / 贵族：决斗文化。如果名誉受损，必须用生死对抗来修复模型。&lt;/p&gt;
+&lt;h3 id="原因"&gt;原因&lt;/h3&gt;
+&lt;p&gt;群体生存依赖合作与承认。&lt;/p&gt;
+&lt;p&gt;社会评价 ≈ 生存先验概率。&lt;/p&gt;
+&lt;p&gt;因此虚荣心不仅是“爱面子”，而是演化出的自我模型的基石：丢了面子 ≈ 丢了社会生存条件。&lt;/p&gt;
+&lt;p&gt;进化论角度：群居生物的适应机制&lt;/p&gt;
+&lt;p&gt;个体生存靠群体
+人类并非独居动物，生存与繁衍高度依赖群体协作。&lt;/p&gt;
+&lt;p&gt;社会评价决定生存概率
+在远古部落，如果你被群体排斥（被羞辱、失去地位），那几乎等于死亡（没食物、没人保护）。&lt;/p&gt;
+&lt;p&gt;虚荣心 = 适应性信号
+所以对他人眼光高度敏感，是一种本能的“早期预警系统”。&lt;/p&gt;
+&lt;p&gt;面子 ≈ 生存先验概率&lt;/p&gt;
+&lt;p&gt;失去尊重 ≈ 生存风险上升&lt;/p&gt;
+&lt;p&gt;因此，ego 是演化出来的“社会生存本能”。&lt;/p&gt;
+&lt;p&gt;它是多层叠加的结果：&lt;/p&gt;
+&lt;p&gt;生物层 → 群居演化的生存策略&lt;/p&gt;
+&lt;p&gt;认知层 → 高层模型需要社会角色闭合&lt;/p&gt;
+&lt;p&gt;心理层 → 成长过程中不断内化的“他人眼光”&lt;/p&gt;
+&lt;h3 id="危害"&gt;危害&lt;/h3&gt;
+&lt;p&gt;过度精确化（precision overweighting）
+在 FEP 里，每个预测都带有精度（置信度）。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/emo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/emo/</guid><description>&lt;p&gt;懒散、恐慌、贪婪&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/existance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/existance/</guid><description>&lt;p&gt;The reasons of being and the reasons of to be.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/fep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/fep/</guid><description>&lt;h2 id="自由能原则"&gt;自由能原则&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Reward / Utility / Score / Value&lt;/li&gt;
+&lt;li&gt;Surprise / Prediction Error / Chunkify&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="two-kinds-of-predictin-errors"&gt;Two Kinds of Predictin Errors&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Pragmatic or Reward Prediction Error&lt;/li&gt;
+&lt;li&gt;Epistemic or Lexeme Prediction Error&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But they are the same:&lt;/p&gt;
+&lt;p&gt;In reinforcement learning or decision theory, the complement of surprise is often called value (or utility).&lt;/p&gt;
+&lt;p&gt;Low surprise = high expected value (your predictions about the world are confirmed).&lt;/p&gt;
+&lt;p&gt;High surprise = low value (your model didn’t anticipate what happened).&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/foundation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/foundation/</guid><description>&lt;h3 id="少点主义多点经济"&gt;少点主义，多点经济&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;痴迷于问题，而不是方案，或者是自我形象&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title/><link>https://yingkui.com/mv/fraud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/fraud/</guid><description>&lt;h2 id="都是为了你好"&gt;都是为了你好&lt;/h2&gt;
+&lt;h2 id="永远战时状态"&gt;永远战时状态&lt;/h2&gt;
+&lt;h2 id="割喉降血压"&gt;割喉降血压&lt;/h2&gt;
+&lt;h2 id="都是一家人"&gt;都是一家人&lt;/h2&gt;
+&lt;h2 id="身上满是标签"&gt;身上满是标签&lt;/h2&gt;
+&lt;h2 id="黑社会手段"&gt;黑社会手段&lt;/h2&gt;
+&lt;h2 id="通过洗脑注入新词"&gt;通过洗脑，注入新词&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/mv/halo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/halo/</guid><description>&lt;h2 id="光环效应"&gt;光环效应&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;特征显著不代表是主要原因&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id="什么是光环效应"&gt;什么是光环效应&lt;/h3&gt;
+&lt;p&gt;光环效应是指人们在认知和评价他人或事物时，往往会因为某一个突出的特征（优点或缺点）而对整体产生偏颇的印象。如果一个人有显著的优点，人们容易高估他在其他方面的表现。如果一个人有明显的缺点，人们也容易低估他在其他方面的能力。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;长得好看的人常常被认为更聪明、更善良。&lt;/li&gt;
+&lt;li&gt;知名公司出身的人，在新工作中更容易被认为能力强。&lt;/li&gt;
+&lt;li&gt;广告代言：明星的光环会让人以为产品本身也优秀。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="为什么会有光环效应"&gt;为什么会有光环效应&lt;/h3&gt;
+&lt;p&gt;认知经济性（Cognitive Economy），人类大脑在面对复杂信息时，倾向于寻找捷径。&lt;/p&gt;
+&lt;p&gt;大脑里的知识网络是联想式的：“漂亮”常与“聪明”“善良”“受欢迎”一起被激活。“地位高”常与“能力强”“值得信赖”联系在一起。这种自动的语义联结让某一个特质的光环影响了整体判断。&lt;/p&gt;
+&lt;p&gt;快速归纳提高了生存效率。缺点是，现代社会复杂化后，这种机制容易导致偏差。&lt;/p&gt;
+&lt;p&gt;光环效应产生，是因为大脑为了节省能量，会用局部特征推断整体；情绪、联想、进化需要和社会文化又共同放大了这种倾向。&lt;/p&gt;
+&lt;p&gt;光环效应是大脑在自由能原理下的一种“认知压缩”：通过一个显著特征覆盖其他特征，降低了信息处理的复杂度，却牺牲了准确性。&lt;/p&gt;
+&lt;h3 id="光环效应的害处"&gt;光环效应的害处&lt;/h3&gt;
+&lt;p&gt;在感情中，人们容易被对方某个优点吸引，而忽视潜在风险。&lt;/p&gt;
+&lt;p&gt;一个领导人因为在某一方面有突出成就（如战争胜利、经济建设、个人魅力），大众就倾向于认为他在其他方面同样正确、无懈可击。这种“光环”逐渐被放大成全能化、神化，导致社会缺乏理性批判，最终形成个人崇拜。&lt;/p&gt;
+&lt;p&gt;希特勒因演讲能力和民族主义口号获得光环，被认定为“民族拯救者”。结果导致德国社会整体陷入非理性，最终引发二战和大规模屠杀。&lt;/p&gt;
+&lt;p&gt;邪教领袖往往利用光环效应，把自己塑造成“神圣化身”，追随者完全丧失独立思考，最终甚至付出生命代价（如琼斯镇惨案）。&lt;/p&gt;
+&lt;p&gt;消灭异议：光环效应让人们对批评充耳不闻，甚至敌视反对意见。&lt;/p&gt;
+&lt;p&gt;失去纠错机制：任何政策或决策都被当成“正确”，错误会被无限放大。&lt;/p&gt;
+&lt;p&gt;集体非理性：大众不再根据事实判断，而是盲从“光环”。&lt;/p&gt;
+&lt;h3 id="如何避免"&gt;如何避免&lt;/h3&gt;
+&lt;p&gt;不要用单一特质（外貌、学历、职位）来推断整体，而是把评价分解为多个独立维度（能力、责任心、沟通力、成果）&lt;/p&gt;
+&lt;p&gt;不要凭第一印象做决定，给自己更多观察和收集证据的机会。复盘思考：在做决定后问自己：“我是不是被某个突出的点吸引，从而忽视了其他证据？”&lt;/p&gt;
+&lt;h3 id="贝叶斯解释"&gt;贝叶斯解释&lt;/h3&gt;
+&lt;p&gt;代价敏感的最优性：在有限时间与评估成本下，使用强线索进行快速决策能提高期望效用（少采样也能足够好）。&lt;/p&gt;
+&lt;p&gt;光环效应之所以“看似合理”，是因为在真实相关存在、成本受限时，用强线索做贝叶斯更新能快速降低不确定性。它的局限在于人们常把先验与似然比高估，忽略基率与情境依赖，并在代价敏感的任务中过早停止采样，最终从“合理的启发式”滑向“系统性偏差”。&lt;/p&gt;
+&lt;p&gt;在分层贝叶斯或卡尔曼更新里，把先验或单一线索的精度设得太高，会让后续证据进不来，形成自我强化的“光环”&lt;/p&gt;
+&lt;p&gt;多维证据，分条件更新：把“显著特征”与独立证据分开更新，避免单一线索吞没一切。&lt;/p&gt;
+&lt;p&gt;代价敏感采样：在高代价决策里，提高证据阈值，延迟决策。&lt;/p&gt;
+&lt;p&gt;抑制过度精度：在模型里限制先验或单一线索的精度权重，保证后续证据能改写判断。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/language/</guid><description>&lt;p&gt;context, frequency, fluency, lexemes, CEFR, time to master&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/learn/</guid><description>&lt;h3 id="熟练lexeme的价值"&gt;熟练lexeme的价值&lt;/h3&gt;
+&lt;p&gt;大多数学习领域都遵循帕累托分布：大约 20% 的核心概念能带来 80% 的成果。如果能专注于那关键的 20%，也就是核心 lexeme，你就掌握了这门学科的“脊梁”。其余的一切都是这些核心的变体和扩展。&lt;/p&gt;
+&lt;p&gt;当核心 lexeme 被牢固内化后，大脑会自动把新信息“打包”进这些已有的模式里。你不必从零开始处理每个细节，而是把新数据归入熟悉的“类目”。这极大减轻了认知负荷，让学习新材料变得直观。就像搭建大楼：只要地基和支柱稳固，后续的楼层和房间就能顺理成章地加上去。&lt;/p&gt;
+&lt;p&gt;这意味着高阶主题能更快被掌握，因为它们依托在你已经拥有的基础上。核心 lexeme 的收益是指数级的：它们像杠杆一样，能让练习的每一分钟产出更大效果。&lt;/p&gt;
+&lt;p&gt;学习效率的提升&lt;/p&gt;
+&lt;p&gt;移除瓶颈：通过优先掌握少数关键概念，你能绕开学习中最重的阻碍。&lt;/p&gt;
+&lt;p&gt;释放工作记忆：你不用记忆和拼凑大量分散的事实，而是直接把新知识与核心锚点挂钩。&lt;/p&gt;
+&lt;p&gt;快速正反馈：高价值 lexeme 训练带来的早期成果，能增强信心与动力。&lt;/p&gt;
+&lt;p&gt;自动化技能：一旦内化，它们会从费力的步骤变为直觉反应。&lt;/p&gt;
+&lt;p&gt;自动化与模式识别&lt;/p&gt;
+&lt;p&gt;核心 lexeme 的练习最终会发展成 信号—反应反射：看到信号，大脑几乎自动给出反应。这就像认字或识别棋局形态一样，不再消耗太多注意力。&lt;/p&gt;
+&lt;p&gt;这种 自动提取 能释放工作记忆，把注意力转向更复杂的问题层面，加速技能掌握。&lt;/p&gt;
+&lt;p&gt;限定假设空间与降低歧义&lt;/p&gt;
+&lt;p&gt;每次学会一个 lexeme，相当于在缩小解释新信息的可能性空间。你不再需要在几十种可能性中做选择，而只需在已有 lexeme 对应的有限几种里判断。&lt;/p&gt;
+&lt;p&gt;标签化作用：lexeme 像给信息流打上“标签”，帮助大脑聚焦关键信息，忽略无关细节。&lt;/p&gt;
+&lt;p&gt;跨领域桥梁：核心 lexeme 往往具备迁移性，能在不同情境下发挥作用，提升类比与创造力。&lt;/p&gt;
+&lt;p&gt;抗遗忘性与错误修正&lt;/p&gt;
+&lt;p&gt;高效 lexeme 在频繁曝光与反馈中不断被强化，逐渐成为 抗衰减节点。&lt;/p&gt;
+&lt;p&gt;这种节点更难被遗忘。&lt;/p&gt;
+&lt;p&gt;当出错时，只需调整该 lexeme，本体模型不会被大面积破坏，保证整体连贯性。&lt;/p&gt;
+&lt;p&gt;传统学习方式的问题&lt;/p&gt;
+&lt;p&gt;传统教材往往：&lt;/p&gt;
+&lt;p&gt;把每个定理、推论、特例一股脑呈现。&lt;/p&gt;
+&lt;p&gt;让学生淹没在符号和边角知识中，难以辨别重点。&lt;/p&gt;
+&lt;p&gt;导致工作记忆过载，只能记住零散事实，却难以流畅调用关键概念。&lt;/p&gt;
+&lt;p&gt;这种方式平等对待每个细节，结果是把大量时间浪费在低价值内容上，反而忽视了能打开 80% 大门的 20% 核心。&lt;/p&gt;
+&lt;p&gt;课堂学习里，师生常陷入“欲速则不达”的陷阱：&lt;/p&gt;
+&lt;p&gt;错觉的简单：专家眼里的直观概念，对初学者可能暗藏陷阱。&lt;/p&gt;
+&lt;p&gt;话题推进过快：学生没能整合核心，就被迫切换话题，导致碎片化学习。&lt;/p&gt;
+&lt;p&gt;频繁失败：基础不牢固，面对进阶内容时屡屡受挫，信心下降。&lt;/p&gt;
+&lt;p&gt;高效练习的意义&lt;/p&gt;
+&lt;p&gt;与其被动跟随教材的海量练习，不如专注于少量 信号—反应训练。它们能产生最大化的回报。&lt;/p&gt;
+&lt;p&gt;噪音剔除：非核心细节统统当作噪音忽略。&lt;/p&gt;
+&lt;p&gt;积极反馈：每次练习都带来可见进步，增强成就感。&lt;/p&gt;
+&lt;p&gt;神经机制视角&lt;/p&gt;
+&lt;p&gt;学习中的每个特征都有变异和噪音。要想真正编码为 lexeme，需要足够多的样本来使模式信号高于噪音。&lt;/p&gt;
+&lt;p&gt;稳定阈值：只有当大脑对某模式的置信度超过某一阈值，才会分配资源把它固化为持久记忆。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/levels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/levels/</guid><description>&lt;h1 id="分级"&gt;分级&lt;/h1&gt;
+&lt;h2 id="词汇太多"&gt;词汇太多&lt;/h2&gt;
+&lt;h2 id="最关键的词汇"&gt;最关键的词汇&lt;/h2&gt;
+&lt;p&gt;你不必知道那么多的词汇，&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/lexemes-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/lexemes-list/</guid><description>&lt;h2 id="list"&gt;List&lt;/h2&gt;
+&lt;h3 id="web"&gt;Web&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Flex and Grid&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="design"&gt;Design&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Kerning&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/mv/lexemes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/lexemes/</guid><description>&lt;h2 id="lexemes"&gt;Lexemes&lt;/h2&gt;
+&lt;h3 id="人脑的工作原理"&gt;人脑的工作原理&lt;/h3&gt;
+&lt;h3 id="markov-blanket"&gt;Markov Blanket&lt;/h3&gt;
+&lt;p&gt;如果变化环境，这个词汇还是能够独立出现并稳定存在。&lt;/p&gt;
+&lt;p&gt;在一个系统里，马尔可夫毯定义了一个节点（变量）与外部世界之间的边界。
+给定马尔可夫毯，节点与其他所有节点条件独立。&lt;/p&gt;
+&lt;p&gt;也就是说，知道了马尔可夫毯，就不需要知道更远的节点信息，因为它们对其不再有额外的影响。这就像是一个“信息屏障”。&lt;/p&gt;
+&lt;p&gt;感官输入（视觉）进入马尔可夫毯&lt;/p&gt;
+&lt;p&gt;内部状态推断 latent variable：“这是猫”&lt;/p&gt;
+&lt;p&gt;大脑用 lexeme “猫” 来编码它（压缩 + 可交流）&lt;/p&gt;
+&lt;p&gt;行动输出（比如抚摸或喂食）再通过毯子反馈到外部&lt;/p&gt;
+&lt;p&gt;只要知道了 X 的马尔可夫毯，世界上其他变量对 X 的因果影响都被“屏蔽”了。&lt;/p&gt;
+&lt;p&gt;所以马尔可夫毯可以看成是 因果作用的边界。&lt;/p&gt;
+&lt;p&gt;在因果推理里（Pearl 的 do-calculus），当你对某个节点施加干预 其因果效应只会通过 马尔可夫毯定义的通路 往外扩散。&lt;/p&gt;
+&lt;p&gt;毯子之外的因果路径要么被阻断，要么只能间接体现。&lt;/p&gt;
+&lt;p&gt;所以你可以把 因果效应的传播半径 看作是 Markov Blanket 的边界。&lt;/p&gt;
+&lt;p&gt;烧开的水壶 → 水与空气的接触面就是一个边界，热量可以通过蒸汽扩散出去，但分子不会穿透金属壁。&lt;/p&gt;
+&lt;p&gt;半导体芯片 → 边界条件定义了电流如何输入输出，内部电荷的动力学必须遵守边界约束。&lt;/p&gt;
+&lt;p&gt;总结：边界条件决定了 能量、物质和信息 的流入流出。&lt;/p&gt;
+&lt;p&gt;Karl Friston 的自由能原理其实就是把“热力学边界”套用到认知系统：&lt;/p&gt;
+&lt;p&gt;生物体（系统）必须与外界交换能量和信息才能维持稳定（homeostasis）。&lt;/p&gt;
+&lt;p&gt;这种交换不是无限的，而是被马尔可夫毯限定。&lt;/p&gt;
+&lt;p&gt;自由能最小化就像物理里的熵增约束：&lt;/p&gt;
+&lt;p&gt;系统要保持结构不崩溃，就必须通过边界调节输入输出，把不确定性压缩。&lt;/p&gt;
+&lt;p&gt;在物理里，你不会追踪每个分子的状态，只看边界上的平均量（温度、压力）。&lt;/p&gt;
+&lt;p&gt;在认知里，你不会追踪世界所有变量，只压缩成 lexeme（“猫”“桌子”“敌意”）。&lt;/p&gt;
+&lt;p&gt;Lexeme 就是大脑给马尔可夫毯的“边界条件”做的符号化压缩：&lt;/p&gt;
+&lt;p&gt;内部潜变量太复杂&lt;/p&gt;
+&lt;p&gt;外部输入太庞杂&lt;/p&gt;
+&lt;p&gt;必须压缩成可操作的 lexeme，才能降低 surprise 并进行因果推理。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/passive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/passive/</guid><description>&lt;h2 id="passive-income-levels"&gt;Passive Income Levels&lt;/h2&gt;
+&lt;p&gt;1万每个月，需要本金250万&lt;/p&gt;
+&lt;p&gt;2万每个月，需要本金500万，财富自由底线，“不怕失业”&lt;/p&gt;
+&lt;p&gt;5万每个月，需要本金1500万，高净值家庭（HNWI），百分之一（中国有2000万HNWI）&lt;/p&gt;
+&lt;p&gt;10万每个月，需要本金2500万，高档次的财富自由&lt;/p&gt;
+&lt;p&gt;50万每个月，需要本金1.5亿，超高净值家庭（UHNW），两万分之一&lt;/p&gt;
+&lt;p&gt;中国有10万UHNW，美国有22万，全球有50万人。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/prior/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/prior/</guid><description>&lt;h1 id="科学"&gt;科学&lt;/h1&gt;
+&lt;h2 id="没用的词汇"&gt;没用的词汇&lt;/h2&gt;
+&lt;p&gt;我们把爱因斯坦放的很高的位置，但了解爱因斯坦，学会下面的方程&lt;/p&gt;
 $$
 R_{\mu \nu} - \frac{1}{2}g_{\mu \nu}R + \Lambda g_{\mu \nu} = \frac{8\pi G}{c^4}T_{\mu \nu}
-$$&lt;p>对你日常被没有什么用，也解释不了太多事情，也不会让你获得更快乐，理解这个方程的求知欲的满足是有的，但也不完全是有很高收益的行为。&lt;/p>
-&lt;p>对于人类集体来说，这是一个很高的成就，爱因斯坦让这个物种对世界的理解更为深入了，但依旧，这是一个偏僻的词汇。&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/surprise/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/surprise/</guid><description>&lt;h3 id="新词">新词&lt;/h3>
-&lt;p>FEP says: any system (like a brain) must minimize surprise (prediction error) by updating its internal model of the world.&lt;/p>
-&lt;p>To do that, it builds latent representations (hidden states) that explain incoming sensations and signals.&lt;/p>
-&lt;p>In humans, these latent states are often expressed through concepts and words&lt;/p>
-&lt;p>A new lexeme in science/economics (say “inflation”) is not just a word, but a chunked model of patterns in the world:&lt;/p>
-&lt;p>Before: the student sees prices rising, wages shifting, government printing money, but all feels disconnected → high surprise, fragmented predictions.&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/surprize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/surprize/</guid><description>&lt;h2 id="surprize">Surprize&lt;/h2>
-&lt;p>Skinner’s Box Setup&lt;/p>
-&lt;p>A rat presses a lever.&lt;/p>
-&lt;p>Sometimes it gets food (reward).&lt;/p>
-&lt;p>If the rat gets food when it did not expect it, that’s reward exceeds expectation.&lt;/p>
-&lt;p>In reinforcement learning, this is the positive reward prediction error (RPE).&lt;/p>
-&lt;p>Why It Feels Good (Reward Signal)&lt;/p>
-&lt;p>The unexpected food provides new evidence that the world is better (more rewarding) than predicted.&lt;/p>
-&lt;p>Dopamine neurons fire to signal this positive surprise.&lt;/p>
-&lt;p>In FEP terms, this means the brain updates its model to reduce free energy:&lt;/p></description></item><item><title/><link>https://yingkui.com/mv/wrong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/wrong/</guid><description>&lt;p>迷信作为 lexeme 股票&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>迷信&lt;/strong>（fortune, fate, 风水, 占卜…）其实就是一个“解释世界的词位”。&lt;/li>
-&lt;li>它表面上给人一种 &lt;strong>确定感&lt;/strong>：“事情这样发生，是因为天意/命运/神灵”。&lt;/li>
-&lt;li>所以短期看起来很诱人：不需要推理、不需要学习，立刻获得一个解释。&lt;/li>
-&lt;li>从投资角度看，这就像一只 &lt;strong>骗子股&lt;/strong>：包装很华丽，承诺高回报，但没有真实价值支撑。&lt;/li>
-&lt;/ul>
-&lt;p>为什么是“特别差”的股票&lt;/p>
-&lt;p>&lt;strong>（1）高成本&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>你把注意力、金钱、时间投入进去（烧香、算命、买风水物件）。&lt;/li>
-&lt;li>认知资源浪费掉，不再投入到科学、技能、长期成长里。&lt;/li>
-&lt;li>就像持续往一个空壳公司砸钱。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>（2）虚假回报&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>给你一点 &lt;strong>短期心理安慰&lt;/strong>（焦虑暂时缓解）。&lt;/li>
-&lt;li>但长期看，迷信不会真正降低不确定性，反而制造更多依赖。&lt;/li>
-&lt;li>就像骗子公司发给你一张假的分红单。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>（3）长期负收益&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>你越依赖迷信，就越放弃现实中的因果学习（实验、验证、理性推理）。&lt;/li>
-&lt;li>最终你的“认知投资组合”越来越贫瘠。&lt;/li>
-&lt;li>就像重仓垃圾股，最后血本无归。&lt;/li>
-&lt;/ul>
-&lt;p>为什么它比一般垃圾股还糟&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>普通垃圾 lexeme&lt;/strong>（比如“面子”）至少还和社会互动有点关系。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>迷信 lexeme&lt;/strong> 完全脱离因果机制，是“零价值 + 高依赖”的组合。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>在投资学里，这不是垃圾股，而是 &lt;strong>庞氏骗局 / 骗子产品&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>靠不断骗取你新的注意力和投入维持。&lt;/li>
-&lt;li>一旦拆穿，你发现多年投入毫无积累。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>自由能原则的解释&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>大脑用 lexeme 是为了降低自由能（解释世界）。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>迷信 lexeme 给你的是一种 &lt;strong>虚假压缩&lt;/strong>：&lt;/p>
-&lt;ul>
-&lt;li>它没有真的减少预测误差，只是把误差“打包藏起来”。&lt;/li>
-&lt;li>结果是：每次遇到新事件，你又要额外解释为什么“天意这样安排”，自由能反而累积。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>就像财务报表造假，账面漂亮，实则亏空。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>迷信 = 骗子股票 / 庞氏骗局&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>成本极高&lt;/strong>：投入注意力、金钱、时间。&lt;/li>
-&lt;li>&lt;strong>回报虚假&lt;/strong>：只有短期心理安慰，没有长期因果解释力。&lt;/li>
-&lt;li>&lt;strong>长期崩盘&lt;/strong>：让你丧失独立判断和学习能力，最后投资组合一文不值。&lt;/li>
-&lt;/ul></description></item></channel></rss>
+$$&lt;p&gt;对你日常被没有什么用，也解释不了太多事情，也不会让你获得更快乐，理解这个方程的求知欲的满足是有的，但也不完全是有很高收益的行为。&lt;/p&gt;
+&lt;p&gt;对于人类集体来说，这是一个很高的成就，爱因斯坦让这个物种对世界的理解更为深入了，但依旧，这是一个偏僻的词汇。&lt;/p&gt;
+&lt;h2 id="最强的先验"&gt;最强的先验&lt;/h2&gt;
+&lt;p&gt;在贝叶斯大脑假说中，大脑被建模为一个推理机器。它不断接收感官输入（evidence），并用内部生成模型（generative model）来预测和解释外界。更新规则是典型的贝叶斯推断：&lt;/p&gt;
+$$
+Posterior \propto Likelihood \times Prior
+$$&lt;p&gt;其中 &lt;strong&gt;prior&lt;/strong&gt; 决定了大脑在解释数据时的起点。如果某个先验过于强大，那么无论新的数据如何，它都很难被修正。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;物理学&lt;/strong&gt;恰恰就是这种最强的先验之一。&lt;/p&gt;
+&lt;p&gt;在 &lt;strong&gt;自由能原理 (FEP)&lt;/strong&gt; 的框架下，生物系统的目标是最小化 &lt;strong&gt;预测误差（prediction error）&lt;/strong&gt; 或其上界 &lt;strong&gt;自由能（free energy）&lt;/strong&gt;。也就是说，代理体必须构建一个生成模型，能够让外部输入尽量符合它的预测。&lt;/p&gt;
+&lt;p&gt;在这个过程中，有些预测误差是可以容忍并更新的（比如文化差异、社会习俗），但有些误差是几乎无法更新的，因为它们对应着 &lt;strong&gt;生存所必需的感官—运动约束&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;物理学规律正是这种约束的抽象化：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;重力&lt;/strong&gt;：如果代理不先验地相信“物体会落下”，它无法安全行动。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;能量守恒&lt;/strong&gt;：如果不内置能量约束，它会不断生成不可实现的行动计划。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;时空连续性&lt;/strong&gt;：如果不假设事件有稳定的时空关系，它无法形成持久的因果模型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些规律形成了“饥渴级”的强先验，因为一旦不遵守，它立刻会导致代理体失去生存的可能。&lt;/p&gt;
+&lt;p&gt;在贝叶斯意义上，饥饿和口渴是极难被更新的先验，因为它们与代理体的 &lt;strong&gt;生存边界条件（Markov blanket）&lt;/strong&gt; 强耦合。没有水，系统会解体；没有能量，系统无法维持远离熵增的状态。&lt;/p&gt;
+&lt;p&gt;物理学的规律处于同一层次：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;它们并非仅仅是经验积累的结果，而是直接嵌入 &lt;strong&gt;生存必须满足的生成模型&lt;/strong&gt; 中。&lt;/li&gt;
+&lt;li&gt;它们决定了代理体如何在世界中保持自身边界，如何行动，如何预测未来。&lt;/li&gt;
+&lt;li&gt;就像口渴无法被“观念”更新掉一样，物理学规律也无法被简单的证据推翻。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，在所有可能的先验里，物理学规律拥有最大的信息增益比率：它们带来的 prediction error reduction 是不可替代的。&lt;/p&gt;
+&lt;p&gt;与物理学相比，其他知识领域（社会学、心理学、经济学）则属于更高层次的生成模型。它们虽然能被修正，但底层仍然依赖物理的硬约束：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;经济模型必须符合能量和物质的守恒。&lt;/li&gt;
+&lt;li&gt;心理学理论最终要符合神经元放电与代谢的物理过程。&lt;/li&gt;
+&lt;li&gt;社会传播模型要受限于光速与信道容量的物理极限。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些上层模型可以灵活更新，而物理规律作为深层先验几乎不可更新。这就是为什么物理学是“所有解释的先验”，是其他模型的边界条件。&lt;/p&gt;
+&lt;p&gt;从 &lt;strong&gt;自由能原理&lt;/strong&gt; 和 &lt;strong&gt;贝叶斯大脑&lt;/strong&gt; 的角度看，物理学不是我们选择相信的东西，而是我们在建模世界时不可避免的结构。它像饥饿与口渴一样，构成了我们最强的先验偏好。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/product/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/product/</guid><description>&lt;p&gt;All products are dictionaries&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/ref/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/ref/</guid><description>&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h3 id="free-energe-principle"&gt;Free-Energe Principle&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Friston, K. The free-energy principle: a unified brain theory?. Nat Rev Neurosci 11, 127–138 (2010). &lt;a href="https://doi.org/10.1038/nrn2787"&gt;https://doi.org/10.1038/nrn2787&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cutts, E. The free‑energy principle: Can one idea explain why everything exists? New Scientist, (3513), pp.32-36.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="aritificial-intelligence"&gt;Aritificial intelligence&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Russell, S. J., &amp;amp; Norvig, P. (2020). Artificial intelligence: A modern approach (4th ed.). Pearson.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="indivisual-behavior"&gt;Indivisual Behavior&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Kahneman, D. (2011). Thinking, fast and slow. Farrar, Straus and Giroux.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="group-behaviour"&gt;Group Behaviour&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Smith, H. (1976). The Russians. New York, NY: Ballantine Books.&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/mv/surprise/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/surprise/</guid><description>&lt;h3 id="新词"&gt;新词&lt;/h3&gt;
+&lt;p&gt;FEP says: any system (like a brain) must minimize surprise (prediction error) by updating its internal model of the world.&lt;/p&gt;
+&lt;p&gt;To do that, it builds latent representations (hidden states) that explain incoming sensations and signals.&lt;/p&gt;
+&lt;p&gt;In humans, these latent states are often expressed through concepts and words&lt;/p&gt;
+&lt;p&gt;A new lexeme in science/economics (say “inflation”) is not just a word, but a chunked model of patterns in the world:&lt;/p&gt;
+&lt;p&gt;Before: the student sees prices rising, wages shifting, government printing money, but all feels disconnected → high surprise, fragmented predictions.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/surprize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/surprize/</guid><description>&lt;h2 id="surprize"&gt;Surprize&lt;/h2&gt;
+&lt;p&gt;Skinner’s Box Setup&lt;/p&gt;
+&lt;p&gt;A rat presses a lever.&lt;/p&gt;
+&lt;p&gt;Sometimes it gets food (reward).&lt;/p&gt;
+&lt;p&gt;If the rat gets food when it did not expect it, that’s reward exceeds expectation.&lt;/p&gt;
+&lt;p&gt;In reinforcement learning, this is the positive reward prediction error (RPE).&lt;/p&gt;
+&lt;p&gt;Why It Feels Good (Reward Signal)&lt;/p&gt;
+&lt;p&gt;The unexpected food provides new evidence that the world is better (more rewarding) than predicted.&lt;/p&gt;
+&lt;p&gt;Dopamine neurons fire to signal this positive surprise.&lt;/p&gt;
+&lt;p&gt;In FEP terms, this means the brain updates its model to reduce free energy:&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/wrong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/wrong/</guid><description>&lt;p&gt;迷信作为 lexeme 股票&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;迷信&lt;/strong&gt;（fortune, fate, 风水, 占卜…）其实就是一个“解释世界的词位”。&lt;/li&gt;
+&lt;li&gt;它表面上给人一种 &lt;strong&gt;确定感&lt;/strong&gt;：“事情这样发生，是因为天意/命运/神灵”。&lt;/li&gt;
+&lt;li&gt;所以短期看起来很诱人：不需要推理、不需要学习，立刻获得一个解释。&lt;/li&gt;
+&lt;li&gt;从投资角度看，这就像一只 &lt;strong&gt;骗子股&lt;/strong&gt;：包装很华丽，承诺高回报，但没有真实价值支撑。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为什么是“特别差”的股票&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）高成本&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你把注意力、金钱、时间投入进去（烧香、算命、买风水物件）。&lt;/li&gt;
+&lt;li&gt;认知资源浪费掉，不再投入到科学、技能、长期成长里。&lt;/li&gt;
+&lt;li&gt;就像持续往一个空壳公司砸钱。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;（2）虚假回报&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;给你一点 &lt;strong&gt;短期心理安慰&lt;/strong&gt;（焦虑暂时缓解）。&lt;/li&gt;
+&lt;li&gt;但长期看，迷信不会真正降低不确定性，反而制造更多依赖。&lt;/li&gt;
+&lt;li&gt;就像骗子公司发给你一张假的分红单。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;（3）长期负收益&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你越依赖迷信，就越放弃现实中的因果学习（实验、验证、理性推理）。&lt;/li&gt;
+&lt;li&gt;最终你的“认知投资组合”越来越贫瘠。&lt;/li&gt;
+&lt;li&gt;就像重仓垃圾股，最后血本无归。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为什么它比一般垃圾股还糟&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;普通垃圾 lexeme&lt;/strong&gt;（比如“面子”）至少还和社会互动有点关系。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;迷信 lexeme&lt;/strong&gt; 完全脱离因果机制，是“零价值 + 高依赖”的组合。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在投资学里，这不是垃圾股，而是 &lt;strong&gt;庞氏骗局 / 骗子产品&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;靠不断骗取你新的注意力和投入维持。&lt;/li&gt;
+&lt;li&gt;一旦拆穿，你发现多年投入毫无积累。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;自由能原则的解释&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;大脑用 lexeme 是为了降低自由能（解释世界）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;迷信 lexeme 给你的是一种 &lt;strong&gt;虚假压缩&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;它没有真的减少预测误差，只是把误差“打包藏起来”。&lt;/li&gt;
+&lt;li&gt;结果是：每次遇到新事件，你又要额外解释为什么“天意这样安排”，自由能反而累积。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;就像财务报表造假，账面漂亮，实则亏空。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;迷信 = 骗子股票 / 庞氏骗局&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;成本极高&lt;/strong&gt;：投入注意力、金钱、时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;回报虚假&lt;/strong&gt;：只有短期心理安慰，没有长期因果解释力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;长期崩盘&lt;/strong&gt;：让你丧失独立判断和学习能力，最后投资组合一文不值。&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

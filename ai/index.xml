@@ -1,90 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《论智力》 on Yingkui Lin</title><link>https://yingkui.com/ai/</link><description>Recent content in 《论智力》 on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/ai/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/ai/learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/learning/</guid><description>&lt;h3 id="the-nature-of-teaching">The nature of teaching&lt;/h3>
-&lt;p>For each information vector $v$, we have a list of transformation matrix $m_i$ with force weight $w_i$ as how hard it is to retrieve from the database, so that we can get new information vectors $u_i$.&lt;/p>
-&lt;p>For a known space, the educator has been trained with lots of data, so he/she knows the $v \rightarrow m_i$ beforehand, the task for he/she is to train a new learner this relationships in a short period of time.&lt;/p></description></item><item><title/><link>https://yingkui.com/ai/light/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/light/</guid><description>&lt;h2 id="智力要素文章版">智力要素（文章版）&lt;/h2>
-&lt;ol>
-&lt;li>训练量少，找到特征&lt;/li>
-&lt;li>多个抽象层级的保存&lt;/li>
-&lt;li>不同的精准程度的搜索&lt;/li>
-&lt;li>attention is all you have&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/ai/llm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/llm/</guid><description>&lt;h2 id="llm">LLM&lt;/h2>
-&lt;ol>
-&lt;li>Prompt Engineering&lt;/li>
-&lt;li>Prompt Chaining&lt;/li>
-&lt;li>Function Calling&lt;/li>
-&lt;li>Fine Tuning&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/ai/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/outline/</guid><description>&lt;h3 id="outline">Outline&lt;/h3>
-&lt;p>&lt;a href="../preface">preface&lt;/a>&lt;/p>
-&lt;ol>
-&lt;li>Computation
-&lt;ul>
-&lt;li>&lt;a href="../1-1">Distinguishability&lt;/a>&lt;/li>
-&lt;li>Composition&lt;/li>
-&lt;li>Transformation&lt;/li>
-&lt;li>Max Computation Freedom (Solving Boundary, Fundamental Limitation)&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Meta-Computation (Facts beyond deterministic)
-&lt;ul>
-&lt;li>Reverse Computation&lt;/li>
-&lt;li>Abstraction
-&lt;ul>
-&lt;li>Top-Down&lt;/li>
-&lt;li>Bottom-Up&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Accumulation of Same Objects&lt;/li>
-&lt;li>Probability: the Indistinguishable Incomplete Information&lt;/li>
-&lt;li>Computation with Abstraction&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Solving by Searching
-&lt;ul>
-&lt;li>Guessing by Searching Nearby First&lt;/li>
-&lt;li>Reduction by Computed Result&lt;/li>
-&lt;li>Reduction by Abstract Computed Result&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Learning without Specific Goals
-&lt;ul>
-&lt;li>Remembering Object
-&lt;ul>
-&lt;li>Remember the experienced distinguishable objects&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Remembering Association&lt;/li>
-&lt;li>Remembering Pattern&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Generic Solving Algorithm
-&lt;ul>
-&lt;li>The Robustness v.s. The Solving Radius&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/ai/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/preface/</guid><description>&lt;h2 id="preface">Preface&lt;/h2>
-&lt;p>The necessity of Turing complete, but not its completeness.&lt;/p>
-&lt;p>To do all possible computations, we need freedoms that include a few for-all sentences.&lt;/p>
-&lt;ul>
-&lt;li>The ability to distinguish (has boundary)&lt;/li>
-&lt;li>The ability to recognize&lt;/li>
-&lt;li>The ability to reproduce&lt;/li>
-&lt;li>The ability to use internal representations&lt;/li>
-&lt;li>Access its neighbors freely.&lt;/li>
-&lt;li>Store information freely.&lt;/li>
-&lt;/ul>
-&lt;p>The ability to distinguish stuffs is the most fundamental ability for any intelligent agents.&lt;/p>
-&lt;p>All it cares is that these two objects are different.&lt;/p></description></item><item><title/><link>https://yingkui.com/ai/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/random/</guid><description>&lt;h3 id="随想">随想&lt;/h3>
-&lt;p>对我来说，一个比较困难的问题就是，如何把反复出现的信号A和反复出现的转化函数B进行chunkify。&lt;/p>
-&lt;p>具体怎么实现我是不知道的，但人脑应该是可以实现任意的可区分信号和可区分转化函数之间的随意链接&lt;/p>
-&lt;p>也就是说，可区分信号，和可区分转化函数都是简单的元素所组成的，如何把这些简单的元素组合作为一个单一的独立的信号，我是不清楚的。&lt;/p>
-&lt;ol>
-&lt;li>各处都原子化是唯一路径，线性的拟合以及GPU的使用，就是最终正确的道路&lt;/li>
-&lt;/ol></description></item><item><title/><link>https://yingkui.com/ai/solve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/solve/</guid><description>&lt;h3 id="解决问题">解决问题&lt;/h3>
-&lt;p>对世界规律的掌握，细致的样式识别，似乎是现在ai的主体目标和功能，也就是去察觉一些简单机械的执行难以识别的pattern。&lt;/p>
-&lt;p>而解决问题不仅仅是要这些已经有过大量样本的总结，而是主动的探索和查询，也就是说，当没有既有数据的情况下，或者既有数据不能支撑样式识别的时候，ai需要能够想办法在已有资源的条件下，去尽量的破解这个问题，也就是如何通用的方法解题，这并不那么容易简单的通过样式识别（总结规律，赋予概率）来实现，这不仅仅是ai要回主动的探索和搜集一个新的情景下的常见路径，而且也要ai能够低资源、低数据下同样能够快速的解决问题。&lt;/p></description></item><item><title/><link>https://yingkui.com/ai/solve/2024-03-13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/solve/2024-03-13/</guid><description>&lt;h2 id="solve">Solve&lt;/h2>
-&lt;ol>
-&lt;li>$\sin 10^\circ \sin 30^\circ \sin 50^\circ \sin 70^\circ$&lt;/li>
-&lt;li>$f(\sin x) = 3 - \cos 2x \Rightarrow f(\cos x)$&lt;/li>
-&lt;li>&lt;/li>
-&lt;/ol></description></item><item><title>1.1 Distinguishability</title><link>https://yingkui.com/ai/1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/1-1/</guid><description>&lt;p>It seems to me that I am rewriting Turing’s paper in a new perspective. The whole first chapter is to reclaim Turing’s idea, but in a way to discuss its necessity but not its completeness.&lt;/p>
-&lt;p>The set of Turing’s abilities is the subset of the total abilities.&lt;/p>
-&lt;p>Distinguishability is the most fundamental ability of intelligence.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>《论智力》 on Yingkui Lin</title><link>https://yingkui.com/ai/</link><description>Recent content in 《论智力》 on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/ai/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/ai/learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/learning/</guid><description>&lt;h3 id="the-nature-of-teaching"&gt;The nature of teaching&lt;/h3&gt;
+&lt;p&gt;For each information vector $v$, we have a list of transformation matrix $m_i$ with force weight $w_i$ as how hard it is to retrieve from the database, so that we can get new information vectors $u_i$.&lt;/p&gt;
+&lt;p&gt;For a known space, the educator has been trained with lots of data, so he/she knows the $v \rightarrow m_i$ beforehand, the task for he/she is to train a new learner this relationships in a short period of time.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ai/light/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/light/</guid><description>&lt;h2 id="智力要素文章版"&gt;智力要素（文章版）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;训练量少，找到特征&lt;/li&gt;
+&lt;li&gt;多个抽象层级的保存&lt;/li&gt;
+&lt;li&gt;不同的精准程度的搜索&lt;/li&gt;
+&lt;li&gt;attention is all you have&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/ai/llm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/llm/</guid><description>&lt;h2 id="llm"&gt;LLM&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Prompt Engineering&lt;/li&gt;
+&lt;li&gt;Prompt Chaining&lt;/li&gt;
+&lt;li&gt;Function Calling&lt;/li&gt;
+&lt;li&gt;Fine Tuning&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/ai/outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/outline/</guid><description>&lt;h3 id="outline"&gt;Outline&lt;/h3&gt;
+&lt;p&gt;&lt;a href="../preface"&gt;preface&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Computation
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="../1-1"&gt;Distinguishability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Composition&lt;/li&gt;
+&lt;li&gt;Transformation&lt;/li&gt;
+&lt;li&gt;Max Computation Freedom (Solving Boundary, Fundamental Limitation)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Meta-Computation (Facts beyond deterministic)
+&lt;ul&gt;
+&lt;li&gt;Reverse Computation&lt;/li&gt;
+&lt;li&gt;Abstraction
+&lt;ul&gt;
+&lt;li&gt;Top-Down&lt;/li&gt;
+&lt;li&gt;Bottom-Up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Accumulation of Same Objects&lt;/li&gt;
+&lt;li&gt;Probability: the Indistinguishable Incomplete Information&lt;/li&gt;
+&lt;li&gt;Computation with Abstraction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Solving by Searching
+&lt;ul&gt;
+&lt;li&gt;Guessing by Searching Nearby First&lt;/li&gt;
+&lt;li&gt;Reduction by Computed Result&lt;/li&gt;
+&lt;li&gt;Reduction by Abstract Computed Result&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning without Specific Goals
+&lt;ul&gt;
+&lt;li&gt;Remembering Object
+&lt;ul&gt;
+&lt;li&gt;Remember the experienced distinguishable objects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Remembering Association&lt;/li&gt;
+&lt;li&gt;Remembering Pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Generic Solving Algorithm
+&lt;ul&gt;
+&lt;li&gt;The Robustness v.s. The Solving Radius&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/ai/preface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/preface/</guid><description>&lt;h2 id="preface"&gt;Preface&lt;/h2&gt;
+&lt;p&gt;The necessity of Turing complete, but not its completeness.&lt;/p&gt;
+&lt;p&gt;To do all possible computations, we need freedoms that include a few for-all sentences.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The ability to distinguish (has boundary)&lt;/li&gt;
+&lt;li&gt;The ability to recognize&lt;/li&gt;
+&lt;li&gt;The ability to reproduce&lt;/li&gt;
+&lt;li&gt;The ability to use internal representations&lt;/li&gt;
+&lt;li&gt;Access its neighbors freely.&lt;/li&gt;
+&lt;li&gt;Store information freely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The ability to distinguish stuffs is the most fundamental ability for any intelligent agents.&lt;/p&gt;
+&lt;p&gt;All it cares is that these two objects are different.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ai/random/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/random/</guid><description>&lt;h3 id="随想"&gt;随想&lt;/h3&gt;
+&lt;p&gt;对我来说，一个比较困难的问题就是，如何把反复出现的信号A和反复出现的转化函数B进行chunkify。&lt;/p&gt;
+&lt;p&gt;具体怎么实现我是不知道的，但人脑应该是可以实现任意的可区分信号和可区分转化函数之间的随意链接&lt;/p&gt;
+&lt;p&gt;也就是说，可区分信号，和可区分转化函数都是简单的元素所组成的，如何把这些简单的元素组合作为一个单一的独立的信号，我是不清楚的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各处都原子化是唯一路径，线性的拟合以及GPU的使用，就是最终正确的道路&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/ai/solve/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/solve/</guid><description>&lt;h3 id="解决问题"&gt;解决问题&lt;/h3&gt;
+&lt;p&gt;对世界规律的掌握，细致的样式识别，似乎是现在ai的主体目标和功能，也就是去察觉一些简单机械的执行难以识别的pattern。&lt;/p&gt;
+&lt;p&gt;而解决问题不仅仅是要这些已经有过大量样本的总结，而是主动的探索和查询，也就是说，当没有既有数据的情况下，或者既有数据不能支撑样式识别的时候，ai需要能够想办法在已有资源的条件下，去尽量的破解这个问题，也就是如何通用的方法解题，这并不那么容易简单的通过样式识别（总结规律，赋予概率）来实现，这不仅仅是ai要回主动的探索和搜集一个新的情景下的常见路径，而且也要ai能够低资源、低数据下同样能够快速的解决问题。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ai/solve/2024-03-13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/solve/2024-03-13/</guid><description>&lt;h2 id="solve"&gt;Solve&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;$\sin 10^\circ \sin 30^\circ \sin 50^\circ \sin 70^\circ$&lt;/li&gt;
+&lt;li&gt;$f(\sin x) = 3 - \cos 2x \Rightarrow f(\cos x)$&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>1.1 Distinguishability</title><link>https://yingkui.com/ai/1-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ai/1-1/</guid><description>&lt;p&gt;It seems to me that I am rewriting Turing’s paper in a new perspective. The whole first chapter is to reclaim Turing’s idea, but in a way to discuss its necessity but not its completeness.&lt;/p&gt;
+&lt;p&gt;The set of Turing’s abilities is the subset of the total abilities.&lt;/p&gt;
+&lt;p&gt;Distinguishability is the most fundamental ability of intelligence.&lt;/p&gt;</description></item></channel></rss>
