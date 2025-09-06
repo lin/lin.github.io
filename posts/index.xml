@@ -136,8 +136,8 @@ p code {
 &lt;/ol&gt;
 &lt;h2 id="基本解决方案"&gt;基本解决方案&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;单字母原因：a /ɑː/, i /iː/, u /uː/&lt;/li&gt;
-&lt;li&gt;双字母元音：er /ə/， or /ɔː/&lt;/li&gt;
+&lt;li&gt;单字母元音：a /ɑː/, i /iː/, u /uː/，o /oʊ/&lt;/li&gt;
+&lt;li&gt;双字母元音：er /ə/， or /ɔː/, ar /ɑː/, ee /iː/, oo /uː/，oe /oʊ/&lt;/li&gt;
 &lt;li&gt;辅音：q/x/zh/c，变为 chi/shi/j/ts，其中 qi变为ki，xi变为hi，ji变成gi&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="规则"&gt;规则&lt;/h2&gt;
@@ -213,6 +213,28 @@ p code {
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id="consonants"&gt;Consonants&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;b, p, m, f&lt;/li&gt;
+&lt;li&gt;d, t, n, l&lt;/li&gt;
+&lt;li&gt;g, k, h, ng&lt;/li&gt;
+&lt;li&gt;j / gi / gia / gian&lt;/li&gt;
+&lt;li&gt;q / ki / chin&lt;/li&gt;
+&lt;li&gt;x / hi / shin&lt;/li&gt;
+&lt;li&gt;zh / dji / djang / djong&lt;/li&gt;
+&lt;li&gt;ch, sh&lt;/li&gt;
+&lt;li&gt;r, z, s&lt;/li&gt;
+&lt;li&gt;c / ts&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="vowels"&gt;Vowels&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;i / ee / bee&lt;/li&gt;
+&lt;li&gt;u / oo / boo&lt;/li&gt;
+&lt;li&gt;yu / nyu&lt;/li&gt;
+&lt;li&gt;/ə/ / er / huer / bier / her / hern&lt;/li&gt;
+&lt;li&gt;a / ar / bar / mar&lt;/li&gt;
+&lt;li&gt;e / ai / bai&lt;/li&gt;
+&lt;/ol&gt;
 &lt;!-- 
 ## 四字母拼音表
 
