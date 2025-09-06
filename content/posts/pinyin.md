@@ -15,8 +15,8 @@ isCJKLanguage: true
 
 ## 基本解决方案
 
-1. 单字母原因：a /ɑː/, i /iː/, u /uː/
-1. 双字母元音：er /ə/， or /ɔː/
+1. 单字母元音：a /ɑː/, i /iː/, u /uː/，o /oʊ/
+1. 双字母元音：er /ə/， or /ɔː/, ar /ɑː/, ee /iː/, oo /uː/，oe /oʊ/
 1. 辅音：q/x/zh/c，变为 chi/shi/j/ts，其中 qi变为ki，xi变为hi，ji变成gi
 
 ## 规则
@@ -34,6 +34,28 @@ isCJKLanguage: true
 |🤔 e         | er                                   | ber / mer / bern / cherng                              | 
 |🤔 ao        | or                                   | bor / tor / kor / kior                              | 
 
+
+## Consonants
+
+1. b, p, m, f
+1. d, t, n, l
+1. g, k, h, ng
+1. j / gi / gia / gian
+1. q / ki / chin
+1. x / hi / shin
+1. zh / dji / djang / djong
+1. ch, sh
+1. r, z, s
+1. c / ts
+
+## Vowels
+
+1. i / ee / bee
+1. u / oo / boo
+1. yu / nyu
+1. /ə/ / er / huer / bier / her / hern
+1. a / ar / bar / mar
+1. e / ai / bai
 
 <!-- 
 ## 四字母拼音表
