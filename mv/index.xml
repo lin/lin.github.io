@@ -224,7 +224,8 @@ $$&lt;p&gt;其中：&lt;/p&gt;</description></item><item><title/><link>https://y
 &lt;h2 id="都是一家人"&gt;都是一家人&lt;/h2&gt;
 &lt;h2 id="身上满是标签"&gt;身上满是标签&lt;/h2&gt;
 &lt;h2 id="黑社会手段"&gt;黑社会手段&lt;/h2&gt;
-&lt;h2 id="通过洗脑注入新词"&gt;通过洗脑，注入新词&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/mv/game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/game/</guid><description>&lt;h2 id="游戏"&gt;游戏&lt;/h2&gt;
+&lt;h2 id="通过洗脑注入新词"&gt;通过洗脑，注入新词&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/mv/free-energy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/free-energy/</guid><description>&lt;h2 id="free-energy"&gt;Free Energy&lt;/h2&gt;
+&lt;p&gt;During the pandemic in 2021, I bought a second-hand Wii U online. It was cheap but came with one drawback: the entire interface was in Japanese. That frustration turned into motivation. Over the next five years, I studied Japanese on Duolingo. As a native Chinese speaker fluent in English, learning Japanese opened doors to ways of thinking and living that physics and computer science could never teach me.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/game/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/game/</guid><description>&lt;h2 id="游戏"&gt;游戏&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;FEP&lt;/li&gt;
 &lt;li&gt;求知，求胜，都是为了降低 prediction error&lt;/li&gt;
@@ -262,7 +263,9 @@ $$&lt;p&gt;其中：&lt;/p&gt;</description></item><item><title/><link>https://y
 &lt;p&gt;在分层贝叶斯或卡尔曼更新里，把先验或单一线索的精度设得太高，会让后续证据进不来，形成自我强化的“光环”&lt;/p&gt;
 &lt;p&gt;多维证据，分条件更新：把“显著特征”与独立证据分开更新，避免单一线索吞没一切。&lt;/p&gt;
 &lt;p&gt;代价敏感采样：在高代价决策里，提高证据阈值，延迟决策。&lt;/p&gt;
-&lt;p&gt;抑制过度精度：在模型里限制先验或单一线索的精度权重，保证后续证据能改写判断。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/language/</guid><description>&lt;p&gt;context, frequency, fluency, lexemes, CEFR, time to master&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/learn/</guid><description>&lt;h3 id="熟练lexeme的价值"&gt;熟练lexeme的价值&lt;/h3&gt;
+&lt;p&gt;抑制过度精度：在模型里限制先验或单一线索的精度权重，保证后续证据能改写判断。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/language/</guid><description>&lt;p&gt;context, frequency, fluency, lexemes, CEFR, time to master&lt;/p&gt;
+&lt;p&gt;diffusion among population, how fast the reaction is.&lt;/p&gt;
+&lt;p&gt;cost to master&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/learn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/learn/</guid><description>&lt;h3 id="熟练lexeme的价值"&gt;熟练lexeme的价值&lt;/h3&gt;
 &lt;p&gt;大多数学习领域都遵循帕累托分布：大约 20% 的核心概念能带来 80% 的成果。如果能专注于那关键的 20%，也就是核心 lexeme，你就掌握了这门学科的“脊梁”。其余的一切都是这些核心的变体和扩展。&lt;/p&gt;
 &lt;p&gt;当核心 lexeme 被牢固内化后，大脑会自动把新信息“打包”进这些已有的模式里。你不必从零开始处理每个细节，而是把新数据归入熟悉的“类目”。这极大减轻了认知负荷，让学习新材料变得直观。就像搭建大楼：只要地基和支柱稳固，后续的楼层和房间就能顺理成章地加上去。&lt;/p&gt;
 &lt;p&gt;这意味着高阶主题能更快被掌握，因为它们依托在你已经拥有的基础上。核心 lexeme 的收益是指数级的：它们像杠杆一样，能让练习的每一分钟产出更大效果。&lt;/p&gt;
