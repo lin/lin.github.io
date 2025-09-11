@@ -15,7 +15,7 @@ When you think, you should always think in terms of words and dollars, which are
 
 ### 理论框架
 
-- [《自由能原则：模型与预测就是人生的一切》](./agent)
+- [《自由能原则：模型与预测就是人生的一切》](./free-energy)
 - [《条件概率与贝叶斯公式：最重要的万能表达式》](./bayes)
 - [✅《语言即边界：为什么零散的词汇如此关键？》](./lexemes)
 - [《游戏为什么好玩？：是什么让你人生充满幸福和渴望？》](./game)

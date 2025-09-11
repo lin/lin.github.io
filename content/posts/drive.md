@@ -1,5 +1,5 @@
 ---
-title: "Motivation Systems in a Few Games"
+title: "Motivation in Games"
 date: 2025-09-11
 isCJKLanguage: true
 ---
@@ -10,19 +10,21 @@ isCJKLanguage: true
 
 In the image above and the following images:
 
-1. The arrow means one thing is benefiting from another thing, maybe in generating more or maybe in generating more efficiently.
-1. The rectangle means collectable or completable items. Most of time completing a task is a desirable thing. Sometimes meeting items that is rare to encounter can be a sur-prize which triggers dopamine. Most items can be used to decrease the difficulty in solving a problem, often obtained by users after completing a task.
-1. The circle means repeatable problem sets. The set can be map-level, room-level, enermy-level, skill-level (图、室、敌、技).
-1. The diamond means accumalatable currency, that can be exchanged to usable things that can satisfy curiosity / increasing efficiency / buy high rarity stuffs.
-1. The colored one means by doing or obtaining itself is sufficient enough to be desirable. By linking with colored ones, the transparent background shapes become desirable as proxies to desired ones.
+* **Arrow:** Indicates that one element benefits from another — either by producing more or by operating more efficiently.
+* **Rectangle:** Represents collectable or completable items. Completing these tasks is generally desirable. Rare items encountered unexpectedly can act as “surprises,” triggering dopamine. Most items help reduce the difficulty of solving problems and are often obtained after completing a task.
+* **Circle:** Denotes repeatable problem sets. These sets may exist at different levels, such as map-level, room-level, enemy-level, or skill-level (图、室、敌、技).
+* **Diamond:** Signifies accumulable currency. This currency can be exchanged for useful items, improve efficiency, satisfy curiosity, or purchase rare/high-value goods.
+* **Colored shapes:** These represent items or activities that are inherently desirable on their own. When linked to colored shapes, the transparent shapes become desirable as proxies, gaining value through association.
 
-We use the *Pokémon Red and Green* as an example.
+Using Pokémon Red and Green as an example:
 
-1. The main path of walkthrough can be somehow linear. And not too many people replay the game for multiple times as in a roguelike game. And this path is the main progression the player cares as people consider beat the game as an achievement.
-1. Also along the way, completing the gym challenges to collect the badges are also rewarding.
-1. By beating the enermies, the player is rewarded by coins and xp. By themselves, these accumulated fake currency is not intrinsically desirable. It has to be a proxy to something that is desirable. 
-1. The coins can be used to buy items, which will benefit in solving the problems without much cognitive load. This is like using a cheatsheet to lookup the words. And similar to fast progress in cheating to get a certificate. If the items in the game are visually appealing like the pokemons, they can be themselves desirable, but normally in life the items are like medicine pills, useful but not directly appealing as in restaurant foods. 
-1. The characters in Pokemon are cute, imagining catching those monsters itself is already rewarding. And then we find out that the monsters can be useful in solving the problems we care, it becomes more desirable, like an Apple Macbook Air.
+The main walkthrough path is largely linear, and unlike roguelike games, relatively few players replay it multiple times. This path represents the core progression that players focus on, since “beating the game” is widely seen as an achievement. Along the way, completing gym challenges and collecting badges provides additional milestones and a sense of accomplishment.
+
+Defeating enemies rewards players with coins and experience points. On their own, these forms of “virtual currency” are not intrinsically desirable — they act as proxies for something more valuable. Coins can be exchanged for items that make problem-solving easier, similar to using a cheat sheet to look up answers or cheating to get a certificate.
+
+If the items themselves are visually appealing, like Pokémon, they become inherently desirable. However, in most cases items are functional, like medicine pills — useful but not directly enticing, unlike a beautifully presented meal at a restaurant.
+
+Pokémon characters stand out because they’re cute and engaging. The act of catching them is rewarding in itself, and once players realize that these creatures also help them solve the challenges they care about, their desirability increases further — much like the way an Apple MacBook Air is both aesthetically appealing and functionally powerful.
 
 ## Super Mario Bros.
 
