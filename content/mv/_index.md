@@ -94,6 +94,7 @@ When you think, you should always think in terms of words and dollars, which are
 - [《社会达尔文主义：绩优主义的没有人味》](./merit)
 - [《包容和福利：大多数人应该把自己当成大多数人》](./majority)
 - [《有节奏的创新：进步的阻力和保守的力量》](./advance)
+- [《等效对账：对词汇的不敏感》](./equal)
 
 ### 守财：防贼防盗
 
