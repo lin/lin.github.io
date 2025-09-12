@@ -35,32 +35,37 @@ Pokémon characters stand out because they’re cute and engaging. The act of ca
 
 ## Super Mario Bros.
 
-<img src='../img/game/mario.svg' height='500'>
+<img src='../img/game/mario.svg' height='300'>
 
-The pokemon is a typical RPG game where Mario is an action game.
+Pokémon is a classic RPG, whereas **Mario** is an action game.
 
-1. The first thing is that in Mario you can't use coins or XPs to buy things to improve your ability in your future challegens. Only RPG-like stuff is that you can enter a new level with a super mario with an extra life, but it still like part of challenge instead of cheating.
-1. But the coins is not useless, it can give you extra life if you gather every 100 coins. That extra life give you more chance to progress more in path.
-1. Another benefit is that people want to compete with who has a higher score in one run.
-1. Unlike pokemon, the original super mario bros. often is played multiple times for most users as it is hard to progress too much and you have to start it over. So this game can be consider a Rogue-like game, only the levels is not changing much.
-1. Also unlike pokemon, your skills can be improve quickly by playing more mario, as in pokemon the improvement is more from levelup and better skill, there are less thing to master for normal players. This feature make mario more ACG.
+1. In **Mario**, you can’t use coins or experience points to buy upgrades or improve your abilities for future challenges. The only RPG-like element is starting a new level as Super Mario with an extra life — but even that feels more like part of the challenge than an upgrade or “cheat.”
+2. Coins are not useless, though. Collecting 100 coins grants an extra life, which gives you more chances to progress along the path.
+3. Another appeal of coins is the competitive aspect — players like to compare who can achieve the highest score in a single run.
+4. Unlike **Pokémon**, the original *Super Mario Bros.* is often replayed many times because it’s difficult to progress far in a single attempt and you usually have to start over. In this sense, it’s somewhat “roguelike,” although the levels themselves don’t change much between runs.
+5. Also unlike **Pokémon**, your skills in **Mario** improve rapidly through practice. In **Pokémon**, improvement comes mainly from leveling up your creatures and acquiring better abilities, with relatively few mechanics for players to master. This makes **Mario** feel more like a pure action (ACG) game.
 
 ## Duolingo
 
 <img src='../img/game/duolingo.svg' height='500'>
 
-Duolingo has game elements that seemingly borrowed from Candy Crush which was a phenomenal game at the launch of duolingo. And those tile-matching mobile games have similar features shared with Duolingo.
+Duolingo incorporates game elements that seem inspired by **Candy Crush**, which was a huge success around the time Duolingo launched. Many of the mechanics found in tile-matching mobile games are echoed in Duolingo’s design.
 
-1. Unlike in other games, the lexemes or tasks for the user to remember and master is often useless in real world. But in an education gamified app, this is a key motivation.
-1. Even though you can buy hearts to benefit your problem solving, which is like cheating in an exam, but this is a learning app not a testing app, mistakes should not be too punishing. But using hearts or energy, Duolingo can make this is a way to let serious users pay for a full game. So this feature is not a designed cheating as in an RPG.
-1. Duolingo's main motivational forces are people's desire to master a new skill. Its XP system is not so strong as it leads to highscores in leaderboard and unappealing quests daily. As we see in most console games, those are not major drives to motivate users and well game designed.
+1. In most games, the “lexemes” or tasks players master are not directly useful in the real world. In a gamified education app, however, mastering these elements is the core motivation — learning itself is the reward.
+2. Duolingo lets users buy hearts to continue, similar to purchasing extra chances in a mobile game. In a testing context this would feel like cheating on an exam, but because Duolingo is a learning app rather than a testing app, mistakes shouldn’t be overly punishing. By using hearts or energy, Duolingo creates a monetization pathway for serious users, but this isn’t “designed cheating” in the RPG sense — it’s a way to balance learning with engagement.
+3. Duolingo’s main motivational force is people’s desire to master a new skill. Its XP system, leaderboards, and daily quests provide some external motivation, but these features aren’t as strong or as compelling as the intrinsic goal of learning itself. As seen in many console games, leaderboards and streak systems alone rarely drive long-term engagement unless paired with strong core gameplay or meaningful progress.
 
-## 怪物史莱姆
+## Slime Rancher
 
-1. 收集史莱姆，饲养史莱姆，收集果实，卖掉果实，都相当于使用技能是击打敌人
-1. 史莱姆产生的果实，相当于是金币奖励
-1. 升级牧场本省，是一些零散的关卡阶段
-1. 如果通关，一般意味着主要关卡都解锁
+<img src='../img/game/slime.svg' height='500'>
+
+1. In **Slime Rancher**, collecting and raising slimes, harvesting the “plorts” (or other resources) they produce, and selling those resources form the core gameplay loop — much like defeating enemies or using skills in a traditional RPG to gain rewards.
+2. The plorts or resources produced by slimes act as the equivalent of **gold coins or rewards**, which players can then use to purchase upgrades or expand their ranch.
+3. Upgrading and expanding the ranch is structured as a series of small, discrete stages — similar to clearing levels or unlocking new areas in a game. Each new section offers new types of slimes, resources, and challenges, creating a sense of steady progression.
+4. Completing major upgrades and unlocking all areas typically signals that you’ve reached the main content of the game, much like beating the “main quest” in an RPG or clearing the gyms in Pokémon.
+
+In other words, **Slime Rancher** uses the *collect–raise–harvest–upgrade* loop as its core experience. The resources act as renewable currency, the ranch serves as a customizable hub, and progression comes from unlocking new areas and slimes. This design combines the satisfaction of farming and resource management (like *Stardew Valley*) with the collectible creature aspect of Pokémon, all wrapped in a first-person exploration and action format.
+
 
 ## 最常见动力系统
 
