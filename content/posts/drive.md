@@ -4,6 +4,13 @@ date: 2025-09-11
 isCJKLanguage: true
 ---
 
+> Game design is basically motivation design.
+
+There are two kinds of ways to make it hugely motivative:
+
+1. Accumulative linked motivations.
+1. Beyond expected returns.
+
 ## Pokémon
 
 <img src='../img/game/pokemon.svg' height='600'>
