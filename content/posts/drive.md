@@ -4,12 +4,32 @@ date: 2025-09-11
 isCJKLanguage: true
 ---
 
+## Game Design
+
 > Game design is basically motivation design.
 
-There are two kinds of ways to make it hugely motivative:
+There are two main ways to make something highly motivating:
 
-1. Accumulative linked motivations.
-1. Beyond expected returns.
+1.	Accumulative, linked motivations
+2.	Exceeding expected returnss.
+
+In this article, we are focusing on structure of the motiviation design in games, not details. As in a well polished game, you can have minimal structure as in many indie roguelike games.
+
+The common core drivers are:
+
+1. Completions – Single-Playthrough Focus. In games designed to be experienced once, the primary drive is progressing through the main storyline. Every system—combat, exploration, puzzles—serves the overarching narrative arc and helps maintain a sense of forward momentum.
+
+2. Loops – Replayable / Roguelike Mechanics. In games built for multiple playthroughs, the focus shifts to repeatable loops such as procedural generation, randomized encounters, or roguelike systems. These mechanics keep each run fresh and rewarding. Even in non-roguelike titles, certain elements can function as self-contained loops to encourage replayability.
+
+3. Problem Sets – Layered Challenge Structures. Well-designed games feature multi-tiered challenges—maps, rooms, enemies, skills—creating a natural progression of difficulty and complexity. Bosses, while appearing as singular encounters, often act as milestone levels or mastery gatekeepers. In particularly challenging titles like Elden Ring, bosses effectively create miniature roguelike experiences within the broader game.
+
+4. Currencies – Experience and Resource Rewards. Clearing each challenge tier grants rewards such as XP or coins. These rewards serve as tangible markers of progress, encourage continued engagement, and provide players with resource-management freedom.
+
+5. Items – Expanding the Player’s Toolkit. Beyond XP and coins, stages and exploration yield items and abilities. These rewards introduce strategic choice and expand the player’s toolkit. XP or currency can then be spent to upgrade items, enhance skills, or unlock new abilities—creating a satisfying feedback loop between effort and growth.
+
+6. Skills – Player Mastery and Frustration. Skills represent what players must master personally, much like real-life exams. The process of honing skills brings a sense of accomplishment, but it can also lead to frustration if the challenge curve is steep or unclear.
+
+7. Characters – Living Items and Skill Containers. In some games—Pokémon, for example—characters themselves function as a special category of item or skill container. They blend the mechanics of inventory and progression, acting simultaneously as tools, companions, and progression markers.
 
 ## Pokémon
 
@@ -21,7 +41,7 @@ In the image above and the following images:
 * **Rectangle:** Represents collectable or completable items. Completing these tasks is generally desirable. Rare items encountered unexpectedly can act as “surprises,” triggering dopamine. Most items help reduce the difficulty of solving problems and are often obtained after completing a task.
 * **Circle:** Denotes repeatable problem sets. These sets may exist at different levels, such as map-level, room-level, enemy-level, or skill-level (图、室、敌、技).
 * **Diamond:** Signifies accumulable currency. This currency can be exchanged for useful items, improve efficiency, satisfy curiosity, or purchase rare/high-value goods.
-* **Colored shapes:** These represent items or activities that are inherently desirable on their own. When linked to colored shapes, the transparent shapes become desirable as proxies, gaining value through association.
+* **Colored shapes:** These represent items or activities that are inherently desirable on their own. When linked to colored shapes, the transparent shapes become desirable as proxies, gaining value through association. The darker the color, more motivated the mechanic, but not add up.
 
 Using Pokémon Red and Green as an example:
 
@@ -65,32 +85,3 @@ Duolingo incorporates game elements that seem inspired by **Candy Crush**, which
 4. Completing major upgrades and unlocking all areas typically signals that you’ve reached the main content of the game, much like beating the “main quest” in an RPG or clearing the gyms in Pokémon.
 
 In other words, **Slime Rancher** uses the *collect–raise–harvest–upgrade* loop as its core experience. The resources act as renewable currency, the ranch serves as a customizable hub, and progression comes from unlocking new areas and slimes. This design combines the satisfaction of farming and resource management (like *Stardew Valley*) with the collectible creature aspect of Pokémon, all wrapped in a first-person exploration and action format.
-
-
-## 最常见动力系统
-
-1. 如果整个游戏一遍过，那么推进主线就是核心目标
-1. 如果整个游戏反复玩，那么肉鸽反复体现就是目标
-1. 一般来说，都会有，图，室，敌，技，四个层级的题目系统
-1. 打击每个层级的题目后，会有xp或者coin的奖励
-1. 打击每个层级或者扫图中，会有道具或者技能的奖励
-1. 使用xp或者coin，一般可以增加做题的流利，可以提升道具或者技能的等级
-1. Boss虽然看起来像是一个敌人，但更像是 Level，像法环这种难度的，可以算是一个小型肉鸽游戏
-1. 有些游戏，有角色，例如，宝可梦，是特殊的一种道具，是技能的容器
-
-### 进一步展开
-
-1. 【进展】【Path】主线路径推进，消耗内容
-1. 【肉鸽】【Kill / Puzzle】反复遇到的短基本单元（15秒，短视频）
-1. 【肉鸽】【Battle / Level】反复遇到的长基本单元（3分钟，短的视频），会有精心的内容设计
-1. 【进展】【肉鸽】【Boss】特殊【Battle】，一般会反复挑战的强力敌人
-1. 【增滑】【收集】【Item】道具，使用后会产生有限或者持续效果
-1. 【增滑】【收集】【Weapon / Skill / Ability】特殊【Item】，持续生效，核心词汇
-1. 【收集】特殊【道具】【Character】词汇的载体和容器，一个文件夹
-1. 【进展】【增滑】【Level Up】
-1. 【进展】【收集】特殊【Puzzle】【Teleport】
-1. 【货币】【积累】【Coin】
-1. 【货币】【积累】【XP】特殊Coin，努力了就给的苦劳奖励
-1. 【肉鸽】【高分】【Highscore】这个就不讨论了，什么都有喜欢挑战的人
-1. 【肉鸽】【Daily Task】每日任务，打卡
-1. 【肉鸽】【高分】【Leaderboard】周期性的社交属性进展
