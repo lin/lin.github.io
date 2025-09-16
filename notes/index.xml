@@ -334,7 +334,9 @@ $$
  (x_{3}\lor \lnot x_{6}\lor x_{4})
  \land
  (\lnot x_{4}\lor x_{5}\lor x_{6})
-$$</description></item><item><title/><link>https://yingkui.com/notes/compression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/compression/</guid><description>&lt;h2 id="compression"&gt;Compression&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style&gt;
+$$</description></item><item><title/><link>https://yingkui.com/notes/compression/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/compression/</guid><description>&lt;h2 id="compression"&gt;Compression&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/notes/entropy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/entropy/</guid><description>&lt;h2 id="entropy"&gt;Entropy&lt;/h2&gt;
+&lt;h2 id="information"&gt;Information&lt;/h2&gt;
+&lt;h2 id="thermodynamics"&gt;Thermodynamics&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/notes/info/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/info/</guid><description>&lt;style&gt;
 strong {
  font-weight: bold;
  color: black;
