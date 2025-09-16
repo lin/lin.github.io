@@ -28,6 +28,16 @@ $$
 
 ## Free Energy
 
+The reason for our existence lies in our ability to clearly define what ‘existence’ itself means. One of the key feature of the existence is how we can be distinguishable as a whole independently as our surroundings constantly change.
+
+There are 
+
+## Mind and Action
+
+## Accuray and Efficiency
+
+## 
+
 
 
 

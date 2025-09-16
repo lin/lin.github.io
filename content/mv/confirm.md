@@ -99,3 +99,27 @@ $$
 
 结果是：即使证据本身中立，长期下来，后验概率会被系统性地**推向既有信念**。
 
+## Confirmation Bias
+
+Confirmation bias is a pervasive cognitive phenomenon where individuals tend to seek, interpret, and remember information in a way that aligns with their preexisting beliefs, values, or hypotheses. This bias can significantly influence decision-making, perpetuate stereotypes, and skew perceptions of reality.
+
+At its core, confirmation bias stems from the human tendency to favor information that supports existing viewpoints while disregarding or minimizing evidence to the contrary. This bias occurs unconsciously, often leading people to feel confident in their beliefs despite incomplete or contradictory information. Psychologists suggest that confirmation bias arises from the brain’s desire to reduce cognitive dissonance—the mental discomfort experienced when holding conflicting ideas simultaneously.
+
+Another reason for confirmation bias lies in the efficiency of cognitive processing. Our brains are wired to conserve mental energy by relying on heuristics—mental shortcuts—to make decisions. Confirming preexisting beliefs requires less effort than critically evaluating contradictory information. Additionally, social and emotional factors, such as the desire for belonging or validation, can intensify confirmation bias, as aligning with a group or maintaining self-esteem often feels safer and more rewarding than questioning deeply held beliefs.
+
+Examples in Everyday Life
+1. Social Media Echo Chambers
+Social media platforms often amplify confirmation bias by curating content that aligns with users' preferences and past behavior. For instance, someone with a political leaning may see posts, articles, and videos that reinforce their views while rarely encountering opposing perspectives. This phenomenon creates “echo chambers,” where individuals become increasingly convinced of their beliefs and more polarized over time.
+
+2. Health and Wellness Choices
+In the realm of health, people often seek information that supports their preferred treatments or diets. For example, an individual who believes in the benefits of a specific alternative therapy might disregard scientific studies debunking its efficacy while focusing on anecdotal success stories. Similarly, anti-vaccine proponents often gravitate toward misinformation that confirms their fears, ignoring robust scientific evidence supporting vaccine safety and efficacy.
+
+3. Stereotypes and Prejudices
+Confirmation bias plays a significant role in reinforcing stereotypes. For instance, if someone believes that a particular group is “lazy,” they may notice and remember instances where individuals from that group appear to act in ways that support the stereotype while ignoring evidence of hard work and success. This selective attention perpetuates harmful biases and inhibits social progress.
+
+4. Legal and Judicial Contexts
+In criminal investigations, confirmation bias can lead to wrongful convictions. Law enforcement officers or prosecutors may focus on evidence that supports their initial suspect while dismissing contradictory evidence. High-profile cases, such as the wrongful conviction of individuals later exonerated by DNA evidence, often reveal how confirmation bias can distort justice.
+
+5. Academic and Professional Settings
+Students and professionals are not immune to confirmation bias. A researcher might unconsciously design experiments or interpret data in ways that confirm their hypotheses. Similarly, in the workplace, a manager who perceives an employee as underperforming might interpret neutral or even positive behaviors as subpar, reinforcing their negative perception.
+

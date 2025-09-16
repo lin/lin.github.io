@@ -314,3 +314,21 @@ ego 会让你把自我寄托在他人眼光中，从而失去真实成长。
 Ego 从 lexeme 角度看，就是大脑对“外部眼光”这个词汇的 过度依赖。
 它的危害在于：压缩过度、激活过度、绑定过度，使得自我模型变得不划算。
 更好的做法是：降低它的优先级，丰富词汇库，用多元 lexeme 来支撑身份模型。
+
+## Overactive Ego
+
+The human ego plays a crucial role in shaping our sense of identity and self-worth. At its best, it fosters confidence and resilience, helping individuals navigate challenges and pursue goals. However, when the ego becomes overactive, it transcends its positive function and becomes a hindrance to personal and social well-being. An overactive ego exaggerates self-importance and inflates one's perception of achievements, ultimately distorting how an individual interacts with the world.
+
+An overactive ego can be understood as a heightened sense of self that dominates thought and behavior. This exaggerated self-perception often stems from insecurity masked by an outward display of superiority. The individual becomes defensive in the face of critique, constantly seeks validation, and struggles to accept mistakes or vulnerabilities. The need to maintain an inflated self-image consumes emotional energy and blinds people to their flaws and the perspectives of others.
+
+The effects of an overactive ego become evident in various life scenarios. Consider a workplace where collaboration is essential for success. A professional with an overactive ego may refuse to acknowledge contributions from teammates and insist on receiving praise for collective achievements. This behavior erodes trust and stifles team dynamics, fostering resentment among colleagues. Similarly, in friendships and romantic partnerships, an inflated ego often results in dismissive attitudes, where one partner prioritizes their own opinions and feelings over mutual understanding. Conversations become dominated by a need for superiority rather than mutual exchange.
+
+In personal development, the overactive ego often stands as an invisible barrier to growth. Individuals consumed by an inflated sense of self may avoid situations that challenge their perceived competence or expose their limitations. For instance, an artist who is convinced of their creative genius may reject constructive feedback, leading to stagnation rather than refinement. This refusal to engage with feedback not only limits progress but also fuels a false narrative of invulnerability, which becomes harder to maintain over time.
+
+Beyond interpersonal challenges, an overactive ego can lead to poor decision-making. Decisions driven by ego are often impulsive, rooted in the need to preserve pride rather than assess situations objectively. An entrepreneur, for example, might refuse to pivot a failing business strategy, not due to market data but to avoid the embarrassment of admitting error. Such decisions can have far-reaching consequences, from professional setbacks to emotional burnout.
+
+The emotional toll of maintaining an inflated self-image can be severe. Beneath the facade of confidence often lies a persistent fear of failure or exposure. This fear drives individuals to overwork themselves to uphold their self-image, resulting in chronic stress and anxiety. The pursuit of perfection becomes a relentless cycle of proving oneself, leaving little room for genuine rest or fulfillment.
+
+To counter the effects of an overactive ego, self-awareness and humility are essential. Recognizing that mistakes and vulnerabilities are inherent to the human experience fosters a healthier relationship with oneself and others. Developing the capacity to listen, reflect, and accept feedback not only mitigates the negative impact of ego but also enhances personal and professional growth. When individuals let go of the need to be seen as infallible, they open themselves up to deeper connections and more authentic success.
+
+In conclusion, while a healthy ego can empower individuals, an overactive ego can imprison them in a distorted reality where validation becomes a currency of worth. To lead a balanced and fulfilling life, it is crucial to cultivate a sense of self that embraces imperfection, welcomes collaboration, and grows from both achievements and setbacks.
