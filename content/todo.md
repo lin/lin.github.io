@@ -3,6 +3,20 @@ title: "To Do"
 type: "page"
 ---
 
+## Articles
+
+1. Free Energy Principle
+1. Vocabulary: why see things from lexeme perspective.
+1. Rarity: Understanding the Frequency
+1. Quantification: Time, Politeness, Money and Death
+1. Conversion: Lexemes and Money
+1. Shallowness: Why money is not everything?
+1. Limit: rich and elite
+1. Greed: People tend to work less and demand more.
+1. Healthy Fakeness: entertainment that works.
+
+## More
+
 1. 《拼音改革》，做了一半
 1. 《模拟人生》，看纪录片的感觉越来越好，因为可以通过模拟去体验
 1. 《历史离我们有多近》，疫情以来，看了很多二战的电影，时间的跨度问题
