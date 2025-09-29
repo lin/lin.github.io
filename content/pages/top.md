@@ -3,12 +3,12 @@ title: "Yingkui's Top 3"
 type: "page"
 ---
 
-Last Updated: 2025.04.22
+Last Updated: 2025.09.24
 
 ## Books
 
 - 《Thinking, Fast and Slow》
-- 《Cien años de soledad》
+- 《Guns, Germs and Steel》
 
 ## Movies & TV Shows
 
@@ -20,6 +20,5 @@ Last Updated: 2025.04.22
 
 - 《The Legend of Zelda: Breath of the Wild》
 - 《Grand Theft Auto V》
-- 《The Last of Us》
 
 

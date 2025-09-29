@@ -5,23 +5,21 @@ type: "page"
 
 ## 痛快少严，无情拉满
 
-## 创造价值，不断写作，持续学习
-
 | Time   | Action             |
 |:------|:-----------------------|
 |每日早晨    |记录昨日，规划今日 | 
 |每日优先    |Get shit done. Eat the frog. | 
 |每日晚上    |一章书，三道题，五篇文 | 
 |每周周末    |总结本周，规划下周 | 
-|每周周末    |读杂志，看新闻 | 
+|每周周末    |读杂志，看新闻     | 
 
 ## Life Goals
 
 | One Life               | Three Goals                                   | Due               |
 |:-----------------------|:----------------------------------------------|:------------------|
-| One EdTech Company     |  [Education](../edu)                          | 2029年          | 
-| One Philosophy Book    |  [Money and Vocabulary](../basics)                          |                 |
-| One AGI Paper          |  [Intelligence](../ai)                         |                 | 
+| One EdTech Company     |  [Education](../edu)                          | 2029年            | 
+| One Philosophy Book    |  [Money and Vocabulary](../MV)                |                   |
+| One AGI Paper          |  [Intelligence](../ai)                        | After 2029        | 
 
 ## Media Digest
 
@@ -32,7 +30,7 @@ type: "page"
 
 | Principles             |
 |:-----------------------|
-|Hell Fast Less Calm| 
+|Hell Fast Less Strict Calm| 
 |Keep Shipping. Keep Failing. Ship Like a Dog. Fight Like a Warrior| 
 |担虑功名老病死，不如今事快完工| 
 |Do things scary. Learn the hard way. Finish what you start. Document Everything.|

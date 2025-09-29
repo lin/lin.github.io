@@ -1,6 +1,4 @@
-Blur and Equivalence: The Power of the Hard-to-Distinguish
-
-Blur and Equivalence: The Power of the Hard-to-Distinguish
+## Blur and Equivalence: The Power of the Hard-to-Distinguish
 
 In every sphere of life, from physics to politics to everyday marketing, one tactic repeatedly emerges: making two things appear equivalent or indistinguishable so that observers lose their critical edge. This technique, which could be called blur and equivalence, harnesses ambiguity to achieve power. When categories are blurred and boundaries softened, people struggle to distinguish what is true, fair, or valuable. That confusion can be weaponized.
 
