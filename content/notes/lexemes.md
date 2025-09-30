@@ -12,5 +12,5 @@ math: true
 ## Class
 
 $$
-\bigl(R\subseteq A\\;\wedge\\;P(B\mid A,H)\ge1-\varepsilon\bigr)\\;\Longrightarrow\\;P(B\mid R,H)\ge1-\varepsilon.
+\bigl(R\subseteq A\;\wedge\;P(B\mid A,H)\ge1-\varepsilon\bigr)\;\Longrightarrow\;P(B\mid R,H)\ge1-\varepsilon.
 $$

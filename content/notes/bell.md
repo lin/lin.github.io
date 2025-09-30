@@ -249,9 +249,9 @@ Mathematically, the Bell-inequality violation tells us that **no joint probabili
 
 $$
 P(A,B \mid a,b)
-\\;=\\;
-\int d\lambda\\;\rho(\lambda)\\;
-P(A\mid a,\lambda)\\;P(B\mid b,\lambda)
+\;=\;
+\int d\lambda\;\rho(\lambda)\;
+P(A\mid a,\lambda)\;P(B\mid b,\lambda)
 $$
 
 * $a,b$ are freely chosen measurement settings,

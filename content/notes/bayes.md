@@ -38,7 +38,7 @@ We want to know: if a randomly chosen person is male, what is the probability th
 
    $$
    P(\text{Male}\mid \text{Gamer})
-   = \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\text{number of Males}}
+   = \frac{P(\text{Gamer}\mid \text{Male})\;\times\;\text{number of Males}}
           {\text{number of Gamers}}.
    $$
 
@@ -46,9 +46,9 @@ We want to know: if a randomly chosen person is male, what is the probability th
 
    $$
    P(\text{Male}\mid \text{Gamer})
-   = \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\dfrac{\text{number of Males}}{N}}
+   = \frac{P(\text{Gamer}\mid \text{Male})\;\times\;\dfrac{\text{number of Males}}{N}}
           {\dfrac{\text{number of Gamers}}{N}}
-   = \frac{P(\text{Gamer}\mid \text{Male})\\;P(\text{Male})}{P(\text{Gamer})}.
+   = \frac{P(\text{Gamer}\mid \text{Male})\;P(\text{Male})}{P(\text{Gamer})}.
    $$
 
 This is **Bayes’ theorem** in its classic form:
@@ -58,7 +58,7 @@ $$
 P(\mathrm{Male}\mid \mathrm{Gamer})
 = \frac{
     \overset{\text{likelihood}}{P(\mathrm{Gamer}\mid \mathrm{Male})}
-    \\;\times\\;
+    \;\times\;
     \overset{\text{prior}}{P(\mathrm{Male})}
   }{
     \overset{\text{evidence}}{P(\mathrm{Gamer})}
@@ -177,7 +177,7 @@ $$
 Bayes’ rule tells you exactly how to **update** your prior belief in light of new evidence. In this example:
 
 $$
-\text{posterior} \\;\longleftarrow\\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
+\text{posterior} \;\longleftarrow\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
 $$
 
 The more informative your likelihood, the more your posterior shifts away from the prior.

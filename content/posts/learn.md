@@ -79,7 +79,7 @@ Like numbers, we can categorize lexemes be a member of an another lexeme.
 The Free Energy Principle is a mathematical framework that explains how biological systems resist disorder and maintain their structure by minimizing free energy.
 
 $$
-\mathcal{F}[q(s)] = \mathrm{D}_{\mathrm{KL}}\left( q(s) \\,\|\\, p(s\mid o) \right) - \mathbb{E} _{q(s)} \left[ \log p(o \mid s) \right]
+\mathcal{F}[q(s)] = \mathrm{D}_{\mathrm{KL}}\left( q(s) \,\|\, p(s\mid o) \right) - \mathbb{E} _{q(s)} \left[ \log p(o \mid s) \right]
 $$
 
 The first term relates to complexity, is information-seeking and relates to epistemic value.
@@ -201,7 +201,7 @@ Some agents can find high abstract associations in a few exposures which we norm
 ## Thermodynamics
 
 $$
-S = \int_{t_1}^{t_2} \underbrace{(T - V)}_{L} \\, dt
+S = \int_{t_1}^{t_2} \underbrace{(T - V)}_{L} \, dt
 $$
 
 The free energy principle is closely related to the principle of lease action. The Lagrangian is defined as Kinetic energy minus Potential energy.

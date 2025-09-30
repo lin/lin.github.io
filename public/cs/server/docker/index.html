@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - Yingkui</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="">
-<meta itemprop="description" content="Docker  database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn  ###=============# RUBY AND NODE###=============ARG RUBY_VERSION=3.3.0FROMregistry.docker.com/library/ruby:$RUBY_VERSION-slim# Rails app lives hereWORKDIR/rails# Set production environmentENV RAILS_ENV=&#34;production&#34; \  BUNDLE_DEPLOYMENT=&#34;1&#34; \  BUNDLE_PATH=&#34;/usr/local/bundle&#34; \  BUNDLE_WITHOUT=&#34;development&#34;# Install packages needed to build gems and node modulesRUN apt-get update -qq &amp;&amp; \  apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python# Install JavaScript dependenciesARG NODE_VERSION=14.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - Yingkui Lin</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <meta itemprop="name" content="Yingkui Lin">
+  <meta itemprop="description" content="Docker database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn ###============= # RUBY AND NODE ###============= ARG RUBY_VERSION=3.3.0 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim # Rails app lives here WORKDIR /rails # Set production environment ENV RAILS_ENV=&#34;production&#34; \ BUNDLE_DEPLOYMENT=&#34;1&#34; \ BUNDLE_PATH=&#34;/usr/local/bundle&#34; \ BUNDLE_WITHOUT=&#34;development&#34; # Install packages needed to build gems and node modules RUN apt-get update -qq &amp;&amp; \ apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python # Install JavaScript dependencies ARG NODE_VERSION=14.15.1 ARG YARN_VERSION=1.22.17 ENV PATH=/usr/local/node/bin:$PATH RUN curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ &amp;&amp; \ /tmp/node-build-master/bin/node-build &#34;${NODE_VERSION}&#34; /usr/local/node &amp;&amp; \ npm install -g yarn@$YARN_VERSION &amp;&amp; \ rm -rf /tmp/node-build-master # Install node modules COPY package.json yarn.lock ./ RUN yarn install --frozen-lockfile # Copy application code COPY . . # Set the working directory in the container to /myapp WORKDIR /a23 # Copy the current directory contents into the container at /a23 COPY Gemfile /a23/Gemfile COPY Gemfile.lock /a23/Gemfile.lock # Install any needed packages specified in Gemfile RUN bundle install # Copy the rest of your app&#39;s source code from your host to your image filesystem. COPY . /a23">
+  <meta itemprop="wordCount" content="195"><meta property="og:url" content="http://localhost:1313/cs/server/docker/">
+  <meta property="og:site_name" content="Yingkui Lin">
+  <meta property="og:title" content="Yingkui Lin">
+  <meta property="og:description" content="Docker database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn ###============= # RUBY AND NODE ###============= ARG RUBY_VERSION=3.3.0 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim # Rails app lives here WORKDIR /rails # Set production environment ENV RAILS_ENV=&#34;production&#34; \ BUNDLE_DEPLOYMENT=&#34;1&#34; \ BUNDLE_PATH=&#34;/usr/local/bundle&#34; \ BUNDLE_WITHOUT=&#34;development&#34; # Install packages needed to build gems and node modules RUN apt-get update -qq &amp;&amp; \ apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python # Install JavaScript dependencies ARG NODE_VERSION=14.15.1 ARG YARN_VERSION=1.22.17 ENV PATH=/usr/local/node/bin:$PATH RUN curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ &amp;&amp; \ /tmp/node-build-master/bin/node-build &#34;${NODE_VERSION}&#34; /usr/local/node &amp;&amp; \ npm install -g yarn@$YARN_VERSION &amp;&amp; \ rm -rf /tmp/node-build-master # Install node modules COPY package.json yarn.lock ./ RUN yarn install --frozen-lockfile # Copy application code COPY . . # Set the working directory in the container to /myapp WORKDIR /a23 # Copy the current directory contents into the container at /a23 COPY Gemfile /a23/Gemfile COPY Gemfile.lock /a23/Gemfile.lock # Install any needed packages specified in Gemfile RUN bundle install # Copy the rest of your app&#39;s source code from your host to your image filesystem. COPY . /a23">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cs">
 
-<meta itemprop="wordCount" content="163">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="" />
-<meta property="og:description" content="Docker  database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn  ###=============# RUBY AND NODE###=============ARG RUBY_VERSION=3.3.0FROMregistry.docker.com/library/ruby:$RUBY_VERSION-slim# Rails app lives hereWORKDIR/rails# Set production environmentENV RAILS_ENV=&#34;production&#34; \  BUNDLE_DEPLOYMENT=&#34;1&#34; \  BUNDLE_PATH=&#34;/usr/local/bundle&#34; \  BUNDLE_WITHOUT=&#34;development&#34;# Install packages needed to build gems and node modulesRUN apt-get update -qq &amp;&amp; \  apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python# Install JavaScript dependenciesARG NODE_VERSION=14." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://yingkui.com/cs/server/docker/" /><meta property="article:section" content="cs" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Docker  database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn  ###=============# RUBY AND NODE###=============ARG RUBY_VERSION=3.3.0FROMregistry.docker.com/library/ruby:$RUBY_VERSION-slim# Rails app lives hereWORKDIR/rails# Set production environmentENV RAILS_ENV=&#34;production&#34; \  BUNDLE_DEPLOYMENT=&#34;1&#34; \  BUNDLE_PATH=&#34;/usr/local/bundle&#34; \  BUNDLE_WITHOUT=&#34;development&#34;# Install packages needed to build gems and node modulesRUN apt-get update -qq &amp;&amp; \  apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python# Install JavaScript dependenciesARG NODE_VERSION=14."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yingkui Lin">
+  <meta name="twitter:description" content="Docker database and app should be treat separately. app install ruby rails node yarn gems ssh git should be handle differently. ruby rails node yarn ###============= # RUBY AND NODE ###============= ARG RUBY_VERSION=3.3.0 FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim # Rails app lives here WORKDIR /rails # Set production environment ENV RAILS_ENV=&#34;production&#34; \ BUNDLE_DEPLOYMENT=&#34;1&#34; \ BUNDLE_PATH=&#34;/usr/local/bundle&#34; \ BUNDLE_WITHOUT=&#34;development&#34; # Install packages needed to build gems and node modules RUN apt-get update -qq &amp;&amp; \ apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python # Install JavaScript dependencies ARG NODE_VERSION=14.15.1 ARG YARN_VERSION=1.22.17 ENV PATH=/usr/local/node/bin:$PATH RUN curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ &amp;&amp; \ /tmp/node-build-master/bin/node-build &#34;${NODE_VERSION}&#34; /usr/local/node &amp;&amp; \ npm install -g yarn@$YARN_VERSION &amp;&amp; \ rm -rf /tmp/node-build-master # Install node modules COPY package.json yarn.lock ./ RUN yarn install --frozen-lockfile # Copy application code COPY . . # Set the working directory in the container to /myapp WORKDIR /a23 # Copy the current directory contents into the container at /a23 COPY Gemfile /a23/Gemfile COPY Gemfile.lock /a23/Gemfile.lock # Install any needed packages specified in Gemfile RUN bundle install # Copy the rest of your app&#39;s source code from your host to your image filesystem. COPY . /a23">
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://yingkui.com/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://yingkui.com/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" />
 	
 
-    <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://yingkui.com/css/dark.css" />
-        <link rel="stylesheet" type="text/css" href="https://yingkui.com/css/custom.css" />
+    <link id="dark-scheme" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/custom.css" />
     
 
-	<script src="https://yingkui.com/js/feather.min.js"></script>
 	
-		<script src="https://yingkui.com/js/main.js"></script>
+		<script src="http://localhost:1313/js/main.js"></script>
 
 
     
@@ -41,14 +40,14 @@
 		<div class="header">
 	
 		<div class="avatar">
-			<a href="https://yingkui.com/">
-				<img src="/logo-ai.jpg" alt="Yingkui" />
+			<a href="http://localhost:1313/">
+				<img src="/logo-ai.jpg" alt="Yingkui Lin" />
 			</a>
 		</div>
 	
-	<h1 class="site-title"><a href="https://yingkui.com/">Yingkui</a></h1>
-	<div class="site-description"><p>Solving Problems. Making Progress.</p><nav class="nav social">
-			<ul class="flat"><li><a href="https://github.com/lin" title="Github"><i data-feather="github"></i></a></li><li><a href="https://youtube.com/@yingkui" title="YouTube"><i data-feather="youtube"></i></a></li></ul>
+	<h1 class="site-title"><a href="http://localhost:1313/">Yingkui Lin</a></h1>
+	<div class="site-description"><p>A Curious Mind.</p><nav class="nav social">
+			<ul class="flat"></ul>
 		</nav>
 	</div>
 
@@ -56,23 +55,11 @@
 		<ul class="flat">
 			
 			<li>
-				<a href="/">随想</a>
+				<a href="/">Essays</a>
 			</li>
 			
 			<li>
-				<a href="/edu">《教学》</a>
-			</li>
-			
-			<li>
-				<a href="/life">《人生》</a>
-			</li>
-			
-			<li>
-				<a href="/ai">《智力》</a>
-			</li>
-			
-			<li>
-				<a href="/about">关于</a>
+				<a href="/pages">Pages</a>
 			</li>
 			
 		</ul>
@@ -97,54 +84,54 @@
 <li>ssh git should be handle differently.</li>
 <li>ruby rails node yarn</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e">###=============</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># RUBY AND NODE</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">###=============</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> RUBY_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>.3.0<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> registry.docker.com/library/ruby:$RUBY_VERSION-slim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Rails app lives here</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /rails</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set production environment</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> RAILS_ENV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;production&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    BUNDLE_DEPLOYMENT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    BUNDLE_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/bundle&#34;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    BUNDLE_WITHOUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;development&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install packages needed to build gems and node modules</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update -qq <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install JavaScript dependencies</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> NODE_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>.15.1<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> YARN_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>.22.17<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> PATH<span style="color:#f92672">=</span>/usr/local/node/bin:$PATH<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    /tmp/node-build-master/bin/node-build <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NODE_VERSION<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> /usr/local/node <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    npm install -g yarn@$YARN_VERSION <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>    rm -rf /tmp/node-build-master<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install node modules</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> package.json yarn.lock ./<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> yarn install --frozen-lockfile<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy application code</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set the working directory in the container to /myapp</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /a23</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the current directory contents into the container at /a23</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile /a23/Gemfile<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile.lock /a23/Gemfile.lock<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install any needed packages specified in Gemfile</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle install<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the rest of your app&#39;s source code from your host to your image filesystem.</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /a23<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e">###=============</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># RUBY AND NODE</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">###=============</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> RUBY_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>.3.0<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">registry.docker.com/library/ruby:$RUBY_VERSION-slim</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Rails app lives here</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span> <span style="color:#e6db74">/rails</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set production environment</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> RAILS_ENV<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;production&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    BUNDLE_DEPLOYMENT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    BUNDLE_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/bundle&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    BUNDLE_WITHOUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;development&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install packages needed to build gems and node modules</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update -qq <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install JavaScript dependencies</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> NODE_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>.15.1<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ARG</span> YARN_VERSION<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>.22.17<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> PATH<span style="color:#f92672">=</span>/usr/local/node/bin:$PATH<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    /tmp/node-build-master/bin/node-build <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>NODE_VERSION<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> /usr/local/node <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    npm install -g yarn@$YARN_VERSION <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    rm -rf /tmp/node-build-master<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install node modules</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> package.json yarn.lock ./<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> yarn install --frozen-lockfile<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy application code</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Set the working directory in the container to /myapp</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span> <span style="color:#e6db74">/a23</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the current directory contents into the container at /a23</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile /a23/Gemfile<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> Gemfile.lock /a23/Gemfile.lock<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install any needed packages specified in Gemfile</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> bundle install<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Copy the rest of your app&#39;s source code from your host to your image filesystem.</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /a23<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div>
 			</div>
 
 			<div class="tags">
@@ -155,8 +142,8 @@
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div>2024  © Copyright Yingkui.com All Rights Reserved </div>
+		<div>2025  © Copyright Yingkui.com All Rights Reserved </div>
 	</nav>
-</div><script>feather.replace()</script>
+</div>
 </body>
 </html>

@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Privates on Yingkui</title>
-    <link>https://yingkui.com/private/</link>
-    <description>Recent content in Privates on Yingkui</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Privates on Yingkui Lin</title>
+    <link>http://localhost:1313/private/</link>
+    <description>Recent content in Privates on Yingkui Lin</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>© Copyright Yingkui.com All Rights Reserved</copyright><atom:link href="https://yingkui.com/private/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright Yingkui.com All Rights Reserved</copyright>
+    <atom:link href="http://localhost:1313/private/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://yingkui.com/private/goalaction/</link>
+      <link>http://localhost:1313/private/goalaction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yingkui.com/private/goalaction/</guid>
-      <description>目标的确认 局域最值 问自己，在现有的条件下，为了达到目标，最应该做的事情是什么？而不要苛求一种理想化的结果，不要好高骛远的追求不切实际的目标，不要为一时的挫败而感到沮丧和畏缩，不要为时机的流逝而感到无奈和放弃。不要为不能改变的过去感到懊恼和沮丧，不要为一时的得失忘记了最初的梦想，不要为了
-不要追求完美，</description>
+      <guid>http://localhost:1313/private/goalaction/</guid>
+      <description>&lt;h2 id=&#34;目标的确认&#34;&gt;目标的确认&lt;/h2&gt;&#xA;&lt;h3 id=&#34;局域最值&#34;&gt;局域最值&lt;/h3&gt;&#xA;&lt;p&gt;问自己，在现有的条件下，为了达到目标，最应该做的事情是什么？而不要苛求一种理想化的结果，不要好高骛远的追求不切实际的目标，不要为一时的挫败而感到沮丧和畏缩，不要为时机的流逝而感到无奈和放弃。不要为不能改变的过去感到懊恼和沮丧，不要为一时的得失忘记了最初的梦想，不要为了&lt;/p&gt;&#xA;&lt;p&gt;不要追求完美，&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
-      <link>https://yingkui.com/private/reflect/</link>
+      <link>http://localhost:1313/private/reflect/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yingkui.com/private/reflect/</guid>
-      <description>主要原则 目标上：工作读写，局域最值，主次分明，不要对比，专注进展 行动上：按时完成，扎实产出，追逐折磨，直面畏惧，大起大落 既要放弃对名利的渴望，又要有追求卓越的动力。
-既要
-按时完成计划    </description>
+      <guid>http://localhost:1313/private/reflect/</guid>
+      <description>&lt;h1 id=&#34;主要原则&#34;&gt;主要原则&lt;/h1&gt;&#xA;&lt;h3 id=&#34;目标上工作读写局域最值主次分明不要对比专注进展&#34;&gt;目标上：工作读写，局域最值，主次分明，不要对比，专注进展&lt;/h3&gt;&#xA;&lt;h3 id=&#34;行动上按时完成扎实产出追逐折磨直面畏惧大起大落&#34;&gt;行动上：按时完成，扎实产出，追逐折磨，直面畏惧，大起大落&lt;/h3&gt;&#xA;&lt;p&gt;既要放弃对名利的渴望，又要有追求卓越的动力。&lt;/p&gt;&#xA;&lt;p&gt;既要&lt;/p&gt;&#xA;&lt;h3 id=&#34;按时完成计划&#34;&gt;按时完成计划&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

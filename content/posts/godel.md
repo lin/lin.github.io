@@ -215,25 +215,25 @@ That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encode
 $$
 \exists x \exists y \Bigg[
   \exists n_0 \Big(
-    x = S(y \cdot S(0)) \cdot n_0 + S0 \\;\land\\;
+    x = S(y \cdot S(0)) \cdot n_0 + S0 \;\land\;
     \exists m_0 \big( S(S0) + m_0 = S(y \cdot S(0)) \big)
-  \Big) \\;\land
+  \Big) \;\land
   \newline
   \exists n_1 \Big(
-    x = S(y \cdot S(b)) \cdot n_1 + c \\;\land\\;
+    x = S(y \cdot S(b)) \cdot n_1 + c \;\land\;
     \exists m_1 \big( S(c) + m_1 = S(y \cdot S(b)) \big)
-  \Big) \\;\land
+  \Big) \;\land
   \newline
   \forall k \forall z \Bigg(
-    \exists m_k \big( S(k) + m_k = b \big) \\;\land\\;
+    \exists m_k \big( S(k) + m_k = b \big) \;\land\;
     \exists n_k \Big(
-      x = S(y \cdot S(k)) \cdot n_k + z \\;\land\\;
+      x = S(y \cdot S(k)) \cdot n_k + z \;\land\;
       \exists m_z \big( S(z) + m_z = S(y \cdot S(k)) \big)
     \Big)
-    \\;\rightarrow\\;
+    \;\rightarrow\;
     \newline
     \exists n_s \Big(
-      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \\;\land\\;
+      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \;\land\;
       \exists m_s \big( S(a \cdot z) + m_s = S(y \cdot S(S(k))) \big)
     \Big)
   \Bigg)
@@ -247,19 +247,19 @@ Why is this important? Let's say, if something you can proof with finite steps m
 But for the Peano Arithmetic, something like Twin Prime Conjecture 
 
 $$
-\forall n\\;\exists p\\;\bigl(n < p \\;\wedge\\; \mathrm{Prime}(p)\\;\wedge\\;\mathrm{Prime}(p + 2)\bigr)
+\forall n\;\exists p\;\bigl(n < p \;\wedge\; \mathrm{Prime}(p)\;\wedge\;\mathrm{Prime}(p + 2)\bigr)
 $$
 
 Or in its expanded long form:
 
 $$
-\forall n\\;\exists p\\;\exists k\\;
+\forall n\;\exists p\;\exists k\;
 \Bigl(
   n + S(k) = p
-  \\;\wedge\\;
-  \bigl(2 \le p \\;\wedge\\;\forall a\\,\forall b\\,(p = a\cdot b \to (a=1\lor b=1))\bigr)
-  \\;\wedge\\;
-  \bigl(2 \le p + S(S(0))\\;\wedge\\;\forall a\\,\forall b\\,(p + S(S(0)) = a\cdot b \to (a=1\lor b=1))\bigr)
+  \;\wedge\;
+  \bigl(2 \le p \;\wedge\;\forall a\,\forall b\,(p = a\cdot b \to (a=1\lor b=1))\bigr)
+  \;\wedge\;
+  \bigl(2 \le p + S(S(0))\;\wedge\;\forall a\,\forall b\,(p + S(S(0)) = a\cdot b \to (a=1\lor b=1))\bigr)
 \Bigr)
 $$
 

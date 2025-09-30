@@ -28,7 +28,7 @@ This means that an agent (e.g. a brain) is constantly trying to:
 ## The Bayesian brain hypothesis
 
 $$
-\mu = \arg\min_{\mu} \\, D_{\mathrm{KL}} \left( q(\vartheta) \\,\\|\\, p(\vartheta \mid \tilde{s}) \right)
+\mu = \arg\min_{\mu} \, D_{\mathrm{KL}} \left( q(\vartheta) \,\\|\, p(\vartheta \mid \tilde{s}) \right)
 $$
 
 ## The Infomax principle

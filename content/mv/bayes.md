@@ -56,15 +56,15 @@ Why prediction is important? Wherever direct measurement is impossible, impracti
 Whenever a class A almost surely has property B in context H, any instance R of that class will also almost surely have property B in the same context.
 
 $$
-\bigl(R\subseteq A\\;\wedge\\;P(B\mid A,H)\ge1-\varepsilon\bigr)\\;\Longrightarrow\\;P(B\mid R,H)\ge1-\varepsilon.
+\bigl(R\subseteq A\;\wedge\;P(B\mid A,H)\ge1-\varepsilon\bigr)\;\Longrightarrow\;P(B\mid R,H)\ge1-\varepsilon.
 $$
 
 This is based on the assumption that additional information provided by R gives you no extra information about whether property B holds. 
 
 $$
-P\bigl(B \mid A,\\,H,\\,R\bigr)
-\\;=\\;
-P\bigl(B \mid A,\\,H\bigr)
+P\bigl(B \mid A,\,H,\,R\bigr)
+\;=\;
+P\bigl(B \mid A,\,H\bigr)
 $$
 
 When we observe the reality, for each instance data we collect, we also gather the class level connections. When we think about instant-level priors, its class-level priors, which might be observed by a lot of times, should also be considered so that we are not losing too much the information gain by previous observations.
@@ -113,10 +113,10 @@ To answer that, a Bayesian compares **posterior odds**
 
 $$
 \frac{P(H_1 \mid \text{data})}{P(H_0 \mid \text{data})}
-=\\;
+=\;
 \overset{\text{likelihood ratio}}
        {\frac{P(\text{data}\mid H_1)}{P(\text{data}\mid H_0)}}
-\\;\times\\;
+\;\times\;
 \overset{\text{prior odds}}
        {\frac{P(H_1)}{P(H_0)}}.
 $$
@@ -133,11 +133,11 @@ In short, **p‑values measure surprise, not believability**. Deciding whether $
 ### Rooster's Crow and Sunrise
 
 $$
-P\bigl(\text{sunrise}\mid \text{rooster crow},\\,\text{dawn}\bigr) = 1
+P\bigl(\text{sunrise}\mid \text{rooster crow},\,\text{dawn}\bigr) = 1
 $$
 
 $$
-\forall t.\\, P\bigl(\text{sunrise}\mid \text{rooster crow},\\,t \bigr) = 1
+\forall t.\, P\bigl(\text{sunrise}\mid \text{rooster crow},\,t \bigr) = 1
 $$
 
 

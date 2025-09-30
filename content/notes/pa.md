@@ -7,8 +7,8 @@ math: true
 
 $$
 \begin{aligned}
-&\forall x \\;f(x, 0 ) =x \newline 
-&\forall x \forall y \\;f(x, S(y)) = S(f(x, y))
+&\forall x \;f(x, 0 ) =x \newline 
+&\forall x \forall y \;f(x, S(y)) = S(f(x, y))
 \end{aligned}
 $$
 
@@ -17,8 +17,8 @@ $$
 
 $$
 \begin{aligned}
-&h(x,0)\\;:=\\;0\newline 
-&h\bigl(x,S(y)\bigr) \\;:=\\;f\bigl(h(x,y),\\,x\bigr)
+&h(x,0)\;:=\;0\newline 
+&h\bigl(x,S(y)\bigr) \;:=\;f\bigl(h(x,y),\,x\bigr)
 \end{aligned}
 $$
 
@@ -329,98 +329,98 @@ Then induct on $y$:
 1. **Zero**
 
    $$
-   \mathrm{Zero}(x)\\;\equiv\\;x=0.
+   \mathrm{Zero}(x)\;\equiv\;x=0.
    $$
 
 2. **Successor**
 
    $$
-   \mathrm{Succ}(x,y)\\;\equiv\\;y=S(x).
+   \mathrm{Succ}(x,y)\;\equiv\;y=S(x).
    $$
 
 3. **One**
 
    $$
-   \mathrm{One}(x)\\;\equiv\\;x=S(0)\\;=\\;\overline{1}.
+   \mathrm{One}(x)\;\equiv\;x=S(0)\;=\;\overline{1}.
    $$
 
 4. **Addition**
 
    $$
-   \mathrm{Add}(x,y,z)\\;\equiv\\;x + y = z.
+   \mathrm{Add}(x,y,z)\;\equiv\;x + y = z.
    $$
 
 5. **Multiplication**
 
    $$
-   \mathrm{Mul}(x,y,z)\\;\equiv\\;x \times y = z.
+   \mathrm{Mul}(x,y,z)\;\equiv\;x \times y = z.
    $$
 
 6. **Less-than**
 
    $$
-   x < y \\;\equiv\\;\exists z\bigl(z \neq0\\;\wedge\\; x + z = y\bigr).
+   x < y \;\equiv\;\exists z\bigl(z \neq0\;\wedge\; x + z = y\bigr).
    $$
 
 7. **Less-or-equal**
 
    $$
-   x \le y \\;\equiv\\;\exists z\\,(x + z = y).
+   x \le y \;\equiv\;\exists z\,(x + z = y).
    $$
 
 8. **Divisibility**
 
    $$
-   x\mid y \\;\equiv\\;\exists z\\,(x \times z = y).
+   x\mid y \;\equiv\;\exists z\,(x \times z = y).
    $$
 
 9. **Evenness**
 
    $$
-   \mathrm{Even}(x)\\;\equiv\\;\exists y\\,(x = y + y).
+   \mathrm{Even}(x)\;\equiv\;\exists y\,(x = y + y).
    $$
 
 10. **Oddness**
 
     $$
-    \mathrm{Odd}(x)\\;\equiv\\;\exists y\bigl(x = (y + y) + S(0)\bigr).
+    \mathrm{Odd}(x)\;\equiv\;\exists y\bigl(x = (y + y) + S(0)\bigr).
     $$
 
 11. **Square-number**
 
     $$
-    \mathrm{Square}(x)\\;\equiv\\;\exists y\\,(y \times y = x).
+    \mathrm{Square}(x)\;\equiv\;\exists y\,(y \times y = x).
     $$
 
 12. **Prime**
 
     $$
-    \mathrm{Prime}(x)\\;\equiv\\;x \neq0\\;\wedge\\;x \neq S(0)\\;\wedge\\;\forall y\forall z\Bigl(x = y\times z \\;\rightarrow\\;(y = S(0)\\;\lor\\;z = S(0))\Bigr).
+    \mathrm{Prime}(x)\;\equiv\;x \neq0\;\wedge\;x \neq S(0)\;\wedge\;\forall y\forall z\Bigl(x = y\times z \;\rightarrow\;(y = S(0)\;\lor\;z = S(0))\Bigr).
     $$
 
 13. **Factorial**
 
     $$
-    \mathrm{Fact}(n,m)\\;\equiv\\;\bigl[n=0\wedge m=S(0)\bigr]\\;\lor\\;\exists u\exists v\bigl[n=S(u)\wedge \mathrm{Fact}(u,v)\wedge m = S(u)\times v\bigr].
+    \mathrm{Fact}(n,m)\;\equiv\;\bigl[n=0\wedge m=S(0)\bigr]\;\lor\;\exists u\exists v\bigl[n=S(u)\wedge \mathrm{Fact}(u,v)\wedge m = S(u)\times v\bigr].
     $$
 
 14. **Power of 2**
 
     $$
-    \mathrm{Pow2}(x)\\;\equiv\\;\bigl[x = S(0)\bigr]\\;\lor\\;\exists y\bigl(\mathrm{Pow2}(y)\\;\wedge\\;x = y + y\bigr).
+    \mathrm{Pow2}(x)\;\equiv\;\bigl[x = S(0)\bigr]\;\lor\;\exists y\bigl(\mathrm{Pow2}(y)\;\wedge\;x = y + y\bigr).
     $$
 
 15. **Exponentiation** (as a ternary relation)
 
     $$
-    \mathrm{Exp}(a,b,c)\\;\equiv\\;\bigl[b=0\wedge c=S(0)\bigr]\\;\lor\\;\exists u\exists v\bigl[b=S(u)\wedge \mathrm{Exp}(a,u,v)\wedge c = a \times v\bigr].
+    \mathrm{Exp}(a,b,c)\;\equiv\;\bigl[b=0\wedge c=S(0)\bigr]\;\lor\;\exists u\exists v\bigl[b=S(u)\wedge \mathrm{Exp}(a,u,v)\wedge c = a \times v\bigr].
     $$
 
 ## Proofs
 
 ---
 
-### 1. $ \displaystyle PA\\;\vdash\\;\forall x\\,(x + 0 = x)$
+### 1. $ \displaystyle PA\;\vdash\;\forall x\,(x + 0 = x)$
 
 We prove by induction on $x$.
 
@@ -430,25 +430,25 @@ $$
 \text{Base case:}&\quad 0 + 0 = 0 &&\text{instantiate the axiom at \(x:=0\).}\newline
 \text{Inductive step:}&\quad\text{Assume }u + 0 = u.\newline
 &\quad S(u) + 0 = S\bigl(u + 0\bigr) &&\text{by the axiom }x + 0 = x\text{ with }x:=S(u).\newline
-&\quad\\;\\;=\\;S(u) &&\text{by the inductive hypothesis.}\newline
+&\quad\;\;=\;S(u) &&\text{by the inductive hypothesis.}\newline
 &\quad\text{Hence }(S(u)+0 = S(u)).\newline
-\text{By Induction:}&\quad PA\vdash\forall x\\,(x+0=x).
+\text{By Induction:}&\quad PA\vdash\forall x\,(x+0=x).
 \end{aligned}
 $$
 
 ---
 
-### 2. $ \displaystyle PA\\;\vdash\\;\forall x\\,(x \le x)$
+### 2. $ \displaystyle PA\;\vdash\;\forall x\,(x \le x)$
 
-Recall $x\le y$ is defined as $\exists z\\,(x+z = y)$.
+Recall $x\le y$ is defined as $\exists z\,(x+z = y)$.
 
 $$
 \begin{aligned}
 &\text{Fix an arbitrary \(x\).}\newline
 &\text{We exhibit the witness \(z:=0\).}\newline
 &\quad x + 0 = x &&\text{by the axiom just proved above.}\newline
-&\therefore\\;\exists z\\,(x+z = x).\newline
-&\text{Since \(x\) was arbitrary, }PA\vdash\forall x\\,(x\le x).
+&\therefore\;\exists z\,(x+z = x).\newline
+&\text{Since \(x\) was arbitrary, }PA\vdash\forall x\,(x\le x).
 \end{aligned}
 $$
 
@@ -456,10 +456,10 @@ No induction needed beyond our previous theorem.
 
 ---
 
-### 3. $ \displaystyle PA\;\vdash\;\forall x\\,\forall y\\,\forall z\;\bigl(x<y \wedge y<z \;\to\; x<z\bigr)$
+### 3. $ \displaystyle PA\;\vdash\;\forall x\,\forall y\,\forall z\;\bigl(x<y \wedge y<z \;\to\; x<z\bigr)$
 
 Here $x<y$ is shorthand for
-$\exists u\\,[u\neq0\wedge x+u = y]$.
+$\exists u\,[u\neq0\wedge x+u = y]$.
 
 $$
 \begin{aligned}
@@ -473,9 +473,9 @@ $$
    = (x+u) + v
    = y + v
    = z \newline
-&\text{Hence }\exists w\\,\bigl(w\neq0\wedge x+w=z\bigr),\text{ i.e.\ }x<z.\newline
+&\text{Hence }\exists w\,\bigl(w\neq0\wedge x+w=z\bigr),\text{ i.e.\ }x<z.\newline
 &\text{By generalizing over \(x,y,z\),}
-  \;PA\vdash\forall x\\,\forall y\\,\forall z\\,(x<y\wedge y<z\to x<z).
+  \;PA\vdash\forall x\,\forall y\,\forall z\,(x<y\wedge y<z\to x<z).
 \end{aligned}
 $$
 
