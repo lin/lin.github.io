@@ -55,10 +55,10 @@ $$<h3 id=simulation-1>Simulation</h3><div class=highlight><pre tabindex=0 style=
 </span></span><span style=display:flex><span>print(simulate_singlet())  <span style=color:#75715e># ≃0.50</span>
 </span></span></code></pre></div><h2 id=why>Why</h2><p>No local hidden-variable theory can reproduce the quantum correlations.</p><p>All eight of those “quantum-tables” look identical because, unlike the eight hidden-variable plans, quantum mechanics doesn’t pick one deterministic instruction set at each run—instead it gives one singlet-state rule for all runs.</p><p>Mathematically, the Bell-inequality violation tells us that <strong>no joint probability model</strong> of the form</p>$$
 P(A,B \mid a,b)
-\\;=\\;
-\int d\lambda\\;\rho(\lambda)\\;
-P(A\mid a,\lambda)\\;P(B\mid b,\lambda)
-$$<ul><li>$a,b$ are freely chosen measurement settings,</li><li>$A,B\in{+1,-1}$ are the outcomes, and</li><li>$\lambda$ is some “hidden” variable with distribution $\rho(\lambda)$</li></ul><p>can reproduce the quantum predictions</p>$$
+\;=\;
+\int d\lambda\;\rho(\lambda)\;
+P(A\mid a,\lambda)\;P(B\mid b,\lambda)
+$$<ul><li>$a,b$ are freely chosen measurement settings,</li><li>$A,B\in\{+1,-1\}$ are the outcomes, and</li><li>$\lambda$ is some “hidden” variable with distribution $\rho(\lambda)$</li></ul><p>can reproduce the quantum predictions</p>$$
 P_{\rm QM}(A\neq B\mid a,b)
 =\cos^2 \frac{\theta}{2}
 $$<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>simulate</span>(runs<span style=color:#f92672>=</span><span style=color:#ae81ff>10000</span>):

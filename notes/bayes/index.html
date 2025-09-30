@@ -25,19 +25,19 @@ $$</li><li><p>Since</p>$$
 = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males},
 $$<p>we can write</p>$$
 P(\text{Male}\mid \text{Gamer})
-= \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\text{number of Males}}
+= \frac{P(\text{Gamer}\mid \text{Male})\;\times\;\text{number of Males}}
 {\text{number of Gamers}}.
 $$</li><li><p>Dividing numerator and denominator by the total population size $N$, we get</p>$$
 P(\text{Male}\mid \text{Gamer})
-= \frac{P(\text{Gamer}\mid \text{Male})\\;\times\\;\dfrac{\text{number of Males}}{N}}
+= \frac{P(\text{Gamer}\mid \text{Male})\;\times\;\dfrac{\text{number of Males}}{N}}
 {\dfrac{\text{number of Gamers}}{N}}
-= \frac{P(\text{Gamer}\mid \text{Male})\\;P(\text{Male})}{P(\text{Gamer})}.
+= \frac{P(\text{Gamer}\mid \text{Male})\;P(\text{Male})}{P(\text{Gamer})}.
 $$</li></ol><p>This is <strong>Bayes’ theorem</strong> in its classic form:</p>$$
 \boxed{
 P(\mathrm{Male}\mid \mathrm{Gamer})
 = \frac{
 \overset{\text{likelihood}}{P(\mathrm{Gamer}\mid \mathrm{Male})}
-\\;\times\\;
+\;\times\;
 \overset{\text{prior}}{P(\mathrm{Male})}
 }{
 \overset{\text{evidence}}{P(\mathrm{Gamer})}
@@ -53,10 +53,10 @@ P(\text{Male}\mid \text{Gamer})
 $$<hr><h2 id=2-via-bayes-theorem>2. Via Bayes’ theorem</h2><p>Bayes says</p>$$
 P(A\mid B)
 = \frac{P(B\mid A)\,P(A)}{P(B)}.
-$$<p>Let</p><ul><li>$A={\text{Male}}$,</li><li>$B={\text{Gamer}}$.</li></ul><p>So</p>$$
+$$<p>Let</p><ul><li>$A=\{\text{Male}\}$,</li><li>$B=\{\text{Gamer}\}$.</li></ul><p>So</p>$$
 P(\text{Male}\mid \text{Gamer})
 = \frac{P(\text{Gamer}\mid \text{Male})\,P(\text{Male})}{P(\text{Gamer})}.
-$$<p>We already know:</p><ul><li>$P(\text{Gamer}\mid \text{Male}) = \dfrac{30}{100} = 0.30.$</li><li>$P(\text{Male}) = \dfrac{100}{200} = 0.50.$</li></ul><h3 id=21-computing-the-evidence-ptextgamer>2.1. Computing the evidence $P(\text{Gamer})$</h3><p>Using the law of total probability over Male/Female:</p>$$
+$$<p>We already know:</p><ul><li>$P(\text{Gamer}\mid \text{Male}) = \dfrac{30}{100} = 0.30.$</li><li>$P(\text{Male}) = \dfrac{100}{200} = 0.50.$</li></ul><h3 id=21-computing-the-evidence>2.1. Computing the evidence $P(\text{Gamer})$</h3><p>Using the law of total probability over Male/Female:</p>$$
 P(\text{Gamer})
 = P(\text{Gamer}\mid \text{Male})\,P(\text{Male})
 +P(\text{Gamer}\mid \text{Female})\,P(\text{Female}).
@@ -73,5 +73,5 @@ P(\text{Male}\mid \text{Gamer})
 $$<hr><h2 id=3-conclusion>3. Conclusion</h2><p>Whether by direct counting or by Bayes’ theorem (with the evidence computed via male/female breakdown), we get</p>$$
 \boxed{P(\text{Male}\mid \text{Gamer}) = 0.375.}
 $$<h3 id=why-it-matters>Why it matters</h3><p>Bayes’ rule tells you exactly how to <strong>update</strong> your prior belief in light of new evidence. In this example:</p>$$
-\text{posterior} \\;\longleftarrow\\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
+\text{posterior} \;\longleftarrow\; \frac{\text{likelihood}\times\text{prior}}{\text{evidence}}.
 $$<p>The more informative your likelihood, the more your posterior shifts away from the prior.</p></div><div class=tags></div></div></div><div class="footer wrapper"><nav class=nav><div>2025 © Copyright Yingkui.com All Rights Reserved</div></nav></div></body></html>

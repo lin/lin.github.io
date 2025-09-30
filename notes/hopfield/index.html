@@ -56,7 +56,7 @@ $$<h3 id=-step-2-recall-from-a-noisy-input>🧪 Step 2: Recall from a noisy inpu
 x = [+1, -1, -1, -1] \quad \text{(flipped one bit)}
 $$<p>We update each unit $i$ by:</p>$$
 x_i^{\text{new}} = \text{sign}\left(\sum_{j \ne i} w_{ij} x_j \right)
-$$<p>Do this <strong>iteratively</strong> until convergence.</p><h4 id=example-update-x_3>Example: Update $x_3$</h4>$$
+$$<p>Do this <strong>iteratively</strong> until convergence.</p><h4 id=example-update>Example: Update $x_3$</h4>$$
 x_3^{\text{new}} = \text{sign}(w_{31} x_1 + w_{32} x_2 + w_{34} x_4) \newline
 = \text{sign}(0.5 \cdot 1 + (-0.5) \cdot (-1) + (-0.5) \cdot (-1)) \newline
 = \text{sign}(0.5 + 0.5 + 0.5) = \text{sign}(1.5) = +1

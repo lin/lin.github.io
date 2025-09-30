@@ -251,7 +251,7 @@ $$
 $$
  \text{number of Male Gamers}
  = P(\text{Gamer}\mid \text{Male}) \times \text{number of Males},
- $$&lt;p&gt;we can write&lt;/p&gt;</description></item><item><title>Machine Learning Terms</title><link>https://yingkui.com/notes/ml/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/ml/</guid><description>&lt;h2 id="fx-theta"&gt;$f(x; \theta)$&lt;/h2&gt;
+ $$&lt;p&gt;we can write&lt;/p&gt;</description></item><item><title>Machine Learning Terms</title><link>https://yingkui.com/notes/ml/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/ml/</guid><description>&lt;h2&gt;$f(x; \theta)$&lt;/h2&gt;
 &lt;h3 id="models-prediction"&gt;Model&amp;rsquo;s Prediction&lt;/h3&gt;
 &lt;p&gt;The function $f(x; \theta)$ represents the model&amp;rsquo;s output given input $x$ and parameters $\theta$. It defines how the model maps an input to a prediction.&lt;/p&gt;
 &lt;ul&gt;
@@ -262,9 +262,9 @@ $$
 If $f(x; \theta) = \theta_1 x + \theta_0$, with $\theta_1 = 2$, $\theta_0 = 1$, and $x = 3$, then:&lt;br&gt;
 $f(3; \theta) = 2 \cdot 3 + 1 = 7$&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="x"&gt;$x$&lt;/h2&gt;
+&lt;h2&gt;$x$&lt;/h2&gt;
 &lt;h3 id="input-features"&gt;Input Features&lt;/h3&gt;
-&lt;p&gt;$x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task.&lt;/p&gt;</description></item><item><title>See A, Think B</title><link>https://yingkui.com/pba/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/pba/</guid><description>&lt;h2 id="pbmid-a"&gt;$P(B\mid A)$&lt;/h2&gt;
+&lt;p&gt;$x$ is the input to the model. It can be a scalar, vector, or tensor depending on the task.&lt;/p&gt;</description></item><item><title>See A, Think B</title><link>https://yingkui.com/pba/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/pba/</guid><description>&lt;h2&gt;$P(B\mid A)$&lt;/h2&gt;
 &lt;p&gt;The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as&lt;/p&gt;
 $$
 P(B\mid A)
@@ -2615,7 +2615,7 @@ h3 {
 &lt;li&gt;I can&amp;rsquo;t solve DIV2B for the very first time! (except for the rejudge and the second contest about input)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://codeforces.com/contest/1838/problem/B"&gt;B. Minimize Permutation Subarrays&lt;/a&gt;, I spent 115 minutes for this problem. And the solution is quite simple. It seems like if I don&amp;rsquo;t realize the trick, I may solve this problem for another two hours. What a sad day!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;&lt;/h3&gt;</description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress-log_2-10-approx-33--for-each-10"&gt;Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4&gt;
+&lt;h3&gt;&lt;/h3&gt;</description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/05-30-2023/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/05-30-2023/</guid><description/></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/05-29-2023/</link><pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/05-29-2023/</guid><description>&lt;h4 id="log-2-values-progress--for-each-10"&gt;Log 2 values progress $\log_2 10 \approx 3.3 $ for each 10&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;$2^{30} \approx 10^9$&lt;/li&gt;
 &lt;li&gt;$\log_2 10^9 \approx 30$&lt;/li&gt;
@@ -6454,7 +6454,7 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$&lt;p&gt;测试函�
 &lt;p&gt;验证并记忆某个可以达到某个目的的计算过程，类似于计算机执行程序过程，例如，Dijkstra 算法&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;直接记忆某个计算的结果，例如，记住 $(e^x)&amp;rsquo; = e^x$&lt;/p&gt;
+&lt;p&gt;直接记忆某个计算的结果，例如，记住 $(e^x)' = e^x$&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;为了达到上述的学习目标，学生在学习过程中大致要进行如下的信息处理过程：&lt;/p&gt;
@@ -6731,7 +6731,7 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$&lt;p&gt;测试函�
 &lt;/ul&gt;
 &lt;p&gt;正如前文所述，学生是一个强大的提取抽象特征的有机图灵机，一个优质的教学材料就是要让学生更加轻松的识别出关键的特征，而不是被不关键的特征所干扰，这要求教学者对人脑的识别机制有所预判。一般来说，就是不要尝试提供过于细致、过于规范的实例，甚至可以认为最初的实例只是帮助学生初步理解的一个引子，更细致和精准的理解可以在学生发现了显著特征、建立起了熟悉感和信心之后进行，这样一个学习路径的设计，可以让学生解析更为轻松，从而提高学习效果。&lt;/p&gt;
 &lt;p&gt;【案例】Big-O 的理解&lt;/p&gt;
-&lt;p&gt;如果总是抽象的从数学角度去理解 $O(n),, O(\log n)$ 并不容易让人有踏实的信服感，但如果进行几个算法的实际对比运行，让学生去体会&lt;strong&gt;实在&lt;/strong&gt;的时间长短区别，就会加深学生对Big-O的熟悉感和实例化。&lt;strong&gt;纸上谈兵终觉浅&lt;/strong&gt;，说的就是这个情况。&lt;/p&gt;
+&lt;p&gt;如果总是抽象的从数学角度去理解 $O(n),\, O(\log n)$ 并不容易让人有踏实的信服感，但如果进行几个算法的实际对比运行，让学生去体会&lt;strong&gt;实在&lt;/strong&gt;的时间长短区别，就会加深学生对Big-O的熟悉感和实例化。&lt;strong&gt;纸上谈兵终觉浅&lt;/strong&gt;，说的就是这个情况。&lt;/p&gt;
 &lt;h3 id="322-对计算的执行验证"&gt;3.2.2 对计算的执行验证&lt;/h3&gt;
 &lt;p&gt;在明确了计算对象后，就要进行对抽象概念的计算执行，在执行计算时：&lt;/p&gt;
 &lt;p&gt;常需要存储一些中间变量，在理解计算过程时，更快的让学生回想起这些变量的赋值，可以降低计算量。也就要求，教学者在提供教学材料时，尤其是搭配有语音讲授时，&lt;strong&gt;需将复杂中间变量予以呈现&lt;/strong&gt;，而不是要求学生短期存储在大脑中，消耗没必要的计算量。而教学者又可能认为推导已经严谨，只需学生自行回看回想，而没有考虑到计算量的消耗对学习效率的影响，从而偷懒，降低了教学的质量。&lt;/p&gt;
@@ -6847,7 +6847,7 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$&lt;p&gt;测试函�
 &lt;p&gt;在讲解过程中，辅助信息的几种类型&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;对于多数学生显而易见，可以解决的逻辑推导过程&lt;/li&gt;
-&lt;li&gt;可以不知道，直接记住的结论的推导过程，例如，$(e^x)&amp;rsquo; = e^x$&lt;/li&gt;
+&lt;li&gt;可以不知道，直接记住的结论的推导过程，例如，$(e^x)' = e^x$&lt;/li&gt;
 &lt;li&gt;更多的实例，更加详尽的解释或动画&lt;/li&gt;
 &lt;li&gt;自由度比较高的实验室&lt;/li&gt;
 &lt;li&gt;一些术语的扩展知识，例如，科学轶事&lt;/li&gt;
@@ -6929,7 +6929,7 @@ $$r = \frac{E(\mathcal{H}_e) - E(\mathcal{H}_s)}{\Delta t}$$&lt;p&gt;测试函�
 &lt;p&gt;当我们对一个计算实体赋予如上足够能力时，就可以是图灵完备的。根据邱奇－图灵论题，这就是一个计算实体所需计算技能的最高上限。本文中，最核心的假设就是邱奇－图灵论题。本文作者相信，任何一个图灵完备的计算实体，例如手机和个人电脑，都具备达到人脑智力的可能，也就是相信通用人工智能的可能。&lt;/p&gt;
 &lt;h3 id="412-抽象"&gt;4.1.2 抽象&lt;/h3&gt;
 &lt;p&gt;定义 $A$ 为某一个严格定义的算法，而 $d_r$ 是 $A$ 输出的一个可能数据，那么所有可以满足：&lt;/p&gt;
-$$d_r == A(d_i)$$&lt;p&gt;的 $d_i$ 便是一个类。使用集合的语言表达，即是 ${d_i : A(d_i) == d_r}$&lt;/p&gt;
+$$d_r == A(d_i)$$&lt;p&gt;的 $d_i$ 便是一个类。使用集合的语言表达，即是 $\{d_i : A(d_i) == d_r\}$&lt;/p&gt;
 &lt;p&gt;由于计算中对转化性的设置，使得计算总是决定性的，而逆运算可以有不止一个初设可能，从而形成抽象。因为我们可以定义类，也就定义了新的可以区分的概念，例如，偶数。对于这样的新概念，我们看作是某些可以元素化计算要求的简单组合，例如一些元素化判断条件的合取范式（Conjunctive Normal Form），编程语言中的类型检查就是比较容易明确的类概念。&lt;/p&gt;
 &lt;p&gt;抽象的本质就是对信息的剥离，减少对具体、明确信息的限制，得到更为通用的规律，而不是限制严格、缺乏弹性的计算结果。前文提到计算中要求有区分性，抽象就是减少可以使之被区分的部分信息。抽象使得信息传递更加简洁，使得计算结果更加通用。这些对信息的限制可以理解为特征，也可以认为是信息，也是定义中关心的限制，或者抽象对象具备的能力。&lt;/p&gt;
 &lt;p&gt;对于一个具象信息 $x$，可以隶属于无数的类，如何从这些类中选择出可以体现 $x$ 显著特征（或是在语境下的显著特征）决定着解决问题的搜索效率，例如，一般来说，对于三个苹果，最显著的特征可以是三个和苹果。
@@ -7041,16 +7041,16 @@ $$A_{fe}(x) == d_f$$&lt;p&gt;对于 $A_{fe}$ 的具体执行算法，这里无�
 &lt;h4 id="11-求导运算"&gt;1.1 求导运算&lt;/h4&gt;
 &lt;p&gt;为了进行求导运算，&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;需要掌握常见函数的导数公式，例如, $(e^x)&amp;rsquo; = e^x$&lt;/li&gt;
-&lt;li&gt;需要掌握四则运算的求导，例如，$(fg)&amp;rsquo; = f'g + fg'$&lt;/li&gt;
-&lt;li&gt;需要掌握复合函数的求导，例如，$(e^{x^2})&amp;rsquo; = 2x e^{x^2}$&lt;/li&gt;
+&lt;li&gt;需要掌握常见函数的导数公式，例如, $(e^x)' = e^x$&lt;/li&gt;
+&lt;li&gt;需要掌握四则运算的求导，例如，$(fg)' = f\'g + fg'$&lt;/li&gt;
+&lt;li&gt;需要掌握复合函数的求导，例如，$(e^{x^2})' = 2x e^{x^2}$&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;求导运算，作为导数的起点，是一种逻辑的结果，也可以看成是一种逻辑的初设。&lt;/p&gt;
 &lt;p&gt;因为现在我们讨论的是数学，是逻辑的计算结果，而对于科学，例如，$F=ma$，可以认为是一种特殊的逻辑初设，符合现实世界观察结果的一种模型初设。&lt;/p&gt;
 &lt;h4 id="12-求切线方程"&gt;1.2 求切线方程&lt;/h4&gt;
 &lt;p&gt;求导运算，可以应用到求某一切点的切线，例如，$f(x) = e^x$ 在 $x=1$ 处的切线方程&lt;/p&gt;
 &lt;p&gt;求切线方程，是基于求导运算和已经掌握的技巧（点斜式求直线方程）而得到的一个新的技巧。&lt;/p&gt;
-&lt;p&gt;结合拓展：$A \&amp;amp; B \Rightarrow C$，在这里，$A$ 指的是求导运算，$B$ 指的点斜式求直线方程，$C$ 指的是求切线方程&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/4-4/</guid><description>&lt;h2 id="44-对验收材料的改良"&gt;4.4 对验收材料的改良&lt;/h2&gt;
+&lt;p&gt;结合拓展：$A \\&amp; B \Rightarrow C$，在这里，$A$ 指的是求导运算，$B$ 指的点斜式求直线方程，$C$ 指的是求切线方程&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/edu/4-4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/edu/4-4/</guid><description>&lt;h2 id="44-对验收材料的改良"&gt;4.4 对验收材料的改良&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;教学材料的好坏，是在同等算力下，学习者得到的信息值多寡&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -11199,7 +11199,7 @@ Innovation is often portrayed as a relentless march forward—new technologies, 
 &lt;p&gt;高智社会需要复杂的 generative model 来解释世界：科学、批判、新闻、司法等多维机制。&lt;/p&gt;
 &lt;p&gt;这些高复杂度输入会带来大量 prediction error，需要不断修正内部模型。这样，权力中心也会被迫接受挑战。&lt;/p&gt;
 &lt;p&gt;专制选择“低智模型”：只允许单一维度解释世界。这样 Markov Blanket 的边界变得简单，输入输出关系容易控制。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/bayes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/bayes/</guid><description>&lt;h2 id="bayes"&gt;Bayes&lt;/h2&gt;
-&lt;h2 id="pbmid-a"&gt;$P(B\mid A)$&lt;/h2&gt;
+&lt;h2&gt;$P(B\mid A)$&lt;/h2&gt;
 &lt;p&gt;The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as&lt;/p&gt;
 $$
 P(B\mid A)
@@ -12075,7 +12075,7 @@ strong {
 &lt;/ol&gt;
 &lt;h2 id="class"&gt;Class&lt;/h2&gt;
 $$
-\bigl(R\subseteq A\\;\wedge\\;P(B\mid A,H)\ge1-\varepsilon\bigr)\\;\Longrightarrow\\;P(B\mid R,H)\ge1-\varepsilon.
+\bigl(R\subseteq A\;\wedge\;P(B\mid A,H)\ge1-\varepsilon\bigr)\;\Longrightarrow\;P(B\mid R,H)\ge1-\varepsilon.
 $$</description></item><item><title/><link>https://yingkui.com/notes/mechanics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/mechanics/</guid><description>&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MIBfKJHMWHU?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -12085,7 +12085,7 @@ $$
 \vec{F} = \frac{\text d\vec{p}}{\text dt}
 $$&lt;h2 id="lagrangian"&gt;Lagrangian&lt;/h2&gt;
 $$
-L(q_i, \dot q_i, t) \\;=\\; T(q_i, \dot q_i) \\;-\\; V(q_i)
+L(q_i, \dot q_i, t) \;=\; T(q_i, \dot q_i) \;-\; V(q_i)
 $$&lt;p&gt;Kinetic energy minus the potential energy. And Euler–Lagrange equation:&lt;/p&gt;
 $$
 \frac{d}{dt}\\!\left(\frac{\partial L}{\partial \dot q_i}\right)
@@ -12093,24 +12093,24 @@ $$
 = 0
 $$&lt;h2 id="hamiltionian"&gt;Hamiltionian&lt;/h2&gt;
 $$
-p_i \\;=\\; \frac{\partial L}{\partial \dot q_i}
+p_i \;=\; \frac{\partial L}{\partial \dot q_i}
 $$$$
 H(q_i, p_i, t)
-\\;=\\;
-\sum_i p_i\\,\dot q_i
-\\;-\\;
+\;=\;
+\sum_i p_i\,\dot q_i
+\;-\;
 L\bigl(q_i,\dot q_i,t\bigr)
 $$</description></item><item><title/><link>https://yingkui.com/notes/pa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/pa/</guid><description>&lt;h2 id="addition"&gt;Addition&lt;/h2&gt;
 $$
 \begin{aligned}
-&amp;\forall x \\;f(x, 0 ) =x \newline 
-&amp;\forall x \forall y \\;f(x, S(y)) = S(f(x, y))
+&amp;\forall x \;f(x, 0 ) =x \newline 
+&amp;\forall x \forall y \;f(x, S(y)) = S(f(x, y))
 \end{aligned}
 $$&lt;h2 id="multiplication"&gt;Multiplication&lt;/h2&gt;
 $$
 \begin{aligned}
-&amp;h(x,0)\\;:=\\;0\newline 
-&amp;h\bigl(x,S(y)\bigr) \\;:=\\;f\bigl(h(x,y),\\,x\bigr)
+&amp;h(x,0)\;:=\;0\newline 
+&amp;h\bigl(x,S(y)\bigr) \;:=\;f\bigl(h(x,y),\,x\bigr)
 \end{aligned}
 $$&lt;p&gt;Generated by AI.&lt;/p&gt;
 &lt;h2 id="statements"&gt;Statements&lt;/h2&gt;

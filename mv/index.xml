@@ -63,7 +63,7 @@ Innovation is often portrayed as a relentless march forward—new technologies, 
 &lt;p&gt;高智社会需要复杂的 generative model 来解释世界：科学、批判、新闻、司法等多维机制。&lt;/p&gt;
 &lt;p&gt;这些高复杂度输入会带来大量 prediction error，需要不断修正内部模型。这样，权力中心也会被迫接受挑战。&lt;/p&gt;
 &lt;p&gt;专制选择“低智模型”：只允许单一维度解释世界。这样 Markov Blanket 的边界变得简单，输入输出关系容易控制。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/mv/bayes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/mv/bayes/</guid><description>&lt;h2 id="bayes"&gt;Bayes&lt;/h2&gt;
-&lt;h2 id="pbmid-a"&gt;$P(B\mid A)$&lt;/h2&gt;
+&lt;h2&gt;$P(B\mid A)$&lt;/h2&gt;
 &lt;p&gt;The equation $E=mc^2$ may be the most celebrated in science, but its practical impact on our everyday lives is limited it dazzles more than it delivers. Even Feynman’s championing of atomic theory, though fundamentally important, doesn’t always translate into direct, universal benefits. In contrast, the principle of Bayesian inference expressed as&lt;/p&gt;
 $$
 P(B\mid A)
