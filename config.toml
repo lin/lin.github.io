@@ -66,8 +66,8 @@ weight = 2
 #     url = "https://bsky.app/profile/yingkui.bsky.social"
 
 [permalinks]
-  posts = '/:filename'
-  pages = '/:filename'
+  posts = '/:contentbasename'
+  pages = '/:contentbasename'
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Lorenz Attractor Simulation</title>
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Three.js for 3D rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- KaTeX CSS and JS for LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    
+    <style>
+        /* Custom CSS for a dark, engaging visualization */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            overflow: hidden; /* Prevent scrolling */
+        }
+        #info {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5);
+            max-width: 350px;
+            z-index: 10;
+            font-size: 0.875rem;
+            max-height: calc(100vh - 2rem);
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            -webkit-overflow-scrolling: touch;
+        }
+        canvas {
+            display: block;
+        }
+        /* Ensure KaTeX output is readable and line-breaks are handled */
+        .katex {
+            font-size: 1.0rem;
+            /* Added white-space: normal to ensure the inner text blocks wrap */
+            white-space: normal !important;
+        }
+        #equations-container {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Container for parameter description to ensure block formatting */
+        .param-line {
+            display: flex; /* Use flex to align the symbol and the text */
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="info">
+        <h1 id="main-title" class="text-xl font-bold mb-2 text-cyan-400"></h1>
+        <p class="text-gray-300 mb-2">This is an example of a system with a **pullback attractor** (characteristic states).</p>
+        
+        <!-- Container for rendering the equations -->
+        <div id="equations-container" class="text-xs text-gray-400">
+            <!-- Equations will be rendered here by JavaScript -->
+        </div>
+
+        <!-- NEW PARAMETER EXPLANATION SECTION -->
+        <div id="parameter-info" class="text-xs mt-4 pt-2 border-t border-gray-700">
+            <h3 class="font-semibold text-gray-300 mb-1">System Parameters:</h3>
+            <!-- Each parameter gets its own line, using a class for structure -->
+            <div id="sigma-desc" class="param-line mb-1"></div>
+            <div id="rho-desc" class="param-line mb-1"></div>
+            <div id="beta-desc" class="param-line"></div>
+        </div>
+        <!-- END NEW PARAMETER EXPLANATION SECTION -->
+
+
+        <p class="text-xs text-gray-400 mt-2">
+            **Instructions:** Click and drag with your mouse or use touch swipe to rotate the view. The line traces the system's trajectory, settling into the 'butterfly' characteristic state.
+        </p>
+        <div id="stats" class="mt-3 text-sm text-yellow-300">
+            Current State (X, Y, Z): <span id="x-val">0.10</span>, <span id="y-val">0.00</span>, <span id="z-val">0.00</span>
+        </div>
+        
+        <!-- EXPLANATION SECTION -->
+        <div id="explanation" class="text-xs mt-4 pt-2 border-t border-gray-700 text-gray-300">
+            <h3 class="font-semibold mb-1">Explanation</h3>
+            <div id="explanation-body" class="text-gray-400"></div>
+        </div>
+    </div>
+
+    <!-- The canvas where Three.js will render -->
+    <div id="container"></div>
+
+    <script>
+        // Wrap the entire simulation logic in an Immediately Invoked Function Expression (IIFE)
+        // to prevent global scope conflicts.
+        (function() {
+            // --- Global Variables ---
+            let scene, camera, renderer;
+            let line;
+            let mouse = { isDown: false, x: 0, y: 0 };
+            let rotation = { x: 0.5, y: 0.5 };
+            const maxPoints = 50000; // Maximum points to draw for performance
+            let pointCount = 0;
+            let positions = new Float32Array(maxPoints * 3);
+            let colors = new Float32Array(maxPoints * 3);
+
+            // Lorenz System Parameters (Classic Chaotic Values)
+            const sigma = 10;
+            const rho = 28; // The critical parameter: determines the chaotic characteristic state (attractor)
+            const beta = 8/3;
+            const dt = 0.005; // Time step for integration
+
+            // Initial State (x, y, z)
+            let x = 0.1, y = 0, z = 0;
+
+            // --- Utility Functions ---
+
+            /**
+             * Renders the LaTeX equations and parameter explanations using KaTeX.
+             */
+            function renderEquations() {
+                // 1. Render the title with the rho parameter
+                const titleElement = document.getElementById('main-title');
+                katex.render("Lorenz Attractor (\\rho = 28)", titleElement, {
+                    throwOnError: false
+                });
+
+                // 2. Render the full set of differential equations
+                const equationsContainer = document.getElementById('equations-container');
+                const equationsLatex = `
+                    $$\\begin{aligned}
+                    \\frac{dx}{dt} &= \\sigma(y-x) \\\\
+                    \\frac{dy}{dt} &= x(\\rho - z) - y \\\\
+                    \\frac{dz}{dt} &= xy - \\beta z
+                    \\end{aligned}$$
+                `;
+                
+                // Set the LaTeX string
+                equationsContainer.innerHTML = equationsLatex; 
+                
+                // Re-render the math once the string is set using auto-render
+                renderMathInElement(equationsContainer, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false},
+                    ],
+                    throwOnError: false
+                });
+
+                // 3. Render Parameter Explanations
+                
+                // Sigma (σ) - Prandtl number
+                const sigmaDescElement = document.getElementById('sigma-desc');
+                katex.render(
+                    "\\boldsymbol{\\sigma} \\text{ (Sigma)} = 10\\text{:}",
+                    sigmaDescElement,
+                    { throwOnError: false }
+                );
+                // Append the descriptive text as a separate HTML element for proper wrapping
+                sigmaDescElement.innerHTML += '<span class="text-gray-400 ml-1">Prandtl number, ratio of fluid viscosity to thermal diffusivity.</span>';
+
+                // Rho (ρ) - Rayleigh number
+                const rhoDescElement = document.getElementById('rho-desc');
+                katex.render(
+                    "\\boldsymbol{\\rho} \\text{ (Rho)} = 28\\text{:}",
+                    rhoDescElement,
+                    { throwOnError: false }
+                );
+                // Append the descriptive text as a separate HTML element for proper wrapping
+                rhoDescElement.innerHTML += '<span class="text-gray-400 ml-1">Rayleigh number, representing the temperature difference driving convection. Key to the chaotic attractor.</span>';
+
+                // Beta (β) - Geometric factor
+                const betaDescElement = document.getElementById('beta-desc');
+                katex.render(
+                    "\\boldsymbol{\\beta} \\text{ (Beta)} = \\frac{8}{3}\\text{:}",
+                    betaDescElement,
+                    { throwOnError: false }
+                );
+                // Append the descriptive text as a separate HTML element for proper wrapping
+                betaDescElement.innerHTML += '<span class="text-gray-400 ml-1">A geometric factor related to the aspect ratio of the convective cell.</span>';
+
+                // 4. Render mathematical explanation for RK4 and Taylor expansion
+                const explanationBody = document.getElementById('explanation-body');
+                explanationBody.innerHTML = `
+                    <p class="mb-1">Lorenz system:</p>
+                    <div id="exp-ode" class="mb-2"></div>
+
+                    <p class="mt-2 mb-1">RK4 one step (state <span id=\"exp-state\"></span>):</p>
+                    <div id="exp-rk4" class="mb-2"></div>
+
+                    <p class="mt-2 mb-1">Why this works (Taylor):</p>
+                    <div id="exp-taylor" class="mb-2"></div>
+
+                    <p class="mt-2">
+                        Euler uses only the first term: <span id=\"exp-euler\"></span>, which yields local error <span id=\"exp-lte\"></span> and global error <span id=\"exp-gte\"></span>. RK4 cancels lower-order terms to achieve global error <span id=\"exp-rkorder\"></span>.
+                    </p>
+                `;
+
+                // Explicit KaTeX rendering for reliability
+                katex.render("\\dot{x}=\\sigma(y-x),\\ \\dot{y}=x(\\rho - z)-y,\\ \\dot{z}=xy-\\beta z", document.getElementById('exp-ode'), { displayMode: true, throwOnError: false });
+                katex.render("\\mathbf{s}=(x,y,z)", document.getElementById('exp-state'), { throwOnError: false });
+                katex.render("\\begin{aligned}\n\\mathbf{k}_1 &= f(\\mathbf{s}_n),\\\\\n\\mathbf{k}_2 &= f\\!\\left(\\mathbf{s}_n+\\tfrac{dt}{2}\\mathbf{k}_1\\right),\\\\\n\\mathbf{k}_3 &= f\\!\\left(\\mathbf{s}_n+\\tfrac{dt}{2}\\mathbf{k}_2\\right),\\\\\n\\mathbf{k}_4 &= f\\!\\left(\\mathbf{s}_n+dt\\,\\mathbf{k}_3\\right),\\\\\n\\mathbf{s}_{n+1} &= \\mathbf{s}_n+\\tfrac{dt}{6}(\\mathbf{k}_1+2\\mathbf{k}_2+2\\mathbf{k}_3+\\mathbf{k}_4).\n\\end{aligned}", document.getElementById('exp-rk4'), { displayMode: true, throwOnError: false });
+                katex.render("\\begin{aligned}\ns(t+dt) &= s(t) + dt\\,s'(t) + \\tfrac{dt^2}{2}\\,s''(t) + O(dt^3),\\\\\ns'(t) &= f(s(t)),\\\\\ns''(t) &= \\tfrac{d}{dt}f(s(t)) = J_f(s(t))\\,f(s(t)).\n\\end{aligned}", document.getElementById('exp-taylor'), { displayMode: true, throwOnError: false });
+                katex.render("s_{n+1}=s_n+dt\\,f(s_n)", document.getElementById('exp-euler'), { throwOnError: false });
+                katex.render("O(dt^2)", document.getElementById('exp-lte'), { throwOnError: false });
+                katex.render("O(dt)", document.getElementById('exp-gte'), { throwOnError: false });
+                katex.render("O(dt^4)", document.getElementById('exp-rkorder'), { throwOnError: false });
+            }
+
+
+            /**
+             * The Lorenz differential equations (f(t, x))
+             * @param {number} x Current x state
+             * @param {number} y Current y state
+             * @param {number} z Current z state
+             * @returns {object} The derivatives (dx/dt, dy/dt, dz/dt)
+             */
+            function lorenzDerivatives(x, y, z) {
+                return {
+                    dx: sigma * (y - x),
+                    dy: x * (rho - z) - y,
+                    dz: x * y - beta * z
+                };
+            }
+
+            /**
+             * Runge-Kutta 4th Order (RK4) Integration Method
+             * This provides a highly accurate way to step the chaotic system forward in time.
+             */
+            function stepLorenzRK4() {
+                // k1 = f(t_n, x_n) * dt
+                const k1 = lorenzDerivatives(x, y, z);
+                const k1x = k1.dx * dt;
+                const k1y = k1.dy * dt;
+                const k1z = k1.dz * dt;
+
+                // k2 = f(t_n + dt/2, x_n + k1/2) * dt
+                const k2 = lorenzDerivatives(x + k1x * 0.5, y + k1y * 0.5, z + k1z * 0.5);
+                const k2x = k2.dx * dt;
+                const k2y = k2.dy * dt;
+                const k2z = k2.dz * dt;
+
+                // k3 = f(t_n + dt/2, x_n + k2/2) * dt
+                const k3 = lorenzDerivatives(x + k2x * 0.5, y + k2y * 0.5, z + k2z * 0.5);
+                const k3x = k3.dx * dt;
+                const k3y = k3.dy * dt;
+                const k3z = k3.dz * dt;
+
+                // k4 = f(t_n + dt, x_n + k3) * dt
+                const k4 = lorenzDerivatives(x + k3x, y + k3y, z + k3z);
+                const k4x = k4.dx * dt;
+                const k4y = k4.dy * dt;
+                const k4z = k4.dz * dt;
+
+                // x_{n+1} = x_n + (k1 + 2*k2 + 2*k3 + k4) / 6
+                x += (k1x + 2 * k2x + 2 * k3x + k4x) / 6;
+                y += (k1y + 2 * k2y + 2 * k3y + k4y) / 6;
+                z += (k1z + 2 * k2z + 2 * k3z + k4z) / 6;
+            }
+
+            /**
+             * Adds the current (x, y, z) state to the 3D trajectory.
+             */
+            function addPoint() {
+                if (pointCount >= maxPoints) {
+                    // Once max points reached, shift the array to simulate movement (trail effect)
+                    const shiftAmount = 3;
+                    positions.copyWithin(0, shiftAmount);
+                    colors.copyWithin(0, shiftAmount);
+                    pointCount = maxPoints - 1; // Decrement count for the new point
+                }
+
+                const i = pointCount * 3;
+
+                // Store position
+                positions[i] = x;
+                positions[i + 1] = y;
+                positions[i + 2] = z;
+
+                // Color gradient (based on z-value, normalized for visibility)
+                // Lower z is blue (cooler), higher z is red/yellow (warmer)
+                const normalizedZ = (z + 40) / 80; // Assuming Z is roughly between -40 and 40
+                const color = new THREE.Color();
+                color.setHSL(normalizedZ * 0.6, 1.0, 0.5); // Hue shifts from blue (0.6) to yellow (0.16)
+
+                colors[i] = color.r;
+                colors[i + 1] = color.g;
+                colors[i + 2] = color.b;
+
+                pointCount++;
+
+                // Update geometry attributes
+                const geometry = line.geometry;
+                geometry.attributes.position.needsUpdate = true;
+                geometry.attributes.color.needsUpdate = true;
+                geometry.setDrawRange(0, pointCount);
+
+                // Update info panel
+                document.getElementById('x-val').textContent = x.toFixed(2);
+                document.getElementById('y-val').textContent = y.toFixed(2);
+                document.getElementById('z-val').textContent = z.toFixed(2);
+            }
+
+            // --- Three.js Initialization ---
+
+            function init() {
+                const container = document.getElementById('container');
+
+                // 1. Scene Setup
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color(0x0d1117);
+
+                // 2. Camera Setup (Perspective camera)
+                camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+                camera.position.z = 100;
+
+                // 3. Renderer Setup
+                renderer = new THREE.WebGLRenderer({ antialias: true });
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setPixelRatio(window.devicePixelRatio);
+                container.appendChild(renderer.domElement);
+
+                // 4. Geometry and Material for the Attractor Trajectory
+                const geometry = new THREE.BufferGeometry();
+                // Initialize the attributes with the Float32Arrays
+                geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3).setUsage(THREE.DynamicDrawUsage));
+                geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3).setUsage(THREE.DynamicDrawUsage));
+
+                // Line Material
+                const material = new THREE.LineBasicMaterial({
+                    vertexColors: true, // Use colors attribute
+                    linewidth: 2 // Note: linewidth often ignored by WebGL renderer
+                });
+
+                // Create the line object
+                line = new THREE.Line(geometry, material);
+                scene.add(line);
+
+                // Set the initial rotation of the line container
+                line.rotation.set(rotation.x, rotation.y, 0);
+
+                // Add event listeners for interactivity
+                window.addEventListener('resize', onWindowResize, false);
+                container.addEventListener('mousedown', onMouseDown, false);
+                window.addEventListener('mousemove', onMouseMove, false);
+                window.addEventListener('mouseup', onMouseUp, false);
+                container.addEventListener('touchstart', onTouchStart, false);
+                window.addEventListener('touchmove', onTouchMove, false);
+                container.addEventListener('touchend', onMouseUp, false);
+            }
+
+            // --- Event Handlers ---
+
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
+            function onMouseDown(event) {
+                mouse.isDown = true;
+                mouse.x = event.clientX;
+                mouse.y = event.clientY;
+            }
+
+            function onMouseUp() {
+                mouse.isDown = false;
+            }
+
+            function onMouseMove(event) {
+                if (mouse.isDown) {
+                    // Calculate rotation change based on mouse movement
+                    const deltaX = (event.clientX - mouse.x) * 0.005;
+                    const deltaY = (event.clientY - mouse.y) * 0.005;
+
+                    // Update the rotation object of the attractor
+                    line.rotation.y += deltaX;
+                    line.rotation.x += deltaY;
+
+                    mouse.x = event.clientX;
+                    mouse.y = event.clientY;
+                }
+            }
+
+            function onTouchStart(event) {
+                if (event.touches.length === 1) {
+                    event.preventDefault();
+                    mouse.isDown = true;
+                    mouse.x = event.touches[0].clientX;
+                    mouse.y = event.touches[0].clientY;
+                }
+            }
+
+            function onTouchMove(event) {
+                if (mouse.isDown && event.touches.length === 1) {
+                    event.preventDefault();
+                    const deltaX = (event.touches[0].clientX - mouse.x) * 0.005;
+                    const deltaY = (event.touches[0].clientY - mouse.y) * 0.005;
+
+                    line.rotation.y += deltaX;
+                    line.rotation.x += deltaY;
+
+                    mouse.x = event.touches[0].clientX;
+                    mouse.y = event.touches[0].clientY;
+                }
+            }
+
+
+            // --- Main Animation Loop ---
+
+            function animate() {
+                requestAnimationFrame(animate);
+
+                // 1. Step the chaotic system forward in time
+                stepLorenzRK4();
+
+                // 2. Add the new position to the visual trajectory
+                addPoint();
+
+                // 3. Render the scene
+                renderer.render(scene, camera);
+            }
+
+            // Start the application when the window loads
+            window.onload = function () {
+                init();
+                // Render KaTeX after the DOM is ready and the container exists
+                renderEquations();
+                animate();
+            };
+        })(); // End of IIFE
+
+    </script>
+</body>
+</html>

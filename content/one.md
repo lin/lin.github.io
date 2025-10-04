@@ -9,15 +9,19 @@ type: "page"
 |:-----------------------|:----------------------------------------------|:------------------|
 | One EdTech Company     |  [Education](../edu)                          | 2029年            | 
 | One Philosophy Book    |  [Money and Vocabulary](../MV)                | Starts when Financially Stable      |
-| One AGI Paper          |  [Intelligence](../ai)                        | Starts when Financailly Free        | 
+| One AGI Paper          |  [Intelligence](../ai)                        | Starts when Financially Free        | 
 
+## Habits
 
-## Media Digest
-
-1. ✅ The Economist / Businessweek / TIME / 三联 
-1. ✅ New Scientist / Scientif American / Nature
+1. 一章书，三篇文
+1. The Economist, New Scientist
+1. 游戏，看书，写作，编程
 
 ## Principles
+
+不对比，不评价，专注提高和进展
+
+直面痛苦不逃避，不急不贪不忧虑
 
 | Principles             |
 |:-----------------------|

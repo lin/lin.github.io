@@ -1068,10 +1068,6 @@
   </url><url>
     <loc>http://localhost:1313/sanyi/</loc>
   </url><url>
-    <loc>http://localhost:1313/private/goalaction/</loc>
-  </url><url>
-    <loc>http://localhost:1313/private/reflect/</loc>
-  </url><url>
     <loc>http://localhost:1313/read/brave/</loc>
   </url><url>
     <loc>http://localhost:1313/read/classics/</loc>
@@ -1149,8 +1145,6 @@
     <loc>http://localhost:1313/courses/</loc>
   </url><url>
     <loc>http://localhost:1313/books/</loc>
-  </url><url>
-    <loc>http://localhost:1313/private/</loc>
   </url><url>
     <loc>http://localhost:1313/cs/t/sort/</loc>
   </url><url>
