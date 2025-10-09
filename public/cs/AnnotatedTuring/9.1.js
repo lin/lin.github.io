@@ -1,1 +1,0 @@
-let STANDARD_DESC_REGEX = /DA+DC*DC*[RL]?DA+/

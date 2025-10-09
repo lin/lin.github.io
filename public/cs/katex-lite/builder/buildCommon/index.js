@@ -1,9 +1,0 @@
-Object.assign(
-  module.exports,
-  require('.elems'),
-  require('.combine'),
-  require('.ord'),
-  require('.size'),
-  require('.vlist'),
-  require('.symbol'),
-)
