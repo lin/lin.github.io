@@ -1,5 +1,5 @@
 ---
-title: "Duolingo"
+title: "How Duolingo works?"
 isCJKLanguage: true
 date: 2025-05-29
 ---
@@ -11,6 +11,18 @@ table {
   white-space: nowrap;
 }
 </style>
+
+## Streaks
+
+- **gainedXp** (number): Total XP earned on the calendar day.
+- **frozen** (boolean): Whether a Streak Freeze protected the streak on that day (i.e., no qualifying activity but streak not lost).
+- **streakExtended** (boolean): Whether this day counted toward maintaining/extending the streak.
+- **date** (number): Unix epoch seconds at day boundary (UTC). Consecutive entries typically differ by 86,400 seconds.
+- **userId** (number): Duolingo user identifier.
+- **repaired** (boolean): Whether the streak was later repaired for this day (e.g., post hoc repair product).
+- **dailyGoalXp** (number): XP threshold required to meet the daily goal on that day.
+- **numSessions** (number): Count of learning sessions completed.
+- **totalSessionTime** (number): Sum of session durations in seconds for the day.
 
 ## Containers
 

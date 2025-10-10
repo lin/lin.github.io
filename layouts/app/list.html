@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header.html" . }}
+<body>
+  <div class="container wrapper list">
+    {{ partial "head.html" . }}
+
+    <h2 class="page-title">Apps</h2>
+    <div class="markdown">
+      {{ .Content }}
+    </div>
+
+    {{ $appsPath := "static/app" }}
+    {{ $apps := readDir $appsPath }}
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:16px">
+      {{ range $apps }}
+        {{ if .IsDir }}
+          {{ $dir := .Name }}
+          {{ $indexPath := printf "%s/%s/index.html" $appsPath $dir }}
+          {{ if fileExists $indexPath }}
+          <a class="card" href="/app/{{ $dir }}/" style="display:block;padding:16px;border:1px solid #e5e7eb;border-radius:12px;text-decoration:none">
+            <div class="name" style="font-weight:600;margin-bottom:6px">{{ $dir }}</div>
+            <div class="path" style="font-size:12px;color:#6b7280">/app/{{ $dir }}/</div>
+          </a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
+
+
