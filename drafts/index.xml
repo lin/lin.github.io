@@ -45,12 +45,14 @@
 &lt;li&gt;.fun&lt;/li&gt;
 &lt;li&gt;.online&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/drafts/fandui/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/drafts/fandui/</guid><description>&lt;h2 id="当你不敢反对的时候你怕的是什么"&gt;当你不敢反对的时候，你怕的是什么？&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/drafts/fang-legacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/drafts/fang-legacy/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;方舟子在这个互动里所表现的，“很无知，又一脑子浆糊很糊涂”，“不知藏拙，偏爱跨领域乱说”，“没有严谨的思维”，也就是他总爱说的，&lt;strong&gt;“无知无畏的妄人”&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;方舟子在这个互动里所表现的，“很无知，又一脑子浆糊很糊涂”，“不知藏拙，偏爱跨领域乱说”，“没有严谨的思维”，也就是他总爱说的，&lt;strong&gt;“无知无畏的妄人”&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id="起因"&gt;起因&lt;/h2&gt;
 &lt;p&gt;2025年新年正午，方舟子在 Bluesky 发表了一条&lt;a href="https://archive.ph/voOst"&gt;帖子&lt;/a&gt;，通过 Deepseek 对 &lt;strong&gt;9.9和9.11哪个大&lt;/strong&gt; 这个提示词的错误反馈，来佐证 Deepseek 是一个性能相对很差的人工智能聊天机器人。&lt;/p&gt;
 &lt;p&gt;&lt;img src="../img/fang-1.png" alt=""&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“AI天才女子”的数学的确与众不同，雄辩地证明9.11大于9.9。阿里巴巴的人工智能这么便宜，连美国人都震惊了。最该震惊的是天才的数学啊&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;“AI天才女子”的数学的确与众不同，雄辩地证明9.11大于9.9。阿里巴巴的人工智能这么便宜，连美国人都震惊了。最该震惊的是天才的数学啊&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;大约十分钟之后，我正要吃午饭，看到这条帖子时有些吃惊，因为在过去的几天内，我频繁尝试使用 Deepseek V3，其对数学问题的处理效果一直很出色，觉得不该在这个小数比大小上出现大比例幻觉现象，我拿出手机通过 &lt;a href="https://chat.deepseek.com/"&gt;chat.deepseek.com&lt;/a&gt; 测试了几次，发现并没有出现截屏中的幻觉（Hallucination）问题。&lt;/p&gt;
 &lt;p&gt;但为了排除样本小带来的偏见，我自己在 Google Colab 上写了&lt;a href="https://colab.research.google.com/drive/13tJsMwOZfKJl2Lcvxjc_dj3Dv7_PUQZQ"&gt;一段程序&lt;/a&gt;，在50个测试中，都没有幻觉出现。&lt;/p&gt;
 &lt;p&gt;这时，我觉得自己有信心认为，方舟子所发的第一个截屏并没有真实的表现 Deepseek 的性能，就给方舟子回复，分享给方舟子这个事实。&lt;/p&gt;
@@ -60,7 +62,8 @@
 &lt;p&gt;在我回复十分钟后，方舟子回复我说：&lt;/p&gt;
 &lt;p&gt;&lt;img src="../img/fang-5.png" alt=""&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;你啥毛病，竟然拿在问题暴露出来之后紧急改正过的结果来指控我造谣？最烦的就是这种人，等一会拉黑。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;你啥毛病，竟然拿在问题暴露出来之后紧急改正过的结果来指控我造谣？最烦的就是这种人，等一会拉黑。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;第一，方舟子认为我对事实的描述，是在指控他造谣，我毫无此意，造成误解可能是我表达上考虑不周&lt;/p&gt;
 &lt;p&gt;第二，方舟子以较为确信的口吻，说性能变化是 Deepseek 的紧急修改所致&lt;/p&gt;
 &lt;p&gt;&lt;img src="../img/fang-12.png" alt=""&gt;&lt;/p&gt;
