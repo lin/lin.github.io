@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stochastic Dynamics Visualizer: Langevin & Fokker-Planck</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #28a745;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .slider-control {
+            flex-basis: 45%;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .slider-control label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0056b3;
+        }
+        .parameter-display {
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .visual-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        #langevinCanvas {
+            border: 1px solid #0056b3;
+            background-color: #fff;
+            margin-right: 20px;
+        }
+        .fpe-explanation {
+            flex-basis: 40%;
+            padding: 15px;
+            background: #e6f7ff;
+            border-left: 5px solid #007bff;
+            border-radius: 8px;
+        }
+        .explanation-text {
+            margin-top: 15px;
+            padding: 10px;
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Stochastic Dynamics Visualizer ⚛️</h1>
+    <p>Adjust the parameters below and press **Start Simulation** to see a particle's trajectory (Langevin Equation) and its corresponding statistical outcome (Fokker-Planck Equation).</p>
+
+    <div class="controls">
+        <div class="slider-control">
+            <label for="friction">Friction Coefficient ($\gamma$): <span id="gammaValue" class="parameter-display">1.0</span></label>
+            <input type="range" id="friction" min="0.1" max="5.0" step="0.1" value="1.0" oninput="updateControls()">
+        </div>
+
+        <div class="slider-control">
+            <label for="noise">Noise Strength ($\mathbf{F}_{R}$/Diffusion): <span id="noiseValue" class="parameter-display">1.0</span></label>
+            <input type="range" id="noise" min="0.1" max="5.0" step="0.1" value="1.0" oninput="updateControls()">
+        </div>
+        
+    </div>
+    
+    <div style="text-align: center; margin-top: 15px;">
+        <button onclick="startSimulation()" style="padding: 10px 20px; font-size: 1.1em; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Start New Simulation</button>
+    </div>
+
+    <div class="visual-area">
+        <div>
+            <h2>1. Langevin Equation (Particle Trajectory)</h2>
+            <p>The canvas shows the random walk of a single particle. Its zig-zag motion is the **Brownian motion** modeled by the Langevin Equation.</p>
+            <canvas id="langevinCanvas" width="550" height="550"></canvas>
+        </div>
+
+        <div class="fpe-explanation">
+            <h2>2. Fokker-Planck Equation (Probability Cloud)</h2>
+            <p>The FPE describes the time evolution of the **probability density function** ($P(x, t)$) for an entire group of particles.</p>
+            
+            <div class="explanation-text">
+                <strong>Current Interpretation:</strong>
+                <p id="fpeResult">
+                    With balanced **Friction** ($\gamma=1.0$) and **Noise** ($F_R=1.0$), the system is in **thermal equilibrium**. The probability cloud will spread out (diffuse) but keep its center stable (drift), settling into a fixed shape (Gaussian).
+                </p>
+                <ul>
+                    <li>**If Friction is high:** The drift term dominates. The particle's trajectory is sluggish, and the probability cloud quickly **concentrates** around the average position.</li>
+                    <li>**If Noise is high:** The diffusion term dominates. The particle's trajectory is erratic, and the probability cloud **spreads out rapidly** over time.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('langevinCanvas');
+    const ctx = canvas.getContext('2d');
+    const WIDTH = canvas.width;
+    const HEIGHT = canvas.height;
+    const center = { x: WIDTH / 2, y: HEIGHT / 2 };
+
+    let animationFrameId = null; // Use this to manage the animation loop
+    let particle = { x: center.x, y: center.y, vx: 0, vy: 0 };
+    let dt = 0.1; // Time step
+    let mass = 1.0; // Mass of the particle
+    let trail = [];
+
+    // Function to update parameter values and text
+    function updateControls() {
+        const gamma = parseFloat(document.getElementById('friction').value);
+        const noise = parseFloat(document.getElementById('noise').value);
+        
+        document.getElementById('gammaValue').textContent = gamma.toFixed(1);
+        document.getElementById('noiseValue').textContent = noise.toFixed(1);
+        
+        // Update FPE Interpretation text based on controls
+        const fpeResult = document.getElementById('fpeResult');
+        let fpeText = '';
+
+        if (gamma > 3.0 && noise < 1.5) {
+            fpeText = `**HIGH FRICTION** ($\gamma=${gamma.toFixed(1)}$) **LOW NOISE** ($F_R=${noise.toFixed(1)}$): The Drift term dominates. The probability cloud quickly **concentrates (sharpening)** and movement is sluggish (Overdamped Regime).`;
+        } else if (gamma < 1.5 && noise > 3.0) {
+            fpeText = `**LOW FRICTION** ($\gamma=${gamma.toFixed(1)}$) **HIGH NOISE** ($F_R=${noise.toFixed(1)}$): The Diffusion term dominates. The probability cloud **spreads out rapidly** and the particle is violently buffeted.`;
+        } else if (Math.abs(gamma - noise) < 0.5) {
+            fpeText = `**BALANCED** ($\gamma \approx F_R$): The system is near **thermal equilibrium (FDT)**. The probability cloud reaches a stable, wide shape (Gaussian). Classic, efficient Brownian motion.`;
+        } else {
+            fpeText = `**Friction** ($\gamma=${gamma.toFixed(1)}$) and **Noise** ($F_R=${noise.toFixed(1)}$) are competing. See how the visual motion is either more **damped** (high $\gamma$) or more **random** (high $F_R$).`;
+        }
+        fpeResult.innerHTML = fpeText;
+    }
+
+    // The core Langevin Equation integration
+    function stepLangevin() {
+        const gamma = parseFloat(document.getElementById('friction').value);
+        const noiseStrength = parseFloat(document.getElementById('noise').value);
+
+        // Calculate forces based on the Langevin Equation: m*dv/dt = -gamma*v + F_R(t)
+        
+        // 1. Friction (Systematic/Drift Force): -gamma * v
+        const frictionX = -gamma * particle.vx;
+        const frictionY = -gamma * particle.vy;
+
+        // 2. Random Force (Fluctuating/Noise): F_R(t) ~ Gaussian White Noise
+        // Use a Box-Muller transform approximation for Gaussian random numbers
+        const randGaussian = () => {
+            let u = 0, v = 0;
+            while(u === 0) u = Math.random(); 
+            while(v === 0) v = Math.random();
+            return Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v );
+        };
+        const randomForceX = noiseStrength * randGaussian();
+        const randomForceY = noiseStrength * randGaussian();
+
+        // Total Force and Acceleration
+        const totalForceX = frictionX + randomForceX;
+        const totalForceY = frictionY + randomForceY;
+        
+        const ax = totalForceX / mass;
+        const ay = totalForceY / mass;
+
+        // Update Velocity (Euler-Maruyama integration)
+        particle.vx += ax * dt;
+        particle.vy += ay * dt;
+
+        // Update Position
+        particle.x += particle.vx * dt;
+        particle.y += particle.vy * dt;
+
+        // Keep particle within canvas bounds (reflect/damp motion at walls)
+        if (particle.x < 0) { particle.x = 0; particle.vx *= -0.8; }
+        if (particle.x > WIDTH) { particle.x = WIDTH; particle.vx *= -0.8; }
+        if (particle.y < 0) { particle.y = 0; particle.vy *= -0.8; }
+        if (particle.y > HEIGHT) { particle.y = HEIGHT; particle.vy *= -0.8; }
+
+        // Store position for the trail
+        trail.push({x: particle.x, y: particle.y});
+        if (trail.length > 500) trail.shift(); // Limit trail length
+    }
+
+    // Function to draw the simulation
+    function draw() {
+        ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+        // Draw the boundary (Fokker-Planck probability distribution region)
+        ctx.strokeStyle = '#28a745';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(0, 0, WIDTH, HEIGHT);
+
+        // Draw the probability center mark (start position)
+        ctx.fillStyle = '#0056b3';
+        ctx.beginPath();
+        ctx.arc(center.x, center.y, 5, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.font = "14px Arial";
+        ctx.fillText("Initial P(x,0)", center.x + 10, center.y + 5);
+
+
+        // Draw the trail
+        if (trail.length > 1) {
+            ctx.beginPath();
+            ctx.moveTo(trail[0].x, trail[0].y);
+            for(let i = 1; i < trail.length; i++) {
+                ctx.lineTo(trail[i].x, trail[i].y);
+            }
+            ctx.strokeStyle = 'rgba(0, 0, 0, 0.5)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+
+        // Draw the particle
+        ctx.fillStyle = '#dc3545';
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, 4, 0, 2 * Math.PI);
+        ctx.fill();
+
+        stepLangevin();
+        
+        // Crucial line: request the next frame, making the loop continuous
+        animationFrameId = requestAnimationFrame(draw); 
+    }
+
+    // Function to start or restart the simulation
+    function startSimulation() {
+        // Stop any currently running animation loop
+        if (animationFrameId) {
+            cancelAnimationFrame(animationFrameId);
+        }
+        
+        // Reset particle state and trail
+        particle = { x: center.x, y: center.y, vx: 0, vy: 0 };
+        trail = [];
+        
+        // Start the new draw/update loop
+        animationFrameId = requestAnimationFrame(draw); 
+    }
+
+    // Initialize controls and start the simulation on load
+    window.onload = function() {
+        updateControls();
+        startSimulation();
+    }
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>

@@ -15,26 +15,24 @@ isCJKLanguage: true
 
 ## 基本解决方案
 
-1. 单字母元音：a /ɑː/, i /iː/, u /uː/，o /oʊ/
-1. 双字母元音：er /ə/， or /ɔː/, ar /ɑː/, ee /iː/, oo /uː/，oe /oʊ/
-1. 辅音：q/x/zh/c，变为 chi/shi/j/ts，其中 qi变为ki，xi变为hi，ji变成gi
+1. 单字母元音：a  /ɑː/, i /iː/, u  /uː/，o /oʊ/
+1. 双字母元音：er /ə/， aw /ɔː/, ar /ɑː/, ee /iː/, oo /uː/，ow /oʊ/
+1. 辅音：q/x/zh/c，变为 chi/shi/dj/ts，且 chi吃变为chree，shi师变为shree，ji变成gee
 
 ## 规则
 
 | 情景      | 改为                               | 例子                                                          |  
 |:---:|:--------|------------------------------------- |:-------------------------------------------------------------|
-|q        | ch                                   | chia / chin / ching                                       |
-|x       | sh                                   | shia / shior / shin                               |
-|zh        | j                                    | ji / ja / jai / jan                               |
-|ji        | gi                                   |                                     |
-|qi        | ki                                  |                                       |
-|xi       | hi                                   |                                       |
-|c         | ts                                   | tsai / tsang / tsu / tsi                                  |
-|ü         | yu                                   | nyu / lyu / gyu / kyu             |
-|🤔 e         | er                                   | ber / mer / bern / cherng                              | 
-|🤔 ao        | or                                   | bor / tor / kor / kior                              | 
-
-
+|q         | ch                                   | chya / chin / ching                                       |
+|x         | sh                                   | shya（夏）/ shyaw（小） / shin （新）/ shyu （徐）                     |
+|zh        | j                                    | ja（扎） / jai（债） / jan（战）/ jaw（赵）/ jon（中） 周（jow）          |
+|c         | ts                                   | tsai / tsang / tsu / tsi                                            |
+|ü         | yu                                   | nyu（女） / lyu（吕）/ gyu（举） / chyu（娶）                           |
+|e/o       | er                                   | ber（博） / mer（魔） / bern（本） / cherng（成）                       | 
+|ao        | aw                                   | tawbaw（淘宝） / gawkaw（高考） / chyaw(巧)                            | 
+|ou        | ow                                   | dow （豆）/ kowtow（叩头）                                             |
+|ui        | wei                                  | gwei（贵）|
+  
 ## Consonants
 
 1. b, p, m, f

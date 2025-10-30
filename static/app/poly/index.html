@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polymarket Odds Return Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-gray-200">
+    <div id="root"></div>
+    <script type="text/babel">
+      const { useState, useEffect } = React;
+
+      // --- UTILS & CONSTANTS ---
+
+      const LogoIcon = () => (
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+      );
+      
+      const calculateReturns = (buyPrice, sellPrice, holdingPeriodDays = 1) => {
+        if (buyPrice <= 0 || buyPrice >= sellPrice) {
+          return null;
+        }
+
+        const periodReturnDecimal = (sellPrice - buyPrice) / buyPrice;
+        if (!isFinite(periodReturnDecimal)) return null;
+
+        const dailyReturnDecimal = Math.pow(1 + periodReturnDecimal, 1 / holdingPeriodDays) - 1;
+        if (!isFinite(dailyReturnDecimal)) return null;
+
+        const weeklyReturnDecimal = Math.pow(1 + dailyReturnDecimal, 7) - 1;
+        const monthlyReturnDecimal = Math.pow(1 + dailyReturnDecimal, 30) - 1;
+        const yearlyReturnDecimal = Math.pow(1 + dailyReturnDecimal, 365) - 1;
+
+        return {
+          daily: dailyReturnDecimal * 100,
+          weekly: weeklyReturnDecimal * 100,
+          monthly: monthlyReturnDecimal * 100,
+          yearly: isFinite(yearlyReturnDecimal) ? yearlyReturnDecimal * 100 : Infinity,
+        };
+      };
+
+      // --- COMPONENTS ---
+
+      const StyledInput = ({ label, value, setValue, id, prefix }) => (
+          <div>
+              <label htmlFor={id} className="block text-sm font-medium text-gray-400 mb-2">
+                  {label}
+              </label>
+              <div className="relative">
+                  {prefix && <span className="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-400">{prefix}</span>}
+                  <input
+                      type="number"
+                      id={id}
+                      value={value}
+                      onChange={(e) => setValue(e.target.value)}
+                      className={`w-full bg-gray-700 border-gray-600 text-white rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block ${prefix ? 'pl-7' : 'pl-3'} pr-3 py-2 transition`}
+                      placeholder="0.00"
+                      step="0.1"
+                  />
+              </div>
+          </div>
+      );
+
+      const CalculatorForm = ({
+        buyPrice,
+        setBuyPrice,
+        sellPrice,
+        setSellPrice,
+        investment,
+        setInvestment,
+        holdingPeriod,
+        setHoldingPeriod,
+      }) => {
+        return (
+          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <StyledInput label="Buy Price (¢)" value={buyPrice} setValue={setBuyPrice} id="buyPrice" />
+              <StyledInput label="Sell Price (¢)" value={sellPrice} setValue={setSellPrice} id="sellPrice" />
+            </div>
+
+            <div>
+              <label htmlFor="holdingPeriod" className="block text-sm font-medium text-gray-400 mb-2">
+                  Trade Frequency
+              </label>
+              <select
+                  id="holdingPeriod"
+                  value={holdingPeriod}
+                  onChange={(e) => setHoldingPeriod(e.target.value)}
+                  className="w-full bg-gray-700 border-gray-600 text-white rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block pl-3 pr-10 py-2 transition appearance-none"
+              >
+                  <option value="daily">Daily</option>
+                  <option value="2-days">Every 2 Days</option>
+                  <option value="3-days">Every 3 Days</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+              </select>
+            </div>
+            
+            <StyledInput label="Initial Investment" value={investment} setValue={setInvestment} id="investment" prefix="$" />
+          </form>
+        );
+      };
+
+      // --- MAIN APP COMPONENT ---
+
+      const App = () => {
+        const holdingPeriodDaysMap = {
+          daily: 1,
+          '2-days': 2,
+          '3-days': 3,
+          weekly: 7,
+          monthly: 30,
+        };
+
+        const [buyPrice, setBuyPrice] = useState('98');
+        const [sellPrice, setSellPrice] = useState('100');
+        const [investment, setInvestment] = useState('1000');
+        const [holdingPeriod, setHoldingPeriod] = useState('daily');
+        const [customReturn, setCustomReturn] = useState(null);
+
+        useEffect(() => {
+          const buy = parseFloat(buyPrice);
+          const sell = parseFloat(sellPrice);
+          const days = holdingPeriodDaysMap[holdingPeriod];
+          
+          if (!isNaN(buy) && !isNaN(sell)) {
+            const result = calculateReturns(buy, sell, days);
+            if (result) {
+              setCustomReturn({
+                buyPrice: buy,
+                sellPrice: sell,
+                ...result,
+                isValid: true,
+              });
+            } else {
+              setCustomReturn({
+                  buyPrice: buy,
+                  sellPrice: sell,
+                  daily: 0, weekly: 0, monthly: 0, yearly: 0,
+                  isValid: false,
+              });
+            }
+          }
+        }, [buyPrice, sellPrice, holdingPeriod]);
+        
+        const CNY_RATE = 7.12;
+        const investmentValue = parseFloat(investment);
+        
+        const getCompoundedReturnDecimal = (days) => customReturn?.isValid ? Math.pow(1 + (customReturn.daily / 100), days) - 1 : 0;
+        
+        const twoMonthReturn = getCompoundedReturnDecimal(60) * 100;
+        const threeMonthReturn = getCompoundedReturnDecimal(90) * 100;
+        const sixMonthReturn = getCompoundedReturnDecimal(182.5) * 100;
+        const twoYearReturn = getCompoundedReturnDecimal(365 * 2) * 100;
+
+        const dailyProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(1) : 0;
+        const weeklyProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(7) : 0;
+        const monthlyProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(30) : 0;
+        const twoMonthProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(60) : 0;
+        const threeMonthProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(90) : 0;
+        const sixMonthProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(182.5) : 0;
+        const oneYearProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(365) : 0;
+        const twoYearProfit = !isNaN(investmentValue) ? investmentValue * getCompoundedReturnDecimal(365 * 2) : 0;
+
+        const totalAfterDaily = investmentValue + dailyProfit;
+        const totalAfterWeekly = investmentValue + weeklyProfit;
+        const totalAfterMonthly = investmentValue + monthlyProfit;
+        const totalAfterTwoMonth = investmentValue + twoMonthProfit;
+        const totalAfterThreeMonth = investmentValue + threeMonthProfit;
+        const totalAfterSixMonth = investmentValue + sixMonthProfit;
+        const totalAfterOneYear = investmentValue + oneYearProfit;
+        const totalAfterTwoYear = investmentValue + twoYearProfit;
+
+        const formatCurrency = (value) => {
+          if (!isFinite(value)) return '∞';
+
+          if (Math.abs(value) >= 1000) {
+            return new Intl.NumberFormat('en-US', {
+              notation: 'compact',
+              compactDisplay: 'short',
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            }).format(value);
+          }
+
+          return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        };
+
+        const formatPercent = (value) => {
+          if (!isFinite(value)) return '∞';
+          if (Math.abs(value) > 10000) {
+              return new Intl.NumberFormat('en-US', {
+                  notation: 'compact',
+                  compactDisplay: 'short',
+                  minimumFractionDigits: 1,
+                  maximumFractionDigits: 1,
+              }).format(value);
+          }
+          return value.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+        };
+
+        return (
+          <div className="min-h-screen bg-gray-900 text-gray-200 font-sans p-4 sm:p-6 lg:p-8">
+            <div className="max-w-7xl mx-auto">
+              
+              <header className="flex items-center gap-4 mb-8">
+                <LogoIcon />
+                <div>
+                  <h1 className="text-2xl sm:text-3xl font-bold text-white">Polymarket Odds Return Calculator</h1>
+                  <p className="text-gray-400 mt-1">Visualize compounded returns from odds-based trades.</p>
+                </div>
+              </header>
+
+              <main className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+                  <h2 className="text-xl font-semibold text-white mb-4">Trade Simulator</h2>
+                  <CalculatorForm
+                    buyPrice={buyPrice}
+                    setBuyPrice={setBuyPrice}
+                    sellPrice={sellPrice}
+                    setSellPrice={setSellPrice}
+                    investment={investment}
+                    setInvestment={setInvestment}
+                    holdingPeriod={holdingPeriod}
+                    setHoldingPeriod={setHoldingPeriod}
+                  />
+                </div>
+                {customReturn && (
+                     <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+                        <h2 className="text-xl font-semibold text-white mb-4">Simulation Results</h2>
+                        {customReturn.isValid ? (
+                            <div className="space-y-6">
+                               <div>
+                                  <p className="text-lg font-semibold text-white mb-2">Compounded Returns (%)</p>
+                                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                                      <div>
+                                          <p className="text-sm text-gray-400">Effective Daily</p>
+                                          <p className="text-xl font-bold text-green-400">
+                                              {formatPercent(customReturn.daily)}%
+                                          </p>
+                                      </div>
+                                      <div>
+                                          <p className="text-sm text-gray-400">Weekly</p>
+                                          <p className="font-semibold text-indigo-300">{formatPercent(customReturn.weekly)}%</p>
+                                      </div>
+                                      <div>
+                                          <p className="text-sm text-gray-400">Monthly</p>
+                                          <p className="font-semibold text-indigo-300">{formatPercent(customReturn.monthly)}%</p>
+                                      </div>
+                                      <div>
+                                          <p className="text-sm text-gray-400">2-Month</p>
+                                          <p className="font-semibold text-indigo-300">{formatPercent(twoMonthReturn)}%</p>
+                                      </div>
+                                  </div>
+                                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-4">
+                                     <div>
+                                        <p className="text-sm text-gray-400">3-Month</p>
+                                        <p className="font-semibold text-indigo-300">{formatPercent(threeMonthReturn)}%</p>
+                                     </div>
+                                     <div>
+                                        <p className="text-sm text-gray-400">6-Month</p>
+                                        <p className="font-semibold text-indigo-300">{formatPercent(sixMonthReturn)}%</p>
+                                     </div>
+                                     <div>
+                                        <p className="text-sm text-gray-400">1-Year</p>
+                                        <p className="font-semibold text-indigo-300">{formatPercent(customReturn.yearly)}%</p>
+                                     </div>
+                                     <div>
+                                        <p className="text-sm text-gray-400">2-Year</p>
+                                        <p className="font-semibold text-indigo-300">{formatPercent(twoYearReturn)}%</p>
+                                     </div>
+                                  </div>
+                               </div>
+                              
+                              {!isNaN(investmentValue) && investmentValue > 0 && (
+                                  <div className="pt-6 border-t border-gray-700 space-y-6">
+                                      <div>
+                                        <p className="text-lg font-semibold text-white mb-2">
+                                          Profit on <span className="text-indigo-300">${investmentValue.toLocaleString()}</span> Investment
+                                        </p>
+                                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                                            <div>
+                                                <p className="text-sm text-gray-400">Daily</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(dailyProfit)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(dailyProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">Weekly</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(weeklyProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(weeklyProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">Monthly</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(monthlyProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(monthlyProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">2-Month</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(twoMonthProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(twoMonthProfit * CNY_RATE)}</p>
+                                            </div>
+                                        </div>
+                                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-4">
+                                            <div>
+                                                <p className="text-sm text-gray-400">3-Month</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(threeMonthProfit)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(threeMonthProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">6-Month</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(sixMonthProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(sixMonthProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">1-Year</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(oneYearProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(oneYearProfit * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">2-Year</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(twoYearProfit)}</p>
+                                                 <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(twoYearProfit * CNY_RATE)}</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div>
+                                        <p className="text-lg font-semibold text-white mb-2">Total Value after Growth</p>
+                                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 1 Day</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterDaily)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterDaily * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 1 Week</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterWeekly)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterWeekly * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 1 Month</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterMonthly)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterMonthly * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 2 Months</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterTwoMonth)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterTwoMonth * CNY_RATE)}</p>
+                                            </div>
+                                        </div>
+                                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center mt-4">
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 3 Months</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterThreeMonth)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterThreeMonth * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 6 Months</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterSixMonth)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterSixMonth * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 1 Year</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterOneYear)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterOneYear * CNY_RATE)}</p>
+                                            </div>
+                                            <div>
+                                                <p className="text-sm text-gray-400">After 2 Years</p>
+                                                <p className="text-md font-semibold text-green-400">${formatCurrency(totalAfterTwoYear)}</p>
+                                                <p className="text-sm font-semibold text-cyan-400">¥{formatCurrency(totalAfterTwoYear * CNY_RATE)}</p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              )}
+                            </div>
+                        ) : (
+                            <div className="text-center py-8">
+                                <p className="text-yellow-400">Invalid input. Buy price must be lower than sell price and greater than zero.</p>
+                            </div>
+                        )}
+                     </div>
+                )}
+              </main>
+
+            </div>
+          </div>
+        );
+      };
+
+      // --- RENDERER ---
+      
+      const rootElement = document.getElementById('root');
+      if (!rootElement) {
+        throw new Error("Could not find root element to mount to");
+      }
+
+      const root = ReactDOM.createRoot(rootElement);
+      root.render(
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      );
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
