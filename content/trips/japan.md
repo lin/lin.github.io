@@ -3,6 +3,8 @@ title: "日本之旅"
 date: 2024-07-28
 ---
 
+[Back to all trips](../) - [Previous Japan Trip](../kyushu) - [Next Japan Trip](../okinawa)
+
 ## 7月21日
 
 1. 出发：早晨四点半起床，五点十分出门，司机有点迷糊，去北门，又从正门进入，走的土路到机场

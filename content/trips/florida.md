@@ -3,6 +3,8 @@ title: "佛罗里达之旅"
 date: 2012-01-03
 ---
 
+[Back to all trips](../)
+
 ## 1月2日，到达奥兰多
 
 ![](/img/florida-1.png)

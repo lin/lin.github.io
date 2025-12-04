@@ -3,6 +3,8 @@ title: "关西之旅"
 date: 2025-09-05
 ---
 
+[Back to all trips](../) - [Previous Japan Trip](../okinawa)
+
 <style>
 strong {
     background-color: yellow;
