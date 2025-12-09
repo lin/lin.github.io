@@ -51,4 +51,7 @@
     {{ if .Params.math }}
 		{{ partial "helpers/katex.html" . }}
 	{{ end }}
+	
+	{{/* React Widgets Loader */}}
+	{{ partial "react-widgets-loader.html" . }}
 </head>

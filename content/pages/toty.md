@@ -42,4 +42,4 @@ If you mention that year, what I remember most.
 | 2022 | Russian Invasion of Ukraine                |          
 | 2023 | GPT 4                                      |
 | 2024 | U.S. Presidential Election                 |    
-| 2025 |                                            |    
+| 2025 |                                             |    

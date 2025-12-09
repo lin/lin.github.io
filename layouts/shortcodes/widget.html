@@ -1,0 +1,23 @@
+{{- $component := .Get 0 -}}
+{{- $id := printf "react-widget-%s-%d" $component (now.UnixMilli) -}}
+{{- $props := dict -}}
+
+{{- /* Collect all named parameters as props (skip positional params) */ -}}
+{{- range $key, $value := .Params -}}
+  {{- if not (or (eq (printf "%T" $key) "int") (eq $key 0)) -}}
+    {{- $props = merge $props (dict $key $value) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Create container div */ -}}
+<div id="{{ $id }}" class="react-widget-container"></div>
+
+{{- /* Queue widget for initialization */ -}}
+<script>
+  window.reactWidgets = window.reactWidgets || [];
+  window.reactWidgets.push({
+    id: "{{ $id }}",
+    component: "{{ $component }}",
+    props: {{ $props | jsonify }}
+  });
+</script>

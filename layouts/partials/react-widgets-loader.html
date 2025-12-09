@@ -1,0 +1,35 @@
+{{- /* Load React Widget System */ -}}
+{{- /* Only load if page uses react widgets */ -}}
+{{- if or (in .Content "react-widget-container") (.Params.useReactWidgets) -}}
+
+<!-- Tailwind CSS with preflight disabled to avoid theme conflicts -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- React and ReactDOM from CDN -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+<!-- Widget Registry System -->
+<script src="{{ "js/react-widgets.js" | relURL }}"></script>
+
+<!-- Load compiled widget bundles -->
+{{- /* Auto-detect widgets from rendered HTML (look for widget IDs) */ -}}
+{{- $widgets := slice -}}
+{{- range $match := findRE `react-widget-([^-]+)-` .Content -}}
+  {{- $component := replaceRE `react-widget-([^-]+)-.*` "$1" $match -}}
+  {{- $widgets = $widgets | append $component -}}
+{{- end -}}
+
+{{- /* Remove duplicates and load each widget */ -}}
+{{- $uniqueWidgets := slice -}}
+{{- range $widgets -}}
+  {{- if not (in $uniqueWidgets .) -}}
+    {{- $uniqueWidgets = $uniqueWidgets | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $uniqueWidgets -}}
+<script src="{{ printf "js/compiled/%s.js" . | relURL }}"></script>
+{{- end -}}
+
+{{- end -}}
