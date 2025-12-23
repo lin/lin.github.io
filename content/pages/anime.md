@@ -1,5 +1,5 @@
 ---
-title: "Anime by GPT-4o"
+title: "Anime by ChatGPT"
 date: 2025-03-30
 ---
 
@@ -83,6 +83,10 @@ date: 2025-03-30
   <figcaption>清水寺</figcaption>
 </figure>
 
+<figure>
+  <img src="../img/anime/fushimi.png" style="max-height:700px">
+  <figcaption>伏見稲荷大社 (2025-12-16)</figcaption>
+</figure>
 
 <!-- <figure>
   <img src="../img/anime/ishigaki.PNG" style="max-height:700px">
