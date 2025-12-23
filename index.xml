@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1765248075458" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1766488032941" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1765248075458",
+ id: "react-widget-GMMVisualizer-1766488032941",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -688,7 +688,7 @@ table {
 &lt;h2 id="指责随行女翻译是不对的"&gt;指责随行女翻译是不对的&lt;/h2&gt;
 &lt;p&gt;网友都在责备女翻译，说梁教练不收钱，翻译成了政府支付，网友批评说是恶意翻译。但看视频就知道，那是文旅局的工作人员说的，她们都是戴眼镜黑衣服的女士，确实容易弄混。但事实上，就是文旅局的工作人员说的，这钱政府出了，梁教练是政府工作人员，所以 Speed 不用给了，网友骂随行翻译乱翻译，破坏梁教练美好形象，是没仔细看。&lt;/p&gt;
 &lt;h2 id="撒谎的梁教练"&gt;撒谎的梁教练&lt;/h2&gt;
-&lt;p&gt;后来梁教练发视频解释来龙去脉，中间有很多与视频中事实不符合的情景，比如他说自己迎上去和 Speed 说你好之类，当时的他和 Speed 并肩走，都没管 Speed，Speed 跪下来也是一脸懵的，还需要随行人员和他解释，如果早被安排任务，怎么会这么迷惑呢？&lt;/p&gt;</description></item><item><title>Anime by GPT-4o</title><link>https://yingkui.com/anime/</link><pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/anime/</guid><description>&lt;figure&gt;
+&lt;p&gt;后来梁教练发视频解释来龙去脉，中间有很多与视频中事实不符合的情景，比如他说自己迎上去和 Speed 说你好之类，当时的他和 Speed 并肩走，都没管 Speed，Speed 跪下来也是一脸懵的，还需要随行人员和他解释，如果早被安排任务，怎么会这么迷惑呢？&lt;/p&gt;</description></item><item><title>Anime by ChatGPT</title><link>https://yingkui.com/anime/</link><pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/anime/</guid><description>&lt;figure&gt;
  &lt;img src="../img/anime/sensoji.PNG" style="max-height:500px"&gt;
  &lt;figcaption&gt;浅草寺&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -751,6 +751,10 @@ table {
 &lt;figure&gt;
  &lt;img src="../img/anime/kiyomizu2.png" style="max-height:700px"&gt;
  &lt;figcaption&gt;清水寺&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+ &lt;img src="../img/anime/fushimi.png" style="max-height:700px"&gt;
+ &lt;figcaption&gt;伏見稲荷大社 (2025-12-16)&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;!-- &lt;figure&gt;
  &lt;img src="../img/anime/ishigaki.PNG" style="max-height:700px"&gt;
@@ -5337,18 +5341,18 @@ B -&amp;gt; z.
 &lt;li&gt;Add api with react&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/basic/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;React&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;createElement&lt;/span&gt;(
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;h1&amp;#39;&lt;/span&gt;, &lt;span style="color:#75715e"&gt;// type
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; {}, &lt;span style="color:#75715e"&gt;// props
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;Hello, React!&amp;#39;&lt;/span&gt; &lt;span style="color:#75715e"&gt;// children
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {}, &lt;span style="color:#75715e"&gt;// props
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;Hello, React!&amp;#39;&lt;/span&gt; &lt;span style="color:#75715e"&gt;// children
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="generate-html-string"&gt;Generate HTML String&lt;/h2&gt;
 &lt;h2 id="re-render-when-state-change"&gt;Re-render when state change.&lt;/h2&gt;
 &lt;h2 id="use-effect"&gt;Use Effect&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;useEffect&lt;/span&gt;(() =&amp;gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Code to run on mount and update (componentDidMount and componentDidUpdate)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; () =&amp;gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Cleanup code (componentWillUnmount)
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; };
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; };
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}, [&lt;span style="color:#a6e22e"&gt;someValue&lt;/span&gt;]); &lt;span style="color:#75715e"&gt;// Run again only if `someValue` changes
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/state/</guid><description>&lt;h3 id="react-state"&gt;React State&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;StateTestComponent&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; () =&amp;gt; {
@@ -5381,52 +5385,52 @@ B -&amp;gt; z.
 &lt;li&gt;ruby rails node yarn&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# RUBY AND NODE&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; RUBY_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;.3.0&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;FROM&lt;/span&gt; &lt;span style="color:#e6db74"&gt;registry.docker.com/library/ruby:$RUBY_VERSION-slim&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# RUBY AND NODE&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; RUBY_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;.3.0&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;FROM&lt;/span&gt; &lt;span style="color:#e6db74"&gt;registry.docker.com/library/ruby:$RUBY_VERSION-slim&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Rails app lives here&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;WORKDIR&lt;/span&gt; &lt;span style="color:#e6db74"&gt;/rails&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Rails app lives here&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;WORKDIR&lt;/span&gt; &lt;span style="color:#e6db74"&gt;/rails&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Set production environment&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;ENV&lt;/span&gt; RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;production&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; BUNDLE_DEPLOYMENT&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; BUNDLE_PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/usr/local/bundle&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; BUNDLE_WITHOUT&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;development&amp;#34;&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Set production environment&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ENV&lt;/span&gt; RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;production&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; BUNDLE_DEPLOYMENT&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; BUNDLE_PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/usr/local/bundle&amp;#34;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; BUNDLE_WITHOUT&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;development&amp;#34;&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Install packages needed to build gems and node modules&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; apt-get update -qq &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Install packages needed to build gems and node modules&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; apt-get update -qq &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Install JavaScript dependencies&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; NODE_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;14&lt;/span&gt;.15.1&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; YARN_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;.22.17&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;ENV&lt;/span&gt; PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;/usr/local/node/bin:$PATH&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; /tmp/node-build-master/bin/node-build &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;NODE_VERSION&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; /usr/local/node &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; npm install -g yarn@$YARN_VERSION &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; rm -rf /tmp/node-build-master&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Install JavaScript dependencies&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; NODE_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;14&lt;/span&gt;.15.1&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; YARN_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;.22.17&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ENV&lt;/span&gt; PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;/usr/local/node/bin:$PATH&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; curl -sL https://github.com/nodenv/node-build/archive/master.tar.gz | tar xz -C /tmp/ &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; /tmp/node-build-master/bin/node-build &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;NODE_VERSION&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; /usr/local/node &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; npm install -g yarn@$YARN_VERSION &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; rm -rf /tmp/node-build-master&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Install node modules&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; package.json yarn.lock ./&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; yarn install --frozen-lockfile&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Install node modules&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; package.json yarn.lock ./&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; yarn install --frozen-lockfile&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Copy application code&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . .&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Copy application code&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . .&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Set the working directory in the container to /myapp&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;WORKDIR&lt;/span&gt; &lt;span style="color:#e6db74"&gt;/a23&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Set the working directory in the container to /myapp&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;WORKDIR&lt;/span&gt; &lt;span style="color:#e6db74"&gt;/a23&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Copy the current directory contents into the container at /a23&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; Gemfile /a23/Gemfile&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; Gemfile.lock /a23/Gemfile.lock&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Copy the current directory contents into the container at /a23&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; Gemfile /a23/Gemfile&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; Gemfile.lock /a23/Gemfile.lock&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Install any needed packages specified in Gemfile&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; bundle install&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Install any needed packages specified in Gemfile&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;RUN&lt;/span&gt; bundle install&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Copy the rest of your app&amp;#39;s source code from your host to your image filesystem.&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . /a23&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Copy the rest of your app&amp;#39;s source code from your host to your image filesystem.&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . /a23&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/git/</guid><description>&lt;h2 id="git"&gt;GIT&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;My Name&amp;#34;&lt;/span&gt;
@@ -24408,22 +24412,48 @@ table {
 &lt;li&gt;《Your coolness won&amp;rsquo;t boost my ego》，既要尊重大家的炫酷感，越要有自知之明的谦逊&lt;/li&gt;
 &lt;li&gt;《多元与包容》，不仅品味不同，顺序也可能不一样，不要年龄歧视，不要急于评价&lt;/li&gt;
 &lt;li&gt;《同理心的成长》，变得越来越同情他人，越来越在乎别人的苦难&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Yingkui's Top 3</title><link>https://yingkui.com/top/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;p&gt;Last Updated: 2025.09.24&lt;/p&gt;
+&lt;/ol&gt;</description></item><item><title>Yingkui's Top 10</title><link>https://yingkui.com/top/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/top/</guid><description>&lt;p&gt;Last Updated: 2025.12.16&lt;/p&gt;
 &lt;h2 id="books"&gt;Books&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;《Thinking, Fast and Slow》&lt;/li&gt;
-&lt;li&gt;《Guns, Germs and Steel》&lt;/li&gt;
+&lt;li&gt;Thinking, Fast and Slow&lt;/li&gt;
+&lt;li&gt;Guns, Germs, and Steel&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="movies--tv-shows"&gt;Movies &amp;amp; TV Shows&lt;/h2&gt;
+&lt;h2 id="movies"&gt;Movies&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;《Godfather》&lt;/li&gt;
-&lt;li&gt;《Chernobyl》&lt;/li&gt;
-&lt;li&gt;《Breaking Bad》&lt;/li&gt;
+&lt;li&gt;The Shawshank Redemption&lt;/li&gt;
+&lt;li&gt;Godfather &amp;amp; Godfather Part II&lt;/li&gt;
+&lt;li&gt;The Last Emperor&lt;/li&gt;
+&lt;li&gt;Forrest Gump&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="tv-series"&gt;TV Series&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chernobyl&lt;/li&gt;
+&lt;li&gt;Breaking Bad&lt;/li&gt;
+&lt;li&gt;Game of Thrones&lt;/li&gt;
+&lt;li&gt;The Sopranos&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="documentaries"&gt;Documentaries&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The Last Dance&lt;/li&gt;
+&lt;li&gt;9/11: One Day in America&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="games"&gt;Games&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;《The Legend of Zelda: Breath of the Wild》&lt;/li&gt;
-&lt;li&gt;《Grand Theft Auto V》&lt;/li&gt;
+&lt;li&gt;The Legend of Zelda: Breath of the Wild&lt;/li&gt;
+&lt;li&gt;Grand Theft Auto V&lt;/li&gt;
+&lt;li&gt;The Last of Us&lt;/li&gt;
+&lt;li&gt;Red Dead Redemption II&lt;/li&gt;
+&lt;li&gt;Super Mario Galaxy&lt;/li&gt;
+&lt;li&gt;Portal 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="songs--artists"&gt;Songs / Artists&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Yesterday (The Beatles)&lt;/li&gt;
+&lt;li&gt;Imagine (John Lennon)&lt;/li&gt;
+&lt;li&gt;Like a Rolling Stone (Bob Dylan)&lt;/li&gt;
+&lt;li&gt;Bohemian Rhapsody (Queen)&lt;/li&gt;
+&lt;li&gt;Satisfaction (The Rolling Stones)&lt;/li&gt;
+&lt;li&gt;海阔天空 (Beyond)&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>単語</title><link>https://yingkui.com/dango/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/dango/</guid><description>&lt;h2 id="section-2"&gt;Section 2&lt;/h2&gt;
 &lt;h2 id="section-2-8"&gt;Section 2-8&lt;/h2&gt;
 &lt;table&gt;

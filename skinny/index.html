@@ -144,7 +144,7 @@
 </span></span><span style=display:flex><span>  counter
 </span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
 </span></span></code></pre></div><p>2，jQuery selector</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-coffee data-lang=coffee><span style=display:flex><span><span style=color:#75715e># dry codes
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>$form = <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>)
+</span></span></span><span style=display:flex><span>$form = <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>)
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$form</span>[<span style=color:#ae81ff>0</span>].<span style=color:#a6e22e>reset</span>()
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$form</span>.<span style=color:#a6e22e>find</span>(<span style=color:#e6db74>&#34;.success&#34;</span>).<span style=color:#a6e22e>removeClass</span>(<span style=color:#e6db74>&#34;success&#34;</span>)
@@ -152,7 +152,7 @@
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$form</span>.<span style=color:#a6e22e>submit</span>()
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># wet codes
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>)[<span style=color:#ae81ff>0</span>].<span style=color:#a6e22e>reset</span>()
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>)[<span style=color:#ae81ff>0</span>].<span style=color:#a6e22e>reset</span>()
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>).<span style=color:#a6e22e>find</span>(<span style=color:#e6db74>&#34;.success&#34;</span>).<span style=color:#a6e22e>removeClass</span>(<span style=color:#e6db74>&#34;success&#34;</span>)
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>).<span style=color:#a6e22e>find</span>(<span style=color:#e6db74>&#34;.success-message&#34;</span>).<span style=color:#a6e22e>remove</span>()
 </span></span><span style=display:flex><span><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;#add-item-form&#39;</span>).<span style=color:#a6e22e>submit</span>()
@@ -347,7 +347,7 @@
 </span></span></code></pre></div><p>2，HTML-CSS-JavaScript</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-coffee data-lang=coffee><span style=display:flex><span><span style=color:#75715e># ========================================================= #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ================== HTML / Structure ===================== #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ========================================================= #
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>.<span style=color:#a6e22e>tweet</span>
 </span></span><span style=display:flex><span>  .left.thumb
 </span></span><span style=display:flex><span>    = <span style=color:#a6e22e>image</span> <span style=color:#a6e22e>user</span>.<span style=color:#a6e22e>thumb</span>.<span style=color:#a6e22e>url</span>, height: <span style=color:#e6db74>&#34;50px&#34;</span>
@@ -362,13 +362,13 @@
 </span></span><span style=display:flex><span><span style=color:#75715e># ===================================================== #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ================== CSS / Styles ===================== #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ===================================================== #
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># generic
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>.<span style=color:#a6e22e>left</span>, .<span style=color:#a6e22e>right</span>
+</span></span></span><span style=display:flex><span>.<span style=color:#a6e22e>left</span>, .<span style=color:#a6e22e>right</span>
 </span></span><span style=display:flex><span>  display: <span style=color:#a6e22e>inline</span><span style=color:#f92672>-</span><span style=color:#a6e22e>block</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># tweet
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>.<span style=color:#a6e22e>tweet</span> <span style=color:#f92672>&lt;</span> .<span style=color:#a6e22e>card</span>
+</span></span></span><span style=display:flex><span>.<span style=color:#a6e22e>tweet</span> <span style=color:#f92672>&lt;</span> .<span style=color:#a6e22e>card</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  .<span style=color:#a6e22e>message</span>
 </span></span><span style=display:flex><span>    color: <span style=color:#a6e22e>green</span>
@@ -376,23 +376,23 @@
 </span></span><span style=display:flex><span>    resize: <span style=color:#a6e22e>(event) -&gt;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>      <span style=color:#75715e># based on properties
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>self</span>.<span style=color:#a6e22e>text</span>.<span style=color:#a6e22e>count</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>10</span>
+</span></span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>self</span>.<span style=color:#a6e22e>text</span>.<span style=color:#a6e22e>count</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>10</span>
 </span></span><span style=display:flex><span>        self.padding = <span style=color:#e6db74>&#34;15px&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>      <span style=color:#75715e># based on events
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>event</span> <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;click&#34;</span>
+</span></span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>event</span> <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;click&#34;</span>
 </span></span><span style=display:flex><span>        self.padding = <span style=color:#e6db74>&#34;20px&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># ============================================================ #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ================== Javascript / Events ===================== #
 </span></span></span><span style=display:flex><span><span style=color:#75715e># ============================================================ #
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># locate layers
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>layers = <span style=color:#a6e22e>$</span> <span style=color:#e6db74>&#34;.tweet&#34;</span>
+</span></span></span><span style=display:flex><span>layers = <span style=color:#a6e22e>$</span> <span style=color:#e6db74>&#34;.tweet&#34;</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># how to response to events
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#a6e22e>layers</span>.<span style=color:#a6e22e>click</span> <span style=color:#a6e22e>-&gt;</span> <span style=color:#a6e22e>message</span>.<span style=color:#a6e22e>text</span> <span style=color:#e6db74>&#34;You clicked the tweet!&#34;</span>
+</span></span></span><span style=display:flex><span><span style=color:#a6e22e>layers</span>.<span style=color:#a6e22e>click</span> <span style=color:#a6e22e>-&gt;</span> <span style=color:#a6e22e>message</span>.<span style=color:#a6e22e>text</span> <span style=color:#e6db74>&#34;You clicked the tweet!&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#a6e22e>layers</span>.<span style=color:#a6e22e>on</span> <span style=color:#e6db74>&#34;fancy event&#34;</span>, <span style=color:#a6e22e>(event) -&gt;</span>
 </span></span><span style=display:flex><span>  name = <span style=color:#a6e22e>self</span>.<span style=color:#a6e22e>find</span> <span style=color:#e6db74>&#34;.name&#34;</span>
 </span></span><span style=display:flex><span>  <span style=color:#a6e22e>name</span>.<span style=color:#a6e22e>text</span> <span style=color:#e6db74>&#34;I am fancy </span><span style=color:#e6db74>#{</span><span style=color:#a6e22e>event</span><span style=color:#e6db74>}</span><span style=color:#e6db74>!&#34;</span>
