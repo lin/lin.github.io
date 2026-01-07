@@ -8,7 +8,7 @@ type: "page"
 | One Life               | Three Goals                                   | Due               |
 |:-----------------------|:----------------------------------------------|:------------------|
 | One EdTech Company     |  [Education](../edu)                          | 2029年            | 
-| One Philosophy Book    |  [Money and Vocabulary](../MV)                | Starts when Financially Stable      |
+| One Philosophy Book    |  [Money and Vocabulary](../mv)                | Starts when Financially Stable      |
 | One AGI Paper          |  [Intelligence](../ai)                        | Starts when Financially Free        | 
 
 ## Habits

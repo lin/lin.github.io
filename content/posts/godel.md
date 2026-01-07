@@ -1,5 +1,5 @@
 ---
-title: "Gödel's Proof"
+title: "Gödel's Proof using Python"
 date: 2025-06-16
 math: true
 ---
@@ -24,41 +24,32 @@ The statement _7 is a prime number._ is true and we can prove it formally using 
 
 Gödel showed us there a type of number $\theta$ with a  number $q$.
 
-**$q$ is a $\theta$ number**, the same as 7 is a prime number, but we can't prove.
+**$q$ is a $\theta$ number**, the same as 7 is a prime number, the statement is true but we can't mechanically prove it from a fixed set of axioms.
 
 The whole idea is to define the $\theta$, and find the $q$.
 
 ## Encoding and Decoding
 
+If we accept the fact that programming can be mechanically done, we can encode any text into a number if we can write a python program, like following:
+
+```py
+def encode(text):
+    return int(text.encode('utf-8').hex(), 16)
+```
+
+For example, `encode('1 + 1 = 2')` is `211178044722`.
+
+The reverse action would be:
+
+```py
+def decode(number):
+    byte_count = (number.bit_length() + 7) // 8
+    return number.to_bytes(byte_count, 'big').decode('utf-8')
+```
+
+For example, `decode(273861846916120310563305513)` gives us `∀x(x+0=x)`.
+
 ### Encoding Statements
-
-The statement $1+1=2$ can be expressed using one unique number:
-
-$$
-2^{2}
-\times3^{1}
-\times5^{3}
-\times7^{2}
-\times11^{1}
-\times13^{5}
-\times17^{2}
-\times19^{2}
-\times23^{1}.
-$$
-
-The statement $\forall x(x + 0 = x)$ means for all natural number, if you add zero to it, it will give you the same number, e.g. $2 +0 = 2$, $32093+0=32093$. And this simple statement can be expressed using one unique number (extremely long number):
-
-$$
-2^{8}\times
-3^{12}\times
-5^{10}\times
-7^{12}\times
-11^{3}\times
-13^{1}\times
-17^{5}\times
-19^{12}\times
-23^{11}
-$$
 
 The statement `3 is a prime number` can be expressed a little big longer:
 
@@ -67,20 +58,9 @@ $$
 ((x=1 \wedge y = 3)\vee(x = 3 \wedge y=1))))
 $$
 
-The encoded number will also be long:
+And the function call `encode('∀x(∀y(x×y=3→((x=1∧y=3)∨(x=3∧y=1))))')` gives us
 
-$$
-\begin{aligned}
-2^{8}\times3^{12}\times5^{10}\times7^{8}\times11^{13}\times13^{10}\times17^{12}\times \newline 
-19^{4} \times23^{13}\times29^{5}\times31^{2}\times37^{2}\times41^{2}\times43^{1}\times \newline
-47^{15}\times53^{10}\times59^{10}\times61^{12}\times67^{5}\times71^{2}\times73^{1}\times \newline
-79^{14}\times83^{13}\times89^{5}\times97^{2}\times101^{2}\times103^{2}\times107^{1} \times \newline  109^{11}\times
-113^{7}\times127^{10}\times131^{12}\times137^{5}\times139^{2}\times \newline  149^{2}\times151^{2}\times 
-157^{1}\times163^{14}\times167^{13}\times173^{5}\times \newline  179^{2}\times181^{1}\times191^{11}\times193^{11}\times197^{11}\times199^{11}
-\end{aligned}
-$$
-
-Yet it is still a unique number for that statement. Statements are also called sentences.
+`34866652169611433353558731771603039911116713485514898318782071023779878676580404623913947424679492999390325956487465`
 
 ### Encoding Formulas
 
@@ -95,80 +75,61 @@ Replacing $3$ with $z$, we define a formula with one free varible (not associati
 
 Such a formula with $z$ can also be encoded to a unique number:
 
-$$
-\begin{aligned}
-2^{8}
-\times3^{12}
-\times5^{10}
-\times7^{8}
-\times11^{13}
-\times13^{10}\newline
-\times17^{12}
-\times19^{4}
-\times23^{13}
-\times29^{5}
-\times31^{14}\newline
-\times37^{16}
-\times41^{10}
-\times43^{10}
-\times47^{12}
-\times53^{5}\newline
-\times59^{2}
-\times61^{1}
-\times67^{15}
-\times71^{13}
-\times73^{5}\newline
-\times79^{14}
-\times83^{11}
-\times89^{7}
-\times97^{10}
-\times101^{12}\newline
-\times103^{5}
-\times107^{14}
-\times109^{15}
-\times113^{13}
-\times127^{5}\newline
-\times131^{2}
-\times137^{1}
-\times139^{11}
-\times149^{11}
-\times151^{11}
-\times157^{11}
-\end{aligned}
-$$
-
-Anothe example is the class of odd numbers:
-
-$$
-\mathrm{isOdd}(x)=\exists y(x = (y + y) + 1)
-$$
-
-The encoded number for this formula is:
-
-$$
-\begin{aligned}
-2^{9}\times
-3^{13}\times
-5^{10}\times
-7^{12}\times
-11^{5}\times
-13^{10}\newline\times
-17^{13}\times
-19^{3}\times
-23^{13}\times
-29^{11}\times
-31^{3}\newline\times
-37^{2}\times
-41^{1}\times
-43^{11}
-\end{aligned}
-$$
+`2407446714671960661684017502465934769344525857188784286837374252857560807533789189320063964694640296626875411133665922890255481032586519234707017191823576884826025179701560314258408468859228381387370826090594053365359696218701174888257366313`
 
 
+## Using Python
 
-### Decoding
+We can use python to argue the Gödel's proof.
 
-Not every number can be decoded as a valid statement or formula, for example, $118098 = 2^1\times 3^{10}$ means $0=$, which has no real value to us. So the number that can be decoded has to be a valid one.
+```py
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+```
+
+We can encode the function using `inspect`
+
+```py
+import inspect
+encode(inspect.getsource(is_prime))
+```
+
+The the `is_prime` becomes a number
+
+`124563657395992973459423124433160591155887831920030510532410700710229237692588238535348680957649931630333633945462884102906156294002163749547084814365117696989779431735486222753897427000536583957527982637667016997657898994778376451044487325847968755340632532049394079266285850361205303693776904923331508559773080873577668933910894092892082469929610006297683455195730950133502010634`
+
+### Encode and Decode in Python
+
+```py
+import inspect
+
+def encode(obj):
+    text = inspect.getsource(obj) if callable(obj) else str(obj)
+    return int(text.encode('utf-8').hex(), 16)
+
+def decode(number):
+    byte_count = (number.bit_length() + 7) // 8
+    decoded_text = number.to_bytes(byte_count, 'big').decode('utf-8')
+    
+    local_scope = {}
+    try:
+        exec(decoded_text, {}, local_scope)
+        for value in local_scope.values():
+            if callable(value):
+                return value
+    except:
+        pass
+    return decoded_text
+```
+
+### An Example
+
+Not every number can be decoded as a valid statement or formula. So the number that can be decoded has to be a valid one.
 
 Similar to argument type checking in programming, the decoded mathematical stuff may not be suitable for function parameters.
 
@@ -178,31 +139,26 @@ $$
 \mathrm{decode}(\mathrm{encode}(\mathrm{isPrime}(x)))(\mathrm{encode}(\mathrm{isOdd}(x)))
 $$
 
-But this one is not valid, after decoding, the statement can't use as a function.
+In Python way:
 
-$$
-\mathrm{decode}(\mathrm{encode}(\forall x(x + 0 = x))(\mathrm{encode}(\mathrm{isOdd}(x)))
-$$
+```py
+def isPrime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+    
+def isOdd(n):
+    return n % 2 != 0
 
-In the coming arguments, Gödel never used an invalid number when decoding presents. 
+decode(encode(isPrime))(encode(isOdd))
+```
+
+`encode(idOdd)` is a number `195036360125036444117266947858712823150716611928214970173155623117324581861098629640202`, which is not a prime number.
 
 ## The Unprovable Statement
-
-<!-- ### Statements
-
-Godel only used seven constants:
-
-$$
-\begin{align*}
-\text{1. } & \neg && \text{(logical negation)} \newline
-\text{2. } & \vee && \text{(logical or)} \newline
-\text{3. } & \forall && \text{(universal quantifier)} \newline
-\text{4. } & 0 && \text{(zero)}\newline
-\text{5. } &  S && \text{(successor function)}\newline
-\text{6. } &  ( && \text{(opening parenthesis)}  \newline
-\text{7. } &  ) && \text{(closing parenthesis)}
-\end{align*}
-$$ -->
 
 ### Checking proofs is a definable formula
 
@@ -210,35 +166,28 @@ Gödel shows that checking a proof for a statement is an algorithm that can be r
 
 So if you give me a proof of Goldbach's conjecture, I can directly put it into a computer and wait for the computer to tell me whether this proof is valid or not. This can be decided in bounded time.
 
-That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encodes a statement and $y$ is a number that encodes a proof, can be written as a formula in terms of the normal logical statement in metamathematics. To give you a hint, the formula $\text{isPower}(a, b, c)$ which checks whether $c = a^b$ can be expressed as following:
+That is to say that $\mathrm{isProof}(y, x) $, where $x$ is a number that encodes a statement and $y$ is a number that encodes a proof, can be written as a formula in terms of the normal logical statement in metamathematics.
 
-$$
-\exists x \exists y \Bigg[
-  \exists n_0 \Big(
-    x = S(y \cdot S(0)) \cdot n_0 + S0 \;\land\;
-    \exists m_0 \big( S(S0) + m_0 = S(y \cdot S(0)) \big)
-  \Big) \;\land
-  \newline
-  \exists n_1 \Big(
-    x = S(y \cdot S(b)) \cdot n_1 + c \;\land\;
-    \exists m_1 \big( S(c) + m_1 = S(y \cdot S(b)) \big)
-  \Big) \;\land
-  \newline
-  \forall k \forall z \Bigg(
-    \exists m_k \big( S(k) + m_k = b \big) \;\land\;
-    \exists n_k \Big(
-      x = S(y \cdot S(k)) \cdot n_k + z \;\land\;
-      \exists m_z \big( S(z) + m_z = S(y \cdot S(k)) \big)
-    \Big)
-    \;\rightarrow\;
-    \newline
-    \exists n_s \Big(
-      x = S(y \cdot S(S(k))) \cdot n_s + a \cdot z \;\land\;
-      \exists m_s \big( S(a \cdot z) + m_s = S(y \cdot S(S(k))) \big)
-    \Big)
-  \Bigg)
-\Bigg]
-$$
+```py
+def isProof(y, x):
+    proof_steps = decode(y)
+    target_statement = decode(x) 
+
+    known_facts = []
+    for step in proof_steps:
+        if isAxiom(step):
+            known_facts.append(step)
+        elif isModusPonens(step, known_facts):
+            known_facts.append(step)
+        elif isGeneralization(step, known_facts):
+            known_facts.append(step)
+        elif isSubstitution(step, known_facts):
+            known_facts.append(step)
+        else:
+            return False
+
+    return proof_steps[-1] == target_statement
+```
 
 All you need to know here is that $\mathrm{isProof}(y, x)$ is a long sequence of symbols that can be precisely written down, like a python function is a long sequence of symbols that can be precisely written down. And it can be encoded as a single integer number, like a python function can be represented by a binary number.
 
@@ -277,9 +226,24 @@ where $x$ is a number that encodes a statement and $y$ is a number that encodes 
 
 Just like prime numbers, there is a class of number called `isNotProvable` numbers. 
 
+```py
+def isNotProvable(x):
+    encoded_proof = 0
+    while True:
+        if isProof(encoded_proof, x):
+            return False
+        encoded_proof += 1
+    return True
+```
+
 Now let's define another class of numbers:
 
 $$\theta(x) = \mathrm{isNotProvable}(\text {encode} ( \text {decode} (x)(x)))$$
+
+```py
+def theta(x):
+    return isNotProvable(decode(x)(x))
+```
 
 where $x$ is a number that encodes a formula with one free variable.
 
@@ -309,17 +273,39 @@ You can argue `theta(encode(theta))` is true, but you can't find a proof to show
 
 ```python
 def theta(x):
-    formula = decode(x)
-    statement = formula(x)
-    encoded_proof = 2
-    while true:
-      proof = decode(encoded_proof)
-      if isProof(proof, statement):
-        return true
-      encoded_proof += 1
+    encoded_statement = decode(x)(x)
+    encoded_proof = 0
+    while True:
+        proof_steps = decode(encoded_proof)
+        target_statement = decode(encoded_statement)
+
+        is_proof = True
+        known_facts = []
+        for step in proof_steps:
+            if isAxiom(step):
+                known_facts.append(step)
+            elif isModusPonens(step, known_facts):
+                known_facts.append(step)
+            elif isGeneralization(step, known_facts):
+                known_facts.append(step)
+            elif isSubstitution(step, known_facts):
+                known_facts.append(step)
+            else:
+                is_proof = False
+                break
+
+        if is_proof and proof_steps[-1] == target_statement:
+            return False
+
+        encoded_proof += 1
+    return True
 
 theta(encode(theta))
 ```
+
+`theta(133514517884384239898787351071441124097111921492735779120166497037102969969484145641870968779000743913117166577832441300605181260780458156826842166648906036311545855953400624143099223130979671362232330349195462116495111908299926176876690213743988269562025551505029849931116322610471774599440599052466809914994638128616264127245543742277556021977507387690601591646116904920664374964895430622280258990165822647831534735374775825764717668774815322548663759382929537135373165331282413673109912434355816873642554235743493213458428083144741450614559166854058253673292732126219368015250289351907851553591156047931030796923687091946678222995746274580068349884577231676267887755193312637470654331581715381927725894120266517341885672472699223131412523869898463628985119979813497557062137906319427521415683642938264606635314559946929981154764309265186187376987212461548809479487959230036826677649629847049782516492212509072837639424336974446860661416524437700037240837172557299172089831642823482470576402123156756568583437643751230122283410915735732499486772674993731951835251114990529006558812324827640759494211313474203677350236135774817484841648898477461768056240271400458125152389861276672290135747113761766967941565602892256009391494328571899597840998845146977885801547581630508406673906992080933836417975342457160791232427070563663665768072144747537826733225931590481418393210646717694437937536277163304723338782837812849085772857986585940684644856264604633877015794481977874623898180982175899053246939284650556002235506619338102747926424895515978567895419062240591159923180093272089256454200192306473204463868354314205177845176880692765007363508385032962329550838047447560659739008791102423078969725972309991404883242214550693475383626971185558781900198462266536510958909257182616206833707553694858593909753075207371560717581490781245204238763472182304675696381723036460536964977581989223380330019259771436851588334649934493086698065692007130495915799570211080575965816074)`
+
+If you run this line in a python program, it will run forever without halting.
 
 ### The Proof
 
