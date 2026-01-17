@@ -28,6 +28,8 @@ Gödel showed us there a type of number $\theta$ with a  number $q$.
 
 The whole idea is to define the $\theta$, and find the $q$.
 
+And the nature of this proof is that in a system without perplexity, a perplexity can be generated from the system.
+
 ## Encoding and Decoding
 
 If we accept the fact that programming can be mechanically done, we can encode any text into a number if we can write a python program, like following:

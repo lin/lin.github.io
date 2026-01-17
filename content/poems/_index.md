@@ -8,7 +8,6 @@ isCJKLanguage: true
 - 2003: [《卜算子》](./busuanzi)
 - 2004: [《除夕夜》](./chuxi)
 - 2004: [《无题》](./untitled04)
-- [其他诗作](./others)
 
 #### 高中时代
 
@@ -36,3 +35,6 @@ isCJKLanguage: true
 - 2024: [《知其不可而为》](./buke)
 - 2025: [《无题》](./susheng)
 
+#### 其他
+
+- [其他诗作](./others)

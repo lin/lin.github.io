@@ -1,5 +1,5 @@
 ---
-title: "Learned Courses"
+title: "Learned Disciplines & Skills"
 type: "page"
 ---
 
@@ -58,6 +58,7 @@ type: "page"
 | Engineering Drawing (CAD)                          | 本科            |
 | Engineering Training                               | 本科            |
 
+
 ## CSAI
 
 | 课程                                               | 时期            |
@@ -78,15 +79,21 @@ type: "page"
 | Practical Statistical Learning                     | 研究生             |
 | Scientific Visualization                           | 研究生             |
 | Database Systems                                   | 研究生             |
+| Educational Psychology                             | 工作            |
+| Free Energy Principle                              | 工作            |
+| Large Language Models                             | 工作            |
+| Information Theory                                | 工作            |
 
 ## 政商史地美育
 
 | 课程                                               | 时期            |
 |----------------------------------------------------|:---------------:| 
 | Corporate Finance                                  | 研究生            |
-| History                                            | 中学            |
+| History                                            | 终生            |
 | Geography                                          | 中学            | 
 | Engineering Geology                                | 本科            |
 | Digital Design Foundations                         | 研究生            |
 | Foundations of Educational Science                 | 工作            |
 | Educational Psychology                             | 工作            |
+| Geoguessing                                        | 工作            |
+| Game Psychology and Game Design                    | 工作            |
