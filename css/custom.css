@@ -127,3 +127,41 @@ table tbody td {
 table tbody tr:nth-of-type(even) {
     background-color: #F9FAFB;
 }
+
+/* 基础样式 */
+.notice {
+    padding: 1rem;
+    border-left: 4px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+/* 标题样式 */
+.notice-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* 颜色变体 - Note (蓝色) */
+.notice-note {
+    border-left-color: #4285f4;
+    background-color: #e8f0fe;
+}
+.notice-note .notice-title { color: #4285f4; }
+
+/* 颜色变体 - Warning (黄色) */
+.notice-warning {
+    border-left-color: #fbbc04;
+    background-color: #fef7e0;
+}
+.notice-warning .notice-title { color: #b08800; }
+
+/* 颜色变体 - Tip (绿色) */
+.notice-tip {
+    border-left-color: #34a853;
+    background-color: #e6f4ea;
+}
+.notice-tip .notice-title { color: #34a853; }
