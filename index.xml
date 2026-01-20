@@ -163,8 +163,8 @@
  &lt;span class="archive-year"&gt;2023&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 25, 2024 - Nov 5, 2024&lt;br&gt;
- &lt;strong&gt;165 Tweets&lt;/strong&gt;
+ Jun 25, 2023 - Nov 5, 2023&lt;br&gt;
+ &lt;strong&gt;157 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2022" class="archive-card"&gt;
@@ -174,8 +174,8 @@
  &lt;span class="archive-year"&gt;2022&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 25, 2024 - Nov 5, 2024&lt;br&gt;
- &lt;strong&gt;165 Tweets&lt;/strong&gt;
+ Dec 20, 2022 - Dec 24, 2022&lt;br&gt;
+ &lt;strong&gt;6 tweets.&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2021" class="archive-card"&gt;
@@ -185,8 +185,8 @@
  &lt;span class="archive-year"&gt;2021&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 25, 2024 - Nov 5, 2024&lt;br&gt;
- &lt;strong&gt;165 Tweets&lt;/strong&gt;
+ Sep 7, 2021 - Dec 30, 2021&lt;br&gt;
+ &lt;strong&gt;11 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2020" class="archive-card"&gt;
@@ -196,8 +196,19 @@
  &lt;span class="archive-year"&gt;2020&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 25, 2024 - Nov 5, 2024&lt;br&gt;
- &lt;strong&gt;165 Tweets&lt;/strong&gt;
+ Jan 2, 2020 - May 10, 2020&lt;br&gt;
+ &lt;strong&gt;33 Tweets&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/twitter/?year=2019" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"&gt;&lt;g&gt;&lt;path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2019&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Apr 1, 2019 - Dec 31, 2019&lt;br&gt;
+ &lt;strong&gt;104 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2018" class="archive-card"&gt;
@@ -207,8 +218,8 @@
  &lt;span class="archive-year"&gt;2018&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 25, 2024 - Nov 5, 2024&lt;br&gt;
- &lt;strong&gt;165 Tweets&lt;/strong&gt;
+ Jan 5, 2018 - Dec 17, 2018&lt;br&gt;
+ &lt;strong&gt;230 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/fanfou/?page=1" class="archive-card"&gt;
@@ -299,10 +310,10 @@
 &lt;ol&gt;
 &lt;li&gt;自学编程，大约两个月内就可以胜任初级程序员的多数工作，从设计（Sketch）到前端，从后端到部署&lt;/li&gt;
 &lt;li&gt;准备考高中数学教师资格证，仅用了八天时间，看完了三本教材，两本需要大量的记忆，一本是基础的大学数学内容。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1768900093478" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1768915068584" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1768900093478",
+ id: "react-widget-GMMVisualizer-1768915068584",
  component: "GMMVisualizer",
  props: "{}"
  });
