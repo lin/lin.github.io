@@ -187,6 +187,17 @@
             container.innerHTML = `<div class="message">Loading tweets for ${year}...</div>`;
 
             try {
+                // Load image map first
+                let imageMap = {};
+                try {
+                    const mapResp = await fetch('imgs/images.json');
+                    if (mapResp.ok) {
+                        imageMap = await mapResp.json();
+                    }
+                } catch (e) {
+                    console.warn('Could not load image map', e);
+                }
+
                 const response = await fetch(`${filename}?t=${Date.now()}`);
                 if (!response.ok) throw new Error(`Failed to load ${filename}`);
                 
@@ -226,6 +237,18 @@
                         '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
                     );
 
+                    // Check for images in map
+                    let imgHtml = '';
+                    const images = (id && imageMap[id]) ? imageMap[id] : [];
+                    
+                    if (images.length > 0) {
+                        imgHtml = '<div class="tweet-images" style="margin-top: 12px;">';
+                        images.forEach(imgFile => {
+                            imgHtml += `<img src="imgs/${imgFile}" alt="Tweet Image" loading="lazy" style="width: 100%; border-radius: 12px; border: 1px solid #cfd9de; margin-bottom: 8px; display: block;">`;
+                        });
+                        imgHtml += '</div>';
+                    }
+
                     tweetEl.innerHTML = `
                         <div class="avatar">
                             ${AVATAR_URL ? `<img src="${AVATAR_URL}" alt="${USER_NAME}">` : 'YL'}
@@ -237,6 +260,7 @@
                                 <span class="date">${date}</span>
                             </div>
                             <div class="text">${linkedContent}</div>
+                            ${imgHtml}
                         </div>
                     `;
 
