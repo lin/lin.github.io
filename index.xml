@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Microblogs</title><link>https://yingkui.com/micro/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/micro/</guid><description>&lt;style&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Microblogs</title><link>https://yingkui.com/micro/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/micro/</guid><description>&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;我一直在成长，曾经的稚嫩作为一种真实记录，便留了下来&lt;/li&gt;
+&lt;li&gt;我担心冒犯一些需要更多交流才能理解的读者，也便因此删去了很多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;style&gt;
 .archive-container {
  display: flex;
  flex-direction: column;
@@ -222,6 +228,17 @@
  &lt;strong&gt;230 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albertkui.html" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2011&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Weibo Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ 2011 - 2025&lt;br&gt;
+ &lt;strong&gt;Weibo Posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
  &lt;a href="https://yingkui.com/fanfou/?page=1" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;
@@ -310,10 +327,10 @@
 &lt;ol&gt;
 &lt;li&gt;自学编程，大约两个月内就可以胜任初级程序员的多数工作，从设计（Sketch）到前端，从后端到部署&lt;/li&gt;
 &lt;li&gt;准备考高中数学教师资格证，仅用了八天时间，看完了三本教材，两本需要大量的记忆，一本是基础的大学数学内容。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1768915068584" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769017128406" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1768915068584",
+ id: "react-widget-GMMVisualizer-1769017128406",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -4232,12 +4249,46 @@ $$
 &lt;p&gt;何必痛又奈&lt;/p&gt;
 &lt;p&gt;只一字&lt;/p&gt;
 &lt;p&gt;爱&lt;/p&gt;
-&lt;/div&gt;</description></item><item><title>八韵诗</title><link>https://yingkui.com/poems/bayun/</link><pubDate>Fri, 04 Sep 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/bayun/</guid><description>&lt;h3 id="八韵诗"&gt;八韵诗&lt;/h3&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id="三层厦-201004"&gt;三层厦 （2010.04）&lt;/h2&gt;
+&lt;p&gt;想唤出你的名字&lt;/p&gt;
+&lt;p&gt;有人时不敢&lt;/p&gt;
+&lt;p&gt;没人时又怕停不下来&lt;/p&gt;
+&lt;h2 id="身影20100430"&gt;身影（2010.04.30）&lt;/h2&gt;
+&lt;p&gt;你不爱我，就舍下我，走吧&lt;/p&gt;
+&lt;p&gt;只是莫要回到看身影，那里有我&lt;/p&gt;
+&lt;h2 id="如果你再好一点2009年"&gt;如果你再好一点（2009年）&lt;/h2&gt;
+&lt;p&gt;寂静又悠长的夜里/我曾想起你/想起/你不倾城的花容/你不旷世的才气&lt;/p&gt;
+&lt;p&gt;可是/一旦双眸相视/我便失了先志/因为我怕/我怕错过了她/未逢的她/梦里的他&lt;/p&gt;
+&lt;p&gt;没有爱你/是怕伤害你/没有爱你/因为我还不够爱你&lt;/p&gt;
+&lt;p&gt;松花江畔的秋风柔尽/工大校内的冬雪素透/如果你再好一点/一切都会化成蜜一般的浪漫/醉一般的梦幻&lt;/p&gt;
+&lt;p&gt;我的左手无奈的望着右手/如果你再好一点/你温柔的双手会是它一生的贪婪&lt;/p&gt;
+&lt;p&gt;如果你再好一点/才华会是你不竭的欢笑/高尚会是你幸福的尖叫&lt;/p&gt;
+&lt;p&gt;梦也由你/诗也由你/灵魂的每处都由你/如果你再好一点&lt;/p&gt;
+&lt;p&gt;天会更蓝/水会更清/莺啼更动听/如果&lt;/p&gt;
+&lt;p&gt;但/你是你/我是我/如果是如果&lt;/p&gt;
+&lt;p&gt;人生不再/我期大爱/我会继续的等待/如果&lt;/p&gt;</description></item><item><title>八韵诗</title><link>https://yingkui.com/poems/bayun/</link><pubDate>Fri, 04 Sep 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/bayun/</guid><description>&lt;h3 id="八韵诗"&gt;八韵诗&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;2009.09 哈尔滨&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;生死看破，知常乐；&lt;/p&gt;
 &lt;p&gt;唯逢忆夜，失颜色；&lt;/p&gt;
 &lt;p&gt;都言思莫，谁知这；&lt;/p&gt;
-&lt;p&gt;万千流过，不君若。&lt;/p&gt;</description></item><item><title>爱因斯坦片面的世界观</title><link>https://yingkui.com/einstein/</link><pubDate>Sat, 14 Mar 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/einstein/</guid><description>&lt;p&gt;&lt;a href="https://www.douban.com/group/topic/5699072"&gt;爱因斯坦片面的世界观&lt;/a&gt;
+&lt;p&gt;万千流过，不君若。&lt;/p&gt;</description></item><item><title>论高效的学习方法</title><link>https://yingkui.com/study/</link><pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/study/</guid><description>&lt;p&gt;大学时期是人生成长的关键时期，是形成巨大进化优势的决定性阶段。大学之学习犹如春天之播种，此时耕种之少多直接影响着未来的人生之成就。错过了这个完美的播种时节，很多遗憾就再也难以弥补，有些或许尚能挽回，但是往往要付出更多的代价。或有人生来志短，亦即人各有志，但人若无远虑，近忧必将迭至，而远伤亦已早成。&lt;/p&gt;
+&lt;p&gt;本质上讲，学习的目的在于现下利益需求的某种满足以及对未来需求获得满足的一种准备。 通俗一点的理解就是，学习的目的在于：第一，了解和掌握知识本身；第二，是以思维能力为主的各种能力的提升；当然另外还有一个附加成果，那就是高学历所带来了的各种社会效应。&lt;/p&gt;
+&lt;p&gt;而学习本身是很有方法与捷径的，学习成果=学习效率*时间。提高学习的效率是我这里讨论的重点。&lt;/p&gt;
+&lt;p&gt;对于学习，参与的对象包括学习者、知识和其他外在环境，故下分三大部分加以讨论。&lt;/p&gt;
+&lt;p&gt;对学习者，志向，即行为动机，是学习的先决条件。&lt;/p&gt;
+&lt;p&gt;“为学之道始于立志，凡学之不勤者，其志之尚未笃也。”人生大梦，既欲存世百年，又何不载快而行。立下一定的志向后，设立一些略超出自己期望的长远目标，并为此设立一定的中期目标，根据中期目标再去制订近期目标，使行动落到实处。这样，有了方向就不至迷茫，有了行动就不至空虚。随着年龄的增长，我们的目标也要定的更加清晰、更加理智。&lt;/p&gt;
+&lt;p&gt;对于学习者，其品质的高低也影响着学习的高效与否。刚刚提出过一个基本公式，学习成果=学习效率*时间，重于对学习方式的反思与改进将提高学习的效率，勤奋的品格有利于时间的叠加注。另外，坚持立即开始，立即行动，尽快结束的人会在效率与时间上双重受益。&lt;/p&gt;
+&lt;p&gt;根据知识的特征，培养谦虚好问，博学慎思，坚忍不拔，敢于挑战的人格品质亦会对学习产生深刻的影响。&lt;/p&gt;
+&lt;p&gt;学习者身体条件的好坏也是一个重要的因素，要合理安排时间，用最佳的状态去处理做最棘手或者是最关键的任务，而用欠佳的状态去作一些不太需要智力的工作，这样一个人的身体状态就会被利用到最佳。显然，延长我们良好身体状态的时间是值得注意的问题。为此，学习者宜经常锻炼身体，控制饮食，注重养生之道。心理上要考虑到锻炼身体是必要的。进行恰如其分的运动会使得我们赢得时间，提高学习能力和效率，而不是在浪费时间。坚持良好的作息方式；拒绝吸烟，拒绝大量饮酒；拥有一个乐观、愉悦的心情也是极其重要的。&lt;/p&gt;
+&lt;p&gt;第二大方面就是拥有一个舒适、安宁的环境。这样的环境为自己的内心的宁静做充分的准备，可以极大的提高学习效率。另外，在学习之前，尽量把一些可能会打扰思路的外部事物处理完毕；在学习的过程中尽可能的不去做分散注意力的其他事物。&lt;/p&gt;
+&lt;p&gt;而对于知识本身，任何一个知识体系都是建立在一定的基本事实或假设之下并通过足够的逻辑演化产生的各式结论堆积而成的。 结合人类趋于逻辑简单的特点，学习者主要注意的有三个方面，本质，准确，系统。&lt;/p&gt;
+&lt;p&gt;学习是认知结构的组织和重新组织。任何形式的这样的组织或者重新组织都是学习过程，而检验学习成果的方式就是实践，是否能够达到自身的抑或是他人的利益需求的满足。&lt;/p&gt;
+&lt;p&gt;抓住事物内部的本质与关键联系能够使得我们在解决矛盾时处于一个最高峰的地位。能够从本质上解决任何可以解决问题。任何一个知识体系都有着这样的一种模式：以一些基本假设作为理论的原点，用以逻辑的推演从而产生各式的理论。在体系内部，所有的概念和命题都应当完全可理解的，所有前提都应当受到分析。单单的记忆是低效的，只有建立在本质上理解的层面的分析 才能使得我们不会陷入深深的困惑。&lt;/p&gt;
+&lt;p&gt;一定要对知识有一个准确的认识，而不是模棱两可的。要较真，要学会质疑，要勇于推翻自己，推翻权威，以获得在解决问题上逻辑的极大顺畅与坚定。拥有一个严谨，认真的品格在今后处理重大问题中是极为关键的。这时的准确直接影响着一个庞大体系行动成功与否。&lt;/p&gt;
+&lt;p&gt;这里只是就一些关键的重要的部分进行编辑，学习上还有很多技巧可寻，需要我们去探索。&lt;/p&gt;
+&lt;p&gt;另外，对于每个人学习的方式都是不同的，在不违背客观规律的前提下，寻找到一个适合自己的学习方法是和必要的。这里所提出的各种理论都是基于事物本质进行的一些有效思考，这些指导思想会提高学习成功的几率，但是对于不同的人，对这些认识和领会都是不同的，切不可教条的坚持，而应在实践中不断反思这里的道理，从而使之转化为自己学习的一种方式和认识，才是本文的关键与目的。&lt;/p&gt;</description></item><item><title>爱因斯坦片面的世界观</title><link>https://yingkui.com/einstein/</link><pubDate>Sat, 14 Mar 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/einstein/</guid><description>&lt;p&gt;&lt;a href="https://www.douban.com/group/topic/5699072"&gt;爱因斯坦片面的世界观&lt;/a&gt;
 读《我的世界观》后的一些可爱想法&lt;/p&gt;
 &lt;p&gt;今天是爱因斯坦130周年诞辰，我却不想写些歌功颂德的文字，我想写一些略带批评的文字，这样爱翁在天之灵才会得到告慰，质疑思维在这个时代还没有消失。&lt;/p&gt;</description></item><item><title>存在的价值</title><link>https://yingkui.com/value/</link><pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate><guid>https://yingkui.com/value/</guid><description>&lt;div class="notice notice-note"&gt;
  
@@ -13951,7 +14002,13 @@ $$
 &lt;p&gt;水打浮萍巧相逢&lt;/p&gt;
 &lt;p&gt;随风稍逊各西东&lt;/p&gt;
 &lt;p&gt;劝君莫言花谢早&lt;/p&gt;
-&lt;p&gt;你我互映到永恒&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ego/</guid><description>&lt;h2 id="the-cost-of-ego"&gt;The Cost of Ego&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/sanyi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/sanyi/</guid><description/></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
+&lt;p&gt;你我互映到永恒&lt;/p&gt;
+&lt;h2 id="武夷山2009年"&gt;武夷山（2009年）&lt;/h2&gt;
+&lt;p&gt;清风走秀林，幽涧抚沉琴。&lt;/p&gt;
+&lt;p&gt;秀林流绿意，沉琴奏岩音。&lt;/p&gt;
+&lt;p&gt;慧山灵水出贤士，两涧三坑住晚甘。&lt;/p&gt;
+&lt;p&gt;花果香浓清活爽，涤浊散郁满身闲。&lt;/p&gt;
+&lt;p&gt;君王何必求丹药，一泡红袍便是仙。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ego/</guid><description>&lt;h2 id="the-cost-of-ego"&gt;The Cost of Ego&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/sanyi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/sanyi/</guid><description/></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Shallow gratifications&lt;/strong&gt; are quick, surface-level pleasures that deliver an immediate hit of satisfaction but fade almost as soon as they arrive. They tend to rely on external stimuli or “easy wins,” rather than nourishing our deeper psychological needs. Below we’ll unpack what they are, give concrete examples, and explain why relying on them too much can undermine our long-term well-being.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="1-key-features-of-shallow-gratifications"&gt;1. Key Features of Shallow Gratifications&lt;/h2&gt;
@@ -14198,7 +14255,34 @@ Robson draws on predictive‐processing neuroscience to explain that the brain g
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Rigid Class and Rank Etiquette&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周"&gt;2023年12月第二周&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Rigid Class and Rank Etiquette&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/self/2008-10-13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/self/2008-10-13/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;道虽迩，不行不至，事虽小，不为不成&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;现定规矩如下：&lt;/p&gt;
+&lt;p&gt;１）早晨６：１０分准时起床，跑步四圈，俯卧撑身体正常时一天多一个，不适时２０个。（先计划坚持至１０.１９，阴雨天时取消晨练）
+２）一天上课时除第一节外决不向困意屈服，保持旺盛的精力，昂扬斗志。
+３）上网时间与内容要严加掌握，决不用头脑明晰时上网，决不在上课时间段上网，上网主要是看新闻，查资料，一周集中在周五进行自由上网，其他时间决不胡乱登陆网站：一周除晚上回寝室后以及周五周六晚上，其他任何时间都不玩游戏。（极特殊情况除外，但是要提高特殊的界限）
+４）晚上学习时要高效，集中精力。每天至少用２小时的时间学习课本知识。
+５）养成整齐、清洁、规律的生活习性。&lt;/p&gt;
+&lt;p&gt;一些学习上的新思路：&lt;/p&gt;
+&lt;p&gt;１）上课时间可以学习与上课内容不符的知识，这样可以极大的提高我的知识量。
+２）每天运用晚上的时间学习基础知识。既温故，又要知新。
+３）每天都要写一些心得，记录在日记本里。
+４）每周要抽出时间进行系统复习基础知识，初定在周六的下午。
+５）每天早晨都要整理床铺与书架，每次有新书放在寝室都要认真整理，每两天洗一次脚，要把这些看做是能够改变我命运的习惯去看待。&lt;/p&gt;
+&lt;p&gt;每天要用早上八点前制定当天计划，每周周日要制定下一周的计划。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;才华是刀刃，辛苦是磨刀石，在锋利的刀刃，日久不磨，也会生锈&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title/><link>https://yingkui.com/self/2008-11-02/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/self/2008-11-02/</guid><description>&lt;h2 id="对自己的一些要求"&gt;对自己的一些要求：&lt;/h2&gt;
+&lt;p&gt;１．一天上课时除第一节外决不向困意屈服，提高自制力。
+２．上网时间与内容要严加掌握。决不用头脑明晰时上网，决不在上课时间段上网，上网主要是看新闻，查资料，一周集中在周五进行自由上网，其他时间决不胡乱登陆网站：一周除晚上回寝室后以及周五周六晚上，其他任何时间都不玩游戏。
+３．晚上学习时要高效，集中精力，心无杂念。要达到事半功倍的效果。
+４．养成整齐、清洁、规律的生活习性。
+５．上课时间可以学习与上课内容不符的知识，这样可以极大的提高我的知识量。
+６．每周要抽出时间进行系统复习基础知识，初定在周六的下午。
+７．每天都要写一些心得，记录在日记本里。
+８．每天早晨都要整理床铺与书架，每次有新书放在寝室都要认真整理，每两天洗一次脚，要把这些看做是能够改变我命运的习惯去看待。
+９．电脑的使用要有一定的节制。尽量多看书，看一些纪录片，学习英语，学习各种软件。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周"&gt;2023年12月第二周&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;创业：完成了 《论教学》第五章第四节的写作&lt;/li&gt;
 &lt;li&gt;游戏：通关 《&lt;a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Yellow_Version"&gt;Pokémon Yellow&lt;/a&gt;》&lt;/li&gt;
