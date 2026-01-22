@@ -18,9 +18,14 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "Microblogs"
+url = "/micro"
+weight = 2
+
+[[menu.main]]
 name = "Pages"
 url = "/pages"
-weight = 2
+weight = 3
 
 # [[menu.main]]
 # name = "MnV"

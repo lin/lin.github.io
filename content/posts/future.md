@@ -1,6 +1,6 @@
 ---
 title: "关于未来的一点想法"
-date: 2013-04
+date: 2013-04-01
 isCJKLanguage: true
 ---
 
