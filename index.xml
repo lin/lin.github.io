@@ -232,11 +232,11 @@
  &lt;div class="archive-icon"&gt;
  &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
  &lt;/div&gt;
- &lt;span class="archive-year"&gt;2011&lt;/span&gt;
- &lt;span class="archive-link-text"&gt;Weibo Archive&lt;/span&gt;
+ &lt;span class="archive-year"&gt;2011 - 2013&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@小魁故事多 Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- 2011 - 2025&lt;br&gt;
- &lt;strong&gt;Weibo Posts&lt;/strong&gt;
+ Jun 18, 2011 - Mar 24, 2014&lt;br&gt;
+ &lt;strong&gt;1049 posts&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/fanfou/?page=1" class="archive-card"&gt;
@@ -327,10 +327,10 @@
 &lt;ol&gt;
 &lt;li&gt;自学编程，大约两个月内就可以胜任初级程序员的多数工作，从设计（Sketch）到前端，从后端到部署&lt;/li&gt;
 &lt;li&gt;准备考高中数学教师资格证，仅用了八天时间，看完了三本教材，两本需要大量的记忆，一本是基础的大学数学内容。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769017128406" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769059200953" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1769017128406",
+ id: "react-widget-GMMVisualizer-1769059200953",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -4141,7 +4141,12 @@ $$
 &lt;p&gt;2，上帝不仅自己杀，还叫他的信徒杀。那上帝让他的信徒杀什么人呢？&lt;/p&gt;
 &lt;p&gt;2.1 不信上帝，勾引你去信别的神的人，要杀。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;“你的同胞弟兄，或是你的儿女，或是你怀中的妻，或是如同你性命的朋友，若暗中引诱你，说‘我们不如去侍奉你和你列祖素来所不认识的别神’，是你四围列国的神，无论是离你近离你远，从地这边到地那边的神，你不可依从他，也不可听从他。眼不可顾惜他，你不可怜恤他，也不可遮庇他，总要杀他。你先下手，然后众民也下手，将他治死。要用石头打死他，因为他想要勾引你离开那领你出埃及地为奴之家的耶和华你的神。(申命记 13：6 - 10)&lt;/p&gt;</description></item><item><title>赠曹睿颖</title><link>https://yingkui.com/poems/cao/</link><pubDate>Tue, 20 Mar 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/cao/</guid><description>&lt;p&gt;&lt;img src="../%E8%B5%A0%E6%9B%B9%E7%9D%BF%E9%A2%96.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;“你的同胞弟兄，或是你的儿女，或是你怀中的妻，或是如同你性命的朋友，若暗中引诱你，说‘我们不如去侍奉你和你列祖素来所不认识的别神’，是你四围列国的神，无论是离你近离你远，从地这边到地那边的神，你不可依从他，也不可听从他。眼不可顾惜他，你不可怜恤他，也不可遮庇他，总要杀他。你先下手，然后众民也下手，将他治死。要用石头打死他，因为他想要勾引你离开那领你出埃及地为奴之家的耶和华你的神。(申命记 13：6 - 10)&lt;/p&gt;</description></item><item><title>益友如良师</title><link>https://yingkui.com/yiyou/</link><pubDate>Mon, 03 Jun 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/yiyou/</guid><description>&lt;p&gt;没有人可以阻挡我成为一个伟大人物的梦想，不论是哪个朋友，如果他试图让我降低自己的目标来迎合他的品味，那这个人就不是我的朋友&lt;/p&gt;
+&lt;p&gt;此文目的在于对友人品质进行评价衡量。备注的分数是为了大概说明那一项内容的关键程度。&lt;/p&gt;</description></item><item><title>语粗者常理粗</title><link>https://yingkui.com/yucu/</link><pubDate>Sun, 02 Jun 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/yucu/</guid><description>&lt;p&gt;先明确一下定义，首先，语粗者，是指那些对事物评价时“习惯性”的使用脏话，利用“性”相关语言的刺激，来痛快的表达自己观点的人。&lt;/p&gt;
+&lt;p&gt;不经常使用并以开玩笑为目的的不算，加强语气的如他妈的，骂了隔壁的副词不算，只是泄愤时使用的不算。虽然我希望尽量杜绝使用脏字，但必要时释放脏话是有益的。&lt;/p&gt;</description></item><item><title>低估随想</title><link>https://yingkui.com/digu/</link><pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/digu/</guid><description>&lt;p&gt;这明显又是一个低谷期。&lt;/p&gt;
+&lt;p&gt;我们先看一看发生着的事实。先说学业上，虽然我拿了一个硕士的学位，但是实际上在材料学还这是学了皮毛，没有系统的训练和深入。事业上，不知道未来会从事怎样的事业，连职业的方向都不太清楚。感情上更是幼稚没经验，不知道什么时候才能开始一段真正的感情，总之这就是一个让人特别低落的时候。而且这种低落也源自自身品质上的欠缺。&lt;/p&gt;</description></item><item><title>关于未来的一点想法</title><link>https://yingkui.com/future/</link><pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/future/</guid><description>&lt;p&gt;这几个月来，在我脑海里一直萦绕着的问题就是要成为一个什么样的人，度过怎样的一生。&lt;/p&gt;
+&lt;p&gt;我想过要不要成为一个理论物理学家，虽然没有被宾大录取，但是如果我愿意，我可以再继续尝试一年再去申请，也可以不去顶尖的名校读博，总之我若喜欢并以此为乐，交付一生给物理事业，我也会尽全力去尝试。&lt;/p&gt;</description></item><item><title>来美的第一天</title><link>https://yingkui.com/firstday/</link><pubDate>Fri, 24 Aug 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/firstday/</guid><description>&lt;p&gt;来美的第一天我仍记忆深刻。&lt;/p&gt;
+&lt;p&gt;抵达芝加哥是美国时间凌晨六点，想到自己要降落在美国大地让我感到异常兴奋，兴奋地想写诗。看到芝加哥上空远处散来的熹微晨光，在飞机上睡了几个小时的我，顿时精神起来，我并不知道我为何会兴奋，可能是因为这是创造了不尽奇迹的热土，也可能是自己幻想太多期待太久才导致自己情感上的特殊照顾。&lt;/p&gt;</description></item><item><title>赠曹睿颖</title><link>https://yingkui.com/poems/cao/</link><pubDate>Tue, 20 Mar 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/cao/</guid><description>&lt;p&gt;&lt;img src="../%E8%B5%A0%E6%9B%B9%E7%9D%BF%E9%A2%96.jpeg" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;识君费城秋，从此缘不休&lt;/p&gt;
 &lt;p&gt;交响乐息游华府，美景欢声一日收&lt;/p&gt;
 &lt;p&gt;大西洋畔赌城晚，赞叹惊奇奧兰多&lt;/p&gt;
@@ -14008,7 +14013,7 @@ $$
 &lt;p&gt;秀林流绿意，沉琴奏岩音。&lt;/p&gt;
 &lt;p&gt;慧山灵水出贤士，两涧三坑住晚甘。&lt;/p&gt;
 &lt;p&gt;花果香浓清活爽，涤浊散郁满身闲。&lt;/p&gt;
-&lt;p&gt;君王何必求丹药，一泡红袍便是仙。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/ego/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/ego/</guid><description>&lt;h2 id="the-cost-of-ego"&gt;The Cost of Ego&lt;/h2&gt;</description></item><item><title/><link>https://yingkui.com/sanyi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/sanyi/</guid><description/></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
+&lt;p&gt;君王何必求丹药，一泡红袍便是仙。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Shallow gratifications&lt;/strong&gt; are quick, surface-level pleasures that deliver an immediate hit of satisfaction but fade almost as soon as they arrive. They tend to rely on external stimuli or “easy wins,” rather than nourishing our deeper psychological needs. Below we’ll unpack what they are, give concrete examples, and explain why relying on them too much can undermine our long-term well-being.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="1-key-features-of-shallow-gratifications"&gt;1. Key Features of Shallow Gratifications&lt;/h2&gt;
