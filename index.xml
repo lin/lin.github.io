@@ -1,18 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Microblogs</title><link>https://yingkui.com/micro/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/micro/</guid><description>&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;我一直在成长，曾经的稚嫩作为一种真实记录，便留了下来&lt;/li&gt;
-&lt;li&gt;我担心冒犯一些需要更多交流才能理解的读者，也便因此删去了很多&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;style&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Microblogs</title><link>https://yingkui.com/micro/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/micro/</guid><description>&lt;style&gt;
 .archive-container {
- display: flex;
- flex-direction: column;
- gap: 1.5rem;
- align-items: center;
- margin: 3rem auto;
- max-width: 800px;
- padding: 0 1rem;
+ display: grid;
+ grid-template-columns: 1fr;
+ row-gap: 1rem;
+ column-gap: 1rem;
+ align-items: stretch;
+ max-width: 760px;
+}
+
+@media (min-width: 700px) {
+ .archive-container {
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ }
+}
+
+@media (min-width: 1024px) {
+ .archive-container {
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ column-gap: 3rem;
+ }
 }
 
 .archive-card {
@@ -20,20 +26,27 @@
  grid-template-columns: auto 1fr auto;
  align-items: center;
  gap: 0.5rem 1.5rem;
- background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
- border: 1px solid #e1e8ed;
- border-radius: 16px;
- padding: 1.5rem 2rem;
- width: 100%;
+ background: #fff;
+ border: 1px solid rgba(17, 24, 39, 0.08);
+ border-radius: 18px;
+ padding: 1.25rem 1.5rem;
+ position: relative;
  text-decoration: none !important;
- box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
- transition: all 0.3s ease;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+ transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+@media (min-width: 1024px) {
+ .archive-card {
+ width: 100%;
+ }
 }
 
 .archive-card:hover {
- transform: translateY(-3px);
- box-shadow: 0 10px 15px -3px rgba(0, 133, 255, 0.2), 0 4px 6px -2px rgba(0, 133, 255, 0.1);
+ transform: translateY(-4px);
+ box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
  border-color: #0085ff;
+ z-index: 1;
 }
 
 .archive-icon {
@@ -64,10 +77,10 @@
  grid-column: 2;
  grid-row: 2;
  font-size: 0.9rem;
- color: #666;
- font-weight: 500;
- text-transform: uppercase;
- letter-spacing: 0.05em;
+ color: rgba(17, 24, 39, 0.65);
+ font-weight: 600;
+ text-transform: none;
+ letter-spacing: 0;
  margin: 0;
  text-align: left;
 }
@@ -89,6 +102,61 @@
  display: flex;
  flex-direction: column;
  justify-content: center;
+}
+
+.archive-details strong {
+ color: rgba(17, 24, 39, 0.9);
+ font-weight: 700;
+}
+
+@media (min-width: 700px) {
+ .archive-card {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 0.85rem;
+ padding: 1.25rem;
+ min-height: 190px;
+ }
+
+ .archive-icon {
+ grid-row: auto;
+ grid-column: auto;
+ margin-right: 0;
+ width: 40px;
+ height: 40px;
+ border-radius: 10px;
+ /* background: rgba(0, 133, 255, 0.08); */
+ }
+
+ .archive-year {
+ grid-column: auto;
+ grid-row: auto;
+ font-size: 1.9rem;
+ letter-spacing: -0.02em;
+ }
+
+ .archive-link-text {
+ grid-column: auto;
+ grid-row: auto;
+ font-size: 1rem;
+ color: rgba(17, 24, 39, 0.7);
+ }
+
+ .archive-details {
+ grid-column: auto;
+ grid-row: auto;
+ border-left: none;
+ border-top: 1px solid rgba(17, 24, 39, 0.08);
+ padding-left: 0;
+ padding-top: 0.85rem;
+ text-align: left;
+ width: 100%;
+ min-width: 0;
+ margin-top: auto;
+ display: block;
+ color: rgba(17, 24, 39, 0.55);
+ }
 }
 
 /* Mobile Responsive */
@@ -117,18 +185,22 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
  .archive-card {
- background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
- border-color: #4a5568;
+ background: rgba(17, 24, 39, 0.9);
+ border-color: rgba(255, 255, 255, 0.10);
  }
  .archive-year {
  color: #f7fafc;
  }
  .archive-link-text {
- color: #a0aec0;
+ color: rgba(255, 255, 255, 0.7);
  }
  .archive-details {
- color: #a0aec0;
- border-color: rgba(255,255,255,0.1);
+ color: rgba(255, 255, 255, 0.6);
+ border-color: rgba(255, 255, 255, 0.12);
+ }
+
+ .archive-details strong {
+ color: rgba(255, 255, 255, 0.9);
  }
 }
 &lt;/style&gt;
@@ -181,7 +253,7 @@
  &lt;span class="archive-link-text"&gt;Twitter Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
  Dec 20, 2022 - Dec 24, 2022&lt;br&gt;
- &lt;strong&gt;6 tweets.&lt;/strong&gt;
+ &lt;strong&gt;6 out of 247 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2021" class="archive-card"&gt;
@@ -228,23 +300,129 @@
  &lt;strong&gt;230 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
- &lt;a href="https://yingkui.com/weibo-albertkui.html" class="archive-card"&gt;
+ &lt;a href="https://yingkui.com/weibo-albertkui/?year=2013" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
  &lt;/div&gt;
- &lt;span class="archive-year"&gt;2011 - 2013&lt;/span&gt;
+ &lt;span class="archive-year"&gt;2013&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;@小魁故事多 Archive&lt;/span&gt;
  &lt;div class="archive-details"&gt;
- Jun 18, 2011 - Mar 24, 2014&lt;br&gt;
- &lt;strong&gt;1049 posts&lt;/strong&gt;
+ Jan 01, 2013 - Oct 24, 2013&lt;br&gt;
+ &lt;strong&gt;134 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albert/?year=2012" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2012&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@albert Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jan 01, 2012 - Nov 07, 2012&lt;br&gt;
+ &lt;strong&gt;134 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albertkui/?year=2012" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2012&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@小魁故事多 Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jan 01, 2012 - Dec 31, 2012&lt;br&gt;
+ &lt;strong&gt;332 posts&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/fanfou/?page=1" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
- &lt;svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;
- &lt;rect width="100" height="100" rx="10" fill="#03CCFF"/&gt;
- &lt;text x="50" y="72" font-size="60" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="bold"&gt;饭&lt;/text&gt;
- &lt;/svg&gt;
+ &lt;svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;&lt;rect width="100" height="100" rx="10" fill="#03CCFF"/&gt;&lt;text x="50" y="72" font-size="60" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="bold"&gt;饭&lt;/text&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2012&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Fanfou Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt; Jan 12, 2012 - Apr 30, 2012&lt;br&gt;
+ &lt;strong&gt;16 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albert/?year=2011" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2011&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@albert Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jan 01, 2011 - Dec 31, 2011&lt;br&gt;
+ &lt;strong&gt;800 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-linyingkui/?year=2011" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2011&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@林英魁 Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Mar 07, 2011 - Jun 21, 2011&lt;br&gt;
+ &lt;strong&gt;107 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albertkui/?year=2011" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2011&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@小魁故事多 Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jun 18, 2011 - Dec 31, 2011&lt;br&gt;
+ &lt;strong&gt;564 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albert/?year=2010" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2010&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@albert Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jan 01, 2010 - Dec 31, 2010&lt;br&gt;
+ &lt;strong&gt;798 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-117/?year=2010" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2010&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@正心117 Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Jan 02, 2010 - Nov 23, 2010&lt;br&gt;
+ &lt;strong&gt;98 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-albert/?year=2009" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2009&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@albert Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Sep 15, 2009 - Dec 31, 2009&lt;br&gt;
+ &lt;strong&gt;277 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/weibo-117/?year=2009" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 415" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"&gt;&lt;g transform="scale(1.45729)"&gt;&lt;clipPath id="prefix__a"&gt;&lt;path d="M0 0h351.336v284.628H0z"/&gt;&lt;/clipPath&gt;&lt;g clip-path="url(#prefix__a)" fill-rule="nonzero"&gt;&lt;path d="M25.84 195.715c0 40.917 53.28 74.078 118.97 74.078 65.691 0 118.971-33.161 118.971-74.078 0-40.918-53.28-74.078-118.971-74.078-65.69 0-118.97 33.16-118.97 74.078" fill="#fff"/&gt;&lt;path d="M147.622 263.781c-58.176 5.769-108.401-20.556-112.183-58.71-3.781-38.202 40.336-73.786 98.463-79.556 58.177-5.769 108.402 20.556 112.135 58.71 3.83 38.202-40.287 73.835-98.415 79.556m116.304-126.776c-4.945-1.503-8.338-2.472-5.769-8.969 5.624-14.107 6.206-26.276.097-35.002-11.393-16.29-42.614-15.417-78.392-.437 0 0-11.248 4.897-8.339-3.975 5.478-17.695 4.654-32.482-3.878-41.063-19.392-19.44-71.024.727-115.286 44.99C19.247 125.661 0 160.809 0 191.206c0 58.079 74.514 93.422 147.38 93.422 95.555 0 159.112-55.51 159.112-99.579.049-26.664-22.398-41.79-42.566-48.044" fill="#e6162d"/&gt;&lt;path d="M327.387 30.688C304.311 5.09 270.277-4.654 238.862 2.036c-7.272 1.552-11.877 8.727-10.326 15.95 1.551 7.272 8.678 11.878 15.95 10.326 22.349-4.751 46.541 2.182 62.927 20.362 16.387 18.18 20.847 42.954 13.817 64.673-2.278 7.078 1.6 14.641 8.678 16.919 7.078 2.279 14.641-1.599 16.92-8.629v-.049c9.89-30.494 3.636-65.351-19.441-90.9" fill="#f93"/&gt;&lt;path d="M291.948 62.685c-11.247-12.459-27.828-17.211-43.099-13.914-6.254 1.309-10.229 7.515-8.92 13.769 1.357 6.253 7.514 10.229 13.72 8.871 7.466-1.599 15.61.728 21.089 6.788a22.126 22.126 0 014.605 21.67c-1.939 6.06 1.358 12.605 7.466 14.593 6.109 1.939 12.605-1.358 14.593-7.466 4.799-14.884 1.793-31.852-9.454-44.311" fill="#f93"/&gt;&lt;path d="M150.822 194.648c-2.036 3.491-6.545 5.139-10.035 3.685-3.491-1.406-4.558-5.333-2.57-8.727 2.036-3.393 6.351-5.042 9.793-3.684 3.491 1.26 4.751 5.187 2.812 8.726m-18.568 23.756c-5.624 8.968-17.695 12.895-26.761 8.774-8.92-4.072-11.587-14.495-5.963-23.27 5.575-8.727 17.21-12.605 26.228-8.823 9.114 3.926 12.023 14.253 6.496 23.319m21.138-63.51c-27.683-7.223-58.952 6.594-70.976 30.979-12.265 24.871-.387 52.504 27.537 61.522 28.991 9.356 63.121-4.994 74.999-31.803 11.732-26.277-2.909-53.28-31.56-60.698"/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2009&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;@正心117 Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Aug 29, 2009 - Dec 26, 2009&lt;br&gt;
+ &lt;strong&gt;302 posts&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/fanfou/?page=2" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;&lt;rect width="100" height="100" rx="10" fill="#03CCFF"/&gt;&lt;text x="50" y="72" font-size="60" text-anchor="middle" fill="white" font-family="sans-serif" font-weight="bold"&gt;饭&lt;/text&gt;&lt;/svg&gt;
  &lt;/div&gt;
  &lt;span class="archive-year"&gt;2009&lt;/span&gt;
  &lt;span class="archive-link-text"&gt;Fanfou Archive&lt;/span&gt;
@@ -327,10 +505,10 @@
 &lt;ol&gt;
 &lt;li&gt;自学编程，大约两个月内就可以胜任初级程序员的多数工作，从设计（Sketch）到前端，从后端到部署&lt;/li&gt;
 &lt;li&gt;准备考高中数学教师资格证，仅用了八天时间，看完了三本教材，两本需要大量的记忆，一本是基础的大学数学内容。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769059200953" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769349775380" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1769059200953",
+ id: "react-widget-GMMVisualizer-1769349775380",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -4145,7 +4323,18 @@ $$
 &lt;p&gt;此文目的在于对友人品质进行评价衡量。备注的分数是为了大概说明那一项内容的关键程度。&lt;/p&gt;</description></item><item><title>语粗者常理粗</title><link>https://yingkui.com/yucu/</link><pubDate>Sun, 02 Jun 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/yucu/</guid><description>&lt;p&gt;先明确一下定义，首先，语粗者，是指那些对事物评价时“习惯性”的使用脏话，利用“性”相关语言的刺激，来痛快的表达自己观点的人。&lt;/p&gt;
 &lt;p&gt;不经常使用并以开玩笑为目的的不算，加强语气的如他妈的，骂了隔壁的副词不算，只是泄愤时使用的不算。虽然我希望尽量杜绝使用脏字，但必要时释放脏话是有益的。&lt;/p&gt;</description></item><item><title>低估随想</title><link>https://yingkui.com/digu/</link><pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/digu/</guid><description>&lt;p&gt;这明显又是一个低谷期。&lt;/p&gt;
 &lt;p&gt;我们先看一看发生着的事实。先说学业上，虽然我拿了一个硕士的学位，但是实际上在材料学还这是学了皮毛，没有系统的训练和深入。事业上，不知道未来会从事怎样的事业，连职业的方向都不太清楚。感情上更是幼稚没经验，不知道什么时候才能开始一段真正的感情，总之这就是一个让人特别低落的时候。而且这种低落也源自自身品质上的欠缺。&lt;/p&gt;</description></item><item><title>关于未来的一点想法</title><link>https://yingkui.com/future/</link><pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate><guid>https://yingkui.com/future/</guid><description>&lt;p&gt;这几个月来，在我脑海里一直萦绕着的问题就是要成为一个什么样的人，度过怎样的一生。&lt;/p&gt;
-&lt;p&gt;我想过要不要成为一个理论物理学家，虽然没有被宾大录取，但是如果我愿意，我可以再继续尝试一年再去申请，也可以不去顶尖的名校读博，总之我若喜欢并以此为乐，交付一生给物理事业，我也会尽全力去尝试。&lt;/p&gt;</description></item><item><title>来美的第一天</title><link>https://yingkui.com/firstday/</link><pubDate>Fri, 24 Aug 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/firstday/</guid><description>&lt;p&gt;来美的第一天我仍记忆深刻。&lt;/p&gt;
+&lt;p&gt;我想过要不要成为一个理论物理学家，虽然没有被宾大录取，但是如果我愿意，我可以再继续尝试一年再去申请，也可以不去顶尖的名校读博，总之我若喜欢并以此为乐，交付一生给物理事业，我也会尽全力去尝试。&lt;/p&gt;</description></item><item><title>Digital Design Foundations 2012</title><link>https://yingkui.com/ddf/</link><pubDate>Mon, 31 Dec 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/ddf/</guid><description>&lt;p&gt;&lt;img src="https://yingkui.com/img/ddf2012/first.jpg" alt="Project 1"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yingkui.com/img/ddf2012/4.webp" alt="Project 2"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yingkui.com/img/ddf2012/7.png" alt="Project 3"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yingkui.com/img/ddf2012/four.png" alt="Project 4"&gt;&lt;/p&gt;
+&lt;h2 id="functional-random"&gt;Functional Random&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://ddfblog2012.wordpress.com/2012/12/29/functional-random/"&gt;https://ddfblog2012.wordpress.com/2012/12/29/functional-random/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I didn’t notice this before David’s project.&lt;/p&gt;
+&lt;p&gt;Randomness is a form of art, a very different form from the predicted patterns.&lt;/p&gt;
+&lt;p&gt;When I was a child, I was fascinated by simple symbols, like Yin Yang Symbol:&lt;/p&gt;
+&lt;p&gt;Yin_yang_from_a_golden_spiral&lt;/p&gt;
+&lt;p&gt;I find beauty in this elegant and kind of mathematical object, it shows harmony and exactness.&lt;/p&gt;
+&lt;p&gt;Like Einstein, I believed that the nature of nature lies in “God doesn’t play with dice.” But Alberts are both wrong.&lt;/p&gt;</description></item><item><title>来美的第一天</title><link>https://yingkui.com/firstday/</link><pubDate>Fri, 24 Aug 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/firstday/</guid><description>&lt;p&gt;来美的第一天我仍记忆深刻。&lt;/p&gt;
 &lt;p&gt;抵达芝加哥是美国时间凌晨六点，想到自己要降落在美国大地让我感到异常兴奋，兴奋地想写诗。看到芝加哥上空远处散来的熹微晨光，在飞机上睡了几个小时的我，顿时精神起来，我并不知道我为何会兴奋，可能是因为这是创造了不尽奇迹的热土，也可能是自己幻想太多期待太久才导致自己情感上的特殊照顾。&lt;/p&gt;</description></item><item><title>赠曹睿颖</title><link>https://yingkui.com/poems/cao/</link><pubDate>Tue, 20 Mar 2012 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/cao/</guid><description>&lt;p&gt;&lt;img src="../%E8%B5%A0%E6%9B%B9%E7%9D%BF%E9%A2%96.jpeg" alt=""&gt;&lt;/p&gt;
 &lt;p&gt;识君费城秋，从此缘不休&lt;/p&gt;
 &lt;p&gt;交响乐息游华府，美景欢声一日收&lt;/p&gt;
@@ -4273,7 +4462,13 @@ $$
 &lt;p&gt;梦也由你/诗也由你/灵魂的每处都由你/如果你再好一点&lt;/p&gt;
 &lt;p&gt;天会更蓝/水会更清/莺啼更动听/如果&lt;/p&gt;
 &lt;p&gt;但/你是你/我是我/如果是如果&lt;/p&gt;
-&lt;p&gt;人生不再/我期大爱/我会继续的等待/如果&lt;/p&gt;</description></item><item><title>八韵诗</title><link>https://yingkui.com/poems/bayun/</link><pubDate>Fri, 04 Sep 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/bayun/</guid><description>&lt;h3 id="八韵诗"&gt;八韵诗&lt;/h3&gt;
+&lt;p&gt;人生不再/我期大爱/我会继续的等待/如果&lt;/p&gt;
+&lt;h2 id="热爱"&gt;热爱&lt;/h2&gt;
+&lt;p&gt;我热爱诗歌，只因我热爱这生活。&lt;/p&gt;
+&lt;p&gt;这生活又会失去多少欢乐，倘使那诗情不再闪烁。&lt;/p&gt;
+&lt;p&gt;不是因此我便没了忧伤，没了坎坷，&lt;/p&gt;
+&lt;p&gt;我不是富人，更不是王者，&lt;/p&gt;
+&lt;p&gt;只是我动身去爱的一切，都是我真心爱着的一切。&lt;/p&gt;</description></item><item><title>八韵诗</title><link>https://yingkui.com/poems/bayun/</link><pubDate>Fri, 04 Sep 2009 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/bayun/</guid><description>&lt;h3 id="八韵诗"&gt;八韵诗&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;2009.09 哈尔滨&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;生死看破，知常乐；&lt;/p&gt;
 &lt;p&gt;唯逢忆夜，失颜色；&lt;/p&gt;
@@ -14013,7 +14208,17 @@ $$
 &lt;p&gt;秀林流绿意，沉琴奏岩音。&lt;/p&gt;
 &lt;p&gt;慧山灵水出贤士，两涧三坑住晚甘。&lt;/p&gt;
 &lt;p&gt;花果香浓清活爽，涤浊散郁满身闲。&lt;/p&gt;
-&lt;p&gt;君王何必求丹药，一泡红袍便是仙。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
+&lt;p&gt;君王何必求丹药，一泡红袍便是仙。&lt;/p&gt;
+&lt;h2 id="赠曹睿颖-2012-03-20"&gt;赠曹睿颖 (2012-03-20)&lt;/h2&gt;
+&lt;p&gt;&lt;img src="../%E8%B5%A0%E6%9B%B9%E7%9D%BF%E9%A2%96.jpeg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;识君费城秋，从此缘不休&lt;/p&gt;
+&lt;p&gt;交响乐息游华府，美景欢声一日收&lt;/p&gt;
+&lt;p&gt;大西洋畔赌城晚，赞叹惊奇奧兰多&lt;/p&gt;
+&lt;p&gt;佳肴歌舞游轮夜，玉海青天细沙波&lt;/p&gt;
+&lt;p&gt;哈佛点点存豪笔，耶鲁古风处处奢&lt;/p&gt;
+&lt;p&gt;去日如逝水，俯仰半年过&lt;/p&gt;
+&lt;p&gt;祝君愿成真，早得如意君&lt;/p&gt;
+&lt;p&gt;身在美利坚，欢心每一天&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/read/brave/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/read/brave/</guid><description>&lt;h2 id="brave-new-world"&gt;Brave New World&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Shallow gratifications&lt;/strong&gt; are quick, surface-level pleasures that deliver an immediate hit of satisfaction but fade almost as soon as they arrive. They tend to rely on external stimuli or “easy wins,” rather than nourishing our deeper psychological needs. Below we’ll unpack what they are, give concrete examples, and explain why relying on them too much can undermine our long-term well-being.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="1-key-features-of-shallow-gratifications"&gt;1. Key Features of Shallow Gratifications&lt;/h2&gt;
@@ -14260,7 +14465,7 @@ Robson draws on predictive‐processing neuroscience to explain that the brain g
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Rigid Class and Rank Etiquette&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/self/2008-10-13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/self/2008-10-13/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Rigid Class and Rank Etiquette&lt;/strong&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/reinvent/boltzmann/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/boltzmann/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/godel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/godel/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/gr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/gr/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/schrodinger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/schrodinger/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/shannon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/shannon/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/sr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/sr/</guid><description/></item><item><title/><link>https://yingkui.com/reinvent/turing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/reinvent/turing/</guid><description/></item><item><title/><link>https://yingkui.com/self/2008-10-13/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/self/2008-10-13/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;道虽迩，不行不至，事虽小，不为不成&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;现定规矩如下：&lt;/p&gt;
