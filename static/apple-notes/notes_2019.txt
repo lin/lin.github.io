@@ -1,0 +1,822 @@
+end result of declarative programming
+
+Not easy in find the algorithm, though evolution did find it, but easy in-using the algorithm, by call the algorithm with simple input
+
+We care about the robustness of the algorithm.
+
+But the complexity of computation consist of things can’t be reduced to simple calling. That’s the core. 
+
+The robustness of the core intelligence algorithm to solve genetic problems is the goal of artificial intelligence.
+
+Dec 21, 2019 | 1
+————
+The origin of abstraction and transformation composition
+Dec 16, 2019 | 1
+————
+Intelligence is the ability to distinguish and the freedom of manipulate all possible distinguishability or the ability to explore every possible places in computational universe
+Oct 31, 2019 | 1
+————
+Compare and Reminder
+
+当你观察的时候，你不是看到了一个pattern而是多个层级的多个角度的pattern
+
+这就是为什么能够应用更加抽象技巧的原因
+Dec 1, 2019 | 1
+————
+计算过的就不用再算了
+
+节约计算，
+
+第一，把算过的存下来
+
+第二，看pattern，向下节约
+Nov 26, 2019 | 1
+————
+一定要能够区分计算，和对计算的meta-analysis
+
+another layers的结果，可以直接用到这个layer
+
+Nov 24, 2019 | 1
+————
+解决他人的问题，换取他人的帮助
+
+知道自己弱的时候，才知道如何尊敬他人，才知道如何避免自己的自大
+
+只有困难问题的打击，才能击碎个人的优越感
+
+如果你有优越感，那就去创业，不要强调自己的光环，不要做小生意
+Nov 21, 2019 | 1
+————
+没有脑子，只懂暴力的流氓，
+
+1，觉得自己道德上一定是对的，做错的是你，想通过暴力来教训你。2，觉得通过暴力得到的财富地位，是其智力的体现，也是其道德优越感的虚幻源头。3，野蛮
+
+时常遇到流氓，这些恶棍，蛮横冷血，信口雌黄。不和你讲道理，只知道不顺心了，就会觉得他人有病，需要通过暴力来“教育”他人。蛮横冷血，信口雌黄，没文化又爱面子的人大概都想这么解决问题，只是没资格施展罢了。
+Nov 20, 2019 | 1
+————
+为了更好理解抽象
+
+1，给自己大量的例子，人可以迅速抽象的例子，找到其内在不变的pattern。这是top down的做法，induction的做法
+
+2，如何botttom up？
+
+找相似之处，找显著特征，找周边相似
+
+comparison应该是很简单的函数
+
+识别强度也比较容易
+
+Abstraction is partially resemblance.
+Nov 19, 2019 | 1
+————
+抽象
+
+所有的问题在人脑中，都被削减成了短线的简单问题
+
+也就是说，要把常规的操作和复杂的计算区分开来。
+
+甚至是彻底的分开，不过是增加了vicinity check
+
+The invariant part or resemblance part or the distinctive part was remained.
+
+Distinctive part become the one we thought to be invariant part. This is the heuristic solving strategy.
+
+找到相似之处，对比找到相似，相似意味着抽象的可能。
+
+本质就是相似和可区分度的高低
+
+我们认为可区分度高的特征就是需要记住的特征
+
+我思考问题的基本模式，先通过简单模型假设和探索，找到规律，然后拓展到复杂的模型
+
+Remove_weak_features(p)
+
+soft computation.
+Nov 19, 2019 | 1
+————
+Vicinity comparison
+
+Inspirations for a theory of intelligence and a generic solving machine.
+
+If you can speak it in a reductive way, there must be a way to abstract the data
+Nov 18, 2019 | 1
+————
+It truly beyond my ability to fathom how to find the origin of these three ways to distinguish and how to find a way to unify all three aspects.
+
+Mysteries to me.
+
+1. Origin
+2. Unification
+3. Completeness
+Nov 14, 2019 | 1
+————
+What is easy to learn is not necessarily easy to solve
+
+1. 海量或者全部可区分对象
+2. 用更多信息存储这些信息
+
+Nov 08, 2019 | 1
+————
+solver的重要特征
+
+1. 如果人可以缩减为一个idea，那solver就可以缩减为一个concept
+2. recognize cue and response
+3. 简单的cue
+
+Nov 05, 2019 | 1
+————
+人既抽象过度，又抽象过少
+
+简单的因果模型是人的最擅长模型
+Nov 03, 2019 | 1
+————
+几个指标
+
+1. 基本，必备，进阶，扩展
+3. 3. 丰富度，面广，抽象灵活多样，狭隘
+4. 复杂度，坑深，精细敏锐娴熟，浅薄
+5. 清晰度，
+Nov 02, 2019 | 1
+————
+用敬业和同理心代替粗糙的宗教和部落思维
+Nov 02, 2019 | 1
+————
+最简洁的总结
+
+1. 通过对比和识别，从而区分
+2. 可区分的可以转化为另一个可区分
+3. 可以组合和拆解信息
+4. 增加限制，去除能力，删除信息
+5. 能力少可以，能力多也可以
+
+Nov 02, 2019 | 1
+————
+什么时候没有信息
+
+两个实例，应用了一个类的结论。也就是说，x+y =4, 2x+2y=8 或者两个平行线垂直于同一条线
+Nov 01, 2019 | 1
+————
+总结：
+
+1. 对比，抽象，运算，结合
+3. 3. 对比区分，从而知同异和抽象
+4. 区分能力，组合能力，转化能力
+5. 规律就是变化中的不变
+6. 抽象可以去部分也可以去全部信息
+7. 抽象有自上而下，也有自下而上
+8. 区分原则，不一样的不能一样
+9. 转化原则，没有区分信号就不能区分
+10. 抽象原则，功能少可以，多就更行
+11. 可以在抽象级别运算
+12. 计算的等同性，是抽象的具象运算
+13. 难以区分的场景，就认为是等同
+14. 学习就是结合了抽象的记忆
+15. 记忆就是信号A诱发信号B
+16. 记忆内容有事实，程序，策略，片段
+17. 解决问题就是域内片段信息的结合
+18. 解决原则，优先寻找周边和高频
+19. 频繁标记，相关预备，信号组合
+20. 计算复杂度的不可缩减
+21. 人脑包含了计算，抽象，学习，解决
+22. 图样识别：去弱信号和周边辅助验证
+Nov 01, 2019 | 1
+————
+人可以随意的拆解和组合信息从而实现区分
+Oct 31, 2019 | 1
+————
+Two identical things won’t react differently.
+
+Indistinguishable objects won’t work differently. If different, that means these two aren’t the same.
+
+The stable rule of identical principle.
+
+This’s means Turing machine captures all situations possible.
+
+Oct 31, 2019 | 1
+————
+三种缩减
+
+1，整体符号化
+2，去掉部分
+3，去掉变化的信息
+
+engineer checker
+Oct 30, 2019 | 1
+————
+相似度要与信号强度有关系
+
+There is no distinctive reaction without distinctive cue
+
+信号强度不仅和本质的区分度有关，也和出现频率有关
+Oct 29, 2019 | 1
+————
+人不是总结能力特别强，是对强信号的规律总结特别强。而对于弱的信号，即使多次长时间也很难捕捉
+
+Oct 28, 2019 | 1
+————
+getting neighbor is a forall process
+
+clear bordered object
+
+Object without compositions.
+
+一个离奇的点子就像魁地奇，它在你脑海里一扫而过，但是你必须遇到他几次，它才会乖乖就范。
+
+因为我笨，所以进展慢。
+
+但笨是一个相对的概念，如果我可以更聪明，或者问题更简单，我也可以更快
+
+Intuitive is on how exact two things are. How distinctive the condition is. If two things are completely indistinguishable from our point of view, we build a deeper confidence about the conclusion.
+Oct 26, 2019 | 1
+————
+天才童工，懒散管家
+
+童工备菜，管家指挥
+
+根据相似性做决定
+
+Prodigy Labor, Lazy Housekeeping
+
+因果反射，抽象缩减，
+
+相关预备，补全连贯，
+
+探索尝试
+Oct 22, 2019 | 1
+————
+记忆力
+
+大脑投入到细致的新的pattern，需要计算力的分配，尤其是司空见惯的问题被简化之后。
+
+所谓木质的利刃，就是很厉害，又有很多弊病。一是需要次数有点多，二是需要曝光更多的可能性，否则就活在局限的可能性。
+
+类比，从一个prominent feature 到另一个weak feature，exactly like 
+
+learning is remembering. With some help of abstraction
+Oct 18, 2019 | 1
+————
+学习就是记忆，但是你的大脑本能是不愿意死记硬背的，他希望通过抽象从而解决更多的问题，希望找到明确的因果从而有应用的价值，但是因果需要可以化解的信号，也需要符合固有的规则体系
+Oct 14, 2019 | 1
+————
+大学生的心态
+
+1，知道大家领域不同，之前单一的评价标准开始失效，每个领域都有自己的难点和乐趣，不应该随便藐视或者不屑
+
+2，开始尊重大家的独立性，知道个人喜好的差别，就是对世界认识清晰度的提高
+
+3，虚荣心被抹平，换来的是相互尊敬和相互帮助，而不是竞争和野蛮
+
+4，野蛮的特点就是粗暴，以优于他人为目的
+
+5，希望自己优于他人，仰慕优于他人的个体，幻想优于他人，不情愿承认自己不优于他人，
+Oct 02, 2019 | 1
+————
+高中生心态
+
+觉得这个觉醒阶段需要我投入大量的笔墨
+
+零和竞争，攀比虚荣，高中生的典型特点
+
+难但是没那么难
+
+世界不只是分数那么单调，评价标准单一
+
+竞争并不让人共赢，而是双输
+
+对创业的描述，似乎是对强者的赞歌，对野蛮竞争的追捧，而不是对提供服务的描述，是一种强者的炫耀，一种对强者的膜拜吹捧，对弱者信心的打压，而不是降低门槛的帮助
+
+就好比，高中阶段，吹学霸却不说学习的技巧一般
+Oct 02, 2019 | 1
+————
+
+当你提供服务的时候，尽全力提供最好的服务。
+
+1，为了竞争下的生存
+
+2，为了得到他人高质量的服务
+
+3，为了人生更多的乐趣
+
+
+不要只知道财富和名望的成功，懂得欣赏和尊敬他人的职业选择。
+
+1，对自己的选择阻力才会更小
+
+2，更加多元精彩的世界
+
+3，更加包容和人性化的世界
+Sep 29, 2019 | 1
+————
+如果可以回到十年前，你会怎么做？你反悔的事情有多少？
+
+如果少活十年，你会失去多少？
+Sep 14, 2019 | 1
+————
+1，不尽的落差（死亡的恐怖，生存的多彩）
+
+2，呼吸的代价（生活中消耗生命的痛苦和无奈）
+
+3，醒目的美味（如何挣钱）
+
+4，得失的幻象（隐形的价值，投资与借贷）
+
+5，木制的宝剑（人脑的羸弱）
+
+6，提神的迷药（虚荣的弊端）
+
+7，来世的回报（不切实际的长久回报）
+
+8，绕路的捷径（社会的不公平，传统规范）
+
+9，五彩的磨石（学习的价值，学习的快乐）
+
+10，必要的偏执（逻辑和科学的本质）
+
+- 愚公的智慧（工程学的本质）
+
+11，囚徒的觉醒（总是迟到的领悟）
+
+（书到用时方恨少，爱到懂时人已老）
+
+12，天梯的尽头
+
+我们应该去想更好的办法，而不是用粗糙的，损害生命的简单方式去解决问题
+
+Aug 22, 2019 | 1
+————
+information gives distinguishability
+
+space and stability gives memory and composition
+
+time gives transformation
+
+reverse computation gives abstraction
+
+computation and abstraction gives everything in the intellectual universe.
+July 05, 2019 | 1
+————
+纠错的目的 就是为了 灵活性 就是为了抽象出更大的一个类
+
+筹集到了足够的信息 或者片段化的信息
+
+component是极其重要的概念
+
+你收集了很多的信息，不过你仍然不知道，你只是似曾相识，你只是隐约可见，但这种信息的比对，正是我们大脑的强大之处
+
+你认为你知道了通法，其实你只是多懂了一些特殊的技巧。
+
+考试的问题，在于，如何和刷题量大的人斗争，刷题就是见世面。但是没刷题的人思维能力强，怎么办
+
+人的大问题在于脑力有限，只能粗略处理简单的问题，却要处理精细化的复杂问题。
+
+《死亡视角》
+
+先说死，再说生。死了就是信息，不死就是主宰。
+Jun 16, 2019 | 1
+————
+Currently aware space
+
+之所以，要特别的这么做，是因为，这样所需要的算法特别少。
+
+其中第一个算法就是可区分度
+
+大小写是非常好的类表达
+
+可以用一类而不是严格的要求
+
+各种大小写 空格的例子
+
+it doesn’t care spaces.
+
+抽象 就是为了更好更快的地发现信息的一致
+Jun 14, 2019 | 1
+————
+通过大量的尝试和解决，找到了重复性的规律，从而把创造性的工作转化为了程序性的处理
+Jun 12, 2019 | 1
+————
+为什么读码 特别难 是因为没有实例 有实例 为什么快
+
+for all的本源 在什么地方？
+
+最重要：你解决之前，你永远不知道有多难，只能期望它是简单的
+
+事情变了 因为一个不同的转化规则
+
+bliss of ignorance
+Jun 12, 2019 | 1
+————
+学习最后记住的就是宏观的一些观点，但是有大量的微观细节做为基础
+
+表达了同样的信息，类级别的，实例级别的
+
+之所以要例子，是因为可以理解错误 例子可以让我们测试 减少理解的偏差
+
+我们凭感觉去找类级别的规律，基本的假设都是答案在浅层的处理之内
+
+更好的理解stack
+Jun 12, 2019 | 1
+————
+信息的含量
+
+信息的暴露
+
+信息的明确（类的降低）
+
+可区分度的增加
+
+在一定量下 计算
+Jun 11, 2019 | 1
+————
+1，倒数最后几步
+
+什么情况下一条直线过定点，有什么性质
+
+2，没有做题的经验，基本可以认为不可能做上，也就是说没办法一下找到规律，发现模式
+Jun 11, 2019 | 1
+————
+1，近似的意思是 或者示意的意思是 在可以讨论的范围内 是没有区别的 也就是类级别的操作
+
+2，特殊性 就是 并不是每一个类里的实例 都有这样的性质 那么这个特殊性就可以用来建立起特殊性的等式
+
+3，当你按照自己的经验性 去解决问题 你会优先展开频率高的信息 而这样的做法很可能会提高走弯路的可能
+
+4，而通过走类级别有目的的思路 会让路径的选择更加有区分性 从而减少错误路径的选择
+
+5，特殊性的判断很难，你要知道从一个类知识出发 不可能到达另外一个类级别的结论 也就是存在一个实例 满足a类的性质 破坏了b类的性质
+
+
+6，多个路径 一个路径的受阻 和另一个路径的轻松
+Jun 11, 2019 | 1
+————
+1，信号处理
+
+唯一的路径，如果有两个路径就会很麻烦
+
+如果没有路径就卡死
+
+看到什么，想到什么
+
+2，方程是进行实例搜索的重要方式
+
+也就是如何确定实例的有效手段
+
+我们必须拥有一定的宏观思考的能力
+
+3，实例的特殊性
+
+单调的，奇偶的，零点，正负性 等等
+
+4，根深蒂固的路径，非常实用，但很容易卡死，或者灵活性不强
+
+5，搜集更多的信息，找容易探索的，走容易的，轻松的路径，直到没有了，再走难的路径
+
+6，信息量的一致，以及信息的损耗，信息的获得
+
+7，知道什么是受阻，什么是需要新的路径尝试，至关重要
+
+8，如果其中一个数错了 全环节皆败
+
+9，你的目的不是为了什么做什么，而是看到什么解析什么
+
+10，多举很多为了什么，所以做什么的例子，为了看到一个画面，所以选择这么去做，但是你要知道如何得到这个画面，已经为什么要寻找这个画面
+
+11，为了得到类级别的信息，进行实例级别的运算或者是验证
+
+12，类的重要性，从而引导实例级别的动作。类是简单的，但他需要实例级别复杂的运算来实现类的区分和目的。
+
+13，判断正负的工具缺失。
+
+当一个基本的工具失效，或者处理起来特别复杂、计算量极度复杂。
+
+那么还有什么是特别容易让你知道的新工具
+
+对于学生来讲，很多事情一道题，可以吸收的量是不一样的
+
+探究，就是处理信息，使用各种算法，去处理实例的特殊性，去探究实例的特征
+
+1，常见方法要知道，灵活的识别场景并且使用
+
+2，如何探索出新的工具和方法
+
+3，平时的训练 刷题 只是频率上的提高，而不是更高级别的理解的提高，因为功利性的原因
+
+4，从能解决的开始，去寻找规律，而不是一下子都吃了，敲打牛皮糖的思路。
+
+5，能够举例子，能够从例子中找到规律
+Jun 11, 2019 | 1
+————
+Resolution is the right word for abstract hierarchy.
+
+传统尚古，迷信标签，虚荣优越感
+Jun 08, 2019 | 1
+————
+不是理解 是记住
+
+不是理解 是知道路径
+
+不是理解 是能够抽象
+
+用最少的概念去解释更大范围的概念
+
+easy path 人的策略
+
+feature extraction
+Jun 07, 2019 | 1
+————
+第一章 叫做 classical computation
+
+第二章 叫做 abstract computation
+
+第三章 叫做 learning 
+
+第四章 叫做 complexity
+
+第五章 叫做 solving
+Jun 07, 2019 | 1
+————
+第一遍跟下来，也是模糊的 感性的认为
+
+接下来，可能有歧义，可能记错，可能不能变化，可能遗忘，可能只知道特例，不能通用
+
+只能练习，练习中去除分歧，去除错误
+
+你不可能现推导 一定是记忆 对样式的记忆
+
+只有达到肌肉反射 才是目的
+
+人脑只有三种功能，抽象，计算，模拟
+
+本质上都是抽象的行为
+Jun 06, 2019 | 1
+————
+I hope in a decade or so this book can be updated to a more ambitious title Foundation of Intelligence.
+Jun 06, 2019 | 1
+————
+1，寻找类级别（近似和归类）的运算
+
+2，找符合类要求的实例
+
+3，实例运算，类运算
+
+4，实例归纳，类找实例
+
+5，正向运算，逆向补齐
+
+
+第一，是迅速归类
+
+第二，是迅速认为因果唯一
+
+第三，是错误的模糊的因果分析
+Jun 06, 2019 | 1
+————
+这个世界的规则，是因为充满了智力水不足的人充斥的结果。
+
+第一，思维上的懒惰，不想着复杂精细的处理，而是粗暴
+
+第二，虚荣和贪婪。为了面子，为了更多不合理的渴求。
+Jun 04, 2019 | 1
+————
+对 金钱的误解和重新理解，是人生重要难题之一，也体现了人脑的局限和错误倾向。一方面，人意识到钱对时间的节约，对需求的满足，认为钱多就好。同时，又总被教育钱不重要，时间重要。人就蒙圈了，一会钱重要，一会钱不重要。一会说有钱可以解释一切，一会发现不让你赚钱的都是忽悠你。一会看见伟人也没钱，一会发现名人都有钱。
+
+进化的目的是为了生存，而不是节约时间
+
+也不是为了意识到珍惜除了生存之外的乐趣
+
+大脑的本质只为了生存，逻辑和模型的结果
+Jun 04, 2019 | 1
+————
+为了救命，我们可以喝下毒药，
+但为了虚荣，自残就纯属荒唐。
+不过，当你沉迷于虚荣
+免于丢脸的荒唐，便不是荒唐
+而是遮羞的谎言，
+
+我难以想象的是生活如此多彩，有滋有味，却要有死亡相伴
+
+缺乏基本的因果性，人们自然会轻信于相关性。
+
+一个人智力水平的高低，更多的就是加强因果，使用恰当的相关（近似）
+
+缺乏信息和疏于计算，是依赖相关性的源泉。所谓数据挖掘，就是寻找难以解释的因果。或者，不能加以解释的因果
+
+以偏概全，缺乏分析，盲信消息来源
+
+错误的，有偏差的模型。
+
+Jun 02, 2019 | 1
+————
+灌水的近似
+
+Roughly speaking.
+
+Roughly.
+
+Heuristic.
+
+Undistinguished.
+
+This sort of zoom in and out. This way of up and down abstraction. This procedure of press and loose
+
+近似也是抽象的一部分
+
+May 21, 2019 | 1
+————
+你一定要有信号才能有方向，那么信号就是在穷举中加以区别，没有魔术，只有随机
+May 19, 2019 | 1
+————
+You can’t compute abstraction.
+
+This is a similar approach like Turing in 1936, but instead of finding atomic components of mechanical computing, here this book is trying to find the primitive elements of solving problems, which most of time is hidden behind the curtain, only the result is presented affront.
+
+False extrapolate.
+
+Dynamic scope.
+
+Abstraction definition, operation, relation and computation.
+
+The reason things are complicated mainly is because of abstraction.
+
+May 15, 2019 | 1
+————
+人们的短视
+
+匆忙的总结和归纳
+
+错误的线形模型，简直是解释所有事情的基本利器
+
+错误的相关性，
+
+赚钱好，就赚越多的钱越好
+
+利他好，就牺牲自己越多越好
+
+教育好，就学历越高越好
+
+名声难得，就越有名气就越有水平
+
+人们喜欢从中寻找pattern，而不是被灌输理论，人们宁肯被谎言所欺骗，也不愿被现实所灌输，这就是为什么要看历史，要看影视剧的原因
+
+你不爱学习是骨子里的事情
+
+ego fear greed convention weak-minded 
+
+应该把木制的宝剑放在前面
+
+May 14, 2019 | 1
+————
+Evolution. Not possible with precise checking. Have to guess and interpolate.
+
+Through evolution. 
+
+Manipulated by fear.
+
+Blinded by ego.
+
+Deceived by convention.
+
+可口的迷药
+
+May 13, 2019 | 1
+————
+有时为了更加精准，有时为了更加抽象。就是调节精度的游戏。
+
+more and more carings. 
+
+play with carings.
+
+计算的时候无需过于精准，只要达到目的就可以。
+
+你既希望精准的区别轻重，有希望可以模糊的找到规律。
+
+When you present an concept you talk about the features of it rather the complete information of it. Since present it with whole info will be too complicated.
+
+May 13, 2019 | 1
+————
+Tree of abstraction.
+
+1，多个链连接的抽象，逐步的被包含。
+
+2，representer，或者叫做placeholder. 可以被placeholder的地方。
+
+3，distinguishability.
+
+4，representable，我觉得这个和for all有直接关系，因为represent的时候就有for all
+
+5，objects that can be represented by eliminating one layer of its ability.
+
+6，之所以数字比较复杂，是因为计算的等效性
+
+7，如何缩减关心，起初的缩减是变量的缩减，最后的缩减就是函数的缩减
+
+8，均值缩减。代表缩减。最具代表性缩减，归类缩减。
+
+Recognizer. The inherency of recognizer.
+
+how can you prove that one recognizer is a subset of another.
+
+Distinguishable by one number as a representer. I think it as a regular expression.  
+
+True for function, true for 
+
+Similar means there is a short function for them to transform to another object quickly. 
+
+1,Human brain is built to distinguish and for a degree. 
+
+2, Event based rules.
+
+3, Infer and predict
+
+4, search and solve.
+May 06, 2019 | 1
+————
+五彩的磨石
+
+甜蜜的诅咒
+
+绕路的捷径
+
+可口的毒药
+
+木制的宝剑
+
+May 05, 2019 | 1
+————
+Information is what you can distinguish.
+
+May 01, 2019 | 1
+————
+小时候不被金钱所困扰，长大后被金钱所奴役
+
+不尽的落差
+
+呼吸的代价
+
+得失的幻象
+
+必要的偏执
+
+逾期的奖券
+
+囚徒的觉醒
+
+天梯的尽头
+Apr 27, 2019 | 1
+————
+我不仅因为自己生活在20世纪而忧伤，而是因为自己没有生活在其他的世纪而感怀，为什么不是3089年，为什么是一个转接的时代。为什么我出生在地球，而不是另外一个规则的宇宙，为什么我不能体验多种职业，为什么我不能学更多的知识，我为什么不能习得更多的技能，为什么不能给我更多的时间去解决那些极度复杂的问题
+Apr 20, 2019 | 1
+————
+1，人是非常懒的，不想思考，想逃避或者糊弄过去，但是却又要面子，找借口，抱怨他人和事件
+
+2，我不理解为什么会存在转换这个概念，但这并不重要，至少假设存在有利于我们解决问题
+Apr 18, 2019 | 1
+————
+学习的科学 是因为反直觉 有明确的区分的必要 有不易观察和习得的特征
+
+我们之所以发明计算机 就是为了互补 为了代替自己的不足 节约自己的时间和计算力
+
+Don’t admire skills which consume lots of time and lots of opportunity cost.
+Apr 16, 2019 | 1
+————
+总结规律 发现相似之处 重复之处
+
+第一，学会概念，学会技术，学会概念的周边信息，例如性质
+
+第二，能够从更加抽象的层级去理解，declarative point of view.
+
+Mar 05, 2019 | 1
+————
+Definition
+
+Data and Rules
+
+See this and transform to that.
+
+Computation.
+
+Turing Machine. 
+
+Symbolic Manipulation
+
+Reduction
+
+Abstraction
+
+Irreducibility
+
+Complexity
+
+Randomness.
+
+Jan 05, 2019 | 1
+————
+为什么要学习这一节？
+
+学习这一节要解决的问题是什么？
+
+complexity 的目的是为了解决可行性
+
+definition 的目的是为了解决正误性
+
+Jan 05, 2018 | 1
+————

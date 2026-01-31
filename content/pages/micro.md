@@ -66,6 +66,12 @@ url: /micro
     align-items: center;
     justify-content: center;
 }
+.archive-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
 
 .archive-year {
     grid-column: 2;
@@ -133,6 +139,12 @@ url: /micro
         height: 40px;
         border-radius: 10px;
         /* background: rgba(0, 133, 255, 0.08); */
+    }
+    .archive-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
     }
 
     .archive-year {
@@ -241,6 +253,17 @@ url: /micro
             <strong>165 Tweets</strong>
         </div>
     </a>
+    <a href="/apple-notes/?year=2024" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2024</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2024<br>
+            <strong>Apple Notes</strong>
+        </div>
+    </a>
     <a href="/twitter/?year=2023" class="archive-card">
         <div class="archive-icon">
             <svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
@@ -250,6 +273,17 @@ url: /micro
         <div class="archive-details">
             Jun 25, 2023 - Nov 5, 2023<br>
             <strong>157 Tweets</strong>
+        </div>
+    </a>
+    <a href="/apple-notes/?year=2023" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2023</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2023<br>
+            <strong>Apple Notes</strong>
         </div>
     </a>
     <a href="/twitter/?year=2022" class="archive-card">
@@ -263,6 +297,17 @@ url: /micro
             <strong>6 out of 247 Tweets</strong>
         </div>
     </a>
+    <a href="/apple-notes/?year=2022" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2022</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2022<br>
+            <strong>Apple Notes</strong>
+        </div>
+    </a>
     <a href="/twitter/?year=2021" class="archive-card">
         <div class="archive-icon">
             <svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
@@ -272,6 +317,17 @@ url: /micro
         <div class="archive-details">
             Sep 7, 2021 - Dec 30, 2021<br>
             <strong>11 Tweets</strong>
+        </div>
+    </a>
+    <a href="/apple-notes/?year=2021" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2021</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2021<br>
+            <strong>Apple Notes</strong>
         </div>
     </a>
     <a href="/twitter/?year=2020" class="archive-card">
@@ -285,6 +341,17 @@ url: /micro
             <strong>33 Tweets</strong>
         </div>
     </a>
+    <a href="/apple-notes/?year=2020" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2020</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2020<br>
+            <strong>Apple Notes</strong>
+        </div>
+    </a>
     <a href="/twitter/?year=2019" class="archive-card">
         <div class="archive-icon">
             <svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
@@ -296,6 +363,17 @@ url: /micro
             <strong>104 Tweets</strong>
         </div>
     </a>
+    <a href="/apple-notes/?year=2019" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2019</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2019<br>
+            <strong>Apple Notes</strong>
+        </div>
+    </a>
     <a href="/twitter/?year=2018" class="archive-card">
         <div class="archive-icon">
             <svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
@@ -305,6 +383,28 @@ url: /micro
         <div class="archive-details">
             Jan 5, 2018 - Dec 17, 2018<br>
             <strong>230 Tweets</strong>
+        </div>
+    </a>
+    <a href="/apple-notes/?year=2018" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2018</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2018<br>
+            <strong>Apple Notes</strong>
+        </div>
+    </a>
+    <a href="/apple-notes/?year=2016" class="archive-card">
+        <div class="archive-icon">
+            <img src="/apple-notes/imgs/logo.webp" width="50" height="50" style="width: 50px; height: 50px;" alt="Apple Notes">
+        </div>
+        <span class="archive-year">2016</span>
+        <span class="archive-link-text">Apple Notes Archive</span>
+        <div class="archive-details">
+            Notes from 2016<br>
+            <strong>Apple Notes</strong>
         </div>
     </a>
     <a href="/weibo-albertkui/?year=2013" class="archive-card">
