@@ -184,7 +184,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="spanish-from-en"&gt;Spanish from EN&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;8&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;8&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -255,7 +255,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="french-from-en"&gt;French from EN&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;22&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;21&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;46&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;51&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;49&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;37&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;22&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;21&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;46&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;51&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;49&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;37&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -326,7 +326,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="english-from-es"&gt;English from ES&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;20&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;48&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;20&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;48&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1096,7 +1096,7 @@ $$p(婚后幸福|婚期) \propto p(婚后幸福)$$&lt;p&gt;从而可以知道，
 &lt;h4 id="1-dont-repeat-yourself"&gt;1, Don’t repeat yourself.&lt;/h4&gt;
 &lt;p&gt;把出现多次的重复代码整理起来。&lt;/p&gt;
 &lt;p&gt;例子:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ========== An example of making codes dry and skinny =============#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1700,7 +1700,7 @@ $$
 &lt;p&gt;通过对原材料反思得到的结果为适世基因。&lt;/p&gt;
 &lt;p&gt;适世基因的改变就是进化。人类进化的基本单位包括个体和群体。把群体中适世基因发生大面积的改变称之为大进化。大进化的方向由人类进化论的基本原理决定。&lt;/p&gt;
 &lt;p&gt;利益需求由生而起，分层次的向外拓展，并与个体进化程度和外在历史环境紧密联系着。&lt;/p&gt;
-&lt;p&gt;适世基因的传播分为种间传播和载体传播。种间传播即人与人之间通过交流进行的传播。载体传播即通过文字、影视等载体进行的传播。&lt;/p&gt;</description></item><item><title>诗行记</title><link>https://yingkui.com/tripasapoet/</link><pubDate>Thu, 09 Oct 2008 00:00:00 +0000</pubDate><guid>https://yingkui.com/tripasapoet/</guid><description>&lt;p&gt;十一岁那年我患了场怪病，口中总会无故吐出些诗来，痴言醉语，不知所云，虽无大碍，但总归是令人不适，我便拾起几本诗集当作药剂来食。&lt;/p&gt;
+&lt;p&gt;适世基因的传播分为种间传播和载体传播。种间传播即人与人之间通过交流进行的传播。载体传播即通过文字、影视等载体进行的传播。&lt;/p&gt;</description></item><item><title>诗行记</title><link>https://yingkui.com/journey/</link><pubDate>Thu, 09 Oct 2008 00:00:00 +0000</pubDate><guid>https://yingkui.com/journey/</guid><description>&lt;p&gt;十一岁那年我患了场怪病，口中总会无故吐出些诗来，痴言醉语，不知所云，虽无大碍，但总归是令人不适，我便拾起几本诗集当作药剂来食。&lt;/p&gt;
 &lt;p&gt;谁知这药口感甚好，舒心畅怀。或流琼浆捣五味，或滚吒浪溢心潮。只是这药空有其味，而病情却似有加深之迹。无奈之下，我便尝试去写诗。提起笔来，方晓得写诗是件苦事，平仄之限，韵律之约，令我精竭思尽，自然也生了不少的苦楚。&lt;/p&gt;
 &lt;p&gt;但我又无药可医，便坚持去写诗，以期良药苦口之效。&lt;/p&gt;
 &lt;p&gt;待日后体痊，痛定思痛，才悟出当日不愈是因这药里少了个药饵。&lt;/p&gt;

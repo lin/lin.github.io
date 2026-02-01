@@ -60,6 +60,12 @@
  align-items: center;
  justify-content: center;
 }
+.archive-icon img {
+ width: 50px;
+ height: 50px;
+ object-fit: contain;
+ display: block;
+}
 
 .archive-year {
  grid-column: 2;
@@ -127,6 +133,12 @@
  height: 40px;
  border-radius: 10px;
  /* background: rgba(0, 133, 255, 0.08); */
+ }
+ .archive-icon img {
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+ display: block;
  }
 
  .archive-year {
@@ -234,6 +246,17 @@
  &lt;strong&gt;165 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2024" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2024&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2024&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2023" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"&gt;&lt;g&gt;&lt;path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;
@@ -243,6 +266,17 @@
  &lt;div class="archive-details"&gt;
  Jun 25, 2023 - Nov 5, 2023&lt;br&gt;
  &lt;strong&gt;157 Tweets&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2023" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2023&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2023&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2022" class="archive-card"&gt;
@@ -256,6 +290,17 @@
  &lt;strong&gt;6 out of 247 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2022" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2022&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2022&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2021" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"&gt;&lt;g&gt;&lt;path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;
@@ -265,6 +310,17 @@
  &lt;div class="archive-details"&gt;
  Sep 7, 2021 - Dec 30, 2021&lt;br&gt;
  &lt;strong&gt;11 Tweets&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2021" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2021&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2021&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2020" class="archive-card"&gt;
@@ -278,6 +334,17 @@
  &lt;strong&gt;33 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2020" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2020&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2020&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2019" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"&gt;&lt;g&gt;&lt;path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;
@@ -289,6 +356,17 @@
  &lt;strong&gt;104 Tweets&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2019" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2019&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2019&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
  &lt;a href="https://yingkui.com/twitter/?year=2018" class="archive-card"&gt;
  &lt;div class="archive-icon"&gt;
  &lt;svg viewBox="0 0 24 24" width="50" height="50" fill="#1DA1F2"&gt;&lt;g&gt;&lt;path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"&gt;&lt;/path&gt;&lt;/g&gt;&lt;/svg&gt;
@@ -298,6 +376,28 @@
  &lt;div class="archive-details"&gt;
  Jan 5, 2018 - Dec 17, 2018&lt;br&gt;
  &lt;strong&gt;230 Tweets&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2018" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2018&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2018&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
+ &lt;/div&gt;
+ &lt;/a&gt;
+ &lt;a href="https://yingkui.com/apple-notes/?year=2016" class="archive-card"&gt;
+ &lt;div class="archive-icon"&gt;
+ &lt;img src="https://yingkui.com/apple-notes/imgs/logo.webp" width="50" height="50" style="width: 50px; height: 50px;" alt="Apple Notes"&gt;
+ &lt;/div&gt;
+ &lt;span class="archive-year"&gt;2016&lt;/span&gt;
+ &lt;span class="archive-link-text"&gt;Apple Notes Archive&lt;/span&gt;
+ &lt;div class="archive-details"&gt;
+ Notes from 2016&lt;br&gt;
+ &lt;strong&gt;Apple Notes&lt;/strong&gt;
  &lt;/div&gt;
  &lt;/a&gt;
  &lt;a href="https://yingkui.com/weibo-albertkui/?year=2013" class="archive-card"&gt;
@@ -505,10 +605,10 @@
 &lt;ol&gt;
 &lt;li&gt;自学编程，大约两个月内就可以胜任初级程序员的多数工作，从设计（Sketch）到前端，从后端到部署&lt;/li&gt;
 &lt;li&gt;准备考高中数学教师资格证，仅用了八天时间，看完了三本教材，两本需要大量的记忆，一本是基础的大学数学内容。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769349775380" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/ol&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1769941879587" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1769349775380",
+ id: "react-widget-GMMVisualizer-1769941879587",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -943,7 +1043,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="spanish-from-en"&gt;Spanish from EN&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;8&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;8&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;28&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1014,7 +1114,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="french-from-en"&gt;French from EN&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;22&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;21&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;46&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;51&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;49&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;37&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;22&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;21&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;46&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;51&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;49&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;37&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1085,7 +1185,7 @@ table {
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="english-from-es"&gt;English from ES&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;20&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;48&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;units_in_each_section &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;10&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;26&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;20&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;48&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;50&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;52&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;36&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -3199,7 +3299,7 @@ h3 {
 &lt;p&gt;&lt;a href="https://leetcode.com/problems/number-of-distinct-roll-sequences/"&gt;Leetcode 2318. Number of Distinct Roll Sequences&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;很快就想到了要用dp，也找到了关系式，但没有很快意识到原来 &lt;code&gt;6*6*n&lt;/code&gt; 是一个很小的数值，以为三个变量的dp会过于巨大，而过早的放弃了这个方向的尝试&lt;/p&gt;</description></item><item><title>每日刷题总结</title><link>https://yingkui.com/cs/cp-legacy/05-25-2023/</link><pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp-legacy/05-25-2023/</guid><description>&lt;h3 id="1---precomputation-1-two-sum"&gt;1 - Precomputation: &lt;a href="https://leetcode.com/problems/two-sum/"&gt;1. Two Sum&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Normally, we may use brute force to find the solution.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;twoSum&lt;/span&gt;(self, nums: List[int], target: int) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; List[int]:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; n &lt;span style="color:#f92672"&gt;=&lt;/span&gt; len(nums)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -3978,7 +4078,7 @@ $$p(婚后幸福|婚期) \propto p(婚后幸福)$$&lt;p&gt;从而可以知道，
 &lt;h4 id="1-dont-repeat-yourself"&gt;1, Don’t repeat yourself.&lt;/h4&gt;
 &lt;p&gt;把出现多次的重复代码整理起来。&lt;/p&gt;
 &lt;p&gt;例子:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ========== An example of making codes dry and skinny =============#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ==================================================================#&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -4690,7 +4790,7 @@ $$
 &lt;p&gt;通过对原材料反思得到的结果为适世基因。&lt;/p&gt;
 &lt;p&gt;适世基因的改变就是进化。人类进化的基本单位包括个体和群体。把群体中适世基因发生大面积的改变称之为大进化。大进化的方向由人类进化论的基本原理决定。&lt;/p&gt;
 &lt;p&gt;利益需求由生而起，分层次的向外拓展，并与个体进化程度和外在历史环境紧密联系着。&lt;/p&gt;
-&lt;p&gt;适世基因的传播分为种间传播和载体传播。种间传播即人与人之间通过交流进行的传播。载体传播即通过文字、影视等载体进行的传播。&lt;/p&gt;</description></item><item><title>诗行记</title><link>https://yingkui.com/tripasapoet/</link><pubDate>Thu, 09 Oct 2008 00:00:00 +0000</pubDate><guid>https://yingkui.com/tripasapoet/</guid><description>&lt;p&gt;十一岁那年我患了场怪病，口中总会无故吐出些诗来，痴言醉语，不知所云，虽无大碍，但总归是令人不适，我便拾起几本诗集当作药剂来食。&lt;/p&gt;
+&lt;p&gt;适世基因的传播分为种间传播和载体传播。种间传播即人与人之间通过交流进行的传播。载体传播即通过文字、影视等载体进行的传播。&lt;/p&gt;</description></item><item><title>诗行记</title><link>https://yingkui.com/journey/</link><pubDate>Thu, 09 Oct 2008 00:00:00 +0000</pubDate><guid>https://yingkui.com/journey/</guid><description>&lt;p&gt;十一岁那年我患了场怪病，口中总会无故吐出些诗来，痴言醉语，不知所云，虽无大碍，但总归是令人不适，我便拾起几本诗集当作药剂来食。&lt;/p&gt;
 &lt;p&gt;谁知这药口感甚好，舒心畅怀。或流琼浆捣五味，或滚吒浪溢心潮。只是这药空有其味，而病情却似有加深之迹。无奈之下，我便尝试去写诗。提起笔来，方晓得写诗是件苦事，平仄之限，韵律之约，令我精竭思尽，自然也生了不少的苦楚。&lt;/p&gt;
 &lt;p&gt;但我又无药可医，便坚持去写诗，以期良药苦口之效。&lt;/p&gt;
 &lt;p&gt;待日后体痊，痛定思痛，才悟出当日不愈是因这药里少了个药饵。&lt;/p&gt;
@@ -5067,9 +5167,9 @@ $$
 &lt;p&gt;See our website &lt;a href="https://babeljs.io/docs/en/next/babel-parser.html"&gt;@babel/parser&lt;/a&gt; for more information or the &lt;a href="https://github.com/babel/babel/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen"&gt;issues&lt;/a&gt; associated with this package.&lt;/p&gt;
 &lt;h2 id="install"&gt;Install&lt;/h2&gt;
 &lt;p&gt;Using npm:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or using yarn:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/node_modules/charcodes/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/node_modules/charcodes/readme/</guid><description>&lt;h2 id="exports"&gt;Exports&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Constant number &lt;code&gt;backSpace&lt;/code&gt;&lt;/li&gt;
@@ -5330,9 +5430,9 @@ $$
 &lt;p&gt;See our website &lt;a href="https://babeljs.io/docs/en/next/babel-parser.html"&gt;@babel/parser&lt;/a&gt; for more information or the &lt;a href="https://github.com/babel/babel/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen"&gt;issues&lt;/a&gt; associated with this package.&lt;/p&gt;
 &lt;h2 id="install"&gt;Install&lt;/h2&gt;
 &lt;p&gt;Using npm:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or using yarn:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/src/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/src/note/</guid><description>&lt;h2 id="hard-part-about-babel-parser"&gt;Hard Part about Babel Parser&lt;/h2&gt;
 &lt;h3 id="noin"&gt;noIn&lt;/h3&gt;
 &lt;p&gt;This is what means for noIn:&lt;/p&gt;
@@ -5583,7 +5683,7 @@ or
 &lt;p&gt;and on the stack is the locals used by current function&lt;/p&gt;
 &lt;p&gt;At the same time, function can access the higher level variables by scoping.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/godel/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/godel/python/</guid><description>&lt;h2 id="functions-for-primes"&gt;Functions for Primes&lt;/h2&gt;
 &lt;p&gt;The following functions are normal Python functions that work with prime numbers.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_divisible&lt;/span&gt;(x, y):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_divisible&lt;/span&gt;(x, y):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; any(x &lt;span style="color:#f92672"&gt;==&lt;/span&gt; y &lt;span style="color:#f92672"&gt;*&lt;/span&gt; z &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; z &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, x &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_prime&lt;/span&gt;(x):
@@ -5618,7 +5718,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; candidate &lt;span style="color:#f92672"&gt;+=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; primes[n]
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="functions-for-sequences"&gt;Functions for Sequences&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;nth_element_of_x&lt;/span&gt;(n, x):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;nth_element_of_x&lt;/span&gt;(n, x):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; Example:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; # Encode [2, 0, 3] → 2^2 * 3^0 * 5^3 = 4 * 1 * 125 = 500
@@ -5688,7 +5788,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; concat(concat(convert_to_sequence(&lt;span style="color:#ae81ff"&gt;11&lt;/span&gt;), x), convert_to_sequence(&lt;span style="color:#ae81ff"&gt;13&lt;/span&gt;))
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="functions-for-sequences-1"&gt;Functions for Sequences&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_variable_of_type&lt;/span&gt;(n, x):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_variable_of_type&lt;/span&gt;(n, x):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; Checks if x is a variable of n-th type, meaning:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; x = z^n for some prime z ≥ 13
@@ -5819,7 +5919,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;False&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="is_proof_of"&gt;is_proof_of&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_inference_from&lt;/span&gt;(previous_proof, formula):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; previous_proof:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;False&lt;/span&gt;
@@ -5840,7 +5940,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# Check that the proof ends in the target formula&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; proof_sequence[&lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;==&lt;/span&gt; target_formula_code
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="rn"&gt;R(n)&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;R&lt;/span&gt;(n):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;R&lt;/span&gt;(n):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_even&lt;/span&gt;(v): 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; v &lt;span style="color:#f92672"&gt;%&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt; &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -5856,7 +5956,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# R(1)(4) =&amp;gt; True, because we choose is_even, and call is_even(4)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# R(2)(4) =&amp;gt; False, because we choose is_odd, and call is_odd(4)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;K &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [n &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; n &lt;span style="color:#f92672"&gt;in&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;] &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; R(n)(n)]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;K &lt;span style="color:#f92672"&gt;=&lt;/span&gt; [n &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; n &lt;span style="color:#f92672"&gt;in&lt;/span&gt; [&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;,&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;] &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; R(n)(n)]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# K =&amp;gt; [1, 2]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# R(1)(1) =&amp;gt; 1 is not even&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# R(2)(2) =&amp;gt; 2 is not odd&lt;/span&gt;
@@ -5868,7 +5968,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# S(1) =&amp;gt; True&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# S(3) =&amp;gt; False&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/gsap-light/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/gsap-light/readme/</guid><description>&lt;p&gt;Minified Logic:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;let&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Timeline&lt;/span&gt;()
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;let&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Timeline&lt;/span&gt;()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;add&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Tween&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;target&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;#square&amp;#39;&lt;/span&gt;, {&lt;span style="color:#a6e22e"&gt;duration&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;x&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;}))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;add&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Tween&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;target&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;#circle&amp;#39;&lt;/span&gt;, {&lt;span style="color:#a6e22e"&gt;duration&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;y&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;300&lt;/span&gt;}))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -6027,7 +6127,7 @@ B -&amp;gt; z.
 &lt;li&gt;Add seed data for react&lt;/li&gt;
 &lt;li&gt;Add interaction using react&lt;/li&gt;
 &lt;li&gt;Add api with react&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/basic/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;React&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;createElement&lt;/span&gt;(
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/basic/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;React&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;createElement&lt;/span&gt;(
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;h1&amp;#39;&lt;/span&gt;, &lt;span style="color:#75715e"&gt;// type
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {}, &lt;span style="color:#75715e"&gt;// props
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;Hello, React!&amp;#39;&lt;/span&gt; &lt;span style="color:#75715e"&gt;// children
@@ -6035,7 +6135,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="generate-html-string"&gt;Generate HTML String&lt;/h2&gt;
 &lt;h2 id="re-render-when-state-change"&gt;Re-render when state change.&lt;/h2&gt;
 &lt;h2 id="use-effect"&gt;Use Effect&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;useEffect&lt;/span&gt;(() =&amp;gt; {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;useEffect&lt;/span&gt;(() =&amp;gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Code to run on mount and update (componentDidMount and componentDidUpdate)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; () =&amp;gt; {
@@ -6043,7 +6143,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; };
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}, [&lt;span style="color:#a6e22e"&gt;someValue&lt;/span&gt;]); &lt;span style="color:#75715e"&gt;// Run again only if `someValue` changes
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/state/</guid><description>&lt;h3 id="react-state"&gt;React State&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;StateTestComponent&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; () =&amp;gt; {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;StateTestComponent&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; () =&amp;gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dateWithoutState&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Date()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; [&lt;span style="color:#a6e22e"&gt;dateWithState&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;setDateWithState&lt;/span&gt;] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;useState&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Date())
@@ -6072,7 +6172,7 @@ B -&amp;gt; z.
 &lt;li&gt;ssh git should be handle differently.&lt;/li&gt;
 &lt;li&gt;ruby rails node yarn&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# RUBY AND NODE&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;###=============&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;ARG&lt;/span&gt; RUBY_VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;.3.0&lt;span style="color:#960050;background-color:#1e0010"&gt;
@@ -6120,7 +6220,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Copy the rest of your app&amp;#39;s source code from your host to your image filesystem.&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . /a23&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/git/</guid><description>&lt;h2 id="git"&gt;GIT&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;My Name&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.email my@gmail.com
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -6130,15 +6230,15 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# copy to github&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat ~/.ssh/id_ed25519.pub &lt;span style="color:#75715e"&gt;# copy SSH k&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chown ubuntu /var/www
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chown ubuntu /var/www
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd /var/www
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone git@github.com:username/app.git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd app
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/nginx-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/nginx-config/</guid><description>&lt;h3 id="config"&gt;Config&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;passenger-config about ruby-command
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;passenger-config about ruby-command
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# passenger_ruby /usr/share/rvm/gems/ruby-3.3.0/wrappers/ruby&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vim /etc/nginx/nginx.conf
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;server &lt;span style="color:#f92672"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vim /etc/nginx/nginx.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;server &lt;span style="color:#f92672"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; listen 80;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; server_name 1.2.3.4;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -6147,23 +6247,23 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; passenger_enabled on;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; passenger_ruby /usr/share/rvm/gems/ruby-3.3.0/wrappers/ruby;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo service nginx reload
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo service nginx reload
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo service nginx restart
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;passenger-status
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo passenger-config restart-app &lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;pwd&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/nginx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/nginx/</guid><description>&lt;h2 id="nginx"&gt;Nginx&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# installation&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# installation&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install nginx
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx -v 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo service nginx start
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo service nginx stop
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# How to use ngnix&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# How to use ngnix&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vim /etc/nginx/nginx.conf &lt;span style="color:#75715e"&gt;# nginx config file location&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nginx -s reload &lt;span style="color:#75715e"&gt;# make config file working&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="passenger"&gt;Passenger&lt;/h3&gt;
 &lt;p&gt;&lt;a href=""&gt;https://www.phusionpassenger.com/docs/advanced_guides/install_and_upgrade/nginx/install/oss/jammy.html&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y dirmngr gnupg apt-transport-https ca-certificates curl
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y dirmngr gnupg apt-transport-https ca-certificates curl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://oss-binaries.phusionpassenger.com/auto-software-signing-gpg-key.txt | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/phusion.gpg &amp;gt;/dev/null
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Add our APT repository&lt;/span&gt;
@@ -6176,10 +6276,10 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ls /etc/nginx/conf.d/mod-http-passenger.conf
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /usr/bin/passenger-config validate-install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/pg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/pg/</guid><description>&lt;h2 id="pg"&gt;PG&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install postgresql postgresql-contrib
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install postgresql postgresql-contrib
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;psql --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="user"&gt;User&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# sudo -u postgres psql postgres &lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# sudo -u postgres psql postgres &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo -i -u postgres
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;psql postgres
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;\p&lt;/span&gt;assword postgres
@@ -6190,7 +6290,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo -u postgres psql postgres
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;\p&lt;/span&gt;assword ubuntu
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;\q&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /etc/init.d/postgresql start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /etc/init.d/postgresql start
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# pg_ctl -D /usr/local/var/postgres start&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /etc/init.d/postgresql restart
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /etc/init.d/postgresql stop
@@ -6205,10 +6305,10 @@ B -&amp;gt; z.
 &lt;/ol&gt;
 &lt;p&gt;Backup and restore&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/production/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/production/</guid><description>&lt;h2 id="production"&gt;Production&lt;/h2&gt;
 &lt;h3 id="initial"&gt;Initial&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install libpq-dev
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install libpq-dev
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bundle install
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;EDITOR&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;vim --wait&amp;#34;&lt;/span&gt; bin/rails credentials:edit &lt;span style="color:#75715e"&gt;# copy content in master.key to server&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# change username in database.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# change username in database.yml&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;production rake db:create
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;production rake db:migrate
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;production rake db:seed
@@ -6217,24 +6317,24 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/rails/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/rails/</guid><description>&lt;h2 id="rails--v"&gt;Rails -v&lt;/h2&gt;
 &lt;h3 id="1-rvm--v"&gt;1. RVM -v&lt;/h3&gt;
 &lt;p&gt;Exactly based on &lt;a href=""&gt;https://github.com/rvm/ubuntu_rvm&lt;/a&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install software-properties-common
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install software-properties-common
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-add-repository -y ppa:rael-gc/rvm
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install rvm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install rvm
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo usermod -a -G rvm $USER
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#39;source &amp;#34;/etc/profile.d/rvm.sh&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;exit
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;su ubuntu
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-ruby--v"&gt;2. RUBY -v&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rvm install &lt;span style="color:#e6db74"&gt;&amp;#34;ruby-3.3.0&amp;#34;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rvm install &lt;span style="color:#e6db74"&gt;&amp;#34;ruby-3.3.0&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ruby -v
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="3-rails--v"&gt;3. RAILS -v&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gem install rails -v &lt;span style="color:#e6db74"&gt;&amp;#39;7.0.8&amp;#39;&lt;/span&gt; -V --no-document
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gem install rails -v &lt;span style="color:#e6db74"&gt;&amp;#39;7.0.8&amp;#39;&lt;/span&gt; -V --no-document
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails -v
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gem sources --remove https://rubygems.org/
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gem sources -a https://gems.ruby-china.com
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="4-node--v"&gt;4. NODE -v&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install nodejs
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install nodejs
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;node -v
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install npm
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo npm install -g yarn
@@ -6247,10 +6347,10 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm config set registry https://registry.npmmirror.com
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn config set registry https://registry.npmmirror.com
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="5-test-rails"&gt;5. test rails&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails new blog --css&lt;span style="color:#f92672"&gt;=&lt;/span&gt;tailwind --javascript&lt;span style="color:#f92672"&gt;=&lt;/span&gt;esbuild --database&lt;span style="color:#f92672"&gt;=&lt;/span&gt;postgresql
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails new blog --css&lt;span style="color:#f92672"&gt;=&lt;/span&gt;tailwind --javascript&lt;span style="color:#f92672"&gt;=&lt;/span&gt;esbuild --database&lt;span style="color:#f92672"&gt;=&lt;/span&gt;postgresql
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails db:create
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bin/dev &lt;span style="color:#75715e"&gt;# 3000&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails generate controller HelloWorld
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rails generate controller HelloWorld
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# controller&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;class HelloWorldController &amp;lt; ApplicationController
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; def greet
@@ -6261,7 +6361,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root &lt;span style="color:#e6db74"&gt;&amp;#34;hello_world#greet&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/ssh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/ssh/</guid><description>&lt;h2 id="ssh-secure-shell"&gt;SSH (Secure Shell)&lt;/h2&gt;
 &lt;h3 id="create-a-new-user"&gt;Create a new user&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# create the user&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# create the user&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo adduser ubuntu 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# User Modification, --append, --Group add ubuntu to sudo group&lt;/span&gt;
@@ -6271,7 +6371,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# switch user&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;su ubuntu
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="generate-key-pair"&gt;Generate key-pair&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# generate &lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# generate &lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# id_rsa is private, id_rsa.pub&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# RSA is Rivest-Shamir-Adleman, the name of the algorithm&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh-keygen
@@ -6585,7 +6685,7 @@ $$&lt;h3 id="信息的强调"&gt;信息的强调&lt;/h3&gt;
 &lt;/ol&gt;
 &lt;p&gt;#1abc9c&lt;/p&gt;
 &lt;h2 id="hsv-1"&gt;HSV&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;hsv_to_rgb&lt;/span&gt;(rgb, s, v):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;hsv_to_rgb&lt;/span&gt;(rgb, s, v):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; [(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt; rgb[i]) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; s) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; v &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;)]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;rgb_to_hsv&lt;/span&gt;(rgb):
@@ -8107,7 +8207,7 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
 &lt;li&gt;Problem_container has a rating based on related skills in skill_rating_weights.&lt;/li&gt;
 &lt;li&gt;When update player_skill_rating, the problem_skill_rating as the opponent&amp;rsquo;s rating is calculated based on skill_rating_weight, time used, player_solving_history.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;problem_skill_rating &lt;span style="color:#f92672"&gt;=&lt;/span&gt; calculate_rectified_rating(
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-ruby" data-lang="ruby"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;problem_skill_rating &lt;span style="color:#f92672"&gt;=&lt;/span&gt; calculate_rectified_rating(
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; skill_rating_weight&lt;span style="color:#f92672"&gt;.&lt;/span&gt;rating,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; skill_rating_weight&lt;span style="color:#f92672"&gt;.&lt;/span&gt;weight,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; time_used,
@@ -14492,7 +14592,41 @@ Robson draws on predictive‐processing neuroscience to explain that the brain g
 ６．每周要抽出时间进行系统复习基础知识，初定在周六的下午。
 ７．每天都要写一些心得，记录在日记本里。
 ８．每天早晨都要整理床铺与书架，每次有新书放在寝室都要认真整理，每两天洗一次脚，要把这些看做是能够改变我命运的习惯去看待。
-９．电脑的使用要有一定的节制。尽量多看书，看一些纪录片，学习英语，学习各种软件。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周"&gt;2023年12月第二周&lt;/h2&gt;
+９．电脑的使用要有一定的节制。尽量多看书，看一些纪录片，学习英语，学习各种软件。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/trips/canton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/trips/canton/</guid><description>&lt;h2 id="广东婚纱照之旅"&gt;广东婚纱照之旅&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;周一，在家吃的早饭&lt;/li&gt;
+&lt;li&gt;8:15，从家出门打车去哈西站&lt;/li&gt;
+&lt;li&gt;出租车司机特别不靠谱，送到站里&lt;/li&gt;
+&lt;li&gt;等大巴，错过一辆，9:12坐上大巴&lt;/li&gt;
+&lt;li&gt;等待登机，去吃了一顿牛肉面&lt;/li&gt;
+&lt;li&gt;十一点的飞机，晚点一个多小时&lt;/li&gt;
+&lt;li&gt;四点多到广州，潮漫酒店&lt;/li&gt;
+&lt;li&gt;出门去广州东站的商场，东方宝泰&lt;/li&gt;
+&lt;li&gt;周二，九点才吃上饭，吃的万岁寿司&lt;/li&gt;
+&lt;li&gt;晚上回去休息，第二天换到礼信&lt;/li&gt;
+&lt;li&gt;去天河城，先吃的陶陶居&lt;/li&gt;
+&lt;li&gt;等座位时，逛的正佳&lt;/li&gt;
+&lt;li&gt;之后去天河城逛，后来去的太古汇&lt;/li&gt;
+&lt;li&gt;回来到天环，af购物&lt;/li&gt;
+&lt;li&gt;之后去传记潮发吃的火锅&lt;/li&gt;
+&lt;li&gt;坐地铁回宾馆，第二天十点多车去深圳&lt;/li&gt;
+&lt;li&gt;周三，到达深圳，先去的长宝入住&lt;/li&gt;
+&lt;li&gt;然后去试婚纱&lt;/li&gt;
+&lt;li&gt;因为说第二天会很累，晚上没有行动&lt;/li&gt;
+&lt;li&gt;周四，早起拍婚纱，特别不顺利&lt;/li&gt;
+&lt;li&gt;奔溃后，回到酒店，写完作业&lt;/li&gt;
+&lt;li&gt;周五，去后海逛街，lady m&lt;/li&gt;
+&lt;li&gt;骑自行车去青年公园，去天虹&lt;/li&gt;
+&lt;li&gt;继续逛街，吃的西贝，去屈臣氏&lt;/li&gt;
+&lt;li&gt;买了一双高跟鞋，然后归程&lt;/li&gt;
+&lt;li&gt;周六，八点去北遇，蓬拍&lt;/li&gt;
+&lt;li&gt;午饭后，去外景海边，八点结束&lt;/li&gt;
+&lt;li&gt;十点到北遇，回宾馆后，休息&lt;/li&gt;
+&lt;li&gt;周日，早晨选片，然后去机场&lt;/li&gt;
+&lt;li&gt;机场喜茶，潮汕，米线&lt;/li&gt;
+&lt;li&gt;飞机晚点三个半小时，两点半到哈&lt;/li&gt;
+&lt;li&gt;大约四点回到家中&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/weeks/23122/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/weeks/23122/</guid><description>&lt;h2 id="2023年12月第二周"&gt;2023年12月第二周&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;创业：完成了 《论教学》第五章第四节的写作&lt;/li&gt;
 &lt;li&gt;游戏：通关 《&lt;a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Yellow_Version"&gt;Pokémon Yellow&lt;/a&gt;》&lt;/li&gt;
@@ -19252,14 +19386,14 @@ table {
  &lt;td style="text-align: right"&gt;6.8&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
-&lt;/table&gt;</description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# check&lt;/span&gt;
+&lt;/table&gt;</description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# check&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;^&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# remove&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;|&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# set&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="arrangements-maxmincnt"&gt;Arrangements max/min/cnt&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.com/contest/biweekly-contest-53/problems/minimum-xor-sum-of-two-arrays/"&gt;Min XOR sum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dp&lt;/span&gt;(mask, i):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dp&lt;/span&gt;(mask, i):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; i &lt;span style="color:#f92672"&gt;==&lt;/span&gt; n: 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -19273,7 +19407,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.com/contest/weekly-contest-350/problems/special-permutations/"&gt;Count&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dfs&lt;/span&gt;(mask, prev):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dfs&lt;/span&gt;(mask, prev):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; mask &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;: 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -19287,7 +19421,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leetcode.com/problems/beautiful-arrangement/"&gt;Count&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dp&lt;/span&gt;(mask, cnt):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dp&lt;/span&gt;(mask, cnt):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; mask &lt;span style="color:#f92672"&gt;==&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt; n) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;: 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -24843,14 +24977,14 @@ table {
 &lt;p&gt;Merge and Quick are more important&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id="bubble-switch-forwards"&gt;Bubble, switch, forwards&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;bubble&lt;/span&gt;(nums):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;bubble&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(n):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; j &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(n &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt; i):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; nums[j] &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; nums[j&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; nums[j], nums[j&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[j&lt;span style="color:#f92672"&gt;+&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;], nums[j]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; nums
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="insert-switch-backwords"&gt;Insert, switch, backwords&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;insert&lt;/span&gt;(nums):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;insert&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, n):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; j &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(i, &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; nums[j &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; nums[j]:
@@ -24867,7 +25001,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; nums[j &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; curr
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; nums
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="merge-recursive"&gt;Merge, recursive&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;merge&lt;/span&gt;(nums):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;merge&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; len(nums) &lt;span style="color:#f92672"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; mid &lt;span style="color:#f92672"&gt;=&lt;/span&gt; len(nums) &lt;span style="color:#f92672"&gt;//&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; left &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[:mid]
@@ -24898,7 +25032,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; nums
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="quick-sort-partition"&gt;Quick Sort, partition&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# nlogn pass, 2 pointers&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# nlogn pass, 2 pointers&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;quick&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;partition&lt;/span&gt;(start, end):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# out of index&lt;/span&gt;
@@ -24930,13 +25064,13 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; partition(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, len(nums) &lt;span style="color:#f92672"&gt;-&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; nums
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id="select-insert-sort"&gt;Select, insert sort&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;select&lt;/span&gt;(nums):
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;select&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; i &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(len(nums)):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; minIndex &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[i:]&lt;span style="color:#f92672"&gt;.&lt;/span&gt;index(min(nums[i:]))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; nums[i &lt;span style="color:#f92672"&gt;+&lt;/span&gt; minIndex], nums[i] &lt;span style="color:#f92672"&gt;=&lt;/span&gt; nums[i], nums[i &lt;span style="color:#f92672"&gt;+&lt;/span&gt; minIndex]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; nums
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="heap"&gt;Heap&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; heapq
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; heapq
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;heap&lt;/span&gt;(nums):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; heap &lt;span style="color:#f92672"&gt;=&lt;/span&gt; []
@@ -24989,7 +25123,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; res
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Sort Key</title><link>https://yingkui.com/cs/t/sort-key/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/sort-key/</guid><description>&lt;h3 id="cmp_to_key"&gt;cmp_to_key&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/largest-number/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/largest-number/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;largestNumber&lt;/span&gt;(self, nums: List[int]) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; str:
@@ -24997,7 +25131,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; largest_num &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span style="color:#f92672"&gt;.&lt;/span&gt;join(sorted(map(str, nums), key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;cmp_to_key(comp)))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; largest_num[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;] &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt; largest_num
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="complicated-key"&gt;Complicated Key&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/reorder-data-in-log-files/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/reorder-data-in-log-files/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;reorderLogFiles&lt;/span&gt;(self, logs: List[str]) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; List[str]:
@@ -25016,7 +25150,7 @@ table {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; letters&lt;span style="color:#f92672"&gt;.&lt;/span&gt;sort(key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;letter_sort_key)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; letters &lt;span style="color:#f92672"&gt;+&lt;/span&gt; digits
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/rank-teams-by-votes/description/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/rank-teams-by-votes/description/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;rankTeams&lt;/span&gt;(self, votes: List[str]) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; str:
