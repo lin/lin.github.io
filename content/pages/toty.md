@@ -38,8 +38,16 @@ If you mention that year, what I remember most.
 | 2018 | MeToo                                      |   
 | 2019 | Image of a Black Hole                      |   
 | 2020 | COVID-19 Pandemic                          |   
-| 2021 | NFT                                        |    
+| 2021 | Cryptocurrency                             |    
 | 2022 | Russian Invasion of Ukraine                |          
 | 2023 | GPT 4                                      |
 | 2024 | U.S. Presidential Election                 |    
-| 2025 |                                             |    
+| 2025 | Gemini 3                                   |  
+
+Matching the Time Person of the Year:
+
+2025, 2024, 2022, 2021, 2017, 2016, 2011, 2006, 2001, 1999, 1989
+
+Matching the Science Breakthrough of the Year:
+
+2019, 2015, 2012
