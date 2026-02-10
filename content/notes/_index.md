@@ -8,6 +8,8 @@ Information decides the compressable patterns.
 
 Energy decides which direction to find them.
 
+### Wave One
+
 1. [Bayes' Theorem](./bayes) & [Information Theory](./info)
 1. [Peano Arithmetic](./pa) & [Gödel's Theorem](../godel) & [Turing](./turing) & [Computation](./computation)
 1. [Quantum Interpretation](./quantum) & [Bell's Inequality](./bell)
@@ -16,6 +18,12 @@ Energy decides which direction to find them.
 1. [Predictive Process](./pp) & [Free Energy Principle](./fep)
 1. Compression & Association
 1. Field Theory & Thermodynamics
+
+### Wave Two
+
+1. Topology，时空互定义
+1. Category Theory，Isomorphism，Yoneda Lemma
+1. Algebraic Geometry
 
 ## Technologies
 

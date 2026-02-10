@@ -537,4 +537,26 @@ url: /micro
             <strong>129 posts</strong>
         </div>
     </a>
+    <a href="/xiaonei/?page=1" class="archive-card">
+        <div class="archive-icon">
+            <img src="/xiaonei/logo.png" alt="Xiaonei">
+        </div>
+        <span class="archive-year">2008</span>
+        <span class="archive-link-text">Xiaonei Archive</span>
+        <div class="archive-details">
+            Archive from 2008<br>
+            <strong>Xiaonei</strong>
+        </div>
+    </a>
+    <a href="/xiaonei/?page=7" class="archive-card">
+        <div class="archive-icon">
+            <img src="/xiaonei/logo.png" alt="Xiaonei">
+        </div>
+        <span class="archive-year">2007</span>
+        <span class="archive-link-text">Xiaonei Archive</span>
+        <div class="archive-details">
+            Archive from 2007<br>
+            <strong>Xiaonei</strong>
+        </div>
+    </a>
 </div>

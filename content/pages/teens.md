@@ -120,6 +120,8 @@ draft: true
 
 <img src="../img/childhood/2005-christmas.png" width="600">
 
+<img src="../img/childhood/2011-joy.jpg" width="100%">
+
 <!-- #### 2006年五一，镜泊湖之旅
 
 <img src="../img/childhood/2006-jingpo.png" width="600">
@@ -184,3 +186,9 @@ draft: true
 #### 2007年8月7日，农历生日
 
 往年，都是和奶奶一起过生日，但是07年的时候，我和奶奶去了辽宁老家，但奶奶没有一同回来，我和老爸单独去了大连旅游。我和老爸赶在生日前回到家里，当日拿到大学的录取通知书，中午去的[克音](../18)，所以当日没有像往常一样聚餐拍照。
+
+---
+
+[百度贴吧](https://tieba.baidu.com/p/233415114?fr=frs)
+
+<img src="../img/childhood/2007-33.png" width="100%">
