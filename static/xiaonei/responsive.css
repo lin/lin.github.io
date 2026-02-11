@@ -1,0 +1,121 @@
+@media screen and (max-width: 980px) {
+    /* Reset fixed widths */
+    .navigation-wrapper,
+    .navigation,
+    .dropmenu-holder,
+    .full-page,
+    .nav-shadow,
+    #footer,
+    #footer .copyright,
+    .page-wrapper,
+    .full-page-holder {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box;
+    }
+
+    /* Navigation Bar Adjustments */
+    .navigation {
+        height: auto !important;
+        background-size: cover;
+        padding-bottom: 10px;
+    }
+
+    /* Logo centering */
+    #logo {
+        float: none;
+        margin: 0 auto;
+        width: 100px; /* Keep fixed width for logo image */
+        display: block;
+    }
+
+    /* Navigation body reset */
+    .navigation .nav-body {
+        display: none !important;
+    }
+
+    /* Stack navigation items */
+    .navigation .nav-main,
+    .navigation .nav-other {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation .menu {
+        float: none;
+        display: inline-block;
+        margin: 0 2px;
+    }
+
+    /* Search bar centering */
+    #navSearch {
+        float: none;
+        display: table; /* Centers the form */
+        margin: 10px auto;
+    }
+
+    /* Content Area */
+    .main-page {
+        float: none;
+        width: 100% !important;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .blank-bar {
+        float: none;
+        width: 100% !important;
+        padding: 10px;
+        box-sizing: border-box;
+        display: none; /* Hide sidebars on mobile to focus on content, or stack if preferred */
+    }
+
+    /* If we want to keep sidebars, use this instead of display:none */
+    /*
+    .blank-bar {
+        display: block;
+    }
+    .ad-bar, .ad-bar .block {
+        width: 100% !important;
+    }
+    */
+
+    /* Footer adjustments */
+    #footer {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    .float-right {
+        float: none;
+    }
+
+    /* Banner/Header adjustments */
+    #banner, #bannerBottom {
+        display: none; /* Hide banners on mobile to save space */
+    }
+
+    /* Adjust padding for small screens */
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Talk/Comment Box */
+    .box-holder, .talk-box {
+        width: 100% !important;
+    }
+    
+    textarea {
+        width: 95% !important; /* Ensure textareas don't overflow */
+    }
+}
