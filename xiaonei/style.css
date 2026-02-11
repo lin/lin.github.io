@@ -991,7 +991,7 @@ TD.pop_content *.msbbox_yellow {
 	MARGIN-TOP: 2px; FLOAT: left
 }
 #logo H1 A {
-	TEXT-INDENT: -2000em; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 101px; DISPLAY: block; BACKGROUND: url(logo.png) no-repeat center 1px; HEIGHT: 32px
+	TEXT-INDENT: -2000em; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 101px; DISPLAY: block; BACKGROUND: url(logo.webp) no-repeat center center; BACKGROUND-SIZE: contain; HEIGHT: 32px
 }
 #footer {
 	MARGIN: 20px auto 30px; WIDTH: 960px
@@ -1982,7 +1982,7 @@ OL.pageclip LI.current A {
 	WIDTH: 50px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center center; HEIGHT: 50px
 }
 .comment .cmt-body {
-	BORDER-BOTTOM: #d8dfea 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.5em; MIN-HEIGHT: 50px; FLOAT: left; HEIGHT: auto !important; OVERFLOW: visible
+	BORDER-BOTTOM: #d8dfea 1px solid; PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.5em; MIN-HEIGHT: 50px; HEIGHT: auto !important; OVERFLOW: visible
 }
 *.last.comment *.cmt-body {
 	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
@@ -2009,7 +2009,7 @@ OL.pageclip LI.current A {
 	FLOAT: right; PADDING-TOP: 2px
 }
 .comment .cmt-body *.text-content {
-	CLEAR: left; PADDING-TOP: 2px
+	CLEAR: left; PADDING-TOP: 2px; WORD-WRAP: break-word; OVERFLOW-WRAP: break-word; WHITE-SPACE: normal; MAX-WIDTH: 100%
 }
 .comment *.cmt-body .text-content .mb-cmt {
 	POSITION: relative; TOP: 1px; LEFT: 3px
@@ -3468,9 +3468,6 @@ A.greenbtn:hover {
 }
 #talkpage .main-page {
 	WIDTH: 800px; FLOAT: left
-}
-#talkpage .comment .cmt-body {
-	WIDTH: 740px
 }
 #talkpage .box-holder {
 	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
