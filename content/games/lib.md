@@ -2,18 +2,25 @@
 
 | 平台       | 游戏                                     | 价钱           |  折扣 | 购买时间|
 |------------|-----------------------------------------|---------------:|:-----:|:-----:|
+| NS         | Super Mario Galaxy 1 & 2            |                |       |       |
 | NS         | Super Mario 3D All-star (胡)            |                |       |       |
 | NS         | Super Mario Odyssey                     |                |       |       |
 | NS         | It Takes Two                            |                |       |       |
 | NS         | Metroid Prime Remastered                |                |       |       |
 
-## Steam PC Purchase History
+## Steam Purchase History
 
 | 时间       | 游戏                                     | 价钱           |  折扣 | 用时| 
 |------------|-----------------------------------------|---------------:|:-----:|:-----:|
-| 04/29/2025 | Total War: Napoleon - Definitive Edition  | ¥ 28.00       |  75%  |     |
+| 02/11/2026 |  RimWorld                                  | ¥ 102.40       |  20%  |     |
+| 11/12/2025 | Kingdom Come: Deliverance II              | ¥ 136.80       |  40%  |     |
+| 09/18/2025 | NOBUNAGA'S AMBITION: Shinsei              | ¥ 174.50       |  50%  |     |
+| 09/17/2025 | Assassin's Creed Shadows                  | ¥ 208.80       |  40%  |     |
+| 06/29/2025 |  Two Point Museum                          | ¥ 126.40       |  20%  |     |
+| 06/01/2025 |  Turing Complete                                  | ¥ 49.00       |  30%  |     |
+| 04/29/2025 |  Total War: Napoleon - Definitive Edition  | ¥ 28.00       |  75%  |     |
 | 04/29/2025 | 逸剑风云决                               | ¥ 62.40         |  20%  |     |
-| 01/25/2025 | Humankind                               | ¥ 29.85         |  85%  |     |
+| 01/25/2025 |  Humankind                               | ¥ 29.85         |  85%  |     |
 | 12/20/2024 | Mass Effect Legendary Edition           | ¥ 19.84         |  85%  |     |
 | 12/20/2024 | Assassin's Creed Origins                | ¥ 29.80         |  85%  |     |
 | 12/20/2024 | TCG Card Shop Simulator                 | ¥ 39.00         |  85%  |     |

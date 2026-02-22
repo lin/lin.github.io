@@ -17,62 +17,15 @@ name = "Essays"
 url = "/"
 weight = 1
 
-# [[menu.main]]
-# name = "Microblogs"
-# url = "/micro"
-# weight = 2
-
 [[menu.main]]
 name = "Pages"
 url = "/pages"
 weight = 3
 
-# [[menu.main]]
-# name = "MnV"
-# url = "/MV"
-# weight = 3
-
-# [[menu.main]]
-# name = "《教学》"
-# url = "/edu"
-# weight = 2
-
-# [[menu.main]]
-# name = "《人生》"
-# url = "/life"
-# weight = 3
-
-# [[menu.main]]
-# name = "《智力》"
-# url = "/ai"
-# weight = 4
-
-# [[menu.main]]
-# name = "关于"
-# url = "/about"
-# weight = 8
-
-
-
-# [[params.social]]
-#     name = "Github"
-#     icon = "github"
-#     url = "https://github.com/lin"
-
-# # https://feathericons.com/
-# [[params.social]]
-#     name = "YouTube"
-#     icon = "youtube"
-#     url = "https://youtube.com/@yingkui"
-
-# [[params.social]]
-#     name = "Bluesky"
-#     icon = "twitter"
-#     url = "https://bsky.app/profile/yingkui.bsky.social"
-
 [permalinks]
   posts = '/:contentbasename'
   pages = '/:contentbasename'
+  archives = '/:contentbasename'
 
 [markup]
   [markup.goldmark]
@@ -84,3 +37,19 @@ weight = 3
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)'], ['$', '$']]
+
+[[module.mounts]]
+  source = "content"
+  target = "content"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "content/img"
+  target = "static/img"
