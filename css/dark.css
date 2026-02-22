@@ -69,3 +69,16 @@ html.dark .footer {
 html.dark .highlight {
   background-color: #333;
 }
+
+html.dark .archive-year-link {
+  border-color: rgba(147, 117, 253, 0.35);
+  background: rgba(147, 117, 253, 0.12);
+  color: #c6b5ff;
+}
+
+html.dark .archive-year-link:hover {
+  background: #9375fd;
+  border-color: #9375fd;
+  color: #0b0b0b;
+  box-shadow: 0 12px 24px rgba(147, 117, 253, 0.25);
+}
