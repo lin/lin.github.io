@@ -41,11 +41,11 @@ isCJKLanguage: true
 
 #### 1989-11-05 百日照，三个月
 
-<img src="../img/childhood/1989-100.png" height="600">
+<img src="../img/childhood/1989-100.png" width="400">
 
 我在这时候能够听懂我父母的指令，比如让我安心玩扑克，玩积木等，我母亲可以睡一觉，我就可以安静的在炕上自己玩。
 
-<img src="../img/childhood/1989-toy.png" height="600">
+<img src="../img/childhood/1989-toy.png" width="400">
 
 我那时候有类似上图（Nano Banana 生成的）的写字的红色积木，也有一些识字的卡片，上面画了诸如西瓜和香蕉的图像，下面写着汉字，我就开始学字了。
 
@@ -72,7 +72,7 @@ isCJKLanguage: true
 
 
 
-<img src="../img/childhood/1990-harbin.JPG" height="600">
+<img src="../img/childhood/1990-harbin.JPG" width="400">
 
 爸妈在1990年8月在哈尔滨的合影，二人去哈市买织布机。
 
@@ -100,11 +100,11 @@ isCJKLanguage: true
 
 #### 1992-05-19 克音卫生院
 
-<img src="../img/childhood/1992-keyin-hospital-1.png" height="600">
+<img src="../img/childhood/1992-keyin-hospital-1.png" width="400">
 
 大堂舅拍摄的，荣誉证书也是大舅的。
 
-<img src="../img/childhood/1992-keyin-hospital-2.png" height="600">
+<img src="../img/childhood/1992-keyin-hospital-2.png" width="400">
 
 时年，母亲 27周岁。
 
@@ -127,7 +127,7 @@ isCJKLanguage: true
 
 1992年下半年，爸妈上班，我被送到大堂舅家。
 
-<img src="../img/childhood/1992-wed-mom.jpg" height="600">
+<img src="../img/childhood/1992-wed-mom.jpg" width="400">
 
 老妈在大堂舅家门前，当日是大堂舅家表哥结婚，大嫂是老妈同事（小学同学的妈妈，上面合影的后排右二）的妹妹
 
@@ -149,7 +149,7 @@ isCJKLanguage: true
 
 老爸在克音中学的运动会上
 
-<img src="../img/childhood/1993-keyin-dad-4.JPG" height="600">
+<img src="../img/childhood/1993-keyin-dad-4.JPG" width="400">
 
 邢叔叔和老爸在克音中学门前
 
@@ -159,7 +159,7 @@ isCJKLanguage: true
 
 <img src="../img/childhood/1994-wed-1.png" width="600">
 
-<img src="../img/childhood/1994-wed-2.png" height="600">
+<img src="../img/childhood/1994-wed-2.png" width="400">
 
 当天，和堂兄弟姐妹打闹，鞋踩进了泥滩，被妈妈训斥。
 
@@ -193,7 +193,7 @@ isCJKLanguage: true
 
 1996年，大姨家大哥（1976年）结婚。
 
-<img src="../img/childhood/1996-sun-min.jpg" height="600">
+<img src="../img/childhood/1996-sun-min.jpg" width="400">
 
 三姨家表哥（1984年），我自己，大姨家表哥
 
@@ -203,13 +203,13 @@ isCJKLanguage: true
 
 #### 1996-08-09 农历生日
 
-<img src="../img/childhood/1996-bday-1.png" height="600">
+<img src="../img/childhood/1996-bday-1.png" width="400">
 
 时年，父亲和母亲同为 31周岁。生日当天是和新班主任老师一家去的，爸爸送给我一本[《现代汉语词典》](https://book.kongfz.com/372534/1661760128/)作为生日礼物。身后的是克音河大桥，以及日本占领期间建造的炮楼（现已经被拆除），小时候经常走火车大桥，爬炮楼，去大桥就和《Stand by me》里探险的感觉很相似。
 
-<img src="../img/childhood/1996-bday-2.png" height="600">
+<img src="../img/childhood/1996-bday-2.png" width="400">
 
-<img src="../img/childhood/1996-bday-3.png" height="600">
+<img src="../img/childhood/1996-bday-3.png" width="400">
 
 大桥的台阶，以前和堂兄们去放牛，经常坐在这个台阶上。
 
@@ -233,9 +233,9 @@ isCJKLanguage: true
 
 #### 1996年暑假，阁山水库
 
-<img src="../img/childhood/1996-geshan-1.png" height="600">
+<img src="../img/childhood/1996-geshan-1.png" width="400">
 
-<img src="../img/childhood/1996-geshan-2.png" height="600">
+<img src="../img/childhood/1996-geshan-2.png" width="400">
 
 <img src="../img/childhood/1996-geshan-3.png" width="600">
 
@@ -263,19 +263,19 @@ isCJKLanguage: true
 
 #### 1997年秋，照相馆拍照
 
-<img src="../img/childhood/1997-fall-1.png" height="600">
+<img src="../img/childhood/1997-fall-1.png" width="400">
 
-<img src="../img/childhood/1997-fall-2.png" height="600">
+<img src="../img/childhood/1997-fall-2.png" width="400">
 
-<img src="../img/childhood/1997-fall-3.png" height="600">
+<img src="../img/childhood/1997-fall-3.png" width="400">
 
-<img src="../img/childhood/1997-fall-4.png" height="600">
+<img src="../img/childhood/1997-fall-4.png" width="400">
 
 那年老妈要拍艺术照，应该是相馆赠送了几个拍照机会，就去拍了，其中有一张拍照时闭眼了，相馆让我去重新照一张，就和邻居家的姐姐（约1984年 - [2016年5月24日](https://archive.md/5ATlf)） 一起去的。
 
-<img src="../img/childhood/1997-mom-1.jpg" height="600">
+<img src="../img/childhood/1997-mom-1.jpg" width="400">
 
-<img src="../img/childhood/1997-mom-2.jpg" height="600">
+<img src="../img/childhood/1997-mom-2.jpg" width="400">
 
 老妈当时（32周岁）的两张艺术照。
 

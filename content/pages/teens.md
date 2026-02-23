@@ -17,11 +17,11 @@ draft: true
 
 #### 2000年，初一大头照
 
-<img src="../img/childhood/2000-id.png" height="600">
+<img src="../img/childhood/2000-id.png" width="400">
 
 #### 2002年，初二大头照
 
-<img src="../img/childhood/2001-id.png" height="600">
+<img src="../img/childhood/2001-id.png" width="400">
 
 #### 2002年8月3日，农历生日
 
@@ -29,7 +29,7 @@ draft: true
 
 林英德，奶奶，我，老妈
 
-<img src="../img/childhood/2002-summer.png" height="600">
+<img src="../img/childhood/2002-summer.png" width="400">
 
 #### 2003年7月24日，农历生日
 
@@ -37,7 +37,7 @@ draft: true
 
 老妈，我，奶奶，林英德（镜头外）
 
-<img src="../img/childhood/2003-math.png" height="600">
+<img src="../img/childhood/2003-math.png" width="400">
 
 这张图是我自己在卧室画的，当时初三，但因为家里有读高中的学生住宿，自学了数列和三角函数，上面的英文字母也是我自己画的，对古典诗词、数学、设计的热爱从那时就开始了。
 
@@ -65,7 +65,7 @@ draft: true
 
 当日缺席，老弟 - 马杭一，关系最好的童年朋友，初三的时候去上海崇明岛，所以没有一起毕业照，下图是2002年在绥棱家中的合影。
 
-<img src="../img/childhood/2002-ma-home.png" height="600">
+<img src="../img/childhood/2002-ma-home.png" width="400">
 
 下图是，马杭一赠给我的他的童年照片。
 
@@ -75,7 +75,7 @@ draft: true
 
 <!-- #### 2004年7月29日，中考后
 
-<img src="../img/childhood/2004-gui.png" height="600"> -->
+<img src="../img/childhood/2004-gui.png" width="400"> -->
 
 #### 2004年8月10日，农历生日
 
