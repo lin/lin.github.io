@@ -18,8 +18,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Pages"
-url = "/pages"
+name = "About"
+url = "/about"
 weight = 3
 
 [permalinks]

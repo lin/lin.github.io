@@ -180,7 +180,7 @@ I would believe only in a god who could dance.
 
 王春颖 余萍 郭玉峰 于清林 兰春寒
 
-孙堃 厉向宁 曹睿影 范璐
+孙堃 厉向宁 曹睿颖 范璐
 
 {{< /notice >}}
 

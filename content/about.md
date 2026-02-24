@@ -3,8 +3,18 @@ title: "About"
 type: "page"
 ---
 
-[A founder](../edu). [A thinker](../life). A would-be [scientist](../ai) who would solve the problem of solving.
+1. [2005年](../2005), 诗歌期
+    - [《古典诗歌》](../poems/)
+    - [《诗行记》](../journey)
+1. [2008年](../2008), 哲学期
+    - [《存在的价值》](../value)
+    - [《人类进化论》](../evolve)
+    - [《19岁的人生哲学》](../19)
+1. [2014年](../2014), 还原论
+    - [《自然而然》](../naturally)
+    - [《今年25岁》](../25)
+    - [《论人与人的差别》](../diff)
+1. [2026年](../2026), 系统论
+    - [《钱与词》《能量与信息》](../)
 
-[A poet](../poems). [A designer](../design). [A coder](../cs). [A gamer](../games). [A reader](../books).
-
-A Logical Phenomenon. A Mathematical Object. A Curious Mind. An Altruistic Maker.
+###### 注：博客内所刊登的照片仅作纪念和存档用途。若您不希望本人照片出现在本站，请随时通过微信告知我，收到消息后我会第一时间进行删除处理。谢谢！
