@@ -3,7 +3,9 @@ title: "关西之旅"
 date: 2025-09-05
 ---
 
-[Back to all trips](../) - [Previous Japan Trip](../okinawa)
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../okinawa">← 2025年冲绳</a>
+</div>
 
 <style>
 strong {
@@ -202,3 +204,7 @@ em {
 1. 10点05，完成值机
 1. 11点10，又去机场书店逛了一圈
 1. 13点40，起飞，延误了50分钟
+
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../okinawa">← 2025年冲绳</a>
+</div>

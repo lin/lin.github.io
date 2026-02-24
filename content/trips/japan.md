@@ -3,9 +3,22 @@ title: "日本之旅"
 date: 2024-07-28
 ---
 
-[Back to all trips](../) - [Previous Japan Trip](../kyushu) - [Next Japan Trip](../okinawa)
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../kyushu">← 2019年九州</a>
+  <a class="archive-year-link" href="../okinawa">2025年冲绳 →</a>
+</div>
 
 ## 7月21日
+
+<figure>
+  <img src="../../img/anime/maman.png" style="max-height:700px">
+  <figcaption>ママン @ 六本木ヒルズ</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/tokyotower.PNG" style="max-height:700px">
+  <figcaption>東京タワー</figcaption>
+</figure>
 
 1. 出发：早晨四点半起床，五点十分出门，司机有点迷糊，去北门，又从正门进入，走的土路到机场
 2. 飞机：六点前就到了，六点半导游还没有交代清楚，八点起飞，十一点到达东京
@@ -16,6 +29,11 @@ date: 2024-07-28
 7. 六本木的 Tokyo City View
 
 ## 7月22日
+
+<figure>
+  <img src="../../img/anime/kamakura.PNG" style="max-height:500px">
+  <figcaption>鎌倉駅</figcaption>
+</figure>
 
 1. 早晨吃的 Wendy's
 2. 出发去的 新宿
@@ -31,6 +49,21 @@ date: 2024-07-28
 
 ## 7月23日
 
+<figure>
+  <img src="../../img/anime/sensoji.PNG" style="max-height:500px">
+  <figcaption>浅草寺</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/sanrio.PNG" style="max-height:700px">
+  <figcaption>サンリオショップ​​​​​​​​​​​​​​​​ @ 浅草寺</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/Hiro.PNG" style="max-height:700px">
+  <figcaption>京の焼肉処 弘 八条口店</figcaption>
+</figure>
+
 1. 早晨起来去浅草，先去银座存包
 1. 浅草周围逛，去的三丽鸥
 1. 浅草附近的药妆
@@ -44,7 +77,28 @@ date: 2024-07-28
 
 ## 7月24日
 
+<figure>
+  <img src="../../img/anime/kurama.PNG" style="max-height:500px">
+  <figcaption>くらま @ 京都駅</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/kyotoeki.PNG" style="max-height:700px">
+  <figcaption>京都駅</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/kiyomizu.PNG" style="max-height:500px">
+  <figcaption>清水寺</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/hanshin.PNG" style="max-height:700px">
+  <figcaption>阪神梅田本店</figcaption>
+</figure>
+
 1. 早晨起来，我自己去的任天堂总部
+1. 在京都站内的 くらま @ 京都駅 吃的饭
 1. 和媳妇去的京都站坐公交
 1. 到达了清水寺附近的公交站
 1. 媳妇嫌太累，后来又下雨了
@@ -69,6 +123,16 @@ date: 2024-07-28
 
 ## 7月26日
 
+<figure>
+  <img src="../../img/anime/dipperdan.PNG" style="max-height:500px">
+  <figcaption>ディッパーダン 阪急三番街店</figcaption>
+</figure>
+
+<figure>
+  <img src="../../img/anime/donki.PNG" style="max-height:700px">
+  <figcaption>ドン・キホーテ 梅田本店</figcaption>
+</figure>
+
 1. 很晚才起床，等到要消防演习
 1. 出门去的任天堂中心
 1. 在大丸一直到很晚，回了一次酒店
@@ -81,3 +145,8 @@ date: 2024-07-28
 
 1. 早晨起来去机场，导游催促
 1. 在机场免税店，媳妇又买了很多东西
+
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../kyushu">← 2019年九州</a>
+  <a class="archive-year-link" href="../okinawa">2025年冲绳 →</a>
+</div>

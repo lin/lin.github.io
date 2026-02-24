@@ -3,7 +3,10 @@ title: "上海-日本九州之旅"
 date: 2019-08-29
 ---
 
-[Back to all trips](../) - [Next Japan Trip](../japan)
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../japan">2024年日本  →</a>
+</div>
+
 
 ## 08月29日，杭州
 
@@ -62,3 +65,7 @@ date: 2019-08-29
 ## 09月05日，归途
 
 第二天下船，下着雨，打车去机场，旅行结束。
+
+<div class="archive-year-nav">
+  <a class="archive-year-link" href="../japan">2024年日本  →</a>
+</div>
