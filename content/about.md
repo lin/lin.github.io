@@ -3,6 +3,8 @@ title: "About"
 type: "page"
 ---
 
+## Thinker
+
 1. [2005年](../2005), 诗歌期
     - [《古典诗歌》](../poems/)
     - [《诗行记》](../journey)
@@ -16,5 +18,11 @@ type: "page"
     - [《论人与人的差别》](../diff)
 1. [2026年](../2026), 系统论
     - [《钱与词》《能量与信息》](../)
+
+## Gamer
+
+1. [Trips to Japan](../trips)
+1. [Games Played](../games)
+1. [Movies Watched in Theaters](../movies)
 
 ###### 注：博客内所刊登的照片仅作纪念和存档用途。若您不希望本人照片出现在本站，请随时通过微信告知我，收到消息后我会第一时间进行删除处理。谢谢！

@@ -97,6 +97,11 @@ date: 2024-07-28
   <figcaption>阪神梅田本店</figcaption>
 </figure>
 
+<figure>
+  <img src="../../img/anime/amano.PNG" style="max-height:500px">
+  <figcaption>きしめん（碁子麺） あまの @ ホワイティうめだ</figcaption>
+</figure>
+
 1. 早晨起来，我自己去的任天堂总部
 1. 在京都站内的 くらま @ 京都駅 吃的饭
 1. 和媳妇去的京都站坐公交
@@ -110,6 +115,11 @@ date: 2024-07-28
 1. 去 Whity Umeda 的 Kishimen Amano 吃了乌冬面
 
 ## 7月25日
+
+<figure>
+  <img src="../../img/anime/nintendo.PNG" style="max-height:500px">
+  <figcaption>スーパー・ニンテンドー・ワールド</figcaption>
+</figure>
 
 1. 早晨五点多起来去大阪环球
 1. 推着媳妇狂奔，因为担心错过了 early pass
