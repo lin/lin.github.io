@@ -410,10 +410,10 @@
 &lt;li&gt;我还去了宾大的设计学院，和设计系学了一门 &lt;a href="../ddf"&gt;设计原理&lt;/a&gt; 的课程，课程一共有四个项目，评分全是 A&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="工作"&gt;工作&lt;/h2&gt;
-&lt;p&gt;&lt;img src="../img/uiuc.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1772084721785" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;p&gt;&lt;img src="../img/uiuc.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1772085135771" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1772084721785",
+ id: "react-widget-GMMVisualizer-1772085135771",
  component: "GMMVisualizer",
  props: "{}"
  });
