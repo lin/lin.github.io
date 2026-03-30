@@ -1,14 +1,9 @@
 ---
-title: "Yingkui's Top 10"
+title: "Yingkui's 10/10"
 type: "page"
 ---
 
 Last Updated: 2025.12.16
-
-## Books
-
-- Thinking, Fast and Slow
-- Guns, Germs, and Steel
 
 ## Movies
 
@@ -44,5 +39,8 @@ Last Updated: 2025.12.16
 - Imagine (John Lennon)
 - Like a Rolling Stone (Bob Dylan)
 - Bohemian Rhapsody (Queen)
-- Satisfaction (The Rolling Stones)
-- 海阔天空 (Beyond)
+
+## Books
+
+- Thinking, Fast and Slow
+- Guns, Germs, and Steel

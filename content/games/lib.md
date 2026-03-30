@@ -1,4 +1,71 @@
-## Physical Copies
+## Steam Purchase History
+
+| 时间       | 游戏                                     | 价钱           | 其他| 
+|------------|-----------------------------------------|:---------------|:-----:|
+| 03/24/2026 | 🪫 Ghost of Tsushima (2020, FPS 30)            | ¥ 238.80 (40%)       |      MC 83  |
+| 03/21/2026 |  Totally Accurate Battle Simulator (2019)            | ¥ 7.00 (90%)      |        |
+| 03/21/2026 | 🫙 Detroit: Become Human (2018)                    | ¥ 13.60 (90%)      |      MC 78   |
+| 03/21/2026 |  The Talos Principle (2014)                   | ¥ 16.20     (85%)  |   MC 85  |
+| 03/02/2026 | 🍷 Outer Wilds (2019)                           | ¥ 47.50   (85%)  | MC 85    |
+| 02/23/2026 | 🍷 What Remains of Edith Finch (2017)           | ¥ 19.50   (75%)  |  MC 88   |
+| 02/11/2026 |  RimWorld (2018)                               | ¥ 102.40   (20%)  | MC 87    |
+| 11/12/2025 | 🪫 Kingdom Come: Deliverance II (2025)              | ¥ 136.80 (40%)  |  MC 89   |
+| 09/18/2025 | 🍷 NOBUNAGA'S AMBITION (2025)              | ¥ 174.50   (50%)  |  MC 76   |
+| 09/17/2025 | 🫙 Assassin's Creed Shadows (2025)                  | ¥ 208.80    (40%)  |  MC 81   |
+| 06/29/2025 |  Two Point Museum (2025)                          | ¥ 126.40    (20%)  | MC 84    |
+| 06/01/2025 |  Turing Complete (2021)                                 | ¥ 49.00   (30%)  |     |
+| 04/29/2025 |  Total War: Napoleon (2010)                        | ¥ 28.00    (75%)  |  MC 81   |
+| 04/29/2025 | 🍷 逸剑风云决 (2023)                            | ¥ 62.40 (20%)  |   MC 80  |
+| 01/25/2025 |  Humankind (2021)                               | ¥ 29.85 (85%)  |  MC 77    |
+| 12/20/2024 | 🍷 Mass Effect (2007/2010/2012)          | ¥ 19.84 (85%)  |  91/96/93    |
+| 12/20/2024 | 🍷 Assassin's Creed Origins (2017)                | ¥ 29.80 (85%)  |  MC 81    |
+| 12/20/2024 | 🍷 TCG Card Shop Simulator (2024)                | ¥ 39.00 (85%)   |     |
+| 11/28/2024 | 🍷 Assassin's Creed Odyssey (2018)               | ¥ 29.80 (90%)    | MC 83 / 45h   |
+| 11/28/2024 |  Hollow Knight (2018)                        | ¥ 29.00 (50%)    | MC 90 / 27h    |
+| 11/16/2024 | 🍷 Half Life 2 (2004)                            | ¥ 0.00 (100%)    |  MC 96 / 13h    |
+| 11/16/2024 | 🍷 Half Life (1998)                               | ¥ 3.70 (90%)    |  MC 96 / 13h    |
+| 10/29/2024 | 🍷 Batman: Arkham Knight (2015)                   | ¥ 13.60 (80%)    |  MC 87 / 17h    |
+| 10/29/2024 | 🍷 Left 4 Dead 2 (2009)                           | ￥4.20 (90%)    |  MC 89 / 10h    |
+| 10/25/2024 | ✅  The Witness                           | ￥30.24 (73%)    |    |
+| 10/10/2024 | ✅  Slime Rancher                         | ¥ 17.50 (75%)    |    |
+| 10/01/2024 |  XCOM 2                                | ¥ 09.50 (95%)    |  34h |
+| 10/01/2024 |  Braid                                    | ¥ 19.00 (75%)    |    |
+| 09/29/2024 | 🍷 Borderlands 3                           | ¥ 19.90 (90%)    |  24h    |
+| 09/29/2024 | ✅ 🍷 The Witcher 3: Wild Hunt                | ¥ 37.25 (75%)    |    |
+| 09/20/2024 |  Two Point Hospital                    | ¥ 39.60	(80%)  |  😊  |
+| 09/20/2024 |  Total War: ROME REMASTERED            | ¥ 50.32	(66%)  |  50h |
+| 08/08/2024 | 🍷 Tony Hawk's™ Pro Skater™ 1 + 2          | ¥ 104.00	(60%)  |  7h  |
+| 07/03/2024 | 🫙 Watch_Dogs2 (2016)                             | ¥ 29.80	(90%)  | MC 82 / 20h  |
+| 06/22/2024 | 🍷 Mount & Blade II: Bannerlord (2022)            | ¥ 124.00   (50%)  |  MC 77 / 45h    |
+| 05/30/2024 |  Terraria                              | ¥ 21.00	(50%)  | 104h |
+| 05/19/2024 |  Baldur's Gate 3                       | ¥ 253.30   (15%)  |  70h |
+| 05/17/2024 |  Euro Truck Simulator 2                | ¥ 22.80	(75%)  |      |
+| 05/15/2024 |  Vampire Survivors                     | ¥ 25.00	(0% )  |      |
+| 05/10/2024 |  Cities: Skylines                      | ¥ 41.40	(70%)  |      |
+| 05/10/2024 |  Europa Universalis IV (2013)                 | ¥ 98.10	(55%)  |  MC 87    |
+| 05/04/2024 |  Don't Starve Together                 | ¥ 12.00	(50%)  |      |
+| 05/03/2024 |  Total War: Shogun 2 (2011)                  | ¥ 26.60	(80%)  |   MC 90   |
+| 05/03/2024 | ✅  Hades                                 | ¥ 31.28    (66%)  |      |
+| 05/03/2024 |  Total War: THREE KINGDOMS (2019)             | ¥ 91.12    (66%)  |  MC 85 / 47h    |
+| 04/27/2024 | 🍷 Manor Lords                          | ¥ 111.75   (25%)  |  11h   |
+| 04/23/2024 | 🍷 Anno 1404 (2009)             | ¥ 22.50	(70%)  |  MC 82   |
+| 01/26/2024 | ✅ Palworld                                | ¥ 97.20	(10%)  |      |
+| 11/10/2023 |  Crusader Kings III (2020)             | ¥ 89.00	(50%)  |  MC 90 / 72h    |
+| 09/28/2023 | 🍷 Grand Theft Auto IV                     | ¥ 29.70	(70%)  | 27h     |
+| 06/02/2023 | 🍷 Sniper Elite 5                    | ¥ 55.20	(60%)  |  10h  |
+| 03/17/2023 |  Disco Elysium (2019)         | ¥ 29.00	(75%)  |   MC 91 / 24h   |
+| 03/05/2023 | ✅ 🍷 Red Dead Redemption 2             | ¥ 92.07	(67%)  |     |
+| 03/04/2023 | ✅ 🍷 Anno 1800                            | ¥ 74.50	(75%)  |     |
+| 03/28/2021 | ✅  Portal 2                              | ¥ 07.00    (81%)  |      |
+| 03/28/2021 | ✅ 🍷 Grand Theft Auto V                      | ¥ 44.03    (63%)  |     |
+| 03/28/2021 | 🍷 GTA V - Criminal Enterprise             | ¥ 14.43    (63%)  |      |
+| 03/25/2021 |  Stardew Valley                        | ¥ 38.00    (20%)  |   54h   |
+| 07/30/2019 | ✅ 🍷 PUBG                                    | ¥ 49.00	(50%)  |      |
+| 02/13/2018 | ✅  Sid Meier's Civilization VI           | ¥ 99.00	(50%)  |      |
+
+## Nintendo Switch Purchase History
+
+### Physical Copies
 
 | 平台       | 游戏                                     | 价钱           |  折扣 | 购买时间|
 |------------|-----------------------------------------|---------------:|:-----:|:-----:|
@@ -7,68 +74,6 @@
 | NS         | Super Mario Odyssey                     |                |       |       |
 | NS         | It Takes Two                            |                |       |       |
 | NS         | Metroid Prime Remastered                |                |       |       |
-
-## Steam Purchase History
-
-| 时间       | 游戏                                     | 价钱           |  折扣 | 用时| 
-|------------|-----------------------------------------|---------------:|:-----:|:-----:|
-| 02/23/2026 | What Remains of Edith Finch                | ¥ 19.50       |  75%  |     |
-| 02/11/2026 |  RimWorld                                | ¥ 102.40       |  20%  |     |
-| 11/12/2025 | Kingdom Come: Deliverance II              | ¥ 136.80       |  40%  |     |
-| 09/18/2025 | NOBUNAGA'S AMBITION: Shinsei              | ¥ 174.50       |  50%  |     |
-| 09/17/2025 | Assassin's Creed Shadows                  | ¥ 208.80       |  40%  |     |
-| 06/29/2025 |  Two Point Museum                          | ¥ 126.40       |  20%  |     |
-| 06/01/2025 |  Turing Complete                                  | ¥ 49.00       |  30%  |     |
-| 04/29/2025 |  Total War: Napoleon - Definitive Edition  | ¥ 28.00       |  75%  |     |
-| 04/29/2025 | 逸剑风云决                               | ¥ 62.40         |  20%  |     |
-| 01/25/2025 |  Humankind                               | ¥ 29.85         |  85%  |     |
-| 12/20/2024 | Mass Effect Legendary Edition           | ¥ 19.84         |  85%  |     |
-| 12/20/2024 | Assassin's Creed Origins                | ¥ 29.80         |  85%  |     |
-| 12/20/2024 | TCG Card Shop Simulator                 | ¥ 39.00         |  85%  |     |
-| 11/28/2024 | Assassin's Creed Odyssey                | ¥ 29.80         |  90%  | 45h    |
-| 11/28/2024 |  Hollow Knight                         | ¥ 29.00         |  50%  | 27h    |
-| 11/16/2024 | Half Life 2                             | ¥ 0.00         |  100%  |  13h    |
-| 11/16/2024 | Half Life                               | ¥ 3.70         |  90%  |  13h    |
-| 10/29/2024 | Batman: Arkham Knight                   | ¥ 13.60         |  80%  |  17h    |
-| 10/29/2024 | Left 4 Dead 2                           | ￥4.20           |  90%  |  10h    |
-| 10/25/2024 |  The Witness                           | ￥30.24         |  73%  |  ✅  |
-| 10/10/2024 |  Slime Rancher                         | ¥ 17.50	     |  75%  |   ✅ |
-| 10/01/2024 |  XCOM 2                                | ¥ 09.50	     |  95%  |  34h |
-| 10/01/2024 |  Braid, Anniversary Edition            | ¥ 19.00	     |  75%  |  ✅  |
-| 09/29/2024 | Borderlands 3                           | ¥ 19.90	     |  90%  |  24h    |
-| 09/29/2024 | The Witcher 3: Wild Hunt                | ¥ 37.25	     |  75%  |  ✅  |
-| 09/20/2024 |  Two Point Hospital                    | ¥ 39.60	     |  80%  |  😊  |
-| 09/20/2024 |  Total War: ROME REMASTERED            | ¥ 50.32	     |  66%  |  50h |
-| 08/08/2024 | Tony Hawk's™ Pro Skater™ 1 + 2          | ¥ 104.00	     |  60%  |  7h  |
-| 07/03/2024 | Watch_Dogs2                             | ¥ 29.80	     |  90%  | 20h  |
-| 06/22/2024 | Mount & Blade II: Bannerlord            | ¥ 124.00        |  50%  |  45h    |
-| 05/30/2024 |  Terraria                              | ¥ 21.00	     |  50%  | 104h |
-| 05/19/2024 |  Baldur's Gate 3                       | ¥ 253.30        |  15%  |  70h |
-| 05/17/2024 |  Euro Truck Simulator 2                | ¥ 22.80	     |  75%  |      |
-| 05/15/2024 |  Vampire Survivors                     | ¥ 25.00	     |  0%   |      |
-| 05/10/2024 |  Cities: Skylines                      | ¥ 41.40	     |  70%  |      |
-| 05/10/2024 |  Europa Universalis IV                 | ¥ 98.10	     |  55%  |      |
-| 05/04/2024 |  Don't Starve Together                 | ¥ 12.00	     |  50%  |      |
-| 05/03/2024 |  Total War: Shogun 2                   | ¥ 26.60	     |  80%  |      |
-| 05/03/2024 |  Hades                                 | ¥ 31.28         |  66%  |  ✅    |
-| 05/03/2024 |  Total War: THREE KINGDOMS             | ¥ 91.12         |  66%  |  47h    |
-| 04/27/2024 | Manor Lords                             | ¥ 111.75        |  25%  |  11h   |
-| 04/23/2024 | Anno 1404 - History Edition             | ¥ 22.50	     |  70%  | ✅    |
-| 01/26/2024 | Palworld                                | ¥ 97.20	     |  10%  |   ✅   |
-| 11/10/2023 |  Crusader Kings III Launch             | ¥ 89.00	     |  50%  |  72h    |
-| 09/28/2023 | Grand Theft Auto IV                     | ¥ 29.70	     |  70%  | 27h     |
-| 06/02/2023 | Sniper Elite 5                          | ¥ 55.20	     |  60%  |  10h  |
-| 03/17/2023 |  Disco Elysium - The Final Cut         | ¥ 29.00	     |  75%  |   24h   |
-| 03/05/2023 | Red Dead Redemption 2                   | ¥ 92.07	     |  67%  |   ✅   |
-| 03/04/2023 | Anno 1800                               | ¥ 74.50	     |  75%  |    ✅  |
-| 03/28/2021 |  Portal 2                              | ¥ 07.00         |  81%  |  ✅    |
-| 03/28/2021 | Grand Theft Auto V                      | ¥ 44.03         |  63%  |   ✅   |
-| 03/28/2021 | GTA V - Criminal Enterprise             | ¥ 14.43         |  63%  | ✅     |
-| 03/25/2021 |  Stardew Valley                        | ¥ 38.00         |  20%  |   54h   |
-| 07/30/2019 | PUBG                                    | ¥ 49.00	     |  50%  |  ✅    |
-| 02/13/2018 |  Sid Meier's Civilization VI           | ¥ 99.00	     |  50%  |   ✅   |
-
-## Nintendo Switch Purchase History
 
 | 时间       | 游戏                                         | Unit Price   |  折扣 | 用时| 
 |------------|---------------------------------------------|-------------:|:-----:|:-----:|

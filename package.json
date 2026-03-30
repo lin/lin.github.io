@@ -5,7 +5,7 @@
   "scripts": {
     "build:widgets": "node scripts/build-widgets.js",
     "watch:widgets": "node scripts/build-widgets.js --watch",
-    "dev": "npm run watch:widgets & hugo server -D",
+    "dev": "npm run watch:widgets & hugo server -D -F",
     "build": "npm run build:widgets && hugo"
   },
   "devDependencies": {
