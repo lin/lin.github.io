@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>@fastcalm.bsky.social timeline stats</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    .StatsPage {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+    .StatsHero {
+      display: grid;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .StatsTitle {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .StatsSubtitle {
+      color: #cbd5e1;
+      max-width: 70ch;
+    }
+    .StatsGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    .StatsCard, .ChartCard, .TableCard {
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+    }
+    .StatsCard {
+      padding: 18px 20px;
+    }
+    .StatsLabel {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .StatsValue {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .ChartCard, .TableCard {
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .SectionTitle {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .ChartWrap {
+      width: 100%;
+      overflow-x: auto;
+    }
+    #chart {
+      width: 100%;
+      min-height: 360px;
+      display: block;
+    }
+    .AxisText {
+      fill: #94a3b8;
+      font-size: 12px;
+    }
+    .GridLine {
+      stroke: rgba(148, 163, 184, 0.16);
+      stroke-width: 1;
+    }
+    .TrendLine {
+      fill: none;
+      stroke: #38bdf8;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .Point {
+      fill: #f8fafc;
+      stroke: #38bdf8;
+      stroke-width: 2;
+    }
+    .Point--weekday {
+      fill: #f59e0b;
+      stroke: #fbbf24;
+    }
+    .ChartLegend {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin: 0 0 12px;
+      color: #cbd5e1;
+      font-size: 0.92rem;
+    }
+    .LegendItem {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .LegendDot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 2px solid #38bdf8;
+    }
+    .LegendDot--weekday {
+      background: #f59e0b;
+      border-color: #fbbf24;
+    }
+    .Tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(15, 23, 42, 0.96);
+      color: #f8fafc;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 10px;
+      padding: 8px 10px;
+      font-size: 0.9rem;
+      transform: translate(12px, 12px);
+      opacity: 0;
+      transition: opacity 120ms ease;
+      z-index: 10;
+      white-space: nowrap;
+    }
+    .LinkRow {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .StatsLink {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: #eff6ff;
+      font-weight: 600;
+    }
+    .StatsLink--secondary {
+      background: rgba(148, 163, 184, 0.16);
+      color: #e2e8f0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+    th {
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    tbody tr:hover {
+      background: rgba(148, 163, 184, 0.06);
+    }
+    @media (max-width: 640px) {
+      .StatsTitle {
+        font-size: 1.6rem;
+      }
+      .ChartCard, .TableCard, .StatsCard {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="Root">
+    <div class="Page StatsPage">
+      <div class="PageHeader">
+        <a href="index.html" class="Link">Home</a>
+        <a href="timeline/posts/1.html" class="Link">Timeline</a>
+        <a href="search.html" class="Link">Search</a>
+        <a href="stats.html" class="Link">Stats</a>
+      </div>
+      <div class="StatsHero">
+        <h1 class="StatsTitle">@fastcalm.bsky.social timeline stats</h1>
+        <p class="StatsSubtitle">Daily counts of root timeline posts extracted from the timeline HTML pages. Use this page to see how posting frequency changes over time.</p>
+        <div class="LinkRow">
+          <a href="timeline-post-counts-by-day.csv" class="StatsLink">Download CSV</a>
+          <a href="timeline/posts/1.html" class="StatsLink StatsLink--secondary">Back to timeline</a>
+        </div>
+      </div>
+      <div class="StatsGrid">
+        <div class="StatsCard">
+          <div class="StatsLabel">Days with posts</div>
+          <div class="StatsValue">133</div>
+        </div>
+        <div class="StatsCard">
+          <div class="StatsLabel">Total posts</div>
+          <div class="StatsValue">1566</div>
+        </div>
+        <div class="StatsCard">
+          <div class="StatsLabel">Peak daily posts</div>
+          <div class="StatsValue">54</div>
+        </div>
+        <div class="StatsCard">
+          <div class="StatsLabel">Date range</div>
+          <div class="StatsValue" style="font-size: 1rem;">2025-11-22 → 2026-04-05</div>
+        </div>
+      </div>
+      <div class="ChartCard">
+        <div class="SectionTitle">Posts per day</div>
+        <div class="ChartLegend">
+          <span class="LegendItem"><span class="LegendDot LegendDot--weekday"></span>Weekday</span>
+          <span class="LegendItem"><span class="LegendDot"></span>Weekend</span>
+        </div>
+        <div class="ChartWrap">
+          <svg id="chart" viewBox="0 0 1100 420" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Timeline posts per day chart"></svg>
+        </div>
+      </div>
+      <div class="TableCard">
+        <div class="SectionTitle">Daily counts</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Posts</th>
+            </tr>
+          </thead>
+          <tbody id="stats-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="tooltip" class="Tooltip"></div>
+  <script>
+    const data = [{"date": "2025-11-22", "count": 1}, {"date": "2025-11-24", "count": 16}, {"date": "2025-11-25", "count": 5}, {"date": "2025-11-26", "count": 7}, {"date": "2025-11-27", "count": 7}, {"date": "2025-11-28", "count": 31}, {"date": "2025-11-29", "count": 8}, {"date": "2025-11-30", "count": 9}, {"date": "2025-12-01", "count": 4}, {"date": "2025-12-02", "count": 9}, {"date": "2025-12-03", "count": 12}, {"date": "2025-12-04", "count": 19}, {"date": "2025-12-05", "count": 8}, {"date": "2025-12-06", "count": 5}, {"date": "2025-12-07", "count": 3}, {"date": "2025-12-08", "count": 30}, {"date": "2025-12-09", "count": 25}, {"date": "2025-12-10", "count": 1}, {"date": "2025-12-11", "count": 11}, {"date": "2025-12-12", "count": 13}, {"date": "2025-12-13", "count": 5}, {"date": "2025-12-14", "count": 3}, {"date": "2025-12-15", "count": 1}, {"date": "2025-12-16", "count": 5}, {"date": "2025-12-17", "count": 4}, {"date": "2025-12-18", "count": 16}, {"date": "2025-12-19", "count": 2}, {"date": "2025-12-20", "count": 6}, {"date": "2025-12-21", "count": 1}, {"date": "2025-12-22", "count": 10}, {"date": "2025-12-23", "count": 4}, {"date": "2025-12-24", "count": 13}, {"date": "2025-12-25", "count": 24}, {"date": "2025-12-26", "count": 14}, {"date": "2025-12-27", "count": 4}, {"date": "2025-12-28", "count": 8}, {"date": "2025-12-29", "count": 10}, {"date": "2025-12-30", "count": 14}, {"date": "2025-12-31", "count": 4}, {"date": "2026-01-01", "count": 5}, {"date": "2026-01-02", "count": 12}, {"date": "2026-01-03", "count": 10}, {"date": "2026-01-04", "count": 39}, {"date": "2026-01-05", "count": 24}, {"date": "2026-01-06", "count": 23}, {"date": "2026-01-07", "count": 26}, {"date": "2026-01-08", "count": 6}, {"date": "2026-01-09", "count": 13}, {"date": "2026-01-10", "count": 15}, {"date": "2026-01-11", "count": 13}, {"date": "2026-01-12", "count": 5}, {"date": "2026-01-13", "count": 6}, {"date": "2026-01-14", "count": 18}, {"date": "2026-01-15", "count": 21}, {"date": "2026-01-16", "count": 16}, {"date": "2026-01-17", "count": 10}, {"date": "2026-01-18", "count": 6}, {"date": "2026-01-19", "count": 50}, {"date": "2026-01-20", "count": 15}, {"date": "2026-01-21", "count": 16}, {"date": "2026-01-22", "count": 19}, {"date": "2026-01-23", "count": 9}, {"date": "2026-01-24", "count": 14}, {"date": "2026-01-25", "count": 31}, {"date": "2026-01-26", "count": 14}, {"date": "2026-01-27", "count": 4}, {"date": "2026-01-28", "count": 8}, {"date": "2026-01-29", "count": 14}, {"date": "2026-01-30", "count": 4}, {"date": "2026-01-31", "count": 4}, {"date": "2026-02-01", "count": 4}, {"date": "2026-02-02", "count": 2}, {"date": "2026-02-03", "count": 4}, {"date": "2026-02-04", "count": 2}, {"date": "2026-02-05", "count": 5}, {"date": "2026-02-06", "count": 1}, {"date": "2026-02-07", "count": 5}, {"date": "2026-02-08", "count": 5}, {"date": "2026-02-10", "count": 2}, {"date": "2026-02-11", "count": 5}, {"date": "2026-02-12", "count": 2}, {"date": "2026-02-13", "count": 3}, {"date": "2026-02-14", "count": 2}, {"date": "2026-02-15", "count": 17}, {"date": "2026-02-16", "count": 12}, {"date": "2026-02-17", "count": 11}, {"date": "2026-02-18", "count": 6}, {"date": "2026-02-19", "count": 21}, {"date": "2026-02-20", "count": 12}, {"date": "2026-02-21", "count": 18}, {"date": "2026-02-22", "count": 4}, {"date": "2026-02-23", "count": 45}, {"date": "2026-02-24", "count": 20}, {"date": "2026-02-25", "count": 6}, {"date": "2026-02-26", "count": 7}, {"date": "2026-02-27", "count": 22}, {"date": "2026-02-28", "count": 35}, {"date": "2026-03-01", "count": 10}, {"date": "2026-03-02", "count": 8}, {"date": "2026-03-03", "count": 18}, {"date": "2026-03-04", "count": 4}, {"date": "2026-03-05", "count": 6}, {"date": "2026-03-06", "count": 7}, {"date": "2026-03-07", "count": 2}, {"date": "2026-03-08", "count": 12}, {"date": "2026-03-09", "count": 12}, {"date": "2026-03-10", "count": 5}, {"date": "2026-03-11", "count": 3}, {"date": "2026-03-12", "count": 9}, {"date": "2026-03-13", "count": 3}, {"date": "2026-03-14", "count": 8}, {"date": "2026-03-15", "count": 4}, {"date": "2026-03-16", "count": 8}, {"date": "2026-03-17", "count": 7}, {"date": "2026-03-18", "count": 17}, {"date": "2026-03-19", "count": 15}, {"date": "2026-03-20", "count": 54}, {"date": "2026-03-21", "count": 23}, {"date": "2026-03-22", "count": 12}, {"date": "2026-03-23", "count": 49}, {"date": "2026-03-24", "count": 25}, {"date": "2026-03-25", "count": 17}, {"date": "2026-03-26", "count": 20}, {"date": "2026-03-27", "count": 9}, {"date": "2026-03-28", "count": 14}, {"date": "2026-03-29", "count": 5}, {"date": "2026-03-30", "count": 12}, {"date": "2026-03-31", "count": 9}, {"date": "2026-04-01", "count": 5}, {"date": "2026-04-02", "count": 17}, {"date": "2026-04-03", "count": 9}, {"date": "2026-04-04", "count": 7}, {"date": "2026-04-05", "count": 1}];
+    const svg = document.getElementById("chart");
+    const tableBody = document.getElementById("stats-table-body");
+    const tooltip = document.getElementById("tooltip");
+    const width = 1100;
+    const height = 420;
+    const margin = { top: 24, right: 24, bottom: 56, left: 56 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+    const maxCount = Math.max(...data.map((item) => item.count), 1);
+    const xStep = data.length > 1 ? innerWidth / (data.length - 1) : innerWidth / 2;
+
+    const yScale = (value) => margin.top + innerHeight - (value / maxCount) * innerHeight;
+    const xScale = (index) => margin.left + (data.length > 1 ? index * xStep : innerWidth / 2);
+
+    const yTicks = new Set([0, Math.ceil(maxCount / 4), Math.ceil(maxCount / 2), Math.ceil(maxCount * 3 / 4), maxCount]);
+    const tickValues = [...yTicks].sort((a, b) => a - b);
+    const isWeekday = (dateString) => {
+      const day = new Date(`${dateString}T00:00:00`).getDay();
+      return day >= 1 && day <= 5;
+    };
+
+    const linePath = data
+      .map((item, index) => `${ index === 0 ? "M" : "L" } ${xScale(index).toFixed(2)} ${yScale(item.count).toFixed(2)}`)
+      .join(" ");
+
+    const labelInterval = Math.max(Math.floor(data.length / 6), 1);
+    const xLabelIndexes = data
+      .map((_, index) => index)
+      .filter((index) => index === 0 || (index !== data.length - 1 && index % labelInterval === 0));
+
+    svg.innerHTML = `
+      ${tickValues.map((tick) => `
+        <g>
+          <line class="GridLine" x1="${margin.left}" y1="${yScale(tick)}" x2="${width - margin.right}" y2="${yScale(tick)}"></line>
+          <text class="AxisText" x="${margin.left - 12}" y="${yScale(tick) + 4}" text-anchor="end">${tick}</text>
+        </g>
+      `).join("")}
+      <line class="GridLine" x1="${margin.left}" y1="${margin.top + innerHeight}" x2="${width - margin.right}" y2="${margin.top + innerHeight}"></line>
+      <path class="TrendLine" d="${linePath}"></path>
+      ${data.map((item, index) => `
+        <circle
+          class="Point${isWeekday(item.date) ? " Point--weekday" : ""}"
+          cx="${xScale(index)}"
+          cy="${yScale(item.count)}"
+          r="4"
+          data-date="${item.date}"
+          data-count="${item.count}"
+        ></circle>
+      `).join("")}
+      ${xLabelIndexes.map((originalIndex) => {
+        const item = data[originalIndex];
+        return `
+          <text class="AxisText" x="${xScale(originalIndex)}" y="${height - 18}" text-anchor="${originalIndex === 0 ? "start" : "middle"}">${item.date}</text>
+        `;
+      }).join("")}
+    `;
+
+    data.forEach((item) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${item.date}</td><td>${item.count}</td>`;
+      tableBody.appendChild(row);
+    });
+
+    svg.querySelectorAll(".Point").forEach((point) => {
+      point.addEventListener("mouseenter", () => {
+        tooltip.style.opacity = "1";
+        tooltip.textContent = `${point.dataset.date}: ${point.dataset.count} posts`;
+      });
+      point.addEventListener("mousemove", (event) => {
+        tooltip.style.left = `${event.clientX}px`;
+        tooltip.style.top = `${event.clientY}px`;
+      });
+      point.addEventListener("mouseleave", () => {
+        tooltip.style.opacity = "0";
+      });
+    });
+  </script>
+</body>
+</html>
