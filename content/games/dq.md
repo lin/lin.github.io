@@ -23,3 +23,4 @@
 1. DQ 3
 1. DQ 10, JPN
 1. DQ 11 S
+1. DQ 7, reimagine, NS2

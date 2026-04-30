@@ -67,8 +67,12 @@ type: "page"
 |   😊   | Cuphead (54%, World 2)                   | NS            | 20h    |2024/11     |AAVG|
 |   🎮️   | Baldur's Gate 3 (Act 1)                  | PC            | 30h    |2024/11      |CRPG|
 |   ✅   | Mario Kart World                         | NS2            | 3h    |2025/06      |竞速|
-|   😊   | Assasin's Creed: Shadows                 | PC            | 10h    |2025/09      |AAVG|
 |   ✅   | Turing Complete                          | PC            | 30h    |2025/12      |PLG|
+|   ✅   | Assasin's Creed: Shadows                 | PC            | 54h    |2026/04      |AAVG|
+|   🎮️   | 逸剑风云决                                | PC            |     |2026/04      |PLG|
+|   🎮️   | TCG Card Shop Simulator                  | PC            |     |2026/04      |PLG|
+|   🎮️   | Pokopia                                  | NS2           |     |2026/04      |PLG|
+
 
 ## 其他曾深度体验过的游戏
 
