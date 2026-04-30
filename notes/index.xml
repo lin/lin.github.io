@@ -1,7 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/notes/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1774864509162" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/notes/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Special Relativity</title><link>https://yingkui.com/notes/sr/</link><pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/sr/</guid><description>&lt;h2 id="设定"&gt;设定&lt;/h2&gt;
+&lt;p&gt;$S$ 是静止的参考系，$S'$ 是相对于 $S$ 匀速 $u$ 在 $x$ 轴方向运动的参考系&lt;/p&gt;
+$$
+\beta = \dfrac{u}{c}
+$$$$
+\gamma = \dfrac{1}{\sqrt{1 - u^2 / c^2}}
+$$&lt;h2 id="洛伦兹变换"&gt;洛伦兹变换&lt;/h2&gt;
+&lt;p&gt;&lt;img src="../../img/notes/lorentz.png" alt=""&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个事件 $P$ 发生了&lt;/li&gt;
+&lt;li&gt;$S'$ 测量一个事件 $P$ 发生在它的 $x'$ 处，也就是 $O'P = x'$。&lt;/li&gt;
+&lt;li&gt;而在 $S$ 中，$O'P$ 的长度是收缩的，也就是 $O'P = x' / \gamma$。&lt;/li&gt;
+&lt;li&gt;所以，$x = ut + x' / \gamma$&lt;/li&gt;
+&lt;li&gt;也就是&lt;/li&gt;
+&lt;/ol&gt;
+$$x' = \gamma (x - ut)$$&lt;ol&gt;
+&lt;li&gt;同理，在 $S'$ 中，$OP$ 的长度是收缩的，也就是 $OP = x / \gamma$。&lt;/li&gt;
+&lt;li&gt;所以，$x' = x/\gamma - ut'$&lt;/li&gt;
+&lt;li&gt;消去 $x'$，得到，$\gamma x - \gamma ut = x/ \gamma - ut' $&lt;/li&gt;
+&lt;li&gt;$t' = ( x/ \gamma - \gamma x + \gamma ut)/u$&lt;/li&gt;
+&lt;li&gt;$t' = \gamma (x /\gamma^2 - x + ut)/u$&lt;/li&gt;
+&lt;li&gt;$t' = \gamma (t - 1/u \cdot ( 1 - 1/\gamma^2) \cdot x)$&lt;/li&gt;
+&lt;li&gt;也就是&lt;/li&gt;
+&lt;/ol&gt;
+$$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1777536081295" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1774864509162",
+ id: "react-widget-GMMVisualizer-1777536081295",
  component: "GMMVisualizer",
  props: "{}"
  });
