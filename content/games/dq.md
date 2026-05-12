@@ -1,26 +1,21 @@
 ## Dragon Quest
 
-### NDS
 
-1. DQ 4, remake
-1. DQ 5, remake 
-1. DQ 6, remake
-1. DQ 9
 
-### 3DS
+| 名称         | 时间 | 平台 |  [销量](https://vgsales.fandom.com/wiki/Dragon_Quest)|
+|:------------:|:---:|:-----:|:--:|
+| DQ            | 1986| NES / SNES / GBC / Wii / 3DS / NS  |  |
+| DQ 2         | 1987 | NES / SNES / GBC / Wii / 3DS / NS | NS remake  |
+| DQ 3         | 1988 | NES / SNES / GBC / Wii / 3DS / NS |   |
+| DQ 4         | 1990 | NES / NDS |  |
+| DQ 5         | 1992 | SNES / NDS |  |
+| DQ 6         | 1995 | SNES / NDS |   |
+| DQ 7         | 2000 | 3DS / NS2 | NS2 remake |
+| DQ 8         | 2004 | 3DS |  |
+| DQ 9         | 2009 | NDS |  |
+| DQ 10         | 2012 | Wii / Wii U / 3DS / NS  |  |
+| DQ 11         | 2017 | NS |  |
 
-1. DQ 1
-1. DQ 2
-1. DQ 7, remake
-1. DQ 8, remake
-1. DQ 10, JPN
-1. DQ 11, JPN
+我玩过5，玩过11，但都没通关
 
-## NS
-
-1. DQ 1
-1. DQ 2
-1. DQ 3
-1. DQ 10, JPN
-1. DQ 11 S
-1. DQ 7, reimagine, NS2
+现在在玩7的reimagine
