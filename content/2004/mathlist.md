@@ -113,3 +113,5 @@
 | 109 | 佳木斯第五中学 | 鄂明璋 | 72 | 佳木斯市 |
 
 - [信息来自来成文化学校网站](https://web.archive.org/web/20051024211512/http://lxfas.com/list.htm)
+
+https://web.archive.org/web/20060529104408/http://www.lxfas.com:80/zs1.htm

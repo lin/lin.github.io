@@ -2,6 +2,13 @@
 
 | 时间       | 游戏                                     | 价钱           | 其他| 
 |------------|-----------------------------------------|:---------------|:-----:|
+| 04/28/2026 |  Torchlight II            | ¥ 13.6 (80%)       |        |
+| 04/26/2026 |  Dave the Diver            | ¥ 44 (45%)       |        |
+| 04/19/2026 |  Dorfromantik            | ¥ 32.9 (30%)       |        |
+| 04/19/2026 |  Baba is You            | ¥ 35 (30%)       |        |
+| 04/19/2026 |  Into the Breach            | ¥ 20 (60%)       |        |
+| 04/15/2026 |  Oxygen Not Included            | ¥ 17.40 (70%)       |        |
+| 04/02/2026 |  Balatro            | ¥ 38.88 (28%)       |        |
 | 03/24/2026 | 🪫 Ghost of Tsushima (2020, FPS 30)            | ¥ 238.80 (40%)       |      MC 83  |
 | 03/21/2026 |  Totally Accurate Battle Simulator (2019)            | ¥ 7.00 (90%)      |        |
 | 03/21/2026 | 🫙 Detroit: Become Human (2018)                    | ¥ 13.60 (90%)      |      MC 78   |
@@ -20,7 +27,7 @@
 | 12/20/2024 | 🍷 Mass Effect (2007/2010/2012)          | ¥ 19.84 (85%)  |  91/96/93    |
 | 12/20/2024 | 🍷 Assassin's Creed Origins (2017)                | ¥ 29.80 (85%)  |  MC 81    |
 | 12/20/2024 | 🍷 TCG Card Shop Simulator (2024)                | ¥ 39.00 (85%)   |     |
-| 11/28/2024 | 🍷 Assassin's Creed Odyssey (2018)               | ¥ 29.80 (90%)    | MC 83 / 45h   |
+| 11/28/2024 | 🫙 Assassin's Creed Odyssey (2018)               | ¥ 29.80 (90%)    | MC 83 / 45h   |
 | 11/28/2024 |  Hollow Knight (2018)                        | ¥ 29.00 (50%)    | MC 90 / 27h    |
 | 11/16/2024 | 🍷 Half Life 2 (2004)                            | ¥ 0.00 (100%)    |  MC 96 / 13h    |
 | 11/16/2024 | 🍷 Half Life (1998)                               | ¥ 3.70 (90%)    |  MC 96 / 13h    |
@@ -65,18 +72,17 @@
 
 ## Nintendo Switch Purchase History
 
-### Physical Copies
-
-| 平台       | 游戏                                     | 价钱           |  折扣 | 购买时间|
-|------------|-----------------------------------------|---------------:|:-----:|:-----:|
-| NS         | Super Mario Galaxy 1 & 2            |                |       |       |
-| NS         | Super Mario 3D All-star (胡)            |                |       |       |
-| NS         | Super Mario Odyssey                     |                |       |       |
-| NS         | It Takes Two                            |                |       |       |
-| NS         | Metroid Prime Remastered                |                |       |       |
-
 | 时间       | 游戏                                         | Unit Price   |  折扣 | 用时| 
 |------------|---------------------------------------------|-------------:|:-----:|:-----:|
+| 03/29/2026 | Divinity: Original Sin 2                                 |$25      |   ||
+| 10/26/2025 | Cyberpunk 2077                                 |$40       |   ||
+| 09/29/2025 | Hades II                                 |$30      |   |✅| Just Dance 2025
+| 07/22/2025 | The Witcher 3: Wild Hunt                                 |$15      |   |✅|
+| 06/27/2025 | Just Dance 2025                                 |$25      |   ||
+| 05/27/2025 | DRAGON QUEST® XI S                                 |$20      |   ||
+| 03/18/2025 | Paper io 2                                 |$3.5     |   ||
+| 12/20/2024 | Okami HD                                 |$5       |    ||
+| 11/28/2024 | Sid Meier’s Civilization VI                                 |$3       |    ||
 | 11/24/2024 | Spiritfarer                                 |$7.49       | 75%   |30|
 | 11/20/2024 | Cuphead                                     |$13.99       | 30%   |10|
 | 11/20/2024 | Persona 5 Royal                             |$14.99        | 75%   |100|
