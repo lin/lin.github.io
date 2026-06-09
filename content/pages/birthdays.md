@@ -18,8 +18,9 @@
 | 2020年        |    媳妇给我买的 Switch |
 | 2021年        |    媳妇给我买的 iPhone 12 |
 | 2022年        |    媳妇给我买的 iPad Air |
+| 2023年        |    媳妇给我买的 Kindle |
+| 2025年        |    媳妇给我买的 Switch 2 & Kobo Libra Color |
 | 2022年        |    行行给我买的 MX Master 3 |
 | 2023年        |    行行给我买的 AirPods Pro 2 |
 | 2024年        |    行行给我买的 磁吸充电 |
 | 2025年        |    行行给我买的 Alarmo |
-| 2025年        |    媳妇给我买的 Switch 2 & Kobo Libra Color |
