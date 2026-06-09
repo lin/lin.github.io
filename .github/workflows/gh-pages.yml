@@ -32,10 +32,10 @@ jobs:
         run: npm run build:widgets
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
-          # extended: true
+          hugo-version: '0.150.1'
+          extended: true
 
       - name: Build Hugo site
         run: hugo --minify
