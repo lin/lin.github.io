@@ -696,10 +696,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1782359712826" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1782406107588" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1782359712826",
+ id: "react-widget-GMMVisualizer-1782406107588",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -5357,8 +5357,33 @@ $$
 &lt;li&gt;20题选择，没有选择D选项，扣三分&lt;/li&gt;
 &lt;li&gt;22题，全对&lt;/li&gt;
 &lt;li&gt;23题，全对&lt;/li&gt;
-&lt;li&gt;24题，扣了11分，老师说，非弹性碰撞不考，我也就现场推导这个式子，有些紧张，并且花费了很久，但是因为往常不写中间的结论，我没有把式子写下来，最后的结果还是算错的，这是我平时考试，唯一一次物理大题第二题出错，而且老师还说，这个题省里开会，中间的8分最后给分，也让我估分不保守的情况下多了8分&lt;/li&gt;
-&lt;li&gt;25题，扣了8分（第一问两分，第二问六分），我记得自己推出来一个悖论，所以这个题耽误了我很多时间&lt;/li&gt;
+&lt;li&gt;24题，扣了11分&lt;/li&gt;
+&lt;li&gt;25题，高考题目有错，扣了8分（第一问两分，第二问六分），我记得自己推出来一个悖论，所以这个题耽误了我很多时间&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="物理第24题的展开"&gt;物理第24题的展开&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;我们的物理老师说，这样的弹性碰撞不考，对于很多其他名校学生，很基础的二级结论，我以及我的同学们必须现场推导这个式子&lt;/li&gt;
+&lt;li&gt;这个题目的推导有这很大的技巧性，如果是直接消元，而不是平方差公式消元，计算量很大，陷阱也很多，会限于泥潭&lt;/li&gt;
+&lt;li&gt;这道题从物理学的角度来说，能够识别模型，列出初始方程，物理能力的考察就已经结束了，这也就是，往常不写中间的结论，我没有把式子写下来，最后的结果还是算错的&lt;/li&gt;
+&lt;li&gt;而且后来绥化一中的老师还说，这个题省里开会，中间的8分最后给分，也让我估分不保守的情况下多了8分&lt;/li&gt;
+&lt;li&gt;在高考的环境下很紧张，并且为了不出错，要花费很久，我第一次推导，通过消元的方式，发现太麻烦，才想到平方差的约分技巧（类似于数学的点差法），但这时候时间已经过去了很久&lt;/li&gt;
+&lt;li&gt;第二道大题的难度突然变成了第三道大题的难度，与此同时，因为，这是我平时考试，唯一一次物理大题第二题出错&lt;/li&gt;
+&lt;li&gt;这个题目，其实有双重的责任，一是老师不应该说不考查，第二，命题者极不负责，不应该突然给中间解出的结论八分的赋值，至少应该作为一个需要求解的量，明确的让学生列出&lt;/li&gt;
+&lt;li&gt;这个题目，明显是对名校生，对竞赛生，有利的一个题目，是对他们额外练习，老师提供的更大知识库，更好的答题能力的一个体现&lt;/li&gt;
+&lt;li&gt;作为第二个大题，对于大多数好学生，应该是必拿分的一道题，对于心态的打击也是很大的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="物理第25题出错"&gt;物理第25题出错&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;题干的描述有矛盾，圆心必然是在第三象限，而不是在答案所说的第二象限，这就使得必然是y轴正向成锐角，刘翔和我说，他也发现了这个错误&lt;/li&gt;
+&lt;li&gt;我的磁场大小求出来是对的，但没有写中间变量 R 的表达式，扣掉了六分，我觉得很扯淡&lt;/li&gt;
+&lt;li&gt;我当时是用数学解析几何的办法，解出来的半径表达式，而不是标准答案的那种方法，具体的，也很简单，把 AC和OC的方程联立，就能得到 O 的坐标，$x_o = -\frac{h^2}{l}$，$y_o = -\frac{h^2 + l^2}{2h}$，这时候，只要算出来OC的长度，就是 $R$ 了，简单粗暴，但这么算，就会意识到，题目是错的，就会让人崩溃，觉得自己是不是 O 的坐标求错了，陷入一种恐慌和自我怀疑。&lt;/li&gt;
+&lt;li&gt;那其实这就有一个随机事件，如果一个学生用了这个方法，就会意识到考题有误，那就看当时的运气了，我就是运气不好&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="实力"&gt;实力&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;我数学150满分是很容易做到的，但是考虑马虎，就算是144分是很常规的&lt;/li&gt;
+&lt;li&gt;物理的第二道大题，我几乎从来不错的，所以这11分是因为老师的误判造成的，我的同学们还有一个正态分布的误判&lt;/li&gt;
+&lt;li&gt;第三道大题，因为第二道大题，挤占了很多的时间，我理综285，并不是一个很难的分数&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>中秋望月</title><link>https://yingkui.com/poems/yuyou/</link><pubDate>Thu, 05 Apr 2007 00:00:00 +0000</pubDate><guid>https://yingkui.com/poems/yuyou/</guid><description>&lt;h3 id="与友诗"&gt;与友诗&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;2007.4 绥化&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;天生妒才意，赐君以轻疾。&lt;/p&gt;
