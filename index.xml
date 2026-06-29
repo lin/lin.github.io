@@ -3,7 +3,7 @@
  &lt;img src='https://yingkui.com/2007/25-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600"&gt;
  &lt;figcaption&gt;2007年6月11日 - 最后一道物理大题题干&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;p&gt;对于一个有良好物理学训练的学生来说，第25题是一道很简单，很容易拿分的一道题目，情景简单，公式好列出，唯一的麻烦在于数学上的计算和求解。但这道题，出现了一个极其低级的事实性错误，命题组是非常不负责任的。&lt;/p&gt;</description></item><item><title>九井张氏</title><link>https://yingkui.com/zhang/</link><pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/zhang/</guid><description>&lt;style&gt;
+&lt;p&gt;对于一个有良好物理学训练的学生来说，第25题是一道很简单，很容易拿分的题目，情景简单，公式好列，唯一的麻烦在于数学上的计算和求解。但这道题，出现了一个极其低级的事实性错误，命题组是非常不负责任的。&lt;/p&gt;</description></item><item><title>九井张氏</title><link>https://yingkui.com/zhang/</link><pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/zhang/</guid><description>&lt;style&gt;
 strong {
  color: black;
  font-size: 22px;
@@ -701,10 +701,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1782708421939" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1782717196818" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1782708421939",
+ id: "react-widget-GMMVisualizer-1782717196818",
  component: "GMMVisualizer",
  props: "{}"
  });
