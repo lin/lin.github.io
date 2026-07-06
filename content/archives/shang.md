@@ -119,7 +119,7 @@ date: 2026-06-09
 
 <figure>
   <img src='../2026/hlm.png' width='600'>
-  <figcaption>2026年5月28日，我父亲和我诉说他苦难的童年</figcaption>
+  <figcaption>我小时候在东海租书店买的二手红楼梦</figcaption>
 </figure>
 
 1. 1997年，高乐高，时价25元，也就是现在的270元，我第一次喝是2026年6月10日，我爱人给我买的
