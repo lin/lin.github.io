@@ -8,7 +8,7 @@ math: true
 ## 一道简单的压轴大题
 
 <figure>
-  <img src='/2007/25-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600">
+  <img src='/img/2007/25-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600">
   <figcaption>2007年6月11日 - 最后一道物理大题题干</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ $$
 $$
 
 <figure>
-  <img src='/2007/25-graph.png' alt='官方答案给出的有着事实性错误的附图' width="300">
+  <img src='/img/2007/25-graph.png' alt='官方答案给出的有着事实性错误的附图' width="300">
   <figcaption>官方答案给出的有着事实性错误的附图</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ $$
 这是错误的，是永远不可能发生的情景。命题组以及那些检验这个题目的人员，都没有意识到，$P$ 是锁定在第三象限的，他们之所以写下这个条件，是因为判卷的时候，更容易评分，而对于使用标准方法的考生，可以少讨论一种情况，下图是官方给出的参考答案：
 
 <figure>
-  <img src='/2007/25-ans.jpg' alt='2007年 学子 杂志上的物理大题答案' width="600">
+  <img src='/img/2007/25-ans.jpg' alt='2007年 学子 杂志上的物理大题答案' width="600">
   <figcaption>最后一道物理大题官方答案，黑色字是我2007年6月11日写的</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ $$
 ## 从未考察过的知识点
 
 <figure>
-  <img src='/2007/24-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600">
+  <img src='/img/2007/24-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600">
   <figcaption>2007年6月11日 - 第二道物理大题题干</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ $$
 ## 数学技巧，占了11分的比重
 
 <figure>
-  <img src='/2007/24-ans.jpg' alt='2007年 学子 杂志上的物理大题答案' width="600">
+  <img src='/img/2007/24-ans.jpg' alt='2007年 学子 杂志上的物理大题答案' width="600">
   <figcaption>2007年6月11日 - 第二道物理大题答案</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ $$
 我父亲和班主任的瞎指挥，[让我高出哈工大录取线35分](https://zsb.hit.edu.cn/article/read/28c3a0d8cf99b0f60221e7a8c627061a)，没考上想去的上海交大。
 
 <figure>
-  <img src='/2007/baokao-merge.jpg' alt='2007年 学子 杂志上的估分' width="600">
+  <img src='/img/2007/baokao-merge.jpg' alt='2007年 学子 杂志上的估分' width="600">
   <figcaption>2007年6月11日 - 在《学子》杂志上的估分</figcaption>
 </figure>
 

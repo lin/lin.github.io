@@ -3,7 +3,7 @@ title: "初明"
 date: 2026-06-15
 ---
 
-![chuming](../../2026/chuming.jpeg)
+![chuming](../../img/2026/chuming.jpeg)
 
 第一次被阳光照射
 

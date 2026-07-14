@@ -22,7 +22,7 @@ date: 2026-06-09
 我要的东西贵吗？高乐高25，四驱车20，四大名著每本30，我父亲如果不用三星A100，买一个诺基亚，瞬间就剩下3000块，当我看到我父母吵架，把仅用了两年的A100在我面前砸碎，就像是一个暴君，为了一时情绪，烧了四库全书，也不给我看一页。
 
 <figure>
-  <img src="../1997/1997-3.png" width="600">
+  <img src="../img/1997/1997-3.png" width="600">
   <figcaption>1997年7月，克音家中，我和我父亲的金城铃木 AX100</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ date: 2026-06-09
 当别的县里孩子在家补习，在家放松娱乐，看电视，甚至出去旅游玩的时候，我在没有电话、没有电视的农村里干耗，在瓜地里发呆守瓜，在河边放牛消磨时光，在生活极度困苦、充满怨气的家庭里混饭，在娱乐极度贫乏的环境里遭罪，在不断更换的寄宿家庭里小心翼翼。
 
 <figure>
-  <img src='../2026/trauma.png' width='600'>
+  <img src='../img/2026/trauma.png' width='600'>
   <figcaption>2026年5月28日，我父亲和我诉说他苦难的童年</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ date: 2026-06-09
 他小时候苦，每次跟我说，我都心疼他，但是痛苦既不是我奶奶给他的，因为我奶奶也是没办法，更不是我造成的，我甚至还没有出生，但是为什么，为什么见不得自己儿子富足和轻松？又是怎么忍心见不得自己独生子好的？
 
 <figure>
-  <img src="../1996/1996-geshan-5.png" width="600">
+  <img src="../img/1996/1996-geshan-5.png" width="600">
   <figcaption>1996年6月，我们一家三口和李飞鸿一家、田亮一家在阁山</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ date: 2026-06-09
 ## 儿时的渴求
 
 <figure>
-  <img src='../2026/hlm.png' width='600'>
+  <img src='../img/2026/hlm.png' width='600'>
   <figcaption>我小时候在东海租书店买的二手红楼梦</figcaption>
 </figure>
 
@@ -141,7 +141,7 @@ date: 2026-06-09
 ## 爱人的治愈
 
 <figure>
-  <img src="../2025/love.webp" width="600">
+  <img src="../img/2025/love.webp" width="600">
   <figcaption>2025年6月17日，我爱人同时给我买了一个新的 Switch 2 和 Kobo Libra Color</figcaption>
 </figure>
 

@@ -27,7 +27,7 @@ isCJKLanguage: true
 ## 各城市的比例
 
 <figure>
-  <img src="../hei.png" width="600">
+  <img src="../../img/2004/hei.png" width="600">
   <figcaption>2004年 黑龙江教育年鉴</figcaption>
 </figure>
 
