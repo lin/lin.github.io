@@ -42,7 +42,7 @@
 &lt;p&gt;回到家里，对于刘翔父亲，就像是回到了安全的施虐场，来到了情绪价值补给站，刘翔父亲时常答应要给刘翔钱，然后食言。他在刘翔小时候就恐吓刘翔，吓唬刘翔不好好学习，长大了没有饭吃，喝酒喝多了就跑去刘翔的屋子里，没完没了的训斥和发泄。&lt;/p&gt;
 &lt;p&gt;但我想对刘翔父亲说，这些痛苦不是刘翔造成的？你为什么要从你无辜的儿子上要债？你小时候已经承受太多的精神虐待了，为什么还要让刘翔感到各种不安？让刘翔从小就浸泡在恐惧稀缺的状态之下？刘翔难道总给你带来麻烦吗？在这个重视独生子女教育的时代，你作为父亲常常缺席离岗，但是又有多少次，你在同事圈子里，刘翔给你脸面上争光？&lt;/p&gt;
 &lt;p&gt;我想，在刘翔父亲放情纵意的中年，他并没有太多的心理能量去考虑和儿子是否公平交易。考上同济，刘翔父亲是很自豪和开心的，但又几乎从不在刘翔面前表达，在大学，刘翔父亲喝酒之后，说要把刘翔高中的照片都烧了，吓得刘翔把所有照片都藏到他母亲的房间，或许是长期喝酒受到酒精的伤害，大学的时候，刘翔已经放假了，他父亲不让他回家，让刘翔在外面打工赚钱，还曾说出 “能活活，不能活死” 这样的如刺刀般的恶语。刘翔一辈子都在做一个乖儿子，而到他死，他也等不到一个合格的父亲出现。&lt;/p&gt;
-&lt;p&gt;面对上一代的伤害，刘翔的父亲没能抗拒本能，而表现得自私和切断共情，而他儿子却把所有的伤痛都抗在自己身上，就算高敏感的刘翔吸收着世界给他带来的绝望，他也不曾想给别人制造麻烦，总是要把温暖留给他人。刘翔的父把最亲近的人当成了情绪沙袋，而刘翔选择了容忍，直到自己不堪重负，毒满器破。&lt;/p&gt;
+&lt;p&gt;面对上一代的伤害，刘翔的父亲没能抗拒本能，而表现得自私和切断共情，而他儿子却把所有的伤痛都抗在自己身上，就算高敏感的刘翔吸收着世界给他带来的绝望，他也不曾想给别人制造麻烦，总是要把温暖留给他人。刘翔的父亲把最亲近的人当成了情绪沙袋，而刘翔选择了容忍，直到自己不堪重负，毒满器破。&lt;/p&gt;
 &lt;p&gt;刘翔去世后，刘翔父亲也幡然悔悟，总是整夜整夜地睡不着，喝完酒后拍胸脯，说是他把这个家毁了，刘翔去世后的两年，刘翔的父母离婚，2020年7月14日，刘翔逝世十周年的时候，刘翔父亲写到：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;儿子，今天是你走后的第十个年头了！做父母的我们心里仍然非常的怀念你、思念你！&lt;/p&gt;
@@ -944,10 +944,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1784606183986" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1784648047059" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1784606183986",
+ id: "react-widget-GMMVisualizer-1784648047059",
  component: "GMMVisualizer",
  props: "{}"
  });
