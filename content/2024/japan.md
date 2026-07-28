@@ -3,11 +3,6 @@ title: "日本之旅"
 date: 2024-07-28
 ---
 
-<div class="archive-year-nav">
-  <a class="archive-year-link" href="../kyushu">← 2019年九州</a>
-  <a class="archive-year-link" href="../okinawa">2025年冲绳 →</a>
-</div>
-
 ## 7月21日
 
 <figure>
@@ -155,8 +150,3 @@ date: 2024-07-28
 
 1. 早晨起来去机场，导游催促
 1. 在机场免税店，媳妇又买了很多东西
-
-<div class="archive-year-nav">
-  <a class="archive-year-link" href="../kyushu">← 2019年九州</a>
-  <a class="archive-year-link" href="../okinawa">2025年冲绳 →</a>
-</div>

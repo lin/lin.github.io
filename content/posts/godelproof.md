@@ -1,5 +1,5 @@
 ---
-title: "哥德尔不完备定理的简易证明"
+title: "Gödel's Proof using Python"
 date: 2025-06-16
 math: true
 draft: true
@@ -18,37 +18,6 @@ p code {
   word-break: break-word;
 }
 </style>
-
-## 证明的目标
-
-7 是一个质数，2209 是一个平方数，1597 是一个斐波那契数，这些都是在数学上可以严格证明的。
-
-我们拿质数为例，如果从逻辑角度，可以定义质数为：
-
-$$
-\mathrm{isPrime}(z) = \forall x (\forall y(x\times y = z \to
-((x=1 \wedge y = z)\vee(x = z \wedge y=1))))
-$$
-
-如果从程序的角度，我们可以把上面的严格定义翻译成 python 代码：
-
-```python
-def isPrime(z: int) -> bool:
-    for x in range(1, z + 1):
-        for y in range(1, z + 1):
-            if x * y == z:
-                if not ((x == 1 and y == z) or (x == z and y == 1)):
-                    return False
-                    
-    return True
-```
-
-无论是通过逻辑，还是程序，严格定义的意思，就是没有任何的模糊歧义，你可以放心的交给一个计算机，或者交给任何一个听得懂基本指令的人，去机械的执行，都不会有差错，得到的答案都会是一致的。
-
-而哥德尔想给大家展示的是，存在一类数，你可以像定义质数一样严格的定义它，但是，有一个数，比如 7，它一定是这类数的一员，但你永远无法机械的去证明这个数属于这类数。
-
-接下来，我们要做的就是找到这类数的定义，以及那个不能被证明是这类数一员的具体的数字。
-
 
 ## Goal of the Task
 
@@ -246,7 +215,7 @@ $$
 \Bigr)
 $$
 
-is interesting and we can mechanically check its correctness. We hope PA has the potential to proof this from axioms. But PA is not powerful enough.
+is interesting and we can mechanically check its correctness. We hope PA has the potential to proof this from axioms. But PA may not powerful enough.
 
 ### A New Class of Numbers
 
