@@ -11,7 +11,7 @@
 &lt;/figure&gt;
 &lt;p&gt;今年又是世界杯的年份，每到世界杯，我都会想起刘翔，想起2010年的那个盛夏，想起那个年仅21岁、满腹才华的好友不幸离世。而今夏，我似乎终于有能力写一篇怀念刘翔的文章，并尝试解开那个疑惑了我十六年的谜题。&lt;/p&gt;
 &lt;p&gt;刘翔并不是一时冲动而自杀的，不是因为感情，也不是因为学业，更不是因为债务，不是因为某种失败的羞耻而无力支撑，相反，他在世俗上甚是灿烂的节点，选择了通过死亡来解脱痛苦。&lt;/p&gt;
-&lt;p&gt;虽然刘翔的离世让爱他的人痛苦万分，但刘翔不是一个自私的人，更不是矫情的小心眼，人们不该责怪他没有更强的心理韧性，很少有人真正承受过他那常人无法想象的痛苦，他那极高的天赋与敏感，让他吸收了太多父亲带给他的毒素，而窒息的母爱让毒室更加致命，以至于他在尚未破壳之前，便永久地丧失了自由翱翔的可能。&lt;/p&gt;
+&lt;p&gt;虽然刘翔的离世让爱他的人痛苦万分，但刘翔不是一个自私的人，更不是矫情的小心眼，人们不该责怪他没有更强的心理韧性，很少有人真正承受过他那常人无法想象的痛苦，他那极高的天赋与敏感，让他吸收了太多父亲带给他的毒素，而窒息的母爱让毒室更加致命，以致他在尚未破壳之前，便永久地丧失了自由翱翔的可能。&lt;/p&gt;
 &lt;h2 id="我的死亡与任何人无关"&gt;“我的死亡与任何人无关”&lt;/h2&gt;
 &lt;figure&gt;
  &lt;img src="../img/lx/note-1.jpg" &gt;
@@ -124,7 +124,7 @@ strong {
 &lt;p&gt;The &lt;strong&gt;reality&lt;/strong&gt; makes it possible to reduce complexity by &lt;strong&gt;compression&lt;/strong&gt;, and can be expressed in terms of atomic &lt;strong&gt;lexemes&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;lexemes&lt;/strong&gt; have different &lt;strong&gt;abstraction levels&lt;/strong&gt;, &lt;strong&gt;complexity levels&lt;/strong&gt; and &lt;strong&gt;utility levels&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;frequence of exposures&lt;/strong&gt; determines the compression quality and the utility levels of lexemes.&lt;/p&gt;
-&lt;p&gt;The human &lt;strong&gt;cogitive learning&lt;/strong&gt; is the process of lexemes &lt;strong&gt;retention&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Gödel's Proof using Python</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style&gt;
+&lt;p&gt;The human &lt;strong&gt;cogitive learning&lt;/strong&gt; is the process of lexemes &lt;strong&gt;retention&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>重蹈覆辙：哥德尔</title><link>https://yingkui.com/godel/</link><pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/godel/</guid><description>&lt;style&gt;
 p code {
  font-family: 'Fira Code', 'Courier New', Courier, monospace;
  font-size: 0.95em;
@@ -137,8 +137,18 @@ p code {
  word-break: break-word;
 }
 &lt;/style&gt;
-&lt;h2 id="goal-of-the-task"&gt;Goal of the Task&lt;/h2&gt;
-&lt;p&gt;The statement &lt;em&gt;7 is a prime number.&lt;/em&gt; is true and we can prove it formally using axioms and inference rules. So is the statemtents like &lt;em&gt;2209 is a square number.&lt;/em&gt; and &lt;em&gt;1597 is a Fibonacci number.&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>日本流行文化</title><link>https://yingkui.com/jpop/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/jpop/</guid><description>&lt;h2 id="流行音乐"&gt;流行音乐&lt;/h2&gt;
+&lt;h2 id="证明的目标"&gt;证明的目标&lt;/h2&gt;
+&lt;p&gt;$2027$ 是一个质数，$2025$ 是一个平方数，$2584$ 是一个斐波那契数，这些都是在数学上可以严格证明的。&lt;/p&gt;
+&lt;p&gt;我们拿质数为例，如果从逻辑角度，可以定义质数为：&lt;/p&gt;
+$$
+\mathrm{isPrime}(z) = \forall x (\forall y(x\times y = z \to
+((x=1 \wedge y = z)\vee(x = z \wedge y=1))))
+$$&lt;p&gt;无论是通过逻辑，还是程序，严格定义的意思，就是没有任何的模糊歧义，你可以放心的交给一个计算机，或者交给任何一个听得懂基本指令的人，去机械的执行，都不会有差错，得到的答案都会是一致的。&lt;/p&gt;
+&lt;p&gt;比如说，我们通过公理严格的证明出来，$2027$ 是一个质数。&lt;/p&gt;
+$$
+\mathrm{isPrime}(2027) = \forall x (\forall y(x\times y = 2027 \to
+((x=1 \wedge y = 2027)\vee(x = 2027 \wedge y=1))))
+$$&lt;p&gt;而哥德尔想给大家展示的是，存在一类数，你可以像定义质数一样严格的定义它，但是，有一个数，比如 7，它一定是这类数的一员，但你永远无法机械地从公理出发去证明这个数属于这类数。&lt;/p&gt;</description></item><item><title>日本流行文化</title><link>https://yingkui.com/jpop/</link><pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/jpop/</guid><description>&lt;h2 id="流行音乐"&gt;流行音乐&lt;/h2&gt;
 &lt;iframe src="//player.bilibili.com/player.html?bvid=BV1E84y1j75M" 
  border="0"
  autoplay="0"
