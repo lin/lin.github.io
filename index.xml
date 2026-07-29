@@ -238,7 +238,7 @@
 &lt;li&gt;2010年07月11日，朋友问刘翔：你干嘛啊？，刘翔回复：我作幺呢&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="遗书"&gt;遗书&lt;/h2&gt;
-&lt;p&gt;我是一个同济大学的学生。我的死亡与任何人无关。&lt;/p&gt;</description></item><item><title>1996年的书架上的书籍</title><link>https://yingkui.com/1996/books/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/1996/books/</guid><description>&lt;p&gt;书架上的部分书籍，基本都是我父亲上学时（1985年高考，绥化师专历史系，读了两年，1986年，我父亲考上了哈师大本科的函授，但因为经济问题，没能坚持四年）购买的专业书籍，我出生之后，只买了几本有关算卦和书法的书籍，部分具体的书籍有：&lt;/p&gt;</description></item><item><title>2007年高考全国卷II物理大题的错误</title><link>https://yingkui.com/irresponsible/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/irresponsible/</guid><description>&lt;h2 id="一道简单的压轴大题"&gt;一道简单的压轴大题&lt;/h2&gt;
+&lt;p&gt;我是一个同济大学的学生。我的死亡与任何人无关。&lt;/p&gt;</description></item><item><title>1996年的书架上的书籍</title><link>https://yingkui.com/1996/books/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/1996/books/</guid><description>&lt;p&gt;书架上的部分书籍，基本都是我父亲上学时（1985年高考，绥化师专历史系，读了两年，1986年，我父亲考上了哈师大本科的函授，但因为经济问题，没能坚持四年）购买的专业书籍，我出生之后，只买了几本有关算卦和书法的书籍，部分具体的书籍有：&lt;/p&gt;</description></item><item><title>2007年高考 全国卷II 物理大题 的 命题错误</title><link>https://yingkui.com/irresponsible/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/irresponsible/</guid><description>&lt;h2 id="一道简单的压轴大题"&gt;一道简单的压轴大题&lt;/h2&gt;
 &lt;figure&gt;
  &lt;img src='https://yingkui.com/img/2007/25-question.jpg' alt='2007年 学子 杂志上的物理大题题干' width="600"&gt;
  &lt;figcaption&gt;2007年6月11日 - 最后一道物理大题题干&lt;/figcaption&gt;
@@ -942,10 +942,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1785235169730" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1785334899271" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1785235169730",
+ id: "react-widget-GMMVisualizer-1785334899271",
  component: "GMMVisualizer",
  props: "{}"
  });
