@@ -277,3 +277,8 @@ It is easy to show:
 $$
 [\text{R}(q); q]  = \text{isNotProvable}(\text{encode}([\text{R}(q); q]))
 $$
+
+---
+---
+
+重蹈覆辙：图灵
