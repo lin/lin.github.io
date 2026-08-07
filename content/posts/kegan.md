@@ -11,12 +11,17 @@ Consumer & Producer
 
 Slave & Judge
 
+权力，情绪，道德
+
 ## Kegan 2
 
 1. Match Score Proxy，食物储备
 1. Morph World to Self Expectation
+1. Infantile Omnipotence
 1. Exploit Buyer
-1. Lost Control
+1. Lost Control，a 10:0 match
+1. 极度以自我为中心，缺乏他人视角
+1. 维持权力高位的虚假优越感
 
 ## Kegan 3
 
