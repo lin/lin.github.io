@@ -65,7 +65,7 @@
 &lt;p&gt;刘翔的母亲还说，早年不和刘翔父亲离婚，是因为她自己管不了刘翔。这其实也是很残忍的，难道说是刘翔太不乖了，才给刘翔母亲造成的婚姻不幸福吗？在这种描述下，刘翔母亲也默许了刘翔父亲的施暴，觉得只有这种暴力手段才能达到对刘翔的控制。但这种控制是真的对刘翔好吗？在这层以爱为名的控制里，有多少是为了父母自己的愿望达成，而不是刘翔的真实渴望，况且，刘翔母亲是否有足够多的学识和智慧，替刘翔做出真对他好的重大决策呢？&lt;/p&gt;
 &lt;p&gt;刘翔不应该为他父母的虚荣、焦虑甚至掌控欲，而毁掉他自己的未来。成年人的婚姻不幸、在社会上怀才不遇或是和亲戚攀比落了下风，这些是父母自己的事，理应自己想办法化解、找其他渠道解决，又不是刘翔造成的，凭什么非要让他负责拯救，刘翔为什么要为此感到内疚和背负重担？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Your children are not your children.&lt;/p&gt;</description></item><item><title>2007年高考全国卷 II 物理大题的严重命题事故</title><link>https://yingkui.com/irresponsible/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/irresponsible/</guid><description>&lt;h1 id="有事实性错误的第三道大题"&gt;有事实性错误的第三道大题&lt;/h1&gt;
+&lt;p&gt;Your children are not your children.&lt;/p&gt;</description></item><item><title>2007年高考全国卷的严重命题事故</title><link>https://yingkui.com/irresponsible/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/irresponsible/</guid><description>&lt;h1 id="有事实性错误的压轴25题"&gt;有事实性错误的压轴25题&lt;/h1&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;h2 id="一道简单的压轴大题"&gt;一道简单的压轴大题&lt;/h2&gt;
@@ -1766,4 +1766,46 @@ $$
 &lt;p&gt;当我的眼里只剩下蔚蓝的天空，还有什么值得我去顾忌。&lt;/p&gt;
 &lt;p&gt;孤傲是黑夜的光，前行是脚下的路。&lt;/p&gt;
 &lt;p&gt;目有清泉柔似铁，胸流大气落缠绵。坦荡行大道，潇洒此一遭。&lt;/p&gt;
-&lt;p&gt;大路何漫漫，而大抵今日才刚刚启程，但不论前方路途其何，在我身边决不会缺了这一曲曲沁心的天乐，这一曲曲沁心的轻之灵之韵。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;大路何漫漫，而大抵今日才刚刚启程，但不论前方路途其何，在我身边决不会缺了这一曲曲沁心的天乐，这一曲曲沁心的轻之灵之韵。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/nand/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/nand/</guid><description>&lt;h2 id="from-nand-to-turing-complete"&gt;From Nand To Turing Complete&lt;/h2&gt;
+&lt;h2 id="电磁效应"&gt;电磁效应&lt;/h2&gt;
+&lt;h2 id="nand"&gt;NAND&lt;/h2&gt;
+&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;我们用 $\theta$ 表示 异或门，我们尝试去实现简单的其他情景。&lt;/p&gt;
+$$
+\mathrm{NAND}(x_1, x_2) \equiv \theta(x_1,x_2)
+$$&lt;p&gt;我们知道异或门对00,01,10,11是1110，观察可以看出&lt;/p&gt;
+$$
+\mathrm{NOT}(x) = \theta(x,x)
+$$$$
+\mathrm{AND}(x_1, x_2) = \mathrm{NOT}(\mathrm{NAND}(x_1, x_2))
+$$$$
+\mathrm{AND}(x_1, x_2) = \theta(\theta(x_1,x_2),\theta(x_1,x_2))
+$$$$
+\mathrm{OR}(x_1, x_2) = \mathrm{NAND}(\mathrm{NOT}(x_1), \mathrm{NOT}(x_2))
+$$$$
+\mathrm{OR}(x_1, x_2) = \theta(\theta(x_1,x_1),\theta(x_2,x_2))
+$$$$
+\mathrm{NOR}(x_1, x_2) = \theta(\theta(\theta(x_1,x_1),\theta(x_2,x_2)),\theta(\theta(x_1,x_1),\theta(x_2,x_2)))
+$$$$
+\mathrm{ON}(x) = \theta(\theta(x,x),\theta(\theta(x,x),\theta(x,x)))
+$$$$
+\mathrm{ANDNOT}(x_1, x_2) = \theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2)))
+$$$$
+\begin{aligned}
+\mathrm{XOR}(x_1, x_2) = \theta(\theta(\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2))),\\
+\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2)))),\\
+\theta(\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1))),\\
+\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1)))))
+\end{aligned}
+$$$$
+\begin{aligned}
+\mathrm{XNOR}(x_1, x_2) = \theta( \theta(\theta(\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2))),\\
+\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2)))),\\
+\theta(\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1))),\\
+\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1))))),\\
+ \theta(\theta(\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2))),\\
+\theta(\theta(x_1,\theta(x_2,x_2)),\theta(x_1,\theta(x_2,x_2)))),\\
+\theta(\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1))),\\
+\theta(\theta(x_2,\theta(x_1,x_1)),\theta(x_2,\theta(x_1,x_1))))))
+\end{aligned}
+$$</description></item></channel></rss>
