@@ -1,0 +1,1617 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高考等位分换算 · 黑龙江</title>
+<meta name="description" content="按一分一段表的累计百分位，把黑龙江历年高考理科／物理类分数折算到其他年份。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700&display=swap">
+
+<style>
+:root{
+  color-scheme: light;
+  --page:#e9ebe8; --card:#fafbf8; --card-2:#f2f4ef;
+  --ink:#101210; --ink-2:#4e524d; --ink-3:#83877f;
+  --rule:#d6d9d3; --hair:#e3e5df;
+  --seal:#b23a2b; --seal-ink:#ffffff; --seal-wash:rgba(178,58,43,.09);
+  /* 发散对：暖=目标年分数更高，冷=更低。已过 validate_palette（light, surface #fafbf8） */
+  --up:#c25321; --down:#2a78d6; --flat:#83877f;
+  --up-wash:rgba(194,83,33,.16); --down-wash:rgba(42,120,214,.16);
+  /* 录取线分档：紫=清华，红=上海交大。已过 validate_palette（light, #fafbf8） */
+  --qh:#6b3fa0; --jd:#b23a2b;
+  /* 位次图里按中学分色：橙=肇东一中，蓝=庆安一中，绿=绥棱一中，近黑=其他，白=绥化一中。
+     五色两两在 normal / protan / deutan / tritan 下 ΔE 均达标（最差 13.6）。
+     绿色偏亮，配深色字才够 4.5:1；其余配白字。两个主题共用一套。 */
+  --sch-zd:#b0591a; --sch-qa:#2166ad; --sch-sl:#57ad6b;
+  --sch-ot:#1e211e; --sch-hm:#ffffff; --sch-ink:#101210;
+  --you:#e11d48;                       /* 「你在这里」的星标 */
+  --qh-wash:rgba(107,63,160,.13); --jd-wash:rgba(178,58,43,.13);
+  --shadow:0 1px 2px rgba(16,18,16,.05), 0 8px 24px -12px rgba(16,18,16,.18);
+  --focus:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0e100f; --card:#191b19; --card-2:#212421;
+    --ink:#f2f4f0; --ink-2:#b9beb5; --ink-3:#83877f;
+    --rule:#2e312d; --hair:#262925;
+    --seal:#dd6a55; --seal-ink:#17110f; --seal-wash:rgba(221,106,85,.14);
+    --up:#d97742; --down:#4a8fe0; --flat:#83877f;
+    --up-wash:rgba(217,119,66,.20); --down-wash:rgba(74,143,224,.20);
+    --qh:#9b82dd; --jd:#d9705c;
+    --qh-wash:rgba(155,130,221,.17); --jd-wash:rgba(217,112,92,.17);
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+    --focus:#5598e7;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0e100f; --card:#191b19; --card-2:#212421;
+  --ink:#f2f4f0; --ink-2:#b9beb5; --ink-3:#83877f;
+  --rule:#2e312d; --hair:#262925;
+  --seal:#dd6a55; --seal-ink:#17110f; --seal-wash:rgba(221,106,85,.14);
+  --up:#d97742; --down:#4a8fe0; --flat:#83877f;
+  --up-wash:rgba(217,119,66,.20); --down-wash:rgba(74,143,224,.20);
+  --qh:#9b82dd; --jd:#d9705c;
+  --qh-wash:rgba(155,130,221,.17); --jd-wash:rgba(217,112,92,.17);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+  --focus:#5598e7;
+}
+
+*{box-sizing:border-box}
+/* display:flex 之类的类会盖掉 UA 的 [hidden]{display:none}，这里补一道 */
+[hidden]{display:none!important}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;font-weight:700}
+.page{max-width:1400px;margin:0 auto;padding:0 20px 72px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+
+/* ---------- header ---------- */
+.masthead{padding:44px 0 26px;border-bottom:2px solid var(--ink)}
+.masthead h1{margin:0;font-size:clamp(28px,4.6vw,40px);line-height:1.14;letter-spacing:.01em;text-wrap:balance}
+.masthead .sub{margin:9px 0 0;color:var(--ink-2);font-size:14.5px;max-width:64ch}
+.span-line{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--ink-3);letter-spacing:.06em}
+.span-line b{color:var(--ink-2);font-weight:500;font-variant-numeric:tabular-nums}
+
+/* ---------- sections ---------- */
+section{margin:38px 0 46px}
+.s-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:5px;
+  padding-bottom:9px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:11.5px;letter-spacing:.16em;color:var(--seal);text-transform:uppercase;flex:none}
+.s-head h2{margin:0;font-size:21px;letter-spacing:.01em}
+.s-note{font-size:13px;color:var(--ink-3);margin:10px 0 0;max-width:78ch}
+.card{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:11px;
+  padding:20px;margin-top:16px;box-shadow:var(--shadow)}
+
+/* ---------- controls ---------- */
+.flabel{font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase;flex:none}
+.ctl{display:flex;flex-direction:column;gap:15px}
+.ctl-row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.yeargrid{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.yeargrid .gap{width:14px;height:1px;background:var(--rule);margin:0 5px;flex:none}
+.yeargrid button{font:inherit;font-size:13px;padding:5px 11px;border:1px solid transparent;border-radius:7px;
+  cursor:pointer;background:var(--card-2);color:var(--ink-2);font-variant-numeric:tabular-nums}
+.yeargrid button:hover{color:var(--ink);border-color:var(--rule)}
+.yeargrid button[aria-pressed="true"]{background:var(--seal);color:var(--seal-ink);font-weight:500}
+.seg{display:inline-flex;background:var(--card-2);border:1px solid var(--rule);border-radius:8px;padding:2px;gap:2px}
+.seg button{font:inherit;font-size:13px;padding:5px 13px;border:0;border-radius:6px;cursor:pointer;
+  background:transparent;color:var(--ink-2)}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--seal);color:var(--seal-ink);font-weight:500}
+
+.fields{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:flex-end}
+.field{display:flex;flex-direction:column;gap:5px}
+.field .flabel{margin-left:2px}
+.stepper{display:flex;align-items:stretch;border:1px solid var(--rule);border-radius:9px;overflow:hidden;background:var(--card-2)}
+.stepper button{font:inherit;font-size:17px;line-height:1;width:32px;border:0;background:transparent;color:var(--ink-2);cursor:pointer}
+.stepper button:hover{background:var(--card);color:var(--seal)}
+.stepper input{font:inherit;font-weight:700;text-align:center;border:0;
+  border-left:1px solid var(--rule);border-right:1px solid var(--rule);
+  background:var(--card);color:var(--ink);font-variant-numeric:tabular-nums;padding:5px 4px;-moz-appearance:textfield}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+#scoreIn{font-size:23px;width:92px}
+#rankIn{font-size:17px;width:104px}
+.slider{flex:1 1 240px;min-width:180px;display:flex;align-items:center;gap:9px;padding-bottom:5px}
+.slider input[type=range]{flex:1;accent-color:var(--seal);min-width:110px}
+.slider .end{font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;flex:none}
+.hint{font-size:12.5px;color:var(--ink-3);margin:0}
+
+/* ---------- kpi ---------- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin-top:20px}
+.kpi{background:var(--card-2);padding:15px 17px 13px}
+.kpi .k-lab{font-size:11.5px;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+.kpi .k-val{font-size:30px;line-height:1.12;margin-top:5px;font-weight:700;letter-spacing:-.015em;font-variant-numeric:tabular-nums}
+.kpi .k-sub{font-size:12.5px;color:var(--ink-3);margin-top:3px}
+.kpi.accent .k-val{color:var(--seal)}
+
+/* ---------- tags ---------- */
+.tag{font-size:10.5px;color:var(--ink-3);border:1px solid var(--rule);border-radius:4px;
+  padding:0 4px;line-height:15px;white-space:nowrap;flex:none}
+.tag.est{border-color:var(--seal);color:var(--seal)}
+
+/* ---------- tables ---------- */
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:8px 11px;text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{font-size:11.5px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;font-weight:500;
+  border-bottom:1px solid var(--rule);padding-bottom:7px}
+tbody tr{border-bottom:1px solid var(--hair)}
+tbody tr:last-child{border-bottom:0}
+tbody tr.self{background:var(--seal-wash)}
+tbody tr.self td{font-weight:500}
+tbody tr.eragap{border-top:2px solid var(--rule)}
+td.num,th.num{font-variant-numeric:tabular-nums}
+.y-cell{display:flex;align-items:center;gap:7px}
+.eq{font-size:16px;font-weight:700}
+.cap{color:var(--ink-3);font-weight:400;font-size:12px}
+.dwrap{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.dbar{position:relative;width:112px;height:16px;flex:none}
+.dbar i{position:absolute;top:0;bottom:0;width:1px;left:50%;background:var(--rule)}
+.dbar b{position:absolute;top:2px;bottom:2px;border-radius:2px}
+.dnum{min-width:40px;text-align:right;font-variant-numeric:tabular-nums}
+.dnum.pos{color:var(--up)} .dnum.neg{color:var(--down)} .dnum.zero{color:var(--ink-3)}
+
+.matrix td,.matrix th{padding:6px 9px}
+.matrix tbody th{text-align:left;font-weight:400;color:var(--ink-2);font-size:13px;letter-spacing:0;
+  text-transform:none;border-bottom:0;font-variant-numeric:tabular-nums}
+.matrix tbody tr:nth-child(odd){background:var(--card-2)}
+.matrix col.hi{background:var(--seal-wash)}
+.matrix tr.hi th,.matrix tr.hi td{color:var(--ink);font-weight:500}
+.matrix tr.hi{box-shadow:inset 2px 0 0 var(--seal)}
+.matrix tfoot td,.matrix tfoot th{border-top:1px solid var(--rule);color:var(--ink-3);font-size:12px;padding-top:8px}
+.matrix th.era{border-left:2px solid var(--rule)}
+.matrix td.era{border-left:2px solid var(--hair)}
+
+/* ---------- small multiples ---------- */
+.smgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.sm{background:var(--card);padding:13px 14px 10px;display:flex;flex-direction:column;gap:2px}
+.sm.self{background:var(--seal-wash)}
+.sm.filler{background:var(--card)}
+.sm-top{display:flex;align-items:center;gap:6px}
+.sm-yr{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+.sm-val{display:flex;align-items:baseline;gap:8px;margin-top:2px}
+.sm-eq{font-size:27px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums;letter-spacing:-.015em}
+.sm-eq .cap{font-size:13px}
+.sm-d{font-size:13.5px;font-weight:500;font-variant-numeric:tabular-nums}
+.sm-d.pos{color:var(--up)} .sm-d.neg{color:var(--down)} .sm-d.zero{color:var(--ink-3)}
+.sm svg{display:block;width:100%;height:auto;margin-top:7px}
+.sm-foot{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;margin-top:5px}
+.spark-zero{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:3 3;opacity:.55}
+.spark-line{fill:none;stroke-width:1.75;stroke-linejoin:round;stroke-linecap:round}
+.sm svg{overflow:hidden}
+.spark-mark{stroke:var(--seal);stroke-width:1.25;stroke-dasharray:2 2}
+.spark-frame{stroke:var(--hair);stroke-width:1;fill:none}
+.smlegend{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 14px;padding:0;list-style:none;
+  font-size:12.5px;color:var(--ink-2)}
+.smlegend li{display:flex;align-items:center;gap:7px}
+.smlegend .sw{width:15px;height:3px;border-radius:2px;flex:none}
+
+/* ---------- 绥化位次图 ---------- */
+.sg{width:100%;border-collapse:collapse}
+.sg th,.sg td{padding:0;vertical-align:middle}
+.sg thead th{font-size:11.5px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;
+  font-weight:500;border-bottom:1px solid var(--rule);padding-bottom:6px;text-align:left}
+.sg tbody tr{border-bottom:1px solid var(--hair)}
+.sg tbody tr:last-child{border-bottom:0}
+.sg .ycell{width:82px;padding:10px 10px 10px 2px}
+.sg .yline{display:flex;flex-direction:column;gap:3px;align-items:flex-start;line-height:1.15}
+.sg .yline .n{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.sg .yline .tg{display:flex;flex-wrap:wrap;gap:3px}
+.sg .plot{padding:4px 0}
+.sg svg{display:block;width:100%;height:auto;overflow:visible}
+.sg-band-qh{fill:var(--qh-wash)}
+.sg-band-jd{fill:var(--jd-wash)}
+.sg-rule-qh{stroke:var(--qh);stroke-width:1.75}
+.sg-rule-jd{stroke:var(--jd);stroke-width:1.75}
+.sg-base{stroke:var(--hair);stroke-width:1}
+.sg-grid{stroke:var(--hair);stroke-width:1;stroke-dasharray:2 3}
+.sg-tick{fill:var(--ink-3);font-size:10px;font-variant-numeric:tabular-nums}
+.sg-dot{stroke:var(--ink);stroke-width:1.25}
+.sg-dot-o{fill:var(--sch-ot)}
+.sg-dot-y{fill:var(--sch-hm)}
+.sg-lab-o{fill:#fff;font-size:9.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.sg-lab-y{fill:var(--sch-ink);font-size:9.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.sg-you{fill:var(--you);stroke:var(--card);stroke-width:1.25;stroke-linejoin:round}
+.sg-none{fill:var(--ink-3);font-size:11px}
+.sgkey{display:flex;flex-wrap:wrap;gap:9px 22px;margin:0 0 16px;padding:0;list-style:none;
+  font-size:12.5px;color:var(--ink-2);align-items:center}
+.sgkey li{display:flex;align-items:center;gap:8px}
+.sgkey .bar{width:26px;height:14px;border-radius:3px;flex:none}
+.sgkey .bar.qh{background:var(--qh-wash);border-left:2px solid var(--qh)}
+.sgkey .bar.jd{background:var(--jd-wash);border-left:2px solid var(--jd)}
+
+/* ---------- 绥化对照 ---------- */
+.sh td,.sh th{vertical-align:middle}
+.sc{display:flex;flex-direction:column;gap:1px;align-items:flex-end}
+.sc b{font-size:17px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
+.sc small{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sc.none b{color:var(--ink-3);font-weight:400;font-size:15px}
+.sh .strip{width:330px;padding-left:16px;padding-right:16px}
+.sh td:first-child{width:76px}
+.sh .yr{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1.2}
+.sh .yr .n{font-variant-numeric:tabular-nums}
+.sh .yr .tg{display:flex;flex-wrap:wrap;gap:3px}
+.sh svg.dot{display:block;width:100%;height:auto;overflow:visible}
+.sh .axhead{width:330px;padding-left:16px;padding-right:16px;text-align:left;vertical-align:bottom}
+.sh .axhead svg{display:block;width:100%;height:auto;margin-top:3px}
+.ax-tick{fill:var(--ink-3);font-size:9.5px;font-variant-numeric:tabular-nums}
+.ax-line{stroke:var(--rule);stroke-width:1}
+.dot-base{stroke:var(--hair);stroke-width:1}
+.dot-qh{stroke:var(--seal);stroke-width:1.75}
+.dot-pass{fill:var(--seal-wash)}
+.dot-city{fill:var(--ink);stroke:var(--card);stroke-width:1.5}
+.dot-school{fill:var(--card);stroke:var(--ink-2);stroke-width:2}
+.dot-na{fill:var(--ink-3);font-size:10px}
+.shlegend{display:flex;flex-wrap:wrap;gap:8px 20px;margin:0 0 16px;padding:0;list-style:none;
+  font-size:12.5px;color:var(--ink-2)}
+.shlegend li{display:flex;align-items:center;gap:7px}
+.shlegend svg{flex:none;overflow:visible}
+
+/* ---------- 分数分布 ---------- */
+.hgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.hcell{background:var(--card);padding:13px 14px 11px;display:flex;flex-direction:column}
+.hcell.filler{background:var(--card)}
+.hcell-top{display:flex;align-items:center;gap:6px;margin-bottom:2px}
+.hcell-yr{font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+.hcell-stat{font-size:11.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;margin-bottom:6px}
+.hcell-stat b{color:var(--ink-2);font-weight:500}
+.hcell svg{display:block;width:100%;height:auto}
+.hc-top{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:3px}
+.hc-yr{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.hc-stat{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:12.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;margin-bottom:12px}
+.hc-stat b{color:var(--ink);font-weight:600}
+.plotwrap{position:relative;width:100%}
+.hplot{display:block;width:100%;height:auto;touch-action:pan-y}
+.h-area{fill:var(--seal);fill-opacity:.22;stroke:var(--seal);stroke-width:1.25;
+  stroke-linejoin:round;paint-order:fill}
+.h-norm{fill:none;stroke:var(--ink-2);stroke-width:1.25;stroke-dasharray:3 2.5;opacity:.8}
+.h-axis{stroke:var(--rule);stroke-width:1}
+.h-grid{stroke:var(--hair);stroke-width:1}
+.h-tick{fill:var(--ink-3);font-size:9.5px;font-variant-numeric:tabular-nums}
+.h-cut{stroke:var(--ink-3);stroke-width:1;stroke-dasharray:2 2;opacity:.6}
+/* 透明命中层：不给 fill 的话 SVG 默认填黑，会盖住整张图 */
+.hitrect{fill:transparent}
+.crosshair{stroke:var(--ink-3);stroke-width:1}
+.axtitle{fill:var(--ink-3);font-size:11px;letter-spacing:.08em}
+.tip{position:absolute;pointer-events:none;z-index:20;opacity:0;transition:opacity .1s;
+  background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:9px 11px;
+  box-shadow:var(--shadow);font-size:12.5px;min-width:158px}
+.tip.on{opacity:1}
+.tip .t-head{font-weight:700;margin-bottom:6px;padding-bottom:5px;border-bottom:1px solid var(--hair)}
+.tip .t-row{display:flex;align-items:center;gap:14px;margin-top:3px}
+.tip .t-name{color:var(--ink-2)}
+.tip .t-val{font-weight:700;font-variant-numeric:tabular-nums;margin-left:auto}
+.hkey{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 15px;padding:0;list-style:none;
+  font-size:12.5px;color:var(--ink-2);align-items:center}
+.hkey li{display:flex;align-items:center;gap:8px}
+.hkey .sw{width:16px;height:11px;border-radius:2px;flex:none;
+  background:color-mix(in srgb,var(--seal) 22%,var(--card));border:1px solid var(--seal)}
+.hkey .sl{width:17px;height:0;border-top:1.5px dashed var(--ink-2);flex:none}
+
+/* ---------- 一中前十矩阵 ---------- */
+.st{table-layout:fixed}
+.st th,.st td{padding:7px 10px;text-align:center}
+.st thead th{text-align:center}
+.st thead th.rk,.st tbody th{text-align:left;width:76px}
+.st tbody th{font-weight:400;color:var(--ink-2);font-size:13px;letter-spacing:0;
+  text-transform:none;border-bottom:0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.st tbody tr{border-bottom:1px solid var(--hair)}
+.st td.cell{position:relative;overflow:hidden}
+/* 录取线分档：底色 + 左侧竖条 + 数字着色，三重提示，不靠颜色单打 */
+.st td.tier::before{content:"";position:absolute;inset:2px;border-radius:4px;background:var(--tw)}
+.st td.tier::after{content:"";position:absolute;left:2px;top:2px;bottom:2px;width:3px;
+  border-radius:3px 0 0 3px;background:var(--tc)}
+.st td.tier .cv b{color:var(--tc)}
+.st td.t-qh{--tc:var(--qh);--tw:var(--qh-wash)}
+.st td.t-jd{--tc:var(--jd);--tw:var(--jd-wash)}
+.st .cv .gap{color:var(--ink-2)}
+.st .cv{position:relative;display:flex;flex-direction:column;gap:0;line-height:1.2}
+.st .cv b{font-size:17px;font-weight:700;font-variant-numeric:tabular-nums}
+.st .cv small{font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st .cv .gapline{font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.st .cv .sch{font-style:normal;font-size:11px;color:var(--ink-2);margin-top:3px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st .cv .sch.none{color:var(--ink-3)}
+.st.wide th,.st.wide td{padding:7px 8px}
+.st.wide thead th.rk,.st.wide tbody th{width:70px}
+.st td.empty{color:var(--ink-3)}
+.st thead th.base .y{color:var(--seal)}
+.st thead th .y{font-size:13px;font-weight:500}
+.st thead th .lines{display:flex;flex-direction:column;gap:1px;margin-top:3px;
+  font-size:10px;font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+.st thead th .lines .q{color:var(--qh)}
+.st thead th .lines .j{color:var(--jd)}
+.st thead th .lines span.none{color:var(--ink-3)}
+.stkey{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 15px;padding:0;list-style:none;
+  font-size:12.5px;color:var(--ink-2);align-items:center}
+.stkey li{display:flex;align-items:center;gap:8px}
+.stkey .sw{position:relative;width:28px;height:17px;border-radius:3px;flex:none;
+  background:var(--tw);border:1px solid var(--hair)}
+.stkey .sw::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  border-radius:3px 0 0 3px;background:var(--tc)}
+.stkey .sw.qh{--tc:var(--qh);--tw:var(--qh-wash)}
+.stkey .sw.jd{--tc:var(--jd);--tw:var(--jd-wash)}
+
+footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:52px;font-size:12.5px;color:var(--ink-3)}
+footer h4{margin:0 0 9px;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-2)}
+footer ul{margin:0 0 18px;padding-left:19px;display:flex;flex-direction:column;gap:6px;max-width:86ch}
+footer strong{color:var(--ink-2);font-weight:500}
+
+@media (max-width:640px){
+  .masthead{padding-top:32px}
+  .kpi .k-val{font-size:26px}
+  .dbar{width:70px}
+  th,td{padding:7px 8px}
+  .smgrid{grid-template-columns:repeat(auto-fill,minmax(148px,1fr))}
+  .sm-eq{font-size:23px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <h1 class="serif">高考等位分换算</h1>
+    <p class="sub">黑龙江省理科／物理类。输入某一年的分数或位次，按<strong>同一累计百分位</strong>折算到其他年份 —— 分数逐年不可比，位次才可比。</p>
+    <div class="span-line">
+      <span><b id="mYears"></b> 个年份</span>
+      <span id="mSpan"></span>
+      <span>口径 <b>150 分及以上考生</b></span>
+      <span><b id="mMin"></b>–<b id="mMax"></b> 万人／年</span>
+    </div>
+  </header>
+
+  <section id="sec-conv">
+    <div class="s-head">
+      <span class="eyebrow">换算</span>
+      <h2>我的分数，换到别的年份是多少</h2>
+    </div>
+
+    <div class="card">
+      <div class="ctl">
+        <div class="ctl-row">
+          <span class="flabel">基准年</span>
+          <div class="yeargrid" id="segYear" role="group" aria-label="选择基准年份"></div>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <span class="flabel">分数</span>
+            <div class="stepper">
+              <button type="button" id="decBtn" aria-label="减一分">−</button>
+              <input type="number" id="scoreIn" inputmode="numeric" aria-label="分数">
+              <button type="button" id="incBtn" aria-label="加一分">+</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="flabel">或按位次</span>
+            <div class="stepper">
+              <input type="number" id="rankIn" inputmode="numeric" aria-label="全省位次">
+            </div>
+          </div>
+          <div class="slider">
+            <span class="end" id="sMin"></span>
+            <input type="range" id="scoreRange" aria-label="分数滑杆">
+            <span class="end" id="sMax"></span>
+          </div>
+        </div>
+        <p class="hint" id="ctlHint"></p>
+      </div>
+      <div class="kpis" id="kpis"></div>
+    </div>
+
+    <div class="card">
+      <div class="tblwrap">
+        <table id="resTable">
+          <thead>
+            <tr>
+              <th>年份</th>
+              <th class="num">等位分</th>
+              <th class="num">分差</th>
+              <th class="num">该年位次</th>
+              <th class="num">累计百分位</th>
+              <th class="num">该年考生数</th>
+            </tr>
+          </thead>
+          <tbody id="resBody"></tbody>
+        </table>
+      </div>
+      <p class="s-note" id="resNote"></p>
+    </div>
+  </section>
+
+  <section id="sec-sm">
+    <div class="s-head">
+      <span class="eyebrow">逐年</span>
+      <h2>每一年各自的折算曲线</h2>
+    </div>
+    <p class="s-note">每格是一年。大字是当前分数在该年的等位分；小图是<b id="smSrc"></b>年<em>整条分数带</em>折算到该年的分差曲线，十三格共用同一纵轴，因此格与格之间可以直接比高低。虚线是零线，竖线标出当前分数的位置。</p>
+    <div class="card">
+      <ul class="smlegend">
+        <li><span class="sw" style="background:var(--up)"></span>该年分数更高（同位次要考更多分）</li>
+        <li><span class="sw" style="background:var(--down)"></span>该年分数更低</li>
+        <li><span class="sw" style="background:var(--flat)"></span>持平</li>
+      </ul>
+      <div class="smgrid" id="smGrid"></div>
+      <p class="s-note" id="smNote"></p>
+    </div>
+  </section>
+
+  <section id="sec-hist">
+    <div class="s-head">
+      <span class="eyebrow">分布</span>
+      <h2>每一年的分数分布</h2>
+    </div>
+    <p class="s-note">横轴是分数，纵轴是<b>该分数上有多少考生</b>。所有年份共用同一对坐标轴，
+      因此无论并排看还是逐年看，高低胖瘦都可以直接对比。虚线是<b>偏正态分布</b>（skew-normal）
+      按该年的均值、标准差、偏度三阶矩拟合出来的曲线 —— 高考分数几乎都带一点偏斜，
+      对称的正态曲线拟合不了，偏正态多一个形状参数 α，能把这份偏斜也吃进去。</p>
+    <div class="card">
+      <div class="ctl-row" style="margin-bottom:14px">
+        <span class="flabel">视图</span>
+        <div class="seg" id="segHist" role="group" aria-label="视图">
+          <button type="button" data-v="all" aria-pressed="true">所有年份</button>
+          <button type="button" data-v="one" aria-pressed="false">单独年份</button>
+        </div>
+      </div>
+      <div class="ctl-row" id="histYearRow" style="margin-bottom:14px" hidden>
+        <span class="flabel">年份</span>
+        <div class="yeargrid" id="histYears" role="group" aria-label="选择年份"></div>
+      </div>
+      <ul class="hkey">
+        <li><span class="sw"></span>实际每分人数</li>
+        <li><span class="sl"></span>偏正态分布拟合曲线</li>
+      </ul>
+      <div id="histAll"><div class="hgrid" id="histGrid"></div></div>
+      <div id="histOne" hidden>
+        <div class="hc-top"><span class="hc-yr" id="histYr"></span><span id="histTags"></span></div>
+        <div class="hc-stat" id="histStat"></div>
+        <div class="plotwrap">
+          <svg class="hplot" id="histPlot" role="img" aria-label="分数分布"></svg>
+          <div class="tip" id="histTip" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+      <p class="s-note" id="histNote"></p>
+    </div>
+  </section>
+
+  <section id="sec-matrix">
+    <div class="s-head">
+      <span class="eyebrow">对照</span>
+      <h2>各年高分段门槛</h2>
+    </div>
+    <p class="s-note"><b>按位次</b>是各年<em>同一个名次</em>对应的分数；<b>按百分位</b>是各年<em>同一个比例</em>对应的分数 —— 各年考生数相差可达三成，两者并不等价。<span class="cap">+</span> 表示该年一分一段表在此分数以上未逐分公布，<span class="cap">−</span> 表示低于该年公布的最低分，两者都只是边界。</p>
+    <div class="card">
+      <div class="ctl-row" style="margin-bottom:14px">
+        <span class="flabel">口径</span>
+        <div class="seg" id="segMat" role="group" aria-label="对照口径">
+          <button type="button" data-v="rank" aria-pressed="true">按位次</button>
+          <button type="button" data-v="pct" aria-pressed="false">按百分位</button>
+        </div>
+      </div>
+      <div class="tblwrap"><table class="matrix" id="matTable"></table></div>
+    </div>
+  </section>
+
+  <section id="sec-suihua">
+    <div class="s-head">
+      <span class="eyebrow">绥化</span>
+      <h2 id="shTitle">绥化市高考</h2>
+    </div>
+    <p class="s-note">分数逐年不可比，位次才可比 —— 这张图把绥化每一届<strong>全市前十</strong>的每一个人，
+      连同当年清华与第二梯队的两条录取线，一起放到<strong>全省位次</strong>的对数刻度上。
+      越靠左越靠前；一个圆点就是一位考生，圈内数字是他当年的全市名次。具体分数见下方两张表。</p>
+    <div class="card">
+      <ul class="sgkey">
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot sg-dot-y"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-y">3</text></svg>绥化一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-zd)" stroke="var(--sch-zd)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>肇东一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-qa)" stroke="var(--sch-qa)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>庆安一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-sl)" stroke="var(--sch-sl)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-y">3</text></svg>绥棱一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot sg-dot-o"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>其他中学（圈内数字为全市名次）</li>
+        <li><svg width="19" height="19" aria-hidden="true"><path class="sg-you" d="M9.5 1.5L11.4 6.6L16.6 6.6L12.6 9.9L14.1 15.1L9.5 12.1L4.9 15.1L6.4 9.9L2.4 6.6L7.6 6.6Z"/></svg>你输入的分数在该年的位次</li>
+        <li><span class="bar qh"></span>紫线＝清华线，左侧为已达清华</li>
+        <li><span class="bar jd"></span>红线＝<span id="sgSecond">交大／浙大</span>线，其间为达二档未达清华</li>
+      </ul>
+      <div class="tblwrap"><table class="sg" id="shTable"></table></div>
+      <p class="s-note" id="shNote"></p>
+    </div>
+  </section>
+
+  <section id="sec-citytop">
+    <div class="s-head">
+      <span class="eyebrow">全市</span>
+      <h2 id="ctTitle">绥化市历届前十</h2>
+    </div>
+    <p class="s-note" id="ctLead"></p>
+    <div class="card">
+      <div class="ctl-row" style="margin-bottom:14px">
+        <span class="flabel">大字</span>
+        <div class="seg" id="ctSeg" role="group" aria-label="分数口径">
+          <button type="button" data-v="conv" aria-pressed="true">折合分</button>
+          <button type="button" data-v="raw" aria-pressed="false">当年裸分</button>
+        </div>
+      </div>
+      <ul class="stkey">
+        <li><b style="font-weight:700">大字</b>：<span id="ctBase"></span></li>
+        <li><span style="color:var(--ink-3)">小字</span>：该生当年的全省位次</li>
+        <li><span class="sw qh"></span>达到清华录取线</li>
+        <li><span class="sw jd"></span>未达清华，达到<span id="ctSecond">第二梯队</span>线</li>
+      </ul>
+      <div class="tblwrap"><table class="st wide" id="ctTable"></table></div>
+      <p class="s-note" id="ctNote"></p>
+    </div>
+  </section>
+
+  <section id="sec-schooltop">
+    <div class="s-head">
+      <span class="eyebrow">一中</span>
+      <h2 id="stTitle">绥化一中历届前十</h2>
+    </div>
+    <p class="s-note" id="stLead"></p>
+    <div class="card">
+      <div class="ctl-row" style="margin-bottom:14px">
+        <span class="flabel">大字</span>
+        <div class="seg" id="stSeg" role="group" aria-label="分数口径">
+          <button type="button" data-v="conv" aria-pressed="true">折合分</button>
+          <button type="button" data-v="raw" aria-pressed="false">当年裸分</button>
+        </div>
+      </div>
+      <ul class="stkey">
+        <li><b style="font-weight:700">大字</b>：<span id="stBase"></span></li>
+        <li><span style="color:var(--ink-3)">小字</span>：该生当年的全省位次</li>
+        <li><span class="sw qh"></span>达到清华录取线</li>
+        <li><span class="sw jd"></span>未达清华，达到<span id="stSecond">第二梯队</span>线</li>
+      </ul>
+      <div class="tblwrap"><table class="st" id="stTable"></table></div>
+      <p class="s-note" id="stNote"></p>
+    </div>
+  </section>
+
+  <footer>
+    <h4>数据与口径</h4>
+    <ul id="notes"></ul>
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ------------------------------------------------------------------ 数据 */
+const DATA  = __DATA__;
+const F     = DATA.floor;              // 150：分母口径
+const YEARS = DATA.years;              // 按年份升序
+const BY    = new Map(YEARS.map(y => [y.year, y]));
+/* 年份序列里的断档：与上一年不相邻即为一处空档，用于分隔符 */
+const GAP_AFTER = new Set(YEARS.slice(1)
+  .filter((y, i) => y.year - YEARS[i].year > 1).map(y => y.year));
+
+/* cum[i] = 得分 >= (base+i) 的人数。base 是该年逐分公布到的最低分。 */
+const cumAt = (y, s) => y.cum[s - y.base];
+const topCum = y => y.cum[y.cum.length - 1];
+
+/* 分数 -> 位次。超出逐分公布范围时只能给出边界。 */
+function rankOf(y, s){
+  if (s > y.top)   return { rank:topCum(y), bound:"above" };  // 落在「XXX 分以上」一档
+  if (s < y.base)  return { rank:y.cum[0],  bound:"under" };  // 低于该年公布的最低分
+  return { rank:cumAt(y, s), bound:"" };
+}
+
+/* 位次 -> 分数：满足「该分及以上人数 >= R」的最高分。 */
+function scoreAt(y, R){
+  const cum = y.cum, n = cum.length;
+  if (cum[n-1] >= R) return { score:y.top,  bound:"above" };
+  if (R > cum[0])    return { score:y.base, bound:"under" };
+  let lo = 0, hi = n - 1;
+  while (lo < hi){ const mid = (lo + hi + 1) >> 1; if (cum[mid] >= R) lo = mid; else hi = mid - 1; }
+  return { score:y.base + lo, bound:"" };
+}
+
+/* 源年某分 -> 目标年等位分 */
+function convert(src, score, tgt){
+  const p = rankOf(src, score).rank / src.total;
+  const R = Math.max(1, Math.round(p * tgt.total));
+  const r = scoreAt(tgt, R);
+  // 等位分只能取整，实际落点会比目标位次略靠后，这里一并报出实际值
+  const real = r.bound === "under" ? tgt.cum[0] : cumAt(tgt, r.score);
+  return { pct:p, rank:R, score:r.score, bound:r.bound, real:real };
+}
+
+/* ------------------------------------------------------------- 格式化 */
+const $      = id => document.getElementById(id);
+const fmt    = n => Math.round(n).toLocaleString("en-US");
+const wan    = n => (n/10000).toFixed(1);
+const signed = n => (n > 0 ? "+" : n < 0 ? "−" : "±") + Math.abs(n);
+const prefix = b => b === "above" ? "≥" : b === "under" ? "<" : "";
+function pctText(p){
+  const v = p * 100;
+  if (v < 0.01) return v.toFixed(4) + "%";
+  if (v < 1)    return v.toFixed(3) + "%";
+  if (v < 10)   return v.toFixed(2) + "%";
+  return v.toFixed(1) + "%";
+}
+function tags(y){
+  let out = '<span class="tag">' + y.track + "</span>";
+  if (y.estimated) out += '<span class="tag est" title="' + y.estBasis + '">分母估计</span>';
+  return out;
+}
+
+/* ---------------------------------------------------------------- 状态 */
+// pct 是换算锚点：只有直接改分数/位次时才更新，切换年份时保持不变，
+// 这样 2007→2025→2007 能原样回到出发点，不被取整误差一路带偏。
+const state = { src:DATA.defaultYear, score:DATA.defaultScore, pct:0, mat:"rank",
+                histMode:"all", histYear:DATA.defaultYear,
+                ctRaw:false, stRaw:false };
+
+const clampScore = (v, year) => {
+  const y = BY.get(year || state.src);
+  return Math.min(y.top, Math.max(y.base, Math.round(v) || y.base));
+};
+function commitScore(v){
+  state.score = clampScore(v);
+  const y = BY.get(state.src);
+  state.pct = rankOf(y, state.score).rank / y.total;
+}
+function commitRank(r){
+  const y = BY.get(state.src);
+  const R = Math.min(y.total, Math.max(1, Math.round(r) || 1));
+  state.score = scoreAt(y, R).score;
+  state.pct = R / y.total;
+}
+function readHash(){
+  const m = /^#?(\d{4})[-/](\d{2,3})$/.exec(location.hash);
+  if (!m || !BY.has(+m[1])) return;
+  state.src = +m[1];
+  commitScore(+m[2]);
+}
+function writeHash(){
+  const h = "#" + state.src + "-" + state.score;
+  if (location.hash !== h) history.replaceState(null, "", h);
+}
+
+/* ------------------------------------------------------------ 顶部指标 */
+(function masthead(){
+  const totals = YEARS.map(y => y.total);
+  $("mYears").textContent = YEARS.length;
+  $("mSpan").textContent  = YEARS[0].year + "–" + YEARS[YEARS.length-1].year;
+  $("mMin").textContent   = wan(Math.min.apply(null, totals));
+  $("mMax").textContent   = wan(Math.max.apply(null, totals));
+})();
+
+/* ---------------------------------------------------------- 年份选择器 */
+(function yearPicker(){
+  const box = $("segYear");
+  YEARS.forEach((y, i) => {
+    if (GAP_AFTER.has(y.year)){
+      const gap = document.createElement("span");
+      gap.className = "gap"; gap.setAttribute("aria-hidden", "true");
+      box.appendChild(gap);
+    }
+    const b = document.createElement("button");
+    b.type = "button"; b.dataset.v = y.year; b.textContent = y.year;
+    b.addEventListener("click", () => setYear(y.year));
+    box.appendChild(b);
+  });
+})();
+
+function setYear(year){
+  const next = BY.get(year);
+  // 换年份时保持百分位不变，比保持分数不变更有意义
+  state.src = year;
+  state.score = scoreAt(next, Math.max(1, Math.round(state.pct * next.total))).score;
+  render();
+}
+
+/* ------------------------------------------------------------ 分数输入 */
+const scoreIn = $("scoreIn"), rankIn = $("rankIn"), scoreRange = $("scoreRange");
+const setScore = v => { commitScore(v); render(); };
+scoreIn.addEventListener("input", e => {
+  const y = BY.get(state.src), v = parseInt(e.target.value, 10);
+  if (!isNaN(v) && v >= y.base && v <= y.top){ commitScore(v); render("score"); }
+});
+scoreIn.addEventListener("blur",    e => setScore(parseInt(e.target.value, 10)));
+scoreIn.addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); });
+rankIn.addEventListener("input", e => {
+  const y = BY.get(state.src), v = parseInt(e.target.value, 10);
+  if (!isNaN(v) && v >= 1 && v <= y.total){ commitRank(v); render("rank"); }
+});
+rankIn.addEventListener("blur",    e => { commitRank(parseInt(e.target.value, 10)); render(); });
+rankIn.addEventListener("keydown", e => { if (e.key === "Enter") e.target.blur(); });
+scoreRange.addEventListener("input", e => setScore(+e.target.value));
+$("incBtn").addEventListener("click", () => setScore(state.score + 1));
+$("decBtn").addEventListener("click", () => setScore(state.score - 1));
+
+[["ctSeg", "ctRaw", () => drawCityTop()], ["stSeg", "stRaw", () => drawSchoolTop()]]
+  .forEach(([id, key, redraw]) => {
+    $(id).addEventListener("click", e => {
+      const b = e.target.closest("button[data-v]");
+      if (!b) return;
+      state[key] = b.dataset.v === "raw";
+      $(id).querySelectorAll("button[data-v]").forEach(x =>
+        x.setAttribute("aria-pressed", String((x.dataset.v === "raw") === state[key])));
+      redraw();
+    });
+  });
+
+(function histYearTabs(){
+  const box = $("histYears");
+  YEARS.forEach(y => {
+    if (GAP_AFTER.has(y.year)){
+      const gap = document.createElement("span");
+      gap.className = "gap"; gap.setAttribute("aria-hidden", "true");
+      box.appendChild(gap);
+    }
+    const b = document.createElement("button");
+    b.type = "button"; b.dataset.v = y.year; b.textContent = y.year;
+    b.addEventListener("click", () => { state.histYear = y.year; drawHist(); });
+    box.appendChild(b);
+  });
+})();
+
+$("segHist").addEventListener("click", e => {
+  const b = e.target.closest("button[data-v]");
+  if (!b) return;
+  state.histMode = b.dataset.v;
+  $("segHist").querySelectorAll("button[data-v]").forEach(x =>
+    x.setAttribute("aria-pressed", String(x.dataset.v === state.histMode)));
+  drawHist();
+});
+
+$("segMat").addEventListener("click", e => {
+  const b = e.target.closest("button[data-v]");
+  if (!b) return;
+  state.mat = b.dataset.v;
+  $("segMat").querySelectorAll("button").forEach(x =>
+    x.setAttribute("aria-pressed", String(x.dataset.v === state.mat)));
+  drawMatrix();
+});
+
+/* ------------------------------------------------------------ KPI 区块 */
+function drawKpis(){
+  const y = BY.get(state.src), s = state.score;
+  const r = rankOf(y, s);
+  const band = s < y.top ? cumAt(y, s) - cumAt(y, s + 1) : topCum(y);
+  const p = r.rank / y.total;
+  const cells = [
+    { lab:"全省位次", val:prefix(r.bound) + fmt(r.rank), sub:y.year + " 年 " + y.track, accent:true },
+    { lab:"累计百分位", val:pctText(p), sub:"位次 ÷ 当年考生数" },
+    { lab:"同分人数", val:fmt(band), sub:s < y.top ? s + " 分整" : s + " 分及以上" },
+    { lab:"当年考生数", val:fmt(y.total),
+      sub:"150 分及以上" + (y.estimated ? "（估计）" : "") }
+  ];
+  $("kpis").innerHTML = cells.map(c =>
+    '<div class="kpi' + (c.accent ? " accent" : "") + '">' +
+      '<div class="k-lab">' + c.lab + '</div>' +
+      '<div class="k-val">' + c.val + '</div>' +
+      '<div class="k-sub">' + c.sub + '</div></div>').join("");
+}
+
+/* ------------------------------------------------------------ 结果表格 */
+let rows = [];     // 供小图复用
+function drawTable(){
+  const src = BY.get(state.src), s = state.score;
+  rows = YEARS.map(y => Object.assign({ y:y }, convert(src, s, y)));
+  const maxAbs = Math.max(1, ...rows.map(r => Math.abs(r.score - s)));
+
+  $("resBody").innerHTML = rows.map((r, i) => {
+    const d = r.score - s, self = r.y.year === src.year;
+    const w = Math.abs(d) / maxAbs * 50;      // 半宽百分比
+    const bar = d === 0 ? "" :
+      '<b style="' + (d > 0 ? "left:50%;background:var(--up);" : "right:50%;background:var(--down);") +
+      "width:" + w.toFixed(2) + '%"></b>';
+    const era = GAP_AFTER.has(r.y.year);
+    return '<tr class="' + (self ? "self " : "") + (era ? "eragap" : "") + '">' +
+      '<td><span class="y-cell">' + r.y.year + tags(r.y) + '</span></td>' +
+      '<td class="num eq">' + prefix(r.bound) + r.score + '</td>' +
+      '<td class="num"><span class="dwrap"><span class="dnum ' +
+        (d > 0 ? "pos" : d < 0 ? "neg" : "zero") + '">' + signed(d) + '</span>' +
+        '<span class="dbar"><i></i>' + bar + '</span></span></td>' +
+      '<td class="num">' + (r.bound === "above" ? "≤" : r.bound === "under" ? ">" : "") + fmt(r.real) + '</td>' +
+      '<td class="num">' + pctText(r.real / r.y.total) + '</td>' +
+      '<td class="num">' + fmt(r.y.total) + (r.y.estimated ? ' <span class="cap">est</span>' : "") + '</td></tr>';
+  }).join("");
+
+  const capped = rows.filter(r => r.bound).map(r => r.y.year);
+  $("resNote").innerHTML =
+    "分差 = 该年等位分 − " + src.year + " 年的 " + s + " 分。正值（橙）说明那一年的分数整体偏高，" +
+    "同样的位次要考出更高的分；负值（蓝）反之。位次与百分位是<strong>等位分在该年的实际落点</strong>，" +
+    "因分数只能取整，通常比目标百分位（" + pctText(rows[0].pct) + "）略靠后。" +
+    (capped.length ? "　<strong>" + capped.join("、") + "</strong> 年该位次超出了一分一段表逐分公布的范围，只能给出边界值。" : "") +
+    "";
+}
+
+/* ---------------------------------------------------------------- 小图 */
+const NS = "http://www.w3.org/2000/svg";
+const SPARK = { w:190, h:52, pad:3 };
+
+function el(name, attrs){
+  const n = document.createElementNS(NS, name);
+  for (const k in attrs) n.setAttribute(k, attrs[k]);
+  return n;
+}
+
+function drawSmall(){
+  const src = BY.get(state.src), s = state.score;
+  // 横轴：基准年逐分公布的范围，低于 250 分的样本没人关心，也易受各年下限影响
+  const x0 = Math.max(src.base, 250), x1 = src.top;
+
+  // 先把十三条曲线全算出来，取共同纵轴 —— 小图不共用刻度就没有意义
+  const curves = YEARS.map(y => {
+    const pts = [];
+    for (let sc = x0; sc <= x1; sc++){
+      const c = convert(src, sc, y);
+      if (c.bound){ if (pts.length) break; else continue; }
+      pts.push([sc, c.score - sc]);
+    }
+    return { y:y, pts:pts };
+  });
+  const all = curves.reduce((a,c) => a.concat(c.pts.map(p => p[1])), [0]);
+  const lim = Math.max(1, Math.max.apply(null, all.map(Math.abs)));
+  const lo = -lim, hi = lim;
+
+  const iw = SPARK.w - SPARK.pad*2, ih = SPARK.h - SPARK.pad*2;
+  const X = v => SPARK.pad + (v - x0) / (x1 - x0 || 1) * iw;
+  const Y = v => SPARK.pad + (hi - v) / (hi - lo) * ih;
+
+  $("smGrid").innerHTML = "";
+  curves.forEach(c => {
+    const r = rows.find(x => x.y.year === c.y.year);
+    const d = r.score - s, self = c.y.year === src.year;
+
+    const card = document.createElement("article");
+    card.className = "sm" + (self ? " self" : "");
+    card.innerHTML =
+      '<div class="sm-top"><span class="sm-yr">' + c.y.year + "</span>" + tags(c.y) + "</div>" +
+      '<div class="sm-val"><span class="sm-eq">' +
+        (r.bound ? '<span class="cap">' + prefix(r.bound) + "</span>" : "") + r.score + "</span>" +
+        '<span class="sm-d ' + (d > 0 ? "pos" : d < 0 ? "neg" : "zero") + '">' + signed(d) + "</span></div>";
+
+    const svg = el("svg", { viewBox:"0 0 " + SPARK.w + " " + SPARK.h,
+                            preserveAspectRatio:"none", role:"img",
+                            "aria-label":c.y.year + " 年的分差曲线" });
+    svg.appendChild(el("rect", { class:"spark-frame", x:.5, y:.5,
+                                 width:SPARK.w-1, height:SPARK.h-1, rx:3 }));
+    svg.appendChild(el("line", { class:"spark-zero", x1:SPARK.pad, x2:SPARK.w-SPARK.pad,
+                                 y1:Y(0), y2:Y(0) }));
+    if (c.pts.length > 1){
+      // 零线上下分色：同一条折线按正负切成两段绘制
+      const hue = g => g > 0 ? "var(--up)" : g < 0 ? "var(--down)" : "var(--flat)";
+      let run = [], sign = Math.sign(c.pts[0][1]);
+      const flush = () => {
+        if (run.length > 1)
+          svg.appendChild(el("path", {
+            class:"spark-line",
+            d:run.map((p,i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1)).join(" "),
+            stroke:hue(sign) }));
+      };
+      c.pts.forEach(p => {
+        const sg = Math.sign(p[1]);
+        if (sg !== sign){ run.push(p); flush(); run = [p]; sign = sg; }
+        else run.push(p);
+      });
+      flush();
+    }
+    if (s >= x0 && s <= x1)
+      svg.appendChild(el("line", { class:"spark-mark", x1:X(s), x2:X(s),
+                                   y1:SPARK.pad, y2:SPARK.h-SPARK.pad }));
+    card.appendChild(svg);
+
+    const foot = document.createElement("div");
+    foot.className = "sm-foot";
+    foot.textContent = (r.bound === "above" ? "≤" : r.bound === "under" ? ">" : "第 ") +
+      fmt(r.real) + (r.bound ? " 名" : " 名") + " · " + wan(c.y.total) + " 万人";
+    card.appendChild(foot);
+    $("smGrid").appendChild(card);
+  });
+
+  padGrid();
+  $("smSrc").textContent = src.year;
+  $("smNote").innerHTML = "小图横轴为 " + x0 + "–" + x1 + " 分，纵轴统一为 ±" +
+    Math.round(lim) + " 分。曲线在触及该年一分一段表的公布边界处收笔。";
+}
+
+/* auto-fill 的列数随宽度变化，用空格子补满最后一行 */
+function padGrid(){
+  const grid = $("smGrid");
+  grid.querySelectorAll(".sm.filler").forEach(n => n.remove());
+  const cols = getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length;
+  const short = cols ? (cols - YEARS.length % cols) % cols : 0;
+  for (let i = 0; i < short; i++){
+    const f = document.createElement("div");
+    f.className = "sm filler"; f.setAttribute("aria-hidden", "true");
+    grid.appendChild(f);
+  }
+}
+window.addEventListener("resize", () => {
+  clearTimeout(window.__pg);
+  window.__pg = setTimeout(() => { padGrid(); drawHist(); }, 150);
+});
+
+/* ------------------------------------------------------------ 分数分布 */
+/* 标准正态的 pdf 与 cdf。cdf 用 Zelen & Severo 有理逼近（A&S 26.2.17），
+   绝对误差 < 7.5e-8，画曲线绰绰有余。 */
+const SQRT2PI = Math.sqrt(2 * Math.PI);
+const nPdf = z => Math.exp(-0.5 * z * z) / SQRT2PI;
+function nCdf(z){
+  const t = 1 / (1 + 0.2316419 * Math.abs(z));
+  const d = nPdf(z);
+  const p = d * t * (0.319381530 + t * (-0.356563782 + t * (1.781477937 +
+            t * (-1.821255978 + t * 1.330274429))));
+  return z >= 0 ? 1 - p : p;
+}
+
+/* 偏正态：用一、二、三阶矩反解 ξ(位置)、ω(尺度)、α(形状)。
+   偏度绝对值必须小于 0.9953 —— 超过这个值偏正态就表示不出来了，各年都在范围内。 */
+const SKEW_LIMIT = 0.995271746;
+function fitSkewNormal(mean, sd, skew){
+  const g = Math.max(-SKEW_LIMIT, Math.min(SKEW_LIMIT, skew));
+  const a23 = Math.pow(Math.abs(g), 2/3);
+  const c23 = Math.pow((4 - Math.PI) / 2, 2/3);
+  const delta = Math.sign(g) * Math.sqrt(Math.PI / 2 * a23 / (a23 + c23)) || 0;
+  const alpha = delta / Math.sqrt(1 - delta * delta);
+  const omega = sd / Math.sqrt(1 - 2 * delta * delta / Math.PI);
+  const xi    = mean - omega * delta * Math.sqrt(2 / Math.PI);
+  return { xi:xi, omega:omega, alpha:alpha,
+           pdf:function(x){ const z = (x - xi) / omega;
+                            return 2 / omega * nPdf(z) * nCdf(alpha * z); } };
+}
+
+/* 每分人数由累计人数逐差得到；顺带算出均值、标准差、偏度。
+   只有从 150 分起完整覆盖的年份才有总体统计量 —— 表被截断的年份
+   （2004/2006/2008）算出来的是截尾分布的矩，没有可比性，一律不给。 */
+const HSTAT = new Map(YEARS.map(y => {
+  const pts = [];
+  for (let i = 0; i < y.cum.length; i++){
+    const next = i + 1 < y.cum.length ? y.cum[i + 1] : 0;
+    pts.push([y.base + i, y.cum[i] - next]);
+  }
+  const full = y.base <= F;
+  let mean = 0, sd = 0, skew = 0, fit = null;
+  if (full){
+    const n = pts.reduce((a, p) => a + p[1], 0);
+    mean = pts.reduce((a, p) => a + p[0] * p[1], 0) / n;
+    sd = Math.sqrt(pts.reduce((a, p) => a + p[1] * Math.pow(p[0] - mean, 2), 0) / n);
+    skew = pts.reduce((a, p) => a + p[1] * Math.pow((p[0] - mean) / sd, 3), 0) / n;
+    fit = fitSkewNormal(mean, sd, skew);
+  }
+  return [y.year, { pts:pts, full:full, mean:mean, sd:sd, skew:skew, fit:fit }];
+}));
+
+const HX = { lo:F, hi:Math.max.apply(null, YEARS.map(y => y.top)) };
+const HPEAK = Math.max.apply(null,
+  [...HSTAT.values()].map(s => Math.max.apply(null, s.pts.map(p => p[1]))));
+const HYMAX = HPEAK * 1.06;
+
+/* 拟合曲线的点串，供两种视图共用 */
+function fitPath(y, st, X, Y){
+  if (!st.fit) return "";
+  const pts = [];
+  for (let s = HX.lo; s <= y.top; s++)
+    pts.push(X(s).toFixed(1) + " " + Y(st.fit.pdf(s) * y.total).toFixed(1));
+  return '<path class="h-norm" d="M' + pts.join("L") + '"/>';
+}
+
+const SPK = { w:238, h:104, l:28, r:6, t:8, b:16 };
+
+function drawHistAll(){
+  const iw = SPK.w - SPK.l - SPK.r, ih = SPK.h - SPK.t - SPK.b;
+  const X = s => SPK.l + (s - HX.lo) / (HX.hi - HX.lo) * iw;
+  const Y = v => SPK.t + (1 - v / HYMAX) * ih;
+  const grid = $("histGrid");
+  grid.innerHTML = "";
+
+  YEARS.forEach(y => {
+    const st = HSTAT.get(y.year);
+    const card = document.createElement("article");
+    card.className = "hcell";
+    card.innerHTML =
+      '<div class="hcell-top"><span class="hcell-yr">' + y.year + "</span>" + tags(y) + "</div>" +
+      '<div class="hcell-stat">' + (st.full
+        ? "均值 <b>" + st.mean.toFixed(0) + "</b>　标准差 <b>" + st.sd.toFixed(0) +
+          "</b>　偏度 <b>" + (st.skew >= 0 ? "+" : "−") + Math.abs(st.skew).toFixed(2) + "</b>"
+        : "表止于 <b>" + y.base + "</b> 分，不计矩") + "</div>";
+
+    let g = "";
+    [0, 200, 400].forEach(v => {
+      g += '<line class="h-grid" x1="' + SPK.l + '" x2="' + (SPK.l+iw) + '" y1="' + Y(v).toFixed(1) +
+           '" y2="' + Y(v).toFixed(1) + '"/>';
+      if (v) g += '<text class="h-tick" x="' + (SPK.l-4) + '" y="' + (Y(v)+3.2).toFixed(1) +
+                  '" text-anchor="end">' + v + "</text>";
+    });
+    if (y.base > HX.lo)
+      g += '<line class="h-cut" x1="' + X(y.base).toFixed(1) + '" x2="' + X(y.base).toFixed(1) +
+           '" y1="' + SPK.t + '" y2="' + (SPK.t+ih) + '"/>';
+    const pts = st.pts.map(p => X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1));
+    g += '<path class="h-area" d="M' + X(st.pts[0][0]).toFixed(1) + " " + Y(0).toFixed(1) +
+         "L" + pts.join("L") + "L" + X(st.pts[st.pts.length-1][0]).toFixed(1) + " " +
+         Y(0).toFixed(1) + 'Z"/>';
+    g += fitPath(y, st, X, Y);
+    g += '<line class="h-axis" x1="' + SPK.l + '" x2="' + (SPK.l+iw) + '" y1="' + Y(0).toFixed(1) +
+         '" y2="' + Y(0).toFixed(1) + '"/>';
+    [200,300,400,500,600,700].forEach(s =>
+      g += '<text class="h-tick" x="' + X(s).toFixed(1) + '" y="' + (SPK.h-4) +
+           '" text-anchor="middle">' + s + "</text>");
+
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 " + SPK.w + " " + SPK.h);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", y.year + " 年每分人数分布");
+    svg.innerHTML = g;
+    card.appendChild(svg);
+    grid.appendChild(card);
+  });
+
+  const cols = getComputedStyle(grid).gridTemplateColumns.split(" ").filter(Boolean).length;
+  const short = cols ? (cols - YEARS.length % cols) % cols : 0;
+  for (let i = 0; i < short; i++){
+    const f = document.createElement("div");
+    f.className = "hcell filler"; f.setAttribute("aria-hidden", "true");
+    grid.appendChild(f);
+  }
+}
+
+function drawHistOne(){
+  const y  = BY.get(state.histYear) || BY.get(state.src);
+  const st = HSTAT.get(y.year);
+
+  $("histYears").querySelectorAll("button[data-v]").forEach(b =>
+    b.setAttribute("aria-pressed", String(+b.dataset.v === y.year)));
+  $("histYr").textContent = y.year + " 年";
+  $("histTags").innerHTML = tags(y);
+  $("histStat").innerHTML = [
+    "考生 <b>" + fmt(y.total) + "</b> 人" + (y.estimated ? "（估计）" : ""),
+    st.full ? "均值 <b>" + st.mean.toFixed(1) + "</b>" : "表止于 <b>" + y.base + "</b> 分",
+    st.full ? "标准差 <b>" + st.sd.toFixed(1) + "</b>" : "不计总体矩",
+    st.full ? "偏度 <b>" + (st.skew >= 0 ? "+" : "−") + Math.abs(st.skew).toFixed(2) + "</b>" : "",
+    st.fit ? "拟合 α <b>" + (st.fit.alpha >= 0 ? "+" : "−") +
+             Math.abs(st.fit.alpha).toFixed(2) + "</b>" : "",
+    "峰值 <b>" + fmt(Math.max.apply(null, st.pts.map(p => p[1]))) + "</b> 人／分"
+  ].filter(Boolean).map(s => "<span>" + s + "</span>").join("");
+
+  const svg = $("histPlot");
+  const narrow = (svg.parentNode.clientWidth || 900) < 560;
+  const W = narrow ? 520 : 960, H = narrow ? 300 : 340;
+  const M = { l:narrow ? 46 : 56, r:12, t:14, b:narrow ? 30 : 34 };
+  svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+  const iw = W - M.l - M.r, ih = H - M.t - M.b;
+  const X = s => M.l + (s - HX.lo) / (HX.hi - HX.lo) * iw;
+  const Y = v => M.t + (1 - v / HYMAX) * ih;
+
+  let g = "";
+  for (let v = 0; v <= HYMAX; v += 100){
+    g += '<line class="h-grid" x1="' + M.l + '" x2="' + (M.l+iw) + '" y1="' + Y(v).toFixed(1) +
+         '" y2="' + Y(v).toFixed(1) + '"/>';
+    g += '<text class="h-tick" x="' + (M.l-6) + '" y="' + (Y(v)+3.5).toFixed(1) +
+         '" text-anchor="end">' + fmt(v) + "</text>";
+  }
+  if (y.base > HX.lo){
+    g += '<line class="h-cut" x1="' + X(y.base).toFixed(1) + '" x2="' + X(y.base).toFixed(1) +
+         '" y1="' + M.t + '" y2="' + (M.t+ih) + '"/>';
+    g += '<text class="h-tick" x="' + (X(y.base)+4).toFixed(1) + '" y="' + (M.t+11) + '">← 无数据</text>';
+  }
+  const pts = st.pts.map(p => X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1));
+  g += '<path class="h-area" d="M' + X(st.pts[0][0]).toFixed(1) + " " + Y(0).toFixed(1) +
+       "L" + pts.join("L") + "L" + X(st.pts[st.pts.length-1][0]).toFixed(1) + " " +
+       Y(0).toFixed(1) + 'Z"/>';
+  g += fitPath(y, st, X, Y);
+  g += '<line class="h-axis" x1="' + M.l + '" x2="' + (M.l+iw) + '" y1="' + Y(0).toFixed(1) +
+       '" y2="' + Y(0).toFixed(1) + '"/>';
+  for (let s = 150; s <= HX.hi; s += narrow ? 100 : 50)
+    g += '<text class="h-tick" x="' + X(s).toFixed(1) + '" y="' + (H-M.b+15) +
+         '" text-anchor="middle">' + s + "</text>";
+  g += '<text class="axtitle" x="' + (M.l+iw) + '" y="' + (H-4) + '" text-anchor="end">分数</text>';
+  g += '<g id="hHover" style="pointer-events:none;opacity:0">' +
+       '<line class="crosshair" y1="' + M.t + '" y2="' + (M.t+ih) + '"/>' +
+       '<circle r="3.5" fill="var(--seal)"/></g>';
+  g += '<rect class="hitrect" x="' + M.l + '" y="' + M.t + '" width="' + iw + '" height="' + ih + '"/>';
+  svg.innerHTML = g;
+
+  const hover = svg.querySelector("#hHover");
+  const line = hover.querySelector("line"), dot = hover.querySelector("circle");
+  const tip = $("histTip"), hit = svg.querySelector(".hitrect");
+  function move(ev){
+    const box = svg.getBoundingClientRect();
+    const cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - box.left;
+    const s = Math.round(HX.lo + (cx / box.width * W - M.l) / iw * (HX.hi - HX.lo));
+    const sc = Math.min(y.top, Math.max(y.base, s));
+    const n = st.pts[sc - y.base][1];
+    hover.style.opacity = 1;
+    line.setAttribute("x1", X(sc)); line.setAttribute("x2", X(sc));
+    dot.setAttribute("cx", X(sc)); dot.setAttribute("cy", Y(n));
+    tip.innerHTML = '<div class="t-head">' + sc + " 分</div>" +
+      '<div class="t-row"><span class="t-name">该分人数</span><span class="t-val">' + fmt(n) + "</span></div>" +
+      (st.fit ? '<div class="t-row"><span class="t-name">拟合值</span><span class="t-val">' +
+        fmt(st.fit.pdf(sc) * y.total) + "</span></div>" : "") +
+      '<div class="t-row"><span class="t-name">全省位次</span><span class="t-val">' + fmt(cumAt(y, sc)) + "</span></div>" +
+      '<div class="t-row"><span class="t-name">累计百分位</span><span class="t-val">' +
+        pctText(cumAt(y, sc) / y.total) + "</span></div>";
+    tip.classList.add("on");
+    const px = X(sc) / W * box.width;
+    tip.style.left = Math.min(box.width - tip.offsetWidth - 4, Math.max(4, px + 14)) + "px";
+    tip.style.top = "10px";
+  }
+  hit.addEventListener("mousemove", move);
+  hit.addEventListener("touchmove", move, { passive:true });
+  const off = () => { hover.style.opacity = 0; tip.classList.remove("on"); };
+  hit.addEventListener("mouseleave", off);
+  hit.addEventListener("touchend", off);
+}
+
+function drawHist(){
+  const one = state.histMode === "one";
+  $("histOne").hidden = !one;
+  $("histAll").hidden = one;
+  $("histYearRow").hidden = !one;
+  if (one) drawHistOne(); else drawHistAll();
+
+  const trunc = YEARS.filter(y => !HSTAT.get(y.year).full).map(y => y.year);
+  const bits = ["纵轴统一到 " + fmt(HPEAK) + " 人，横轴统一为 " + HX.lo + "–" + HX.hi +
+    " 分 —— 各年同一把尺子，并排看或逐年看都能直接对比。"];
+  bits.push("虚线是偏正态分布，参数由该年的均值、标准差、偏度反解得到（形状参数 α 为正表示右偏、" +
+    "为负表示左偏，α=0 时退化为普通正态）。");
+  if (trunc.length)
+    bits.push("<strong>" + trunc.join("、") + "</strong> 年的一分一段表分别只到 " +
+      trunc.map(v => BY.get(v).base + " 分").join("、") + "，虚竖线是数据起点 —— " +
+      "线左边是没有数据，不是没有人；截尾数据上算出的矩没有意义，故这几年不画拟合曲线。");
+  bits.push("2004–2009 年的曲线由分数段推算而来，天然光滑；2013 年以后是逐分公布的原始数据，" +
+    "锯齿是真实的考分颗粒度。两者的平滑程度不可比。");
+  $("histNote").innerHTML = bits.join("　");
+}
+
+/* ---------------------------------------------------------------- 对照表 */
+const RANK_ROWS = [10,50,100,300,500,1000,2000,3000,5000,10000,20000,30000,50000,80000];
+const PCT_ROWS  = [0.0001,0.0005,0.001,0.003,0.005,0.01,0.02,0.05,0.1,0.2,0.3,0.5];
+
+function drawMatrix(){
+  const byRank = state.mat === "rank";
+  const list = byRank ? RANK_ROWS : PCT_ROWS;
+  const src = BY.get(state.src);
+  const myRank = rankOf(src, state.score).rank;
+  const cur = byRank ? myRank : myRank / src.total;
+
+  let hiIdx = -1, best = Infinity;
+  list.forEach((v,i) => {
+    const d = Math.abs(Math.log(v) - Math.log(cur));
+    if (d < best){ best = d; hiIdx = i; }
+  });
+
+  const eraAt = i => i > 0 && GAP_AFTER.has(YEARS[i].year);
+  const head = "<colgroup><col>" + YEARS.map(y =>
+      "<col" + (y.year === src.year ? ' class="hi"' : "") + ">").join("") + "</colgroup>" +
+    "<thead><tr><th>" + (byRank ? "位次" : "百分位") + "</th>" +
+    YEARS.map((y,i) => '<th class="num' + (eraAt(i) ? " era" : "") + '">' + y.year + "</th>").join("") +
+    "</tr></thead>";
+
+  const body = "<tbody>" + list.map((v,i) => {
+    const label = byRank ? "前 " + fmt(v) + " 名" : "前 " + pctText(v);
+    const cells = YEARS.map((y,j) => {
+      const R = byRank ? Math.min(y.total, v) : Math.max(1, Math.round(v * y.total));
+      const r = scoreAt(y, R);
+      const mark = r.bound === "above" ? '<span class="cap">+</span>'
+                 : r.bound === "under" ? '<span class="cap">−</span>' : "";
+      return '<td class="num' + (eraAt(j) ? " era" : "") + '">' + r.score + mark + "</td>";
+    }).join("");
+    return '<tr class="' + (i === hiIdx ? "hi" : "") + '"><th scope="row">' + label + "</th>" + cells + "</tr>";
+  }).join("") + "</tbody>";
+
+  const foot = "<tfoot><tr><th>考生数</th>" +
+    YEARS.map((y,i) => '<td class="num' + (eraAt(i) ? " era" : "") + '">' + wan(y.total) + " 万</td>").join("") +
+    "</tr></tfoot>";
+
+  $("matTable").innerHTML = head + body + foot;
+}
+
+/* ------------------------------------------------------------ 绥化对照 */
+const SH = DATA.suihua || [];          // 逐年的两条录取线与绥化最高分
+const SG = { w:1160, r0:15, r1:1500, pad:10, lane:19, rad:8, top:6, bot:4 };
+const sgX = r => SG.pad + Math.log(Math.max(SG.r0, Math.min(SG.r1, r)) / SG.r0) /
+                 Math.log(SG.r1 / SG.r0) * (SG.w - SG.pad * 2);
+const SG_TICKS = [20, 50, 100, 200, 500, 1000];
+
+/* 上榜最多的几所中学各给一色，其余归入「其他中学」 */
+const SCHOOL_STYLE = {
+  "绥化一中": { cls:"sg-dot-y", lab:"y" },
+  "肇东一中": { fill:"var(--sch-zd)", lab:"o", ring:true },
+  "庆安一中": { fill:"var(--sch-qa)", lab:"o", ring:true },
+  "绥棱一中": { fill:"var(--sch-sl)", lab:"y", ring:true },
+  _:          { cls:"sg-dot-o", lab:"o" }
+};
+
+/* 五角星，外径与圆点半径相同，视觉大小一致 */
+function starPath(cx, cy, R){
+  const r = R * 0.44, p = [];
+  for (let i = 0; i < 10; i++){
+    const rad = i % 2 ? r : R, a = -Math.PI / 2 + i * Math.PI / 5;
+    p.push((cx + rad * Math.cos(a)).toFixed(1) + " " + (cy + rad * Math.sin(a)).toFixed(1));
+  }
+  return "M" + p.join("L") + "Z";
+}
+
+/* 圆点会撞在一起（2008 年前三名同为 677 分，位次完全相同），
+   按 x 排序后逐个找最低的空闲泳道，撞了就往下挪一行。 */
+function layout(points){
+  const lanes = [];
+  points.slice().sort((a, b) => a.x - b.x).forEach(pt => {
+    let i = 0;
+    while (lanes[i] != null && pt.x - lanes[i] < SG.rad * 2 + 1.5) i++;
+    lanes[i] = pt.x;
+    pt.lane = i;
+  });
+  return Math.max(1, lanes.length);
+}
+
+function drawSuihua(){
+  if (!SH.length){ $("sec-suihua").hidden = true; return; }
+  const span = SH[0].year + "–" + SH[SH.length - 1].year;
+  $("shTitle").textContent = "绥化市高考（" + span + "）";
+  $("sgSecond").textContent = secondNames(SH.map(r => r.year));
+
+  const axis = SG_TICKS.map(r =>
+    '<text class="sg-tick" x="' + sgX(r).toFixed(1) + '" y="10" text-anchor="middle">' +
+    fmt(r) + "</text>").join("");
+  const head = '<thead><tr><th class="ycell">年份</th><th>全省位次' +
+    '<svg viewBox="0 0 ' + SG.w + ' 13" aria-hidden="true">' + axis + "</svg></th></tr></thead>";
+
+  let noTable = [], partial = [], dots = 0;
+  const body = "<tbody>" + SH.map(rec => {
+    const y = BY.get(rec.year);
+    const cell = inner =>
+      '<tr><td class="ycell"><span class="yline"><span class="n">' + rec.year +
+      "</span></span></td>" + '<td class="plot">' + inner + "</td></tr>";
+
+    if (!y){                       // 只有分数线、没有一分一段表
+      noTable.push(rec.year);
+      return cell('<svg viewBox="0 0 ' + SG.w + ' 34" aria-hidden="true">' +
+        '<line class="sg-base" x1="0" y1="17" x2="' + SG.w + '" y2="17"/>' +
+        '<text class="sg-none" x="4" y="21">该年没有一分一段表，无法定位</text></svg>');
+    }
+
+    // 当年前十里有分数的人，逐个算出全省位次
+    const pts = CT.filter(r => r.year === rec.year && r.score != null).map(r => {
+      const rk = rankOf(y, r.score);
+      return { rank:rk.rank, rankNo:r.rank, score:r.score,
+               school:r.school || "校名不详", abbr:r.abbr,
+               style:SCHOOL_STYLE[r.abbr] || SCHOOL_STYLE._, x:sgX(rk.rank) };
+    });
+    dots += pts.length;
+    const known = CT.filter(r => r.year === rec.year).length;
+    if (pts.length && pts.length < known) partial.push(rec.year);
+
+    // 用户输入的分数按同一百分位落到该年的位次；超出坐标轴范围就不画
+    const youRank = Math.max(1, Math.round(state.pct * y.total));
+    const you = youRank <= SG.r1 ? { x:sgX(youRank), rank:youRank, you:true } : null;
+    if (you) pts.push(you);
+    const laneCount = pts.length ? layout(pts) : 1;
+    const H = SG.top + laneCount * SG.lane + SG.bot;
+    const qh = rec.qinghua != null ? sgX(rankOf(y, rec.qinghua).rank) : null;
+    const sec = rec.second != null ? sgX(rankOf(y, rec.second).rank) : null;
+
+    let g = "";
+    if (qh != null) g += '<rect class="sg-band-qh" x="0" y="0" width="' + qh.toFixed(1) +
+                         '" height="' + H + '" rx="3"/>';
+    if (qh != null && sec != null && sec > qh)
+      g += '<rect class="sg-band-jd" x="' + qh.toFixed(1) + '" y="0" width="' +
+           (sec - qh).toFixed(1) + '" height="' + H + '" rx="3"/>';
+    SG_TICKS.forEach(r => {
+      g += '<line class="sg-grid" x1="' + sgX(r).toFixed(1) + '" x2="' + sgX(r).toFixed(1) +
+           '" y1="0" y2="' + H + '"/>';
+    });
+    g += '<line class="sg-base" x1="0" y1="' + H + '" x2="' + SG.w + '" y2="' + H + '"/>';
+    if (qh != null)  g += '<line class="sg-rule-qh" x1="' + qh.toFixed(1) + '" x2="' + qh.toFixed(1) +
+                          '" y1="0" y2="' + H + '"/>';
+    if (sec != null) g += '<line class="sg-rule-jd" x1="' + sec.toFixed(1) + '" x2="' + sec.toFixed(1) +
+                          '" y1="0" y2="' + H + '"/>';
+
+    pts.forEach(pt => {
+      const cy = SG.top + pt.lane * SG.lane + SG.lane / 2;
+      if (pt.you){
+        g += "<g><title>你：按同一累计百分位，" + rec.year + " 年约在全省第 " + fmt(pt.rank) +
+             " 名</title>" + '<path class="sg-you" d="' + starPath(pt.x, cy, SG.rad + 1) +
+             '"/></g>';
+        return;
+      }
+      const tier = pt.rank <= (rec.qinghua != null ? rankOf(y, rec.qinghua).rank : -1) ? "达清华线"
+                 : pt.rank <= (rec.second != null ? rankOf(y, rec.second).rank : -1)
+                   ? "达" + (rec.secondName || "二档") + "线" : "两条线均未达到";
+      const st = pt.style;
+      g += "<g><title>全市第 " + pt.rankNo + " 名　·　" + pt.school + "　·　" + pt.score +
+           " 分　·　全省第 " + fmt(pt.rank) + " 名　·　" + tier + "</title>" +
+           '<circle class="sg-dot' + (st.cls ? " " + st.cls : "") + '"' +
+           (st.fill ? ' fill="' + st.fill + '"' : "") +
+           (st.ring ? ' stroke="' + st.fill + '"' : "") + ' cx="' + pt.x.toFixed(1) +
+           '" cy="' + cy + '" r="' + SG.rad + '"/>' +
+           '<text class="sg-lab-' + st.lab + '" x="' + pt.x.toFixed(1) +
+           '" y="' + (cy + 3.4) + '" text-anchor="middle">' + pt.rankNo + "</text></g>";
+    });
+    if (!pts.length)
+      g += '<text class="sg-none" x="4" y="' + (H / 2 + 4) + '">该年前十没有留下分数</text>';
+
+    return cell('<svg viewBox="0 0 ' + SG.w + " " + H + '" role="img" aria-label="' +
+      rec.year + ' 年绥化全市前十的全省位次">' + g + "</svg>");
+  }).join("") + "</tbody>";
+
+  $("shTable").innerHTML = head + body;
+
+  const bits = ["横轴是全省位次的对数刻度（" + SG.r0 + "–" + fmt(SG.r1) +
+    " 名），越靠左越靠前。共标出 " + dots + " 位考生；" +
+    "同分的人位次相同，圆点会上下错开避免重叠。鼠标悬停可看姓名以外的全部信息。",
+    "<b style=\"color:var(--you)\">红色五角星</b>是你在页面顶部输入的分数按同一累计百分位落到各年的位次" +
+    "（当前 " + BY.get(state.src).year + " 年 " + state.score + " 分，前 " + pctText(state.pct) +
+    "）；位次超出 " + fmt(SG.r1) + " 名的年份不显示。"];
+  if (partial.length)
+    bits.push("<strong>" + partial.join("、") + "</strong> 年只有部分名次留下了分数，未留分数的人无法定位，图上没有圆点。");
+  if (noTable.length)
+    bits.push("<strong>" + noTable.join("、") + " 年</strong>只有分数线、没有一分一段表，整行无法定位。");
+  $("shNote").innerHTML = bits.join("　");
+}
+
+/* ------------------------------------------ 绥化前十：全市 / 一中 */
+const ST = DATA.schoolTop || [];
+const CT = DATA.cityTop   || [];
+
+/* 分数落在哪一档：先看清华，再看上海交大。同一年内比分数与比位次等价。 */
+function tierOf(score, qh, sec){
+  if (score == null) return "";
+  if (qh  != null && score >= qh)  return "qh";
+  if (sec != null && score >= sec) return "jd";
+  return "";
+}
+/* 第二梯队参照校逐年不同，图例与表头都得跟着变 */
+function secondNames(years){
+  const set = [...new Set(years.map(y => (SH.find(r => r.year === y) || {}).secondName)
+    .filter(Boolean))];
+  return set.length ? set.join("／") : "第二梯队";
+}
+
+/* 两张表结构相同：行是名次，列是年份。差异都收在 cfg 里，渲染逻辑只有一份。 */
+function drawTopMatrix(cfg){
+  const sec = $(cfg.sec);
+  if (!cfg.rows.length){ sec.hidden = true; return; }
+  sec.hidden = false;
+
+  const base  = BY.get(state.src);
+  const raw   = state[cfg.stateKey];               // true = 显示当年裸分
+  const years = [...new Set(cfg.rows.map(r => r.year))].sort((a,b) => a - b);
+  const maxRank = Math.max(10, ...cfg.rows.map(r => r.rank));
+  const LINE = new Map(SH.map(r => [r.year, r]));
+
+  /* 把某年的一个分数搬到基准年；裸分模式下原样返回 */
+  const toBase = (y, sc) =>
+    (raw || y.year === base.year) ? { score:sc, bound:"" } : convert(y, sc, base);
+
+  $(cfg.title).textContent = cfg.name + (raw ? "（当年裸分）" : "，折合成 " + base.year + " 年的分数");
+  $(cfg.baseSpan).textContent = raw ? "该生当年的实际分数" : "折合到 " + base.year + " 年的分数";
+  $(cfg.secondSpan).textContent = secondNames(years);
+
+  const cells = new Map();
+  cfg.rows.forEach(r => {
+    const y = BY.get(r.year);
+    if (!y) return;
+    const b = LINE.get(r.year) || {};
+    const c = { rec:r, qh:b.qinghua, sec:b.second, secName:b.secondName || "第二梯队",
+                tier:"", delta:null, own:null, cv:null };
+    if (r.score != null){
+      c.own  = rankOf(y, r.score);
+      c.cv   = toBase(y, r.score);
+      c.tier = tierOf(r.score, b.qinghua, b.second);
+    }
+    cells.set(r.year + ":" + r.rank, c);
+  });
+
+  // 每年的第 1 名都标出与清华线的距离：够线写「超出」，不够写「差」
+  const misses = [];
+  years.forEach(yr => {
+    const first = cells.get(yr + ":1");
+    const qh = (LINE.get(yr) || {}).qinghua;
+    if (!first || !first.cv || qh == null) return;
+    first.delta = first.rec.score - qh;          // >=0 超出，<0 差
+    if (first.delta < 0)
+      misses.push({ year:yr, gap:-first.delta, score:first.rec.score, line:qh });
+  });
+
+  // 表头：年份 + 当年两条录取线（跟随大字口径一起换算）
+  const head = '<thead><tr><th class="rk">' + cfg.rankLabel + "</th>" +
+    years.map(yr => {
+      const y = BY.get(yr), b = LINE.get(yr) || {};
+      const one = (v, cls, label) => {
+        if (v == null) return '<span class="none">' + label + " —</span>";
+        const s = toBase(y, v);
+        const r = rankOf(y, v);                    // 位次是该年自身的，不随折合改变
+        return '<span class="' + cls + '">' + label + " " + prefix(s.bound) + s.score +
+               " 分 / " + prefix(r.bound) + fmt(r.rank) + " 名</span>";
+      };
+      return '<th class="' + (yr === base.year ? "base" : "") + '">' +
+        '<span class="y">' + yr + "</span>" +
+        '<span class="lines">' + one(b.qinghua, "q", "清华") +
+        one(b.second, "j", b.secondName || "二档") + "</span></th>";
+    }).join("") + "</tr></thead>";
+
+  let filled = 0, scored = 0;
+  const tally = { qh:0, jd:0 };
+  const body = "<tbody>" + Array.from({ length:maxRank }, (_, i) => {
+    const rk = i + 1;
+    const tds = years.map(yr => {
+      const c = cells.get(yr + ":" + rk);
+      if (!c) return '<td class="empty">—</td>';
+      filled++;
+      if (c.cv) scored++;
+      if (c.tier) tally[c.tier]++;
+
+      const sch = cfg.withSchool
+        ? '<em class="sch' + (c.rec.abbr ? "" : " none") + '">' + (c.rec.abbr || "校名不详") + "</em>"
+        : "";
+      const tip = [
+        c.rec.school || "",
+        c.rec.score != null ? "当年 " + c.rec.score + " 分" : "无分数记录",
+        c.rec.score == null ? "" :
+          c.tier === "qh" ? "达到 " + yr + " 年清华线（" + c.qh + " 分）"
+        : c.tier === "jd" ? "达到 " + yr + " 年" + c.secName + "线（" + c.sec + " 分）；差清华线 " +
+                            (c.qh - c.rec.score) + " 分"
+        : c.sec != null ? "两条线都未达到（" + c.secName + " " + c.sec + " 分）" : ""
+      ].filter(Boolean).join("　·　");
+
+      if (!c.cv)
+        return '<td class="cell" title="' + tip + '"><span class="cv">' +
+          '<b style="color:var(--ink-3);font-weight:400">—</b>' +
+          "<small>无分数记录</small>" + sch + "</span></td>";
+
+      return '<td class="cell' + (c.tier ? " tier t-" + c.tier : "") + '" title="' + tip + '">' +
+        '<span class="cv"><b>' + prefix(c.cv.bound) + c.cv.score + "</b>" +
+        "<small>当年第 " + prefix(c.own.bound) + fmt(c.own.rank) + " 名</small>" +
+        (c.delta == null ? "" :
+          '<small class="gapline"><span class="gap">' +
+          (c.delta === 0 ? "正好压清华线"
+            : c.delta > 0 ? "超出清华线 " + c.delta + " 分"
+            : "差清华线 " + (-c.delta) + " 分") +
+          "</span></small>") +
+        sch + "</span></td>";
+    }).join("");
+    return '<tr><th scope="row">第 ' + rk + " 名</th>" + tds + "</tr>";
+  }).join("") + "</tbody>";
+
+  const tbl = $(cfg.table);
+  tbl.innerHTML = head + body;
+  // 列数多时宁可横向滚动，也不要把格子压到看不清
+  tbl.style.minWidth = (78 + years.length * (cfg.withSchool ? 112 : 100)) + "px";
+
+  $(cfg.lead).innerHTML = raw
+    ? "行是" + cfg.rowMeaning + "，列是年份，大字是<b>该生当年的实际分数</b>。" +
+      "各年试卷难度不同，<strong>裸分之间不可直接比较</strong> —— 要比高低请切回「折合分」；" +
+      "小字的全省位次则任何时候都可比" + (cfg.withSchool ? "，格内最下一行是毕业中学" : "") + "。" +
+      "表头是当年真实的两条录取线。"
+    : "行是" + cfg.rowMeaning + "，列是年份。每格的大字，是那位同学的分数按同一累计百分位折合到 <b>" +
+      base.year + "</b> 年之后的分数 —— 换算之后，各届人才落在同一把尺子上，可以直接比大小；" +
+      "小字是他本人当年的全省位次" + (cfg.withSchool ? "，格内最下一行是毕业中学" : "") + "。" +
+      "表头的两条录取线也一并折合到了 " + base.year + " 年。";
+
+  const perYear = tag => years.map(yr => {
+    const n = [...cells.values()].filter(c => c.rec.year === yr && c.tier === tag).length;
+    return n ? yr + " 年 " + n + " 人" : null;
+  }).filter(Boolean);
+
+  const bits = ["共 " + filled + " 条记录" +
+    (scored < filled ? "，其中 " + scored + " 条留下了分数" : "") +
+    "，其余格子该年没有留下记录，不是没有这个名次。"];
+  bits.push("<b style=\"color:var(--qh)\">紫色 " + tally.qh + " 格</b>达到当年清华录取线" +
+    (perYear("qh").length ? "（" + perYear("qh").join("、") + "）" : "") +
+    "；<b style=\"color:var(--jd)\">红色 " + tally.jd + " 格</b>未达清华但达到当年第二梯队线（" +
+    secondNames(years) + "）" +
+    (perYear("jd").length ? "（" + perYear("jd").join("、") + "）" : "") +
+    "。分档按该生当年的原始分与当年的线比较，与折合分无关。");
+  bits.push("第 1 名一行标出了当年榜首与清华线的距离。" +
+    (misses.length ? "其中 " + misses.map(m => m.year + " 年差 <strong>" + m.gap +
+      " 分</strong>").join("、") + " —— 这几年绥化榜首没能够到清华线。" : ""));
+
+  const gaps = years.map(yr => {
+    const rs = cfg.rows.filter(r => r.year === yr).map(r => r.rank);
+    const top = Math.max.apply(null, rs);
+    const miss = [];
+    for (let i = 1; i < top; i++) if (rs.indexOf(i) < 0) miss.push(i);
+    return miss.length ? yr + " 年缺第 " + miss.join("、") + " 名" : null;
+  }).filter(Boolean);
+  if (gaps.length) bits.push(gaps.join("；") + "，所以那一列并非连续的前几名。");
+
+  if (cfg.withSchool){
+    const cnt = {};
+    cfg.rows.forEach(r => { if (r.abbr) cnt[r.abbr] = (cnt[r.abbr] || 0) + 1; });
+    const list = Object.keys(cnt).sort((a,b) => cnt[b] - cnt[a]);
+    bits.push("这 " + filled + " 个上榜席位来自 <strong>" + list.length + " 所中学</strong>：" +
+      list.map(s => s + " " + cnt[s] + " 人").join("、") + "。");
+  }
+  $(cfg.note).innerHTML = bits.join("　");
+}
+
+function drawCityTop(){
+  drawTopMatrix({ rows:CT, sec:"sec-citytop", title:"ctTitle", lead:"ctLead", note:"ctNote",
+                  table:"ctTable", baseSpan:"ctBase", secondSpan:"ctSecond",
+                  stateKey:"ctRaw", name:"绥化市历届前十",
+                  rankLabel:"全市排名", rowMeaning:"全市名次", withSchool:true });
+}
+function drawSchoolTop(){
+  drawTopMatrix({ rows:ST, sec:"sec-schooltop", title:"stTitle", lead:"stLead", note:"stNote",
+                  table:"stTable", baseSpan:"stBase", secondSpan:"stSecond",
+                  stateKey:"stRaw", name:"绥化一中历届前十",
+                  rankLabel:"全校排名", rowMeaning:"校内名次", withSchool:false });
+}
+
+/* ---------------------------------------------------------------- 脚注 */
+(function notes(){
+  const modelled = YEARS.filter(y => y.modelled).map(y => y.year);
+  const est      = YEARS.filter(y => y.estimated);
+  const capped   = YEARS.filter(y => y.openTop).map(y => y.year);
+  const items = [
+    "<strong>数据来源</strong>　黑龙江省招生考试院逐年公布的高考成绩一分一段表（理科／物理类）。",
+    "<strong>逐分数据的来源</strong>　" + modelled.join("、") +
+      " 年当年只公布了<strong>分数段累计人数</strong>，逐分的一分一段表由分段数据推算而成，" +
+      "段的累计人数与官方一致。本页各年一律以 <code>content/2007/convert/</code> 下的一分一段表为准。",
+    "<strong>分母</strong>　各年一律取<strong>150 分及以上</strong>的考生人数，避免各年表格下限不一造成口径漂移。" +
+      "该口径不含缺考及 150 分以下的考生，也不含文科／历史类。",
+    "<strong>估计的分母</strong>　" + est.map(y =>
+        y.year + " 年的一分一段表只到 " + y.floor + " 分，拿不到 150 分口径的人数，此处取 <b>" +
+        fmt(y.total) + "</b>（约 ±" + (y.estError*100).toFixed(1).replace(/\.0$/,"") + "%）—— " + y.estBasis
+      ).join("；") + "。这三年的百分位因此带有相应的不确定度，界面上标为「分母估计」，" +
+      "其中 " + est.reduce((a,b) => a.estError > b.estError ? a : b).year + " 年最不可靠。",
+    "<strong>换算方法</strong>　先由分数查得当年位次（该分及以上的累计人数），除以当年考生数得到累计百分位；" +
+      "再用同一百分位乘以目标年考生数得到目标位次；最后取<strong>该分及以上人数不少于该位次的最高分</strong>作为等位分。" +
+      "分数只能取整，等位分因此偏保守：实际位次通常比目标位次略靠后。" +
+      "切换基准年时保持百分位不变，所以分数会随之调整。",
+    "<strong>边界</strong>　" + capped.join("、") + " 年的表把最高的若干分并为「XXX 分以上」一档，落在该档记作 <span class=\"cap\">≥</span>／<span class=\"cap\">+</span>；" +
+      est.map(y => y.year).join("、") + " 年的表在 " + est.map(y => y.floor).join("／") +
+      " 分处收尾，低于该分记作 <span class=\"cap\">&lt;</span>／<span class=\"cap\">−</span>。两者都只表示边界，不是精确值。",
+    "<strong>新旧高考</strong>　黑龙江自 2024 年起实行 3+1+2，理科变为物理类，选考科目按等级赋分，试卷结构与 2023 年及以前不同。" +
+      "此外 2009 年与 2020 年之间有十年空档，无数据。跨越这些断点的换算只是位次对位次，" +
+      "<strong>不代表试卷难度或考生水平可直接比较</strong>。",
+    "<strong>绥化参照分数</strong>　绥化市最高分与绥化一中最高分和 suihua 数据集中的全市前十名录逐条一致" +
+      "（如 2007 年市最高分 695 为肇东一中窦彦超，一中最高分 687 为当年全市第三）。" +
+      "另有一处独立校验：2007 年清华录取线 687 分，按本页重建的一分一段表算得全省第 113 名，" +
+      "与当年公开记载的「清华 687 分、全省排名约第 113 名」吻合。",
+    "<strong>绥化一中前十</strong>　分数取自 <code>content/2007/convert/suihua.csv</code>，" +
+      "各年留存程度不一（2006 年前十齐全，2009 年只留下第一名），空缺即无记录。",
+    "<strong>还有什么没算进去</strong>　招生计划、批次线、专业冷热与省内外院校投放量逐年变化，" +
+      "等位分只回答「同样的位次那年是多少分」，不回答「能上哪所学校」。"
+  ];
+  $("notes").innerHTML = items.map(t => "<li>" + t + "</li>").join("");
+})();
+
+/* ---------------------------------------------------------------- 渲染 */
+function render(from){
+  const y = BY.get(state.src);
+  $("segYear").querySelectorAll("button[data-v]").forEach(b =>
+    b.setAttribute("aria-pressed", String(+b.dataset.v === state.src)));
+
+  scoreRange.min = y.base; scoreRange.max = y.top; scoreRange.value = state.score;
+  $("sMin").textContent = y.base; $("sMax").textContent = y.top + (y.openTop ? "+" : "");
+  scoreIn.min = y.base; scoreIn.max = y.top;
+  rankIn.min = 1; rankIn.max = y.total;
+  if (from !== "score") scoreIn.value = state.score;
+  if (from !== "rank")  rankIn.value  = rankOf(y, state.score).rank;
+
+  $("ctlHint").innerHTML = y.year + " 年逐分公布的范围是 " + y.base + "–" + y.top + " 分" +
+    (y.openTop ? "（更高分并为「" + y.top + " 分以上」一档，共 " + fmt(topCum(y)) + " 人）" : "") +
+    "；当年考生 " + fmt(y.total) + " 人" + (y.estimated ? "（<b>估计值</b>，该年表只到 " + y.floor + " 分）" : "") +
+    (y.modelled ? "。该年一分一段为十分段内插重建" : "") + "。";
+
+  drawKpis(); drawTable(); drawSmall(); drawHist(); drawMatrix();
+  drawSuihua(); drawCityTop(); drawSchoolTop(); writeHash();
+}
+
+commitScore(state.score);   // 默认值也要建立锚点
+readHash();
+window.addEventListener("hashchange", () => { readHash(); render(); });
+render();
+})();
+</script>
+</body>
+</html>
