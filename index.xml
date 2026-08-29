@@ -945,10 +945,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1787808664211" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1787974887112" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1787808664211",
+ id: "react-widget-GMMVisualizer-1787974887112",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -7021,6 +7021,47 @@ $$
 &lt;li&gt;地理：一班，二班，付丽华，63年2月生，哈师大地理系本科，86年7月工作，时年41岁-42岁，三班，不知道&lt;/li&gt;
 &lt;li&gt;历史：一班，不知道，二班，崔兰玲，68年6月生，黑大历史系本科，90年7月工作，时年36岁-37岁，三班，不知道&lt;/li&gt;
 &lt;li&gt;政治：一班，不知道，二班，宁秀霞，66年11月生，齐师院政治系本科，89年8月工作，时年38岁，三班，杨彦春本科，69年12月生，牡师院政治系本科，92年7月工作，时年35岁-37岁&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="外市县"&gt;外市县&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;徐丽娟，望奎火箭&lt;/li&gt;
+&lt;li&gt;包括，望奎&lt;/li&gt;
+&lt;li&gt;侯雨薇，望奎五中，全县第五&lt;/li&gt;
+&lt;li&gt;王胤燊，望奎五中&lt;/li&gt;
+&lt;li&gt;李光磊，望奎&lt;/li&gt;
+&lt;li&gt;纪红景，望奎&lt;/li&gt;
+&lt;li&gt;邵润超，望奎&lt;/li&gt;
+&lt;li&gt;林英魁，绥棱五中，648分，全校第二，全县第三&lt;/li&gt;
+&lt;li&gt;刘翔，绥棱五中，630分，全校第六，全县第十三&lt;/li&gt;
+&lt;li&gt;王丽圆，绥棱后头&lt;/li&gt;
+&lt;li&gt;闫岩，绥棱泥尔河&lt;/li&gt;
+&lt;li&gt;梁志超，海伦&lt;/li&gt;
+&lt;li&gt;张礼鹏，安达&lt;/li&gt;
+&lt;li&gt;张国慧，青冈&lt;/li&gt;
+&lt;li&gt;段春颀，北安通北&lt;/li&gt;
+&lt;li&gt;殷旭，北安龙门农场&lt;/li&gt;
+&lt;li&gt;王刚，北安&lt;/li&gt;
+&lt;li&gt;李佳滨，北安&lt;/li&gt;
+&lt;li&gt;王维，大兴安岭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="总结来看"&gt;总结来看&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;望奎县八人&lt;/li&gt;
+&lt;li&gt;绥棱县四人&lt;/li&gt;
+&lt;li&gt;安达市一人&lt;/li&gt;
+&lt;li&gt;海伦市一人&lt;/li&gt;
+&lt;li&gt;青冈县一人&lt;/li&gt;
+&lt;li&gt;没有来自肇东的，2007年肇东前十4人&lt;/li&gt;
+&lt;li&gt;没有来自庆安的，2007年庆安前十1人&lt;/li&gt;
+&lt;li&gt;没有来自明水的&lt;/li&gt;
+&lt;li&gt;没有来自兰西的&lt;/li&gt;
+&lt;li&gt;非绥化市，北安和大兴安岭5人&lt;/li&gt;
+&lt;li&gt;计划招生50人，实际约20人&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="绥化本市"&gt;绥化本市&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;刘欣，北林区秦家第一名，642分&lt;/li&gt;
+&lt;li&gt;李柏荣，北林区秦家第二名，640分&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="肇东一中"&gt;肇东一中&lt;/h2&gt;
 &lt;ol&gt;
@@ -14899,15 +14940,14 @@ $$
 &lt;ol&gt;
 &lt;li&gt;G647.32：高考指南：2005，2006，2009，2010黑龙江版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="绥化一中校志"&gt;绥化一中校志&lt;/h2&gt;
+&lt;h2 id="图书"&gt;图书&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;544&lt;/li&gt;
-&lt;li&gt;546&lt;/li&gt;
-&lt;li&gt;572&lt;/li&gt;
-&lt;li&gt;606&lt;/li&gt;
-&lt;li&gt;607&lt;/li&gt;
-&lt;li&gt;608&lt;/li&gt;
-&lt;li&gt;609&lt;/li&gt;
+&lt;li&gt;安达一中 G639.283.5/54&lt;/li&gt;
+&lt;li&gt;安达二中 G639.283.5/92&lt;/li&gt;
+&lt;li&gt;望奎一中 G639.283.5/87&lt;/li&gt;
+&lt;li&gt;大庆实验 G639.283.5/96&lt;/li&gt;
+&lt;li&gt;哈三中 G639.283.5/91&lt;/li&gt;
+&lt;li&gt;齐齐哈尔实验 G639.283.5/16&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/2026/notes/0725/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2026/notes/0725/</guid><description>&lt;h2 id="computation"&gt;Computation&lt;/h2&gt;
 &lt;h3 id="lemma-61-p246"&gt;Lemma 6.1, P246&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;q&lt;/span&gt;(w):

@@ -57,15 +57,14 @@
 &lt;ol&gt;
 &lt;li&gt;G647.32：高考指南：2005，2006，2009，2010黑龙江版&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="绥化一中校志"&gt;绥化一中校志&lt;/h2&gt;
+&lt;h2 id="图书"&gt;图书&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;544&lt;/li&gt;
-&lt;li&gt;546&lt;/li&gt;
-&lt;li&gt;572&lt;/li&gt;
-&lt;li&gt;606&lt;/li&gt;
-&lt;li&gt;607&lt;/li&gt;
-&lt;li&gt;608&lt;/li&gt;
-&lt;li&gt;609&lt;/li&gt;
+&lt;li&gt;安达一中 G639.283.5/54&lt;/li&gt;
+&lt;li&gt;安达二中 G639.283.5/92&lt;/li&gt;
+&lt;li&gt;望奎一中 G639.283.5/87&lt;/li&gt;
+&lt;li&gt;大庆实验 G639.283.5/96&lt;/li&gt;
+&lt;li&gt;哈三中 G639.283.5/91&lt;/li&gt;
+&lt;li&gt;齐齐哈尔实验 G639.283.5/16&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/2026/notes/0725/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2026/notes/0725/</guid><description>&lt;h2 id="computation"&gt;Computation&lt;/h2&gt;
 &lt;h3 id="lemma-61-p246"&gt;Lemma 6.1, P246&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;q&lt;/span&gt;(w):
