@@ -44,7 +44,8 @@ weight = 3
   # 换算页与数据放在一起便于直接打开；它是完整的 HTML 文档，
   # 交给 Hugo 会被套进主题模板变成嵌套页面，所以不参与站点构建。
   # 发布版本在 static/gaokao-convert/index.html。
-  excludeFiles = ["2007/convert/index.html"]
+  # README 是给自己看的数据说明，同样不该变成一个页面。
+  excludeFiles = ["2007/convert/index.html", "2007/convert/README.md"]
 
 [[module.mounts]]
   source = "static"

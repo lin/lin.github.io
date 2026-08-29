@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
 """Build the 高考等位分换算 page from the 一分一段表 CSVs.
 
-    python3 scripts/build-convert.py
+改完 content/2007/convert/ 里的任何一个 CSV，跑一次就能把页面重新生成：
+
+    python3 scripts/build-convert.py     # 生成
+    ./scripts/build-convert.py --watch   # 盯着 CSV，一存盘就重新生成
+    python3 scripts/build-convert.py --check    # 只校验数据，不写文件
 
 Reads   content/2007/convert/<year>.csv
 Writes  content/2007/convert/index.html   (与数据放在一起，可直接双击打开)
@@ -18,12 +23,17 @@ CSV 格式在各年之间并不统一，此处按表头名解析：
   * 2006/2009 表首有若干「虚拟上限锚点」（累计人数为 0），需要剔除。
 
     --check   parse and report only; write nothing
+    --watch   rebuild whenever a CSV or the template changes (Ctrl-C to stop)
+    --quiet   only print warnings and the two output lines
+    --strict  exit 1 if any ⚠ was raised (for CI / pre-commit)
 """
 
 import argparse
 import csv
 import json
 import re
+import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -321,13 +331,13 @@ def build():
     return years
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--check", action="store_true", help="只解析并报告，不写文件")
-    args = ap.parse_args()
+def run(check=False, quiet=False):
+    """跑一次完整构建。返回本次遇到的 ⚠ 条数（0 表示数据自洽）。"""
+    say = (lambda *a: None) if quiet else print
+    warnings = []
 
     years = build()
-    print(f"{'年份':<6}{'科类':<6}{'逐分范围':<14}{'考生数(≥150)':>14}  备注")
+    say(f"{'年份':<6}{'科类':<6}{'逐分范围':<14}{'考生数(≥150)':>14}  备注")
     for y in years:
         note = []
         if y["estimated"]:
@@ -336,13 +346,13 @@ def main():
             note.append("顶端封口")
         if y["modelled"]:
             note.append("分数段推算")
-        print(f"{y['year']:<6}{y['track']:<5}{y['base']}-{y['top']:<9}"
+        say(f"{y['year']:<6}{y['track']:<5}{y['base']}-{y['top']:<9}"
               f"{y['total']:>13,}  {'；'.join(note)}")
-    print(f"\n共 {len(years)} 年"
+    say(f"\n共 {len(years)} 年"
           f"，其中 {sum(1 for y in years if y['estimated'])} 年分母为估计值")
 
     baselines = read_baselines()
-    print("绥化参照：" + "；".join(
+    say("绥化参照：" + "；".join(
         f"{b['year']} 清华 {b['qinghua'] or '—'}／{b['secondName']} {b['second'] or '—'}"
         for b in baselines))
 
@@ -351,26 +361,28 @@ def main():
     per_year = {}
     for r in school_top:
         per_year.setdefault(r["year"], []).append(r["rank"])
-    print("一中前十：" + "；".join(
+    say("一中前十：" + "；".join(
         f"{y} 年 {len(v)} 条（第 {min(v)}–{max(v)} 名）" for y, v in sorted(per_year.items())))
 
     city_top = read_city_top()
     filled, conflicts = fill_from_top(baselines, city_top, school_top)
     for line in filled:
-        print(f"  补齐：{line}")
+        say(f"  补齐：{line}")
     for line in conflicts + cross_check_top(city_top, school_top):
+        warnings.append(line)
         print(f"  ⚠ 冲突：{line}")
     cy = {}
     for r in city_top:
         cy.setdefault(r["year"], []).append(r)
-    print("全市前十：" + "；".join(
+    say("全市前十：" + "；".join(
         f"{y} 年 {len(v)} 条（{sum(1 for r in v if r['score'] is not None)} 条有分数）"
         for y, v in sorted(cy.items())))
     schools = sorted({r["abbr"] for r in city_top if r["abbr"]})
-    print(f"涉及中学 {len(schools)} 所：{'、'.join(schools)}")
+    say(f"涉及中学 {len(schools)} 所：{'、'.join(schools)}")
 
-    if args.check:
-        return
+    if check:
+        say("（--check：未写文件）")
+        return warnings
 
 
     payload = json.dumps({
@@ -387,6 +399,53 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(html, encoding="utf-8")
         print(f"写入 {out.relative_to(ROOT)}  ({len(html)/1024:.0f} KB)")
+    if warnings:
+        print(f"⚠ 本次有 {len(warnings)} 处数据对不上（见上），页面已按现有数据生成。")
+    return warnings
+
+
+def watched_files():
+    """每次重新 glob —— 新增或删除 CSV 也要能被 --watch 看见。"""
+    yield from SRC_DIR.glob("*.csv")
+    yield TEMPLATE
+    yield Path(__file__)
+
+
+def snapshot():
+    """被监视文件的 (路径, mtime) 集合。"""
+    return {(f, f.stat().st_mtime) for f in watched_files() if f.exists()}
+
+
+def main():
+    ap = argparse.ArgumentParser(
+        description="从 content/2007/convert/*.csv 生成高考等位分换算页面。")
+    ap.add_argument("--check", action="store_true", help="只解析并报告，不写文件")
+    ap.add_argument("--watch", action="store_true", help="盯着 CSV 与模板，改动即重新生成")
+    ap.add_argument("--quiet", "-q", action="store_true", help="只打印警告与写入结果")
+    ap.add_argument("--strict", action="store_true", help="有 ⚠ 时以退出码 1 结束")
+    args = ap.parse_args()
+
+    if not args.watch:
+        warnings = run(check=args.check, quiet=args.quiet)
+        sys.exit(1 if (args.strict and warnings) else 0)
+
+    sys.stdout.reconfigure(line_buffering=True)   # 重定向到文件时也要能实时看到
+    print(f"监视 {SRC_DIR.relative_to(ROOT)}/*.csv 与模板，Ctrl-C 结束。")
+    last = None
+    try:
+        while True:
+            now = snapshot()
+            if now != last:
+                if last is not None:
+                    print(f"\n—— {time.strftime('%H:%M:%S')} 检测到改动，重新生成 ——")
+                try:
+                    run(check=args.check, quiet=args.quiet or last is not None)
+                except Exception as e:          # 数据写坏了不该让 watch 退出
+                    print(f"✗ 生成失败：{type(e).__name__}: {e}")
+                last = now
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\n结束。")
 
 
 if __name__ == "__main__":

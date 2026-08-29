@@ -4,7 +4,7 @@
 
 Reads   content/2007/suihua.md          (the source of truth — edit this)
 Writes  content/2007/suihua.csv         (flat table, one row per 上榜考生)
-        static/suihua/index.html        (self-contained interactive page)
+        static/gaokao-suihua/index.html        (self-contained interactive page)
 
 The markdown is parsed by structure, not by line number: a `## <year>年` heading
 opens a year, a heading containing 理 or 文 opens a track, and every following
@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "content" / "2007" / "suihua.md"
 CSV_OUT = ROOT / "content" / "2007" / "suihua.csv"
 TEMPLATE = ROOT / "scripts" / "suihua-template.html"
-HTML_OUT = ROOT / "static" / "suihua" / "index.html"
+HTML_OUT = ROOT / "static" / "gaokao-suihua" / "index.html"
 
 CSV_HEADER = ["年份", "文理科", "全市名次", "姓名", "毕业中学", "分数", "录取院校", "备注"]
 
@@ -253,10 +253,9 @@ def ranked(records):
 
 
 def build_payload(records):
-    # 姓名 is carried ONLY where the page actually prints it: 清华/北大 admits and
-    # rows carrying a 备注, both listed by name in 单校录取院校明细. Every other
-    # student's name stops at the CSV — the page ships to the web, so the exposure
-    # is held to exactly the displayed set.
+    # 姓名 is carried for every student: 单校录取院校明细 now lists the whole roster
+    # school by school. This publishes the full name list — the earlier "names stop
+    # at the CSV" rule no longer applies.
     #
     # Every student is carried, ranked or not, with rank 0 meaning "no rank number
     # in the source". The page counts 前十人数 over rank > 0 only, but counts
@@ -276,9 +275,6 @@ def build_payload(records):
             "tier": tier_of(uni) if uni else NO_UNI_TIER,
             "name": r["姓名"],
         })
-    for x in rows:
-        if x["tier"] != 0 and not x["note"]:
-            x["name"] = ""            # drop every undisplayed name before it reaches the page
 
     schools = [s for s, _ in Counter(x["school"] for x in rows).most_common()]
     unis = [u for u, _ in Counter(x["uni"] for x in rows if x["uni"]).most_common()]
@@ -358,8 +354,8 @@ def main():
               f"counted in 前十 but not in any 院校 total)")
 
     named = sum(1 for row in payload["rows"] if row[9])
-    print(f"  {named} name(s) carried into the page (清北 + 备注 rows); "
-          f"{len(payload['rows']) - named} other name(s) withheld")
+    print(f"  {named} of {len(payload['rows'])} name(s) carried into the page "
+          f"(full roster is published)")
 
     qb = Counter(payload["schools"][row[3]] for row in payload["rows"] if row[5] == 0)
     qb_unranked = sum(1 for row in payload["rows"] if row[5] == 0 and row[2] == 0)
