@@ -159,6 +159,10 @@ td.dest{font-size:12px;color:var(--ink-3);max-width:260px;overflow:hidden;text-o
   background:var(--card);color:var(--ink);border-radius:3px;min-width:190px}
 .tctl .hint{font-size:12px;color:var(--ink-3)}
 
+ul.bul{margin:14px 0 0;padding-left:20px;max-width:70ch}
+ul.bul li{font-size:14px;line-height:1.78;margin-bottom:9px;color:var(--ink-2)}
+ul.bul li strong,ul.bul li b{color:var(--ink)}
+
 /* ---------- quotes & panes ---------- */
 blockquote.q{margin:16px 0 20px;padding:14px 18px;border-left:3px solid var(--seal);
   background:var(--seal-wash);font-size:14px;line-height:1.72;color:var(--ink)}
@@ -172,6 +176,12 @@ b.hl{background:var(--seal-wash);color:var(--seal);padding:0 3px;border-radius:2
 
 /* ---------- destination table ---------- */
 .hint{font-size:12px;color:var(--ink-3)}
+#ttwo{table-layout:fixed;width:100%}
+#ttwo th:first-child,#ttwo td:first-child{width:16%}
+#ttwo{min-width:760px}
+#ttwo td,#ttwo th{font-size:12.5px}
+#ttwo td{white-space:normal;line-height:1.62;vertical-align:top;padding-top:9px;padding-bottom:9px}
+#ttwo th{white-space:normal}
 .tp{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;
   border:1px solid var(--rule);color:var(--ink-3);white-space:nowrap}
 .tp.t0{border-color:var(--seal);color:var(--seal);font-weight:600}
@@ -327,6 +337,12 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
   <li><a href="#s-origin">外县与重读</a></li>
   <li><a href="#s-years">2002–2008</a></li>
   <li><a href="#s-thermo">清华温度计</a></li>
+  <li><a href="#s-band">640–655 那一档</a></li>
+  <li><a href="#s-drill">教了什么</a></li>
+  <li><a href="#s-peers">地级市对照</a></li>
+  <li><a href="#s-hg">鹤岗：带分数的名单</a></li>
+  <li><a href="#s-hgcity">五年榜首</a></li>
+  <li><a href="#s-two">三座城</a></li>
   <li><a href="#s-why">447→1328</a></li>
   <li><a href="#s-est">算上北大</a></li>
   <li><a href="#s-prov">全省位次</a></li>
@@ -817,6 +833,304 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
   实查 0–1 人，对应 k 大致在 0–3 之间。</p>
 </section>
 
+<section id="s-band">
+  <div class="sechead"><h2>中考 640–655 分的那 43 个人</h2><span class="tag">One Score Band, Traced</span></div>
+  <p class="lede">前面都是分段统计。这一节只做一件事：把 2004 年中考考了
+  <strong>640 到 655 分</strong>、并且去了实验或铁人的人<strong>全部列出来</strong>，一个不省略，
+  看他们三年后落在哪。这一档在当年是全市第 4 名到第 52 名之间。</p>
+  <div class="tw card"><table id="tband2"><thead><tr>
+    <th class="s" data-k="0">中考成绩</th><th class="s" data-k="1">全市名次</th>
+    <th class="l s" data-k="2">姓名</th><th class="l s" data-k="3">初中</th>
+    <th class="l s" data-k="4">高中</th><th class="l s" data-k="5">2007 去向</th>
+  </tr></thead><tbody></tbody></table></div>
+  <div class="stats" id="bandstats" style="margin-top:18px"></div>
+  <p class="lede" style="margin-top:22px">43 个人里，<strong>清北 6 人（14%）、985/C9 17 人（40%）、
+  211 层 8 人、其他本科 2 人、同名待定 2 人、追不到 8 人</strong>。
+  能追到的 33 人里，<strong>23 人（70%）进了 985 及以上</strong>。</p>
+  <p class="lede">但这一档最常出现的去向不是清北，是<strong>哈尔滨工业大学——8 个人</strong>，
+  比清华（3）和北大（3）加起来还多。<strong>清北是这一档的天花板，不是中位数。</strong>
+  往下也有真实的坠落：640 分／全市第 52 名的刘小诗去了海南师范大学，
+  643 分／第 32 名的张玮珊去了暨南大学，641 分／第 45 名的刘松宇去了大庆石油学院。
+  进了实验或铁人不等于拿到保票。</p>
+  <p class="notes" style="max-width:72ch">「追不到」的 8 人不代表没考上——他们只是没出现在这两所学校 2007 年公布的名单上，
+  可能转学、复读、走艺体单招，也可能只是同名匹配失败。按全体名册 71%–72% 的追踪率，
+  这 8 人属于正常缺口。</p>
+</section>
+
+<section id="s-drill">
+  <div class="sechead"><h2>第三条通道：教室里教了什么</h2><span class="tag">What Was Actually Taught</span></div>
+  <p class="lede">前面两节算的是<strong>谁在教室里</strong>——外县生和复读生。
+  但还有一条通道，名册上一个字都看不出来：<strong>教室里教的是什么</strong>。</p>
+  <p class="lede">2007 年全国大纲卷物理第二题，用了<strong>弹性碰撞</strong>的动量—能量联立。
+  这个知识点写在<strong>新课标教材选修 3-5</strong> 里，而大纲卷考生用的是大纲教材，上面没有。
+  1983 到 2006 年，两百多道高考物理题里，弹性碰撞一次都没出现过；2007 年它出现了七次，
+  其余六次全在新课标卷上。<strong>会不会做，取决于你见没见过那套公式，而不是物理学得多好。</strong></p>
+  <p class="lede">而在大庆的两所学校，这不是超纲，是日常。查 2006 年——也就是这一届的高二升高三那年——
+  <strong>铁人中学在第 23 届全国中学生物理竞赛拿了国家二等奖 2 人、省级一等奖 8 人、省二等 4 人、省三等 4 人。</strong>
+  两个国家二等奖是<strong>王春吉</strong>和<strong>陈晨</strong>，两人 2007 年<strong>双双考进清华</strong>
+  （王春吉进理学院，陈晨进自动化系）。一个练到全国物理竞赛国家奖的人，
+  动量能量联立是肌肉记忆，不是超纲题。</p>
+  <div class="tw card"><table id="tdrill"><thead><tr>
+    <th class="l">学校</th><th class="l">写在自己招生材料里的话</th><th class="l">出处</th>
+  </tr></thead><tbody>
+    <tr><td class="l sch">大庆铁人中学</td><td class="l">2001 年被确定为<b>省首批理科实验基地</b></td><td class="l hint">trzx.com.cn 学校简介</td></tr>
+    <tr><td class="l sch">大庆实验中学</td><td class="l">英才部按 30 人小班编制，培养目标「<b>竞赛夺金牌，高考创名牌</b>」；2003 年五科竞赛 13 人获省一等奖、具备保送资格</td><td class="l hint">sy.dq.hl.cn 招生简章 / 工作简报</td></tr>
+    <tr><td class="l sch">大庆一中</td><td class="l"><b>每学科都有国家级教练员专职辅导竞赛</b>；2001 年以来 77 人因竞赛获北大清华等校保送资格</td><td class="l hint">yz.dqt.com.cn/2007/reason.htm</td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:22px">这两个国家奖得主的来路，还顺带说明了三条通道是<strong>叠加</strong>的：</p>
+  <ul class="bul">
+    <li><strong>陈晨</strong>：2004 年中考 <b>616 分、全市第 573 名</b>，四十二中→铁人中学。
+      从市中考名册里正常走进来的人，比这一档最低的 640 分还低 24 分。</li>
+    <li><strong>王春吉</strong>：<b>不在 2004 年大庆市中考名册上</b>——外县、复读或自费，三者之一。</li>
+  </ul>
+  <p class="lede">外县把尖子生集中过来 → 集中的尖子生撑起竞赛队 → 竞赛队的训练覆盖了超纲考点 →
+  遇上 2007 年那道命题事故，整个训练体系毫发无伤。
+  <strong>前两条通道决定谁坐在教室里，第三条决定这间教室的天花板在哪。</strong></p>
+  <p class="notes" style="max-width:72ch">这一条<b>没法量化成「值多少分」</b>。它不是名册能算出来的东西，
+  只能靠学校自己的材料互相印证。写在这里，是因为不写就等于默认三年的差距只由「谁进来」决定，
+  而 2007 年那道物理题证明不是。</p>
+</section>
+
+<section id="s-peers">
+  <div class="sechead"><h2>把地级市重点放在一起看</h2><span class="tag">Prefecture-Level Peers</span></div>
+  <p class="lede">大庆之外，黑龙江每个地级市都有一所「一中」。
+  把佳木斯一中、鹤岗一中、鸡西一中的档案调出来，能看清两件事：
+  <strong>一是这些学校在本市有多强，二是它们和大庆前两所之间隔着多远。</strong></p>
+  <div class="tw card"><table id="tpeer"><thead><tr>
+    <th class="l">学校 · 年份</th><th class="l">公布的数字</th>
+  </tr></thead><tbody>
+    <tr><td class="l sch">鸡西一中 · 2004</td><td class="l">600 分以上 <b>59 人</b>，占全市 55%；全市理科前 10 名占 8 人；全省前 50 名占 6 人</td></tr>
+    <tr><td class="l sch">鹤岗一中 · 2005</td><td class="l">理科 680 分以上<b>全市共 7 人</b>，一中占 6 人；650 分以上全市 35 人、一中 32 人（91.4%）；重点大学进段 417 人，占全市 77.4%</td></tr>
+    <tr><td class="l sch">鹤岗一中 · 2005（择校生）</td><td class="l">择校生 600 分以上 <b>41 人</b>，最高 683 分；择校生重点大学进段 92 人</td></tr>
+    <tr><td class="l sch">佳木斯一中 · 2012</td><td class="l">文理科 600 分以上 171 人（<b>含回外市县报考的 16 人</b>），占佳木斯市区及所辖市县的 95%</td></tr>
+    <tr><td class="l sch" style="color:var(--seal)">大庆全市 · 2007</td><td class="l" style="color:var(--seal)">理科 <b>680 分以上 73 人</b>——其中实验 39、铁人 21、一中 10</td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:22px">这些学校在自己的城市里都是绝对垄断——鹤岗一中拿走本市 640 分以上的 91.8%，
+  鸡西一中拿走本市 600 分以上的 55%，佳木斯一中拿走 95%。
+  <strong>但它们垄断的那口井本身就很浅</strong>：鹤岗全市 2005 年理科 680 分以上一共只有 <strong>7 个人</strong>，
+  而大庆 2007 年是 <strong>73 个</strong>——十倍。
+  在鹤岗当第一名和在大庆当第十名，面对的根本不是同一个分布。</p>
+  <p class="notes" style="max-width:72ch">跨年比较要小心：鹤岗那组是 2005 年、鸡西是 2004 年、大庆是 2007 年，
+  黑龙江这几年的卷子难度和分数分布并不一致，<b>7 比 73 不能当作精确倍数读</b>。
+  但即使把年份差异放到最宽，数量级的差距也不会消失。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>同一年，佳木斯一中在公开招外市县生</h2><span class="tag">Meanwhile, Elsewhere</span></div>
+  <p class="lede">最后这条是查这三所学校时撞上的，也是整页最刺眼的一条对照。
+  2004 年大庆被「省市教育行政部门严格规定不许各高中学校招收外地学生」掐掉的那件事，
+  <strong>佳木斯一中在 2006、2007、2008 年一直公开地做</strong>——而且做得完全制度化：</p>
+  <div class="tw card"><table id="tjms"><thead><tr>
+    <th class="l">年份</th><th class="l">佳木斯一中网站上挂出的东西</th>
+  </tr></thead><tbody>
+    <tr><td class="l sch">2006</td><td class="l">《佳一中 2006 年<b>外市县招生简章</b>》、《佳一中 2006 外市县初中优秀毕业生<b>报名表</b>》</td></tr>
+    <tr><td class="l sch">2007</td><td class="l">《佳一中 2007 年外地市初中优秀毕业生<b>招生简章</b>》、《2007 年外地招生<b>网上报名流程</b>》、《2007 年外地市优秀初中毕业生<b>招生考试选拔结果及成绩查询</b>》</td></tr>
+    <tr><td class="l sch">2008</td><td class="l">《我校 2008 年外市县初中毕业生<b>选拔名单</b>》、《佳一中<b>外市县招生考试</b>重要通知》、《佳一中 2008 年外地市考生招生信息》</td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:22px">简章、报名表、网上报名、<strong>自设选拔考试</strong>、成绩查询、录取名单公示——
+  一整套流程，公开挂在学校官网上，连续三年。
+  同一个省，同一个时期：<strong>大庆的学校被禁止做这件事，佳木斯的学校把它做成了标准作业</strong>。</p>
+  <p class="lede">这条对照说明，2004 年那道禁令<strong>不是全省一刀切的长期制度，而是一次针对性的、时段性的收紧</strong>。
+  它落在大庆头上，落在 2004 那一届头上。禁令生效的那一年，恰好是这一页追踪的那 5,760 个人参加中考的那一年。</p>
+  <p class="notes" style="max-width:72ch">补一条方法上的提醒：佳木斯一中 2012 年那句「600 分以上 171 人（<b>含回外市县报考的 16 人</b>）」
+  暴露了一个统计陷阱——被外市县招来的学生，有一部分高考时<b>回原籍报名</b>。
+  这意味着「学校公布的高分人数」和「本市高考名册上的高分人数」不是同一个池子，
+  跨学校比较时必须留意各校用的是哪一种口径。大庆一中 2007 年那张表之所以珍贵，
+  正是因为它明确按<b>市区应届／外县／重读</b>三分，把这件事摊开了。</p>
+</section>
+
+<section id="s-hg">
+  <div class="sechead"><h2>鹤岗一中：唯一一份带分数的名单</h2><span class="tag">Names + Scores, 2007</span></div>
+  <p class="lede">大庆两所学校 2007 年的名单都<strong>只有姓名和录取院校，没有分数</strong>。
+  查佳木斯、鸡西、鹤岗三所地级市重点时，鹤岗一中给出了这个项目里唯一的例外——
+  它把 2002 到 2007 年的高考录取榜逐年挂在网上，每一行是
+  <strong>序号 · 姓名 · 分数 · 录取院校</strong>。四个字段，一个不少。</p>
+  <p class="lede">从存档里解析出来一共 <strong>3,650 条</strong>：2002 年 266 条、2003 年 1,120 条、
+  2004 年 767 条、2006 年 1,166 条、2007 年 331 条。
+  2007 年那 331 条只存下了榜单前两页（第 1–331 名），恰好覆盖整个高分段——<strong>从 703 分到 376 分</strong>。</p>
+  <div class="tw card"><table id="thg"><thead><tr>
+    <th class="s" data-k="0">2007 高考分数</th><th class="l s" data-k="1">姓名</th>
+    <th class="l s" data-k="2">录取院校</th><th class="l s" data-k="3">身份</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:12px;max-width:70ch">上表是 2007 年鹤岗一中榜单的前 24 名。
+  「复读」标记的判定见下一节。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>666 分放到鹤岗，是第 16 名</h2><span class="tag">A Reference Point</span></div>
+  <p class="lede">这份名单最有用的地方，是它给了一把<strong>可以直接量分数的尺子</strong>。
+  2007 年，666 分在鹤岗一中这份榜上排<strong>第 16 名</strong>。
+  当年这个分数在鹤岗一中恰好有三个人拿到，他们的去向是：</p>
+  <div class="tw card"><table id="thg666"><thead><tr>
+    <th>2007 分数</th><th class="l">姓名</th><th class="l">录取院校</th>
+  </tr></thead><tbody>
+    <tr><td class="sch">667</td><td class="l">李广宇</td><td class="l">中央财经大学</td></tr>
+    <tr><td class="sch" style="color:var(--seal);font-weight:700">666</td><td class="l sch">门雪莹</td><td class="l"><b>哈尔滨工业大学</b></td></tr>
+    <tr><td class="sch" style="color:var(--seal);font-weight:700">666</td><td class="l sch">王金成</td><td class="l"><b>浙江大学</b></td></tr>
+    <tr><td class="sch" style="color:var(--seal);font-weight:700">666</td><td class="l sch">佟艾悯</td><td class="l"><b>哈尔滨工业大学</b></td></tr>
+    <tr><td class="sch">665</td><td class="l">穆玉玲</td><td class="l">东北财经大学</td></tr>
+    <tr><td class="sch">665</td><td class="l">姜宝森</td><td class="l">北京航空航天大学</td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:20px">三个 666 分，<strong>两个进哈尔滨工业大学，一个进浙江大学</strong>。
+  往上一分是中央财经，往下一分是东北财经和北航。
+  这和大庆那 43 人档里哈工大 8 人独占鳌头是同一个结论，只是这次是<strong>用分数直接对上的</strong>，
+  不是从中考成绩往后推的。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>45 个复读生，两年的分数都在</h2><span class="tag">The Repeater Premium, Measured</span></div>
+  <p class="lede">鹤岗一中把 2006 和 2007 两年的榜都留下了。
+  把两份名单按姓名对一遍——<strong>45 个人同时出现在两张榜上</strong>。
+  他们 2006 年已经考上了大学，2007 年又考了一次。
+  这是整个项目里第一次能<strong>逐人看到复读前后的两个分数</strong>。</p>
+  <div class="stats" id="hgstats"></div>
+  <div class="tw card" style="margin-top:18px"><table id="thgrep"><thead><tr>
+    <th class="l s" data-k="0">姓名</th><th class="s" data-k="1">2006 分数</th>
+    <th class="l s" data-k="2">2006 录取</th><th class="s" data-k="3">2007 分数</th>
+    <th class="l s" data-k="4">2007 录取</th><th class="s" data-k="5">提分</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="lede" style="margin-top:24px">平均提高 <strong>47 分</strong>，中位数也是 47 分，
+  <strong>41 人（91%）提高了</strong>，最大一个提了 160 分。
+  但真正说明问题的是这两个人：</p>
+  <ul class="bul">
+    <li><strong>王弘轩</strong>：2006 年 678 分，<b>已经被哈尔滨工业大学录取</b>；
+      2007 年重考 <b>702 分，进清华大学</b>。提 24 分。</li>
+    <li><strong>邱林</strong>：2006 年 654 分，已被大连理工大学录取；
+      2007 年重考 <b>701 分，进北京大学</b>。<b>提 47 分。</b></li>
+  </ul>
+  <p class="lede">手里已经握着哈工大和大连理工的人，回炉一年，拿走了清华和北大的名额。
+  而 2007 年鹤岗一中的清北一共 6 人——<strong>这两个是其中的两个</strong>。</p>
+  <div class="card" id="hgchart"></div>
+  <p class="lede" style="margin-top:20px">按分数段看复读生的密度，结论比大庆那张表更锋利：
+  <strong>鹤岗一中 2007 年 680 分以上 6 个人，4 个是复读生（67%）；700 分以上 3 个人，2 个是复读生。</strong>
+  往下走密度迅速回落到 15%–19%。<strong>复读生不是均匀地垫高整条曲线，
+  它专门堆在塔尖那几十分里。</strong></p>
+  <p class="notes" style="max-width:72ch">判定方法：同一所学校两年榜单按姓名匹配。
+  同校两年内重名的概率远低于全市匹配，但仍不为零——
+  45 人里有 4 人 2007 年的分数<b>低于</b> 2006 年（最多低 52 分），
+  这既可能是真实的复读失利，也可能是同名的两个人。
+  因此这 45 人应读作<b>上限附近的估计</b>，而 67% 那一档的分子只有 4 个人，样本很小。
+  另外 2007 年只存下前 331 名，所以「复读生占比」在低分段会被截断效应抬高——
+  表里 600 分以上那一行（15%）比实际全校比例偏高。</p>
+</section>
+
+<section id="s-hgcity">
+  <div class="sechead"><h2>鹤岗五年，榜首的名字和分数都在</h2><span class="tag">A City&#39;s Ceiling, 2003–2007</span></div>
+  <p class="lede">鹤岗一中的网站上还有另一批东西：不是本校的榜，是<strong>鹤岗全市的榜</strong>。
+  2003 到 2007 年，每年的「全市高考前十名／前三十名考生名单」，
+  <strong>姓名、总分、就读学校</strong>三列俱全，连着五年一年不缺。
+  这是这个项目里唯一一座能<strong>把塔尖逐年、逐人、带分数看完</strong>的城市。</p>
+  <div class="tw card"><table id="thgy"><thead><tr>
+    <th>高考年份</th><th class="l">全市理科榜首</th><th>分数</th><th class="l">就读学校</th><th>前十名中鹤岗一中占</th>
+  </tr></thead><tbody>
+    <tr><td class="sch">2003</td><td class="l sch">杨荣旭</td><td class="sch">621</td><td class="l">鹤岗一中</td><td class="sch">9 / 10</td></tr>
+    <tr><td class="sch">2004</td><td class="l sch">张健</td><td class="sch">661</td><td class="l">鹤岗一中</td><td class="sch">10 / 10</td></tr>
+    <tr><td class="sch">2005</td><td class="l sch">孙广敏</td><td class="sch">688</td><td class="l" style="color:var(--amber)"><b>鹤岗三中</b></td><td class="sch">9 / 10</td></tr>
+    <tr><td class="sch">2006</td><td class="l sch">崔文</td><td class="sch">683</td><td class="l">鹤岗一中</td><td class="sch">10 / 10</td></tr>
+    <tr><td class="sch" style="color:var(--seal);font-weight:700">2007</td><td class="l sch" style="color:var(--seal);font-weight:700">解斌</td><td class="sch" style="color:var(--seal);font-weight:700">703</td><td class="l">鹤岗一中</td><td class="sch">9 / 10</td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:22px">五年里，鹤岗全市理科的天花板从 <strong>621 分抬到 703 分</strong>，
+  抬了 82 分。而鹤岗一中在全市前十名里始终占 <strong>9 到 10 个</strong>——
+  一所学校，五年，几乎垄断了一座城市的塔尖。
+  这和大庆的形状完全不同：大庆 2007 年 680 分以上 73 人，是<strong>三所学校分</strong>的（实验 39、铁人 21、一中 10）。
+  鹤岗只有一所。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>那道超纲题，在成绩单上是有痕迹的</h2><span class="tag">The 300-Point Column</span></div>
+  <p class="lede">2007 年那份榜单比别的年份多了四列：<strong>语文、数学、外语、综合</strong>。
+  这四列里，最值得盯着看的是<strong>最后一列</strong>——
+  理科综合，满分 300，就是那份出了超纲弹性碰撞题的卷子。</p>
+  <div class="tw card"><table id="thgsub"><thead><tr>
+    <th>全市名次</th><th class="l">姓名</th><th class="l">毕业学校</th>
+    <th>语文</th><th>数学</th><th>外语</th><th>理综</th><th>总分</th>
+  </tr></thead><tbody>
+    <tr><td class="sch">1</td><td class="l sch">解斌</td><td class="l">鹤岗一中</td><td class="sch">130</td><td class="sch">144</td><td class="sch">141</td><td class="sch"><b>288</b></td><td class="sch"><b>703</b></td></tr>
+    <tr><td class="sch">2</td><td class="l sch" style="color:var(--seal);font-weight:700">王弘轩 <span class="tp t0">复读</span></td><td class="l">鹤岗一中</td><td class="sch">124</td><td class="sch">146</td><td class="sch">138</td><td class="sch"><b>294</b></td><td class="sch"><b>702</b></td></tr>
+    <tr><td class="sch">3</td><td class="l sch" style="color:var(--seal);font-weight:700">邱林 <span class="tp t0">复读</span></td><td class="l">鹤岗一中</td><td class="sch">129</td><td class="sch">144</td><td class="sch">134</td><td class="sch"><b>294</b></td><td class="sch"><b>701</b></td></tr>
+    <tr><td class="sch">4</td><td class="l sch">李明飞</td><td class="l">鹤岗三中</td><td class="sch">129</td><td class="sch">147</td><td class="sch">134</td><td class="sch">276</td><td class="sch"><b>686</b></td></tr>
+    <tr><td class="sch">5</td><td class="l sch">宋显明</td><td class="l">鹤岗一中</td><td class="sch">122</td><td class="sch">143</td><td class="sch">135</td><td class="sch">283</td><td class="sch"><b>683</b></td></tr>
+    <tr><td class="sch">6</td><td class="l sch">么江姜</td><td class="l">鹤岗一中</td><td class="sch">129</td><td class="sch">149</td><td class="sch">132</td><td class="sch">271</td><td class="sch"><b>681</b></td></tr>
+    <tr><td class="sch">7</td><td class="l sch">赵伟</td><td class="l">鹤岗一中</td><td class="sch">123</td><td class="sch">140</td><td class="sch">138</td><td class="sch">279</td><td class="sch"><b>680</b></td></tr>
+    <tr><td class="sch">8</td><td class="l sch">朱慧</td><td class="l">鹤岗一中</td><td class="sch">119</td><td class="sch">135</td><td class="sch">130</td><td class="sch"><b>292</b></td><td class="sch"><b>676</b></td></tr>
+    <tr><td class="sch">9</td><td class="l sch">王鹏志</td><td class="l">鹤岗一中</td><td class="sch">108</td><td class="sch">136</td><td class="sch">140</td><td class="sch"><b>290</b></td><td class="sch"><b>674</b></td></tr>
+    <tr><td class="sch">10</td><td class="l sch">陈会林</td><td class="l">鹤岗一中</td><td class="sch">125</td><td class="sch">137</td><td class="sch">137</td><td class="sch">273</td><td class="sch"><b>672</b></td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:22px">看这一列的分布：<strong>前十名的理综全部在 271 分以上，一半在 283 分以上</strong>，
+  满分 300 的卷子。而<strong>全市理综最高的两个 294 分，是王弘轩和邱林——两个人都是复读生</strong>。
+  他们 2006 年已经分别被哈工大和大连理工录取，回炉一年，理综都打到了 294。</p>
+  <p class="lede">这一列把三条通道压在了同一个数字上：
+  <strong>复读生在理综上的领先是可以量出来的</strong>（全市最高的两个 294 都在复读生手里），
+  而理综恰恰是那年出问题的那张卷子——
+  谁在考前见过那类题、练过那种联立，谁就在这 300 分里占了便宜。</p>
+  <p class="notes" style="max-width:72ch">必须说清界限：这张表只能证明<b>复读生占据了理综的最高分</b>，
+  它<b>不能</b>证明原因是「提前练过超纲内容」。
+  多考一年本身就会带来理综的熟练度提升，两者在这份数据里无法分离。
+  另外这是鹤岗的卷面，不是大庆的——
+  本页关于大庆学校针对性训练的说法，来自作者本人的回忆与公开文章，<b>没有任何名册或分数能佐证</b>，
+  它在这一页里始终只是一条<b>未被量化的假设</b>。</p>
+</section>
+
+<section id="s-two">
+  <div class="sechead"><h2>三座城，同一年，三种规定</h2><span class="tag">Three Cities, 2004</span></div>
+  <p class="lede">从佳木斯教育局这条线挖下去，撞上了一份东西：
+  <strong>《佳木斯市市区 2004 年基础教育招生方案》</strong>，2004 年由市教育局发布，全文八千余字。
+  它和大庆实验中学那句「省市教育行政部门严格规定不许各高中学校招收外地学生」
+  <strong>是同一年的事</strong>。</p>
+  <p class="lede">这份方案的第五章第 5 条「学生报考资格」里，有这么一段：</p>
+  <blockquote class="q"><b class="hl">凡市区以外考生到我市报考示范性高中需持当地户口和初中阶段合法学籍</b>
+  （小学升初中报考单、初中三年学籍）<b class="hl">经教育局中教科审查后到指定学校（市第七中学）报考</b>，
+  非指定学校不得接收非本地本校考生报考。此类考生毕业证由毕业学校发放，报考时不享受配额待遇。
+  <cite>——《佳木斯市市区 2004 年基础教育招生方案》</cite></blockquote>
+  <p class="lede">佳木斯不但没有禁止外市县考生，还<strong>给他们写了一条完整的行政流程</strong>：
+  带户口、带学籍、教育局中教科审查、到第七中学统一报考、不享受配额。
+  这是一条<strong>被承认、被规范、被写进正式文件的通道</strong>。</p>
+  <p class="lede">同一年，一百八十公里外的大庆，这条通道被关掉了。</p>
+  <div class="tw card"><table id="ttwo"><thead><tr>
+    <th class="l">同一年的同一件事</th><th class="l">佳木斯市（2004）</th><th class="l">鹤岗市（2004）</th><th class="l">大庆市（2004）</th>
+  </tr></thead><tbody>
+    <tr><td class="l sch">外市县考生报考示范高中</td>
+        <td class="l" style="color:var(--petrol)"><b>允许</b>，凭当地户口＋初中三年学籍，经中教科审查后到指定学校报考，不享受配额</td>
+        <td class="l">未开放：自费生简章报名条件为「<b>我市应届毕业生</b>」，通博中学限「鹤岗市区两县……的<b>应届</b>初中毕业生」，全篇未设外市县通道</td>
+        <td class="l" style="color:var(--seal)"><b>禁止</b>：「省市教育行政部门严格规定不许各高中学校招收外地学生」</td></tr>
+    <tr><td class="l sch">前一年（2003）的状态</td>
+        <td class="l hint">未见限制</td>
+        <td class="l hint">同样未见外市县通道；2003 年新办的通博「五年制高中」也限市区两县</td>
+        <td class="l">允许：「按照大庆市外市县学生招生政策，我省部分尖子生慕名选择我校就读」——外市县尖子生约 330 人</td></tr>
+    <tr><td class="l sch">自费生规模</td>
+        <td class="l">一中 380／二中 400／十一中 420，<b>自费数＝统招数（1:1）</b></td>
+        <td class="l">「继续扩招计划外学生（自费生）<b>500 人</b>」；按距录取线的分差分档收费：差 1–10 分 <b>1 万</b>，11–20 分 1.1 万，21–30 分 1.2 万，31–40 分 1.3 万</td>
+        <td class="l">省级示范高中自费上限 <b>38%</b>，6,000 元／年；名册只公布普通统招</td></tr>
+    <tr><td class="l sch">配额（指标到校）</td>
+        <td class="l">一中、二中 <b>40%</b>；须在该初中连续就读至毕业且持市区户口</td>
+        <td class="l hint">本项目未获得同年可比条款</td>
+        <td class="l hint">本项目未获得同年可比条款</td></tr>
+    <tr><td class="l sch">往届生（中考复读）</td>
+        <td class="l">「参加过往年中考的学生<b>不能报考一中和二中统招生部分</b>」</td>
+        <td class="l">通博五年制高中「<b>重读生不予录取</b>」（限应届，年龄不超过 14 周岁）</td>
+        <td class="l hint">未见同类限制；重读生招生简章由各校自行发布</td></tr>
+    <tr><td class="l sch">竞赛保送入学</td>
+        <td class="l">数理奥赛省一、二等奖保送一中，三等奖保送二中／十一中，保送者不得参加中考</td>
+        <td class="l hint">高中入口的市级保送条款未见（同年该校<b>出口</b>方向有两人凭学科竞赛国家一等奖保送清华、北大）</td>
+        <td class="l hint">未见市级统一条款</td></tr>
+    <tr><td class="l sch">两年后（2006–2008）</td>
+        <td class="l" style="color:var(--petrol)">佳木斯一中<b>公开招外市县生</b>：简章、报名表、网上报名、<b>自设选拔考试</b>、成绩查询、选拔名单公示，连续三年</td>
+        <td class="l">2005 年<b>择校生</b>中总分 600 分以上 <b>41 人</b>、最高 683 分；2007 年全市理科 600 分以上 306 人，一中占 <b>235 人（76.8%）</b></td>
+        <td class="l">大庆实验中学 2008 年理科 675 分以上全校 26 人，<b>市内应届仅 4 人</b></td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:24px">把这三栏并排放着看，2004 年那道禁令的性质就清楚了：
+  <strong>它不是全省统一的制度，而是落在大庆一地、一时的特殊处置。</strong>
+  同一个省，同一个年份，佳木斯把外市县招生写进了公开文件的操作流程里，大庆把它掐断了。
+  而掐断的那一年，正是这一页追踪的 5,760 个人参加中考的那一年。</p>
+  <p class="lede">但把鹤岗放进来，图景就不是「大庆对全省」那么简单了。
+  <strong>鹤岗一中 2004 年同样只招本市应届生</strong>——它的自费生简章白纸黑字写着「我市应届毕业生」，
+  五年制班还专门写了「重读生不予录取」。鹤岗和大庆一样是关着的。
+  真正的差别在于：<strong>鹤岗关门，是因为它本来就没打算开；大庆关门，是把已经开了的门关上。</strong>
+  2003 年大庆实验招进外市县尖子生三百余人，2004 年归零；鹤岗没有这个落差，因为它从来没有那一年。</p>
+  <p class="lede">所以这不是「一个省的统一政策」，也不是「大庆一家例外」，
+  而是<strong>三个市各自为政的拼图</strong>：佳木斯开着并写进流程，鹤岗一直关着，
+  大庆开了一年又猛地关上。而 2004 年那一届考生，恰好站在大庆那道门关上的位置上。</p>
+  <p class="notes" style="max-width:72ch">需要说明的是：<b>这两份材料的性质不同</b>。
+  佳木斯那份是市教育局发布的正式招生方案，全文可读；
+  大庆那句是实验中学在自己招生简介里的<b>转述</b>，省市两级的原始文件至今没有找到。
+  所以这张表比较的是「一个市的官方文件」与「一所学校对上级规定的复述」，
+  它能证明两地做法相反，不能证明两地文件的措辞如何。
+  另外佳木斯那条限制的是<b>中考往届生</b>（复读一年再考高中），
+  与本页反复讨论的<b>高考复读生</b>不是同一件事——后者在两个市都没有市级限制。</p>
+</section>
+
 <section id="s-why">
   <div class="sechead"><h2>447 是怎么变成 1,328 的</h2><span class="tag">Paper Trail</span></div>
   <p class="lede">前面那句「2.97 倍」只是把两个数字放在一起。它到底是怎么发生的？
@@ -1021,6 +1335,17 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-si
       <li><b>成绩含义</b>：“文化成绩”为中考文化课总分，不含体育与政策加分，满分 700 分左右。</li>
       <li><b>校名</b>：总表中“中学”指大庆中学，“一中”作为初中指大庆一中初中部、作为高中指其高中部。一中、六中、十中、十九中等为完全中学，同时出现在初中与高中两栏。</li>
       <li><b>2007 年数据来源</b>：2007 年清华大学全国新生名单（大庆籍 37 人）、2007 年黑龙江省保送生公示名单五个批次合计 51 人（大庆 24 人）、2007 年黑龙江省高考理科一分一段表（139,653 人）、大庆实验中学 2007 年高考高分段人数统计与 2006–2012 年高考成果与全市比较、2006–2013 年实验中学考入清华北大名单（307 人）。</li>
+      <li><b>竞赛与超纲训练这一条</b>：铁人中学 2006 年竞赛获奖一览（trzx.cn/zhshxch/xiaoxun.htm 一系）给出第 23 届全国中学生物理竞赛的获奖人与等级；王春吉、陈晨两人同时出现在该表与 2007 年清华全部新生名单（毕业中学＝大庆铁人中学）中。陈晨在 2004 年中考名册上唯一可定位（616 分／全市第 573 名／四十二中→铁人中学，按「姓名＋录取高中」双条件消歧，全市 5 个同名者中只有 1 人去了铁人）；王春吉不在该名册上。<b>「教学内容优势」本身无法量化</b>，本节只陈述可查证的竞赛成绩与学校自述的培养目标，不做分数折算。</li>
+      <li><b>佳木斯市 2004 年招生方案</b>：《佳木斯市市区 2004 年基础教育招生方案》，佳木斯市教育局发布于 jmsedu.net（教育局信息中心文章页，2004-12-02），全文八千余字。其「五、高中招生 → 5、学生报考资格」一节写明市区以外考生报考示范高中的完整流程。本页用它与大庆实验中学 2004 年简介中的转述作对照——<b>两者性质不同</b>：前者是市教育局的正式文件，后者是一所学校对上级规定的复述。同站另有《2003 年中教科工作总结》《今年招生发生新变化》（2003）等可作旁证。</li>
+      <li><b>鹤岗市 2003–2007 年全市高分榜</b>：鹤岗一中「高考·招生」栏目下的历年成绩概况页（hgyz.net/gkzs/gkzl/ 的 gkjj.htm、index1.htm、index2.htm、index06.htm、2007/07.htm），逐年刊出「鹤岗市高考前十名／前三十名／600 分以上考生名单」，含姓名、总分、就读学校三列；2007 年那份另有语文、数学、外语、综合四列单科成绩。共解析出 <b>172 条总分记录</b>（2003 年 29、2004 年 20、2005 年 49、2006 年 52、2007 年 22）与 22 条单科记录。同页还有 2007 年全市各分数段人数分学校统计（理科全市 600 分以上 306 人、一中 235 人）。单科榜（语文／数学／英语／综合前十名）另存，未并入总分表。</li>
+      <li><b>鹤岗市 2004 年招生规定</b>：鹤岗一中「招生动态」栏目（hgyz.net/zsdt/，2004-07-07 至 2005-08-29 多次存档）的四份简章——《2004 年计划外招生（自费生）简章》《通博中学三年制高中招生简章》《初中起点五年制高中招生简章》《体音美特长班招生计划》。自费生 500 人，报名条件为「我市应届毕业生」；通博两类班均限「鹤岗市区两县……应届初中毕业生」，五年制另注明「重读生不予录取」。<b>鹤岗与大庆同为关闭状态，但两者的历史不同</b>：大庆是 2003 年开放、2004 年关闭，鹤岗未见开放过的年份。择校生产出数据来自同站 2005 年高考总结（article05.asp）。</li>
+      <li><b>省级原始文件仍未找到</b>：已对黑龙江省教育厅（hlje.net）2001–2006 年的全部存档页面做过全文检索，命中的「不得招收」「外地学生」「跨地区」等条目全部是 2011 年以后的文章或转载的全国性新闻，<b>没有任何一份 2003–2004 年黑龙江省关于普通高中跨市县招生的规范性文件</b>。省招生办（zsb.hr.hl.cn）与省招考信息港（lzk.hl.cn）的同期存档中亦无。因此本页对 2004 年那道禁令的全部依据，仍然只有大庆实验中学自己的转述。</li>
+      <li><b>佳木斯与鸡西的名单未获得</b>：佳木斯一中的高考金榜实际有 2006 届、2007 届、2008 届三套（每套 9–11 篇），但在存档中<b>全部只剩首页上的链接标题</b>，文章页（info/DetailServlet?infoID=…）逐个查询均未被抓取；鸡西一中「历年（中）高考」栏目下 2008 年的 17 篇文章（lnzgk/ShowArticle.asp?ArticleID=351–362，含《全市前 100 名文理各校所占比例》《全市文理科总分前 20 名》《2008 年中考成绩分析》）同样只存下栏目页，正文全部 404。鹤岗一中 2005 年的录取榜也不在存档中（该年目录下只有高考新闻剪报）。</li>
+      <li><b>鹤岗一中历年高考录取榜</b>：hgyz.net/gkzs/gkzl/ 下按年份分目录（2002/02lqb、2003/03lqb1–12、2004/04lqb1–10、2006/06lqb1–6、2007/07lqb1–2），存档中可解析出 <b>3,650 条</b>「序号·姓名·分数·录取院校」记录。<b>2007 年只存下前两页（第 1–331 名，703 至 376 分）</b>，后续页面未被抓取，因此 2007 年的低分段统计带截断效应。全市前 100 名成绩单（index07.htm）的存档为空文件。</li>
+      <li><b>复读生的判定</b>：同一所学校 2006 与 2007 两份榜单按姓名匹配，得 45 人。同校两年内重名概率低于全市匹配，但不为零；45 人中有 4 人 2007 年分数低于 2006 年，可能是真实的复读失利，也可能是同名。此数应读作<b>上限附近的估计</b>，「680 分以上 67% 是复读生」一档的分子只有 4 人，样本极小。</li>
+      <li><b>三所地级市重点中，只有鹤岗一中留下了带分数的名单</b>：佳木斯一中的《2007 届高考金榜（本科 1–11）》共 11 篇，在存档中<b>只剩首页上的链接标题</b>，文章页（info/DetailServlet?infoID=2566–2576）经逐个查询确认未被抓取；鸡西一中的「历年（中）高考」栏目共 17 篇，全部是 2008 年的全市分校统计与前 20 名榜，没有 2007 年的逐人名单。<b>三所学校都没有 2004 年的中考录取名册</b>——中考录取名册是市级招考部门的文件，只有大庆市教育局把它以 HTML 表格形式挂到了网上。</li>
+      <li><b>地级市重点中学的对照数据</b>：鸡西一中 2004 年高考总结（jxyz.net 打印页 id=380175）、鹤岗一中 2005 年高考总结（hgyz.net/gkzs/gkzl/article05.asp）、佳木斯一中 2012 届高考巡礼与 2006–2008 年外市县招生栏目（jmsyz.net/info/…）。<b>三校数据分属 2004、2005、2012 三个年份，与大庆的 2007 年不可直接相除</b>，页面上只用来看数量级与制度差异。佳木斯一中的外市县招生简章、报名流程、选拔考试与录取名单公示，是本项目找到的、与大庆 2004 年禁令同期而做法相反的直接反证。</li>
+      <li><b>本次新增／未获得</b>：大庆市教育局 2006–2016 站（dqedu.gov.cn）已抓完，<b>全站无中考录取名册、亦无任何涉及外市县招生的政策文本</b>；大庆招考网（dqzk.net）仅存 2001 年中考名单的目录标题，正文未存档。2003 年中考录取最终统计表（202.97.254.98/images/upfile/tjb.xls，由 id=711 与 id=712 两篇文章共同指向）经 CDX 全量历史查询确认<b>从未被抓取</b>，与 2004 年 28 份分校 xls 名册、2005 年各批次录取 xls 附件同属永久缺失。</li>
       <li><b>清华大学历年全部新生名单</b>：2002–2008 共七份，每份含学号、姓名、考区、毕业中学、院系，本项目已逐年存为 CSV。「大庆籍」＝考区为黑龙江且毕业中学名称含「大庆」，因此它统计的是<b>毕业学校在大庆</b>的人，不区分其户籍或初中所在地——外县生只要在大庆读的高中就计入。这正是它能当温度计的原因。校名写法逐年不一（「大庆市实验中学」「大庆实验中学」「大庆铁人中学」「大庆市铁人中学」等），已归一。</li>
       <li><b>2008 年 26 人的逐人回查</b>：把 2008 年清华名单里的大庆籍学生按姓名查 2004 年中考名册。这套查法的灵敏度用 2007 年那 37 人标定：命中 14 人（38%），漏掉的主要是实验中学的自费生（其 447 人名册只含普通统招）与外县生。<b>没有 2005 年的大庆中考录取名册</b>，因此无法对 2008 届直接做本页对 2004 届所做的那种「市内应届」识别；铁人中学 2008 年那份《高考文理科重本以上学生名单及分数》是 XLS 附件（trzx.cn/up/news/200862661737113.xls），互联网档案馆未收录。</li>
       <li><b>2002–2005 四届的中考生源</b>：2002 年「700 分以上」由大庆一中 2005 年喜报（w_zhaosheng2005/index-xb.htm）与实验中学 2005 年喜报（dqsy.com.cn/pub/vy05xibao.htm）交叉核对，两份互指后可定为铁人 268、实验 95、一中 64。2005 年的中考录取分档出自铁人中学《2008 年高考成绩》（trzx.cn/news/1/89.html）中的《2005 年初中升高中实验区和非实验区录取情况统计表》，实验中学一侧的自述出自其 2008 年高考喜报。<b>三校文本中的「萨区同类校」经反证均指大庆实验中学</b>——若含大庆一中，2008 年那张表里「萨区同类校理科 680 分以上市内应届 1 人」将与一中自称的 10 人矛盾。</li>
@@ -1068,6 +1393,8 @@ const T={"rows":[[657,2,"刘禹驰","三十六中","统招","铁人","北京大�
 const O={"hb":[{"band":"680 分以上","total":73,"urban":29,"rows":[["大庆实验中学",39,9,10,20],["大庆铁人中学",21,9,7,5],["大庆一中",10,10,0,0],["大庆四中",2,null,null,null],["大庆中学",1,null,null,null]]},{"band":"690 分以上","total":27,"urban":11,"rows":[["大庆实验中学",15,3,3,9],["大庆铁人中学",6,3,2,1],["大庆一中",5,5,0,0],["大庆四中",1,null,null,null]]}],"y03":[["中考全市前 10 名",1,0,8],["中考全市前 20 名",2,0,16],["中考全市前 30 名",5,1,21],["中考全市前 40 名",7,6,27],["中考全市前 50 名",8,6,33],["中考 480 分以上",140,72,342]],"zk04":[[650,8,2,3,3],[645,26,10,8,8],[640,60,19,25,16],[635,126,44,53,31],[630,215,84,85,45],[625,320,122,131,65],[620,472,186,195,82],[615,650,263,264,111],[610,844,351,339,135]],"yz":{"li":149,"wen":35,"lizf":92,"libu":5,"lizs":52,"wenzf":24,"wenbu":11}};
 const E={"zk":[["2003 · 中考全市前 50 名","8 人","6 人","33 人"],["2003 · 中考 480 分以上","140 人","72 人","342 人"],["2004 · 中考 630 分以上","84 人","45 人","85 人"],["2004 · 统招线 / 录取","607 分 / 399 人","583 分 / 333 人","603 分 / 447 人"],["2005 · 中考前 20 名","8 人","—","7 人"],["2005 · 中考前 100 名","39 人","—","53 人"],["2005 · 中考前 200 名","72 人","—","102 人"]],"sp":[{"y":"2007 年高考","sub":"2004 年中考入学 · 理科 680 分以上","tot":73,"rows":[["大庆实验中学",39,9,10,20],["大庆铁人中学",21,9,7,5],["大庆一中",10,10,0,0]]},{"y":"2008 年高考","sub":"2005 年中考入学 · 理科 675 分以上","tot":null,"rows":[["大庆实验中学",26,4,null,null],["大庆铁人中学",null,17,null,null],["大庆一中",null,10,null,null]]}],"cb":[["2004",29,null,null,58],["2005",32,23,null,53],["2006",26,null,44,null],["2007",20,null,37,null],["2008",28,11,23,null]]};
 const Q={"ser":[[2002,1999,109,13,2,7,4,0],[2003,2000,106,21,2,11,6,2],[2004,2001,116,20,1,10,8,1],[2005,2002,115,24,5,14,4,1],[2006,2003,124,43,25,13,3,2],[2007,2004,124,37,16,10,5,6],[2008,2005,111,26,8,8,5,5]],"d8":[["于心宇","大庆一中","电机系","不在2004名册"],["季凡博","大庆一中","理学院","不在2004名册"],["杜金钊","大庆一中","经管学院","不在2004名册"],["谭思昊","大庆一中","理学院","不在2004名册"],["高寒","大庆一中","电子系","唯一匹配"],["王超","大庆东风中学","软件学院","同名9条"],["黄成杰","大庆中学","材料系","不在2004名册"],["潘春雨","大庆四中","航院","不在2004名册"],["于海宁","大庆实验中学","材料系","不在2004名册"],["李世邈","大庆实验中学","自动化系","不在2004名册"],["杨奇函","大庆实验中学","经管学院","不在2004名册"],["梁立昕","大庆实验中学","水利系","不在2004名册"],["樊新贺","大庆实验中学","水利系","不在2004名册"],["石天","大庆实验中学","水利系","不在2004名册"],["赵同煜","大庆实验中学","电子系","不在2004名册"],["闫盛枫","大庆实验中学","土木系","不在2004名册"],["胡子琪","大庆市二十三中学","美术学院","不在2004名册"],["武真旗","大庆石油高中","美术学院","不在2004名册"],["付雷","大庆铁人中学","电机系","不在2004名册"],["刘通","大庆铁人中学","计算机系","不在2004名册"],["周宇男","大庆铁人中学","电子系","不在2004名册"],["房宇巍","大庆铁人中学","建筑系","不在2004名册"],["李晴","大庆铁人中学","环境系","不在2004名册"],["王天宇","大庆铁人中学","精仪系","不在2004名册"],["郭骁","大庆铁人中学","电子系","不在2004名册"],["韩晨曦","大庆铁人中学","电子系","不在2004名册"]]};
+const B={"rows":[[655,4,"崔潇","五十一中","实验","哈尔滨工业大学",0,1],[654,5,"姜冰","五十一中","实验","北京大学",0,0],[654,5,"魏征","十三中","实验","清华大学",0,0],[650,8,"狄昊","十四中","铁人","",0,-1],[649,9,"迟妍玮","三十六中","铁人","中国科技大学",0,1],[649,9,"黄鹤","六十一中","铁人","哈尔滨工业大学",0,1],[648,11,"李梦然","六十九中","实验","清华大学",0,0],[647,13,"刘景睿","六十九中","实验","香港理工大学",0,2],[647,13,"王洛奇","六十九中","铁人","",0,-1],[646,16,"丁甍","景园中学","铁人","上海财经大学",0,2],[646,16,"孙勇","三十六中","铁人","",0,-1],[646,16,"王孟阳","六十五中","铁人","上海交通大学",0,1],[646,16,"王锐","十九中学","铁人","南开大学",0,1],[645,21,"付磊","四十六中","铁人","哈尔滨工业大学",0,1],[645,21,"吴迪","五十五中","实验","",0,-1],[645,21,"苑仁峰","四十二中","实验","上海交通大学",0,1],[645,21,"范思旭","五十一中","实验","华中科技大学",0,1],[644,27,"姜含宇","十六中","铁人","哈尔滨工业大学",0,1],[644,27,"麻钰","五十一中","实验","北京对外经贸易大学",0,2],[643,32,"刘赫男","八中","铁人","哈尔滨工业大学",0,1],[643,32,"周思齐","四十四中","实验","吉林大学",0,1],[643,32,"张玮珊","五十五中","实验","暨南大学",0,2],[643,32,"王立言","三十六中","铁人","北京大学",0,0],[643,32,"石月","一中","实验","",0,-1],[643,32,"韦凌潇","六十九中","实验","",0,-1],[643,32,"高原","六十九中","实验","同济大学",0,1],[642,40,"崔敬一","六十九中","实验","上海财经大学",0,2],[642,40,"李美娇","十九中学","铁人","北京大学",0,0],[642,40,"赵扬","六十一中","实验","哈尔滨工业大学",0,1],[641,45,"刘松宇","三十六中","铁人","大庆石油学院",0,3],[641,45,"张巳龙","六十九中","实验","清华大学",0,0],[641,45,"徐宁","十三中","实验","哈尔滨工业大学",0,1],[641,45,"王天吉","六十九中","实验","南开大学",0,1],[641,45,"王皓沿","六十九中","实验","哈尔滨医科大学",0,2],[641,45,"邵迪","四十二中","实验","",0,-1],[640,52,"刘喆倩","八中","实验","北京交通",0,2],[640,52,"刘小诗","五十一中","实验","海南师范大学",0,3],[640,52,"刘洋","四十中","铁人","北京邮电 ／ 黑龙江农业经济职业学院",2,-2],[640,52,"张睿","十九中学","铁人","沈阳农大",2,-2],[640,52,"朱剑楠","杜蒙初中","实验","华中科技大学",0,1],[640,52,"杨帆","二十四中","铁人","",0,-1],[640,52,"赵阳洋","二十七中","实验","哈尔滨工业大学",0,1],[640,52,"马天宇","四十二中","铁人","中国政法",0,2]],"n":43,"cnt":{"qb":6,"g985":17,"g211":8,"oth":2,"amb":2,"un":8}};
+const H={"top":[[703,"解斌","清华大学",0],[702,"王弘轩","清华大学",1],[701,"邱林","北京大学",1],[683,"宋显明","上海交通大学",0],[681,"么江涛","同济大学",1],[680,"赵伟","同济大学",1],[676,"朱慧","同济大学",0],[674,"王鹏志","清华大学",0],[672,"陈会林","哈尔滨工业大学",0],[671,"赵国庆","浙江大学",0],[671,"李诗妍","北京航空航天大学",0],[670,"于泽","中国人民大学",0],[669,"边伟","南开大学",0],[668,"彭博","哈尔滨工业大学",0],[667,"李广宇","中央财经大学",0],[666,"门雪莹","哈尔滨工业大学",0],[666,"王金成","浙江大学",0],[666,"佟艾悯","哈尔滨工业大学",0],[665,"穆玉玲","东北财经大学",0],[665,"姜宝森","北京航空航天大学",0],[661,"杨爽","中央财经大学",0],[661,"周雪","北京邮电大学",0],[659,"郭宏伟","哈尔滨工业大学",0],[659,"张昕","北京航空航天大学",1]],"bands":[[700,3,2],[690,3,2],[680,6,4],[670,12,4],[660,22,4],[650,37,7],[640,57,10],[630,93,17],[620,124,23],[610,179,27],[600,234,34]],"pairs":[["王弘轩",678,"哈尔滨工业大学",702,"清华大学",24],["邱林",654,"大连理工大学",701,"北京大学",47],["么江涛",657,"哈尔滨工业大学",681,"同济大学",24],["赵伟",616,"上海理工大学",680,"同济大学",64],["张昕",571,"大庆石油学院",659,"北京航空航天大学",88],["赵慧颖",649,"天津财经大学",654,"天津大学",5],["赵江江",581,"东北林业大学",650,"哈尔滨工业大学",69],["吉海威",596,"内蒙古大学",649,"吉林大学",53],["刘洋",660,"哈尔滨工业大学",643,"哈尔滨工业大学",-17],["张德良",616,"天津财经大学",642,"华中科技大学",26],["韩智猛",594,"东北林业大学",638,"吉林大学",44],["王鑫",604,"燕山大学",638,"哈尔滨工业大学",34],["张月平",564,"华北水力水电",634,"东南大学",70],["李镭焓",630,"哈尔滨工业大学",633,"中国人民大学",3],["卢艳",570,"江西财经大学",632,"哈尔滨工业大学",62],["王欢",585,"天津科技大学",632,"山东大学",47],["夏洪彬",584,"大庆石油学院",630,"重庆大学",46],["国金纯",571,"黑科技学院",626,"西南交通大学",55],["周子贺",558,"河北医科大学",626,"中南大学",68],["孙美玲",597,"江西财经大学",625,"湖南大学",28],["王红",512,"鞍山师范学院",623,"东北大学",111],["王济华",556,"天津商学院",621,"吉林大学",65],["何立",573,"山东经济学院",620,"河海大学",47],["张倩",639,"北京理工大学",616,"山东大学",-23],["高洋",550,"锦州医学院",616,"哈尔滨医科大学",66],["马超",589,"西北大学",613,"中国石油大学（华东）",24],["孙岩",536,"城大学",610,"哈尔滨商业大学",74],["庞宁",524,"哈尔滨学院",608,"吉林大学",84],["杨洋",612,"西安外国语大学",607,"中央财经大学",-5],["李洋",528,"德州学院",607,"中国矿业大学（北京）",79],["云鹏",557,"哈师范大学",602,"西南交通大学",45],["李颖",559,"哈理工大学",602,"江南大学",43],["张令权",544,"滨州学院",601,"西南交通大学",57],["孙鹏",440,"黑工程学院",600,"西南交通大学",160],["王超",572,"东北林业大学",599,"中国地质大学(武汉)",27],["周亮",562,"中北大学",595,"长安大学",33],["吴杰",565,"大连民族学院",594,"中国海洋大学",29],["李剑",553,"内蒙古农业大学",593,"哈尔滨医科大学",40],["张鹏",469,"东北农业大学",592,"哈尔滨理工大学",123],["王琳",497,"东北林业大学",591,"大庆石油学院",94],["刘爽",641,"中国矿业大学",589,"石家庄铁道学院",-52],["杨旭",562,"牡丹江师院",588,"大庆石油学院",26],["庞博",519,"泉州师范学院",586,"宁波诺丁汉大学",67],["张宁",524,"长春工业大学",575,"黑龙江大学",51],["吕天文",403,"牡丹江师院",415,"吉林大学",12]],"n07":331,"n06":1119};
 </script>
 <script>
 (function(){
@@ -2196,7 +2523,86 @@ $('tbody',$('#td8')).innerHTML=Q.d8.map(r=>'<tr>'+
    :r[3]==='唯一匹配'?'<span class="tp t2">名册内有同名一条</span>'
    :'<span class="tp">'+r[3]+'</span>')+'</td></tr>').join('');
 
-function redraw(){drawLog();drawLadder();drawFunnel();drawScoreBands();drawStrip();drawGap();drawScale();drawNest();drawCounts();drawCB();drawDest();drawOrig();drawSp();drawQ();}
+/* ---------- 640–655 分段逐人 ---------- */
+const BLAB=['清华北大','985 / C9','211','其他本科'];
+(function(){
+  const tb=$('#tband2'), body=$('tbody',tb);
+  const render=d=>{ body.innerHTML=d.map(r=>{
+    let dest;
+    if(r[7]===-1) dest='<span class="hint">未追踪到</span>';
+    else if(r[7]===-2) dest=r[5]+' <span class="hint">（同名 '+r[6]+' 条）</span>';
+    else dest='<span class="tp t'+r[7]+'">'+BLAB[r[7]]+'</span> '+r[5];
+    return '<tr><td class="sch">'+r[0]+'</td><td>'+(r[1]||'—')+'</td>'+
+      '<td class="l sch">'+r[2]+'</td><td class="l">'+r[3]+'</td>'+
+      '<td class="l"><span class="hs h'+(r[4]==='实验'?0:1)+'">大庆'+r[4]+'中学</span></td>'+
+      '<td class="l"'+(r[7]===0?' style="font-weight:600"':'')+'>'+dest+'</td></tr>';
+  }).join(''); };
+  sortable(tb,()=>B.rows,render,0,false)();
+  const c=B.cnt;
+  $('#bandstats').innerHTML=[[B.n,'这一档总人数'],[c.qb,'清华北大'],[c.g985,'985 / C9'],
+    [c.g211,'211'],[c.oth,'其他本科'],[c.un+c.amb,'未追踪／待定']]
+    .map(([a,b])=>'<div class="stat"><b>'+a+'</b><span>'+b+'</span></div>').join('');
+})();
+
+/* ---------- 鹤岗一中 带分数名单 ---------- */
+(function(){
+  const t1=$('#thg'), b1=$('tbody',t1);
+  sortable(t1,()=>H.top,d=>{ b1.innerHTML=d.map(r=>
+    '<tr><td class="sch">'+r[0]+'</td><td class="l sch">'+r[1]+'</td>'+
+    '<td class="l">'+r[2]+'</td><td class="l">'+
+    (r[3]?'<span class="tp t0">复读</span>':'<span class="hint">应届／未匹配</span>')+
+    '</td></tr>').join(''); },0,false)();
+
+  const t2=$('#thgrep'), b2=$('tbody',t2);
+  sortable(t2,()=>H.pairs,d=>{ b2.innerHTML=d.map(r=>
+    '<tr><td class="l sch">'+r[0]+'</td><td>'+r[1]+'</td><td class="l hint">'+r[2]+'</td>'+
+    '<td class="sch">'+r[3]+'</td><td class="l">'+r[4]+'</td>'+
+    '<td style="color:'+(r[5]>0?'var(--seal)':'var(--ink-3)')+';font-weight:600">'+
+    (r[5]>0?'+':'')+r[5]+'</td></tr>').join(''); },5,false)();
+
+  const g=H.pairs.map(p=>p[5]).sort((x,y)=>x-y);
+  $('#hgstats').innerHTML=[[H.pairs.length,'两年都上榜'],['+'+Math.round(g.reduce((a,b)=>a+b,0)/g.length),'平均提分'],
+    ['+'+g[Math.floor(g.length/2)],'提分中位数'],['+'+g[g.length-1],'最大提分'],
+    [g.filter(x=>x>0).length,'提高的人数'],[H.n06+' / '+H.n07,'2006 / 2007 榜人数']]
+    .map(([a,b])=>'<div class="stat"><b>'+a+'</b><span>'+b+'</span></div>').join('');
+})();
+
+function drawHg(){
+  const box=$('#hgchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,520), pad=26, rowH=30;
+  const B=H.bands, Hh=pad*2+B.length*rowH+26;
+  const gL=W>700?92:78, gR=W>700?176:110, x0=gL, x1=W-gR;
+  const svg=el('svg',{width:W,height:Hh,role:'img','aria-label':'鹤岗一中2007年各分数段中复读生的占比'});
+  const seal=cssv('--seal'), pet=cssv('--petrol'), ink=cssv('--ink'),
+        ink3=cssv('--ink-3'), card=cssv('--card');
+  const maxN=Math.max(...B.map(b=>b[1]));
+  B.forEach((b,i)=>{
+    const y=pad+i*rowH, sx=n=>n/maxN*(x1-x0), bh=17;
+    svg.appendChild(el('text',{x:gL-10,y:y+13,'text-anchor':'end','font-size':12,
+      fill:ink,'font-weight':500},b[0]+' 分以上'));
+    const wAll=sx(b[1]), wRep=sx(b[2]);
+    const r1=el('rect',{x:x0,y:y,width:Math.max(wAll,1),height:bh,fill:pet,opacity:.3});
+    r1.addEventListener('mousemove',e=>showTip(e,'<b>'+b[0]+' 分以上</b><br>共 '+b[1]+' 人'));
+    r1.addEventListener('mouseleave',hideTip); svg.appendChild(r1);
+    const r2=el('rect',{x:x0,y:y,width:Math.max(wRep,1),height:bh,fill:seal});
+    r2.addEventListener('mousemove',e=>showTip(e,'<b>'+b[0]+' 分以上</b><br>复读生 '+b[2]+
+      ' 人 / 共 '+b[1]+' 人<br>占 '+Math.round(b[2]/b[1]*100)+'%'));
+    r2.addEventListener('mouseleave',hideTip); svg.appendChild(r2);
+    if(wRep>18)svg.appendChild(el('text',{x:x0+wRep/2,y:y+12.5,'text-anchor':'middle',
+      'font-size':10.5,fill:card,'font-weight':600},b[2]));
+    svg.appendChild(el('text',{x:x0+wAll+9,y:y+12.5,'font-size':11,fill:ink3},
+      b[1]+' 人 · 复读 '+Math.round(b[2]/b[1]*100)+'%'));
+  });
+  let lx=gL, ly=pad+B.length*rowH+8;
+  [['复读生',seal,1],['该段总人数',pet,.3]].forEach(([t,c,o])=>{
+    svg.appendChild(el('rect',{x:lx,y:ly,width:10,height:10,fill:c,opacity:o}));
+    svg.appendChild(el('text',{x:lx+15,y:ly+9,'font-size':11.5,fill:ink3},t));
+    lx+=30+t.length*12.5;
+  });
+  box.appendChild(svg);
+}
+
+function redraw(){drawLog();drawLadder();drawFunnel();drawScoreBands();drawStrip();drawGap();drawScale();drawNest();drawCounts();drawCB();drawDest();drawOrig();drawSp();drawQ();drawHg();}
 drawLegend(); redraw(); setZ(648); setG(666);
 let t; addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(redraw,180);});
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>setTimeout(redraw,60));
