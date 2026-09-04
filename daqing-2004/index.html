@@ -1,0 +1,2207 @@
+<title>大庆中考 2004</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --page:#e7eaec; --card:#f8f9fa; --card-2:#eef1f2; --sunk:#e2e6e8;
+  --ink:#11171a; --ink-2:#4b555b; --ink-3:#7f8a90;
+  --rule:#ced4d7; --hair:#dfe3e5;
+  --petrol:#0e5b68; --petrol-2:#4e97a3;
+  --amber:#a86d0b; --amber-2:#d9ab63;
+  --seal:#a5342a; --seal-wash:rgba(165,52,42,.08);
+  --void:#b9c0c4;
+  --shadow:0 1px 2px rgba(17,23,26,.05), 0 10px 28px -16px rgba(17,23,26,.28);
+  --focus:#0e5b68;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0c1013; --card:#161b1e; --card-2:#1e2427; --sunk:#11171a;
+    --ink:#eef1f2; --ink-2:#adb6ba; --ink-3:#7a848a;
+    --rule:#2a3135; --hair:#222829;
+    --petrol:#48a3b2; --petrol-2:#1f6773;
+    --amber:#d6982c; --amber-2:#7e5a17;
+    --seal:#d9614f; --seal-wash:rgba(217,97,79,.13);
+    --void:#394246;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 28px -16px rgba(0,0,0,.8);
+    --focus:#48a3b2;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0c1013; --card:#161b1e; --card-2:#1e2427; --sunk:#11171a;
+  --ink:#eef1f2; --ink-2:#adb6ba; --ink-3:#7a848a;
+  --rule:#2a3135; --hair:#222829;
+  --petrol:#48a3b2; --petrol-2:#1f6773;
+  --amber:#d6982c; --amber-2:#7e5a17;
+  --seal:#d9614f; --seal-wash:rgba(217,97,79,.13);
+  --void:#394246;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 28px -16px rgba(0,0,0,.8);
+  --focus:#48a3b2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px; line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;font-weight:700}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+.page{max-width:1080px;margin:0 auto;padding:0 20px 80px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+a{color:var(--petrol)}
+
+/* ---------- masthead ---------- */
+.mast{padding:52px 0 26px;border-bottom:2px solid var(--ink);position:relative}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;margin:0 0 14px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;font-size:clamp(34px,6.2vw,58px);
+  line-height:1.08;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 .yr{font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--seal);font-size:.62em;
+  letter-spacing:.02em;margin-left:.34em;vertical-align:.1em}
+.dek{margin:16px 0 0;max-width:60ch;color:var(--ink-2);font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:30px 0 0}
+.stat{background:var(--card);padding:13px 14px 12px}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:26px;
+  line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:3px;letter-spacing:.04em}
+
+/* ---------- sections ---------- */
+section{padding:46px 0 0;scroll-margin-top:82px}
+.sechead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--ink);
+  padding-bottom:9px;margin-bottom:20px}
+.sechead h2{font-family:"Noto Serif SC",serif;font-weight:700;font-size:21px;margin:0;letter-spacing:.02em}
+.sechead .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);
+  letter-spacing:.12em;text-transform:uppercase;margin-left:auto;white-space:nowrap}
+.lede{max-width:64ch;color:var(--ink-2);margin:0 0 22px}
+.lede strong{color:var(--ink);font-weight:500}
+.card{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow)}
+
+/* ---------- well log ---------- */
+.log{display:grid;grid-template-columns:1fr 232px;gap:0}
+@media(max-width:800px){.log{grid-template-columns:1fr}}
+.logchart{padding:18px 10px 12px 4px;overflow-x:auto}
+.logside{border-left:1px solid var(--hair);padding:18px 18px 16px;background:var(--card-2)}
+@media(max-width:800px){.logside{border-left:0;border-top:1px solid var(--hair)}}
+.legend{display:flex;flex-direction:column;gap:7px;margin:0 0 18px}
+.lgi{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2);cursor:pointer;
+  background:none;border:0;padding:2px 0;text-align:left;font-family:inherit;width:100%}
+.lgi .sw{width:12px;height:12px;flex:0 0 12px;border-radius:2px}
+.lgi .n{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.lgi[aria-pressed="true"]{opacity:.32}
+.rd{font-size:12.5px;color:var(--ink-2);border-top:1px solid var(--hair);padding-top:14px}
+.rd b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;margin-bottom:6px;font-weight:500}
+.rd p{margin:0 0 10px}
+.rd p:last-child{margin-bottom:0}
+.bar{transition:opacity .12s}
+.bar.dim{opacity:.16}
+.tip{position:fixed;pointer-events:none;z-index:40;background:var(--ink);color:var(--page);
+  padding:8px 11px;font-size:12px;line-height:1.5;border-radius:4px;opacity:0;transition:opacity .1s;
+  box-shadow:0 6px 20px -6px rgba(0,0,0,.5);max-width:230px}
+.tip .th{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:12.5px;margin-bottom:3px}
+.tip .tr{display:flex;gap:12px;justify-content:space-between}
+.tip .tr span:last-child{font-family:"IBM Plex Mono",monospace}
+
+/* ---------- lookup ---------- */
+.lookup{display:grid;grid-template-columns:220px 1fr;gap:0;align-items:stretch}
+@media(max-width:720px){.lookup{grid-template-columns:1fr}}
+.lkin{padding:20px;background:var(--card-2);border-right:1px solid var(--hair)}
+@media(max-width:720px){.lkin{border-right:0;border-bottom:1px solid var(--hair)}}
+.lkin label{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-3);font-family:"IBM Plex Mono",monospace;margin-bottom:8px}
+.lkin input{width:100%;font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:600;
+  padding:6px 10px;border:1px solid var(--rule);background:var(--card);color:var(--ink);
+  border-radius:3px;text-align:center;font-variant-numeric:tabular-nums}
+.lkin input::-webkit-outer-spin-button,.lkin input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.lkin input[type=range]{padding:0;border:0;background:none;margin-top:14px;accent-color:var(--petrol);height:20px}
+.lkres{padding:20px 22px}
+.lkfig{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:16px}
+.lkfig div b{display:block;font-family:"IBM Plex Mono",monospace;font-size:24px;font-weight:600;
+  line-height:1.15;font-variant-numeric:tabular-nums}
+.lkfig div span{font-size:11.5px;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{font-size:12px;padding:3px 9px;border-radius:99px;border:1px solid var(--rule);
+  background:var(--sunk);color:var(--ink-2)}
+.chip.k{border-color:var(--petrol);color:var(--petrol);background:transparent;font-weight:500}
+.chip.z{border-style:dashed;color:var(--amber);border-color:var(--amber)}
+.lkres .none{color:var(--ink-3);font-size:13px}
+.lklab{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;margin:14px 0 0}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:7px 9px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--hair)}
+th{font-size:11.5px;font-weight:500;color:var(--ink-3);letter-spacing:.06em;
+  border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--card);z-index:2}
+th.s{cursor:pointer;user-select:none}
+th.s:hover{color:var(--ink)}
+th.s[aria-sort]{color:var(--ink);font-weight:700}
+th.s[aria-sort]::after{content:" ▾"}
+th.s[aria-sort="ascending"]::after{content:" ▴"}
+td.l,th.l{text-align:left}
+tbody tr:hover{background:var(--card-2)}
+td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.sch{font-weight:500}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--petrol);
+  margin-right:7px;vertical-align:.12em}
+.dot.o{background:var(--amber)}
+td.dest{font-size:12px;color:var(--ink-3);max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.mini{display:block;height:9px;background:var(--sunk);position:relative;width:74px;border-radius:2px;overflow:hidden}
+.mini i{position:absolute;left:0;top:0;bottom:0;background:var(--petrol);display:block}
+.tctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.tctl input{font-family:inherit;font-size:13px;padding:6px 11px;border:1px solid var(--rule);
+  background:var(--card);color:var(--ink);border-radius:3px;min-width:190px}
+.tctl .hint{font-size:12px;color:var(--ink-3)}
+
+/* ---------- quotes & panes ---------- */
+blockquote.q{margin:16px 0 20px;padding:14px 18px;border-left:3px solid var(--seal);
+  background:var(--seal-wash);font-size:14px;line-height:1.72;color:var(--ink)}
+blockquote.q cite{display:block;margin-top:8px;font-style:normal;font-size:12px;color:var(--ink-3)}
+.pane{padding:16px 18px}
+.pane .pl{font-size:11px;letter-spacing:.16em;color:var(--ink-3);margin-bottom:8px}
+.pane p{margin:0 0 10px;font-size:13.5px;line-height:1.72}
+.pane p:last-child{margin-bottom:0}
+.pane .notes{font-size:12.5px}
+b.hl{background:var(--seal-wash);color:var(--seal);padding:0 3px;border-radius:2px}
+
+/* ---------- destination table ---------- */
+.hint{font-size:12px;color:var(--ink-3)}
+.tp{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;
+  border:1px solid var(--rule);color:var(--ink-3);white-space:nowrap}
+.tp.t0{border-color:var(--seal);color:var(--seal);font-weight:600}
+.tp.t1{border-color:var(--petrol);color:var(--petrol)}
+.tp.t2{border-color:var(--petrol-2);color:var(--petrol-2)}
+.tp.t3{color:var(--ink-2)}
+.hs{white-space:nowrap}
+.hs::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+  margin-right:6px;vertical-align:.12em;background:var(--petrol)}
+.hs.h1::before{background:var(--amber)}
+#schseg,#destseg{flex-wrap:wrap;max-width:100%}
+#schseg{margin-right:10px}
+th.grp{text-align:center;border-bottom:1px solid var(--rule);font-size:11.5px;
+  letter-spacing:.06em;color:var(--petrol)}
+th.grp.gr2{color:var(--amber)}
+#tband td.gr2,#tband th.gr2{background:var(--card-2)}
+.eli{border-bottom:1px solid var(--hair)}
+.eli:last-child{border-bottom:0}
+.eli>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;
+  flex-wrap:wrap;padding:11px 16px;font-size:13.5px}
+.eli>summary::-webkit-details-marker{display:none}
+.eli>summary::before{content:"\25B8";color:var(--ink-3);font-size:11px}
+.eli[open]>summary::before{content:"\25BE"}
+.eli>summary:hover{background:var(--card-2)}
+.eli>div{padding:0 16px 16px}
+table.elit{width:100%;border-collapse:collapse;font-size:12.5px}
+table.elit th{text-align:right;padding:5px 10px;border-bottom:1px solid var(--rule);
+  font-weight:500;color:var(--ink-3);font-size:11.5px;white-space:nowrap}
+table.elit td{text-align:right;padding:4px 10px;border-bottom:1px solid var(--hair);white-space:nowrap}
+table.elit th.l,table.elit td.l{text-align:left}
+table.elit td.hint{color:var(--ink-3)}
+
+/* ---------- ladder ---------- */
+.ladder{padding:18px 6px 8px;overflow-x:auto}
+
+/* ---------- part rule & nav ---------- */
+.partrule{display:flex;align-items:center;gap:16px;margin:76px 0 4px}
+.pr-line{flex:1;height:1px;background:var(--rule)}
+.pr-lab{font-size:11px;letter-spacing:.26em;color:var(--seal);white-space:nowrap}
+/* ---------- sticky score bar + nav ---------- */
+.stick{position:sticky;top:0;z-index:30;background:var(--page);
+  border-bottom:1px solid var(--rule);margin:0 -20px;padding:0 20px;
+  box-shadow:0 6px 14px -12px rgba(0,0,0,.5)}
+.sbar{display:flex;gap:10px;align-items:stretch;padding:9px 0 8px;flex-wrap:wrap}
+.sgrp{display:flex;align-items:center;gap:11px;flex:1 1 340px;min-width:0;
+  background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:6px 11px}
+.sgrp > label{font-size:10.5px;letter-spacing:.08em;color:var(--ink-3);line-height:1.3;
+  font-family:"IBM Plex Mono",monospace;flex:0 0 auto;text-align:right}
+.sgrp > label b{display:block;color:var(--seal);font-size:11.5px;font-weight:600}
+.sgrp input{width:66px;flex:0 0 66px;font-family:"IBM Plex Mono",monospace;font-size:20px;
+  font-weight:600;padding:3px 4px;border:1px solid var(--rule);background:var(--card-2);
+  color:var(--ink);border-radius:3px;text-align:center;font-variant-numeric:tabular-nums}
+.sgrp input::-webkit-outer-spin-button,.sgrp input::-webkit-inner-spin-button{
+  -webkit-appearance:none;margin:0}
+.sout{display:flex;gap:14px;min-width:0;overflow:hidden;flex:1 1 auto}
+.sout div{min-width:0}
+.sout b{display:block;font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;
+  line-height:1.2;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sout span{display:block;font-size:10px;color:var(--ink-3);white-space:nowrap}
+.sout .dim b{color:var(--ink-3);font-weight:400}
+.nav ul{display:flex;gap:2px 3px;list-style:none;margin:0;padding:0 0 7px;
+  overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+@media(max-width:640px){
+  .sgrp > label{display:none}
+  .sout{gap:10px}
+}
+.nav a{font-size:12.5px;color:var(--ink-2);text-decoration:none;padding:3px 8px;border-radius:3px;
+  white-space:nowrap}
+.nav a:hover{background:var(--card-2);color:var(--ink)}
+.nav a.era{font-family:"IBM Plex Mono",monospace;color:var(--seal);font-weight:600;
+  letter-spacing:.06em;padding-left:2px}
+.ratio{display:flex;align-items:center;gap:9px}
+.evid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin-top:22px}
+.evid article{background:var(--card);padding:18px 20px 16px;position:relative}
+.evid .n{position:absolute;top:16px;right:18px;font-size:11px;color:var(--seal);
+  letter-spacing:.1em;opacity:.8}
+.evid h4{margin:0 0 8px;font-family:"Noto Serif SC",serif;font-size:15px;font-weight:700;
+  padding-right:32px;line-height:1.4}
+.evid p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.65}
+.evid q{quotes:none;color:var(--ink);border-left:2px solid var(--seal);padding-left:9px;
+  display:inline-block;margin:3px 0}
+.evid b{color:var(--ink);font-weight:600}
+.evid cite{display:block;margin-top:11px;font-style:normal;font-size:11px;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;word-break:break-all;line-height:1.5}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:4px;overflow:hidden;margin:0 0 14px}
+.seg button{font-family:inherit;font-size:12.5px;padding:5px 14px;border:0;cursor:pointer;
+  background:var(--card);color:var(--ink-2)}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--petrol);color:var(--card);font-weight:500}
+
+/* ---------- notes ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.quote{border-left:3px solid var(--seal);background:var(--seal-wash);padding:14px 18px;
+  font-size:13.5px;color:var(--ink-2);margin:0}
+.quote cite{display:block;font-style:normal;font-size:12px;color:var(--ink-3);margin-top:8px;
+  font-family:"IBM Plex Mono",monospace}
+.notes{font-size:13px;color:var(--ink-2)}
+.notes li{margin-bottom:7px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);font-size:12px;
+  color:var(--ink-3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="page">
+
+<header class="mast">
+  <p class="eyebrow">黑龙江 · 大庆市 · 初中升学录取名册</p>
+  <h1>大庆中考 <span class="yr mono">2004</span></h1>
+  <p class="dek">五千七百六十条录取记录，二十二所高中，七十五所初中。这是一座油田城市在那一年
+  给一届初中毕业生排出的全部座次——分数线在哪里落下，谁走进了哪扇门；
+  以及三年之后的 2007 年高考，这一届人走到了哪里。</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="stick">
+  <div class="sbar">
+    <div class="sgrp">
+      <label for="tbz"><b>2004</b>中考</label>
+      <input id="tbz" type="number" min="300" max="663" value="648" inputmode="numeric" aria-label="2004 年中考成绩">
+      <div class="sout">
+        <div><b id="tbzrank">—</b><span>大庆位次/5760</span></div>
+        <div><b id="tbzexp">—</b><span>实验位次/447</span></div>
+        <div><b id="tbzprov">—</b><span>全省推测 ×8</span></div>
+        <div><b id="tbzpct">—</b><span>百分位</span></div>
+      </div>
+    </div>
+    <div class="sgrp">
+      <label for="tbg"><b>2007</b>高考理科</label>
+      <input id="tbg" type="number" min="150" max="719" value="666" inputmode="numeric" aria-label="2007 年高考理科成绩">
+      <div class="sout">
+        <div><b id="tbgprov">—</b><span>全省位次</span></div>
+        <div><b id="tbgcity">—</b><span>大庆位次</span></div>
+        <div><b id="tbgexp">—</b><span>实验位次</span></div>
+      </div>
+    </div>
+  </div>
+<nav class="nav" aria-label="页内导航"><ul>
+  <li><a class="era" href="#s-log">2004</a></li>
+  <li><a href="#s-log">分数剖面</a></li>
+  <li><a href="#s-lookup">分数查询</a></li>
+  <li><a href="#s-ladder">高中阶梯</a></li>
+  <li><a href="#s-fee">自费线</a></li>
+  <li><a href="#s-jun">初中版图</a></li>
+  <li><a class="era" href="#s-funnel">2007</a></li>
+  <li><a href="#s-funnel">三年之后</a></li>
+  <li><a href="#s-rank">分数→清华</a></li>
+  <li><a href="#s-dest">846 人去向</a></li>
+  <li><a href="#s-conv">进口·出口</a></li>
+  <li><a href="#s-gap">名册之外</a></li>
+  <li><a href="#s-origin">外县与重读</a></li>
+  <li><a href="#s-years">2002–2008</a></li>
+  <li><a href="#s-thermo">清华温度计</a></li>
+  <li><a href="#s-why">447→1328</a></li>
+  <li><a href="#s-est">算上北大</a></li>
+  <li><a href="#s-prov">全省位次</a></li>
+  <li><a href="#s-share">高分段</a></li>
+  <li><a href="#s-cb">八年清北</a></li>
+  <li><a href="#s-notes">数据说明</a></li>
+</ul></nav>
+</div>
+
+<section id="s-log">
+  <div class="sechead"><h2>分数剖面</h2><span class="tag">Score Profile</span></div>
+  <p class="lede">按 5 分一层，自上而下从 663 分排到 300 分，横向长度是该层的录取人数，
+  颜色是他们去了哪一类学校。<strong>480 分是一道墙</strong>：墙以下没有一个人进入省级示范高中；
+  <strong>575 分是另一道墙</strong>：墙以上几乎没有人进入普通高中。两墙之间的
+  <strong>425–479 分</strong>是一段近乎空白的地层——全市仅 32 人。</p>
+  <div class="card log">
+    <div class="logchart" id="logchart"></div>
+    <aside class="logside">
+      <div class="legend" id="legend"></div>
+      <div class="rd">
+        <b>读图</b>
+        <p>省级示范高中共 8 所（铁人、实验、一中、大庆中学、四中、石油高中、东风、二十三中），
+        当年录取 2,492 人，占全部录取的 43%。</p>
+        <p>虚色条为自费生。省级示范高中的自费名额几乎全部落在 480–570 分区间，
+        低于统招线但仍在示范校门内。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="s-lookup">
+  <div class="sechead"><h2>如果你考了这个分</h2><span class="tag">Rank Lookup</span></div>
+  <p class="lede">拖动或输入一个 2004 年的中考分数，看看它在全市录取者中排第几，
+  以及当年哪些学校的录取线在它之下。</p>
+  <div class="card lookup">
+    <div class="lkin">
+      <label for="sin">文化成绩</label>
+      <input id="sin" type="number" min="300" max="663" value="648" inputmode="numeric">
+      <input id="srng" type="range" min="300" max="663" value="648" aria-label="分数滑块">
+    </div>
+    <div class="lkres">
+      <div class="lkfig">
+        <div><b class="mono" id="lkrank">—</b><span>录取者中位次</span></div>
+        <div><b class="mono" id="lkpct">—</b><span>录取者中百分位</span></div>
+        <div><b class="mono" id="lkabove">—</b><span>比该分高的人数</span></div>
+      </div>
+      <p class="lklab">统招线在此分之下的学校</p>
+      <div class="chips" id="lktz"></div>
+      <p class="lklab">仅够自费线的学校</p>
+      <div class="chips" id="lkzf"></div>
+    </div>
+  </div>
+</section>
+
+<section id="s-ladder">
+  <div class="sechead"><h2>高中：录取阶梯</h2><span class="tag">22 Senior Highs</span></div>
+  <p class="lede">每一条是一所高中录取学生的分数跨度：细线为最低分到最高分，深色块为中间 50%，
+  竖标记为中位数。<strong>实心圆点标出当年公布的统招录取线。</strong>
+  最上面五所学校完全没有自费名额；最下面的十九中、十三中、十七中则全部是自费录取，没有统招线。</p>
+  <div class="card ladder" id="ladder"></div>
+  <div class="tw card" style="margin-top:18px">
+    <table id="thigh"><thead><tr>
+      <th class="l s" data-k="0">高中</th><th class="s" data-k="1">录取</th>
+      <th class="s" data-k="10">统招线</th><th class="s" data-k="11">自费线</th>
+      <th class="s" data-k="4">最高分</th><th class="s" data-k="2">平均分</th>
+      <th class="s" data-k="3">中位数</th><th class="s" data-k="9">自费</th>
+      <th class="s" data-k="12">女生占比</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section id="s-fee">
+  <div class="sechead"><h2>自费线：钱买到了多少分</h2><span class="tag">Fee-Paying Places</span></div>
+  <p class="lede">全部 5,760 名录取者中有 <strong>1,143 人</strong>（19.8%）走的是自费计划。
+  下表是各校自费生最低分与统招线之间的落差——这就是当年一个自费名额所折算的分数。</p>
+  <div class="tw card"><table id="tfee"><thead><tr>
+    <th class="l">高中</th><th>统招线</th><th>自费最低分</th><th>落差</th>
+    <th>自费人数</th><th>自费占比</th>
+  </tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="s-jun">
+  <div class="sechead"><h2>初中：生源版图</h2><span class="tag">75 Junior Highs</span></div>
+  <p class="lede">按送入省级示范高中的人数排序。<strong>大庆一中初中部</strong>一校送出 384 人，
+  是第二名的两倍；而<strong>林甸初中</strong>以 82.8% 的示范校录取率位居全市第一——
+  县城中学送出来的，几乎都是尖子。表头可点击排序，也可以直接搜校名。</p>
+  <div class="tctl">
+    <input id="jq" type="search" placeholder="搜索初中校名…" aria-label="搜索初中">
+    <span class="hint" id="jcount"></span>
+  </div>
+  <div class="tw card"><table id="tjun"><thead><tr>
+    <th class="l s" data-k="0">初中</th><th class="s" data-k="1">录取总数</th>
+    <th class="s" data-k="2">省示范</th><th class="s" data-k="3">示范率</th>
+    <th class="l">示范率</th><th class="s" data-k="4">平均分</th>
+    <th class="s" data-k="5">最高分</th><th class="s" data-k="6">全市前100</th>
+    <th class="l">主要去向</th>
+  </tr></thead><tbody></tbody></table></div>
+</section>
+
+
+<div class="partrule">
+  <span class="pr-line"></span>
+  <span class="pr-lab mono">PART II · 2007</span>
+  <span class="pr-line"></span>
+</div>
+
+<section id="s-funnel">
+  <div class="sechead"><h2>三年之后</h2><span class="tag">The Same Cohort, 2007</span></div>
+  <p class="lede">2004 年 9 月，这 5,760 人走进高中。2007 年 6 月，他们参加高考。
+  下面是那一年<strong>全大庆</strong>的高考结果——注意这两个数字并不是严格的同一批人：
+  高考口径含四县、含复读生，普本上线 6,361 人已经多于当年中考录取的 5,760 人。</p>
+  <div class="card" id="funnel"></div>
+</section>
+
+<section id="s-rank">
+  <div class="sechead"><h2>中考多少分，三年后进了清华</h2><span class="tag">Score → Tsinghua</span></div>
+  <p class="lede">2007 年清华大学全国新生名单里有 <strong>37 名大庆籍学生</strong>，
+  其中 12 人能在 2004 年的中考名册上按姓名唯一对上。按中考分数分段看这 12 人：
+  <strong>中考 650 分以上的 8 个人里出了 2 个</strong>（25%），640–649 分的 52 人里出了 3 个（5.8%），
+  再往下迅速衰减到 1% 以下；<strong>中考低于 615 分的，一个也没有</strong>——
+  而 615 分在当年只排到全市第 609 名。</p>
+  <div class="seg" id="bandseg" role="group" aria-label="口径切换">
+    <button data-m="q" aria-pressed="true">清华（实测）</button>
+    <button data-m="qb" aria-pressed="false">清华北大（× 2 估计）</button>
+  </div>
+  <div class="card" id="bandchart"></div>
+  <p class="lede" style="margin-top:26px">把范围放宽到清华、北大与保送生，共有 <strong>24 人</strong>
+  可以追溯回 2004 年的中考成绩（保送生公示分五个批次发布，2007-04-29 的第五批是后来补上的，
+  其中李城达 618 分/第 516 名保送浙大、刘博 617 分/第 542 名保送浙大）。
+  他们的中考名次从<strong>第 2 名</strong>（刘禹驰，657 分，
+  三十六中→铁人中学，后以数学奥赛保送北大）一直排到<strong>第 1,218 名</strong>
+  （孙继峰，598 分，六十一中→大庆四中，后以信息学奥赛保送华中科技大学）。名次不是判决书。</p>
+  <div class="card" id="strip"></div>
+  <div class="tw card" style="margin-top:18px">
+    <table id="ttr"><thead><tr>
+      <th class="l s" data-k="8">姓名</th>
+      <th class="s" data-k="0">2004 中考名次</th><th class="s" data-k="1">中考成绩</th>
+      <th class="l s" data-k="2">初中</th><th class="l s" data-k="3">高中</th>
+      <th class="l s" data-k="4">2007 去向</th><th class="l s" data-k="5">方式</th>
+      <th class="l">院系 / 保送条件</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section id="s-dest">
+  <div class="sechead"><h2>846 个人，三年后去了哪</h2><span class="tag">Roster → Destination</span></div>
+  <p class="lede">大庆分数最高的两所高中，2004 年一共录取 <strong>846 人</strong>——实验中学 447、铁人中学 399。
+  两校后来都公布过 2007 届的高考录取名单：实验 <strong>1,403 人</strong>（全部本科录取）、
+  铁人 <strong>821 人</strong>（题为「考入重点大学名单」，实际含普通本科与部分专科）。
+  把两份名册逐个拿到各自的录取名单上去对——同名唯一才算数——
+  实验对上 <strong>303 人</strong>、铁人对上 <strong>288 人</strong>。
+  加上一列「就读高中」之后，很多事情才显出形状。</p>
+
+  <div class="tw card"><table id="tsum"><thead><tr>
+    <th class="l">高中</th><th>2004 录取</th><th>统招线</th><th>中考均分</th>
+    <th>2007 名单人数</th><th>唯一追踪</th>
+    <th>清华北大</th><th>985 / C9</th><th>211</th><th>其他本科及以下</th>
+    <th class="l">名册中的重点率</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:12px;max-width:74ch"><b>「重点率」＝（清北＋985/C9＋211）÷ 名册人数</b>，
+  两校分母都是自己的中考名册，分子都来自各自公布的名单，可以直接比。
+  但<b>「其他本科及以下」与「未追踪」两栏不可比</b>——实验那份名单收全部本科录取，
+  铁人那份的收录门槛更高，所以铁人有更多人「未追踪」并不代表他们考得差，只代表他们没进那张榜。</p>
+
+  <div class="card" id="destchart"></div>
+  <div class="tw card" style="margin-top:18px"><table id="tband"><thead><tr>
+    <th class="l" rowspan="2">2004 中考分段</th>
+    <th colspan="5" class="grp">大庆实验中学</th><th colspan="5" class="grp gr2">大庆铁人中学</th></tr>
+    <tr><th>名册</th><th>清北</th><th>985</th><th>211</th><th>其他</th>
+        <th class="gr2">名册</th><th class="gr2">清北</th><th class="gr2">985</th><th class="gr2">211</th><th class="gr2">其他</th>
+  </tr></thead><tbody></tbody></table></div>
+
+  <p class="lede" style="margin-top:26px">最值得看的是<strong>清北的下限</strong>。
+  实验中学名册里考上清北的 7 个人，中考最低 <strong>631 分（全市第 176 名）</strong>——张朔，进北大；
+  再往下 620 分段、610 分段，447 人里一个清北也没有。
+  铁人中学名册里考上清北的有 <strong>10 个人</strong>，最低的是
+  <strong>615 分（全市第 609 名）</strong>的张远洋，进北大；
+  619 分（第 480 名）的张剑、620 分（第 442 名）的董哲、623 分（第 354 名）的王鑫、
+  628 分（第 237 名）的戴飞——铁人的清北，有一半来自 620 分档以下。
+  <strong>张远洋那 615 分若放进实验中学的名册，只排第 245 名，在 447 人里属于后一半</strong>；
+  而实验中学名册里 620 分以下的 252 个人，三年后没有一个进清北。</p>
+
+  <p class="lede">同一年、同一张中考卷子、相差 4 分的两条统招线，三年后的结果是：
+  <strong>铁人用 399 人的名册送出 10 个清北，实验用 447 人的名册送出 7 个</strong>
+  （2.51% 对 1.57%）。而两校的「重点率」几乎一样——39.3% 对 39.8%。
+  差别不在中间层，只在塔尖。</p>
+  <p class="lede">再把这件事翻过来看就更清楚了。2007 年两校名单上的清北学生一共
+  <strong>57 人</strong>（清华 23、北大 31、北大医学部 3），其中只有 <strong>17 人</strong>
+  能在 2004 年的中考名册上唯一找到。分校看：<strong>铁人 20 人里对上 10 人（50%），
+  实验 37 人里只对上 7 人（19%）</strong>。
+  也就是说，铁人的清北大体是自己中考招进来、三年里带出来的；
+  实验的清北，四分之三以上在 2004 年那份名册上根本不存在。</p>
+
+  <div class="seg" id="schseg" role="group" aria-label="按高中筛选">
+    <button data-s="all" aria-pressed="true">两校 846</button>
+    <button data-s="实验" aria-pressed="false">实验 447</button>
+    <button data-s="铁人" aria-pressed="false">铁人 399</button>
+  </div>
+  <div class="seg" id="destseg" role="group" aria-label="按去向层次筛选">
+    <button data-t="all" aria-pressed="true">全部层次</button>
+    <button data-t="0" aria-pressed="false">清北 17</button>
+    <button data-t="1" aria-pressed="false">985/C9 191</button>
+    <button data-t="2" aria-pressed="false">211 127</button>
+    <button data-t="3" aria-pressed="false">其他 256</button>
+    <button data-t="-2" aria-pressed="false">同名待定 42</button>
+    <button data-t="-1" aria-pressed="false">未追踪 213</button>
+  </div>
+  <div class="tctl"><input id="dq" type="search" placeholder="搜姓名 / 初中 / 大学，例如「六十九中」「哈尔滨工业大学」" aria-label="搜索名册"><span id="dcount" class="hint"></span></div>
+  <div class="tw card"><table id="tdest"><thead><tr>
+    <th class="s" data-k="0">中考成绩</th><th class="s" data-k="1">全市名次</th>
+    <th class="l s" data-k="2">姓名</th><th class="l s" data-k="5">就读高中</th>
+    <th class="l s" data-k="3">初中</th><th class="l s" data-k="4">计划形式</th>
+    <th class="l s" data-k="6">2007 录取学校</th>
+    <th class="l s" data-k="7">科类</th><th class="l s" data-k="8">层次</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:14px;max-width:72ch">层次按 2007 年的口径划：清北单列（含北大医学部）；985/C9 含哈工大、西安交大、香港大学等；
+  211 指非 985 的部属院校；独立学院、分校与专科（大庆石油学院华瑞学院、哈工大华德学院、哈工大威海、
+  哈师大恒星／呼兰／阿城学院、北师大珠海分校、吉大珠海分院、南开滨海学院、天大仁爱学院、
+  东北大学秦皇岛分校等）一律计入「其他本科及以下」，不随母体升格。
+  铁人那份名单里的校名多为简写（「大连理工」「北京邮电」「上海同济大学」「黑科技」「八一农垦」），
+  表中<b>照录原文</b>，只在判层次时做了标准化。
+  「同名待定」指名册或名单里存在同名的另一个人，仅凭姓名无法判断是哪一位，因此不计入任何层次——
+  两校各层次的人数都是<b>下限</b>。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>倒过来看：名校生是从哪来的</h2><span class="tag">Reverse Lookup</span></div>
+  <p class="lede">上面是「从中考往前看」。反过来，把两校 2007 年名单上考进顶尖高校的人挑出来，
+  逐个回查 2004 年的中考名册。<strong>「就读高中」这一列，就是分水岭</strong>——
+  展开清华与北京大学两行，看铁人的名字后面大多跟着分数，实验的名字后面大多是「不在名册」。</p>
+  <div class="card" id="elitebox"></div>
+  <p class="notes" style="margin-top:14px;max-width:72ch">「不在名册」意味着这个人 2004 年没有通过大庆市中考录取进入这所学校：
+  可能是外市县生源、可能是复读生、可能走的是自费或艺体等未收入名册的渠道、也可能是中途转学而来。
+  两校名册合计 846 人，而两校 2007 年公布的名单合计 2,224 人。
+  哈尔滨工业大学一行放在最后作对照：它是两校去向最集中的学校（133 人），比例上反而更贴近名册。</p>
+</section>
+
+<section id="s-conv">
+  <div class="sechead"><h2>高中：进口与出口</h2><span class="tag">Intake vs Outcome</span></div>
+  <p class="lede">左边是 2004 年的进口——录取人数与统招线；右边是 2007 年的出口——清华录取数与保送生数。
+  <strong>铁人中学的统招线全市最高（607），比实验中学还高 4 分</strong>，
+  但三年后实验中学送进清华 16 人、保送 7 人，铁人是 10 人与 5 人。
+  按当年录取名册每百人折算，实验 5.15、铁人 3.76、一中 3.30。</p>
+  <div class="tw card"><table id="tconv"><thead><tr>
+    <th class="l">高中</th><th>2004 录取</th><th>统招线</th><th>中考均分</th>
+    <th>2007 清华</th><th>清北（估计）</th><th>2007 保送</th><th class="l">每百名录取的产出</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:14px;max-width:64ch">这一栏是<em>比值</em>，不是升学率。
+  2007 年这些学校的毕业班比 2004 年中考名册上分给它们的人数要多——仅实验中学一校，
+  2007 年高考 600 分以上就有 591 人，而名册只给了它 447 个名额。名册是下限，不是全部在校生。</p>
+</section>
+
+<section id="s-gap">
+  <div class="sechead"><h2>名册之外的人</h2><span class="tag">Who Isn't on the List</span></div>
+  <p class="lede">这是整页最该看的一张图。2007 年清华在大庆招了 37 人，
+  <strong>只有 12 人能在 2004 年的中考名册上找到</strong>。
+  大庆实验中学送进清华 16 人，其中<strong>只有 3 人</strong>来自那份名册；
+  铁人中学 10 人里 5 人；只有大庆一中是个例外——5 人里 4 人是名册上的孩子。
+  按清北估计（清华 × 2，见下一节），这相当于全市约 74 个清北名额里，
+  <strong>只有约 24 个落在那 5,760 人身上</strong>。</p>
+  <div class="card" id="gapchart"></div>
+  <div class="grid2" style="margin-top:24px">
+    <div>
+      <p class="lede" style="margin:0">名册外的 25 人里，只有 5 人是美术类（单独招生轨道）。
+      剩下 <strong>20 人</strong>既不在名册上、也不走艺术类——他们只能来自
+      <strong>复读、四县高中、外地转入，或名册未覆盖的择校生</strong>。
+      当年的喜报从不区分这些人，全部计入学校成绩。</p>
+    </div>
+    <div>
+      <p class="lede" style="margin:0">同一件事还有两个更硬的证据：
+      2004 年中考名册分给实验中学 <strong>447 个名额</strong>，
+      而 2007 年实验中学高考普本上线就有 <strong>1,328 人</strong>——<strong>2.97 倍</strong>。
+      全市也一样：2007 年普本上线 6,361 人，比 2004 年中考录取的 5,760 人还多 601 人。
+      一届人在高中三年里，只会流失，不会凭空变多。<br><a href="#s-why" style="font-size:13px">↓ 这 2.97 倍是怎么来的，下一节有当年的原始文件</a></p>
+    </div>
+  </div>
+  <div class="tw card" style="margin-top:20px"><table id="tmult"><thead><tr>
+    <th class="l">年份</th><th>全市普本上线</th><th>实验普本上线</th>
+    <th>实验占全市</th><th>÷ 2004 名册给实验的 447 名额</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:12px;max-width:70ch">只有 <b>2007 年</b>这一行是与 2004 年中考名册同一届人，
+  已标出；其余年份列在这里是为了说明这不是某一年的偶然——实验中学的毕业班规模常年是名册所给名额的两三倍。</p>
+</section>
+
+<section id="s-origin">
+  <div class="sechead"><h2>680 分以上的 73 个人，只有 29 个是市区应届</h2><span class="tag">Where the Top Really Came From</span></div>
+  <p class="lede">上一节说「名册之外还有人」，但没说他们是谁。2007 年 7 月，大庆一中在自己网站上挂出一张
+  《大庆市 2007 年高考高分段人数分布表》，把全市高分段<strong>逐校拆成了市区应届、外县、重读三栏</strong>。
+  这是目前找到的唯一一份把这件事写在明面上的表。</p>
+  <div class="card" id="origchart"></div>
+  <div class="tw card" style="margin-top:18px"><table id="torig"><thead><tr>
+    <th class="l">分数段</th><th class="l">学校</th><th>人数</th>
+    <th>市区应届</th><th>外县</th><th>重读</th><th class="l">市区应届占比</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="lede" style="margin-top:26px">读一遍这张表：<strong>全市 680 分以上 73 人，市区应届只有 29 人</strong>；
+  690 分以上 27 人，市区应届只有 11 人。也就是说，大庆高考塔尖上<strong>六成的人，
+  三年前并不是从这座城市的中考名册里走出来的</strong>。
+  最极端的是实验中学：680 分以上 39 人，市区应届 9 人、外县 10 人、
+  <strong>重读 20 人</strong>——重读生一个人就占了一半以上。
+  另一端是大庆一中：10 人全部是市区应届，一个外县生、一个重读生都没有。
+  这不是巧合——一中把「排除重读生和外县生之后遥遥领先」写进了自己的十大办学优势。</p>
+  <p class="lede">这也把前面那道题解开了。2004 年中考名册给实验中学 447 个名额，
+  三年后实验的清北有 37 人而名册上只对得上 7 个；铁人 399 个名额、20 个清北、对上 10 个。
+  <strong>差额不是消失了，是从外县和复读班补进来的。</strong></p>
+
+  <div class="sechead" style="margin-top:44px"><h2>2003 与 2004：口子是怎么收的</h2><span class="tag">2003 vs 2004</span></div>
+  <p class="lede">2004 年这一届之所以值得单独讲，是因为它正好卡在政策收紧的那一年。
+  上一届（2003 年中考）的情况，铁人中学在 2006 年的高考喜报里写得很直白：</p>
+  <blockquote class="q">2003 年，我校在三所省重点中学中，生源质量是比较差的，中考全市前 50 名，铁中有 8 人，萨区同类校有 33 人。
+  <b>除此之外萨区同类校还有外市县中考状元 30 多人及 300 余名外市县尖子生。</b>
+  <cite>——大庆铁人中学 2006 年高考喜报</cite></blockquote>
+  <div class="tw card"><table id="ty03"><thead><tr>
+    <th class="l">2003 年中考</th><th>铁人中学</th><th>大庆一中</th><th class="l">萨区同类校</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:12px;max-width:70ch">同一组数字，大庆一中在《2003 年中考招生情况》里也登了一遍，
+  两校对「萨区同类校」的记载完全一致（8 / 16 / 21 / 27 / 33，480 分以上 342 人）。
+  全市 480 分以上共 500 余人——也就是说，市内的高分段几乎被两三所学校分完，
+  <b>而在这 500 多人之外，还另有 300 多名外市县尖子生进入了同一批学校</b>。</p>
+  <p class="lede" style="margin-top:22px">另一个 2003 届的实物证据：实验中学 03 级 21 班（俄语班）在自己的班级主页上写着，
+  全班 <strong>64 人中外县生 52 人</strong>，51 人来自乡镇中学。一个班里五分之四是外县孩子。</p>
+
+  <p class="lede">到 2004 年，学校自己的招生简章换了措辞。同一个网址、同一个栏目，前后两年：</p>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card pane">
+      <div class="pl">2003 年招生简章</div>
+      <p>「2003 年，我校<b class="hl">立足本市，面向全省</b>，计划招生 740 人。」</p>
+      <p class="notes">国际部 120 人（含双语班 2 个、<b>面向全省</b>招收的英语留学班 30 人、俄语班 30 人）；
+      英才部 120 人；艺体部 50 人；宏志班<b>面向全省</b> 50 人。</p>
+    </div>
+    <div class="card pane">
+      <div class="pl">2004 年招生简章</div>
+      <p>「2004 年，我校<b class="hl">面向全市</b>计划招生 750 人；由省委宣传部、省教育厅联合组织<b>在全省招收宏志班学生 50 人</b>。」</p>
+      <p class="notes">国际部只剩俄语生 50 人（双语班、英语留学班不再出现）；
+      英才部 120 人；艺体部 <b>50 → 30 人</b>；宏志班仍是全省，但被明确写成省级专项。</p>
+    </div>
+  </div>
+  <p class="lede" style="margin-top:20px">变化很具体：<strong>「面向全省」变成了「面向全市」</strong>；
+  唯一保留的全省通道是那 50 个宏志班名额，而且特意注明是省委宣传部与省教育厅组织的专项；
+  面向全省招生的英语留学班和双语班从简章上消失；艺体特长生从 50 人减到 30 人。</p>
+  <p class="lede">而在同一年的《大庆实验中学简介》里，学校把这件事的原因直接写了出来。
+  这段话夹在介绍英才部小班的段落中间，一笔带过，却是整个项目里最直接的一句：</p>
+  <blockquote class="q">由于<b class="hl">今年省市教育行政部门严格规定不许各高中学校招收外地学生</b>，
+  从而避免了外地的尖子学生挤占本地学生进入英才部的现象出现。
+  <cite>——《大庆实验中学简介》，招生资讯栏目，2004 年 8 月存档</cite></blockquote>
+  <p class="lede">这不是我们的推断，是<strong>被限制的那所学校自己的说法</strong>——
+  而且它是当作好消息说的：外地尖子生不再挤占本地学生的英才部名额。
+  同一页往下几行，它又回头描述了上一年是什么样子：</p>
+  <blockquote class="q">去年大庆市中考成绩 480 分以上有 577 人。其中有 342 人报考了实验中学，占报考人数的 60%。
+  <b class="hl">外市县的中考状元有 30 多人选择了实验中学，全省各科竞赛的尖子生有 30 多人也选择了大庆实验中学。</b>
+  <cite>——同一页</cite></blockquote>
+  <p class="lede">而 2003 年那条通道是<strong>合规的</strong>。学校在 2004 年 3 月的内部工作简报里写得清清楚楚：
+  「<strong>按照大庆市外市县学生招生政策</strong>，我省部分尖子生慕名选择我校就读。
+  2003 年招生是我校成立以来，高一招生生源质量最好的一年。」
+  也就是说，2003 年有一份允许招外市县学生的市级政策，2004 年被省市两级一起叫停。</p>
+  <p class="lede">但禁令归禁令。同一届人三年后的高考高分段里，实验中学 680 分以上仍有
+  <strong>10 个外县生</strong>、铁人仍有 7 个。<strong>2004 年掐掉的是公开招生的口子，不是全部的口子</strong>——
+  宏志班 50 人是省委宣传部与省教育厅组织的专项，简章里明写着仍然面向全省；
+  此外还有转学、借读与高三才来的复读生。真正在 2004 年之后膨胀的是另一条：
+  实验中学 680 分以上的 39 人里，20 人是重读生。</p>
+  <p class="notes" style="max-width:72ch">补充一个基准：实验中学 2003 年的高考喜报（对应 2000 年中考那一届）
+  开头写的是「在生源极其不利的情况下（<b>高分段的重读生和外县生寥寥无几</b>，本市尖子生数量极少）」，
+  并且把成绩特意标成「应届理科生（<b>除外县生和补习生外</b>）600 分以上共 12 人」。
+  也就是说，2003 年的实验中学不但外县生和复读生很少，还主动把他们从自己的成绩里剔出去报。
+  四年之后，同一所学校 680 分以上的人里，七成七是外县生或复读生。</p>
+</section>
+
+<section id="s-years">
+  <div class="sechead"><h2>那 300 个外县孩子，后来去哪了</h2><span class="tag">2002–2005 Intake</span></div>
+  <p class="lede">把 2003 和 2004 单独看，看不出趋势。把四届中考的生源摆在一起，
+  再看它们三年后各自的高考塔尖，一条清楚的曲线才出来。</p>
+  <div class="tw card"><table id="tzk"><thead><tr>
+    <th class="l">中考年 · 指标</th><th>大庆铁人中学</th><th>大庆一中</th><th>大庆实验中学</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="notes" style="margin-top:12px;max-width:72ch">2002 年那一届的口径不同（当年中考满分更高），
+  三校「700 分以上」分别是铁人 <b>268</b>、实验 <b>95</b>、一中 <b>64</b>——
+  这个数字由一中与实验两份喜报交叉印证。也就是说 2002 年是铁人独大，
+  <b>2003 年才轮到实验</b>，而 2005 年市内高分段又摆回了铁人一边。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>估一估：外县生到底有多少</h2><span class="tag">An Estimate</span></div>
+  <p class="lede"><strong>2003 年是唯一一个有硬数字的年份，而且两个来源可以拼起来。</strong>
+  铁人在 2006 年的喜报里写的是总量：实验那一届除了市内 480 分以上的 342 人之外，
+  另有<strong>外市县中考状元 30 多人、外市县尖子生 300 余名</strong>。
+  实验自己在 2004 年的简介里写的是其中的顶尖那一层：
+  <strong>外市县中考状元 30 多人，全省各科竞赛尖子生 30 多人</strong>。
+  两句话不矛盾——实验只数了状元和竞赛生（约 60–70 人），铁人数的是全部（约 330 人）。
+  同一届实验的俄语班（03 级 21 班）在班级主页上写着：全班 64 人，外县生 52 人。</p>
+  <p class="lede"><strong>2004 年被明令禁止，但显然没有归零。</strong>
+  省市两级「严格规定不许各高中学校招收外地学生」，简章上唯一豁免的是宏志班 50 人（省级专项，仍写明面向全省）。
+  可是三年后，实验理科 680 分以上的 39 人里有 <strong>10 个外县生</strong>，
+  同一栏市区应届只有 9 个。这两件事要同时成立，只有两种可能——</p>
+  <div class="tw card" style="margin-top:6px"><table id="tbound"><thead><tr>
+    <th class="l">2004 级外县生人数</th><th class="l">推算</th><th>人数</th>
+  </tr></thead><tbody>
+    <tr><td class="l sch">若禁令基本执行</td><td class="l">只剩宏志班 50 人，则这 50 人中要出 10 个 680 分以上——命中率 20%，是市区应届（1.2%）的 <b>17 倍</b></td><td><b>≈ 50</b></td></tr>
+    <tr><td class="l sch">若禁令有缝</td><td class="l">外县生高分密度按市区应届的 5–10 倍计，出 10 人需要</td><td><b>85 – 170</b></td></tr>
+    <tr><td class="l sch">参照：2003 级（有记载）</td><td class="l">外市县尖子生 300 余名，其中状元 30 余、竞赛尖子 30 余</td><td><b>≈ 330</b></td></tr>
+  </tbody></table></div>
+  <p class="lede" style="margin-top:20px">宏志班本来就是全省选拔的品学兼优学生，命中率高是正常的，
+  但 20% 进 680 分以上仍然偏高；反过来，如果外县生有 150 人，
+  那就说明<strong>禁令在执行层面留了不少缝</strong>——转学、借读、以及高三才来的复读生都不在「招生」两个字的管辖范围里。
+  综合起来，<strong>2004 级实验的外县生大致在 50–170 人，中位数落在 100 上下，
+  约为 2003 年那一届的六分之一到二分之一。</strong>无论取哪一端，这都是一次数量级上的收缩。</p>
+  <p class="notes" style="margin-top:12px;max-width:72ch">上表前两行是<b>推算，不是记载</b>。
+  市区应届的分母 760 人本身也是估的（447 统招＋自费上限约 285＋艺体 30），
+  依赖「自费名额用满 38% 上限」这个假设。没有原始文件支撑，所以给的是区间而不是一个数。
+  2005 级更没有直接数字，只能说：从下面 2008 年那张表看，实验对外来生源的依赖不但没减，反而更重了。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>2008：实验的塔尖上，市内应届只剩下 1 个人</h2><span class="tag">The 2005 Intake, Three Years On</span></div>
+  <p class="lede">2008 年，铁人中学在自己的高考成绩页上做了一张
+  《2008 年市内应届高考情况统计表》——只统计<strong>市内应届生</strong>，把外县和重读全部剔掉。
+  把它和实验自己公布的全校数字放在一起，落差是这样的：</p>
+  <div class="card" id="spchart"></div>
+  <div class="tw card" style="margin-top:18px"><table id="tsp"><thead><tr>
+    <th class="l">高考年 · 分数段</th><th class="l">学校</th><th>全校</th><th>市内应届</th>
+    <th>外县</th><th>重读</th><th class="l">市内应届占比</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="lede" style="margin-top:26px">2008 年实验中学理科 675 分以上（学校自己标注为「有望达到清华北大录取分数线」）
+  <strong>全校 26 人</strong>；同一年铁人统计的实验<strong>市内应届</strong> 675 分以上是 <strong>4 人</strong>，
+  680 分以上是 <strong>1 人</strong>。文科 630 分以上，实验全校 30 人，市内应届 3 人。
+  <strong>也就是说，2008 年实验中学的整个塔尖，八成五到九成不是大庆市内应届生。</strong>
+  同一年铁人理科 690 分以上全校 8 人、市内应届 5 人；一中 680 分以上 10 人，全部是市内应届。</p>
+  <p class="lede">这与 2005 年的中考招生完全对得上：那一年实验在非实验区（9,604 名考生）
+  <strong>前 30 名只录取了 1 人，前 100 名只录取了 16 人</strong>，统招生里三分之二（252 人）
+  的分数低于同类校统招线——这些都是实验自己在 2008 年喜报里写的。
+  市内生源掉下去了，高考成绩却没掉，那么补上来的是谁，答案只有一个。</p>
+  <div class="tw card"><table id="tcb"><thead><tr>
+    <th class="l">高考年</th><th class="l">对应中考年</th><th>铁人中学</th><th>大庆一中</th>
+    <th>大庆实验中学</th><th class="l">备注</th>
+  </tr></thead><tbody></tbody></table></div>
+
+  <div class="sechead" style="margin-top:44px"><h2>2007 年的塔尖上，三分之一是复读生</h2><span class="tag">The Repeaters</span></div>
+  <p class="lede">回到 2004 那一届。2007 年全市理科 680 分以上 73 人，
+  已拆分的三校里<strong>重读生 25 人</strong>；690 分以上 27 人里<strong>重读生 10 人</strong>。
+  在实验中学，680 分以上的 39 人里有 <strong>20 个重读生</strong>，690 分以上的 15 人里有 <strong>9 个</strong>——
+  <strong>都超过一半</strong>。这些人 2006 年已经参加过一次高考，回炉一年再考。</p>
+  <p class="lede">当年的重读招生简章把这条通道写得非常直白。大庆一中 2007 年：
+  重读费 7,000 元／年，但<strong>理科 640 分以上「拥有插班权利，报名后即可入班学习」</strong>，
+  610–639 分可选重读班，585–609 分只收 3,500 元，
+  <strong>「重读生考取清华大学、北京大学学校另予以奖励」</strong>。
+  铁人中学 2008 年的版本一样：<strong>高考理科 620 分以上、文科 600 分以上直接插入应届基地班</strong>。
+  也就是说，高分复读生不但免费，学校还倒贴——因为他们会变成明年喜报上的数字。</p>
+  <p class="notes" style="max-width:72ch">还有一个旁证：铁人中学 2004 年的《重点大学录取名单》共 597 人，
+  逐人标注了「正式／重读／借读」——<b>重读 282 人，占 47.2%</b>。
+  不过那一栏也说明复读生撑起的是量而不是尖：总分均值正式 530.1、重读 479.1，
+  600 分以上正式 63 人、重读 13 人，11 个清北里只有 1 个是重读生。
+  到了 2007 年，实验中学 680 分以上一半是重读生——同一件事，三年里变了性质。</p>
+</section>
+
+<section id="s-thermo">
+  <div class="sechead"><h2>用清华名单当温度计</h2><span class="tag">Tsinghua 2002–2008</span></div>
+  <p class="lede">前面的证据都来自学校自己的宣传页。这一节换一个完全独立的口径：
+  清华大学历年公布的<strong>全部新生名单</strong>——每人一行，带考区与毕业中学。
+  把 2002 到 2008 七年的名单筛出黑龙江考区、再筛出毕业中学在大庆的人，
+  就得到一条谁也没法修饰的曲线。</p>
+  <div class="card" id="qchart"></div>
+  <div class="tw card" style="margin-top:18px"><table id="tq"><thead><tr>
+    <th class="l">清华入学年</th><th class="l">对应中考年</th><th>黑龙江录取</th><th>其中大庆籍</th>
+    <th>大庆实验中学</th><th>大庆铁人中学</th><th>大庆一中</th><th>其他大庆学校</th>
+    <th class="l">大庆占黑龙江</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="lede" style="margin-top:26px">实验中学的那一行是：<strong>2、2、1、5、25、16、8</strong>。
+  七年里它只在一个位置上跳起来——<strong>2006 年高考，也就是 2003 年入学那一届</strong>，
+  正是「立足本市，面向全省」、外市县状元 30 余名加尖子生 300 余名的那一年。
+  然后随着招生简章改口，它一级一级掉回来：<strong>2003 届 25 人 → 2004 届 16 人 → 2005 届 8 人</strong>。
+  同一时期铁人中学稳定在 8–14 人，大庆一中稳定在 3–8 人，都没有这种起落。</p>
+  <p class="lede">这条曲线是从清华的名单里数出来的，与大庆任何一所学校的口径都无关。
+  它和外县招生口子的开合<strong>同步得几乎过分</strong>。</p>
+
+  <div class="sechead" style="margin-top:44px"><h2>2008 那 26 个人，逐个查</h2><span class="tag">Name by Name</span></div>
+  <p class="lede">2008 年清华在大庆录取 26 人。把这 26 个名字拿去 2004 年的中考名册上查——
+  <strong>一个正常的 2008 届考生本来就不该在上面</strong>，因为他们 2005 年才上高中。
+  但如果有人是<strong>复读生</strong>（2004 年入学、2007 年考过一次、2008 年再考），他就该被查出来。
+  作为对照，同样的查法用在 2007 年那 37 人身上，命中了 14 个。</p>
+  <div class="tw card"><table id="td8"><thead><tr>
+    <th class="l">姓名</th><th class="l">毕业中学</th><th class="l">清华院系</th><th class="l">2004 中考名册</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="lede" style="margin-top:22px">结果是 <strong>26 个人里只有 2 个有同名记录，而且两个都站不住</strong>：
+  高寒的名册记录是 614 分进东风中学，与他 2008 年从大庆一中毕业对不上；
+  王超在全市有 9 个同名的人，无法判定。
+  也就是说，<strong>2008 年考进清华的大庆学生里，几乎没有人来自 2004 年的市内中考名册</strong>。</p>
+  <p class="lede">这一条要小心着读。它<strong>不能</strong>说明 2008 年没有复读生——
+  实验中学 2008 年理科 675 分以上全校 26 人、市内应届只有 4 人，缺口是实打实的。
+  它说明的是另一件事：<strong>那些缺口里的人，不在 2004 年大庆市内的中考名册上。</strong>
+  他们要么是外县来的复读生，要么是 2004 年走自费等未收入名册的渠道进来的。
+  换句话说，到 2008 年，实验中学塔尖上的人已经<strong>两头都不属于这座城市的公开记录</strong>——
+  既不在中考名册里，也不是应届生。</p>
+  <p class="notes" style="max-width:72ch">这套查法的灵敏度可以量出来：2007 年那 37 人里查出 14 人（38%），
+  漏掉的主要是实验中学的自费生（实验的 447 人名册只含普通统招，不含自费）和外县生。
+  按同样的 38% 灵敏度反推，2008 年若真有 k 个来自 2004 年市内名册的复读生，应能查出约 0.38k 人；
+  实查 0–1 人，对应 k 大致在 0–3 之间。</p>
+</section>
+
+<section id="s-why">
+  <div class="sechead"><h2>447 是怎么变成 1,328 的</h2><span class="tag">Paper Trail</span></div>
+  <p class="lede">前面那句「2.97 倍」只是把两个数字放在一起。它到底是怎么发生的？
+  答案不用猜——2004 年的大庆市教育局网站和实验中学自己的网站都还留在互联网档案馆里。
+  下面每一条都有原始出处。</p>
+
+  <div class="card" id="scalechart"></div>
+
+  <div class="evid">
+    <article>
+      <b class="n mono">01</b>
+      <h4>计划从来就不是 447 人</h4>
+      <p>实验中学自己的招生简章写着：<q>2004 年，我校面向全市计划招生 <b>750 人</b>；
+      由省委宣传部、省教育厅联合组织在全省招收宏志班学生 <b>50 人</b>。</q>
+      另有俄语生 50 人、英才部 120 人（4 个教学班）、艺体特长生 30 人。
+      计划盘子约 <b>800 人</b>，名册上却只有 447 个名字。</p>
+      <cite>sy.dq.hl.cn/joinus/ · 存档于 2004-06-08，中考出分之前</cite>
+    </article>
+
+    <article>
+      <b class="n mono">02</b>
+      <h4>那份名册只是四份中的一份</h4>
+      <p>市教育局 2004 年 7 月 28 日公告《2004 年初中升高中录取名册》，
+      为实验中学一校挂出了<b>四份</b>名单：普通统招、艺体统招、艺体特长自费、自费。
+      我们手上的总表，对应的是第一份。另外三份的 .xls 文件我们没能取到，
+      但它们存在过这件事，白纸黑字。</p>
+      <cite>202.97.254.98/sub1/newshow.php?id=2392 · 存档于 2004-08-26</cite>
+    </article>
+
+    <article>
+      <b class="n mono">03</b>
+      <h4>自费不是边角料，是明码标价的制度</h4>
+      <p><q>省级示范高中比例控制在计划招生总量的 <b>38％</b> 以内；市级重点高中 30％；
+      一般高中 20％；艺体特长自费生 <b>49％</b>。</q>
+      收费：省级示范高中每生每年 <b>6,000 元</b>，市级重点 5,000，一般高中 3,000。
+      按 38% 上限，750 人的计划里最多可有 <b>285 个自费席位</b>——
+      447 + 285 ≈ 732，几乎正好填满那 750 人。</p>
+      <cite>《自费上高中明码标价》大庆教育网 · 2004-06-24</cite>
+    </article>
+
+    <article>
+      <b class="n mono">04</b>
+      <h4>复读是第四条通道，而且更贵</h4>
+      <p>同一份文件的下一段：<q>重读生学费收取：省级示范高中学费每生每年 <b>7,000 元</b>；
+      市级重点高中 5,000 元；一般高中 3,000 元。</q>
+      复读生比自费生每年还贵 1,000 元。一所省级示范高中招复读生，是当年制度里写明的、
+      有价目表的常规操作——只是喜报上从不分开写。</p>
+      <cite>同上 · 2004-06-24</cite>
+    </article>
+
+    <article>
+      <b class="n mono">05</b>
+      <h4>复读生有多少、有多强，隔壁学校算过</h4>
+      <p>大庆四中把 2004 年的高考按应届和往届分开公布了：
+      应届重本 73 人（15.9%）、普本 127 人；<b>往届重本 35 人（21.9%）、普本 43 人</b>。
+      按这两个比率倒推，应届约 459 人、往届约 160 人——
+      <b>复读生占了考试人数的约四分之一，却贡献了全校 32% 的重本</b>，
+      重本率比应届高出 38%。实验中学没有公布同类数字。</p>
+      <cite>dqsz.dq.hl.cn/sxyzs/2004ngkcj/ · 存档于 2004-07-10</cite>
+    </article>
+
+    <article>
+      <b class="n mono">06</b>
+      <h4>学校本身在三年里翻了一倍</h4>
+      <p>实验中学在校学生数：1999 年 1,400 余人 → 2001 年 32 个教学班 1,508 人 →
+      2006 年 <b>2,812 人</b>（教职工 303 人，任课教师 233 人）。
+      2,812 摊到三个年级，每届约 <b>937 人</b>——已经是名册所给 447 个名额的两倍多，
+      而这还没算复读生。</p>
+      <cite>sy.dq.hl.cn/xxjj.htm（2001）· dqsy.com.cn/language_word/（2006-03-31）</cite>
+    </article>
+  </div>
+
+  <p class="lede" style="margin-top:26px">所以 1,328 不是 447 个人考出来的。
+  2007 年坐在实验中学考场里的那一届，是<strong>统招 + 自费 + 全省宏志 + 俄语英才艺体 + 借读 + 复读</strong>
+  拼起来的——中考名册只记录了其中最小、也最公开的那一块。
+  当年的喜报把这些人合在一起报，是通行做法；
+  <strong>本页所有「每百名录取的产出」因此都只是比值，不是升学率。</strong></p>
+</section>
+
+<section id="s-est">
+  <div class="sechead"><h2>把北大算进来</h2><span class="tag">Estimating Peking</span></div>
+  <p class="lede">前面所有的追踪都只用了清华——因为清华有一份完整的全国新生名单，北大没有。
+  但北大不该被丢掉：在大多数人心里，「清北」是一个词。
+  好在我们能<strong>检验</strong>一比一这个假设，而不只是假设它。</p>
+
+  <div class="stats" style="margin:0 0 22px">
+    <div class="stat"><b>160</b><span>实验中学 8 年清华</span></div>
+    <div class="stat"><b>147</b><span>实验中学 8 年北大</span></div>
+    <div class="stat"><b>0.92 : 1</b><span>北大 : 清华（2006–2013）</span></div>
+    <div class="stat"><b>1.18 : 1</b><span>其中 2007 年</span></div>
+    <div class="stat"><b>0.24 – 2.00</b><span>单年比值的波动范围</span></div>
+  </div>
+
+  <p class="lede">大庆实验中学 2006–2013 年的 307 名清北学生里，清华 160 人、北大 147 人——
+  <strong>八年合计几乎正好一比一</strong>。所以「北大人数 ≈ 清华人数」在多年尺度上是站得住的。
+  但要留一句话：<strong>单看一年，这个比值很不稳</strong>，从 2013 年的 0.24 到 2009 年的 2.00 都出现过。
+  我们关心的 2007 年，实验中学是清华 17 人、北大 20 人，比值 1.18——
+  也就是说，用「乘以 2」去估 2007 年的清北，多半是<em>偏保守</em>的。</p>
+
+  <div class="tw card"><table id="test"><thead><tr>
+    <th class="l">语境</th><th>清华（实测）</th><th>清北（× 2 估计）</th>
+    <th class="l">可对照的实际数字</th>
+  </tr></thead><tbody></tbody></table></div>
+
+  <p class="notes" style="margin-top:14px;max-width:72ch">
+  <b>两处对不上的地方，直说</b>：其一，实验中学清华 16 人 × 2 = 32，
+  而校方自己公布的 2007 年清北是 37 人（含保送）——估计偏低 5 人，方向与 1.18 的比值一致。
+  其二，全市大庆籍清华 37 人 × 2 ≈ 74，而校方《成果与全市比较》给出的 2007 年全市清北是 53 人。
+  53 这个数未含保送生，可能也未含美术类，且口径是否含四县不明；两者无法用现有材料调平。
+  合理的说法是：<b>2007 年大庆的清北人数在 53 到 80 之间</b>，取决于把保送生和艺术类算不算进去。</p>
+</section>
+
+<section id="s-prov">
+  <div class="sechead"><h2>放到全省来看</h2><span class="tag">Provincial Rank, 2007</span></div>
+  <p class="lede">2007 年黑龙江理科一分一段表共 <strong>139,653 人</strong>。
+  把大庆的高分段人数放进去：<strong>600 分以上大庆占全省 12.1%，700 分以上占 33.3%</strong>——
+  越往上，这座城市的分量越重。大庆实验中学一校就占了全省 690 分以上的 <strong>17.9%</strong>。</p>
+  <p class="lede">下面输入一个高考理科分数，可以同时看到它在<strong>全省、全大庆、大庆实验中学</strong>三把尺子上的位置。
+  全省位次来自一分一段表，是精确值；大庆与实验中学的位次由当年公布的 15 个高分段份额内插而来，
+  标 <span class="mono">≈</span> 以示区别。当年只公布了 600 分以上的市/校分段，低于 600 分无法给出。</p>
+  <div class="card lookup">
+    <div class="lkin">
+      <label for="gkin">2007 高考理科</label>
+      <input id="gkin" type="number" min="150" max="719" value="666" inputmode="numeric">
+      <input id="gkrng" type="range" min="150" max="719" value="666" aria-label="高考分数滑块">
+    </div>
+    <div class="lkres">
+      <div class="lkfig">
+        <div><b class="mono" id="gkrank">—</b><span>全省理科位次</span></div>
+        <div><b class="mono" id="gkcity">—</b><span>大庆位次</span></div>
+        <div><b class="mono" id="gkexp">—</b><span>实验位次</span></div>
+        <div><b class="mono" id="gkpct">—</b><span>全省理科百分位</span></div>
+      </div>
+      <p class="lklab">当年这一段的分布</p>
+      <p style="margin:6px 0 0;font-size:13.5px;color:var(--ink-2)" id="gknote">—</p>
+    </div>
+  </div>
+  <div class="card log" style="margin-top:22px">
+    <div class="logchart" id="nestchart"></div>
+    <aside class="logside">
+      <div class="legend" id="nestlegend">
+        <button class="lgi" data-m="share" aria-pressed="false"><span class="sw" style="background:var(--petrol)"></span><span>按比例拉满</span><span class="n">占全省</span></button>
+        <button class="lgi" data-m="count" aria-pressed="true"><span class="sw" style="background:var(--amber)"></span><span>按人数缩放</span><span class="n">全省规模</span></button>
+      </div>
+      <div class="rd">
+        <b>读图</b>
+        <p>每一条是 2007 年黑龙江理科的一个分数段。深色为大庆实验中学，
+        中色为大庆其余学校，浅色为全省其余。</p>
+        <p>600 分以上全省 10,941 人，大庆 1,319 人；
+        到 700 分以上，全省只剩 15 人，大庆占 5 人，实验占 2 人。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="s-share">
+  <div class="sechead"><h2>高分段人数</h2><span class="tag">Score Bands, 2007</span></div>
+  <p class="lede">这是当年那份《高考高分段人数统计》的原始数据：每个分数段上，
+  全市（含四县）与大庆实验中学各有多少人。理科 15 段、文科 8 段。
+  文科 660 分以上全市只有 1 人，就在实验中学——那年的大庆市文科状元、全省第二名王琳。</p>
+  <div class="card log">
+    <div class="logchart" id="countchart"></div>
+    <aside class="logside">
+      <div class="legend" id="countlegend">
+        <button class="lgi" data-t="li" aria-pressed="false"><span class="sw" style="background:var(--petrol)"></span><span>理科</span><span class="n">15 段</span></button>
+        <button class="lgi" data-t="we" aria-pressed="true"><span class="sw" style="background:var(--petrol)"></span><span>文科</span><span class="n">8 段</span></button>
+      </div>
+      <div class="rd">
+        <b>占比随分数上升</b>
+        <p>实验中学占全市：理科 600 分以上 37.1%，660 分以上 50.0%，690 分以上 55.6%。
+        全市 5 个 700 分，实验占 2 个。</p>
+        <p>文科的集中度更高也更不稳定——基数小，620 分以上全市仅 84 人。</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="s-cb">
+  <div class="sechead"><h2>八年的清华北大</h2><span class="tag">2006–2013</span></div>
+  <p class="lede">2006 至 2013 年，大庆实验中学共有 <strong>307 人</strong>考入清华北大。
+  虚线是全市的清华北大总数：<strong>2006 与 2007 两年，实验中学一校占了全市的 67.7% 与 69.8%</strong>
+  （含保送；学校自己的柱状图不含保送，为 64.6% 与 60.4%），
+  2008 年跌到 40.4% 后再未回到那个高度。我们追踪的这一届，正好落在最高的那两年之一。</p>
+  <div class="card" id="cbchart"></div>
+</section>
+
+<section id="s-notes">
+  <div class="sechead"><h2>数据与说明</h2><span class="tag">Sources &amp; Caveats</span></div>
+  <div class="grid2">
+    <div>
+      <p class="quote">7月12日16时，我市8所省级示范高中统招生录取工作完成，8所学校统招生录取分数线确定。
+      铁人中学录取分数线：607分；实验中学录取分数线：603分；大庆一中录取分数线：583分；
+      大庆中学、大庆四中、石油高中、东风中学的录取分数线均为574分。
+      <cite>《省级示范高中统招生录取分数线确定》2004年7月13日</cite></p>
+      <p class="notes" style="margin-top:16px">本页所有统招线均由录取名册中该校统招生的最低分直接算出，
+      与上述公告完全吻合。石油高中与二十三中的名册最低分低于公告线，是因为两校在第一批次未完成计划，
+      统招名额顺延至后续批次录取。</p>
+    </div>
+    <ul class="notes">
+      <li><b>数据来源</b>：2004 年大庆市中考录取总表，含考号、姓名、性别、初中学校、录取高中、计划形式、文化成绩共 5,760 条。</li>
+      <li><b>统计口径</b>：本页只统计<em>被录取者</em>。当年参加考试但未被普通高中录取的考生不在名册内，因此这不是全体考生的分数分布，425 分以下的低分段尤其被截断。</li>
+      <li><b>成绩含义</b>：“文化成绩”为中考文化课总分，不含体育与政策加分，满分 700 分左右。</li>
+      <li><b>校名</b>：总表中“中学”指大庆中学，“一中”作为初中指大庆一中初中部、作为高中指其高中部。一中、六中、十中、十九中等为完全中学，同时出现在初中与高中两栏。</li>
+      <li><b>2007 年数据来源</b>：2007 年清华大学全国新生名单（大庆籍 37 人）、2007 年黑龙江省保送生公示名单五个批次合计 51 人（大庆 24 人）、2007 年黑龙江省高考理科一分一段表（139,653 人）、大庆实验中学 2007 年高考高分段人数统计与 2006–2012 年高考成果与全市比较、2006–2013 年实验中学考入清华北大名单（307 人）。</li>
+      <li><b>清华大学历年全部新生名单</b>：2002–2008 共七份，每份含学号、姓名、考区、毕业中学、院系，本项目已逐年存为 CSV。「大庆籍」＝考区为黑龙江且毕业中学名称含「大庆」，因此它统计的是<b>毕业学校在大庆</b>的人，不区分其户籍或初中所在地——外县生只要在大庆读的高中就计入。这正是它能当温度计的原因。校名写法逐年不一（「大庆市实验中学」「大庆实验中学」「大庆铁人中学」「大庆市铁人中学」等），已归一。</li>
+      <li><b>2008 年 26 人的逐人回查</b>：把 2008 年清华名单里的大庆籍学生按姓名查 2004 年中考名册。这套查法的灵敏度用 2007 年那 37 人标定：命中 14 人（38%），漏掉的主要是实验中学的自费生（其 447 人名册只含普通统招）与外县生。<b>没有 2005 年的大庆中考录取名册</b>，因此无法对 2008 届直接做本页对 2004 届所做的那种「市内应届」识别；铁人中学 2008 年那份《高考文理科重本以上学生名单及分数》是 XLS 附件（trzx.cn/up/news/200862661737113.xls），互联网档案馆未收录。</li>
+      <li><b>2002–2005 四届的中考生源</b>：2002 年「700 分以上」由大庆一中 2005 年喜报（w_zhaosheng2005/index-xb.htm）与实验中学 2005 年喜报（dqsy.com.cn/pub/vy05xibao.htm）交叉核对，两份互指后可定为铁人 268、实验 95、一中 64。2005 年的中考录取分档出自铁人中学《2008 年高考成绩》（trzx.cn/news/1/89.html）中的《2005 年初中升高中实验区和非实验区录取情况统计表》，实验中学一侧的自述出自其 2008 年高考喜报。<b>三校文本中的「萨区同类校」经反证均指大庆实验中学</b>——若含大庆一中，2008 年那张表里「萨区同类校理科 680 分以上市内应届 1 人」将与一中自称的 10 人矛盾。</li>
+      <li><b>2008 年「市内应届」口径</b>：铁人中学《2008 年市内应届高考情况统计表》只统计市内应届生，与实验中学自己公布的全校数字相减，即得非市内应届的部分。两个数字来自不同学校的不同页面，分数门槛也不完全一致（675 分与 680 分），因此表中分列而不做减法。</li>
+      <li><b>2004 年的禁令，与 2003 年的许可</b>：《大庆实验中学简介》（sy.dq.hl.cn/joinus/introduction.htm，2004-08-24 存档）写明「今年省市教育行政部门严格规定不许各高中学校招收外地学生」，并在同页给出上一年的规模（外市县中考状元 30 多人、全省各科竞赛尖子生 30 多人）。《大庆实验中学下半年工作简报》（sy.dq.hl.cn/ssxy/2004330161715.htm，2004-04-29 存档）写明 2003 年是「按照大庆市外市县学生招生政策」招进来的，并给出市内录取数 342/576。《2003 年高考喜报》（sy.dq.hl.cn/pub/vy.htm，2004-01-10 存档）提供了政策变动之前的基准：「高分段的重读生和外县生寥寥无几」。<b>这三页是禁令本身的直接证据，但都是学校的转述，省市两级的原始文件仍未找到。</b></li>
+      <li><b>外县生人数的区间是推算</b>：2003 年有明文记载（铁人喜报的 300 余名总量，与实验自述的状元 30 余、竞赛尖子 30 余，互为总量与顶层）；2004 年只有禁令与豁免条款，没有人数，页面上给出的 50–170 人是由「宏志班 50 人」与「高分段密度倒推」两头夹出来的区间，依赖「自费名额用满 38% 上限」这一未经文件证实的假设。2005 年连推算的锚点都没有。</li>
+      <li><b>重读生的招生条件</b>：大庆一中 2007 年重读生招生简章（yz.dqt.com.cn/2007/chongdu.htm）、大庆铁人中学 2008 年重读生招生信息（trzx.cn/news/1/87.html）。铁人中学 2004 年《重点大学录取名单》（trzx.com.cn/harvest_g/zhongdian_04.htm）逐人标注了正式／重读／借读。</li>
+      <li><b>高分段的市区应届／外县／重读拆分</b>：大庆一中《大庆市 2007 年高考高分段人数分布表》（yz.dqt.com.cn/2007/fenbu.htm，2007-08-16 存档）。同一站点的 07xb.htm 与 reason.htm 给出旁证：「690 分以上高分段市区应届生共 11 人」「680 分以上高分段，市区应届生共 29 人」，与该表逐校相加吻合。</li>
+      <li><b>2003 年中考招生的对比</b>：大庆铁人中学 2006 年高考喜报（trzx.cn/bulletin/2006/2006-6-28/index.htm 与 trzx.cn/zhshxch/index.htm）；大庆一中《2003 年中考招生情况》（yz.dqt.com.cn/myprogram/dongt/detail.asp?n_id=735）。两校对「萨区同类校」的记载完全一致。俄语班人数出自 dqsy.com.cn/class/0321/htdocs/index2.html。</li>
+      <li><b>招生简章的措辞变化</b>：sy.dq.hl.cn/joinus/，2003-04-15 与 2004-07-27 两次存档，同一网址前后两版。</li>
+      <li><b>一份独立的交叉验证</b>：铁人中学《2004 年市内中考各校录取情况》（trzx.cn/zhshxch/zhk04.htm）逐档给出三校在全市各分数门槛上的录取人数。把它与本页所用的中考名册逐档对照，<b>20 个门槛上三校的数字几乎完全一致</b>（仅实验 634 分档差 1 人、一中 636 分档差 1 人）；该表的「全市」列比名册低 1%–1.5%，推测其口径为市区考生而名册含四县。这份表还印证了统招线与录取人数：铁人 607 分 399 人、实验 603 分 447 人。</li>
+      <li><b>大庆一中 2007 届中考—高考成绩对照</b>：yz.dqt.com.cn/2007/duibi1.htm（理科 149 人）与 duibi2.htm（文科 35 人）。其中理科 92 人、文科 24 人入学身份记为<b>自费</b>，理科 5 人、文科 11 人为<b>补录</b>，只有理科 52 人登出了中考分数（统招）。这 52 人中 50 人能与本页的中考名册按姓名＋分数完全对上。</li>
+      <li><b>两校 2007 年高考名单</b>：大庆实验中学 2007 届高考录取金榜 <b>1,403 条</b>（dqsy.com.cn/yingcai/…/sheet002.htm，互联网档案馆 2011-06-19 存档，含全部本科录取）；大庆铁人中学《2007 年高考考入重点大学名单》<b>821 条</b>（trzx.cn/gen/9/127.html，题为「重点大学」但实际含普通本科与部分专科）。实验那份自身的清华 17 + 北大 17 + 北大医学部 3 = 37 人，与学校对外公布数一致，可作交叉验证；铁人那份为北大 14 + 清华 6 = 20 人，比 2007 年清华全国新生名单中的铁人籍人数少，差额应是保送生与艺术类未收入该榜。<b>两份名单收录门槛不同，「其他本科」与「未追踪」两栏不可跨校比较</b>，清北 / 985 / 211 三栏可比。</li>
+      <li><b>846 与 2,224 是怎么对起来的</b>：两校中考名册（实验 447、铁人 399）逐人到各自的 2007 名单上找同名者，只有在<b>名册内与名单内都唯一</b>时才算匹配——实验对上 303 人、铁人 288 人；42 人因存在同名者列为「同名待定」，213 人在对应名单上找不到。这一规则在实验一校上与按中考考号匹配的结果完全一致（303 人，逐条相同），故用于两校。各层次人数均为<b>下限</b>。</li>
+      <li><b>校名的处理</b>：铁人那份名单里校名多为简写或俗称（「大连理工」「北京邮电」「上海同济大学」「黑科技」「八一农垦」「四军医大」），表格<b>照录原文</b>，只在判定层次时做标准化映射；独立学院、分校与专科一律归入「其他本科及以下」。</li>
+      <li><b>一分一段表是理科</b>：该表 709 分对应全省第 3 名，与李梦然「大庆市理科状元、全省第三名」完全吻合，据此确认为理科表。文科分数不能用它换算位次。</li>
+      <li><b>两份表对不上的地方</b>：高分段统计里 2007 年全市 600 分以上为理科 1,319 + 文科 213 = 1,532 人，而《成果与全市比较》给的是 1,692 人。两份都是学校发布的材料，差 160 人，本页按各自出处分别使用，未作调平。</li>
+      <li><b>2004–2007 年的原始网页</b>：「447 是怎么变成 1,328 的」一节所引全部来自互联网档案馆保存的当年页面——大庆市教育局网（202.97.254.98）、大庆实验中学网（sy.dq.hl.cn / dqsy.com.cn）、大庆四中网（dqsz.dq.hl.cn），每条附有存档日期。教育局公告中链接的四份录取名册指向 202.97.254.98/images/upfile/1–4.xls，这四个文件我们未能取到，因此自费生名单无法恢复，只能确认其存在——是档案馆当年没有抓取，还是取不到，尚未证实。</li>
+      <li><b>「全省推测」只是一个粗略倍数</b>：顶部栏中考一项的全省位次＝大庆位次 × 8，这是一个数量级估算，不是实测。黑龙江当年没有全省统一的中考一分一段表，各市自行组织考试与录取，分数并不可比；× 8 仅用来给一个「大致在全省什么位置」的感觉，标 ≈ 以示区别。高考的全省位次则是一分一段表的精确值。</li>
+      <li><b>大庆实验中学位次</b>：该分数在实验中学 447 名录取者中的名次，由中考录取名册直接算出，是实测值。低于 603 分（该校统招线）则显示「未达实验录取线」。</li>
+      <li><b>大庆与实验中学的位次是内插值</b>：一分一段表只到全省。市与校的位次，是把当年公布的 15 个高分段（600–700 分）的占全省份额线性内插后，乘以该分数的全省精确累计人数得到的；在 15 个公布点上与原始数据完全一致，点与点之间是估计，故标 ≈。600 分以下当年未公布市/校分段，页面显示「—」而不是猜一个数。</li>
+      <li><b>哪些是推算</b>：285 个自费席位＝750 × 38% 政策上限，是上限不是实际数；大庆四中应届约 459 人、往届约 160 人，由该校公布的进段人数与进段率倒推（73÷15.9%、35÷21.9%），三组数字互相吻合；每届约 937 人＝2006 年在校 2,812 人 ÷ 3 个年级，假定三个年级规模相当。</li>
+      <li><b>北大是估计，不是实测</b>：清华有完整的全国新生名单，北大没有。凡标「估计」「≈」之处，均为清华实测数 × 2。依据是大庆实验中学 2006–2013 年 307 名清北学生中清华 160、北大 147（0.92 : 1）；但单年比值波动很大（2013 年 0.24，2009 年 2.00），2007 年该校为 1.18，故本页的 × 2 对 2007 年偏保守。全市清北的真实数字应在 53 到 80 之间，取决于保送生与美术类是否计入。</li>
+      <li><b>“名册外”是推断，不是名单</b>：本页把清华新生分成「在 2004 中考名册上」「名册外·美术类」「名册外·其他」。第三类只说明这些人不在名册、也不走艺术类招生，具体是复读、四县、转学还是择校，现有材料无法逐人区分。同名同分无法唯一确定的 2 人已排除，因此「名册内」是下限。</li>
+      <li><b>如何对上的</b>：按姓名在中考名册中唯一匹配。有两名清华新生同名者多于一人，无法确定，已排除。37 名大庆籍清华新生中只有 12 人对得上——其余多为美术类（5 人）、复读生、外地转入或名册未覆盖的在校生。</li>
+      <li><b>口径不可直接相减</b>：2007 年高考各项为全市口径，含四县与复读生，与 2004 年中考录取的 5,760 人不是同一批人。普本上线 6,361 人多于 5,760，即为明证。</li>
+      <li><b>名册是下限</b>：2007 年大庆实验中学高考 600 分以上有 591 人，而 2004 年中考名册只分给它 447 个名额。这些学校的实际在校生多于名册人数，因此“每百名录取的产出”是一个比值，不是升学率。</li>
+      <li><b>姓名的处理</b>：分数分布与学校排名均为汇总统计。「846 个人，三年后去了哪」一节逐条列出了两校 2004 年中考录取名册与 2007 年高考名单上的姓名——四份名单都由学校与招生部门当年公开发布——这些名单本就由学校与招生部门公开发布（清华大学全国新生名单、黑龙江省保送生公示、学校喜报），页面不含考号等其余个人信息。</li>
+    </ul>
+  </div>
+  <footer>
+    <span>2004 年大庆市中考录取名册 · 2007 年高考结果 · 汇总分析</span>
+    <span class="mono">5,760 records · 22 senior highs · 75 junior highs · 846 → 2,224 matched · 139,653 provincial</span>
+  </footer>
+</section>
+
+</div>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+<script>
+const D={"total":5760,"c100":636,"hist":[[300,0,0,0,15],[305,0,0,0,13],[310,0,0,0,18],[315,0,0,0,16],[320,0,0,3,17],[325,0,0,8,37],[330,0,0,4,21],[335,0,0,18,27],[340,0,0,21,31],[345,0,0,23,27],[350,0,0,34,18],[355,0,0,35,26],[360,0,0,35,12],[365,0,0,40,26],[370,0,0,44,22],[375,0,0,44,38],[380,0,0,42,23],[385,0,0,36,32],[390,0,0,51,28],[395,0,0,58,21],[400,0,0,74,18],[405,0,0,61,9],[410,0,0,79,5],[415,0,0,85,8],[420,0,0,34,21],[425,0,0,4,5],[430,0,0,7,5],[435,0,0,6,4],[440,0,0,1,2],[445,0,0,0,0],[450,0,0,2,0],[455,0,0,1,1],[460,0,0,1,0],[465,0,0,2,0],[470,0,0,0,0],[475,0,0,0,0],[480,0,23,0,78],[485,0,25,23,74],[490,0,20,36,51],[495,0,23,95,46],[500,0,19,161,28],[505,0,12,119,9],[510,0,16,114,7],[515,13,10,129,9],[520,30,8,100,8],[525,22,11,141,3],[530,21,38,121,0],[535,44,16,114,0],[540,42,16,101,0],[545,12,6,74,1],[550,11,8,51,0],[555,17,8,55,0],[560,9,10,47,0],[565,4,9,29,1],[570,31,4,20,0],[575,162,0,5,0],[580,153,0,3,0],[585,154,0,6,0],[590,145,0,5,0],[595,155,0,1,0],[600,127,0,2,0],[605,203,0,1,0],[610,194,0,1,0],[615,182,0,0,0],[620,151,0,0,0],[625,109,0,0,0],[630,90,0,0,0],[635,69,0,0,0],[640,34,0,0,0],[645,18,0,0,0],[650,4,0,0,0],[655,3,0,0,0],[660,1,0,0,0]],"highs":[["大庆铁人中学",399,620.4,619,657,607,612.0,627.0,399,0,607,null,192,1,null],["大庆实验中学",447,619.0,617,655,603,610.0,626.0,447,0,603,null,242,1,null],["大庆一中",333,608.5,605,663,583,595.0,619.0,333,0,583,null,169,1,null],["大庆中学",343,589.7,588,639,574,581.0,597.0,343,0,574,null,157,1,null],["大庆四中",303,589.2,589,633,574,581.0,596.0,303,0,574,null,185,1,null],["大庆东风中学",255,569.4,576,621,530,545.0,585.0,150,105,574,530,135,1,545.4],["大庆三十五中学",403,531.6,535,612,480,517.0,546.0,288,115,527,480,214,0,498.4],["大庆十中",303,526.2,525,606,480,507.0,542.0,261,42,501,480,173,0,494.5],["大庆石油高中",240,525.2,530.0,595,480,501.8,542.0,112,128,536,480,131,1,504.5],["大庆二十三中学",172,520.6,524.0,571,481,511.5,533.0,123,49,518,481,93,1,495.2],["大庆二十八中学",472,519.7,517.0,604,480,504.0,534.0,399,73,501,480,226,0,489.9],["大庆五十六中学",374,509.8,505.0,583,421,498.0,521.0,342,32,494,421,208,0,465.7],["大庆三十九中学",285,508.9,510,567,418,495.0,527.0,260,25,485,418,133,0,447.7],["大庆十七中学",54,489.3,487.5,504,480,484.0,494.8,0,54,null,480,26,0,489.3],["大庆十六中学",126,401.0,404.0,465,357,386.2,417.0,58,68,411,357,57,0,384.2],["大庆二十二中学",208,395.9,399.5,468,347,378.0,414.0,132,76,393,347,96,0,370.3],["大庆十三中学",69,395.1,390,437,369,379.0,404.0,0,69,null,369,39,0,395.1],["大庆六中",158,380.4,381.5,522,323,359.5,404.0,114,44,356,323,70,0,344.5],["大庆二十七中学",260,371.1,373.5,512,302,346.0,398.0,189,71,345,302,123,0,332.3],["大庆十一中学",288,367.6,367.0,561,304,341.8,392.2,218,70,335,304,120,0,333.7],["大庆六十中学",192,364.7,367.0,423,300,340.8,390.5,146,46,322,300,80,0,336.4],["大庆十九中学",76,364.6,374.0,422,301,331.8,394.2,0,76,null,301,32,0,364.6]],"juniors":[["一中",554,384,69.3,557.9,663,36,259,"大庆一中 242、大庆二十八中学 62、大庆实验中学 33"],["三十六中",310,189,61.0,539.9,657,8,155,"大庆中学 93、大庆二十八中学 44、大庆铁人中学 43"],["六十九中",244,184,75.4,562.3,648,17,115,"大庆实验中学 116、大庆东风中学 26、大庆二十三中学 17"],["五十一中",180,116,64.4,564.4,655,10,90,"大庆三十九中学 49、大庆铁人中学 40、大庆实验中学 39"],["景园中学",218,95,43.6,497.9,646,5,111,"大庆二十八中学 37、大庆十一中学 26、大庆石油高中 24"],["四十四中",151,86,57.0,521.1,643,1,84,"大庆实验中学 21、大庆东风中学 19、大庆二十三中学 15"],["十九中学",178,83,46.6,515.8,646,3,89,"大庆四中 28、大庆六十中学 23、大庆东风中学 20"],["五十五中",143,78,54.5,514.8,645,3,65,"大庆实验中学 25、大庆东风中学 24、大庆二十八中学 12"],["二十三中",177,72,40.7,481.6,630,0,95,"大庆二十三中学 30、大庆六中 27、大庆二十八中学 23"],["四十六中",135,71,52.6,532.2,645,3,65,"大庆铁人中学 37、大庆十中 17、大庆十一中学 11"],["六十一中",161,68,42.2,525.4,649,4,76,"大庆三十九中学 63、大庆四中 27、大庆六十中学 21"],["四十二中",118,68,57.6,542.4,645,5,65,"大庆铁人中学 30、大庆四中 13、大庆十中 13"],["五十七中",105,59,56.2,523.9,637,1,52,"大庆四中 29、大庆六十中学 20、大庆三十九中学 18"],["八中",106,54,50.9,503.9,643,3,50,"大庆实验中学 14、大庆石油高中 13、大庆六十中学 9"],["二十四中",126,53,42.1,506.1,640,1,62,"大庆十中 18、大庆铁人中学 16、大庆十一中学 15"],["林甸初中",64,53,82.8,578.5,639,1,34,"大庆东风中学 14、大庆中学 10、大庆实验中学 8"],["二十五中",98,47,48.0,503.6,637,2,41,"大庆二十八中学 15、大庆铁人中学 14、大庆中学 14"],["十三中",91,46,50.5,528.3,654,2,47,"大庆实验中学 18、大庆二十八中学 13、大庆十三中学 11"],["十四中",62,45,72.6,568.8,650,2,33,"大庆铁人中学 17、大庆十中 7、大庆中学 6"],["三十中",113,42,37.2,496.2,632,0,65,"大庆铁人中学 12、大庆二十八中学 11、大庆中学 9"],["二十八中",130,40,30.8,513.9,636,1,66,"大庆二十八中学 57、大庆十一中学 11、大庆实验中学 10"],["十六中",81,35,43.2,497.2,644,1,41,"大庆十六中学 18、大庆二十七中学 12、大庆铁人中学 8"],["五十八中",48,30,62.5,539.1,638,1,27,"大庆二十八中学 10、大庆石油高中 8、大庆东风中学 7"],["四十九中",74,26,35.1,500.1,626,0,38,"大庆四中 15、大庆二十八中学 8、大庆五十六中学 7"],["六十六中",71,25,35.2,501.1,623,0,44,"大庆二十八中学 14、大庆东风中学 8、大庆石油高中 6"],["十中",170,24,14.1,501.9,623,0,83,"大庆十中 100、大庆十六中学 11、大庆十一中学 10"],["四十中",47,23,48.9,523.9,640,1,15,"大庆铁人中学 7、大庆四中 6、大庆二十八中学 6"],["三十七中",55,22,40.0,512.6,632,0,29,"大庆三十五中学 17、大庆实验中学 5、大庆铁人中学 5"],["五十六中",176,21,11.9,500.5,630,0,94,"大庆五十六中学 97、大庆三十五中学 20、大庆东风中学 9"],["十七中",59,20,33.9,477.3,635,0,31,"大庆二十七中学 11、大庆铁人中学 5、大庆十六中学 5"],["三十一中",51,20,39.2,497.5,631,0,20,"大庆四中 16、大庆三十九中学 14、大庆六十中学 10"],["六十四中",50,18,36.0,500.7,624,0,20,"大庆十中 10、大庆十一中学 9、大庆中学 5"],["杜蒙初中",19,17,89.5,604.2,644,2,11,"大庆实验中学 6、大庆一中 3、大庆四中 3"],["四十三中",50,17,34.0,518.7,627,0,15,"大庆三十九中学 22、大庆六十中学 7、大庆实验中学 5"],["二十二中",35,16,45.7,480.1,619,0,15,"大庆石油高中 8、大庆二十二中学 8、大庆中学 5"],["六十五中",50,15,30.0,499.2,646,1,26,"大庆十中 8、大庆三十五中学 6、大庆十六中学 5"],["三十二中",99,14,14.1,521.5,634,0,60,"大庆三十五中学 61、大庆五十六中学 9、大庆东风中学 5"],["三中",53,14,26.4,473.8,628,0,31,"大庆二十八中学 11、大庆二十二中学 10、大庆五十六中学 6"],["五十二中",40,14,35.0,516.9,624,0,19,"大庆三十五中学 9、大庆二十七中学 7、大庆中学 6"],["肇源初中",14,13,92.9,597.1,626,0,5,"大庆实验中学 4、大庆一中 3、大庆四中 3"],["二十七中",84,12,14.3,470.5,640,1,43,"大庆二十七中学 30、大庆三十五中学 16、大庆五十六中学 10"],["太阳升中",28,12,42.9,536.2,615,0,11,"大庆三十五中学 9、大庆东风中学 6、大庆中学 3"],["九中",17,12,70.6,513.7,609,0,10,"大庆石油高中 4、大庆中学 3、大庆实验中学 2"],["喇镇中学",43,10,23.3,481.4,625,0,21,"大庆二十八中学 12、大庆二十二中学 5、大庆五十六中学 4"],["三十四中",36,10,27.8,475.7,593,0,15,"大庆五十六中学 7、大庆二十八中学 6、大庆十一中学 5"],["四十七中",38,9,23.7,471.1,622,0,25,"大庆十中 6、大庆十六中学 6、大庆实验中学 4"],["杏树岗中",87,8,9.2,456.4,627,0,50,"大庆二十七中学 26、大庆五十六中学 14、大庆十中 10"],["高台中学",74,8,10.8,511.6,618,0,34,"大庆三十五中学 29、大庆五十六中学 24、大庆中学 3"],["十一中",26,8,30.8,474.7,610,0,17,"大庆十一中学 8、大庆中学 3、大庆十中 3"],["龙镇一中",29,7,24.1,504.4,625,0,15,"大庆三十九中学 7、大庆二十八中学 6、大庆四中 2"],["新华中学",27,7,25.9,496.4,620,0,13,"大庆三十五中学 6、大庆五十六中学 3、大庆三十九中学 3"],["五十中学",23,7,30.4,475.4,619,0,13,"大庆十九中学 5、大庆二十八中学 4、大庆四中 3"],["六中",24,7,29.2,452.1,592,0,11,"大庆六中 6、大庆石油高中 5、大庆二十八中学 2"],["祥阁学校",43,6,14.0,452.2,632,0,23,"大庆二十八中学 10、大庆六十中学 6、大庆三十九中学 4"],["二十一中",19,6,31.6,458.6,622,0,12,"大庆二十三中学 2、大庆二十八中学 2、大庆二十二中学 2"],["祝三中学",49,6,12.2,500.0,607,0,23,"大庆三十五中学 12、大庆五十六中学 12、大庆二十八中学 5"],["十二中",10,6,60.0,538.5,602,0,6,"大庆四中 2、大庆二十八中学 2、大庆石油高中 2"],["三十三中",60,5,8.3,499.4,630,0,36,"大庆三十五中学 33、大庆五十六中学 12、大庆二十七中学 6"],["四十一中",13,5,38.5,491.3,619,0,7,"大庆中学 3、大庆二十七中学 3、大庆铁人中学 2"],["和平牧场",27,5,18.5,432.1,575,0,16,"大庆十一中学 11、大庆石油高中 4、大庆三十五中学 2"],["肇州初中",5,4,80.0,587.4,629,0,4,"大庆实验中学 2、大庆东风中学 1、大庆中学 1"],["老山头中",45,4,8.9,483.9,597,0,26,"大庆三十五中学 16、大庆五十六中学 11、大庆二十七中学 8"],["七十九中",30,3,10.0,387.1,599,0,15,"大庆六十中学 6、大庆十九中学 5、大庆二十二中学 4"],["五十九中",27,2,7.4,436.1,546,0,11,"大庆二十七中学 7、大庆十一中学 6、大庆十六中学 4"],["向阳中学",14,2,14.3,454.9,537,0,11,"大庆二十二中学 3、大庆石油高中 2、大庆五十六中学 2"],["东三初中",18,1,5.6,370,625,0,10,"大庆十一中学 5、大庆六中 4、大庆十九中学 2"],["双榆中学",29,1,3.4,480.4,599,0,13,"大庆五十六中学 14、大庆三十五中学 6、大庆二十七中学 3"],["六十三中",9,1,11.1,471.1,538,0,6,"大庆五十六中学 3、大庆六中 2、大庆石油高中 1"],["喇化中学",4,1,25.0,420.8,518,0,2,"大庆六中 2、大庆二十三中学 1、大庆十三中学 1"],["八井中学",27,0,0.0,512.7,590,0,15,"大庆三十五中学 14、大庆五十六中学 12、大庆十三中学 1"],["庆阳山中",35,0,0.0,519.3,576,0,20,"大庆五十六中学 20、大庆三十五中学 11、大庆二十八中学 2"],["大青山中",36,0,0.0,474.3,575,0,17,"大庆三十五中学 12、大庆五十六中学 6、大庆二十七中学 5"],["四十五中",12,0,0.0,486.8,547,0,4,"大庆二十八中学 6、大庆五十六中学 1、大庆三十九中学 1"],["卧铁中学",2,0,0.0,403,496,0,1,"大庆五十六中学 1、大庆十一中学 1"],["让铁中学",4,0,0.0,382.2,404,0,2,"大庆十一中学 1、大庆十三中学 1、大庆二十二中学 1"]],"cum":[5760,5757,5754,5751,5748,5745,5744,5743,5740,5736,5732,5730,5725,5724,5718,5714,5711,5708,5706,5701,5698,5690,5690,5685,5680,5678,5668,5656,5653,5644,5633,5628,5622,5619,5616,5608,5603,5596,5585,5579,5563,5556,5542,5534,5524,5511,5497,5489,5478,5472,5461,5450,5442,5432,5422,5409,5397,5387,5370,5361,5348,5338,5328,5318,5307,5301,5288,5275,5260,5247,5235,5227,5215,5201,5183,5169,5147,5138,5122,5105,5087,5072,5062,5052,5036,5022,5014,5004,4988,4976,4954,4935,4921,4904,4893,4875,4859,4843,4831,4811,4796,4777,4763,4746,4730,4704,4691,4677,4663,4647,4634,4621,4607,4589,4570,4550,4540,4521,4493,4474,4457,4443,4426,4403,4402,4402,4400,4399,4395,4395,4393,4392,4390,4388,4385,4381,4379,4377,4375,4374,4371,4369,4369,4368,4368,4368,4368,4368,4368,4368,4368,4367,4367,4367,4366,4366,4366,4365,4365,4364,4364,4364,4364,4364,4363,4363,4362,4362,4362,4361,4361,4361,4361,4361,4361,4361,4361,4361,4361,4361,4361,4341,4321,4305,4278,4260,4231,4214,4192,4168,4138,4121,4104,4072,4055,4031,3992,3965,3935,3905,3867,3830,3789,3740,3702,3659,3622,3601,3578,3545,3519,3489,3461,3425,3401,3382,3353,3313,3293,3253,3221,3200,3167,3132,3107,3075,3043,3008,2973,2936,2898,2858,2821,2793,2759,2718,2691,2649,2618,2579,2544,2494,2449,2412,2400,2385,2355,2335,2323,2312,2292,2281,2267,2246,2229,2222,2208,2196,2170,2156,2142,2134,2119,2103,2087,2076,2069,2062,2052,2040,2033,2027,2017,2011,2009,1978,1943,1907,1878,1845,1811,1779,1741,1717,1681,1655,1626,1585,1551,1525,1495,1459,1430,1407,1376,1345,1302,1280,1247,1217,1189,1171,1146,1120,1087,1060,1017,976,934,894,856,810,772,733,698,661,608,572,541,515,479,441,406,380,353,328,290,271,247,236,219,188,175,161,141,129,115,99,88,72,60,51,44,39,31,26,20,15,12,10,8,7,7,6,6,4,3,2,1,1,1,1,1,1],"ov":{"mean":515.6,"med":530.0,"mx":663,"mn":300,"girls":2901,"gmean":520.7,"bmean":510.4,"tz":4617,"njh":75,"nhs":22,"keyn":2492}};
+const G={"traced":[[2,657,"三十六中","大庆铁人中学","北京大学","保送","奥赛数学省赛区一等奖",0,"刘禹驰"],[3,656,"一中","大庆一中","清华大学","高考","生物科学与技术系",1,"关天下"],[5,654,"五十一中","大庆实验中学","北京大学","高考","",0,"姜冰"],[5,654,"十三中","大庆实验中学","清华大学","高考","工程物理系",1,"魏征"],[11,648,"六十九中","大庆实验中学","清华大学","高考","建筑系",1,"李梦然"],[27,644,"一中","大庆一中","清华大学","高考","电子工程系",1,"杜宇寰"],[45,641,"六十九中","大庆实验中学","清华大学","高考","电子工程系",1,"张巳龙"],[73,638,"六十九中","大庆实验中学","北京大学","高考","",0,"王洋"],[89,637,"一中","大庆一中","复旦大学","保送","奥赛信息学省赛区一等奖",0,"任帅"],[100,636,"六十一中","大庆实验中学","北京大学","高考","",0,"郑舒婷"],[116,635,"五十一中","大庆实验中学","北京大学","高考","",0,"张莹"],[162,632,"三十七中","大庆实验中学","清华大学","高考","",0,"朱丹墨"],[176,631,"六十九中","大庆实验中学","北京大学","高考","",0,"张朔"],[176,631,"四十中","大庆铁人中学","清华大学","高考","机械工程系",1,"胡潇"],[189,630,"一中","大庆一中","清华大学","高考","精密仪器与机械学系",1,"牛雨军"],[237,628,"三中","大庆铁人中学","清华大学","高考","经济管理学院",1,"戴飞"],[291,625,"一中","大庆一中","上海交通大学","保送","信息学奥赛省赛区一等奖",0,"种敏琪"],[354,623,"景园中学","大庆铁人中学","清华大学","高考","精密仪器与机械学系",1,"王鑫"],[516,618,"一中","大庆一中","浙江大学","保送","奥赛数学省赛区一等奖",0,"李城达"],[542,617,"五十八中","大庆铁人中学","浙江大学","保送","奥赛物理省赛区一等奖",0,"刘博"],[573,616,"一中","大庆一中","清华大学","高考","汽车工程系",1,"桑田"],[573,616,"四十二中","大庆铁人中学","清华大学","高考","自动化系",1,"陈晨"],[609,615,"四十六中","大庆铁人中学","清华大学","高考","计算机科学与技术系",1,"张远洋"],[1218,598,"六十一中","大庆四中","华中科技大学","保送","信息学奥赛省赛区一等奖",0,"孙继峰"]],"schools":[["大庆实验中学",447,603,619.0,16,7,5.15],["大庆铁人中学",399,607,620.4,10,5,3.76],["大庆一中",333,583,608.5,5,6,3.3],["大庆四中",303,574,589.2,1,3,1.32],["大庆东风中学",255,574,569.4,1,2,1.18],["大庆二十三中学",172,518,520.6,2,0,1.16],["大庆中学",343,574,589.7,1,1,0.58],["大庆石油高中",240,536,525.2,1,0,0.42]]};
+const G2={"sb":[["650 分以上",8,2,1,8],["640–649 分",52,3,9,52],["630–639 分",159,2,61,189],["620–629 分",260,2,220,442],["610–619 分",377,3,480,811],["600–609 分",333,0,857,1172],["575–599 分",789,0,1190,1944],["300–574 分",3782,0,1979,5758]],"provLo":150,"provHi":719,"prov":[139653,139646,139638,139630,139622,139613,139604,139594,139585,139575,139564,139554,139543,139531,139520,139508,139495,139482,139468,139454,139440,139424,139407,139390,139372,139354,139334,139314,139294,139272,139250,139225,139199,139172,139144,139114,139084,139053,139020,138986,138951,138916,138879,138842,138803,138762,138720,138677,138632,138586,138538,138490,138441,138389,138337,138282,138226,138168,138108,138047,137983,137920,137856,137789,137721,137651,137578,137504,137427,137349,137268,137187,137103,137018,136930,136840,136747,136652,136555,136455,136352,136255,136156,136055,135951,135846,135737,135626,135513,135397,135279,135167,135053,134936,134817,134695,134572,134446,134317,134186,134052,133920,133785,133648,133508,133366,133221,133073,132923,132770,132615,132477,132336,132193,132049,131902,131753,131601,131448,131292,131134,130963,130790,130614,130436,130255,130071,129884,129695,129503,129308,129131,128951,128769,128585,128398,128209,128018,127824,127628,127430,127238,127043,126846,126647,126446,126242,126036,125828,125618,125405,125184,124960,124734,124506,124275,124042,123806,123567,123326,123083,122847,122609,122368,122125,121879,121632,121382,121129,120874,120617,120371,120123,119873,119621,119366,119110,118851,118590,118327,118062,117805,117546,117284,117021,116756,116489,116219,115948,115675,115400,115127,114853,114576,114298,114017,113735,113451,113165,112877,112587,112303,112018,111731,111442,111152,110859,110565,110269,109971,109672,109376,109078,108778,108477,108174,107870,107563,107256,106946,106635,106317,105997,105675,105352,105027,104701,104373,104043,103712,103379,103050,102720,102388,102054,101719,101383,101045,100706,100365,100023,99686,99348,99009,98669,98327,97983,97639,97293,96946,96598,96258,95917,95575,95232,94887,94542,94195,93848,93499,93149,92789,92429,92067,91704,91341,90976,90610,90243,89876,89507,89147,88786,88425,88062,87699,87334,86970,86604,86237,85870,85500,85129,84757,84384,84011,83637,83263,82888,82512,82136,81737,81337,80936,80535,80133,79730,79328,78924,78520,78116,77720,77323,76926,76530,76134,75737,75340,74944,74548,74151,73739,73326,72914,72502,72090,71677,71265,70853,70440,70028,69602,69176,68750,68324,67898,67473,67047,66621,66195,65769,65331,64893,64456,64018,63580,63142,62704,62267,61829,61391,60938,60485,60032,59579,59126,58672,58219,57766,57313,56860,56380,55899,55418,54938,54458,53977,53496,53016,52536,52055,51574,51093,50612,50131,49650,49170,48689,48208,47727,47246,46720,46195,45669,45143,44618,44092,43566,43040,42515,41989,41490,40990,40490,39991,39492,38992,38492,37993,37494,36994,36486,35978,35470,34962,34454,33947,33439,32931,32423,31915,31428,30941,30455,29968,29481,28994,28507,28021,27534,27047,26556,26071,25592,25117,24649,24186,23729,23277,22831,22390,21930,21476,21029,20588,20153,19724,19302,18886,18476,18072,17663,17260,16863,16473,16090,15712,15342,14977,14619,14267,13905,13549,13200,12858,12522,12193,11870,11554,11244,10941,10636,10337,10044,9758,9479,9205,8938,8677,8421,8172,7905,7644,7391,7144,6904,6670,6443,6222,6007,5798,5586,5380,5181,4987,4800,4618,4442,4272,4107,3947,3789,3637,3490,3348,3211,3078,2951,2827,2709,2594,2471,2354,2243,2137,2036,1940,1848,1761,1677,1598,1516,1438,1364,1293,1227,1164,1104,1047,993,942,886,833,784,737,693,652,613,577,542,510,470,433,399,368,339,312,288,265,244,225,204,185,167,152,137,125,113,102,93,84,71,60,50,42,35,30,25,21,18,15,12,10,9,8,7,6,5,4,3,2,0,0,0,0,0,0,0,0,1],"li":[[600,1319,489],[610,1073,431],[620,865,360],[630,663,291],[640,507,225],[650,348,162],[655,303,144],[660,240,120],[665,186,91],[670,140,70],[675,104,54],[680,73,39],[685,45,25],[690,27,15],[700,5,2]],"we":[[600,213,100],[610,141,73],[620,84,44],[630,46,22],[640,14,8],[650,8,5],[655,4,2],[660,1,1]],"nest":[[600,10941,1319,489],[610,8172,1073,431],[620,5798,865,360],[630,3947,663,291],[640,2594,507,225],[650,1598,348,162],[655,1227,303,144],[660,942,240,120],[665,693,186,91],[670,510,140,70],[675,339,104,54],[680,225,73,39],[685,137,45,25],[690,84,27,15],[700,15,5,2]],"gap":[["大庆实验中学",16,3,1,12,447],["大庆铁人中学",10,5,0,5,399],["大庆一中",5,4,0,1,333],["大庆二十三中学",2,0,2,0,172],["大庆中学",1,0,0,1,343],["大庆东风中学",1,0,1,0,255],["大庆四中",1,0,0,1,303],["大庆石油高中",1,0,1,0,240]],"cbt":[["2006",25,19,65],["2007",17,20,53],["2008",9,14,57],["2009",11,22,63],["2010",18,26,71],["2011",25,20,76],["2012",22,18,79],["2013",33,8,null]],"comp":[["2006",[1552,595],[2606,860],[6086,1312]],["2007",[1692,591],[2470,780],[6361,1328]],["2008",[1766,581],[2938,872],[7156,1529]],["2009",[807,332],[2888,903],[7175,1557]],["2010",[761,386],[2980,996],[5887,1556]],["2011",[1487,634],[3871,1197],[8946,1809]],["2012",[757,344],[3412,964],[8258,1411]]],"provTotal":139653};
+const SYEXP={"hi":655,"lo":603,"n":447,"c":[1,2,0,0,0,0,0,1,1,0,3,1,5,2,5,4,3,8,4,7,6,5,6,5,3,13,8,3,14,3,18,10,10,11,15,18,14,12,17,6,20,16,11,17,12,19,18,15,12,20,18,13,12]};
+const T={"rows":[[657,2,"刘禹驰","三十六中","统招","铁人","北京大学","理",0,0],[655,4,"崔潇","五十一中","统招","实验","哈尔滨工业大学","理",1,0],[654,5,"姜冰","五十一中","统招","实验","北京大学","理",0,0],[654,5,"魏征","十三中","统招","实验","清华大学","理",0,0],[650,8,"狄昊","十四中","统招","铁人","","",-1,0],[649,9,"迟妍玮","三十六中","统招","铁人","中国科技大学","理",1,0],[649,9,"黄鹤","六十一中","统招","铁人","哈尔滨工业大学","理",1,0],[648,11,"李梦然","六十九中","统招","实验","清华大学","理",0,0],[647,13,"刘景睿","六十九中","统招","实验","香港理工大学","理",2,0],[647,13,"王洛奇","六十九中","统招","铁人","","",-1,0],[646,16,"丁甍","景园中学","统招","铁人","上海财经大学","理",2,0],[646,16,"孙勇","三十六中","统招","铁人","","",-1,0],[646,16,"王孟阳","六十五中","统招","铁人","上海交通大学","理",1,0],[646,16,"王锐","十九中学","统招","铁人","南开大学","理",1,0],[645,21,"吴迪","五十五中","统招","实验","","",-1,0],[645,21,"苑仁峰","四十二中","统招","实验","上海交通大学","理",1,0],[645,21,"范思旭","五十一中","统招","实验","华中科技大学","理",1,0],[645,21,"付磊","四十六中","统招","铁人","哈尔滨工业大学","理",1,0],[644,27,"麻钰","五十一中","统招","实验","北京对外经贸易大学","文",2,0],[644,27,"姜含宇","十六中","统招","铁人","哈尔滨工业大学","理",1,0],[643,32,"周思齐","四十四中","统招","实验","吉林大学","文",1,0],[643,32,"张玮珊","五十五中","统招","实验","暨南大学","文",2,0],[643,32,"石月","一中","统招","实验","","",-1,0],[643,32,"韦凌潇","六十九中","统招","实验","","",-1,0],[643,32,"高原","六十九中","统招","实验","同济大学","理",1,0],[643,32,"刘赫男","八中","统招","铁人","哈尔滨工业大学","理",1,0],[643,32,"王立言","三十六中","统招","铁人","北京大学","理",0,0],[642,40,"崔敬一","六十九中","统招","实验","上海财经大学","文",2,0],[642,40,"赵扬","六十一中","统招","实验","哈尔滨工业大学","理",1,0],[642,40,"李美娇","十九中学","统招","铁人","北京大学","理",0,0],[641,45,"张巳龙","六十九中","统招","实验","清华大学","理",0,0],[641,45,"徐宁","十三中","统招","实验","哈尔滨工业大学","理",1,0],[641,45,"王天吉","六十九中","统招","实验","南开大学","理",1,0],[641,45,"王皓沿","六十九中","统招","实验","哈尔滨医科大学","理",3,0],[641,45,"邵迪","四十二中","统招","实验","","",-1,0],[641,45,"刘松宇","三十六中","统招","铁人","大庆石油学院","理",3,0],[640,52,"刘喆倩","八中","统招","实验","北京交通","理",2,0],[640,52,"刘小诗","五十一中","统招","实验","海南师范大学","理",3,0],[640,52,"朱剑楠","杜蒙初中","统招","实验","华中科技大学","理",1,0],[640,52,"赵阳洋","二十七中","统招","实验","哈尔滨工业大学","理",1,0],[640,52,"刘洋","四十中","统招","铁人","北京邮电 ／ 黑龙江农业经济职业学院","理",-2,2],[640,52,"张睿","十九中学","统招","铁人","沈阳农大","文",-2,2],[640,52,"杨帆","二十四中","统招","铁人","","",-1,0],[640,52,"马天宇","四十二中","统招","铁人","中国政法","文",2,0],[639,61,"刘凤娇","一中","统招","实验","哈尔滨工业大学","理",1,0],[639,61,"曲嘉宝","六十九中","统招","实验","中国民航大学","理",3,0],[639,61,"赵士强","一中","统招","实验","吉林大学","理",1,0],[639,61,"于航","五十一中","统招","铁人","北京中医药大学","理",2,0],[639,61,"张智源","林甸初中","统招","铁人","四军医大","理",2,0],[639,61,"毕野","四十六中","统招","铁人","上海交通大学","理",1,0],[639,61,"郑秀明","五十一中","统招","铁人","","",-1,0],[639,61,"鹿昊","十四中","统招","铁人","大庆石油学院","理",3,0],[638,73,"张执慧","景园中学","统招","实验","","",-1,0],[638,73,"曲晗","四十二中","统招","实验","上海财经大学","理",2,0],[638,73,"李铭洋","六十九中","统招","实验","同济大学","理",1,0],[638,73,"王帅","五十一中","统招","实验","哈尔滨工业大学","理",-2,2],[638,73,"王洋","六十九中","统招","实验","北京大学医学部 ／ 牡丹江大学","文／理",-2,2],[638,73,"许晶","六十一中","统招","实验","吉林大学","理",1,0],[638,73,"许莹莹","六十九中","统招","实验","中山大学","文",1,0],[638,73,"赵海洋","六十九中","统招","实验","同济大学","理",1,0],[638,73,"季林","五十八中","统招","铁人","宁波诺丁汉大学","理",3,0],[638,73,"方悦","六十九中","统招","铁人","中国医大","理",3,0],[638,73,"杨翘楚","三十六中","统招","铁人","浙江大学","理",1,0],[638,73,"郑妍","五十一中","统招","铁人","大连外国语","理",3,0],[637,89,"吕文菁","五十五中","统招","实验","","",-1,0],[637,89,"张安琪","一中","统招","实验","","",-1,0],[637,89,"朱琳","景园中学","统招","实验","中国人民大学","理",1,0],[637,89,"肖聪","一中","统招","实验","复旦大学","理",1,0],[637,89,"刘梦园","四十六中","统招","铁人","哈尔滨工程大学","理",2,0],[637,89,"张梦然","二十五中","统招","铁人","哈尔滨工业大学","理",1,0],[637,89,"朱丹","五十七中","统招","铁人","","",-1,0],[637,89,"王悦","五十一中","统招","铁人","长春税务学院 ／ 宁波诺丁汉大学","理",-2,2],[636,100,"万泉","六十九中","统招","实验","华中科技大学","理",1,0],[636,100,"刘一茗","六十九中","统招","实验","","",-1,0],[636,100,"刘畅","一中","统招","实验","香港理工大学 ／ 长江大学","理",-2,3],[636,100,"梁骁","一中","统招","实验","哈尔滨工业大学","理",1,0],[636,100,"辛莅祚","三十六中","统招","实验","北京交通","理",2,0],[636,100,"郑舒婷","六十一中","统招","实验","北京大学","文",0,0],[636,100,"郭雨微","景园中学","统招","实验","","",-1,0],[636,100,"孙悦","二十八中","统招","铁人","哈尔滨工业大学","理",1,0],[636,100,"宋木","景园中学","统招","铁人","北京大学","理",0,0],[636,100,"洪旭","二十五中","统招","铁人","北京师范大学","文",1,0],[636,100,"赵妍","三十六中","统招","铁人","哈尔滨工程大学","理",2,0],[636,100,"韩静","四十二中","统招","铁人","哈尔滨工程大学","理",2,0],[636,100,"魏祎","八中","统招","铁人","南京审计学院","理",3,0],[635,116,"卢湦","六十九中","统招","实验","中国人民大学","文",1,0],[635,116,"吴桐","五十一中","统招","实验","南开大学","理",1,0],[635,116,"尹伊","一中","统招","实验","天津大学","理",1,0],[635,116,"张莹","五十一中","统招","实验","北京大学 ／ 苏州大学 ／ 天津大学仁爱学院","文",-2,3],[635,116,"王博","一中","统招","实验","","",-1,0],[635,116,"钱鑫","六十九中","统招","实验","北京科技大学","理",2,0],[635,116,"杜松瑶","六十一中","统招","铁人","北京城市学院","文",3,0],[635,116,"王雪松","三十六中","统招","铁人","哈尔滨商业大学","理",3,0],[635,116,"脱淞元","四十二中","统招","铁人","","",-1,0],[635,116,"马枭","四十二中","统招","铁人","","",-1,0],[635,116,"马跃","十七中","统招","铁人","哈尔滨工业大学 ／ 上海财经大学","理",-2,2],[635,116,"高睿","十六中","统招","铁人","大庆石油学院","理",3,0],[634,130,"于梦尧","一中","统招","实验","中国人民大学","理",1,0],[634,130,"刘文佳","八中","统招","实验","上海交通大学","理",1,0],[634,130,"刘畅","六十九中","统招","实验","香港理工大学 ／ 长江大学","理",-2,3],[634,130,"吕顺","六十九中","统招","实验","哈尔滨学院","文",3,0],[634,130,"黄小哲","三十二中","统招","实验","黑龙江大学","理",3,0],[634,130,"李婧","二十五中","统招","铁人","哈尔滨工业大学","理",1,0],[634,130,"陈光","五十八中","统招","铁人","天津大学","理",1,0],[634,130,"马悦","三十六中","统招","铁人","郑州大学","文",2,0],[633,142,"于光锐","六十九中","统招","实验","","",-1,0],[633,142,"刘开洋","一中","统招","实验","中国人民大学","理",1,0],[633,142,"柳慧泉","五十八中","统招","实验","北京航空航天大学","理",1,0],[633,142,"王传龙","二十八中","统招","实验","南京财经大学","文",3,0],[633,142,"王新格","一中","统招","实验","天津大学","理",1,0],[633,142,"赵祎含","六十一中","统招","实验","北京邮电大学","理",2,0],[633,142,"冀朝旭","三十六中","统招","铁人","中国农大","理",1,0],[633,142,"刘万清","十四中","统招","铁人","大庆石油学院","理",3,0],[633,142,"吴昊天","三十六中","统招","铁人","","",-1,0],[633,142,"张明睿","杜蒙初中","统招","铁人","南开大学","理",1,0],[633,142,"朴文翰","一中","统招","铁人","西南民族","理",3,0],[633,142,"李金迪","三十六中","统招","铁人","深圳大学","文",3,0],[633,142,"焦龙","四十六中","统招","铁人","东北林业大学","文",2,0],[633,142,"聂森","五十一中","统招","铁人","浙江大学","理",1,0],[633,142,"陈华伟","二十五中","统招","铁人","哈尔滨师范大学","文",3,0],[632,162,"关昭","五十一中","统招","实验","中国政法大学","理",2,0],[632,162,"姜姗","四十四中","统招","实验","南京大学","文",1,0],[632,162,"朱丹墨","三十七中","统招","实验","清华大学","理",0,0],[632,162,"马啸","祥阁学校","统招","实验","南京财经大学","文",3,0],[632,162,"马英强","六十九中","统招","实验","北京理工大学","理",1,0],[632,162,"于珊","五十一中","统招","铁人","广东外语外贸","理",3,0],[632,162,"刘婧","三十六中","统招","铁人","","",-1,0],[632,162,"姜世鑫","三十中","统招","铁人","上海同济大学","理",1,0],[632,162,"宛明哲","四十二中","统招","铁人","中南财经政法大学","理",2,0],[632,162,"薛靓","二十四中","统招","铁人","","",-1,0],[632,162,"赵世功","景园中学","统招","铁人","北京城市学院","理",3,0],[632,162,"陆原鹏","三十六中","统招","铁人","哈尔滨工业大学","理",1,0],[631,176,"宋芃","一中","统招","实验","北京化工大学","理",2,0],[631,176,"张朔","六十九中","统招","实验","北京大学","理",0,0],[631,176,"程宇微","景园中学","统招","实验","浙江大学","理",1,0],[631,176,"张琳","三十六中","统招","铁人","北京语言大学","文",3,0],[631,176,"李宇华","四十二中","统招","铁人","中国地质大学","理",2,0],[631,176,"李谡","四十二中","统招","铁人","大连理工","理",1,0],[631,176,"潘玉龙","八中","统招","铁人","华东理工","理",2,0],[631,176,"王迪","二十四中","统招","铁人","香港理工","理",2,0],[631,176,"胡潇","四十中","统招","铁人","","",-1,0],[631,176,"艾萌","一中","统招","铁人","","",-1,0],[631,176,"郭琳","二十八中","统招","铁人","中国传媒大学","理",2,0],[631,176,"隋文健","四十二中","统招","铁人","南京航空航天大学","理",2,0],[630,189,"于海良","三十三中","统招","实验","哈尔滨工业大学","理",1,0],[630,189,"唐滨琪","六十九中","统招","实验","同济大学","理",1,0],[630,189,"姜博曦","六十九中","统招","实验","上海交通大学","理",1,0],[630,189,"宋劲冲","五十五中","统招","实验","浙江大学","理",1,0],[630,189,"张兆鑫","四十四中","统招","实验","哈尔滨工业大学","理",1,0],[630,189,"李旭妍","六十九中","统招","实验","南方医科大学","理",3,0],[630,189,"李源","六十九中","统招","实验","山东潍坊学院","理",-2,2],[630,189,"王继伟","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[630,189,"王馨伟","一中","统招","实验","中国人民大学","文",1,0],[630,189,"相楠","六十九中","统招","实验","天津师范大学","理",3,0],[630,189,"赵迪","五十五中","统招","实验","","",-1,0],[630,189,"邱哲人","六十九中","统招","实验","华北电力大学(北京)","理",2,0],[630,189,"陈娜","二十三中","统招","实验","北京邮电大学","理",2,0],[630,189,"于傲雪","十九中学","统招","铁人","浙江大学","理",1,0],[630,189,"吴阚","三十六中","统招","铁人","哈尔滨工程大学","理",2,0],[630,189,"孙春书","八中","统招","铁人","北京邮电","理",2,0],[630,189,"孙源","二十四中","统招","铁人","北京大学","文",0,0],[630,189,"张鑫","三十六中","统招","铁人","东北电力","理",3,0],[630,189,"李传锐","一中","统招","铁人","","",-1,0],[630,189,"李昊","五十六中","统招","铁人","南开大学","文",1,0],[630,189,"李春昱","十四中","统招","铁人","北京科技大学","理",2,0],[630,189,"李鹏程","三十六中","统招","铁人","北京科技大学","理",2,0],[630,189,"胡寅龙","三十六中","统招","铁人","哈尔滨工业大学","理",1,0],[630,189,"谷乐","六十一中","统招","铁人","南开大学","理",1,0],[630,189,"郭磊","五十七中","统招","铁人","","",-1,0],[629,220,"刘超","六十九中","统招","实验","","",-1,0],[629,220,"徐尚","肇州初中","统招","实验","","",-1,0],[629,220,"曹喻","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[629,220,"李晗","五十一中","统招","实验","哈尔滨医科大学大庆校区","理",3,0],[629,220,"李鹏","八中","统招","实验","中国石油大学","理",2,0],[629,220,"王宇","杜蒙初中","统招","实验","大庆实油学院 ／ 佳木斯大学 ／ 齐齐哈尔大学","理",-2,3],[629,220,"王舒","一中","统招","实验","大连交通大学 ／ 四川师范大学","文／理",-2,2],[629,220,"闫志","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[629,220,"於鑫","二十四中","统招","铁人","西南财经大学","理",2,0],[629,220,"李岩","四十二中","统招","铁人","吉林大学","理",1,0],[629,220,"沈茜雯","四十六中","统招","铁人","哈尔滨医科大学","文",3,0],[629,220,"程碧松","五十一中","统招","铁人","江南大学","文",2,0],[629,220,"赵晨旭","三十六中","统招","铁人","","",-1,0],[629,220,"陈茁","五十七中","统招","铁人","武汉大学","理",1,0],[629,220,"高晗","一中","统招","铁人","","",-1,0],[628,237,"吴晓楠","六十九中","统招","实验","哈尔滨医科大学","理",3,0],[628,237,"唐宇","十四中","统招","实验","","",-1,0],[628,237,"张赢","六十九中","统招","实验","","",-1,0],[628,237,"于向南","二十四中","统招","铁人","","",-1,0],[628,237,"刘畅","三十六中","统招","铁人","西南财经大学 ／ 大庆石油学院 ／ 四川大学","文／理",-2,3],[628,237,"戴飞","三中","统招","铁人","清华大学","文",0,0],[628,237,"李琪","四十二中","统招","铁人","","",-1,0],[628,237,"武佳文","三十六中","统招","铁人","中国传媒大学","理",2,0],[628,237,"衡畅","四十二中","统招","铁人","哈尔滨工程大学","理",2,0],[627,248,"吴超","杏树岗中","统招","实验","中山大学","理",1,0],[627,248,"周莹","六十九中","统招","实验","宁波大学","理",3,0],[627,248,"孔繁玺","四十三中","统招","实验","西安石油大学","理",3,0],[627,248,"宋仁杰","十九中学","统招","实验","黑龙江省中医药大学","理",3,0],[627,248,"张婷婷","六十九中","统招","实验","天津师范大学","理",3,0],[627,248,"李莹","六十五中","统招","实验","西安外国语大学","文",3,0],[627,248,"杨亚勋","十三中","统招","实验","长春税务学院","理",3,0],[627,248,"王哲","五十五中","统招","实验","哈尔滨工业大学 ／ 吉林大学","文／理",-2,2],[627,248,"王爽心","四十三中","统招","实验","","",-1,0],[627,248,"王绍程","四十四中","统招","实验","山东轻工业学院","理",3,0],[627,248,"王蔚","六十九中","统招","实验","天津大学","理",1,0],[627,248,"陈晴","五十五中","统招","实验","北京邮电大学","理",2,0],[627,248,"陈研硕","四十三中","统招","实验","","",-1,0],[627,248,"魏玉爽","六十九中","统招","实验","武汉大学","理",1,0],[627,248,"刘婧雅","六十一中","统招","铁人","浙江大学","文",1,0],[627,248,"方浩","四十中","统招","铁人","大连理工","理",1,0],[627,248,"滕筱璠","五十八中","统招","铁人","西南财经","文",2,0],[627,248,"王帆","十三中","统招","铁人","","",-1,0],[627,248,"田鑫","二十八中","统招","铁人","大连理工","理",1,0],[627,248,"赵安琪","一中","统招","铁人","大连理工","理",1,0],[626,272,"刘思维","三十中","统招","实验","中国传媒大学","理",2,0],[626,272,"姜辰","六十一中","统招","实验","中国药科大学","理",2,0],[626,272,"李越","四十九中","统招","实验","大连海事大学","理",2,0],[626,272,"刘仲茜","四十六中","统招","铁人","","",-1,0],[626,272,"刘硕","一中","统招","铁人","","",-1,0],[626,272,"吕洋","六十一中","统招","铁人","","",-1,0],[626,272,"孙宪明","三十一中","统招","铁人","","",-1,0],[626,272,"崔振兴","一中","统招","铁人","","",-1,0],[626,272,"张建勋","三十六中","统招","铁人","大庆石油学院","理",3,0],[626,272,"葛婧瑜","六十五中","统招","铁人","南开大学","文",1,0],[626,272,"赵得伟","肇源初中","统招","铁人","","",-1,0],[626,272,"闫树堃","二十三中","统招","铁人","北京科技大学","理",2,0],[626,272,"黄之燊","十九中学","统招","铁人","","",-1,0],[625,291,"乔千芳","四十二中","统招","实验","南开大学","理",1,0],[625,291,"冯源","五十一中","统招","实验","","",-1,0],[625,291,"刘姚","四十四中","统招","实验","山东理工大学","理",3,0],[625,291,"姜杉","二十八中","统招","实验","东南大学","理",1,0],[625,291,"孟宪熙","五十一中","统招","实验","中南大学","理",1,0],[625,291,"应頔","二十三中","统招","实验","","",-1,0],[625,291,"张泽宇","一中","统招","实验","","",-1,0],[625,291,"朱璇","三十六中","统招","实验","中国政法大学","文",2,0],[625,291,"李孟姣","二十八中","统招","实验","西南政法大学","文",3,0],[625,291,"李龙鸣","四十三中","统招","实验","哈尔滨工业大学","理",1,0],[625,291,"田明佳","五十一中","统招","实验","","",-1,0],[625,291,"程思杰","喇镇中学","统招","实验","哈尔滨工业大学","文",1,0],[625,291,"谭悦祎","十九中学","统招","实验","上海水产大学","理",3,0],[625,291,"赵疆江","四十二中","统招","实验","广西财经大学","理",3,0],[625,291,"赵雪","四十二中","统招","实验","长春税务学院","文",3,0],[625,291,"金碧","东三初中","统招","实验","天津师范大学","文",3,0],[625,291,"陈楠","六十九中","统招","实验","","",-1,0],[625,291,"陈灵","十六中","统招","实验","广西梧州学院","理",3,0],[625,291,"于鑫垚","十九中学","统招","铁人","哈尔滨工业大学","理",1,0],[625,291,"姜增哲","四十六中","统招","铁人","吉林大学","文",1,0],[625,291,"季奇","五十八中","统招","铁人","吉林大学","文",1,0],[625,291,"宫健峰","五十一中","统招","铁人","中国石油大学","理",2,0],[625,291,"宫婉璐","五十一中","统招","铁人","哈尔滨工程大学","理",2,0],[625,291,"曹育铭","三十六中","统招","铁人","天津大学","理",1,0],[625,291,"王庆龙","四十二中","统招","铁人","哈尔滨工业大学","理",1,0],[625,291,"王超群","一中","统招","铁人","上海金融学院","理",3,0],[625,291,"隋昊","十四中","统招","铁人","大庆石油学院","理",3,0],[624,329,"兰丛博","四十四中","统招","实验","天津商业大学","文",3,0],[624,329,"刘昊","二十八中","统招","实验","哈尔滨工业大学","理",1,0],[624,329,"刘泽宇","林甸初中","统招","实验","广东外语外贸大学","理",3,0],[624,329,"刘翯","六十一中","统招","实验","哈尔滨工业大学","理",1,0],[624,329,"徐哲","六十九中","统招","实验","厦门大学","理",1,0],[624,329,"焦旭光","二十五中","统招","实验","吉林大学","理",1,0],[624,329,"王晶楠","五十二中","统招","实验","吉林大学","理",1,0],[624,329,"王梦瑶","五十七中","统招","实验","","",-1,0],[624,329,"邵森","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[624,329,"陈莹","二十八中","统招","实验","长春税务学院 ／ 哈尔滨师范大学","文／理",-2,2],[624,329,"师喆","二十五中","统招","铁人","宁波诺丁汉大学","理",3,0],[624,329,"曹玉伟","一中","统招","铁人","","",-1,0],[624,329,"李冶方","四十六中","统招","铁人","大庆石油学院","理",3,0],[624,329,"李鹤","三十六中","统招","铁人","南开大学","理",1,0],[624,329,"段聿舟","十四中","统招","铁人","","",-1,0],[624,329,"王京","五十一中","统招","铁人","西安外国语","文",3,0],[624,329,"纪鹰昊","五十一中","统招","铁人","湖南师范大学","文",2,0],[624,329,"覃黎曼","十六中","统招","铁人","山东经济学院","文",3,0],[624,329,"马天骄","四十二中","统招","铁人","","",-1,0],[624,329,"齐闻","六十四中","统招","铁人","","",-1,0],[623,354,"卢薇","六十九中","统招","实验","吉林大学","理",1,0],[623,354,"吕箫","一中","统招","实验","中国青年政治学院","文",3,0],[623,354,"姜会欣","六十九中","统招","实验","天津大学","理",1,0],[623,354,"张月","六十九中","统招","实验","东华大学","理",2,0],[623,354,"张铃珠","三十六中","统招","实验","四川大学","理",1,0],[623,354,"李慧川","六十九中","统招","实验","哈尔滨师范大学","文",3,0],[623,354,"王黎","一中","统招","实验","吉林大学","理",1,0],[623,354,"范碧云","六十六中","统招","实验","西南财经大学","理",2,0],[623,354,"郑鹏飞","五十一中","统招","实验","大庆石油学院","理",3,0],[623,354,"郭帅","四十四中","统招","实验","北京理工大学","理",1,0],[623,354,"侯博文","十四中","统招","铁人","淮北师范学院","文",3,0],[623,354,"刘倩竹","五十一中","统招","铁人","","",-1,0],[623,354,"安诗玉","五十一中","统招","铁人","成都理工","理",3,0],[623,354,"朱梦元","景园中学","统招","铁人","大庆石油学院","理",3,0],[623,354,"李楠","十四中","统招","铁人","哈尔滨工业大学","理",1,0],[623,354,"李若昕","林甸初中","统招","铁人","天津大学","理",1,0],[623,354,"王月明","四十六中","统招","铁人","","",-1,0],[623,354,"王楠竹","五十一中","统招","铁人","吉林华侨外国语学院","理",3,0],[623,354,"王璐","三十中","统招","铁人","大庆石油学院","理",3,0],[623,354,"王鑫","景园中学","统招","铁人","清华大学","理",0,0],[623,354,"赵浩宇","四十二中","统招","铁人","南京师范大学","理",2,0],[623,354,"邢悦","十中","统招","铁人","北京中医药大学","理",2,0],[623,354,"韩东博","一中","统招","铁人","哈尔滨工业大学","理",1,0],[623,354,"高扬","四十二中","统招","铁人","","",-1,0],[622,381,"伊曼璐","六十九中","统招","实验","四川大学","理",1,0],[622,381,"刘鑫","一中","统招","实验","中国传媒大学 ／ 大庆石油学院华瑞学院","理",-2,2],[622,381,"单松","十三中","统招","实验","黑龙江大学","理",3,0],[622,381,"姚文宇","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[622,381,"姜骁楠","四十七中","统招","实验","天津大学","理",1,0],[622,381,"张畅","六十九中","统招","实验","","",-1,0],[622,381,"武发明","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[622,381,"沈泽坤","一中","统招","实验","","",-1,0],[622,381,"石格菲","六十九中","统招","实验","东北大学秦皇岛分校","理",3,0],[622,381,"赵越","十三中","统招","实验","北京师范大学 ／ 北京师范大学 ／ 上海财经大学","文／理",-2,3],[622,381,"邵轶群","一中","统招","实验","哈尔滨工业大学","理",1,0],[622,381,"丁一铭","五十七中","统招","铁人","","",-1,0],[622,381,"任航","三十六中","统招","铁人","上海同济大学","理",1,0],[622,381,"张云龙","五十一中","统招","铁人","哈尔滨工业大学 ／ 邵阳学院","理",-2,2],[622,381,"张睿","十九中学","统招","铁人","沈阳农大","文",-2,2],[622,381,"张诗敏","四十六中","统招","铁人","","",-1,0],[622,381,"曾瑶","五十七中","统招","铁人","","",-1,0],[622,381,"林旭光","十九中学","统招","铁人","中国石油大学","理",2,0],[622,381,"苏秋硕","三十六中","统招","铁人","南京理工","理",2,0],[622,381,"许立三","二十一中","统招","铁人","","",-1,0],[622,381,"那连强","五十一中","统招","铁人","大庆石油学院","理",3,0],[622,381,"郇滢","十六中","统招","铁人","西北大学","文",2,0],[622,381,"陈中慧","四十六中","统招","铁人","哈尔滨师范大学","理",3,0],[621,407,"东阳","五十一中","统招","实验","广州中医药大学","文",3,0],[621,407,"侯迪","五十七中","统招","实验","中国人民大学","理",1,0],[621,407,"卞旭","杜蒙初中","统招","实验","中国传媒大学","文",2,0],[621,407,"史月","肇源初中","统招","实验","哈尔滨工业大学","理",1,0],[621,407,"姚金南","十三中","统招","实验","","",-1,0],[621,407,"孙超","林甸初中","统招","实验","哈尔滨工业大学","理",1,0],[621,407,"屠先明","六十九中","统招","实验","大连交通大学","理",3,0],[621,407,"张奇夫","林甸初中","统招","实验","哈尔滨工业大学","理",1,0],[621,407,"杨欢","杜蒙初中","统招","实验","黑龙江省科技学院","理",3,0],[621,407,"梁雨微","六十九中","统招","实验","","",-1,0],[621,407,"汪宁","十九中学","统招","实验","天津商业大学","理",3,0],[621,407,"王喆","十九中学","统招","实验","西南政法大学 ／ 中央财经大学","文／理",-2,2],[621,407,"王婉琳","六十九中","统招","实验","","",-1,0],[621,407,"程然","杜蒙初中","统招","实验","哈尔滨工业大学","理",1,0],[621,407,"贺明珠","六十九中","统招","实验","吉林大学","理",1,0],[621,407,"严禹明","五十五中","统招","铁人","哈尔滨工业大学","理",1,0],[621,407,"孙宇","六十一中","统招","铁人","滨州医学院","理",3,0],[621,407,"宣文静","五十一中","统招","铁人","","",-1,0],[621,407,"康龙","五十一中","统招","铁人","大连理工","理",1,0],[621,407,"张想","五十一中","统招","铁人","哈尔滨工业大学","理",1,0],[621,407,"朱岩","二十五中","统招","铁人","华北电力","文",2,0],[621,407,"李冰洋","四十中","统招","铁人","","",-1,0],[621,407,"李笑宇","三十中","统招","铁人","大庆石油学院","理",3,0],[621,407,"杜景醒","十四中","统招","铁人","西安电子科技大学","理",2,0],[621,407,"潘丁一","四十二中","统招","铁人","中国民航大学","理",3,0],[621,407,"田金鑫","六十四中","统招","铁人","中南财学政法","文",2,0],[621,407,"马跃","四十六中","统招","铁人","哈尔滨工业大学 ／ 上海财经大学","理",-2,2],[621,407,"龙隆","三十六中","统招","铁人","中国矿业大学","理",2,0],[620,442,"侯锐","三十七中","统招","实验","吉林大学","理",1,0],[620,442,"冯崧祥","六十九中","统招","实验","西安电子科技大学","理",2,0],[620,442,"刘子滔","六十一中","统招","实验","哈尔滨工程大学","理",2,0],[620,442,"刘昶","五十五中","统招","实验","东南大学","理",1,0],[620,442,"叶超","四十七中","统招","实验","天津大学","理",1,0],[620,442,"吕毅","十三中","统招","实验","哈尔滨师范大学","文",3,0],[620,442,"夏思阳","六十九中","统招","实验","","",-1,0],[620,442,"张晨晨","三十七中","统招","实验","中国地质大学","理",2,0],[620,442,"徐云龙","二十八中","统招","实验","","",-1,0],[620,442,"徐若曦","六十九中","统招","实验","天津外国语学院","文",3,0],[620,442,"杨雪冰","六十九中","统招","实验","中国政法大学","文",2,0],[620,442,"梁兆玉","二十三中","统招","实验","","",-1,0],[620,442,"王天舒","五十五中","统招","实验","哈尔滨工业大学","理",1,0],[620,442,"王樱录","五十一中","统招","实验","北京理工大学","文",1,0],[620,442,"许万超","一中","统招","实验","","",-1,0],[620,442,"连漪","六十一中","统招","实验","","",-1,0],[620,442,"郭睿","四十四中","统招","实验","吉林大学","理",1,0],[620,442,"高见","十三中","统招","实验","湘南大学","理",3,0],[620,442,"刘扬","四十六中","统招","铁人","大连理工","理",1,0],[620,442,"刘龙","二十三中","统招","铁人","","",-1,0],[620,442,"孙梦婷","十三中","统招","铁人","","",-1,0],[620,442,"宁宇婧","二十八中","统招","铁人","哈尔滨理工大学","理",3,0],[620,442,"宋沅孟","五十一中","统招","铁人","大庆石油学院","理",3,0],[620,442,"张竞豪","二十四中","统招","铁人","天津大学仁爱学院","理",3,0],[620,442,"张蕾","四十中","统招","铁人","中国海洋大学 ／ 上海金融学院","文／理",-2,2],[620,442,"梁梦蕾","六十一中","统招","铁人","","",-1,0],[620,442,"苏旭","三十六中","统招","铁人","大庆石油学院","理",3,0],[620,442,"范长白","六十一中","统招","铁人","大庆石油学院","理",3,0],[620,442,"董一","二十四中","统招","铁人","西南石油大学","理",3,0],[620,442,"董哲","景园中学","统招","铁人","北京大学","文",0,0],[620,442,"贾博文","新华中学","统招","铁人","上海交通大学","理",1,0],[620,442,"陈曦","五十一中","统招","铁人","哈尔滨工业大学","理",1,0],[620,442,"马无缰","景园中学","统招","铁人","哈工程","文",2,0],[619,480,"倪红","五十一中","统招","实验","黑龙江省中医药大学","理",3,0],[619,480,"刘明曈","六十九中","统招","实验","","",-1,0],[619,480,"张天一","四十二中","统招","实验","郑州大学","理",2,0],[619,480,"李艳燕","林甸初中","统招","实验","","",-1,0],[619,480,"王欢","六十九中","统招","实验","","",-1,0],[619,480,"苏靖淞","五十七中","统招","实验","西南石油大学","理",3,0],[619,480,"邢思宇","四十中","统招","实验","哈尔滨工程大学","理",2,0],[619,480,"闫松麒","肇州初中","统招","实验","北方工业大学","理",3,0],[619,480,"陈凤娇","六十九中","统招","实验","北京师范大学珠海分校","理",3,0],[619,480,"陶立峰","六十九中","统招","实验","重庆邮电大学","理",3,0],[619,480,"雷懿夫","三十六中","统招","实验","","",-1,0],[619,480,"鞠阳","二十三中","统招","实验","福建工程学院","理",3,0],[619,480,"韩沛辰","二十七中","统招","实验","大庆石油学院","理",3,0],[619,480,"顾啸辰","八中","统招","实验","","",-1,0],[619,480,"于圆圆","五十一中","统招","铁人","西南石油大学","理",3,0],[619,480,"何平","二十二中","统招","铁人","北京师范大学","文",1,0],[619,480,"刘焱泽","四十六中","统招","铁人","安徽建筑工业学院","理",3,0],[619,480,"刘胜楠","四十一中","统招","铁人","大庆石油学院","理",3,0],[619,480,"唐旭","三十六中","统招","铁人","哈尔滨工业大学","理",1,0],[619,480,"安慧峰","四十三中","统招","铁人","北京邮电","理",2,0],[619,480,"张剑","五十一中","统招","铁人","北京大学","理",0,0],[619,480,"李博","五十五中","统招","铁人","大庆石油学院","理",3,0],[619,480,"李昂","十四中","统招","铁人","国际关系学院","文",3,0],[619,480,"杨威","四十九中","统招","铁人","中国矿业大学 ／ 哈尔滨师范大学","理",-2,2],[619,480,"王基辰","十四中","统招","铁人","合肥工业大学","文",2,0],[619,480,"蔡岫颖","五十一中","统招","铁人","佳木斯大学","理",3,0],[619,480,"赵丹阳","三十六中","统招","铁人","上海同济大学","理",1,0],[619,480,"雷月","五十八中","统招","铁人","","",-1,0],[619,480,"韩硕","五十一中","统招","铁人","","",-1,0],[619,480,"魏达琳","五十中学","统招","铁人","中国人民大学","理",1,0],[619,480,"黄鑫","景园中学","统招","铁人","","",-1,0],[618,516,"于其明","六十九中","统招","实验","中国石油大学","理",2,0],[618,516,"于志会","高台中学","统招","实验","","",-1,0],[618,516,"佟欣欣","五十一中","统招","实验","","",-1,0],[618,516,"刘宝","三十三中","统招","实验","齐齐哈尔大学","理",3,0],[618,516,"孔醍","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[618,516,"张家墅","六十四中","统招","实验","华中科技大学","理",1,0],[618,516,"张海轩","十九中学","统招","实验","中国政法大学","文",2,0],[618,516,"方鑫","三十六中","统招","实验","黑龙江大学","文",3,0],[618,516,"李唯源","祥阁学校","统招","实验","哈尔滨工业大学","理",1,0],[618,516,"杨思凡","六十九中","统招","实验","湘潭大学","文",3,0],[618,516,"武威","四十四中","统招","实验","华东政法大学","文",3,0],[618,516,"耿一凯","二十七中","统招","实验","中国石油大学","理",2,0],[618,516,"倪潇巍","十中","统招","铁人","中南财学政法","文",2,0],[618,516,"李石","五十七中","统招","铁人","","",-1,0],[618,516,"李硕","三十中","统招","铁人","","",-1,0],[618,516,"杜重","六十一中","统招","铁人","哈尔滨理工大学","理",3,0],[618,516,"洪德智","二十八中","统招","铁人","","",-1,0],[618,516,"解潇伊","十中","统招","铁人","哈尔滨工业大学","理",1,0],[617,542,"刘慧","六十一中","统招","实验","华东理工大学","理",2,0],[617,542,"姚瑶","林甸初中","统招","实验","","",-1,0],[617,542,"孔宪薇","六十九中","统招","实验","东北财经大学","文",3,0],[617,542,"宁圣清","五十七中","统招","实验","","",-1,0],[617,542,"张碧琳","六十九中","统招","实验","天津大学","理",1,0],[617,542,"张龙泽","六十九中","统招","实验","北京理工大学","理",1,0],[617,542,"李娜","四十九中","统招","实验","齐齐哈尔医学院","理",3,0],[617,542,"李源","五十五中","统招","实验","山东潍坊学院","理",-2,2],[617,542,"李跃甲","六十一中","统招","实验","哈尔滨工业大学","理",1,0],[617,542,"池杨","二十三中","统招","实验","大庆石油学院","理",3,0],[617,542,"潘熙","六十九中","统招","实验","西南财经大学","理",2,0],[617,542,"王哲","林甸初中","统招","实验","哈尔滨工业大学 ／ 吉林大学","文／理",-2,2],[617,542,"程思梦","六十九中","统招","实验","中央民族大学","文",1,0],[617,542,"肖丽丽","二十八中","统招","实验","哈尔滨工业大学","理",1,0],[617,542,"范昊","景园中学","统招","实验","大庆石油学院","理",3,0],[617,542,"谭谈","六十九中","统招","实验","","",-1,0],[617,542,"靳琪","五十一中","统招","实验","天津大学","理",1,0],[617,542,"任革","景园中学","统招","铁人","佳木斯大学","理",3,0],[617,542,"刘博","五十八中","统招","铁人","北京化工大学","理",2,0],[617,542,"刘泽钰","四十二中","统招","铁人","东北财经","文",3,0],[617,542,"李龙","二十五中","统招","铁人","哈尔滨医科大学","理",3,0],[617,542,"王楠","一中","统招","铁人","大连理工 ／ 哈尔滨商业大学","理",-2,2],[617,542,"邵天宇","五十一中","统招","铁人","哈尔滨工程大学","理",2,0],[617,542,"马庆","六十五中","统招","铁人","云南大学","理",2,0],[617,542,"魏爽","十四中","统招","铁人","","",-1,0],[616,573,"周婧昭","六十九中","统招","实验","","",-1,0],[616,573,"张斯文","四十四中","统招","实验","","",-1,0],[616,573,"张馨元","六十九中","统招","实验","","",-1,0],[616,573,"李硕","景园中学","统招","实验","吉林大学","理",1,0],[616,573,"耿时玉","八中","统招","实验","","",-1,0],[616,573,"贾一石","四十中","统招","实验","中央民族大学","文",1,0],[616,573,"于振兴","十九中学","统招","铁人","西北大学","理",2,0],[616,573,"于辰光","二十四中","统招","铁人","江南大学","文",2,0],[616,573,"冯晓庆","二十三中","统招","铁人","","",-1,0],[616,573,"刘一男","四十二中","统招","铁人","","",-1,0],[616,573,"刘丽","一中","统招","铁人","中青院","文",3,0],[616,573,"刘星辰","一中","统招","铁人","","",-1,0],[616,573,"刘轩宇","四十六中","统招","铁人","","",-1,0],[616,573,"刘雷","四十九中","统招","铁人","哈尔滨工业大学","理",1,0],[616,573,"吕楠","三十六中","统招","铁人","","",-1,0],[616,573,"吴广健","四十六中","统招","铁人","吉林大学","理",1,0],[616,573,"张博","五十一中","统招","铁人","东北财经","文",3,0],[616,573,"张建映","四十二中","统招","铁人","大庆石油学院","理",3,0],[616,573,"张楠楠","三十中","统招","铁人","大庆石油学院","理",3,0],[616,573,"李梦含","四十六中","统招","铁人","中国人民大学","理",1,0],[616,573,"李雨蒙","四十六中","统招","铁人","哈尔滨工业大学","理",1,0],[616,573,"栗国斌","十三中","统招","铁人","北京化工大学","理",2,0],[616,573,"段文晶","三十六中","统招","铁人","北京师范珠海分校","文",3,0],[616,573,"王丽娟","林甸初中","统招","铁人","大庆石油学院","理",3,0],[616,573,"袁瑞聪","四十中","统招","铁人","哈尔滨工业大学","理",1,0],[616,573,"袁蓓","六十五中","统招","铁人","西南财经","文",2,0],[616,573,"赵冰欣","六十一中","统招","铁人","哈尔滨工业大学","理",1,0],[616,573,"郝月明","六十一中","统招","铁人","东华大学","理",2,0],[616,573,"陈晨","四十二中","统招","铁人","哈尔滨工业大学 ／ 湘潭大学 ／ 辽宁交通高等专科学校","理",-2,3],[616,573,"高崇龙","四十二中","统招","铁人","大庆石油学院","理",3,0],[616,573,"高飞","十六中","统招","铁人","大庆石油学院","理",3,0],[615,609,"于俊磊","八中","统招","实验","青岛理工大学","理",3,0],[615,609,"冯阳","五十一中","统招","实验","四川师范大学","文",3,0],[615,609,"刘畅","六十九中","统招","实验","香港理工大学 ／ 长江大学","理",-2,3],[615,609,"吕晨","八中","统招","实验","","",-1,0],[615,609,"吴天","十三中","统招","实验","中央民族大学","理",1,0],[615,609,"周健","六十九中","统招","实验","北京理工大学","理",1,0],[615,609,"周潇","十三中","统招","实验","长江大学","理",3,0],[615,609,"孙婷婷","二十八中","统招","实验","","",-1,0],[615,609,"尤文汇","四十四中","统招","实验","","",-1,0],[615,609,"崔洋","肇源初中","统招","实验","吉林大学","理",1,0],[615,609,"张有为","太阳升中","统招","实验","","",-1,0],[615,609,"徐靖凯","五十七中","统招","实验","中国人民大学","理",1,0],[615,609,"李寅赫","五十五中","统招","实验","大庆石油学院","理",3,0],[615,609,"李月","二十八中","统招","实验","辽宁师范大学","理",3,0],[615,609,"梁海龙","肇源初中","统招","实验","东北师范大学","理",2,0],[615,609,"毕凯","三十六中","统招","实验","成都学院","理",3,0],[615,609,"王瑞琦","六十九中","统招","实验","","",-1,0],[615,609,"石榴","十三中","统招","实验","桂林工学院","文",3,0],[615,609,"边佶","六十九中","统招","实验","","",-1,0],[615,609,"马婉璐","六十九中","统招","实验","","",-1,0],[615,609,"刘凯昆","二十五中","统招","铁人","","",-1,0],[615,609,"周宁","四十二中","统招","铁人","东北大学秦皇岛分校","理",3,0],[615,609,"唐喜庆","二十三中","统招","铁人","大连理工","理",1,0],[615,609,"张璇","三十六中","统招","铁人","","",-1,0],[615,609,"张诗阳","五十五中","统招","铁人","辽宁科技大学","理",3,0],[615,609,"张远洋","四十六中","统招","铁人","北京大学","理",0,0],[615,609,"惠翰斌","十中","统招","铁人","大连工业大学","理",3,0],[615,609,"李冠群","十七中","统招","铁人","湖北大学","理",3,0],[615,609,"李磊","二十四中","统招","铁人","牡丹江大学","理",3,0],[615,609,"杨钏钗","一中","统招","铁人","北京交大","理",2,0],[615,609,"毕伟","二十三中","统招","铁人","吉林大学","理",1,0],[615,609,"温如月","二十五中","统招","铁人","夏门理工学院","理",3,0],[615,609,"王鹏菲","三十二中","统招","铁人","","",-1,0],[615,609,"肖熙","四十六中","统招","铁人","","",-1,0],[615,609,"胡庆波","四十六中","统招","铁人","吉林大学","理",1,0],[615,609,"蔡蕾","三十七中","统招","铁人","","",-1,0],[615,609,"谢剑豪","三十六中","统招","铁人","","",-1,0],[615,609,"郭丰强","六十一中","统招","铁人","大庆石油学院","理",3,0],[615,609,"陈思雨","十四中","统招","铁人","","",-1,0],[615,609,"陈颖倩","二十八中","统招","铁人","西北大学","文",2,0],[615,609,"龚瑞璇","五十一中","统招","铁人","天津财经","文",3,0],[614,662,"丁冠琦","五十五中","统招","实验","","",-1,0],[614,662,"侯圣昱","祥阁学校","统招","实验","","",-1,0],[614,662,"姜婷","八中","统招","实验","齐齐哈尔大学","文",3,0],[614,662,"孙琳","八中","统招","实验","北京化工大学","文",2,0],[614,662,"张莹烁","十九中学","统招","实验","","",-1,0],[614,662,"李丰","四十七中","统招","实验","哈尔滨工业大学","理",1,0],[614,662,"李文聪","六十九中","统招","实验","大庆石油学院","理",3,0],[614,662,"李梁禹","四十四中","统招","实验","黑龙江大学","理",3,0],[614,662,"梁起","四十七中","统招","实验","","",-1,0],[614,662,"王帅","一中","统招","实验","哈尔滨工业大学","理",-2,2],[614,662,"王悦洋","四十九中","统招","实验","","",-1,0],[614,662,"王龙","六十六中","统招","实验","长春工业大学 ／ 哈尔滨学院","理",-2,2],[614,662,"秦潇","十三中","统招","实验","大连外国语学院","文",3,0],[614,662,"赫喆","五十一中","统招","实验","","",-1,0],[614,662,"邵翔宇","五十一中","统招","实验","东南大学","理",1,0],[614,662,"高林","六十九中","统招","实验","中央财经大学","理",2,0],[614,662,"刘畅达","二十四中","统招","铁人","中国石油大学","理",2,0],[614,662,"刘辘维","景园中学","统招","铁人","","",-1,0],[614,662,"吴琼","一中","统招","铁人","大庆石油学院","理",3,0],[614,662,"姜天航","三十三中","统招","铁人","哈尔滨师范大学","理",3,0],[614,662,"尤佳","五十一中","统招","铁人","中国政法","文",2,0],[614,662,"张驰","二十五中","统招","铁人","吉林大学","理",1,0],[614,662,"杨睿","八中","统招","铁人","山西医科大","理",3,0],[614,662,"王珊珊","十七中","统招","铁人","深圳大学","理",3,0],[614,662,"王硕","一中","统招","铁人","复旦大学","文",1,0],[614,662,"邹继思","一中","统招","铁人","","",-1,0],[614,662,"陈熹","十四中","统招","铁人","大庆石油学院","理",3,0],[614,662,"雷婕","二十四中","统招","铁人","黑龙江大学","文",3,0],[614,662,"高春瑾","四十九中","统招","铁人","大庆石油学院","理",3,0],[613,699,"乔丹","五十六中","统招","实验","东北财经大学","理",3,0],[613,699,"冷欣","十九中学","统招","实验","","",-1,0],[613,699,"刘悦","六十九中","统招","实验","山西财经大学","文",3,0],[613,699,"卢渴新","五十五中","统招","实验","中国人民公安大学","理",2,0],[613,699,"国维纳","五十一中","统招","实验","吉林大学","理",1,0],[613,699,"孙哲","十七中","统招","实验","大庆石油学院","理",3,0],[613,699,"张慧琳","四十二中","统招","实验","","",-1,0],[613,699,"李媛","五十五中","统招","实验","东北师范大学","理",2,0],[613,699,"李超鹏","六十九中","统招","实验","天津工业","理",3,0],[613,699,"田媛","三十六中","统招","实验","","",-1,0],[613,699,"马境","四十四中","统招","实验","","",-1,0],[613,699,"付琪","三十六中","统招","铁人","佳木斯大学","理",3,0],[613,699,"余江宁","二十八中","统招","铁人","安徽财经大学","文",3,0],[613,699,"向俊","十九中学","统招","铁人","中国石油大学","理",2,0],[613,699,"唐梦欣","十中","统招","铁人","中青院","文",3,0],[613,699,"孙浩田","十六中","统招","铁人","上海同济大学","理",1,0],[613,699,"张新月","三十中","统招","铁人","吉林农科院","文",3,0],[613,699,"杨忠橙","十九中学","统招","铁人","","",-1,0],[613,699,"温湛波","四十二中","统招","铁人","贵州大学","理",2,0],[613,699,"王博","四十六中","统招","铁人","中国石油大学","理",2,0],[613,699,"王明刚","四十六中","统招","铁人","黑龙江科技学院","文",3,0],[613,699,"王锦泽","二十八中","统招","铁人","","",-1,0],[613,699,"谷静","十七中","统招","铁人","华东师范","文",1,0],[613,699,"郭宇健","二十四中","统招","铁人","中国石油大学","理",2,0],[613,699,"郭长庆","二十三中","统招","铁人","大庆石油学院","理",3,0],[612,734,"何昕","三十六中","统招","实验","黑龙江大学 ／ 洛阳师范学院","文",-2,2],[612,734,"何邦昱","一中","统招","实验","南京理工大学","理",2,0],[612,734,"刘禹志","五十五中","统招","实验","","",-1,0],[612,734,"吴国强","六十九中","统招","实验","哈尔滨商业大学德强商务学院","理",3,0],[612,734,"姜喆","一中","统招","实验","","",-1,0],[612,734,"孙雷雨","六十九中","统招","实验","吉林大学","理",1,0],[612,734,"张有鑫","八中","统招","实验","广西工学院","理",3,0],[612,734,"李昆鹏","十四中","统招","实验","","",-1,0],[612,734,"李芊","六十九中","统招","实验","北京对外经贸易大学","文",2,0],[612,734,"杨柳","六十九中","统招","实验","东北林业大学","理",2,0],[612,734,"杨琦","三十七中","统招","实验","四川大学 ／ 华北电力大学(北京)","理",-2,2],[612,734,"梁媛","十三中","统招","实验","中国药科大学","理",2,0],[612,734,"邢珺","六十九中","统招","实验","西安电子科技大学","理",2,0],[612,734,"闫肃","六十九中","统招","实验","","",-1,0],[612,734,"陈闯","六十九中","统招","实验","四川大学","理",1,0],[612,734,"马也","六十九中","统招","实验","北京科技大学 ／ 哈尔滨工程大学","理",-2,2],[612,734,"黄吉喆","五十五中","统招","实验","北京工商大学","理",3,0],[612,734,"侯磊","景园中学","统招","铁人","黑龙江大学","理",3,0],[612,734,"刘佳","一中","统招","铁人","北京物资学院","理",3,0],[612,734,"刘永涛","景园中学","统招","铁人","","",-1,0],[612,734,"刘畅","五十六中","统招","铁人","西南财经大学 ／ 大庆石油学院 ／ 四川大学","文／理",-2,3],[612,734,"刘耕瑀","一中","统招","铁人","山东大学","理",1,0],[612,734,"周璐","景园中学","统招","铁人","山西财经大学","文",3,0],[612,734,"张涛","八中","统招","铁人","","",-1,0],[612,734,"德光宇","五十一中","统招","铁人","西北政法","文",3,0],[612,734,"杜思达","五十一中","统招","铁人","哈尔滨工业大学","理",1,0],[612,734,"杨舒茜","三十六中","统招","铁人","长江大学","文",3,0],[612,734,"狄宪沧","四十二中","统招","铁人","哈尔滨工程大学","理",2,0],[612,734,"王茄樵","十七中","统招","铁人","大庆石油学院","理",3,0],[612,734,"申俊泽","三十中","统招","铁人","","",-1,0],[612,734,"胡喆","十九中学","统招","铁人","","",-1,0],[612,734,"赫馨雨","四十二中","统招","铁人","","",-1,0],[612,734,"韩雪峰","六十一中","统招","铁人","山东建筑大学","理",3,0],[612,734,"黄硕","三十六中","统招","铁人","中国传媒","文",2,0],[611,773,"何昕","六十一中","统招","实验","黑龙江大学 ／ 洛阳师范学院","文",-2,2],[611,773,"孔祥杰","五十一中","统招","实验","","",-1,0],[611,773,"张涛","十九中学","统招","实验","天津工业 ／ 西安美术学院","文／理",-2,2],[611,773,"曲鑫","二十五中","统招","实验","天津大学","理",1,0],[611,773,"李想","四十六中","统招","实验","","",-1,0],[611,773,"林雪","二十三中","统招","实验","天津大学","理",1,0],[611,773,"柴琪","五十五中","统招","实验","吉林大学","理",1,0],[611,773,"王嘉琦","六十九中","统招","实验","佳木斯大学","理",3,0],[611,773,"祝沐","四十四中","统招","实验","中国农业大学","理",1,0],[611,773,"陈荟琳","二十八中","统招","实验","","",-1,0],[611,773,"马良子","五十五中","统招","实验","大庆石油学院","理",3,0],[611,773,"黄野","四十四中","统招","实验","大庆石油学院","理",3,0],[611,773,"刘欢","十中","统招","铁人","大连理工","理",1,0],[611,773,"单宝锋","四十六中","统招","铁人","辽宁工程技术大学","理",3,0],[611,773,"吕成","四十六中","统招","铁人","","",-1,0],[611,773,"吴丹","三十中","统招","铁人","中央财经","文",2,0],[611,773,"周楠楠","五十六中","统招","铁人","","",-1,0],[611,773,"安雨佳","四十六中","统招","铁人","中山大学","理",1,0],[611,773,"张寒","四十二中","统招","铁人","","",-1,0],[611,773,"张梦霄","四十二中","统招","铁人","","",-1,0],[611,773,"曹旭阳","十九中学","统招","铁人","武汉理工","理",3,0],[611,773,"曹阳","四十一中","统招","铁人","大庆石油学院","理",3,0],[611,773,"李若曦","景园中学","统招","铁人","北京科技大学","理",2,0],[611,773,"李颖","四十六中","统招","铁人","南京财经大学","文",3,0],[611,773,"杜冰洁","三十中","统招","铁人","华侨大学","文",3,0],[611,773,"林子潇","六十九中","统招","铁人","黑龙江大学","文",3,0],[611,773,"柳默潇","五十七中","统招","铁人","西南石油大学","理",3,0],[611,773,"王康","六十一中","统招","铁人","黑龙江大学","理",3,0],[611,773,"祝捷","五十六中","统招","铁人","东北农业大学","理",2,0],[611,773,"苏燃","三十六中","统招","铁人","黑龙江大学","文",3,0],[611,773,"苟臻凡","三十一中","统招","铁人","","",-1,0],[611,773,"许士琦","三十中","统招","铁人","哈尔滨师范大学呼兰分校","文",3,0],[611,773,"赵阳","林甸初中","统招","铁人","大连水产学院","理",3,0],[611,773,"邢诚","一中","统招","铁人","长江大学","理",3,0],[610,811,"关梦迪","四十三中","统招","实验","江西中医学院","理",3,0],[610,811,"冯健","肇源初中","统招","实验","上海交通大学","理",1,0],[610,811,"刁晓辰","六十九中","统招","实验","大连外国语学院 ／ 大连外国语学院","理",-2,2],[610,811,"吕琳","三十六中","统招","实验","北京物资学院","文",3,0],[610,811,"吴剑威","十三中","统招","实验","","",-1,0],[610,811,"唐明野","十六中","统招","实验","哈尔滨理工大学","理",3,0],[610,811,"姜美璐","四十二中","统招","实验","","",-1,0],[610,811,"孙博","六十九中","统招","实验","","",-1,0],[610,811,"庄梦博","一中","统招","实验","","",-1,0],[610,811,"张寒玉","十三中","统招","实验","","",-1,0],[610,811,"李亦也","一中","统招","实验","浙江传媒大学","理",3,0],[610,811,"李大鹏","三十六中","统招","实验","","",-1,0],[610,811,"李梦薇","五十七中","统招","实验","","",-1,0],[610,811,"李梦迪","五十七中","统招","实验","","",-1,0],[610,811,"李美鸥","四十四中","统招","实验","哈尔滨商业大学","文",3,0],[610,811,"杨光","三十一中","统招","实验","","",-1,0],[610,811,"解笑靥","四十四中","统招","实验","昆明医学院","理",3,0],[610,811,"赵淼","五十七中","统招","实验","北京航空航天大学","理",1,0],[610,811,"高润柠","一中","统招","实验","","",-1,0],[610,811,"刘冰砚","五十一中","统招","铁人","西北工业大学","理",1,0],[610,811,"勾云龙","二十七中","统招","铁人","大庆石油学院","理",3,0],[610,811,"孙超","二十四中","统招","铁人","","",-1,0],[610,811,"宁威","四十二中","统招","铁人","","",-1,0],[610,811,"宋子渐","十四中","统招","铁人","黑龙江科技学院","理",3,0],[610,811,"崔寒瑛","四十六中","统招","铁人","哈尔滨师范大学","文",3,0],[610,811,"张幸","三十七中","统招","铁人","黑龙江中医药大学","文",3,0],[610,811,"张曦宇","三十中","统招","铁人","中国农业大学","理",1,0],[610,811,"徐润凡","五十七中","统招","铁人","吉林大学","理",1,0],[610,811,"晏祎峤","二十八中","统招","铁人","广西大学","理",2,0],[610,811,"李娜","十一中","统招","铁人","大庆石油学院","理",3,0],[610,811,"杜宛霖","二十四中","统招","铁人","哈尔滨工业大学","理",1,0],[610,811,"杜宣","三十六中","统招","铁人","大庆石油学院","理",3,0],[610,811,"杨恩博","六十四中","统招","铁人","","",-1,0],[610,811,"杨金龙","一中","统招","铁人","哈尔滨工业大学","理",1,0],[610,811,"杨阳","四十六中","统招","铁人","大庆石油学院","理",3,0],[610,811,"汪乃崎","五十五中","统招","铁人","","",-1,0],[610,811,"王文婧","十四中","统招","铁人","南开大学","文",1,0],[610,811,"石洋","六十四中","统招","铁人","大庆石油学院","理",3,0],[610,811,"许飞","景园中学","统招","铁人","","",-1,0],[610,811,"金蕊","十九中学","统招","铁人","","",-1,0],[610,811,"韩立宝","林甸初中","统招","铁人","北方工业大学","理",3,0],[609,857,"关胤增","十四中","统招","实验","大连民族学院","理",3,0],[609,857,"刘小野","九中","统招","实验","","",-1,0],[609,857,"刘晓彤","六十九中","统招","实验","","",-1,0],[609,857,"宋鸽","六十九中","统招","实验","黑龙江大庆师范学院","理",3,0],[609,857,"尹冬平","五十五中","统招","实验","哈尔滨师范大学","理",3,0],[609,857,"崔恒善","五十七中","统招","实验","浙江大学","理",1,0],[609,857,"张曦蕊","三十中","统招","实验","辽宁交通大学","理",3,0],[609,857,"张馨丹","二十三中","统招","实验","","",-1,0],[609,857,"徐赫一","五十五中","统招","实验","哈尔滨师范大学","文",3,0],[609,857,"朱江","一中","统招","实验","","",-1,0],[609,857,"李响","五十一中","统招","实验","厦门大学 ／ 中国传媒大学 ／ 大庆石油学院","理",-2,3],[609,857,"李耀超","三十二中","统招","实验","华南理工大学","理",1,0],[609,857,"杨璐","五十五中","统招","实验","","",-1,0],[609,857,"樊昕晔","六十一中","统招","实验","北京化工大学","理",2,0],[609,857,"王莹","五十五中","统招","实验","黑龙江科技学院","理",3,0],[609,857,"肖杨","十九中学","统招","实验","","",-1,0],[609,857,"蔡滨鸿","六十一中","统招","实验","辽宁石油化工大学","理",3,0],[609,857,"陈璐","十九中学","统招","实验","","",-1,0],[609,857,"刘建佳","二十三中","统招","铁人","大庆石油学院","理",3,0],[609,857,"刘达飞","景园中学","统招","铁人","南开大学","文",1,0],[609,857,"华楠","十六中","统招","铁人","吉林大学","理",1,0],[609,857,"孙彦夫","四十六中","统招","铁人","烟台大学","文",3,0],[609,857,"梁逍","景园中学","统招","铁人","大庆石油学院","理",3,0],[609,857,"王一舒","景园中学","统招","铁人","","",-1,0],[609,857,"王书然","五十一中","统招","铁人","大连民族学院","文",3,0],[609,857,"王洋","五十一中","统招","铁人","云南民族大学","文",3,0],[609,857,"肖宇巍","四十六中","统招","铁人","太原工业学院","理",3,0],[609,857,"范钱璐","二十五中","统招","铁人","","",-1,0],[609,857,"邱晓天","五十一中","统招","铁人","东北电力","理",3,0],[609,857,"邵婧","十六中","统招","铁人","江南理工","文",3,0],[609,857,"郑月","二十五中","统招","铁人","中国石油大学","文",2,0],[608,895,"刘佳宁","五十一中","统招","实验","哈尔滨师范大学","文",3,0],[608,895,"刘洋","六十九中","统招","实验","黑龙江省东方学院","理",3,0],[608,895,"孙旭","十三中","统招","实验","","",-1,0],[608,895,"宋辉鹏","六十九中","统招","实验","","",-1,0],[608,895,"宗旭","六十九中","统招","实验","安徽农业大学","理",3,0],[608,895,"张博为","三十六中","统招","实验","长江大学","理",3,0],[608,895,"张弢","三十六中","统招","实验","东北农业大学","理",2,0],[608,895,"徐胜君","五十七中","统招","实验","电子科技大学","理",1,0],[608,895,"方正","一中","统招","实验","","",-1,0],[608,895,"曹振斌","杜蒙初中","统招","实验","大庆石油学院","理",3,0],[608,895,"朱天龙","林甸初中","统招","实验","滨州学院","理",3,0],[608,895,"李云涛","五十一中","统招","实验","哈尔滨工业大学","理",1,0],[608,895,"王冠","六十九中","统招","实验","","",-1,0],[608,895,"黄锦","五十一中","统招","实验","黑龙江大学","文",3,0],[608,895,"黄龙","一中","统招","实验","天津工业","理",3,0],[608,895,"刘晓楠","四十二中","统招","铁人","江南大学","文",2,0],[608,895,"刘雨果","四十六中","统招","铁人","","",-1,0],[608,895,"李奇","四十六中","统招","铁人","","",-1,0],[608,895,"杜雪","二十五中","统招","铁人","大庆石油学院","理",3,0],[608,895,"杨雪","四十六中","统招","铁人","东北林业大学","理",2,0],[608,895,"王一同","一中","统招","铁人","","",-1,0],[608,895,"王仁庶","五十一中","统招","铁人","大庆石油学院","理",3,0],[608,895,"王彬","三十六中","统招","铁人","大庆石油学院","理",3,0],[608,895,"王龙","二十四中","统招","铁人","大庆石油学院","理",3,0],[608,895,"申奇","四十六中","统招","铁人","","",-1,0],[608,895,"董蕊","五十一中","统招","铁人","西南财经","文",2,0],[608,895,"裴明月","三十中","统招","铁人","","",-1,0],[608,895,"贾秋实","十四中","统招","铁人","","",-1,0],[608,895,"赵卫辰","四十六中","统招","铁人","","",-1,0],[608,895,"赵琳","十中","统招","铁人","华东师范","文",1,0],[608,895,"韩洋","十中","统招","铁人","福州大学","理",2,0],[607,935,"侯瑞雪","十三中","统招","实验","","",-1,0],[607,935,"兰云娇","六十九中","统招","实验","南开大学","文",1,0],[607,935,"刘柏棋","六十九中","统招","实验","","",-1,0],[607,935,"崔雪涵","五十七中","统招","实验","大庆石油学院","理",3,0],[607,935,"张翀","二十三中","统招","实验","中北大学","理",3,0],[607,935,"李洋","三十七中","统招","实验","东北电力大学","文",3,0],[607,935,"李靖鑫","六十一中","统招","实验","华中科技大学","理",1,0],[607,935,"梁帆","五十二中","统招","实验","中国人民大学","理",1,0],[607,935,"郑昊","三十六中","统招","实验","西安电子科技大学","理",2,0],[607,935,"魏铭泉","四十中","统招","实验","中国地质大学","理",2,0],[607,935,"齐天泽","六十九中","统招","实验","东北林业大学","理",2,0],[607,935,"齐进","五十一中","统招","实验","宁波大学","文",3,0],[607,935,"于鑫","五十一中","统招","铁人","大庆石油学院 ／ 广西工学院","理",-2,2],[607,935,"侯倩","五十一中","统招","铁人","天津科技大学","理",3,0],[607,935,"公丕亮","二十三中","统招","铁人","山东大学","文",1,0],[607,935,"冯圣","十中","统招","铁人","大庆石油学院","文",3,0],[607,935,"刘畅","五十二中","统招","铁人","西南财经大学 ／ 大庆石油学院 ／ 四川大学","文／理",-2,3],[607,935,"吴晨宇","十三中","统招","铁人","大庆石油学院","理",3,0],[607,935,"姜洋","六十一中","统招","铁人","","",-1,0],[607,935,"张勇","三十七中","统招","铁人","","",-1,0],[607,935,"张奇","五十七中","统招","铁人","大庆石油学院","理",3,0],[607,935,"张石林","五十一中","统招","铁人","黑龙江工程学院","理",3,0],[607,935,"李卉","二十五中","统招","铁人","大庆石油学院","理",3,0],[607,935,"杨硕","四十中","统招","铁人","西南民族","理",3,0],[607,935,"沈江川","四十二中","统招","铁人","","",-1,0],[607,935,"王少雅","三十七中","统招","铁人","山西财经大学","理",3,0],[607,935,"王柯","八中","统招","铁人","","",-1,0],[607,935,"赵凌霄","四十六中","统招","铁人","黑龙江大学","文",3,0],[607,935,"韩越","三十六中","统招","铁人","","",-1,0],[607,935,"马克","三十六中","统招","铁人","大庆石油学院","理",3,0],[607,935,"魏巍","三十七中","统招","铁人","天津工业大学","理",3,0],[606,977,"傅博","六十九中","统招","实验","南京师范大学","文",2,0],[606,977,"冯伟星","八中","统招","实验","","",-1,0],[606,977,"卢胤延","五十一中","统招","实验","海南大学","文",2,0],[606,977,"孙海鑫","二十三中","统招","实验","天津商业大学 ／ 西南财经大学","理",-2,2],[606,977,"宋佳","五十一中","统招","实验","辽宁大学","文",2,0],[606,977,"康晓晨","五十五中","统招","实验","","",-1,0],[606,977,"李智群","五十一中","统招","实验","大庆石油学院","理",3,0],[606,977,"李磊","十三中","统招","实验","","",-1,0],[606,977,"李静涵","五十七中","统招","实验","北京邮电大学","文",2,0],[606,977,"杨茜","四十二中","统招","实验","齐齐哈尔大学","理",3,0],[606,977,"武文婷","五十五中","统招","实验","中国石油大学","理",2,0],[606,977,"沈超","一中","统招","实验","","",-1,0],[606,977,"王宇琦","六十一中","统招","实验","北京邮电大学","理",2,0],[606,977,"王通","六十九中","统招","实验","大庆石油学院 ／ 山东财政学院","理",-2,2],[606,977,"罗杰思","九中","统招","实验","华南理工大学","理",1,0],[606,977,"邵雪","十七中","统招","实验","湖南科技学院","文",3,0],[606,977,"郑亚楠","六十九中","统招","实验","","",-1,0],[606,977,"郭群","五十一中","统招","实验","泰山学院","文",3,0],[606,977,"隋吉喆","六十九中","统招","实验","黑龙江大学","文",3,0],[606,977,"高博","四十四中","统招","实验","","",-1,0],[605,1018,"万媛","六十九中","统招","实验","青岛农业大学","文",3,0],[605,1018,"仇宏宇","五十一中","统招","实验","","",-1,0],[605,1018,"付彤","六十一中","统招","实验","","",-1,0],[605,1018,"千红","三十六中","统招","实验","黑龙江大学","文",3,0],[605,1018,"姚楠","四十中","统招","实验","华侨大学","理",3,0],[605,1018,"姜思媛","六十一中","统招","实验","哈尔滨师范大学阿城分院","文",3,0],[605,1018,"崔安芳","三十六中","统招","实验","江南大学","文",2,0],[605,1018,"张明英","三十六中","统招","实验","天津商业大学","理",3,0],[605,1018,"朴莹","六十九中","统招","实验","哈尔滨医科大学","理",3,0],[605,1018,"李展","八中","统招","实验","西安交通大学","理",1,0],[605,1018,"李悦萌","六十九中","统招","实验","佳木斯大学","理",3,0],[605,1018,"王婷婷","五十一中","统招","实验","燕山大学","文",3,0],[605,1018,"王轩","五十一中","统招","实验","","",-1,0],[605,1018,"赵洋","六十九中","统招","实验","东北农业大学","理",2,0],[605,1018,"钟婧文","五十五中","统招","实验","","",-1,0],[605,1018,"雷一鸣","一中","统招","实验","华北电力大学(北京)","理",2,0],[605,1018,"高畅","六十九中","统招","实验","大连民族学院","文",3,0],[605,1018,"高雪晶","五十七中","统招","实验","","",-1,0],[604,1061,"姚昭","四十四中","统招","实验","哈尔滨医科大学","理",3,0],[604,1061,"曹欣瑀","五十一中","统招","实验","山东经济学院","文",3,0],[604,1061,"朱琳琳","五十一中","统招","实验","东北林业大学","理",2,0],[604,1061,"李咸文","五十六中","统招","实验","","",-1,0],[604,1061,"李金玉","十四中","统招","实验","","",-1,0],[604,1061,"杨宇","五十一中","统招","实验","大庆石油学院","理",3,0],[604,1061,"王冠霖","八中","统招","实验","","",-1,0],[604,1061,"王安琪","六十九中","统招","实验","华侨大学","文",3,0],[604,1061,"邢通","六十九中","统招","实验","哈尔滨工业大学","理",1,0],[604,1061,"邱子男","十九中学","统招","实验","","",-1,0],[604,1061,"高男","二十三中","统招","实验","","",-1,0],[604,1061,"鲁扬","八中","统招","实验","","",-1,0],[604,1061,"鲁鹤","二十三中","统招","实验","大庆石油学院","理",3,0],[603,1088,"侯代富","五十六中","统招","实验","大连大学","理",3,0],[603,1088,"宫赫","六十一中","统招","实验","佳木斯大学","理",3,0],[603,1088,"曹立阳","六十九中","统招","实验","","",-1,0],[603,1088,"李天俐","二十三中","统招","实验","","",-1,0],[603,1088,"沈鸿图","六十九中","统招","实验","大庆石油学院","理",3,0],[603,1088,"王从阳","四十四中","统招","实验","","",-1,0],[603,1088,"王泽宇","三十六中","统招","实验","大庆石油学院","理",3,0],[603,1088,"王玉婷","四十四中","统招","实验","","",-1,0],[603,1088,"解鑫","六十一中","统招","实验","哈尔滨理工大学远东学院","理",3,0],[603,1088,"许佳","二十三中","统招","实验","哈尔滨商业大学","理",3,0],[603,1088,"闫冲","林甸初中","统招","实验","","",-1,0],[603,1088,"高蓬劲","六十九中","统招","实验","东北师范大学","文",2,0]],"band":[["650 分以上",3,3,2,1,0,0,0,0,2,1,1,0,0,0,0,1],["640–649",22,18,2,9,5,2,0,4,17,12,2,7,2,1,2,3],["630–639",60,46,3,28,8,7,6,8,65,52,2,17,17,16,2,11],["620–629",110,81,0,38,13,30,7,22,102,69,3,23,19,24,5,28],["610–619",144,85,0,26,17,42,11,48,165,122,2,28,25,67,4,39],["600–609",108,70,0,10,16,44,3,35,48,32,0,4,5,23,2,14]],"elite":[["清华大学",23,6,0,[["魏征","实验","理",654,5,"十三中",1],["李梦然","实验","理",648,11,"六十九中",1],["张巳龙","实验","理",641,45,"六十九中",1],["朱丹墨","实验","理",632,162,"三十七中",1],["戴飞","铁人","文",628,237,"三中",1],["王鑫","铁人","理",623,354,"景园中学",1],["何心","实验","理",0,0,"",0],["刘阳威","实验","理",0,0,"",0],["孙嘉龙","实验","理",0,0,"",0],["张子昂","实验","理",0,0,"",0],["景然","实验","文",0,0,"",0],["杨云桥","实验","理",0,0,"",0],["杨春毓","实验","理",0,0,"",0],["田川","实验","理",0,0,"",0],["田思聪","实验","理",0,0,"",0],["祝晓庆","实验","理",0,0,"",0],["许海龙","实验","理",0,0,"",0],["赵维杰","实验","理",0,0,"",0],["顾本达","实验","理",0,0,"",0],["王春吉","铁人","理",0,0,"",0],["金航","铁人","理",0,0,"",0],["马士棋","铁人","理",0,0,"",0],["高喆","铁人","理",0,0,"",0]]],["北京大学",31,11,1,[["刘禹驰","铁人","理",657,2,"三十六中",1],["姜冰","实验","理",654,5,"五十一中",1],["王立言","铁人","理",643,32,"三十六中",1],["李美娇","铁人","理",642,40,"十九中学",1],["郑舒婷","实验","文",636,100,"六十一中",1],["宋木","铁人","理",636,100,"景园中学",1],["张朔","实验","理",631,176,"六十九中",1],["孙源","铁人","文",630,189,"二十四中",1],["董哲","铁人","文",620,442,"景园中学",1],["张剑","铁人","理",619,480,"五十一中",1],["张远洋","铁人","理",615,609,"四十六中",1],["付仑策","实验","理",0,0,"",0],["任潇","实验","理",0,0,"",0],["刘健","实验","理",0,0,"",0],["刘杨","实验","文",0,0,"",0],["刘语潇","实验","理",0,0,"",0],["张京","实验","文",0,0,"",0],["张莹","实验","文",0,0,"",2],["李智超","实验","理",0,0,"",0],["李润琪","实验","理",0,0,"",0],["杨丹凤","实验","理",0,0,"",0],["王琳","实验","文",0,0,"",0],["赵楠","实验","文",0,0,"",0],["韩冰","实验","理",0,0,"",0],["黄亚男","实验","理",0,0,"",0],["丁一博","铁人","文",0,0,"",0],["原卉","铁人","理",0,0,"",0],["朱泓","铁人","文",0,0,"",0],["林拓","铁人","理",0,0,"",0],["王凯昊","铁人","理",0,0,"",0],["郭锦","铁人","文",0,0,"",0]]],["北京大学医学部",3,0,1,[["王洋","实验","理",0,0,"",2],["董慧","实验","理",0,0,"",0],["辛灵","实验","理",0,0,"",0]]],["中国人民大学",21,10,0,[["朱琳","实验","理",637,89,"景园中学",1],["卢湦","实验","文",635,116,"六十九中",1],["于梦尧","实验","理",634,130,"一中",1],["刘开洋","实验","理",633,142,"一中",1],["王馨伟","实验","文",630,189,"一中",1],["侯迪","实验","理",621,407,"五十七中",1],["魏达琳","铁人","理",619,480,"五十中学",1],["李梦含","铁人","理",616,573,"四十六中",1],["徐靖凯","实验","理",615,609,"五十七中",1],["梁帆","实验","理",607,935,"五十二中",1],["刘嘉语","实验","文",0,0,"",0],["刘程程","实验","理",0,0,"",0],["恒欣","实验","文",0,0,"",0],["曹达非","实验","理",0,0,"",0],["王亚男","实验","文",0,0,"",0],["王海洋","实验","文",0,0,"",0],["金小辰","实验","理",0,0,"",0],["陈亚萍","实验","文",0,0,"",0],["齐凤颖","实验","理",0,0,"",0],["史秋爽","铁人","文",0,0,"",0],["张淇","铁人","理",0,0,"",0]]],["上海交通大学",18,7,0,[["王孟阳","铁人","理",646,16,"六十五中",1],["苑仁峰","实验","理",645,21,"四十二中",1],["毕野","铁人","理",639,61,"四十六中",1],["刘文佳","实验","理",634,130,"八中",1],["姜博曦","实验","理",630,189,"六十九中",1],["贾博文","铁人","理",620,442,"新华中学",1],["冯健","实验","理",610,811,"肇源初中",1],["刘哲源","实验","理",0,0,"",0],["吕建奇","实验","理",0,0,"",0],["张东阳","实验","理",0,0,"",0],["张新松","实验","理",0,0,"",0],["杨涛瑞","实验","理",0,0,"",0],["范琦","实验","理",0,0,"",0],["高士鑫","实验","理",0,0,"",0],["姚飞龙","铁人","理",0,0,"",0],["杨伟光","铁人","理",0,0,"",0],["王鹏飞","铁人","理",0,0,"",0],["苏安哲","铁人","理",0,0,"",0]]],["浙江大学",17,7,0,[["杨翘楚","铁人","理",638,73,"三十六中",1],["聂森","铁人","理",633,142,"五十一中",1],["程宇微","实验","理",631,176,"景园中学",1],["宋劲冲","实验","理",630,189,"五十五中",1],["于傲雪","铁人","理",630,189,"十九中学",1],["刘婧雅","铁人","文",627,248,"六十一中",1],["崔恒善","实验","理",609,857,"五十七中",1],["于沐姊","实验","文",0,0,"",0],["何川","实验","文",0,0,"",0],["唐扬扬","实验","理",0,0,"",0],["姜惜洋","实验","理",0,0,"",0],["徐伟","实验","理",0,0,"",0],["曹弘","实验","理",0,0,"",0],["朱明正","实验","理",0,0,"",0],["武健","实验","理",0,0,"",0],["石达菲","实验","文",0,0,"",0],["董岩峰","实验","理",0,0,"",0]]],["复旦大学",7,2,0,[["肖聪","实验","理",637,89,"一中",1],["王硕","铁人","文",614,662,"一中",1],["任云飞","实验","文",0,0,"",0],["刘松原","实验","理",0,0,"",0],["张文静","实验","文",0,0,"",0],["孙唤南","铁人","文",0,0,"",0],["李冰","铁人","理",0,0,"",0]]],["南京大学",3,1,0,[["姜姗","实验","文",632,162,"四十四中",1],["张天航","实验","理",0,0,"",0],["张润嘉","实验","文",0,0,"",0]]],["中国科学技术大学",4,1,0,[["迟妍玮","铁人","理",649,9,"三十六中",1],["孙永录","实验","理",0,0,"",0],["马月","实验","理",0,0,"",0],["许满佳","铁人","理",0,0,"",0]]],["香港大学",3,0,0,[["姚文奇","实验","理",0,0,"",0],["徐小泽","铁人","文",0,0,"",0],["陈美晨","铁人","理",0,0,"",0]]],["哈尔滨工业大学",133,56,5,[["崔潇","实验","理",655,4,"五十一中",1],["黄鹤","铁人","理",649,9,"六十一中",1],["付磊","铁人","理",645,21,"四十六中",1],["姜含宇","铁人","理",644,27,"十六中",1],["刘赫男","铁人","理",643,32,"八中",1],["赵扬","实验","理",642,40,"六十一中",1],["徐宁","实验","理",641,45,"十三中",1],["赵阳洋","实验","理",640,52,"二十七中",1],["刘凤娇","实验","理",639,61,"一中",1],["张梦然","铁人","理",637,89,"二十五中",1],["梁骁","实验","理",636,100,"一中",1],["孙悦","铁人","理",636,100,"二十八中",1],["李婧","铁人","理",634,130,"二十五中",1],["陆原鹏","铁人","理",632,162,"三十六中",1],["于海良","实验","理",630,189,"三十三中",1],["张兆鑫","实验","理",630,189,"四十四中",1],["王继伟","实验","理",630,189,"六十九中",1],["胡寅龙","铁人","理",630,189,"三十六中",1],["曹喻","实验","理",629,220,"六十九中",1],["闫志","实验","理",629,220,"六十九中",1],["李龙鸣","实验","理",625,291,"四十三中",1],["程思杰","实验","文",625,291,"喇镇中学",1],["于鑫垚","铁人","理",625,291,"十九中学",1],["王庆龙","铁人","理",625,291,"四十二中",1],["刘昊","实验","理",624,329,"二十八中",1],["刘翯","实验","理",624,329,"六十一中",1],["邵森","实验","理",624,329,"六十九中",1],["李楠","铁人","理",623,354,"十四中",1],["韩东博","铁人","理",623,354,"一中",1],["姚文宇","实验","理",622,381,"六十九中",1],["武发明","实验","理",622,381,"六十九中",1],["邵轶群","实验","理",622,381,"一中",1],["史月","实验","理",621,407,"肇源初中",1],["孙超","实验","理",621,407,"林甸初中",1],["张奇夫","实验","理",621,407,"林甸初中",1],["程然","实验","理",621,407,"杜蒙初中",1],["严禹明","铁人","理",621,407,"五十五中",1],["张想","铁人","理",621,407,"五十一中",1],["王天舒","实验","理",620,442,"五十五中",1],["陈曦","铁人","理",620,442,"五十一中",1],["唐旭","铁人","理",619,480,"三十六中",1],["孔醍","实验","理",618,516,"六十九中",1],["李唯源","实验","理",618,516,"祥阁学校",1],["解潇伊","铁人","理",618,516,"十中",1],["李跃甲","实验","理",617,542,"六十一中",1],["肖丽丽","实验","理",617,542,"二十八中",1],["刘雷","铁人","理",616,573,"四十九中",1],["李雨蒙","铁人","理",616,573,"四十六中",1],["袁瑞聪","铁人","理",616,573,"四十中",1],["赵冰欣","铁人","理",616,573,"六十一中",1],["李丰","实验","理",614,662,"四十七中",1],["杜思达","铁人","理",612,734,"五十一中",1],["杜宛霖","铁人","理",610,811,"二十四中",1],["杨金龙","铁人","理",610,811,"一中",1],["李云涛","实验","理",608,895,"五十一中",1],["邢通","实验","理",604,1061,"六十九中",1],["于友兰","实验","理",0,0,"",0],["于纪明","实验","理",0,0,"",0],["于飞","实验","理",0,0,"",0],["任德柱","实验","理",0,0,"",0],["佟秋璇","实验","理",0,0,"",0],["冮明伯","实验","理",0,0,"",0],["刘子述","实验","理",0,0,"",0],["刘思奇","实验","理",0,0,"",0],["刘福贺","实验","理",0,0,"",0],["刘鹏飞","实验","理",0,0,"",0],["吴元岭","实验","理",0,0,"",0],["夏野","实验","理",0,0,"",0],["孙景志","实验","理",0,0,"",0],["宫佳鹏","实验","理",0,0,"",0],["崔兆宇","实验","理",0,0,"",0],["张华汉","实验","理",0,0,"",0],["张德进","实验","理",0,0,"",0],["张旭","实验","理",0,0,"",0],["张智勇","实验","理",0,0,"",0],["张颉健","实验","理",0,0,"",0],["徐适","实验","理",0,0,"",0],["曲德超","实验","理",0,0,"",0],["李洪川","实验","理",0,0,"",0],["林之恒","实验","理",0,0,"",0],["王哲","实验","理",0,0,"",2],["王圣雪","实验","文",0,0,"",0],["王帅","实验","理",0,0,"",2],["王希","实验","理",0,0,"",0],["王晓鲁","实验","理",0,0,"",0],["王睿","实验","理",0,0,"",0],["王达鹏","实验","理",0,0,"",0],["田浩","实验","理",0,0,"",0],["胡瑞松","实验","理",0,0,"",0],["苏杨","实验","文",0,0,"",0],["莫丽","实验","理",0,0,"",0],["葛洋","实验","理",0,0,"",0],["贾丽君","实验","理",0,0,"",0],["赵天旭","实验","理",0,0,"",0],["邹姗姗","实验","理",0,0,"",0],["金泳利","实验","理",0,0,"",0],["陈石","实验","理",0,0,"",0],["韩学斌","实验","理",0,0,"",0],["韩西达","实验","理",0,0,"",0],["丁志远","铁人","理",0,0,"",0],["刘维","铁人","理",0,0,"",0],["刘贺凯","铁人","理",0,0,"",0],["初炳旭","铁人","理",0,0,"",0],["周一恒","铁人","理",0,0,"",0],["姚宇环","铁人","理",0,0,"",0],["孙志超","铁人","理",0,0,"",0],["宋雪","铁人","理",0,0,"",0],["封云","铁人","理",0,0,"",0],["张云龙","铁人","理",0,0,"",2],["张微微","铁人","理",0,0,"",0],["张雪","铁人","理",0,0,"",0],["戴威","铁人","理",0,0,"",0],["提纯利","铁人","理",0,0,"",0],["曹俊章","铁人","理",0,0,"",0],["朱绍泽","铁人","理",0,0,"",0],["李群龙","铁人","理",0,0,"",0],["杜进宇","铁人","理",0,0,"",0],["林泽宇","铁人","理",0,0,"",0],["潘峰","铁人","理",0,0,"",0],["王帅","铁人","理",0,0,"",0],["王昊","铁人","理",0,0,"",0],["王石龙","铁人","理",0,0,"",0],["蒋明","铁人","理",0,0,"",0],["许展铭","铁人","理",0,0,"",0],["赵亮","铁人","理",0,0,"",0],["赵建北","铁人","理",0,0,"",0],["郭骁","铁人","理",0,0,"",0],["金银华","铁人","理",0,0,"",0],["陈少博","铁人","理",0,0,"",0],["陈晨","铁人","理",0,0,"",2],["马夕光","铁人","理",0,0,"",0],["马新雨","铁人","理",0,0,"",0],["马跃","铁人","理",0,0,"",2]]]],"sy":[447,7,112,59,125,27,117],"tr":[399,10,79,68,131,15,96],"syg":1403,"trg":821};
+const O={"hb":[{"band":"680 分以上","total":73,"urban":29,"rows":[["大庆实验中学",39,9,10,20],["大庆铁人中学",21,9,7,5],["大庆一中",10,10,0,0],["大庆四中",2,null,null,null],["大庆中学",1,null,null,null]]},{"band":"690 分以上","total":27,"urban":11,"rows":[["大庆实验中学",15,3,3,9],["大庆铁人中学",6,3,2,1],["大庆一中",5,5,0,0],["大庆四中",1,null,null,null]]}],"y03":[["中考全市前 10 名",1,0,8],["中考全市前 20 名",2,0,16],["中考全市前 30 名",5,1,21],["中考全市前 40 名",7,6,27],["中考全市前 50 名",8,6,33],["中考 480 分以上",140,72,342]],"zk04":[[650,8,2,3,3],[645,26,10,8,8],[640,60,19,25,16],[635,126,44,53,31],[630,215,84,85,45],[625,320,122,131,65],[620,472,186,195,82],[615,650,263,264,111],[610,844,351,339,135]],"yz":{"li":149,"wen":35,"lizf":92,"libu":5,"lizs":52,"wenzf":24,"wenbu":11}};
+const E={"zk":[["2003 · 中考全市前 50 名","8 人","6 人","33 人"],["2003 · 中考 480 分以上","140 人","72 人","342 人"],["2004 · 中考 630 分以上","84 人","45 人","85 人"],["2004 · 统招线 / 录取","607 分 / 399 人","583 分 / 333 人","603 分 / 447 人"],["2005 · 中考前 20 名","8 人","—","7 人"],["2005 · 中考前 100 名","39 人","—","53 人"],["2005 · 中考前 200 名","72 人","—","102 人"]],"sp":[{"y":"2007 年高考","sub":"2004 年中考入学 · 理科 680 分以上","tot":73,"rows":[["大庆实验中学",39,9,10,20],["大庆铁人中学",21,9,7,5],["大庆一中",10,10,0,0]]},{"y":"2008 年高考","sub":"2005 年中考入学 · 理科 675 分以上","tot":null,"rows":[["大庆实验中学",26,4,null,null],["大庆铁人中学",null,17,null,null],["大庆一中",null,10,null,null]]}],"cb":[["2004",29,null,null,58],["2005",32,23,null,53],["2006",26,null,44,null],["2007",20,null,37,null],["2008",28,11,23,null]]};
+const Q={"ser":[[2002,1999,109,13,2,7,4,0],[2003,2000,106,21,2,11,6,2],[2004,2001,116,20,1,10,8,1],[2005,2002,115,24,5,14,4,1],[2006,2003,124,43,25,13,3,2],[2007,2004,124,37,16,10,5,6],[2008,2005,111,26,8,8,5,5]],"d8":[["于心宇","大庆一中","电机系","不在2004名册"],["季凡博","大庆一中","理学院","不在2004名册"],["杜金钊","大庆一中","经管学院","不在2004名册"],["谭思昊","大庆一中","理学院","不在2004名册"],["高寒","大庆一中","电子系","唯一匹配"],["王超","大庆东风中学","软件学院","同名9条"],["黄成杰","大庆中学","材料系","不在2004名册"],["潘春雨","大庆四中","航院","不在2004名册"],["于海宁","大庆实验中学","材料系","不在2004名册"],["李世邈","大庆实验中学","自动化系","不在2004名册"],["杨奇函","大庆实验中学","经管学院","不在2004名册"],["梁立昕","大庆实验中学","水利系","不在2004名册"],["樊新贺","大庆实验中学","水利系","不在2004名册"],["石天","大庆实验中学","水利系","不在2004名册"],["赵同煜","大庆实验中学","电子系","不在2004名册"],["闫盛枫","大庆实验中学","土木系","不在2004名册"],["胡子琪","大庆市二十三中学","美术学院","不在2004名册"],["武真旗","大庆石油高中","美术学院","不在2004名册"],["付雷","大庆铁人中学","电机系","不在2004名册"],["刘通","大庆铁人中学","计算机系","不在2004名册"],["周宇男","大庆铁人中学","电子系","不在2004名册"],["房宇巍","大庆铁人中学","建筑系","不在2004名册"],["李晴","大庆铁人中学","环境系","不在2004名册"],["王天宇","大庆铁人中学","精仪系","不在2004名册"],["郭骁","大庆铁人中学","电子系","不在2004名册"],["韩晨曦","大庆铁人中学","电子系","不在2004名册"]]};
+</script>
+<script>
+(function(){
+const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>[...(r||document).querySelectorAll(s)];
+const NS='http://www.w3.org/2000/svg';
+const el=(n,a,t)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);
+  if(t!=null)e.textContent=t;return e;};
+const fmt=n=>n.toLocaleString('en-US');
+const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const SER=['示范·统招','示范·自费','普通·统招','普通·自费'];
+const SVAR=['--petrol','--petrol-2','--amber','--amber-2'];
+const ov=D.ov, HI=D.highs, JU=D.juniors;
+
+/* ---------- masthead stats ---------- */
+$('#stats').innerHTML=[
+  [fmt(D.total),'录取总人数'],[ov.nhs,'录取高中'],[ov.njh,'输送初中'],
+  [ov.mn+'–'+ov.mx,'分数区间'],[ov.mean,'平均分'],[ov.med,'中位数'],
+  [fmt(ov.keyn),'省示范录取']
+].map(([a,b])=>`<div class="stat"><b>${a}</b><span>${b}</span></div>`).join('');
+
+/* ---------- tooltip ---------- */
+const tip=$('#tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.opacity='1';moveTip(e);}
+function moveTip(e){
+  const r=tip.getBoundingClientRect();
+  let x=e.clientX+14, y=e.clientY-r.height-12;
+  if(x+r.width>innerWidth-8)x=e.clientX-r.width-14;
+  if(y<8)y=e.clientY+18;
+  tip.style.left=x+'px';tip.style.top=y+'px';
+}
+function hideTip(){tip.style.opacity='0';}
+
+/* ---------- well log ---------- */
+const CUTS=[
+  {s:663,t:'全市最高分',sub:''},
+  {s:607,t:'铁人中学',sub:'统招线'},
+  {s:603,t:'实验中学',sub:'统招线'},
+  {s:583,t:'大庆一中',sub:'统招线'},
+  {s:574,t:'大庆中学·四中·石油高中·东风',ts:'大庆中学等 4 校',sub:'统招线'},
+  {s:480,t:'省示范自费 / 市重点统招下限',ts:'市重点统招下限',sub:''}
+];
+let hidden=new Set();
+function drawLog(){
+  const box=$('#logchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,520), rowH=9, pad=22;
+  const bins=D.hist, H=pad*2+bins.length*rowH;
+  const gL=46, gR=W>760?226:186, x0=gL, x1=W-gR;   // right gutter holds the cutoff labels
+  const maxRow=Math.max(...bins.map(b=>b[1]+b[2]+b[3]+b[4]));
+  const sx=v=>x0+v/maxRow*(x1-x0);
+  const y=s=>pad+((665-s)/5)*rowH;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2004年大庆中考录取分数分层剖面图'});
+  const cols=SVAR.map(cssv);
+
+  // vertical grid
+  const step=maxRow>150?50:25;
+  for(let v=step;v<=maxRow;v+=step){
+    svg.appendChild(el('line',{x1:sx(v),x2:sx(v),y1:pad-6,y2:H-pad+2,stroke:cssv('--hair'),'stroke-width':1}));
+    svg.appendChild(el('text',{x:sx(v),y:pad-10,'text-anchor':'middle','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},v));
+  }
+  svg.appendChild(el('line',{x1:x0,x2:x0,y1:pad-6,y2:H-pad+2,stroke:cssv('--rule'),'stroke-width':1}));
+
+  // score axis labels every 20
+  for(let s=300;s<=660;s+=20){
+    svg.appendChild(el('text',{x:gL-9,y:y(s)+3.2,'text-anchor':'end','font-size':10.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},s));
+  }
+
+  // the void band 425-479
+  svg.appendChild(el('rect',{x:x0,y:y(480),width:x1-x0,height:y(425)-y(480),
+    fill:cssv('--void'),opacity:.14}));
+  svg.appendChild(el('text',{x:x0+10,y:(y(480)+y(425))/2+3,'font-size':11,fill:cssv('--ink-3'),
+    'font-family':'"IBM Plex Mono",monospace'},'425–479 · 全市仅 32 人'));
+
+  // bars
+  bins.forEach((b,i)=>{
+    const top=y(b[0]+5), h=rowH-1.6;
+    let acc=0;
+    for(let k=0;k<4;k++){
+      const v=b[k+1]; if(!v)continue;
+      const r=el('rect',{x:sx(acc),y:top,width:Math.max(sx(acc+v)-sx(acc),.7),height:h,
+        fill:cols[k],class:'bar'+(hidden.has(k)?' dim':'')});
+      r.dataset.k=k; svg.appendChild(r); acc+=v;
+    }
+    const tot=b[1]+b[2]+b[3]+b[4];
+    const hit=el('rect',{x:0,y:top-.8,width:W,height:rowH,fill:'transparent'});
+    hit.style.cursor='crosshair';
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${b[0]}–${b[0]+4} 分</div>`+
+      `<div class="tr"><span>该分段录取</span><span>${tot} 人</span></div>`+
+      SER.map((n,k)=>b[k+1]?`<div class="tr"><span>${n}</span><span>${b[k+1]}</span></div>`:'').join('')+
+      `<div class="tr" style="opacity:.7;margin-top:3px"><span>${b[0]} 分以上</span><span>${fmt(D.cum[b[0]-300])} 人</span></div>`));
+    hit.addEventListener('mousemove',moveTip);
+    hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+
+  // cutoff annotations
+  let prev=-1e3;
+  CUTS.forEach(c=>{
+    const yy=y(c.s)+.5;
+    const ly=Math.max(yy, prev+26); prev=ly;   // stack labels so 607/603 and 583/574 stay legible
+    svg.appendChild(el('line',{x1:x0,x2:x1+8,y1:yy,y2:yy,stroke:cssv('--seal'),
+      'stroke-width':1,'stroke-dasharray':'3 3',opacity:.85}));
+    if(ly-yy>1)svg.appendChild(el('polyline',{points:`${x1+8},${yy} ${x1+12},${yy} ${x1+12},${ly-4} ${x1+16},${ly-4}`,
+      fill:'none',stroke:cssv('--seal'),'stroke-width':1,opacity:.5}));
+    svg.appendChild(el('text',{x:x1+18,y:ly-1,'font-size':10.5,fill:cssv('--seal'),
+      'font-family':'"IBM Plex Mono",monospace','font-weight':600},c.s));
+    svg.appendChild(el('text',{x:x1+18,y:ly+10,'font-size':10.5,fill:cssv('--ink-2')},
+      gR<200&&c.ts?c.ts:c.t));
+  });
+  box.appendChild(svg);
+}
+
+/* ---------- legend ---------- */
+function drawLegend(){
+  const tot=[0,0,0,0];
+  D.hist.forEach(b=>{for(let k=0;k<4;k++)tot[k]+=b[k+1];});
+  $('#legend').innerHTML=SER.map((n,k)=>
+    `<button class="lgi" data-k="${k}" aria-pressed="false">
+      <span class="sw" style="background:var(${SVAR[k]})"></span><span>${n}</span>
+      <span class="n">${fmt(tot[k])}</span></button>`).join('');
+  $$('#legend .lgi').forEach(b=>b.addEventListener('click',()=>{
+    const k=+b.dataset.k;
+    if(hidden.has(k)){hidden.delete(k);b.setAttribute('aria-pressed','false');}
+    else{hidden.add(k);b.setAttribute('aria-pressed','true');}
+    $$('#logchart .bar').forEach(r=>r.classList.toggle('dim',hidden.has(+r.dataset.k)));
+  }));
+}
+
+/* ---------- lookup ---------- */
+function lookup(s){
+  s=Math.max(300,Math.min(663,s|0));
+  const ge=D.cum[s-300];              // >= s
+  const gt=s<663?D.cum[s-300+1]:0;    // > s
+  $('#lkrank').textContent=fmt(gt+1);
+  $('#lkpct').textContent=(100*(D.total-ge)/D.total).toFixed(1)+'%';
+  $('#lkabove').textContent=fmt(gt);
+  const tz=HI.filter(h=>h[10]!=null&&h[10]<=s).sort((a,b)=>b[10]-a[10]);
+  const zf=HI.filter(h=>h[11]!=null&&h[11]<=s&&!(h[10]!=null&&h[10]<=s)).sort((a,b)=>b[11]-a[11]);
+  $('#lktz').innerHTML=tz.length?tz.map(h=>
+    `<span class="chip${h[13]?' k':''}">${h[0]} <span class="mono">${h[10]}</span></span>`).join('')
+    :'<span class="none">没有一所高中的统招线在此分之下。</span>';
+  $('#lkzf').innerHTML=zf.length?zf.map(h=>
+    `<span class="chip z">${h[0]} <span class="mono">${h[11]}</span></span>`).join('')
+    :'<span class="none">无。</span>';
+}
+const sin=$('#sin'), srng=$('#srng');
+
+
+/* ---------- ladder ---------- */
+function drawLadder(){
+  const box=$('#ladder'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-12,600), rowH=24, padT=26, padB=26;
+  const gL=W>720?112:96, gR=54;
+  const H=padT+padB+HI.length*rowH;
+  const lo=290,hi=672, x0=gL, x1=W-gR;
+  const sx=v=>x0+(v-lo)/(hi-lo)*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'各高中录取分数跨度'});
+  for(let s=300;s<=650;s+=50){
+    svg.appendChild(el('line',{x1:sx(s),x2:sx(s),y1:padT-8,y2:H-padB+4,stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:sx(s),y:padT-12,'text-anchor':'middle','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},s));
+  }
+  HI.forEach((h,i)=>{
+    const yc=padT+i*rowH+rowH/2, c=h[13]?cssv('--petrol'):cssv('--amber');
+    svg.appendChild(el('text',{x:gL-10,y:yc+4,'text-anchor':'end','font-size':12,
+      fill:cssv('--ink'),'font-weight':h[13]?600:400},h[0]));
+    svg.appendChild(el('line',{x1:sx(h[5]),x2:sx(h[4]),y1:yc,y2:yc,stroke:c,'stroke-width':1,opacity:.5}));
+    svg.appendChild(el('line',{x1:sx(h[5]),x2:sx(h[5]),y1:yc-4,y2:yc+4,stroke:c,'stroke-width':1,opacity:.5}));
+    svg.appendChild(el('line',{x1:sx(h[4]),x2:sx(h[4]),y1:yc-4,y2:yc+4,stroke:c,'stroke-width':1,opacity:.5}));
+    svg.appendChild(el('rect',{x:sx(h[6]),y:yc-6.5,width:Math.max(sx(h[7])-sx(h[6]),1.5),height:13,
+      fill:c,opacity:.28,rx:1.5}));
+    svg.appendChild(el('line',{x1:sx(h[3]),x2:sx(h[3]),y1:yc-7.5,y2:yc+7.5,stroke:c,'stroke-width':2}));
+    if(h[10]!=null)svg.appendChild(el('circle',{cx:sx(h[10]),cy:yc,r:3.2,fill:cssv('--seal')}));
+    svg.appendChild(el('text',{x:W-gR+10,y:yc+4,'font-size':10.5,fill:cssv('--ink-3'),
+      'font-family':'"IBM Plex Mono",monospace'},h[1]));
+    const hit=el('rect',{x:0,y:yc-rowH/2,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${h[0]}</div>`+
+      `<div class="tr"><span>录取</span><span>${h[1]} 人</span></div>`+
+      `<div class="tr"><span>最高 / 最低</span><span>${h[4]} / ${h[5]}</span></div>`+
+      `<div class="tr"><span>中位数</span><span>${h[3]}</span></div>`+
+      `<div class="tr"><span>中间 50%</span><span>${h[6]}–${h[7]}</span></div>`+
+      (h[10]!=null?`<div class="tr"><span>统招线</span><span>${h[10]}</span></div>`:'')+
+      (h[9]?`<div class="tr"><span>自费</span><span>${h[9]} 人 · 最低 ${h[11]}</span></div>`:'')));
+    hit.addEventListener('mousemove',moveTip);
+    hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('text',{x:x0,y:H-6,'font-size':10.5,fill:cssv('--ink-3')},
+    '● 统招线　▮ 中间 50%　│ 中位数　右侧数字为录取人数'));
+  box.appendChild(svg);
+}
+
+/* ---------- tables ---------- */
+function sortable(tbl,rows,render,defK,defAsc){
+  let k=defK,asc=!!defAsc;
+  const ths=$$('th.s',tbl);
+  function apply(){
+    ths.forEach(t=>t.removeAttribute('aria-sort'));
+    const th=ths.find(t=>+t.dataset.k===k);
+    if(th)th.setAttribute('aria-sort',asc?'ascending':'descending');
+    const d=[...rows()].sort((a,b)=>{
+      let x=a[k],y=b[k];
+      if(typeof x==='string')return asc?x.localeCompare(y,'zh'):y.localeCompare(x,'zh');
+      return asc?x-y:y-x;
+    });
+    render(d);
+  }
+  ths.forEach(t=>t.addEventListener('click',()=>{
+    const nk=+t.dataset.k;
+    if(nk===k)asc=!asc; else{k=nk;asc=false;}
+    apply();
+  }));
+  return apply;
+}
+
+const thigh=$('#thigh'), thb=$('tbody',thigh);
+sortable(thigh,()=>HI,d=>{
+  thb.innerHTML=d.map(h=>`<tr>
+    <td class="l sch"><span class="dot${h[13]?'':' o'}"></span>${h[0]}</td>
+    <td class="num">${h[1]}</td>
+    <td class="num">${h[10]==null?'—':h[10]}</td>
+    <td class="num">${h[11]==null?'—':h[11]}</td>
+    <td class="num">${h[4]}</td><td class="num">${h[2]}</td><td class="num">${h[3]}</td>
+    <td class="num">${h[9]?h[9]+' <span style="color:var(--ink-3)">('+(100*h[9]/h[1]).toFixed(0)+'%)</span>':'—'}</td>
+    <td class="num">${(100*h[12]/h[1]).toFixed(0)}%</td></tr>`).join('');
+},2)();
+
+const fee=HI.filter(h=>h[9]>0&&h[10]!=null).sort((a,b)=>(b[10]-b[11])-(a[10]-a[11]));
+$('#tfee tbody').innerHTML=fee.map(h=>`<tr>
+  <td class="l sch"><span class="dot${h[13]?'':' o'}"></span>${h[0]}</td>
+  <td class="num">${h[10]}</td><td class="num">${h[11]}</td>
+  <td class="num" style="color:var(--seal);font-weight:600">−${h[10]-h[11]}</td>
+  <td class="num">${h[9]}</td><td class="num">${(100*h[9]/h[1]).toFixed(0)}%</td></tr>`).join('');
+
+const tjun=$('#tjun'), tjb=$('tbody',tjun), jq=$('#jq');
+const maxRate=Math.max(...JU.map(j=>j[3]));
+let filt=JU;
+const renderJ=d=>{
+  tjb.innerHTML=d.map(j=>`<tr>
+    <td class="l sch">${j[0]}</td><td class="num">${j[1]}</td>
+    <td class="num">${j[2]}</td><td class="num">${j[3]}%</td>
+    <td class="l"><span class="mini"><i style="width:${(j[3]/maxRate*100).toFixed(1)}%"></i></span></td>
+    <td class="num">${j[4]}</td><td class="num">${j[5]}</td><td class="num">${j[6]||'—'}</td>
+    <td class="l dest" title="${j[8]}">${j[8]}</td></tr>`).join('');
+  $('#jcount').textContent=`显示 ${d.length} / ${JU.length} 所初中`;
+};
+const applyJ=sortable(tjun,()=>filt,renderJ,2);
+jq.addEventListener('input',()=>{
+  const q=jq.value.trim();
+  filt=q?JU.filter(j=>j[0].includes(q)):JU;
+  applyJ();
+});
+applyJ();
+
+
+/* ================= PART II · 2007 ================= */
+const UCOL=u=>u==='清华大学'?cssv('--petrol'):u==='北京大学'?cssv('--seal'):cssv('--amber');
+
+/* ---------- cohort funnel ---------- */
+const FUN=[
+  ['2004 年中考录取',5760,'走进 22 所高中',1],
+  ['2007 普本上线',6361,'全市 · 含四县与复读生',0],
+  ['2007 重本上线',2470,'全市',0],
+  ['2007 高考 600 分以上',1692,'全市',0],
+  ['2007 考入清华北大',53,'全市 · 校方口径，未含保送',0],
+  ['大庆籍清华新生',37,'清华全国新生名单，完整',0],
+  ['估计清北合计',74,'清华 × 2，见「把北大算进来」',0]
+];
+function drawFunnel(){
+  const box=$('#funnel'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-4,520), rowH=46, pad=22, H=pad*2+FUN.length*rowH;
+  const gL=W>720?188:150, x0=gL, x1=W-96;
+  const mx=Math.max(...FUN.map(f=>f[1])), sx=v=>x0+v/mx*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2004 年中考录取与 2007 年高考结果对照'});
+  FUN.forEach((f,i)=>{
+    const yc=pad+i*rowH+rowH/2, ref=f[3];
+    const c=ref?cssv('--ink-3'):i>=4?cssv('--seal'):cssv('--petrol');
+    svg.appendChild(el('rect',{x:x0,y:yc-11,width:Math.max(sx(f[1])-x0,2),height:22,
+      fill:c,opacity:ref?.22:.82,rx:2}));
+    if(ref)svg.appendChild(el('rect',{x:x0,y:yc-11,width:Math.max(sx(f[1])-x0,2),height:22,
+      fill:'none',stroke:cssv('--ink-3'),'stroke-dasharray':'3 3'}));
+    svg.appendChild(el('text',{x:gL-12,y:yc-1,'text-anchor':'end','font-size':12.5,
+      fill:cssv('--ink'),'font-weight':500},f[0]));
+    svg.appendChild(el('text',{x:gL-12,y:yc+13,'text-anchor':'end','font-size':10.5,
+      fill:cssv('--ink-3')},f[2]));
+    svg.appendChild(el('text',{x:Math.max(sx(f[1])+9,x0+9),y:yc+4,'font-size':13,'font-weight':600,
+      fill:cssv('--ink'),'font-family':'"IBM Plex Mono",monospace'},fmt(f[1])));
+  });
+  // the 5,760 reference line carried down the chart
+  svg.appendChild(el('line',{x1:sx(5760),x2:sx(5760),y1:pad+8,y2:H-pad,stroke:cssv('--ink-3'),
+    'stroke-width':1,'stroke-dasharray':'2 4',opacity:.6}));
+  box.appendChild(svg);
+}
+
+/* ---------- rank band → Tsinghua ---------- */
+/* ---------- traced strip plot ---------- */
+function drawStrip(){
+  const box=$('#strip'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-4,540), H=200, pad=30;
+  const x0=54, x1=W-24;
+  const lo=590,hi=665, sx=v=>x0+(v-lo)/(hi-lo)*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'可追溯学生的中考成绩分布'});
+  for(let s=590;s<=660;s+=10){
+    svg.appendChild(el('line',{x1:sx(s),x2:sx(s),y1:pad-10,y2:H-46,stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:sx(s),y:H-30,'text-anchor':'middle','font-size':10,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},s));
+  }
+  // dodge overlapping points into rows
+  const used=[];
+  const pts=G.traced.slice().sort((a,b)=>b[1]-a[1]);
+  pts.forEach(p=>{
+    const cx=sx(p[1]); let row=0;
+    while(used.some(u=>u.row===row&&Math.abs(u.cx-cx)<15))row++;
+    used.push({row,cx});
+    const cy=H-58-row*19;
+    const bs=p[5]==='保送';
+    svg.appendChild(el('circle',{cx,cy,r:5.4,fill:bs?'none':UCOL(p[4]),
+      stroke:UCOL(p[4]),'stroke-width':bs?1.8:0}));
+    const hit=el('circle',{cx,cy,r:11,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${p[8]} · 中考第 ${fmt(p[0])} 名 · ${p[1]} 分</div>`+
+      `<div class="tr"><span>初中</span><span>${p[2]}</span></div>`+
+      `<div class="tr"><span>高中</span><span>${p[3]}</span></div>`+
+      `<div class="tr"><span>2007</span><span>${p[4]}</span></div>`+
+      `<div class="tr"><span>方式</span><span>${p[5]}</span></div>`+
+      (p[6]?`<div class="tr"><span>${p[5]==='保送'?'条件':'院系'}</span><span>${p[6]}</span></div>`:'')));
+    hit.addEventListener('mousemove',moveTip);
+    hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('text',{x:x0,y:H-8,'font-size':10.5,fill:cssv('--ink-3')},
+    '横轴为 2004 年中考成绩；实心=高考录取，空心=保送。悬停查看名次与去向。'));
+  const lg=[['清华大学',cssv('--petrol')],['北京大学',cssv('--seal')],['其他保送高校',cssv('--amber')]];
+  lg.forEach((l,i)=>{
+    svg.appendChild(el('circle',{cx:x0+8+i*106,cy:pad-14,r:5,fill:l[1]}));
+    svg.appendChild(el('text',{x:x0+18+i*106,y:pad-10,'font-size':11,fill:cssv('--ink-2')},l[0]));
+  });
+  box.appendChild(svg);
+}
+
+/* ---------- intake vs outcome table ---------- */
+const maxRatio=Math.max(...G.schools.map(s=>s[6]));
+$('#tconv tbody').innerHTML=G.schools.map(s=>`<tr>
+  <td class="l sch"><span class="dot"></span>${s[0]}</td>
+  <td class="num">${s[1]}</td><td class="num">${s[2]==null?'—':s[2]}</td>
+  <td class="num">${s[3].toFixed(1)}</td>
+  <td class="num" style="font-weight:600">${s[4]||'—'}</td>
+  <td class="num" style="color:var(--seal)">${s[4]?'≈ '+s[4]*2:'—'}</td>
+  <td class="num">${s[5]||'—'}</td>
+  <td class="l"><span class="ratio"><span class="mini" style="width:120px"><i style="width:${(s[6]/maxRatio*100).toFixed(1)}%"></i></span><span class="mono" style="font-size:11.5px;color:var(--ink-3)">${s[6].toFixed(2)}</span></span></td>
+</tr>`).join('');
+
+/* ---------- traced table ---------- */
+const ttr=$('#ttr'), ttb=$('tbody',ttr);
+sortable(ttr,()=>G.traced,d=>{
+  ttb.innerHTML=d.map(p=>`<tr>
+    <td class="l sch">${p[8]}</td>
+    <td class="num">${fmt(p[0])}</td><td class="num">${p[1]}</td>
+    <td class="l">${p[2]}</td><td class="l sch">${p[3]}</td>
+    <td class="l" style="color:${p[4]==='清华大学'?'var(--petrol)':p[4]==='北京大学'?'var(--seal)':'var(--ink)'};font-weight:500">${p[4]}</td>
+    <td class="l">${p[5]}</td><td class="l dest" title="${p[6]}">${p[6]||'—'}</td></tr>`).join('');
+},0,true)();
+
+
+/* ---------- 中考分数段 → 清华 ---------- */
+let bandMode='q';
+function drawScoreBands(){
+  const box=$('#bandchart'); box.innerHTML='';
+  const dbl=bandMode==='qb';
+  const W=Math.max(box.clientWidth-4,520), rowH=50, pad=26, H=pad*2+G2.sb.length*rowH+18;
+  const gL=W>720?142:120, x0=gL, x1=W-176;
+  const mx=dbl?50:25, sx=v=>x0+v/mx*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'按中考分数段的清华录取率'});
+  (dbl?[0,10,20,30,40,50]:[0,5,10,15,20,25]).forEach(v=>{
+    svg.appendChild(el('line',{x1:sx(v),x2:sx(v),y1:pad-8,y2:H-pad-10,stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:sx(v),y:H-pad+4,'text-anchor':'middle','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},v+'%'));
+  });
+  G2.sb.forEach((b,i)=>{
+    const [lab,n,k0,r1,r2]=b, k=dbl?k0*2:k0, rate=100*k/n, yc=pad+i*rowH+rowH/2-8;
+    svg.appendChild(el('text',{x:gL-12,y:yc-1,'text-anchor':'end','font-size':13,
+      fill:cssv('--ink'),'font-weight':600},lab));
+    svg.appendChild(el('text',{x:gL-12,y:yc+13,'text-anchor':'end','font-size':10.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},
+      fmt(n)+' 人 · 名次 '+fmt(r1)+'–'+fmt(r2)));
+    if(k){
+      svg.appendChild(el('rect',{x:x0,y:yc-10,width:Math.max(sx(rate)-x0,2),height:20,
+        fill:cssv('--petrol'),opacity:.85,rx:2}));
+      svg.appendChild(el('text',{x:sx(rate)+10,y:yc+4,'font-size':12.5,fill:cssv('--ink'),
+        'font-family':'"IBM Plex Mono",monospace','font-weight':600},rate.toFixed(2)+'%'));
+      svg.appendChild(el('text',{x:sx(rate)+10,y:yc+17,'font-size':10.5,fill:cssv('--ink-3')},
+        (dbl?'≈ '+k+' 人进清北':k+' 人进清华')));
+    }else{
+      svg.appendChild(el('line',{x1:x0,x2:x0+20,y1:yc,y2:yc,stroke:cssv('--ink-3'),'stroke-width':2}));
+      svg.appendChild(el('text',{x:x0+28,y:yc+4,'font-size':11.5,fill:cssv('--ink-3')},'0 人'));
+    }
+    const hit=el('rect',{x:0,y:yc-rowH/2+4,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">中考 ${lab}</div>`+
+      `<div class="tr"><span>该段录取人数</span><span>${fmt(n)}</span></div>`+
+      `<div class="tr"><span>全市名次</span><span>${fmt(r1)}–${fmt(r2)}</span></div>`+
+      `<div class="tr"><span>${dbl?'三年后进清北（估计）':'三年后进清华'}</span><span>${dbl?'≈ ':''}${k} 人</span></div>`+
+      `<div class="tr"><span>比例</span><span>${rate.toFixed(2)}%</span></div>`));
+    hit.addEventListener('mousemove',moveTip); hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('text',{x:x0,y:H-6,'font-size':10.5,fill:cssv('--ink-3')},
+    (dbl?'横轴：该分数段中考入 2007 级清北的估计比例（清华实测 × 2，北大无名单）'
+        :'横轴：该分数段中考入 2007 级清华的比例（以清华全国新生名单为准，12 人可对上名册）')));
+  box.appendChild(svg);
+}
+
+/* ---------- 名册之外：各高中清华新生的来源 ---------- */
+function drawGap(){
+  const box=$('#gapchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-4,520), rowH=42, pad=32, H=pad*2+G2.gap.length*rowH+10;
+  const gL=W>720?128:110, x0=gL, x1=W-118;
+  const mx=Math.max(...G2.gap.map(g=>g[1])), sx=v=>x0+v/mx*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'各高中 2007 级清华新生中，在与不在 2004 中考名册上的人数'});
+  const CO=[cssv('--petrol'),cssv('--amber'),cssv('--seal')];
+  const LB=['在 2004 中考名册上','名册外 · 美术类','名册外 · 其他'];
+  LB.forEach((l,i)=>{
+    svg.appendChild(el('rect',{x:x0+i*152,y:pad-24,width:11,height:11,fill:CO[i],rx:2}));
+    svg.appendChild(el('text',{x:x0+i*152+16,y:pad-14,'font-size':11,fill:cssv('--ink-2')},l));
+  });
+  G2.gap.forEach((g,i)=>{
+    const [name,tot,inr,art,oth,roster]=g, yc=pad+i*rowH+rowH/2-2;
+    svg.appendChild(el('text',{x:gL-12,y:yc-1,'text-anchor':'end','font-size':12.5,
+      fill:cssv('--ink'),'font-weight':500},name));
+    svg.appendChild(el('text',{x:gL-12,y:yc+12,'text-anchor':'end','font-size':10,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},'名册 '+roster+' 人'));
+    let acc=0;
+    [inr,art,oth].forEach((v,k)=>{
+      if(!v)return;
+      svg.appendChild(el('rect',{x:sx(acc),y:yc-9,width:Math.max(sx(acc+v)-sx(acc),2),height:18,
+        fill:CO[k],opacity:.85,rx:1.5}));
+      if(v>=2)svg.appendChild(el('text',{x:(sx(acc)+sx(acc+v))/2,y:yc+4,'text-anchor':'middle',
+        'font-size':11,fill:'#fff','font-family':'"IBM Plex Mono",monospace','font-weight':600},v));
+      acc+=v;
+    });
+    svg.appendChild(el('text',{x:sx(tot)+10,y:yc+4,'font-size':12,fill:cssv('--ink-2'),
+      'font-family':'"IBM Plex Mono",monospace'},'共 '+tot+' 人'));
+    const hit=el('rect',{x:0,y:yc-rowH/2,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${name}</div>`+
+      `<div class="tr"><span>2007 级清华新生</span><span>${tot} 人</span></div>`+
+      `<div class="tr"><span>在 2004 中考名册上</span><span>${inr} 人</span></div>`+
+      `<div class="tr"><span>名册外 · 美术类</span><span>${art} 人</span></div>`+
+      `<div class="tr"><span>名册外 · 其他</span><span>${oth} 人</span></div>`+
+      `<div class="tr"><span>2004 名册给的名额</span><span>${roster} 人</span></div>`));
+    hit.addEventListener('mousemove',moveTip); hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  box.appendChild(svg);
+}
+
+/* ---------- 2007 高考理科：全省位次 ---------- */
+const provRank=s=>{
+  s=Math.max(G2.provLo,Math.min(G2.provHi,s|0));
+  for(let v=s;v<=G2.provHi;v++){const c=G2.prov[v-G2.provLo]; if(c)return c;}
+  return 1;
+};
+function gkLookup(s){
+  s=Math.max(G2.provLo,Math.min(G2.provHi,s|0));
+  const r=provRank(s), tot=G2.provTotal;
+  $('#gkrank').textContent=fmt(r);
+  $('#gkpct').textContent=(100*(tot-r)/tot).toFixed(1)+'%';
+  const ce=cityExpRank(s);
+  $('#gkcity').textContent=ce?(ce.band?'≤ ':'≈ ')+fmt(ce.city):'—';
+  $('#gkexp').textContent =ce?(ce.band?'≤ ':'≈ ')+fmt(ce.exp) :'—';
+  const near=G2.nest.slice().reverse().find(n=>n[0]<=s);
+  $('#gknote').innerHTML = near
+    ? `按当年公布的高分段统计，<b>${near[0]} 分以上</b>全省 ${fmt(near[1])} 人，`+
+      `大庆占 ${fmt(near[2])} 人（${(100*near[2]/near[1]).toFixed(1)}%），`+
+      `其中大庆实验中学 ${fmt(near[3])} 人（${(100*near[3]/near[1]).toFixed(1)}%）。`
+    : '低于 600 分，当年公布的高分段统计未覆盖这一段。';
+}
+const gin=$('#gkin'), grng=$('#gkrng');
+
+
+/* ---------- 全省 / 大庆 / 实验 的嵌套占比 ---------- */
+let nestMode='share';
+function drawNest(){
+  const box=$('#nestchart'); box.innerHTML='';
+  const rows=G2.nest.slice().reverse();          // 700 分以上在最上面
+  const W=Math.max(box.clientWidth-14,520), rowH=30, pad=44, H=pad+18+rows.length*rowH;
+  const gL=76, x0=gL, x1=W-104;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2007 年黑龙江理科各分数段中，大庆与大庆实验中学所占比例'});
+  const CO=[cssv('--petrol'),cssv('--amber'),cssv('--void')];
+  const LB=['大庆实验中学','大庆其余学校','全省其余'];
+  LB.forEach((l,i)=>{
+    svg.appendChild(el('rect',{x:x0+i*126,y:14,width:11,height:11,fill:CO[i],
+      opacity:i===2?.55:.85,rx:2}));
+    svg.appendChild(el('text',{x:x0+i*126+16,y:24,'font-size':11,fill:cssv('--ink-2')},l));
+  });
+  const mxCount=rows[rows.length-1][1];
+  rows.forEach((n,i)=>{
+    const [sc,pv,city,exp]=n, yc=pad+i*rowH+rowH/2;
+    const full = nestMode==='share' ? (x1-x0) : (x1-x0)*pv/mxCount;
+    const parts=[exp,city-exp,pv-city];
+    let acc=0;
+    parts.forEach((v,k)=>{
+      const w=full*v/pv;
+      if(w>0.4)svg.appendChild(el('rect',{x:x0+full*acc/pv,y:yc-9,width:w,height:18,
+        fill:CO[k],opacity:k===2?.45:.85}));
+      acc+=v;
+    });
+    svg.appendChild(el('text',{x:gL-10,y:yc+4,'text-anchor':'end','font-size':11.5,
+      fill:cssv('--ink'),'font-family':'"IBM Plex Mono",monospace','font-weight':600},sc+'+'));
+    svg.appendChild(el('text',{x:x1+10,y:yc+4,'font-size':11,fill:cssv('--ink-2'),
+      'font-family':'"IBM Plex Mono",monospace'},
+      nestMode==='share' ? (100*city/pv).toFixed(1)+'%' : fmt(pv)));
+    const hit=el('rect',{x:0,y:yc-rowH/2,width:W,height:rowH,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">2007 理科 ${sc} 分以上</div>`+
+      `<div class="tr"><span>全省</span><span>${fmt(pv)} 人</span></div>`+
+      `<div class="tr"><span>大庆（含四县）</span><span>${fmt(city)} 人 · ${(100*city/pv).toFixed(1)}%</span></div>`+
+      `<div class="tr"><span>大庆实验中学</span><span>${fmt(exp)} 人 · ${(100*exp/pv).toFixed(1)}%</span></div>`+
+      `<div class="tr"><span>实验占大庆</span><span>${(100*exp/city).toFixed(1)}%</span></div>`));
+    hit.addEventListener('mousemove',moveTip); hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('text',{x:x0,y:H-2,'font-size':10.5,fill:cssv('--ink-3')},
+    nestMode==='share' ? '每条拉满为该分数段的全省人数，右侧数字为大庆占全省的比例'
+                       : '条长与全省人数成正比，右侧数字为该分数段的全省人数'));
+  box.appendChild(svg);
+}
+$$('#nestlegend .lgi').forEach(b=>b.addEventListener('click',()=>{
+  nestMode=b.dataset.m;
+  $$('#nestlegend .lgi').forEach(o=>o.setAttribute('aria-pressed',o.dataset.m!==nestMode));
+  drawNest();
+}));
+
+/* ---------- 高分段人数：全市 vs 实验 ---------- */
+let cntTrack='li';
+function drawCounts(){
+  const box=$('#countchart'); box.innerHTML='';
+  const D2=G2[cntTrack].slice().reverse();
+  const W=Math.max(box.clientWidth-14,520), H=300, padT=34, padB=54;
+  const x0=54, x1=W-20, bw=(x1-x0)/D2.length;
+  const mx=Math.max(...D2.map(d=>d[1]));
+  const sy=v=>padT+(1-v/mx)*(H-padT-padB);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2007 年各高考分数段的全市与实验中学人数'});
+  const ticks=mx>1000?[0,300,600,900,1200]:[0,50,100,150,200];
+  ticks.forEach(v=>{
+    if(v>mx)return;
+    svg.appendChild(el('line',{x1:x0,x2:x1,y1:sy(v),y2:sy(v),stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:x0-9,y:sy(v)+3.5,'text-anchor':'end','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},fmt(v)));
+  });
+  D2.forEach((d,i)=>{
+    const [sc,city,exp]=d, bx=x0+i*bw;
+    svg.appendChild(el('rect',{x:bx+bw*.14,y:sy(city),width:bw*.72,height:sy(0)-sy(city),
+      fill:cssv('--ink-3'),opacity:.3}));
+    svg.appendChild(el('rect',{x:bx+bw*.14,y:sy(exp),width:bw*.72,height:sy(0)-sy(exp),
+      fill:cssv('--petrol'),opacity:.9}));
+    svg.appendChild(el('text',{x:bx+bw/2,y:H-padB+16,'text-anchor':'middle','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},sc));
+    const hit=el('rect',{x:bx,y:padT-10,width:bw,height:H-padT-padB+14,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${sc} 分以上 · ${cntTrack==='li'?'理科':'文科'}</div>`+
+      `<div class="tr"><span>全市（含四县）</span><span>${fmt(city)} 人</span></div>`+
+      `<div class="tr"><span>大庆实验中学</span><span>${fmt(exp)} 人</span></div>`+
+      `<div class="tr"><span>占比</span><span>${(100*exp/city).toFixed(1)}%</span></div>`));
+    hit.addEventListener('mousemove',moveTip); hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  [['全市（含四县）',cssv('--ink-3'),.3],['大庆实验中学',cssv('--petrol'),.9]].forEach((l,i)=>{
+    svg.appendChild(el('rect',{x:x0+i*136,y:8,width:11,height:11,fill:l[1],opacity:l[2],rx:2}));
+    svg.appendChild(el('text',{x:x0+i*136+16,y:18,'font-size':11,fill:cssv('--ink-2')},l[0]));
+  });
+  svg.appendChild(el('text',{x:x0,y:H-6,'font-size':10.5,fill:cssv('--ink-3')},
+    '横轴：2007 年高考分数段（分以上，累计人数）'));
+  box.appendChild(svg);
+}
+$$('#countlegend .lgi').forEach(b=>b.addEventListener('click',()=>{
+  cntTrack=b.dataset.t;
+  $$('#countlegend .lgi').forEach(o=>o.setAttribute('aria-pressed',o.dataset.t!==cntTrack));
+  drawCounts();
+}));
+
+/* ---------- 2006–2013 清北 ---------- */
+function drawCB(){
+  const box=$('#cbchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-4,520), H=250, padT=34, padB=46;
+  const x0=48, x1=W-52, bw=(x1-x0)/G2.cbt.length;
+  const mx=Math.max(...G2.cbt.map(t=>Math.max(t[1]+t[2],t[3]||0)));
+  const sy=v=>padT+(1-v/mx)*(H-padT-padB);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2006 至 2013 年大庆实验中学考入清华北大人数'});
+  [0,20,40,60,80].forEach(v=>{
+    if(v>mx)return;
+    svg.appendChild(el('line',{x1:x0,x2:x1,y1:sy(v),y2:sy(v),stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:x0-9,y:sy(v)+3.5,'text-anchor':'end','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},v));
+  });
+  const line=[];
+  G2.cbt.forEach((t,i)=>{
+    const [y,q,b,city]=t, bx=x0+i*bw;
+    svg.appendChild(el('rect',{x:bx+bw*.2,y:sy(q),width:bw*.6,height:sy(0)-sy(q),fill:cssv('--petrol'),opacity:.9}));
+    svg.appendChild(el('rect',{x:bx+bw*.2,y:sy(q+b),width:bw*.6,height:sy(q)-sy(q+b),fill:cssv('--seal'),opacity:.85}));
+    if(city)line.push([bx+bw/2,sy(city)]);
+    svg.appendChild(el('text',{x:bx+bw/2,y:H-padB+16,'text-anchor':'middle','font-size':10,
+      fill:y==='2007'?cssv('--seal'):cssv('--ink-3'),'font-weight':y==='2007'?600:400,
+      'font-family':'"IBM Plex Mono",monospace'},y));
+    const hit=el('rect',{x:bx,y:padT-12,width:bw,height:H-padT-padB+16,fill:'transparent'});
+    hit.addEventListener('mouseenter',e=>showTip(e,
+      `<div class="th">${y} 年高考</div>`+
+      `<div class="tr"><span>实验 · 清华</span><span>${q} 人</span></div>`+
+      `<div class="tr"><span>实验 · 北大</span><span>${b} 人</span></div>`+
+      `<div class="tr"><span>实验合计</span><span>${q+b} 人</span></div>`+
+      (city?`<div class="tr"><span>全市清华北大</span><span>${city} 人</span></div>`+
+            `<div class="tr"><span>实验占全市</span><span>${(100*(q+b)/city).toFixed(1)}%</span></div>`:'')));
+    hit.addEventListener('mousemove',moveTip); hit.addEventListener('mouseleave',hideTip);
+    svg.appendChild(hit);
+  });
+  svg.appendChild(el('polyline',{points:line.map(p=>p.join(',')).join(' '),fill:'none',
+    stroke:cssv('--ink'),'stroke-width':1.4,'stroke-dasharray':'4 3',opacity:.65}));
+  line.forEach(p=>svg.appendChild(el('circle',{cx:p[0],cy:p[1],r:2.8,fill:cssv('--ink'),opacity:.7})));
+  [['清华',cssv('--petrol'),.9],['北大',cssv('--seal'),.85]].forEach((l,i)=>{
+    svg.appendChild(el('rect',{x:x0+i*72,y:8,width:11,height:11,fill:l[1],opacity:l[2],rx:2}));
+    svg.appendChild(el('text',{x:x0+i*72+16,y:18,'font-size':11,fill:cssv('--ink-2')},l[0]));
+  });
+  svg.appendChild(el('text',{x:x0+160,y:18,'font-size':11,fill:cssv('--ink-2')},'⋯ 全市清华北大总数'));
+  box.appendChild(svg);
+}
+
+/* ---------- 普本上线 vs 名册名额 ---------- */
+$('#tmult tbody').innerHTML=G2.comp.map(c=>{
+  const pb=c[3]; if(!pb) return '';
+  const hot=c[0]==='2007';
+  return `<tr${hot?' style="background:var(--seal-wash)"':''}><td class="l sch">${c[0]}${hot?' <span style="color:var(--seal);font-weight:600">← 本届</span>':''}</td>
+    <td class="num">${fmt(pb[0])}</td><td class="num">${fmt(pb[1])}</td>
+    <td class="num">${(100*pb[1]/pb[0]).toFixed(1)}%</td>
+    <td class="num" style="font-weight:600;color:var(--seal)">${(pb[1]/447).toFixed(2)}×</td></tr>`;
+}).join('');
+
+$$('#bandseg button').forEach(btn=>btn.addEventListener('click',()=>{
+  bandMode=btn.dataset.m;
+  $$('#bandseg button').forEach(o=>o.setAttribute('aria-pressed',o.dataset.m===bandMode));
+  drawScoreBands();
+}));
+/* ---------- 清北估计表 ---------- */
+const EST=[
+  ['2007 年大庆籍（全市）',37,'校方口径全市清北 53 人（未含保送）'],
+  ['能追溯回 2004 中考名册的',12,'名册共 5,760 人'],
+  ['大庆实验中学',16,'校方公布 2007 清北 37 人（含保送）'],
+  ['大庆铁人中学',10,'—'],
+  ['大庆一中',5,'—'],
+  ['大庆二十三中学',2,'2 人均为美术学院'],
+  ['中考 650 分以上（8 人）',2,'该段共 8 人'],
+  ['中考 640–649 分（52 人）',3,'该段共 52 人'],
+  ['中考 610–639 分（796 人）',7,'该段共 796 人'],
+  ['中考 609 分及以下（4,904 人）',0,'一个也没有']
+];
+$('#test tbody').innerHTML=EST.map(e=>`<tr>
+  <td class="l sch">${e[0]}</td>
+  <td class="num">${e[1]}</td>
+  <td class="num" style="font-weight:600;color:var(--seal)">${e[1]?'≈ '+e[1]*2:'0'}</td>
+  <td class="l dest" title="${e[2]}">${e[2]}</td></tr>`).join('');
+
+
+/* ---------- 447 → 1,328 的四个实测量 ---------- */
+const SCALE=[
+  [447,'中考名册 · 普通统招','实测 · 2004 年录取总表',1],
+  [800,'2004 年招生计划','实测 · 校方招生简章（750 市 + 50 宏志）',1],
+  [937,'2006 年每届平均在校生','实测 · 在校 2,812 人 ÷ 3 个年级',1],
+  [1328,'2007 年高考普本上线','实测 · 校方《成果与全市比较》',0]
+];
+function drawScale(){
+  const box=$('#scalechart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-4,520), rowH=62, pad=30, H=pad*2+SCALE.length*rowH;
+  const gL=W>720?214:150, x0=gL, x1=W-108;
+  const mx=1400, sx=v=>x0+v/mx*(x1-x0);
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'大庆实验中学同一届人的四个规模口径'});
+  [0,400,800,1200].forEach(v=>{
+    svg.appendChild(el('line',{x1:sx(v),x2:sx(v),y1:pad-10,y2:H-pad+4,stroke:cssv('--hair')}));
+    svg.appendChild(el('text',{x:sx(v),y:pad-14,'text-anchor':'middle','font-size':9.5,
+      fill:cssv('--ink-3'),'font-family':'"IBM Plex Mono",monospace'},fmt(v)));
+  });
+  // the 447 baseline carried across, so every later bar reads as a multiple of it
+  svg.appendChild(el('line',{x1:sx(447),x2:sx(447),y1:pad-10,y2:H-pad+4,
+    stroke:cssv('--seal'),'stroke-width':1,'stroke-dasharray':'3 3',opacity:.75}));
+  SCALE.forEach((d,i)=>{
+    const [v,lab,src,mid]=d, yc=pad+i*rowH+rowH/2-6;
+    const c=i===0?cssv('--petrol'):i===3?cssv('--seal'):cssv('--amber');
+    svg.appendChild(el('rect',{x:x0,y:yc-13,width:Math.max(sx(v)-x0,2),height:26,
+      fill:c,opacity:.85,rx:2}));
+    svg.appendChild(el('text',{x:gL-12,y:yc-2,'text-anchor':'end','font-size':12.5,
+      fill:cssv('--ink'),'font-weight':500},lab));
+    svg.appendChild(el('text',{x:gL-12,y:yc+12,'text-anchor':'end','font-size':10,
+      fill:cssv('--ink-3')},src));
+    svg.appendChild(el('text',{x:sx(v)+10,y:yc-1,'font-size':14,fill:cssv('--ink'),
+      'font-family':'"IBM Plex Mono",monospace','font-weight':600},fmt(v)));
+    if(i)svg.appendChild(el('text',{x:sx(v)+10,y:yc+13,'font-size':10.5,fill:cssv('--seal'),
+      'font-family':'"IBM Plex Mono",monospace'},(v/447).toFixed(2)+' × 447'));
+  });
+  svg.appendChild(el('text',{x:x0,y:H-4,'font-size':10.5,fill:cssv('--ink-3')},
+    '虚线为中考名册给实验中学的 447 个名额；四个数字都是当年公开发布的，没有一个是估计'));
+  box.appendChild(svg);
+}
+
+
+/* ---------- 大庆 / 实验 位次：用公布的高分段份额内插到全省精确位次上 ---------- */
+function cityExpRank(s){
+  const N=G2.nest;                      // [分数, 全省, 大庆, 实验]，按分数升序
+  const top=N[N.length-1];
+  if(s<N[0][0]) return null;            // 600 分以下当年没有公布市/校分段
+  if(s>=top[0]) return {city:top[2],exp:top[3],band:top[0]};
+  const pv=provRank(s);
+  let a=N[0],b=N[1];
+  for(let i=0;i<N.length-1;i++) if(s>=N[i][0]&&s<=N[i+1][0]){a=N[i];b=N[i+1];break;}
+  const t=(s-a[0])/(b[0]-a[0]);
+  const lerp=(p,q)=>p+(q-p)*t;
+  return {
+    city:Math.max(1,Math.round(pv*lerp(a[2]/a[1],b[2]/b[1]))),
+    exp :Math.max(1,Math.round(pv*lerp(a[3]/a[1],b[3]/b[1]))),
+    band:0
+  };
+}
+
+/* ---------- 顶部固定栏 ---------- */
+const tbz=$('#tbz'), tbg=$('#tbg');
+/* 该分数在大庆实验中学 447 名录取者中的位次；低于 603 分即未达该校录取线 */
+function expRank(s){
+  if(s<SYEXP.lo) return null;
+  let gt=0;
+  for(let v=SYEXP.hi;v>s;v--){const k=SYEXP.hi-v; if(k<SYEXP.c.length)gt+=SYEXP.c[k];}
+  return gt+1;
+}
+function paintZhongkao(s){
+  s=Math.max(300,Math.min(663,s|0));
+  const gt=s<663?D.cum[s-300+1]:0, rank=gt+1;
+  $('#tbzrank').textContent=fmt(rank);
+  $('#tbzpct').textContent=(100*(D.total-D.cum[s-300])/D.total).toFixed(1)+'%';
+  const er=expRank(s), ed=$('#tbzexp').parentElement;
+  $('#tbzexp').textContent=er?fmt(er):'—';
+  ed.querySelector('span').textContent=er?'实验位次/447':'未达实验线 603';
+  ed.classList.toggle('dim',!er);
+  $('#tbzprov').textContent='≈ '+fmt(rank*8);
+}
+function paintGaokao(s){
+  s=Math.max(G2.provLo,Math.min(G2.provHi,s|0));
+  $('#tbgprov').textContent=fmt(provRank(s));
+  const r=cityExpRank(s);
+  const cd=$('#tbgcity').parentElement, ed=$('#tbgexp').parentElement;
+  if(!r){
+    $('#tbgcity').textContent='—'; $('#tbgexp').textContent='—';
+    cd.querySelector('span').textContent='大庆 600↓未公布';
+    ed.querySelector('span').textContent='实验 600↓未公布';
+    cd.classList.add('dim'); ed.classList.add('dim');
+  }else{
+    $('#tbgcity').textContent=(r.band?'≤ ':'≈ ')+fmt(r.city);
+    $('#tbgexp').textContent=(r.band?'≤ ':'≈ ')+fmt(r.exp);
+    cd.querySelector('span').textContent=r.band?`大庆 ${r.band}+ 共 ${r.city} 人`:'大庆位次（内插）';
+    ed.querySelector('span').textContent=r.band?`实验 ${r.band}+ 共 ${r.exp} 人`:'实验位次（内插）';
+    cd.classList.remove('dim'); ed.classList.remove('dim');
+  }
+}
+/* 顶部栏与页内两个查询联动，保持单一数据源 */
+function setZ(v,from){
+  const s=Math.max(300,Math.min(663,v|0));
+  if(from!=='bar')tbz.value=s;
+  if(from!=='sec'){sin.value=s;srng.value=s;}
+  paintZhongkao(s); lookup(s);
+}
+function setG(v,from){
+  const s=Math.max(G2.provLo,Math.min(G2.provHi,v|0));
+  if(from!=='bar')tbg.value=s;
+  if(from!=='sec'){gin.value=s;grng.value=s;}
+  paintGaokao(s); gkLookup(s);
+}
+tbz.addEventListener('input',()=>setZ(+tbz.value,'bar'));
+tbg.addEventListener('input',()=>setG(+tbg.value,'bar'));
+sin.addEventListener('input',()=>setZ(+sin.value,'sec'));
+srng.addEventListener('input',()=>setZ(+srng.value,'sec'));
+gin.addEventListener('input',()=>setG(+gin.value,'sec'));
+grng.addEventListener('input',()=>setG(+grng.value,'sec'));
+
+/* ---------- init ---------- */
+/* ---------- 846 → destination (实验 + 铁人) ---------- */
+const TLAB=['清华北大','985 / C9','211','其他本科及以下'];
+const TVAR=['--seal','--petrol','--petrol-2','--amber-2'];
+const SCH={'实验':{n:'大庆实验中学',line:603,mean:619.0,list:1403},
+           '铁人':{n:'大庆铁人中学',line:607,mean:620.4,list:821}};
+
+(function(){
+  const S=[['实验',T.sy],['铁人',T.tr]];
+  $('tbody',$('#tsum')).innerHTML=S.map(([k,v])=>{
+    const key=v[1]+v[2]+v[3], uniq=v[1]+v[2]+v[3]+v[4];
+    return '<tr><td class="l sch">'+SCH[k].n+'</td><td>'+v[0]+'</td><td>'+SCH[k].line+'</td>'+
+      '<td>'+SCH[k].mean.toFixed(1)+'</td><td>'+fmt(SCH[k].list)+'</td><td>'+uniq+'</td>'+
+      '<td style="color:var(--seal);font-weight:600">'+v[1]+'</td><td>'+v[2]+'</td><td>'+v[3]+'</td>'+
+      '<td class="hint">'+v[4]+'</td>'+
+      '<td class="l"><span class="mini"><i style="width:'+(key/v[0]*100)+'%"></i></span> '+
+      '<span class="hint">'+(key/v[0]*100).toFixed(1)+'%</span></td></tr>';
+  }).join('');
+})();
+
+function drawDest(){
+  const box=$('#destchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,540), pad=26, grpH=54, barH=17;
+  const B=T.band, H=pad*2+B.length*grpH+34;
+  const gL=W>700?96:80, gR=W>700?142:96, x0=gL, x1=W-gR;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'两校中考分段与三年后大学层次的对照'});
+  const cols=TVAR.map(cssv), voidc=cssv('--void'), ink3=cssv('--ink-3'),
+        ink=cssv('--ink'), card=cssv('--card');
+  // widest band (either school) sets the common scale, so bar length = people
+  const maxN=Math.max(...B.map(b=>Math.max(b[1],b[9])));
+  B.forEach((b,i)=>{
+    const y0=pad+i*grpH;
+    svg.appendChild(el('text',{x:gL-10,y:y0+16,'text-anchor':'end','font-size':12.5,
+      fill:ink,'font-weight':500},b[0]));
+    [['实验',b.slice(1,9),0],['铁人',b.slice(9,17),1]].forEach(([sch,v,j])=>{
+      const y=y0+j*(barH+4), tot=v[0], sx=n=>n/maxN*(x1-x0);
+      svg.appendChild(el('text',{x:gL-10,y:y+12,'text-anchor':'end','font-size':10,
+        fill:ink3},j?'铁人':'实验'));
+      let cx=x0;
+      [[v[2],TLAB[0],cols[0],1],[v[3],TLAB[1],cols[1],1],[v[4],TLAB[2],cols[2],1],
+       [v[5],TLAB[3],cols[3],1],[v[6],'同名待定',voidc,.85],[v[7],'未追踪',voidc,.4]]
+      .forEach(([n,lab,col,op])=>{
+        if(!n)return;
+        const w=sx(n);
+        const r=el('rect',{x:cx,y:y,width:Math.max(w,1),height:barH,fill:col,opacity:op});
+        r.addEventListener('mousemove',e=>showTip(e,
+          '<b>'+SCH[sch].n+'　中考 '+b[0]+'</b><br>本段名册 '+tot+' 人<br>'+
+          lab+'：'+n+' 人 · 占本段 '+(n/tot*100).toFixed(1)+'%'));
+        r.addEventListener('mouseleave',hideTip);
+        svg.appendChild(r);
+        if(w>22)svg.appendChild(el('text',{x:cx+w/2,y:y+12,'text-anchor':'middle',
+          'font-size':10.5,fill:op<.6?ink3:card,'font-weight':600},n));
+        cx+=w;
+      });
+      svg.appendChild(el('text',{x:cx+9,y:y+12,'font-size':10.5,fill:ink3},tot+' 人'));
+    });
+  });
+  const ly=pad+B.length*grpH+10;
+  let lx=gL;
+  [[TLAB[0],cols[0],1],[TLAB[1],cols[1],1],[TLAB[2],cols[2],1],[TLAB[3],cols[3],1],
+   ['同名待定',voidc,.85],['未追踪',voidc,.4]].forEach(([t,c,o])=>{
+    svg.appendChild(el('rect',{x:lx,y:ly,width:10,height:10,fill:c,opacity:o}));
+    svg.appendChild(el('text',{x:lx+15,y:ly+9,'font-size':11.5,fill:ink3},t));
+    lx+=28+t.length*12.5;
+  });
+  box.appendChild(svg);
+}
+
+$('tbody',$('#tband')).innerHTML=T.band.map(b=>{
+  const c=(v,off)=>'<td'+(off?' class="gr2"':'')+'>'+(v||'—')+'</td>';
+  const s=b.slice(1,9), t=b.slice(9,17);
+  return '<tr><td class="l sch">'+b[0]+'</td>'+
+    '<td>'+s[0]+'</td>'+
+    '<td'+(s[2]?' style="color:var(--seal);font-weight:600"':'')+'>'+(s[2]||'—')+'</td>'+
+    c(s[3])+c(s[4])+'<td class="hint">'+(s[5]||'—')+'</td>'+
+    '<td class="gr2">'+t[0]+'</td>'+
+    '<td class="gr2"'+(t[2]?' style="color:var(--seal);font-weight:600"':'')+'>'+(t[2]||'—')+'</td>'+
+    c(t[3],1)+c(t[4],1)+'<td class="hint gr2">'+(t[5]||'—')+'</td></tr>';
+}).join('');
+
+const tdest=$('#tdest'), tdb=$('tbody',tdest);
+let dfilter='all', dschool='all', dq='';
+function drows(){
+  const q=dq.trim();
+  return T.rows.filter(r=>{
+    if(dschool!=='all' && r[5]!==dschool)return false;
+    if(dfilter!=='all' && r[8]!==+dfilter)return false;
+    if(q && !(r[2].includes(q)||r[3].includes(q)||r[6].includes(q)||r[4].includes(q)||r[5].includes(q)))return false;
+    return true;
+  });
+}
+const applyDest=sortable(tdest,drows,d=>{
+  $('#dcount').textContent='显示 '+d.length+' 人';
+  tdb.innerHTML=d.map(r=>{
+    let dest,lvl;
+    if(r[8]===-1){dest='<span class="hint">未见于该校 2007 名单</span>';lvl='<span class="hint">—</span>';}
+    else if(r[8]===-2){dest=r[6]+' <span class="hint">（同名 '+r[9]+' 条）</span>';
+      lvl='<span class="tp">同名待定</span>';}
+    else{dest=r[6];lvl='<span class="tp t'+r[8]+'">'+TLAB[r[8]]+'</span>';}
+    return '<tr><td class="sch">'+r[0]+'</td><td>'+(r[1]||'—')+'</td>'+
+      '<td class="l sch">'+r[2]+'</td>'+
+      '<td class="l"><span class="hs h'+(r[5]==='实验'?0:1)+'">'+SCH[r[5]].n+'</span></td>'+
+      '<td class="l">'+r[3]+'</td><td class="l">'+r[4]+'</td>'+
+      '<td class="l"'+(r[8]===0?' style="color:var(--seal);font-weight:600"':'')+'>'+dest+'</td>'+
+      '<td class="l">'+(r[7]||'—')+'</td><td class="l">'+lvl+'</td></tr>';
+  }).join('');
+},0,false);
+$$('#destseg button').forEach(b=>b.addEventListener('click',()=>{
+  $$('#destseg button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  dfilter=b.dataset.t; applyDest();
+}));
+$$('#schseg button').forEach(b=>b.addEventListener('click',()=>{
+  $$('#schseg button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  dschool=b.dataset.s; applyDest();
+}));
+$('#dq').addEventListener('input',e=>{dq=e.target.value;applyDest();});
+applyDest();
+
+$('#elitebox').innerHTML=T.elite.map((e,i)=>{
+  const bysch=k=>e[4].filter(p=>p[1]===k);
+  const sub=['实验','铁人'].map(k=>{const a=bysch(k);return a.length?
+    k+' '+a.length+'（名册内 '+a.filter(p=>p[6]===1).length+'）':null;}).filter(Boolean).join(' · ');
+  return '<details class="eli"'+(i<2?' open':'')+'>'+
+  '<summary><b>'+e[0]+'</b><span class="hint">共 '+e[1]+' 人 · 名册上唯一对应 '+
+  '<b style="color:var(--seal)">'+e[2]+'</b> 人'+(e[3]?' · 同名待定 '+e[3]:'')+'　'+sub+'</span>'+
+  '<span class="mini" style="width:110px"><i style="width:'+(e[2]/e[1]*100)+'%;background:var(--seal)"></i></span></summary>'+
+  '<div class="tw"><table class="elit"><thead><tr>'+
+  '<th class="l">姓名</th><th class="l">就读高中</th><th class="l">科类</th>'+
+  '<th>2004 中考成绩</th><th>全市名次</th><th class="l">初中</th>'+
+  '</tr></thead><tbody>'+e[4].map(p=>'<tr>'+
+    '<td class="l sch">'+p[0]+'</td>'+
+    '<td class="l"><span class="hs h'+(p[1]==='实验'?0:1)+'">'+SCH[p[1]].n+'</span></td>'+
+    '<td class="l">'+p[2]+'</td>'+
+    (p[6]===1 ? '<td>'+p[3]+'</td><td>'+(p[4]||'—')+'</td><td class="l">'+p[5]+'</td>'
+     : p[6]===2 ? '<td class="hint" colspan="3">名册内有同名者，无法判定</td>'
+     : '<td class="hint" colspan="3">不在 2004 中考名册</td>')+
+  '</tr>').join('')+'</tbody></table></div></details>';
+}).join('');
+
+/* ---------- 高分段生源构成 ---------- */
+const OVAR=['--petrol','--seal','--amber'], OLAB=['市区应届','外县','重读'];
+function drawOrig(){
+  const box=$('#origchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,540), pad=26, rowH=26, hdr=30, gap=26;
+  const H=pad*2+O.hb.reduce((a,b)=>a+hdr+b.rows.length*rowH,0)+gap+34;
+  const gL=W>700?118:96, gR=W>700?126:84, x0=gL, x1=W-gR;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2007年大庆高考高分段按市区应届、外县、重读拆分'});
+  const cols=OVAR.map(cssv), voidc=cssv('--void'), ink3=cssv('--ink-3'),
+        ink=cssv('--ink'), card=cssv('--card');
+  const maxN=Math.max(...O.hb.flatMap(b=>b.rows.map(r=>r[1])));
+  let y=pad;
+  O.hb.forEach((b,bi)=>{
+    svg.appendChild(el('text',{x:gL-10,y:y+13,'text-anchor':'end','font-size':12.5,
+      fill:ink,'font-weight':600},b.band));
+    svg.appendChild(el('text',{x:x0,y:y+13,'font-size':11.5,fill:ink3},
+      '全市 '+b.total+' 人，其中市区应届 '+b.urban+' 人（'+Math.round(b.urban/b.total*100)+'%）'));
+    y+=hdr;
+    b.rows.forEach(r=>{
+      const n=r[1], sx=v=>v/maxN*(x1-x0);
+      svg.appendChild(el('text',{x:gL-10,y:y+14,'text-anchor':'end','font-size':11.5,
+        fill:ink},r[0]));
+      let cx=x0;
+      if(r[2]==null){
+        const w=sx(n);
+        const q=el('rect',{x:cx,y:y+3,width:Math.max(w,1),height:15,fill:voidc,opacity:.45});
+        q.addEventListener('mousemove',e=>showTip(e,'<b>'+r[0]+'　'+b.band+'</b><br>'+n+' 人 · 原表未拆分'));
+        q.addEventListener('mouseleave',hideTip);
+        svg.appendChild(q); cx+=w;
+        svg.appendChild(el('text',{x:cx+9,y:y+14,'font-size':11,fill:ink3},n+' 人 · 未拆分'));
+      }else{
+        [2,3,4].forEach(k=>{
+          const v=r[k]; if(!v)return;
+          const w=sx(v);
+          const q=el('rect',{x:cx,y:y+3,width:Math.max(w,1),height:15,fill:cols[k-2]});
+          q.addEventListener('mousemove',e=>showTip(e,'<b>'+r[0]+'　'+b.band+'</b><br>'+
+            OLAB[k-2]+'：'+v+' 人 · 占该校 '+(v/n*100).toFixed(0)+'%'));
+          q.addEventListener('mouseleave',hideTip);
+          svg.appendChild(q);
+          if(w>20)svg.appendChild(el('text',{x:cx+w/2,y:y+14,'text-anchor':'middle',
+            'font-size':10.5,fill:card,'font-weight':600},v));
+          cx+=w;
+        });
+        svg.appendChild(el('text',{x:cx+9,y:y+14,'font-size':11,fill:ink3},n+' 人'));
+      }
+      y+=rowH;
+    });
+    if(bi===0)y+=gap;
+  });
+  let lx=gL;
+  OLAB.concat(['原表未拆分']).forEach((t,i)=>{
+    svg.appendChild(el('rect',{x:lx,y:y+8,width:10,height:10,
+      fill:i<3?cols[i]:voidc,opacity:i<3?1:.45}));
+    svg.appendChild(el('text',{x:lx+15,y:y+17,'font-size':11.5,fill:ink3},t));
+    lx+=28+t.length*12.5;
+  });
+  box.appendChild(svg);
+}
+$('tbody',$('#torig')).innerHTML=O.hb.flatMap(b=>b.rows.map((r,i)=>{
+  const u=r[2]==null?null:r[2]/r[1]*100;
+  return '<tr>'+(i?'<td class="l hint"></td>':'<td class="l sch">'+b.band+
+    ' <span class="hint">全市 '+b.total+'</span></td>')+
+    '<td class="l sch">'+r[0]+'</td><td>'+r[1]+'</td>'+
+    (r[2]==null?'<td class="hint" colspan="3">原表未拆分</td>'
+     :'<td>'+(r[2]||'—')+'</td><td'+(r[3]?' style="color:var(--seal);font-weight:600"':'')+'>'+(r[3]||'—')+'</td>'+
+      '<td'+(r[4]?' style="color:var(--amber);font-weight:600"':'')+'>'+(r[4]||'—')+'</td>')+
+    '<td class="l">'+(u==null?'<span class="hint">—</span>'
+      :'<span class="mini"><i style="width:'+u+'%"></i></span> <span class="hint">'+Math.round(u)+'%</span>')+'</td></tr>';
+})).join('');
+$('tbody',$('#ty03')).innerHTML=O.y03.map(r=>'<tr>'+
+  '<td class="l sch">'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td>'+
+  '<td class="l"><b>'+r[3]+'</b>'+(r[0].indexOf('480')>=0?
+   ' <span class="hint">＋ 外市县状元 30 余名、尖子生 300 余名</span>':'')+'</td></tr>').join('');
+
+/* ---------- 2002–2005 生源与 2008 落差 ---------- */
+$('tbody',$('#tzk')).innerHTML=E.zk.map(r=>'<tr><td class="l sch">'+r[0]+'</td>'+
+  r.slice(1).map(v=>'<td'+(v==='—'?' class="hint"':'')+'>'+v+'</td>').join('')+'</tr>').join('');
+$('tbody',$('#tcb')).innerHTML=E.cb.map(r=>'<tr>'+
+  '<td class="l sch">'+r[0]+' 年高考</td><td class="l hint">'+(r[0]-3)+' 年中考</td>'+
+  [1,2,3].map(i=>'<td'+(r[i]==null?' class="hint"':'')+'>'+(r[i]==null?'—':r[i])+'</td>').join('')+
+  '<td class="l hint">'+(r[4]?'全市 '+r[4]+' 人':'')+'</td></tr>').join('');
+
+function drawSp(){
+  const box=$('#spchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,540), pad=26, rowH=30, hdr=34, gap=22;
+  const H=pad*2+E.sp.reduce((a,b)=>a+hdr+b.rows.length*rowH,0)+gap+30;
+  const gL=W>700?126:100, gR=W>700?168:110, x0=gL, x1=W-gR;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2007与2008年高分段中全校人数与市内应届人数的落差'});
+  const pet=cssv('--petrol'), seal=cssv('--seal'), amb=cssv('--amber'),
+        voidc=cssv('--void'), ink3=cssv('--ink-3'), ink=cssv('--ink'), card=cssv('--card');
+  const maxN=39;
+  let y=pad;
+  E.sp.forEach((g,gi)=>{
+    svg.appendChild(el('text',{x:gL-10,y:y+13,'text-anchor':'end','font-size':12.5,
+      fill:ink,'font-weight':600},g.y));
+    svg.appendChild(el('text',{x:x0,y:y+13,'font-size':11.5,fill:ink3},g.sub));
+    y+=hdr;
+    g.rows.forEach(r=>{
+      const [nm,tot,urb,out,rep]=r, sx=v=>v/maxN*(x1-x0);
+      svg.appendChild(el('text',{x:gL-10,y:y+16,'text-anchor':'end','font-size':11.5,fill:ink},nm));
+      if(tot!=null){
+        const w=sx(tot);
+        const bar=el('rect',{x:x0,y:y+4,width:Math.max(w,1),height:16,fill:voidc,opacity:.35});
+        bar.addEventListener('mousemove',e=>showTip(e,'<b>'+nm+'</b><br>全校 '+tot+' 人'));
+        bar.addEventListener('mouseleave',hideTip);
+        svg.appendChild(bar);
+      }
+      const uw=sx(urb);
+      const ub=el('rect',{x:x0,y:y+4,width:Math.max(uw,2),height:16,fill:pet});
+      ub.addEventListener('mousemove',e=>showTip(e,'<b>'+nm+'</b><br>市内应届 '+urb+' 人'+
+        (tot!=null?'　（全校 '+tot+' 人，占 '+Math.round(urb/tot*100)+'%）':'')));
+      ub.addEventListener('mouseleave',hideTip);
+      svg.appendChild(ub);
+      if(uw>16)svg.appendChild(el('text',{x:x0+uw/2,y:y+16,'text-anchor':'middle',
+        'font-size':10.5,fill:card,'font-weight':600},urb));
+      const lab=(tot!=null? '全校 '+tot+' · 市内应届 '+urb : '市内应届 '+urb);
+      svg.appendChild(el('text',{x:x0+(tot!=null?sx(tot):uw)+9,y:y+16,'font-size':11,fill:ink3},lab));
+      y+=rowH;
+    });
+    if(gi===0)y+=gap;
+  });
+  let lx=gL;
+  [['市内应届',pet,1],['全校（含外县与重读）',voidc,.35]].forEach(([t,c,o])=>{
+    svg.appendChild(el('rect',{x:lx,y:y+6,width:10,height:10,fill:c,opacity:o}));
+    svg.appendChild(el('text',{x:lx+15,y:y+15,'font-size':11.5,fill:ink3},t));
+    lx+=28+t.length*12.5;
+  });
+  box.appendChild(svg);
+}
+$('tbody',$('#tsp')).innerHTML=E.sp.flatMap(g=>g.rows.map((r,i)=>{
+  const [nm,tot,urb,out,rep]=r;
+  const pc=tot!=null?Math.round(urb/tot*100):null;
+  return '<tr>'+(i?'<td class="l hint"></td>':'<td class="l sch">'+g.y+
+    '<br><span class="hint">'+g.sub+'</span></td>')+
+    '<td class="l sch">'+nm+'</td>'+
+    '<td'+(tot==null?' class="hint"':'')+'>'+(tot==null?'—':tot)+'</td>'+
+    '<td style="font-weight:600">'+urb+'</td>'+
+    '<td'+(out==null?' class="hint"':' style="color:var(--seal);font-weight:600"')+'>'+(out==null?'—':out)+'</td>'+
+    '<td'+(rep==null?' class="hint"':' style="color:var(--amber);font-weight:600"')+'>'+(rep==null?'—':rep)+'</td>'+
+    '<td class="l">'+(pc==null?'<span class="hint">全校数未公布</span>'
+      :'<span class="mini"><i style="width:'+pc+'%"></i></span> <span class="hint">'+pc+'%</span>')+'</td></tr>';
+})).join('');
+
+/* ---------- 清华名单当温度计 ---------- */
+function drawQ(){
+  const box=$('#qchart'); box.innerHTML='';
+  const W=Math.max(box.clientWidth-14,540), H=W>700?330:300;
+  const mL=46, mR=W>700?120:78, mT=26, mB=48;
+  const x0=mL, x1=W-mR, y0=mT, y1=H-mB;
+  const svg=el('svg',{width:W,height:H,role:'img','aria-label':'2002–2008年清华录取大庆学生的学校构成'});
+  const S=Q.ser, maxY=Math.max(...S.map(r=>Math.max(r[4],r[5],r[6],r[3])));
+  const sx=i=>x0+(x1-x0)*i/(S.length-1), sy=v=>y1-(y1-y0)*v/maxY;
+  const hair=cssv('--hair'), ink3=cssv('--ink-3'), ink=cssv('--ink'), card=cssv('--card');
+  const SER=[[3,'大庆合计','--ink-3',1],[4,'大庆实验中学','--seal',0],
+             [5,'大庆铁人中学','--petrol',0],[6,'大庆一中','--amber',0]];
+  for(let v=5;v<=maxY;v+=5){
+    svg.appendChild(el('line',{x1:x0,x2:x1,y1:sy(v),y2:sy(v),stroke:hair,'stroke-width':1}));
+    svg.appendChild(el('text',{x:x0-8,y:sy(v)+4,'text-anchor':'end','font-size':10.5,fill:ink3},v));
+  }
+  S.forEach((r,i)=>{
+    svg.appendChild(el('text',{x:sx(i),y:y1+18,'text-anchor':'middle','font-size':11.5,
+      fill:ink,'font-weight':500},r[0]));
+    svg.appendChild(el('text',{x:sx(i),y:y1+32,'text-anchor':'middle','font-size':10,
+      fill:ink3},'中考 '+r[1]));
+  });
+  const ends=[];
+  SER.forEach(([k,lab,varname,dash])=>{
+    const col=cssv(varname);
+    const d=S.map((r,i)=>(i?'L':'M')+sx(i)+' '+sy(r[k])).join(' ');
+    svg.appendChild(el('path',{d:d,fill:'none',stroke:col,'stroke-width':dash?1.5:2.2,
+      'stroke-dasharray':dash?'4 3':'none','stroke-linejoin':'round'}));
+    S.forEach((r,i)=>{
+      const c=el('circle',{cx:sx(i),cy:sy(r[k]),r:dash?2.5:3.6,fill:col,
+        stroke:card,'stroke-width':1.2});
+      c.addEventListener('mousemove',e=>showTip(e,'<b>'+lab+'</b><br>'+r[0]+' 年高考（'+r[1]+
+        ' 年中考入学）<br>清华录取 '+r[k]+' 人'));
+      c.addEventListener('mouseleave',hideTip);
+      svg.appendChild(c);
+    });
+    ends.push([sy(S[S.length-1][k]),col,lab.replace('大庆',''),dash]);
+  });
+  ends.sort((a,b)=>a[0]-b[0]);
+  for(let i=1;i<ends.length;i++) if(ends[i][0]-ends[i-1][0]<13) ends[i][0]=ends[i-1][0]+13;
+  ends.forEach(([ey,col,lab,dash])=>svg.appendChild(el('text',{x:x1+9,y:ey+4,'font-size':11,
+    fill:col,'font-weight':dash?400:600},lab)));
+  // 2006 highlight
+  const hi=S.findIndex(r=>r[0]===2006);
+  svg.appendChild(el('line',{x1:sx(hi),x2:sx(hi),y1:y0-4,y2:y1,stroke:cssv('--seal'),
+    'stroke-width':1,'stroke-dasharray':'2 4',opacity:.5}));
+  svg.appendChild(el('text',{x:sx(hi),y:y0-8,'text-anchor':'middle','font-size':10.5,
+    fill:cssv('--seal')},'「面向全省」那一届'));
+  box.appendChild(svg);
+}
+$('tbody',$('#tq')).innerHTML=Q.ser.map(r=>{
+  const pc=r[3]/r[2]*100;
+  return '<tr><td class="l sch">'+r[0]+' 年高考</td><td class="l hint">'+r[1]+' 年中考</td>'+
+    '<td class="hint">'+r[2]+'</td><td style="font-weight:600">'+r[3]+'</td>'+
+    '<td'+(r[4]>=16?' style="color:var(--seal);font-weight:700"':'')+'>'+r[4]+'</td>'+
+    '<td>'+r[5]+'</td><td>'+r[6]+'</td><td class="hint">'+r[7]+'</td>'+
+    '<td class="l"><span class="mini"><i style="width:'+pc+'%"></i></span> '+
+    '<span class="hint">'+pc.toFixed(0)+'%</span></td></tr>';
+}).join('');
+$('tbody',$('#td8')).innerHTML=Q.d8.map(r=>'<tr>'+
+  '<td class="l sch">'+r[0]+'</td><td class="l">'+r[1]+'</td><td class="l">'+r[2]+'</td>'+
+  '<td class="l">'+(r[3]==='不在2004名册'?'<span class="hint">不在名册</span>'
+   :r[3]==='唯一匹配'?'<span class="tp t2">名册内有同名一条</span>'
+   :'<span class="tp">'+r[3]+'</span>')+'</td></tr>').join('');
+
+function redraw(){drawLog();drawLadder();drawFunnel();drawScoreBands();drawStrip();drawGap();drawScale();drawNest();drawCounts();drawCB();drawDest();drawOrig();drawSp();drawQ();}
+drawLegend(); redraw(); setZ(648); setG(666);
+let t; addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(redraw,180);});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>setTimeout(redraw,60));
+// SVG colors are baked at draw time, so an explicit theme toggle must redraw too
+new MutationObserver(()=>setTimeout(redraw,60)).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+})();
+
+</script>
