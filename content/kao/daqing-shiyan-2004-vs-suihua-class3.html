@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>648 分的两条路</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <style>
+  :root{
+    color-scheme: light;
+    --paper:#e8ecec; --card:#f7f9f9; --sunk:#dfe4e4; --band:#eef2f2;
+    --ink:#0e1416; --ink-2:#48565a; --ink-3:#7c8a8e;
+    --rule:#c8d0d0; --hair:#dbe1e1;
+    --petrol:#0e5b68; --petrol-w:rgba(14,91,104,.12);
+    --seal:#a5342a; --seal-w:rgba(165,52,42,.10);
+    --amber:#8f5d09; --amber-w:rgba(143,93,9,.11);
+    --bar:#9aa8ab; --bar-w:rgba(154,168,171,.30);
+    --shadow:0 1px 2px rgba(14,20,22,.05),0 12px 30px -20px rgba(14,20,22,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+      --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+      --rule:#28302f; --hair:#202727;
+      --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.15);
+      --seal:#dc6553; --seal-w:rgba(220,101,83,.15);
+      --amber:#d99a2e; --amber-w:rgba(217,154,46,.15);
+      --bar:#5a686b; --bar-w:rgba(90,104,107,.34);
+      --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+    --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+    --rule:#28302f; --hair:#202727;
+    --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.15);
+    --seal:#dc6553; --seal-w:rgba(220,101,83,.15);
+    --amber:#d99a2e; --amber-w:rgba(217,154,46,.15);
+    --bar:#5a686b; --bar-w:rgba(90,104,107,.34);
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased;
+    padding:44px 22px 96px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .m{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+  header{margin-bottom:26px}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 14px}
+  h1{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:clamp(24px,4.4vw,38px);line-height:1.15;
+    letter-spacing:.01em;text-wrap:balance}
+  .dek{margin:16px 0 0;max-width:66ch;color:var(--ink-2);font-size:15px}
+  .dek b{color:var(--ink)}
+  .byline{margin:20px 0 0;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;
+    color:var(--ink-3);border-top:2px solid var(--ink);padding-top:11px;max-width:66ch}
+
+  .legend{display:flex;gap:20px 24px;justify-content:flex-start;flex-wrap:wrap;margin:24px 0 12px}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-2);
+    font-family:"IBM Plex Mono",monospace}
+  .lg-col{width:13px;height:13px;background:var(--bar);border:1px solid var(--bar)}
+  .lg-dot{width:11px;height:11px;border-radius:50%;background:var(--petrol);
+    box-shadow:0 0 0 1.5px var(--card)}
+  .lg-hollow{width:10px;height:10px;border-radius:50%;border:1.6px solid var(--petrol);opacity:.75}
+  .lg-line{width:26px;border-top:2px dashed var(--seal)}
+
+  .fig{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);
+    padding:16px 14px 8px;overflow-x:auto}
+  #chart{display:block;width:100%;min-width:760px}
+  text.ax{font-family:"IBM Plex Mono",monospace;font-size:10.5px;fill:var(--ink-3)}
+  text.axttl{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-2);letter-spacing:.04em}
+  text.thr{font-family:"IBM Plex Mono",monospace;font-size:10px;fill:var(--seal);font-weight:600}
+  text.name{font-family:"Noto Sans SC",sans-serif;font-size:11px;font-weight:700;fill:var(--petrol)}
+  text.sub{font-family:"IBM Plex Mono",monospace;font-size:9.5px;fill:var(--ink-3)}
+  text.you{font-family:"Noto Sans SC",sans-serif;font-size:11px;font-weight:700;fill:var(--seal)}
+  line.hair{stroke:var(--hair);stroke-width:1}
+  rect.col{fill:var(--bar);opacity:.62}
+  rect.col:hover{opacity:.92}
+
+  .figcap{font-size:12px;color:var(--ink-3);max-width:84ch;margin:12px 4px 0;line-height:1.72}
+  .figcap b{color:var(--petrol)}
+
+  .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;background:var(--rule);
+    border:1px solid var(--rule);margin:24px 0 0}
+  .sc{background:var(--card);padding:14px 15px 13px}
+  .sc b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:22px;line-height:1.18;
+    font-variant-numeric:tabular-nums}
+  .sc span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:5px;letter-spacing:.01em}
+  .sc.pet b{color:var(--petrol)}
+  .sc.seal b{color:var(--seal)}
+
+  .notes{background:var(--sunk);border:1px solid var(--rule);padding:18px 22px;margin:24px 0 0;
+    font-size:12.5px;line-height:1.78;color:var(--ink-2);max-width:84ch}
+  .notes .hd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-3);display:block;margin-bottom:10px}
+  .notes p{margin:0 0 10px}
+  .notes p:last-child{margin-bottom:0}
+  .notes b{color:var(--ink)}
+
+  .tooltip{position:fixed;background:var(--card);border:1px solid var(--rule);border-radius:8px;
+    padding:11px 14px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .14s ease;z-index:9999;
+    min-width:210px;box-shadow:var(--shadow)}
+  .tooltip.visible{opacity:1}
+  .tooltip .t-name{font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink)}
+  .tooltip .t-row{display:flex;justify-content:space-between;gap:16px;margin-top:3px;color:var(--ink-3);
+    font-family:"IBM Plex Mono",monospace}
+  .tooltip .t-val{color:var(--ink-2);font-weight:500}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">2004 中考 · 大庆实验中学 ↔ 绥化一中高三三班</p>
+  <h1>648 分的两条路：一个分数，两座城的门槛</h1>
+  <p class="dek">2004 年黑龙江中考，绥化与大庆考的是<b>同一张省统一命题卷</b>（文化课 660 ＋ 体育 30 ＝ 总分 690），
+  分数可以直接比。灰色是大庆实验中学那一届<b>录取的 447 名统招生</b>的分数分布；
+  petrol 是<b>绥化一中高三三班</b>（2004 级 / 2007 届）——三名已知中考实分的同学，加上按高考成绩反推的全班估计。
+  当年大庆各校禁收市外考生，本可上大庆实验的绥化学生只能留在绥化。</p>
+  <p class="byline">数据：2004 年大庆实验中学中考录取名单（447 人）· 2007 年绥化一中高考录取名单与本人整理 · 分数为总分（含体育 30）</p>
+</header>
+
+<div class="legend">
+  <div class="legend-item"><span class="lg-col"></span>大庆实验 2004 录取（447 人）</div>
+  <div class="legend-item"><span class="lg-dot"></span>高三三班 · 已知中考实分（3 人，实心）</div>
+  <div class="legend-item"><span class="lg-hollow"></span>高三三班 · 高考反推估计（62 人，空心）</div>
+  <div class="legend-item"><span class="lg-line"></span>统招录取线 / 648</div>
+</div>
+
+<div class="fig">
+  <svg id="chart" role="img" aria-label="大庆实验中学 2004 年录取分数分布，与绥化一中高三三班中考成绩的对照"></svg>
+</div>
+<p class="figcap" id="figcap"></p>
+
+<div class="strip" id="strip"></div>
+<div class="notes" id="notes"></div>
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// ---- 大庆实验中学 2004 录取名单：447 名统招生的中考总分（降序）----
+const DAQING = [655,654,654,648,647,645,645,645,644,643,643,643,643,643,642,642,641,641,641,641,641,640,640,640,640,639,639,639,638,638,638,638,638,638,638,638,637,637,637,637,636,636,636,636,636,636,636,635,635,635,635,635,635,634,634,634,634,634,633,633,633,633,633,633,632,632,632,632,632,631,631,631,630,630,630,630,630,630,630,630,630,630,630,630,630,629,629,629,629,629,629,629,629,628,628,628,627,627,627,627,627,627,627,627,627,627,627,627,627,627,626,626,626,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,624,624,624,624,624,624,624,624,624,624,623,623,623,623,623,623,623,623,623,623,622,622,622,622,622,622,622,622,622,622,622,621,621,621,621,621,621,621,621,621,621,621,621,621,621,621,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,619,619,619,619,619,619,619,619,619,619,619,619,619,619,618,618,618,618,618,618,618,618,618,618,618,618,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,616,616,616,616,616,616,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,614,614,614,614,614,614,614,614,614,614,614,614,614,614,614,614,613,613,613,613,613,613,613,613,613,613,613,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,611,611,611,611,611,611,611,611,611,611,611,611,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,608,608,608,608,608,608,608,608,608,608,608,608,608,608,608,607,607,607,607,607,607,607,607,607,607,607,607,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,604,604,604,604,604,604,604,604,604,604,604,604,604,603,603,603,603,603,603,603,603,603,603,603,603];
+
+// ---- 绥化一中高三三班：按 2007 高考排名反推的中考估计分（[姓名, 估计分, 高考分|null]）----
+const CLASS3_EST = [["林英魁",651.6,"666"],["贾洪亮",648.7,"657"],["刘翔",647.1,"657"],["李杏",645.9,"651"],["梁志超",645.0,"642"],["王胤燊",644.2,"641"],["刘雪威",643.5,"640"],["于鹏",642.9,"638"],["陈岩",642.4,"632"],["郭蕾",641.9,"632"],["包括",641.4,"631"],["李光磊",640.9,"631"],["李开",640.5,"631"],["刘欣",640.1,"630"],["邵润超",639.7,"630"],["闫永祥",639.3,"628"],["赵正少",638.9,"625"],["姜英男",638.6,"624"],["孟静",638.3,"620"],["尹琪东",637.9,"619"],["杨智广",637.6,"614"],["刘军力",637.3,"613"],["王铁鑫",637.0,"613"],["何香培",636.6,"612"],["耿庆龙",636.3,"612"],["吕晶鑫",636.0,"611"],["闫岩",635.7,"610"],["殷旭",635.4,"610"],["印亚奇",635.2,"605"],["段春颀",634.9,"604"],["李冬",634.6,"603"],["张赫琼",634.3,"601"],["张士萍",634.0,"597"],["侯雨薇",633.7,"593"],["王丽圆",633.4,"588"],["王晓薇",633.1,"588"],["陈媛丽",632.8,"588"],["邹笑天",632.6,"588"],["孙新宇",632.3,null],["王刚",632.0,null],["杨蕴哲",631.7,null],["李靖阳",631.4,null],["王昊",631.0,null],["李美逸",630.7,null],["孙俪",630.4,null],["庞晓陶",630.1,null],["王小杭",629.7,null],["韩磊",629.4,null],["曹剑超",629.1,null],["董琳",628.7,null],["张伟宇",628.3,null],["吕泽辉",627.9,null],["高珊",627.5,null],["李星曌",627.1,null],["高阳",626.6,null],["韩富成",626.1,null],["刘淑波",625.6,null],["贾伟宇",625.1,null],["李岩",624.5,null],["张国会",623.8,null],["郭宝玲",623.0,null],["于洪泽",622.1,null],["李佳滨",620.9,null],["牟月",619.3,null],["赵涌涵",616.4,null]];
+
+// ---- 高三三班：已知的中考实分 ----
+const REAL = [
+  {name:"林英魁", zk:648, gk:666, from:"绥棱五中（全县第三）", uni:"哈工大"},
+  {name:"刘欣",   zk:642, gk:630, from:"北林区秦家（第一名）", uni:"中南财经政法"},
+  {name:"刘翔",   zk:630, gk:657, from:"绥棱五中（全县第十三）", uni:"同济大学"},
+];
+
+// ---- 录取线（总分，含体育 30；2004 省统一命题）----
+const THR = [
+  {x:571, label:"绥化一中 571"},
+  {x:583, label:"大庆一中 583"},
+  {x:603, label:"大庆实验 603"},
+  {x:607, label:"铁人中学 607"},
+];
+
+const YOU = {x:648, label:"648"};
+
+// ---------- helpers ----------
+const svg = document.getElementById('chart');
+const tooltip = document.getElementById('tooltip');
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs={}, text){
+  const e = document.createElementNS(NS, tag);
+  for(const [k,v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if(text != null) e.textContent = text;
+  return e;
+}
+const daqingRankAtLeast = v => DAQING.reduce((n,x)=> n + (x >= v ? 1 : 0), 0);
+
+// ---------- geometry (mirrored: 大庆实验 直方图向上 · 高三三班 点阵向下) ----------
+const CW = 1000, CH = 512;
+const M = {top:52, right:26, bottom:56, left:48};
+const PW = CW - M.left - M.right;
+const X_MIN = 570, X_MAX = 660;
+const BINW = 2;
+const AXIS_Y = M.top + 268;              // 共用的横轴基线
+const UP_H = AXIS_Y - M.top;             // 直方图区高
+const xS = v => M.left + ((v - X_MIN) / (X_MAX - X_MIN)) * PW;
+
+svg.setAttribute('viewBox', `0 0 ${CW} ${CH}`);
+
+// --- 大庆实验 447 录取生：每 2 分一柱（人数）---
+const bins = [];
+for(let lo = 602; lo < 656; lo += BINW){
+  bins.push({lo, hi:lo+BINW, n: DAQING.reduce((c,x)=> c + (x>=lo && x<lo+BINW ? 1 : 0), 0)});
+}
+const yMax = Math.ceil(Math.max(...bins.map(b=>b.n)) / 10) * 10;   // 40
+const yUp = n => AXIS_Y - (n / yMax) * UP_H;
+
+// --- 高三三班：按分数分箱的点阵（每点 1 人）---
+const REAL_NAMES = new Set(REAL.map(r => r.name));
+const cols = {};                          // bin -> [{name, score, real, est, gk, from, uni}]
+REAL.forEach(r => {
+  const lo = Math.floor(r.zk / BINW) * BINW;
+  (cols[lo] ||= []).push({name:r.name, score:r.zk, real:true, gk:r.gk, from:r.from, uni:r.uni});
+});
+CLASS3_EST.forEach(([name, est, gk]) => {
+  if(REAL_NAMES.has(name)) return;
+  const lo = Math.floor(est / BINW) * BINW;
+  (cols[lo] ||= []).push({name, score:est, real:false, est, gk});
+});
+Object.values(cols).forEach(list => list.sort((a,b) => b.real - a.real));
+
+const DOT_R = 3.2, DOT_V = 7.6;
+const COL_TOP = AXIS_Y + 22;              // 第一排点的中心
+const maxDepth = Math.max(...Object.values(cols).map(l => l.length));
+const DOWN_BOTTOM = COL_TOP + (maxDepth - 1) * DOT_V + DOT_R;
+
+// ---------- grid + axes ----------
+for(let g = 0; g <= yMax; g += 10){
+  svg.appendChild(el('line', {x1:M.left, y1:yUp(g), x2:M.left+PW, y2:yUp(g), class:'hair'}));
+  svg.appendChild(el('text', {x:M.left-9, y:yUp(g)+3.5, 'text-anchor':'end', class:'ax'}, g));
+}
+// faint vertical guides + x labels (labels below the down region)
+for(let t = 570; t <= 660; t += 10){
+  svg.appendChild(el('line', {x1:xS(t), y1:M.top-2, x2:xS(t), y2:DOWN_BOTTOM+6, class:'hair'}));
+  svg.appendChild(el('text', {x:xS(t), y:DOWN_BOTTOM+16, 'text-anchor':'middle', class:'ax'}, t));
+}
+// shared axis line
+svg.appendChild(el('line', {x1:M.left, y1:AXIS_Y, x2:M.left+PW, y2:AXIS_Y,
+  stroke:'var(--rule)', 'stroke-width':1.6}));
+svg.appendChild(el('text', {x:M.left+PW/2, y:CH-6, 'text-anchor':'middle', class:'axttl'},
+  '中考总分（含体育 · 2004 黑龙江省统一命题 · 满分 690）'));
+svg.appendChild(el('text', {x:14, y:16, class:'axttl'}, '↑ 大庆实验录取人数 / 每 2 分'));
+svg.appendChild(el('text', {x:14, y:32, class:'axttl'}, '↓ 高三三班 · 每点 = 1 名学生'));
+
+// ---------- 大庆实验 直方图（向上）----------
+bins.forEach(b => {
+  if(b.n === 0) return;
+  const x = xS(b.lo) + 1;
+  const w = Math.max(1, xS(b.hi) - xS(b.lo) - 2);
+  const y = yUp(b.n);
+  const r = el('rect', {x:x.toFixed(1), y:y.toFixed(1), width:w.toFixed(1),
+    height:(AXIS_Y - y).toFixed(1), rx:1.5, class:'col'});
+  r.addEventListener('mouseenter', e => showTip(e, `${b.lo}–${b.hi-1} 分`,
+    [['这一段录取', `${b.n} 人`], [`≥ ${b.lo} 分累计`, `${daqingRankAtLeast(b.lo)} 人`]]));
+  r.addEventListener('mousemove', moveTip);
+  r.addEventListener('mouseleave', hideTip);
+  svg.appendChild(r);
+});
+
+// ---------- threshold lines（贯穿上下）----------
+THR.forEach((t, i) => {
+  const x = xS(t.x);
+  svg.appendChild(el('line', {x1:x, y1:M.top-4, x2:x, y2:DOWN_BOTTOM,
+    stroke:'var(--seal)', 'stroke-width':1.3, 'stroke-dasharray':'4 4', opacity:.7}));
+  svg.appendChild(el('text', {x:x+4, y:M.top + 10 + (i % 2) * 15, class:'thr'}, t.label));
+});
+
+// ---------- 648 标记 ----------
+(() => {
+  const x = xS(YOU.x);
+  svg.appendChild(el('line', {x1:x, y1:M.top-14, x2:x, y2:DOWN_BOTTOM, stroke:'var(--seal)',
+    'stroke-width':1.5, 'stroke-dasharray':'2 3'}));
+  svg.appendChild(el('text', {x:x, y:M.top-18, 'text-anchor':'middle', class:'you'}, YOU.label));
+})();
+
+// ---------- 高三三班 点阵（向下）----------
+Object.keys(cols).map(Number).sort((a,b)=>a-b).forEach(lo => {
+  const cx = xS(lo + BINW/2);
+  cols[lo].forEach((d, k) => {
+    const cy = COL_TOP + k * DOT_V;
+    const c = el('circle', d.real
+      ? {cx:cx, cy:cy, r:DOT_R+1.4, fill:'var(--petrol)', stroke:'var(--card)', 'stroke-width':1.4}
+      : {cx:cx, cy:cy, r:DOT_R, fill:'none', stroke:'var(--petrol)', 'stroke-width':1.5, opacity:.7});
+    c.setAttribute('style', 'cursor:pointer');
+    c.addEventListener('mouseenter', e => showTip(e,
+      d.real ? `${d.name} · 中考实分` : `${d.name} · 高考反推估计`,
+      d.real
+        ? [['中考总分', d.score + ' 分'], ['放进大庆实验', '第 ' + daqingRankAtLeast(d.score) + ' 名 / 447'],
+           ['初中', d.from], ['2007 高考', d.gk + ' 分 → ' + d.uni]]
+        : [['中考估计分', d.est.toFixed(1)], ['2007 高考', d.gk ? d.gk + ' 分' : '未记录'],
+           ['来源', '由高考排名反推，非实测']]));
+    c.addEventListener('mousemove', moveTip);
+    c.addEventListener('mouseleave', hideTip);
+    svg.appendChild(c);
+  });
+});
+
+// 已知实分三人的姓名标注
+const realLayout = REAL.map(r => ({...r, x: xS(Math.floor(r.zk/BINW)*BINW + BINW/2),
+  rank: daqingRankAtLeast(r.zk)})).sort((a,b) => a.x - b.x);
+const LBL_GAP = 118, LBL_Y = DOWN_BOTTOM + 32;
+realLayout.forEach((r, i) => {
+  r.lx = i === 0 ? r.x : Math.max(r.x, realLayout[i-1].lx + LBL_GAP);
+});
+realLayout.forEach(r => {
+  svg.appendChild(el('line', {x1:r.x, y1:DOWN_BOTTOM+2, x2:r.lx, y2:LBL_Y-11,
+    stroke:'var(--petrol)', 'stroke-width':.9, opacity:.5}));
+  svg.appendChild(el('text', {x:r.lx, y:LBL_Y, 'text-anchor':'middle', class:'name'},
+    `${r.name} ${r.zk}`));
+  svg.appendChild(el('text', {x:r.lx, y:LBL_Y+12, 'text-anchor':'middle', class:'sub'},
+    `大庆实验第 ${r.rank} 名`));
+});
+
+// ---------- tooltip plumbing ----------
+function showTip(evt, title, rows){
+  let html = `<div class="t-name">${title}</div>`;
+  rows.forEach(([k,v]) => html += `<div class="t-row"><span>${k}</span><span class="t-val">${v}</span></div>`);
+  tooltip.innerHTML = html;
+  tooltip.classList.add('visible');
+  moveTip(evt);
+}
+function moveTip(evt){
+  tooltip.style.left = (evt.clientX + 16) + 'px';
+  tooltip.style.top = (evt.clientY - 12) + 'px';
+}
+function hideTip(){ tooltip.classList.remove('visible'); }
+
+// ---------- caption / stats / notes ----------
+const dqMin = Math.min(...DAQING), dqMax = Math.max(...DAQING), dqN = DAQING.length;
+const median = DAQING[Math.floor(dqN/2)];
+
+document.getElementById('figcap').innerHTML =
+  `上下共用一条分数轴：<b>向上</b>是大庆实验录取的 447 人（每 2 分一柱），<b>向下</b>是高三三班 65 人的点阵，每个点一名学生。` +
+  ` 两组人数差近 7 倍，看形状、看落点，不要比柱高和点深。` +
+  ` 三班<b>实心点</b>是三名已知中考实分的同学（林英魁 648、刘欣 642、刘翔 630），都落在大庆实验录取带里；` +
+  ` <b>空心点</b>是其余 62 人按 2007 高考排名反推的估计位置——样本按高考结果截断、分布被压窄（刘翔实测 630，模型给 647），` +
+  ` 只是“大致落位”，别读成“全班都过了 603 线”。`;
+
+document.getElementById('strip').innerHTML = `
+  <div class="sc"><b>${dqN}</b><span>大庆实验 2004 录取统招生</span></div>
+  <div class="sc"><b>${dqMin}–${dqMax}</b><span>录取分数区间（中位 ${median}）</span></div>
+  <div class="sc pet"><b>并列第 4</b><span>林英魁 648 分放进大庆实验这届</span></div>
+  <div class="sc pet"><b>#16 / #85</b><span>刘欣 642 · 刘翔 630 在大庆实验的名次</span></div>
+  <div class="sc seal"><b>−32 分</b><span>绥化一中统招线(571) 低于 大庆实验(603)</span></div>
+`;
+
+document.getElementById('notes').innerHTML = `
+  <span class="hd">读图说明与口径</span>
+  <p><b>同一张卷子。</b>2004 年绥化、大庆同用黑龙江省统一命题卷（文化课 660 ＋ 体育 30 ＝ 总分 690），
+  跨市分数可直接比较；只有哈尔滨市自主命题、不可比。图中所有分数均为<b>含体育的总分</b>，
+  大庆各校录取线（绥化一中 571 / 大庆一中 583 / 大庆实验 603 / 铁人 607）取自当年教育局公告与省重点录取线表。</p>
+  <p><b>大庆实验名单的截断。</b>447 人全部是统招生，最低分 603 即统招线；自费 / 择校生分数更低但不在此表，
+  所以直方图左侧是被人为切掉的，不是真实的能力下限。</p>
+  <p><b>三班的“反推估计”不可当实测。</b>估计分由 2007 高考排名经无偏回归（高考 ≈ 0.878×中考 + 114.7）反推，
+  只覆盖能在高考录取名单里查到的前 65 名，样本按高考结果截断、范围被压缩，整体偏高。三个已知实分点才是硬证据。</p>
+  <p><b>为什么两条路。</b>2004 年大庆市禁止市外考生就读大庆各高中。你以 648 分、大庆市第 11 名的成绩，
+  与名单中同样 648 分、同为市第 11 名的<b>李梦然</b>（六十九中 → 大庆实验 → 2007 年大庆市理科状元、清华）
+  处在完全相同的起点，却因户籍政策只能就读绥化一中。这张图量的就是那道门槛：
+  你的分数在大庆实验能排到前四，而门是锁着的。</p>
+`;
+</script>
+</div>
+</body>
+</html>

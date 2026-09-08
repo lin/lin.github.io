@@ -1,5 +1,4 @@
 
-
 <div class="footer wrapper">
 	<nav class="nav">
 		<div>
@@ -13,3 +12,54 @@
 {{- with .Site.Params.Social -}}
 <script>feather.replace()</script>
 {{- end -}}
+
+<!-- Lightbox 图片放大预览 -->
+<div id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="图片预览">
+  <button id="lightbox-close" aria-label="关闭">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+  <div id="lightbox-caption"></div>
+</div>
+<script>
+(function () {
+  var overlay = document.getElementById('lightbox-overlay');
+  var img     = document.getElementById('lightbox-img');
+  var caption = document.getElementById('lightbox-caption');
+  var closeBtn = document.getElementById('lightbox-close');
+
+  function open(src, alt) {
+    img.src = src;
+    img.alt = alt || '';
+    caption.textContent = alt || '';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    img.src = '';
+  }
+
+  // 绑定文章内图片点击
+  document.querySelectorAll('.markdown img').forEach(function (el) {
+    // 跳过已被 <a> 包裹的图片（本身就是链接）
+    if (el.closest('a')) return;
+    el.addEventListener('click', function () {
+      open(el.src, el.alt);
+    });
+  });
+
+  // 点击遮罩关闭
+  overlay.addEventListener('click', function (e) {
+    if (e.target !== img) close();
+  });
+
+  // 关闭按钮
+  closeBtn.addEventListener('click', close);
+
+  // ESC 键关闭
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+})();
+</script>

@@ -1,6 +1,6 @@
 ---
 title: "Kegan"
-date: 2026-07-22
+date: 2026-11-22
 math: true
 draft: true
 ---

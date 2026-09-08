@@ -1,0 +1,308 @@
+<!doctype html><meta charset="utf-8"><style>
+:root{
+  color-scheme: light;
+  --page:#e9ebe8; --card:#fafbf8; --card-2:#f2f4ef;
+  --ink:#101210; --ink-2:#4e524d; --ink-3:#83877f;
+  --rule:#d6d9d3; --hair:#e3e5df;
+  --seal:#b23a2b; --seal-ink:#ffffff; --seal-wash:rgba(178,58,43,.09);
+  --mark-gray:#a8aca4;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100;
+  --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --s8:#e34948;
+  --t0:#104281; --t1:#256abf; --t2:#3987e5; --t3:#86b6ef;
+  --qh:#4a3aa7; --bd:#e34948;
+  /* principal-era bands: green, violet, amber, blue, red — ordered so
+     neighbouring eras are the easiest pairs to separate */
+  --era-bg-1:#e9f0e8; --era-ink-1:#3d6b4a;
+  --era-bg-2:#eee9f5; --era-ink-2:#5b4485;
+  --era-bg-3:#f7efdc; --era-ink-3:#8a6410;
+  --era-bg-4:#e4edf4; --era-ink-4:#2a6285;
+  --era-bg-5:#f8e8e4; --era-ink-5:#a5372a;
+  --shadow:0 1px 2px rgba(16,18,16,.05), 0 8px 24px -12px rgba(16,18,16,.18);
+  --focus:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0e100f; --card:#191b19; --card-2:#212421;
+    --ink:#f2f4f0; --ink-2:#b9beb5; --ink-3:#83877f;
+    --rule:#2e312d; --hair:#262925;
+    --seal:#dd6a55; --seal-ink:#17110f; --seal-wash:rgba(221,106,85,.14);
+    --mark-gray:#6b6f68;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+    --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --t0:#cde2fb; --t1:#86b6ef; --t2:#3987e5; --t3:#1c5cab;
+    --qh:#9085e9; --bd:#e66767;
+    --era-bg-1:#1b241d; --era-ink-1:#83bd93;
+    --era-bg-2:#201c29; --era-ink-2:#a79ad9;
+    --era-bg-3:#252017; --era-ink-3:#d3a54d;
+    --era-bg-4:#172128; --era-ink-4:#72abd0;
+    --era-bg-5:#271a17; --era-ink-5:#e3846f;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+    --focus:#5598e7;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0e100f; --card:#191b19; --card-2:#212421;
+  --ink:#f2f4f0; --ink-2:#b9beb5; --ink-3:#83877f;
+  --rule:#2e312d; --hair:#262925;
+  --seal:#dd6a55; --seal-ink:#17110f; --seal-wash:rgba(221,106,85,.14);
+  --mark-gray:#6b6f68;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+  --t0:#cde2fb; --t1:#86b6ef; --t2:#3987e5; --t3:#1c5cab;
+  --qh:#9085e9; --bd:#e66767;
+  --era-bg-1:#1b241d; --era-ink-1:#83bd93;
+  --era-bg-2:#201c29; --era-ink-2:#a79ad9;
+  --era-bg-3:#252017; --era-ink-3:#d3a54d;
+  --era-bg-4:#172128; --era-ink-4:#72abd0;
+  --era-bg-5:#271a17; --era-ink-5:#e3846f;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+  --focus:#5598e7;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;font-weight:700}
+.page{max-width:1120px;margin:0 auto;padding:0 20px 72px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+
+/* ---------- header ---------- */
+.masthead{padding:44px 0 26px;border-bottom:2px solid var(--ink)}
+.masthead h1{margin:0;font-size:clamp(28px,4.6vw,40px);line-height:1.14;letter-spacing:.01em;text-wrap:balance}
+.masthead .sub{margin:8px 0 0;color:var(--ink-2);font-size:14.5px;max-width:62ch}
+.span-line{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--ink-3);letter-spacing:.06em}
+.span-line b{color:var(--ink-2);font-weight:500;font-variant-numeric:tabular-nums}
+
+/* ---------- filter bar ---------- */
+.filters{
+  position:sticky;top:0;z-index:30;margin:0 -20px;padding:11px 20px;
+  background:color-mix(in srgb,var(--page) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;
+}
+.fgroup{display:flex;gap:8px;align-items:center}
+.flabel{font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase}
+.seg{display:flex;background:var(--card-2);border:1px solid var(--rule);border-radius:7px;padding:2px;gap:2px}
+.seg button{
+  font:inherit;font-size:13px;padding:4px 13px;border:0;border-radius:5px;cursor:pointer;
+  background:transparent;color:var(--ink-2);
+}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--seal);color:var(--seal-ink);font-weight:500}
+.yr{display:flex;align-items:center;gap:7px}
+.yr input[type=range]{width:96px;accent-color:var(--ink-3)}
+.yr .yrtick{font-size:12px;color:var(--ink-3)}
+.yr output{font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums;min-width:88px;font-weight:500}
+.reset{font:inherit;font-size:12.5px;background:none;border:0;color:var(--ink-3);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:4px}
+.reset:hover{color:var(--seal)}
+
+/* ---------- kpi ---------- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin:26px 0 40px}
+.kpi{background:var(--card);padding:17px 18px 15px}
+.kpi .k-lab{font-size:11.5px;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+.kpi .k-val{font-size:34px;line-height:1.1;margin-top:5px;font-weight:700;letter-spacing:-.015em}
+.kpi .k-sub{font-size:12.5px;color:var(--ink-3);margin-top:3px}
+.kpi.accent .k-val{color:var(--seal)}
+
+/* ---------- sections ---------- */
+section{margin:0 0 46px}
+.s-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;margin-bottom:5px;
+  padding-bottom:9px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:11.5px;letter-spacing:.16em;color:var(--seal);text-transform:uppercase;flex:none}
+.s-head h2{margin:0;font-size:21px;letter-spacing:.01em}
+.s-note{font-size:13px;color:var(--ink-3);margin:10px 0 0;max-width:74ch}
+
+.card{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:11px;padding:20px;margin-top:16px;box-shadow:var(--shadow)}
+
+/* ---------- legend ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:7px 18px;margin:0 0 16px;padding:0;list-style:none;font-size:12.5px;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:7px}
+.lg-rect{width:13px;height:13px;border-radius:3px;flex:none}
+.lg-line{width:16px;height:2px;border-radius:2px;flex:none}
+.legend .ct{color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* ---------- horizontal bars ---------- */
+.bars{display:flex;flex-direction:column;gap:9px}
+.barrow{display:grid;grid-template-columns:minmax(96px,132px) 1fr auto;gap:12px;align-items:center;
+  border:0;background:none;padding:3px 4px;font:inherit;color:inherit;text-align:left;cursor:pointer;border-radius:7px;width:100%}
+.barrow:hover{background:var(--card-2)}
+.barrow[aria-current="true"]{background:var(--seal-wash);box-shadow:inset 2px 0 0 var(--seal)}
+.b-name{font-size:13px;color:var(--ink-2);line-height:1.3;overflow-wrap:anywhere}
+.barrow[aria-current="true"] .b-name{color:var(--ink);font-weight:500}
+.b-track{display:flex;gap:2px;height:19px;align-items:stretch;min-width:0}
+.b-seg{min-width:2px;border-radius:2px}
+.b-seg:first-child{border-top-left-radius:4px;border-bottom-left-radius:4px}
+.b-seg:last-child{border-top-right-radius:4px;border-bottom-right-radius:4px}
+.b-tot{font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink);min-width:34px;text-align:right;font-weight:500}
+.b-tot small{color:var(--ink-3);font-weight:400;font-size:11.5px}
+.morebtn{margin-top:14px;font:inherit;font-size:13px;background:var(--card-2);border:1px solid var(--rule);
+  border-radius:7px;padding:6px 15px;cursor:pointer;color:var(--ink-2)}
+.morebtn:hover{border-color:var(--ink-3);color:var(--ink)}
+
+/* ---------- line chart ---------- */
+.picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}
+.chip{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;padding:5px 12px;
+  border:1px solid var(--rule);border-radius:999px;background:var(--card-2);color:var(--ink-3);cursor:pointer}
+.chip:hover{border-color:var(--ink-3)}
+.chip .dot{width:9px;height:9px;border-radius:50%;background:currentColor;flex:none;opacity:.35}
+.chip[aria-pressed="true"]{color:var(--ink);border-color:currentColor;background:var(--card)}
+.chip[aria-pressed="true"] .dot{opacity:1}
+.plotwrap{position:relative;width:100%;overflow-x:auto}
+svg.plot{display:block;width:100%;height:auto;touch-action:pan-y}
+.gridline{stroke:var(--hair);stroke-width:1}
+.axisline{stroke:var(--rule);stroke-width:1}
+.tick{fill:var(--ink-3);font-size:11px;font-variant-numeric:tabular-nums}
+.axtitle{fill:var(--ink-3);font-size:11px;letter-spacing:.08em}
+.sline{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.endlab{font-size:11.5px;font-weight:500;font-variant-numeric:tabular-nums}
+.crosshair{stroke:var(--ink-3);stroke-width:1}
+.hitrect{fill:transparent}
+
+/* ---------- tooltip ---------- */
+.tip{
+  position:absolute;pointer-events:none;z-index:20;opacity:0;transition:opacity .1s;
+  background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:9px 11px;
+  box-shadow:var(--shadow);font-size:12.5px;min-width:124px;max-width:250px;
+}
+.tip.on{opacity:1}
+.tip .t-head{font-weight:700;font-size:12.5px;margin-bottom:6px;padding-bottom:5px;border-bottom:1px solid var(--hair);color:var(--ink)}
+.tip .t-row{display:flex;align-items:center;gap:8px;margin-top:3px}
+.tip .t-key{width:14px;height:2px;border-radius:2px;flex:none}
+.tip .t-key.sq{height:11px;width:11px;border-radius:3px}
+.tip .t-val{font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink);margin-left:auto}
+.tip .t-name{color:var(--ink-2);overflow-wrap:anywhere}
+
+/* ---------- school detail ---------- */
+.detail-top{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:flex-end;margin-bottom:20px;
+  padding-bottom:16px;border-bottom:1px solid var(--hair)}
+.detail-top h3{margin:0;font-size:23px;flex:1 1 auto;min-width:200px}
+.dstat{text-align:right}
+.dstat .d-lab{font-size:11px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase}
+.dstat .d-val{font-size:23px;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+.dstat.accent .d-val{color:var(--seal)}
+.selwrap{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+select{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--rule);border-radius:7px;
+  background:var(--card-2);color:var(--ink);max-width:100%}
+.notebox{margin-top:22px;padding-top:16px;border-top:1px solid var(--hair)}
+.nb-head{font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase;margin-bottom:9px}
+.notelist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:1px;max-width:700px}
+.notelist li.nrow{display:grid;gap:10px;align-items:baseline;font-size:13px;padding:6px;border-radius:5px;grid-template-columns:56px 40px 76px minmax(0,120px) minmax(0,200px) auto}
+.notelist li.nrow:nth-child(odd){background:var(--card-2)}
+.n-y{color:var(--ink-3);font-variant-numeric:tabular-nums}
+.n-t{color:var(--ink-3)}
+.n-name{font-weight:500;color:var(--ink);overflow-wrap:anywhere}
+.n-sch{color:var(--ink-3);overflow-wrap:anywhere}
+.n-uni{color:var(--ink-2);overflow-wrap:anywhere}
+.n-r{color:var(--ink-3);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.n-note{grid-column:1/-1;color:var(--seal);padding-top:2px}
+.qb-title{margin-bottom:11px}
+.qb-school{font-size:17px;color:var(--ink);line-height:1.3}
+.qb-meta{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-top:3px}
+.qb-lab{font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase}
+.qb-ct{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.qb-scope{font-size:12.5px;color:var(--seal)}
+.qblist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:1px;max-width:660px}
+.qbrow{display:grid;gap:10px;align-items:baseline;font-size:13px;padding:5px 6px;border-radius:5px;
+  grid-template-columns:56px 76px 40px 66px minmax(0,210px) auto}
+.qbrow:nth-child(odd){background:var(--card-2)}
+.q-y{color:var(--ink-3);font-variant-numeric:tabular-nums}
+.q-n{font-weight:500;color:var(--ink);overflow-wrap:anywhere}
+.q-t{color:var(--ink-3)}
+.q-s{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.q-u{color:var(--ink-2);display:flex;align-items:baseline;gap:6px;min-width:0;overflow-wrap:anywhere}
+.q-dot{width:8px;height:8px;border-radius:2px;flex:none;transform:translateY(-1px)}
+.q-r{color:var(--ink-3);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+/* ---------- principal eras ---------- */
+.eraband{stroke:none}
+.eradiv{stroke:var(--ink-3);stroke-width:1;opacity:.4}
+.eralab{font-size:11px;font-weight:500;letter-spacing:.02em}
+.eralegend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 0;padding:0;list-style:none;
+  font-size:12px;color:var(--ink-2)}
+.eralegend li{display:flex;align-items:center;gap:7px}
+.eralegend .sw{width:15px;height:11px;border-radius:2px;flex:none;border:1px solid var(--rule)}
+.eralegend .yr2{color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+/* ---------- table ---------- */
+
+.empty{padding:34px 12px;text-align:center;color:var(--ink-3);font-size:13.5px}
+
+/* ---------- prose sections ---------- */
+.prose{max-width:74ch;font-size:14.5px;color:var(--ink-2);margin:14px 0 0}
+.prose:first-child{margin-top:0}
+.subh{font-size:16px;margin:30px 0 0;color:var(--ink);font-family:"Noto Serif SC",Songti SC,serif;font-weight:700}
+.prose strong{color:var(--ink);font-weight:600}
+.prose .hi,.hi{color:var(--seal);font-weight:600}
+.dtab td.hi{color:var(--seal);font-weight:600}
+.dtab td.hi b{color:var(--seal)}
+.dtab{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.dtab th,.dtab td{padding:7px 10px;border-bottom:1px solid var(--hair);text-align:right;white-space:nowrap}
+.dtab th{font-size:11.5px;letter-spacing:.08em;color:var(--ink-3);font-weight:500;border-bottom:1px solid var(--rule)}
+.dtab th.l,.dtab td.l{text-align:left}
+.dtab tr.me td{background:var(--seal-wash);color:var(--seal);font-weight:600}
+.dtab tr.sum td{border-top:1px solid var(--rule);border-bottom:0;font-weight:600;color:var(--ink)}
+.dtab td b{color:var(--ink)}
+.dtab tr.me td b{color:var(--seal)}
+.tscroll{overflow-x:auto}
+.callout{border-left:3px solid var(--seal);background:var(--seal-wash);padding:14px 16px;margin:18px 0 0;border-radius:0 7px 7px 0}
+.callout p{margin:0;font-size:14.5px;color:var(--ink);max-width:68ch}
+.callout p+p{margin-top:10px}
+text.cax{font-family:"Noto Sans SC",system-ui,sans-serif;font-size:11px;fill:var(--ink-3)}
+.figwrap{overflow-x:auto;margin:4px 0 0}
+.figcap{font-size:12.5px;color:var(--ink-3);margin:12px 0 0;max-width:76ch}
+.limits{font-size:13px;color:var(--ink-3);max-width:76ch;margin:18px 0 0}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--rule);padding-top:22px;margin-top:52px;font-size:12.5px;color:var(--ink-3)}
+footer h4{margin:0 0 9px;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-2)}
+footer ul{margin:0;padding-left:19px;display:flex;flex-direction:column;gap:5px;max-width:82ch}
+
+@media (max-width:640px){
+  .barrow{grid-template-columns:minmax(78px,104px) 1fr auto;gap:9px}
+  .qbrow{grid-template-columns:50px 1fr auto;row-gap:2px}
+  .qbrow .q-t,.qbrow .q-s{grid-column:2}
+  .qbrow .q-u{grid-column:1/-1}
+  .notelist li.nrow{grid-template-columns:50px 1fr auto;row-gap:2px}
+  .nrow .n-t{grid-column:2}
+  .nrow .n-sch,.nrow .n-uni{grid-column:1/-1}
+  .masthead{padding-top:32px}
+  .kpi .k-val{font-size:28px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style><div class="page"><section><h3 class="subh">一条曲线：头名的全省名次，2004–2017</h3>
+    <p class="prose">分数会随卷子难易上下跳，名次不会。把绥化一中每年<strong>最高分考生</strong>的分数
+    用当年的一分一段表换成全省理科名次，再把清华在黑龙江理科录取线的名次画成参照线——
+    <strong>两条线之间的距离，就是这所学校的顶端离清华有多远。</strong></p>
+    <div class="card">
+      <div class="figwrap"><svg viewBox="0 0 1000 430" width="100%" role="img" aria-label="绥化一中历年头名的全省理科名次，2004–2017，与清华录取线名次对照，按校长任期着色"><rect x="48.0" y="26" width="45.8" height="304" fill="var(--era-bg-3)"/><text x="70.9" y="21" text-anchor="middle" class="cax" fill="var(--era-ink-3)" style="font-weight:600">张玉臣</text><rect x="93.8" y="26" width="636.9" height="304" fill="var(--era-bg-4)"/><text x="412.3" y="21" text-anchor="middle" class="cax" fill="var(--era-ink-4)" style="font-weight:600">魏志波</text><rect x="730.8" y="26" width="173.2" height="304" fill="var(--era-bg-5)"/><text x="817.4" y="21" text-anchor="middle" class="cax" fill="var(--era-ink-5)" style="font-weight:600">白云霞</text><line x1="62" y1="81.6" x2="890" y2="81.6" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="85.1" text-anchor="end">第 30</text><line x1="62" y1="118.9" x2="890" y2="118.9" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="122.4" text-anchor="end">第 50</text><line x1="62" y1="169.5" x2="890" y2="169.5" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="173.0" text-anchor="end">第 100</text><line x1="62" y1="220.2" x2="890" y2="220.2" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="223.7" text-anchor="end">第 200</text><line x1="62" y1="270.8" x2="890" y2="270.8" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="274.3" text-anchor="end">第 400</text><line x1="62" y1="321.4" x2="890" y2="321.4" stroke="var(--hair)" stroke-width="1"/><text class="cax" x="55" y="324.9" text-anchor="end">第 800</text><text class="cax" x="62.0" y="347" text-anchor="middle">2004</text><text class="cax" x="125.7" y="347" text-anchor="middle">05</text><text class="cax" x="189.4" y="347" text-anchor="middle">2006</text><text class="cax" x="253.1" y="347" text-anchor="middle">07</text><text class="cax" x="316.8" y="347" text-anchor="middle">2008</text><text class="cax" x="380.5" y="347" text-anchor="middle">09</text><text class="cax" x="444.2" y="347" text-anchor="middle">2010</text><text class="cax" x="507.8" y="347" text-anchor="middle">11</text><text class="cax" x="571.5" y="347" text-anchor="middle">2012</text><text class="cax" x="635.2" y="347" text-anchor="middle">13</text><text class="cax" x="698.9" y="347" text-anchor="middle">2014</text><text class="cax" x="762.6" y="347" text-anchor="middle">15</text><text class="cax" x="826.3" y="347" text-anchor="middle">2016</text><text class="cax" x="890.0" y="347" text-anchor="middle">17</text><text class="cax" x="8" y="368">全省理科名次（对数轴，越靠上越好）</text><path d="M62.0,169.5 L125.7,223.7 L189.4,190.4 L253.1,178.5 L316.8,174.5 L380.5,182.9 L444.2,165.0 L507.8,147.5 L571.5,131.0 L635.2,114.4 L698.9,111.2 L762.6,161.8 L826.3,141.4 L890.0,133.4" fill="none" stroke="var(--t1)" stroke-width="1.8" stroke-dasharray="5 4"/><circle cx="62.0" cy="169.5" r="2.4" fill="var(--t1)"><title>2004 年清华在黑理科线 657 分 ≈ 全省第 100 名</title></circle><circle cx="125.7" cy="223.7" r="2.4" fill="var(--t1)"><title>2005 年清华在黑理科线 673 分 ≈ 全省第 210 名</title></circle><circle cx="189.4" cy="190.4" r="2.4" fill="var(--t1)"><title>2006 年清华在黑理科线 681 分 ≈ 全省第 133 名</title></circle><circle cx="253.1" cy="178.5" r="2.4" fill="var(--t1)"><title>2007 年清华在黑理科线 687 分 ≈ 全省第 113 名</title></circle><circle cx="316.8" cy="174.5" r="2.4" fill="var(--t1)"><title>2008 年清华在黑理科线 685 分 ≈ 全省第 107 名</title></circle><circle cx="380.5" cy="182.9" r="2.4" fill="var(--t1)"><title>2009 年清华在黑理科线 670 分 ≈ 全省第 120 名</title></circle><circle cx="444.2" cy="165.0" r="2.4" fill="var(--t1)"><title>2010 年清华在黑理科线 684 分 ≈ 全省第 94 名</title></circle><circle cx="507.8" cy="147.5" r="2.4" fill="var(--t1)"><title>2011 年清华在黑理科线 684 分 ≈ 全省第 74 名</title></circle><circle cx="571.5" cy="131.0" r="2.4" fill="var(--t1)"><title>2012 年清华在黑理科线 669 分 ≈ 全省第 59 名</title></circle><circle cx="635.2" cy="114.4" r="2.4" fill="var(--t1)"><title>2013 年清华在黑理科线 683 分 ≈ 全省第 47 名</title></circle><circle cx="698.9" cy="111.2" r="2.4" fill="var(--t1)"><title>2014 年清华在黑理科线 690 分 ≈ 全省第 45 名</title></circle><circle cx="762.6" cy="161.8" r="2.4" fill="var(--t1)"><title>2015 年清华在黑理科线 682 分 ≈ 全省第 90 名</title></circle><circle cx="826.3" cy="141.4" r="2.4" fill="var(--t1)"><title>2016 年清华在黑理科线 683 分 ≈ 全省第 68 名</title></circle><circle cx="890.0" cy="133.4" r="2.4" fill="var(--t1)"><title>2017 年清华在黑理科线 678 分 ≈ 全省第 61 名</title></circle><path d="M62.0,84.0 L125.7,152.3 L189.4,226.5 L253.1,178.5 L316.8,230.0 L380.5,259.3 L444.2,286.5 L507.8,266.6 L571.5,300.9 L635.2,239.0 L698.9,174.5 L762.6,186.4 L826.3,141.4 L890.0,102.6" fill="none" stroke="var(--seal)" stroke-width="2.6"/><circle cx="62.0" cy="84.0" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2004 年 刘明宇 671 分 ≈ 全省第 31 名</title></circle><circle cx="125.7" cy="152.3" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2005 年 陶久亮 683 分 ≈ 全省第 79 名</title></circle><circle cx="189.4" cy="226.5" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2006 年 马慧 676 分 ≈ 全省第 218 名</title></circle><circle cx="253.1" cy="178.5" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2007 年 陈思 687 分 ≈ 全省第 113 名</title></circle><circle cx="316.8" cy="230.0" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2008 年 纪红景 677 分 ≈ 全省第 229 名</title></circle><circle cx="380.5" cy="259.3" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2009 年 夏骥远 657 分 ≈ 全省第 342 名</title></circle><line x1="444.2" y1="264.7" x2="444.2" y2="315.8" stroke="var(--seal)" stroke-width="1.2" opacity=".55"/><circle cx="444.2" cy="286.5" r="4" fill="var(--card)" stroke="var(--seal)" stroke-width="1.8"><title>2010 年 杜英玮 662 分 ≈ 全省第 496 名（估算）</title></circle><circle cx="507.8" cy="266.6" r="4" fill="var(--card)" stroke="var(--seal)" stroke-width="1.8"><title>2011 年 苍雪 667 分 ≈ 全省第 378 名（由公布锚点内插）</title></circle><line x1="571.5" y1="257.6" x2="571.5" y2="322.7" stroke="var(--seal)" stroke-width="1.2" opacity=".55"/><circle cx="571.5" cy="300.9" r="4" fill="var(--card)" stroke="var(--seal)" stroke-width="1.8"><title>2012 年 邓海亮 641 分 ≈ 全省第 604 名（估算）</title></circle><circle cx="635.2" cy="239.0" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2013 年 吕日陶 665 分 ≈ 全省第 259 名</title></circle><circle cx="698.9" cy="174.5" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2014 年 苑辰铭 682 分 ≈ 全省第 107 名</title></circle><circle cx="762.6" cy="186.4" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2015 年 王旭 678 分 ≈ 全省第 126 名</title></circle><circle cx="826.3" cy="141.4" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2016 年 齐博涵 683 分 ≈ 全省第 68 名</title></circle><circle cx="890.0" cy="102.6" r="4" fill="var(--seal)" stroke="var(--seal)" stroke-width="1.8"><title>2017 年 马钰涵 681 分 ≈ 全省第 40 名</title></circle><circle cx="62.0" cy="174.5" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 蒋梦雄 656 分 ≈ 全省第 107 名</title></circle><circle cx="62.0" cy="179.1" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 陈善双 655 分 ≈ 全省第 114 名</title></circle><circle cx="62.0" cy="226.8" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 任强 645 分 ≈ 全省第 219 名</title></circle><circle cx="62.0" cy="244.5" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 王立东 641 分 ≈ 全省第 279 名</title></circle><circle cx="62.0" cy="278.4" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 徐成龙 633 分 ≈ 全省第 444 名</title></circle><circle cx="62.0" cy="282.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 高妍 632 分 ≈ 全省第 470 名</title></circle><circle cx="67.0" cy="282.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 李清正 632 分 ≈ 全省第 470 名</title></circle><circle cx="72.0" cy="282.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2004 年 于佳鑫 632 分 ≈ 全省第 470 名</title></circle><circle cx="125.7" cy="236.7" r="2.7" fill="var(--seal)" opacity="0.42"><title>2005 年 李牧 671 分 ≈ 全省第 251 名</title></circle><circle cx="130.7" cy="236.7" r="2.7" fill="var(--seal)" opacity="0.42"><title>2005 年 张亮 671 分 ≈ 全省第 251 名</title></circle><circle cx="189.4" cy="255.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2006 年 邓博文 671 分 ≈ 全省第 325 名</title></circle><circle cx="189.4" cy="299.7" r="2.7" fill="var(--seal)" opacity="0.42"><title>2006 年 宗毅 662 分 ≈ 全省第 594 名</title></circle><circle cx="253.1" cy="221.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2007 年 朱天羽 681 分 ≈ 全省第 204 名</title></circle><circle cx="253.1" cy="234.7" r="2.7" fill="var(--seal)" opacity="0.42"><title>2007 年 李国一 679 分 ≈ 全省第 244 名</title></circle><circle cx="253.1" cy="306.5" r="2.7" fill="var(--seal)" opacity="0.42"><title>2007 年 林英魁 666 分 ≈ 全省第 652 名</title></circle><circle cx="316.8" cy="257.6" r="2.7" fill="var(--seal)" opacity="0.42"><title>2008 年 孟详睿 673 分 ≈ 全省第 334 名</title></circle><circle cx="444.2" cy="286.3" r="2.7" fill="var(--seal)" opacity="0.42"><title>2010 年 杜英玮 662 分 ≈ 全省第 495 名（估算）</title></circle><circle cx="698.9" cy="251.5" r="2.7" fill="var(--seal)" opacity="0.42"><title>2014 年 杨月莹 671 分 ≈ 全省第 307 名</title></circle><circle cx="698.9" cy="266.3" r="2.7" fill="var(--seal)" opacity="0.42"><title>2014 年 赵思洋 668 分 ≈ 全省第 376 名</title></circle><circle cx="762.6" cy="252.9" r="2.7" fill="var(--seal)" opacity="0.42"><title>2015 年 陶一宁 665 分 ≈ 全省第 313 名</title></circle><circle cx="762.6" cy="275.7" r="2.7" fill="var(--seal)" opacity="0.42"><title>2015 年 赵尔英 660 分 ≈ 全省第 428 名</title></circle><circle cx="826.3" cy="202.0" r="2.7" fill="var(--seal)" opacity="0.42"><title>2016 年 张玉莹 675 分 ≈ 全省第 156 名</title></circle><circle cx="826.3" cy="206.1" r="2.7" fill="var(--seal)" opacity="0.42"><title>2016 年 李权熹 674 分 ≈ 全省第 165 名</title></circle><circle cx="826.3" cy="226.8" r="2.7" fill="var(--seal)" opacity="0.42"><title>2016 年 李慧欣 671 分 ≈ 全省第 219 名</title></circle><circle cx="890.0" cy="163.4" r="2.7" fill="var(--seal)" opacity="0.42"><title>2017 年 张梦轩 674 分 ≈ 全省第 92 名</title></circle><circle cx="890.0" cy="173.1" r="2.7" fill="var(--seal)" opacity="0.42"><title>2017 年 赵梓岐 673 分 ≈ 全省第 105 名</title></circle><circle cx="890.0" cy="204.3" r="2.7" fill="var(--seal)" opacity="0.42"><title>2017 年 吴同 668 分 ≈ 全省第 161 名</title></circle><circle cx="895.0" cy="204.3" r="2.7" fill="var(--seal)" opacity="0.42"><title>2017 年 刘晓禹 668 分 ≈ 全省第 161 名</title></circle><circle cx="253.1" cy="282.6" r="3.4" fill="var(--card)" stroke="var(--seal)" stroke-width="1.5" stroke-dasharray="2.2 1.8"><title>2007 年 邢妍（上海交大／人大，分数未公布）——此处仅作示意，假设 671 分 ≈ 全省第 470 名，不是实测值</title></circle><circle cx="253.1" cy="297.5" r="3.4" fill="var(--card)" stroke="var(--seal)" stroke-width="1.5" stroke-dasharray="2.2 1.8"><title>2007 年 李雪（上海交大／人大，分数未公布）——此处仅作示意，假设 668 分 ≈ 全省第 577 名，不是实测值</title></circle><text class="cax" x="260.1" y="286.6" fill="var(--seal)" opacity=".85">虚线圈＝假设值</text><text class="cax" x="125.7" y="140.3" text-anchor="middle" fill="var(--seal)" style="font-weight:700;font-size:12px">陶久亮 683</text><text class="cax" x="189.4" y="243.5" text-anchor="middle" fill="var(--seal)" style="font-weight:700;font-size:12px">马慧 676</text><text class="cax" x="253.1" y="166.5" text-anchor="middle" fill="var(--seal)" style="font-weight:700;font-size:12px">陈思 687</text><text class="cax" x="316.8" y="247.0" text-anchor="middle" fill="var(--seal)" style="font-weight:700;font-size:12px">纪红景 677</text><text class="cax" x="64.0" y="60.0" text-anchor="middle" fill="var(--seal)" style="font-weight:700;font-size:12px">刘明宇 671<tspan x="64.0" dy="13">全省第 31</tspan></text><text class="cax" x="581.5" y="298.9" fill="var(--seal)" style="font-weight:700;font-size:12px">邓海亮 641<tspan x="581.5" dy="13">约第 604</tspan></text><text class="cax" x="894.0" y="78.6" text-anchor="end" fill="var(--seal)" style="font-weight:700;font-size:12px">马钰涵 681<tspan x="894.0" dy="13">全省第 40</tspan></text><text class="cax" x="393.2" y="204.9" fill="var(--t1)" style="font-weight:600">清华在黑龙江理科录取线的名次</text></svg></div>
+      <p class="figcap">粗红线连的是每年绥化一中的<strong>最高分</strong>，<strong>不区分应届与复读</strong>——本站的名单里只有 2008 年那位（纪红景，2004 级二班复读一年）明确记了这一项，其余年份都没有记，所以按统一口径一并处理。
+      线上：实心点为当年一分一段表实算，<strong>空心点为估算</strong>（2010、2012 两年本站无一分一段表，2011 由当年公布的七个锚点内插），竖线是估算的取值区间。
+      <strong>淡红色小点是该年绥化一中其余进入全省前 800 名的考生</strong>（全期共 42 人次，鼠标悬停看姓名与分数）。
+      底色为校长任期；蓝虚线是清华在黑龙江理科录取线对应的全省名次。
+      2005 年清华线的名次（第 210）明显偏大，该年一分一段表是推断值，此点存疑。</p>
+      <p class="figcap"><strong>2007 年那两个虚线圈是假设值，不是实测。</strong>那一年绥化一中的第 4、第 5 名（邢妍考入上海交大、李雪考入中国人民大学）分数没有公布；
+      这里按 671 分和 668 分摆两个点，只为让人看到<strong>一所学校的头部本来应该是一串，而不是一个孤点</strong>——671 分那年是全省第 470 名，668 分是第 577 名。
+      其余所有点都是有分数记录的真人。</p>
+      <p class="figcap"><strong>⚠ 小点的多少反映的是「本站知道多少」，不是「学校出了多少」。</strong>
+      2004、2007 两年我们有更完整的一中名单，所以点多；2010–2013 只有全市前十这一个来源，所以点少。
+      <strong>每年最上面那个点（头名）才是逐年可比的。</strong>
+      2013 年以后各年的点数等于该年一中在全市理科前十的席位数，那几年之间可以互相比。</p>
+    </div>
+    <div class="callout">
+      <p><strong>从全省第 31 名，到第 604 名，再回到第 40 名。</strong>
+      2004 年刘明宇 671 分是<span class="hi">全省第 31 名</span>；
+      2012 年邓海亮 641 分约在<span class="hi">全省第 604 名</span>——<strong>相差十九倍</strong>；
+      2017 年马钰涵 681 分又回到<span class="hi">全省第 40 名</span>。
+      谷底整段落在同一任任期内。</p>
+      <p>红线在虚线<strong>上方</strong>意味着头名够到了清华线。十四年里只有四次：
+      2004、2007（正好持平）、2016（正好持平）、2017。<strong>其中三次不在魏志波任内。</strong></p>
+    </div>
+
+    </section></div>

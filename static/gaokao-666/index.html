@@ -1,0 +1,1967 @@
+<title>666 分的信度报告</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --paper:#e8ecec; --card:#f7f9f9; --sunk:#dfe4e4; --band:#eef2f2;
+  --ink:#0e1416; --ink-2:#48565a; --ink-3:#7c8a8e;
+  --rule:#c8d0d0; --hair:#dbe1e1;
+  --petrol:#0e5b68; --petrol-w:rgba(14,91,104,.10);
+  --seal:#a5342a; --seal-w:rgba(165,52,42,.09);
+  --amber:#8f5d09; --amber-w:rgba(143,93,9,.11);
+  --bar:#9aa8ab;
+  --shadow:0 1px 2px rgba(14,20,22,.05),0 12px 30px -20px rgba(14,20,22,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+    --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+    --rule:#28302f; --hair:#202727;
+    --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
+    --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
+    --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
+    --bar:#4a5658;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+  --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+  --rule:#28302f; --hair:#202727;
+  --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
+  --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
+  --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
+  --bar:#4a5658;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px 96px}
+.m{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--petrol);outline-offset:2px}
+a{color:var(--petrol)}
+
+/* masthead */
+.mast{padding:56px 0 0}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 18px}
+h1{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:clamp(36px,7vw,64px);line-height:1.04;
+  margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--seal)}
+.dek{margin:20px 0 0;max-width:60ch;color:var(--ink-2);font-size:16.5px}
+.byline{margin:26px 0 0;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;
+  color:var(--ink-3);border-top:2px solid var(--ink);padding-top:12px}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin:30px 0 0}
+.sc{background:var(--card);padding:14px 15px 13px}
+.sc b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:25px;line-height:1.15;
+  font-variant-numeric:tabular-nums}
+.sc span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:4px;letter-spacing:.03em}
+.sc.hi b{color:var(--seal)}
+.sc.ok b{color:var(--petrol)}
+
+/* test blocks */
+section{padding:56px 0 0;scroll-margin-top:24px}
+.sechead{display:flex;align-items:baseline;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin:0 0 6px}
+.sechead .no{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;color:var(--seal);
+  font-weight:600;white-space:nowrap}
+.sechead h2{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:23px;margin:0;letter-spacing:.01em;text-wrap:balance}
+.sechead .en{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);letter-spacing:.16em;
+  text-transform:uppercase;margin-left:auto;white-space:nowrap}
+@media(max-width:640px){.sechead .en{display:none}}
+
+/* reading strip: the instrument identity */
+.read{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;
+  border-bottom:1px solid var(--hair);margin:0 0 24px}
+.read div{padding:9px 14px 9px 0;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-2)}
+.read div u{display:block;text-decoration:none;color:var(--ink-3);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;margin-bottom:2px}
+
+p{max-width:66ch;color:var(--ink-2);margin:0 0 20px}
+p strong,li strong{color:var(--ink);font-weight:500}
+p.wide{max-width:78ch}
+h3{font-family:"Noto Serif SC",Songti SC,serif;font-size:17px;font-weight:600;margin:34px 0 14px;color:var(--ink)}
+ul{max-width:70ch;color:var(--ink-2);padding-left:20px;margin:0 0 20px}
+li{margin:0 0 10px}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--rule);background:var(--card);box-shadow:var(--shadow);margin:0 0 22px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px}
+th{background:var(--band);text-align:right;padding:10px 13px;font-weight:500;font-size:11.5px;color:var(--ink-3);
+  letter-spacing:.06em;border-bottom:1px solid var(--rule);white-space:nowrap}
+th.l,td.l{text-align:left}
+td{padding:9px 13px;text-align:right;border-bottom:1px solid var(--hair);color:var(--ink-2);
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.l{font-family:"Noto Sans SC",system-ui,sans-serif;white-space:normal;color:var(--ink)}
+td.n{font-family:"Noto Sans SC",system-ui,sans-serif;white-space:normal}
+tr:last-child td{border-bottom:0}
+tr.me td{background:var(--seal-w);color:var(--ink)}
+tr.me td.l{font-weight:700}
+tr.sum td{background:var(--sunk);font-weight:600;color:var(--ink)}
+.seal{color:var(--seal)}.pet{color:var(--petrol)}.amb{color:var(--amber)}
+b.big{font-size:1.15em}
+
+/* pull card — used sparingly, only for a finding */
+.find{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--seal);
+  padding:22px 26px;margin:0 0 24px;box-shadow:var(--shadow)}
+.find.ok{border-left-color:var(--petrol)}
+.find p{margin:0;max-width:70ch;color:var(--ink)}
+.find p+p{margin-top:14px}
+.eq{font-family:"IBM Plex Mono",monospace;font-size:clamp(19px,3.4vw,27px);font-weight:600;letter-spacing:.01em;
+  text-align:center;margin:6px 0 14px;color:var(--ink)}
+.eq i{font-style:normal;color:var(--seal)}
+
+/* charts */
+.fig{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);padding:16px 16px 10px;margin:0 0 12px;overflow-x:auto}
+.figcap{font-size:12.5px;color:var(--ink-3);max-width:78ch;margin:0 0 26px}
+svg{display:block;min-width:640px}
+text.ax{font-family:"IBM Plex Mono",monospace;font-size:10.5px;fill:var(--ink-3)}
+text.anno{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600}
+text.anno.seal{fill:var(--seal)}text.anno.pet{fill:var(--petrol)}
+rect.b{fill:var(--bar)}rect.b-me{fill:var(--seal)}rect.b-cf{fill:var(--petrol)}
+rect.c{fill:var(--bar)}rect.c-me{fill:var(--seal)}
+text.rowlab{font-family:"Noto Sans SC",sans-serif;font-size:12.5px;fill:var(--ink-2)}
+text.rowlab.me{fill:var(--seal);font-weight:700}
+text.rowval{font-family:"IBM Plex Mono",monospace;font-size:11.5px;fill:var(--ink-3)}
+text.rowval.me{fill:var(--seal);font-weight:600}
+circle.d-q{fill:var(--seal)}circle.d-p{fill:var(--petrol)}
+circle.d-n{fill:none;stroke:var(--rule);stroke-width:1.4}
+line.hair{stroke:var(--hair);stroke-width:1}
+
+/* notes */
+.notes{background:var(--sunk);border:1px solid var(--rule);padding:20px 24px;margin:26px 0 0;
+  font-size:13px;line-height:1.75;color:var(--ink-2);max-width:80ch}
+.notes b{color:var(--ink)}
+.notes .hd{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);display:block;margin-bottom:10px}
+.notes ol{padding-left:20px;margin:0}
+.notes li{margin:0 0 9px}
+.notes li:last-child{margin:0}
+
+.close{border-top:2px solid var(--ink);margin-top:64px;padding-top:26px}
+.close .kicker{margin-bottom:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:0 0 6px}
+@media(max-width:720px){.two{grid-template-columns:1fr}}
+.two h4{font-family:"Noto Serif SC",serif;font-size:15px;margin:0 0 10px}
+.two ul{margin:0;padding-left:19px;font-size:13.5px}
+.two.a h4{color:var(--seal)}.two.a{}
+.foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule);font-size:12px;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;line-height:1.9;max-width:80ch}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<div class="wrap">
+
+<header class="mast">
+  <p class="kicker">个人档案 · 黑龙江 · 2003–2007</p>
+  <h1>666 分的信度报告</h1>
+  <p class="dek">这一页只回答一个问题：<strong>2007 年 6 月那三天，那张卷子究竟测到了我的什么。</strong>
+  不是申诉，是校准——把同一个人放在几把不同的尺子上，看读数差在哪里，
+  再把差的部分一笔一笔拆开，能归给谁就归给谁，归不掉的就留在自己名下。</p>
+  <p class="byline">受检者 林英魁 · 绥棱五中 2004 届 · 绥化一中 2007 届 · 全部数据来自当年公开材料与本人 2007 年 6 月 11 日的逐题记录</p>
+  <div class="strip">
+    <div class="sc"><b>1／43,908</b><span>2004 竞赛 · 绥化基准率（奖状被压 20 年）</span></div>
+    <div class="sc"><b>648</b><span>2004 中考 · 大庆第 11 名</span></div>
+    <div class="sc hi"><b>666</b><span>2007 高考 · 全省 652 名</span></div>
+    <div class="sc ok"><b>688</b><span>扣除命题事故 · 全省 102 名</span></div>
+    <div class="sc"><b>687</b><span>清华当年黑龙江理科线</span></div>
+    <div class="sc"><b>665</b><span>上海交大当年录取线</span></div>
+  </div>
+</header>
+
+<section id="q">
+  <div class="sechead"><span class="no">前言</span><h2>为什么要做这件事</h2><span class="en">The Question</span></div>
+  <p>十九年后重新算这笔账，不是为了改分数——分数改不了。是为了把一句一直含混的话说清楚：
+  <strong>「我没考好」和「这张卷子没测准我」不是同一件事</strong>，而当年没有人替我把它们分开。</p>
+  <p>能分开，是因为手里有三样别人通常没有的东西：
+  一份 <strong>2007 年 6 月 11 日、成绩公布前十三天写下的逐题估分记录</strong>；
+  当年黑龙江理科的<strong>一分一段表</strong>；
+  以及一把完全独立的第二把尺子——<strong>2004 年 4 月的全国初中数学联赛</strong>。</p>
+  <p>下面十项检验，前三项校准的是「进考场之前我处在什么位置」，
+  第四到第六项检验的是「那张卷子作为量具的性能」，
+  第七项算两条没走的路值多少名次，最后三项算「差额归谁」。
+  <strong>第十项是我自己那一栏，它不小。</strong></p>
+</section>
+
+<section id="t1">
+  <div class="sechead"><span class="no">检验 01</span><h2>第二把尺子：2004 年 4 月</h2><span class="en">The Other Instrument</span></div>
+  <div class="read">
+    <div><u>量具</u>全国初中数学联赛</div>
+    <div><u>读数</u>黑龙江省赛区一等奖</div>
+    <div><u>口径</u>省赛区 · 满分 140</div>
+    <div><u>日期</u>2004-04-11</div>
+  </div>
+  <p>先看一把和高考完全不同的尺子。它没有天花板压缩，考的是陌生问题，
+  <strong>没有标准答案模板可以对齐</strong>。</p>
+  <p>2003 年那届的完整获奖统计留了下来——全省 796 名获奖者、<strong>126 个国家级一等奖</strong>，
+  按地市拆开是这样：</p>
+  <div class="fig"><svg viewBox="0 0 980 293" width="100%" role="img" aria-label="2003 年全国初中数学联赛黑龙江各市一等奖基准率"><text x="78" y="31" text-anchor="end" class="rowlab">哈尔滨</text><rect x="88" y="19" width="24.3" height="18" class="c"><title>哈尔滨：84 个一等奖／每届 115,694 人</title></rect><text x="119.3" y="31" class="rowval">1,377 人／个</text><text x="78" y="58" text-anchor="end" class="rowlab">大庆</text><rect x="88" y="46" width="44.7" height="18" class="c"><title>大庆：17 个一等奖／每届 43,067 人</title></rect><text x="139.7" y="58" class="rowval">2,533 人／个</text><text x="78" y="85" text-anchor="end" class="rowlab">伊春</text><rect x="88" y="73" width="54.6" height="18" class="c"><title>伊春：5 个一等奖／每届 15,485 人</title></rect><text x="149.6" y="85" class="rowval">3,097 人／个</text><text x="78" y="112" text-anchor="end" class="rowlab">七台河</text><rect x="88" y="100" width="102.2" height="18" class="c"><title>七台河：2 个一等奖／每届 11,590 人</title></rect><text x="197.2" y="112" class="rowval">5,795 人／个</text><text x="78" y="139" text-anchor="end" class="rowlab">齐齐哈尔</text><rect x="88" y="127" width="149.0" height="18" class="c"><title>齐齐哈尔：9 个一等奖／每届 76,099 人</title></rect><text x="244.0" y="139" class="rowval">8,455 人／个</text><text x="78" y="166" text-anchor="end" class="rowlab">佳木斯</text><rect x="88" y="154" width="183.3" height="18" class="c"><title>佳木斯：3 个一等奖／每届 31,202 人</title></rect><text x="278.3" y="166" class="rowval">10,401 人／个</text><text x="78" y="193" text-anchor="end" class="rowlab">牡丹江</text><rect x="88" y="181" width="266.4" height="18" class="c"><title>牡丹江：2 个一等奖／每届 30,228 人</title></rect><text x="361.4" y="193" class="rowval">15,114 人／个</text><text x="78" y="220" text-anchor="end" class="rowlab">鸡西</text><rect x="88" y="208" width="474.8" height="18" class="c"><title>鸡西：1 个一等奖／每届 26,936 人</title></rect><text x="569.8" y="220" class="rowval">26,936 人／个</text><text x="78" y="247" text-anchor="end" class="rowlab me">绥化</text><rect x="88" y="235" width="774.0" height="18" class="c-me"><title>绥化：2 个一等奖／每届 87,816 人</title></rect><text x="869.0" y="247" class="rowval me">43,908 人／个</text><text x="88" y="273" class="ax">柱长 = 该市每出一个国家级一等奖所需的同届初中生人数。越长越难。</text></svg></div>
+  <p class="figcap">2003 年全国初中数学联赛黑龙江省赛区，各市国家级一等奖的地区基准率。
+  绥化以全省 17.7% 的初中生，拿到 1.6% 的一等奖。<strong class="seal">在绥化拿一等奖，比在哈尔滨难 31.9 倍。</strong>
+  黑河、鹤岗、双鸭山、大兴安岭四地当年一个都没有。</p>
+  <h3>而顶端的名字，几乎出自同一间教室</h3>
+  <p>2004 年那份残缺名单里，<strong>并列第 1 的 16 个满分（120 分）中，15 个是哈尔滨考生，全部标注「来成文化学校」</strong>，
+  第 16 个是大庆 69 中的武发明。2003 年那份完整名单同样标了来成——<strong>13 个标记，全部落在前 30 名之内</strong>。</p>
+  <div class="find"><p><b>2004 年那份名单往下数：第 16 到 19 名佳木斯，第 20 到 23 名德强中学。
+  <span class="seal">第 24 名，绥棱第五中学，林英魁——名单里唯一的绥化人。</span></b></p>
+  <p>那一年我没有参加过任何竞赛培训班。初中数学课我基本不听，作业基本不写。</p></div>
+  <p class="wide">这把尺子的读数是：<strong>在一个每四万四千人才出一个的地区，出了一个</strong>。
+  它测的是面对陌生问题时的生成能力——而全省的满分名额，被哈尔滨一所培训学校几乎包圆。
+  <strong>这把尺子测的分布，一半是能力，一半是能不能进那间教室。</strong></p>
+</section>
+
+<section id="t2">
+  <div class="sechead"><span class="no">检验 02</span><h2>入口：一张卷子，五条线</h2><span class="en">The Entrance</span></div>
+  <div class="read">
+    <div><u>量具</u>2004 年黑龙江省初中升学统一考试</div>
+    <div><u>读数</u>648 分</div>
+    <div><u>口径</u>全省同一张卷 · 含体育 30 分</div>
+    <div><u>日期</u>2004-06-25 至 27</div>
+  </div>
+  <p>2004 年是黑龙江（哈尔滨除外）<strong>全省统一命题</strong>的一年，
+  所以各市的录取线可以直接比大小。同一张卷子，同一年，五所学校的门槛：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学校</th><th>2004 统招线</th><th class="l">所在地</th><th class="l">备注</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆铁人中学</td><td><b>607</b></td><td class="n">大庆</td><td class="n">省首批示范高中</td></tr>
+      <tr><td class="l">大庆实验中学</td><td><b>603</b></td><td class="n">大庆</td><td class="n">省首批示范高中</td></tr>
+      <tr><td class="l">佳木斯一中</td><td>593.5</td><td class="n">佳木斯</td><td class="n">省首批重点</td></tr>
+      <tr><td class="l">大庆一中</td><td>583</td><td class="n">大庆</td><td class="n">省重点</td></tr>
+      <tr class="me"><td class="l">绥化一中</td><td><b>571</b></td><td class="n">绥化</td><td class="n">绥化市区唯一省重点</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>我考了 648。</strong>这个分数放进大庆市那份 5,760 人的中考录取名册里，是<strong class="seal">全市第 11 名</strong>。
+  比铁人的线高 41 分，比实验高 45 分。</p>
+  <div class="find"><p><b>但 2004 年那一届，大庆的高中被禁止招收外地学生。</b>
+  当年大庆的招生文件写着：「省市教育行政部门严格规定不许各高中学校招收外地学生」。
+  我去了绥化一中，一所录取线比铁人低 36 分的学校。</p>
+  <p>同一个省、同一时期，<b>佳木斯一中在 2006、2007、2008 年连续三年公开招外市县生</b>——
+  招生简章、报名表、网上报名、自设选拔考试、成绩查询、录取名单公示，一整套流程挂在学校官网上。
+  <b class="seal">那道禁令不是全省长期制度，是一次落在大庆、落在 2004 那一届头上的收紧。</b></p></div>
+  <p>这一格还有一个精确的对照：大庆考生<strong>李梦然，2004 年中考同样 648 分、同样全市第 11 名</strong>，
+  进了大庆实验中学。2007 年高考 <strong class="pet">709 分，全省第 3 名，清华大学</strong>，应届。</p>
+  <p class="wide">这个对照必须配一句限制：<strong>n = 1</strong>。
+  大庆留下的 55 组「中考—高考」配对记录显示，666 分在那 55 人里排第 21，
+  而且有三个人是从比 648 更低的中考分数考到 666 的。<strong>学校不是决定论。</strong>
+  它改变的是分布，不是某一个人的命运。</p>
+</section>
+<section id="t3">
+  <div class="sechead"><span class="no">检验 03</span><h2>三年：五所学校的师资</h2><span class="en">The Faculty Gap</span></div>
+  <div class="read">
+    <div><u>量具</u>学校自公布的师资统计</div>
+    <div><u>读数</u>见下表</div>
+    <div><u>口径</u>年份不齐 · 校方自述</div>
+    <div><u>来源</u>各校官网存档</div>
+  </div>
+  <p>四所大庆／佳木斯的学校都公布过校级师资统计。绥化一中没有——
+  我把绥化市门户站 27,117 个存档页面全部扫过一遍，零命中。
+  所以绥化一中那一行是<strong>个人名册</strong>：我高中三年的实际任课教师。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学校</th><th>快照</th><th>专任教师</th><th>特级</th><th>高级</th><th class="l">学历底线</th><th class="l">硕士</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆铁人中学</td><td>2004.6</td><td>199</td><td>5</td><td>104</td>
+          <td class="n"><b class="pet">本科达标率 100%</b></td><td class="n"><b>51 人已获或在读（26%）</b></td></tr>
+      <tr><td class="l">大庆实验中学</td><td>2001.2</td><td>115</td><td>7</td><td>94</td>
+          <td class="n"><b class="pet">全部本科</b></td><td class="n">9 人已获 ＋ 60 人在读研究生班</td></tr>
+      <tr><td class="l">大庆一中（高中部）</td><td>2002.6</td><td>116</td><td>2</td><td>37</td>
+          <td class="n"><b class="pet">达标率 100%</b></td><td class="n">10 人已获或在读</td></tr>
+      <tr><td class="l">佳木斯一中</td><td>2004.7</td><td>200 余</td><td>6</td><td>78</td>
+          <td class="n">历史组「全部本科」</td><td class="n">外语组 5 人（2006）</td></tr>
+      <tr class="me"><td class="l">绥化一中（三班）</td><td>2004</td><td>—</td><td>—</td><td>—</td>
+          <td class="n"><b>语数外三科任课教师<br>全部专科</b></td><td class="n">—</td></tr>
+    </tbody>
+  </table></div>
+  <p>展开最后一行——占高考总分 60% 的语数外，三个老师的学历：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">科目</th><th class="l">任课教师</th><th class="l">毕业院校</th><th class="l">学历</th><th>我的高考分</th></tr></thead>
+    <tbody>
+      <tr><td class="l">语文</td><td class="l">麻晓慧</td><td class="l">牡丹江师院中文系</td><td class="l seal">专科</td><td>125</td></tr>
+      <tr><td class="l">数学</td><td class="l">王太东</td><td class="l">绥化师专数学系</td><td class="l seal">专科</td><td>135</td></tr>
+      <tr><td class="l">外语</td><td class="l">胡玉龙</td><td class="l">绥化师专英语系</td><td class="l seal">专科</td><td>141</td></tr>
+      <tr><td class="l">化学</td><td class="l">徐蕊秋</td><td class="l">哈师大化学系</td><td class="l">本科</td><td>106／108</td></tr>
+      <tr><td class="l">生物</td><td class="l">关玉</td><td class="l">齐齐哈尔师院生物系</td><td class="l">本科</td><td>64／72</td></tr>
+      <tr><td class="l">物理</td><td class="l">孙丽华</td><td class="l">—</td><td class="l">名册未记</td><td class="seal">95／120</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find ok"><p><b>但这张表不能这样读。</b>如果学历决定分数，那英语应该最差——
+  胡玉龙也是绥化师专专科，<b class="pet">而我英语考了 141，鹤岗全市冠军才 142</b>。
+  <b>这个反例足以推翻「因为老师是专科所以我少考了多少分」。</b></p>
+  <p>这张表能证明的只有一件事：<b>一所地级市重点中学能招到什么人</b>。
+  2004 年铁人中学 199 名专职教师，本科达标率 100%——一个专科都没有，
+  而且校方明写「大多数是从东北师大、哈师大等高校严格挑选来的优秀毕业生」。</p></div>
+
+  <h3>同一所学校，两个班，两套老师</h3>
+  <p>上面那张表只有三班。后来把一班、二班的任课教师也补齐了，
+  又在学校官网的《名师风采》里找到 47 篇教师简介，与个人名册逐条对照。
+  <strong>差异不是随机分布在九个科目上的，它集中在两科。</strong></p>
+  <p class="wide"><em>先澄清一个名字：</em>一班、二班、三班<strong>都叫「奥赛班」</strong>，不是只有一班。
+  但这三个字是空的——<b class="seal">学校根本没有组织过奥赛</b>。
+  第 07 节里那个数字可以对照着读：2005–2008 四届全国高中数学联赛，
+  黑龙江省一等奖一共 147 个席位，<strong>绥化市 0 个</strong>；2007 年全省保送生 155 人，绥化 0 人；
+  同年全国 58 所高校自主招生资格，绥化全市 8 个，全在肇东一中和安达高中，绥化一中 0 个。
+  <strong>三个奥赛班，零个奥赛。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学科</th><th class="l">一班</th><th class="l">二班／三班</th><th class="l">两班是否同人</th></tr></thead>
+    <tbody>
+      <tr><td class="l">数学</td><td class="l">张亚萍 · 齐师院数学系 <b class="pet">本科</b></td>
+          <td class="l">王太东 · 绥化师专数学系 <b class="seal">专科</b></td><td class="l seal"><b>不同</b></td></tr>
+      <tr><td class="l">物理</td><td class="l">王福玉 · 哈师大物理系 <b class="pet">本科</b>（班主任）</td>
+          <td class="l">孙丽华 · <b class="seal">学历不详</b></td><td class="l seal"><b>不同</b></td></tr>
+      <tr><td class="l">语文</td><td class="l">名册未记</td>
+          <td class="l">麻小慧 · 牡师院中文系 专科</td><td class="l">不详</td></tr>
+      <tr><td class="l">外语</td><td class="l">刘学华 · 绥化师专英语系 专科</td>
+          <td class="l">三班 胡玉龙 · 绥化师专英语系 专科</td><td class="l">同院校同学历</td></tr>
+      <tr><td class="l">化学</td><td class="l">高一 白云霞 · 齐师院化学系 本科<br>
+          <b>高二高三 庄自立 · 绥化师专化学系 <span class="seal">专科</span></b></td>
+          <td class="l">徐蕊秋 · 哈师大化学系 本科</td><td class="l">不同（三班这一科反而是本科）</td></tr>
+      <tr><td class="l">生物</td><td class="l">名册未记</td>
+          <td class="l">二班无课；三班 关玉 · 齐师院生物系 本科</td><td class="l">不详</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><strong>两个班在九科里只有两科的老师有实质差别：数学和物理。</strong>
+  外语两班都是绥化师专英语系专科；化学一班高二高三换成绥化师专专科的庄自立，
+  <b>反而比三班的哈师大本科徐蕊秋学历更低</b>。
+  <b>而 2007 年那张卷子出事故的，正好就是数学和物理</b>——
+  物理 24 题的二级结论、物理 25 题的错题干、数学 18 题的超纲。</p>
+  <p>这条链是<strong>先有口述、后有名册、再有校方页面</strong>的三段独立记录：
+  我先说「我们的物理老师特别差，一班的班主任是物理老师且特别出色，我们的数学老师也不厉害，
+  这两个老师和一班不同；英语题目简单大家差别不大」；
+  之后补到教师名册；最后在学校自己的《名师风采》里找到佐证。
+  <b class="pet">三条互不依赖的记录指向同一组科目。</b></p></div>
+
+  <h3>学校自己写的那两段</h3>
+  <p>《名师风采》47 篇里，一班那两个人都在，而且校方自己写下了这样的句子：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">人</th><th class="l">学校官网《名师风采》原文摘要</th></tr></thead>
+    <tbody>
+      <tr><td class="l" style="white-space:nowrap"><b>张亚萍</b><br><span class="m">一班数学</span></td>
+          <td class="l">1992 年毕业于齐齐哈尔师范学院数学系。中学高级教师，市级教学能手、市级骨干教师。
+          「<b class="pet">多年担任奥赛班的数学教学工作，所教学生邢妍在 2007 年高考中以 149 分的成绩夺得全市第一</b>。」</td></tr>
+      <tr><td class="l" style="white-space:nowrap"><b>王福玉</b><br><span class="m">一班物理<br>班主任</span></td>
+          <td class="l">1972 年 5 月生，1995 年毕业于哈尔滨师范大学物理系。物理教研组长、实验班班主任。
+          「<b class="pet">从 2005 年担任奥赛班班主任以来，培养了多名升入全国名校的优秀人才</b>。」
+          2012 年黑龙江省<b class="pet">物理名师大赛一等奖</b>，省级优秀教师、省师德师风先进个人。</td></tr>
+      <tr class="me"><td class="l" style="white-space:nowrap"><b>孙丽华</b><br><span class="m">三班物理</span></td>
+          <td class="l"><b class="seal">47 篇《名师风采》里没有她；学校官网全站存档里也没有她。</b>
+          她是这份任课名册上唯一一位既无学历记录、又无任何校方记载的教师。</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">邢妍是<strong>一班</strong>的学生（2007 年考入上海交通大学）。
+  所以这句话的意思是：<strong>一班的数学老师，教出了那一年绥化全市数学单科第一名。</strong>
+  同一年，三班的数学是绥化师专专科的王太东，物理是学校自己都没有留下一行字的孙丽华。</p>
+  <div class="find ok"><p><b>但「不在名录里」不能反过来读成「学校不认可」。</b>
+  三班的王太东、孙丽华不在这 47 篇里——可是<b class="pet">白云霞也不在</b>，
+  而学校 2012 年 8 月新教师入职培训的报道写着「副校长刘伟平、<b>副校长白云霞</b>、教务主任赵立兵
+  分别对新教师进行岗前培训讲座」，两年后她就任校长。
+  网站另设「领导班子」一栏，她的缺席是分类问题，不是评价。</p>
+  <p>还有两条限度：这 47 篇是 2013 年的快照，距我们毕业已经六年，其间有人退休、调离、转岗；
+  而绥化一中当时十六个班一千余人一届，全校专任教师至少一百五六十人，
+  <b>47 篇本来就只覆盖其中一小部分，不在里面的是多数</b>。</p>
+  <p><b>所以这张表只能正着读，不能反着读。</b>它证明的不是「王太东、孙丽华不好」，
+  而是：<b class="seal">在学校自己的表彰体系里，一班那两科的老师被写了下来，三班那两科的老师没有</b>——
+  而且写下来的措辞是「教出全市数学第一」和「省物理名师大赛一等奖」。</p></div>
+  <p class="wide"><em>一条 2013 年的旁证：</em>那一年 4 月起，绥化一中聘北京名师团队到校，
+  分三轮为九大高考学科任课教师各做一周集中培训，物理请的是首都师大附中高级教师王邦平，
+  英语请的是北大附中特级教师范存智；魏志波校长亲自陪同物理专家观摩高三物理备课组集体备课。
+  同一份材料还写到，2011 年下半年到 2012 年上半年学校才第一次成规模地
+  「到东北师大、辽宁师大、华东师大、哈师大招聘师范类一本及研究生 30 名」。
+  <strong>也就是说，到 2013 年，学校自己也认为师资——尤其是物理——需要外部输血；
+  而成规模招一本师范生，是我们毕业四年之后的事。</strong></p>
+
+  <h3>一班里还坐着谁</h3>
+  <p>我知道的、在一班的教职工与校方子弟：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">关系</th><th class="l">其亲属在校身份</th></tr></thead>
+    <tbody>
+      <tr><td class="l">白云霞的儿子</td><td class="l">白云霞：一班高一化学教师，2014 年 8 月起任绥化一中校长</td></tr>
+      <tr><td class="l">刘学华的女儿</td><td class="l">刘学华：一班、二班英语教师，省优质课大赛一等奖</td></tr>
+      <tr><td class="l">徐蕊秋的儿子</td><td class="l">徐蕊秋：二班、三班化学教师</td></tr>
+      <tr><td class="l">张玉臣的侄子</td><td class="l">张玉臣：绥化一中校长（2001 年 3 月–2005 年 2 月）</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">这四条是我个人知道的，不是全部；一班约五十人里，我估计有十个左右属于这一类。
+  <strong>不写名字，只记关系</strong>——他们当年都是学生，这里要说的不是他们。</p>
+  <div class="find"><p><strong>把三件事并排放：</strong></p>
+  <p>① 按中考推算，一班和三班的顶端<b>几乎一样高</b>——两班预测前三名只差 1 到 2 分（见检验 10）。
+  三班还装着市区第 10–14 名的刘欣，和十几个外市县考进来的尖子。</p>
+  <p>② 一班拿到了数学和物理两科明显更强的师资，其中物理老师是后来的省名师大赛一等奖、班主任；
+  数学老师教出了当年全市数学单科第一。</p>
+  <p>③ 一班同时集中了教师与校长的子弟。</p>
+  <p><b class="seal">分班的依据不是分数。</b>资源先按户籍和关系分配，
+  再让两个中考水平相当的班去考同一张卷子——而那张卷子的胜负手，恰好落在两班师资唯一有实质差别的两科上。</p></div>
+
+  <h3>真正有因果链的，是另一栏</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学校</th><th class="l">竞赛教练底子</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆铁人中学</td><td class="l">全国中学生物理竞赛史上，黑龙江省 10 个国家级一等奖，<b class="pet">7 个出自铁人</b>；
+        贾珣 1999 年第 30 届国际物理奥赛<b>银牌</b>（黑龙江迄今唯一一块物理国际奖牌）；
+        1998 年承办全国物理竞赛决赛；有教师是「国家二级数学奥赛教练员」</td></tr>
+      <tr><td class="l">大庆实验中学</td><td class="l"><b>15 名青年教师获国家奥赛优秀教练员称号</b>；
+        王海波 1995 年国际生物奥赛<b>金牌</b>；累计 35 名学生获国家奥赛奖</td></tr>
+      <tr class="me"><td class="l">绥化一中</td><td class="l"><b>2002 到 2025 年，一共两次省一等奖——2015 年和 2018 年。</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">这一栏才是「弹性碰撞不会考」那句话的出处。
+  在一个七成国家级物理一等奖出自本校、教研组里坐着国际奥赛银牌教练的房间里，
+  弹性碰撞的二级结论是<strong>日常口头语</strong>。
+  在一个二十四年出两个省一等奖的学校里，物理老师说「那是清华北大练的」——
+  <strong class="seal">他说的是实话，因为在那个环境里确实没人练。</strong></p>
+  <p class="wide">还有一句原话，我 2009 年写文章时记了下来：
+  <strong>「常常听老师说，这些题目是留给清华的学生做的，你们不用管它。」</strong>
+  当时我的反应是「我越是听这样的话我越激动，给我准备的题我咋能不会呢」。</p>
+
+  <h3>而这座城的出口，本来就窄</h3>
+  <div class="tw"><table>
+    <thead><tr><th>年份</th><th>清华在黑龙江理科线</th><th>绥化市最高分</th><th>全市过清华线人数</th><th class="l">谁</th></tr></thead>
+    <tbody>
+      <tr><td>2004</td><td>657</td><td>671</td><td>3</td><td class="l n">绥化一中、安达高中、庆安一中</td></tr>
+      <tr><td>2005</td><td>673</td><td>688</td><td>8</td><td class="l n">绥棱一中 688 居首</td></tr>
+      <tr><td>2006</td><td>681</td><td>680</td><td class="seal"><b>0</b></td><td class="l n">—</td></tr>
+      <tr class="me"><td>2007</td><td><b>687</b></td><td>695</td><td>3</td><td class="l n">肇东一中 695／688，绥化一中陈思 687</td></tr>
+      <tr><td>2008</td><td>685</td><td>677</td><td class="seal"><b>0</b></td><td class="l n">—</td></tr>
+      <tr><td>2009</td><td>670</td><td>667</td><td class="seal"><b>0</b></td><td class="l n">—</td></tr>
+      <tr><td>2013</td><td>683</td><td>671</td><td class="seal"><b>0</b></td><td class="l n">—</td></tr>
+      <tr><td>2014</td><td>690</td><td>684</td><td class="seal"><b>0</b></td><td class="l n">—</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>一个下辖十个县市区、每届八万五千名初中生的地区，八年里有五年一个人都没过清华线。</strong></p>
+  <p class="wide">而生源还在往外走。2010 年东北网的报道写得很直白：
+  <strong>「今年即将参加高考的 2007 级高中生中，当年中考的前十名目前大都在大庆或哈市高中就读。」</strong>
+  也就是说，在我之后，绥化中考前十基本不再留在绥化念书了。</p>
+</section>
+<section id="t4">
+  <div class="sechead"><span class="no">检验 04</span><h2>量具本身：2007 年那张卷子</h2><span class="en">Instrument Check</span></div>
+  <div class="read">
+    <div><u>量具</u>2007 全国卷 II · 理科</div>
+    <div><u>量程</u>150–719 分</div>
+    <div><u>受检总体</u>139,653 人</div>
+    <div><u>日期</u>2007-06-07 至 09</div>
+  </div>
+  <p>先说结论：<strong>那年的卷子偏易。</strong>理科重本线 <strong>588</strong>，是手头 2004–2019 全部样本里最高的一条
+  （2008 年 577、2009 年 538、2017 年 483）；600 分以上 <strong>10,941 人，占 7.83%</strong>，同样是样本最高。
+  塔尖也比相邻年份更胖：690 分以上占 660 分以上的 <strong>8.7%</strong>（2005 年 5.8%、2008 年 7.1%、2009 年 5.1%）。</p>
+  <p>卷子偏易的直接后果，是<strong>同一分数上堆的人变多</strong>。下面这张图是那年 650 到 719 分之间，每一分上站着多少人：</p>
+  <div class="fig"><svg viewBox="0 0 980 300" width="100%" role="img" aria-label="2007 年黑龙江理科 650–719 分每分人数"><line x1="46" y1="258.0" x2="966" y2="258.0" stroke="var(--hair)" stroke-width="1"/><text x="39" y="262.0" text-anchor="end" class="ax">0</text><line x1="46" y1="201.5" x2="966" y2="201.5" stroke="var(--hair)" stroke-width="1"/><text x="39" y="205.5" text-anchor="end" class="ax">20</text><line x1="46" y1="145.1" x2="966" y2="145.1" stroke="var(--hair)" stroke-width="1"/><text x="39" y="149.1" text-anchor="end" class="ax">40</text><line x1="46" y1="88.6" x2="966" y2="88.6" stroke="var(--hair)" stroke-width="1"/><text x="39" y="92.6" text-anchor="end" class="ax">60</text><line x1="46" y1="32.1" x2="966" y2="32.1" stroke="var(--hair)" stroke-width="1"/><text x="39" y="36.1" text-anchor="end" class="ax">80</text><rect x="46.60" y="26.47" width="11.94" height="231.53" class="b"><title>650 分 · 本段 82 人</title></rect><rect x="59.74" y="37.76" width="11.94" height="220.24" class="b"><title>651 分 · 本段 78 人</title></rect><rect x="72.89" y="49.06" width="11.94" height="208.94" class="b"><title>652 分 · 本段 74 人</title></rect><rect x="86.03" y="57.53" width="11.94" height="200.47" class="b"><title>653 分 · 本段 71 人</title></rect><rect x="99.17" y="71.65" width="11.94" height="186.35" class="b"><title>654 分 · 本段 66 人</title></rect><rect x="112.31" y="80.12" width="11.94" height="177.88" class="b"><title>655 分 · 本段 63 人</title></rect><rect x="125.46" y="88.59" width="11.94" height="169.41" class="b"><title>656 分 · 本段 60 人</title></rect><rect x="138.60" y="97.06" width="11.94" height="160.94" class="b"><title>657 分 · 本段 57 人</title></rect><rect x="151.74" y="105.53" width="11.94" height="152.47" class="b"><title>658 分 · 本段 54 人</title></rect><rect x="164.89" y="114.00" width="11.94" height="144.00" class="b"><title>659 分 · 本段 51 人</title></rect><rect x="178.03" y="99.88" width="11.94" height="158.12" class="b"><title>660 分 · 本段 56 人</title></rect><rect x="191.17" y="108.35" width="11.94" height="149.65" class="b"><title>661 分 · 本段 53 人</title></rect><rect x="204.31" y="119.65" width="11.94" height="138.35" class="b"><title>662 分 · 本段 49 人</title></rect><rect x="217.46" y="125.29" width="11.94" height="132.71" class="b"><title>663 分 · 本段 47 人</title></rect><rect x="230.60" y="133.76" width="11.94" height="124.24" class="b"><title>664 分 · 本段 44 人</title></rect><rect x="243.74" y="142.24" width="11.94" height="115.76" class="b"><title>665 分 · 本段 41 人</title></rect><rect x="256.89" y="147.88" width="11.94" height="110.12" class="b-me"><title>666 分 · 本段 39 人</title></rect><rect x="270.03" y="156.35" width="11.94" height="101.65" class="b"><title>667 分 · 本段 36 人</title></rect><rect x="283.17" y="159.18" width="11.94" height="98.82" class="b"><title>668 分 · 本段 35 人</title></rect><rect x="296.31" y="167.65" width="11.94" height="90.35" class="b"><title>669 分 · 本段 32 人</title></rect><rect x="309.46" y="145.06" width="11.94" height="112.94" class="b"><title>670 分 · 本段 40 人</title></rect><rect x="322.60" y="153.53" width="11.94" height="104.47" class="b"><title>671 分 · 本段 37 人</title></rect><rect x="335.74" y="162.00" width="11.94" height="96.00" class="b"><title>672 分 · 本段 34 人</title></rect><rect x="348.89" y="170.47" width="11.94" height="87.53" class="b"><title>673 分 · 本段 31 人</title></rect><rect x="362.03" y="176.12" width="11.94" height="81.88" class="b"><title>674 分 · 本段 29 人</title></rect><rect x="375.17" y="181.76" width="11.94" height="76.24" class="b"><title>675 分 · 本段 27 人</title></rect><rect x="388.31" y="190.24" width="11.94" height="67.76" class="b"><title>676 分 · 本段 24 人</title></rect><rect x="401.46" y="193.06" width="11.94" height="64.94" class="b"><title>677 分 · 本段 23 人</title></rect><rect x="414.60" y="198.71" width="11.94" height="59.29" class="b"><title>678 分 · 本段 21 人</title></rect><rect x="427.74" y="204.35" width="11.94" height="53.65" class="b"><title>679 分 · 本段 19 人</title></rect><rect x="440.89" y="198.71" width="11.94" height="59.29" class="b"><title>680 分 · 本段 21 人</title></rect><rect x="454.03" y="204.35" width="11.94" height="53.65" class="b"><title>681 分 · 本段 19 人</title></rect><rect x="467.17" y="207.18" width="11.94" height="50.82" class="b"><title>682 分 · 本段 18 人</title></rect><rect x="480.31" y="215.65" width="11.94" height="42.35" class="b"><title>683 分 · 本段 15 人</title></rect><rect x="493.46" y="215.65" width="11.94" height="42.35" class="b"><title>684 分 · 本段 15 人</title></rect><rect x="506.60" y="224.12" width="11.94" height="33.88" class="b"><title>685 分 · 本段 12 人</title></rect><rect x="519.74" y="224.12" width="11.94" height="33.88" class="b"><title>686 分 · 本段 12 人</title></rect><rect x="532.89" y="226.94" width="11.94" height="31.06" class="b"><title>687 分 · 本段 11 人</title></rect><rect x="546.03" y="232.59" width="11.94" height="25.41" class="b-cf"><title>688 分 · 本段 9 人</title></rect><rect x="559.17" y="232.59" width="11.94" height="25.41" class="b"><title>689 分 · 本段 9 人</title></rect><rect x="572.31" y="221.29" width="11.94" height="36.71" class="b"><title>690 分 · 本段 13 人</title></rect><rect x="585.46" y="226.94" width="11.94" height="31.06" class="b"><title>691 分 · 本段 11 人</title></rect><rect x="598.60" y="229.76" width="11.94" height="28.24" class="b"><title>692 分 · 本段 10 人</title></rect><rect x="611.74" y="235.41" width="11.94" height="22.59" class="b"><title>693 分 · 本段 8 人</title></rect><rect x="624.89" y="238.24" width="11.94" height="19.76" class="b"><title>694 分 · 本段 7 人</title></rect><rect x="638.03" y="243.88" width="11.94" height="14.12" class="b"><title>695 分 · 本段 5 人</title></rect><rect x="651.17" y="243.88" width="11.94" height="14.12" class="b"><title>696 分 · 本段 5 人</title></rect><rect x="664.31" y="246.71" width="11.94" height="11.29" class="b"><title>697 分 · 本段 4 人</title></rect><rect x="677.46" y="249.53" width="11.94" height="8.47" class="b"><title>698 分 · 本段 3 人</title></rect><rect x="690.60" y="249.53" width="11.94" height="8.47" class="b"><title>699 分 · 本段 3 人</title></rect><rect x="703.74" y="249.53" width="11.94" height="8.47" class="b"><title>700 分 · 本段 3 人</title></rect><rect x="716.89" y="252.35" width="11.94" height="5.65" class="b"><title>701 分 · 本段 2 人</title></rect><rect x="730.03" y="255.18" width="11.94" height="2.82" class="b"><title>702 分 · 本段 1 人</title></rect><rect x="743.17" y="255.18" width="11.94" height="2.82" class="b"><title>703 分 · 本段 1 人</title></rect><rect x="756.31" y="255.18" width="11.94" height="2.82" class="b"><title>704 分 · 本段 1 人</title></rect><rect x="769.46" y="255.18" width="11.94" height="2.82" class="b"><title>705 分 · 本段 1 人</title></rect><rect x="782.60" y="255.18" width="11.94" height="2.82" class="b"><title>706 分 · 本段 1 人</title></rect><rect x="795.74" y="255.18" width="11.94" height="2.82" class="b"><title>707 分 · 本段 1 人</title></rect><rect x="808.89" y="255.18" width="11.94" height="2.82" class="b"><title>708 分 · 本段 1 人</title></rect><rect x="822.03" y="255.18" width="11.94" height="2.82" class="b"><title>709 分 · 本段 1 人</title></rect><rect x="940.31" y="252.35" width="11.94" height="5.65" class="b"><title>718 分 · 本段 2 人</title></rect><text x="52.6" y="276" text-anchor="middle" class="ax">650</text><text x="184.0" y="276" text-anchor="middle" class="ax">660</text><text x="315.4" y="276" text-anchor="middle" class="ax">670</text><text x="446.9" y="276" text-anchor="middle" class="ax">680</text><text x="578.3" y="276" text-anchor="middle" class="ax">690</text><text x="709.7" y="276" text-anchor="middle" class="ax">700</text><text x="841.1" y="276" text-anchor="middle" class="ax">710</text><text x="946.3" y="276" text-anchor="middle" class="ax">718</text><line x1="262.9" y1="147.9" x2="262.9" y2="24" stroke="var(--seal)" stroke-width="1" stroke-dasharray="2 3"/><text x="268.9" y="32" class="anno seal">666 分 · 39 人</text><line x1="552.0" y1="232.6" x2="552.0" y2="56" stroke="var(--petrol)" stroke-width="1" stroke-dasharray="2 3"/><text x="558.0" y="64" class="anno pet">688 分 · 9 人</text><text x="8" y="14" class="ax">本段人数</text></svg></div>
+  <p class="figcap">数据来自 2007 年黑龙江理科一分一段表。
+  <strong class="seal">666 分那一格站着 39 个人</strong>；再往上到 688 分，一格只剩 9 个人。
+  同一张卷子，在不同分数段的分辨率相差四倍以上——而我恰好坐在分辨率最差的那一段。</p>
+  <div class="find"><p class="eq">1 分 ≈ <i>40</i> 人　·　1 道物理大题 = 19–20 分 ≈ <i>800</i> 个名次</p>
+  <p><b>2007 年清华在黑龙江一共录取 128 人。</b></p>
+  <p><b class="seal">也就是说：在我坐的那个分数段上，单独一道物理大题的名次权重，是清华全部录取名额的六倍。</b>
+  当一道题的测量误差能覆盖六倍于全部选拔名额的名次区间，
+  排序被题目层面的噪声主导，而不是被能力差异主导。<b>这就是信度低的准确含义。</b></p></div>
+  <h3>而那年这张卷子，有据可查的命题错误至少六处</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">题号</th><th class="l">问题</th><th class="l">性质</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l">二卷 25 题（物理压轴，20 分）</td><td class="l">题干称速度方向与 y 轴正向成锐角，而圆心 P 由 h、l 锁死在第三象限，
+        这个情景<b>永远不可能发生</b>；官方参考答案把 P 画在第四象限，公式 ⑪ 亦不成立</td><td class="l seal">事实性错误</td></tr>
+      <tr class="me"><td class="l">二卷 24 题（物理，19 分）</td><td class="l">考察弹性正碰。1983–2006 年共 65 套高考物理卷、200 余道大题，
+        <b>从未出现过「弹性碰撞」四个字</b>；2007 年大纲卷考纲中也没有，而新课标卷考纲里明确写着</td><td class="l seal">超纲</td></tr>
+      <tr><td class="l">二卷 27 题</td><td class="l">题干称物质 C 是离子化合物，而氯化铝是共价化合物</td><td class="l seal">事实性错误</td></tr>
+      <tr class="me"><td class="l">二卷 17 题（3 分）</td><td class="l">光的偏振。大纲版教材中没有对应实验与规律支撑</td><td class="l seal">超纲</td></tr>
+      <tr><td class="l">一卷 18 题</td><td class="l">命题人默认平面光滑，忘了写这个条件</td><td class="l">漏条件</td></tr>
+      <tr><td class="l">一卷 22 题</td><td class="l">示波器应为 100 档位，标准答案写成 1k</td><td class="l seal">事实性错误</td></tr>
+      <tr><td class="l">一卷 24 题</td><td class="l">同样超纲考察弹性碰撞，且程度比二卷更重</td><td class="l seal">超纲</td></tr>
+    </tbody>
+  </table></div>
+  <p class="figcap">标红底的四行是落在我这张卷子上的。二卷 24、25 题合计 39 分，
+  加上 17 题的 3 分，<strong>命题问题直接覆盖 42 分</strong>——相当于这一段上 1,000 个以上的名次。</p>
+
+  <h3>还有一层：这张卷子在顶端根本不发分</h3>
+  <p>鹤岗市公布过全市单科前十名榜，等于给出了<strong>一整座城市在每一科上的最高分</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">科目</th><th>满分</th><th>鹤岗全市冠军</th><th>离满分还差</th><th>全市前十极差</th><th>我的分</th></tr></thead>
+    <tbody>
+      <tr><td class="l">语文</td><td>150</td><td>131</td><td class="seal"><b>−19</b></td><td>2</td><td>125</td></tr>
+      <tr><td class="l">数学（理）</td><td>150</td><td>149</td><td class="pet">−1</td><td>6</td><td>135</td></tr>
+      <tr><td class="l">外语</td><td>150</td><td>142</td><td>−8</td><td>2</td><td><b class="pet">141</b></td></tr>
+      <tr><td class="l">理科综合</td><td>300</td><td>294</td><td>−6</td><td>9</td><td><b class="seal">265</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">全市语文前十挤在 <strong>131 到 129 之间，一共 2 分宽</strong>；英语前十挤在 142 到 140，也是 2 分。
+  <strong>数学和英语基本封顶，语文的天花板被死死压在 131——这三科都不构成区分。</strong>
+  在 718 分那一层，能分出胜负的只剩语文那 19 分的空档（两位并列省状元的语文是 138 和 134，
+  <strong>双双高过一整座城市的语文冠军</strong>）；而在 666 这一层，唯一还在发分的是理综。</p>
+</section>
+<section id="t5b">
+  <div class="sechead"><span class="no">检验 05</span><h2>666 不是一个能力水平</h2><span class="en">Score Drift</span></div>
+  <div class="read">
+    <div><u>量具</u>历年一分一段表</div>
+    <div><u>样本</u>2004–2026 共 19 年</div>
+    <div><u>口径</u>黑龙江理科 · 全省</div>
+    <div><u>问题</u>同一个分数值多少</div>
+  </div>
+  <p>手头有黑龙江理科 2004 到 2026 年的一分一段表。把 <strong>666 分</strong>这一个数放进每一年，
+  问同一个问题：<strong>它是全省第几名？</strong></p>
+  <div class="fig"><svg viewBox="0 0 980 300" width="100%" role="img" aria-label="666 分在历年黑龙江理科中的全省位次"><line x1="54" y1="20.0" x2="966" y2="20.0" stroke="var(--hair)" stroke-width="1"/><text x="46" y="24.0" text-anchor="end" class="ax">第 1 名</text><line x1="54" y1="62.9" x2="966" y2="62.9" stroke="var(--hair)" stroke-width="1"/><text x="46" y="66.9" text-anchor="end" class="ax">200</text><line x1="54" y1="105.8" x2="966" y2="105.8" stroke="var(--hair)" stroke-width="1"/><text x="46" y="109.8" text-anchor="end" class="ax">400</text><line x1="54" y1="148.7" x2="966" y2="148.7" stroke="var(--hair)" stroke-width="1"/><text x="46" y="152.7" text-anchor="end" class="ax">600</text><line x1="54" y1="191.6" x2="966" y2="191.6" stroke="var(--hair)" stroke-width="1"/><text x="46" y="195.6" text-anchor="end" class="ax">800</text><line x1="54" y1="234.5" x2="966" y2="234.5" stroke="var(--hair)" stroke-width="1"/><text x="46" y="238.5" text-anchor="end" class="ax">1,000</text><rect x="62.64" y="20" width="30.72" height="10.08" class="b"><title>2004 年：666 分 = 全省第 47 名</title></rect><text x="78.0" y="42.1" text-anchor="middle" class="ax" style="font-size:9.5px">47</text><text x="78.0" y="278" text-anchor="middle" class="ax">04</text><rect x="110.64" y="20" width="30.72" height="80.67" class="b"><title>2005 年：666 分 = 全省第 376 名</title></rect><text x="126.0" y="112.7" text-anchor="middle" class="ax" style="font-size:9.5px">376</text><text x="126.0" y="278" text-anchor="middle" class="ax">05</text><rect x="158.64" y="20" width="30.72" height="139.88" class="b-me"><title>2007 年：666 分 = 全省第 652 名</title></rect><text x="174.0" y="171.9" text-anchor="middle" class="ax" style="font-size:9.5px">652</text><text x="174.0" y="278" text-anchor="middle" class="ax">07</text><rect x="206.64" y="20" width="30.72" height="125.94" class="b"><title>2008 年：666 分 = 全省第 587 名</title></rect><text x="222.0" y="157.9" text-anchor="middle" class="ax" style="font-size:9.5px">587</text><text x="222.0" y="278" text-anchor="middle" class="ax">08</text><rect x="254.64" y="20" width="30.72" height="35.83" class="b"><title>2009 年：666 分 = 全省第 167 名</title></rect><text x="270.0" y="67.8" text-anchor="middle" class="ax" style="font-size:9.5px">167</text><text x="270.0" y="278" text-anchor="middle" class="ax">09</text><rect x="302.64" y="20" width="30.72" height="51.28" class="b"><title>2013 年：666 分 = 全省第 239 名</title></rect><text x="318.0" y="83.3" text-anchor="middle" class="ax" style="font-size:9.5px">239</text><text x="318.0" y="278" text-anchor="middle" class="ax">13</text><rect x="350.64" y="20" width="30.72" height="92.25" class="b"><title>2014 年：666 分 = 全省第 430 名</title></rect><text x="366.0" y="124.3" text-anchor="middle" class="ax" style="font-size:9.5px">430</text><text x="366.0" y="278" text-anchor="middle" class="ax">14</text><rect x="398.64" y="20" width="30.72" height="63.72" class="b"><title>2015 年：666 分 = 全省第 297 名</title></rect><text x="414.0" y="95.7" text-anchor="middle" class="ax" style="font-size:9.5px">297</text><text x="414.0" y="278" text-anchor="middle" class="ax">15</text><rect x="446.64" y="20" width="30.72" height="69.30" class="b"><title>2016 年：666 分 = 全省第 323 名</title></rect><text x="462.0" y="101.3" text-anchor="middle" class="ax" style="font-size:9.5px">323</text><text x="462.0" y="278" text-anchor="middle" class="ax">16</text><rect x="494.64" y="20" width="30.72" height="39.69" class="b"><title>2017 年：666 分 = 全省第 185 名</title></rect><text x="510.0" y="71.7" text-anchor="middle" class="ax" style="font-size:9.5px">185</text><text x="510.0" y="278" text-anchor="middle" class="ax">17</text><rect x="542.64" y="20" width="30.72" height="56.64" class="b"><title>2018 年：666 分 = 全省第 264 名</title></rect><text x="558.0" y="88.6" text-anchor="middle" class="ax" style="font-size:9.5px">264</text><text x="558.0" y="278" text-anchor="middle" class="ax">18</text><rect x="590.64" y="20" width="30.72" height="76.81" class="b"><title>2019 年：666 分 = 全省第 358 名</title></rect><text x="606.0" y="108.8" text-anchor="middle" class="ax" style="font-size:9.5px">358</text><text x="606.0" y="278" text-anchor="middle" class="ax">19</text><rect x="638.64" y="20" width="30.72" height="151.04" class="b"><title>2020 年：666 分 = 全省第 704 名</title></rect><text x="654.0" y="183.0" text-anchor="middle" class="ax" style="font-size:9.5px">704</text><text x="654.0" y="278" text-anchor="middle" class="ax">20</text><rect x="686.64" y="20" width="30.72" height="32.61" class="b"><title>2021 年：666 分 = 全省第 152 名</title></rect><text x="702.0" y="64.6" text-anchor="middle" class="ax" style="font-size:9.5px">152</text><text x="702.0" y="278" text-anchor="middle" class="ax">21</text><rect x="734.64" y="20" width="30.72" height="6.01" class="b-cf"><title>2022 年：666 分 = 全省第 28 名</title></rect><text x="750.0" y="38.0" text-anchor="middle" class="ax" style="font-size:9.5px">28</text><text x="750.0" y="278" text-anchor="middle" class="ax">22</text><rect x="782.64" y="20" width="30.72" height="20.81" class="b"><title>2023 年：666 分 = 全省第 97 名</title></rect><text x="798.0" y="52.8" text-anchor="middle" class="ax" style="font-size:9.5px">97</text><text x="798.0" y="278" text-anchor="middle" class="ax">23</text><rect x="830.64" y="20" width="30.72" height="220.55" class="b-cf"><title>2024 年：666 分 = 全省第 1,028 名</title></rect><text x="846.0" y="252.6" text-anchor="middle" class="ax" style="font-size:9.5px">1,028</text><text x="846.0" y="278" text-anchor="middle" class="ax">24</text><rect x="878.64" y="20" width="30.72" height="74.02" class="b"><title>2025 年：666 分 = 全省第 345 名</title></rect><text x="894.0" y="106.0" text-anchor="middle" class="ax" style="font-size:9.5px">345</text><text x="894.0" y="278" text-anchor="middle" class="ax">25</text><rect x="926.64" y="20" width="30.72" height="96.55" class="b"><title>2026 年：666 分 = 全省第 450 名</title></rect><text x="942.0" y="128.5" text-anchor="middle" class="ax" style="font-size:9.5px">450</text><text x="942.0" y="278" text-anchor="middle" class="ax">26</text><text x="54" y="13" class="ax">全省位次（越往下越差）</text></svg></div>
+  <p class="figcap">同一个 666 分，在 2022 年是<strong class="pet">全省第 28 名</strong>，
+  在 2007 年是<strong class="seal">第 652 名</strong>，在 2024 年是<strong class="pet">第 1,028 名</strong>。
+  <strong>最好与最差相差 36.7 倍。</strong>2010–2012 年的表不在手上，故图中留空。</p>
+  <p>反过来看更直白。把位次<strong>固定</strong>在「全省第 652 名」——也就是我实际所在的位置——
+  历年对应的分数是：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">年份</th><th>第 652 名的分数</th><th class="l">年份</th><th>第 652 名的分数</th><th class="l">年份</th><th>第 652 名的分数</th></tr></thead>
+    <tbody>
+      <tr><td class="l">2022</td><td class="pet"><b>621</b></td><td class="l">2015</td><td>652</td><td class="l">2020</td><td>667</td></tr>
+      <tr><td class="l">2004</td><td>625</td><td class="l">2018</td><td>655</td><td class="l">2024</td><td class="pet"><b>673</b></td></tr>
+      <tr><td class="l">2023</td><td>639</td><td class="l">2016 / 2019 / 2025</td><td>656</td><td class="l">—</td><td>—</td></tr>
+      <tr><td class="l">2021</td><td>640</td><td class="l">2005</td><td>658</td><td class="l">—</td><td>—</td></tr>
+      <tr><td class="l">2017</td><td>645</td><td class="l">2014 / 2026</td><td>660</td><td class="l">—</td><td>—</td></tr>
+      <tr><td class="l">2009</td><td>647</td><td class="l">2008</td><td>664</td><td class="l">—</td><td>—</td></tr>
+      <tr><td class="l">2013</td><td>651</td><td class="l"><b class="seal">2007</b></td><td><b class="seal">666</b></td><td class="l">—</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>同一个能力位置，分数在 621 到 673 之间漂移，跨度 52 分。</b></p>
+  <p><b class="seal">而那两道出问题的物理大题，一共只值 19 分。</b>
+  换句话说：赶上哪一年考试这件纯粹的运气，对最终那个数字的影响，
+  比整场命题事故还大出一倍半。<b>「666 分」不是一个能力水平，是能力乘以那一年的卷子。</b></p></div>
+  <h3>分布的形状：2007 是十九年里唯一向高分堆积的一年</h3>
+  <p>把这些年的分数分布画在一起（都归一到「每 10 万考生每分多少人」，
+  所以曲线高低可以直接比），形状差别一眼可见：</p>
+  <div class="fig"><svg viewBox="0 0 980 330" width="100%" role="img" aria-label="2007、2017、2023 三年黑龙江理科分数分布形状对照"><line x1="52" y1="284.0" x2="964" y2="284.0" stroke="var(--hair)" stroke-width="1"/><text x="45" y="288.0" text-anchor="end" class="ax">0</text><line x1="52" y1="235.5" x2="964" y2="235.5" stroke="var(--hair)" stroke-width="1"/><text x="45" y="239.5" text-anchor="end" class="ax">100</text><line x1="52" y1="187.0" x2="964" y2="187.0" stroke="var(--hair)" stroke-width="1"/><text x="45" y="191.0" text-anchor="end" class="ax">200</text><line x1="52" y1="138.4" x2="964" y2="138.4" stroke="var(--hair)" stroke-width="1"/><text x="45" y="142.4" text-anchor="end" class="ax">300</text><line x1="52" y1="89.9" x2="964" y2="89.9" stroke="var(--hair)" stroke-width="1"/><text x="45" y="93.9" text-anchor="end" class="ax">400</text><line x1="52" y1="41.4" x2="964" y2="41.4" stroke="var(--hair)" stroke-width="1"/><text x="45" y="45.4" text-anchor="end" class="ax">500</text><line x1="52.0" y1="22" x2="52.0" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="52.0" y="302" text-anchor="middle" class="ax">300</text><line x1="160.6" y1="22" x2="160.6" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="160.6" y="302" text-anchor="middle" class="ax">350</text><line x1="269.1" y1="22" x2="269.1" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="269.1" y="302" text-anchor="middle" class="ax">400</text><line x1="377.7" y1="22" x2="377.7" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="377.7" y="302" text-anchor="middle" class="ax">450</text><line x1="486.3" y1="22" x2="486.3" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="486.3" y="302" text-anchor="middle" class="ax">500</text><line x1="594.9" y1="22" x2="594.9" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="594.9" y="302" text-anchor="middle" class="ax">550</text><line x1="703.4" y1="22" x2="703.4" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="703.4" y="302" text-anchor="middle" class="ax">600</text><line x1="812.0" y1="22" x2="812.0" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="812.0" y="302" text-anchor="middle" class="ax">650</text><line x1="920.6" y1="22" x2="920.6" y2="284" stroke="var(--hair)" stroke-width="1"/><text x="920.6" y="302" text-anchor="middle" class="ax">700</text><path d="M 52.0 112.9 L 62.9 106.9 L 73.7 118.1 L 84.6 104.5 L 95.4 100.2 L 106.3 99.4 L 117.1 101.1 L 128.0 92.2 L 138.9 98.4 L 149.7 86.7 L 160.6 96.5 L 171.4 93.9 L 182.3 86.4 L 193.1 86.6 L 204.0 79.8 L 214.9 81.7 L 225.7 82.8 L 236.6 85.8 L 247.4 86.0 L 258.3 87.6 L 269.1 72.5 L 280.0 90.3 L 290.9 85.8 L 301.7 90.2 L 312.6 102.4 L 323.4 97.8 L 334.3 106.0 L 345.1 105.2 L 356.0 103.8 L 366.9 111.1 L 377.7 113.8 L 388.6 115.9 L 399.4 121.1 L 410.3 113.7 L 421.1 131.2 L 432.0 129.8 L 442.9 120.4 L 453.7 135.3 L 464.6 138.9 L 475.4 137.3 L 486.3 143.9 L 497.1 163.3 L 508.0 158.9 L 518.9 153.0 L 529.7 152.3 L 540.6 159.6 L 551.4 164.6 L 562.3 170.4 L 573.1 180.6 L 584.0 177.0 L 594.9 191.6 L 605.7 187.5 L 616.6 188.4 L 627.4 197.1 L 638.3 205.2 L 649.1 206.5 L 660.0 206.4 L 670.9 210.0 L 681.7 215.6 L 692.6 228.1 L 703.4 224.8 L 714.3 235.0 L 725.1 234.7 L 736.0 242.8 L 746.9 246.5 L 757.7 245.7 L 768.6 254.0 L 779.4 254.6 L 790.3 263.6 L 801.1 264.3 L 812.0 268.8 L 822.9 271.7 L 833.7 274.4 L 844.6 277.1 L 855.4 277.7 L 866.3 279.7 L 877.1 281.9 L 888.0 282.6 L 898.9 283.2 L 909.7 283.5 L 920.6 283.5 L 931.4 283.9 L 942.3 283.9 L 953.1 284.0 L 964.0 284.0" fill="none" stroke="var(--ink-3)" stroke-width="1.6" stroke-dasharray="4 3" stroke-linejoin="round"/><path d="M 52.0 52.3 L 62.9 48.8 L 73.7 46.6 L 84.6 40.7 L 95.4 42.1 L 106.3 41.3 L 117.1 37.6 L 128.0 47.5 L 138.9 33.0 L 149.7 41.0 L 160.6 53.6 L 171.4 43.9 L 182.3 40.8 L 193.1 46.2 L 204.0 53.8 L 214.9 58.4 L 225.7 62.8 L 236.6 71.1 L 247.4 73.4 L 258.3 75.0 L 269.1 76.0 L 280.0 86.2 L 290.9 87.5 L 301.7 100.8 L 312.6 97.4 L 323.4 98.0 L 334.3 113.1 L 345.1 112.1 L 356.0 120.5 L 366.9 111.2 L 377.7 127.1 L 388.6 137.6 L 399.4 147.3 L 410.3 140.5 L 421.1 147.3 L 432.0 150.8 L 442.9 156.2 L 453.7 166.6 L 464.6 166.6 L 475.4 175.7 L 486.3 170.1 L 497.1 177.1 L 508.0 182.2 L 518.9 180.6 L 529.7 188.9 L 540.6 194.8 L 551.4 195.6 L 562.3 200.0 L 573.1 202.4 L 584.0 201.9 L 594.9 210.6 L 605.7 212.5 L 616.6 214.3 L 627.4 226.4 L 638.3 220.2 L 649.1 221.6 L 660.0 227.1 L 670.9 230.0 L 681.7 239.1 L 692.6 237.5 L 703.4 240.8 L 714.3 245.1 L 725.1 250.1 L 736.0 250.8 L 746.9 255.5 L 757.7 260.0 L 768.6 259.6 L 779.4 262.9 L 790.3 264.4 L 801.1 270.7 L 812.0 270.2 L 822.9 273.6 L 833.7 275.6 L 844.6 279.1 L 855.4 279.6 L 866.3 280.6 L 877.1 284.0 L 888.0 284.0 L 898.9 284.0 L 909.7 284.0 L 920.6 284.0 L 931.4 284.0 L 942.3 284.0 L 953.1 284.0 L 964.0 284.0" fill="none" stroke="var(--petrol)" stroke-width="1.9" stroke-linejoin="round"/><path d="M 52.0 196.6 L 62.9 191.8 L 73.7 190.8 L 84.6 186.3 L 95.4 187.2 L 106.3 183.1 L 117.1 182.9 L 128.0 179.1 L 138.9 177.0 L 149.7 173.3 L 160.6 173.0 L 171.4 169.5 L 182.3 168.1 L 193.1 164.9 L 204.0 159.6 L 214.9 156.5 L 225.7 155.6 L 236.6 152.8 L 247.4 152.8 L 258.3 150.2 L 269.1 151.6 L 280.0 149.5 L 290.9 144.1 L 301.7 142.1 L 312.6 144.1 L 323.4 142.5 L 334.3 140.2 L 345.1 138.9 L 356.0 129.0 L 366.9 127.9 L 377.7 130.6 L 388.6 130.6 L 399.4 124.5 L 410.3 124.4 L 421.1 119.2 L 432.0 119.3 L 442.9 114.6 L 453.7 114.6 L 464.6 108.7 L 475.4 108.7 L 486.3 98.1 L 497.1 98.1 L 508.0 97.9 L 518.9 98.0 L 529.7 80.6 L 540.6 80.6 L 551.4 90.8 L 562.3 90.7 L 573.1 87.5 L 584.0 87.5 L 594.9 95.7 L 605.7 95.7 L 616.6 98.4 L 627.4 109.2 L 638.3 110.9 L 649.1 123.0 L 660.0 130.6 L 670.9 142.9 L 681.7 149.0 L 692.6 161.7 L 703.4 170.9 L 714.3 182.9 L 725.1 185.9 L 736.0 198.4 L 746.9 206.8 L 757.7 218.0 L 768.6 227.0 L 779.4 236.3 L 790.3 240.8 L 801.1 250.1 L 812.0 255.3 L 822.9 261.9 L 833.7 264.7 L 844.6 269.8 L 855.4 270.8 L 866.3 275.2 L 877.1 277.2 L 888.0 279.9 L 898.9 280.2 L 909.7 282.5 L 920.6 283.4 L 931.4 283.6 L 942.3 284.0 L 953.1 283.8 L 964.0 284.0" fill="none" stroke="var(--seal)" stroke-width="2.4" stroke-linejoin="round"/><line x1="846.7" y1="22" x2="846.7" y2="284" stroke="var(--seal)" stroke-width="1" stroke-dasharray="2 3"/><text x="841.7" y="250" text-anchor="end" class="anno seal">666</text><circle cx="540.6" cy="80.6" r="3.4" fill="var(--seal)"/><text x="540.6" y="71.6" text-anchor="middle" class="ax" style="font-size:10px;fill:var(--seal)">众数 525</text><circle cx="269.1" cy="72.5" r="3.4" fill="var(--ink-3)"/><text x="269.1" y="63.5" text-anchor="middle" class="ax" style="font-size:10px;fill:var(--ink-3)">众数 400</text><circle cx="138.9" cy="33.0" r="3.4" fill="var(--petrol)"/><text x="138.9" y="24.0" text-anchor="middle" class="ax" style="font-size:10px;fill:var(--petrol)">众数 340</text><line x1="726" y1="30" x2="748" y2="30" stroke="var(--seal)" stroke-width="2.4"/><text x="755" y="34" class="ax" style="font-size:11px">2007 · 偏度 −0.127</text><line x1="726" y1="47" x2="748" y2="47" stroke="var(--ink-3)" stroke-width="1.6" stroke-dasharray="4 3"/><text x="755" y="51" class="ax" style="font-size:11px">2017 · 偏度 +0.422</text><line x1="726" y1="64" x2="748" y2="64" stroke="var(--petrol)" stroke-width="1.9"/><text x="755" y="68" class="ax" style="font-size:11px">2023 · 偏度 +0.660</text><text x="52" y="14" class="ax">每 10 万考生每分人数</text></svg></div>
+  <p class="figcap">三条曲线的峰值位置差了 185 分。<strong class="seal">2007 年的峰在 525 分</strong>，
+  2017 年在 400 分，2023 年在 340 分。分数范围以 300 分为下界统计（更低的分数段各年截断口径不一）。</p>
+  <p>用统计量说，就是<strong>偏度</strong>——分布往哪一边拖尾：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">年份</th><th>偏度</th><th>均值</th><th>中位</th><th>众数</th><th>众数在分数范围的</th><th class="l">形状</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l"><b>2007</b></td><td><b>−0.127</b></td><td>479.1</td><td>487</td><td>529</td><td><b>54.8%</b></td>
+          <td class="l"><b>负偏——分数向高端堆积，长尾在低分一侧</b></td></tr>
+      <tr><td class="l">2005</td><td>−0.102</td><td>476.2</td><td>482</td><td>528</td><td>56.2%</td><td class="l">负偏</td></tr>
+      <tr><td class="l">2008</td><td>+0.026</td><td>467.5</td><td>470</td><td>525</td><td>53.7%</td><td class="l">几乎对称</td></tr>
+      <tr><td class="l">2009</td><td>+0.236</td><td>444.5</td><td>442</td><td>469</td><td>40.8%</td><td class="l">正偏</td></tr>
+      <tr><td class="l">2017</td><td>+0.422</td><td>437.3</td><td>427</td><td>403</td><td>25.0%</td><td class="l">正偏</td></tr>
+      <tr><td class="l">2021</td><td>+0.522</td><td>428.0</td><td>416</td><td>401</td><td>25.6%</td><td class="l">正偏</td></tr>
+      <tr><td class="l">2023</td><td class="pet"><b>+0.660</b></td><td>419.8</td><td>404</td><td>343</td><td class="pet"><b>11.4%</b></td>
+          <td class="l">强正偏——分数向低端堆积，长尾在高分一侧</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>十九年里，只有 2007 和 2005 是负偏的，其余十七年全部正偏</strong>（最高 2023 年的 +0.660）。
+  <strong class="seal">2007 年 −0.127，是全样本最负的一年。</strong></p>
+  <h3>上尾：同样是「前 0.5%」，2007 年离大部队更近</h3>
+  <p>再换一个不受难度影响的角度。固定在<strong>前 0.5% 这个百分位</strong>上，
+  问它距离全体均值有几个标准差。正态分布的答案是 <strong>2.576</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">年份</th><th>前 0.5% 的分数</th><th>标准差</th><th>实际 z</th><th>与正态之差</th><th class="l">上尾</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l"><b>2007</b></td><td>666</td><td>90.6</td><td><b>2.06</b></td><td class="seal"><b>−0.51</b></td>
+          <td class="l"><b>比正态厚得多——高分段挤了远超正态预期的人</b></td></tr>
+      <tr><td class="l">2005</td><td>660</td><td>89.5</td><td>2.05</td><td class="seal">−0.52</td><td class="l">同样厚</td></tr>
+      <tr><td class="l">2014</td><td>664</td><td>90.9</td><td>2.18</td><td>−0.39</td><td class="l">偏厚</td></tr>
+      <tr><td class="l">2017</td><td>653</td><td>87.5</td><td>2.47</td><td>−0.11</td><td class="l">接近正态</td></tr>
+      <tr><td class="l">2022</td><td>629</td><td>78.8</td><td>2.63</td><td class="pet">+0.05</td><td class="l">接近正态</td></tr>
+      <tr><td class="l">2023</td><td>648</td><td>85.1</td><td class="pet"><b>2.68</b></td><td class="pet"><b>+0.11</b></td>
+          <td class="l">略薄于正态——顶端被拉开，人少而分散</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>这两个统计量说的是同一件事：2007 年那张卷子，对这批考生偏易。</b></p>
+  <p>分数整体右移、众数落到分数范围的一半以上、上尾变厚——<b class="seal">这是天花板效应在分布形状上的标准签名</b>。
+  它的直接后果是：<b>考试的分辨力，相对地从高分段挪到了中分段。</b></p></div>
+  <h3>但这里必须做一次更正</h3>
+  <div class="find ok"><p><b>「2007 年 690–699 段的人数是 2009／2017 年的 6.3 倍」这句话是真的，但它证明的比看上去少。</b></p>
+  <p>那是按<b>绝对分数段</b>做的对比。2009 年 690 分是比 2007 年高得多的百分位，
+  所以这个倍数<b>主要在证明「卷子更简单」，不能直接证明「顶端更分不开」</b>。</p>
+  <p>按<b>同百分位</b>重新算——前 0.5% 那个分数上每 10 万考生每分站多少人——
+  2007 年是 <b>31.1</b>，2023 年 20.1，2009 年 26.2，2017 年 29.5；
+  但 2018 年是 49.3、2024 年 47.6、2016 年 43.8。
+  <b>所以 2007 年顶端的拥挤程度是「偏差的一档，不是最差的一年」。</b>
+  稳健成立的是上面那条 z 值：同样是前 0.5%，2007 年只在 +2.06 个标准差处，2023 年在 +2.68。</p></div>
+  <h3>那到底该怎么评价这个形状</h3>
+  <p class="wide"><strong>分布形状本身没有好坏，只有「难度对准了哪一段人」。</strong></p>
+  <ul>
+    <li><b>负偏（2007）＝ 题目相对这批考生偏易。</b>好处是中段考生被充分拉开——
+      500 到 600 分那一带，正是绝大多数考生所在的地方，那一年在那里的分辨力最好。
+      代价是<b>高分段被压向天花板</b>。</li>
+    <li><b>正偏（2016 年之后）＝ 题目相对偏难。</b>代价是低分段被压缩——
+      2023 年众数落在 343 分，大量考生挤在低分区，那一段同样分不开。
+      好处是<b>顶端被拉开</b>，前 0.5% 的 z 回到 2.68，接近正态。</li>
+    <li><b>所以问题不是形状，是形状与用途不匹配。</b>
+      2007 年那张卷子把峰值分辨力放在 <b>525 分</b>——比当年理科重本线（588）还低 63 分。
+      而 525 分那一段的实际用途只是「过线还是不过线」，<b>不需要精确排序</b>；
+      真正每一个名次都决定去哪所学校的 660–700 段，恰恰是它分辨力最弱的地方。</li>
+  </ul>
+  <div class="find"><p><b>一句话评价：2007 年是一张「为大多数人设计得不错、为选拔尖子设计得不好」的卷子。</b>
+  它把最大的测量精度放在了最不需要精度的分数段上。<br><br>
+  而 2016 年之后那种正偏的卷子，做的是相反的取舍——<b>它对中下段更不友好，但它至少把顶端拉开了。</b>
+  <b class="seal">如果 2007 年用的是 2023 年那种难度结构，我的 666 分不会存在——
+  那一年我会得到一个更低的分数和一个更高的名次。</b></p></div>
+  <h3>而 2007 年的卷子，简单得离谱</h3>
+  <p>易卷的后果不是「大家都考得好」，是<strong>塔尖被塞满，分辨率塌掉</strong>。
+  把 2007 年和难卷年份的同一分数段并排：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">分数段</th><th>2007</th><th>2009</th><th>2017</th><th>2007 是它们的</th></tr></thead>
+    <tbody>
+      <tr><td class="l">690–699</td><td><b>69</b></td><td>10</td><td>11</td><td class="seal"><b>6.3 倍</b></td></tr>
+      <tr><td class="l">680–689</td><td><b>141</b></td><td>36</td><td>30</td><td class="seal"><b>4.3 倍</b></td></tr>
+      <tr><td class="l">670–679</td><td><b>285</b></td><td>68</td><td>89</td><td class="seal"><b>3.6 倍</b></td></tr>
+      <tr class="me"><td class="l">660–669</td><td><b>432</b></td><td>156</td><td>138</td><td class="seal"><b>2.9 倍</b></td></tr>
+      <tr class="sum"><td class="l">该年考生总数</td><td>139,653</td><td>141,961</td><td>105,901</td><td class="l n">总数相近——但见上面那条更正：这证明卷子更易，不直接证明顶端更分不开</td></tr>
+    </tbody>
+  </table></div>
+  <p>其余佐证同向：理科重本线 <strong>588</strong>，是 2004–2026 全样本最高的一条（2017 年只有 483）；
+  600 分以上占 <strong>7.83%</strong>，同样是样本最高；最高分 718 分＝满分的 <strong>95.7%</strong>。</p>
+  <h3>把 2007 单独拎出来，和 2013–2026 这十四年比</h3>
+  <p>前面几节用的是 2004–2026 全部十九年。但 2004–2009 那几年的表本身质量参差，而
+  <strong>2013 年以后的一分一段表是逐分公布、格式统一的「现代常态」</strong>。
+  把 2007 单独放进这十四年里比，结论会干净得多。</p>
+  <p><strong>一个前提：这一节的所有统计量都在<u>十分段</u>口径上计算。</strong>
+  2007 年真正公布的只有十分一段表，逐分表是推断出来的；
+  所以我把 2013–2026 的逐分表全部聚合回十分段，让 2007 用它唯一真实的那张表参与比较。
+  <strong class="pet">这一节没有任何一个数字依赖推断表。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">指标</th><th>2007</th><th>2013–2026 中位数</th><th class="l">十四年中比 2007 更极端的</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l">平均分</td><td><b>456.6</b></td><td>406.9</td><td class="l"><b class="seal">0 年</b>（现代最高是 2024 年的 430.3）</td></tr>
+      <tr class="me"><td class="l">全省最高分</td><td><b>718</b></td><td>700.5</td><td class="l"><b class="seal">0 年</b>（现代最高是 2017 年的 712）</td></tr>
+      <tr><td class="l">满分 750 相当于 z 值</td><td><b>2.663</b></td><td>2.935</td><td class="l">1 年（2014 年 2.580）</td></tr>
+      <tr><td class="l">μ＋3σ 超出满分</td><td><b>+37.1</b></td><td>+7.1</td><td class="l">1 年（2014 年 +52.8）</td></tr>
+      <tr><td class="l">第 100 名到第 652 名跨多少分</td><td><b>22.2</b></td><td>26.7</td><td class="l">13 年比 2007 更宽（只有 2018 年更窄）</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>头两行是 0 比 14。</strong>2007 年的平均分和最高分，都高于 2013 年以来的<strong>每一年</strong>。
+  这不是「那年题偏简单」的印象，是十四年样本里没有一个反例。</p>
+
+  <h3>而卷子太简单会带来一个物理后果：天花板不够用了</h3>
+  <p>2007 年理科的平均分 456.6、标准差 110.1。把满分 750 换算成 z 值：</p>
+  <p class="eq">(750 − 456.6) ÷ 110.1 = <i>2.663</i></p>
+  <p><strong>也就是说，那年考满分，也只到平均分以上 2.66 个标准差。</strong>
+  而在正态分布里，2.66 个标准差以上还有 <strong>0.387%</strong> 的人。
+  当年理科考生 139,653 人，0.387% 是——</p>
+  <div class="find"><p class="eq"><i>540</i> 人</p>
+  <p><b>正态假设下，大约 540 个人「应得的分数」超过了卷面能给出的最高分。</b>
+  他们之间的能力差异，<b class="seal">那张卷子上没有地方可以表达</b>——
+  不是没测准，是物理上没有位置可放。</p>
+  <p><b class="seal">而我是第 652 名。正好压在这个分辨率崩溃区的边缘上。</b></p></div>
+  <div class="fig"><svg viewBox="0 0 980 421" width="100%" role="img" aria-label="2007 与 2013 至 2026 年各年，正态假设下应得分超过 750 分满分的考生人数"><text x="102" y="30" text-anchor="end" class="rowlab">2014</text><rect x="112" y="19" width="689.1" height="15" class="c"><title>2014 年：平均分与标准差推出满分 750 只相当于 z=2.58，正态下约 584 人的应得分超过卷面上限</title></rect><text x="809.1" y="30" class="rowval">584 人　<tspan class="ax">满分 z=2.58</tspan></text><text x="102" y="54" text-anchor="end" class="rowlab me">2007</text><rect x="112" y="43" width="637.2" height="15" class="c-me"><title>2007 年：平均分与标准差推出满分 750 只相当于 z=2.66，正态下约 540 人的应得分超过卷面上限</title></rect><text x="757.2" y="54" class="rowval me">540 人　<tspan class="ax">满分 z=2.66</tspan></text><text x="102" y="78" text-anchor="end" class="rowlab">2020</text><rect x="112" y="67" width="431.9" height="15" class="c"><title>2020 年：平均分与标准差推出满分 750 只相当于 z=2.73，正态下约 366 人的应得分超过卷面上限</title></rect><text x="551.9" y="78" class="rowval">366 人　<tspan class="ax">满分 z=2.73</tspan></text><text x="102" y="102" text-anchor="end" class="rowlab">2019</text><rect x="112" y="91" width="400.0" height="15" class="c"><title>2019 年：平均分与标准差推出满分 750 只相当于 z=2.74，正态下约 339 人的应得分超过卷面上限</title></rect><text x="520.0" y="102" class="rowval">339 人　<tspan class="ax">满分 z=2.74</tspan></text><text x="102" y="126" text-anchor="end" class="rowlab">2018</text><rect x="112" y="115" width="397.7" height="15" class="c"><title>2018 年：平均分与标准差推出满分 750 只相当于 z=2.74，正态下约 337 人的应得分超过卷面上限</title></rect><text x="517.7" y="126" class="rowval">337 人　<tspan class="ax">满分 z=2.74</tspan></text><text x="102" y="150" text-anchor="end" class="rowlab">2016</text><rect x="112" y="139" width="339.8" height="15" class="c"><title>2016 年：平均分与标准差推出满分 750 只相当于 z=2.79，正态下约 288 人的应得分超过卷面上限</title></rect><text x="459.8" y="150" class="rowval">288 人　<tspan class="ax">满分 z=2.79</tspan></text><text x="102" y="174" text-anchor="end" class="rowlab">2015</text><rect x="112" y="163" width="278.5" height="15" class="c"><title>2015 年：平均分与标准差推出满分 750 只相当于 z=2.86，正态下约 236 人的应得分超过卷面上限</title></rect><text x="398.5" y="174" class="rowval">236 人　<tspan class="ax">满分 z=2.86</tspan></text><text x="102" y="198" text-anchor="end" class="rowlab">2024</text><rect x="112" y="187" width="259.6" height="15" class="c"><title>2024 年：平均分与标准差推出满分 750 只相当于 z=2.91，正态下约 220 人的应得分超过卷面上限</title></rect><text x="379.6" y="198" class="rowval">220 人　<tspan class="ax">满分 z=2.91</tspan></text><text x="102" y="222" text-anchor="end" class="rowlab">2013</text><rect x="112" y="211" width="212.4" height="15" class="c"><title>2013 年：平均分与标准差推出满分 750 只相当于 z=2.97，正态下约 180 人的应得分超过卷面上限</title></rect><text x="332.4" y="222" class="rowval">180 人　<tspan class="ax">满分 z=2.97</tspan></text><text x="102" y="246" text-anchor="end" class="rowlab">2026</text><rect x="112" y="235" width="199.4" height="15" class="c"><title>2026 年：平均分与标准差推出满分 750 只相当于 z=2.96，正态下约 169 人的应得分超过卷面上限</title></rect><text x="319.4" y="246" class="rowval">169 人　<tspan class="ax">满分 z=2.96</tspan></text><text x="102" y="270" text-anchor="end" class="rowlab">2017</text><rect x="112" y="259" width="177.0" height="15" class="c"><title>2017 年：平均分与标准差推出满分 750 只相当于 z=2.98，正态下约 150 人的应得分超过卷面上限</title></rect><text x="297.0" y="270" class="rowval">150 人　<tspan class="ax">满分 z=2.98</tspan></text><text x="102" y="294" text-anchor="end" class="rowlab">2025</text><rect x="112" y="283" width="149.9" height="15" class="c"><title>2025 年：平均分与标准差推出满分 750 只相当于 z=3.07，正态下约 127 人的应得分超过卷面上限</title></rect><text x="269.9" y="294" class="rowval">127 人　<tspan class="ax">满分 z=3.07</tspan></text><text x="102" y="318" text-anchor="end" class="rowlab">2021</text><rect x="112" y="307" width="127.4" height="15" class="c"><title>2021 年：平均分与标准差推出满分 750 只相当于 z=3.08，正态下约 108 人的应得分超过卷面上限</title></rect><text x="247.4" y="318" class="rowval">108 人　<tspan class="ax">满分 z=3.08</tspan></text><text x="102" y="342" text-anchor="end" class="rowlab">2023</text><rect x="112" y="331" width="35.4" height="15" class="c"><title>2023 年：平均分与标准差推出满分 750 只相当于 z=3.47，正态下约 30 人的应得分超过卷面上限</title></rect><text x="155.4" y="342" class="rowval">30 人　<tspan class="ax">满分 z=3.47</tspan></text><text x="102" y="366" text-anchor="end" class="rowlab">2022</text><rect x="112" y="355" width="24.8" height="15" class="c"><title>2022 年：平均分与标准差推出满分 750 只相当于 z=3.57，正态下约 21 人的应得分超过卷面上限</title></rect><text x="144.8" y="366" class="rowval">21 人　<tspan class="ax">满分 z=3.57</tspan></text><text x="112" y="397" class="ax">柱长 = 该年正态假设下「应得分超过 750 分」的考生人数。越长，说明卷面天花板压掉的顶端人群越大。</text><text x="112" y="412" class="ax">2007 年只用其真实的十分一段表计算，与其余各年同口径。</text></svg></div>
+  <p class="figcap">按「正态假设下应得分超过 750 分的人数」排序。2007 年是 540 人，十四个现代年份里只有 2014 年（584 人）更高；最低的 2022 年只有 21 人。这个数越大，说明那年的卷子越是把顶端的一群人压成了同一个读数。</p>
+
+  <h3>而「简单」和「高分掉得快」不是两件事，是同一件事</h3>
+  <p>把「高分区下降有多快」量化：<strong>在高分段，你前面的人数每翻一倍，需要丢多少分。</strong>
+  这个量按<strong>名次</strong>锚定（第 2000→1000 名、1000→500、500→250、250→125 四段取平均），
+  所以各年用的是同一把尺子，与分数高低无关。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">高分区人数减半需要</th><th>分数</th><th class="l"></th></tr></thead>
+    <tbody>
+      <tr><td class="l">2018 年</td><td>10.05</td><td class="l">十四个现代年份里最陡</td></tr>
+      <tr><td class="l">2014 年</td><td>10.05</td><td class="l"></td></tr>
+      <tr class="me"><td class="l"><b>2007 年</b></td><td><b>10.28</b></td><td class="l"><b class="seal">十五年里第三陡</b></td></tr>
+      <tr class="sum"><td class="l">2013–2026 中位数</td><td>12.04</td><td class="l"></td></tr>
+      <tr><td class="l">2022 年</td><td>15.14</td><td class="l"></td></tr>
+      <tr><td class="l">2021 年</td><td>15.65</td><td class="l">最平缓</td></tr>
+    </tbody>
+  </table></div>
+  <p>换个更直观的说法——<strong>从第 2000 名爬到第 100 名（名次翻 20 倍）需要多少分</strong>：
+  2007 年只要 <strong class="seal">42.9 分</strong>，2013–2026 的中位数是 50.6 分，2021 年要 <strong>66.0 分</strong>。</p>
+  <p><strong>那么，是不是那些「简单的年份」都这样？是的。而且相关性很强。</strong></p>
+  <div class="fig"><svg viewBox="0 0 980 366" width="100%" role="img" aria-label="2007 与 2013 至 2026 年，各年平均分与高分区衰减率的散点图"><line x1="110" y1="300" x2="900" y2="300" class="hair"/><line x1="110" y1="44" x2="110" y2="300" class="hair"/><text x="185.2" y="317" text-anchor="middle" class="ax">370</text><text x="335.7" y="317" text-anchor="middle" class="ax">390</text><text x="486.2" y="317" text-anchor="middle" class="ax">410</text><text x="636.7" y="317" text-anchor="middle" class="ax">430</text><text x="787.1" y="317" text-anchor="middle" class="ax">450</text><line x1="110" y1="283.5" x2="900" y2="283.5" class="hair"/><text x="102" y="287.5" text-anchor="end" class="ax">0.045</text><line x1="110" y1="242.2" x2="900" y2="242.2" class="hair"/><text x="102" y="246.2" text-anchor="end" class="ax">0.050</text><line x1="110" y1="200.9" x2="900" y2="200.9" class="hair"/><text x="102" y="204.9" text-anchor="end" class="ax">0.055</text><line x1="110" y1="159.6" x2="900" y2="159.6" class="hair"/><text x="102" y="163.6" text-anchor="end" class="ax">0.060</text><line x1="110" y1="118.3" x2="900" y2="118.3" class="hair"/><text x="102" y="122.3" text-anchor="end" class="ax">0.065</text><line x1="110" y1="77.0" x2="900" y2="77.0" class="hair"/><text x="102" y="81.0" text-anchor="end" class="ax">0.070</text><circle cx="836.8" cy="78.7" r="7" class="d-q"/><text x="848.8" y="68.7" text-anchor="start" class="anno seal">2007</text><circle cx="608.8" cy="83.6" r="5" class="d-p"/><text x="596.8" y="87.6" text-anchor="end" class="ax">2014</text><circle cx="638.9" cy="129.1" r="5" class="d-p"/><text x="626.9" y="133.1" text-anchor="end" class="ax">2024</text><circle cx="450.1" cy="64.6" r="5" class="d-p"/><text x="460.1" y="68.6" text-anchor="start" class="ax">2018</text><circle cx="532.1" cy="126.6" r="5" class="d-p"/><text x="520.1" y="130.6" text-anchor="end" class="ax">2019</text><circle cx="475.7" cy="118.3" r="5" class="d-p"/><text x="485.7" y="122.3" text-anchor="start" class="ax">2016</text><circle cx="632.9" cy="174.5" r="5" class="d-p"/><text x="642.9" y="178.5" text-anchor="start" class="ax">2025</text><circle cx="589.3" cy="165.4" r="5" class="d-p"/><text x="599.3" y="169.4" text-anchor="start" class="ax">2026</text><circle cx="514.0" cy="147.2" r="5" class="d-p"/><text x="524.0" y="151.2" text-anchor="start" class="ax">2013</text><circle cx="386.1" cy="188.5" r="5" class="d-p"/><text x="396.1" y="192.5" text-anchor="start" class="ax">2020</text><circle cx="415.5" cy="201.7" r="5" class="d-p"/><text x="425.5" y="205.7" text-anchor="start" class="ax">2015</text><circle cx="332.0" cy="200.1" r="5" class="d-p"/><text x="342.0" y="204.1" text-anchor="start" class="ax">2017</text><circle cx="258.2" cy="266.1" r="5" class="d-p"/><text x="268.2" y="270.1" text-anchor="start" class="ax">2022</text><circle cx="161.9" cy="237.2" r="5" class="d-p"/><text x="171.9" y="241.2" text-anchor="start" class="ax">2023</text><circle cx="202.5" cy="280.2" r="5" class="d-p"/><text x="212.5" y="284.2" text-anchor="start" class="ax">2021</text><text x="505" y="338" text-anchor="middle" class="ax">全省理科平均分（越往右，卷子越容易）</text><text x="24" y="262" class="ax" transform="rotate(-90 24 262)">高分区衰减率 λ（越往上，高分掉得越快）</text><text x="900" y="46" text-anchor="end" class="anno pet">r = +0.78</text></svg></div>
+  <p class="figcap">横轴：全省理科平均分（越靠右，卷子越容易）。纵轴：高分区衰减率 λ，由「第 2000 名到第 100 名跨多少分」推得（越靠上，高分掉得越快）。十五个点，2007 与 2013–2026。</p>
+  <div class="find"><p><b>相关系数 r = +0.78。</b>卷子越容易，高分区衰减越陡——
+  这不是两个独立的巧合，是<b>同一个机制的两面</b>：
+  卷面总分是固定的 750，卷子一简单，所有人被推向天花板，
+  同样多的人只能挤进更少的分数里，于是每一分对应的名次自动变多。</p>
+  <p><b class="seal">而 2007 年，正好落在这张图的右上角。</b></p></div>
+
+  <h3>两项排名都靠前的年份，只有 2007 一个</h3>
+  <div class="tw"><table>
+    <thead><tr><th>年份</th><th>平均分</th><th class="l">「易」排名</th><th>λ</th><th class="l">「陡」排名</th><th>名次和</th><th class="l">丢 22 分＝名次变几倍</th></tr></thead>
+    <tbody>
+      <tr class="me"><td><b>2007</b></td><td><b>456.6</b></td><td class="l"><b class="seal">第 1</b></td><td><b>0.0698</b></td><td class="l"><b class="seal">第 2</b></td><td><b>3</b></td><td class="l"><b>6.38 倍</b>（652 → 102）</td></tr>
+      <tr><td>2014</td><td>426.3</td><td class="l">第 4</td><td>0.0692</td><td class="l">第 3</td><td>7</td><td class="l">6.22 倍（652 → 105）</td></tr>
+      <tr><td>2024</td><td>430.3</td><td class="l">第 2</td><td>0.0637</td><td class="l">第 6</td><td>8</td><td class="l">5.28 倍（652 → 123）</td></tr>
+      <tr><td>2018</td><td>405.2</td><td class="l">第 9</td><td>0.0715</td><td class="l">第 1</td><td>10</td><td class="l">8.79 倍（652 → 74）</td></tr>
+      <tr><td>2026</td><td>423.7</td><td class="l">第 5</td><td>0.0593</td><td class="l">第 8</td><td>13</td><td class="l">4.34 倍（652 → 150）</td></tr>
+      <tr><td>2022</td><td>379.7</td><td class="l">第 13</td><td>0.0471</td><td class="l">第 14</td><td>27</td><td class="l">3.08 倍（652 → 212）</td></tr>
+      <tr><td>2021</td><td>372.3</td><td class="l">第 14</td><td>0.0454</td><td class="l">第 15</td><td>29</td><td class="l">3.15 倍（652 → 207）</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>2007 年两项排名之和是 3，十五年里最低，而且甩开第二名（2014 年，7）很远。</strong>
+  2018 年比 2007 更陡，但它是一张<strong>难卷子</strong>（最高分只有 691，平均分 405.2）——
+  难卷子的顶端本来就人少，陡得有道理。
+  <strong class="seal">只有 2007 年是「最容易的卷子」＋「几乎最陡的顶端」这个组合。</strong></p>
+  <div class="find"><p><b>落到我身上就是最后那一列：</b></p>
+  <p class="eq">同样丢 22 分<br>2007 年 = 名次变成 <i>1/6.4</i></p>
+  <p>换成 2021 年，同样的 22 分只让第 652 名升到第 207 名（1/3.2）；2022 年是第 212 名。
+  <b>同一个失误，在 2007 年的代价是在 2021 年的两倍。</b></p>
+  <p><b class="seal">而这 22 分，是命题事故扣的。</b></p></div>
+
+  <h3>把三件事连起来</h3>
+  <ul>
+    <li><b>一、卷子偏易</b>——平均分高于 2013 年以来任何一年，最高分也是。<b>「易」排第 1。</b></li>
+    <li><b>二、于是顶端被压向天花板、并且掉得极快</b>——满分只值 z=2.66，约 540 人的能力差异无处表达；
+      高分区人数减半只需 10.28 分（<b>「陡」排第 2</b>）；第 100 名到第 652 名之间只隔 22.2 分。</li>
+    <li><b>三、而 22 分在这个区间值 <span class="m">549</span> 个名次</b>——
+      我的 22 分不是发挥失常丢的，是<b>试卷自己出错扣的</b>。</li>
+  </ul>
+  <div class="find"><p><b>所以 2007 年最不合理的地方，不是「难」，恰恰是「太容易」。</b></p>
+  <p>一张难卷子会用难题把顶端拉开，失分来自能力差异；
+  <b>一张容易的卷子把所有人挤到天花板下面，失分来自意外</b>——审题、笔误、
+  或者<b class="seal">卷子本身的错误</b>。<b>2007 年在这之上又叠了六处有据可查的命题错误。</b></p>
+  <p>易卷加事故，是对「能力尚可但准备不足」这类考生最坏的组合：
+  <b>它取消了你能力上的优势，同时放大了每一次意外的代价。</b></p></div>
+  <div class="notes"><span class="hd">这一节的三条限度</span><ol>
+    <li>「540 人」依赖<b>正态假设</b>。2007 年实际分布的偏度是 −0.36，并不严格正态，
+      所以这个数是一个<b>量级估计</b>，不是点估计。
+      但它依赖的两个输入——平均分与标准差——是从真实的十分一段表直接算出来的，没有假设。
+      <b>「满分只值 z=2.66」这一句本身是测量，不是模型。</b></li>
+    <li><b>2007 并不唯一。</b>2014 年在这个指标上比 2007 更极端（z=2.580，584 人）。
+      准确的说法是「2007 是这十五年里第二差的一年」，不是「最差」。</li>
+    <li><b>按人均算，2007 年头部并不特别拥挤。</b>第 652 名处每 10 万考生每分 30.9 人，
+      而 2013–2026 的中位数是 29.8——几乎正好在中位。
+      2007 年的问题<b>不在密度，在量程</b>：人数没有异常，可分配的分数区间被压窄了。</li>
+  </ol></div>
+
+  <h3>于是一道题变得比一所大学还重</h3>
+  <p>在 2007 年「全省第 652 名」这个格子上：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">在 666 分这个位置上</th><th>数值</th><th class="l">意味着什么</th></tr></thead>
+    <tbody>
+      <tr><td class="l">和我同分的人</td><td><b>39</b></td><td class="l">考试对这 39 个人的分辨结果是「完全相同」</td></tr>
+      <tr><td class="l">±3 分内的人</td><td><b>274</b></td><td class="l">六分宽的区间里挤了 274 个人</td></tr>
+      <tr><td class="l">＋6 分（一道选择题）</td><td>前进 <b>219</b> 名</td><td class="l">已经超过清华全部录取名额（128 人）的 1.7 倍</td></tr>
+      <tr class="me"><td class="l">＋19 分（那两道物理大题）</td><td>前进 <b>515</b> 名</td><td class="l"><b>四倍于清华全部名额</b></td></tr>
+      <tr><td class="l">＋22 分（含 17 题超纲选择）</td><td>前进 <b>550</b> 名</td><td class="l">652 → 102</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>再换一个更严格的说法。</b>2007 年 660–699 分那 927 个人，分数的标准差是 <b>9.64 分</b>。</p>
+  <p><b class="seal">落在我一个人身上的 22 分命题误差，等于这个人群整体离散度的 2.28 个标准差。</b>
+  当单一考生的题目层面误差达到局部分布两个标准差以上时，
+  这一段的排序已经不再主要反映能力差异——它反映的是谁撞上了那几道题。<b>这就是「信度低」的定量含义。</b></p></div>
+</section>
+
+<section id="t5">
+  <div class="sechead"><span class="no">检验 06</span><h2>两条通道：禁令为什么没挡住，复读为什么这么值</h2><span class="en">Two Channels</span></div>
+  <div class="read">
+    <div><u>量具</u>各校原始招生文件</div>
+    <div><u>来源</u>学校官网存档</div>
+    <div><u>年份</u>2003–2007</div>
+    <div><u>问题</u>排在我前面的是谁</div>
+  </div>
+  <p>2007 年大庆全市 680 分以上 73 人。大庆一中把这 73 人<strong>按入场身份拆开</strong>公布了，
+  这是整个项目里唯一一张这样的表：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2007 年 680 分以上</th><th>该校人数</th><th>市区应届</th><th>外县</th><th>重读</th><th class="l">通道生占比</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆实验中学</td><td><b>39</b></td><td>9</td><td>10</td><td><b>20</b></td><td class="l seal"><b>77%</b></td></tr>
+      <tr><td class="l">大庆铁人中学</td><td>21</td><td>9</td><td>7</td><td>5</td><td class="l amb"><b>57%</b></td></tr>
+      <tr><td class="l">大庆一中</td><td>10</td><td><b>10</b></td><td>0</td><td>0</td><td class="l pet"><b>0%</b></td></tr>
+      <tr><td class="l">四中 ／ 大庆中学</td><td>3</td><td class="n">未拆分</td><td class="n">—</td><td class="n">—</td><td class="l n">—</td></tr>
+      <tr class="sum"><td class="l">全市合计</td><td><b>73</b></td><td>28</td><td>17</td><td>25</td><td class="l"><b>42 人 ＝ 58%</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>再往上一档，比例更极端。<strong>690 分以上全市 27 人：市区应届 11、外县 5、重读 10。</strong>
+  其中大庆实验 15 个人里，<strong class="seal">市区应届只有 3 个，重读有 9 个</strong>。</p>
+
+  <h3>一、禁令为什么没挡住</h3>
+  <p>2004 年大庆的招生文件写着「省市教育行政部门严格规定不许各高中学校招收外地学生」。
+  但翻开 2003 年大庆市的中招文件，那道门槛的<strong>真实措辞</strong>是这样的：</p>
+  <div class="find"><p><b>「报考重点中学、省级示范性高中的考生必须是具有本市市区常住户口（知青子女除外）的应届初中毕业生。
+  凡在 4 月 25 日前户口未落入大庆的，不得参加大庆市初中升高中招生考试。」</b></p>
+  <p><b class="seal">这不是一堵墙，是一个户口条件和一个日期。</b>
+  4 月 25 日之前把户口迁进大庆的人，照常参加、照常录取。
+  这道门筛的不是能力，是<b>家庭能不能在四个月内办成一次户口迁移</b>。</p></div>
+  <p>同一份文件里还有一句，说明当时主管部门自己很清楚：
+  <strong>「针对我市目前借读生、重读生不断增加的实际情况，必须加大资格审查力度，把好入口关。」</strong></p>
+  <p>而「借读」这条路根本不需要户口。大庆实验中学 2003 年的校纪条例里，
+  <strong>「借读生及旁听者」是一个正式的学生类别</strong>——
+  「借读生及旁听者犯记过以下处分错误者，由个人、家长写出保证，给一次改正机会，再犯者取消借读或旁听资格」。
+  大庆一中的网站上则直接挂着一份<strong>《大庆一中在外校借读学生统计表》</strong>。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">绕过禁令的路</th><th class="l">怎么走</th><th class="l">筛的是什么</th></tr></thead>
+    <tbody>
+      <tr><td class="l">户口迁入</td><td class="l">4 月 25 日前把户口落进大庆市区，即可正常报考</td><td class="l seal">家庭办事能力与关系</td></tr>
+      <tr><td class="l">借读 ／ 旁听</td><td class="l">人在学校上课，学籍留在原地；两校的文件里都是正式类别</td><td class="l seal">支付能力与信息</td></tr>
+      <tr><td class="l">自费 ／ 择校</td><td class="l">省级示范高中自费比例上限 38%，6,000 元一年</td><td class="l seal">支付能力</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">这三条路<strong>没有一条筛能力</strong>。而绥化那边同时在做相反的动作——
+  2010 年东北网的报道写道，绥化「拿出最有效的杀手锏，不给办转学籍，所以到外地只能是借读，高考还得回来考」。
+  <strong>两头一夹，能走通的只剩下家里有办法的那部分人。</strong></p>
+
+  <h3>二、复读为什么这么值</h3>
+  <p>不是学生想复读，是学校在<strong>公开招募</strong>，而且给的条件好到近乎免费。这些是原始招生文件：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学校 ／ 年份</th><th class="l">条件</th></tr></thead>
+    <tbody>
+      <tr><td class="l"><b>铁人中学</b><br>2003 年重读生招生信息</td>
+        <td class="l"><b>预招重读生 500 人。</b>按分数编入尖子班／补习重点班／平行班。
+          <b class="seal">理科 570 分以下、文科 560 分以下的重读生，若次年高考超过 600 分，退还所有学费；考入清华、北大另行奖励。</b>
+          7 月 20 日开课，「根据高考录取情况，插班生可随时进班上课」</td></tr>
+      <tr><td class="l"><b>大庆实验中学</b><br>2003 年重读生招生</td>
+        <td class="l">门槛只要高考 <b>360 分</b>以上。一年学费 4,700 元，但
+          <b class="seal">580 分以上全免，560–579 减半，530–559 减三分之一</b>。
+          同年学校另设「<b>实苑学校</b>」，公告写明是「依托实验中学的品牌优势，<b>为重读生成才提供优质教育资源</b>」</td></tr>
+      <tr><td class="l"><b>大庆一中</b><br>2003／2004 年重读生简章</td>
+        <td class="l">理科 360 分以上、文科 340 分以上即可，「选派有经验的高级教师任教」。
+          <span class="hint">但一中把重读生打散插进各班，不单独设重读班——这一点下面很关键</span></td></tr>
+    </tbody>
+  </table></div>
+  <p>再加上招生政策这一条，链条就闭合了。黑龙江省招考办当年的答疑写得明明白白：</p>
+  <div class="find"><p><b>「除了军事院校、民用航空学院运输飞机驾驶专业、国际关系学院不招收往届生外，
+  其它录取院校对往届生一视同仁。」</b></p>
+  <p><b class="seal">复读没有任何录取代价。</b>一个 580 分以上的学生去铁人或实验复读，
+  学费全免，清北另有奖励，录取时与应届生完全平权。
+  <b>唯一的成本是一年时间——而这一年买到的位次提升，远大于一年时间的价格。</b>
+  这不是学生钻空子，这是学校设计出来的、面向全省公开发售的产品。</p></div>
+  <p class="wide">而 2007 年那张卷子，恰好把复读的回报推到最大。
+  上一节量过：那是十九年里唯一负偏的一年，偏易、按范本给分。
+  <strong>一张偏易、模板化的卷子，奖励的是熟练度，不是面对陌生问题的能力</strong>——
+  而复读一年增加的，正好就是熟练度。
+  <strong class="seal">所以 2007 年大庆 690 分以上那 27 个人里，有 10 个是第二次坐进考场的。</strong></p>
+
+  <h3>三、同一座城市里的对照组</h3>
+  <div class="find ok"><p><b>大庆一中把这件事变成了一个天然实验。</b>它在 2002、2003 年的高考喜报里反复强调：
+  「大庆一中的这些骄人成绩是在<b>没有从外市、县招收尖子生、没有办高三重读班</b>的前提下取得的」。</p>
+  <p>2007 年的结果：<b class="pet">大庆一中 680 分以上 10 人，10 个全部是市区应届生。</b>
+  同城的大庆实验，同一档 39 人，市区应届只有 9 个。</p>
+  <p><b>两校的市区应届产出几乎一样（10 对 9）。差出来的那 30 个人，全部来自两条通道。</b>
+  这不是一中教得差——是<b class="seal">「学校的高考成绩」这个数，主要由入口决定，不由三年教学决定</b>。</p></div>
+  <p class="wide">牡丹江一中的数据从另一个方向印证了同一件事：
+  同一届学生按入学身份拆开，<strong>计划内重本率 81.28%，小自费 28.82%，大自费 16.41%</strong>。
+  入口的筛选强度，三年后原样出现在出口上。</p>
+
+  <h3>四、这两件事怎么变成我的位次损失</h3>
+  <p><strong>高考录取按位次，位次是零和的。</strong>每一个通过这两条通道进入高分段的人，
+  都把排在他后面的每一个人向下压一名。把数字摆出来：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">分数档</th><th>全省人数</th><th>大庆人数</th><th>其中外县＋重读</th><th class="l">占全省该档</th></tr></thead>
+    <tbody>
+      <tr><td class="l">690 分以上</td><td>84</td><td>27</td><td><b>15</b></td><td class="l seal"><b>17.9%</b></td></tr>
+      <tr><td class="l">680 分以上</td><td>225</td><td>73</td><td><b>42</b></td><td class="l seal"><b>18.7%</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>我的反事实位次是全省第 102 名。</b></p>
+  <p>排在我前面的那 101 个人里，<b class="seal">至少有 15 个是大庆两条通道的人</b>——
+  这 15 个全部在 690 分以上，位置确定在我上方，不需要任何假设。
+  <b>仅这一项，就把我从第 87 名压到了第 102 名。</b></p>
+  <p>而这是一个<b>严重低估</b>的下界：它只算了大庆一座城，只算了 690 分以上那一档，
+  完全没算哈尔滨自己的复读生与择校生，也没算 680–690 那一档里的另外 27 人。</p></div>
+
+  <h3>往下推一层：650–680 分那一段有多少通道生</h3>
+  <p>官方拆分只到 680 分。但我恰好坐在 <strong>666 分</strong>，也就是 650–680 这一段里。
+  往下推一层需要外推，<strong>方法必须写在前面，读者才好判断它值多少</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">要素</th><th class="l">怎么来的</th><th class="l">硬度</th></tr></thead>
+    <tbody>
+      <tr><td class="l">实验中学该段总人数</td>
+        <td class="l">该校自公布的累计数相减：650 分以上 162 人 − 680 分以上 39 人 ＝ <b>123 人</b></td>
+        <td class="l pet"><b>硬数</b></td></tr>
+      <tr><td class="l">重读占比随分数下降</td>
+        <td class="l">两个实测点：680–690 段 <b>45.8%</b>（11/24）、690 分以上 <b>60.0%</b>（9/15）。
+          按对数几率线性外推，斜率 0.064／分</td>
+        <td class="l amb">两点定一条线</td></tr>
+      <tr><td class="l">外县人数</td>
+        <td class="l">实测中<b>外县恰好约等于应届的一半</b>：680 分以上 10/19＝53%，690 分以上 3/6＝50%，两档几乎一致。按此比例外推</td>
+        <td class="l amb">比例稳定，但只在顶端验证过</td></tr>
+      <tr><td class="l">铁人中学该段总人数</td>
+        <td class="l">该校没公布分段。用「全市 − 实验」＝ 152 人，乘以铁人份额
+          （680 分以上时铁人占非实验的 62%，往下递减，取 40–55%）</td>
+        <td class="l seal"><b>纯估计</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>结果如下。<strong class="seal">这一整张表是推算，不是实测——请与上面那些实测数字分开读。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">650–680 分段（推算）</th><th>该段人数</th><th>重读</th><th>外县</th><th>通道生合计</th><th>占该段</th><th class="l">区间</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆实验中学</td><td><b>123</b></td><td>≈24</td><td>≈50</td><td><b>≈74</b></td><td class="seal"><b>60%</b></td>
+          <td class="l n">44–82</td></tr>
+      <tr><td class="l">大庆铁人中学</td><td class="n">≈73</td><td>≈17</td><td>≈24</td><td><b>≈42</b></td><td class="amb"><b>57%</b></td>
+          <td class="l n">35–48</td></tr>
+      <tr class="sum"><td class="l"><b>两校合计</b></td><td><b>≈196</b></td><td><b>≈41</b></td><td><b>≈74</b></td><td><b>≈115</b></td>
+          <td><b>≈59%</b></td><td class="l n"><b>79–130</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>把它放回全省的分母里。2007 年全省 650–680 分之间共 <strong>1,373 人</strong>，
+  大庆这两所学校的通道生约占 <strong>8.4%</strong>。但对我来说，更相关的是<strong>我上方</strong>那一段：</p>
+  <div class="find"><p><b>我 666 分，全省第 652 名。排在我前面的 651 个人分成两截：</b></p>
+  <p><b>680 分以上 225 人</b>——其中大庆实验＋铁人的外县与重读生是 <b class="pet">42 人（实测，不是推算）</b>。<br>
+  <b>666 至 680 分之间 427 人</b>——其中这两校的通道生按上面的方法推算约 <b class="amb">50 人</b>。<br><br>
+  <b class="seal">合计约 92 人。也就是说，排在我前面的每七个人里，大约有一个是大庆这两所学校用外县招生或复读招来的。</b></p>
+  <p>而这个数只算了<b>一座城市的两所学校</b>。哈尔滨自己的复读生与择校生、齐齐哈尔、牡丹江、佳木斯的同类通道，
+  一个都没算进去。<b>它是下界，不是全貌。</b></p></div>
+  <div class="find ok"><p><b>顺带解决一个口径问题：表里的「外县」到底指谁。</b></p>
+  <p>2004 年实验中学的中考统招名册共 447 人，其中来自大庆四县初中的只有 <b>25 人（5.6%）</b>，
+  而这 25 人里中考上 640 分的<b>只有 1 个</b>。铁人更少：399 人里 8 个县属来源，640 分以上<b>一个都没有</b>。</p>
+  <p><b class="seal">25 个人、其中 1 个高分，不可能在三年后产出 680 分以上的 10 个人。</b>
+  所以那张表里的「外县」几乎肯定不是指公开名册上的大庆四县考生，
+  而是指<b>没有出现在统招名册上的外市县学生</b>——通过自费、借读或户口迁入进来的那批。
+  大庆一中的教师简历里也确实写着「现担任高三<b>外县班</b>班主任」「高三外县班化学教师」，
+  说明这类班级在三所学校里都是常设建制。</p></div>
+  <p class="notes" style="max-width:78ch"><b>这段推算的限度，比结论重要：</b>
+  ① 两个外推参数各自只由<b>两个实测点</b>确定，没有第三点可以检验曲线形状是否正确。
+  ② 「外县 ≈ 应届的一半」这个比例只在 680 分以上验证过。招来的外县尖子生<b>本来就集中在顶端</b>，
+  所以往下这个比例<b>很可能被高估</b>——区间下限（44 人）比中心估计更值得相信。
+  ③ 铁人中学该段的人数完全是估计，误差可能达 ±30%。
+  ④ 实验中学 2004 级的自费生名册从未公布（是 xls 附件，没存下来），
+  所以「应届」这一栏里究竟有多少是统招、多少是自费，本页无法拆开。
+  ⑤ <b>整张推算表都不应被当作实测引用</b>；能当实测引用的只有 680 分以上和 690 分以上那两档。</p>
+  <h3>五、「非智力因素」的准确含义</h3>
+  <p class="wide">这里必须说清楚，否则容易变成一句怨言。
+  <strong>复读生和外县生，没有一个人是靠作弊拿到那个分数的。</strong>
+  复读要多熬一年，外县生本来就是各自地区最好的学生。<strong>他们的分数是真的。</strong></p>
+  <p class="wide">问题不在他们身上，在<strong>这张表被用来做什么</strong>。
+  高考的名义是衡量一个 18 岁学生三年高中的学业水平。而实际排在同一张位次表上的是：</p>
+  <ul>
+    <li><b>18 岁、第一次考、在一所语数外教师全为专科的学校读了三年的人</b>；</li>
+    <li><b>19 岁、第二次考、已经完整见过一次真题、并在一所七成国家级物理一等奖出自本校的学校复读了一年的人</b>；</li>
+    <li><b>被从外地招来、集中在最好师资下培养了三年的人</b>。</li>
+  </ul>
+  <p class="wide">这三种人之间的分数差异是<strong>真实且可测量的</strong>，
+  但它测的是<strong>准备总量</strong>——年数、师资、训练强度、见过多少次这张卷子——
+  <strong class="seal">而不是十八岁时的认知能力。</strong>
+  这就是「非智力因素」的准确含义：不是「不该得分」，而是
+  <strong>这张表所度量的东西，和它被用来判断的东西，不是同一样东西。</strong></p>
+  <p class="notes" style="max-width:78ch"><b>限度：</b>
+  ① 生源构成表只有 680 分以上和 690 分以上两档，660–680 那一层没有拆分数据，本节不外推。
+  ② 招生文件是 2003 年的，2004–2006 年是否逐年延续没有逐年存档，但 2007 年的结果与之一致。
+  ③ 「至少 15 人」这个下界依赖「大庆 690 分以上的通道生都在我的反事实位次之上」，
+  这一点由分数档本身保证（690 &gt; 688），不需要额外假设。
+  ④ 大庆一中「没办重读班」这句话来自学校自述；有 2002 年的论坛帖称一中把重读生打散插班，
+  两说并存，本节只采用一中 2007 年那张表里「市区应届 10 人」这个自报口径。</p>
+</section>
+
+<section id="t7b">
+  <div class="sechead"><span class="no">检验 07</span><h2>三个没走的岔路口，值多少名次</h2><span class="en">The Counterfactuals</span></div>
+  <div class="read">
+    <div><u>岔路一</u>2004 年没去大庆读高中</div>
+    <div><u>岔路二</u>2007 年没有复读</div>
+    <div><u>岔路三</u>竞赛：初中获奖被隐瞒，高中联赛止步初试</div>
+    <div><u>方法</u>同分层实测 ＋ 配对回归</div>
+    <div><u>单位</u>全省位次</div>
+  </div>
+  <p>上一节说的是「排在我前面的是谁」。这一节反过来问：
+  <strong>那两条我没走的路，如果走了，位次会差多少。</strong>
+  这两个问题都不用猜——大庆的中考录取名册和高考名单可以逐人对上。</p>
+
+  <h3>岔路一：648 分在大庆是第几号入学生</h3>
+  <p>2004 年我 648 分。把这个分数放进大庆三所高中的录取名册：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">学校</th><th>录取人数</th><th>统招线</th><th>校内最高</th><th>648 分在校内排名</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆实验中学</td><td>447</td><td>603</td><td>655</td><td class="seal"><b>第 4 名</b></td></tr>
+      <tr><td class="l">大庆铁人中学</td><td>399</td><td>607</td><td>657</td><td class="seal"><b>第 5 名</b></td></tr>
+      <tr><td class="l">大庆一中</td><td>333</td><td>583</td><td>663</td><td class="seal"><b>第 4 名</b></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>648 分进这三所学校，都是当年入学的前五名。</strong>比实验的录取线高 45 分，比铁人高 41 分。</p>
+  <p>那么，实际进了实验和铁人、中考 <strong>≥648</strong> 的人一共八个。三年后他们去了哪里：</p>
+  <div class="tw"><table>
+    <thead><tr><th>中考</th><th class="l">全市名次</th><th class="l">姓名</th><th class="l">高中</th><th class="l">2007 年录取</th></tr></thead>
+    <tbody>
+      <tr><td>657</td><td class="l">第 2</td><td class="l">刘禹驰</td><td class="l">铁人</td><td class="l"><b class="seal">北京大学</b>（数学奥赛省一等奖保送）</td></tr>
+      <tr><td>655</td><td class="l">第 4</td><td class="l">崔潇</td><td class="l">实验</td><td class="l">哈尔滨工业大学</td></tr>
+      <tr><td>654</td><td class="l">第 5</td><td class="l">姜冰</td><td class="l">实验</td><td class="l"><b class="seal">北京大学</b></td></tr>
+      <tr><td>654</td><td class="l">第 5</td><td class="l">魏征</td><td class="l">实验</td><td class="l"><b class="seal">清华大学</b>（工程物理系）</td></tr>
+      <tr><td>650</td><td class="l">第 8</td><td class="l">狄昊</td><td class="l">铁人</td><td class="l">2007 年落榜，<b>复读一年</b>；2008 年从大庆一中考入哈尔滨工业大学</td></tr>
+      <tr><td>649</td><td class="l">第 9</td><td class="l">迟妍玮</td><td class="l">铁人</td><td class="l">中国科技大学</td></tr>
+      <tr><td>649</td><td class="l">第 9</td><td class="l">黄鹤</td><td class="l">铁人</td><td class="l">哈尔滨工业大学</td></tr>
+      <tr><td><b>648</b></td><td class="l"><b>第 11</b></td><td class="l"><b>李梦然</b></td><td class="l">实验</td>
+          <td class="l"><b class="seal">清华大学　709 分，大庆市理科状元，全省第 3 名</b></td></tr>
+      <tr class="me"><td><b>648</b></td><td class="l"><b>第 11</b></td><td class="l"><b>林英魁</b></td><td class="l">绥化一中</td>
+          <td class="l"><b>哈尔滨工业大学　666 分，全省第 652 名</b></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>这八个人里，四个上了清华北大（50%），三个上了 985／C9，一个复读了一年。</strong>
+  而排在最后一行的那个人，中考分数和全市名次与李梦然<strong>完全相同</strong>。</p>
+  <div class="find"><p><b>但这里必须立刻说一句，否则就是选择性叙事：</b>
+  同一层里，<b>崔潇（全市第 4）和黄鹤（全市第 9）也去了哈尔滨工业大学</b>——
+  和我的结局完全一样。<b class="seal">所以这不是「去了大庆就一定上清北」，而是「去了大庆，上清北的概率约是一半」。</b></p><p>还有更钝的一条：<b>全市第 8 名的狄昊，2007 年在铁人中学落榜，复读一年，2008 年从大庆一中考入哈尔滨工业大学。</b>中考比我高 2 分、名次比我高 3 位，多读了一年，终点和我应届时一样。把这一条放回去，八个人的结局是：<b>四个清北、三个 985／C9、一个复读后 985</b>——大庆这条路的顶端很亮，但它同样有落榜。</p></div>
+  <h3>那么在大庆，648 分「应该」考多少</h3>
+  <p>大庆一中公布过一张更细的表：<strong>把 2007 年本校市区应届生的高考总分，和他们 2004 年的中考成绩逐人对上</strong>，
+  一共 52 组。在此基础上，我把大庆市所有<strong>同时留下 2004 中考分数和 2007 高考分数</strong>的人都并了进来——
+  大庆市高考金榜、660 分以上大榜、以及用清华「在黑龙江分专业录取分数线」反解出的个人分数，
+  再回 2004 年中考录取名册（5,760 条）逐人核对，
+  最终得到 <strong>55 组可信配对</strong>（大庆一中 52、大庆实验 2、大庆铁人 1）。
+  这是整个项目里唯一一份同届、逐人配对的数据：</p>
+  <div class="fig"><svg viewBox="0 0 980 420" width="100%" role="img" aria-label="大庆市 55 组 2004 中考与 2007 高考逐人配对，另标出绥化一中三人"><line x1="56" y1="354.0" x2="830.0" y2="354.0" stroke="var(--hair)"/><text x="48" y="358.0" text-anchor="end" class="ax">600</text><line x1="56" y1="294.7" x2="830.0" y2="294.7" stroke="var(--hair)"/><text x="48" y="298.7" text-anchor="end" class="ax">620</text><line x1="56" y1="235.4" x2="830.0" y2="235.4" stroke="var(--hair)"/><text x="48" y="239.4" text-anchor="end" class="ax">640</text><line x1="56" y1="176.1" x2="830.0" y2="176.1" stroke="var(--hair)"/><text x="48" y="180.1" text-anchor="end" class="ax">660</text><line x1="56" y1="116.9" x2="830.0" y2="116.9" stroke="var(--hair)"/><text x="48" y="120.9" text-anchor="end" class="ax">680</text><line x1="56" y1="57.6" x2="830.0" y2="57.6" stroke="var(--hair)"/><text x="48" y="61.6" text-anchor="end" class="ax">700</text><line x1="56.0" y1="22" x2="56.0" y2="354.0" stroke="var(--hair)"/><text x="56.0" y="372" text-anchor="middle" class="ax">570</text><line x1="210.8" y1="22" x2="210.8" y2="354.0" stroke="var(--hair)"/><text x="210.8" y="372" text-anchor="middle" class="ax">590</text><line x1="365.6" y1="22" x2="365.6" y2="354.0" stroke="var(--hair)"/><text x="365.6" y="372" text-anchor="middle" class="ax">610</text><line x1="520.4" y1="22" x2="520.4" y2="354.0" stroke="var(--hair)"/><text x="520.4" y="372" text-anchor="middle" class="ax">630</text><line x1="675.2" y1="22" x2="675.2" y2="354.0" stroke="var(--hair)"/><text x="675.2" y="372" text-anchor="middle" class="ax">650</text><line x1="830.0" y1="22" x2="830.0" y2="354.0" stroke="var(--hair)"/><text x="830.0" y="372" text-anchor="middle" class="ax">670</text><path d="M 56.0 309.1 L 830.0 48.8" stroke="var(--petrol)" stroke-width="1.8" stroke-dasharray="5 4" fill="none"/><circle cx="551.4" cy="63.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>陈川（大庆一中）中考 634 → 高考 698</title></circle><circle cx="466.2" cy="66.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李悦（大庆一中）中考 623 → 高考 697</title></circle><circle cx="404.3" cy="72.4" r="3.6" fill="var(--petrol)" fill-opacity="0.85"><title>张远洋（大庆铁人中学）中考 615 → 高考 695</title></circle><circle cx="775.8" cy="78.3" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李璐（大庆一中）中考 663 → 高考 693</title></circle><circle cx="613.3" cy="84.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>蒋莉（大庆一中）中考 642 → 高考 691</title></circle><circle cx="721.6" cy="87.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>关天下（大庆一中）中考 656 → 高考 690</title></circle><circle cx="628.8" cy="93.1" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>杜宇寰（大庆一中）中考 644 → 高考 688</title></circle><circle cx="706.2" cy="93.1" r="3.6" fill="var(--amber)" fill-opacity="0.85"><title>魏征（大庆实验中学）中考 654 → 高考 688</title></circle><circle cx="489.4" cy="102.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李海旭（大庆一中）中考 626 → 高考 685</title></circle><circle cx="582.3" cy="108.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>曹琪（大庆一中）中考 638 → 高考 683</title></circle><circle cx="520.4" cy="108.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>牛雨军（大庆一中）中考 630 → 高考 683</title></circle><circle cx="543.6" cy="116.9" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>符迪（大庆一中）中考 633 → 高考 680</title></circle><circle cx="590.1" cy="122.8" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>王惠西（大庆一中）中考 639 → 高考 678</title></circle><circle cx="636.5" cy="128.7" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>刘安东（大庆一中）中考 645 → 高考 676</title></circle><circle cx="644.2" cy="128.7" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>张洪谋（大庆一中）中考 646 → 高考 676</title></circle><circle cx="466.2" cy="131.7" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>于燕池（大庆一中）中考 623 → 高考 675</title></circle><circle cx="489.4" cy="149.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>张丽娜（大庆一中）中考 626 → 高考 669</title></circle><circle cx="474.0" cy="152.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李岩松（大庆一中）中考 624 → 高考 668</title></circle><circle cx="249.5" cy="155.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>杨帆（大庆一中）中考 595 → 高考 667</title></circle><circle cx="512.7" cy="158.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>权文琪（大庆一中）中考 629 → 高考 666</title></circle><circle cx="613.3" cy="158.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>王金鑫（大庆一中）中考 642 → 高考 666</title></circle><circle cx="628.8" cy="158.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>鲍慊（大庆一中）中考 644 → 高考 666</title></circle><circle cx="481.7" cy="164.3" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>曹明阳（大庆一中）中考 625 → 高考 664</title></circle><circle cx="582.3" cy="164.3" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>曹沂（大庆一中）中考 638 → 高考 664</title></circle><circle cx="210.8" cy="173.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>张友钧（大庆一中）中考 590 → 高考 661</title></circle><circle cx="350.1" cy="173.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>张大磊（大庆一中）中考 608 → 高考 661</title></circle><circle cx="551.4" cy="173.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>梁轶（大庆一中）中考 634 → 高考 661</title></circle><circle cx="458.5" cy="173.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>顾舒然（大庆一中）中考 622 → 高考 661</title></circle><circle cx="373.3" cy="185.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>周旸（大庆一中）中考 611 → 高考 657</title></circle><circle cx="388.8" cy="185.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>孟志昊（大庆一中）中考 613 → 高考 657</title></circle><circle cx="520.4" cy="191.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>张晨（大庆一中）中考 630 → 高考 655</title></circle><circle cx="504.9" cy="205.8" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>冯聪（大庆一中）中考 628 → 高考 650</title></circle><circle cx="342.4" cy="205.8" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>尹成（大庆一中）中考 607 → 高考 650</title></circle><circle cx="481.7" cy="208.8" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>杨赫（大庆一中）中考 625 → 高考 649</title></circle><circle cx="234.0" cy="208.8" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>王萌（大庆一中）中考 593 → 高考 649</title></circle><circle cx="474.0" cy="220.6" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>吕秀娟（大庆一中）中考 624 → 高考 645</title></circle><circle cx="458.5" cy="223.6" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李秋稷（大庆一中）中考 622 → 高考 644</title></circle><circle cx="79.2" cy="229.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>刘冰（大庆一中）中考 573 → 高考 642</title></circle><circle cx="311.4" cy="229.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>刘航（大庆一中）中考 603 → 高考 642</title></circle><circle cx="427.5" cy="229.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>陈麒（大庆一中）中考 618 → 高考 642</title></circle><circle cx="443.0" cy="232.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>任聪（大庆一中）中考 620 → 高考 641</title></circle><circle cx="280.5" cy="232.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>孙凯蒂（大庆一中）中考 599 → 高考 641</title></circle><circle cx="357.9" cy="232.5" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>牛春军（大庆一中）中考 609 → 高考 641</title></circle><circle cx="427.5" cy="238.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>朱梓璇（大庆一中）中考 618 → 高考 639</title></circle><circle cx="404.3" cy="241.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>杨超（大庆一中）中考 615 → 高考 638</title></circle><circle cx="311.4" cy="247.3" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>滕玥（大庆一中）中考 603 → 高考 636</title></circle><circle cx="381.1" cy="250.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>高嵽（大庆一中）中考 612 → 高考 635</title></circle><circle cx="187.6" cy="253.2" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>韩旭（大庆一中）中考 587 → 高考 634</title></circle><circle cx="326.9" cy="262.1" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>赵婉婷（大庆一中）中考 605 → 高考 631</title></circle><circle cx="272.7" cy="265.1" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>石峰（大庆一中）中考 598 → 高考 630</title></circle><circle cx="350.1" cy="271.0" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>李思源（大庆一中）中考 608 → 高考 628</title></circle><circle cx="241.8" cy="300.6" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>邱玉婷（大庆一中）中考 594 → 高考 618</title></circle><circle cx="195.3" cy="324.4" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>杨博超（大庆一中）中考 588 → 高考 610</title></circle><circle cx="156.6" cy="345.1" r="3.6" fill="var(--bar)" fill-opacity="0.85"><title>徐哲（大庆一中）中考 583 → 高考 603</title></circle><circle cx="466.2" cy="113.9" r="3.6" fill="none" stroke="var(--rule)" stroke-width="1.4"><title>王鑫（大庆市铁人中学）中考 623 → 高考 681｜B 级配对，不参与拟合</title></circle><circle cx="659.7" cy="30.9" r="5.5" fill="var(--amber)"><title>李梦然（大庆实验）中考 648 → 高考 709</title></circle><text x="648.7" y="34.9" class="anno" style="fill:var(--amber)" text-anchor="end">李梦然 648 → 709</text><line x1="659.7" y1="158.4" x2="659.7" y2="106.1" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="3 3"/><circle cx="659.7" cy="106.1" r="5" fill="none" stroke="var(--petrol)" stroke-width="2"><title>林英魁 回归预测 684 分</title></circle><text x="670.7" y="110.1" class="anno pet" text-anchor="start">预测 684</text><circle cx="659.7" cy="158.4" r="6.5" fill="var(--seal)"><title>林英魁（绥化一中）中考 648 → 高考 666，残差 -18 分</title></circle><text x="646.7" y="162.4" class="anno seal" text-anchor="end">林英魁 648 → 666</text><line x1="613.3" y1="265.1" x2="613.3" y2="121.7" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="3 3"/><circle cx="613.3" cy="121.7" r="5" fill="none" stroke="var(--petrol)" stroke-width="2"><title>刘欣 回归预测 678 分</title></circle><text x="625.3" y="125.7" class="anno pet" text-anchor="start">预测 678</text><circle cx="613.3" cy="265.1" r="6.5" fill="var(--seal)"><title>刘欣（绥化一中）中考 642 → 高考 630，残差 -48 分</title></circle><text x="625.3" y="269.1" class="anno seal" text-anchor="start">刘欣 642 → 630</text><line x1="520.4" y1="185.0" x2="520.4" y2="152.9" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="3 3"/><circle cx="520.4" cy="152.9" r="5" fill="none" stroke="var(--petrol)" stroke-width="2"><title>刘翔 回归预测 668 分</title></circle><text x="509.4" y="156.9" class="anno pet" text-anchor="end">预测 668</text><circle cx="520.4" cy="185.0" r="6.5" fill="var(--seal)"><title>刘翔（绥化一中）中考 630 → 高考 657，残差 -11 分</title></circle><text x="509.4" y="189.0" class="anno seal" text-anchor="end">刘翔 630 → 657</text><circle cx="852" cy="34" r="4.5" fill="var(--bar)"/><text x="864" y="38" class="ax">大庆一中 52 人</text><circle cx="852" cy="53" r="4.5" fill="var(--amber)"/><text x="864" y="57" class="ax">大庆实验 2 人</text><circle cx="852" cy="72" r="4.5" fill="var(--petrol)"/><text x="864" y="76" class="ax">大庆铁人 1 人</text><circle cx="852" cy="91" r="4.5" fill="none" stroke="var(--rule)" stroke-width="1.4"/><text x="864" y="95" class="ax">存疑·不拟合</text><circle cx="852" cy="110" r="5" fill="var(--seal)"/><text x="864" y="114" class="ax">绥化一中 3 人</text><circle cx="852" cy="129" r="4.5" fill="none" stroke="var(--petrol)" stroke-width="2"/><text x="864" y="133" class="ax">回归预测值</text><text x="840" y="153" class="ax">高考 = 0.878×中考</text><text x="840" y="168" class="ax">　　　 + 114.7</text><text x="840" y="183" class="ax">r = 0.742　σ = 16.1</text><text x="16" y="15" class="ax">2007 高考总分</text><text x="443.0" y="394" text-anchor="middle" class="ax">2004 中考成绩（全省统一命题，文化课 660 ＋ 体育 30）</text></svg></div>
+  <p class="figcap">大庆市 <strong>55 组</strong>「2004 中考 → 2007 高考」逐人配对。
+  回归线：<strong>高考 ＝ 0.878 × 中考 ＋ 114.7，r ＝ 0.742，残差标准差 16.1 分</strong>。
+  <strong class="pet">中考 648 分的预测值是 684 分</strong>（旧的 52 组模型给 682 分，差 2 分——远在 16.1 分的残差之内；下文一律沿用较保守的 682）。
+  灰色空心圈是配对存疑的点，不参与拟合；另有 3 个中考 484–518 的存疑点落在图外。
+  红点是绥化一中的三个人，每人用虚线连到自己在回归线上的预测值（蓝色空心圈）：
+  <strong class="seal">刘翔 630→657（预测 668，残差 −11）、林英魁 648→666（预测 684，残差 −18）、
+  刘欣 642→630（预测 678，残差 −48）</strong>。
+  <strong>三个人全部落在回归线下方，平均低 26 分。</strong>
+  刘欣那一个点是 −3.0 个残差标准差——在这条回归线的 55 个大庆样本里，没有任何一个人偏离到这个程度。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">同一个 648 分，三种去向</th><th>2007 高考</th><th>全省位次</th><th class="l">这个数怎么来的</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l"><b>实际：绥化一中</b></td><td><b>666</b></td><td><b>652</b></td><td class="l">已发生</td></tr>
+      <tr><td class="l">若在大庆（保守）</td><td class="pet"><b>682</b></td><td class="pet"><b>185</b></td><td class="l">配对回归的点估计（旧 52 组模型 682，新 55 组模型 684，本文一律取较保守的 682）</td></tr>
+      <tr><td class="l">若在大庆实验（李梦然实测）</td><td class="amb"><b>709</b></td><td class="amb"><b>3</b></td><td class="l">同分同名次者的实际结果，n＝1</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p class="eq">保守估计：<i>652 → 185</i>　＝　前进约 <i>470</i> 个名次</p>
+  <p>这 470 个名次<b>不含</b>任何「如果没有那两道错题」的假设——
+  回归线上的那 52 个大庆学生<b>考的是同一张有错的卷子</b>。
+  <b class="seal">所以 470 是纯粹的「学校」效应，而且是用三所学校里最弱的那一所算出来的。</b></p></div>
+  <p class="wide">再看分布，不看点估计。大庆一中中考 ≥640 的八个市区应届生，
+  2007 年的高考分数是：<strong>693、691、690、688、676、676、666、666</strong>——
+  对应全省第 50、71、84、102、312、312、652、652 名。
+  <strong>中位数落在 682 分／第 185 名，但其中有两个人也只考了 666。</strong>
+  换句话说：<strong class="seal">即使去了大庆，也有约四分之一的概率仍然停在 666。</strong>
+  这个反事实是一个分布，不是一个承诺。</p>
+  <h3>岔路二：2007 年不复读，2008 年不再考一次</h3>
+  <p>这条路的数据更难得——鹤岗一中公布了 <strong>45 组复读生的「复读前分数 → 复读后分数」配对</strong>，
+  这是唯一一份能直接测量「复读值多少」的材料。把两个分数各自换算成当年的全省位次，
+  <strong>剥掉年份难度的影响</strong>，只看位次变化：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">起点（2006 年分数）</th><th>人数</th><th>分数变化中位</th><th>位次变化中位</th><th>位次变化均值</th><th class="l">结论</th></tr></thead>
+    <tbody>
+      <tr><td class="l">全部（403–678）</td><td>43</td><td class="pet"><b>+47</b></td><td class="pet"><b>+8,999</b></td><td class="pet">+11,518</td>
+          <td class="l">对中低分段，复读的回报极大</td></tr>
+      <tr class="me"><td class="l"><b>起点 ≥620 分</b></td><td>8</td><td><b>+4</b></td><td class="seal"><b>−216</b></td><td class="seal"><b>−2,196</b></td>
+          <td class="l"><b>对高分段，中位数是位次退步</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>把那八个高起点的人逐个列出来，因为均值在这里会骗人：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th>2006 分</th><th>2006 位次</th><th>2007 分</th><th>2007 位次</th><th>位次变化</th></tr></thead>
+    <tbody>
+      <tr><td class="l">邱林</td><td>654</td><td>980</td><td>701</td><td>12</td><td class="pet"><b>+968</b></td></tr>
+      <tr><td class="l">么江涛</td><td>657</td><td>814</td><td>681</td><td>204</td><td class="pet"><b>+610</b></td></tr>
+      <tr><td class="l">王弘轩</td><td>678</td><td>182</td><td>702</td><td>10</td><td class="pet"><b>+172</b></td></tr>
+      <tr><td class="l">赵慧颖</td><td>649</td><td>1,293</td><td>654</td><td>1,293</td><td>±0</td></tr>
+      <tr><td class="l">李镭焓</td><td>630</td><td>3,059</td><td>633</td><td>3,490</td><td class="seal">−431</td></tr>
+      <tr><td class="l">刘洋</td><td>660</td><td>670</td><td>643</td><td>2,243</td><td class="seal">−1,573</td></tr>
+      <tr><td class="l">张倩</td><td>639</td><td>2,078</td><td>616</td><td>6,670</td><td class="seal">−4,592</td></tr>
+      <tr><td class="l">刘爽</td><td>641</td><td>1,896</td><td>589</td><td>14,619</td><td class="seal"><b>−12,723</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>八个人里三个前进、一个持平、四个退步。</b>
+  <b class="seal">起点越高，复读越像一次赌博，而不是一次投资。</b>
+  中位数是退步 216 名；最惨的一个退了 12,723 名，从 641 分掉到 589 分。</p>
+  <p>原因不难理解：位次在高分段极其昂贵。<b>邱林从 654 分涨到 701 分，涨了 47 分，换来 968 个名次；
+  刘爽掉了 52 分，赔进去 12,723 个名次。</b>同样量级的分数波动，向下的代价是向上收益的十三倍。</p></div>
+  <h3>但复读这件事本身，也分在哪里复读</h3>
+  <p class="wide">上面那八个人是<strong>在鹤岗一中复读的</strong>。同一年，在大庆的两所学校，结果完全不同：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2007 年</th><th>该校 680 分以上</th><th>其中复读生</th><th>该校 690 分以上</th><th>其中复读生</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆实验中学</td><td>39</td><td class="seal"><b>20（51%）</b></td><td>15</td><td class="seal"><b>9（60%）</b></td></tr>
+      <tr><td class="l">大庆铁人中学</td><td>21</td><td>5</td><td>6</td><td>1</td></tr>
+      <tr><td class="l">鹤岗一中</td><td class="n">6（全校）</td><td>4</td><td class="n">—</td><td class="n">—</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find ok"><p><b>所以「复读值不值」这个问题问错了。正确的问题是「在哪复读」。</b></p>
+  <p>在鹤岗一中，高起点复读的中位结果是<b class="seal">位次退步</b>；
+  在大庆实验，复读生占了该校 690 分以上人数的<b class="pet">六成</b>。<br><br>
+  而进那扇门的条件，招生简章上写得很清楚：
+  <b>铁人「理科 570 分以下的重读生，次年超过 600 分退还所有学费」；
+  实验「580 分以上学费全免」。</b>
+  <b class="seal">我 2007 年考了 666 分——这两扇门对我都是免费敞开的。</b></p></div>
+  <p class="wide">至于 2008 年那张卷子，难度与 2007 年接近：最高分 719，全省第 100 名是 685 分，清华线 685。
+  <strong>如果我复读一年只是原地踏步，2008 年的 664 分对应的正是同一个第 652 名</strong>；
+  而只要位次前进到第 185 名（也就是上面那条学校效应的量级），对应的分数是 <strong>679 分</strong>，
+  距当年清华线 685 还差 6 分；前进到第 102 名，对应 <strong>685 分</strong>，正好压线。</p>
+  <div class="find"><p><b>把两条岔路并排，答案是同一个：</b></p>
+  <p><b>岔路一（2004 年去大庆）保守值约 470 个名次</b>，而且这个数是纯学校效应，不含任何命题事故的假设。<br>
+  <b>岔路二（复读）本身几乎不值钱</b>——高起点复读的中位结果是退步 216 名。
+  <b class="seal">它值钱的部分，同样来自「在哪复读」，而不是「多读一年」。</b><br><br>
+  <b>也就是说：两个岔路口指向同一个变量。不是「早一年晚一年」，不是「应届往届」，
+  是「你三年（或四年）坐在哪一间教室里」。</b></p></div>
+  <h3>岔路三：那张被压了二十年的纸</h3>
+  <p>2004 年那一届，我参加了数学、物理、化学三科竞赛。二十年后才知道结果的全貌：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">科目</th><th class="l">赛制</th><th class="l">实际发生了什么</th><th class="l">结果</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l"><b>数学</b></td><td class="l">4 月 11 日一次考试定奖</td>
+        <td class="l">正常参加</td><td class="l seal"><b>省赛区一等奖——校长二十年后才告诉我</b></td></tr>
+      <tr><td class="l">物理</td><td class="l">3 月 28 日初赛，4 月 18 日复赛</td>
+        <td class="l seal"><b>没有被通知去参加复赛</b></td><td class="l">仅凭初赛得三等奖</td></tr>
+      <tr><td class="l">化学</td><td class="l">初赛＋复赛</td>
+        <td class="l seal"><b>同样没有参加复赛</b></td><td class="l hint">初赛成绩至今不明</td></tr>
+    </tbody>
+  </table></div>
+  <p>物理那一条有旁证：据 2004 年 6 月的绥化日报，<strong>全绥化市参加物理竞赛复试的一共只有六个人</strong>。
+  而同一期报纸头版的「要闻集锦」里，列了绥棱五中的李飞鸿（物理二等奖）、王博（化学一等奖），
+  <strong class="seal">唯独没有数学一栏。</strong></p>
+
+  <h3>竞赛路线通向哪里：2007 年的保送名单</h3>
+  <p>省一等奖不是一张荣誉证书，是一条<strong>不经过高考的录取通道</strong>。
+  2007 年黑龙江全省保送生共 <strong>51 人</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">按地市</th><th>人数</th><th class="l">按学科</th><th>人数</th><th class="l">按高校</th><th>人数</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆</td><td><b>24</b></td><td class="l">物理</td><td><b>15</b></td><td class="l">北京大学</td><td><b>13</b></td></tr>
+      <tr><td class="l">哈尔滨</td><td><b>22</b></td><td class="l">生物</td><td>14</td><td class="l">上海交通大学</td><td>6</td></tr>
+      <tr><td class="l">佳木斯</td><td>2</td><td class="l">数学</td><td>9</td><td class="l">浙江大学</td><td>5</td></tr>
+      <tr><td class="l">齐齐哈尔</td><td>2</td><td class="l">信息学</td><td>4</td><td class="l">中国人民大学</td><td>3</td></tr>
+      <tr class="me"><td class="l"><b>绥化</b></td><td><b>1</b></td><td class="l">化学</td><td>4</td><td class="l">复旦大学</td><td>2</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>大庆加哈尔滨占了 46 人，90%。</strong>绥化那一个是安达市高级中学的曹媛（物理奥赛省一等奖 → 北京科技大学）。
+  <strong class="seal">而绥化一中，在手头所有年份的保送名单里从未出现过。</strong></p>
+
+  <h3>最刺眼的一张表</h3>
+  <p>2007 年那 51 个保送生里，有 6 个能回溯到 2004 年的大庆中考名册。把他们的<strong>中考名次</strong>摆出来：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th class="l">高中</th><th class="l">保送条件</th><th>2004 中考</th><th>全市名次</th><th class="l">录取高校</th></tr></thead>
+    <tbody>
+      <tr><td class="l">刘禹驰</td><td class="l">铁人</td><td class="l">数学奥赛省一等奖</td><td>657</td><td><b>第 2</b></td><td class="l">北京大学</td></tr>
+      <tr><td class="l">任帅</td><td class="l">大庆一中</td><td class="l">信息学省一等奖</td><td>637</td><td>第 89</td><td class="l">复旦大学</td></tr>
+      <tr><td class="l">种敏琪</td><td class="l">大庆一中</td><td class="l">信息学省一等奖</td><td>625</td><td>第 291</td><td class="l"><b>上海交通大学</b></td></tr>
+      <tr><td class="l">李城达</td><td class="l">大庆一中</td><td class="l">数学奥赛省一等奖</td><td>618</td><td>第 516</td><td class="l">浙江大学</td></tr>
+      <tr><td class="l">刘博</td><td class="l">铁人</td><td class="l">物理奥赛省一等奖</td><td>617</td><td>第 542</td><td class="l">浙江大学</td></tr>
+      <tr><td class="l">孙继峰</td><td class="l">大庆四中</td><td class="l">信息学省一等奖</td><td>598</td><td><b>第 1,218</b></td><td class="l">华中科技大学</td></tr>
+      <tr class="me"><td class="l"><b>林英魁</b></td><td class="l">绥化一中</td><td class="l"><b>初中数学省一等奖（被隐瞒）</b></td>
+        <td><b>648</b></td><td><b>第 11</b></td><td class="l"><b>哈工大（高考 666 分）</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b class="seal">中考全市第 1,218 名的人保送华中科技，第 516 名的保送浙大，第 291 名的保送上海交通大学。
+  而中考全市第 11 名、手里握着一个省一等奖的人，去考了高考。</b></p>
+  <p>再补一刀：<b>2007 年上海交大在黑龙江的理科线是 665 分，我考了 666，够了</b>——
+  却因为被劝去报清华而落榜。<b class="seal">种敏琪以中考第 291 名的成绩保送上海交大，根本不需要参加那场高考。</b></p></div>
+
+  <h3>而竞赛路线，恰好绕开了 2007 年那场事故</h3>
+  <div class="find ok"><p><b>保送在 4 月公示，高考在 6 月。</b>刘禹驰的公示日期是 <b>2007 年 4 月 24 日</b>。</p>
+  <p>也就是说，<b class="pet">保送生的录取，在那两道错题出现之前就已经定了。</b></p>
+  <p>这是竞赛路线最要紧的性质：它把结果从一次三小时的、有四处命题错误的测量里<b>整个移出去</b>。
+  上一节算过，在 666 分那个位置，一道物理大题值 <b>800 个名次</b>，22 分的命题误差等于局部分布的 <b>2.28 个标准差</b>。
+  <b class="seal">而对一个 4 月就已录取的人，这两个数都是零。</b></p></div>
+
+  <h3>2006 年 9 月，我参加了高中数学联赛的初试，没有结果</h3>
+  <p>这条线索我去查了。<strong>2006 年黑龙江赛区的一等奖名单本身没有找到</strong>——
+  当年发布这些名单的论坛「数学奥林匹克报」（mathoe.com）现在连不上，网络存档也取不到。
+  但找到了两样等价的材料：</p>
+  <ul>
+    <li><b>2007 年黑龙江赛区一等奖完整名单，40 人，含一试／加试分项成绩</b>
+      （从存档里挖出来的，是我参赛那年的下一年）；</li>
+    <li><b>2007 年凭「数学奥赛省赛区一等奖」保送的 9 个人</b>——
+      他们的资格<b class="seal">正是来自我参加的那一场 2006 年 10 月的联赛</b>（保送在次年 4 月公示）。</li>
+  </ul>
+  <h3>先看第二样，它最直接</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th class="l">中学</th><th class="l">保送高校</th><th class="l">2004 中考</th></tr></thead>
+    <tbody>
+      <tr><td class="l">徐腾</td><td class="l">哈三中</td><td class="l">北京大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">赵治烨</td><td class="l">哈三中</td><td class="l">北京大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">刘禹驰</td><td class="l">大庆铁人中学</td><td class="l">北京大学</td><td class="l">657 分，<b>全市第 2 名</b></td></tr>
+      <tr><td class="l">韩方秋</td><td class="l">哈师大附中</td><td class="l">上海交通大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">齐钰博</td><td class="l">哈师大附中</td><td class="l">中国科技大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">王博</td><td class="l">哈师大附中</td><td class="l">北京航空航天大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">张育诚</td><td class="l">大庆实验中学</td><td class="l">西安交通大学</td><td class="l hint">未回溯</td></tr>
+      <tr><td class="l">马越</td><td class="l">大庆实验中学</td><td class="l">同济大学</td><td class="l hint">未回溯</td></tr>
+      <tr class="me"><td class="l"><b>李城达</b></td><td class="l">大庆一中</td><td class="l"><b>浙江大学</b></td>
+        <td class="l"><b class="seal">618 分，全市第 516 名</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>九个人，五所学校，全部在哈尔滨和大庆。</b></p>
+  <p><b class="seal">同一场 2006 年的数学联赛：李城达——2004 年中考全市第 516 名，在大庆一中——拿到省一等奖，保送浙江大学。
+  我，2004 年中考全市第 11 名，在绥化一中，初试就没有结果。</b></p></div>
+  <h3>再看第一样，它解释了为什么</h3>
+  <div class="fig"><svg viewBox="0 0 980 380" width="100%" role="img" aria-label="2007 年全国高中数学联赛黑龙江赛区一等奖 40 人的一试与加试成绩"><line x1="58" y1="332.0" x2="812.0" y2="332.0" stroke="var(--hair)"/><text x="50" y="336.0" text-anchor="end" class="ax">0</text><line x1="58" y1="276.0" x2="812.0" y2="276.0" stroke="var(--hair)"/><text x="50" y="280.0" text-anchor="end" class="ax">20</text><line x1="58" y1="220.0" x2="812.0" y2="220.0" stroke="var(--hair)"/><text x="50" y="224.0" text-anchor="end" class="ax">40</text><line x1="58" y1="164.0" x2="812.0" y2="164.0" stroke="var(--hair)"/><text x="50" y="168.0" text-anchor="end" class="ax">60</text><line x1="58" y1="108.0" x2="812.0" y2="108.0" stroke="var(--hair)"/><text x="50" y="112.0" text-anchor="end" class="ax">80</text><line x1="58" y1="52.0" x2="812.0" y2="52.0" stroke="var(--hair)"/><text x="50" y="56.0" text-anchor="end" class="ax">100</text><line x1="58.0" y1="24" x2="58.0" y2="332.0" stroke="var(--hair)"/><text x="58.0" y="350" text-anchor="middle" class="ax">60</text><line x1="183.7" y1="24" x2="183.7" y2="332.0" stroke="var(--hair)"/><text x="183.7" y="350" text-anchor="middle" class="ax">75</text><line x1="309.3" y1="24" x2="309.3" y2="332.0" stroke="var(--hair)"/><text x="309.3" y="350" text-anchor="middle" class="ax">90</text><line x1="435.0" y1="24" x2="435.0" y2="332.0" stroke="var(--hair)"/><text x="435.0" y="350" text-anchor="middle" class="ax">105</text><line x1="560.7" y1="24" x2="560.7" y2="332.0" stroke="var(--hair)"/><text x="560.7" y="350" text-anchor="middle" class="ax">120</text><line x1="686.3" y1="24" x2="686.3" y2="332.0" stroke="var(--hair)"/><text x="686.3" y="350" text-anchor="middle" class="ax">135</text><line x1="812.0" y1="24" x2="812.0" y2="332.0" stroke="var(--hair)"/><text x="812.0" y="350" text-anchor="middle" class="ax">150</text><path d="M 58.0 108.0 L 66.4 110.8 L 74.8 113.6 L 83.1 116.4 L 91.5 119.2 L 99.9 122.0 L 108.3 124.8 L 116.6 127.6 L 125.0 130.4 L 133.4 133.2 L 141.8 136.0 L 150.2 138.8 L 158.5 141.6 L 166.9 144.4 L 175.3 147.2 L 183.7 150.0 L 192.0 152.8 L 200.4 155.6 L 208.8 158.4 L 217.2 161.2 L 225.6 164.0 L 233.9 166.8 L 242.3 169.6 L 250.7 172.4 L 259.1 175.2 L 267.4 178.0 L 275.8 180.8 L 284.2 183.6 L 292.6 186.4 L 301.0 189.2 L 309.3 192.0 L 317.7 194.8 L 326.1 197.6 L 334.5 200.4 L 342.8 203.2 L 351.2 206.0 L 359.6 208.8 L 368.0 211.6 L 376.4 214.4 L 384.7 217.2 L 393.1 220.0 L 401.5 222.8 L 409.9 225.6 L 418.2 228.4 L 426.6 231.2 L 435.0 234.0 L 443.4 236.8 L 451.8 239.6 L 460.1 242.4 L 468.5 245.2 L 476.9 248.0 L 485.3 250.8 L 493.6 253.6 L 502.0 256.4 L 510.4 259.2 L 518.8 262.0 L 527.2 264.8 L 535.5 267.6 L 543.9 270.4 L 552.3 273.2 L 560.7 276.0 L 569.0 278.8 L 577.4 281.6 L 585.8 284.4 L 594.2 287.2 L 602.6 290.0 L 610.9 292.8 L 619.3 295.6 L 627.7 298.4 L 636.1 301.2 L 644.4 304.0 L 652.8 306.8 L 661.2 309.6 L 669.6 312.4 L 678.0 315.2 L 686.3 318.0 L 694.7 320.8 L 703.1 323.6 L 711.5 326.4 L 719.8 329.2 L 728.2 332.0" fill="none" stroke="var(--ink-3)" stroke-width="1.2" stroke-dasharray="5 4"/><text x="363.6" y="202.8" class="ax" style="font-size:10.5px">一等奖门槛：总分 140</text><circle cx="602.6" cy="52.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第1名 何昊青（哈师大附中）一试 125 ＋ 加试 100 ＝ 225</title></circle><circle cx="527.2" cy="52.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第2名 王梓（哈师大附中）一试 116 ＋ 加试 100 ＝ 216</title></circle><circle cx="443.4" cy="52.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第3名 李雨田（哈师大附中）一试 106 ＋ 加试 100 ＝ 206</title></circle><circle cx="761.7" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第4名 吕志远（哈三中）一试 144 ＋ 加试 50 ＝ 194</title></circle><circle cx="443.4" cy="108.0" r="4.2" fill="var(--bar)" fill-opacity="0.9"><title>第5名 宋宏宇（鹤岗一中）一试 106 ＋ 加试 80 ＝ 186</title></circle><circle cx="384.7" cy="108.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第6名 陆直（哈师大附中）一试 99 ＋ 加试 80 ＝ 179</title></circle><circle cx="368.0" cy="108.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第7名 田昆（哈师大附中）一试 97 ＋ 加试 80 ＝ 177</title></circle><circle cx="602.6" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第8名 孙可（哈师大附中）一试 125 ＋ 加试 50 ＝ 175</title></circle><circle cx="686.3" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第9名 徐建宇（哈三中）一试 135 ＋ 加试 40 ＝ 175</title></circle><circle cx="602.6" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第10名 黄寒月（阿城一中）一试 125 ＋ 加试 50 ＝ 175</title></circle><circle cx="594.2" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第11名 肖非（哈师大附中）一试 124 ＋ 加试 40 ＝ 164</title></circle><circle cx="644.4" cy="248.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第12名 张晓睿（哈师大附中）一试 130 ＋ 加试 30 ＝ 160</title></circle><circle cx="476.9" cy="192.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第13名 杨天博（大庆实验中学）一试 110 ＋ 加试 50 ＝ 160</title></circle><circle cx="560.7" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第14名 韩睿（哈师大附中）一试 120 ＋ 加试 40 ＝ 160</title></circle><circle cx="125.0" cy="80.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第15名 宋宇航（大庆一中）一试 68 ＋ 加试 90 ＝ 158</title></circle><circle cx="694.7" cy="276.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第16名 于浩然（哈三中）一试 136 ＋ 加试 20 ＝ 156</title></circle><circle cx="401.5" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第17名 刘峥（哈师大附中）一试 101 ＋ 加试 50 ＝ 151</title></circle><circle cx="569.0" cy="248.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第18名 高明志（哈三中）一试 121 ＋ 加试 30 ＝ 151</title></circle><circle cx="476.9" cy="220.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第19名 符艺（大庆中学）一试 110 ＋ 加试 40 ＝ 150</title></circle><circle cx="476.9" cy="220.0" r="4.2" fill="var(--bar)" fill-opacity="0.9"><title>第20名 袁钟（尚志）一试 110 ＋ 加试 40 ＝ 150</title></circle><circle cx="384.7" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第21名 戴德松（哈师大附中）一试 99 ＋ 加试 40 ＝ 139</title></circle><circle cx="376.4" cy="192.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第22名 杨树驿（大庆实验中学）一试 98 ＋ 加试 50 ＝ 148</title></circle><circle cx="543.9" cy="248.0" r="4.2" fill="var(--bar)" fill-opacity="0.9"><title>第23名 吴洁强（牡一中）一试 118 ＋ 加试 30 ＝ 148</title></circle><circle cx="610.9" cy="276.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第24名 闫家奇（哈三中）一试 126 ＋ 加试 20 ＝ 146</title></circle><circle cx="443.4" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第25名 王百洋（哈三中）一试 106 ＋ 加试 40 ＝ 146</title></circle><circle cx="359.6" cy="192.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第26名 汤博（大庆实验中学）一试 96 ＋ 加试 50 ＝ 146</title></circle><circle cx="518.8" cy="248.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第27名 张鸣一（哈三中）一试 115 ＋ 加试 30 ＝ 145</title></circle><circle cx="518.8" cy="248.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第28名 王天宇（大庆铁人中学）一试 115 ＋ 加试 30 ＝ 145</title></circle><circle cx="602.6" cy="276.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第29名 张轩旗（大庆一中）一试 125 ＋ 加试 20 ＝ 145</title></circle><circle cx="435.0" cy="220.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第30名 郝天一（哈师大附中）一试 105 ＋ 加试 40 ＝ 145</title></circle><circle cx="351.2" cy="192.0" r="4.2" fill="var(--bar)" fill-opacity="0.9"><title>第31名 牟景宇（黑河中学）一试 95 ＋ 加试 50 ＝ 145</title></circle><circle cx="518.8" cy="248.0" r="4.2" fill="var(--bar)" fill-opacity="0.9"><title>第32名 张若璞（齐市一中）一试 115 ＋ 加试 30 ＝ 145</title></circle><circle cx="342.8" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第33名 韩宏庆（哈师大附中）一试 94 ＋ 加试 50 ＝ 144</title></circle><circle cx="334.5" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第34名 李博（哈三中）一试 93 ＋ 加试 50 ＝ 143</title></circle><circle cx="334.5" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第35名 吴泽昊（哈三中）一试 93 ＋ 加试 50 ＝ 143</title></circle><circle cx="493.6" cy="248.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第36名 李文婧（哈师大附中）一试 112 ＋ 加试 30 ＝ 142</title></circle><circle cx="326.1" cy="192.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第37名 朱睿慧（哈三中）一试 92 ＋ 加试 50 ＝ 142</title></circle><circle cx="577.4" cy="276.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第38名 李璐（大庆实验中学）一试 122 ＋ 加试 20 ＝ 142</title></circle><circle cx="569.0" cy="276.0" r="4.2" fill="var(--seal)" fill-opacity="0.9"><title>第39名 薛骁睿（哈师大附中）一试 121 ＋ 加试 20 ＝ 141</title></circle><circle cx="225.6" cy="164.0" r="4.2" fill="var(--amber)" fill-opacity="0.9"><title>第40名 姚冠一卓（大庆实验中学）一试 80 ＋ 加试 60 ＝ 140</title></circle><circle cx="125.0" cy="80.0" r="7" fill="none" stroke="var(--petrol)" stroke-width="2"/><text x="135.0" y="84.0" text-anchor="start" class="anno pet" style="font-size:11.5px">宋宇航 第15名（68＋90）</text><circle cx="694.7" cy="276.0" r="7" fill="none" stroke="var(--petrol)" stroke-width="2"/><text x="671.7" y="294.0" text-anchor="end" class="anno pet" style="font-size:11.5px">于浩然 第16名（136＋20）</text><circle cx="833" cy="45" r="5" fill="var(--seal)"/><text x="846" y="50" class="ax" style="font-size:12px;fill:var(--ink);font-weight:600">哈尔滨 26 人</text><text x="846" y="65" class="ax" style="font-size:10.5px">师大附中 15、哈三中 10、阿城 1</text><circle cx="833" cy="103" r="5" fill="var(--amber)"/><text x="846" y="108" class="ax" style="font-size:12px;fill:var(--ink);font-weight:600">大庆 9 人</text><text x="846" y="123" class="ax" style="font-size:10.5px">实验 5、一中 2、大庆中学 1、铁人 1</text><circle cx="833" cy="161" r="5" fill="var(--bar)"/><text x="846" y="166" class="ax" style="font-size:12px;fill:var(--ink);font-weight:600">其余 5 人</text><text x="846" y="181" class="ax" style="font-size:10.5px">鹤岗／牡丹江／黑河／齐市／尚志各 1</text><text x="846" y="224" class="ax" style="font-size:12px;fill:var(--ink);font-weight:600">绥化 0 人</text><text x="12" y="16" class="ax">加试（二试）成绩</text><text x="435.0" y="372" text-anchor="middle" class="ax">一试成绩</text></svg></div>
+  <p class="figcap">2007 年全国高中数学联赛黑龙江赛区一等奖 40 人。横轴一试、纵轴加试，虚线是 140 分的一等奖门槛。
+  <strong class="seal">哈尔滨 26 人（65%）、大庆 9 人（22%）——87% 出自两座城市的四所学校。绥化 0 人。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">分项</th><th>范围</th><th>均值</th><th>标准差</th><th>与总分的相关 r</th><th class="l">说明什么</th></tr></thead>
+    <tbody>
+      <tr><td class="l">一试</td><td>68–144</td><td>110.7</td><td>15.7</td><td class="hint"><b>0.306</b></td>
+        <td class="l">跟最终名次<b>几乎无关</b></td></tr>
+      <tr class="me"><td class="l"><b>加试（二试）</b></td><td>20–100</td><td>48.0</td><td><b>22.3</b></td>
+        <td class="seal"><b>0.743</b></td><td class="l"><b>几乎决定一切</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>加试的名义满分只有一试的三分之二，方差却更大（22.3 对 15.7）。榜上最锐利的一对：</p>
+  <div class="find"><p>
+  <b>第 15 名　宋宇航（大庆一中）：一试 68</b>——全榜最低——<b>加试 90 → 总分 158</b><br>
+  <b>第 16 名　于浩然（哈三中）：一试 136</b>——全榜第三高——<b>加试 20 → 总分 156</b></p>
+  <p><b class="seal">一试差 68 分，最终只差一个名次。</b></p>
+  <p>这就是「不能靠裸天赋」的确切形态：
+  <b>一试是高考的加强版</b>——课内知识、更难的题，天赋能直接换成分数；
+  <b>加试是平面几何、数论、组合、不等式</b>，一套课内完全不教的独立体系。
+  没有系统训练，加试接近于零；而排名由加试决定。<br>
+  一等奖门槛 140 分，全榜加试最低 20 分。<b>换句话说：加试拿 0 分的人，一试就算考满分也进不了一等奖。</b></p></div>
+  <h3>为什么高一、高二的线更低——以及这件事说明了什么</h3>
+  <p>哈师大附中把 2008 年通过省预赛、进入决赛的本校学生名单挂了出来，
+  <strong>按年级分开列，每个年级各有自己的全省名次</strong>。这张表回答了两个问题。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">全省名次</th><th>高三的分数</th><th>高二的分数</th><th>高一的分数</th><th class="l">同名次的年级差</th></tr></thead>
+    <tbody>
+      <tr><td class="l">第 1–2 名</td><td><b>150</b></td><td>133</td><td>122</td><td class="l">高三比高二高 17，比高一高 28</td></tr>
+      <tr><td class="l">第 10 名前后</td><td>136</td><td>114</td><td class="n">—</td><td class="l">高三比高二高 22</td></tr>
+      <tr><td class="l">第 30 名前后</td><td>122</td><td>101</td><td>100</td><td class="l">高三比低年级高 21–22</td></tr>
+      <tr><td class="l">第 50 名前后</td><td>115</td><td>95</td><td>96</td><td class="l">高三比低年级高 19–20</td></tr>
+      <tr class="sum"><td class="l"><b>该校最低入围者</b></td><td><b>第 84 名，105 分</b></td><td><b>第 144 名，84 分</b></td><td><b>第 101 名，88 分</b></td>
+        <td class="l"><b>低年级不但线低，名额还更深</b></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>第一个答案（技术性的）：三个年级分开排名、分开划线。</strong>
+  预赛考的是整个高中数学，而高一学生九月时只学了一年、高二学了两年。
+  同一张卷子，低年级天然吃亏——所以按同一条线划，低年级会被清空。
+  实测的年级差是<strong class="seal">每低一个年级，同名次的分数低 17 到 22 分</strong>。</p>
+  <div class="find"><p><b>第二个答案，才是要害：低年级的名额不是安慰奖，是训练管道的入口。</b></p>
+  <p>把 2008 年这份名单和 2007 年的一等奖名单对起来，五个人重叠——而且方向说明一切：</p></div>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th class="l">2007 年联赛（黑龙江赛区一等奖）</th><th class="l">2008 年还在读</th><th class="l">推出的结论</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l"><b>何昊青</b></td><td class="l"><b class="seal">全省第 1 名</b>，一试 125＋加试 100＝225</td><td class="l">高三</td>
+        <td class="l"><b>2007 年拿全省第一时，他是高二</b></td></tr>
+      <tr><td class="l">李雨田</td><td class="l">全省第 3 名，106＋100＝206</td><td class="l">高三</td><td class="l">2007 年是高二</td></tr>
+      <tr><td class="l">肖非</td><td class="l">全省第 11 名，124＋40＝164</td><td class="l">高三</td><td class="l">2007 年是高二</td></tr>
+      <tr><td class="l">韩宏庆</td><td class="l">全省第 33 名，94＋50＝144</td><td class="l">高三</td><td class="l">2007 年是高二</td></tr>
+      <tr class="me"><td class="l"><b>郝天一</b></td><td class="l">全省第 30 名，105＋40＝145</td><td class="l"><b>高二</b></td>
+        <td class="l"><b class="seal">2007 年他读高一，就拿了省一等奖</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide"><strong class="seal">2007 年黑龙江赛区一等奖那 40 个人里，至少 5 个不是高三生。全省第 1 名是高二生，第 30 名是高一生。</strong>
+  这就是低年级那条更低的线的真正作用：<strong>它不是给低年级的照顾，是把苗子提前捞进管道</strong>。
+  一旦进了管道，他们在高二就能压过绝大多数高三生。</p>
+  <div class="find"><p><b>而我高一、高二都没参加过。</b></p>
+  <p>所以 2006 年 9 月，我是以「<b>一个从未进入过这个管道的高三生</b>」的身份，
+  去和已经在管道里训练了一到两年、并且已经拿过省级奖的人同场竞技。
+  <b class="seal">哈师大附中一所学校，那一年就有 98 人通过预赛进入决赛——高一 11 人、高二 47 人、高三 40 人。</b></p></div>
+
+  <h3>那张预赛卷子上，超纲知识几乎为零</h3>
+  <p>2006 年黑龙江省预赛的原卷我找到了。结构是：
+  <strong>选择 12 题 × 5 分 ＝ 60 分，填空 4 题 × 4 分 ＝ 16 分，解答 6 题 ＝ 74 分，总分 150。</strong>
+  <strong class="pet">这和高考数学卷的题型结构、题量、总分，完全一样。</strong></p>
+  <p>逐题看考点：集合与图形面积、四面体体积、排列组合、三角恒等变形判断三角形形状、
+  多项式系数和、二元不等式最值、幂和最值、向量与面积比、等差等比数列、数列分组、
+  正方体中的空间坐标、双曲线离心率范围；填空是三角恒等、数列极限型、无理不等式解集、向量轨迹；
+  解答题是抛硬币概率、向量＋三角求最值、三角形内切圆的几何证明、周期函数与矩形面积最大值、椭圆、
+  以及数列递推 <span class="m">x<sub>n+1</sub> = 2x<sub>n</sub>/(1+x<sub>n</sub><sup>2</sup>)</span>（要看出正切二倍角代换）。</p>
+  <div class="find ok"><p><b>22 道题里，只有第 19 题（内切圆证 AG⊥BG）带一点竞赛几何味道。其余 21 道，全部在高中数学大纲之内。</b></p>
+  <p>没有平面几何的高级定理，没有数论，没有组合恒等式，没有竞赛不等式技巧。
+  <b class="seal">这张卷子考的不是「你会不会竞赛数学」，而是「你能不能在高考同样的时长里，把二十二道高考压轴题级别的题一口气做完」。</b></p>
+  <p>高考卷上压轴题只有两三道，你有四十分钟可以慢慢想。这张卷子上<b>几乎每一道都是压轴级别</b>，
+  平均每题只有五分多钟。<b>区分度不来自知识，来自熟练度；而熟练度只能用刷题量换。</b></p></div>
+  <p class="wide"><strong>所以淘汰发生的位置，比「我不懂竞赛数学」更难受。</strong>
+  它发生在一个<strong>不需要竞赛知识、只需要训练量</strong>的关卡上——
+  也就是说，<strong class="seal">把我挡在门外的那道关，测的恰好不是我强的东西（纯数学能力），
+  而是我从未积累过的东西（压轴题的批量处理速度）。</strong>
+  而那个熟练度，正是哈师大附中的高一学生已经练了一年、高二学生已经练了两年的东西。</p>
+  <p class="notes" style="max-width:78ch"><b>补充与限度：</b>
+  ① 年级分数差是用<b>哈师大附中一所学校</b>的入围者算的，不是全省完整名单，
+  所以「同名次差 17–22 分」是这所学校样本内的观察值。
+  ② 该页是 2008 年的，我用它解释 2006 年的规则——赛制两年内未见变动，但这是外推。
+  ③ 「2007 年一等奖里至少 5 人不是高三生」是由「2008 年他们还在读高三／高二」反推的，逻辑上成立，
+  但只覆盖哈师大附中一所学校，其余 34 人的年级不明。
+  ④ 预赛的考试时长原卷上没有标注，本节只依据题型结构与高考卷同构这一点作比较。</p>
+  <h3>而这条链条比一年长得多</h3>
+  <p>把 2007 年这 40 个一等奖，拿去和 2004、2005 年的<strong>初中</strong>数学联赛一等奖名单对姓名——
+  <strong class="seal">至少 10 个人是同一批</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2007 高中联赛</th><th class="l">2004／2005 初中联赛</th></tr></thead>
+    <tbody>
+      <tr><td class="l">第 2 名　王梓（哈师大附中）</td><td class="l">2004 初中一等奖，德强中学　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 4 名　吕志远（哈三中）</td><td class="l">2005 初中一等奖第 4 名，松雷中学　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 6 名　陆直（哈师大附中）</td><td class="l">2004 初中<b>满分 120</b>　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 7 名　田昆（哈师大附中）</td><td class="l">2005 初中一等奖，哈 55 中　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 8 名　孙可（哈师大附中）</td><td class="l">2005 初中一等奖<b>第 1 名</b>，哈 69 联中　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 24 名　闫家奇（哈三中）</td><td class="l">2005 初中一等奖第 6 名，德强中学　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 34 名　李博（哈三中）</td><td class="l">2004 初中<b>满分 120</b>；2005 初中一等奖，德强　<b class="seal">来成</b></td></tr>
+      <tr><td class="l">第 23 名　吴洁强（牡一中）</td><td class="l">2005 初中一等奖，牡丹江 11 中</td></tr>
+      <tr><td class="l">第 31 名　牟景宇（黑河中学）</td><td class="l">2005 初中一等奖，黑河二中</td></tr>
+      <tr><td class="l">第 35 名　吴泽昊（哈三中）</td><td class="l">2005 初中一等奖，松雷中学</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>十个人里七个标着「来成文化学校」。</strong>而那两份初中名单<strong>都是残缺的</strong>，
+  所以 10／40 是<strong>下界</strong>，不是实数。</p>
+  <div class="find"><p><b>链条是完整的：</b><br>
+  来成文化学校的初中培训 → 初中联赛一等奖 → 哈师大附中／哈三中／德强／松雷 →
+  高中联赛一等奖 → 保送清北。</p>
+  <p><b class="seal">我在这条链条的起点上——2004 年初中联赛省一等奖、全省第 24 名——
+  但那张纸被压了二十年，而我不在这条链条后面的任何一环里。</b></p></div>
+  <h3>把残缺的名单补上：一届完整的对照</h3>
+  <p>上面那张表用的是两份<strong>残缺</strong>的初中名单，所以只能说「至少 10 人」。
+  但有一届是完整的：<strong>2003 年全国初中数学联赛黑龙江赛区，126 个省一等奖，全名单在手</strong>。
+  这一届 2003 年秋天升高一，<strong>2005 年 10 月正好读高三</strong>——
+  而 2005 年那份高中联赛一等奖名单我也找到了，36 人，<strong>而且带年级</strong>。</p>
+  <p>两份名单对姓名，结果是这一节里最硬的一个数：</p>
+  <p class="eq">高三一等奖 29 人 · 其中 <i>21 人</i>在两年半前<br>已经是初中省一等奖</p>
+  <div class="find"><p><b>72%。</b>2005 年黑龙江省高中数学联赛的高三一等奖席位，
+  差不多四分之三在<strong>初三那年就已经分配完了</strong>。</p>
+  <p>剩下 8 个「新面孔」也不是随机的：<b class="pet">3 个来自大庆铁人中学</b>，3 个哈三中，
+  1 个哈师大附中，1 个佳木斯一中——全部来自本来就有竞赛队的学校。
+  <b class="seal">这份名单上没有一个人，是从一所没有竞赛队的学校里凭裸考挤进来的。</b></p></div>
+
+  <h3>转化率是有地址的</h3>
+  <p>反过来算：2003 年那 126 个初中省一等奖，后来有多少人出现在我手上任何一份高中一等奖名单里
+  （2005、2007、2008、2010 四年，共 147 个席位）——</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">初中所在市</th><th>2003 初中一等奖</th><th>后来拿到高中一等奖</th><th>转化率</th></tr></thead>
+    <tbody>
+      <tr><td class="l">齐齐哈尔</td><td>9</td><td>2</td><td class="pet">22%</td></tr>
+      <tr><td class="l">哈尔滨</td><td>84</td><td>18</td><td class="pet">21%</td></tr>
+      <tr><td class="l">大庆</td><td>17</td><td>2</td><td>12%</td></tr>
+      <tr><td class="l">伊春</td><td>5</td><td>0</td><td>0%</td></tr>
+      <tr><td class="l">佳木斯</td><td>3</td><td>0</td><td>0%</td></tr>
+      <tr><td class="l">牡丹江</td><td>2</td><td>0</td><td>0%</td></tr>
+      <tr><td class="l">七台河</td><td>2</td><td>0</td><td>0%</td></tr>
+      <tr class="me"><td class="l">绥化</td><td>2</td><td>0</td><td>0%</td></tr>
+      <tr><td class="l">鸡西</td><td>1</td><td>0</td><td>0%</td></tr>
+      <tr><td class="l">农垦总局</td><td>1</td><td>0</td><td>0%</td></tr>
+      <tr class="sum"><td class="l">合计</td><td>126</td><td>22</td><td>17%</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>哈尔滨、大庆、齐齐哈尔以外的所有城市加起来：14 个初中省一等奖，0 个转化。</strong>
+  这 14 个孩子在初三那年是全省最强的 126 人之一，三年后一个都没有再出现。</p>
+
+  <p>而那两个「齐齐哈尔」的转化，恰恰不是齐齐哈尔办到的——</p>
+  <div class="find"><p>2005 年大庆实验中学的 4 个省一等奖，<b>4 个全部是初中省一等奖出身</b>；
+  其中<b class="seal">佟达</b>（初中：齐市富拉尔基重二中）和<b class="seal">王超</b>（初中：齐齐哈尔）
+  两个人，<b>初中在齐齐哈尔，高中在大庆实验</b>。</p>
+  <p>齐齐哈尔那 22% 的转化率，是<b>转学</b>转出来的。
+  这正是<a href="#t5">检验 06</a> 里那条通道——<b class="seal">而 2004 年，那条通道对我关着门。</b></p></div>
+
+  <p>再按培训机构切一刀。2003 年那份名单里有 13 人标注「来成文化学校」：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2003 初中省一等奖</th><th>人数</th><th>后来拿到高中一等奖</th><th>转化率</th></tr></thead>
+    <tbody>
+      <tr><td class="l">标注「来成文化学校」</td><td>13</td><td>7</td><td class="seal">54%</td></tr>
+      <tr><td class="l">未标注</td><td>113</td><td>15</td><td>13%</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>4.1 倍。</strong>同样是初中省一等奖，进过那间培训班的人，三年后再次拿奖的概率是其他人的四倍。
+  这不是天赋的差别——他们初中时是同一批人，同一张卷子上分数相邻。<strong>差的是后面三年有没有人接着教。</strong></p>
+
+  <h3>把转化率拆到人头上：谁走出来了</h3>
+  <p>上一张表给的是比例。把它拆成一个一个的人，会看到一件比比例更具体的事。
+  我把 2003、2004、2005 三届初中联赛的省一等奖名单（共 260 人）
+  逐个拿去和四年高中联赛名单、保送名单、清华历年全部新生名单（按黑龙江筛）、
+  以及哈三中／大庆实验／铁人的清北名录对姓名——按「初三那年 ＋ 3 ＝ 高考那年」对齐年份。</p>
+  <p><strong>非哈尔滨、非大庆出身的一等奖获得者里，凡是后来还留下痕迹的，几乎都在初三毕业那个夏天换了城市。</strong>
+  八个人，一个不落：</p>
+  <div class="tw"><table>
+    <thead><tr><th>届</th><th>全省名次</th><th class="l">姓名</th><th class="l">初中（所在市）</th><th class="l">高中</th><th class="l">后来</th></tr></thead>
+    <tbody>
+      <tr><td>2003</td><td>第 58</td><td class="l">谢宽</td><td class="l">齐市富拉尔基重二中（齐齐哈尔）</td><td class="l"><b>大庆实验</b></td><td class="l"><b class="seal">北京大学</b></td></tr>
+      <tr><td>2003</td><td>第 65</td><td class="l">田野</td><td class="l">鸡西育才中学（鸡西）</td><td class="l"><b>哈三中</b></td><td class="l"><b class="seal">清华大学</b> 电机系</td></tr>
+      <tr><td>2003</td><td>第 69</td><td class="l">罗慧诚</td><td class="l">伊春第八中学（伊春）</td><td class="l"><b>大庆实验</b></td><td class="l"><b class="seal">北京大学</b></td></tr>
+      <tr><td>2003</td><td>第 76</td><td class="l">佟达</td><td class="l">齐市富拉尔基重二中（齐齐哈尔）</td><td class="l"><b>大庆实验</b></td><td class="l"><b class="pet">2005 高中联赛全省第 15</b></td></tr>
+      <tr><td>2003</td><td>第 80</td><td class="l">焦阳</td><td class="l">齐市龙沙风华中学（齐齐哈尔）</td><td class="l"><b>哈三中</b></td><td class="l"><b class="pet">保送 北京外国语大学</b></td></tr>
+      <tr><td>2003</td><td>第 85</td><td class="l">顾本达</td><td class="l">齐市富拉尔基阳光中学（齐齐哈尔）</td><td class="l"><b>大庆实验</b></td><td class="l"><b class="seal">清华大学</b> 自动化系</td></tr>
+      <tr><td>2003</td><td>第 102</td><td class="l">王超</td><td class="l">（齐齐哈尔）</td><td class="l"><b>大庆实验</b></td><td class="l">高中联赛第 12 → <b class="seal">清华大学</b> 环境系</td></tr>
+      <tr class="me"><td>2005</td><td>第 49</td><td class="l">李思钊</td><td class="l">绥化崇文中学（<b>绥化</b>）</td><td class="l"><b>哈三中</b></td><td class="l"><b class="seal">清华大学</b> 材料系</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>八个人，八个都拿到了东西。没有一个空手。</strong></p>
+
+  <h3>而留在本市的那一组，是零</h3>
+  <p>把这两届（2003 完整名单、2005 部分名单）里初中所在市既不是哈尔滨、也不是大庆的一等奖获得者全部取出来，共 <strong>48 人</strong>，按「有没有换城市」分成两组：</p>
+  <div class="fig"><svg viewBox="0 0 980 196" width="100%" role="img" aria-label="2003 与 2005 两届非哈尔滨非大庆的初中数学联赛一等奖获奖者，按是否在高中阶段迁往哈尔滨或大庆分组的结果"><text x="158" y="46" text-anchor="end" class="rowlab me">初三后迁往哈／庆</text><text x="158" y="62" text-anchor="end" class="rowval me">8 人</text><circle cx="168.0" cy="41" r="6.2" class="d-q"/><circle cx="185.5" cy="41" r="6.2" class="d-q"/><circle cx="203.0" cy="41" r="6.2" class="d-q"/><circle cx="220.5" cy="41" r="6.2" class="d-q"/><circle cx="238.0" cy="41" r="6.2" class="d-q"/><circle cx="255.5" cy="41" r="6.2" class="d-q"/><circle cx="273.0" cy="41" r="6.2" class="d-p"/><circle cx="290.5" cy="41" r="6.2" class="d-p"/><text x="158" y="107" text-anchor="end" class="rowlab">留在本市</text><text x="158" y="123" text-anchor="end" class="rowval">40 人</text><circle cx="168.0" cy="102" r="6.2" class="d-p"/><circle cx="185.5" cy="102" r="6.2" class="d-p"/><circle cx="203.0" cy="102" r="5.6" class="d-n"/><circle cx="220.5" cy="102" r="5.6" class="d-n"/><circle cx="238.0" cy="102" r="5.6" class="d-n"/><circle cx="255.5" cy="102" r="5.6" class="d-n"/><circle cx="273.0" cy="102" r="5.6" class="d-n"/><circle cx="290.5" cy="102" r="5.6" class="d-n"/><circle cx="308.0" cy="102" r="5.6" class="d-n"/><circle cx="325.5" cy="102" r="5.6" class="d-n"/><circle cx="343.0" cy="102" r="5.6" class="d-n"/><circle cx="360.5" cy="102" r="5.6" class="d-n"/><circle cx="378.0" cy="102" r="5.6" class="d-n"/><circle cx="395.5" cy="102" r="5.6" class="d-n"/><circle cx="413.0" cy="102" r="5.6" class="d-n"/><circle cx="430.5" cy="102" r="5.6" class="d-n"/><circle cx="448.0" cy="102" r="5.6" class="d-n"/><circle cx="465.5" cy="102" r="5.6" class="d-n"/><circle cx="483.0" cy="102" r="5.6" class="d-n"/><circle cx="500.5" cy="102" r="5.6" class="d-n"/><circle cx="168.0" cy="130" r="5.6" class="d-n"/><circle cx="185.5" cy="130" r="5.6" class="d-n"/><circle cx="203.0" cy="130" r="5.6" class="d-n"/><circle cx="220.5" cy="130" r="5.6" class="d-n"/><circle cx="238.0" cy="130" r="5.6" class="d-n"/><circle cx="255.5" cy="130" r="5.6" class="d-n"/><circle cx="273.0" cy="130" r="5.6" class="d-n"/><circle cx="290.5" cy="130" r="5.6" class="d-n"/><circle cx="308.0" cy="130" r="5.6" class="d-n"/><circle cx="325.5" cy="130" r="5.6" class="d-n"/><circle cx="343.0" cy="130" r="5.6" class="d-n"/><circle cx="360.5" cy="130" r="5.6" class="d-n"/><circle cx="378.0" cy="130" r="5.6" class="d-n"/><circle cx="395.5" cy="130" r="5.6" class="d-n"/><circle cx="413.0" cy="130" r="5.6" class="d-n"/><circle cx="430.5" cy="130" r="5.6" class="d-n"/><circle cx="448.0" cy="130" r="5.6" class="d-n"/><circle cx="465.5" cy="130" r="5.6" class="d-n"/><circle cx="483.0" cy="130" r="5.6" class="d-n"/><circle cx="500.5" cy="130" r="5.6" class="d-n"/><line x1="168" y1="152" x2="860" y2="152" class="hair"/><circle cx="176" cy="171" r="6.2" class="d-q"/><text x="190" y="175" class="ax">考入清华／北大（6 人）</text><circle cx="392" cy="171" r="6.2" class="d-p"/><text x="406" y="175" class="ax">留下其他高中期记录：省一等奖或保送（4 人）</text><circle cx="760" cy="171" r="5.6" class="d-n"/><text x="774" y="175" class="ax">无任何记录（38 人）</text><text x="168" y="16" class="ax">每个点 = 一个人。2003 与 2005 两届，初中所在市非哈尔滨、非大庆的省一等奖获奖者，共 48 人。</text></svg></div>
+  <p class="figcap">每个点是一个人。实心红＝考入清华或北大；实心蓝＝留下其他高中期记录（高中联赛省一等奖或保送）；空心＝在我手上的所有高中期名录里都查不到。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2003 ＋ 2005 两届 · 非哈非庆的省一等奖</th><th>人数</th><th>有任何高中期记录</th><th>确认清华／北大</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l">初三后迁往哈尔滨或大庆</td><td>8</td><td class="seal">8（100%）</td><td class="seal">6（75%）</td></tr>
+      <tr><td class="l">留在本市</td><td>40</td><td>2（5%）</td><td><b>0</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>分届看也一样。2003 届非哈非庆共 25 人：迁出 7 人，<strong>7 人全部有记录、5 人清北</strong>；其余 18 人，<strong>一个记录都没有</strong>。
+  2005 届非哈非庆共 23 人：迁出 1 人（李思钊）进清华；留下 22 人里只有黑河中学牟景宇、牡一中吴洁强两人在 2007 年高中联赛留了名，<strong>清北 0 人</strong>。</p>
+
+  <h3>绥化的全部七个人</h3>
+  <p>两届名单上，初中在绥化的省一等奖一共七个：</p>
+  <div class="tw"><table>
+    <thead><tr><th>届</th><th>全省名次</th><th class="l">姓名</th><th class="l">初中</th><th>分数</th><th class="l">后来</th></tr></thead>
+    <tbody>
+      <tr><td>2005</td><td>第 23</td><td class="l">刘勇</td><td class="l">肇东七中</td><td>93</td><td class="l">无记录</td></tr>
+      <tr><td>2003</td><td>第 68</td><td class="l">王晓倩</td><td class="l">安达二中</td><td>94</td><td class="l">无记录</td></tr>
+      <tr><td>2003</td><td>第 90</td><td class="l">庞博元</td><td class="l">肇东七中</td><td>91</td><td class="l">无记录</td></tr>
+      <tr class="me"><td>2005</td><td>第 49</td><td class="l"><b>李思钊</b></td><td class="l"><b>绥化崇文中学</b></td><td>83</td><td class="l"><b class="seal">哈三中 → 清华大学 材料系</b></td></tr>
+      <tr><td>2005</td><td>第 56</td><td class="l">杨恒</td><td class="l">绥化 9 中</td><td>82</td><td class="l">无记录</td></tr>
+      <tr><td>2005</td><td>第 58</td><td class="l">李海群</td><td class="l">安达 2 中</td><td>82</td><td class="l">无记录</td></tr>
+      <tr><td>2005</td><td>第 104</td><td class="l">田久棱</td><td class="l">绥棱六中</td><td>72</td><td class="l">无记录</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p><b>七个人里唯一走出来的那个，是分数第二低的那个。</b>
+  李思钊 83 分、全省第 49 名，去了哈三中，2008 年考进清华材料系，是哈三中那年清北名录上的第 7 人。</p>
+  <p>而分数最高的刘勇（93 分，全省第 23），留在肇东七中——
+  <b class="seal">此后在我能查到的任何一份名录里，再也没有出现过。</b>
+  和他一样消失的还有王晓倩、庞博元、杨恒、李海群、田久棱。</p></div>
+
+  <h3>这八个人的竞赛成绩，没有一个比我好</h3>
+  <p>回头看那八个换了城市的人的名次：<b class="m">第 58、65、69、76、80、85、102</b>（2003 年 126 个一等奖里），以及 <b class="m">第 49</b>（2005 年）。</p>
+  <p class="eq">全部在各自那一年<i>一等奖名单的下半区</i></p>
+  <p>而我在 2004 年那份名单上的位置，在前二十几名之内。同一个赛事、同一套评奖标准、相邻的三届。</p>
+  <div class="find"><p><b>所以「他们比我强」这句话，在数据上是不成立的。</b>
+  真正把这八个人和我分开的，不是那张卷子上的分数，是<b class="seal">初三毕业那个夏天，他们的户口本能落到哈尔滨或者大庆，而我的不能</b>。</p>
+  <p>他们中最有说服力的是李思钊：<b>同样是绥化的孩子，比我晚一届，竞赛分数比我低，走了我没能走成的那条路，四年后从哈三中进了清华。</b></p></div>
+  <div class="notes"><span class="hd">这一段的四条限度</span><ol>
+    <li>对应关系全靠<b>姓名 ＋ 年份窗口</b>，没有考号可核。跨市那八个人有「初中学校 → 高中学校」两端佐证，可信度较高；
+      单凭一条清华新生名单命中的，同名风险仍在。</li>
+    <li>「无记录」<b>不等于「没考好」</b>。我手上没有全省完整的高考名册，只有清华历年新生名单、几所学校的清北名录和几个市的高分榜。
+      准确的说法是<b>「没有出现在这些高端名录里」</b>——而这些名录恰好覆盖了迁出组的每一个人。</li>
+    <li>2004、2005 两份初中名单是<b>残缺</b>的（各 25 人、109 人），只有 2003 年那份是完整的 126 人。
+      所以「48 人」这个分母偏小，真实的留守组只会更大、比例只会更难看。</li>
+    <li>迁出组「8 人」是<b>下界</b>：只有当一个人的初中和高中都被记录下来时，我才能看见这次迁移。
+      迁走之后没留下任何高中期记录的人，在这套方法里和「留在本市且无记录」无法区分。</li>
+  </ol></div>
+
+  <h3>名单也不是每年重新洗一次牌</h3>
+  <p>把四年的名单叠在一起看姓名，重复得非常厉害：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th class="l">学校</th><th class="l">出现记录</th></tr></thead>
+    <tbody>
+      <tr><td class="l">王梓</td><td class="l">哈师大附中</td><td class="l">2005 年<b>高一</b>，第 16 名 → 2007 年<b class="seal">第 2 名</b></td></tr>
+      <tr><td class="l">陆直</td><td class="l">哈师大附中</td><td class="l">2005 年<b>高一</b>，第 32 名 → 2007 年<b class="seal">第 6 名</b></td></tr>
+      <tr><td class="l">何昊青</td><td class="l">哈师大附中</td><td class="l">2007 年第 1 名 → 2008 年<b>第 1 名</b>（2007 年读高二）</td></tr>
+      <tr><td class="l">郝天一</td><td class="l">哈师大附中</td><td class="l">2007 年第 30 名 → 2008 年<b>第 12 名</b>（2007 年读高一）</td></tr>
+      <tr><td class="l">李雨田</td><td class="l">哈师大附中</td><td class="l">2007 年第 3 名 → 2008 年第 5 名</td></tr>
+      <tr><td class="l">吕志远</td><td class="l">哈三中</td><td class="l">2005 年初中联赛第 4 名 → 2007 年第 4 名 → 2008 年第 10 名</td></tr>
+      <tr><td class="l">肖非</td><td class="l">哈师大附中</td><td class="l">2007 年第 11 名 → 2008 年第 18 名</td></tr>
+      <tr><td class="l">高明志</td><td class="l">哈三中</td><td class="l">2007 年第 18 名 → 2008 年第 21 名</td></tr>
+      <tr><td class="l">王百洋</td><td class="l">哈三中</td><td class="l">2007 年第 25 名 → 2008 年第 26 名</td></tr>
+      <tr><td class="l">宋宇航</td><td class="l">大庆一中</td><td class="l">2007 年第 15 名 → 2008 年第 23 名</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>2007 年前 40 名里，有 8 个人在 2008 年再次进入前 40。</strong>
+  而 2005 年名单上那两个高一学生，两年后一个是全省第 2、一个是全省第 6。</p>
+  <div class="find"><p><b>这就是那条更低的高一分数线的意义。</b>
+  它不是给低年级的安慰奖，是<b class="seal">提前两年把人放进管道</b>——
+  王梓和陆直 2005 年以高一身份挤进第 16、第 32 名，
+  然后在里面练两年，2007 年直接坐到第 2 和第 6。</p>
+  <p><b>我高一、高二一次都没参加过。2006 年 9 月我第一次坐进这个考场时，
+  和我同场的人已经在这条流水线上跑了两年。</b></p></div>
+
+  <h3>四年，147 个席位，绥化 0 个</h3>
+  <p>把 2005、2007、2008、2010 四份名单合起来，147 个省一等奖席位，按城市摊到同届初中生人数上——</p>
+  <div class="fig"><svg viewBox="0 0 980 281" width="100%" role="img" aria-label="2005 2007 2008 2010 四年黑龙江高中数学联赛省一等奖的各市产出率"><text x="88" y="31" text-anchor="end" class="rowlab">大庆</text><rect x="98" y="19" width="741.2" height="18" class="c"><title>大庆：四年共 42 个省一等奖，四届共 172,267 名初中生</title></rect><text x="847.2" y="31" class="rowval">24.4</text><text x="88" y="58" text-anchor="end" class="rowlab">哈尔滨</text><rect x="98" y="46" width="630.6" height="18" class="c"><title>哈尔滨：四年共 96 个省一等奖，四届共 462,777 名初中生</title></rect><text x="736.6" y="58" class="rowval">20.7</text><text x="88" y="85" text-anchor="end" class="rowlab">佳木斯</text><rect x="98" y="73" width="97.4" height="18" class="c"><title>佳木斯：四年共 4 个省一等奖，四届共 124,807 名初中生</title></rect><text x="203.4" y="85" class="rowval">3.20</text><text x="88" y="112" text-anchor="end" class="rowlab">鹤岗</text><rect x="98" y="100" width="57.2" height="18" class="c"><title>鹤岗：四年共 1 个省一等奖，四届共 53,107 名初中生</title></rect><text x="163.2" y="112" class="rowval">1.88</text><text x="88" y="139" text-anchor="end" class="rowlab">牡丹江</text><rect x="98" y="127" width="50.3" height="18" class="c"><title>牡丹江：四年共 2 个省一等奖，四届共 120,910 名初中生</title></rect><text x="156.3" y="139" class="rowval">1.65</text><text x="88" y="166" text-anchor="end" class="rowlab">黑河</text><rect x="98" y="154" width="35.3" height="18" class="c"><title>黑河：四年共 1 个省一等奖，四届共 86,126 名初中生</title></rect><text x="141.3" y="166" class="rowval">1.16</text><text x="88" y="193" text-anchor="end" class="rowlab">齐齐哈尔</text><rect x="98" y="181" width="10.0" height="18" class="c"><title>齐齐哈尔：四年共 1 个省一等奖，四届共 304,395 名初中生</title></rect><text x="116.0" y="193" class="rowval">0.33</text><text x="88" y="220" text-anchor="end" class="rowlab me">绥化</text><text x="106.0" y="220" class="rowval me">0.00</text><text x="98" y="267" class="ax">柱长 = 每 10 万同届初中生产出的省一等奖个数（2005・2007・2008・2010 四份名单，合计 147 人）。绥化四届 351,263 人，0 个。</text></svg></div>
+  <p class="figcap">数据：四份高中联赛一等奖名单（2005 / 2007 / 2008 / 2010）；分母为《2003 年全国初中数学联赛黑龙江赛区获奖统计》所载各市普通初中在校生数除以四。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">城市</th><th>四年席位</th><th>四届初中生</th><th>每 10 万人产出</th><th>每个席位需要多少人</th></tr></thead>
+    <tbody>
+      <tr><td class="l">大庆</td><td>42</td><td>172,267</td><td>24.4</td><td>4,102</td></tr>
+      <tr><td class="l">哈尔滨</td><td>96</td><td>462,777</td><td>20.7</td><td>4,821</td></tr>
+      <tr><td class="l">佳木斯</td><td>4</td><td>124,807</td><td>3.2</td><td>31,202</td></tr>
+      <tr><td class="l">鹤岗</td><td>1</td><td>53,107</td><td>1.9</td><td>53,107</td></tr>
+      <tr><td class="l">牡丹江</td><td>2</td><td>120,910</td><td>1.7</td><td>60,455</td></tr>
+      <tr><td class="l">黑河</td><td>1</td><td>86,126</td><td>1.2</td><td>86,126</td></tr>
+      <tr><td class="l">齐齐哈尔</td><td>1</td><td>304,395</td><td>0.3</td><td>304,395</td></tr>
+      <tr class="me"><td class="l">绥化</td><td>0</td><td>351,263</td><td>0.0</td><td class="seal">四届未出现</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>大庆的产出率是佳木斯的 7.6 倍、齐齐哈尔的 74 倍。</strong>
+  而绥化在这四届、共 <strong>351,263</strong> 名初中生里，<strong class="seal">一个席位都没有</strong>。
+  这不是「概率低」，这是<strong>四次抽样全空</strong>。</p>
+  <p>并且这不是绥化的孩子不行——2003 年那份初中名单上，绥化有 2 个省一等奖（安达二中王晓倩、肇东七中庞博元）。
+  <strong>苗子有，接着教的人没有。</strong></p>
+
+  <h3>顺带回答一个问题：黑龙江这条线，在全国算低吗</h3>
+  <p>联赛的一试和加试是<strong>全国统一命题</strong>，所以各省的分数线可以直接比。2008 年有 20 个赛区公布了一等奖分数线：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">高</th><th class="l"></th><th class="l">中</th><th class="l"></th><th class="l">低</th><th class="l"></th></tr></thead>
+    <tbody>
+      <tr><td class="l">浙江</td><td>213</td><td class="l">重庆</td><td>182</td><td class="l">广东</td><td>169</td></tr>
+      <tr><td class="l">湖北</td><td>207</td><td class="l">江西</td><td>181</td><td class="l">安徽</td><td>168</td></tr>
+      <tr><td class="l">河南</td><td>206</td><td class="l">四川</td><td>181</td><td class="l">天津</td><td>168</td></tr>
+      <tr><td class="l">江苏</td><td>200</td><td class="l"><b class="seal">黑龙江</b></td><td><b class="seal">179</b></td><td class="l">福建</td><td>168</td></tr>
+      <tr><td class="l">上海</td><td>197</td><td class="l">吉林</td><td>176</td><td class="l">北京</td><td>167</td></tr>
+      <tr><td class="l"></td><td></td><td class="l">辽宁</td><td>176</td><td class="l">河北</td><td>166</td></tr>
+      <tr><td class="l"></td><td></td><td class="l">湖南</td><td>173</td><td class="l">山东</td><td>163</td></tr>
+      <tr><td class="l"></td><td></td><td class="l">陕西</td><td>171</td><td class="l"></td><td></td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>179 分，20 个赛区里排第 9，高于中位数。</strong>
+  黑龙江不是一条能捡漏的低线——同一张全国卷，这里的一等奖线比山东高 16 分、比北京高 12 分。
+  2008 年前 40 名的最低分正好是 179，说明那 40 个人就是那年这个省的全部一等奖。</p>
+  <p>另一个方向：2010 年全国一等奖名单里，<strong>黑龙江 31 人，在 31 个赛区中排第 19</strong>
+  （山东 49、河南 45、陕西 45 最多，青海 12 最少）。<strong>席位少、线不低。</strong></p>
+
+  <div class="notes"><span class="hd">本节的四条限度</span><ol>
+    <li>跨年、跨名单的人物对应<b>只靠姓名</b>，没有考号或身份证可核。同名同姓会造成误配；
+      不过 2003 初中一等奖的 22 个匹配<b>全部落在 2005 那一份名单里</b>，
+      这个时间一致性本身是对匹配质量的一次检验。</li>
+    <li>转化率的分母（126 人）是完整的，分子却受<b>名单覆盖年份</b>限制：我只有 2005、2007、2008、2010 四年。
+      如果某人初二就拿了初中一等奖，他的高三年份是 2006——那一年的名单我没找到，会被记成「未转化」。</li>
+    <li>2008 年那份是「前 40 名」，标题未写「一等奖」；但第 40 名 179 分与另一帖公布的黑龙江一等奖线 179 分完全吻合，
+      所以按一等奖全名单处理。2010 年那份是保送资格公示用的证书编号名单，无分数、无年级。</li>
+    <li><b>2006 年——我实际参加的那一年——的黑龙江获奖名单，至今没有找到。</b>
+      本节所有关于 2006 年的推断，都是用 2005 和 2007 两年把它夹在中间。</li>
+  </ol></div>
+
+  <h3>所以「失利」这个词用错了</h3>
+  <p>2006 年 9 月那次初试没有结果，不是一次失利，是<strong>一次在没有装备的情况下进入的比赛</strong>。三层：</p>
+  <ul>
+    <li><b>知识层面：</b>加试考的是课内不教的独立体系。绥化一中 2002 到 2025 年只有两次省一等奖——
+      <b>那里没有人能教加试</b>。而铁人中学同一年就有 9 人拿省赛区一等奖、65 人拿二三等奖。</li>
+    <li><b>信息层面：</b>你甚至不知道自己 2004 年拿过省一等奖。
+      <b class="seal">一个不知道自己有这个底子的人，不会想到要去准备加试。</b></li>
+    <li><b>结构层面：</b>87% 的一等奖出自四所学校，全部在哈尔滨和大庆。</li>
+  </ul>
+  <p class="wide"><strong>这三层里只有第一层看起来像「你不够强」。而第一层的原因写在第三层里。</strong></p>
+  <p class="notes" style="max-width:78ch"><b>限度：</b>
+  ① <b>2006 年的名单本身没拿到</b>，用 2007 年的分布做近似——两年之间学校格局不太可能剧变
+  （2006 年那 9 个数学保送生也全部出自同样的五所学校），但这是替代证据，不是原始证据。
+  ② 一试／加试的相关系数是在<b>已获一等奖的 40 人内部</b>算的，属于截断样本；
+  截断通常会<b>低估</b>相关，所以 0.743 更可能是下界，但方向需要留意。
+  ③ 10／40 的延续率是<b>下界</b>，因为两份初中名单都残缺。
+  ④ <b>同名不等于同一人。</b>其中学校能对上的（吕志远松雷→哈三中、孙可哈 69 联中→哈师大附中等）可信度更高，其余为姓名匹配。
+  ⑤ 「初中数理化接近满分」是本人自述，没有原始成绩单。</p>
+  <h3>所以隐瞒的代价，分三层</h3>
+  <ul>
+    <li><b>第一层：2004 年少了一条入学通道。</b>大庆两校公开招的是「外市县中考状元 30 多人」加「<b>全省各科竞赛的尖子生 30 多人</b>」——
+      省一等奖正是后面那 30 多人的资格。而这条通道<b>走的是特长渠道，与「不许招收外地学生」那道禁令不是同一个口子</b>。
+      隐瞒切掉的不是一张纸，是一条路。</li>
+    <li><b>第二层：三年的路线选择。</b>不知道自己在竞赛上是万分之一量级，就不会去想竞赛这条路；
+      而即使想了，绥化一中<b>2002 到 2025 年只有两次省一等奖</b>，这条路在那里本来也不存在。
+      对照：铁人中学 2007 年一年就有 <b>9 人获省赛区一等奖、65 人获二三等奖</b>，
+      其中 1 人物理决赛保送清华、1 人化学决赛保送北大、另有 19 人获清北自主招生认定。</li>
+    <li><b>第三层：自我认知。</b>这一层没有数据，但它可能最贵——
+      <b>一个人如果不知道自己擅长什么，他连"要不要走那条路"这个问题都不会问。</b></li>
+  </ul>
+  <p class="notes" style="max-width:78ch"><b>这一节的限度，尤其要说清楚：</b>
+  ① <b>初中省一等奖 ≠ 高中省一等奖。</b>保送凭的是高中联赛的省一等奖，两者难度与竞争面完全不同，
+  且需要三年系统训练。<b>所以这条路真正的门槛不是那张被隐瞒的纸，而是「在一所有竞赛教练的高中读三年」</b>——
+  隐瞒的主要代价，是它切断了通往那所高中的一条路，而不是它本身能直接换来保送。
+  ② 6 个能回溯中考的保送生不是随机样本，是恰好能匹配上的那几个；n＝6，不能当概率用。
+  ③ 三科里只有数学的一等奖是确证的；物理只有初赛三等奖，化学初赛成绩至今不明。
+  ④ 「全市参加物理复试只有六人」来自 2004 年 6 月绥化日报的报道，未见招考部门原始文件。
+  ⑤ 本节全部是反事实推演，不可验证——它能确定的只有一件事：<b>那条路存在，走通它的人中考名次远低于我，而我不知道有这条路。</b></p>
+  <p class="notes" style="max-width:78ch"><b>这一节的限度：</b>
+  ① 中考 ≥648 那八个人是<b>全样本</b>，不是抽样，但 n＝8，其中还有 1 人未追踪到；一半上清北这个比例的置信区间很宽。
+  ② 55 组配对回归里有 52 组来自大庆一中一所学校，r＝0.742 意味着中考只解释了约 55% 的高考分数方差——
+  <b>另外 44% 是这条回归线预测不了的</b>，我完全可能落在残差的下方（事实上大庆一中也有两个 640＋的人只考了 666）。
+  ③ 鹤岗复读配对有强烈的<b>选择效应</b>：会去复读的人本就是对成绩不满意的人；
+  而且 2006 年的一分一段表只到 450 分，起点低于 450 的两人已被剔除。
+  ④ 2006→2007 与 2007→2008 是不同的年份对，把前者的结论搬到后者需要假设两次年份切换的难度变化相近。
+  ⑤ 本节所有「反事实」都不是既成事实，是用同期同类人的实际结果做的估计。</p>
+</section>
+
+<section id="t6">
+  <div class="sechead"><span class="no">检验 08</span><h2>逐题账本：666 + 22 = 688</h2><span class="en">The Ledger</span></div>
+  <div class="read">
+    <div><u>量具</u>本人逐题估分记录</div>
+    <div><u>读数</u>失分 84 分</div>
+    <div><u>口径</u>成绩公布前 13 天写下</div>
+    <div><u>日期</u>2007-06-11</div>
+  </div>
+  <p>先做可信度检验。四科的实际失分是硬的（满分减实得），逐题账本是我自己记的——对得上吗？</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">科目</th><th>满分</th><th>实得</th><th>实际失分</th><th>账本合计</th><th class="l">对得上吗</th></tr></thead>
+    <tbody>
+      <tr><td class="l">语文</td><td>150</td><td>125</td><td>25</td><td>23</td><td class="l n">差 2 分（作文估 8–10，实扣约 9）</td></tr>
+      <tr><td class="l">数学</td><td>150</td><td>135</td><td><b>15</b></td><td><b>15</b></td><td class="l n pet"><b>完全吻合</b></td></tr>
+      <tr><td class="l">外语</td><td>150</td><td>141</td><td>9</td><td>8.5</td><td class="l n">差 0.5 分</td></tr>
+      <tr><td class="l">理综</td><td>300</td><td>265</td><td><b>35</b></td><td><b>35</b></td><td class="l n pet"><b>完全吻合</b></td></tr>
+      <tr class="sum"><td class="l">合计</td><td>750</td><td>666</td><td>84</td><td>81.5</td><td class="l n">误差全在两篇作文上</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>理综那 35 分被拆成六笔，加起来正好 35。</strong>所以下面这张表可以当记录读，不是当估计读：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">丢在哪</th><th>分</th><th class="l">怎么丢的</th><th class="l">责任</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l">物理 24 题</td><td><b>11</b></td>
+        <td class="l">超纲弹性碰撞。现场推出了正确方程，但没把中间的二级结论单列成式子，最终结果算错</td><td class="l seal"><b>命题</b></td></tr>
+      <tr class="me"><td class="l">物理 25 题</td><td><b>8</b></td>
+        <td class="l">题干与答案的事实性错误。磁场大小求对了，但没写中间变量 R 的表达式（第一问 2 分、第二问 6 分）</td><td class="l seal"><b>命题</b></td></tr>
+      <tr class="me"><td class="l">物理 17 题（选择）</td><td><b>3</b></td>
+        <td class="l">光的偏振，大纲卷教材中没有；漏选 D，多选漏选得一半分</td><td class="l seal"><b>命题</b></td></tr>
+      <tr><td class="l">物理 20 题（选择）</td><td>3</td><td class="l">漏选 D</td><td class="l">自己</td></tr>
+      <tr><td class="l">生物 30 题第二部分</td><td>8</td><td class="l">第一问、第二问失分</td><td class="l">自己</td></tr>
+      <tr><td class="l">化学 28 题第三问</td><td>2</td><td class="l">——</td><td class="l">自己</td></tr>
+      <tr class="sum"><td class="l">合计</td><td>35</td><td class="l">命题相关 22 分　·　自己 13 分</td><td class="l">—</td></tr>
+    </tbody>
+  </table></div>
+  <p>分科看：<strong>生物丢 8、化学丢 2、物理丢 25。</strong>
+  化学是我自嘲的「最短板学科」，那年只丢 2 分；<strong>物理是我最擅长的一科，丢了 25 分，占理综全部失分的七成</strong>。</p>
+  <div class="find ok"><p class="eq">666 ＋ <i>22</i> ＝ 688</p>
+  <p>把三处命题事故的失分加回去，理综是 <b>287</b>，总分 <b>688 分，全省第 102 名</b>。<br>
+  <b class="pet">2007 年清华在黑龙江理科线是 687 分（约第 113 名，录取 128 人），北大 688 分（约第 102 名）。</b></p>
+  <p>这不是凑出来的：22 这个数来自 2007 年 6 月 11 日的记录，102 这个名次来自当年的一分一段表，
+  两边都是先有的。而且用同一张一分一段表反推 687 分，正好落在第 113 名——<b>和当年公布的清华线名次分毫不差</b>。</p></div>
+  <h3>数学那 15 分：两笔都不是「不会」</h3>
+  <p class="wide">数学丢了 15 分，拆成两笔，而这两笔<strong>都不是知识性错误</strong>。</p>
+  <p class="wide"><strong>第一笔，9 分。</strong>倒数第二题数列，我用自己的方法解出了正确答案，
+  <strong>因与标准答案不一致，一分未给</strong>。这是评分口径之争，不是对错之争。</p>
+  <p class="wide"><strong>第二笔，6 分。</strong>第 18 题概率统计第二问，我按二项分布做，标准答案要的是
+  <strong>超几何分布</strong>。当年我把它记成自己的马虎（原话：「平时考试总会有 5、6 分的马虎」）。
+  <strong class="seal">十九年后我才去翻当年的考试大纲——超几何分布根本不在里面。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2007 年全国统一考试大纲（数学·理科）</th><th class="l">原文</th></tr></thead>
+    <tbody>
+      <tr><td class="l"><b>11. 概率</b>　考试内容</td>
+        <td class="l">随机事件的概率。等可能性事件的概率。互斥事件有一个发生的概率。相互独立事件同时发生的概率。<b>独立重复试验</b>。</td></tr>
+      <tr><td class="l"><b>11. 概率</b>　考试要求 (4)</td>
+        <td class="l">会计算事件在 <b>n 次独立重复试验中恰好发生 k 次的概率</b>。<span class="pet">← 这就是二项分布，大纲点名要求</span></td></tr>
+      <tr><td class="l"><b>12. 概率与统计</b>　考试内容</td>
+        <td class="l">离散型随机变量的分布列。离散型随机变量的期望值和方差。抽样方法。总体分布的估计。<b>正态分布</b>。线性回归。</td></tr>
+      <tr class="me"><td class="l">全份大纲中「超几何分布」出现次数</td><td class="l"><b class="seal">0 次</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">大纲原件（新浪教育存档的 2007 年考试大纲扫描件）就在这个项目的
+  <span class="m">content/2007/大纲/</span> 里，第 11、12 两条我逐字核过。
+  <strong>大纲通篇只命名了一个抽样概率模型——独立重复试验，也就是二项分布。</strong></p>
+  <div class="find"><p><b>所以这 6 分的准确性质不是「我算错了」，是这个：</b></p>
+  <p>大纲只教了一个模型，并且点名要考它；考卷却要求识别一个大纲从未命名的第二个模型，
+  而且<b>不给任何提示</b>。<b class="seal">被考的不是知识，是「你的老师有没有额外讲过大纲外的东西」。</b></p>
+  <p>而且抽取基数是 100。<b>在不放回抽样里，当总体足够大，二项分布本来就是超几何分布的标准近似</b>——
+  我做的不是一个错误的建模选择，是一个在我所学的框架内<b>合法且标准</b>的选择。
+  基数越大，这个选择越合理；而这道题偏偏把基数放大到了让它「看起来就是独立重复试验」的量级。</p></div>
+  <div class="find ok"><p class="eq">666 ＋ 22 ＋ <i>6</i> ＝ 694</p>
+  <p>把理综三处命题事故的 22 分、加上数学这处超纲的 6 分都还回来，是 <b>694 分，全省第 42 名</b>。
+  再把评分口径争议的 9 分也算上，是 <b>697 分，全省第 25 名</b>。</p>
+  <p><b>但这两笔性质不同，这一页不把它们并列</b>：超纲是试卷本身越界，评分口径是一个可以争论的判断。
+  页面的主结论仍然只用最保守的那一档——<b class="pet">666 ＋ 22 ＝ 688</b>。</p></div>
+  <div class="notes"><span class="hd">这一段的三条限度</span><ol>
+    <li>「大纲里没有超几何分布」是我逐字核对第 11、12 两条得到的，<b>这一条是硬的</b>。
+      但严格说，这道题<b>可以</b>用大纲内的「等可能性事件的概率」加组合数硬算出来——
+      所以准确的说法是<b>「模型识别的要求超纲」，不是「所需知识超纲」</b>。</li>
+    <li>「以往练习题与高考题从未出现过 100 这个抽取基数」是我本人的记忆，
+      <b>尚未用历年真题库核实</b>。要坐实它，需要一份 1990–2006 年高考数学概率题的抽取基数普查。</li>
+    <li>顺带一笔，同一份大纲第 12 条白纸黑字写着<b>正态分布</b>，
+      而我们老师当年说「正态分布超纲不考」——<b class="seal">那不是大纲的问题，是老师判断错了</b>，
+      我很多同学因此在第 14 题失分。这一笔不能算在命题头上。</li>
+  </ol></div>
+  <h3>而 666 分那天，我手里握着什么</h3>
+  <div class="tw"><table>
+    <thead><tr><th class="l">2007 年黑龙江理科录取线</th><th>分数线</th><th class="l">与我的 666 分</th></tr></thead>
+    <tbody>
+      <tr><td class="l">清华大学</td><td>687</td><td class="l n">差 21 分</td></tr>
+      <tr><td class="l">北京大学</td><td>688</td><td class="l n">差 22 分</td></tr>
+      <tr><td class="l">复旦大学</td><td>667</td><td class="l n">差 1 分</td></tr>
+      <tr><td class="l">浙江大学</td><td>666</td><td class="l n pet">刚好压线</td></tr>
+      <tr class="me"><td class="l">上海交通大学</td><td><b>665</b></td><td class="l n"><b class="pet">高 1 分——我想去的那所，够了</b></td></tr>
+      <tr><td class="l">理科重本线</td><td>588</td><td class="l n">高 78 分</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">报考那天，我自己决定要报上海交大，二志愿哈工大兜底。
+  我父亲和班主任反复劝我改报清华。我改了，差 21 分，掉到二志愿，
+  <strong>还要减 35 分才被哈工大录取</strong>。按往年一表二的规则，我本来是要去补习班的。</p>
+  <div class="find"><p><b class="seal">考卷让我从全省第 102 名掉到第 652 名。志愿让我在已经拿到的 666 分上，从上海交大掉到哈工大。</b></p>
+  <p>第一笔我控制不了。第二笔——<b>那天我手里已经握着上海交大了，多一分。</b></p></div>
+</section>
+<section id="t8">
+  <div class="sechead"><span class="no">检验 09</span><h2>我的劣势，正好是他们的优势</h2><span class="en">The Transfer</span></div>
+  <div class="read">
+    <div><u>命题</u>688 分以上的人不可能这样丢分</div>
+    <div><u>方法</u>算术上界 ＋ 实测样本</div>
+    <div><u>样本</u>13 人有单科成绩</div>
+    <div><u>结论</u>成立</div>
+  </div>
+  <p>先把命题写清楚：<strong>凡是考到 688 分以上的人，都不可能像我一样在那两道物理大题上丢掉 19 分。</strong>
+  这不是感觉，可以证明。</p>
+  <h3>一、算术上界</h3>
+  <p>总分 ＝ 语数外 ＋ 理综，理综满分 300。设理综一共丢了 <strong>L</strong> 分，那么要够到 688 必须有：</p>
+  <p class="eq">语数外 ≥ 688 − (300 − L) = <i>388 + L</i></p>
+  <p>如果 L = 19（只算那两道题、理综其余一分不丢），需要语数外 ≥ 407。
+  但「其余一分不丢」意味着化学 108 分、生物 72 分、物理剩下的 101 分<strong>全部满分</strong>——
+  而那年全省最好的理综是 295 分，也丢了 5 分。<strong>所以现实的下限是 L ≥ 24，语数外 ≥ 412。</strong>
+  本页找得到的 13 份语数外成绩里，只有 3 份达到这个数。</p>
+  <h3>二、实测</h3>
+  <p>能查到单科成绩、且总分 ≥ 688 的人一共 5 个。看他们<strong>整张理综</strong>丢了多少：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">姓名</th><th class="l">学校</th><th>总分</th><th>语数外</th><th>理综</th><th>整张理综失分</th></tr></thead>
+    <tbody>
+      <tr><td class="l">马超</td><td class="l">哈三中</td><td>718</td><td>425</td><td>293</td><td class="pet"><b>7</b></td></tr>
+      <tr><td class="l">鄂炎雄</td><td class="l">佳木斯一中</td><td>718</td><td>423</td><td>295</td><td class="pet"><b>5</b></td></tr>
+      <tr><td class="l">解斌</td><td class="l">鹤岗一中</td><td>703</td><td>415</td><td>288</td><td class="pet"><b>12</b></td></tr>
+      <tr><td class="l">王弘轩</td><td class="l">鹤岗一中</td><td>702</td><td>408</td><td>294</td><td class="pet"><b>6</b></td></tr>
+      <tr><td class="l">邱林</td><td class="l">鹤岗一中</td><td>701</td><td>407</td><td>294</td><td class="pet"><b>6</b></td></tr>
+      <tr class="me"><td class="l">林英魁</td><td class="l">绥化一中</td><td>666</td><td>401</td><td>265</td><td><b>35</b>　<span class="seal">其中那两道题 19</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find ok"><p><b class="pet">这五个人整张理综的失分是 7、5、12、6、6——每一个都小于 19。</b></p>
+  <p>也就是说：<b>他们在三门学科、二十多道题上加起来丢的分，都没有我单在那两道题上丢的多。</b>
+  他们不是「也丢了但丢得少」，是<b>那两道题在他们身上根本没有发生</b>。</p></div>
+  <h3>三、而且它是双向的</h3>
+  <p>24 题的评分标准，把那条超纲的弹性碰撞二级结论<strong>本身设成了一个 8 分的得分点</strong>。
+  于是同一道题，在两类考生身上走了相反的方向：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">同一道 24 题</th><th class="l">背过二级结论的人</th><th class="l">被告知「不考」的人</th></tr></thead>
+    <tbody>
+      <tr><td class="l">写出那条结论</td><td class="l pet">直接默写，<b>拿满 8 分</b></td><td class="l seal">现场联立推导，推对了也没单列成式子，<b>8 分不给</b></td></tr>
+      <tr><td class="l">用时</td><td class="l pet">约 2 分钟</td><td class="l seal">约 10 分钟，且需先试错才想到平方差约分</td></tr>
+      <tr><td class="l">最终得分</td><td class="l pet">19 / 19</td><td class="l seal">8 / 19</td></tr>
+      <tr class="sum"><td class="l">两者之差</td><td class="l" colspan="2"><b>11 分的失分 ＋ 8 分的白拿 ＝ 一道题制造 19 分的落差</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">这是「劣势」和「优势」<strong>字面意义上的同一件事</strong>：
+  同一个 8 分得分点，一边加、一边减。它衡量的不是谁物理更好——
+  <strong>推导的人做的是更难的认知动作</strong>——而是谁的学校把训练做到了大纲之外。</p>
+  <p class="wide">在 666 到 685 这一段，平均每分站着 27 个人。
+  <strong class="seal">所以这一道题，在这两类考生之间，制造了大约 500 个名次的定向转移。</strong>
+  它转移的方向，恰好是从没有竞赛教练传统的学校，流向七成国家级物理一等奖出自本校的学校。</p>
+</section>
+
+<section id="t6c">
+  <div class="sechead"><span class="no">检验 10</span><h2>一个班的三条曲线</h2><span class="en">The Class Curve</span></div>
+  <div class="read">
+    <div><u>样本</u>绥化一中 2007 届高三三班 65 人</div>
+    <div><u>已知</u>38 人的高考分，3 人的中考分</div>
+    <div><u>量具</u>大庆一中 52 组同校同届配对</div>
+    <div><u>读数</u>缺口 49–60 分</div>
+  </div>
+
+  <p>前面九节都在算我一个人。一个人的残差可以是运气。<strong>这一节把整个班放上去</strong>——
+  如果 65 个人一起偏，那就不是运气。</p>
+
+  <h3>一、先把中考那条线找回来</h3>
+  <p>三班没有留下中考成绩单。但班里有三个人的中考分是确定的，而且各自带着一个班内位置：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">人</th><th>中考</th><th class="l">位置</th><th>推出的班内名次</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="l">林英魁</td><td><b>648</b></td><td class="l">绥棱五中第三、全县第六</td><td>班内第 2</td></tr>
+      <tr><td class="l">刘欣</td><td>642</td><td class="l">绥化市区第 10–14</td><td>班内第 9</td></tr>
+      <tr><td class="l">刘翔</td><td>630</td><td class="l">绥棱五中第六、全县第十三</td><td>班内第 47</td></tr>
+    </tbody>
+  </table></div>
+  <p>两个锚点（648 ＝ 第 2，630 ＝ 第 47）定一条正态曲线，得到
+  <strong>μ ＝ 634、σ ＝ 7.1</strong>；第三个锚点 642 落在第 9 名，与刘欣的市区第 10–14 自洽——
+  这一点没有参与拟合，属于独立校验。全班中考从 651 到 617，只有 34 分跨度：一个很整齐的尖子班。</p>
+
+  <h3>二、量具：一份没有被结果筛过的配对表</h3>
+  <p>大庆一中公布过一张《2007 年市区应届高考与中考成绩对照》，理科 <strong>149 人</strong>，
+  是那一届市区应届的<strong>全体</strong>，不是成绩喜报。它包含 92 名自费生（高考均值 565.6）、
+  5 名补录生和 52 名统招生（高考均值 657.2）；全体 149 人的高考均值只有 <strong>598.7</strong>。
+  换句话说，这张表连差生也一起登出来了。</p>
+  <p>其中 52 名统招生同时公布了中考分——他们是<strong>按中考分入学的，不是按高考结果挑出来的</strong>。
+  这一点很重要：按自变量筛样本不会让回归线偏高，按因变量筛才会。所以这条线可以直接用：</p>
+  <div class="eq m">高考 ＝ 0.852 × 中考 ＋ 129.8　　r ＝ 0.747　　残差 σ ＝ 14.8　　n ＝ 52</div>
+  <p>在我们关心的那一档，它是<strong>逐点准的</strong>。大庆一中中考 638 分以上的 11 名统招生，
+  三年后实测均值 <strong>679.2</strong> 分；这条线给他们的预测均值也是 <strong>679.2</strong> 分。</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">大庆一中统招生</th><th>中考</th><th>实测高考</th><th>模型预测</th><th>残差</th></tr></thead>
+    <tbody>
+      <tr><td class="l">李璐</td><td>663</td><td>693</td><td>694</td><td>−1</td></tr>
+      <tr><td class="l">关天下</td><td>656</td><td>690</td><td>688</td><td>＋2</td></tr>
+      <tr><td class="l">张洪谋</td><td>646</td><td>676</td><td>680</td><td>−4</td></tr>
+      <tr><td class="l">刘安东</td><td>645</td><td>676</td><td>679</td><td>−3</td></tr>
+      <tr><td class="l">杜宇寰</td><td>644</td><td>688</td><td>678</td><td>＋10</td></tr>
+      <tr><td class="l">鲍慊</td><td>644</td><td>666</td><td>678</td><td>−12</td></tr>
+      <tr><td class="l">蒋莉</td><td>642</td><td>691</td><td>677</td><td>＋14</td></tr>
+      <tr><td class="l">王金鑫</td><td>642</td><td>666</td><td>677</td><td>−11</td></tr>
+      <tr><td class="l">王惠西</td><td>639</td><td>678</td><td>674</td><td>＋4</td></tr>
+      <tr><td class="l">曹琪</td><td>638</td><td>683</td><td>673</td><td>＋10</td></tr>
+      <tr><td class="l">曹沂</td><td>638</td><td>664</td><td>673</td><td>−9</td></tr>
+      <tr class="sum"><td class="l">11 人均值</td><td>641.5</td><td><b>679.2</b></td><td><b>679.2</b></td><td>0.0</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">注意最后一列的散布：中考 644 的两个人，一个考 688，一个考 666；中考 642 的两个人，
+  一个 691，一个 666。<strong>同一个中考分，三年后差 22 到 25 分是常态</strong>——
+  这就是那 14.8 分的残差 σ。任何一个人的成绩都不能只靠中考分来断定，
+  这一节能说的只是<strong>一个班</strong>。</p>
+
+  <h3>三、三条曲线</h3>
+  <div class="fig"><svg viewBox="0 0 1000 406" width="100%" role="img" aria-label="绥化一中高三三班：中考曲线、按大庆换算率的期望高考区间、以及实测高考曲线"><polygon points="64.0,75.0 76.6,79.9 89.2,82.7 101.9,84.6 114.5,86.2 127.1,87.6 139.8,88.7 152.4,89.8 165.0,90.8 177.6,91.6 190.2,92.5 202.9,93.2 215.5,94.0 228.1,94.7 240.8,95.3 253.4,96.0 266.0,96.6 278.6,97.2 291.2,97.8 303.9,98.4 316.5,98.9 329.1,99.5 341.8,100.0 354.4,100.5 367.0,101.1 379.6,101.6 392.2,102.1 404.9,102.6 417.5,103.1 430.1,103.6 442.8,104.1 455.4,104.6 468.0,105.1 480.6,105.6 493.2,106.0 505.9,106.5 518.5,107.0 531.1,107.5 543.8,108.0 556.4,108.5 569.0,109.1 581.6,109.6 594.2,110.1 606.9,110.6 619.5,111.2 632.1,111.8 644.8,112.3 657.4,112.9 670.0,113.5 682.6,114.1 695.2,114.8 707.9,115.5 720.5,116.2 733.1,116.9 745.8,117.7 758.4,118.5 771.0,119.4 783.6,120.3 796.2,121.4 808.9,122.6 821.5,123.9 834.1,125.5 846.8,127.5 859.4,130.2 872.0,135.1 872.0,197.6 859.4,192.7 846.8,190.0 834.1,188.0 821.5,186.4 808.9,185.1 796.2,183.9 783.6,182.8 771.0,181.9 758.4,181.0 745.8,180.2 733.1,179.4 720.5,178.7 707.9,178.0 695.2,177.3 682.6,176.7 670.0,176.0 657.4,175.4 644.8,174.8 632.1,174.3 619.5,173.7 606.9,173.2 594.2,172.6 581.6,172.1 569.0,171.6 556.4,171.1 543.8,170.6 531.1,170.1 518.5,169.6 505.9,169.1 493.2,168.6 480.6,168.1 468.0,167.6 455.4,167.1 442.8,166.6 430.1,166.1 417.5,165.6 404.9,165.1 392.2,164.6 379.6,164.1 367.0,163.6 354.4,163.1 341.8,162.5 329.1,162.0 316.5,161.4 303.9,160.9 291.2,160.3 278.6,159.7 266.0,159.1 253.4,158.5 240.8,157.9 228.1,157.2 215.5,156.5 202.9,155.8 190.2,155.0 177.6,154.2 165.0,153.3 152.4,152.3 139.8,151.3 127.1,150.1 114.5,148.7 101.9,147.2 89.2,145.2 76.6,142.4 64.0,137.6" fill="var(--petrol)" opacity="0.13"/><line class="hair" x1="64" y1="326.0" x2="872" y2="326.0"/><text class="ax" x="56" y="329.5" text-anchor="end">580</text><line class="hair" x1="64" y1="283.7" x2="872" y2="283.7"/><text class="ax" x="56" y="287.2" text-anchor="end">600</text><line class="hair" x1="64" y1="241.4" x2="872" y2="241.4"/><text class="ax" x="56" y="244.9" text-anchor="end">620</text><line class="hair" x1="64" y1="199.1" x2="872" y2="199.1"/><text class="ax" x="56" y="202.6" text-anchor="end">640</text><line class="hair" x1="64" y1="156.9" x2="872" y2="156.9"/><text class="ax" x="56" y="160.4" text-anchor="end">660</text><line class="hair" x1="64" y1="114.6" x2="872" y2="114.6"/><text class="ax" x="56" y="118.1" text-anchor="end">680</text><line class="hair" x1="64" y1="72.3" x2="872" y2="72.3"/><text class="ax" x="56" y="75.8" text-anchor="end">700</text><line class="hair" x1="64" y1="30.0" x2="872" y2="30.0"/><text class="ax" x="56" y="33.5" text-anchor="end">720</text><line x1="872" y1="305.6" x2="878" y2="305.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="309.1">540</text><line x1="872" y1="269.6" x2="878" y2="269.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="273.1">560</text><line x1="872" y1="233.6" x2="878" y2="233.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="237.1">580</text><line x1="872" y1="197.6" x2="878" y2="197.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="201.1">600</text><line x1="872" y1="161.6" x2="878" y2="161.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="165.1">620</text><line x1="872" y1="125.6" x2="878" y2="125.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="129.1">640</text><line x1="872" y1="89.6" x2="878" y2="89.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="93.1">660</text><line x1="872" y1="53.6" x2="878" y2="53.6" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="882" y="57.1">680</text><line x1="872" y1="30" x2="872" y2="326" stroke="var(--rule)" stroke-width="1"/><text class="ax" x="64.0" y="343" text-anchor="middle">1</text><text class="ax" x="177.6" y="343" text-anchor="middle">10</text><text class="ax" x="303.9" y="343" text-anchor="middle">20</text><text class="ax" x="430.1" y="343" text-anchor="middle">30</text><text class="ax" x="531.1" y="343" text-anchor="middle">38</text><text class="ax" x="682.6" y="343" text-anchor="middle">50</text><text class="ax" x="872.0" y="343" text-anchor="middle">65</text><text class="ax" x="468.0" y="361" text-anchor="middle">班内名次（按中考）</text><text class="ax" x="12" y="21">高考分</text><text class="ax" x="876" y="21">中考分</text><line x1="64" y1="309.1" x2="872" y2="309.1" stroke="var(--rule)" stroke-width="1" stroke-dasharray="2 3"/><text class="ax" x="70" y="303.1">一本线 588</text><path d="M64.0,168.8 L76.6,173.7 L89.2,176.4 L101.9,178.4 L114.5,180.0 L127.1,181.4 L139.8,182.5 L152.4,183.6 L165.0,184.5 L177.6,185.4 L190.2,186.2 L202.9,187.0 L215.5,187.8 L228.1,188.5 L240.8,189.1 L253.4,189.8 L266.0,190.4 L278.6,191.0 L291.2,191.6 L303.9,192.1 L316.5,192.7 L329.1,193.3 L341.8,193.8 L354.4,194.3 L367.0,194.8 L379.6,195.4 L392.2,195.9 L404.9,196.4 L417.5,196.9 L430.1,197.4 L442.8,197.9 L455.4,198.4 L468.0,198.8 L480.6,199.3 L493.2,199.8 L505.9,200.3 L518.5,200.8 L531.1,201.3 L543.8,201.8 L556.4,202.3 L569.0,202.8 L581.6,203.4 L594.2,203.9 L606.9,204.4 L619.5,205.0 L632.1,205.5 L644.8,206.1 L657.4,206.7 L670.0,207.3 L682.6,207.9 L695.2,208.6 L707.9,209.2 L720.5,209.9 L733.1,210.7 L745.8,211.4 L758.4,212.3 L771.0,213.2 L783.6,214.1 L796.2,215.2 L808.9,216.3 L821.5,217.7 L834.1,219.3 L846.8,221.3 L859.4,224.0 L872.0,228.9" fill="none" stroke="var(--petrol)" stroke-width="1.1" stroke-dasharray="3 3" opacity="0.65"/><path d="M64.0,106.3 L76.6,111.2 L89.2,113.9 L101.9,115.9 L114.5,117.5 L127.1,118.8 L139.8,120.0 L152.4,121.1 L165.0,122.0 L177.6,122.9 L190.2,123.7 L202.9,124.5 L215.5,125.2 L228.1,125.9 L240.8,126.6 L253.4,127.2 L266.0,127.9 L278.6,128.5 L291.2,129.1 L303.9,129.6 L316.5,130.2 L329.1,130.7 L341.8,131.3 L354.4,131.8 L367.0,132.3 L379.6,132.8 L392.2,133.3 L404.9,133.8 L417.5,134.3 L430.1,134.8 L442.8,135.3 L455.4,135.8 L468.0,136.3 L480.6,136.8 L493.2,137.3 L505.9,137.8 L518.5,138.3 L531.1,138.8 L543.8,139.3 L556.4,139.8 L569.0,140.3 L581.6,140.8 L594.2,141.4 L606.9,141.9 L619.5,142.5 L632.1,143.0 L644.8,143.6 L657.4,144.2 L670.0,144.8 L682.6,145.4 L695.2,146.0 L707.9,146.7 L720.5,147.4 L733.1,148.1 L745.8,148.9 L758.4,149.7 L771.0,150.6 L783.6,151.6 L796.2,152.6 L808.9,153.8 L821.5,155.2 L834.1,156.7 L846.8,158.7 L859.4,161.5 L872.0,166.3" fill="none" stroke="var(--petrol)" stroke-width="2.6"/><path d="M64.0,144.2 L76.6,163.2 L89.2,163.2 L101.9,175.9 L114.5,194.9 L127.1,197.0 L139.8,199.1 L152.4,203.4 L165.0,216.1 L177.6,216.1 L190.2,218.2 L202.9,218.2 L215.5,218.2 L228.1,220.3 L240.8,220.3 L253.4,224.5 L266.0,230.9 L278.6,233.0 L291.2,241.4 L303.9,243.5 L316.5,254.1 L329.1,256.2 L341.8,256.2 L354.4,258.3 L367.0,258.3 L379.6,260.5 L392.2,262.6 L404.9,262.6 L417.5,273.1 L430.1,275.3 L442.8,277.4 L455.4,281.6 L468.0,290.1 L480.6,298.5 L493.2,309.1 L505.9,309.1 L518.5,309.1 L531.1,309.1" fill="none" stroke="var(--seal)" stroke-width="2.4"/><circle class="d-q" cx="64.0" cy="144.2" r="2.6"><title>实测第1：林英魁 哈尔滨工业大学 → 666 分（全省第 652）</title></circle><circle class="d-q" cx="76.6" cy="163.2" r="2.6"><title>实测第2：贾洪亮 北航 → 657 分（全省第 1,104）</title></circle><circle class="d-q" cx="89.2" cy="163.2" r="2.6"><title>实测第3：刘翔 同济大学 → 657 分（全省第 1,104）</title></circle><circle class="d-q" cx="101.9" cy="175.9" r="2.6"><title>实测第4：李杏 哈尔滨工业大学 → 651 分（全省第 1,516）</title></circle><circle class="d-q" cx="114.5" cy="194.9" r="2.6"><title>实测第5：梁志超 重庆大学 → 642 分（全省第 2,354）</title></circle><circle class="d-q" cx="127.1" cy="197.0" r="2.6"><title>实测第6：王胤燊 哈尔滨工业大学 → 641 分（全省第 2,471）</title></circle><circle class="d-q" cx="139.8" cy="199.1" r="2.6"><title>实测第7：刘雪威 上海财经大学 → 640 分（全省第 2,594）</title></circle><circle class="d-q" cx="152.4" cy="203.4" r="2.6"><title>实测第8：于鹏 华北电力大学 → 638 分（全省第 2,827）</title></circle><circle class="d-q" cx="165.0" cy="216.1" r="2.6"><title>实测第9：陈岩 西安电子科技大学 → 632 分（全省第 3,637）</title></circle><circle class="d-q" cx="177.6" cy="216.1" r="2.6"><title>实测第10：郭蕾 哈尔滨工业大学 → 632 分（全省第 3,637）</title></circle><circle class="d-q" cx="190.2" cy="218.2" r="2.6"><title>实测第11：包括 中南财经政法大学 → 631 分（全省第 3,789）</title></circle><circle class="d-q" cx="202.9" cy="218.2" r="2.6"><title>实测第12：李光磊 哈工程 → 631 分（全省第 3,789）</title></circle><circle class="d-q" cx="215.5" cy="218.2" r="2.6"><title>实测第13：李开 哈尔滨工业大学 → 631 分（全省第 3,789）</title></circle><circle class="d-q" cx="228.1" cy="220.3" r="2.6"><title>实测第14：刘欣 中南财经政法大学 → 630 分（全省第 3,947）</title></circle><circle class="d-q" cx="240.8" cy="220.3" r="2.6"><title>实测第15：邵润超 武汉大学 → 630 分（全省第 3,947）</title></circle><circle class="d-q" cx="253.4" cy="224.5" r="2.6"><title>实测第16：闫永祥 西南交通大学 → 628 分（全省第 4,272）</title></circle><circle class="d-q" cx="266.0" cy="230.9" r="2.6"><title>实测第17：赵正少 大连外国语大学 → 625 分（全省第 4,800）</title></circle><circle class="d-q" cx="278.6" cy="233.0" r="2.6"><title>实测第18：姜英男 南京理工大学 → 624 分（全省第 4,987）</title></circle><circle class="d-q" cx="291.2" cy="241.4" r="2.6"><title>实测第19：孟静 吉林大学 → 620 分（全省第 5,798）</title></circle><circle class="d-q" cx="303.9" cy="243.5" r="2.6"><title>实测第20：尹琪东 重庆大学 → 619 分（全省第 6,007）</title></circle><circle class="d-q" cx="316.5" cy="254.1" r="2.6"><title>实测第21：杨智广 吉林大学 → 614 分（全省第 7,144）</title></circle><circle class="d-q" cx="329.1" cy="256.2" r="2.6"><title>实测第22：刘军力 大连海事 → 613 分（全省第 7,391）</title></circle><circle class="d-q" cx="341.8" cy="256.2" r="2.6"><title>实测第23：王铁鑫 西安电子科技大学 → 613 分（全省第 7,391）</title></circle><circle class="d-q" cx="354.4" cy="258.3" r="2.6"><title>实测第24：何香培 湖南大学 → 612 分（全省第 7,644）</title></circle><circle class="d-q" cx="367.0" cy="258.3" r="2.6"><title>实测第25：耿庆龙 吉林大学 → 612 分（全省第 7,644）</title></circle><circle class="d-q" cx="379.6" cy="260.5" r="2.6"><title>实测第26：吕晶鑫 中国石油大学 → 611 分（全省第 7,905）</title></circle><circle class="d-q" cx="392.2" cy="262.6" r="2.6"><title>实测第27：闫岩 北京交通大学 → 610 分（全省第 8,172）</title></circle><circle class="d-q" cx="404.9" cy="262.6" r="2.6"><title>实测第28：殷旭 北京林业大学 → 610 分（全省第 8,172）</title></circle><circle class="d-q" cx="417.5" cy="273.1" r="2.6"><title>实测第29：印亚奇 吉林大学 → 605 分（全省第 9,479）</title></circle><circle class="d-q" cx="430.1" cy="275.3" r="2.6"><title>实测第30：段春颀 东北大学 → 604 分（全省第 9,758）</title></circle><circle class="d-q" cx="442.8" cy="277.4" r="2.6"><title>实测第31：李冬 中国矿业大学 → 603 分（全省第 10,044）</title></circle><circle class="d-q" cx="455.4" cy="281.6" r="2.6"><title>实测第32：张赫琼 南京农大 → 601 分（全省第 10,636）</title></circle><circle class="d-q" cx="468.0" cy="290.1" r="2.6"><title>实测第33：张士萍 河海大学 → 597 分（全省第 11,870）</title></circle><circle class="d-q" cx="480.6" cy="298.5" r="2.6"><title>实测第34：侯雨薇 江西财经大学 → 593 分（全省第 13,200）</title></circle><circle class="d-q" cx="493.2" cy="309.1" r="2.6"><title>实测第35：王丽圆 哈理工 → 588 分（全省第 14,977）</title></circle><circle class="d-q" cx="505.9" cy="309.1" r="2.6"><title>实测第36：王晓薇 哈理工 → 588 分（全省第 14,977）</title></circle><circle class="d-q" cx="518.5" cy="309.1" r="2.6"><title>实测第37：陈媛丽 哈理工 → 588 分（全省第 14,977）</title></circle><circle class="d-q" cx="531.1" cy="309.1" r="2.6"><title>实测第38：邹笑天 哈理工 → 588 分（全省第 14,977）</title></circle><line x1="64" y1="156.9" x2="872" y2="156.9" stroke="var(--amber)" stroke-width="1.2" stroke-dasharray="4 3"/><text class="anno" fill="var(--amber)" x="303.9" y="149.9">高考 660 ＝ 中考 623 ＝ 班内第 61 名</text><text class="anno pet" x="341.8" y="101.3">期望高考（每人的条件均值）</text><text class="ax" fill="var(--petrol)" x="632.1" y="189.3">±1σ＝±14.8 分</text><text class="ax" fill="var(--petrol)" x="783.6" y="208.1">−2σ</text><text class="anno seal" x="316.5" y="277.1">实测高考（38 人）</text><text class="anno seal" x="73.0" y="135.2">林英魁 666</text></svg></div>
+  <p class="figcap">横轴是<strong>按中考排的</strong>班内名次。左轴是高考分，右轴是中考分——
+  两条轴用上面那条换算率锁死，所以深青实线同时是「三班的中考曲线」和「每个人的期望高考分」。
+  浅青色带是 ±1σ（±14.8 分）：一个人正常应该落在这条带子里；下面那条虚线是 −2σ。
+  红线是实测的 38 个分数（按高考排）。橙色横线标出高考 660 分这个位置在中考刻度上对应多少。</p>
+
+  <h3>四、高考分 ↔ 中考分 ↔ 班内第几名</h3>
+  <p>把换算率倒过来读——某个高考分，对应的是什么样的中考分、班里第几名的人：</p>
+  <div class="tw"><table>
+    <thead><tr><th>高考分</th><th>换算成中考分</th><th class="l">相当于班内</th><th>模型说应有几人</th><th>实际有几人</th><th>全省名次</th></tr></thead>
+    <tbody>
+      <tr><td>690</td><td>658</td><td class="l">高于全班最高分</td><td>6.6</td><td>0</td><td>84</td></tr>
+      <tr class="me"><td><b>684</b></td><td><b>651</b></td><td class="l"><b>班内第 1 名</b></td><td>12.0</td><td>0</td><td>152</td></tr>
+      <tr><td>680</td><td>646</td><td class="l">班内第 3 名</td><td>16.9</td><td>0</td><td>225</td></tr>
+      <tr><td>670</td><td>634</td><td class="l">班内第 31 名（中位）</td><td>32.0</td><td>0</td><td>510</td></tr>
+      <tr><td>660</td><td>623</td><td class="l">班内第 61 名</td><td>47.4</td><td><b>1</b></td><td>942</td></tr>
+      <tr><td>656</td><td>618</td><td class="l">班内第 65 名（最低 617）</td><td>52.3</td><td>3</td><td>1,164</td></tr>
+      <tr><td>650</td><td>611</td><td class="l">低于全班最低分</td><td>58.0</td><td>4</td><td>1,598</td></tr>
+      <tr><td>640</td><td>599</td><td class="l">低于全班最低分</td><td>63.0</td><td>7</td><td>2,594</td></tr>
+      <tr><td>630</td><td>587</td><td class="l">低于全班最低分</td><td>64.6</td><td>15</td><td>3,947</td></tr>
+      <tr><td>620</td><td>576</td><td class="l">接近一中公费线 571</td><td>64.9</td><td>19</td><td>5,798</td></tr>
+      <tr><td>588</td><td>538</td><td class="l">远低于一中任何一条录取线</td><td>65.0</td><td>38</td><td>14,977</td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p>这张表比任何一个平均数都说得清楚。
+  <strong>按大庆的换算，班里中考最低的那个人（617 分）也该考出 656。</strong>
+  全班 65 个人的期望分落在 <strong>656 到 684</strong> 这 28 分之间，
+  模型说应该有 47 个人过 660。<strong>实际过 660 的：1 个。</strong>
+  而三班的中位数 619 分，换算回去对应的中考是 576 分——
+  那是一个刚刚踩着绥化一中公费线（571）进来的学生的水平。</p></div>
+
+  <h3>五、偏离了多少个 σ</h3>
+  <p>残差 σ ＝ 14.8。一个人考低 15 分很正常，低 30 分算运气差。逐名看：</p>
+  <div class="tw"><table>
+    <thead><tr><th>班内名次</th><th>期望</th><th>实测</th><th>偏离</th></tr></thead>
+    <tbody>
+      <tr class="me"><td>第 1</td><td>684</td><td>666</td><td>−1.2σ</td></tr>
+      <tr><td>第 5</td><td>679</td><td>642</td><td>−2.5σ</td></tr>
+      <tr><td>第 10</td><td>676</td><td>632</td><td>−3.0σ</td></tr>
+      <tr><td>第 20</td><td>673</td><td>619</td><td>−3.6σ</td></tr>
+      <tr><td>第 30</td><td>670</td><td>604</td><td>−4.5σ</td></tr>
+      <tr><td>第 38</td><td>669</td><td>588</td><td class="seal"><b>−5.4σ</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>只有第一名还落在正常波动的边缘（−1.2σ）。<strong>从第 5 名往下，整条线跌破 −2σ；
+  从第 20 名往下，跌破 −3.5σ。</strong>一个班里同时出现三十几个 −3σ 以上的负偏差，
+  在统计上不叫运气，叫<strong>系统偏移</strong>。</p>
+
+  <h3>六、缺口是多少</h3>
+  <p>有两种算法，答案不一样，因为它们回答的不是同一个问题：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">口径</th><th>预测</th><th>实测</th><th>差</th></tr></thead>
+    <tbody>
+      <tr><td class="l">班级期望均值 vs 实测前 38 名均值</td><td>669.7</td><td>620.4</td><td><b>≥ 49.3</b></td></tr>
+      <tr><td class="l">同为「第 r 高分」的逐名对比（前 38）</td><td>680.2</td><td>620.4</td><td><b>59.9</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide">第一行是保守下限：实测那 38 人是全班前六成，剩下 27 人只会更低，
+  所以真实的班级均值差比 49.3 更大。第二行把两边都按「班里第几高分」排序后比——
+  这是同口径，但预测的一侧被<strong>运气挑选</strong>顶高了：
+  65 个人里考得最好的那个，通常是运气最好的那个，不是中考最高的那个。
+  同样的模拟放在大庆一中自己的 52 人身上，也把第一名高估了 8 分（模拟 706，实际 698），
+  其余 51 个名次的平均绝对偏差只有 <strong>2.2 分</strong>。
+  <strong>所以「班内第 10 名应该考 689」是个陷阱句</strong>：689 是「班里第 10 高的分数」，
+  而中考排第 10 的那个人（641 分）的期望分是 <strong>676</strong>。两个数字，两件事。</p>
+
+  <h3>七、拆开：多少是学校的，多少是这个班的</h3>
+  <p>同一届的一班有四个已知分数：陈思 687、朱天羽 681、李国一 679、徐丽娟 650。
+  按一班的生源构成（市区前十在班，另有约十个关系户，共 50 人）做同样的推算：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">班级</th><th class="l">预测前三</th><th class="l">实测前三</th><th>平均缺口</th></tr></thead>
+    <tbody>
+      <tr><td class="l">高三一班</td><td class="l">709 / 703 / 699</td><td class="l">687 / 681 / 679</td><td><b>−21.5</b></td></tr>
+      <tr class="me"><td class="l">高三三班</td><td class="l">707 / 701 / 698</td><td class="l">666 / 657 / 657</td><td class="seal"><b>−42.1</b></td></tr>
+    </tbody>
+  </table></div>
+  <div class="find"><p>两个班的中考顶端几乎一样高（预测前三只差 1–2 分）。三年后，
+  <strong>一班的顶端比大庆口径低 21.5 分，三班低 42.1 分</strong>。
+  拆开来读：<strong>约 21 分是「在绥化一中」的代价，另外约 21 分是「在三班」的代价。</strong>
+  后一半有名字——三班的物理、数学两科教师与一班不同，一班的班主任本人就是物理教师。</p></div>
+  <p class="wide">这个拆法和高三模拟考的记忆是相容的：模拟卷按大纲命题，两个班平分秋色。
+  而 2007 年那张卷子的区分点——物理 24 题的二级结论、物理 25 题的错题干、数学 18 题的超纲——
+  全都在大纲之外，<strong>恰好是一个好物理教师会讲、而一个差物理教师不会讲的东西</strong>。
+  上一节算过，物理 24 题一道题在 666–685 这一段就制造了约 500 个名次的定向转移。
+  校级的 21 分和班级的 21 分，在这里合流。</p>
+
+  <p class="wide"><em>四处限度：</em>
+  ① 中考分布由两个锚点定出，若刘翔的班内名次在第 30 至第 60 之间变动，
+  前 38 名的缺口在 <strong>56 到 62 分</strong>之间，结论不变。
+  ② 有分数的 38 人是否恰好就是班内前 38，无法证实；有几个无分数的同学录取院校并不差，
+  真实的实测曲线在第 30–38 名一段可能略高几分。
+  ③ 换算率来自大庆一中，所以这里回答的是「把这 65 个人放进大庆一中会怎样」，
+  而不是「一所理想的学校」。大庆一中在大庆只排第三，它上面还有实验和铁人。
+  ④ 残差 σ 14.8 意味着<strong>任何单个人的分数都不能用这条线判定</strong>；
+  这一节的结论只对班级整体成立。</p>
+</section>
+
+<section id="t7">
+  <div class="sechead"><span class="no">检验 11</span><h2>我自己那一栏</h2><span class="en">My Own Column</span></div>
+  <div class="read">
+    <div><u>量具</u>同一份逐题账本</div>
+    <div><u>读数</u>自身失分 47 分</div>
+    <div><u>口径</u>扣除命题与评分争议后</div>
+    <div><u>投入</u>高三约五个月</div>
+  </div>
+  <p>把命题相关的 22 分、数学超纲的 6 分、评分争议的 9 分都摘出去，<strong>剩下 47 分是我自己的</strong>：</p>
+  <div class="tw"><table>
+    <thead><tr><th class="l">这一笔</th><th>分</th><th class="l">什么性质</th></tr></thead>
+    <tbody>
+      <tr><td class="l">语文（作文约 9，其余散落）</td><td><b>25</b></td><td class="l">四科里最大的一笔，没有任何外部归因</td></tr>
+      <tr><td class="l">外语（作文 5＋客观 3.5）</td><td>9</td><td class="l">已经是全市并列第一的水平，仍然丢了 9 分</td></tr>
+      <tr><td class="l">生物 30 题第二部分</td><td>8</td><td class="l">正常失分</td></tr>
+      <tr><td class="l">物理 20 题漏选</td><td>3</td><td class="l">正常失分</td></tr>
+      <tr><td class="l">化学 28 题</td><td>2</td><td class="l">正常失分</td></tr>
+      <tr class="sum"><td class="l">合计</td><td>47</td><td class="l">高考确实测到了这 47 分</td></tr>
+    </tbody>
+  </table></div>
+  <p class="wide"><strong>而且投入本身就是不足的。</strong>我是高三十月中旬才开始认真准备的，
+  满打满算五个月。初中数学几乎不听课、不写作业。中考是这个模式，高考也是这个模式。</p>
+  <div class="find"><p><b>所以这一节的结论必须写在这里，而不是藏在脚注里：</b></p>
+  <p>高考测量的是<b>「三年积累的标准化准备，在计时高压下的持续准确率」</b>。
+  这件事它测得相当可靠——<b>它准确地测出了我在这件事上不够好</b>。47 分是真的。
+  五个月的准备量是真的。语文那 25 分没有任何人可以怪。</p>
+  <p><b class="seal">我的不满，对象是这个构念本身，不是这次测量的误差。</b>
+  准备度不等于认知能力。而我的画像——能力尚可、准备很短、没有精英教学——
+  恰好是这个量具最不擅长的那一类人。<b>这是教育制度的选择，不是考试的技术缺陷。</b>
+  2007 年的特殊之处，在于它在这之上又叠了一层命题事故。</p></div>
+</section>
+
+<section id="two">
+  <div class="sechead"><span class="no">校准</span><h2>两把尺子，读数不一致</h2><span class="en">Two Instruments Disagree</span></div>
+  <div class="tw"><table>
+    <thead><tr><th class="l">量具</th><th class="l">测什么</th><th class="l">对同一个人的读数</th></tr></thead>
+    <tbody>
+      <tr><td class="l"><b>2004 年数学联赛</b></td>
+        <td class="l">面对陌生问题的生成能力。无天花板压缩，无标准答案模板，不计地区配额</td>
+        <td class="l"><b class="pet">省一等奖。所在地区约 43,908 人出一个。</b>无培训、不听课、不写作业</td></tr>
+      <tr><td class="l"><b>2007 年高考</b></td>
+        <td class="l">已知题型上的执行速度与准确率。天花板压缩，按范本给分，计时，为背诵二级结论直接付费</td>
+        <td class="l"><b class="seal">666 分，全省 139,653 人中第 652 名（前 0.47%）</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="figcap">两个读数的总体不同（一个是绥化赛区的地区基准率，一个是全省理科排名），
+  所以百分位不能直接相减。它们能说明的是<strong>方向</strong>：两把尺子对同一个人给出的相对位置差了一个数量级以上。</p>
+  <div class="find ok"><p><b>差异不在这个人身上，在两把尺子测的不是同一样东西。</b></p>
+  <p>而这两样东西在 2007 年 6 月 9 日上午撞在了一起：<b>24 题的评分标准，把一条超纲的二级结论本身设成了一个 8 分的得分点。</b>
+  背过的人写一行，两分钟，8 分到手；现推的人做的是更难的认知动作，只要没把它单列成式子，这 8 分就不给。
+  <b class="seal">评分标准把认知难度的顺序倒了过来。</b></p>
+  <p>25 题更彻底。我用解析几何直接解出圆心坐标，发现它锁死在第三象限、与题干矛盾，
+  于是花了二十分钟怀疑自己。<b>而用标准方法的人根本看不到这个矛盾，照着错误示意图作答，拿满分。</b>
+  在那道题上，方法越强、越严谨，得分越低——<b class="seal">能力和分数是负相关的。</b></p></div>
+</section>
+
+<section id="end" class="close">
+  <p class="kicker">结论</p>
+  <div class="two">
+    <div>
+      <h4 class="seal">失效在这些地方</h4>
+      <ul>
+        <li><b>天花板压缩</b>抹平了优势学科：数学、英语基本封顶（前十极差 6 分和 2 分），残存方差是细心度，不是深度。</li>
+        <li><b>评分标准为背诵付费</b>：24 题 8 分给一条超纲的二级结论，推导者反而拿得少。</li>
+        <li><b>非标准的正确解法零分</b>：数学数列题，方法对、答案对，一分未给，9 分。</li>
+        <li><b>更强的方法反而致命</b>：25 题上，严谨导致失分，盲从拿满分。</li>
+        <li><b>单题权重超过全部选拔名额六倍</b>：666 分处 1 分 ≈ 40 人，一道大题 ≈ 800 名，而清华录 128 人。</li>
+        <li><b>比较对象未必同场</b>：大庆 680 分以上 73 人里，58% 是外县招来的或复读的；实验中学 39 人里市区应届只有 9 个，而同城的大庆一中 10 个 680+ 全是市区应届。</li>
+        <li><b>禁令筛的不是能力</b>：门槛的真实措辞是「4 月 25 日前户口落入大庆」，加上借读、旁听、自费三条并行通道——筛的是家庭办事能力和支付能力。</li>
+        <li><b>复读没有录取代价，而且近乎免费</b>：铁人预招 500 人、580 分以上学费全免、考上清北另有奖励；省招办明文「其它录取院校对往届生一视同仁」。</li>
+        <li><b>仅大庆一市 690 分以上一档，两条通道就占了全省该档的 17.9%</b>——把我的反事实位次从第 87 名压到第 102 名，而这是严重低估的下界。</li>
+        <li><b>还有一条完全绕开高考的路，我不知道它存在</b>：2007 年全省 51 名保送生，4 月就已录取——在那两道错题出现之前。大庆 24 人、哈尔滨 22 人，绥化 1 人，绥化一中 0 人。</li>
+        <li><b>走通那条路的人，中考名次远低于我</b>：第 1,218 名保送华中科技、第 516 名保送浙大、第 291 名保送上海交大；而我是第 11 名，手里那个省一等奖被压了二十年。</li>
+        <li><b>那年的卷子本身有至少六处命题错误</b>，其中四处落在我这张卷子上，覆盖 42 分。</li>
+        <li><b>分数本身在年际间漂移 52 分</b>：同一个「全省第 652 名」，2022 年是 621 分，2024 年是 673 分。赶上哪一年，比那两道题还值钱。</li>
+        <li><b>易卷把塔尖塞满了</b>：2007 年 690–699 段的人数是 2009／2017 年的 6.3 倍，而考生总数相近。</li>
+        <li><b>22 分的命题误差 ＝ 局部分布的 2.28 个标准差</b>，这一段的排序已不再主要反映能力差异。</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="pet">没有失效的地方</h4>
+      <ul>
+        <li><b>它准确测出了 47 分是我自己的。</b>语文 25 分没有任何外部归因，作文丢了约 9 分。</li>
+        <li><b>五个月的准备量是真实的输入不足。</b>它测「三年积累」，我给了它五个月，读数低是合理的。</li>
+        <li><b>「不努力」这件事它测得很准。</b>初中不听课不写作业，高中十月才开始——这不是量具的错。</li>
+        <li><b>竞赛也只是一次抽样。</b>n = 1，基准率让它有说服力，但它不是一个可重复的测量。</li>
+        <li><b>688 和 697 都是反事实。</b>每一笔加回去都含一个判断，不是既成事实。</li>
+        <li><b>师资对照有一个明确的反例。</b>英语老师也是专科，而我英语考了 141——学历解释不了我的分数结构。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="find"><p><b>把七项检验合起来，能站得住的只有这一句：</b></p>
+  <p>2007 年 6 月那张卷子，<b>作为「标准化准备度」的量具是可靠的，它给出的读数是对的</b>；
+  <b class="seal">作为「认知能力与解决陌生问题的能力」的量具，它在我这个样本上失效了</b>——
+  一半因为它测的本来就不是那个，一半因为那一年它自己坏了四处。<br><br>
+  而这两句话中间的距离，用当年的一分一段表量出来，是 <b class="big">550 个名次</b>。</p></div>
+
+  <div class="notes">
+    <span class="hd">数据与限度</span>
+    <ol>
+      <li><b>一分一段表为「推断」表。</b>段的总数是硬的，段内逐分分布是推的。已知两处与具名成绩冲突并按具名修正：
+      710–719 段原写「719 分 1 人＋710 分 1 人」，实际是马超与鄂炎雄<b>并列全省第一、同为 718 分</b>；704 分实际有 2 人。
+      该表反推 687 分＝第 113 名、688 分＝第 102 名，与当年公布的清华／北大录取名次完全吻合，这是它的一次外部校验。</li>
+      <li><b>单科对照全部来自鹤岗。</b>鹤岗是唯一公布了逐人单科成绩与全市单科前十榜的城市。
+      排在我前面的人主要在大庆和哈尔滨，而那两座城<b>只公布总分，没有单科</b>。所以「天花板」是鹤岗一座城的天花板，n = 10。</li>
+      <li><b>师资对照口径不齐，且均为校方自述。</b>只有铁人（2004.6）和佳木斯一中（2004.7）是我入学那一年，
+      实验是 2001、大庆一中是 2002。绥化一中那一行是个人名册，与其余四校的校级统计<b>不是同一口径</b>。
+      而且专科不等于教得差——一位教了十四年的专科老师完全可能比一位新硕士教得好。</li>
+      <li><b>「39 分」是全丢的上界，不是实际损失。</b>我的实际损失是 19 分（24 题 11＋25 题 8）。
+      两道题都有分步给分，25 题第一问与错误条件互不依赖。</li>
+      <li><b>时间成本不在这 19 分里。</b>那两道题吞掉约半小时，理综三科同卷只有 150 分钟。
+      但账本显示这半小时<b>没有外溢</b>——化学只丢 2 分、生物只丢 8 分。我是用物理自己的失分把时间扛下来的。</li>
+      <li><b>因果方向不能反着读。</b>本页证明的是「全丢那两道题 ⇒ 到不了 688」，
+      <b>不是</b>「上了 688 的人那两道题都做对了」。</li>
+      <li><b>竞赛的「唯一绥化人」限于那份残缺名单。</b>2003 年完整名单显示绥化全市 2 个一等奖；
+      2004 年的名单不完整，能确认的是在已知的前 24 名里我是唯一的绥化考生。</li>
+      <li><b>命题错误的清单来自本人 2007 年的记录与后续核对</b>，不是官方勘误——教育部门从未就这几处发布过更正。</li>
+    </ol>
+  </div>
+  <p class="foot">数据源：2003 年全国初中数学联赛黑龙江赛区成绩单（796 人）· 2004／2005 年一等奖名单（残缺）·
+  2004 年大庆市中考录取名册（5,760 条）· 2004 年黑龙江各市中考录取线 ·
+  2007 年黑龙江理科一分一段表 · 2007 年哈尔滨市高考前 100 名 · 2007 年大庆市高考金榜与高分段分布表 ·
+  2007 年鹤岗市高考单科成绩表与全市单科前十榜 · 2004–2017 年绥化市高考高分段名单与历年录取线 ·
+  大庆铁人／大庆实验／大庆一中／佳木斯一中官网存档 · 本人 2007-06-11 逐题估分记录与 2007-06-13、06-18 博文</p>
+</section>
+
+</div>

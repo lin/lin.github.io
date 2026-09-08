@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2007年哈尔滨工业大学分专业录取分数线</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f4f6f9; --surface: #ffffff; --surface2: #f0f2f5;
+      --border: #d0d7de; --text: #1f2328; --text-muted: #656d76;
+      --accent: #0969da; --accent2: #1a7f37;
+      --score-line: #cf222e; --gold: #9a6700;
+    }
+    body { font-family: 'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 32px 24px; }
+    header h1 { background: linear-gradient(135deg,#0969da 0%,#1a7f37 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: clamp(1.3rem,3vw,2rem); font-weight: 700; margin-bottom: 8px; }
+    header p { color: var(--text-muted); font-size: 0.9rem; }
+    .legend { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+    .legend-line { width: 28px; height: 2px; border-top: 2px dashed var(--score-line); }
+    .chart-outer { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px 16px 16px; overflow-x: auto; position: relative; }
+    .chart-container { position: relative; min-width: 1200px; }
+    #chart-svg { display: block; width: 100%; }
+    .tooltip { position: fixed; background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 0.82rem; pointer-events: none; opacity: 0; transition: opacity 0.15s ease; z-index: 9999; min-width: 190px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+    .tooltip.visible { opacity: 1; }
+    .tooltip .t-name { font-size: 0.92rem; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .tooltip .t-row { display: flex; justify-content: space-between; gap: 16px; margin-top: 4px; color: var(--text-muted); }
+    .tooltip .t-val { color: var(--text); font-weight: 500; }
+    .tooltip .t-diff { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 0.8rem; }
+    .stats { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+    .stat-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; text-align: center; min-width: 140px; }
+    .stat-card .s-label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
+    .stat-card .s-val { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+    .stat-card.red .s-val { color: var(--score-line); }
+    .stat-card.green .s-val { color: var(--accent2); }
+    .stat-card.gold .s-val { color: var(--gold); }
+  </style>
+</head>
+<body>
+<header>
+  <h1>2007年哈尔滨工业大学 · 理工科专业录取分数线</h1>
+  <p>理工主干专业 · 最高分 / 最低分区间分布 · 我的分数：<strong style="color:#f85149">666分</strong></p>
+</header>
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#56d364;"></div>超过最高分（绿色）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#388bfd;"></div>在录取区间内（蓝色）</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f85149;"></div>低于最低分（红色）</div>
+  <div class="legend-item"><div class="legend-line"></div>我的分数 (666)</div>
+</div>
+<div class="chart-outer">
+  <div class="chart-container">
+    <svg id="chart-svg"></svg>
+  </div>
+</div>
+<div class="stats" id="stats-row"></div>
+<div class="tooltip" id="tooltip"></div>
+<script>
+const MY_SCORE = 666;
+const DATA = [
+  {name:"数学与应用数学",max:682,min:641},
+  {name:"信息与计算科学",max:648,min:638},
+  {name:"应用物理学",max:675,min:631},
+  {name:"应用化学",max:645,min:631},
+  {name:"生物技术",max:647,min:647},
+  {name:"生物信息技术",max:663,min:645},
+  {name:"理论与应用力学",max:646,min:635},
+  {name:"电子信息科学与技术",max:685,min:664},
+  {name:"光信息科学与技术",max:681,min:654},
+  {name:"信息安全",max:657,min:654},
+  {name:"材料物理",max:655,min:638},
+  {name:"材料化学",max:664,min:632},
+  {name:"环境科学",max:640,min:632},
+  {name:"高分子材料与工程",max:663,min:639},
+  {name:"材料科学与工程",max:667,min:647},
+  {name:"复合材料与工程",max:673,min:652},
+  {name:"焊接技术与工程",max:678,min:665},
+  {name:"机械设计制造及其自动化",max:685,min:654},
+  {name:"材料成型及控制工程",max:652,min:645},
+  {name:"工业设计",max:654,min:643},
+  {name:"测控技术与仪器",max:663,min:649},
+  {name:"热能与动力工程",max:663,min:642},
+  {name:"电气工程及其自动化",max:681,min:651},
+  {name:"自动化",max:685,min:668},
+  {name:"电子信息工程",max:689,min:661},
+  {name:"通信工程",max:685,min:670},
+  {name:"计算机科学与技术",max:685,min:648},
+  {name:"电子科学与技术",max:683,min:650},
+  {name:"软件工程",max:666,min:631},
+  {name:"光电信息工程",max:672,min:650},
+  {name:"建筑学",max:684,min:652},
+  {name:"城市规划",max:651,min:631},
+  {name:"土木工程",max:683,min:647},
+  {name:"建筑环境与设备工程",max:651,min:631},
+  {name:"给水排水工程",max:656,min:643},
+  {name:"道路桥梁与渡河工程",max:664,min:633},
+  {name:"环境工程",max:668,min:641},
+  {name:"化学工程与工艺",max:646,min:638},
+  {name:"交通运输",max:647,min:634},
+  {name:"交通工程",max:641,min:632},
+  {name:"食品科学与工程",max:664,min:632},
+  {name:"飞行器设计与工程",max:674,min:662},
+  {name:"飞行器动力工程",max:650,min:648},
+  {name:"飞行器制造工程",max:655,min:651},
+  {name:"探测制导与控制技术",max:673,min:662},
+  {name:"工程力学",max:657,min:646},
+].sort((a,b)=>b.min-a.min);
+
+function canEnter(d){return MY_SCORE>=d.min;}
+function aboveMax(d){return MY_SCORE>=d.max;}
+
+const svg=document.getElementById('chart-svg');
+const N=DATA.length;
+const MARGIN={top:40,right:50,bottom:150,left:58};
+const BAR_W=20;
+const BAR_GAP=12;
+const CHART_W=N*(BAR_W+BAR_GAP)+MARGIN.left+MARGIN.right;
+const CHART_H=560;
+const PLOT_H=CHART_H-MARGIN.top-MARGIN.bottom;
+const PLOT_W=N*(BAR_W+BAR_GAP)-BAR_GAP;
+const allScores=DATA.flatMap(d=>[d.min,d.max]);
+const scoreMin=Math.min(...allScores)-10;
+const scoreMax=Math.max(...allScores)+10;
+
+function yScale(score){return MARGIN.top+PLOT_H-((score-scoreMin)/(scoreMax-scoreMin))*PLOT_H;}
+svg.setAttribute('viewBox',`0 0 ${CHART_W} ${CHART_H}`);
+svg.setAttribute('width',CHART_W);
+svg.setAttribute('height',CHART_H);
+
+function el(tag,attrs={},text){
+  const e=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);
+  if(text!=null)e.textContent=text;
+  return e;
+}
+
+svg.appendChild(el('rect',{x:0,y:0,width:CHART_W,height:CHART_H,fill:'#ffffff'}));
+
+const step=5;
+for(let s=Math.ceil(scoreMin/step)*step;s<=scoreMax;s+=step){
+  const y=yScale(s);
+  if(s%10===0){
+    svg.appendChild(el('line',{x1:MARGIN.left,y1:y,x2:MARGIN.left+PLOT_W,y2:y,stroke:'#d0d7de','stroke-width':1,'stroke-dasharray':'4 4'}));
+    svg.appendChild(el('text',{x:MARGIN.left-6,y:y+4,'text-anchor':'end',fill:'#656d76','font-size':'11','font-family':'inherit'},s));
+  }
+}
+
+const tooltip=document.getElementById('tooltip');
+
+DATA.forEach((d,i)=>{
+  const x=MARGIN.left+i*(BAR_W+BAR_GAP);
+  const yTop=yScale(d.max);
+  const yBot=yScale(d.min);
+  const barH=yBot-yTop;
+  let fillRange,fillMax,fillMin;
+  if(MY_SCORE>=d.max){
+    fillRange='rgba(26,127,55,0.12)';fillMax='#1a7f37';fillMin='#116329';
+  } else if(MY_SCORE>=d.min){
+    fillRange='rgba(9,105,218,0.12)';fillMax='#0969da';fillMin='#0550ae';
+  } else {
+    fillRange='rgba(207,34,46,0.08)';fillMax='#cf222e';fillMin='#a40e26';
+  }
+
+  const rangeBar=el('rect',{x,y:yTop,width:BAR_W,height:Math.max(barH,2),fill:fillRange,rx:4,ry:4,style:'cursor:pointer;transition:filter 0.15s'});
+  const maxTick=el('rect',{x,y:yTop,width:BAR_W,height:5,fill:fillMax,rx:3,ry:3});
+  const minTick=el('rect',{x,y:yBot-5,width:BAR_W,height:5,fill:fillMin,rx:3,ry:3});
+  const maxLabel=el('text',{x:x+BAR_W/2,y:yTop-5,'text-anchor':'middle',fill:fillMax,'font-size':'9','font-weight':'600','font-family':'inherit'},d.max);
+  const minLabel=el('text',{x:x+BAR_W/2,y:yBot+13,'text-anchor':'middle',fill:fillMin,'font-size':'9','font-weight':'500','font-family':'inherit'},d.min);
+
+  const labelX=x+BAR_W/2;
+  const labelY=CHART_H-MARGIN.bottom+16;
+  const xLabel=el('text',{x:labelX,y:labelY,transform:`rotate(-45,${labelX},${labelY})`,'text-anchor':'end',fill:'#656d76','font-size':'10.5','font-family':'inherit'},d.name);
+
+  svg.appendChild(rangeBar);
+  svg.appendChild(maxTick);
+  svg.appendChild(minTick);
+  svg.appendChild(maxLabel);
+  svg.appendChild(minLabel);
+  svg.appendChild(xLabel);
+
+  function showTip(evt){
+    const diff=MY_SCORE-d.min;
+    const diffMax=MY_SCORE-d.max;
+    let status,statusColor;
+    if(MY_SCORE>=d.max){status=`超过最高分 ${Math.abs(diffMax)} 分 🏆`;statusColor='#1a7f37';}
+    else if(MY_SCORE>=d.min){status=`在录取范围内，超过最低分 ${diff} 分 ✅`;statusColor='#0969da';}
+    else{status=`低于最低分 ${Math.abs(diff)} 分 ❌`;statusColor='#cf222e';}
+    tooltip.innerHTML=`<div class="t-name">${d.name}</div><div class="t-row"><span>最高分</span><span class="t-val">${d.max}</span></div><div class="t-row"><span>最低分</span><span class="t-val">${d.min}</span></div><div class="t-row"><span>区间跨度</span><span class="t-val">${d.max-d.min} 分</span></div><div class="t-diff" style="color:${statusColor}">${status}</div>`;
+    tooltip.classList.add('visible');
+    moveTip(evt);
+  }
+  function moveTip(evt){tooltip.style.left=(evt.clientX+14)+'px';tooltip.style.top=(evt.clientY-10)+'px';}
+  function hideTip(){tooltip.classList.remove('visible');}
+  [rangeBar,maxTick,minTick].forEach(e=>{e.addEventListener('mouseenter',showTip);e.addEventListener('mousemove',moveTip);e.addEventListener('mouseleave',hideTip);});
+});
+
+const myY=yScale(MY_SCORE);
+svg.appendChild(el('line',{x1:MARGIN.left-4,y1:myY,x2:MARGIN.left+PLOT_W+4,y2:myY,stroke:'#cf222e','stroke-width':2.5,'stroke-dasharray':'9 5'}));
+const pillW=36,pillH=20;
+svg.appendChild(el('rect',{x:MARGIN.left+PLOT_W+6,y:myY-pillH/2,width:pillW,height:pillH,rx:6,ry:6,fill:'#cf222e'}));
+svg.appendChild(el('text',{x:MARGIN.left+PLOT_W+6+pillW/2,y:myY,'text-anchor':'middle','dominant-baseline':'central',fill:'#fff','font-size':'12','font-weight':'700','font-family':'inherit'},`${MY_SCORE}`));
+svg.appendChild(el('line',{x1:MARGIN.left,y1:MARGIN.top,x2:MARGIN.left,y2:MARGIN.top+PLOT_H,stroke:'#d0d7de','stroke-width':1.5}));
+
+const canCount=DATA.filter(canEnter).length;
+const aboveCount=DATA.filter(aboveMax).length;
+document.getElementById('stats-row').innerHTML=`
+  <div class="stat-card red"><div class="s-label">我的高考分数</div><div class="s-val">${MY_SCORE}</div></div>
+  <div class="stat-card green"><div class="s-label">可录取专业数</div><div class="s-val">${canCount} / ${DATA.length}</div></div>
+  <div class="stat-card gold"><div class="s-label">超过最高分</div><div class="s-val">${aboveCount} 个</div></div>
+  <div class="stat-card"><div class="s-label">统计专业总数</div><div class="s-val">${DATA.length}</div></div>
+`;
+</script>
+
+<!-- ===== 第二图：黑龙江省主要高校录取分数线 ===== -->
+<div style="margin-top:56px;">
+  <header style="margin-bottom:28px;">
+    <h2 style="text-align:center;font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:700;color:var(--text);">2007年黑龙江省主要高校录取分数线</h2>
+    <p style="text-align:center;color:var(--text-muted);font-size:0.88rem;margin-top:6px;">各高校最低录取分数线 · 参考线：我的分数 <strong style="color:#cf222e">666 分</strong></p>
+  </header>
+
+  <div class="legend" style="margin-bottom:24px;">
+    <div class="legend-item"><div class="legend-dot" style="background:#cf222e;"></div>录取线高于我的分数（未达线）</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#0969da;"></div>录取线等于我的分数</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1a7f37;"></div>录取线低于我的分数（可录取）</div>
+    <div class="legend-line"></div><span style="font-size:.85rem;color:var(--text-muted);">我的分数 (666)</span>
+  </div>
+
+  <div class="chart-outer">
+    <div class="chart-container" style="min-width:700px;">
+      <svg id="uni-svg"></svg>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+const UNI_DATA = [
+  {name:'清华大学',    score:687, count:47},
+  {name:'北京大学',   score:688, count:25},
+  {name:'北京大学医学部', score:674, count:18},
+  {name:'复旦大学',   score:667, count:17},
+  {name:'浙江大学',   score:666, count:45},
+  {name:'上海交通大学', score:665, count:45},
+  {name:'中国人民大学', score:664, count:25},
+  {name:'中国科学技术大学', score:660, count:20},
+  {name:'南开大学',   score:653, count:50},
+  {name:'南京大学',   score:653, count:18},
+  {name:'中央财经大学', score:653, count:31},
+  {name:'北京师范大学', score:648, count:26},
+  {name:'对外经济贸易大学', score:646, count:20},
+  {name:'北京航空航天大学', score:644, count:70},
+  {name:'上海财经大学', score:640, count:18},
+  {name:'同济大学',   score:638, count:72},
+  {name:'西安交通大学', score:633, count:25},
+  {name:'哈尔滨工业大学', score:631, count:772},
+  {name:'天津大学',   score:630, count:95},
+  {name:'武汉大学',   score:619, count:40},
+  {name:'吉林大学',   score:601, count:548},
+].sort((a,b)=>b.score-a.score);
+
+const MY = 666;
+const svg = document.getElementById('uni-svg');
+const N = UNI_DATA.length;
+const M = {top:40, right:60, bottom:130, left:58};
+const BW = 32, BG = 14;
+const CW = N*(BW+BG)+M.left+M.right;
+const CH = 480;
+const PH = CH-M.top-M.bottom;
+const PW = N*(BW+BG)-BG;
+const scores = UNI_DATA.map(d=>d.score);
+const sMin = Math.min(...scores)-20;
+const sMax = Math.max(...scores)+20;
+
+function yS(s){return M.top+PH-((s-sMin)/(sMax-sMin))*PH;}
+svg.setAttribute('viewBox',`0 0 ${CW} ${CH}`);
+svg.setAttribute('width',CW);
+svg.setAttribute('height',CH);
+
+function el(tag,attrs={},text){
+  const e=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);
+  if(text!=null)e.textContent=text;
+  return e;
+}
+
+// background
+svg.appendChild(el('rect',{x:0,y:0,width:CW,height:CH,fill:'#fff'}));
+
+// grid
+const st=10;
+for(let s=Math.ceil(sMin/st)*st;s<=sMax;s+=st){
+  const y=yS(s);
+  if(s%10===0){
+    svg.appendChild(el('line',{x1:M.left,y1:y,x2:M.left+PW,y2:y,stroke:'#d0d7de','stroke-width':1,'stroke-dasharray':'4 4'}));
+    svg.appendChild(el('text',{x:M.left-6,y:y+4,'text-anchor':'end',fill:'#656d76','font-size':'11','font-family':'inherit'},s));
+  }
+}
+
+// tooltip
+const tip = document.getElementById('tooltip');
+
+UNI_DATA.forEach((d,i)=>{
+  const x = M.left+i*(BW+BG);
+  const yTop = yS(d.score);
+  const yBot = yS(sMin);
+  const barH = yBot-yTop;
+
+  let fill;
+  if(d.score > MY) fill='#cf222e';
+  else if(d.score === MY) fill='#0969da';
+  else fill='#1a7f37';
+
+  const fillLight = fill==='#cf222e'?'rgba(207,34,46,0.12)':fill==='#0969da'?'rgba(9,105,218,0.12)':'rgba(26,127,55,0.12)';
+
+  // bar body
+  const bar = el('rect',{x,y:yTop,width:BW,height:Math.max(barH,2),fill:fillLight,rx:4,ry:4,style:'cursor:pointer;'});
+  // top cap
+  const cap = el('rect',{x,y:yTop,width:BW,height:6,fill,rx:3,ry:3});
+  // score label above
+  const lbl = el('text',{x:x+BW/2,y:yTop-6,'text-anchor':'middle',fill,
+    'font-size':'11','font-weight':'700','font-family':'inherit'},d.score);
+
+  // x label (name + count)
+  const lx=x+BW/2, ly=CH-M.bottom+16;
+  const xLbl = el('text',{x:lx,y:ly,transform:`rotate(-40,${lx},${ly})`,'text-anchor':'end',
+    fill:'#1f2328','font-size':'11','font-weight':d.name==='哈尔滨工业大学'?'700':'400','font-family':'inherit'},d.name);
+  // count label: offset +13px along the rotated y-axis (perpendicular down)
+  const countStr = d.count!=null ? d.count+'人' : '';
+  const cx2 = lx + 13*Math.sin(40*Math.PI/180);
+  const cy2 = ly + 13*Math.cos(40*Math.PI/180);
+  const xCount = el('text',{x:cx2,y:cy2,transform:`rotate(-40,${cx2},${cy2})`,'text-anchor':'end',
+    fill:'#656d76','font-size':'9.5','font-family':'inherit'},countStr);
+
+  svg.appendChild(bar); svg.appendChild(cap); svg.appendChild(lbl); svg.appendChild(xLbl); svg.appendChild(xCount);
+
+  function showTip(evt){
+    const diff = MY-d.score;
+    let status,color;
+    if(d.score>MY){status=`超出我的分数 ${d.score-MY} 分 ❌`;color='#cf222e';}
+    else if(d.score===MY){status=`与我的分数相同 ≈`;color='#0969da';}
+    else{status=`低于我的分数 ${-diff} 分 ✅`;color='#1a7f37';}
+    tip.innerHTML=`<div class="t-name">${d.name}</div>
+      <div class="t-row"><span>录取分数线</span><span class="t-val">${d.score}</span></div>
+      ${d.count!=null?`<div class="t-row"><span>录取人数</span><span class="t-val">${d.count} 人</span></div>`:''}
+      <div class="t-diff" style="color:${color}">${status}</div>`;
+    tip.classList.add('visible');
+    tip.style.left=(evt.clientX+14)+'px'; tip.style.top=(evt.clientY-10)+'px';
+  }
+  function moveTip(evt){tip.style.left=(evt.clientX+14)+'px';tip.style.top=(evt.clientY-10)+'px';}
+  function hideTip(){tip.classList.remove('visible');}
+  [bar,cap].forEach(e=>{e.addEventListener('mouseenter',showTip);e.addEventListener('mousemove',moveTip);e.addEventListener('mouseleave',hideTip);});
+});
+
+// my score line
+const myY=yS(MY);
+svg.appendChild(el('line',{x1:M.left-4,y1:myY,x2:M.left+PW+4,y2:myY,stroke:'#cf222e','stroke-width':2.5,'stroke-dasharray':'9 5'}));
+const pW=36,pH2=20;
+svg.appendChild(el('rect',{x:M.left+PW+6,y:myY-pH2/2,width:pW,height:pH2,rx:6,ry:6,fill:'#cf222e'}));
+svg.appendChild(el('text',{x:M.left+PW+6+pW/2,y:myY,'text-anchor':'middle','dominant-baseline':'central',fill:'#fff','font-size':'12','font-weight':'700','font-family':'inherit'},MY));
+
+// y-axis
+svg.appendChild(el('line',{x1:M.left,y1:M.top,x2:M.left,y2:M.top+PH,stroke:'#d0d7de','stroke-width':1.5}));
+
+})();
+</script>
+</body>
+
+</html>
