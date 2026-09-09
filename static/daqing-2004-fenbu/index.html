@@ -1,0 +1,1027 @@
+<title>大庆中考的钟形曲线</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --page:#e7eaec; --card:#f8f9fa; --card-2:#eef1f2; --sunk:#e2e6e8;
+  --ink:#11171a; --ink-2:#4b555b; --ink-3:#7f8a90;
+  --rule:#ced4d7; --hair:#dfe3e5;
+  --petrol:#0e5b68; --petrol-2:#4e97a3;
+  --amber:#a86d0b; --amber-2:#d9ab63;
+  --seal:#a5342a; --seal-wash:rgba(165,52,42,.08);
+  --violet:#6b3fa0;
+  --void:#aeb6ba;
+  --shadow:0 1px 2px rgba(17,23,26,.05), 0 10px 28px -16px rgba(17,23,26,.28);
+  --focus:#0e5b68;
+  --grid:#d7dcde;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0c1013; --card:#161b1e; --card-2:#1e2427; --sunk:#11171a;
+    --ink:#eef1f2; --ink-2:#adb6ba; --ink-3:#7a848a;
+    --rule:#2a3135; --hair:#222829;
+    --petrol:#48a3b2; --petrol-2:#1f6773;
+    --amber:#d6982c; --amber-2:#7e5a17;
+    --seal:#d9614f; --seal-wash:rgba(217,97,79,.13);
+    --violet:#a98cd8;
+    --void:#5b666b;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 28px -16px rgba(0,0,0,.8);
+    --focus:#48a3b2;
+    --grid:#262d31;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0c1013; --card:#161b1e; --card-2:#1e2427; --sunk:#11171a;
+  --ink:#eef1f2; --ink-2:#adb6ba; --ink-3:#7a848a;
+  --rule:#2a3135; --hair:#222829;
+  --petrol:#48a3b2; --petrol-2:#1f6773;
+  --amber:#d6982c; --amber-2:#7e5a17;
+  --seal:#d9614f; --seal-wash:rgba(217,97,79,.13);
+  --violet:#a98cd8;
+  --void:#5b666b;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 28px -16px rgba(0,0,0,.8);
+  --focus:#48a3b2;
+  --grid:#262d31;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px; line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;font-weight:700}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+.page{max-width:1000px;margin:0 auto;padding:0 20px 96px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+a{color:var(--petrol)}
+
+.mast{padding:52px 0 24px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;margin:0 0 14px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;font-size:clamp(32px,5.6vw,52px);
+  line-height:1.1;margin:0;letter-spacing:.01em;text-wrap:balance}
+.dek{margin:16px 0 0;max-width:62ch;color:var(--ink-2);font-size:16px}
+.back{margin:14px 0 0;font-size:12.5px;font-family:"IBM Plex Mono",monospace;color:var(--ink-3)}
+.back a{color:var(--petrol);text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:30px 0 0}
+.stat{background:var(--card);padding:13px 14px 12px}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:23px;
+  line-height:1.12;font-variant-numeric:tabular-nums}
+.stat span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:3px;letter-spacing:.02em}
+
+section{padding:46px 0 0;scroll-margin-top:24px}
+.sechead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--ink);
+  padding-bottom:9px;margin-bottom:18px}
+.sechead h2{font-family:"Noto Serif SC",serif;font-weight:700;font-size:20px;margin:0;letter-spacing:.02em}
+.sechead .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);
+  letter-spacing:.12em;text-transform:uppercase;margin-left:auto;white-space:nowrap}
+p.lede{max-width:66ch;color:var(--ink-2);margin:0 0 20px}
+p.lede strong{color:var(--ink);font-weight:500}
+.card{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow)}
+
+.fig{margin:0 0 8px}
+.figwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:14px 6px 6px}
+svg.chart{display:block;width:100%;min-width:640px;height:auto;font-family:"IBM Plex Mono",monospace}
+svg.chart text{fill:var(--ink-3)}
+.axlab{fill:var(--ink-2);font-size:11px}
+.gl{stroke:var(--grid);stroke-width:1}
+.axis{stroke:var(--ink-3);stroke-width:1}
+figcaption{font-size:12.5px;color:var(--ink-3);padding:4px 8px 0;max-width:72ch}
+figcaption b{color:var(--ink-2);font-weight:500}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;padding:8px 10px 2px;font-size:12.5px;color:var(--ink-2)}
+.lg{display:flex;align-items:center;gap:7px}
+.lg i{width:20px;height:0;border-top-width:2.5px;border-top-style:solid;flex:0 0 20px}
+.lg i.sq{height:11px;border:0;flex-basis:11px;width:11px;border-radius:2px}
+
+.rd{border-top:1px solid var(--hair);margin-top:14px;padding-top:14px;font-size:13.5px;color:var(--ink-2);max-width:72ch}
+.rd b{color:var(--ink);font-weight:500}
+.rd p{margin:0 0 10px}
+.rd p:last-child{margin:0}
+
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:520px}
+th,td{padding:7px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--hair)}
+th{font-size:11.5px;font-weight:500;color:var(--ink-3);letter-spacing:.05em;border-bottom:1px solid var(--rule)}
+td.l,th.l{text-align:left}
+td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:var(--card-2)}
+.cap{font-size:12px;color:var(--ink-3);margin:8px 2px 0;max-width:74ch}
+.flag{display:inline-block;font-size:10.5px;font-family:"IBM Plex Mono",monospace;padding:1px 6px;
+  border-radius:9px;border:1px solid var(--rule);color:var(--ink-3);vertical-align:.06em}
+.flag.ok{border-color:var(--petrol);color:var(--petrol)}
+.flag.ext{border-color:var(--amber);color:var(--amber)}
+.mbar{display:inline-block;width:120px;height:9px;background:var(--sunk);border-radius:2px;overflow:hidden;vertical-align:.02em}
+.mbar i{display:block;height:100%;background:var(--seal)}
+
+ul.bul{margin:12px 0 0;padding-left:20px;max-width:70ch}
+ul.bul li{font-size:14px;line-height:1.78;margin-bottom:10px;color:var(--ink-2)}
+ul.bul li strong{color:var(--ink);font-weight:500}
+blockquote.q{margin:18px 0 4px;padding:14px 18px;border-left:3px solid var(--seal);
+  background:var(--seal-wash);font-size:14px;line-height:1.72;color:var(--ink);max-width:74ch}
+
+.src{font-size:12.5px;color:var(--ink-3);line-height:1.7;max-width:78ch}
+.src code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--sunk);padding:1px 5px;border-radius:3px;color:var(--ink-2)}
+.src p{margin:0 0 9px}
+.k-seal{color:var(--seal);font-weight:600}
+.k-petrol{color:var(--petrol);font-weight:600}
+.k-amber{color:var(--amber);font-weight:600}
+.k-violet{color:var(--violet);font-weight:600}
+
+.tipbox{position:fixed;pointer-events:none;z-index:40;background:var(--ink);color:var(--page);
+  padding:8px 11px;font-size:12px;line-height:1.55;border-radius:4px;opacity:0;transition:opacity .1s;
+  box-shadow:0 6px 20px -6px rgba(0,0,0,.5);font-family:"IBM Plex Mono",monospace;max-width:240px}
+.tipbox .th{font-weight:600;margin-bottom:3px}
+.tipbox .tr{display:flex;justify-content:space-between;gap:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* 1-point Histogram Styles */
+.ctrl-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:10px 16px;background:var(--card-2);border-bottom:1px solid var(--hair)}
+.btn-group{display:inline-flex;border-radius:4px;overflow:hidden;border:1px solid var(--rule)}
+.btn{background:var(--card);color:var(--ink-2);border:0;border-right:1px solid var(--rule);padding:4px 11px;font-size:11.5px;cursor:pointer;font-family:inherit;transition:all .15s}
+.btn:last-child{border-right:0}
+.btn:hover{background:var(--sunk);color:var(--ink)}
+.btn.active{background:var(--petrol);color:#fff;font-weight:500}
+.ctrl-text{font-size:11.5px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+.inspector{border-top:1px solid var(--rule);background:var(--card-2);padding:14px 18px;display:none}
+.insp-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:10px}
+.insp-head h3{margin:0;font-size:14px;font-family:"IBM Plex Mono",monospace;font-weight:600}
+.insp-badge{background:var(--sunk);padding:2px 7px;border-radius:10px;font-size:11px;color:var(--ink-2);margin-left:6px}
+.insp-search{padding:4px 8px;font-size:12px;border:1px solid var(--rule);border-radius:3px;background:var(--card);color:var(--ink)}
+.insp-close{background:transparent;border:1px solid var(--rule);border-radius:3px;padding:2px 7px;cursor:pointer;color:var(--ink-3);font-size:11.5px}
+.insp-close:hover{background:var(--sunk);color:var(--ink)}
+table.dense{border-collapse:collapse;width:100%;font-size:12px}
+table.dense th, table.dense td{padding:5px 8px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--hair)}
+table.dense th{font-size:11px;font-weight:500;color:var(--ink-3);position:sticky;top:0;background:var(--card-2);border-bottom:1px solid var(--rule)}
+table.dense td.l, table.dense th.l{text-align:left}
+table.dense tbody tr:hover{background:var(--sunk)}
+</style>
+
+
+<div class="page">
+
+<header class="mast">
+  <p class="eyebrow">大庆油田教育志 · 数据附录</p>
+  <h1>大庆中考的钟形曲线</h1>
+  <p class="dek">用 2004 年大庆市中考里<strong>可靠的那一小段</strong>——全市前 4.5%、610 分以上——拟合正态曲线。
+  一段不够：610–635 分和 635 分以上得<strong>各用一个 σ</strong>。附四所省级示范高中录取线的全市百分位。</p>
+  <p class="back">← <a href="/daqing-2004/">《大庆中考 2004》</a>　·　<a href="#hist1pt" style="color:var(--seal);font-weight:600">📊 直达一分频数直方图 (856人)</a>　·　<a href="/daqing-2004-fenbu/one-point.html" target="_blank" style="color:var(--petrol)">↗ 独立全屏视图</a></p>
+  <div class="stats">
+    <div class="stat"><b>21,500</b><span>全市考生</span></div>
+    <div class="stat"><b>663</b><span>最高分（1 人）</span></div>
+    <div class="stat"><b>976</b><span>人 ≥ 607 分 · 前 4.5%</span></div>
+    <div class="stat"><b>σ ≈ 34</b><span>610–635 分段标准差</span></div>
+    <div class="stat"><b>σ ≈ 19</b><span>635 分以上标准差</span></div>
+  </div>
+</header>
+
+<section id="data">
+  <div class="sechead"><h2>只保留高分段的数据</h2><span class="tag">取舍</span></div>
+  <p class="lede">上一版用过全市 21500 的两个高分点，再加五条「批次填报志愿资格分数线」。
+  批次线的名次口径存疑，这一版<strong>全部弃用</strong>，只留两类相互印证的高分段记录：</p>
+  <ul class="bul">
+    <li><strong>铁人中学《2004 年市内中考各校录取情况》</strong>（<span class="mono">trzx.cn</span>）——
+    按分数门槛给出全市累计人数，并逐校拆成铁人 / 实验 / 一中三份，可与录取名册核验。
+    ≥620 分 <span class="mono">479</span> 人、≥610 分 <span class="mono">856</span> 人、≥607 分 <span class="mono">976</span> 人。</li>
+    <li><strong>《2004 年大庆一中中考录取名单》</strong>——逐人分数。作者已核实：<strong>610 分以上这一段相对不失真</strong>，
+    用来给三校对照表的「一中」列做逐分校验。</li>
+  </ul>
+  <div class="card tw" style="padding:2px 4px;margin-top:16px">
+    <table>
+      <thead><tr><th class="l">分数门槛</th><th>全市累计 ≥</th><th>占全市</th><th>铁人</th><th>实验</th><th>一中</th></tr></thead>
+      <tbody id="cwTbody"></tbody>
+    </table>
+  </div>
+  <p class="cap">表中为 5 分一档的门槛；原始记录在 630–650 分区间还有逐分数据（用于下方的分位图）。低于 607 分没有可信数据。</p>
+</section>
+
+
+<section id="hist1pt">
+  <div class="sechead"><h2>一分频数分布直方图（610–663 分逐分实测）</h2><span class="tag">856 人 · 逐分分布</span></div>
+  <p class="lede">
+    根据《2004年大庆市中考录取总表》，<strong>610 分及以上共有 856 名考生</strong>（占全市 21500 考生的前 3.98%）。
+    不同于宏观 5 分一组的拟合，这里以 <strong>1 分为组距</strong> 绘制绝对真实的频数柱状图（共 54 个分值档）。
+    每根柱子直接反映各高中的实际生源瓜分；<strong>点击柱子可直接展开该分数的考生录用名册</strong>。
+  </p>
+  <div class="card fig" style="border-radius:4px;overflow:hidden">
+    <div class="ctrl-bar">
+      <div class="btn-group" id="btnGroup1pt">
+        <button class="btn active" data-mode="stack">各校堆叠频数</button>
+        <button class="btn" data-mode="total">纯色总频数</button>
+        <button class="btn" data-mode="tr">铁人中学 (351人)</button>
+        <button class="btn" data-mode="sy">实验中学 (339人)</button>
+        <button class="btn" data-mode="yz">大庆一中 (135人)</button>
+        <button class="btn" data-mode="other">其他高中 (31人)</button>
+      </div>
+      <span class="ctrl-text" style="margin-left:auto">单柱宽度 1 分 · 峰值 615分 (53人) · 最高 663分</span>
+    </div>
+    <div class="legend" id="legend1pt">
+      <span class="lg"><i class="sq" style="background:var(--petrol)"></i>铁人中学 (351人 · 41.0%)</span>
+      <span class="lg"><i class="sq" style="background:var(--amber)"></i>实验中学 (339人 · 39.6%)</span>
+      <span class="lg"><i class="sq" style="background:var(--violet)"></i>大庆一中 (135人 · 15.8%)</span>
+      <span class="lg"><i class="sq" style="background:var(--void)"></i>其他学校 (31人 · 3.6%)</span>
+      <a href="/daqing-2004-fenbu/one-point.html" target="_blank" style="margin-left:auto;font-size:12px;font-family:'IBM Plex Mono',monospace">↗ 打开独立全屏交互版</a>
+    </div>
+    <div class="figwrap">
+      <svg class="chart" id="chart1pt" viewBox="0 0 960 480" role="img" aria-label="大庆中考610分以上考生一分频数分布直方图"></svg>
+    </div>
+    <figcaption>
+      <b>一分直方图启示：</b>
+      ① <b>615 分迎来绝对峰值（53 人）</b>，且 610、620、625 分均有显著的“逢五逢十”整数分聚集效应；
+      ② 铁人中学与大庆实验在高分段平分秋色（41.0% vs 39.6%），大庆一中录得 15.8%；
+      ③ <b>635 分</b>后人数陡降，645 分以上极为稀薄，650+ 仅 8 人，状元李璐以 663 分单点领先。
+    </figcaption>
+
+    <!-- Inspector Drawer -->
+    <div class="inspector" id="drawer1pt">
+      <div class="insp-head">
+        <div>
+          <h3 id="drawerTitle">【615 分】录取考生名册</h3>
+          <span class="insp-badge" id="drawerBadge">共 53 人</span>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <input type="text" id="drawerSearch" class="insp-search" placeholder="筛选姓名 / 初中学校...">
+          <button class="insp-close" id="drawerClose">✕ 收起</button>
+        </div>
+      </div>
+      <div class="tw" style="max-height:320px">
+        <table class="dense">
+          <thead>
+            <tr>
+              <th class="l">名次</th>
+              <th>考号</th>
+              <th class="l">姓名</th>
+              <th>性别</th>
+              <th class="l">初中学校</th>
+              <th class="l">录取高中</th>
+              <th>计划形式</th>
+            </tr>
+          </thead>
+          <tbody id="drawerTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hist">
+  <div class="sechead"><h2>频率分布直方图 + 正态曲线</h2><span class="tag">610–655 分</span></div>
+  <p class="lede">纵轴是<strong>频率</strong>（该分段人数 ÷ 21500），5 分一组。每根柱子按录取学校堆叠：
+  高分段几乎被<strong>铁人、实验、一中</strong>三校包干，620 分以上「其他学校」已不足 5%。
+  一条正态 <span style="color:var(--ink-3)">N(551, 34²)</span>（灰虚线）贴合 635 分以下、却在顶端明显偏高。
+  改用<strong>两段正态</strong>：<span class="k-seal">610–635 分用 σ≈34，635 分以上换成 σ≈19</span>——
+  高分越往上，考生越挤在分数天花板下。两段各自独立拟合、不强制衔接，接缝处的小落差是拟合造成的
+  （数据本身在 635 分处也确有一个陡降）。</p>
+  <div class="card fig">
+    <div class="legend" id="histLegend"></div>
+    <div class="figwrap"><svg class="chart" id="histChart" viewBox="0 0 920 470" role="img"
+      aria-label="大庆中考高分段频率分布直方图，按录取学校堆叠，叠加单段与两段正态拟合曲线"></svg></div>
+    <figcaption>堆叠柱 = 实测频率，分铁人 / 实验 / 一中 / 其他学校。
+    <span class="k-seal">实线</span> = 两段正态（610–635 用 N(551, 34²)，635+ 用 N(587, 19²)）；
+    <span style="color:var(--ink-3)">灰虚线</span> = 单段 N(551, 34²)。竖虚线 = 635 分接缝。</figcaption>
+  </div>
+</section>
+
+<section id="qq">
+  <div class="sechead"><h2>拟合有多准</h2><span class="tag">分位图</span></div>
+  <p class="lede">把「分数 → 全市名次」锚点对标准正态分位 <span class="mono">z</span> 作图。
+  单段正态是一条直线，锚点却<strong>向下弯</strong>。用<strong>两条折线</strong>去拟合，
+  弯曲变成一个转折点：610–635 段斜率（即 σ）约 <span class="k-seal">34</span>，
+  635 分以上骤降到约 <span class="k-seal">19</span>。转折点正好在 635 分。</p>
+  <div class="card fig">
+    <div class="figwrap"><svg class="chart" id="qqChart" viewBox="0 0 920 420" role="img"
+      aria-label="高分段分位图，锚点用两段折线拟合，635 分处斜率明显变小"></svg></div>
+    <figcaption>点 = 全市累计锚点（607–650 分）。<span class="k-seal">折线</span> = 两段正态拟合；
+    <span style="color:var(--ink-3)">虚线</span> = 单段 N(551, 34²)。横轴 <b>z</b> 越大 = 名次越靠前。</figcaption>
+  </div>
+  <div class="rd">
+    <p><b>两段各说什么。</b>下段 N(551, 34²) 管 610–635，与单段拟合几乎一样——这一段本来就贴合。
+    上段 N(587, 19²) 管 635 分以上：它预测 ≥663 分约 <b>0.8 人</b>（实际 1）、≥650 分约 11 人（实际 8）、
+    ≥645 分约 27 人（实际 26），终于抓住了尖端的稀薄。代价是它只在自己那一小段里成立，
+    向下延伸会离谱地高估。</p>
+  </div>
+</section>
+
+<section id="schools">
+  <div class="sechead"><h2>四所学校的录取线</h2><span class="tag">统招线 → 全市百分位</span></div>
+  <p class="lede">2004 年四所省级示范高中的<strong>统招录取线</strong>，换算成「全市前百分之几」。
+  铁人（607）正好落在可靠数据的边缘，可直接读出；实验（603）只需微弱外推；
+  一中（583）与四中（574）远在 610 分以下，只能靠正态<strong>向下外推</strong>，误差可能很大
+  （被弃用的批次线曾把 574 分放在全市第 2684 名，与外推结果差一倍）。</p>
+  <div class="card tw" style="padding:2px 4px">
+    <table>
+      <thead><tr>
+        <th class="l">学校</th><th>统招录取线</th><th>该校录取最高分</th><th>全市前 …</th><th class="l">相当于</th><th class="l">可靠度</th>
+      </tr></thead>
+      <tbody id="schTbody"></tbody>
+    </table>
+  </div>
+  <p class="cap">「全市前 …」：铁人取实测（第 976 名 / 4.5%）；其余取下段 N(551, 34²) 向下外推
+  （四所录取线都在 635 分以下，与上段 σ≈19 无关）。
+  录取线与最高分来自大庆市教育局《省级示范高中统招生录取分数线确定》（2004-07-13）。</p>
+</section>
+
+<section id="meaning">
+  <div class="sechead"><h2>这条曲线能说什么、不能说什么</h2><span class="tag">边界</span></div>
+  <ul class="bul">
+    <li><strong>能说：</strong>610–635 分这一段，用 <span class="k-seal">N(551, 34²)</span> 拟合得很好
+    （累计人数 R² ≈ 0.995）；635 分以上换成 <span class="k-seal">N(587, 19²)</span>，也能贴住尖端——
+    它预测 ≥663 分 0.8 人（实际 1）、≥650 分 11 人（实际 8）。</li>
+    <li><strong>两段都是局部：</strong>μ≈551、μ≈587 都是各自那条曲线的数学中心，不是任何真实均值。
+    我们没有 600 分以下的可信数据；全市分布左偏、右端撞天花板，整体不是正态，
+    也不是两段正态——两段只是把「弯」近似成「折」。</li>
+    <li><strong>单段的代价：</strong>硬用一条 σ≈34 的正态，在最高分 663 处会预测约 9 人（实际 1）、
+    648 分处约第 42 名（实际约第 11）。σ 从 34 收到 19 之后，这个高估才被压下去。</li>
+  </ul>
+  <blockquote class="q">作者当年 648 分、全市约第 11 名。单段正态说「该有 40 来人」，
+  换成 635 分以上那条 σ≈19 的曲线，说「约 15 人」——已经接近。
+  分数越靠近天花板，能描述它的 σ 就越小。</blockquote>
+</section>
+
+<section id="suihua">
+  <div class="sechead"><h2>把镜头挪到绥化市区</h2><span class="tag">4923 人 · 两个点</span></div>
+  <p class="lede">绥化和大庆 2004 年<strong>考的是同一张卷子</strong>——所以分数可以直接比，差距就是两地教育水平的差距。
+  绥化市区只留下三个数：<strong>总人数 4923，≥571 分 742 人（前 15.1%，绥化一中录取线），
+  ≥600 分 174 人（前 3.5%）</strong>。两个分位点唯一确定一条正态 <span class="k-seal">N(532, 37²)</span>，
+  比大庆的 N(551, 34²) 整体左移约 19 分。</p>
+  <div class="card fig">
+    <div class="legend" id="shLegend"></div>
+    <div class="figwrap"><svg class="chart" id="shChart" viewBox="0 0 920 460" role="img"
+      aria-label="绥化市区中考频率分布直方图，由两个分位点拟合的正态，与大庆高分段拟合对照"></svg></div>
+    <figcaption>柱高来自 <span class="k-seal">N(532, 37²)</span> 拟合（只有 571 / 600 两个实测点，圈出）。
+    <span style="color:var(--ink-3)">灰虚线</span> = 大庆 610–635 段拟合 N(551, 34²)。竖线 = 三所学校录取线。</figcaption>
+  </div>
+
+  <h3 style="font-family:'Noto Serif SC',serif;font-size:15px;margin:22px 0 6px">① 同一分数，两地各有多少人</h3>
+  <div class="card tw" style="padding:2px 4px">
+    <table>
+      <thead><tr><th class="l">分数线</th>
+        <th>大庆 ≥ (人)</th><th>大庆占比</th>
+        <th>绥化 ≥ (人·估)</th><th>绥化占比</th>
+        <th>稀有度</th>
+        <th>绥化 · 若压缩</th></tr></thead>
+      <tbody id="scoreTbody"></tbody>
+    </table>
+  </div>
+  <p class="cap">大庆为实测（铁人中学三校对照表核验值）。绥化主口径＝锚点定出的 N(532, 37²) 一路到顶
+  （绥化尖子少、结构上是「小地方冒出的个别高分」，厚尾不收窄）。末列「若压缩」＝假设绥化也像大庆那样
+  在 628 分以上收到 σ≈19 的下界。「稀有度」＝大庆占比 ÷ 绥化占比。
+  注意主口径下 <b>645 分往上绥化人均反超大庆</b>——那是一二十个尖子的统计噪声，是这条口径偏强的地方。</p>
+
+  <h3 style="font-family:'Noto Serif SC',serif;font-size:15px;margin:24px 0 6px">② 同一分位，两地各要多少分</h3>
+  <div class="card tw" style="padding:2px 4px">
+    <table>
+      <thead><tr><th class="l">分位</th><th>绥化市区（分）</th><th>大庆市区（分）</th><th>绥化落后</th></tr></thead>
+      <tbody id="cmpTbody"></tbody>
+    </table>
+  </div>
+  <p class="cap">大庆分数取其拟合曲线在该分位的取值。同一张卷子，这个「落后 X 分」就是两地教育水平差在中考上的直接体现。</p>
+</section>
+
+<section id="verdict">
+  <div class="sechead"><h2>对绥化中考分布的判断</h2><span class="tag">结合大庆</span></div>
+  <ul class="bul">
+    <li><strong>整体低约 19 分。</strong>同一张卷子，前 15% 处绥化比大庆低 15 分，前 3.5% 处低 12 分，
+    外推到中心 μ 差约 19 分（532 vs 551）。这就是两地教育水平差在中考上的直接读数。</li>
+    <li><strong>中段：同一个分数，绥化的人成倍少。</strong>610–630 分，绥化每档人数只有大庆的
+    约 40–50%（人均少一半多）。这是「整体低 19 分」在高分段的直接后果。</li>
+    <li><strong>离散度相当，取 σ≈37.5，且一路到顶不收窄。</strong>绥化 σ≈37.5，大庆同分位窗口 ≈35，基本一致。
+    大庆 635 分以上 σ 收到 19，是因为那里挤着约 130 人（铁人＋实验两校掐尖），人一多就往天花板下堆。
+    绥化同一区间只有一二十人、且都出自绥化一中一所广撒网的校，是「小地方冒出的个别高分」那种结构——
+    <strong>人太少，厚尾反而更明显，σ 不收窄</strong>。</li>
+    <li><strong>代价：这条口径下 645 分往上绥化人均反超大庆。</strong>同一张卷子、绥化更弱，却在最尖端人均更多，
+    是个偏强的推断——本质是一二十个尖子的统计噪声。另一端（真收窄到大庆的 σ≈19）市区状元约 647 分；
+    两端都列在下面的表里。</li>
+    <li><strong>正态仍只在 571–600 直接成立。</strong>两个点必然能被一条正态穿过；μ≈532 是数学中心不是真实均值；
+    绥化教学更弱 → 低分长尾比大庆更厚，真实中位数大概率明显低于 532。600 分以上是靠同卷曲线外推的。</li>
+  </ul>
+</section>
+
+<section id="top90">
+  <div class="sechead"><h2>绥化市区前 90 名的估算分数</h2><span class="tag">单段口径 · 估算</span></div>
+  <p class="lede"><span class="k-seal">主列</span>＝单段 <span class="k-seal">N(532, 37²)</span> 一路到顶（厚尾口径：绥化尖子少、
+  不往天花板下堆，σ 维持 ≈37.5）。<strong>若压缩</strong>列＝假设绥化也像大庆一样在 628 分以上收到 σ≈19 的下界。
+  第 26 名往下两列一致、由两个真实锚点决定；只有前 25 名在这两端之间。</p>
+  <div class="card tw" style="padding:2px 4px">
+    <table>
+      <thead><tr><th class="l">全市名次</th><th>估算分数 · N(532, 37²)</th><th>若压缩 (σ≈19)</th><th class="l">说明</th></tr></thead>
+      <tbody id="top90Tbody"></tbody>
+    </table>
+  </div>
+  <p class="cap">分数四舍五入到整数，实际有大量并列。第 26–90 名（≤628 分）两列相同、相对可靠。
+  主列把市区状元放在 ~665 分；若压缩则约 647 分。绥化 600 分以上无实测，整表为外推。</p>
+</section>
+
+<section id="src">
+  <div class="sechead"><h2>出处</h2><span class="tag">Sources</span></div>
+  <div class="src">
+    <p><b>高分段人数与逐校拆分：</b>大庆铁人中学《2004 年市内中考各校录取情况》
+    （<code>trzx.cn/zhshxch/zhk04.htm</code>），整理为
+    <code>content/kao/2004年大庆市内中考三校分段录取对照表.csv</code>，
+    「名册核验」列已与各校录取名册逐条比对。</p>
+    <p><b>一中逐人分数：</b><code>content/kao/2004年大庆一中中考录取名单.csv</code>（333 人，610 分以上用作校验）。</p>
+    <p><b>录取线与最高分：</b>大庆市教育局《省级示范高中统招生录取分数线确定》2004-07-13
+    （<code>202.97.254.98/sub1/newshow.php?id=2322</code>）。</p>
+    <p><b>绥化市区：</b>总人数 4923、≥571 分 742 人、≥600 分 174 人（绥化晚报／绥化教育信息，
+    整理见 <code>content/2004/绥化一中.md</code>）；绥化一中录取线 571、招 1040 人。
+    绥化下段拟合：<code>分数 = μ + σ·Φ⁻¹(1−名次/4923)</code> 过两点 → <code>μ=532.3, σ=37.5</code>。
+    前 90 名的上段为假设：接缝 628 分（人数比例对齐大庆 635 分拐点）、σ=21、按累计人数续接，μ 上段 ≈ 574；
+    绥化 600 分以上无实测，纯类推。</p>
+    <p><b>拟合：</b>对每组全市累计锚点，令 <code>N·(1−Φ((x−μ)/σ))</code> 匹配实测人数做最小二乘。
+    单段（607–650 分，21 点）→ <code>μ=550.8, σ=33.7</code>。
+    两段：下段（610–635 分，10 点）→ <code>μ=550.6, σ=34.1</code>，R²(累计)=0.995；
+    上段（635–650 分，11 点）→ <code>μ=587.0, σ=19.2</code>，R²(累计)=0.997。
+    频率 = 分段人数 ÷ 21500。</p>
+  </div>
+</section>
+
+</div>
+<div class="tipbox" id="tip"></div>
+
+<script>
+const DATA = {
+ "N":21500,
+ "fit":{"mu":550.8,"sig":33.7},
+ "fitAlt":{"mu":567.6,"sig":26.1},
+ "segA":{"mu":550.6,"sig":34.1,"lo":610,"hi":635},
+ "segB":{"mu":587.0,"sig":19.2,"lo":635,"hi":658},
+ "split":635,
+ "cw":[{"s":607,"c":976},{"s":610,"c":856},{"s":615,"c":661},{"s":620,"c":479},{"s":625,"c":328},
+   {"s":630,"c":219},{"s":631,"c":188},{"s":632,"c":175},{"s":633,"c":161},{"s":634,"c":141},
+   {"s":635,"c":129},{"s":636,"c":115},{"s":637,"c":99},{"s":638,"c":88},{"s":639,"c":72},
+   {"s":640,"c":60},{"s":641,"c":51},{"s":643,"c":39},{"s":644,"c":31},{"s":645,"c":26},{"s":650,"c":8}],
+ "bins":[
+  {"lo":610,"hi":615,"n":195,"tr":88,"sy":75,"yz":24,"other":8},
+  {"lo":615,"hi":620,"n":182,"tr":77,"sy":69,"yz":29,"other":7},
+  {"lo":620,"hi":625,"n":151,"tr":64,"sy":64,"yz":17,"other":6},
+  {"lo":625,"hi":630,"n":109,"tr":38,"sy":46,"yz":20,"other":5},
+  {"lo":630,"hi":635,"n":90,"tr":40,"sy":32,"yz":14,"other":4},
+  {"lo":635,"hi":640,"n":69,"tr":25,"sy":28,"yz":15,"other":1},
+  {"lo":640,"hi":645,"n":34,"tr":9,"sy":17,"yz":8,"other":0},
+  {"lo":645,"hi":650,"n":18,"tr":8,"sy":5,"yz":5,"other":0},
+  {"lo":650,"hi":655,"n":8,"tr":2,"sy":3,"yz":3,"other":0}],
+ "schools":[
+  {"name":"大庆四中","line":574,"top":633,"reliable":false,"fitPct":24.6,"fitRank":5279},
+  {"name":"大庆一中","line":583,"top":663,"reliable":false,"fitPct":17.0,"fitRank":3648},
+  {"name":"大庆实验中学","line":603,"top":655,"reliable":true,"fitPct":6.1,"fitRank":1306},
+  {"name":"铁人中学","line":607,"top":657,"reliable":true,"fitPct":4.5,"fitRank":976}],
+ "note648":{"rank":42,"actual":11},
+ "sh":{
+  "N":4923,"fit":{"mu":532.3,"sig":37.5},
+  "anchors":[{"s":571,"c":742,"note":"绥化一中录取线 · 前 15.1%"},{"s":600,"c":174,"note":"前 3.5%"}],
+  "lines":[{"s":571,"t":"绥化一中·571","c":"var(--seal)"},{"s":583,"t":"大庆一中·583","c":"var(--ink-3)"},{"s":607,"t":"大庆铁人·607","c":"var(--ink-3)"}],
+  "cmp":[{"pct":"前 15%","sh":571,"dq":586},{"pct":"前 10%","sh":580,"dq":594},{"pct":"前 4%","sh":598,"dq":610},{"pct":"前 3.5%","sh":600,"dq":612}]
+ }
+};
+const SEG=[
+ {k:"tr",label:"铁人中学",color:"var(--petrol)"},
+ {k:"sy",label:"大庆实验",color:"var(--amber)"},
+ {k:"yz",label:"大庆一中",color:"var(--violet)"},
+ {k:"other",label:"其他学校",color:"var(--void)"}
+];
+const NS="http://www.w3.org/2000/svg", SQRT2PI=2.5066282746310002;
+function erf(x){const s=x<0?-1:1;x=Math.abs(x);const t=1/(1+0.3275911*x);
+ const y=1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-x*x);return s*y;}
+const Phi=z=>0.5*(1+erf(z/Math.SQRT2));
+function invPhi(p){const a=[-3.969683028665376e+01,2.209460984245205e+02,-2.759285104469687e+02,1.383577518672690e+02,-3.066479806614716e+01,2.506628277459239e+00],
+ b=[-5.447609879822406e+01,1.615858368580409e+02,-1.556989798598866e+02,6.680131188771972e+01,-1.328068155288572e+01],
+ c=[-7.784894002430293e-03,-3.223964580411365e-01,-2.400758277161838e+00,-2.549732539343734e+00,4.374664141464968e+00,2.938163982698783e+00],
+ d=[7.784695709041462e-03,3.224671290700398e-01,2.445134137142996e+00,3.754408661907416e+00],pl=0.02425,ph=1-pl;let q,r;
+ if(p<pl){q=Math.sqrt(-2*Math.log(p));return(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5])/((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);}
+ if(p<=ph){q=p-0.5;r=q*q;return(((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q/(((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1);}
+ q=Math.sqrt(-2*Math.log(1-p));return -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5])/((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);}
+const pdf=(x,m,s)=>Math.exp(-0.5*((x-m)/s)**2)/(s*SQRT2PI);
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+const tip=document.getElementById('tip');
+function showTip(h,ev){tip.innerHTML=h;tip.style.opacity=1;const pad=14;let x=ev.clientX+pad,y=ev.clientY+pad;
+ if(x+tip.offsetWidth>innerWidth-8)x=ev.clientX-tip.offsetWidth-pad;
+ if(y+tip.offsetHeight>innerHeight-8)y=ev.clientY-tip.offsetHeight-pad;tip.style.left=x+'px';tip.style.top=y+'px';}
+const hideTip=()=>tip.style.opacity=0;
+function legend(id,items){const box=document.getElementById(id);items.forEach(it=>{
+ const d=document.createElement('span');d.className='lg';
+ d.innerHTML=it.sq?`<i class="sq" style="background:${it.color}"></i>${it.t}`
+  :`<i style="border-top-color:${it.color};border-top-style:${it.style||'solid'}"></i>${it.t}`;
+ box.appendChild(d);});}
+
+/* cumulative table */
+(function(){const tb=document.getElementById('cwTbody');
+ const trmap={607:399,610:351,615:263,620:186,625:122,630:84,635:44,640:19,645:10,650:2};
+ const symap={607:384,610:339,615:264,620:195,625:131,630:85,635:53,640:25,645:8,650:3};
+ const yzmap={607:150,610:135,615:111,620:82,625:65,630:45,635:31,640:16,645:8,650:3};
+ DATA.cw.filter(r=>trmap[r.s]!=null).forEach(r=>{
+  const tr=document.createElement('tr');
+  const sc=v=>v==null?'·':v;
+  tr.innerHTML=`<td class="l num">${r.s}</td><td class="num">${r.c.toLocaleString('en-US')}</td>`+
+   `<td class="num">${(100*r.c/DATA.N).toFixed(2)}%</td>`+
+   `<td class="num" style="color:var(--petrol)">${sc(trmap[r.s])}</td>`+
+   `<td class="num" style="color:var(--amber)">${sc(symap[r.s])}</td>`+
+   `<td class="num" style="color:var(--violet)">${sc(yzmap[r.s])}</td>`;
+  tb.appendChild(tr);});})();
+
+legend('histLegend',[
+ ...SEG.map(s=>({t:s.label,color:s.color,sq:true})),
+ {t:'两段正态 σ34 → σ19',color:'var(--seal)'},
+ {t:'单段 N(551, 34²)',color:'var(--ink-3)',style:'dashed'}
+]);
+
+/* ---------- histogram ---------- */
+(function(){
+ const W=920,H=470,m={l:64,r:20,t:22,b:46};
+ const svg=document.getElementById('histChart');
+ const x0=m.l,x1=W-m.r,y0=H-m.b,y1=m.t;
+ const xMin=608,xMax=658, yMax=0.013;            // freq (share of N)
+ const X=s=>x0+(s-xMin)/(xMax-xMin)*(x1-x0);
+ const Y=v=>y0-v/yMax*(y0-y1);
+ for(let v=0;v<=0.012+1e-9;v+=0.002){
+  el('line',{x1:x0,x2:x1,y1:Y(v),y2:Y(v),class:'gl'},svg);
+  el('text',{x:x0-8,y:Y(v)+4,'text-anchor':'end','font-size':11},svg).textContent=(v*100).toFixed(1)+'%';
+ }
+ for(let s=610;s<=660;s+=10){
+  el('line',{x1:X(s),x2:X(s),y1:y0,y2:y1,class:'gl'},svg);
+  el('text',{x:X(s),y:y0+18,'text-anchor':'middle','font-size':11},svg).textContent=s;
+ }
+ el('line',{x1:x0,x2:x1,y1:y0,y2:y0,class:'axis'},svg);
+ el('line',{x1:x0,x2:x0,y1:y0,y2:y1,class:'axis'},svg);
+ el('text',{x:(x0+x1)/2,y:H-6,'text-anchor':'middle',class:'axlab'},svg).textContent='中考分数';
+ const yc=(y0+y1)/2;
+ el('text',{x:15,y:yc,'text-anchor':'middle',class:'axlab',transform:`rotate(-90 15 ${yc})`},svg)
+  .textContent='频率（占全市 21500 人）';
+
+ DATA.bins.forEach(b=>{
+  const bx0=X(b.lo)+1.5, bx1=X(b.hi)-1.5, bw=bx1-bx0;
+  let acc=0;
+  SEG.forEach(sg=>{
+   const val=b[sg.k]/DATA.N; if(val<=0)return;
+   const yTop=Y((acc+val)), yBot=Y(acc);
+   el('rect',{x:bx0,y:yTop,width:bw,height:Math.max(0.4,yBot-yTop-1.5),fill:sg.color,opacity:.92},svg);
+   acc+=val;
+  });
+  const r=el('rect',{x:bx0,y:Y(b.n/DATA.N),width:bw,height:y0-Y(b.n/DATA.N),fill:'transparent'},svg);
+  r.style.cursor='pointer';
+  r.addEventListener('mousemove',ev=>showTip(
+   `<div class="th">${b.lo}–${b.hi} 分 · ${b.n} 人 · ${(100*b.n/DATA.N).toFixed(2)}%</div>`+
+   SEG.map(s=>`<div class="tr"><span>${s.label}</span><span>${b[s.k]}</span></div>`).join(''),ev));
+  r.addEventListener('mouseleave',hideTip);
+ });
+
+ function curve(f,lo,hi,attrs){
+  const pts=[];
+  for(let s=lo;s<=hi;s+=0.5){ pts.push([X(s),Y(Math.min(yMax,5*pdf(s,f.mu,f.sig)))]); }  // 5-分组等效频率
+  el('polyline',Object.assign({points:pts.map(p=>p.join(',')).join(' '),fill:'none','stroke-width':2.5,
+   'stroke-linecap':'round'},attrs),svg);
+ }
+ curve(DATA.fit,610,xMax,{stroke:'var(--ink-3)','stroke-dasharray':'5 5',opacity:.85});
+ curve(DATA.segA,610,DATA.split,{stroke:'var(--seal)'});
+ curve(DATA.segB,DATA.split,xMax,{stroke:'var(--seal)'});
+ el('line',{x1:X(DATA.split),x2:X(DATA.split),y1:y0,y2:y1+2,stroke:'var(--seal)','stroke-width':1,
+  'stroke-dasharray':'2 3',opacity:.65},svg);
+ el('text',{x:X(DATA.split)-6,y:y1+13,'text-anchor':'end','font-size':11,fill:'var(--seal)','font-weight':600},svg)
+  .textContent='σ≈34 ·';
+ el('text',{x:X(DATA.split)+6,y:y1+13,'font-size':11,fill:'var(--seal)','font-weight':600},svg)
+  .textContent='· σ≈19';
+ el('text',{x:X(626),y:Y(0.0098),'font-size':11.5,fill:'var(--ink-3)',
+  'text-anchor':'middle',stroke:'var(--card)','stroke-width':3,'paint-order':'stroke'},svg)
+  .textContent='单段 N(551, 34²)';
+})();
+
+/* ---------- QQ ---------- */
+(function(){
+ const W=920,H=420,m={l:58,r:24,t:22,b:46};
+ const svg=document.getElementById('qqChart');
+ const x0=m.l,x1=W-m.r,y0=H-m.b,y1=m.t;
+ const zMin=1.55,zMax=3.5, sMin=604,sMax=656;
+ const X=z=>x0+(z-zMin)/(zMax-zMin)*(x1-x0);
+ const Y=s=>y0+(s-sMin)/(sMax-sMin)*(y1-y0);
+ for(let s=610;s<=650;s+=10){
+  el('line',{x1:x0,x2:x1,y1:Y(s),y2:Y(s),class:'gl'},svg);
+  el('text',{x:x0-9,y:Y(s)+4,'text-anchor':'end','font-size':11},svg).textContent=s;
+ }
+ for(let z=2;z<=3.5;z+=0.5){
+  el('line',{x1:X(z),x2:X(z),y1:y0,y2:y1,class:'gl'},svg);
+  el('text',{x:X(z),y:y0+18,'text-anchor':'middle','font-size':11},svg).textContent=z.toFixed(1);
+ }
+ el('line',{x1:x0,x2:x1,y1:y0,y2:y0,class:'axis'},svg);
+ el('line',{x1:x0,x2:x0,y1:y0,y2:y1,class:'axis'},svg);
+ el('text',{x:(x0+x1)/2,y:H-6,'text-anchor':'middle',class:'axlab'},svg).textContent='标准正态分位  z  =  Φ⁻¹(1 − 名次 / 21500)';
+ const yc=(y0+y1)/2;
+ el('text',{x:15,y:yc,'text-anchor':'middle',class:'axlab',transform:`rotate(-90 15 ${yc})`},svg).textContent='中考分数';
+
+ // single-fit reference line
+ {const p=[];for(let z=zMin;z<=zMax;z+=0.05){const s=DATA.fit.mu+DATA.fit.sig*z;if(s>=sMin&&s<=sMax)p.push([X(z),Y(s)]);}
+  el('polyline',{points:p.map(q=>q.join(',')).join(' '),fill:'none',stroke:'var(--ink-3)','stroke-dasharray':'6 5','stroke-width':2,opacity:.8,'stroke-linecap':'round'},svg);}
+ // two-segment broken line
+ const zSplit=invPhi(1-129/DATA.N);
+ function segLine(f,za,zb){const p=[];for(let z=za;z<=zb+1e-9;z+=0.04){const s=f.mu+f.sig*z;p.push([X(z),Y(Math.max(sMin,Math.min(sMax,s)))]);}return p;}
+ const pa=segLine(DATA.segA,zMin,zSplit), pb=segLine(DATA.segB,zSplit,zMax);
+ el('polyline',{points:pa.concat(pb).map(q=>q.join(',')).join(' '),fill:'none',stroke:'var(--seal)','stroke-width':2.6,'stroke-linecap':'round','stroke-linejoin':'round'},svg);
+ el('circle',{cx:X(zSplit),cy:Y(DATA.segB.mu+DATA.segB.sig*zSplit),r:4,fill:'none',stroke:'var(--seal)','stroke-width':1.8},svg);
+ el('text',{x:X(zSplit)+8,y:Y(DATA.segB.mu+DATA.segB.sig*zSplit)+16,'font-size':11,fill:'var(--seal)','font-weight':600},svg).textContent='转折 · 635 分';
+ DATA.cw.forEach(r=>{
+  const z=invPhi(1-r.c/DATA.N); if(z<zMin||z>zMax||r.s<sMin||r.s>sMax)return;
+  const cx=X(z),cy=Y(r.s);
+  const c=el('circle',{cx,cy,r:4.5,fill:'var(--ink)',stroke:'var(--card)','stroke-width':1.4},svg);
+  c.style.cursor='pointer';
+  const seg = r.s>=635 ? DATA.segB : DATA.segA;
+  c.addEventListener('mousemove',ev=>showTip(
+   `<div class="th">${r.s} 分 · 全市第 ${r.c.toLocaleString('en-US')} 名</div>`+
+   `<div class="tr"><span>单段 N(551,34²)</span><span>${Math.round(DATA.N*(1-Phi((r.s-DATA.fit.mu)/DATA.fit.sig)))} 名</span></div>`+
+   `<div class="tr"><span>两段（${r.s>=635?'上':'下'}段）</span><span>${Math.round(DATA.N*(1-Phi((r.s-seg.mu)/seg.sig)))} 名</span></div>`,ev));
+  c.addEventListener('mouseleave',hideTip);
+ });
+ el('text',{x:X(1.62),y:Y(650),'font-size':11,fill:'var(--ink-3)'},svg).textContent='虚线：单段拟合，锚点向下偏离';
+})();
+
+/* ---------- schools table ---------- */
+(function(){
+ const tb=document.getElementById('schTbody');
+ [...DATA.schools].sort((a,b)=>a.line-b.line).forEach(s=>{
+  const tr=document.createElement('tr');
+  const pctTxt = s.name==='铁人中学' ? '4.5%' : '≈ '+s.fitPct+'%';
+  const flag = s.reliable
+    ? (s.name==='铁人中学'?'<span class="flag ok">实测</span>':'<span class="flag ok">轻度外推</span>')
+    : '<span class="flag ext">向下外推 · 存疑</span>';
+  tr.innerHTML=`<td class="l">${s.name}</td><td class="num">${s.line}</td><td class="num" style="color:var(--ink-3)">${s.top}</td>`+
+   `<td class="num">${pctTxt}</td>`+
+   `<td class="l"><span class="mbar"><i style="width:${Math.min(100,s.fitPct/25*100)}%"></i></span> <span class="mono" style="font-size:11px;color:var(--ink-3)">第 ${s.name==='铁人中学'?'976':'≈'+s.fitRank.toLocaleString('en-US')} 名</span></td>`+
+   `<td class="l">${flag}</td>`;
+  tb.appendChild(tr);
+ });
+})();
+
+/* ---------- 绥化 ---------- */
+legend('shLegend',[
+ {t:'绥化 N(532, 37²) 拟合柱',color:'var(--void)',sq:true},
+ {t:'绥化拟合曲线',color:'var(--seal)'},
+ {t:'实测点（571 / 600）',color:'var(--ink)',sq:true},
+ {t:'大庆 610–635 段 N(551, 34²)',color:'var(--ink-3)',style:'dashed'}
+]);
+(function(){
+ const SH=DATA.sh, f=SH.fit, Ns=SH.N;
+ const W=920,H=460,m={l:60,r:20,t:22,b:46};
+ const svg=document.getElementById('shChart');
+ const x0=m.l,x1=W-m.r,y0=H-m.b,y1=m.t;
+ const xMin=350,xMax=690, BW=20, yMax=0.26;   // 频率 per 20-分组
+ const X=s=>x0+(s-xMin)/(xMax-xMin)*(x1-x0);
+ const Y=v=>y0-v/yMax*(y0-y1);
+ const Nd=(x,g)=>Phi((x-g.mu)/g.sig);
+ for(let v=0;v<=0.25+1e-9;v+=0.05){
+  el('line',{x1:x0,x2:x1,y1:Y(v),y2:Y(v),class:'gl'},svg);
+  el('text',{x:x0-8,y:Y(v)+4,'text-anchor':'end','font-size':11},svg).textContent=(v*100).toFixed(0)+'%';
+ }
+ for(let s=350;s<=690;s+=40){
+  el('line',{x1:X(s),x2:X(s),y1:y0,y2:y1,class:'gl'},svg);
+  el('text',{x:X(s),y:y0+18,'text-anchor':'middle','font-size':11},svg).textContent=s;
+ }
+ el('line',{x1:x0,x2:x1,y1:y0,y2:y0,class:'axis'},svg);
+ el('line',{x1:x0,x2:x0,y1:y0,y2:y1,class:'axis'},svg);
+ el('text',{x:(x0+x1)/2,y:H-6,'text-anchor':'middle',class:'axlab'},svg).textContent='中考分数（满分 710）';
+ const yc=(y0+y1)/2;
+ el('text',{x:14,y:yc,'text-anchor':'middle',class:'axlab',transform:`rotate(-90 14 ${yc})`},svg).textContent='频率（占绥化市区 4923 人）';
+
+ // fitted bars
+ for(let lo=xMin;lo<xMax;lo+=BW){
+  const fr=Nd(lo+BW,f)-Nd(lo,f);
+  const bx0=X(lo)+1.5,bw=X(lo+BW)-X(lo)-3;
+  el('rect',{x:bx0,y:Y(fr),width:bw,height:y0-Y(fr),fill:'var(--void)',opacity:.5},svg);
+ }
+ // fitted curve (20-分组等效频率)
+ {const p=[];for(let s=xMin;s<=xMax;s+=1)p.push([X(s),Y(BW*pdf(s,f.mu,f.sig))]);
+  el('polyline',{points:p.map(q=>q.join(',')).join(' '),fill:'none',stroke:'var(--seal)','stroke-width':2.6,'stroke-linecap':'round'},svg);}
+ // 大庆 comparison curve N(551,34)
+ {const g=DATA.segA,p=[];for(let s=xMin;s<=xMax;s+=1)p.push([X(s),Y(Math.min(yMax,BW*pdf(s,g.mu,g.sig)))]);
+  el('polyline',{points:p.map(q=>q.join(',')).join(' '),fill:'none',stroke:'var(--ink-3)','stroke-dasharray':'6 5','stroke-width':2,opacity:.8,'stroke-linecap':'round'},svg);}
+ el('text',{x:X(560),y:Y(BW*pdf(560,DATA.segA.mu,DATA.segA.sig))-8,'font-size':10.5,fill:'var(--ink-3)','text-anchor':'middle'},svg).textContent='大庆';
+ el('text',{x:X(516),y:Y(BW*pdf(516,f.mu,f.sig))+16,'font-size':11,fill:'var(--seal)','font-weight':600,'text-anchor':'middle'},svg).textContent='绥化';
+
+ // school lines — labels stacked so the 571/583 pair doesn't overlap
+ SH.lines.forEach((L,i)=>{
+  const ly=y1+9+(i===1?15:0);
+  el('line',{x1:X(L.s),x2:X(L.s),y1:y0,y2:ly+2,stroke:L.c,'stroke-width':1.3,'stroke-dasharray':'3 3',opacity:.85},svg);
+  el('text',{x:X(L.s),y:ly,'text-anchor':i===0?'end':(i===2?'start':'middle'),'font-size':9.5,fill:L.c},svg).textContent=L.t;
+ });
+ // real anchor points on the curve
+ SH.anchors.forEach(a=>{
+  const cx=X(a.s),cy=Y(BW*pdf(a.s,f.mu,f.sig));
+  const c=el('circle',{cx,cy,r:5.5,fill:'var(--ink)',stroke:'var(--card)','stroke-width':2},svg);
+  c.style.cursor='pointer';
+  c.addEventListener('mousemove',ev=>showTip(
+   `<div class="th">≥ ${a.s} 分</div>`+
+   `<div class="tr"><span>实测</span><span>${a.c} 人 · ${(100*a.c/Ns).toFixed(2)}%</span></div>`+
+   `<div class="tr"><span>${a.note}</span><span></span></div>`,ev));
+  c.addEventListener('mouseleave',hideTip);
+ });
+})();
+
+/* ---------- 绥化模型 ---------- */
+/* 主口径：单段 N(532, 37.5²) 一路到顶——绥化尖子太少、结构上是「小地方冒出的个别高分」，厚尾不收窄。
+   对照口径：若像大庆那样撞线压缩，约 628 分（第 26 名）以上换 σ=19。 */
+const SHM=(function(){
+ const N=DATA.sh.N, mu=532.3, sg=37.5, split=628, sgHi=19;
+ const cSplit=N*(1-Phi((split-mu)/sg));
+ const muHi=split - sgHi*invPhi(1-cSplit/N);
+ const compressed=s=> s>=split ? N*(1-Phi((s-muHi)/sgHi)) : N*(1-Phi((s-mu)/sg));
+ return {
+  N, split,
+  count:s=> N*(1-Phi((s-mu)/sg)),          // 主口径
+  countCompressed:compressed,
+  scoreAtRank:r=>{
+   const p=r/N;
+   const sOne=mu+sg*invPhi(1-p);
+   const sHi=muHi+sgHi*invPhi(1-p);
+   return [ sOne, (sHi>=split ? sHi : sOne) ];  // [主口径, 压缩口径]
+  }
+ };
+})();
+
+/* ---------- ① 同一分数，两地人数 ---------- */
+(function(){
+ const tb=document.getElementById('scoreTbody');
+ const dq={610:856,615:661,620:479,625:328,630:219,635:129,640:60,645:26,650:8};
+ [610,615,620,625,630,635,640,645,650].forEach(s=>{
+  const cd=dq[s], cs=SHM.count(s), csc=SHM.countCompressed(s);
+  const pd=100*cd/21500, ps=100*cs/SHM.N;
+  const ratio=(cd/21500)/(cs/SHM.N);
+  const fmt=v=>v<10?v.toFixed(1):Math.round(v);
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="l num">${s}</td>`+
+   `<td class="num">${cd}</td><td class="num" style="color:var(--ink-3)">${pd.toFixed(2)}%</td>`+
+   `<td class="num k-seal">${fmt(cs)}</td>`+
+   `<td class="num" style="color:var(--ink-3)">${ps.toFixed(2)}%</td>`+
+   `<td class="num">${ratio<1?ratio.toFixed(2):ratio.toFixed(1)}×</td>`+
+   `<td class="num" style="color:var(--ink-3)">${fmt(csc)}</td>`;
+  tb.appendChild(tr);
+ });
+})();
+
+/* ---------- ② 同一分位，两地分数 ---------- */
+(function(){
+ const tb=document.getElementById('cmpTbody');
+ DATA.sh.cmp.forEach(r=>{
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="l">${r.pct}</td><td class="num k-seal">${r.sh}</td><td class="num">${r.dq}</td>`+
+   `<td class="num" style="color:var(--ink-3)">低 ${r.dq-r.sh} 分</td>`;
+  tb.appendChild(tr);
+ });
+})();
+
+/* ---------- 绥化前 90 名 ---------- */
+(function(){
+ const tb=document.getElementById('top90Tbody');
+ const rows=[1,2,3,4,5,6,7,8,9,10,12,15,20,25,30,40,50,60,70,80,90];
+ rows.forEach(r=>{
+  const [one,comp]=SHM.scoreAtRank(r);
+  let note='';
+  if(r===1) note='市区状元（估）';
+  else if(r===25) note='≈ 压缩段接缝';
+  else if(r===30) note='两列合流，以下相同';
+  const tr=document.createElement('tr');
+  tr.innerHTML=`<td class="l num">第 ${r} 名</td>`+
+   `<td class="num k-seal" style="font-weight:600">${Math.round(one)}</td>`+
+   `<td class="num" style="color:var(--ink-3)">${Math.round(comp)}</td>`+
+   `<td class="l" style="font-size:12px;color:var(--ink-3);white-space:normal">${note}</td>`;
+  tb.appendChild(tr);
+ });
+})();
+
+/* ---------- 1-Point Frequency Histogram Implementation ---------- */
+const DATA_1PT = {"total":856,"mean":622.95,"median":621.0,"std":9.96,"mode":615,"modeCount":53,"max":663,"min":610,"bins":[{"score":610,"count":46,"tr":22,"sy":19,"yz":4,"other":1,"cum":856,"students":[{"rank":811,"no":31103426,"name":"曹嘉威","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":811,"no":31113526,"name":"李璇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":811,"no":61102605,"name":"李翠娟","sex":"女","ms":"五十七中","hs":"一中","plan":"统招"},{"rank":811,"no":61103520,"name":"汪洪溟","sex":"男","ms":"五十一中","hs":"一中","plan":"统招"},{"rank":811,"no":61105526,"name":"李殿武","sex":"男","ms":"三十一中","hs":"四中","plan":"统招"},{"rank":811,"no":21101202,"name":"孙博","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":811,"no":21104019,"name":"吴剑威","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":811,"no":21105519,"name":"解笑靥","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":811,"no":21106628,"name":"李美鸥","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":811,"no":21106930,"name":"刁晓辰","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":811,"no":21109322,"name":"张寒玉","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":811,"no":31102024,"name":"庄梦博","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":811,"no":31102418,"name":"李亦也","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":811,"no":31102703,"name":"李大鹏","sex":"男","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":811,"no":31109714,"name":"吕琳","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":811,"no":31110918,"name":"高润柠","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":811,"no":41101825,"name":"唐明野","sex":"男","ms":"十六中","hs":"实验中学","plan":"统招"},{"rank":811,"no":41104102,"name":"姜美璐","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":811,"no":61101227,"name":"赵淼","sex":"女","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":811,"no":61101313,"name":"杨光","sex":"女","ms":"三十一中","hs":"实验中学","plan":"统招"},{"rank":811,"no":61101602,"name":"关梦迪","sex":"女","ms":"四十三中","hs":"实验中学","plan":"统招"},{"rank":811,"no":61104604,"name":"李梦薇","sex":"女","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":811,"no":61105018,"name":"李梦迪","sex":"女","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":811,"no":81100109,"name":"冯健","sex":"男","ms":"肇源初中","hs":"实验中学","plan":"统招"},{"rank":811,"no":1100304,"name":"韩立宝","sex":"男","ms":"林甸初中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":21105613,"name":"汪乃崎","sex":"男","ms":"五十五中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31100515,"name":"杜宛霖","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31102630,"name":"杨金龙","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31104309,"name":"石洋","sex":"女","ms":"六十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31104627,"name":"孙超","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31105814,"name":"张曦宇","sex":"男","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31106514,"name":"李娜","sex":"女","ms":"十一中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31107227,"name":"杨阳","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31109402,"name":"杜宣","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31109406,"name":"崔寒瑛","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31110802,"name":"杨恩博","sex":"男","ms":"六十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31112207,"name":"晏祎峤","sex":"男","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31113130,"name":"王文婧","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31114118,"name":"许飞","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":811,"no":31114525,"name":"宋子渐","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":41100620,"name":"宁威","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":41105323,"name":"勾云龙","sex":"男","ms":"二十七中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":51103809,"name":"张幸","sex":"女","ms":"三十七中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":61103406,"name":"刘冰砚","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":61103407,"name":"徐润凡","sex":"男","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":811,"no":61105226,"name":"金蕊","sex":"女","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":611,"count":38,"tr":22,"sy":12,"yz":3,"other":1,"cum":810,"students":[{"rank":773,"no":31102316,"name":"周旸","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":773,"no":31105618,"name":"董拓","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":773,"no":31111408,"name":"刘贺","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":773,"no":61100415,"name":"袁婷","sex":"女","ms":"五十七中","hs":"四中","plan":"统招"},{"rank":773,"no":21101004,"name":"林雪","sex":"女","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":773,"no":21104808,"name":"黄野","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":773,"no":21104821,"name":"马良子","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":773,"no":21105126,"name":"祝沐","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":773,"no":21107128,"name":"王嘉琦","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":773,"no":21107805,"name":"柴琪","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":773,"no":31106227,"name":"曲鑫","sex":"女","ms":"二十五中","hs":"实验中学","plan":"统招"},{"rank":773,"no":31109229,"name":"李想","sex":"男","ms":"四十六中","hs":"实验中学","plan":"统招"},{"rank":773,"no":31113109,"name":"陈荟琳","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":773,"no":61100718,"name":"张涛","sex":"男","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":773,"no":61102128,"name":"孔祥杰","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":773,"no":61104802,"name":"何昕","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":773,"no":1100215,"name":"赵阳","sex":"女","ms":"林甸初中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":21101220,"name":"林子潇","sex":"女","ms":"六十九中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":21108229,"name":"曹阳","sex":"女","ms":"四十一中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31103521,"name":"单宝锋","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31103909,"name":"安雨佳","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31104825,"name":"邢诚","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31107102,"name":"杜冰洁","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31108115,"name":"李颖","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31108518,"name":"吕成","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31109112,"name":"李若曦","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31111310,"name":"许士琦","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31113023,"name":"吴丹","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":31113225,"name":"苏燃","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":41101310,"name":"刘欢","sex":"女","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":41102802,"name":"张梦霄","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":41103917,"name":"张寒","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":51103530,"name":"周楠楠","sex":"女","ms":"五十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":51103906,"name":"祝捷","sex":"女","ms":"五十六中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":61100109,"name":"苟臻凡","sex":"男","ms":"三十一中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":61100307,"name":"曹旭阳","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":773,"no":61102313,"name":"柳默潇","sex":"男","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":773,"no":61105704,"name":"王康","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":612,"count":39,"tr":17,"sy":17,"yz":2,"other":3,"cum":772,"students":[{"rank":734,"no":31108027,"name":"张君剑","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":734,"no":31114128,"name":"高嵽","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":734,"no":51103215,"name":"吴玉凤","sex":"女","ms":"三十二中","hs":"三十五中学","plan":"统招"},{"rank":734,"no":1100317,"name":"周学溢","sex":"女","ms":"林甸初中","hs":"中学","plan":"统招"},{"rank":734,"no":31103019,"name":"张大维","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":734,"no":21101026,"name":"李芊","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21101112,"name":"邢珺","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21102725,"name":"吴国强","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21102913,"name":"黄吉喆","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21103410,"name":"杨柳","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21104704,"name":"马也","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21106908,"name":"闫肃","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21107427,"name":"刘禹志","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21108209,"name":"陈闯","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21108224,"name":"张有鑫","sex":"男","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21108615,"name":"孙雷雨","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21109405,"name":"梁媛","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":734,"no":31104811,"name":"何邦昱","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":734,"no":31109804,"name":"李昆鹏","sex":"男","ms":"十四中","hs":"实验中学","plan":"统招"},{"rank":734,"no":31112520,"name":"何昕","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":734,"no":31114103,"name":"姜喆","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":734,"no":51101606,"name":"杨琦","sex":"男","ms":"三十七中","hs":"实验中学","plan":"统招"},{"rank":734,"no":21103508,"name":"张涛","sex":"男","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31100820,"name":"侯磊","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31105307,"name":"周璐","sex":"女","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31106621,"name":"刘佳","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31108307,"name":"刘永涛","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31111011,"name":"申俊泽","sex":"男","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31111613,"name":"刘耕瑀","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31114113,"name":"杨舒茜","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":31115326,"name":"黄硕","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":41101707,"name":"狄宪沧","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":41103230,"name":"王茄樵","sex":"男","ms":"十七中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":41105411,"name":"赫馨雨","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":51102003,"name":"刘畅","sex":"女","ms":"五十六中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":61101702,"name":"胡喆","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":734,"no":61103404,"name":"杜思达","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":61104715,"name":"德光宇","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":734,"no":61106017,"name":"韩雪峰","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":613,"count":35,"tr":14,"sy":11,"yz":10,"other":0,"cum":733,"students":[{"rank":699,"no":21102607,"name":"孟志昊","sex":"男","ms":"六十六中","hs":"一中","plan":"统招"},{"rank":699,"no":31100924,"name":"赵焕宇","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31101903,"name":"邬心白","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31102304,"name":"王江南","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31105126,"name":"汪滢","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31105319,"name":"陶沅","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31110813,"name":"邢小林","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31111527,"name":"刘天泽","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":31113403,"name":"陈鹏宇","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":699,"no":51104627,"name":"刘春影","sex":"女","ms":"高台中学","hs":"一中","plan":"统招"},{"rank":699,"no":21100910,"name":"李媛","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":699,"no":21101028,"name":"李超鹏","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":699,"no":21103510,"name":"刘悦","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":699,"no":21105922,"name":"马境","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":699,"no":21108828,"name":"卢渴新","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":699,"no":31102421,"name":"田媛","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":699,"no":41100511,"name":"张慧琳","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":699,"no":41103905,"name":"孙哲","sex":"女","ms":"十七中","hs":"实验中学","plan":"统招"},{"rank":699,"no":51101201,"name":"乔丹","sex":"女","ms":"五十六中","hs":"实验中学","plan":"统招"},{"rank":699,"no":61103122,"name":"国维纳","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":699,"no":61106102,"name":"冷欣","sex":"女","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":699,"no":21108603,"name":"郭长庆","sex":"男","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31101127,"name":"王博","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31101723,"name":"余江宁","sex":"女","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31105209,"name":"王锦泽","sex":"男","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31110512,"name":"王明刚","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31111417,"name":"张新月","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31113118,"name":"付琪","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":31114718,"name":"郭宇健","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":41102006,"name":"谷静","sex":"女","ms":"十七中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":41103504,"name":"温湛波","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":41104301,"name":"唐梦欣","sex":"女","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":41105803,"name":"孙浩田","sex":"男","ms":"十六中","hs":"铁人中学","plan":"统招"},{"rank":699,"no":61103422,"name":"杨忠橙","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":699,"no":61104930,"name":"向俊","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":614,"count":37,"tr":13,"sy":16,"yz":5,"other":3,"cum":698,"students":[{"rank":662,"no":31102606,"name":"郭兴博","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":662,"no":31107915,"name":"雷宇","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":662,"no":31109813,"name":"王默凝","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":662,"no":31114010,"name":"蔡畅","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":662,"no":31115014,"name":"彭薇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":662,"no":21105625,"name":"高寒","sex":"男","ms":"六十九中","hs":"东风中学","plan":"统招"},{"rank":662,"no":31108621,"name":"蔡俣","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":662,"no":61105113,"name":"王天哲","sex":"男","ms":"五十七中","hs":"四中","plan":"统招"},{"rank":662,"no":21100906,"name":"高林","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21103111,"name":"姜婷","sex":"女","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21103430,"name":"秦潇","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21104626,"name":"王龙","sex":"男","ms":"六十六中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21104823,"name":"丁冠琦","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21105411,"name":"李文聪","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21106408,"name":"侯圣昱","sex":"女","ms":"祥阁学校","hs":"实验中学","plan":"统招"},{"rank":662,"no":21107302,"name":"李梁禹","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21107811,"name":"孙琳","sex":"女","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":662,"no":31108516,"name":"王帅","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":662,"no":41102407,"name":"梁起","sex":"男","ms":"四十七中","hs":"实验中学","plan":"统招"},{"rank":662,"no":41105520,"name":"李丰","sex":"男","ms":"四十七中","hs":"实验中学","plan":"统招"},{"rank":662,"no":61101001,"name":"张莹烁","sex":"女","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":662,"no":61101603,"name":"赫喆","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":662,"no":61102822,"name":"邵翔宇","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":662,"no":61104123,"name":"王悦洋","sex":"男","ms":"四十九中","hs":"实验中学","plan":"统招"},{"rank":662,"no":21101422,"name":"杨睿","sex":"男","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31103603,"name":"刘辘维","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31103725,"name":"雷婕","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31104416,"name":"刘畅达","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31109304,"name":"吴琼","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31110006,"name":"邹继思","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31112212,"name":"张驰","sex":"女","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31112526,"name":"王硕","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":31115518,"name":"陈熹","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":41104926,"name":"王珊珊","sex":"女","ms":"十七中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":51102609,"name":"姜天航","sex":"男","ms":"三十三中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":61103223,"name":"尤佳","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":662,"no":61104111,"name":"高春瑾","sex":"女","ms":"四十九中","hs":"铁人中学","plan":"统招"}]},{"score":615,"count":53,"tr":21,"sy":20,"yz":10,"other":2,"cum":661,"students":[{"rank":609,"no":31101605,"name":"赵晓丹","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31106006,"name":"郝英男","sex":"男","ms":"三十六中","hs":"一中","plan":"统招"},{"rank":609,"no":31107415,"name":"韩业强","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31110611,"name":"殷实","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31111418,"name":"陶硕","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31112312,"name":"付瑶","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31112911,"name":"张爽","sex":"女","ms":"二十四中","hs":"一中","plan":"统招"},{"rank":609,"no":31113908,"name":"丛克昂","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":609,"no":31114622,"name":"宋金泽","sex":"男","ms":"景园中学","hs":"一中","plan":"统招"},{"rank":609,"no":91100127,"name":"杨超","sex":"男","ms":"杜蒙初中","hs":"一中","plan":"统招"},{"rank":609,"no":31109515,"name":"张晶睿","sex":"女","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":609,"no":31115316,"name":"冉令霏","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":609,"no":21100404,"name":"石榴","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21100829,"name":"李寅赫","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21101222,"name":"周健","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21101502,"name":"边佶","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21103628,"name":"刘畅","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21103814,"name":"周潇","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21105005,"name":"吕晨","sex":"女","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21106602,"name":"王瑞琦","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21106917,"name":"于俊磊","sex":"男","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21108212,"name":"尤文汇","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21108306,"name":"吴天","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21108403,"name":"马婉璐","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":609,"no":31101926,"name":"孙婷婷","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":609,"no":31111411,"name":"毕凯","sex":"男","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":609,"no":31113506,"name":"李月","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":609,"no":51102021,"name":"张有为","sex":"男","ms":"太阳升中","hs":"实验中学","plan":"统招"},{"rank":609,"no":61103201,"name":"冯阳","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":609,"no":61103227,"name":"徐靖凯","sex":"男","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":609,"no":81100113,"name":"崔洋","sex":"女","ms":"肇源初中","hs":"实验中学","plan":"统招"},{"rank":609,"no":81100118,"name":"梁海龙","sex":"男","ms":"肇源初中","hs":"实验中学","plan":"统招"},{"rank":609,"no":21101705,"name":"唐喜庆","sex":"男","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":21105308,"name":"张诗阳","sex":"男","ms":"五十五中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":21108120,"name":"毕伟","sex":"男","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31100623,"name":"张璇","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31100926,"name":"谢剑豪","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31101826,"name":"张远洋","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31103405,"name":"刘凯昆","sex":"男","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31103718,"name":"陈思雨","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31105908,"name":"温如月","sex":"女","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31106323,"name":"胡庆波","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31107426,"name":"肖熙","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31111823,"name":"陈颖倩","sex":"女","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31113726,"name":"杨钏钗","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":31115303,"name":"李磊","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":41100617,"name":"李冠群","sex":"男","ms":"十七中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":41103024,"name":"周宁","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":41104019,"name":"惠翰斌","sex":"男","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":51103321,"name":"蔡蕾","sex":"女","ms":"三十七中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":51104922,"name":"王鹏菲","sex":"男","ms":"三十二中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":61105926,"name":"郭丰强","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":609,"no":61106024,"name":"龚瑞璇","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":616,"count":36,"tr":25,"sy":6,"yz":3,"other":2,"cum":608,"students":[{"rank":573,"no":31101821,"name":"孟霄","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":573,"no":31101827,"name":"桑田","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":573,"no":31110015,"name":"刘璐","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":573,"no":61100116,"name":"魏兴","sex":"男","ms":"十九中学","hs":"东风中学","plan":"统招"},{"rank":573,"no":21100627,"name":"历晓曼","sex":"女","ms":"五十五中","hs":"四中","plan":"统招"},{"rank":573,"no":21100708,"name":"贾一石","sex":"女","ms":"四十中","hs":"实验中学","plan":"统招"},{"rank":573,"no":21100709,"name":"周婧昭","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":573,"no":21101923,"name":"耿时玉","sex":"女","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":573,"no":21105123,"name":"张斯文","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":573,"no":21109107,"name":"张馨元","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":573,"no":31111414,"name":"李硕","sex":"女","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":573,"no":1100325,"name":"王丽娟","sex":"女","ms":"林甸初中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":21104310,"name":"袁瑞聪","sex":"男","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":21105716,"name":"冯晓庆","sex":"女","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":21107023,"name":"栗国斌","sex":"男","ms":"十三中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31106508,"name":"于辰光","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31107301,"name":"张楠楠","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31108512,"name":"刘轩宇","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31109228,"name":"刘星辰","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31109416,"name":"刘丽","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31109525,"name":"李梦含","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31110229,"name":"李雨蒙","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31110917,"name":"吴广健","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31112014,"name":"段文晶","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":31112030,"name":"吕楠","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41100402,"name":"陈晨","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41101604,"name":"高崇龙","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41102405,"name":"张建映","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41104207,"name":"刘一男","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41105308,"name":"高飞","sex":"男","ms":"十六中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":41105618,"name":"袁蓓","sex":"女","ms":"六十五中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":61102407,"name":"张博","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":61102622,"name":"郝月明","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":61104816,"name":"赵冰欣","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":61105802,"name":"刘雷","sex":"男","ms":"四十九中","hs":"铁人中学","plan":"统招"},{"rank":573,"no":61105811,"name":"于振兴","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":617,"count":31,"tr":8,"sy":17,"yz":6,"other":0,"cum":572,"students":[{"rank":542,"no":31101505,"name":"马旭","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":31101829,"name":"陈飞","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":31102804,"name":"邢超","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":31105029,"name":"王丹","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":31107123,"name":"段天宇","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":31111520,"name":"司文","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":542,"no":1100130,"name":"姚瑶","sex":"女","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":542,"no":1100322,"name":"王哲","sex":"男","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21100219,"name":"池杨","sex":"女","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21104619,"name":"潘熙","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21106415,"name":"孔宪薇","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21107006,"name":"程思梦","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21107310,"name":"张龙泽","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21107311,"name":"李源","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21108216,"name":"谭谈","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":21108417,"name":"张碧琳","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":31112429,"name":"肖丽丽","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":542,"no":31113507,"name":"范昊","sex":"男","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":542,"no":61100303,"name":"靳琪","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":542,"no":61100618,"name":"李跃甲","sex":"男","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":542,"no":61102322,"name":"李娜","sex":"女","ms":"四十九中","hs":"实验中学","plan":"统招"},{"rank":542,"no":61103306,"name":"宁圣清","sex":"男","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":542,"no":61104510,"name":"刘慧","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":542,"no":31104614,"name":"李龙","sex":"男","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":31105005,"name":"魏爽","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":31108004,"name":"王楠","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":31108714,"name":"任革","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":542,"no":31111805,"name":"刘博","sex":"男","ms":"五十八中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":41101002,"name":"马庆","sex":"男","ms":"六十五中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":41104910,"name":"刘泽钰","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":542,"no":61103709,"name":"邵天宇","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":618,"count":26,"tr":6,"sy":12,"yz":7,"other":1,"cum":541,"students":[{"rank":516,"no":31102310,"name":"陈默","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31103512,"name":"马卿","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31108513,"name":"刘悦","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31112211,"name":"李城达","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31112529,"name":"陈麒","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31113316,"name":"朱梓璇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31114407,"name":"宣扬","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":516,"no":31100523,"name":"曹梦雅","sex":"女","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":516,"no":21100827,"name":"杨思凡","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":516,"no":21102511,"name":"李唯源","sex":"女","ms":"祥阁学校","hs":"实验中学","plan":"统招"},{"rank":516,"no":21105402,"name":"武威","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":516,"no":21105514,"name":"于其明","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":516,"no":21108519,"name":"孔醍","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":516,"no":31100505,"name":"方鑫","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":516,"no":31103104,"name":"张家墅","sex":"男","ms":"六十四中","hs":"实验中学","plan":"统招"},{"rank":516,"no":41103522,"name":"耿一凯","sex":"男","ms":"二十七中","hs":"实验中学","plan":"统招"},{"rank":516,"no":51100420,"name":"于志会","sex":"男","ms":"高台中学","hs":"实验中学","plan":"统招"},{"rank":516,"no":51103221,"name":"刘宝","sex":"女","ms":"三十三中","hs":"实验中学","plan":"统招"},{"rank":516,"no":61102014,"name":"张海轩","sex":"女","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":516,"no":61103023,"name":"佟欣欣","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":516,"no":31104230,"name":"洪德智","sex":"男","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":516,"no":31110004,"name":"李硕","sex":"男","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":516,"no":41103817,"name":"倪潇巍","sex":"男","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":516,"no":41105521,"name":"解潇伊","sex":"女","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":516,"no":61100901,"name":"杜重","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":516,"no":61101202,"name":"李石","sex":"男","ms":"五十七中","hs":"铁人中学","plan":"统招"}]},{"score":619,"count":36,"tr":17,"sy":14,"yz":3,"other":2,"cum":515,"students":[{"rank":480,"no":31102016,"name":"兰海龙","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":480,"no":31104301,"name":"邢宇航","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":480,"no":31105811,"name":"陈希","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":480,"no":31104223,"name":"谢萌","sex":"女","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":480,"no":31108923,"name":"韩飞","sex":"女","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":480,"no":1100412,"name":"李艳燕","sex":"女","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21101901,"name":"刘明曈","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21101928,"name":"王欢","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21103122,"name":"顾啸辰","sex":"男","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21104011,"name":"鞠阳","sex":"男","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21105508,"name":"陈凤娇","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21107715,"name":"陶立峰","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21109117,"name":"邢思宇","sex":"女","ms":"四十中","hs":"实验中学","plan":"统招"},{"rank":480,"no":31112411,"name":"雷懿夫","sex":"男","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":480,"no":41103704,"name":"韩沛辰","sex":"男","ms":"二十七中","hs":"实验中学","plan":"统招"},{"rank":480,"no":41104629,"name":"张天一","sex":"男","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":480,"no":61104810,"name":"倪红","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":480,"no":61105020,"name":"苏靖淞","sex":"男","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":480,"no":71100103,"name":"闫松麒","sex":"男","ms":"肇州初中","hs":"实验中学","plan":"统招"},{"rank":480,"no":21102702,"name":"刘胜楠","sex":"女","ms":"四十一中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":21105511,"name":"李博","sex":"女","ms":"五十五中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31104427,"name":"唐旭","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31106419,"name":"雷月","sex":"女","ms":"五十八中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31108130,"name":"王基辰","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31109122,"name":"何平","sex":"男","ms":"二十二中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31110107,"name":"黄鑫","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31112216,"name":"李昂","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31113915,"name":"刘焱泽","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":31115507,"name":"赵丹阳","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61101526,"name":"安慧峰","sex":"男","ms":"四十三中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61102405,"name":"张剑","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61103012,"name":"韩硕","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61103330,"name":"杨威","sex":"女","ms":"四十九中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61103615,"name":"于圆圆","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61103916,"name":"蔡岫颖","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":480,"no":61106120,"name":"魏达琳","sex":"女","ms":"五十中学","hs":"铁人中学","plan":"统招"}]},{"score":620,"count":38,"tr":15,"sy":18,"yz":3,"other":2,"cum":479,"students":[{"rank":442,"no":31100621,"name":"张斌弛","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":442,"no":31101322,"name":"任聪","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":442,"no":31113910,"name":"高峰","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":442,"no":31101015,"name":"孙宇","sex":"女","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":442,"no":31109317,"name":"许富强","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":442,"no":21102318,"name":"徐若曦","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21103406,"name":"高见","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21103710,"name":"郭睿","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21103717,"name":"夏思阳","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21104228,"name":"冯崧祥","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21104230,"name":"王天舒","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21105317,"name":"杨雪冰","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21105925,"name":"刘昶","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21106006,"name":"梁兆玉","sex":"男","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21109014,"name":"吕毅","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":442,"no":31106029,"name":"许万超","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":442,"no":31107913,"name":"徐云龙","sex":"男","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":442,"no":41101817,"name":"叶超","sex":"男","ms":"四十七中","hs":"实验中学","plan":"统招"},{"rank":442,"no":51102321,"name":"张晨晨","sex":"女","ms":"三十七中","hs":"实验中学","plan":"统招"},{"rank":442,"no":51103503,"name":"侯锐","sex":"女","ms":"三十七中","hs":"实验中学","plan":"统招"},{"rank":442,"no":61102020,"name":"王樱录","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":442,"no":61104828,"name":"连漪","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":442,"no":61105613,"name":"刘子滔","sex":"男","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":442,"no":21106728,"name":"刘龙","sex":"男","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":21108003,"name":"孙梦婷","sex":"女","ms":"十三中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":21108409,"name":"张蕾","sex":"女","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31103203,"name":"张竞豪","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31103511,"name":"董哲","sex":"女","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31106004,"name":"刘扬","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31107526,"name":"苏旭","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31112016,"name":"董一","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31113826,"name":"宁宇婧","sex":"女","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":31114706,"name":"马无缰","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":442,"no":51100621,"name":"贾博文","sex":"男","ms":"新华中学","hs":"铁人中学","plan":"统招"},{"rank":442,"no":61100515,"name":"范长白","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":61102608,"name":"陈曦","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":61105414,"name":"梁梦蕾","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":442,"no":61105919,"name":"宋沅孟","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":621,"count":35,"tr":13,"sy":15,"yz":4,"other":3,"cum":441,"students":[{"rank":407,"no":31102224,"name":"张龙天","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":407,"no":31107624,"name":"沈琳","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":407,"no":31109605,"name":"杜航","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":407,"no":31110908,"name":"牛江男","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":407,"no":21100419,"name":"张一鸣","sex":"男","ms":"五十五中","hs":"东风中学","plan":"统招"},{"rank":407,"no":61100319,"name":"李松谕","sex":"女","ms":"十九中学","hs":"东风中学","plan":"统招"},{"rank":407,"no":31103015,"name":"黄久锐","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":407,"no":1100323,"name":"孙超","sex":"男","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":1100327,"name":"张奇夫","sex":"男","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21102907,"name":"姚金南","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21106704,"name":"梁雨微","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21107607,"name":"贺明珠","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21107609,"name":"屠先明","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21109423,"name":"王婉琳","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":407,"no":61101408,"name":"侯迪","sex":"女","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":407,"no":61102006,"name":"王喆","sex":"男","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":407,"no":61103915,"name":"汪宁","sex":"女","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":407,"no":61105126,"name":"东阳","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":407,"no":81100106,"name":"史月","sex":"男","ms":"肇源初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":91100103,"name":"程然","sex":"女","ms":"杜蒙初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":91100105,"name":"卞旭","sex":"女","ms":"杜蒙初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":91100125,"name":"杨欢","sex":"女","ms":"杜蒙初中","hs":"实验中学","plan":"统招"},{"rank":407,"no":21100526,"name":"严禹明","sex":"男","ms":"五十五中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":21109406,"name":"李冰洋","sex":"男","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31103414,"name":"朱岩","sex":"男","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31103802,"name":"马跃","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31104513,"name":"田金鑫","sex":"女","ms":"六十四中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31113126,"name":"杜景醒","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31113222,"name":"龙隆","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":31115129,"name":"李笑宇","sex":"男","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":41101720,"name":"潘丁一","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":61101423,"name":"康龙","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":61103706,"name":"张想","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":61104305,"name":"宣文静","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":407,"no":61105004,"name":"孙宇","sex":"男","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":622,"count":26,"tr":12,"sy":11,"yz":2,"other":1,"cum":406,"students":[{"rank":381,"no":31101808,"name":"顾舒然","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":381,"no":31105515,"name":"李秋稷","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":381,"no":61102123,"name":"韩旭","sex":"男","ms":"五十七中","hs":"四中","plan":"统招"},{"rank":381,"no":21101802,"name":"赵越","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21101819,"name":"张畅","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21103822,"name":"伊曼璐","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21104027,"name":"石格菲","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21106215,"name":"单松","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21106509,"name":"姚文宇","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21107109,"name":"武发明","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":381,"no":31107507,"name":"沈泽坤","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":381,"no":31108427,"name":"刘鑫","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":381,"no":31111328,"name":"邵轶群","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":381,"no":41101907,"name":"姜骁楠","sex":"女","ms":"四十七中","hs":"实验中学","plan":"统招"},{"rank":381,"no":21108522,"name":"许立三","sex":"男","ms":"二十一中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":31100418,"name":"苏秋硕","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":31105507,"name":"陈中慧","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":31106125,"name":"任航","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":31115115,"name":"张诗敏","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":41105512,"name":"郇滢","sex":"女","ms":"十六中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61101230,"name":"张睿","sex":"女","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61101417,"name":"张云龙","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61102501,"name":"丁一铭","sex":"男","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61102904,"name":"曾瑶","sex":"女","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61104803,"name":"林旭光","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":381,"no":61104910,"name":"那连强","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":623,"count":27,"tr":14,"sy":10,"yz":3,"other":0,"cum":380,"students":[{"rank":354,"no":31101728,"name":"于燕池","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":354,"no":31106308,"name":"张畅","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":354,"no":41102303,"name":"朱旭","sex":"女","ms":"十中","hs":"一中","plan":"统招"},{"rank":354,"no":21101204,"name":"姜会欣","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":354,"no":21103415,"name":"范碧云","sex":"女","ms":"六十六中","hs":"实验中学","plan":"统招"},{"rank":354,"no":21104726,"name":"张月","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":354,"no":21105118,"name":"郭帅","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":354,"no":21106323,"name":"卢薇","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":354,"no":21106710,"name":"李慧川","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":354,"no":31107003,"name":"吕箫","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":354,"no":31108417,"name":"王黎","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":354,"no":31113116,"name":"张铃珠","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":354,"no":61100122,"name":"郑鹏飞","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":354,"no":1100314,"name":"李若昕","sex":"男","ms":"林甸初中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31105012,"name":"侯博文","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31107324,"name":"王璐","sex":"女","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31108519,"name":"李楠","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31110012,"name":"朱梦元","sex":"女","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31112305,"name":"王鑫","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31112906,"name":"韩东博","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":31113429,"name":"王月明","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":41100412,"name":"赵浩宇","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":41102322,"name":"高扬","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":41105629,"name":"邢悦","sex":"女","ms":"十中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":61100228,"name":"刘倩竹","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":61102905,"name":"王楠竹","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":354,"no":61105719,"name":"安诗玉","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":624,"count":25,"tr":10,"sy":10,"yz":5,"other":0,"cum":353,"students":[{"rank":329,"no":31100402,"name":"李岩松","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":329,"no":31102622,"name":"运超","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":329,"no":31103130,"name":"徐鸿博","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":329,"no":31106019,"name":"于加睿","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":329,"no":31107512,"name":"吕秀娟","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":329,"no":1100221,"name":"刘泽宇","sex":"男","ms":"林甸初中","hs":"实验中学","plan":"统招"},{"rank":329,"no":21101126,"name":"徐哲","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":329,"no":21103601,"name":"邵森","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":329,"no":21104207,"name":"兰丛博","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":329,"no":31104018,"name":"刘昊","sex":"男","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":329,"no":31113909,"name":"陈莹","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":329,"no":31115611,"name":"焦旭光","sex":"男","ms":"二十五中","hs":"实验中学","plan":"统招"},{"rank":329,"no":41104020,"name":"王晶楠","sex":"男","ms":"五十二中","hs":"实验中学","plan":"统招"},{"rank":329,"no":61101320,"name":"王梦瑶","sex":"女","ms":"五十七中","hs":"实验中学","plan":"统招"},{"rank":329,"no":61106108,"name":"刘翯","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":329,"no":31101111,"name":"曹玉伟","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":31101305,"name":"李鹤","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":31101815,"name":"段聿舟","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":31112003,"name":"齐闻","sex":"男","ms":"六十四中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":31112215,"name":"师喆","sex":"女","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":31112629,"name":"李冶方","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":41103102,"name":"覃黎曼","sex":"女","ms":"十六中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":41104214,"name":"马天骄","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":61101206,"name":"纪鹰昊","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":329,"no":61102929,"name":"王京","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":625,"count":38,"tr":9,"sy":18,"yz":8,"other":3,"cum":328,"students":[{"rank":291,"no":31100717,"name":"王羽","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31101917,"name":"周卫群","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31102710,"name":"杨赫","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31106609,"name":"李朋翰","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31108907,"name":"王晶","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31113925,"name":"张晨","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31114321,"name":"曹明阳","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31114821,"name":"种敏琪","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":291,"no":31103612,"name":"姜瀚","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":291,"no":31106317,"name":"王浩羽","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":291,"no":61105517,"name":"李岩","sex":"女","ms":"龙镇一中","hs":"四中","plan":"统招"},{"rank":291,"no":21100928,"name":"刘姚","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":291,"no":21102926,"name":"应頔","sex":"女","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":291,"no":21103919,"name":"陈楠","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":291,"no":21108920,"name":"金碧","sex":"女","ms":"东三初中","hs":"实验中学","plan":"统招"},{"rank":291,"no":31103315,"name":"张泽宇","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":291,"no":31105606,"name":"李孟姣","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":291,"no":31107328,"name":"姜杉","sex":"女","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":291,"no":31111419,"name":"程思杰","sex":"女","ms":"喇镇中学","hs":"实验中学","plan":"统招"},{"rank":291,"no":31111705,"name":"朱璇","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":291,"no":41100218,"name":"陈灵","sex":"女","ms":"十六中","hs":"实验中学","plan":"统招"},{"rank":291,"no":41100718,"name":"乔千芳","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":291,"no":41100906,"name":"赵雪","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":291,"no":41104006,"name":"赵疆江","sex":"男","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":291,"no":61101913,"name":"谭悦祎","sex":"女","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":291,"no":61102518,"name":"孟宪熙","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":291,"no":61102812,"name":"冯源","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":291,"no":61104717,"name":"田明佳","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":291,"no":61104719,"name":"李龙鸣","sex":"男","ms":"四十三中","hs":"实验中学","plan":"统招"},{"rank":291,"no":31104206,"name":"季奇","sex":"女","ms":"五十八中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":31108112,"name":"曹育铭","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":31108209,"name":"隋昊","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":31109614,"name":"姜增哲","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":31114427,"name":"王超群","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":41104407,"name":"王庆龙","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":61101917,"name":"宫健峰","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":291,"no":61102130,"name":"于鑫垚","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":291,"no":61103813,"name":"宫婉璐","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":626,"count":19,"tr":10,"sy":3,"yz":5,"other":1,"cum":290,"students":[{"rank":272,"no":31101714,"name":"李海旭","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":272,"no":31102204,"name":"秦旗","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":272,"no":31102228,"name":"苏飞帆","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":272,"no":31105418,"name":"刘静","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":272,"no":31113622,"name":"张丽娜","sex":"女","ms":"三十中","hs":"一中","plan":"统招"},{"rank":272,"no":61103908,"name":"王璐","sex":"女","ms":"三十一中","hs":"四中","plan":"统招"},{"rank":272,"no":31102723,"name":"刘思维","sex":"女","ms":"三十中","hs":"实验中学","plan":"统招"},{"rank":272,"no":61103110,"name":"姜辰","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":272,"no":61103204,"name":"李越","sex":"女","ms":"四十九中","hs":"实验中学","plan":"统招"},{"rank":272,"no":21108822,"name":"闫树堃","sex":"男","ms":"二十三中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":31103006,"name":"崔振兴","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":31110912,"name":"刘硕","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":31113002,"name":"张建勋","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":31114011,"name":"刘仲茜","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":41102005,"name":"葛婧瑜","sex":"女","ms":"六十五中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":61102523,"name":"孙宪明","sex":"女","ms":"三十一中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":61104310,"name":"吕洋","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"},{"rank":272,"no":61105317,"name":"黄之燊","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":272,"no":81100107,"name":"赵得伟","sex":"男","ms":"肇源初中","hs":"铁人中学","plan":"统招"}]},{"score":627,"count":24,"tr":6,"sy":14,"yz":3,"other":1,"cum":271,"students":[{"rank":248,"no":31101402,"name":"王为","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":248,"no":31104117,"name":"顾超","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":248,"no":31112316,"name":"马天骁","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":248,"no":31100715,"name":"蔡昊","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":248,"no":21101925,"name":"王蔚","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21103318,"name":"陈晴","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21104222,"name":"张婷婷","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21104406,"name":"杨亚勋","sex":"女","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21106028,"name":"王绍程","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21107020,"name":"魏玉爽","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21107406,"name":"周莹","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":248,"no":21108225,"name":"王哲","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":248,"no":41101506,"name":"吴超","sex":"女","ms":"杏树岗中","hs":"实验中学","plan":"统招"},{"rank":248,"no":41105906,"name":"李莹","sex":"女","ms":"六十五中","hs":"实验中学","plan":"统招"},{"rank":248,"no":61100301,"name":"王爽心","sex":"女","ms":"四十三中","hs":"实验中学","plan":"统招"},{"rank":248,"no":61102007,"name":"陈研硕","sex":"男","ms":"四十三中","hs":"实验中学","plan":"统招"},{"rank":248,"no":61102921,"name":"孔繁玺","sex":"男","ms":"四十三中","hs":"实验中学","plan":"统招"},{"rank":248,"no":61104625,"name":"宋仁杰","sex":"男","ms":"十九中学","hs":"实验中学","plan":"统招"},{"rank":248,"no":21106815,"name":"王帆","sex":"男","ms":"十三中","hs":"铁人中学","plan":"统招"},{"rank":248,"no":21107608,"name":"方浩","sex":"男","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":248,"no":31101923,"name":"赵安琪","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":248,"no":31109219,"name":"田鑫","sex":"男","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":248,"no":31110515,"name":"滕筱璠","sex":"女","ms":"五十八中","hs":"铁人中学","plan":"统招"},{"rank":248,"no":61106021,"name":"刘婧雅","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":628,"count":11,"tr":6,"sy":3,"yz":2,"other":0,"cum":247,"students":[{"rank":237,"no":31106706,"name":"祖峤","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":237,"no":31108007,"name":"冯聪","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":237,"no":21103613,"name":"张赢","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":237,"no":21106226,"name":"吴晓楠","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":237,"no":31113004,"name":"唐宇","sex":"男","ms":"十四中","hs":"实验中学","plan":"统招"},{"rank":237,"no":31100525,"name":"于向南","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":237,"no":31106010,"name":"武佳文","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":237,"no":31112813,"name":"戴飞","sex":"女","ms":"三中","hs":"铁人中学","plan":"统招"},{"rank":237,"no":31115021,"name":"刘畅","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":237,"no":41102023,"name":"衡畅","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":237,"no":41104601,"name":"李琪","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"}]},{"score":629,"count":17,"tr":7,"sy":8,"yz":2,"other":0,"cum":236,"students":[{"rank":220,"no":31102216,"name":"权文琪","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":220,"no":31104103,"name":"王宇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":220,"no":21103002,"name":"李鹏","sex":"男","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":220,"no":21104811,"name":"刘超","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":220,"no":21105526,"name":"曹喻","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":220,"no":21109410,"name":"闫志","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":220,"no":31109206,"name":"王舒","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":220,"no":61104415,"name":"李晗","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":220,"no":71100102,"name":"徐尚","sex":"女","ms":"肇州初中","hs":"实验中学","plan":"统招"},{"rank":220,"no":91100123,"name":"王宇","sex":"女","ms":"杜蒙初中","hs":"实验中学","plan":"统招"},{"rank":220,"no":31100419,"name":"於鑫","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":31102604,"name":"高晗","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":31108913,"name":"赵晨旭","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":31115707,"name":"沈茜雯","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":41103226,"name":"李岩","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":61101016,"name":"陈茁","sex":"女","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":220,"no":61101309,"name":"程碧松","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":630,"count":31,"tr":12,"sy":13,"yz":5,"other":1,"cum":219,"students":[{"rank":189,"no":31101427,"name":"秦源","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":189,"no":31101710,"name":"史英男","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":189,"no":31111427,"name":"张婕妤","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":189,"no":31113205,"name":"牛雨军","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":189,"no":31115211,"name":"张晨","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":189,"no":31114522,"name":"张人戈","sex":"男","ms":"三十六中","hs":"中学","plan":"统招"},{"rank":189,"no":21100710,"name":"陈娜","sex":"女","ms":"二十三中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21101512,"name":"李旭妍","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21103229,"name":"邱哲人","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21104004,"name":"唐滨琪","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21104613,"name":"姜博曦","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21105330,"name":"李源","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21105717,"name":"赵迪","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21106130,"name":"张兆鑫","sex":"男","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21107209,"name":"宋劲冲","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21108307,"name":"王继伟","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21109222,"name":"相楠","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":189,"no":31108626,"name":"王馨伟","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":189,"no":51102607,"name":"于海良","sex":"男","ms":"三十三中","hs":"实验中学","plan":"统招"},{"rank":189,"no":21109414,"name":"孙春书","sex":"女","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31101104,"name":"李鹏程","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31101405,"name":"胡寅龙","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31102907,"name":"李传锐","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31109314,"name":"孙源","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31111511,"name":"张鑫","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31115227,"name":"李春昱","sex":"女","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":31115426,"name":"吴阚","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":51101701,"name":"李昊","sex":"女","ms":"五十六中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":61100928,"name":"于傲雪","sex":"女","ms":"十九中学","hs":"铁人中学","plan":"统招"},{"rank":189,"no":61104320,"name":"郭磊","sex":"男","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":189,"no":61105601,"name":"谷乐","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":631,"count":13,"tr":9,"sy":3,"yz":0,"other":1,"cum":188,"students":[{"rank":176,"no":61101013,"name":"栾翔宇","sex":"男","ms":"三十一中","hs":"四中","plan":"统招"},{"rank":176,"no":21102005,"name":"张朔","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":176,"no":31103906,"name":"程宇微","sex":"女","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":176,"no":31104730,"name":"宋芃","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":176,"no":21105730,"name":"潘玉龙","sex":"男","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":21108606,"name":"胡潇","sex":"男","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":31101704,"name":"艾萌","sex":"女","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":31104620,"name":"王迪","sex":"男","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":31111401,"name":"张琳","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":31114822,"name":"郭琳","sex":"女","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":41100303,"name":"隋文健","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":41100405,"name":"李谡","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":176,"no":41103508,"name":"李宇华","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"}]},{"score":632,"count":14,"tr":7,"sy":5,"yz":2,"other":0,"cum":175,"students":[{"rank":162,"no":31107621,"name":"郭洋","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":162,"no":31110511,"name":"王若伊","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":162,"no":21103114,"name":"姜姗","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":162,"no":21107105,"name":"马英强","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":162,"no":21108625,"name":"马啸","sex":"女","ms":"祥阁学校","hs":"实验中学","plan":"统招"},{"rank":162,"no":51100421,"name":"朱丹墨","sex":"女","ms":"三十七中","hs":"实验中学","plan":"统招"},{"rank":162,"no":61104413,"name":"关昭","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":162,"no":31106213,"name":"赵世功","sex":"男","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":162,"no":31107024,"name":"姜世鑫","sex":"男","ms":"三十中","hs":"铁人中学","plan":"统招"},{"rank":162,"no":31109730,"name":"刘婧","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":162,"no":31112918,"name":"薛靓","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":162,"no":31113407,"name":"陆原鹏","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":162,"no":41102629,"name":"宛明哲","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":162,"no":61102916,"name":"于珊","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":633,"count":20,"tr":9,"sy":6,"yz":3,"other":2,"cum":161,"students":[{"rank":142,"no":31104011,"name":"孙楠","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":142,"no":31111926,"name":"符迪","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":142,"no":31112801,"name":"郭天琪","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":142,"no":61101006,"name":"戴思远","sex":"女","ms":"五十一中","hs":"四中","plan":"统招"},{"rank":142,"no":61103029,"name":"张悦","sex":"女","ms":"六十一中","hs":"四中","plan":"统招"},{"rank":142,"no":21109413,"name":"于光锐","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":142,"no":31102330,"name":"刘开洋","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":142,"no":31109510,"name":"王新格","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":142,"no":31114919,"name":"柳慧泉","sex":"男","ms":"五十八中","hs":"实验中学","plan":"统招"},{"rank":142,"no":31115205,"name":"王传龙","sex":"男","ms":"二十八中","hs":"实验中学","plan":"统招"},{"rank":142,"no":61104921,"name":"赵祎含","sex":"男","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":142,"no":31101430,"name":"焦龙","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31107904,"name":"李金迪","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31108118,"name":"陈华伟","sex":"男","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31110523,"name":"朴文翰","sex":"男","ms":"一中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31110524,"name":"刘万清","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31111315,"name":"吴昊天","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":31111728,"name":"冀朝旭","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":61100724,"name":"聂森","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":142,"no":91100107,"name":"张明睿","sex":"男","ms":"杜蒙初中","hs":"铁人中学","plan":"统招"}]},{"score":634,"count":12,"tr":3,"sy":5,"yz":4,"other":0,"cum":141,"students":[{"rank":130,"no":31102614,"name":"陈川","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":130,"no":31105923,"name":"赵中义","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":130,"no":31109306,"name":"宫志佳","sex":"女","ms":"十四中","hs":"一中","plan":"统招"},{"rank":130,"no":31113817,"name":"梁轶","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":130,"no":21102211,"name":"吕顺","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":130,"no":21105325,"name":"刘文佳","sex":"男","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":130,"no":21105724,"name":"刘畅","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":130,"no":31103518,"name":"于梦尧","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":130,"no":51100913,"name":"黄小哲","sex":"女","ms":"三十二中","hs":"实验中学","plan":"统招"},{"rank":130,"no":31107211,"name":"李婧","sex":"女","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":130,"no":31108702,"name":"马悦","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":130,"no":31111710,"name":"陈光","sex":"男","ms":"五十八中","hs":"铁人中学","plan":"统招"}]},{"score":635,"count":14,"tr":6,"sy":6,"yz":2,"other":0,"cum":129,"students":[{"rank":116,"no":31110129,"name":"孟月","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":116,"no":31111325,"name":"乔宏薇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":116,"no":21102204,"name":"卢湦","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":116,"no":21104511,"name":"钱鑫","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":116,"no":31103313,"name":"尹伊","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":116,"no":31104524,"name":"王博","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":116,"no":61100727,"name":"张莹","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":116,"no":61102219,"name":"吴桐","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":116,"no":31100412,"name":"王雪松","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":116,"no":41101418,"name":"高睿","sex":"女","ms":"十六中","hs":"铁人中学","plan":"统招"},{"rank":116,"no":41105327,"name":"马枭","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":116,"no":41105405,"name":"脱淞元","sex":"男","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":116,"no":41105722,"name":"马跃","sex":"女","ms":"十七中","hs":"铁人中学","plan":"统招"},{"rank":116,"no":61104601,"name":"杜松瑶","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":636,"count":16,"tr":6,"sy":7,"yz":3,"other":0,"cum":115,"students":[{"rank":100,"no":31103918,"name":"唐建超","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":100,"no":31108311,"name":"赵志锟","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":100,"no":31108920,"name":"潘哲","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":100,"no":21103310,"name":"万泉","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":100,"no":21106729,"name":"刘一茗","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":100,"no":31102901,"name":"梁骁","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":100,"no":31106105,"name":"郭雨微","sex":"女","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":100,"no":31109625,"name":"刘畅","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":100,"no":31110421,"name":"辛莅祚","sex":"女","ms":"三十六中","hs":"实验中学","plan":"统招"},{"rank":100,"no":61101211,"name":"郑舒婷","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":100,"no":21107613,"name":"魏祎","sex":"女","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":100,"no":31104304,"name":"赵妍","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":100,"no":31107106,"name":"孙悦","sex":"女","ms":"二十八中","hs":"铁人中学","plan":"统招"},{"rank":100,"no":31111005,"name":"宋木","sex":"女","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":100,"no":31113306,"name":"洪旭","sex":"女","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":100,"no":41100111,"name":"韩静","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"}]},{"score":637,"count":11,"tr":4,"sy":4,"yz":3,"other":0,"cum":99,"students":[{"rank":89,"no":31102124,"name":"王筱添","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":89,"no":31104428,"name":"任帅","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":89,"no":31106017,"name":"张宁宇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":89,"no":21107017,"name":"吕文菁","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":89,"no":31103416,"name":"张安琪","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":89,"no":31104803,"name":"朱琳","sex":"女","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":89,"no":31105623,"name":"肖聪","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":89,"no":31104615,"name":"刘梦园","sex":"女","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":89,"no":31106113,"name":"张梦然","sex":"男","ms":"二十五中","hs":"铁人中学","plan":"统招"},{"rank":89,"no":61101429,"name":"朱丹","sex":"女","ms":"五十七中","hs":"铁人中学","plan":"统招"},{"rank":89,"no":61105603,"name":"王悦","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":638,"count":16,"tr":4,"sy":8,"yz":4,"other":0,"cum":88,"students":[{"rank":73,"no":31102426,"name":"曹琪","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":73,"no":31107918,"name":"刘世勋","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":73,"no":31108717,"name":"曹沂","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":73,"no":31108812,"name":"顾超一","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":73,"no":21100201,"name":"许莹莹","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":73,"no":21102711,"name":"李铭洋","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":73,"no":21103322,"name":"赵海洋","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":73,"no":21104329,"name":"王洋","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":73,"no":31106606,"name":"张执慧","sex":"女","ms":"景园中学","hs":"实验中学","plan":"统招"},{"rank":73,"no":41100706,"name":"曲晗","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":73,"no":61100129,"name":"许晶","sex":"女","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":73,"no":61100805,"name":"王帅","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":73,"no":21106326,"name":"方悦","sex":"女","ms":"六十九中","hs":"铁人中学","plan":"统招"},{"rank":73,"no":31105304,"name":"杨翘楚","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":73,"no":31113326,"name":"季林","sex":"女","ms":"五十八中","hs":"铁人中学","plan":"统招"},{"rank":73,"no":61102307,"name":"郑妍","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":639,"count":12,"tr":5,"sy":3,"yz":3,"other":1,"cum":72,"students":[{"rank":61,"no":31101702,"name":"王惠西","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":61,"no":31102909,"name":"张亦楠","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":61,"no":31106002,"name":"胡洁琼","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":61,"no":31102518,"name":"王浩宇","sex":"男","ms":"一中","hs":"中学","plan":"统招"},{"rank":61,"no":21107602,"name":"曲嘉宝","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":61,"no":31104310,"name":"赵士强","sex":"男","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":61,"no":31104517,"name":"刘凤娇","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":61,"no":1100410,"name":"张智源","sex":"男","ms":"林甸初中","hs":"铁人中学","plan":"统招"},{"rank":61,"no":31105228,"name":"毕野","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"},{"rank":61,"no":31108329,"name":"鹿昊","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"},{"rank":61,"no":61101025,"name":"于航","sex":"女","ms":"五十一中","hs":"铁人中学","plan":"统招"},{"rank":61,"no":61104805,"name":"郑秀明","sex":"男","ms":"五十一中","hs":"铁人中学","plan":"统招"}]},{"score":640,"count":9,"tr":4,"sy":4,"yz":1,"other":0,"cum":60,"students":[{"rank":52,"no":31109615,"name":"段研頔","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":52,"no":21103529,"name":"刘喆倩","sex":"女","ms":"八中","hs":"实验中学","plan":"统招"},{"rank":52,"no":41101023,"name":"赵阳洋","sex":"女","ms":"二十七中","hs":"实验中学","plan":"统招"},{"rank":52,"no":61104027,"name":"刘小诗","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":52,"no":91100118,"name":"朱剑楠","sex":"男","ms":"杜蒙初中","hs":"实验中学","plan":"统招"},{"rank":52,"no":21103921,"name":"刘洋","sex":"男","ms":"四十中","hs":"铁人中学","plan":"统招"},{"rank":52,"no":31107522,"name":"杨帆","sex":"女","ms":"二十四中","hs":"铁人中学","plan":"统招"},{"rank":52,"no":41100219,"name":"马天宇","sex":"女","ms":"四十二中","hs":"铁人中学","plan":"统招"},{"rank":52,"no":61100503,"name":"张睿","sex":"男","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":641,"count":7,"tr":1,"sy":5,"yz":1,"other":0,"cum":51,"students":[{"rank":45,"no":31113318,"name":"张琳","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":45,"no":21100210,"name":"王天吉","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":45,"no":21101416,"name":"徐宁","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":45,"no":21104628,"name":"张巳龙","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":45,"no":21107422,"name":"王皓沿","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":45,"no":41105611,"name":"邵迪","sex":"男","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":45,"no":31114129,"name":"刘松宇","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"}]},{"score":642,"count":5,"tr":1,"sy":2,"yz":2,"other":0,"cum":44,"students":[{"rank":40,"no":31107609,"name":"王金鑫","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":40,"no":31108207,"name":"蒋莉","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":40,"no":21101017,"name":"崔敬一","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":40,"no":61105225,"name":"赵扬","sex":"男","ms":"六十一中","hs":"实验中学","plan":"统招"},{"rank":40,"no":61103926,"name":"李美娇","sex":"女","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":643,"count":8,"tr":2,"sy":5,"yz":1,"other":0,"cum":39,"students":[{"rank":32,"no":31108802,"name":"夏梦宇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":32,"no":21106304,"name":"韦凌潇","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":32,"no":21107201,"name":"高原","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":32,"no":21107418,"name":"周思齐","sex":"女","ms":"四十四中","hs":"实验中学","plan":"统招"},{"rank":32,"no":21107429,"name":"张玮珊","sex":"女","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":32,"no":31105607,"name":"石月","sex":"女","ms":"一中","hs":"实验中学","plan":"统招"},{"rank":32,"no":21107701,"name":"刘赫男","sex":"男","ms":"八中","hs":"铁人中学","plan":"统招"},{"rank":32,"no":31111313,"name":"王立言","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"}]},{"score":644,"count":5,"tr":1,"sy":1,"yz":3,"other":0,"cum":31,"students":[{"rank":27,"no":31106007,"name":"杜宇寰","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":27,"no":31114105,"name":"薛丽","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":27,"no":91100101,"name":"鲍慊","sex":"女","ms":"杜蒙初中","hs":"一中","plan":"统招"},{"rank":27,"no":61105619,"name":"麻钰","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":27,"no":41104816,"name":"姜含宇","sex":"男","ms":"十六中","hs":"铁人中学","plan":"统招"}]},{"score":645,"count":6,"tr":1,"sy":3,"yz":2,"other":0,"cum":26,"students":[{"rank":21,"no":31100816,"name":"刘安东","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":21,"no":31102712,"name":"孙默","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":21,"no":21100126,"name":"吴迪","sex":"男","ms":"五十五中","hs":"实验中学","plan":"统招"},{"rank":21,"no":41101004,"name":"苑仁峰","sex":"女","ms":"四十二中","hs":"实验中学","plan":"统招"},{"rank":21,"no":61105523,"name":"范思旭","sex":"男","ms":"五十一中","hs":"实验中学","plan":"统招"},{"rank":21,"no":31106214,"name":"付磊","sex":"男","ms":"四十六中","hs":"铁人中学","plan":"统招"}]},{"score":646,"count":5,"tr":4,"sy":0,"yz":1,"other":0,"cum":20,"students":[{"rank":16,"no":31101309,"name":"张洪谋","sex":"男","ms":"一中","hs":"一中","plan":"统招"},{"rank":16,"no":31106822,"name":"孙勇","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":16,"no":31108430,"name":"丁甍","sex":"女","ms":"景园中学","hs":"铁人中学","plan":"统招"},{"rank":16,"no":41101510,"name":"王孟阳","sex":"男","ms":"六十五中","hs":"铁人中学","plan":"统招"},{"rank":16,"no":61100804,"name":"王锐","sex":"女","ms":"十九中学","hs":"铁人中学","plan":"统招"}]},{"score":647,"count":3,"tr":1,"sy":1,"yz":1,"other":0,"cum":15,"students":[{"rank":13,"no":31109302,"name":"刘佳茜","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":13,"no":21105520,"name":"刘景睿","sex":"男","ms":"六十九中","hs":"实验中学","plan":"统招"},{"rank":13,"no":21104913,"name":"王洛奇","sex":"男","ms":"六十九中","hs":"铁人中学","plan":"统招"}]},{"score":648,"count":2,"tr":0,"sy":1,"yz":1,"other":0,"cum":12,"students":[{"rank":11,"no":31110424,"name":"李璇","sex":"女","ms":"一中","hs":"一中","plan":"统招"},{"rank":11,"no":21104303,"name":"李梦然","sex":"女","ms":"六十九中","hs":"实验中学","plan":"统招"}]},{"score":649,"count":2,"tr":2,"sy":0,"yz":0,"other":0,"cum":10,"students":[{"rank":9,"no":31101122,"name":"迟妍玮","sex":"女","ms":"三十六中","hs":"铁人中学","plan":"统招"},{"rank":9,"no":61104917,"name":"黄鹤","sex":"女","ms":"六十一中","hs":"铁人中学","plan":"统招"}]},{"score":650,"count":1,"tr":1,"sy":0,"yz":0,"other":0,"cum":8,"students":[{"rank":8,"no":31102715,"name":"狄昊","sex":"男","ms":"十四中","hs":"铁人中学","plan":"统招"}]},{"score":651,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":7,"students":[]},{"score":652,"count":1,"tr":0,"sy":0,"yz":1,"other":0,"cum":7,"students":[{"rank":7,"no":31100614,"name":"王亦然","sex":"女","ms":"一中","hs":"一中","plan":"统招"}]},{"score":653,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":6,"students":[]},{"score":654,"count":2,"tr":0,"sy":2,"yz":0,"other":0,"cum":6,"students":[{"rank":5,"no":21107430,"name":"魏征","sex":"男","ms":"十三中","hs":"实验中学","plan":"统招"},{"rank":5,"no":61101919,"name":"姜冰","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"}]},{"score":655,"count":1,"tr":0,"sy":1,"yz":0,"other":0,"cum":4,"students":[{"rank":4,"no":61102621,"name":"崔潇","sex":"女","ms":"五十一中","hs":"实验中学","plan":"统招"}]},{"score":656,"count":1,"tr":0,"sy":0,"yz":1,"other":0,"cum":3,"students":[{"rank":3,"no":31114714,"name":"关天下","sex":"女","ms":"一中","hs":"一中","plan":"统招"}]},{"score":657,"count":1,"tr":1,"sy":0,"yz":0,"other":0,"cum":2,"students":[{"rank":2,"no":31100609,"name":"刘禹驰","sex":"男","ms":"三十六中","hs":"铁人中学","plan":"统招"}]},{"score":658,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":1,"students":[]},{"score":659,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":1,"students":[]},{"score":660,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":1,"students":[]},{"score":661,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":1,"students":[]},{"score":662,"count":0,"tr":0,"sy":0,"yz":0,"other":0,"cum":1,"students":[]},{"score":663,"count":1,"tr":0,"sy":0,"yz":1,"other":0,"cum":1,"students":[{"rank":1,"no":31105407,"name":"李璐","sex":"女","ms":"一中","hs":"一中","plan":"统招"}]}]};
+
+(function(){
+  const svg = document.getElementById('chart1pt');
+  if(!svg) return;
+  const tip = document.getElementById('tip');
+  const drawer = document.getElementById('drawer1pt');
+  const drawerTitle = document.getElementById('drawerTitle');
+  const drawerBadge = document.getElementById('drawerBadge');
+  const drawerSearch = document.getElementById('drawerSearch');
+  const drawerTbody = document.getElementById('drawerTbody');
+  const drawerClose = document.getElementById('drawerClose');
+
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (t, a, p) => {
+    const e = document.createElementNS(NS, t);
+    for (const k in a) e.setAttribute(k, a[k]);
+    if (p) p.appendChild(e);
+    return e;
+  };
+
+  const W = 960, H = 480;
+  const m = { l: 56, r: 24, t: 34, b: 62 };
+  const x0 = m.l, x1 = W - m.r, y0 = H - m.b, y1 = m.t;
+  const bins = DATA_1PT.bins;
+  const nBins = bins.length;
+  const slotW = (x1 - x0) / nBins;
+  const barW = Math.max(8, slotW - 3.8);
+
+  const maxVal = 58;
+  const Y = v => y0 - (v / maxVal) * (y0 - y1);
+  const X = i => x0 + (i + 0.5) * slotW;
+
+  let currentMode = 'stack';
+  let activeScore = null;
+  let activeStudents = [];
+
+  const colors = {
+    tr: 'var(--petrol)',
+    sy: 'var(--amber)',
+    yz: 'var(--violet)',
+    other: 'var(--void)',
+    total: 'var(--seal)'
+  };
+
+  // Axes
+  for (let v = 0; v <= 50; v += 10) {
+    el('line', { x1: x0, x2: x1, y1: Y(v), y2: Y(v), class: 'gl' }, svg);
+    const t = el('text', { x: x0 - 8, y: Y(v) + 4, 'text-anchor': 'end', 'font-size': '11' }, svg);
+    t.textContent = v;
+  }
+  const yc = (y0 + y1) / 2;
+  el('text', { x: 16, y: yc, 'text-anchor': 'middle', class: 'axlab', transform: `rotate(-90 16 ${yc})` }, svg)
+    .textContent = '考生人数（频数）';
+
+  el('line', { x1: x0, x2: x1, y1: y0, y2: y0, class: 'axis' }, svg);
+  el('line', { x1: x0, x2: x0, y1: y0, y2: y1, class: 'axis' }, svg);
+
+  bins.forEach((b, i) => {
+    const cx = X(i);
+    const isMajor = (b.score % 5 === 0) || b.score === 663;
+    el('line', { x1: cx, x2: cx, y1: y0, y2: y0 + (isMajor ? 6 : 3), stroke: 'var(--rule)', 'stroke-width': 1 }, svg);
+    if (isMajor) {
+      const txt = el('text', { x: cx, y: y0 + 18, 'text-anchor': 'middle', 'font-size': '11', 'font-weight': (b.score === 615 || b.score === 663 ? '600' : '400') }, svg);
+      txt.textContent = b.score;
+    }
+  });
+  el('text', { x: (x0 + x1) / 2, y: H - 12, 'text-anchor': 'middle', class: 'axlab' }, svg)
+    .textContent = '中考文化成绩（610–663 分逐分分布）';
+
+  // Key Milestones Pin
+  const milestones = [
+    { s: 615, txt: '众数 53人', align: 'middle', dy: -28 },
+    { s: 621, txt: '中位数 621', align: 'middle', dy: -10 },
+    { s: 635, txt: '拐点 635', align: 'start', dx: 3, dy: -12 },
+    { s: 663, txt: '状元 663分', align: 'end', dx: -6, dy: -22 }
+  ];
+  milestones.forEach(mItem => {
+    const idx = bins.findIndex(b => b.score === mItem.s);
+    if (idx < 0) return;
+    const cx = X(idx);
+    const b = bins[idx];
+    const cy = Y(b.count);
+    el('line', { x1: cx, x2: cx, y1: cy - 2, y2: cy + (mItem.dy || -20) + 12, stroke: 'var(--ink-3)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }, svg);
+    const t = el('text', { x: cx + (mItem.dx || 0), y: cy + (mItem.dy || -20) + 8, 'text-anchor': mItem.align, 'font-size': '10.5', 'font-weight': '600', fill: 'var(--ink)' }, svg);
+    t.textContent = mItem.txt;
+  });
+
+  const barsLayer = el('g', { id: 'barsLayer1pt' }, svg);
+
+  function renderBars() {
+    barsLayer.innerHTML = '';
+    bins.forEach((b, i) => {
+      const cx = X(i);
+      const bx = cx - barW / 2;
+      const count = b.count;
+
+      if (currentMode === 'stack') {
+        let curY = y0;
+        const segs = [
+          { k: 'tr', c: colors.tr, v: b.tr },
+          { k: 'sy', c: colors.sy, v: b.sy },
+          { k: 'yz', c: colors.yz, v: b.yz },
+          { k: 'other', c: colors.other, v: b.other }
+        ];
+        segs.forEach(sg => {
+          if (sg.v <= 0) return;
+          const h = (sg.v / maxVal) * (y0 - y1);
+          const topY = curY - h;
+          el('rect', { x: bx, y: topY, width: barW, height: h, fill: sg.c, opacity: 0.92, rx: 1, ry: 1 }, barsLayer);
+          curY = topY;
+        });
+      } else if (currentMode === 'total') {
+        if (count > 0) {
+          const h = (count / maxVal) * (y0 - y1);
+          el('rect', { x: bx, y: y0 - h, width: barW, height: h, fill: colors.total, opacity: 0.88, rx: 1, ry: 1 }, barsLayer);
+        }
+      } else {
+        const v = b[currentMode] || 0;
+        if (v > 0) {
+          const h = (v / maxVal) * (y0 - y1);
+          el('rect', { x: bx, y: y0 - h, width: barW, height: h, fill: colors[currentMode], opacity: 0.92, rx: 1, ry: 1 }, barsLayer);
+        }
+      }
+
+      // Value label on peak bars
+      if (count > 0 && (b.score === 615 || b.score === 610 || b.score === 620 || b.score === 625 || b.score === 663)) {
+        const val = (currentMode === 'stack' || currentMode === 'total') ? count : (b[currentMode] || 0);
+        if (val > 0) {
+          const txt = el('text', { x: cx, y: Y(val) - 4, 'text-anchor': 'middle', 'font-size': '10', 'font-weight': '600', fill: 'var(--ink-2)' }, barsLayer);
+          txt.textContent = val;
+        }
+      }
+
+      // Hit area
+      const hit = el('rect', { x: bx - 1, y: y1, width: barW + 2, height: y0 - y1, fill: 'transparent', cursor: count > 0 ? 'pointer' : 'default' }, barsLayer);
+
+      if (activeScore === b.score && count > 0) {
+        el('rect', { x: bx - 2, y: Y(count) - 2, width: barW + 4, height: (y0 - Y(count)) + 2, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 2, rx: 2 }, barsLayer);
+      }
+
+      hit.addEventListener('mousemove', ev => {
+        const pctHigh = ((b.count / DATA_1PT.total) * 100).toFixed(2);
+        let h = `<div class="th">${b.score} 分 · 频数 ${b.count} 人</div>` +
+                `<div class="tr"><span>占高分段 (≥610)</span><span>${pctHigh}%</span></div>` +
+                `<div class="tr"><span>全市累计 ≥ ${b.score}分</span><span>第 ${b.cum} 名</span></div>` +
+                `<div style="margin-top:5px;border-top:1px dashed rgba(255,255,255,0.2);padding-top:3px">` +
+                `<div class="tr"><span style="color:#7ed6df">铁人中学</span><span>${b.tr} 人</span></div>` +
+                `<div class="tr"><span style="color:#f9ca24">实验中学</span><span>${b.sy} 人</span></div>` +
+                `<div class="tr"><span style="color:#e056fd">大庆一中</span><span>${b.yz} 人</span></div>` +
+                (b.other > 0 ? `<div class="tr"><span style="color:#dff9fb">其他高中</span><span>${b.other} 人</span></div>` : '') +
+                `</div>` +
+                `<div style="margin-top:4px;font-size:11px;color:#f1f2f6;opacity:0.85">💡 点击柱子查看考生名册</div>`;
+        tip.innerHTML = h;
+        tip.style.opacity = 1;
+        const pad = 14;
+        let x = ev.clientX + pad, y = ev.clientY + pad;
+        if (x + tip.offsetWidth > innerWidth - 10) x = ev.clientX - tip.offsetWidth - pad;
+        if (y + tip.offsetHeight > innerHeight - 10) y = ev.clientY - tip.offsetHeight - pad;
+        tip.style.left = x + 'px'; tip.style.top = y + 'px';
+      });
+      hit.addEventListener('mouseleave', () => { tip.style.opacity = 0; });
+
+      if (count > 0) {
+        hit.addEventListener('click', () => {
+          activeScore = b.score;
+          activeStudents = b.students || [];
+          renderBars();
+
+          drawer.style.display = 'block';
+          drawerTitle.textContent = `【${b.score} 分】录取考生名册`;
+          drawerBadge.textContent = `共 ${b.count} 人 · 铁人 ${b.tr} / 实验 ${b.sy} / 一中 ${b.yz}${b.other > 0 ? ' / 其他 ' + b.other : ''}`;
+          drawerSearch.value = '';
+          renderDrawerList(activeStudents);
+          drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+      }
+    });
+  }
+
+  function renderDrawerList(list) {
+    drawerTbody.innerHTML = '';
+    if (!list || list.length === 0) {
+      drawerTbody.innerHTML = '<tr><td colspan="7" class="l" style="text-align:center;color:var(--ink-3);padding:12px">无匹配考生</td></tr>';
+      return;
+    }
+    list.forEach(st => {
+      const tr = document.createElement('tr');
+      let hsColor = 'inherit';
+      if (st.hs === '铁人中学') hsColor = 'var(--petrol)';
+      else if (st.hs === '实验中学') hsColor = 'var(--amber)';
+      else if (st.hs === '一中') hsColor = 'var(--violet)';
+
+      tr.innerHTML = `
+        <td class="l mono">${st.rank}</td>
+        <td class="mono">${st.no}</td>
+        <td class="l" style="font-weight:500">${st.name}</td>
+        <td>${st.sex}</td>
+        <td class="l">${st.ms}</td>
+        <td class="l" style="color:${hsColor};font-weight:600">${st.hs}</td>
+        <td>${st.plan}</td>
+      `;
+      drawerTbody.appendChild(tr);
+    });
+  }
+
+  drawerSearch.addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) { renderDrawerList(activeStudents); return; }
+    const filtered = activeStudents.filter(s => 
+      s.name.toLowerCase().includes(q) ||
+      s.ms.toLowerCase().includes(q) ||
+      s.hs.toLowerCase().includes(q) ||
+      String(s.no).includes(q)
+    );
+    renderDrawerList(filtered);
+  });
+
+  drawerClose.addEventListener('click', () => {
+    drawer.style.display = 'none';
+    activeScore = null;
+    renderBars();
+  });
+
+  document.getElementById('btnGroup1pt').addEventListener('click', e => {
+    if (!e.target.classList.contains('btn')) return;
+    document.querySelectorAll('#btnGroup1pt .btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentMode = e.target.dataset.mode;
+    renderBars();
+  });
+
+  renderBars();
+})();
+
+</script>
