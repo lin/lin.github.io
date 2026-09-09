@@ -1,0 +1,573 @@
+<title>实验班中考成绩分布</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+
+  :root {
+    --plane:   #f5f5f0;
+    --surface: #fdfdfc;
+    --ink:     #17170f;
+    --ink-2:   #56554d;
+    --muted:   #8b897f;
+    --grid:    #e6e4db;
+    --axis:    #cbc9bd;
+    --bar:     #2a78d6;
+    --bar-top: #1f5fac;
+    --rule:    rgba(23,23,15,0.10);
+    --ring:    rgba(23,23,15,0.09);
+    --shadow:  0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.05);
+    --display: "Newsreader", "Songti SC", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --plane:   #0d0d0b;
+      --surface: #1a1a18;
+      --ink:     #f3f3ec;
+      --ink-2:   #c2c1b6;
+      --muted:   #928f84;
+      --grid:    #2c2c29;
+      --axis:    #3b3a36;
+      --bar:     #3987e5;
+      --bar-top: #6da7ec;
+      --rule:    rgba(255,255,255,0.12);
+      --ring:    rgba(255,255,255,0.10);
+      --shadow:  0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --plane:   #0d0d0b;
+    --surface: #1a1a18;
+    --ink:     #f3f3ec;
+    --ink-2:   #c2c1b6;
+    --muted:   #928f84;
+    --grid:    #2c2c29;
+    --axis:    #3b3a36;
+    --bar:     #3987e5;
+    --bar-top: #6da7ec;
+    --rule:    rgba(255,255,255,0.12);
+    --ring:    rgba(255,255,255,0.10);
+    --shadow:  0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.4);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--plane);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: clamp(28px, 5vw, 64px) clamp(18px, 4vw, 40px) 72px;
+  }
+
+  .kicker {
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(28px, 5.2vw, 44px);
+    line-height: 1.14;
+    letter-spacing: .005em;
+    text-wrap: balance;
+    margin: 0 0 18px;
+  }
+  .standfirst {
+    max-width: 60ch;
+    font-size: 16px;
+    color: var(--ink-2);
+    margin: 0 0 34px;
+  }
+  .standfirst b { color: var(--ink); font-weight: 600; }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+    border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+  .tile {
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 16px 16px;
+  }
+  .tile .v {
+    font-family: var(--display);
+    font-size: 30px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .tile .l {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 7px;
+    letter-spacing: .02em;
+  }
+
+  .card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--ring);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 22px clamp(14px, 3vw, 26px) 18px;
+  }
+  .card-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px 16px;
+    margin-bottom: 6px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .card-sub { font-size: 12.5px; color: var(--muted); }
+
+  .seg {
+    display: inline-flex;
+    border: 1px solid var(--ring);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .seg button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--ink-2);
+    font-family: var(--sans);
+    font-size: 12.5px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .seg button + button { border-left: 1px solid var(--ring); }
+  .seg button[aria-pressed="true"] {
+    background: var(--bar);
+    color: #fff;
+  }
+  .seg button:focus-visible { outline: 2px solid var(--bar); outline-offset: -2px; }
+
+  .chart-scroll { overflow-x: auto; margin-top: 8px; }
+  svg.chart { display: block; width: 100%; min-width: 640px; height: auto; }
+
+  .gridline { stroke: var(--grid); stroke-width: 1; }
+  .axisline { stroke: var(--axis); stroke-width: 1; }
+  .tick { fill: var(--muted); font-size: 11px; font-family: var(--sans); font-variant-numeric: tabular-nums; }
+  .axis-name { fill: var(--muted); font-size: 11px; font-family: var(--sans); }
+  .bar { fill: var(--bar); transition: opacity .12s ease; }
+  .bar-cap { fill: var(--ink-2); font-size: 11px; font-family: var(--sans); font-variant-numeric: tabular-nums; }
+  svg.chart.dim .bar { opacity: .34; }
+  svg.chart.dim .bar.active { opacity: 1; }
+  .hit { fill: transparent; cursor: pointer; }
+  .hit:focus-visible { outline: 2px solid var(--bar); outline-offset: -2px; }
+  @media (prefers-reduced-motion: reduce) { .bar { transition: none; } }
+
+  .tt {
+    position: absolute;
+    z-index: 5;
+    max-width: 260px;
+    background: var(--ink);
+    color: var(--plane);
+    border-radius: 9px;
+    padding: 10px 12px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: opacity .12s ease, transform .12s ease;
+  }
+  .tt.on { opacity: 1; transform: translateY(0); }
+  .tt .tt-h { font-weight: 600; margin-bottom: 3px; }
+  .tt .tt-n { color: var(--muted); }
+  .tt .tt-names { margin-top: 6px; color: var(--plane); opacity: .9; }
+
+  .readout {
+    font-size: 15px;
+    color: var(--ink-2);
+    max-width: 62ch;
+    margin: 26px 0 0;
+  }
+  .readout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    margin-top: 26px;
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+  }
+  summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--ink-2);
+    letter-spacing: .02em;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+  th, td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--rule); }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { color: var(--muted); font-weight: 500; border-bottom: 1px solid var(--axis); }
+
+  footer {
+    margin-top: 44px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+</style>
+
+<div class="wrap">
+  <p class="kicker">大庆四中 · 北师大英语实验班 · 2004</p>
+  <h1>128 名学生的中考分数分布</h1>
+  <p class="standfirst">2004 年北师大英语实验班的完整名单共 <b>136 人</b>,其中 <b>128 人</b>能在大庆市中考录取名册里查到成绩、或按当年分数—名次对应到具体分数。下面是这 128 人的中考总分频数分布,纵轴为人数,默认组距 5 分。</p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <div class="card-title">中考总分频数分布</div>
+        <div class="card-sub" id="cardSub">组距 5 分 · 共 128 人</div>
+      </div>
+      <div class="seg" role="group" aria-label="分组方式">
+        <button data-mode="bin" aria-pressed="true">组距 5 分</button>
+        <button data-mode="unit" aria-pressed="false">逐分</button>
+      </div>
+    </div>
+    <div class="chart-scroll">
+      <svg class="chart" id="chart" viewBox="0 0 900 460" role="img"
+           aria-label="2004 年实验班 128 名学生中考总分的频数分布直方图"></svg>
+    </div>
+    <div class="tt" id="tt" hidden></div>
+
+    <p class="readout" id="readout"></p>
+
+    <details>
+      <summary>数据表 · 频数分布表</summary>
+      <table id="freqTable">
+        <thead>
+          <tr><th>分数段</th><th>频数</th><th>频率</th><th>累计</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </details>
+  </div>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // score, name, junior-high school — the 128 名单成员 whose 中考成绩 is known
+  var D = [
+    [633,"张悦","六十一中"],[633,"戴思远","五十一中"],
+    [631,"栾翔宇","三十一中"],
+    [626,"王璐","三十一中"],
+    [625,"李岩","龙镇一中"],
+    [622,"韩旭","五十七中"],
+    [616,"历晓曼","五十五中"],
+    [614,"王天哲","五十七中"],
+    [611,"袁婷","五十七中"],
+    [610,"李殿武","三十一中"],
+    [609,"付宇","三十一中"],
+    [607,"涂志远","五十七中"],
+    [606,"孙波","二十三中"],[606,"孙赜伦","五十七中"],[606,"李思琪","六十五中"],
+    [605,"万欣欣","二十七中"],[605,"赵玮","六十一中"],[605,"邹靓","五十一中"],[605,"闫肃","四十九中"],[605,"陈佳文","十中"],[605,"龙醒","十七中"],
+    [604,"张春楠","五十七中"],[604,"曹思扬","六十一中"],[604,"王鹏","十中"],[604,"陈曦","六十四中"],
+    [603,"刘洋","四十九中"],[603,"吴昊","五十七中"],[603,"李瑞","五十五中"],
+    [602,"姜文茹","五十一中"],[602,"姜琳","十九中学"],[602,"康少楠","五十七中"],[602,"张硕彤","四十六中"],[602,"李欣","十二中"],[602,"杨明","十三中"],[602,"王卓","四十四中"],[602,"王皓","三十一中"],[602,"肖锋","四十中"],[602,"葛芮岐","十九中学"],[602,"闫通通","十九中"],[602,"高明皓","十九中学"],
+    [601,"刘海宁","林甸初中"],[601,"孙鹏","五十七中"],[601,"庄思璐","十一中"],[601,"徐超然","四十四中"],[601,"李静","三十七中"],[601,"杨菲","六十一中"],[601,"王晨雪","五十七中"],[601,"王蕾","六十九中"],
+    [600,"刘宸","十三中"],[600,"刘爽","四十九中"],[600,"孟凝","五十一中"],[600,"张磊三","四十二中"],[600,"牟思蒙","五十七中"],[600,"谢鑫磊","三十一中"],[600,"陶坤","六十五中"],
+    [599,"于丰睿","五十一中"],[599,"刘佳","五十七中"],[599,"吴爽","四十四中"],[599,"王雨阳","十九中学"],[599,"赵璐","五十七中"],[599,"郑艳婷","双榆中学"],[599,"马国鹏","七十九中"],[599,"高原","六十一中"],
+    [598,"井然","五十七中"],[598,"刘宏哲","十六中"],[598,"孙继峰","六十一中"],[598,"孙蕊","六十六中"],[598,"徐迪","十九中学"],[598,"戴晓丹","四十二中"],[598,"李凡非","肇源初中"],[598,"王超","四十二中"],[598,"胡克涛","十六中"],[598,"邢馨元","三十一中"],[598,"陈丽宇","十九中学"],[598,"马金江","二十三中"],[598,"魏纯龙","十九中学"],
+    [597,"付雪飞","十九中学"],[597,"代一涵","五十一中"],[597,"刘振伟","三十二中"],[597,"宋杨","六十五中"],[597,"张圆辰","五十一中"],[597,"李俊超","十九中学"],[597,"梁珊珊","六十一中"],[597,"梁睿","五十七中"],[597,"沈淇","六十一中"],[597,"滕越超","肇源初中"],[597,"甄晴","五十一中"],[597,"董莉莉","十六中"],[597,"陈殿龙","二十一中"],[597,"高晗","五十一中"],
+    [596,"姜恩浩","四十九中"],[596,"姜楠","二十三中"],[596,"张瑜","六十六中"],[596,"李哲","八中"],[596,"贺革非","六十一中"],[596,"陈晨","八中"],
+    [595,"于维伟","二十七中"],[595,"冯佳婧","林甸初中"],[595,"刘思奇","六十五中"],[595,"刘琳琳","林甸初中"],[595,"历贺","四十九中"],[595,"周子勋","六十一中"],[595,"杜宇龙","四十六中"],[595,"杨悦","十六中"],[595,"涂强","五十一中"],[595,"潘周","十九中学"],[595,"牟爽","十九中学"],[595,"王婧斯","五十七中"],[595,"王景琳","二十七中"],[595,"王雪","四十六中"],[595,"董春鸣","五十七中"],[595,"赵悦扬","四十中"],
+    [594,"于淼","四十四中"],[594,"付策","一中"],[594,"何腾蛟","五十一中"],[594,"孙维霄","四十四中"],[594,"张旭","六十一中"],[594,"张静雅","六十九中"],[594,"李冰","林甸初中"],[594,"杨航","五十一中"],[594,"林海石","景园中学"],[594,"王志慧","六十一中"],[594,"蒋爽","四十三中"],[594,"马旭洁","六十四中"],[594,"黄贺","四十六中"],
+    [593,"李重毅","五十七中"],[593,"段磊","十九中学"],
+    [592,"郭馨蔚","一中"]
+  ];
+
+  var UNKNOWN = ["吴晓","张佳晗","李丹","李杰一","林英魁","王琳","陈思","黄静薇"];
+
+  var N = D.length;
+  var scores = D.map(function (d) { return d[0]; });
+  var lo = Math.min.apply(null, scores);
+  var hi = Math.max.apply(null, scores);
+
+  // ---- summary stats ----
+  var sum = scores.reduce(function (a, b) { return a + b; }, 0);
+  var mean = sum / N;
+  var sorted = scores.slice().sort(function (a, b) { return a - b; });
+  var median = (sorted[(N >> 1) - 1] + sorted[N >> 1]) / 2;
+  var byScore = {};
+  D.forEach(function (d) { (byScore[d[0]] = byScore[d[0]] || []).push(d); });
+  var mode = null, modeCount = -1;
+  Object.keys(byScore).forEach(function (k) {
+    if (byScore[k].length > modeCount) { modeCount = byScore[k].length; mode = +k; }
+  });
+
+  var tiles = [
+    [N, "已知成绩样本"],
+    [hi, "名单最高分"],
+    [lo, "名单最低分"],
+    [median % 1 ? median.toFixed(1) : median, "中位数"],
+    [mean.toFixed(1), "平均分"],
+    [mode, "众数（" + modeCount + " 人）"]
+  ];
+  document.getElementById("tiles").innerHTML = tiles.map(function (t) {
+    return '<div class="tile"><div class="v">' + t[0] + '</div><div class="l">' + t[1] + '</div></div>';
+  }).join("");
+
+  // ---- build the two groupings ----
+  function fmtNames(list, cap) {
+    var arr = list.slice().sort(function (a, b) { return b[0] - a[0]; })
+      .map(function (d) { return d[1] + "（" + d[2] + "）"; });
+    if (arr.length > cap) return arr.slice(0, cap).join("、") + " …等 " + arr.length + " 人";
+    return arr.join("、");
+  }
+
+  function binGroups() {
+    var start = Math.floor(lo / 5) * 5;
+    var out = [];
+    for (var e = start; e <= hi; e += 5) {
+      var members = D.filter(function (d) { return d[0] >= e && d[0] < e + 5; });
+      out.push({
+        label: e + "–" + (e + 4),
+        short: e + "–" + (e + 4),
+        count: members.length,
+        members: members
+      });
+    }
+    return out;
+  }
+
+  function unitGroups() {
+    var out = [];
+    for (var s = lo; s <= hi; s++) {
+      var members = byScore[s] || [];
+      out.push({
+        label: s + " 分",
+        short: String(s),
+        count: members.length,
+        members: members
+      });
+    }
+    return out;
+  }
+
+  // ---- frequency table (bins) ----
+  (function () {
+    var g = binGroups(), cum = 0;
+    document.querySelector("#freqTable tbody").innerHTML = g.map(function (b) {
+      cum += b.count;
+      return "<tr><td>" + b.label + "</td><td>" + b.count + "</td><td>" +
+        (100 * b.count / N).toFixed(1) + "%</td><td>" + cum + "</td></tr>";
+    }).join("") +
+    '<tr><td>合计</td><td>' + N + "</td><td>100.0%</td><td>" + N + "</td></tr>";
+  })();
+
+  // ---- readout ----
+  (function () {
+    var g = binGroups();
+    function pc(lbl) { for (var i = 0; i < g.length; i++) if (g[i].label === lbl) return g[i].count; return 0; }
+    var b1 = pc("595–599"), b2 = pc("600–604"), b0 = pc("590–594");
+    var ge605 = D.filter(function (d) { return d[0] >= 605; }).length;
+    var ge610 = D.filter(function (d) { return d[0] >= 610; }).length;
+    document.getElementById("readout").innerHTML =
+      "分数高度挤在中段:<b>" + b1 + " 人</b>(" + (100 * b1 / N).toFixed(0) +
+      "%)落在 595–599 分,<b>" + b2 + " 人</b>落在 600–604 分,加上 590–594 分的 " + b0 +
+      " 人,一共 " + (b0 + b1 + b2) + " 人、占 " + (100 * (b0 + b1 + b2) / N).toFixed(0) +
+      "%。名单里最高的 " + hi + " 分(全市第 142 名)和最低的 " + lo +
+      " 分相差 " + (hi - lo) + " 分,但 605 分以上只有 <b>" + ge605 +
+      " 人</b>,610 分以上只有 <b>" + ge610 + " 人</b>——高分尾巴又长又薄。";
+  })();
+
+  document.getElementById("footer").innerHTML =
+    "另有 8 人(" + UNKNOWN.join("、") +
+    ")既不在中考录取名册、也无法按分数对应,成绩未知,未纳入本图。<br>" +
+    "数据来源:2004 年大庆市中考录取名册;北师大英语实验班考试与录取名单。整理:lin.github.io";
+
+  // ---- chart ----
+  var SVG = "http://www.w3.org/2000/svg";
+  var chart = document.getElementById("chart");
+  var tt = document.getElementById("tt");
+  var card = chart.closest(".card");
+
+  var VW = 900, VH = 460;
+  var M = { t: 26, r: 22, b: 62, l: 52 };
+  var iw = VW - M.l - M.r;
+  var ih = VH - M.t - M.b;
+
+  function niceTop(max) {
+    var raw = max / 4;
+    var mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    var n = raw / mag;
+    var step = (n < 1.5 ? 1 : n < 3 ? 2 : n < 7 ? 5 : 10) * mag;
+    return { step: step, max: Math.ceil(max / step) * step };
+  }
+
+  function topRect(x, y, w, h, r) {
+    if (h <= 0) return "";
+    r = Math.min(r, w / 2, h);
+    return "M" + x + "," + (y + h) +
+      " L" + x + "," + (y + r) +
+      " Q" + x + "," + y + " " + (x + r) + "," + y +
+      " L" + (x + w - r) + "," + y +
+      " Q" + (x + w) + "," + y + " " + (x + w) + "," + (y + r) +
+      " L" + (x + w) + "," + (y + h) + " Z";
+  }
+
+  function el(name, attrs, text) {
+    var e = document.createElementNS(SVG, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  var mode = "bin";
+
+  function render() {
+    while (chart.firstChild) chart.removeChild(chart.firstChild);
+    var groups = mode === "bin" ? binGroups() : unitGroups();
+    var maxCount = groups.reduce(function (m, g) { return Math.max(m, g.count); }, 0);
+    var sc = niceTop(maxCount);
+    var n = groups.length;
+    var slot = iw / n;
+    var barW = mode === "bin" ? Math.min(slot - 6, 78) : Math.max(slot - 3, 4);
+
+    var y = function (c) { return M.t + ih - (c / sc.max) * ih; };
+
+    // gridlines + y ticks
+    for (var v = 0; v <= sc.max; v += sc.step) {
+      chart.appendChild(el("line", { class: v === 0 ? "axisline" : "gridline",
+        x1: M.l, x2: M.l + iw, y1: y(v), y2: y(v) }));
+      chart.appendChild(el("text", { class: "tick", x: M.l - 9, y: y(v) + 3.5,
+        "text-anchor": "end" }, v));
+    }
+    chart.appendChild(el("text", { class: "axis-name", x: M.l - 9, y: M.t - 10,
+      "text-anchor": "start" }, "人数"));
+    chart.appendChild(el("text", { class: "axis-name", x: M.l + iw, y: M.t + ih + 44,
+      "text-anchor": "end" }, "中考总分"));
+
+    groups.forEach(function (g, i) {
+      var bx = M.l + i * slot + (slot - barW) / 2;
+      var by = y(g.count);
+      var bh = M.t + ih - by;
+
+      if (g.count > 0) {
+        var p = el("path", { class: "bar", d: topRect(bx, by, barW, bh, 4) });
+        p.dataset.i = i;
+        chart.appendChild(p);
+        if (mode === "bin") {
+          chart.appendChild(el("text", { class: "bar-cap", x: bx + barW / 2,
+            y: by - 6, "text-anchor": "middle" }, g.count));
+        }
+      }
+
+      // x label
+      var showX = mode === "bin" ||
+        (g.short % 5 === 0) || +g.short === lo || +g.short === hi;
+      if (showX) {
+        chart.appendChild(el("text", { class: "tick",
+          x: M.l + i * slot + slot / 2, y: M.t + ih + 18,
+          "text-anchor": "middle" }, mode === "bin" ? g.short : g.short));
+      }
+
+      // hit target
+      var hit = el("rect", { class: "hit", x: M.l + i * slot, y: M.t,
+        width: slot, height: ih, tabindex: 0, role: "img",
+        "aria-label": g.label + "," + g.count + " 人" });
+      hit.dataset.i = i;
+      hit.addEventListener("mouseenter", function () { show(i, groups); });
+      hit.addEventListener("mousemove", function (ev) { place(ev); });
+      hit.addEventListener("mouseleave", hide);
+      hit.addEventListener("focus", function () { show(i, groups, true); });
+      hit.addEventListener("blur", hide);
+      chart.appendChild(hit);
+    });
+
+    document.getElementById("cardSub").textContent =
+      (mode === "bin" ? "组距 5 分" : "逐分") + " · 共 " + N + " 人";
+  }
+
+  function show(i, groups, kbd) {
+    var g = groups[i];
+    chart.classList.add("dim");
+    Array.prototype.forEach.call(chart.querySelectorAll(".bar"), function (b) {
+      b.classList.toggle("active", +b.dataset.i === i);
+    });
+    var cap = mode === "bin" ? 10 : 20;
+    var names = g.count ? '<div class="tt-names">' + fmtNames(g.members, cap) + "</div>" : "";
+    tt.innerHTML = '<div class="tt-h">' + g.label + '</div>' +
+      '<div class="tt-n">' + g.count + " 人 · 占 " + (100 * g.count / N).toFixed(1) + "%</div>" +
+      names;
+    tt.hidden = false;
+    tt.classList.add("on");
+    if (kbd) {
+      var r = chart.getBoundingClientRect();
+      var cr = card.getBoundingClientRect();
+      var sx = r.width / VW, sy = r.height / VH;
+      place({
+        clientX: r.left + (M.l + i * (iw / groups.length) + (iw / groups.length) / 2) * sx,
+        clientY: r.top + M.t * sy + 40
+      });
+    }
+  }
+
+  function place(ev) {
+    var cr = card.getBoundingClientRect();
+    var x = ev.clientX - cr.left + 14;
+    var yy = ev.clientY - cr.top + 14;
+    var w = tt.offsetWidth, h = tt.offsetHeight;
+    if (x + w > cr.width - 8) x = ev.clientX - cr.left - w - 14;
+    if (yy + h > cr.height - 8) yy = ev.clientY - cr.top - h - 14;
+    tt.style.left = Math.max(8, x) + "px";
+    tt.style.top = Math.max(8, yy) + "px";
+  }
+
+  function hide() {
+    chart.classList.remove("dim");
+    Array.prototype.forEach.call(chart.querySelectorAll(".bar.active"), function (b) {
+      b.classList.remove("active");
+    });
+    tt.classList.remove("on");
+    tt.hidden = true;
+  }
+
+  document.querySelectorAll(".seg button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (btn.dataset.mode === mode) return;
+      mode = btn.dataset.mode;
+      document.querySelectorAll(".seg button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.mode === mode));
+      });
+      hide();
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
