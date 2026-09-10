@@ -7,7 +7,7 @@
 &lt;p&gt;上周四，终于在电影院补票《肖申克的救赎》，第一次是看的时候，不理解十九年的冤狱是什么概念，而自2007年高考之后，至如今正是十九年。&lt;/p&gt;
 &lt;p&gt;对于这个文章里的事，许多是我最近才知道和意识到，部分内容对我自己也觉得有所震撼，于是我想我尽可能&lt;a href="https://graphics.boston.com/globe/spotlight/abuse/stories/010602_geoghan.htm"&gt;陈述事实&lt;/a&gt;，而减少个人情感的评价。而所谓的事实，因为事情过去二十多年了，不仅记忆模糊，连现实中的痕迹都已逐渐被彻底抹去，我只能尽我所能的找到经得起推敲的证据和在有限信息下的可靠推测。&lt;/p&gt;
 &lt;p&gt;本文中的数据，除了明显的互联网检索和知网万方以外，我还翻阅了2004年到2007年之间，所有中高考季的《哈尔滨日报》《新晚报》《生活报》《绥化日报》和《绥化晚报》，对于绥化高考历史，霍凤国主编的《绥化高考四十年》是我的主要参考，而对于高考分数分布以及分数线有关的信息，赵振芳主编的2005年到2016年间的七本《高考指南：黑龙江版》是本文的主要参考，但最详细的数据来自于黑龙江省教育厅、各市教育局以及省内知名初高中在2003年至2008年间超过一百万份的网站历史快照存档，通过程序化检索近 20G 的纯文本数据，加上大模型 Agent 的交叉信息加工，让我能从各种零散的细节中，重新拼凑出自己中高考时段更为清晰的印象。&lt;/p&gt;
-&lt;p&gt;高考之后，我还经历了超过八年的正式教育，尤其是在宾夕法尼亚大学校园度过的四年，让我早就对唯分数论和学历崇拜感到厌恶，对标签化思考和绩优主义充满警惕，但今年偶然发现&lt;a href="./irresponsible"&gt;高考估分杂志&lt;/a&gt;以及&lt;a href="./liuxiang"&gt;怀念刘翔&lt;/a&gt;又着实让我意识到，自己内心那个停滞在青春期时代的孩童，依旧没有得到足够的抚慰，写下来并直面这些事实是对 C-PTSD 最好的疗愈。&lt;/p&gt;
+&lt;p&gt;高考之后，我还经历了超过八年的正式教育，尤其是在宾夕法尼亚大学校园度过的四年，让我早就对唯分数论和学历崇拜感到厌恶，对标签化思考和绩优主义充满警惕，但今年偶然发现&lt;a href="https://yingkui.com/irresponsible"&gt;高考估分杂志&lt;/a&gt;以及&lt;a href="https://yingkui.com/liuxiang"&gt;怀念刘翔&lt;/a&gt;又着实让我意识到，自己内心那个停滞在青春期时代的孩童，依旧没有得到足够的抚慰，写下来并直面这些事实是对 C-PTSD 最好的疗愈。&lt;/p&gt;
 &lt;p&gt;本文的数据和信息都来自于教育部门以及学校官方对外公布的数据，或者是当年报纸、书籍、杂志内的已出版信息，或许有些人认为这是自己的隐私，不愿被提及，但又或许有很多人也像我一样，想通过这些古早的数据，对过去有一个更细颗粒度的解读，以便更为从容的构建自我，又或是仅仅是作为唤起追忆的引子。我无法分辨隐私或者渴求二者，我便尽可能的使用公开的信息，做事实的搬运工。&lt;/p&gt;
 &lt;h2 id="中考成绩并不差"&gt;中考成绩并不差&lt;/h2&gt;
 &lt;p&gt;我是在2004年参加的中考，那时候除了哈尔滨，全省共用一张考卷，而从2005年开始就有了试验区的说法，就不再全省统一命题。&lt;/p&gt;
@@ -1012,10 +1012,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1789014149191" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1789014380656" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1789014149191",
+ id: "react-widget-GMMVisualizer-1789014380656",
  component: "GMMVisualizer",
  props: "{}"
  });
