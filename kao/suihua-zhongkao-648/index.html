@@ -1,0 +1,748 @@
+<title>2004年至2026年间的绥化中考成绩分析</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --page:#e6eaeb; --card:#f7f9f9; --sunk:#dde3e4; --band:#eef2f2;
+  --ink:#10171a; --ink-2:#48555a; --ink-3:#6c797f;
+  --rule:#c9d1d3; --hair:#dbe1e2; --grid:#e1e6e7;
+  --c04:#a5342a; --c04-w:rgba(165,52,42,.13);
+  --c20:#6b3fa0; --c20-w:rgba(107,63,160,.10);
+  --c26:#0081a0; --c26-w:rgba(0,129,160,.12);
+  --shadow:0 1px 2px rgba(16,23,26,.05),0 14px 34px -22px rgba(16,23,26,.38);
+  --focus:#0081a0;
+  --serif:"Noto Serif SC","Songti SC","STSong",Georgia,serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+    --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+    --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+    --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+    --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+    --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+    --focus:#00a0a8;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+  --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+  --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+  --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+  --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+  --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+  --focus:#00a0a8;
+}
+
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:52px 88px}
+p{margin:0}
+
+/* ── hero ── */
+.kicker{font:500 11.5px/1.4 var(--mono);letter-spacing:.2em;color:var(--ink-3);margin:0 0 20px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.4vw,52px);line-height:1.18;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1 em{font-style:normal;font-family:var(--mono);font-weight:600;color:var(--c04);letter-spacing:-.03em}
+.lede{max-width:38em;font-size:16.5px;color:var(--ink-2);margin-top:22px}
+.lede b{color:var(--ink);font-weight:700}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin-top:30px}
+.stat{background:var(--page);padding:14px 16px 14px 0}
+.stat+.stat{padding-left:16px}
+.stat b{display:block;font:600 27px/1.15 var(--mono);color:var(--ink);letter-spacing:-.01em}
+.stat b.hot{color:var(--c04)}
+.stat span{display:block;margin-top:6px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat,.stat+.stat{padding:14px 12px}
+}
+
+/* ── converter ── */
+.conv{display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);gap:18px 30px;background:var(--card);border-radius:6px;box-shadow:var(--shadow);padding:22px 24px 18px;margin-top:30px}
+@media (max-width:840px){.conv{grid-template-columns:minmax(0,1fr)}}
+.dial .lbl{font:500 11.5px/1.4 var(--mono);letter-spacing:.14em;color:var(--ink-3)}
+.dial h2{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.4;margin:6px 0 0;text-wrap:balance}
+.dial output{display:block;font:600 clamp(58px,9vw,78px)/1 var(--mono);color:var(--c04);letter-spacing:-.04em;margin:16px 0 2px}
+.dial .of{font-size:13px;color:var(--ink-2)}
+.dial input[type=range]{width:100%;accent-color:var(--c04);margin:16px 0 4px}
+.rt{display:flex;justify-content:space-between;font:11px/1 var(--mono);color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.chip{font-family:var(--sans);font-size:12.5px;line-height:1.3;border:1px solid var(--rule);background:var(--card);color:var(--ink-2);border-radius:999px;padding:4px 10px;cursor:pointer;transition:background .15s,color .15s}
+.chip b{font-family:var(--mono);font-weight:600;color:var(--ink)}
+.chip:hover{background:var(--band)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.chip[aria-pressed="true"] b{color:var(--card)}
+.ct-wrap{overflow-x:auto}
+.ct{width:100%;border-collapse:collapse;min-width:440px}
+.ct th,.ct td{padding:9px 10px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+.ct thead th{font:500 11.5px/1.4 var(--mono);color:var(--ink-3);border-bottom:1.5px solid var(--rule);letter-spacing:.04em}
+.ct tbody th{font:500 13px/1.5 var(--sans);color:var(--ink);width:30%}
+.ct tbody th .s{font-weight:400}
+.ct tbody tr:last-child th,.ct tbody tr:last-child td{border-bottom:0}
+.ct .v{display:block;font:600 19px/1.3 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.ct .s{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-3);line-height:1.5;margin-top:2px}
+.conv .foot{grid-column:1/-1;font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--hair);padding-top:10px;line-height:1.65}
+
+/* ── figures ── */
+.fig{background:var(--card);border-radius:6px;box-shadow:var(--shadow);padding:18px 20px 14px;margin:22px 0 0}
+.fig-h{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.fig-h h3{font-family:var(--serif);font-weight:600;font-size:16.5px;margin:0;text-wrap:balance}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.legend span{white-space:nowrap}
+.sw{display:inline-block;width:20px;height:0;vertical-align:middle;margin-right:6px;border-top:2px solid}
+.dt{display:inline-block;width:8px;height:8px;border-radius:50%;vertical-align:middle;margin-right:6px}
+.dm{display:inline-block;width:8px;height:8px;transform:rotate(45deg);vertical-align:middle;margin:0 8px 0 2px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+svg.chart{display:block;width:100%;height:auto;min-width:640px}
+.cap{font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.65}
+
+svg text{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+svg .rl{font-family:var(--sans);font-size:12.5px;fill:var(--ink-2)}
+svg .lab{font-family:var(--sans);font-size:12.5px;fill:var(--ink)}
+svg .lab2{font-family:var(--sans);font-size:12px;fill:var(--ink-2)}
+svg .val{font-size:11px;fill:var(--ink);font-weight:500}
+.gr{stroke:var(--grid);stroke-width:1}
+.ax,.hair,.guide{stroke:var(--rule);stroke-width:1}
+.me{stroke:var(--c04);stroke-width:1.6}
+.dash{stroke-dasharray:6 4}
+.dotted{stroke-dasharray:1.5 4;stroke-linecap:round}
+.ref{stroke:var(--ink-3);stroke-width:1;fill:none;opacity:.7}
+.l04{stroke:var(--c04);fill:none;stroke-width:2.2;stroke-linejoin:round}
+.d04{fill:var(--c04);stroke:var(--card);stroke-width:2}
+.l20{stroke:var(--c20);fill:none;stroke-width:2.2;stroke-linejoin:round}
+.d20{fill:var(--c20);stroke:var(--card);stroke-width:2}
+.ldq{stroke:var(--ink-3);fill:none;stroke-width:2;stroke-linejoin:round}
+.d26{fill:var(--c26);stroke:var(--card);stroke-width:1.5}
+.o26{fill:var(--card);stroke:var(--c26);stroke-width:1.6}
+.rng26{stroke:var(--c26);stroke-width:1.2;opacity:.45}
+.rug{stroke:var(--c26);stroke-width:1.6;opacity:.42}
+.dia{fill:var(--c04);stroke:var(--card);stroke-width:2}
+.dia2{fill:var(--ink-2);stroke:var(--card);stroke-width:2}
+.ring{fill:var(--card);stroke:var(--ink);stroke-width:2}
+.xh{stroke:var(--ink-2);stroke-width:1}
+.hit{fill:transparent;cursor:crosshair}
+.pt{cursor:pointer}
+.s-ink{stroke:var(--ink);stroke-width:2.2;fill:none;stroke-linejoin:round}
+.s-ink3{stroke:var(--ink-3);stroke-width:1.6;fill:none}
+.dot-ink{fill:var(--ink);stroke:var(--card);stroke-width:2}
+.dot-ink3{fill:var(--ink-3);stroke:var(--card);stroke-width:2}
+.gapband{fill:var(--band)}
+svg :focus{outline:none}
+svg :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* ── sections ── */
+section{margin-top:76px}
+.sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;border-top:2px solid var(--ink);padding-top:12px}
+.sh h2{font-family:var(--serif);font-weight:700;font-size:clamp(21px,3vw,25px);line-height:1.35;margin:0;text-wrap:balance}
+.sh .src{font:500 11px/1.4 var(--mono);letter-spacing:.1em;color:var(--ink-3)}
+.prose{max-width:38em;color:var(--ink-2);margin-top:14px;display:grid;gap:10px}
+.prose b{color:var(--ink);font-weight:700}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+.tbl{overflow-x:auto;margin-top:18px;background:var(--card);border-radius:6px;box-shadow:var(--shadow)}
+.tbl table{border-collapse:collapse;width:100%;font-size:13.5px}
+.tbl th,.tbl td{padding:9px 14px;text-align:right;border-bottom:1px solid var(--hair);white-space:nowrap;vertical-align:baseline}
+.tbl thead th{font:500 11.5px/1.45 var(--mono);letter-spacing:.04em;color:var(--ink-3);background:var(--band);vertical-align:bottom}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl td{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink)}
+.tbl td.t{font-family:var(--sans);white-space:normal;color:var(--ink-2);text-align:left;min-width:13em;font-size:13px}
+.tbl td.n{font-family:var(--sans)}
+.mu{color:var(--ink-3)}
+.tbl tr.me td{background:var(--c04-w)}
+.tbl tr.tot td{border-top:1.5px solid var(--rule);font-weight:600}
+.tbl th .k{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:1px}
+
+.verdict{margin-top:20px;padding:14px 18px;border-left:3px solid var(--c04);background:var(--c04-w);border-radius:0 4px 4px 0;max-width:46em;font-size:15px;color:var(--ink)}
+.notes{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:14px;max-width:48em}
+.notes li{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:12px;color:var(--ink-2);font-size:14px;line-height:1.75}
+.notes code{font-family:var(--mono);font-size:12px;background:var(--sunk);color:var(--ink-2);padding:1px 5px;border-radius:3px;word-break:break-all}
+.tag{font:500 10.5px/1.3 var(--mono);letter-spacing:.06em;padding:3px 0;border-top:1.5px solid currentColor;align-self:start;margin-top:4px}
+.tag.real{color:var(--c26)} .tag.model{color:var(--c04)} .tag.open{color:var(--ink-3)}
+footer{margin-top:64px;padding-top:14px;border-top:1px solid var(--rule);font:12px/1.6 var(--mono);color:var(--ink-3)}
+
+.tbl td.p{text-align:left;font-family:var(--mono);white-space:nowrap}
+.pos{display:inline-block;position:relative;width:150px;height:14px;vertical-align:middle;margin-right:10px;background:linear-gradient(var(--rule),var(--rule)) 0 50%/100% 1px no-repeat}
+.pos i{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);box-sizing:border-box}
+.pos i.h{background:var(--card);border:2px solid}
+.pos b{position:absolute;top:50%;height:5px;transform:translateY(-50%);border-radius:3px;opacity:.45}
+.ring3{fill:var(--card);stroke:var(--ink-3);stroke-width:1.6}
+.sq{display:inline-block;width:14px;height:10px;vertical-align:middle;margin-right:6px}
+.b04{fill:var(--c04-w);stroke:none}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--card);font:12px/1.6 var(--mono);padding:8px 11px;border-radius:4px;max-width:290px;box-shadow:0 10px 26px -10px rgba(0,0,0,.5)}
+#tip b{font-weight:600}
+#tip .h{font-family:var(--sans);font-weight:700;margin-bottom:2px}
+#tip i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;font-style:normal;vertical-align:1px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main class="wrap">
+  <header>
+    <p class="kicker">绥化市区中考 · 以 2004 年的分数为尺</p>
+    <h1><em>2004</em> 年至 2026 年间的绥化中考成绩分析</h1>
+    <p class="lede">这一页把能找到的绥化市区中考数据都换算回 2004 年的分数来读：2020 年的一分一段表、2026 年的前五十名单、2004 到 2026 年的录取线，还有大庆 2004 年同一张卷子的录取名册。<b>2004 年的分数整体偏低</b>：同一个位置，2005 年高约 29 分；2020 年在一中线附近高 3–6 分，在前 1% 附近高 32–40 分。一中线的位置看起来从前 15% 退到了前 20%，原因几乎全在择校生制度。</p>
+
+    <div class="stats">
+      <div class="stat"><b>前 15.1%</b><span>2004 年一中线 571 分：<br>市区 4923 人中 742 人</span></div>
+      <div class="stat"><b class="hot">第 11</b><span>648 在大庆 2004 年同卷名册<br>（实测，约 21500 名考生）</span></div>
+      <div class="stat"><b>634</b><span>2004 年的 600 分（前 3.4%）<br>在 2020 年的等位分，含体育</span></div>
+      <div class="stat"><b class="hot">第 1–4</b><span>648 若在 2004 年绥化市区<br>（借形状 ／ 正态，模型）</span></div>
+    </div>
+
+    <div class="conv" id="converter">
+      <div class="dial">
+        <span class="lbl">换算器</span>
+        <h2>拿一个 2004 年的分数，看它在别处是多少</h2>
+        <output id="s-out" for="s04">648</output>
+        <span class="of">2004 年总分，满分 690（含体育 30）</span>
+        <input type="range" id="s04" min="560" max="663" step="1" value="648" aria-label="2004 年总分">
+        <div class="rt"><span>560</span><span>663 · 同卷大庆最高分</span></div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="ct-wrap">
+        <table class="ct">
+          <thead><tr><th></th><th>借形状估计</th><th>正态模型</th></tr></thead>
+          <tbody id="conv-body"></tbody>
+        </table>
+      </div>
+      <p class="foot">两列只在 2004 年高分段怎么外推上不同，600 分以下几乎一致，差别见下一节。2020 年表中的分数不含体育，本页一律加 30 分。648、630 是绥棱考生的分数，不在市区排名里。</p>
+    </div>
+  </header>
+
+  <section id="rank648">
+    <div class="sh"><h2>648 在大庆和绥化排第几</h2><span class="src">大庆录取名册实测 · 绥化只能靠模型</span></div>
+    <div class="prose">
+      <p><b>大庆是实测。</b>大庆 2004 年中考录取总表 5760 人，与 648 同卷同口径。高于 648 分的只有 10 人，648 分本身 2 人，所以 648 排<b>第 11 名</b>，按约 21500 名考生计是前 0.05%。放进各校：大庆一中第 4、铁人中学第 5、实验中学第 4，大庆中学、四中、东风、石油高中都是第 1。</p>
+      <p><b>绥化只能靠模型。</b>648 是绥棱考生的分数，不在绥化市区的排名里；绥化全市（含各县）也没有可用的分数分布，本页不估。若放进 2004 年绥化市区，正态模型约第 4 名，借形状约第 1 名。若放进绥化一中 2004 级新生（含外县生），模拟的中位数是第 6 名（正态，10%–90% 区间第 4–10 名）或第 1 名（借形状，第 1–3 名）。</p>
+      <p>按人口折算，大庆每 4923 人里 648 分以上约 2.7 人。绥化市区平均分比大庆低约 20 分，正态模型却给出 4.0 人，比大庆的人均还多；借形状给出 0.7 人。市区能找到的实物只有两条：九中校长采访说 2004 年 600 分以上九中占 65 人、市区前 10 名九中占 5 人；秦家中学的刘欣 642 分、李柏荣 640 分，两人的市区名次不详。</p>
+    </div>
+    <div class="two">
+      <div class="tbl"><table>
+        <thead><tr><th>大庆名次</th><th>分数</th><th style="text-align:left">录取高中</th></tr></thead>
+        <tbody><tr><td>1</td><td>663</td><td class="t">大庆一中</td></tr><tr><td>2</td><td>657</td><td class="t">铁人中学</td></tr><tr><td>3</td><td>656</td><td class="t">大庆一中</td></tr><tr><td>4</td><td>655</td><td class="t">实验中学</td></tr><tr><td>5</td><td>654</td><td class="t">实验中学</td></tr><tr><td>5</td><td>654</td><td class="t">实验中学</td></tr><tr><td>7</td><td>652</td><td class="t">大庆一中</td></tr><tr><td>8</td><td>650</td><td class="t">铁人中学</td></tr><tr><td>9</td><td>649</td><td class="t">铁人中学</td></tr><tr><td>9</td><td>649</td><td class="t">铁人中学</td></tr><tr class="me"><td>11</td><td>648</td><td class="t">大庆一中、实验中学各 1 人；648 与之并列</td></tr></tbody></table></div>
+      <div class="tbl"><table>
+        <thead><tr><th>大庆分数线</th><th>以上人数</th><th>每 4923 人</th></tr></thead>
+        <tbody><tr><td>650</td><td>8</td><td>1.8</td></tr><tr><td>645</td><td>26</td><td>6.0</td></tr><tr><td>640</td><td>60</td><td>13.7</td></tr><tr><td>635</td><td>129</td><td>29.5</td></tr><tr><td>630</td><td>219</td><td>50.1</td></tr><tr><td>620</td><td>479</td><td>109.7</td></tr><tr><td>610</td><td>856</td><td>196.0</td></tr><tr><td>607</td><td>976</td><td>223.5</td></tr></tbody></table></div>
+    </div>
+  </section>
+
+  <section id="scale">
+    <div class="sh"><h2>2004 年的分数刻度</h2><span class="src">两个实数 · 两种外推 · 大庆同卷名册</span></div>
+    <div class="prose">
+      <p>2004 年绥化市区只有两个硬数：<b>571 分以上 742 人</b>（一中线），<b>600 分以上 165 人</b>（2026-09-13 确认，此前误记 174）。600 分以上再往上没有任何实测，648 排第几，取决于怎么往上外推。下面两种外推并列给出。</p>
+      <p><b>正态模型</b>：由这两个点定出 N(533.5, 36.3²)，一路延伸。第 1 名约 662 分，610 分以上 86 人，648 分若在市区约第 4 名。</p>
+      <p><b>借形状</b>：610 分以下借 2020 年一分一段表的形状，同样对齐这两个点；610 分以上借大庆 2004 年同卷录取名册的衰减速度。第 1 名约 647 分，610 分以上 53 人，648 分若在市区排第 1。</p>
+      <p>两份实测都显示高分段比正态收得快。2020 年的表里，用同样两个百分位定出的正态，在第 110 名高估 7 分，在第 57 名高估 14 分。大庆 21500 名考生的平均分比绥化市区高约 20 分，按拟合 610–635 分段的正态，650 分以上应有约 39 人，名册里只有 8 人，最高分 663。同卷其他地方公布的最高分：佳木斯三中 659.5，肇东 651。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>每个分数以上有多少人（≈ 名次）</h3>
+        <div class="legend">
+          <span><i class="sw" style="border-top-color:var(--c04)"></i>绥化市区 · 借形状</span>
+          <span><i class="sw" style="border-top-style:dashed;border-top-color:var(--c04)"></i>绥化市区 · 正态</span>
+          <span><i class="dt" style="background:var(--c04)"></i>实数锚点</span>
+          <span><i class="sw" style="border-top-color:var(--ink-3)"></i>大庆同卷，按每 4923 人折算</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="scale-chart" class="chart" viewBox="0 0 920 400" role="img" aria-label="2004 年绥化市区各分数以上人数的两种估计，以及大庆同卷名册折算后的人数"></svg></div>
+      <p class="cap">纵轴是对数刻度，越往上人越少。红色竖线跟随换算器；点击图中任意位置也能改换算器里的分数。大庆名册在 607 分以下不全，所以只画 607 分以上。</p>
+    </figure>
+  </section>
+
+  <section id="convert">
+    <div class="sh"><h2>各年的分数折回 2004 年</h2><span class="src">同一百分位 · 2020 一分一段表 · 2026 前五十</span></div>
+    <div class="prose">
+      <p>折算只用一个原则：<b>同一个百分位，同一个位置</b>。先查某年某分在当年市区排第几，按考生人数折成百分位，再找 2004 年同一百分位的分数。三年考生规模接近：2004 年 4923 人，2020 年报考普高 5324 人，2026 年初四 4749 人。2004 年高分段有两种估计，所以折算值是一个区间。</p>
+      <p><b>2020 年</b>（加体育 30 分）：650 分折回 2004 年是 610–618 分；641 分（第 110 名）是 605–609；600 分是 579–580；一中线 566 分是 560–563。位置越靠前，2020 年比 2004 年高得越多。</p>
+      <p><b>2026 年</b>：第 1 名 664.9 分折回 2004 年是 647–662 分；第 10 名 646.3 是 632–637；第 50 名 629.5 是 610–617；奥赛班线 617 分（第 110 名）是 603–606；3/4 班线 603.2 分（第 220 名）是 594–596——这个位置两种模型的差距只有 2 分，是全表里两条曲线贴得最近的一段。</p>
+      <p><b>2005 年</b>只有“600 分以上 735 人”一个点，位置和 2004 年的 571 分几乎一样，整体高 29 分（假设两年市区考生数相近），与《我的中高考》里“那年中考要比平时整体低 30 分”吻合。</p>
+      <p><b>2020 年和 2026 年不能直接互换。</b>2020 年表恰好在第 57 名（前 1.05%）封顶，2026 年前五十恰好止于第 50 名（前 1.05%），两者几乎无缝衔接、几乎不重叠：2020 管前 1.05% 以下，2026 管前 1.05% 以内。在唯一重叠的窄带（前 1.07%–4.63%）里按同一百分位对比，2020 年比 2026 年稳定高 22–25 分，且差距随百分位加深平滑扩大（第 110 名处 22.4 分，600 分锚点处 23.4 分，第 220 名处 24.9 分）——说明两年的赋分结构本身在漂移，折回 2004 年时应各自独立对齐锚点，不要互相借用。</p>
+      <p><b>试过借 2026 年形状重估 610 分以上，结果不可信。</b>用 600 分锚点与 610 分衔接点两个点定线性换算，套到 2026 真实前 15 名，得到"第 1 名≈629 分"——比现有借形状模型的"第 1 名≈647 分"低近 18 分，与大庆证据也不符。原因：两个定标点只相差 1.07–3.35 个百分点，挤在曲线最陡处，斜率外推到 15 倍远的第一名并不稳；更根本的是线性换算会把 2026 真实数据里第 1–3 名的断层式领先（比第 6–50 名的平滑趋势高 10–25 分）压平抹掉。结论：610 分以上无法用这种方式收紧，且断层若在 2004 年同样存在，只会让真实人数比两个模型都高，不会更低。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>当年总分 → 2004 年等位分</h3>
+        <div class="legend">
+          <span><i class="sw" style="border-top-color:var(--c20)"></i>2020 · 借形状</span>
+          <span><i class="sw" style="border-top-style:dashed;border-top-color:var(--c20)"></i>2020 · 正态</span>
+          <span><i class="dt" style="background:var(--c26)"></i>2026 · 借形状</span>
+          <span><i class="dt" style="background:var(--card);border:1.6px solid var(--c26)"></i>2026 · 正态</span>
+          <span><i class="dm" style="background:var(--ink-2)"></i>2005</span>
+          <span><i class="sw" style="border-top-color:var(--ink-3);opacity:.7;border-top-width:1px"></i>参照线</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="conv-chart" class="chart" viewBox="0 0 920 430" role="img" aria-label="2020 年、2026 年、2005 年的分数折算成 2004 年等位分"></svg></div>
+      <p class="cap">红色横线是换算器里的 2004 年分数，与它相交的位置就是各年的等位分。2020 年的表在 650 分（620＋30）以上没有分段，线到此为止。2026 年每个名次画一条短竖线，两端是两种估计。</p>
+    </figure>
+
+    <div class="tbl">
+      <table id="rank-table">
+        <thead><tr>
+          <th>市区名次</th>
+          <th><i class="k" style="background:var(--c04)"></i>2004（借形状–正态）</th>
+          <th><i class="k" style="background:var(--c20)"></i>2020（含体育）</th>
+          <th><i class="k" style="background:var(--c26)"></i>2026</th>
+          <th style="text-align:left">这个名次上的事</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="subjects">
+    <div class="sh"><h2>648 分的各科，放进 2026 年前五十</h2><span class="src">各科得分率 · 不同试卷，只作粗对照</span></div>
+    <div class="prose">
+      <p>2026 年的 700 分里，道法、历史、地理、生物四科合计 160 分，前五十人平均一共只丢 <b>0.6 分</b>，体育 50 人全部满分。拉开差距的是语文、数学、化学和英语。</p>
+      <p>2004 年的卷子没有这四门小科，政治一科就占 100 分。648 在政治上丢了约 7 分，得分率 93%，低于 2026 年前五十所有人的道法得分率。反过来，英语 118 分高过 2026 年前五十的每一个人（前五十中最高 117 分）；物理、化学的得分率也只有 2 人、1 人更高。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>各科得分率：2026 年前五十与 648</h3>
+        <div class="legend">
+          <span><i class="sw" style="width:2px;height:12px;border-top:0;border-left:2px solid var(--c26);opacity:.6;vertical-align:-2px"></i>2026 年前五十，一条竖线一个人</span>
+          <span><i class="dm" style="background:var(--c04)"></i>648 的单科（≈ 为回忆的大概分数）</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="strip" class="chart" viewBox="0 0 920 420" role="img" aria-label="十个科目中 2026 年前五十名的得分率分布，以及 2004 年 648 分各科得分率"></svg></div>
+    </figure>
+    <div class="tbl">
+      <table id="loss">
+        <thead><tr>
+          <th>科目</th>
+          <th>满分 2004 → 2026</th>
+          <th><i class="k" style="background:var(--c04)"></i>648 丢分</th>
+          <th><i class="k" style="background:var(--c26)"></i>2026 第 1 名丢分</th>
+          <th>2026 前五十平均丢分</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="lines">
+    <div class="sh"><h2>录取线：原始分起伏很大，位置很稳</h2><span class="src">录取线公告 · 招生计划</span></div>
+    <div class="prose">
+      <p>2017 到 2026 年，一中线在 479.7 到 583 分之间，最高最低差 103 分。可一中每年都招 20 个班、约 1100 人：2018 年计划 1120 人，2021 年 1100 人，而 2020 年的一分一段表上，一中线正好卡在第 1099 名。<b>线的位置几乎不动，动的是卷子难度。</b></p>
+      <p>按 2004 年的口径，一中线大约是市区第 1100 名，折回 2004 年约 556–561 分。2004 年的一中线 571 分是第 742 名，门槛靠前得多。原因在下一节：那是公费生的线，不是全部名额的线。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>市区公办高中录取线（原始分）</h3>
+        <div class="legend">
+          <span><i class="sw" style="border-top-color:var(--ink);border-top-width:2.2px"></i>绥化一中</span>
+          <span><i class="sw" style="border-top-color:var(--ink-3)"></i>其他公办高中</span>
+          <span><i class="sw" style="border-top-style:dotted;border-top-color:var(--ink-3)"></i>中间缺一年</span>
+          <span><i class="dt" style="background:var(--card);border:2px solid var(--ink)"></i>非官方整理</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="lines-chart" class="chart" viewBox="0 0 920 340" role="img" aria-label="2004 至 2026 年绥化市区公办高中录取分数线"></svg></div>
+      <p class="cap">2020 年四所学校的线都已加体育 30 分。2004 年满分 690；2019 年起按官方口径满分 700；2005–2018 年的满分没有核实。2004–2012 年二中、七中同一条线，2006 年起九中也同线。空心点是非官方整理（2013、2014、2016 年为 AI 总结，2024 年为网络数据）；2013 年的 603 分与 2012 年完全相同，疑为重复；2015 年只有预测值，未画。</p>
+    </figure>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>年份</th><th>市区考生</th><th>一中线</th><th style="text-align:left">线的位置</th><th>折回 2004</th></tr></thead>
+        <tbody>
+          <tr class="me"><td>2004</td><td>4923</td><td>571</td><td class="t">公费线，第 742 名，前 15.1%；择校控制线 450 分。一中招 1040 人，含外市县 50、外语班 30、艺体 50</td><td>571</td></tr>
+          <tr><td>2005</td><td class="mu">—</td><td>602</td><td class="t">600 分以上 735 人</td><td>≈573</td></tr>
+          <tr><td>2007</td><td class="mu">—</td><td>598</td><td class="t">公费线。一中计划 1200 人：公费 840，择校 360</td><td class="mu">—</td></tr>
+          <tr><td>2011</td><td class="mu">—</td><td>595</td><td class="t">公费线。一中计划 1200 人：公费 924（含艺体 50），择校 276</td><td class="mu">—</td></tr>
+          <tr><td>06–12 其余</td><td class="mu">—</td><td>590–610</td><td class="t">公费线。一中公费 608（2006）、865（2008）、942（2012）</td><td class="mu">—</td></tr>
+          <tr><td>2013</td><td class="mu">—</td><td>603*</td><td class="t">公费 942 人；与 2012 年完全相同，疑重复（非官方）</td><td class="mu">—</td></tr>
+          <tr><td>2014</td><td class="mu">—</td><td>552*</td><td class="t">公费录取 1048 人；择校线 535、择校 106 人（非官方）</td><td class="mu">—</td></tr>
+          <tr><td>2016</td><td class="mu">—</td><td>549*</td><td class="t">奥赛班线 617.8（非官方）</td><td class="mu">—</td></tr>
+          <tr><td>2017</td><td class="mu">—</td><td>565</td><td class="t">—</td><td class="mu">—</td></tr>
+          <tr><td>2018</td><td class="mu">—</td><td>548</td><td class="t">一中计划 1120 人；若线在第 1120 名</td><td>≈556–560</td></tr>
+          <tr><td>2019</td><td>5245<span class="mu"> 初四</span></td><td>583</td><td class="t">四所公办共录取 3509 人</td><td class="mu">—</td></tr>
+          <tr><td>2020</td><td>5324<span class="mu"> 报普高</span></td><td>566</td><td class="t">536＋30。表上第 1099 名，前 20.6%</td><td>560–563</td></tr>
+          <tr><td>2021</td><td class="mu">—</td><td>502</td><td class="t">一中计划 1100 人；若线在第 1090 名</td><td>≈557–561</td></tr>
+          <tr><td>2022</td><td>6289</td><td>517.6</td><td class="t">公办计划 3451 人</td><td class="mu">—</td></tr>
+          <tr><td>2023</td><td class="mu">—</td><td>479.7</td><td class="t">—</td><td class="mu">—</td></tr>
+          <tr><td>2024</td><td class="mu">—</td><td>568*</td><td class="t">网络数据，未核</td><td class="mu">—</td></tr>
+          <tr><td>2025</td><td class="mu">—</td><td>559.5</td><td class="t">市区考点三个年级共 15351 人</td><td class="mu">—</td></tr>
+          <tr><td>2026</td><td>4749<span class="mu"> 初四</span></td><td>547.8</td><td class="t">奥赛班 617＝第 110 名；若一中仍招约 1100 人</td><td>≈555–559</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="choice">
+    <div class="sh"><h2>2004 年的线高，是因为那年有择校生吗</h2><span class="src">绥化晚报 2004-08-01 · 2007-07-18 · 2011 年招生计划</span></div>
+    <div class="prose">
+      <p><b>是，而且这一项几乎解释了全部的位置差。</b>2004 年起实行择校生“三限”政策（限人数、限分数、限钱数）：择校生在招生计划之内，招的是低于公费线的考生。那年公布的 571 分是<b>公费生</b>最低线；一中的择校生另有一条控制线 450 分，低 121 分，按 570–560、559–540、539–510、509–480、479–450 五档收费，三年 6000 到 18000 元。</p>
+      <p>所以择校时代的一中线只卡公费名额。2007 年一中计划 1200 人，公费 840、择校 360，正好三成；2011 年公费 924（含艺体 50）、择校 276。2018、2021 年的计划里已经没有择校生，一中 1100 多个名额全部按分数录取，线就划到第 1100 名附近。</p>
+      <p>用 2020 年的一分一段表做反事实：如果 2020 年仍按 2007 年的比例只拿七成名额划公费线，一中线会落在第 770 名，前 14.5%，约 587 分（含体育），折回 2004 年约 572 分；按 2011 年的比例是第 801 名、前 15.0%、585 分，折回 2004 年 571 分。2004 年的实际一中线是第 742 名、前 15.1%、571 分。<b>扣掉择校生制度的差别，2004 年和 2020 年的一中线几乎在同一个位置。</b></p>
+      <p>反过来，如果 2004 年没有择校生，1040 个名额全按分数录取，线会落在第 910–990 名，折回 2004 年约 561–566 分，比实际的 571 低 5–10 分。至于原始分从 2005–2012 年的 590–610 降到近年的 480–580，主要是卷子和计分结构的变化：名额几乎不变的 2017–2026 年里，一中线自己就差了 103 分。</p>
+      <p>2014 年的数字（非官方整理）让时间线更清楚：那年一中公费录取 1048 人，择校只剩 106 人，择校线 535 分离公费线只差 17 分，而 2004 年差 121 分，择校已经名存实亡。一中线却从 2012 年的 603 分跌到 2014 年的 552 分。公费名额从 942 增到 1048，按 2004 年口径只值 3–4 分；这 50 分的落差主要来自卷子和计分结构，不是择校。</p>
+      <p>一处修正：2004 年一中的择校生大约不到三成。1040 人里扣掉公费 742、外市县 50、外语加强班 30、艺体特长生 50，只剩约 170 个位置，一成六左右；三成是 2007 年的数字。</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>情形</th><th>线在第几名</th><th style="text-align:left">位置（前 10% ─ 22%）</th><th>当年分数</th><th>折回 2004</th></tr></thead>
+        <tbody>
+          <tr class="me"><td class="n">2004 实际：公费线</td><td>742</td><td class="p"><span class="pos"><i style="left:42.5%;background:var(--c04)"></i></span>15.1%</td><td>571</td><td>571</td></tr>
+          <tr><td class="n">2004 若无择校：1040 个名额按分数</td><td>910–990</td><td class="p"><span class="pos"><b style="left:70.8%;width:13.4%;background:var(--c04)"></b><i class="h" style="left:70.8%;border-color:var(--c04)"></i><i class="h" style="left:84.2%;border-color:var(--c04)"></i></span>18.5–20.1%</td><td class="mu">—</td><td>561–566</td></tr>
+          <tr><td class="n">2020 实际：无择校</td><td>1099</td><td class="p"><span class="pos"><i style="left:88.3%;background:var(--c20)"></i></span>20.6%</td><td>566</td><td>560–563</td></tr>
+          <tr><td class="n">2020 若按 2011 年比例（公费约 73%）</td><td>801</td><td class="p"><span class="pos"><i class="h" style="left:41.7%;border-color:var(--c20)"></i></span>15.0%</td><td>585</td><td>571</td></tr>
+          <tr><td class="n">2020 若按 2007 年比例（公费 70%）</td><td>770</td><td class="p"><span class="pos"><i class="h" style="left:37.5%;border-color:var(--c20)"></i></span>14.5%</td><td>587</td><td>572</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">实心是实际的线，空心是反事实。位置按当年考生数折算：2004 年 4923 人，2020 年 5324 人；2020 年分数已加体育 30。2004 年的 742 若含 50 个定村配额生，实际线在第 692 名、前 14.1%。</p>
+  </section>
+
+  <section id="class3">
+    <div class="sh"><h2>2004 年前 100 名与高三三班的中考分数</h2><span class="src">模拟 · 每种模型 1500 次</span></div>
+    <div class="prose">
+      <p>高三三班 65 人：外县生 15 人（绥棱 4、望奎 5、北安 4、海伦 1、青冈 1），市区生 50 人。外县生里只有两个真实分数（648、630），其余外县生和全部市区生的中考分都不知道，只能按已知的制度和回忆去模拟：市区高分段的分布、高分生外流、外县生来自各县前 30 名、奥赛班的分班方式、高二文理分科。</p>
+      <p><b>高三三班</b>：全班平均约 <b>613–618 分</b>（借形状 612.7，正态 617.5）；班内第 10 名约 627–633 分，第 30 名约 609–617 分，最后几名在 600 分上下。外县生 15 人平均约 628–634 分，比班里的市区生高一截。648 在班内是第 1 或第 2 名。</p>
+      <p><b>一中 2004 级前 100 名（含外县生）</b>：第 1 名约 648–667 分，第 10 名约 636–644，第 50 名约 617–624，第 100 名约 606–610。20 名外县生全在前 100 名里。只看市区考生，第 100 名约 605–609 分。</p>
+      <p><b>和推断表比</b>：推断表的全班平均 622.5，第 30 名 622.9，最后一名 609.9，比两种模拟都高 5–10 分。主要原因是推断表把三班当成全校前 108 名里连续的一块；按回忆的分班方式，三班的市区生分散在市区前 145–175 名里，下半班接近 600 分。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>高三三班 65 人的中考分（按班内名次）</h3>
+        <div class="legend">
+          <span><i class="sw" style="border-top-color:var(--c04)"></i>借形状 · 中位数</span>
+          <span><i class="sw" style="border-top-style:dashed;border-top-color:var(--c04)"></i>正态 · 中位数</span>
+          <span><i class="sq" style="background:var(--c04-w)"></i>两种模型的 10%–90% 区间</span>
+          <span><i class="sw" style="border-top-color:var(--ink)"></i>推断表</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="c3-chart" class="chart" viewBox="0 0 920 360" role="img" aria-label="高三三班 65 人按班内名次的中考分：两种模拟的中位数与区间，以及推断表"></svg></div>
+      <p class="cap">班内名次按分数排，不对应具体的人。第 1 名的区间窄，是因为 648 是固定的真实分数。</p>
+    </figure>
+    <div class="tbl">
+      <table id="top100">
+        <thead><tr><th>名次</th><th>市区前 100（借形状–正态）</th><th>一中 2004 级 · 借形状</th><th>一中 2004 级 · 正态</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="cap">一中 2004 级列为中位数，灰字是 10%–90% 区间。市区列是没有外流时的市区名次分数。</p>
+    <ul class="notes">
+      <li><span class="tag model">假设</span><span>每次模拟：按正态或借形状随机抽出 2004 年市区的高分段；600 分以上的市区考生按 5%、10% 或 20% 外流（2003 年九中有学生去了上海师大附中、哈三中和大庆）；外县生 20 人，除 648、630 外，每人按“县内第 3–30 名、全县 3000–5000 名考生、分布同市区”抽分；奥赛班三个班各 55、60 或 65 人，市区前 5 或前 10 名进一班，其余市区生按名次轮流进一、二、三班，外县生二班、三班各 10 人；高三三班 = 已知的 15 名外县生 + 从二班、三班市区生中随机抽 50 人。没有使用任何人的县内名次。</span></li>
+      <li><span class="tag open">推断表</span><span>“假想对象”一列是占位，不是逐人核实；张国慧已改为青冈；邵润超按高考 630 分补入 627.5 分，原三班最后一名匿名市区生（609.59）移到二班。633.79 这类两位小数是模型填出的，精度是虚的。</span></li>
+    </ul>
+  </section>
+
+  <section id="method">
+    <div class="sh"><h2>口径与来源</h2><span class="src">每条标明是实测、模型还是未核</span></div>
+    <ul class="notes">
+      <li><span class="tag real">实测</span><span>2004 年满分 690：语数外各 120，物理、化学、政治各 100，体育 30，与 <code>kao.md</code> 引用的招考网页一致，648 的各科也正好合上这个结构。已确认，《绥化一中.md》原先记的 710 已改正。市区考生 4923 人，571 分以上 742 人，600 分以上 165 人。</span></li>
+      <li><span class="tag real">实测</span><span>择校生：《绥化晚报》2004-08-01《自费生停招 择校生登场》，一中择校控制线 450 分、二中七中 414 分，五档收费；《绥化日报》2004-06-18，市区考生 4930、计划 5490（公费 3390、自费 2100），一中、二中、七中各划 50 个定村配额；《晚报》2007-07-18，一中计划 1200（公费 840）；绥化教育信息网 2011-07，一中 1200（公费 924，择校 276）。742 出自 <code>重要统计数据.md</code>“前 15% 的绥化市区考生去绥化一中，录取 742 人”，原始出处未注。</span></li>
+      <li><span class="tag real">实测</span><span>《绥化市第九中学》苗丽萍校长访录，《绥化日报》2005 年 6 月 16 日（此前误记"约 2005 年"，2026-09-14 据报纸版面确认准确日期；完整复刻见 <code>2005年绥化九中苗丽萍校长访录.html</code>）：2004 年中考 600 分以上九中 65 人，全市前 10 名中九中 5 人，考入一中 144 人；2003 年九中有学生考入上海师大附中 3 名、哈三中 2 名、大庆实验铁人中学多名。2004 年 600 分以上的总人数曾因原始表格装订缝遮挡误读为 174，2026-09-13 确认准确值为 165，本页已按 165 重新校准两种外推模型。原文两处用"全市"而非"市区"表述 600 分以上人数，本页按市区口径使用，存疑但未改写，见复刻页说明。</span></li>
+      <li><span class="tag open">未核</span><span>2013、2014、2016 年的一中线来自 AI 总结，2015 年只有预测，2024 年是网络数据，都没有原始公告；2013 年的 603 分、942 人与 2012 年完全相同，疑为重复。</span></li>
+      <li><span class="tag model">模型</span><span>正态模型：N(533.5, 36.3²)。借形状：610 分以下，2004 分数 ＝ 245.71 ＋ 0.5864 × 2020 年分数（不含体育），系数由两个百分位（3.35%、15.07%）对齐得出；610 分以上，人数按大庆名册从 610 分往上的衰减比例递减。两种估计在 600 分以下几乎一致。2026-09-13 随 600 分以上人数由 174 改为 165 一并重新校准，此前"名次基数 5324 与 6162 相差不到 1 分"的旧校验未重跑，留意。</span></li>
+      <li><span class="tag open">试过没用</span><span>2026-09-14 试过用 2026 年前五十名单直接给 610 分以上重新拟合一条"借 2026 形状"曲线（用 600 分锚点与 610 分衔接点两点定线性系数），结果第 1 名只有约 629 分，明显低于现有借形状模型的约 647 分，也不符大庆的证据。原因是两个定标点只相差约 2 个百分点，挤在曲线最陡处，斜率外推到第一名不稳；线性换算也会抹平 2026 年真实数据里第 1–3 名相对第 6–50 名的断层式领先（高出 10–25 分）。没有采用这条曲线，但它提示：610 分以上如果真实分布也有类似断层，现有两个模型更可能低估而非高估 648 的位置。</span></li>
+      <li><span class="tag real">实测</span><span>大庆 2004 年中考录取总表：<code>2004年大庆中考录取总表.csv</code>，5760 人。610、620 分以上的人数（856、479）与铁人中学三校对照表一致，607 分以下不全。列名是“文化成绩”，但最高分 663 超过文化课满分 660，应已含体育，与 648 同口径。大庆考生按 21500 人计。</span></li>
+      <li><span class="tag open">假设</span><span>2020 年一分一段表不含体育（满分 670），按你的设定全体体育满分，一律加 30 分；四所学校的录取线同样加 30。名次基数用“普通高中报考人数 5324 人”。2019 年官方口径：语数外各 120，物理 80，化学 70，道法、历史各 50，地理、生物各 30，体育 30，共 700。</span></li>
+      <li><span class="tag real">实测</span><span>2026 年前五十：<code>2026年绥化市区中考前五十名单.csv</code>，有学校和各科分数，没有姓名，文件没有注明发布方。奥赛班线 617＝前 110 名、3、4 班 111–220 名（3/4 班线 603.2＝第 220 名，用户 2026-09-14 提供）、初四 4749 人，见 <code>2020年-2026年绥化市区中考信息.md</code>。</span></li>
+      <li><span class="tag open">存疑</span><span>2026 年名单第 32 名（实验中学）各科相加 645 分，与所列总分 635 分差 10 分。名单按总分排序，635 与前后名次吻合，所以名次按总分算；单科图表照原样使用这一行，对前五十平均丢分的影响不超过 0.2 分。</span></li>
+      <li><span class="tag open">假设</span><span>2005 年“600 分以上 735 人”没有同年考生数，按与 2004 年相近处理。录取线折回 2004 年时，2018、2021、2026 年假设一中线落在招生计划人数附近；2020 年用一分一段表实查。</span></li>
+      <li><span class="tag model">假设</span><span>648 是绥棱县考生的分数，并不在绥化市区的排名里。2004 年除哈尔滨外全省同卷，所以本页把它放进市区名次里比，这是假想的位置。县内名次有“第三”“第六”两种说法，本页不涉及。</span></li>
+    </ul>
+    <footer>数据整理自仓库 content/kao/、content/2004/ 与 content/posts/kao.md · 2026-09-11</footer>
+  </section>
+</main>
+<div id="tip" role="tooltip" hidden></div>
+
+<script>
+(()=>{
+const S26=[{"s":"九中","c":"","v":[116,101,116.5,76,66,50,50,29.4,30,30],"t":664.9},{"s":"九中","c":"","v":[119,104.5,116,79,54,50,50,30,30,30],"t":662.5},{"s":"四中","c":"06班","v":[111,101,113.5,75,68.5,49.8,50,30,30,30],"t":658.8},{"s":"九中","c":"","v":[102.5,106,115.5,75,65,50,50,30,30,30],"t":654},{"s":"九中","c":"","v":[111,104,117,71,59,50,50,30,30,30],"t":652},{"s":"五中","c":"","v":[107,101,111.5,76,64,50,50,30,30,30],"t":649.5},{"s":"十中","c":"02班","v":[104.5,102.5,115.5,77,58.5,50,50,30,30,30],"t":648},{"s":"四中","c":"04班","v":[106,105,108,74,65,50,50,30,30,30],"t":648},{"s":"九中","c":"01班","v":[106,103,110,75,63,50,50,30,30,30],"t":647},{"s":"四中","c":"13班","v":[101,104,111.5,76,64,49.8,50,30,30,30],"t":646.3},{"s":"四中","c":"08班","v":[112,103.5,110,77,54,50,50,30,29.7,30],"t":646.2},{"s":"四中","c":"13班","v":[108.5,103,112,75,58,50,50,30,29.4,30],"t":645.9},{"s":"十中","c":"","v":[106,99.5,112,74,64.5,50,50,29.7,30,30],"t":645.7},{"s":"八中","c":"","v":[107.5,103,112,78,55,50,50,30,30,30],"t":645.5},{"s":"十中","c":"","v":[104,103,112,79,56.5,49.5,50,30,30,30],"t":644},{"s":"九中","c":"","v":[106,99.5,114.5,72,63,49,50,29.7,30,30],"t":643.7},{"s":"五中","c":"","v":[107,100.5,111,72,63,50,50,30,30,30],"t":643.5},{"s":"三中","c":"","v":[104,101,110.5,76,61,50,50,30,30,30],"t":642.5},{"s":"五中","c":"","v":[101,99,110,77,65,50,50,29.7,30,30],"t":641.7},{"s":"十中","c":"","v":[106,97,114,76,59.5,49,50,30,30,30],"t":641.5},{"s":"实验中学","c":"03班","v":[104.5,97,112,77,61,50,50,30,29.7,30],"t":641.2},{"s":"八中","c":"07班","v":[103.5,105.5,111,73,56.5,49.5,50,30,30,30],"t":639},{"s":"三中","c":"07班","v":[106.5,97.5,112,75,58,50,50,30,30,30],"t":639},{"s":"四中","c":"","v":[98.5,105.5,111,70,63,50,50,30,30,30],"t":638},{"s":"六中","c":"08班","v":[97.5,103.5,112,75,61,49.8,49.5,30,29.4,30],"t":637.7},{"s":"九中","c":"","v":[102,97.5,111,74,63,50,50,30,30,30],"t":637.5},{"s":"八中","c":"","v":[106.5,100.5,110,72,59,50,50,30,29.4,30],"t":637.4},{"s":"四中","c":"","v":[97.5,98.5,113.5,75,63,50,50,30,29.7,30],"t":637.2},{"s":"四中","c":"","v":[103.5,97,114,71,61.5,50,49.5,30,30,30],"t":636.5},{"s":"四中","c":"","v":[101,105,116,68,58,49.8,50,29.4,29.1,30],"t":636.3},{"s":"十中","c":"","v":[110,94,112.5,72,61,48.8,48,30,29.7,30],"t":636},{"s":"实验中学","c":"","v":[112,96,113,75,60,49.3,50,30,29.7,30],"t":635},{"s":"五中","c":"08班","v":[101,101,113,73,56.5,50,50,30,30,30],"t":634.5},{"s":"五中","c":"","v":[104,97,105.5,77,62,49,50,30,30,30],"t":634.5},{"s":"四中","c":"","v":[91,103,110,76,64.5,49.5,50,30,30,30],"t":634},{"s":"九中","c":"01班","v":[107,89.5,113.5,74,60.5,49.5,50,29.7,30,30],"t":633.7},{"s":"五中","c":"","v":[96.5,106,111.5,69,61,50,50,30,29.7,30],"t":633.7},{"s":"九中","c":"","v":[107,90,111.5,76,63,47.5,49,29.7,30,30],"t":633.7},{"s":"四中","c":"","v":[99,96,111,74,64,50,50,29.7,30,30],"t":633.7},{"s":"十中","c":"01班","v":[104,99.5,106,75,59,50,50,30,30,30],"t":633.5},{"s":"九中","c":"10班","v":[100,100,112,76,55,50,50,30,30,30],"t":633},{"s":"四中","c":"09班","v":[105,94,109,77,58,50,50,30,29.7,30],"t":632.7},{"s":"五中","c":"14班","v":[108,98.5,108.5,76,51,49.9,50,30,29.1,30],"t":631},{"s":"五中","c":"04班","v":[99.5,99,109,74,59.5,50,50,30,29.7,30],"t":630.7},{"s":"张维一中","c":"","v":[100.5,97,113,73,57,50,50,30,30,30],"t":630.5},{"s":"四中","c":"07班","v":[95.5,103,109,73,60.5,49.3,50,30,30,30],"t":630.3},{"s":"九中","c":"","v":[94,102.5,107,76,62,48.8,50,30,30,30],"t":630.3},{"s":"四中","c":"7班","v":[100,94,115,73,59,50,49,30,30,30],"t":630},{"s":"四中","c":"12班","v":[105,100.5,106.5,73,56,50,49,29.7,30,30],"t":629.7},{"s":"四中","c":"06班","v":[100,99,109,73,59,50,49.5,30,30,30],"t":629.5}];
+const T20=[[620,57,57],[619,6,63],[618,2,65],[617,5,70],[616,7,77],[615,8,85],[614,7,92],[613,6,98],[612,7,105],[611,5,110],[610,7,117],[609,11,128],[608,8,136],[607,9,145],[606,9,154],[605,15,169],[604,12,181],[603,10,191],[602,8,199],[601,11,210],[600,14,224],[599,17,241],[598,6,247],[597,13,260],[596,5,265],[595,5,270],[594,6,276],[593,11,287],[592,2,289],[591,15,304],[590,5,309],[589,11,320],[588,15,335],[587,10,345],[586,10,355],[585,12,367],[584,12,379],[583,10,389],[582,12,401],[581,8,409],[580,12,421],[579,5,426],[578,13,439],[577,13,452],[576,19,471],[575,7,478],[574,12,490],[573,16,506],[572,14,520],[571,14,534],[570,22,556],[569,13,569],[568,17,586],[567,16,602],[566,14,616],[565,16,632],[564,17,649],[563,21,670],[562,15,685],[561,15,700],[560,11,711],[559,13,724],[558,22,746],[557,19,765],[556,14,779],[555,21,800],[554,10,810],[553,26,836],[552,17,853],[551,12,865],[550,10,875],[549,16,891],[548,24,915],[547,13,928],[546,20,948],[545,19,967],[544,16,983],[543,16,999],[542,24,1023],[541,10,1033],[540,14,1047],[539,14,1061],[538,13,1074],[537,13,1087],[536,12,1099],[535,14,1113],[534,19,1132],[533,15,1147],[532,16,1163],[531,13,1176],[530,17,1193],[529,12,1205],[528,18,1223],[527,19,1242],[526,17,1259],[525,10,1269],[524,19,1288],[523,19,1307],[522,19,1326],[521,9,1335],[520,9,1344],[519,18,1362],[518,12,1374],[517,13,1387],[516,12,1399],[515,9,1408],[514,18,1426],[513,22,1448],[512,18,1466],[511,11,1477],[510,13,1490],[509,16,1506],[508,12,1518],[507,17,1535],[506,24,1559],[505,10,1569],[504,8,1577],[503,19,1596],[502,14,1610],[501,10,1620],[500,16,1636],[499,9,1645],[498,13,1658],[497,24,1682],[496,12,1694],[495,17,1711],[494,19,1730],[493,13,1743],[492,17,1760],[491,14,1774],[490,12,1786],[489,23,1809],[488,9,1818],[487,10,1828],[486,14,1842],[485,9,1851],[484,15,1866],[483,13,1879],[482,13,1892],[481,11,1903],[480,11,1914],[479,13,1927],[478,12,1939],[477,13,1952],[476,17,1969],[475,13,1982],[474,14,1996],[473,12,2008],[472,21,2029],[471,15,2044],[470,16,2060],[469,10,2070],[468,13,2083],[467,15,2098],[466,10,2108],[465,15,2123],[464,14,2137],[463,18,2155],[462,18,2173],[461,15,2188],[460,15,2203],[459,17,2220],[458,15,2235],[457,21,2256],[456,19,2275],[455,17,2292],[454,10,2302],[453,14,2316],[452,24,2340],[451,15,2355],[450,16,2371],[449,12,2383],[448,9,2392],[447,14,2406],[446,10,2416],[445,20,2436],[444,13,2449],[443,18,2467],[442,14,2481],[441,11,2492],[440,12,2504],[439,14,2518],[438,14,2532],[437,16,2548],[436,15,2563],[435,15,2578],[434,8,2586],[433,18,2604],[432,14,2618],[431,8,2626],[430,11,2637],[429,18,2655],[428,17,2672],[427,12,2684],[426,17,2701],[425,10,2711],[424,18,2729],[423,13,2742],[422,11,2753],[421,21,2774],[420,17,2791],[419,11,2802],[418,11,2813],[417,15,2828],[416,13,2841],[415,13,2854],[414,10,2864],[413,14,2878],[412,11,2889],[411,12,2901],[410,14,2915],[409,11,2926],[408,10,2936],[407,14,2950],[406,12,2962],[405,16,2978],[404,13,2991],[403,8,2999],[402,11,3010],[401,15,3025],[400,18,3043],[399,11,3054],[398,7,3061],[397,18,3079],[396,17,3096],[395,12,3108],[394,12,3120],[393,7,3127],[392,5,3132],[391,18,3150],[390,6,3156],[389,9,3165],[388,9,3174],[387,11,3185],[386,11,3196],[385,17,3213],[384,18,3231],[383,13,3244],[382,13,3257],[381,8,3265],[380,15,3280],[379,7,3287],[378,11,3298],[377,11,3309],[376,13,3322],[375,12,3334],[374,18,3352],[373,12,3364],[372,7,3371],[371,10,3381],[370,14,3395],[369,10,3405],[368,10,3415],[367,9,3424],[366,14,3438],[365,8,3446],[364,12,3458],[363,11,3469],[362,7,3476],[361,4,3480],[360,11,3491],[359,19,3510],[358,11,3521],[357,12,3533],[356,12,3545],[355,6,3551],[354,10,3561],[353,10,3571],[352,6,3577],[351,12,3589],[350,13,3602],[349,16,3618],[348,15,3633],[347,7,3640],[346,13,3653],[345,9,3662],[344,9,3671],[343,6,3677],[342,5,3682],[341,14,3696],[340,5,3701],[339,13,3714],[338,10,3724],[337,5,3729],[336,14,3743],[335,5,3748],[334,15,3763],[333,7,3770],[332,11,3781],[331,9,3790],[330,8,3798],[329,8,3806],[328,9,3815],[327,13,3828],[326,9,3837],[325,10,3847],[324,9,3856],[323,9,3865],[322,13,3878],[321,14,3892],[320,9,3901],[319,16,3917],[318,15,3932],[317,13,3945],[316,12,3957],[315,7,3964],[314,8,3972],[313,14,3986],[312,10,3996],[311,11,4007],[310,10,4017],[309,10,4027],[308,16,4043],[307,9,4052],[306,5,4057],[305,12,4069],[304,9,4078],[303,6,4084],[302,17,4101],[301,7,4108],[300,14,4122]];
+const DQ=[1189, 1171, 1146, 1120, 1087, 1060, 1017, 976, 934, 894, 856, 810, 772, 733, 698, 661, 608, 572, 541, 515, 479, 441, 406, 380, 353, 328, 290, 271, 247, 236, 219, 188, 175, 161, 141, 129, 115, 99, 88, 72, 60, 51, 44, 39, 31, 26, 20, 15, 12, 10, 8, 7, 7, 6, 6, 4, 3, 2, 1, 1, 1, 1, 1, 1, 0];
+const MC={"A":{"c3":{"p10":[648.0,643.5,639.8,637.1,635.4,633.8,632.5,631.4,630.4,630.0,629.4,628.6,627.8,627.0,626.3,625.7,625.0,624.2,623.5,622.6,621.5,620.5,619.3,618.3,617.3,616.3,615.4,614.6,613.8,613.0,612.2,611.5,610.8,610.2,609.4,608.9,608.3,607.6,607.1,606.7,606.1,605.6,605.1,604.6,604.1,603.6,603.2,602.8,602.4,602.0,601.5,601.1,600.7,600.4,599.9,599.6,599.3,599.0,598.7,598.4,598.1,597.8,597.5,597.3,597.0],"p50":[649.6,648.0,645.3,642.2,639.8,638.0,636.4,635.1,633.9,632.8,631.8,630.8,630.0,630.0,629.1,628.4,627.5,626.8,626.2,625.5,624.8,624.0,623.2,622.4,621.5,620.6,619.6,618.7,617.9,617.0,616.2,615.4,614.7,614.0,613.3,612.6,612.0,611.4,610.8,610.2,609.6,609.0,608.5,608.0,607.5,607.0,606.5,606.1,605.7,605.2,604.7,604.3,603.9,603.5,603.2,602.8,602.4,602.1,601.7,601.3,601.0,600.6,600.3,600.0,599.7],"p90":[654.6,650.6,648.0,647.1,644.7,642.4,640.6,639.1,637.8,636.6,635.4,634.4,633.3,632.4,631.5,630.6,630.0,629.8,629.1,628.2,627.5,626.8,626.2,625.5,624.8,624.0,623.3,622.5,621.9,621.1,620.3,619.4,618.7,617.8,617.1,616.3,615.6,614.9,614.2,613.7,613.1,612.5,611.9,611.4,610.8,610.3,609.9,609.3,608.9,608.3,607.9,607.5,607.1,606.6,606.3,605.8,605.5,605.0,604.7,604.3,603.9,603.5,603.2,602.8,602.5]},"top100":{"p10":[655.2,651.0,648.1,648.0,646.2,644.7,643.1,641.8,640.7,639.6,638.5,637.7,636.9,636.2,635.5,634.8,634.3,633.6,633.0,632.4,631.9,631.3,630.8,630.3,630.0,629.9,629.5,629.1,628.7,628.3,627.9,627.5,627.1,626.8,626.4,626.0,625.7,625.3,625.0,624.6,624.3,623.8,623.4,623.1,622.7,622.4,622.0,621.6,621.3,620.9,620.6,620.2,619.8,619.5,619.1,618.7,618.4,618.0,617.7,617.4,617.0,616.8,616.4,616.1,615.8,615.5,615.3,615.0,614.8,614.5,614.3,613.9,613.7,613.4,613.2,612.9,612.7,612.4,612.2,612.0,611.7,611.5,611.3,611.1,610.9,610.7,610.5,610.3,610.0,609.7,609.5,609.3,609.1,608.9,608.7,608.5,608.3,608.1,607.9,607.7],"p50":[666.9,657.9,654.0,651.4,649.4,648.0,647.8,646.4,644.9,643.7,642.8,641.7,640.8,639.9,639.1,638.3,637.5,636.8,636.2,635.7,635.0,634.5,633.9,633.4,632.9,632.4,631.9,631.4,631.1,630.6,630.1,630.0,629.7,629.3,628.9,628.5,628.1,627.8,627.4,627.1,626.8,626.4,626.1,625.8,625.4,625.1,624.8,624.4,624.1,623.8,623.5,623.1,622.8,622.4,622.1,621.8,621.4,621.1,620.8,620.4,620.1,619.8,619.5,619.2,618.8,618.5,618.2,617.9,617.6,617.3,616.9,616.7,616.4,616.1,615.9,615.6,615.3,615.1,614.9,614.6,614.3,614.1,613.9,613.7,613.4,613.2,613.0,612.8,612.5,612.3,612.1,611.9,611.7,611.5,611.3,611.1,610.9,610.7,610.5,610.3],"p90":[684.9,669.4,662.7,657.9,654.8,653.0,651.2,649.6,648.4,648.0,646.9,645.9,644.7,643.9,642.8,641.9,641.1,640.2,639.6,638.8,638.2,637.5,637.0,636.5,635.8,635.2,634.7,634.2,633.7,633.3,632.7,632.3,631.8,631.4,631.1,630.7,630.3,630.0,629.9,629.5,629.2,628.8,628.4,628.1,627.9,627.5,627.2,626.8,626.5,626.2,626.0,625.6,625.3,625.1,624.8,624.5,624.2,623.8,623.5,623.2,622.8,622.5,622.3,622.0,621.7,621.3,621.0,620.8,620.5,620.2,620.0,619.6,619.3,619.1,618.8,618.6,618.3,618.0,617.7,617.5,617.2,616.9,616.7,616.4,616.2,615.9,615.7,615.5,615.3,615.0,614.8,614.6,614.3,614.1,613.9,613.6,613.4,613.3,613.0,612.9]},"city100":{"p10":[656.3,650.5,647.0,644.3,642.3,640.8,639.2,637.8,636.6,635.3,634.4,633.4,632.7,631.9,631.1,630.3,629.7,629.1,628.5,627.8,627.3,626.8,626.3,625.8,625.2,624.7,624.3,623.9,623.4,622.9,622.6,622.2,621.8,621.4,621.0,620.8,620.4,620.1,619.8,619.4,619.1,618.8,618.5,618.3,618.0,617.7,617.5,617.2,616.9,616.6,616.3,616.0,615.8,615.5,615.3,615.0,614.8,614.6,614.4,614.2,613.9,613.7,613.5,613.3,613.0,612.8,612.6,612.4,612.2,612.0,611.8,611.6,611.5,611.3,611.1,610.9,610.8,610.6,610.4,610.2,610.0,609.8,609.6,609.4,609.3,609.1,608.9,608.7,608.5,608.4,608.3,608.1,607.9,607.7,607.5,607.4,607.2,607.1,606.9,606.8],"p50":[668.4,659.3,654.4,651.0,648.4,646.4,644.4,642.9,641.5,640.2,639.0,637.8,636.9,636.0,635.2,634.3,633.6,632.9,632.1,631.5,631.0,630.3,629.7,629.2,628.6,628.1,627.6,627.1,626.7,626.3,625.8,625.4,624.9,624.5,624.1,623.7,623.3,623.0,622.6,622.2,621.9,621.5,621.2,620.9,620.6,620.3,619.9,619.7,619.4,619.1,618.8,618.5,618.3,618.0,617.7,617.5,617.2,616.9,616.7,616.5,616.2,616.0,615.7,615.5,615.3,615.1,614.8,614.6,614.4,614.2,614.0,613.8,613.6,613.4,613.2,612.9,612.8,612.6,612.4,612.2,612.0,611.9,611.7,611.5,611.3,611.1,610.9,610.8,610.6,610.4,610.2,610.1,609.9,609.8,609.6,609.4,609.3,609.1,609.0,608.8],"p90":[685.4,670.1,663.9,659.1,655.8,653.1,650.8,648.8,646.8,645.4,644.0,642.5,641.5,640.1,639.2,638.3,637.6,636.9,636.1,635.3,634.5,633.8,633.1,632.4,631.9,631.5,630.9,630.4,629.9,629.5,628.9,628.5,628.1,627.6,627.1,626.7,626.3,625.9,625.6,625.1,624.7,624.3,624.0,623.5,623.2,622.9,622.6,622.4,622.0,621.7,621.4,621.1,620.8,620.6,620.3,620.1,619.7,619.4,619.2,618.9,618.7,618.4,618.2,618.0,617.7,617.5,617.2,617.0,616.8,616.5,616.3,616.1,615.9,615.7,615.5,615.3,615.1,614.9,614.7,614.5,614.3,614.0,613.9,613.7,613.6,613.3,613.1,612.9,612.7,612.6,612.4,612.1,612.0,611.8,611.7,611.5,611.3,611.1,611.0,610.8]}},"D":{"c3":{"p10":[648.0,635.6,632.7,630.4,630.0,628.8,627.2,625.8,625.1,624.0,623.2,622.0,621.4,620.8,620.1,619.4,618.3,617.4,616.4,615.5,614.7,613.1,611.3,609.9,609.6,608.7,608.2,607.9,607.5,607.2,606.8,606.4,606.0,605.6,605.3,604.8,604.4,604.0,603.7,603.5,603.3,603.0,602.7,602.4,602.2,601.9,601.6,601.4,601.2,601.1,600.9,600.7,600.5,600.2,600.0,599.8,599.6,599.3,599.1,598.9,598.7,598.6,598.4,598.3,598.2],"p50":[648.0,639.5,636.8,634.6,633.0,631.0,630.1,630.0,628.7,627.3,626.1,625.4,624.6,623.7,622.8,621.8,621.1,620.5,619.8,619.1,618.1,617.1,616.1,615.3,614.4,613.0,611.7,610.4,609.7,609.3,608.5,608.1,607.8,607.5,607.2,607.0,606.6,606.3,606.0,605.7,605.4,605.0,604.6,604.3,604.0,603.8,603.6,603.4,603.1,602.9,602.6,602.4,602.1,601.9,601.7,601.5,601.3,601.2,601.1,600.9,600.7,600.5,600.3,600.1,599.9],"p90":[648.0,642.3,640.0,638.3,636.7,635.2,633.6,632.3,630.9,630.3,630.0,629.2,627.9,626.9,625.9,625.2,624.5,623.6,622.7,621.8,621.1,620.6,619.9,619.2,618.2,617.3,616.3,615.5,614.7,613.5,612.4,611.3,610.2,609.8,609.4,608.7,608.3,608.0,607.8,607.5,607.3,607.0,606.7,606.4,606.1,605.8,605.5,605.3,604.9,604.5,604.2,604.0,603.8,603.6,603.5,603.2,602.9,602.7,602.5,602.3,602.1,601.9,601.6,601.5,601.4]},"top100":{"p10":[648.0,642.4,640.2,638.7,637.6,636.6,635.6,634.6,633.7,633.0,631.9,631.0,630.6,630.0,630.0,629.2,628.1,627.6,627.0,626.4,625.9,625.5,625.2,624.7,624.3,623.8,623.4,623.0,622.5,622.0,621.7,621.3,620.9,620.6,620.3,619.9,619.6,619.2,618.7,618.2,617.8,617.2,616.6,616.2,615.8,615.5,615.2,614.8,614.4,613.9,613.3,612.9,612.3,611.7,611.1,610.7,610.1,609.9,609.8,609.6,609.5,609.3,608.8,608.6,608.5,608.3,608.1,608.0,607.9,607.8,607.6,607.5,607.4,607.3,607.2,607.1,607.0,606.9,606.8,606.7,606.6,606.4,606.3,606.2,606.0,605.9,605.7,605.6,605.5,605.4,605.3,605.1,605.0,604.8,604.7,604.6,604.4,604.3,604.2,604.1],"p50":[648.0,647.7,644.2,641.9,640.4,639.4,638.5,637.8,636.8,636.0,635.3,634.4,633.6,633.1,632.3,631.4,630.8,630.5,630.1,630.0,629.5,628.7,627.8,627.3,626.8,626.2,625.8,625.5,625.2,624.8,624.3,623.9,623.4,623.0,622.6,622.1,621.7,621.4,621.1,620.7,620.4,620.1,619.8,619.5,619.1,618.6,618.2,617.7,617.3,616.9,616.5,616.0,615.8,615.5,615.2,614.8,614.3,614.0,613.6,613.0,612.6,612.1,611.7,611.2,610.8,610.4,610.0,609.8,609.7,609.6,609.5,609.3,608.9,608.7,608.5,608.4,608.2,608.1,608.0,608.0,607.8,607.7,607.6,607.5,607.4,607.4,607.3,607.2,607.1,607.0,606.9,606.7,606.6,606.5,606.4,606.3,606.2,606.1,606.0,605.8],"p90":[656.9,649.3,648.0,646.2,644.0,642.8,641.2,640.1,639.3,638.7,638.1,637.3,636.6,636.1,635.3,634.6,633.9,633.3,632.9,632.2,631.2,630.8,630.5,630.1,630.0,629.7,629.2,628.4,627.8,627.3,626.8,626.2,625.8,625.5,625.3,625.0,624.7,624.2,623.8,623.4,623.1,622.6,622.2,621.7,621.5,621.2,620.8,620.5,620.3,620.0,619.6,619.3,619.0,618.5,618.1,617.7,617.4,616.9,616.6,616.2,615.9,615.6,615.4,615.0,614.6,614.3,613.9,613.5,613.2,612.8,612.3,611.9,611.4,610.9,610.6,610.2,609.9,609.9,609.8,609.6,609.5,609.4,609.2,608.9,608.7,608.6,608.4,608.3,608.2,608.1,608.0,607.9,607.8,607.7,607.6,607.5,607.4,607.4,607.3,607.2]},"city100":{"p10":[643.1,639.8,638.0,636.5,635.1,633.6,632.5,631.1,630.4,629.6,627.9,627.2,626.2,625.6,625.1,624.3,623.7,622.9,622.2,621.6,621.1,620.6,620.1,619.6,619.0,618.4,617.7,617.2,616.6,616.1,615.7,615.5,615.1,614.6,614.2,613.6,613.0,612.5,612.1,611.7,611.1,610.8,610.4,610.0,609.8,609.8,609.6,609.5,609.4,609.1,608.8,608.6,608.5,608.3,608.2,608.1,608.0,607.9,607.8,607.7,607.6,607.5,607.5,607.4,607.3,607.2,607.1,607.0,606.9,606.8,606.7,606.6,606.5,606.4,606.3,606.2,606.1,606.0,605.9,605.8,605.7,605.6,605.4,605.4,605.3,605.2,605.0,604.9,604.7,604.6,604.5,604.4,604.3,604.2,604.1,604.0,603.9,603.9,603.8,603.7],"p50":[648.3,644.8,642.1,640.2,638.8,637.8,636.5,635.5,634.2,633.3,632.0,630.9,630.4,629.8,628.8,627.8,626.9,626.1,625.6,625.2,624.6,623.9,623.3,622.8,622.2,621.7,621.2,620.8,620.3,619.9,619.4,618.9,618.3,617.7,617.3,616.8,616.3,615.9,615.6,615.3,615.0,614.5,614.1,613.6,613.2,612.7,612.3,611.9,611.4,611.1,610.7,610.4,610.0,609.9,609.8,609.7,609.6,609.5,609.2,608.9,608.7,608.6,608.5,608.3,608.2,608.1,608.0,607.9,607.8,607.7,607.6,607.5,607.5,607.4,607.3,607.2,607.1,607.1,607.0,606.9,606.8,606.7,606.6,606.5,606.4,606.3,606.2,606.1,606.0,605.9,605.8,605.7,605.6,605.5,605.4,605.3,605.2,605.1,605.0,604.8],"p90":[657.2,649.7,646.5,644.5,643.2,641.2,639.9,638.8,638.0,636.8,636.0,635.1,633.9,633.4,632.6,631.5,630.8,630.3,629.8,629.0,627.9,627.3,626.6,626.0,625.6,625.3,624.8,624.3,623.7,623.2,622.6,622.1,621.6,621.2,620.8,620.4,620.0,619.7,619.2,618.8,618.3,617.5,617.1,616.7,616.3,615.9,615.7,615.4,615.1,614.7,614.2,613.8,613.4,613.0,612.6,612.2,611.9,611.6,611.1,610.8,610.4,610.1,609.9,609.8,609.8,609.7,609.6,609.5,609.4,609.1,608.8,608.7,608.5,608.4,608.3,608.2,608.1,608.0,607.9,607.8,607.7,607.6,607.6,607.5,607.4,607.3,607.3,607.2,607.1,607.1,607.0,606.9,606.8,606.8,606.7,606.6,606.5,606.4,606.3,606.2]}},"csv3":[648.0,642.0,642.0,638.0,636.0,636.0,636.0,635.0,633.79,632.22,632.0,630.17,630.0,629.55,628.38,628.0,627.83,627.5,627.5,627.5,626.79,626.3,626.0,626.0,625.36,625.0,624.91,624.06,623.64,622.86,622.48,622.0,621.75,621.39,620.71,620.38,619.74,619.43,619.0,618.83,618.53,617.96,617.15,616.88,616.37,615.62,615.38,614.91,614.68,614.23,614.01,613.58,613.36,612.95,612.74,612.34,612.14,611.75,611.56,611.18,611.0,610.63,610.46,610.1,609.93]};
+const BA=245.7105,BB=0.58636;
+const N04=4923,N20=5324,N26=4749,NDQ=21500,ME=648;
+const $=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg';
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+function tx(p,x,y,s,a){const e=el('text',Object.assign({x,y},a||{}),p);e.textContent=s;return e}
+const f1=v=>String(Math.round(v*10)/10);
+const f0=v=>String(Math.round(v));
+const P=a=>'M'+a.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join('L');
+
+/* ── 2004 两种估计 ── */
+function erfc(x){const z=Math.abs(x),t=1/(1+.5*z);const r=t*Math.exp(-z*z-1.26551223+t*(1.00002368+t*(.37409196+t*(.09678418+t*(-.18628806+t*(.27886807+t*(-1.13520398+t*(1.48851587+t*(-.82215223+t*.17087277)))))))));return x>=0?r:2-r}
+const Q=z=>.5*erfc(z/Math.SQRT2);
+const A=s=>N04*Q((s-533.5)/36.3);
+const CUM={};T20.forEach(w=>CUM[w[0]]=w[2]);
+function cum20(x){if(x>=620)return 57;if(x<300)return NaN;const k=Math.floor(x),hi=k+1>=620?57:CUM[k+1],lo=CUM[k];return hi+(lo-hi)*(k+1-x)}
+function s20At(r){if(r<57||r>4122)return null;let lo=300,hi=620;for(let i=0;i<60;i++){const m=(lo+hi)/2;if(cum20(m)>r)lo=m;else hi=m}return(lo+hi)/2}
+function dqc(s){if(s>=664)return 0;const k=Math.floor(s),hi=DQ[k+1-600],lo=DQ[k-600];return hi+(lo-hi)*(k+1-s)}
+const D610=cum20((610-BA)/BB)*N04/N20;
+function D(s){if(s<=610)return cum20((s-BA)/BB)*N04/N20;return D610*dqc(Math.min(s,663.999))/DQ[10]}
+function inv(f,r,lo=440,hi=663.99){for(let i=0;i<64;i++){const m=(lo+hi)/2;if(f(m)>r)lo=m;else hi=m}return(lo+hi)/2}
+const T26=S26.map(d=>d.t);
+function s26At(r){if(r<=1)return T26[0];if(r<=50){const k=Math.floor(r),f=r-k;return T26[k-1]+(T26[Math.min(k,49)]-T26[k-1])*f}if(r<=110)return 629.5+(617-629.5)*(r-50)/60;if(r<=220)return 617+(603.2-617)*(r-110)/110;return null}
+
+/* ── tooltip ── */
+const tip=$('#tip');
+function tipAt(x,y,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;let L=x+16,T=y+16;if(L+w>innerWidth-8)L=x-w-16;if(T+h>innerHeight-8)T=y-h-16;tip.style.left=Math.max(8,L)+'px';tip.style.top=Math.max(8,T)+'px'}
+function tipHide(){tip.hidden=true}
+function bindTip(node,html){
+  node.addEventListener('pointerenter',e=>tipAt(e.clientX,e.clientY,html()));
+  node.addEventListener('pointermove',e=>tipAt(e.clientX,e.clientY,html()));
+  node.addEventListener('pointerleave',tipHide);
+  node.addEventListener('focus',()=>{const b=node.getBoundingClientRect();tipAt(b.right,b.bottom,html())});
+  node.addEventListener('blur',tipHide);
+}
+const dot=c=>`<i style="background:var(${c})"></i>`;
+const svgX=(svg,e,W)=>{const b=svg.getBoundingClientRect();return(e.clientX-b.left)/b.width*W};
+
+/* ── converter ── */
+let cur=648;
+const CHIPS=[[571,'一中线'],[590,''],[600,''],[610,''],[620,''],[630,''],[640,'李柏荣'],[642,'刘欣'],[648,'']];
+const pctTxt=(c,N)=>{const p=c/N*100;return p<.1?p.toFixed(3):p<1?p.toFixed(2):p.toFixed(1)};
+function rankCell(c){const n=Math.max(1,Math.round(c));return`<span class="v">第 ${n} 名</span><span class="s">${cur} 分以上约 ${c<10?c.toFixed(1):Math.round(c)} 人 · 前 ${pctTxt(c,N04)}%</span>`}
+function y20Cell(c){const r=c*N20/N04;if(r<57)return`<span class="v">≥650</span><span class="s">约第 ${Math.max(1,Math.round(r))} 名；表中 650 分以上 57 人未分段</span>`;const s=s20At(r);return s==null?'<span class="v">—</span>':`<span class="v">${f1(s+30)}</span><span class="s">2020 年约第 ${Math.round(r)} 名</span>`}
+function y26Cell(c){const r=c*N26/N04,n=Math.max(1,Math.round(r));
+  if(r<=1)return`<span class="v">664.9</span><span class="s">第 1 名或更靠前</span>`;
+  if(r<=50)return`<span class="v">${f1(s26At(r))}</span><span class="s">约第 ${n} 名</span>`;
+  if(r<=110)return`<span class="v">${f1(s26At(r))}</span><span class="s">约第 ${n} 名，在第 50 名与奥赛班线之间插值</span>`;
+  if(r<=220)return`<span class="v">${f1(s26At(r))}</span><span class="s">约第 ${n} 名，一中 3、4 班档，在奥赛班线与 3/4 班线（617→603.2，第 110→220 名）之间插值</span>`;
+  return`<span class="v">—</span><span class="s">约第 ${n} 名，名单之外</span>`}
+function dqCell(s){if(s<607)return`<span class="v">—</span><span class="s">名册在 607 分以下不全</span>`;const above=DQ[s+1-600]||0,at=DQ[s-600];return`<span class="v">第 ${above+1} 名</span><span class="s">${s} 分以上 ${at} 人 · 前 ${pctTxt(at,NDQ)}%</span>`}
+function renderConv(){
+  $('#s-out').textContent=cur;$('#s04').value=cur;
+  document.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.s===cur?'true':'false'));
+  const cD=D(cur),cA=A(cur);
+  $('#conv-body').innerHTML=
+   `<tr><th scope="row">2004 年绥化市区名次<span class="s">外县考生为“若在市区”</span></th><td>${rankCell(cD)}</td><td>${rankCell(cA)}</td></tr>`+
+   `<tr><th scope="row">2020 年等位分<span class="s">加体育 30，满分 700</span></th><td>${y20Cell(cD)}</td><td>${y20Cell(cA)}</td></tr>`+
+   `<tr><th scope="row">2026 年等位分</th><td>${y26Cell(cD)}</td><td>${y26Cell(cA)}</td></tr>`+
+   `<tr><th scope="row">2005 年等位分</th><td colspan="2"><span class="v">≈${cur+29}</span><span class="s">只有“600 分以上 735 人”一个锚点，整体平移 29 分；离 571–600 越远越粗</span></td></tr>`+
+   `<tr><th scope="row">同卷大庆 21500 人中</th><td colspan="2">${dqCell(cur)}</td></tr>`+
+   `<tr><th scope="row">只按满分比例折成 700 分</th><td colspan="2"><span class="v">${f1(cur*700/690)}</span><span class="s">不考虑难度，只作参照</span></td></tr>`;
+  drawScale();drawConv();
+}
+function setCur(s){cur=Math.max(560,Math.min(663,Math.round(s)));renderConv()}
+$('#chips').innerHTML=CHIPS.map(([s,l])=>`<button type="button" class="chip" id="chip-${s}" data-s="${s}" aria-pressed="false"><b>${s}</b>${l?' '+l:''}</button>`).join('');
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>setCur(+b.dataset.s)));
+$('#s04').addEventListener('input',e=>setCur(+e.target.value));
+
+/* ── 2004 刻度 ── */
+function drawScale(){
+  const svg=$('#scale-chart');svg.textContent='';
+  const W=920,H=400,ml=56,mr=24,mt=34,mb=44,pw=W-ml-mr,ph=H-mt-mb;
+  const x0=560,x1=666,X=s=>ml+(s-x0)/(x1-x0)*pw;
+  const y0=.2,y1=1500,L0=Math.log10(y0),L1=Math.log10(y1),Y=c=>mt+(Math.log10(Math.max(c,y0*.6))-L0)/(L1-L0)*ph;
+  [1,2,5,10,20,50,100,200,500,1000].forEach(v=>{el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'gr'},svg);tx(svg,ml-8,Y(v)+4,v,{'text-anchor':'end'})});
+  for(let s=560;s<=660;s+=10){el('line',{x1:X(s),x2:X(s),y1:mt,y2:mt+ph,class:'gr'},svg);tx(svg,X(s),mt+ph+18,s,{'text-anchor':'middle'})}
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  tx(svg,ml+pw/2,H-6,'2004 年总分（满分 690）',{'text-anchor':'middle',class:'rl'});
+  tx(svg,ml-8,mt-16,'人数',{'text-anchor':'end',class:'lab2'});
+  const defs=el('defs',{},svg),cp=el('clipPath',{id:'clip-scale'},defs);el('rect',{x:ml,y:mt,width:pw,height:ph},cp);
+  const g=el('g',{'clip-path':'url(#clip-scale)'},svg);
+  [[571,'571 一中线'],[600,'600']].forEach(([s,l])=>{el('line',{x1:X(s),x2:X(s),y1:mt,y2:mt+ph,class:'guide'},g);tx(svg,X(s),mt-10,l,{'text-anchor':'middle',class:'lab2'})});
+  const curve=(f,a,b)=>{const p=[];for(let s=a;s<=b+1e-9;s+=.5)p.push([X(s),Y(f(s))]);return p};
+  el('path',{d:P(curve(A,560,666)),class:'l04 dash'},g);
+  el('path',{d:P(curve(D,560,663.5)),class:'l04'},g);
+  const dq=[];for(let s=607;s<=663;s++)dq.push([X(s),Y(DQ[s-600]*N04/NDQ)]);
+  el('path',{d:P(dq),class:'ldq'},g);
+  [[571,742],[600,165]].forEach(([s,c])=>el('circle',{cx:X(s),cy:Y(c),r:4.5,class:'d04'},g));
+  el('line',{x1:X(cur),x2:X(cur),y1:mt,y2:mt+ph,class:'me'},g);
+  tx(svg,X(cur)+(cur>640?-6:6),mt+14,`2004 年 ${cur} 分`,{'text-anchor':cur>640?'end':'start',class:'lab'});
+  tx(svg,X(628)+6,Y(D(628))-8,'借形状',{class:'lab2'});
+  tx(svg,X(640)+6,Y(A(640))-8,'正态',{class:'lab2'});
+  tx(svg,X(640)+6,Y(DQ[40]*N04/NDQ)+18,'大庆同卷（每 4923 人）',{class:'lab2'});
+
+  const xh=el('line',{x1:0,x2:0,y1:mt,y2:mt+ph,class:'xh'},svg);xh.style.visibility='hidden';
+  const hit=el('rect',{x:ml,y:mt,width:pw,height:ph,class:'hit',tabindex:0,'aria-label':'读取各分数以上的人数；点击把分数放进换算器，左右键微调'},svg);
+  const sAt=e=>Math.max(560,Math.min(663,Math.round(x0+(svgX(svg,e,W)-ml)/pw*(x1-x0))));
+  const html=s=>{const d=s>=607?`<br>${dot('--ink-3')}大庆 ${DQ[s-600]} 人（每 4923 人 ${f1(DQ[s-600]*N04/NDQ)}）`:'';return`<div class="h">2004 年 ${s} 分以上</div>${dot('--c04')}借形状 约 <b>${f1(D(s))}</b> 人<br>${dot('--c04')}正态 约 <b>${f1(A(s))}</b> 人${d}`};
+  hit.addEventListener('pointermove',e=>{const s=sAt(e);xh.setAttribute('x1',X(s));xh.setAttribute('x2',X(s));xh.style.visibility='visible';tipAt(e.clientX,e.clientY,html(s))});
+  hit.addEventListener('pointerleave',()=>{xh.style.visibility='hidden';tipHide()});
+  hit.addEventListener('click',e=>{tipHide();setCur(sAt(e))});
+  hit.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();setCur(cur+(e.key==='ArrowRight'?1:-1));$('#scale-chart .hit').focus()}});
+}
+
+/* ── 折回 2004 ── */
+function tip26(i){const d=S26[i],v=d.v,sum=v.reduce((x,y)=>x+y,0),r=(i+1)*N04/N26;
+  return`<div class="h">2026 第 ${i+1} 名 · ${d.t}</div>${d.s}${d.c?' '+d.c:''}<br>语 ${v[1]} · 数 ${v[0]} · 英 ${v[2]} · 物 ${v[3]} · 化 ${v[4]}${Math.abs(sum-d.t)>.05?`<br><span style="opacity:.75">各科相加 ${f1(sum)}，与总分不符</span>`:''}<br>折回 2004：<b>${f1(inv(D,r))}</b>（借形状）／<b>${f1(inv(A,r))}</b>（正态）`}
+function drawConv(){
+  const svg=$('#conv-chart');svg.textContent='';
+  const W=920,H=430,ml=56,mr=24,mt=18,mb=46,pw=W-ml-mr,ph=H-mt-mb;
+  const x0=470,x1=670,y0=510,y1=670,X=v=>ml+(v-x0)/(x1-x0)*pw,Y=v=>mt+(1-(v-y0)/(y1-y0))*ph;
+  for(let v=480;v<=660;v+=20){el('line',{x1:X(v),x2:X(v),y1:mt,y2:mt+ph,class:'gr'},svg);tx(svg,X(v),mt+ph+18,v,{'text-anchor':'middle'})}
+  for(let v=520;v<=660;v+=20){el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'gr'},svg);tx(svg,ml-8,Y(v)+4,v,{'text-anchor':'end'})}
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  tx(svg,ml+pw/2,H-6,'当年总分（700 分制；2020 年已加体育 30 分）',{'text-anchor':'middle',class:'rl'});
+  const defs=el('defs',{},svg),cp=el('clipPath',{id:'clip-conv'},defs);el('rect',{x:ml,y:mt,width:pw,height:ph},cp);
+  const g=el('g',{'clip-path':'url(#clip-conv)'},svg);
+  el('line',{x1:X(x0),y1:Y(x0),x2:X(x1),y2:Y(x1),class:'ref'},g);
+  el('line',{x1:X(x0),y1:Y(x0*690/700),x2:X(x1),y2:Y(x1*690/700),class:'ref dash'},g);
+  tx(svg,X(523),Y(523)-7,'原分不变',{class:'lab2'});
+  tx(svg,X(560),Y(560*690/700)+17,'按满分比例',{class:'lab2'});
+
+  const hit=el('rect',{x:ml,y:mt,width:pw,height:ph,class:'hit'},svg);
+  const c20=f=>{const p=[];for(let x=480;x<=650;x++){const r=cum20(x-30);p.push([X(x),Y(inv(f,r*N04/N20))])}return p};
+  el('path',{d:P(c20(A)),class:'l20 dash'},g);
+  el('path',{d:P(c20(D)),class:'l20'},g);
+  tx(svg,X(556),Y(inv(A,cum20(526)*N04/N20))-10,'2020 年（含体育 30）',{'text-anchor':'end',class:'lab2'});
+
+  el('line',{x1:ml,x2:ml+pw,y1:Y(cur),y2:Y(cur),class:'me'},g);
+  tx(svg,ml+8,Y(cur)-7,`2004 年 ${cur} 分`,{class:'lab'});
+
+  const pts=S26.map((d,i)=>[d.t,i+1,i]).concat([[617,110,-1]]);
+  pts.forEach(([t,rk,i])=>{
+    const r=rk*N04/N26,yD=inv(D,r),yA=inv(A,r);
+    el('line',{x1:X(t),x2:X(t),y1:Y(yD),y2:Y(yA),class:'rng26'},g);
+    el('circle',{cx:X(t),cy:Y(yA),r:3,class:'o26'},g);
+    el('circle',{cx:X(t),cy:Y(yD),r:3.4,class:'d26'},g);
+    const h=el('rect',{x:X(t)-4,y:Y(yA)-6,width:8,height:Y(yD)-Y(yA)+12,class:'hit pt',tabindex:0,'aria-label':i<0?'2026 奥赛班线 617':`2026 第 ${rk} 名 ${t} 分`},svg);
+    bindTip(h,()=>i<0?`<div class="h">2026 一中奥赛班线 617 · 第 110 名</div>折回 2004：<b>${f1(yD)}</b>（借形状）／<b>${f1(yA)}</b>（正态）`:tip26(i));
+  });
+  tx(svg,X(625),Y(642),'2026 前五十',{'text-anchor':'end',class:'lab2'});
+
+  el('rect',{x:X(600)-5,y:Y(571)-5,width:10,height:10,transform:`rotate(45 ${X(600)} ${Y(571)})`,class:'dia2'},g);
+  tx(svg,X(600)+10,Y(571)+4,'2005 年 600 → 571',{class:'lab2'});
+
+  const xh=el('line',{x1:0,x2:0,y1:mt,y2:mt+ph,class:'xh'},svg);xh.style.visibility='hidden';
+  hit.addEventListener('pointermove',e=>{
+    const x=Math.round(x0+(svgX(svg,e,W)-ml)/pw*(x1-x0));
+    xh.setAttribute('x1',X(x));xh.setAttribute('x2',X(x));xh.style.visibility='visible';
+    let h=`<div class="h">当年 ${x} 分</div>`;
+    if(x>=480&&x<=650){const r=cum20(x-30);h+=`${dot('--c20')}2020 第 ${Math.round(r)} 名 → 2004 <b>${f1(inv(D,r*N04/N20))}</b>（借形状）／<b>${f1(inv(A,r*N04/N20))}</b>（正态）`}
+    else if(x>650)h+=`${dot('--c20')}2020 年表中 650 分以上未分段`;
+    h+=`<br>按满分比例 → ${f1(x*690/700)}`;
+    tipAt(e.clientX,e.clientY,h);
+  });
+  hit.addEventListener('pointerleave',()=>{xh.style.visibility='hidden';tipHide()});
+}
+
+/* ── 同名次表 ── */
+function rankTable(){
+  const s20r=r=>{if(r<=57)return'≥650';for(const w of T20)if(w[2]>=r)return w[0]+30;return'—'};
+  const rows=[[1,'2026 年第 1 名 664.9'],[5,''],[10,''],[20,''],[50,'2026 名单的最后一名'],[57,'2020 年 650 分以上共 57 人'],[110,'2026 年一中奥赛班线 617'],[165,'2004 年实数：600 分以上 165 人'],[220,'2026 年一中 3、4 班线 603.2'],[500,''],[742,'2004 年实数：一中线 571 分以上 742 人'],[1000,''],[1099,'2020 年一中线 566（536＋30）']];
+  $('#rank-table tbody').innerHTML=rows.map(([r,n])=>{
+    const a=inv(A,r),d=inv(D,r),lo=Math.min(a,d),hi=Math.max(a,d);
+    const r26=r<=50?S26[r-1].t:r===110?617:r===220?603.2:'<span class="mu">—</span>';
+    return`<tr${r===742||r===165?' class="me"':''}><td>${r}</td><td>${Math.round(lo)===Math.round(hi)?f0(lo):f0(lo)+'–'+f0(hi)}</td><td>${s20r(r)}</td><td>${r26}</td><td class="t">${n}</td></tr>`;
+  }).join('');
+}
+
+/* ── 单科 ── */
+const SUBJ=[
+  {lab:'语文',i:1,f04:120,f26:120,me:103},
+  {lab:'数学',i:0,f04:120,f26:120,me:110},
+  {lab:'英语',i:2,f04:120,f26:120,me:118},
+  {lab:'物理',i:3,f04:100,f26:80,me:98,ap:1},
+  {lab:'化学',i:4,f04:100,f26:70,me:96,ap:1},
+  {lab:'政治→道法',i:5,f04:100,f26:50,me:93,ap:1},
+  {lab:'历史',i:6,f04:null,f26:50},
+  {lab:'地理',i:7,f04:null,f26:30},
+  {lab:'生物',i:8,f04:null,f26:30},
+  {lab:'体育',i:9,f04:30,f26:30,me:30},
+];
+const mean=a=>a.reduce((s,v)=>s+v,0)/a.length;
+function drawStrip(){
+  const svg=$('#strip');svg.textContent='';
+  const W=920,rh=36,mt=34,H=mt+SUBJ.length*rh+30;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const x0=160,x1=690,d0=72,d1=100.6,X=p=>x0+(p-d0)/(d1-d0)*(x1-x0);
+  tx(svg,0,14,'科目',{class:'rl'});tx(svg,86,14,'满分 04／26',{class:'rl'});tx(svg,716,14,'和 2026 年前五十比',{class:'rl'});
+  const yb=mt+SUBJ.length*rh;
+  for(let p=72;p<=100;p+=4){el('line',{x1:X(p),x2:X(p),y1:mt-6,y2:yb,class:'gr'},svg);tx(svg,X(p),yb+18,p+'%',{'text-anchor':'middle'})}
+  SUBJ.forEach((d,j)=>{
+    const y=mt+j*rh+rh/2;
+    el('line',{x1:x0,x2:x1,y1:y,y2:y,class:'hair'},svg);
+    tx(svg,0,y+4,d.lab,{class:'lab'});
+    tx(svg,86,y+4,(d.f04??'—')+'／'+d.f26,{});
+    const ps=S26.map(s=>s.v[d.i]/d.f26*100);
+    ps.forEach(p=>el('line',{x1:X(p),x2:X(p),y1:y-9,y2:y+9,class:'rug'},svg));
+    let note;
+    if(d.me!=null){
+      const pm=d.me/d.f04*100,hi=ps.filter(p=>p>pm+1e-9).length,full=ps.every(p=>p>=100-1e-9);
+      el('rect',{x:X(pm)-4.5,y:y-4.5,width:9,height:9,transform:`rotate(45 ${X(pm)} ${y})`,class:'dia'},svg);
+      tx(svg,X(pm),y-12,(d.ap?'≈':'')+d.me,{'text-anchor':'middle',class:'val'});
+      note=full&&pm>=100?'50 人全部满分，与 648 相同':hi===0?'高于前五十所有人':hi===50?'低于前五十所有人':`前五十中 ${hi} 人更高`;
+    }else{
+      const full=ps.filter(p=>p>=100-1e-9).length,loss=d.f26-mean(S26.map(s=>s.v[d.i]));
+      note=`${full} 人满分，平均丢 ${loss.toFixed(2)} 分`;
+    }
+    tx(svg,716,y+4,note,{class:'lab2'});
+  });
+}
+function lossTable(){
+  const top=S26[0],avgT=mean(S26.map(s=>s.t));
+  let h=SUBJ.map(d=>{
+    const me=d.me!=null?(d.ap?'≈':'')+f1(d.f04-d.me):'<span class="mu">—</span>';
+    return`<tr><td class="n">${d.lab}</td><td>${d.f04??'—'} → ${d.f26}</td><td>${me}</td><td>${f1(d.f26-top.v[d.i])}</td><td>${(d.f26-mean(S26.map(s=>s.v[d.i]))).toFixed(1)}</td></tr>`;
+  }).join('');
+  h+=`<tr class="tot"><td class="n">合计</td><td>690 → 700</td><td>${690-ME}<span class="mu"> ／ 6.1%</span></td><td>${f1(700-top.t)}<span class="mu"> ／ ${((700-top.t)/7).toFixed(1)}%</span></td><td>${(700-avgT).toFixed(1)}<span class="mu"> ／ ${((700-avgT)/7).toFixed(1)}%</span></td></tr>`;
+  $('#loss tbody').innerHTML=h;
+}
+
+/* ── 录取线 ── */
+const LINES=[
+  {n:'一中',main:1,ai:[2013,2014,2016,2024],d:{2004:571,2005:602,2006:610,2007:598,2008:590,2009:600,2010:590,2011:595,2012:603,2013:603,2014:552,2016:549,2017:565,2018:548,2019:583,2020:566,2021:502,2022:517.6,2023:479.7,2024:568,2025:559.5,2026:547.8}},
+  {n:'二·七·九中',d:{2004:534,2005:563,2006:550,2007:539,2008:525,2009:515,2010:495,2011:505,2012:490}},
+  {n:'九中',ai:[2014,2016,2024],d:{2014:501,2016:511,2017:533,2018:509,2019:556,2020:530,2021:472,2022:481.6,2023:435.2,2024:534,2025:510.9,2026:501.4}},
+  {n:'七中',ai:[2014,2016,2024],d:{2014:455,2016:462,2017:477,2018:438,2019:497,2020:458,2021:414,2022:426,2023:361.4,2024:479.6,2025:462.3,2026:448.9}},
+  {n:'二中',ai:[2014,2016,2024],d:{2014:420,2016:391,2017:399,2018:341,2019:433,2020:384,2021:358,2022:357.7,2023:262.5,2024:415.1,2025:386.1,2026:364.9}},
+];
+function drawLines(){
+  const svg=$('#lines-chart');svg.textContent='';
+  const W=920,H=340,ml=44,mr=150,mt=18,mb=34,pw=W-ml-mr,ph=H-mt-mb;
+  const X=y=>ml+(y-2003.5)/(2026.5-2003.5)*pw,Y=v=>mt+(1-(v-240)/(640-240))*ph;
+  for(let v=250;v<=600;v+=50){el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'gr'},svg);tx(svg,ml-8,Y(v)+4,v,{'text-anchor':'end'})}
+  [2004,2006,2008,2010,2012,2014,2016,2018,2020,2022,2024,2026].forEach(y=>tx(svg,X(y),mt+ph+20,y,{'text-anchor':'middle'}));
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  const fullTxt=y=>y===2004?'满分 690':y===2020?'原始 '+'{r}'+'，加体育 30':y>=2019?'满分 700':'满分未核';
+  LINES.slice().reverse().forEach(s=>{
+    const ys=Object.keys(s.d).map(Number).sort((a,b)=>a-b);
+    for(let k=1;k<ys.length;k++){const a=ys[k-1],b=ys[k],gap=b-a;if(gap>2)continue;
+      el('line',{x1:X(a),y1:Y(s.d[a]),x2:X(b),y2:Y(s.d[b]),class:(s.main?'s-ink':'s-ink3')+(gap===2?' dotted':'')},svg)}
+    ys.forEach(y=>{
+      const ai=(s.ai||[]).includes(y);
+      el('circle',{cx:X(y),cy:Y(s.d[y]),r:s.main?3.8:3.2,class:ai?(s.main?'ring':'ring3'):(s.main?'dot-ink':'dot-ink3')},svg);
+      const h=el('circle',{cx:X(y),cy:Y(s.d[y]),r:9,class:'hit pt',tabindex:0,'aria-label':`${y} 年 ${s.n} ${s.d[y]} 分`},svg);
+      bindTip(h,()=>`<div class="h">${y} 年 · ${s.n}</div>录取线 <b>${s.d[y]}</b>（${fullTxt(y).replace('{r}',f1(s.d[y]-30))}）${(s.ai||[]).includes(y)?'<br>非官方整理，待核':''}`);
+    });
+    const last=ys[ys.length-1];
+    if(last<2020)tx(svg,X(2008),Y(s.d[2008])+19,s.n,{'text-anchor':'middle',class:'lab2'});
+    else tx(svg,X(last)+10,Y(s.d[last])+4,`${s.n} ${s.d[last]}`,{class:s.main?'lab':'lab2'});
+  });
+  tx(svg,X(2004),Y(571)-11,'571',{'text-anchor':'middle',class:'val'});
+  tx(svg,X(2004),Y(534)+19,'534',{'text-anchor':'middle'});
+}
+
+/* ── 前 100 名与三班 ── */
+function drawC3(){
+  const svg=$('#c3-chart');svg.textContent='';
+  const W=920,H=360,ml=50,mr=24,mt=16,mb=46,pw=W-ml-mr,ph=H-mt-mb;
+  const X=i=>ml+(i-.5)/65*pw,Y=v=>mt+(1-(v-592)/(660-592))*ph;
+  for(let v=600;v<=660;v+=10){el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'gr'},svg);tx(svg,ml-8,Y(v)+4,v,{'text-anchor':'end'})}
+  [1,10,20,30,40,50,60,65].forEach(i=>{el('line',{x1:X(i),x2:X(i),y1:mt,y2:mt+ph,class:'gr'},svg);tx(svg,X(i),mt+ph+18,i,{'text-anchor':'middle'})});
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  tx(svg,ml+pw/2,H-6,'高三三班班内名次（按中考分排）',{'text-anchor':'middle',class:'rl'});
+  const A3=MC.A.c3,D3=MC.D.c3,lo=A3.p10.map((v,i)=>Math.min(v,D3.p10[i])),hi=A3.p90.map((v,i)=>Math.max(v,D3.p90[i]));
+  const up=hi.map((v,i)=>[X(i+1),Y(v)]),dn=lo.map((v,i)=>[X(i+1),Y(v)]).reverse();
+  el('path',{d:P(up)+'L'+dn.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join('L')+'Z',class:'b04'},svg);
+  const line=(a,cls)=>el('path',{d:P(a.map((v,i)=>[X(i+1),Y(v)])),class:cls},svg);
+  line(A3.p50,'l04 dash');line(D3.p50,'l04');line(MC.csv3,'s-ink');
+  const xh=el('line',{x1:0,x2:0,y1:mt,y2:mt+ph,class:'xh'},svg);xh.style.visibility='hidden';
+  const hit=el('rect',{x:ml,y:mt,width:pw,height:ph,class:'hit'},svg);
+  hit.addEventListener('pointermove',e=>{
+    const i=Math.max(1,Math.min(65,Math.round((svgX(svg,e,W)-ml)/pw*65+.5)));
+    xh.setAttribute('x1',X(i));xh.setAttribute('x2',X(i));xh.style.visibility='visible';
+    tipAt(e.clientX,e.clientY,`<div class="h">班内第 ${i} 名</div>${dot('--c04')}借形状 <b>${f1(D3.p50[i-1])}</b> <span style="opacity:.7">${f1(D3.p10[i-1])}–${f1(D3.p90[i-1])}</span><br>${dot('--c04')}正态 <b>${f1(A3.p50[i-1])}</b> <span style="opacity:.7">${f1(A3.p10[i-1])}–${f1(A3.p90[i-1])}</span><br>${dot('--ink')}推断表 <b>${MC.csv3[i-1]}</b>`);
+  });
+  hit.addEventListener('pointerleave',()=>{xh.style.visibility='hidden';tipHide()});
+}
+function top100Table(){
+  const R=[1,2,3,5,10,20,30,50,75,100];
+  const rng=(a,b)=>{const lo=Math.min(a,b),hi=Math.max(a,b);return Math.round(lo)===Math.round(hi)?f0(lo):f0(lo)+'–'+f0(hi)};
+  const cell=(m,r)=>`${f0(m.p50[r-1])} <span class="mu">${f0(m.p10[r-1])}–${f0(m.p90[r-1])}</span>`;
+  $('#top100 tbody').innerHTML=R.map(r=>`<tr><td>${r}</td><td>${rng(MC.D.city100.p50[r-1],MC.A.city100.p50[r-1])}</td><td>${cell(MC.D.top100,r)}</td><td>${cell(MC.A.top100,r)}</td></tr>`).join('');
+}
+
+rankTable();drawStrip();lossTable();drawLines();drawC3();top100Table();renderConv();
+})();
+</script>

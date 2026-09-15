@@ -4,17 +4,16 @@
 &lt;pre&gt;&lt;code&gt; ---- Gloria Steinem
 &lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
 &lt;h2 id="写在前面"&gt;写在前面&lt;/h2&gt;
-&lt;p&gt;上周四，终于在电影院补票《肖申克的救赎》，第一次是看的时候，不理解十九年的冤狱是什么概念，而自2007年高考之后，至如今正是十九年。&lt;/p&gt;
-&lt;p&gt;对于这个文章里的事，许多是我最近才知道和意识到，部分内容对我自己也觉得有所震撼，于是我想我尽可能&lt;a href="https://graphics.boston.com/globe/spotlight/abuse/stories/010602_geoghan.htm"&gt;陈述事实&lt;/a&gt;，而减少个人情感的评价。而所谓的事实，因为事情过去二十多年了，不仅记忆模糊，连现实中的痕迹都已逐渐被彻底抹去，我只能尽我所能的找到经得起推敲的证据和在有限信息下的可靠推测。&lt;/p&gt;
-&lt;p&gt;本文中的数据，除了明显的互联网检索和知网万方以外，我还翻阅了2004年到2007年之间，所有中高考季的《哈尔滨日报》《新晚报》《生活报》《绥化日报》和《绥化晚报》，对于绥化高考历史，霍凤国主编的《绥化高考四十年》是我的主要参考，而对于高考分数分布以及分数线有关的信息，赵振芳主编的2005年到2016年间的七本《高考指南：黑龙江版》是本文的主要参考，但最详细的数据来自于黑龙江省教育厅、各市教育局以及省内知名初高中在2003年至2008年间超过一百万份的网站历史快照存档，通过程序化检索近 20G 的纯文本数据，加上大模型 Agent 的交叉信息加工，让我能从各种零散的细节中，重新拼凑出自己中高考时段更为清晰的印象。&lt;/p&gt;
-&lt;p&gt;高考之后，我还经历了超过八年的正式教育，尤其是在宾夕法尼亚大学校园度过的四年，让我早就对唯分数论和学历崇拜感到厌恶，对标签化思考和绩优主义充满警惕，但今年偶然发现&lt;a href="https://yingkui.com/irresponsible"&gt;高考估分杂志&lt;/a&gt;以及&lt;a href="https://yingkui.com/liuxiang"&gt;怀念刘翔&lt;/a&gt;又着实让我意识到，自己内心那个停滞在青春期时代的孩童，依旧没有得到足够的抚慰，写下来并直面这些事实是对 C-PTSD 最好的疗愈。&lt;/p&gt;
-&lt;p&gt;本文的数据和信息都来自于教育部门以及学校官方对外公布的数据，或者是当年报纸、书籍、杂志内的已出版信息，或许有些人认为这是自己的隐私，不愿被提及，但又或许有很多人也像我一样，想通过这些古早的数据，对过去有一个更细颗粒度的解读，以便更为从容的构建自我，又或是仅仅是作为唤起追忆的引子。我无法分辨隐私或者渴求二者，我便尽可能的使用公开的信息，做事实的搬运工。&lt;/p&gt;
+&lt;p&gt;上周四，终于在电影院补票《肖申克的救赎》，第一次看的时候，不理解十九年的冤狱是什么概念，而自2007年高考之后，至今正是十九年。&lt;/p&gt;
+&lt;p&gt;对于本文中的事迹，许多于我也是最近才知道或意识到，以致部分内容我也觉得有所震撼，于是在追忆过去时，我尽可能&lt;a href="https://graphics.boston.com/globe/spotlight/abuse/stories/010602_geoghan.htm"&gt;陈述事实&lt;/a&gt;，而减少个人情感的评价。而所谓的事实，因为事情过去二十多年了，不仅记忆模糊，连现实中的痕迹都已逐渐被彻底抹去，我只能尽我所能的找到经得起推敲的证据，并在有限信息下进行可靠的推测。&lt;/p&gt;
+&lt;p&gt;由于我的中高考发生在数字化尚未普及的20年前，为了得到本文中数据，除了使用明显的互联网搜索和知网万方文献检索外，我还翻阅了2004年到2007年之间，所有中高考季的纸质《哈尔滨日报》、《新晚报》、《生活报》、《绥化日报》和《绥化晚报》，对于绥化高考历史，霍凤国主编的《绥化高考四十年》是我的主要参考，而对于高考分数分布以及分数线有关的信息，赵振芳主编的2005年到2016年间的七本《高考指南：黑龙江版》是本文的主要参考，但最详细的数据来自于教育部阳光高考、黑龙江省教育厅、省招考办、各市教育局、各市招考办以及省内知名初高中在2003年至2008年间超过一百万份的网站快照，通过对这近 20G 的纯文本数据 “赛博考古”，并结合大模型 Agent 的交叉信息加工，让我能从海量零散的碎片中，重新拼凑出自己中高考时段更为清晰的印象。&lt;/p&gt;
+&lt;p&gt;高考之后，我还经历了超过八年的正式教育，让我早就对唯分数论和学历崇拜感到厌恶，对标签化思考和绩优主义充满警惕，但今年偶然发现&lt;a href="https://yingkui.com/irresponsible"&gt;高考估分杂志&lt;/a&gt;以及&lt;a href="https://yingkui.com/liuxiang"&gt;怀念刘翔&lt;/a&gt;又着实让我意识到，自己内心那个青春期时代的受挫孩童，依旧没有得到足够的抚慰，写下来并直面这些事实是对 C-PTSD 最好的疗愈。&lt;/p&gt;
+&lt;p&gt;本文的数据和信息除了朋友的转述外，全部来自于教育部门以及学校官方对外公布的数据，或者是当年报纸、书籍、杂志内的已出版信息，或许有人出于隐私，不愿被提及，但又或许也有人也像我一样，想通过这些古早的数据，对过去有一个更清晰的解读，以便构建更为从容的自我，又或是仅仅是作为唤起追忆的引子。我无法分辨隐私或者渴求二者，我便尽可能的使用公开的信息，做事实的搬运工。&lt;/p&gt;
 &lt;h2 id="中考成绩并不差"&gt;中考成绩并不差&lt;/h2&gt;
-&lt;p&gt;我是在2004年参加的中考，那时候除了哈尔滨，全省共用一张考卷，而从2005年开始就有了试验区的说法，就不再全省统一命题。&lt;/p&gt;
+&lt;p&gt;我是在2004年作为黑龙江省绥化市绥棱县第五中学的学生参加的中考，那时候除了哈尔滨，全省共用一张考卷，而从2005年开始就有了试验区的说法，就不再全省统一命题。&lt;/p&gt;
 &lt;p&gt;2004年中考，&lt;a href="https://web.archive.org/web/20040830183238/http://202.97.254.98/sub1/newshow.php?id=2261"&gt;满分是 $690$ 分，其中体育 $30$ 分&lt;/a&gt;，大家提及中考成绩，常说那个去除体育 $30$ 分后的文化课成绩，而我的文化课总分是 $618$ 分，加上体育 $648$ 分，其中，语文 $103/120$，数学 $110/120$ 分，英语 $118/120$ 分，体育 $30/30$ 分，物理大概 $98/100$ 分，化学大概 $96/100$ 分，政治大概 $93/100$ 分。&lt;/p&gt;
-&lt;p&gt;我考完，出分前觉得自己考的很好，以为自己能达到 $660$ 分以上，但那年中考要比平时整体低 $30$ 分，具体原因我不太清楚。例如，绥化一中在2004年的录取分数线是 $571$ 分，而在接下来的五年是：$602$ 分，$610$ 分，$598$ 分，$590$ 分和 $600$ 分。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2004年中考，我考的并不理想，心情也一直很低落。去绥化一中的时候，我的心里很空虚。原来我是个非常活泼的人，却因考试把我弄得愁情不散，郁郁不乐。&lt;/p&gt;</description></item><item><title>刘翔之死</title><link>https://yingkui.com/liuxiang/</link><pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/liuxiang/</guid><description>&lt;style&gt;
+&lt;p&gt;为了提高阅读流畅度，本文假设所有人体育都是 $30$ 分满分，从而，接下来所说的分数都是不含照顾加分的文化课裸分加上额外的 $30$ 分，对于我不知道照顾加分的，默认照顾加分为 $0$ 分。&lt;/p&gt;
+&lt;p&gt;中考出分前，我觉得自己考的很好，以为自己能达到 $660$ 分以上，但那年中考要比平时整体低 $30$ 分，具体原因我不太清楚。例如，绥化市第一中学在2004年的录取分数线是 $571$ 分，而在接下来的五年是 $602$ 分、$610$ 分、$598$ 分、$590$ 分和 $600$ 分。&lt;/p&gt;</description></item><item><title>刘翔之死</title><link>https://yingkui.com/liuxiang/</link><pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/liuxiang/</guid><description>&lt;style&gt;
  @media screen and (max-width: 480px) {
  blockquote p {
  font-size: 17px
@@ -1012,10 +1011,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1789014380656" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1789450056935" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1789014380656",
+ id: "react-widget-GMMVisualizer-1789450056935",
  component: "GMMVisualizer",
  props: "{}"
  });
@@ -6244,7 +6243,39 @@ $$
 &lt;li&gt;2018年，上海，15人获得一等奖，64人分获得一等奖、二等奖、三等奖&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="哈尔滨来成"&gt;哈尔滨来成&lt;/h2&gt;
-&lt;p&gt;&lt;img src="../archives/2004/math.png" alt=""&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/2004/%E5%93%88%E5%B0%94%E6%BB%A8%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E8%83%BD%E5%90%A6%E6%8A%98%E7%AE%97%E6%88%90%E5%A4%96%E5%B8%82%E5%8E%BF%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2004/%E5%93%88%E5%B0%94%E6%BB%A8%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E8%83%BD%E5%90%A6%E6%8A%98%E7%AE%97%E6%88%90%E5%A4%96%E5%B8%82%E5%8E%BF%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="哈尔滨中考分数能否折算成外市县中考分数"&gt;哈尔滨中考分数能否折算成外市县中考分数&lt;/h1&gt;
+&lt;p&gt;&lt;img src="../archives/2004/math.png" alt=""&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/2004/physics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2004/physics/</guid><description>&lt;h1 id="六盘水"&gt;六盘水&lt;/h1&gt;
+&lt;p&gt;〖参加贵州省第16 届全国初中应用物理知识
+竞赛〗3月26日，贵州省第16届全国初中应用物
+理知识竞赛举行初赛，4月16日举行复赛。水钢一
+中马斌，盘江煤电（集团）公司中心区学校余海涛，盘
+江煤电（集团）公司火铺矿学校罗福高等获一等奖；
+水钢一中王一飞、 魏垚坚、 邓琦、 付空，盘县响水镇中
+学毕吕国，水城县二中黄珏皓乖获二等奖；盘县四中
+敖选，水城二中舒怀，水钢一中罗锋、 杨彪、 刘城旭，
+水城矿业（集团）公司一中黎伟，盘江高中景小珍，六
+枝特区五中陈贵文，盘县红果镇沙坡中学赵兴楼，盘
+江煤电（集团）公司月亮田矿学校唐涛，水钢实验学
+校吴杰，盘江煤电（集团）公司中心区学校马磊，盘江
+煤电（集团）公司土城矿小云尚学校兰曦，市三中阳
+惠如等获三等奖。&lt;/p&gt;
+&lt;p&gt;泉 州 市 教 育 部 门 组 织
+初 中 学 生 参 加 由 省 教 育 厅、 省 科 协 举 办 的
+� 年 全 国 初 中 数 学 竞 赛、 第 十 届 全 国 初
+中 应 用 物 理 知 识 竞 赛、 全 国 青 少 年 信 息 学
+分 区 联赛 等� 个 学 科 的 竞 赛 活 动， 全 市 有� �
+人 获 福 建 省 赛 区 奖 项， 其 中，
+一 等 奖� 人，
+二 等 奖� � 人，
+三 等 奖� 人。 按 学科 分� 数 学
+一 等 奖� 人，
+二 等 奖� 人，
+三 等 奖� 人� 物 理
+一 等 奖�人，
+二 等 奖� 人，
+三 等 奖� 人� 信 息
+学一 等 奖� 人，
+二 等 奖� 人，
+三 等 奖� 人。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/2004/%E5%93%88%E5%B0%94%E6%BB%A8%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E8%83%BD%E5%90%A6%E6%8A%98%E7%AE%97%E6%88%90%E5%A4%96%E5%B8%82%E5%8E%BF%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/2004/%E5%93%88%E5%B0%94%E6%BB%A8%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E8%83%BD%E5%90%A6%E6%8A%98%E7%AE%97%E6%88%90%E5%A4%96%E5%B8%82%E5%8E%BF%E4%B8%AD%E8%80%83%E5%88%86%E6%95%B0%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="哈尔滨中考分数能否折算成外市县中考分数"&gt;哈尔滨中考分数能否折算成外市县中考分数&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;方法笔记。结论：&lt;strong&gt;不能&lt;/strong&gt;，而且有一个干净的反证。
 相关数据：&lt;code&gt;2004年哈尔滨市中考重点高中录取结果（7989人）.csv&lt;/code&gt;、&lt;code&gt;2004年大庆中考录取总表.csv&lt;/code&gt;、
@@ -6367,12 +6398,12 @@ $$
 &lt;li&gt;取消了市级三好学生和学科竞赛降段录取&lt;/li&gt;
 &lt;li&gt;绥化一中，16个班，1040人，外市县50人，外语加强班30人，艺术特长生50人&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id="考试分数710分满分"&gt;考试分数，710分满分&lt;/h2&gt;
+&lt;h2 id="考试分数690分满分含体育30"&gt;考试分数，690分满分（含体育30）&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;大庆最高分663分，大庆一中李璐&lt;/li&gt;
 &lt;li&gt;肇东最高分651分，肇东八中刘莹&lt;/li&gt;
-&lt;li&gt;绥化一中录取分数线，571分，择校生450&lt;/li&gt;
-&lt;li&gt;绥化二中和七中录取分数线，534分，择校生414&lt;/li&gt;
+&lt;li&gt;绥化一中公费生录取分数线，571分，择校生最低控制线450分&lt;/li&gt;
+&lt;li&gt;绥化二中和七中公费生录取分数线，534分，择校生最低控制线414分&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="绥化一中"&gt;绥化一中&lt;/h2&gt;
 &lt;ol&gt;
@@ -21253,7 +21284,452 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
 &lt;h2 id="化学竞赛"&gt;化学竞赛&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;6月26日，绥化日报头版要闻集锦，绥棱五中，王博化学竞赛一等奖，7名省级一等奖、二等奖和三等奖&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/kao/2005%E5%B9%B4%E9%BB%91%E9%BE%99%E6%B1%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%90%8D%E5%8D%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2005%E5%B9%B4%E9%BB%91%E9%BE%99%E6%B1%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%90%8D%E5%8D%95/</guid><description>&lt;h2 id="2005年全国初中数学联赛黑龙江省赛区一等奖获奖名单"&gt;2005年全国初中数学联赛黑龙江省赛区一等奖获奖名单&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E4%B8%93%E7%89%88/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E4%B8%93%E7%89%88/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8" /&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+ &lt;title&gt;以人为本 求真务实 持续发展 再创辉煌 — 绥化一中专版 · 绥化日报 2004年4月26日&lt;/title&gt;
+ &lt;meta name="description" content="绥化日报2004年4月26日专版报道：绥化一中由省级示范高中向国家级示范高中迈进，详述学校发展历程与办学理念。" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet" /&gt;
+ &lt;style&gt;
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ :root {
+ --ink: #1a1208; --ink-light: #3d2f1a; --ink-muted: #7a6a52;
+ --paper: #faf7f2; --paper-warm: #f5f0e8; --paper-dark: #ede7d9;
+ --red-accent: #c0392b; --red-muted: #8b2020;
+ --gold: #b8960c; --gold-light: #d4aa1a;
+ --border: #c9bba0; --border-light: #e0d8ca;
+ --shadow: rgba(50,30,10,0.12);
+ }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body {
+ background-color: #e8e0d0; color: var(--ink);
+ font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+ line-height: 1.85; min-height: 100vh;
+ background-image:
+ radial-gradient(ellipse at 20% 0%, rgba(184,150,12,0.08) 0%, transparent 60%),
+ radial-gradient(ellipse at 80% 100%, rgba(192,57,43,0.06) 0%, transparent 60%);
+ }
+ .site-banner { background: var(--ink); color: #f0e8d0; text-align: center; padding: 10px 20px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; }
+ .masthead { background: var(--paper); border-bottom: 3px double var(--border); padding: 28px 0 0; }
+ .masthead-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+ .masthead-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+ .paper-name { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 900; color: var(--red-accent); letter-spacing: 0.06em; line-height: 1; text-shadow: 2px 2px 0 rgba(192,57,43,0.15); font-family: 'Noto Serif SC', serif; }
+ .paper-name span { display: inline-block; animation: fadeInLeft 0.6s ease both; }
+ .paper-name span:nth-child(2) { animation-delay: 0.05s; }
+ .paper-name span:nth-child(3) { animation-delay: 0.10s; }
+ .paper-name span:nth-child(4) { animation-delay: 0.15s; }
+ @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+ .section-label { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; color: var(--ink); letter-spacing: 0.25em; border-bottom: 2px solid var(--ink); padding-bottom: 4px; animation: fadeInRight 0.6s ease 0.1s both; }
+ @keyframes fadeInRight { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+ .masthead-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 8px 0; border-top: 1px solid var(--border); font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); letter-spacing: 0.04em; }
+ .masthead-meta .date-block { font-weight: 500; color: var(--ink-light); }
+ .masthead-meta .contact-block { display: flex; gap: 20px; flex-wrap: wrap; }
+ .edition-bar { background: var(--ink); color: #f0e8d0; text-align: center; padding: 5px 24px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; }
+ .article-wrapper { max-width: 900px; margin: 36px auto 60px; padding: 0 20px; animation: fadeInUp 0.7s ease 0.2s both; }
+ @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+ .article-card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 40px 48px 52px; box-shadow: 0 4px 24px var(--shadow), 0 1px 0 rgba(255,255,255,0.8) inset; position: relative; overflow: hidden; }
+ .article-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--red-accent), var(--gold-light), var(--red-accent)); }
+ .category-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--red-accent); color: #fff; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; padding: 3px 12px; margin-bottom: 22px; }
+ .headline { font-size: clamp(1.55rem, 3.8vw, 2.3rem); font-weight: 900; line-height: 1.35; color: var(--ink); margin-bottom: 16px; letter-spacing: 0.02em; border-bottom: 2px solid var(--ink); padding-bottom: 14px; }
+ .sub-headlines { margin-bottom: 28px; border-left: 3px solid var(--red-accent); padding-left: 14px; }
+ .sub-headline { font-size: 1.0rem; font-weight: 600; color: var(--ink-light); line-height: 1.7; }
+ .sub-headline::before { content: '——'; color: var(--ink-muted); margin-right: 6px; }
+ .photo-block { margin: 28px 0 32px; }
+ .photo-frame { border: 1px solid var(--border); padding: 8px; background: var(--paper-warm); box-shadow: 0 3px 16px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+ .photo-frame:hover { transform: scale(1.012); box-shadow: 0 6px 28px rgba(50,30,10,0.18); }
+ .photo-frame img { width: 100%; display: block; filter: sepia(8%) contrast(1.03); }
+ .photo-caption { margin-top: 10px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); text-align: center; letter-spacing: 0.04em; line-height: 1.6; }
+ .photo-caption strong { color: var(--ink-light); }
+ .article-body { column-count: 1; }
+ @media (max-width: 620px) { .article-card { padding: 28px 22px 36px; } }
+ .byline { font-family: 'Noto Sans SC', sans-serif; font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px dashed var(--border); }
+ .article-body p { text-indent: 2em; font-size: 0.97rem; line-height: 1.95; margin-bottom: 0.85em; color: var(--ink); }
+ .section-heading { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin: 20px 0 8px; padding-left: 10px; border-left: 3px solid var(--gold); }
+ .highlight-box { background: var(--paper-dark); border-left: 4px solid var(--gold); padding: 12px 16px; margin: 14px 0; font-size: 0.92rem; line-height: 1.8; }
+ .highlight-box strong { color: var(--red-muted); }
+ .data-section { margin-top: 40px; padding-top: 28px; border-top: 2px double var(--border); }
+ .data-section-title { font-size: 1.0rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; letter-spacing: 0.05em; }
+ .data-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+ .milestone-list { list-style: none; margin: 0; }
+ .milestone-list li { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--border-light); align-items: flex-start; }
+ .milestone-list li:last-child { border-bottom: none; }
+ .milestone-year { font-family: 'Noto Sans SC', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--red-accent); min-width: 60px; padding-top: 2px; }
+ .milestone-text { font-size: 0.93rem; color: var(--ink-light); line-height: 1.7; }
+ .article-footer { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+ .footer-source { font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; color: var(--ink-muted); }
+ .footer-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+ .tag { background: var(--paper-dark); border: 1px solid var(--border); color: var(--ink-muted); font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; padding: 3px 10px; border-radius: 2px; transition: background 0.2s, color 0.2s; cursor: default; }
+ .tag:hover { background: var(--ink); color: #f0e8d0; }
+ #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--red-accent), var(--gold-light)); z-index: 999; transition: width 0.1s linear; }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="progress-bar"&gt;&lt;/div&gt;
+&lt;div class="site-banner"&gt;历史档案数字化保存 · 绥化教育史料库&lt;/div&gt;
+&lt;header class="masthead"&gt;
+ &lt;div class="masthead-inner"&gt;
+ &lt;div class="masthead-top"&gt;
+ &lt;div class="paper-name"&gt;&lt;span&gt;绥&lt;/span&gt;&lt;span&gt;化&lt;/span&gt;&lt;span&gt;日&lt;/span&gt;&lt;span&gt;报&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="section-label"&gt;专　版&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="masthead-meta"&gt;
+ &lt;div class="date-block"&gt;2004年4月26日 · 星期一 · 农历甲申年三月初八 · 第4版&lt;/div&gt;
+ &lt;div class="contact-block"&gt;
+ &lt;span&gt;责任编辑：于淼&lt;/span&gt;
+ &lt;span&gt;版式设计：于淼&lt;/span&gt;
+ &lt;span&gt;要闻热线：(0455)8365012 / 8365013&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="edition-bar"&gt;专版 · 责任编辑：于淼&lt;/div&gt;
+&lt;/header&gt;
+&lt;main class="article-wrapper"&gt;
+ &lt;article class="article-card"&gt;
+ &lt;div class="category-tag"&gt;专题报道&lt;/div&gt;
+ &lt;h1 class="headline"&gt;以人为本　求真务实　持续发展　再创辉煌&lt;/h1&gt;
+ &lt;div class="sub-headlines"&gt;
+ &lt;div class="sub-headline"&gt;由省级示范高中向国家级示范高中迈进的绥化一中&lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="photo-block"&gt;
+ &lt;div class="photo-frame"&gt;
+ &lt;img src="2004年绥化一中专版.jpg" alt="绥化日报2004年4月26日绥化一中专版原版报纸扫描图" loading="lazy" /&gt;
+ &lt;/div&gt;
+ &lt;p class="photo-caption"&gt;
+ &lt;strong&gt;▲ 原始档案&lt;/strong&gt;　《绥化日报》2004年4月26日第4版（专版）原版扫描 · 绥化一中专题报道
+ &lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E5%88%86%E6%95%B0%E7%BA%BF%E6%8E%A8%E7%90%86/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E5%88%86%E6%95%B0%E7%BA%BF%E6%8E%A8%E7%90%86/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8" /&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+ &lt;title&gt;自费生停招 择校生登场 — 绥化晚报 2004年8月1日&lt;/title&gt;
+ &lt;meta name="description" content="绥化晚报2004年8月1日报道：市区中考招生录取有新规定，自费生停招、择校生登场，各校最低录取分数线详细公布。" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet" /&gt;
+ &lt;style&gt;
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ :root {
+ --ink: #1a1208; --ink-light: #3d2f1a; --ink-muted: #7a6a52;
+ --paper: #faf7f2; --paper-warm: #f5f0e8; --paper-dark: #ede7d9;
+ --red-accent: #c0392b; --red-muted: #8b2020;
+ --gold: #b8960c; --gold-light: #d4aa1a;
+ --border: #c9bba0; --border-light: #e0d8ca;
+ --shadow: rgba(50,30,10,0.12);
+ }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body { background-color: #e8e0d0; color: var(--ink); font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif; line-height: 1.85; min-height: 100vh; background-image: radial-gradient(ellipse at 20% 0%, rgba(184,150,12,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 100%, rgba(192,57,43,0.06) 0%, transparent 60%); }
+ .site-banner { background: var(--ink); color: #f0e8d0; text-align: center; padding: 10px 20px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; }
+ .masthead { background: var(--paper); border-bottom: 3px double var(--border); padding: 28px 0 0; }
+ .masthead-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+ .masthead-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+ .paper-name { font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 900; color: var(--red-accent); letter-spacing: 0.06em; line-height: 1; text-shadow: 2px 2px 0 rgba(192,57,43,0.15); font-family: 'Noto Serif SC', serif; }
+ .paper-name span { display: inline-block; animation: fadeInLeft 0.6s ease both; }
+ .paper-name span:nth-child(2) { animation-delay: 0.05s; }
+ .paper-name span:nth-child(3) { animation-delay: 0.10s; }
+ .paper-name span:nth-child(4) { animation-delay: 0.15s; }
+ @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+ .section-label { font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; color: var(--ink); letter-spacing: 0.25em; border-bottom: 2px solid var(--ink); padding-bottom: 4px; animation: fadeInRight 0.6s ease 0.1s both; }
+ @keyframes fadeInRight { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+ .masthead-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 8px 0; border-top: 1px solid var(--border); font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); letter-spacing: 0.04em; }
+ .masthead-meta .date-block { font-weight: 500; color: var(--ink-light); }
+ .masthead-meta .contact-block { display: flex; gap: 20px; flex-wrap: wrap; }
+ .edition-bar { background: var(--ink); color: #f0e8d0; text-align: center; padding: 5px 24px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; }
+ .article-wrapper { max-width: 900px; margin: 36px auto 60px; padding: 0 20px; animation: fadeInUp 0.7s ease 0.2s both; }
+ @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+ .article-card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 40px 48px 52px; box-shadow: 0 4px 24px var(--shadow), 0 1px 0 rgba(255,255,255,0.8) inset; position: relative; overflow: hidden; }
+ .article-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--red-accent), var(--gold-light), var(--red-accent)); }
+ .category-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--red-accent); color: #fff; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; padding: 3px 12px; margin-bottom: 22px; }
+ .supra-headline { font-family: 'Noto Sans SC', sans-serif; font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 8px; letter-spacing: 0.06em; }
+ .headline { font-size: clamp(1.8rem, 4.5vw, 2.8rem); font-weight: 900; line-height: 1.25; color: var(--ink); margin-bottom: 16px; letter-spacing: 0.02em; border-bottom: 2px solid var(--ink); padding-bottom: 14px; }
+ .photo-block { margin: 28px 0 32px; }
+ .photo-frame { border: 1px solid var(--border); padding: 8px; background: var(--paper-warm); box-shadow: 0 3px 16px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+ .photo-frame:hover { transform: scale(1.012); box-shadow: 0 6px 28px rgba(50,30,10,0.18); }
+ .photo-frame img { width: 100%; display: block; filter: sepia(8%) contrast(1.03); }
+ .photo-caption { margin-top: 10px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); text-align: center; letter-spacing: 0.04em; line-height: 1.6; }
+ .photo-caption strong { color: var(--ink-light); }
+ .article-body { column-count: 1; }
+ @media (max-width: 620px) { .article-card { padding: 28px 22px 36px; } }
+ .byline { font-family: 'Noto Sans SC', sans-serif; font-size: 0.82rem; color: var(--ink-muted); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px dashed var(--border); }
+ .byline strong { color: var(--red-muted); }
+ .article-body p { text-indent: 2em; font-size: 0.97rem; line-height: 1.95; margin-bottom: 0.85em; color: var(--ink); }
+ .highlight-box { background: var(--paper-dark); border-left: 4px solid var(--gold); padding: 12px 16px; margin: 14px 0; font-size: 0.92rem; line-height: 1.8; }
+ .highlight-box strong { color: var(--red-muted); }
+ /* Tuition table */
+ .data-section { margin-top: 40px; padding-top: 28px; border-top: 2px double var(--border); }
+ .data-section-title { font-size: 1.0rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; letter-spacing: 0.05em; }
+ .data-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+ .score-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; font-family: 'Noto Sans SC', sans-serif; }
+ .score-table th { background: var(--ink); color: #f0e8d0; padding: 10px 14px; text-align: left; font-weight: 600; letter-spacing: 0.05em; }
+ .score-table td { padding: 9px 14px; border-bottom: 1px solid var(--border-light); color: var(--ink-light); }
+ .score-table tr:hover td { background: var(--paper-warm); }
+ .score-table td:first-child { font-weight: 600; color: var(--ink); }
+ .tuition-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; font-family: 'Noto Sans SC', sans-serif; margin-top: 8px; }
+ .tuition-table th { background: var(--ink); color: #f0e8d0; padding: 9px 12px; text-align: center; font-weight: 600; font-size: 0.8rem; }
+ .tuition-table td { padding: 8px 12px; border-bottom: 1px solid var(--border-light); text-align: center; color: var(--ink-light); }
+ .tuition-table tr:hover td { background: var(--paper-warm); }
+ .tuition-table td:first-child { text-align: left; font-weight: 500; color: var(--ink); }
+ .article-footer { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+ .footer-source { font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; color: var(--ink-muted); }
+ .footer-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+ .tag { background: var(--paper-dark); border: 1px solid var(--border); color: var(--ink-muted); font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; padding: 3px 10px; border-radius: 2px; transition: background 0.2s, color 0.2s; cursor: default; }
+ .tag:hover { background: var(--ink); color: #f0e8d0; }
+ #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--red-accent), var(--gold-light)); z-index: 999; transition: width 0.1s linear; }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="progress-bar"&gt;&lt;/div&gt;
+&lt;div class="site-banner"&gt;历史档案数字化保存 · 绥化教育史料库&lt;/div&gt;
+&lt;header class="masthead"&gt;
+ &lt;div class="masthead-inner"&gt;
+ &lt;div class="masthead-top"&gt;
+ &lt;div class="paper-name"&gt;&lt;span&gt;绥&lt;/span&gt;&lt;span&gt;化&lt;/span&gt;&lt;span&gt;晚&lt;/span&gt;&lt;span&gt;报&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="section-label"&gt;咱们老百姓&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="masthead-meta"&gt;
+ &lt;div class="date-block"&gt;2004年8月1日 · 星期日 · 第2版&lt;/div&gt;
+ &lt;div class="contact-block"&gt;
+ &lt;span&gt;责任编辑：薛秀春&lt;/span&gt;
+ &lt;span&gt;责任排版：陈娜&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="edition-bar"&gt;咱们老百姓 · 责任编辑：薛秀春&lt;/div&gt;
+&lt;/header&gt;
+&lt;main class="article-wrapper"&gt;
+ &lt;article class="article-card"&gt;
+ &lt;div class="category-tag"&gt;政策资讯&lt;/div&gt;
+ &lt;div class="supra-headline"&gt;我市市区中考招生录取有新规定&lt;/div&gt;
+ &lt;h1 class="headline"&gt;自费生停招　择校生登场&lt;/h1&gt;
+
+ &lt;div class="photo-block"&gt;
+ &lt;div class="photo-frame"&gt;
+ &lt;img src="2004年绥化一中分数线（推理）.jpg" alt="绥化晚报2004年8月1日关于自费生停招择校生登场的报道原版扫描" loading="lazy" /&gt;
+ &lt;/div&gt;
+ &lt;p class="photo-caption"&gt;
+ &lt;strong&gt;▲ 原始档案&lt;/strong&gt;　《绥化晚报》2004年8月1日第2版原版扫描 · 详载各校择校生最低录取分数线与收费标准
+ &lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E6%8B%9B%E7%94%9F%E5%90%AF%E4%BA%8B-%E9%AB%98%E8%80%83%E5%89%8D/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E6%8B%9B%E7%94%9F%E5%90%AF%E4%BA%8B-%E9%AB%98%E8%80%83%E5%89%8D/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8" /&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+ &lt;title&gt;绥化一中高一招生启事（高考前版）— 2004年&lt;/title&gt;
+ &lt;meta name="description" content="2004年绥化市第一中学高一招生启事（高考前发布版），含近年高考成绩、招生计划、收费标准及招生办法。" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet" /&gt;
+ &lt;style&gt;
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ :root {
+ --ink: #1a1208; --ink-light: #3d2f1a; --ink-muted: #7a6a52;
+ --paper: #faf7f2; --paper-warm: #f5f0e8; --paper-dark: #ede7d9;
+ --red-accent: #c0392b; --red-muted: #8b2020;
+ --gold: #b8960c; --gold-light: #d4aa1a;
+ --border: #c9bba0; --border-light: #e0d8ca;
+ --shadow: rgba(50,30,10,0.12);
+ }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body { background-color: #e8e0d0; color: var(--ink); font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif; line-height: 1.85; min-height: 100vh; background-image: radial-gradient(ellipse at 20% 0%, rgba(184,150,12,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 100%, rgba(192,57,43,0.06) 0%, transparent 60%); }
+ .site-banner { background: var(--ink); color: #f0e8d0; text-align: center; padding: 10px 20px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; }
+ .masthead { background: var(--paper); border-bottom: 3px double var(--border); padding: 28px 0 0; }
+ .masthead-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+ .masthead-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+ .school-name { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: var(--red-accent); letter-spacing: 0.08em; line-height: 1; text-shadow: 2px 2px 0 rgba(192,57,43,0.15); font-family: 'Noto Serif SC', serif; }
+ .school-name span { display: inline-block; animation: fadeInLeft 0.6s ease both; }
+ .school-name span:nth-child(2){animation-delay:0.04s} .school-name span:nth-child(3){animation-delay:0.08s} .school-name span:nth-child(4){animation-delay:0.12s} .school-name span:nth-child(5){animation-delay:0.16s} .school-name span:nth-child(6){animation-delay:0.20s}
+ @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+ .doc-type { font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 700; color: var(--ink); letter-spacing: 0.18em; border-bottom: 2px solid var(--ink); padding-bottom: 4px; animation: fadeInRight 0.6s ease 0.1s both; }
+ @keyframes fadeInRight { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+ .masthead-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 8px 0; border-top: 1px solid var(--border); font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); letter-spacing: 0.04em; }
+ .masthead-meta .date-block { font-weight: 500; color: var(--ink-light); }
+ .edition-bar { background: var(--ink); color: #f0e8d0; text-align: center; padding: 5px 24px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; }
+ .article-wrapper { max-width: 900px; margin: 36px auto 60px; padding: 0 20px; animation: fadeInUp 0.7s ease 0.2s both; }
+ @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+ .article-card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 40px 48px 52px; box-shadow: 0 4px 24px var(--shadow), 0 1px 0 rgba(255,255,255,0.8) inset; position: relative; overflow: hidden; }
+ .article-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--red-accent), var(--gold-light), var(--red-accent)); }
+ .category-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--red-accent); color: #fff; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; padding: 3px 12px; margin-bottom: 22px; }
+ .headline { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; line-height: 1.3; color: var(--ink); margin-bottom: 8px; letter-spacing: 0.06em; }
+ .headline-sub { font-size: 1.1rem; font-weight: 600; color: var(--ink-muted); margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid var(--ink); letter-spacing: 0.04em; }
+ .photo-block { margin: 28px 0 32px; }
+ .photo-frame { border: 1px solid var(--border); padding: 8px; background: var(--paper-warm); box-shadow: 0 3px 16px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+ .photo-frame:hover { transform: scale(1.012); box-shadow: 0 6px 28px rgba(50,30,10,0.18); }
+ .photo-frame img { width: 100%; display: block; filter: sepia(8%) contrast(1.03); }
+ .photo-caption { margin-top: 10px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); text-align: center; letter-spacing: 0.04em; line-height: 1.6; }
+ .photo-caption strong { color: var(--ink-light); }
+ .article-body { column-count: 1; }
+ @media (max-width: 620px) { .article-card { padding: 28px 22px 36px; } }
+ .section-heading { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin: 22px 0 10px; padding-left: 10px; border-left: 3px solid var(--red-accent); }
+ .article-body p { text-indent: 2em; font-size: 0.97rem; line-height: 1.95; margin-bottom: 0.75em; color: var(--ink); }
+ .article-body ol, .article-body ul { padding-left: 2.2em; margin-bottom: 10px; }
+ .article-body li { font-size: 0.96rem; line-height: 1.9; color: var(--ink); margin-bottom: 3px; }
+ .highlight-box { background: var(--paper-dark); border-left: 4px solid var(--gold); padding: 12px 16px; margin: 14px 0; font-size: 0.92rem; line-height: 1.8; }
+ .highlight-box strong { color: var(--red-muted); }
+ .contact-block { text-align: center; margin-top: 28px; padding: 16px; background: var(--paper-warm); border: 1px solid var(--border); }
+ .contact-block .phone { font-size: 1.4rem; font-weight: 900; color: var(--red-accent); letter-spacing: 0.12em; }
+ .contact-block .org { font-family: 'Noto Sans SC', sans-serif; font-size: 0.9rem; color: var(--ink-light); margin-top: 6px; font-weight: 600; }
+ .article-footer { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+ .footer-source { font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; color: var(--ink-muted); }
+ .footer-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+ .tag { background: var(--paper-dark); border: 1px solid var(--border); color: var(--ink-muted); font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; padding: 3px 10px; border-radius: 2px; transition: background 0.2s, color 0.2s; cursor: default; }
+ .tag:hover { background: var(--ink); color: #f0e8d0; }
+ #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--red-accent), var(--gold-light)); z-index: 999; transition: width 0.1s linear; }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="progress-bar"&gt;&lt;/div&gt;
+&lt;div class="site-banner"&gt;历史档案数字化保存 · 绥化教育史料库&lt;/div&gt;
+&lt;header class="masthead"&gt;
+ &lt;div class="masthead-inner"&gt;
+ &lt;div class="masthead-top"&gt;
+ &lt;div class="school-name"&gt;&lt;span&gt;绥&lt;/span&gt;&lt;span&gt;化&lt;/span&gt;&lt;span&gt;一&lt;/span&gt;&lt;span&gt;中&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="doc-type"&gt;招生启事&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="masthead-meta"&gt;
+ &lt;div class="date-block"&gt;2004年 · 高考前发布版&lt;/div&gt;
+ &lt;div&gt;联系电话：8399375 · 绥化市第一中学&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="edition-bar"&gt;高一招生启事 · 高考前版&lt;/div&gt;
+&lt;/header&gt;
+&lt;main class="article-wrapper"&gt;
+ &lt;article class="article-card"&gt;
+ &lt;div class="category-tag"&gt;招生公告&lt;/div&gt;
+ &lt;div class="headline"&gt;绥化一中&lt;br/&gt;高一招生启事&lt;/div&gt;
+ &lt;div class="headline-sub"&gt;（2004年高考前版）&lt;/div&gt;
+
+ &lt;div class="photo-block"&gt;
+ &lt;div class="photo-frame"&gt;
+ &lt;img src="2004年绥化一中招生启事-高考前.jpg" alt="2004年绥化一中高一招生启事高考前版原版扫描" loading="lazy" /&gt;
+ &lt;/div&gt;
+ &lt;p class="photo-caption"&gt;
+ &lt;strong&gt;▲ 原始档案&lt;/strong&gt;　2004年绥化一中高一招生启事（高考前版）原版扫描
+ &lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E6%8B%9B%E7%94%9F%E5%90%AF%E4%BA%8B-%E9%AB%98%E8%80%83%E5%90%8E/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2004%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E6%8B%9B%E7%94%9F%E5%90%AF%E4%BA%8B-%E9%AB%98%E8%80%83%E5%90%8E/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8" /&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+ &lt;title&gt;绥化一中高一招生启事（高考后版）— 2004年高考快讯&lt;/title&gt;
+ &lt;meta name="description" content="2004年绥化一中高考后发布的招生启事，含2004年高考快讯（刘明宇671分全市理科状元）、学校基本情况、招生计划及自费生收费标准明细表。" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;
+ &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;
+ &lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet" /&gt;
+ &lt;style&gt;
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ :root {
+ --ink: #1a1208; --ink-light: #3d2f1a; --ink-muted: #7a6a52;
+ --paper: #faf7f2; --paper-warm: #f5f0e8; --paper-dark: #ede7d9;
+ --red-accent: #c0392b; --red-muted: #8b2020;
+ --gold: #b8960c; --gold-light: #d4aa1a;
+ --border: #c9bba0; --border-light: #e0d8ca;
+ --shadow: rgba(50,30,10,0.12);
+ }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body { background-color: #e8e0d0; color: var(--ink); font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif; line-height: 1.85; min-height: 100vh; background-image: radial-gradient(ellipse at 20% 0%, rgba(184,150,12,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 100%, rgba(192,57,43,0.06) 0%, transparent 60%); }
+ .site-banner { background: var(--ink); color: #f0e8d0; text-align: center; padding: 10px 20px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; }
+ .masthead { background: var(--paper); border-bottom: 3px double var(--border); padding: 28px 0 0; }
+ .masthead-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+ .masthead-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+ .school-name { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: var(--red-accent); letter-spacing: 0.08em; line-height: 1; text-shadow: 2px 2px 0 rgba(192,57,43,0.15); font-family: 'Noto Serif SC', serif; }
+ .school-name span { display: inline-block; animation: fadeInLeft 0.6s ease both; }
+ .school-name span:nth-child(2){animation-delay:0.04s} .school-name span:nth-child(3){animation-delay:0.08s} .school-name span:nth-child(4){animation-delay:0.12s} .school-name span:nth-child(5){animation-delay:0.16s} .school-name span:nth-child(6){animation-delay:0.20s}
+ @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+ .doc-type { font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 700; color: var(--ink); letter-spacing: 0.18em; border-bottom: 2px solid var(--ink); padding-bottom: 4px; animation: fadeInRight 0.6s ease 0.1s both; }
+ @keyframes fadeInRight { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+ .masthead-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 8px 0; border-top: 1px solid var(--border); font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); letter-spacing: 0.04em; }
+ .masthead-meta .date-block { font-weight: 500; color: var(--ink-light); }
+ .edition-bar { background: var(--ink); color: #f0e8d0; text-align: center; padding: 5px 24px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; }
+ .article-wrapper { max-width: 900px; margin: 36px auto 60px; padding: 0 20px; animation: fadeInUp 0.7s ease 0.2s both; }
+ @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+ .article-card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 40px 48px 52px; box-shadow: 0 4px 24px var(--shadow), 0 1px 0 rgba(255,255,255,0.8) inset; position: relative; overflow: hidden; }
+ .article-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--red-accent), var(--gold-light), var(--red-accent)); }
+ /* Flash news banner */
+ .flash-banner { background: var(--red-accent); color: #fff; padding: 16px 22px; margin-bottom: 28px; border-radius: 2px; }
+ .flash-banner .flash-label { font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; opacity: 0.85; margin-bottom: 8px; }
+ .flash-banner .flash-headline { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 900; line-height: 1.3; letter-spacing: 0.04em; }
+ .category-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--red-accent); color: #fff; font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; padding: 3px 12px; margin-bottom: 22px; }
+ .headline { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; line-height: 1.3; color: var(--ink); margin-bottom: 8px; letter-spacing: 0.06em; }
+ .headline-sub { font-size: 1.1rem; font-weight: 600; color: var(--ink-muted); margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid var(--ink); letter-spacing: 0.04em; }
+ .photo-block { margin: 28px 0 32px; }
+ .photo-frame { border: 1px solid var(--border); padding: 8px; background: var(--paper-warm); box-shadow: 0 3px 16px var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+ .photo-frame:hover { transform: scale(1.012); box-shadow: 0 6px 28px rgba(50,30,10,0.18); }
+ .photo-frame img { width: 100%; display: block; filter: sepia(8%) contrast(1.03); }
+ .photo-caption { margin-top: 10px; font-family: 'Noto Sans SC', sans-serif; font-size: 0.8rem; color: var(--ink-muted); text-align: center; letter-spacing: 0.04em; line-height: 1.6; }
+ .photo-caption strong { color: var(--ink-light); }
+ .article-body { column-count: 1; }
+ @media (max-width: 620px) { .article-card { padding: 28px 22px 36px; } }
+ .section-heading { font-size: 1.05rem; font-weight: 700; color: var(--ink); margin: 22px 0 10px; padding-left: 10px; border-left: 3px solid var(--red-accent); }
+ .article-body p { text-indent: 2em; font-size: 0.97rem; line-height: 1.95; margin-bottom: 0.75em; color: var(--ink); }
+ .article-body ol { padding-left: 2.2em; margin-bottom: 10px; }
+ .article-body li { font-size: 0.96rem; line-height: 1.9; color: var(--ink); margin-bottom: 3px; }
+ .highlight-box { background: var(--paper-dark); border-left: 4px solid var(--gold); padding: 12px 16px; margin: 14px 0; font-size: 0.92rem; line-height: 1.8; }
+ .highlight-box strong { color: var(--red-muted); }
+ /* Tuition fee table */
+ .data-section { margin-top: 40px; padding-top: 28px; border-top: 2px double var(--border); }
+ .data-section-title { font-size: 1.0rem; font-weight: 700; color: var(--ink); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; letter-spacing: 0.05em; }
+ .data-section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+ .tuition-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; font-family: 'Noto Sans SC', sans-serif; }
+ .tuition-table th { background: var(--ink); color: #f0e8d0; padding: 9px 12px; text-align: center; font-weight: 600; font-size: 0.8rem; }
+ .tuition-table td { padding: 8px 12px; border-bottom: 1px solid var(--border-light); text-align: center; color: var(--ink-light); }
+ .tuition-table tr:hover td { background: var(--paper-warm); }
+ .tuition-table td:first-child { text-align: left; font-weight: 500; color: var(--ink); }
+ /* Score ranking list */
+ .score-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 6px; }
+ .score-list li { background: var(--paper-warm); border: 1px solid var(--border-light); padding: 10px 14px; border-radius: 2px; font-size: 0.9rem; transition: border-color 0.2s; }
+ .score-list li:hover { border-color: var(--gold); }
+ .score-list .rank { font-family: 'Noto Sans SC', sans-serif; font-size: 0.7rem; color: var(--ink-muted); margin-bottom: 2px; }
+ .score-list .name { font-weight: 700; color: var(--ink); }
+ .score-list .score { color: var(--red-accent); font-weight: 900; font-size: 1.05rem; }
+ .contact-block { text-align: center; margin-top: 28px; padding: 16px; background: var(--paper-warm); border: 1px solid var(--border); }
+ .contact-block .phone { font-size: 1.4rem; font-weight: 900; color: var(--red-accent); letter-spacing: 0.12em; }
+ .contact-block .org { font-family: 'Noto Sans SC', sans-serif; font-size: 0.9rem; color: var(--ink-light); margin-top: 6px; font-weight: 600; }
+ .article-footer { max-width: 900px; margin: 0 auto 40px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+ .footer-source { font-family: 'Noto Sans SC', sans-serif; font-size: 0.78rem; color: var(--ink-muted); }
+ .footer-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+ .tag { background: var(--paper-dark); border: 1px solid var(--border); color: var(--ink-muted); font-family: 'Noto Sans SC', sans-serif; font-size: 0.72rem; padding: 3px 10px; border-radius: 2px; transition: background 0.2s, color 0.2s; cursor: default; }
+ .tag:hover { background: var(--ink); color: #f0e8d0; }
+ #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--red-accent), var(--gold-light)); z-index: 999; transition: width 0.1s linear; }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="progress-bar"&gt;&lt;/div&gt;
+&lt;div class="site-banner"&gt;历史档案数字化保存 · 绥化教育史料库&lt;/div&gt;
+&lt;header class="masthead"&gt;
+ &lt;div class="masthead-inner"&gt;
+ &lt;div class="masthead-top"&gt;
+ &lt;div class="school-name"&gt;&lt;span&gt;绥&lt;/span&gt;&lt;span&gt;化&lt;/span&gt;&lt;span&gt;一&lt;/span&gt;&lt;span&gt;中&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="doc-type"&gt;招生启事&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="masthead-meta"&gt;
+ &lt;div class="date-block"&gt;2004年 · 高考后发布版&lt;/div&gt;
+ &lt;div&gt;联系电话：8396980 / 8399375 · 绥化市第一中学&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="edition-bar"&gt;高一招生启事 · 高考后版（含2004年高考快讯）&lt;/div&gt;
+&lt;/header&gt;
+&lt;main class="article-wrapper"&gt;
+ &lt;article class="article-card"&gt;
+
+ &lt;!-- Breaking news banner --&gt;
+ &lt;div class="flash-banner"&gt;
+ &lt;div class="flash-label"&gt;▶ 2004年高考快讯&lt;/div&gt;
+ &lt;div class="flash-headline"&gt;绥化一中刘明宇以671分夺2004年高考全市理科状元&lt;br/&gt;实现全市理科状元四连冠！&lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;div class="category-tag"&gt;招生公告&lt;/div&gt;
+ &lt;div class="headline"&gt;绥化一中高一招生启事&lt;/div&gt;
+ &lt;div class="headline-sub"&gt;（2004年高考后版）&lt;/div&gt;
+
+ &lt;div class="photo-block"&gt;
+ &lt;div class="photo-frame"&gt;
+ &lt;img src="2004年绥化一中招生启事-高考后.JPG" alt="2004年绥化一中高一招生启事高考后版原版扫描，含高考快讯与收费明细表" loading="lazy" /&gt;
+ &lt;/div&gt;
+ &lt;p class="photo-caption"&gt;
+ &lt;strong&gt;▲ 原始档案&lt;/strong&gt;　2004年绥化一中高一招生启事（高考后版）原版扫描 · 含2004年高考快讯及自费生收费标准明细表
+ &lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2005%E5%B9%B4%E9%BB%91%E9%BE%99%E6%B1%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%90%8D%E5%8D%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2005%E5%B9%B4%E9%BB%91%E9%BE%99%E6%B1%9F%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%E5%90%8D%E5%8D%95/</guid><description>&lt;h2 id="2005年全国初中数学联赛黑龙江省赛区一等奖获奖名单"&gt;2005年全国初中数学联赛黑龙江省赛区一等奖获奖名单&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -22033,7 +22509,440 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://web.archive.org/web/20051024211512/http://lxfas.com/list.htm"&gt;信息来自来成文化学校网站&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://web.archive.org/web/20060529104408/http://www.lxfas.com:80/zs1.htm"&gt;https://web.archive.org/web/20060529104408/http://www.lxfas.com:80/zs1.htm&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2011%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E8%B4%B4%E5%90%A7%E5%AF%B9%E9%AD%8F%E5%BF%97%E6%B3%A2%E6%A0%A1%E9%95%BF%E7%9A%84%E8%AE%A8%E8%AE%BA/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2011%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E8%B4%B4%E5%90%A7%E5%AF%B9%E9%AD%8F%E5%BF%97%E6%B3%A2%E6%A0%A1%E9%95%BF%E7%9A%84%E8%AE%A8%E8%AE%BA/</guid><description>&lt;h2 id="引用绥化一中该换校长了吧-"&gt;引用｛绥化一中该换校长了吧 ！！｝&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://web.archive.org/web/20060529104408/http://www.lxfas.com:80/zs1.htm"&gt;https://web.archive.org/web/20060529104408/http://www.lxfas.com:80/zs1.htm&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2011%E5%B9%B4%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%99%AE%E9%80%9A%E6%9C%AC%E4%B8%93%E7%A7%91%E6%AF%95%E4%B8%9A%E7%94%9F%E5%90%8D%E5%8D%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2011%E5%B9%B4%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%99%AE%E9%80%9A%E6%9C%AC%E4%B8%93%E7%A7%91%E6%AF%95%E4%B8%9A%E7%94%9F%E5%90%8D%E5%8D%95/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;2011年哈尔滨工业大学普通本、专科毕业生名单&lt;/title&gt;
+&lt;meta name="description" content="2011年哈尔滨工业大学普通本科及专科毕业生完整名单，共5770人，按学院和专业分类。"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;
+&lt;style&gt;
+:root {
+ --bg: #f8fafc;
+ --bg-card: #ffffff;
+ --bg-card2: #f1f5f9;
+ --primary: #003366;
+ --primary-light: #0d4a82;
+ --primary-subtle: #e8eff7;
+ --gold: #b38226;
+ --gold-light: #d4a347;
+ --gold-dim: rgba(179, 130, 38, 0.12);
+ --text: #1e293b;
+ --text-muted: #64748b;
+ --dim: #94a3b8;
+ --border: rgba(0, 51, 102, 0.15);
+ --border-dim: rgba(0, 0, 0, 0.08);
+ --radius: 10px;
+ --shadow: 0 2px 10px rgba(0, 51, 102, 0.04);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Noto Serif SC', 'PingFang SC', sans-serif;
+ background: var(--bg);
+ color: var(--text);
+ min-height: 100vh;
+ line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+ background: linear-gradient(135deg, #ffffff 0%, #f0f5fa 60%, #e6eff8 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 56px 24px 44px;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+}
+.hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0, 51, 102, 0.05), transparent 70%);
+ pointer-events: none;
+}
+.badge {
+ display: inline-block;
+ background: var(--primary-subtle);
+ border: 1px solid rgba(0, 51, 102, 0.2);
+ color: var(--primary);
+ font-size: 12px;
+ font-weight: 600;
+ letter-spacing: 1.5px;
+ padding: 5px 16px;
+ border-radius: 999px;
+ margin-bottom: 20px;
+}
+.hero h1 {
+ font-family: 'Noto Serif SC', 'Songti SC', serif;
+ font-size: clamp(22px, 4vw, 34px);
+ font-weight: 700;
+ color: #003366;
+ letter-spacing: 1.5px;
+ margin-bottom: 10px;
+}
+.hero-sub {
+ color: var(--text-muted);
+ font-size: 13.5px;
+ margin-bottom: 30px;
+}
+.stats {
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ flex-wrap: wrap;
+}
+.stat-num {
+ font-size: 32px;
+ font-weight: 700;
+ color: var(--primary);
+ line-height: 1;
+}
+.stat-label {
+ font-size: 12px;
+ color: var(--text-muted);
+ margin-top: 5px;
+ letter-spacing: 0.5px;
+}
+
+/* CONTROLS */
+.controls {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: rgba(255, 255, 255, 0.95);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border-dim);
+ padding: 12px 24px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.ctrl {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ gap: 12px;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.sw {
+ flex: 1;
+ min-width: 200px;
+ position: relative;
+}
+.sw svg {
+ position: absolute;
+ left: 12px;
+ top: 50%;
+ transform: translateY(-50%);
+ color: var(--dim);
+ pointer-events: none;
+}
+#search {
+ width: 100%;
+ background: #ffffff;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ color: var(--text);
+ font-size: 14px;
+ padding: 9px 12px 9px 36px;
+ outline: none;
+ transition: all .2s;
+}
+#search:focus {
+ border-color: var(--primary);
+ box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+#search::placeholder {
+ color: var(--dim);
+}
+select {
+ background: #ffffff;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ color: var(--text);
+ font-size: 13.5px;
+ padding: 9px 12px;
+ outline: none;
+ cursor: pointer;
+ min-width: 150px;
+ transition: border .2s;
+}
+select:focus {
+ border-color: var(--primary);
+}
+.rc {
+ font-size: 13px;
+ color: var(--text-muted);
+ white-space: nowrap;
+}
+.rc span {
+ color: var(--primary);
+ font-weight: 700;
+}
+.vt {
+ display: flex;
+ gap: 2px;
+ background: #f1f5f9;
+ border: 1px solid #e2e8f0;
+ border-radius: 8px;
+ padding: 3px;
+}
+.vb {
+ background: none;
+ border: none;
+ color: var(--text-muted);
+ padding: 6px 12px;
+ border-radius: 6px;
+ cursor: pointer;
+ font-size: 13px;
+ font-weight: 500;
+ transition: all .2s;
+}
+.vb.active {
+ background: #ffffff;
+ color: var(--primary);
+ font-weight: 700;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.btn-dl {
+ display: inline-flex;
+ align-items: center;
+ gap: 6px;
+ background: #f8fafc;
+ border: 1px solid #cbd5e1;
+ color: var(--text);
+ padding: 8px 14px;
+ border-radius: 8px;
+ font-size: 13px;
+ text-decoration: none;
+ font-weight: 500;
+ transition: all .2s;
+}
+.btn-dl:hover {
+ background: var(--primary-subtle);
+ border-color: var(--primary);
+ color: var(--primary);
+}
+
+/* MAIN */
+.main {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 32px 24px 80px;
+}
+
+/* COLLEGE */
+.college-section {
+ margin-bottom: 44px;
+}
+.college-header {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ margin-bottom: 16px;
+ padding-bottom: 10px;
+ border-bottom: 2px solid var(--primary-subtle);
+}
+.college-icon {
+ width: 38px;
+ height: 38px;
+ background: var(--primary-subtle);
+ border: 1px solid rgba(0, 51, 102, 0.15);
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 17px;
+ flex-shrink: 0;
+}
+.college-name {
+ font-family: 'Noto Serif SC', serif;
+ font-size: 19px;
+ font-weight: 700;
+ color: var(--primary);
+ flex: 1;
+}
+.college-count {
+ font-size: 12.5px;
+ color: var(--text-muted);
+ background: #f1f5f9;
+ border: 1px solid #e2e8f0;
+ border-radius: 6px;
+ padding: 3px 10px;
+ white-space: nowrap;
+}
+
+/* MAJOR */
+.major-block {
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: var(--radius);
+ margin-bottom: 12px;
+ overflow: hidden;
+ box-shadow: var(--shadow);
+ transition: border .2s;
+}
+.major-block:hover {
+ border-color: #cbd5e1;
+}
+.major-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 12px 18px;
+ background: #f8fafc;
+ cursor: pointer;
+ user-select: none;
+ gap: 10px;
+ border-bottom: 1px solid transparent;
+}
+.major-block:not(.collapsed) .major-header {
+ border-bottom-color: #f1f5f9;
+}
+.major-title {
+ font-size: 14.5px;
+ font-weight: 600;
+ color: #1e293b;
+ flex: 1;
+}
+.major-badge {
+ font-size: 12px;
+ color: var(--primary);
+ background: var(--primary-subtle);
+ border-radius: 999px;
+ padding: 2px 10px;
+ white-space: nowrap;
+ font-weight: 600;
+}
+.major-toggle {
+ color: var(--dim);
+ font-size: 11px;
+ transition: transform .25s ease;
+}
+.major-block.collapsed .major-toggle {
+ transform: rotate(-90deg);
+}
+.names-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+ gap: 8px;
+ padding: 14px 18px 18px;
+}
+.major-block.collapsed .names-grid {
+ display: none;
+}
+.name-chip {
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: 7px;
+ padding: 7px 4px;
+ text-align: center;
+ font-family: 'Noto Serif SC', serif;
+ font-size: 14px;
+ color: #1e293b;
+ cursor: default;
+ transition: all .15s;
+ white-space: nowrap;
+}
+.name-chip:hover {
+ background: var(--primary-subtle);
+ border-color: var(--primary);
+ color: var(--primary);
+}
+.name-chip.hl {
+ background: #fef3c7;
+ border-color: #f59e0b;
+ color: #92400e;
+ font-weight: 600;
+ animation: pop .3s ease;
+}
+@keyframes pop { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+
+/* TABLE */
+.table-wrap {
+ overflow-x: auto;
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 14px;
+}
+thead th {
+ background: #f8fafc;
+ color: #475569;
+ font-weight: 600;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ padding: 12px 16px;
+ text-align: left;
+ border-bottom: 1px solid #e2e8f0;
+ position: sticky;
+ top: 0;
+}
+tbody tr {
+ border-bottom: 1px solid #f1f5f9;
+ transition: background .15s;
+}
+tbody tr:hover {
+ background: #f8fafc;
+}
+tbody tr:last-child {
+ border-bottom: none;
+}
+td {
+ padding: 10px 16px;
+ color: #334155;
+}
+td:first-child {
+ color: var(--dim);
+ font-size: 12.5px;
+ width: 65px;
+}
+td:last-child {
+ font-family: 'Noto Serif SC', serif;
+ font-size: 14.5px;
+ font-weight: 500;
+ color: #0f172a;
+}
+.td-college {
+ color: var(--primary);
+ font-size: 13.5px;
+ font-weight: 500;
+}
+.td-major {
+ color: var(--text-muted);
+ font-size: 13.5px;
+}
+
+.hidden { display: none !important; }
+footer {
+ text-align: center;
+ padding: 32px 24px;
+ color: var(--dim);
+ font-size: 12.5px;
+ border-top: 1px solid var(--border-dim);
+ background: #ffffff;
+}
+
+@media(max-width:600px) {
+ .hero { padding: 36px 16px 28px; }
+ .stats { gap: 20px; }
+ .main { padding: 18px 12px 60px; }
+ .names-grid { grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 6px; }
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;section class="hero"&gt;
+ &lt;div class="badge"&gt;哈尔滨工业大学 · 2011届&lt;/div&gt;
+ &lt;h1&gt;普通本、专科毕业生名单&lt;/h1&gt;
+ &lt;p class="hero-sub"&gt;《哈尔滨工业大学年鉴》谢大纲 主编 · 本科及专科毕业生名录&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2011%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E8%B4%B4%E5%90%A7%E5%AF%B9%E9%AD%8F%E5%BF%97%E6%B3%A2%E6%A0%A1%E9%95%BF%E7%9A%84%E8%AE%A8%E8%AE%BA/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2011%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E8%B4%B4%E5%90%A7%E5%AF%B9%E9%AD%8F%E5%BF%97%E6%B3%A2%E6%A0%A1%E9%95%BF%E7%9A%84%E8%AE%A8%E8%AE%BA/</guid><description>&lt;h2 id="引用绥化一中该换校长了吧-"&gt;引用｛绥化一中该换校长了吧 ！！｝&lt;/h2&gt;
 &lt;p&gt;绥化一中该换校长了吧 ！！218.7.165.* 1楼
 绥化一中是绥化唯一一所省重点中学，可近几年 管理混乱 ，据说都是因为海伦来的这位现任校长，疏于管理造成的，同时老师的水平也江河日下，据说绥化师专毕业的占了多数 水平可想而知 东北师大毕业的聘不过师专毕业的 原因很简单 地球人都知道了 现在的局面是很多学子都到哈市 大庆 赵东等地去读高中 而绥化政府拿出最有效的杀手锏 不给办转学籍 所以到外地只能是借读 高考还得回来考 绥化真是太阴了 不知道胡石英等绥化巨头是如何想的？？&lt;/p&gt;
 &lt;p&gt;你出卖了绥化一中和这里的所有老师，还玩弄了比较贱的女老师，拿一中那么多老师的钱为你埋单，那可是每一个一中人及家里人的血汗钱，你就忍心吗？你还钱还有希望吗？整天用小道消息欺骗大家说市里面马上给钱，维持你暂时的安稳，只有赵淑新才是一中的真正英雄！一中老师太老实了，念书给念傻了，什么时候能清醒，咱们的魏校长，过去挣公寓的钱，现在更是变本加厉的出卖一中，不惜欠钱去搞那么多没有用的工程，尤其现在，一中不好了，又拿学费和串班发大财。你想让一中解散吗？你还能管一管你的顺民们的死活吗？一中真就不能让正直得人生存了吗？魏志波你是一中校史上永远的败类。一中老师不要成为傻瓜！！！快点清醒清醒！！！！！！！！！！！！！&lt;/p&gt;
@@ -22050,137 +22959,508 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
 从今年情况来看，此风愈演愈烈。原来是中考之后走，现在中考之前走的也不少，只为能顺理成章保证高中“出走”。近日，记者从我市几所初中学校了解到，今年开学之初，每个班级或多或少都流失了些生源。目前，初四学生家长最热门的话题莫过于谈论到哪里读高中。在很多家长眼中，大庆、哈尔滨等大城市的有名气的高中，当然是理想的去处，甚至肇东、庆安等市县的重点高中也成了待选择对象。有条件的去，没条件的创造条件也要去。一名初四学生的家长林女士说，她女儿学习成绩不错，看到周围一些家长都要把孩子转到外地读高中，她特别心慌。因为家里条件一般，如果孩子到外地读高中，自然增加开销。再说15岁的孩子，若到外地读书，不陪读，那就要特别牵肠挂肚，陪读，自己的工作必然会受到影响。
 对此，记者采访了一些目前我市在外地求学的学生和其家长。在大庆某高中读书的小陆说，当初去的时候，优秀学生比比皆是，感觉压力特别大，而且还要根据数次考试成绩决定下一年分到哪个班，如果分不进去好班，那简直太痛苦。幸好，现在他已适应了这种竞争环境，毕竟，那里学习氛围很浓，关键是师资水平较高。现在，他正紧张地备战高考。据了解，也有部分学生不适应离家求学的环境，学习成绩不尽如人意，处于尴尬境地。
 我市教育界有关人士表示，家长想方设法把孩子送到教育资源相对好一些的外地高中求学，这种心情应该给予理解。但若盲目将孩子送出去，这就令人担忧了。有的学生适合在外地读书，有的则根本不适合，如此一来，学生累，家长更累，最后求学的效果未必理想。
-面对纷纷外流的生源，很多市民表示忧虑。这种忧虑，不仅仅来自经济负担，更有精神压力。家有初四学生的北林区的李先生深有感触地说，我们绥化的教育资源还是有潜力可挖的，其实哪个学生家长也不想把少不经事的孩子送到远处求学，守家在地就近读书，考到理想的大学，不仅仅是自己的骄傲，更是家乡的荣光。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2016%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E9%AB%98%E8%80%83%E6%83%85%E5%86%B5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2016%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E9%AB%98%E8%80%83%E6%83%85%E5%86%B5/</guid><description>&lt;p&gt;绥化一中2016届高考成绩&lt;/p&gt;
+面对纷纷外流的生源，很多市民表示忧虑。这种忧虑，不仅仅来自经济负担，更有精神压力。家有初四学生的北林区的李先生深有感触地说，我们绥化的教育资源还是有潜力可挖的，其实哪个学生家长也不想把少不经事的孩子送到远处求学，守家在地就近读书，考到理想的大学，不仅仅是自己的骄傲，更是家乡的荣光。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2012%E5%B9%B4%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%99%AE%E9%80%9A%E6%9C%AC%E4%B8%93%E7%A7%91%E6%AF%95%E4%B8%9A%E7%94%9F%E5%90%8D%E5%8D%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2012%E5%B9%B4%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%99%AE%E9%80%9A%E6%9C%AC%E4%B8%93%E7%A7%91%E6%AF%95%E4%B8%9A%E7%94%9F%E5%90%8D%E5%8D%95/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;2012年哈尔滨工业大学普通本、专科毕业生名单&lt;/title&gt;
+&lt;meta name="description" content="2012年哈尔滨工业大学普通本科及专科毕业生完整名单，共3921人，按学院和专业分类。"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;
+&lt;style&gt;
+:root {
+ --bg: #f8fafc;
+ --bg-card: #ffffff;
+ --bg-card2: #f1f5f9;
+ --primary: #003366;
+ --primary-light: #0d4a82;
+ --primary-subtle: #e8eff7;
+ --gold: #b38226;
+ --gold-light: #d4a347;
+ --gold-dim: rgba(179, 130, 38, 0.12);
+ --text: #1e293b;
+ --text-muted: #64748b;
+ --dim: #94a3b8;
+ --border: rgba(0, 51, 102, 0.15);
+ --border-dim: rgba(0, 0, 0, 0.08);
+ --radius: 10px;
+ --shadow: 0 2px 10px rgba(0, 51, 102, 0.04);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Noto Serif SC', 'PingFang SC', sans-serif;
+ background: var(--bg);
+ color: var(--text);
+ min-height: 100vh;
+ line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+ background: linear-gradient(135deg, #ffffff 0%, #f0f5fa 60%, #e6eff8 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 56px 24px 44px;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+}
+.hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0, 51, 102, 0.05), transparent 70%);
+ pointer-events: none;
+}
+.badge {
+ display: inline-block;
+ background: var(--primary-subtle);
+ border: 1px solid rgba(0, 51, 102, 0.2);
+ color: var(--primary);
+ font-size: 12px;
+ font-weight: 600;
+ letter-spacing: 1.5px;
+ padding: 5px 16px;
+ border-radius: 999px;
+ margin-bottom: 20px;
+}
+.hero h1 {
+ font-family: 'Noto Serif SC', 'Songti SC', serif;
+ font-size: clamp(22px, 4vw, 34px);
+ font-weight: 700;
+ color: #003366;
+ letter-spacing: 1.5px;
+ margin-bottom: 10px;
+}
+.hero-sub {
+ color: var(--text-muted);
+ font-size: 13.5px;
+ margin-bottom: 30px;
+}
+.stats {
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ flex-wrap: wrap;
+}
+.stat-num {
+ font-size: 32px;
+ font-weight: 700;
+ color: var(--primary);
+ line-height: 1;
+}
+.stat-label {
+ font-size: 12px;
+ color: var(--text-muted);
+ margin-top: 5px;
+ letter-spacing: 0.5px;
+}
+
+/* CONTROLS */
+.controls {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background: rgba(255, 255, 255, 0.95);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid var(--border-dim);
+ padding: 12px 24px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.ctrl {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ gap: 12px;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.sw {
+ flex: 1;
+ min-width: 200px;
+ position: relative;
+}
+.sw svg {
+ position: absolute;
+ left: 12px;
+ top: 50%;
+ transform: translateY(-50%);
+ color: var(--dim);
+ pointer-events: none;
+}
+#search {
+ width: 100%;
+ background: #ffffff;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ color: var(--text);
+ font-size: 14px;
+ padding: 9px 12px 9px 36px;
+ outline: none;
+ transition: all .2s;
+}
+#search:focus {
+ border-color: var(--primary);
+ box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+#search::placeholder {
+ color: var(--dim);
+}
+select {
+ background: #ffffff;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ color: var(--text);
+ font-size: 13.5px;
+ padding: 9px 12px;
+ outline: none;
+ cursor: pointer;
+ min-width: 150px;
+ transition: border .2s;
+}
+select:focus {
+ border-color: var(--primary);
+}
+.rc {
+ font-size: 13px;
+ color: var(--text-muted);
+ white-space: nowrap;
+}
+.rc span {
+ color: var(--primary);
+ font-weight: 700;
+}
+.vt {
+ display: flex;
+ gap: 2px;
+ background: #f1f5f9;
+ border: 1px solid #e2e8f0;
+ border-radius: 8px;
+ padding: 3px;
+}
+.vb {
+ background: none;
+ border: none;
+ color: var(--text-muted);
+ padding: 6px 12px;
+ border-radius: 6px;
+ cursor: pointer;
+ font-size: 13px;
+ font-weight: 500;
+ transition: all .2s;
+}
+.vb.active {
+ background: #ffffff;
+ color: var(--primary);
+ font-weight: 700;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.btn-dl {
+ display: inline-flex;
+ align-items: center;
+ gap: 6px;
+ background: #f8fafc;
+ border: 1px solid #cbd5e1;
+ color: var(--text);
+ padding: 8px 14px;
+ border-radius: 8px;
+ font-size: 13px;
+ text-decoration: none;
+ font-weight: 500;
+ transition: all .2s;
+}
+.btn-dl:hover {
+ background: var(--primary-subtle);
+ border-color: var(--primary);
+ color: var(--primary);
+}
+
+/* MAIN */
+.main {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 32px 24px 80px;
+}
+
+/* COLLEGE */
+.college-section {
+ margin-bottom: 44px;
+}
+.college-header {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ margin-bottom: 16px;
+ padding-bottom: 10px;
+ border-bottom: 2px solid var(--primary-subtle);
+}
+.college-icon {
+ width: 38px;
+ height: 38px;
+ background: var(--primary-subtle);
+ border: 1px solid rgba(0, 51, 102, 0.15);
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 17px;
+ flex-shrink: 0;
+}
+.college-name {
+ font-family: 'Noto Serif SC', serif;
+ font-size: 19px;
+ font-weight: 700;
+ color: var(--primary);
+ flex: 1;
+}
+.college-count {
+ font-size: 12.5px;
+ color: var(--text-muted);
+ background: #f1f5f9;
+ border: 1px solid #e2e8f0;
+ border-radius: 6px;
+ padding: 3px 10px;
+ white-space: nowrap;
+}
+
+/* MAJOR */
+.major-block {
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: var(--radius);
+ margin-bottom: 12px;
+ overflow: hidden;
+ box-shadow: var(--shadow);
+ transition: border .2s;
+}
+.major-block:hover {
+ border-color: #cbd5e1;
+}
+.major-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 12px 18px;
+ background: #f8fafc;
+ cursor: pointer;
+ user-select: none;
+ gap: 10px;
+ border-bottom: 1px solid transparent;
+}
+.major-block:not(.collapsed) .major-header {
+ border-bottom-color: #f1f5f9;
+}
+.major-title {
+ font-size: 14.5px;
+ font-weight: 600;
+ color: #1e293b;
+ flex: 1;
+}
+.major-badge {
+ font-size: 12px;
+ color: var(--primary);
+ background: var(--primary-subtle);
+ border-radius: 999px;
+ padding: 2px 10px;
+ white-space: nowrap;
+ font-weight: 600;
+}
+.major-toggle {
+ color: var(--dim);
+ font-size: 11px;
+ transition: transform .25s ease;
+}
+.major-block.collapsed .major-toggle {
+ transform: rotate(-90deg);
+}
+.names-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+ gap: 8px;
+ padding: 14px 18px 18px;
+}
+.major-block.collapsed .names-grid {
+ display: none;
+}
+.name-chip {
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: 7px;
+ padding: 7px 4px;
+ text-align: center;
+ font-family: 'Noto Serif SC', serif;
+ font-size: 14px;
+ color: #1e293b;
+ cursor: default;
+ transition: all .15s;
+ white-space: nowrap;
+}
+.name-chip:hover {
+ background: var(--primary-subtle);
+ border-color: var(--primary);
+ color: var(--primary);
+}
+.name-chip.hl {
+ background: #fef3c7;
+ border-color: #f59e0b;
+ color: #92400e;
+ font-weight: 600;
+ animation: pop .3s ease;
+}
+@keyframes pop { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+
+/* TABLE */
+.table-wrap {
+ overflow-x: auto;
+ background: #ffffff;
+ border: 1px solid #e2e8f0;
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
+}
+table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 14px;
+}
+thead th {
+ background: #f8fafc;
+ color: #475569;
+ font-weight: 600;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ padding: 12px 16px;
+ text-align: left;
+ border-bottom: 1px solid #e2e8f0;
+ position: sticky;
+ top: 0;
+}
+tbody tr {
+ border-bottom: 1px solid #f1f5f9;
+ transition: background .15s;
+}
+tbody tr:hover {
+ background: #f8fafc;
+}
+tbody tr:last-child {
+ border-bottom: none;
+}
+td {
+ padding: 10px 16px;
+ color: #334155;
+}
+td:first-child {
+ color: var(--dim);
+ font-size: 12.5px;
+ width: 65px;
+}
+td:last-child {
+ font-family: 'Noto Serif SC', serif;
+ font-size: 14.5px;
+ font-weight: 500;
+ color: #0f172a;
+}
+.td-college {
+ color: var(--primary);
+ font-size: 13.5px;
+ font-weight: 500;
+}
+.td-major {
+ color: var(--text-muted);
+ font-size: 13.5px;
+}
+
+.hidden { display: none !important; }
+footer {
+ text-align: center;
+ padding: 32px 24px;
+ color: var(--dim);
+ font-size: 12.5px;
+ border-top: 1px solid var(--border-dim);
+ background: #ffffff;
+}
+
+@media(max-width:600px) {
+ .hero { padding: 36px 16px 28px; }
+ .stats { gap: 20px; }
+ .main { padding: 18px 12px 60px; }
+ .names-grid { grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 6px; }
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;section class="hero"&gt;
+ &lt;div class="badge"&gt;哈尔滨工业大学 · 2012届&lt;/div&gt;
+ &lt;h1&gt;普通本、专科毕业生名单&lt;/h1&gt;
+ &lt;p class="hero-sub"&gt;《哈尔滨工业大学年鉴 2012》 · 本科及专科毕业生名录&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2016%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E9%AB%98%E8%80%83%E6%83%85%E5%86%B5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2016%E5%B9%B4%E7%BB%A5%E5%8C%96%E4%B8%80%E4%B8%AD%E9%AB%98%E8%80%83%E6%83%85%E5%86%B5/</guid><description>&lt;p&gt;绥化一中2016届高考成绩&lt;/p&gt;
 &lt;p&gt;一、优秀生情况：&lt;/p&gt;
 &lt;p&gt;1、文科：全市十个市县区前十名中有9人,前20名12人。居于全市第一。590分以上2人，580分以上9人，550分以上24人，500分以上81人。&lt;/p&gt;
 &lt;p&gt;2、 理科：全市前十名中有3人，前20名6人，居于全市第一。670分以上的2人,超过660分以上6人,超过650分以上12人。&lt;/p&gt;
 &lt;p&gt;3、超过600分以上的共79人 。&lt;/p&gt;
 &lt;p&gt;二、应届升学率情况：&lt;/p&gt;
 &lt;p&gt;1、本科一批次：全校文理科一批次上线总人数为596人，首次突破590人，其中理科479人，文科117人。应届理科：理科一批次上线人数为464人，一批次升学率为52%。应届文科：文科一批次上线人数为112人，一批次升学率为46%。应届文、理:本科一批次文理总共上线576人（不含特长），升学率为51%。&lt;/p&gt;
-&lt;p&gt;2、本科二批次：全校文理二批次上线总人数1131人，首次突破1100人，其中理科891人，文科240人，应届理科:理科二批次上线人数为849人，升学率为95%。应届文科:文科二批次上线人数为216人，升学率为90%。应届文、理:二批次文理总共上线1065人（不含特长），二批次文理科升学率为94%。升学率及学科平均分在全市位次还在统计计算中。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/daqing-shiyan-2004-vs-suihua-class3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/daqing-shiyan-2004-vs-suihua-class3/</guid><description>&lt;!DOCTYPE html&gt;
-&lt;html lang="zh-CN"&gt;
-&lt;head&gt;
- &lt;meta charset="UTF-8" /&gt;
- &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
- &lt;title&gt;648 分的两条路&lt;/title&gt;
- &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap"&gt;
- &lt;style&gt;
- :root{
- color-scheme: light;
- --paper:#e8ecec; --card:#f7f9f9; --sunk:#dfe4e4; --band:#eef2f2;
- --ink:#0e1416; --ink-2:#48565a; --ink-3:#7c8a8e;
- --rule:#c8d0d0; --hair:#dbe1e1;
- --petrol:#0e5b68; --petrol-w:rgba(14,91,104,.12);
- --seal:#a5342a; --seal-w:rgba(165,52,42,.10);
- --amber:#8f5d09; --amber-w:rgba(143,93,9,.11);
- --bar:#9aa8ab; --bar-w:rgba(154,168,171,.30);
- --shadow:0 1px 2px rgba(14,20,22,.05),0 12px 30px -20px rgba(14,20,22,.35);
- }
- @media (prefers-color-scheme: dark){
- :root:not([data-theme="light"]){
- color-scheme: dark;
- --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
- --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
- --rule:#28302f; --hair:#202727;
- --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.15);
- --seal:#dc6553; --seal-w:rgba(220,101,83,.15);
- --amber:#d99a2e; --amber-w:rgba(217,154,46,.15);
- --bar:#5a686b; --bar-w:rgba(90,104,107,.34);
- --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
- }
- }
- :root[data-theme="dark"]{
- color-scheme: dark;
- --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
- --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
- --rule:#28302f; --hair:#202727;
- --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.15);
- --seal:#dc6553; --seal-w:rgba(220,101,83,.15);
- --amber:#d99a2e; --amber-w:rgba(217,154,46,.15);
- --bar:#5a686b; --bar-w:rgba(90,104,107,.34);
- --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
- }
- *{box-sizing:border-box;margin:0;padding:0}
- body{background:var(--paper);color:var(--ink);
- font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
- font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased;
- padding:44px 22px 96px}
- .wrap{max-width:1040px;margin:0 auto}
- .m{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
-
- header{margin-bottom:26px}
- .kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;
- color:var(--ink-3);margin:0 0 14px}
- h1{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:clamp(24px,4.4vw,38px);line-height:1.15;
- letter-spacing:.01em;text-wrap:balance}
- .dek{margin:16px 0 0;max-width:66ch;color:var(--ink-2);font-size:15px}
- .dek b{color:var(--ink)}
- .byline{margin:20px 0 0;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;
- color:var(--ink-3);border-top:2px solid var(--ink);padding-top:11px;max-width:66ch}
-
- .legend{display:flex;gap:20px 24px;justify-content:flex-start;flex-wrap:wrap;margin:24px 0 12px}
- .legend-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-2);
- font-family:"IBM Plex Mono",monospace}
- .lg-col{width:13px;height:13px;background:var(--bar);border:1px solid var(--bar)}
- .lg-dot{width:11px;height:11px;border-radius:50%;background:var(--petrol);
- box-shadow:0 0 0 1.5px var(--card)}
- .lg-hollow{width:10px;height:10px;border-radius:50%;border:1.6px solid var(--petrol);opacity:.75}
- .lg-line{width:26px;border-top:2px dashed var(--seal)}
-
- .fig{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);
- padding:16px 14px 8px;overflow-x:auto}
- #chart{display:block;width:100%;min-width:760px}
- text.ax{font-family:"IBM Plex Mono",monospace;font-size:10.5px;fill:var(--ink-3)}
- text.axttl{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-2);letter-spacing:.04em}
- text.thr{font-family:"IBM Plex Mono",monospace;font-size:10px;fill:var(--seal);font-weight:600}
- text.name{font-family:"Noto Sans SC",sans-serif;font-size:11px;font-weight:700;fill:var(--petrol)}
- text.sub{font-family:"IBM Plex Mono",monospace;font-size:9.5px;fill:var(--ink-3)}
- text.you{font-family:"Noto Sans SC",sans-serif;font-size:11px;font-weight:700;fill:var(--seal)}
- line.hair{stroke:var(--hair);stroke-width:1}
- rect.col{fill:var(--bar);opacity:.62}
- rect.col:hover{opacity:.92}
-
- .figcap{font-size:12px;color:var(--ink-3);max-width:84ch;margin:12px 4px 0;line-height:1.72}
- .figcap b{color:var(--petrol)}
-
- .subhead{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:18px;line-height:1.3;
- margin:38px 0 4px;color:var(--ink)}
- .subhead:first-of-type{margin-top:8px}
- .subhead .n{font-family:"IBM Plex Mono",monospace;color:var(--seal);margin-right:9px;font-size:15px}
-
- .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;background:var(--rule);
- border:1px solid var(--rule);margin:24px 0 0}
- .sc{background:var(--card);padding:14px 15px 13px}
- .sc b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:22px;line-height:1.18;
- font-variant-numeric:tabular-nums}
- .sc span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:5px;letter-spacing:.01em}
- .sc.pet b{color:var(--petrol)}
- .sc.seal b{color:var(--seal)}
-
- .notes{background:var(--sunk);border:1px solid var(--rule);padding:18px 22px;margin:24px 0 0;
- font-size:12.5px;line-height:1.78;color:var(--ink-2);max-width:84ch}
- .notes .hd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
- color:var(--ink-3);display:block;margin-bottom:10px}
- .notes p{margin:0 0 10px}
- .notes p:last-child{margin-bottom:0}
- .notes b{color:var(--ink)}
-
- .tooltip{position:fixed;background:var(--card);border:1px solid var(--rule);border-radius:8px;
- padding:11px 14px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .14s ease;z-index:9999;
- min-width:210px;box-shadow:var(--shadow)}
- .tooltip.visible{opacity:1}
- .tooltip .t-name{font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink)}
- .tooltip .t-row{display:flex;justify-content:space-between;gap:16px;margin-top:3px;color:var(--ink-3);
- font-family:"IBM Plex Mono",monospace}
- .tooltip .t-val{color:var(--ink-2);font-weight:500}
- @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
- &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class="wrap"&gt;
-
-&lt;header&gt;
- &lt;p class="kicker"&gt;2004 中考 · 大庆实验中学 ↔ 绥化一中高三三班&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/hit-2007/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/hit-2007/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;p&gt;2、本科二批次：全校文理二批次上线总人数1131人，首次突破1100人，其中理科891人，文科240人，应届理科:理科二批次上线人数为849人，升学率为95%。应届文科:文科二批次上线人数为216人，升学率为90%。应届文、理:二批次文理总共上线1065人（不含特长），二批次文理科升学率为94%。升学率及学科平均分在全市位次还在统计计算中。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/2020%E5%B9%B4-2026%E5%B9%B4%E7%BB%A5%E5%8C%96%E5%B8%82%E5%8C%BA%E4%B8%AD%E8%80%83%E4%BF%A1%E6%81%AF/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/2020%E5%B9%B4-2026%E5%B9%B4%E7%BB%A5%E5%8C%96%E5%B8%82%E5%8C%BA%E4%B8%AD%E8%80%83%E4%BF%A1%E6%81%AF/</guid><description>&lt;h1 id="没有体育的情况下满分-670"&gt;没有体育的情况下，满分 670&lt;/h1&gt;
+&lt;h1 id="2026年中考绥化一中满分700"&gt;2026年中考，绥化一中，满分700&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;1班、2班：617分，第一名到第110名&lt;/li&gt;
+&lt;li&gt;3班、4班，603.2分，第111-220名&lt;/li&gt;
+&lt;li&gt;录取分数线，547.8分&lt;/li&gt;
+&lt;li&gt;​​绥化一中​​：547.8分
+​​1. 绥化九中​​：501.4分
+​1. ​绥化七中​​：448.9分
+​​1. 绥化二中​​：364.9分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在绥化市区，共有考生 ​​14153人​​，其中初四4749人、初三4856人、初二4548人。市区共设一中、二中、七中、九中4个考点、159个考场，并抽调了500余名考务人员负责组考工作。&lt;/p&gt;
+&lt;p&gt;而全绥化市：今年中考继续实行多学段同步考试模式，覆盖初二、初三、初四三个年级，具体人数如下：&lt;/p&gt;
+&lt;p&gt;​​初四年级​​：26212人（主要为毕业升学考试）。
+​​初三年级​​：25795人。
+​​初二年级​​：24910人。&lt;/p&gt;
+&lt;h1 id="2025年绥化中考"&gt;2025年绥化中考&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;绥化一中，2025，559.5分，满分700&lt;/li&gt;
+&lt;li&gt;​​绥化一中​​：559.5分&lt;/li&gt;
+&lt;li&gt;​​绥化九中​​：510.9分&lt;/li&gt;
+&lt;li&gt;​​绥化七中​​：462.3分
+​​1. 绥化二中​​：386.1分&lt;/li&gt;
+&lt;li&gt;​​民办普通高中​​：统一录取分数线为231.7分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2025年绥化市共有 ​​84162名​​ 考生参加初中学业水平考试（中考）。&lt;/p&gt;
+&lt;p&gt;考生年级分布
+​​初四年级​​：31081人（主要参加毕业与升学考试）。
+​​初三年级​​：26757人。
+​​初二年级​​：26324人。&lt;/p&gt;
+&lt;p&gt;考试组织规模
+​​考区与考点​​：全市共设有10个考区、25个考点。
+​​考场设置​​：共安排2899个考场。
+​​市区分布​​：仅绥化市区就设有一中、二中、七中、九中四个考点，考生共15351人。&lt;/p&gt;
+&lt;h1 id="2024年"&gt;2024年&lt;/h1&gt;
+&lt;p&gt;7月18日，经绥化市中考工作领导小组研究确定，2024年市直属普通高中录取分数线划定。公办普通高中录取分数线&lt;/p&gt;
+&lt;p&gt;绥化一中568分
+绥化九中530.4分
+绥化七中479.6分
+绥化二中415.1分&lt;/p&gt;
+&lt;h1 id="2023年"&gt;2023年&lt;/h1&gt;
+&lt;p&gt;经绥化市中考工作领导小组确定，2023年市区公办普通高中录取分数线今天划定。&lt;/p&gt;
+&lt;p&gt;绥化一中	479.7分
+绥化九中	435.2分
+绥化七中	361.4分
+绥化二中	262.5分&lt;/p&gt;
+&lt;h1 id="2022年"&gt;2022年&lt;/h1&gt;
+&lt;p&gt;　2022年绥化市市区普通高中招生预录取方案，市区四所普通高中学校录取分数段，即：一中517.6分、二中357.7分、七中426分、九中481.6分。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;今年市区考生人数6289人，计划招收3451人，其中农村定额100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;人，相比去年考生人数增了517人，民办高中计划招生800人，3所职业高中计划招生2060人，没有报考的学生可以自行登录招生信息港网站填报志愿。&lt;/p&gt;
+&lt;h1 id="2021年"&gt;2021年&lt;/h1&gt;
+&lt;p&gt;我市一年一度的中考，于6月25拉开序幕，考试至27日结束，共3天时间。全市报名考生共102555人，其中，初四37536人，初三36191人，初二28828人。全市共设10个考区，52个考点，1333个考场。其中望奎县由于疫情原因，在城乡设21个考点分散考试。&lt;/p&gt;
+&lt;p&gt;记者在绥化市教育局获悉，绥化市直高中学校2021年中考分数线今天划定，分别为：绥化一中502分，绥化九中472分，绥化七中414分，绥化二中358分。&lt;/p&gt;
+&lt;p&gt;　　据介绍，今年绥化市直7所普通高中共计划招收78个班4210人，其中普通生4080人，定村配额生80人，艺体特长生50人（音乐19人，美术18人，体育13人）。
+　　绥化一中计划招收20个班1100人，其中普通生1090人，艺体特长生10人（音乐5人，美术5人）。
+　　绥化二中计划招收17个班935人，其中普通生888人，定村配额生32人，艺体特长生15人（音乐5人，美术5人，体育5人）。
+　　绥化七中计划招收17个班935人，其中普通生888人，定村配额生32人，艺体特长生15人（音乐5人，美术5人，体育5人）。
+　　绥化九中计划招收8个班440人，其中普通生414人，定村配额生16人，艺体特长生10人（音乐4人，美术3人，体育3人）。&lt;/p&gt;
+&lt;h1 id="2020年满分700分"&gt;2020年，满分700分&lt;/h1&gt;
+&lt;p&gt;.今年市区初中毕业年级在籍人数比2019年少417人，普通高中报考人数5324人，比2019年少102人，报考中高职人数458人（这部分往年在招生办报考，单设考场），参加考试仅为得毕业证学生约为380人（实际人数更多，仅缺考就达239人）。
+5.今年市区招生人数3750人，比2019年增加290人（市第七中学、第九中学各增两个班），为历年来招生人数最多的一年。&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/hit-2007/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/hit-2007/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html lang="zh-CN"&gt;
 &lt;head&gt;
  &lt;meta charset="UTF-8" /&gt;
@@ -22324,146 +23604,176 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
  &lt;div class="hero"&gt;
  &lt;div class="hero-tag"&gt;2007 · 鹤岗市高考 · 理科&lt;/div&gt;
  &lt;h1&gt;我的成绩 vs 理科前十&lt;/h1&gt;
- &lt;p class="hero-sub"&gt;总分 · 语文 · 数学 · 英语 · 理综 — 五维对比可视化&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/suihua-class3-2007/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/suihua-class3-2007/</guid><description>&lt;!DOCTYPE html&gt;
-&lt;html lang="zh-CN"&gt;
-&lt;head&gt;
- &lt;meta charset="UTF-8" /&gt;
- &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
- &lt;title&gt;2007年绥化一中高三三班 · 中考与高考预测三曲线&lt;/title&gt;
- &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap"&gt;
- &lt;style&gt;
- :root{
- color-scheme: light;
- --paper:#e8ecec; --card:#f7f9f9; --sunk:#dfe4e4; --band:#eef2f2;
- --ink:#0e1416; --ink-2:#48565a; --ink-3:#7c8a8e;
- --rule:#c8d0d0; --hair:#dbe1e1;
- --petrol:#0e5b68; --petrol-w:rgba(14,91,104,.10);
- --seal:#a5342a; --seal-w:rgba(165,52,42,.09);
- --amber:#8f5d09; --amber-w:rgba(143,93,9,.11);
- --bar:#9aa8ab;
- --shadow:0 1px 2px rgba(14,20,22,.05),0 12px 30px -20px rgba(14,20,22,.35);
- }
- @media (prefers-color-scheme: dark){
+ &lt;p class="hero-sub"&gt;总分 · 语文 · 数学 · 英语 · 理综 — 五维对比可视化&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/suihua-class3-zhongkao-gailv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/suihua-class3-zhongkao-gailv/</guid><description>&lt;title&gt;三班中考分数段的概率校准&lt;/title&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap"&gt;
+&lt;style&gt;
+:root{
+ color-scheme:light;
+ --page:#e6eaeb; --card:#f7f9f9; --sunk:#dde3e4; --band:#eef2f2;
+ --ink:#10171a; --ink-2:#48555a; --ink-3:#6c797f;
+ --rule:#c9d1d3; --hair:#dbe1e2; --grid:#e1e6e7;
+ --c04:#a5342a; --c04-w:rgba(165,52,42,.13);
+ --c20:#6b3fa0; --c20-w:rgba(107,63,160,.10);
+ --c26:#0081a0; --c26-w:rgba(0,129,160,.12);
+ --shadow:0 1px 2px rgba(16,23,26,.05),0 14px 34px -22px rgba(16,23,26,.38);
+ --focus:#0081a0;
+ --serif:"Noto Serif SC","Songti SC","STSong",Georgia,serif;
+ --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+ --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
  :root:not([data-theme="light"]){
- color-scheme: dark;
- --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
- --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
- --rule:#28302f; --hair:#202727;
- --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
- --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
- --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
- --bar:#4a5658;
- --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+ color-scheme:dark;
+ --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+ --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+ --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+ --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+ --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+ --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+ --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+ --focus:#00a0a8;
  }
- }
- :root[data-theme="dark"]{
- color-scheme: dark;
- --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
- --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
- --rule:#28302f; --hair:#202727;
- --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
- --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
- --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
- --bar:#4a5658;
- --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
- }
- *{box-sizing:border-box;margin:0;padding:0}
- body{background:var(--paper);color:var(--ink);
- font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
- font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased;
- padding:44px 22px 88px}
- .wrap{max-width:1180px;margin:0 auto}
- .m{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+}
+:root[data-theme="dark"]{
+ color-scheme:dark;
+ --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+ --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+ --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+ --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+ --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+ --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+ --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+ --focus:#00a0a8;
+}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:52px 88px}
+p{margin:0}
+.kicker{font:500 11.5px/1.4 var(--mono);letter-spacing:.2em;color:var(--ink-3);margin:0 0 20px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(28px,5vw,44px);line-height:1.22;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1 em{font-style:normal;font-family:var(--mono);font-weight:600;color:var(--c04);letter-spacing:-.03em}
+.lede{max-width:40em;font-size:16.5px;color:var(--ink-2);margin-top:20px}
+.lede b{color:var(--ink);font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin-top:28px}
+.stat{background:var(--page);padding:14px 16px 14px 0}
+.stat+.stat{padding-left:16px}
+.stat b{display:block;font:600 25px/1.15 var(--mono);color:var(--ink);letter-spacing:-.01em}
+.stat b.hot{color:var(--c04)}
+.stat span{display:block;margin-top:6px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat,.stat+.stat{padding:14px 12px}}
+section{margin-top:64px}
+.sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;border-top:2px solid var(--ink);padding-top:12px}
+.sh h2{font-family:var(--serif);font-weight:700;font-size:clamp(20px,3vw,24px);line-height:1.35;margin:0;text-wrap:balance}
+.sh .src{font:500 11px/1.4 var(--mono);letter-spacing:.1em;color:var(--ink-3)}
+.prose{max-width:40em;color:var(--ink-2);margin-top:14px;display:grid;gap:10px}
+.prose b{color:var(--ink);font-weight:700}
+.fig{background:var(--card);border-radius:6px;box-shadow:var(--shadow);padding:18px 20px 14px;margin:22px 0 0}
+.fig-h{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.fig-h h3{font-family:var(--serif);font-weight:600;font-size:16px;margin:0;text-wrap:balance}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.legend span{white-space:nowrap}
+.dt{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle;margin-right:6px}
+.ring{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.6px solid;vertical-align:middle;margin-right:6px;background:var(--card)}
+.dm{display:inline-block;width:8px;height:8px;transform:rotate(45deg);vertical-align:middle;margin:0 8px 0 2px}
+.bar{display:inline-block;width:16px;height:3px;border-radius:2px;vertical-align:middle;margin-right:6px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+svg.chart{display:block;width:100%;height:auto;min-width:600px}
+.cap{font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.65}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+svg .lab{font-family:var(--sans);font-size:12.5px;fill:var(--ink)}
+svg .lab2{font-family:var(--sans);font-size:12px;fill:var(--ink-2)}
+.gr{stroke:var(--grid);stroke-width:1}
+.ax{stroke:var(--rule);stroke-width:1}
+.guide{stroke:var(--rule);stroke-width:1;stroke-dasharray:4 4}
+.hit{fill:transparent;cursor:pointer}
+svg :focus{outline:none}
+svg :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.tbl-wrap{margin-top:14px;background:var(--card);border-radius:6px;box-shadow:var(--shadow)}
+.ctbl{width:100%;border-collapse:collapse;font-size:13.5px;min-width:420px}
+.ctbl th,.ctbl td{padding:8px 14px;text-align:right;border-bottom:1px solid var(--hair);white-space:nowrap;font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink)}
+.ctbl th{font:500 11px/1.4 var(--mono);letter-spacing:.04em;color:var(--ink-3);background:var(--band);vertical-align:bottom}
+.ctbl th:first-child,.ctbl td:first-child,.ctbl th:nth-child(2),.ctbl td:nth-child(2){text-align:left;font-family:var(--sans)}
+.ctbl tbody tr:last-child td{border-bottom:0}
+.mm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:8px}
+.mm{background:var(--sunk);border-radius:5px;padding:12px 14px 10px}
+.mm h4{font:600 13px/1.4 var(--sans);margin:0 0 2px;color:var(--ink)}
+.mm .sub{font:11px/1.4 var(--mono);color:var(--ink-3);margin-bottom:8px}
+.verdict{margin-top:20px;padding:14px 18px;border-left:3px solid var(--c04);background:var(--c04-w);border-radius:0 4px 4px 0;max-width:46em;font-size:15px;color:var(--ink)}
+.notes{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px;max-width:48em}
+.notes li{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:12px;color:var(--ink-2);font-size:13.5px;line-height:1.7}
+.tag{font:500 10.5px/1.3 var(--mono);letter-spacing:.06em;padding:3px 0;border-top:1.5px solid currentColor;align-self:start;margin-top:4px}
+.tag.real{color:var(--c26)} .tag.model{color:var(--c04)} .tag.open{color:var(--ink-3)}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);font:12px/1.6 var(--mono);color:var(--ink-3)}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--card);font:12px/1.6 var(--mono);padding:8px 11px;border-radius:4px;max-width:280px;box-shadow:0 10px 26px -10px rgba(0,0,0,.5)}
+#tip b{font-weight:600}
+#tip .h{font-family:var(--sans);font-weight:700;margin-bottom:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+&lt;/style&gt;
 
- header{margin-bottom:26px}
- .kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;
- color:var(--ink-3);margin:0 0 14px}
- h1{font-family:"Noto Serif SC",Songti SC,serif;font-weight:700;font-size:clamp(24px,4.2vw,36px);line-height:1.15;
- letter-spacing:.01em;text-wrap:balance}
- .dek{margin:16px 0 0;max-width:66ch;color:var(--ink-2);font-size:15px}
- .byline{margin:20px 0 0;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;
- color:var(--ink-3);border-top:2px solid var(--ink);padding-top:11px}
-
- .controls{display:flex;gap:10px;align-items:center;margin:22px 0 12px;flex-wrap:wrap}
- .controls .lab{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
- color:var(--ink-3)}
- .seg{display:inline-flex;border:1px solid var(--rule);background:var(--card);overflow:hidden}
- .seg button{appearance:none;border:0;background:transparent;color:var(--ink-2);cursor:pointer;
- font-family:"Noto Sans SC",sans-serif;font-size:13px;padding:6px 14px;line-height:1.4}
- .seg button+button{border-left:1px solid var(--rule)}
- .seg button[aria-pressed="true"]{background:var(--seal);color:#fff}
-
- .legend{display:flex;gap:20px;justify-content:flex-start;flex-wrap:wrap;margin:12px 0 14px}
- .legend-item{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink-2);
- font-family:"IBM Plex Mono",monospace}
- .legend-dot{width:9px;height:9px;border-radius:50%}
- .legend-ring{width:10px;height:10px;border-radius:50%;border:1.6px solid var(--bar)}
- .legend-line{width:24px;border-top:2px dashed}
- .legend-band{width:22px;height:11px;background:var(--petrol-w);border:1px solid var(--petrol-w)}
-
- .fig{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);
- padding:16px 14px 10px;overflow-x:auto}
- #chart-svg{display:block;width:100%;min-width:860px}
- text.ax{font-family:"IBM Plex Mono",monospace;font-size:10.5px;fill:var(--ink-3)}
- text.axttl{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-2);letter-spacing:.04em}
- text.anno{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600}
- text.anno.pet{fill:var(--petrol)}
- text.anno.amb{fill:var(--amber)}
- text.name1{font-family:"Noto Sans SC",sans-serif;font-size:11px;font-weight:600;fill:var(--seal)}
- text.name2{font-family:"IBM Plex Mono",monospace;font-size:8.5px;fill:var(--ink-3)}
- line.hair{stroke:var(--hair);stroke-width:1}
- circle.d-actual{fill:var(--seal);cursor:pointer}
- circle.d-daqing{cursor:pointer}
-
- .figcap{font-size:12px;color:var(--ink-3);max-width:92ch;margin:12px 2px 0;line-height:1.7}
- .figcap b{color:var(--seal)}
-
- .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);
- border:1px solid var(--rule);margin:24px 0 0}
- .sc{background:var(--card);padding:14px 15px 13px}
- .sc b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:24px;line-height:1.15;
- font-variant-numeric:tabular-nums}
- .sc span{display:block;font-size:11.5px;color:var(--ink-3);margin-top:4px;letter-spacing:.02em}
- .sc.hi b{color:var(--seal)}
- .sc.ok b{color:var(--petrol)}
-
- .notes{background:var(--sunk);border:1px solid var(--rule);padding:18px 22px;margin:24px 0 0;
- font-size:12.5px;line-height:1.75;color:var(--ink-2);max-width:92ch}
- .notes .hd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
- color:var(--ink-3);display:block;margin-bottom:9px}
- .notes b{color:var(--ink)}
-
- .tooltip{position:fixed;background:var(--card);border:1px solid var(--rule);border-radius:8px;
- padding:11px 14px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .14s ease;z-index:9999;
- min-width:220px;box-shadow:var(--shadow)}
- .tooltip.visible{opacity:1}
- .tooltip .t-name{font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink)}
- .tooltip .t-row{display:flex;justify-content:space-between;gap:16px;margin-top:3px;color:var(--ink-3);
- font-family:"IBM Plex Mono",monospace}
- .tooltip .t-val{color:var(--ink-2);font-weight:500}
- .tooltip .t-diff{margin-top:7px;padding-top:7px;border-top:1px solid var(--rule);font-size:11.5px;
- font-family:"IBM Plex Mono",monospace}
- @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
- &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class="wrap"&gt;
-
-&lt;header&gt;
- &lt;p class="kicker"&gt;绥化一中 三班 · 2004 中考 → 2007 高考&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/%E5%AE%9E%E9%AA%8C%E7%8F%AD%E4%B8%AD%E8%80%83%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/%E5%AE%9E%E9%AA%8C%E7%8F%AD%E4%B8%AD%E8%80%83%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83/</guid><description>&lt;title&gt;实验班中考成绩分布&lt;/title&gt;
+&lt;main class="wrap"&gt;
+ &lt;header&gt;
+ &lt;p class="kicker"&gt;高三三班 · 中考分数分布的概率校准&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/suihua-zhongkao-2004-scale/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/suihua-zhongkao-2004-scale/</guid><description>&lt;h1 id="绥化中考-2004-口径与推断笔记"&gt;绥化中考 2004 口径与推断笔记&lt;/h1&gt;
+&lt;p&gt;页面《2004年至2026年间的绥化中考成绩分析》，源文件 &lt;code&gt;content/kao/suihua-zhongkao-648.html&lt;/code&gt;（数据已内联，改页面直接改这个文件）。&lt;/p&gt;
+&lt;h2 id="口径"&gt;口径&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2004 年满分 690（含体育 30），用户已确认。&lt;/li&gt;
+&lt;li&gt;2020 年一分一段表不含体育，按用户设定一律加 30 分。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;不要用林英魁（648）、刘翔（630）的县内名次去推绥化市区排名。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么：&lt;/strong&gt; 两人是绥棱考生，不在市区排名里。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;怎么用：&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;648、630 只能当&amp;quot;若在市区&amp;quot;的假想位置，或者当高三三班成员的真实分数用。&lt;/li&gt;
+&lt;li&gt;旁证：绥棱这两对（分数，县名次）恰好与正态模型吻合。只提及，不入算。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="600-分以上人数订正2026-09-13"&gt;600 分以上人数订正（2026-09-13）&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;准确值是 165 人，不是此前一直用的 174 人。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;为什么：&lt;/strong&gt; 174 来自原始表格在装订缝处模糊不清时的估读，记在 &lt;code&gt;重要统计数据.md&lt;/code&gt;；165 是后来拿到的准确数。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;怎么用：&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;174 和 742（571 分一中线）是两个模型（正态、借形状）&lt;strong&gt;唯一的两个真实校准锚点&lt;/strong&gt;，换掉一个就要重新两点对齐，不能只改文字不改参数。&lt;/li&gt;
+&lt;li&gt;正态模型：N(532,37.5²) → &lt;strong&gt;N(533.5,36.3²)&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;借形状模型系数（&lt;code&gt;suihua-zhongkao-648.html&lt;/code&gt; 里的 &lt;code&gt;BA,BB&lt;/code&gt;）：239.4721,0.59761 → &lt;strong&gt;245.7105,0.58636&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;连带变化：610 分以上正态估计 92→86 人（借形状 53 人不变，因为 610 分以上借的是大庆衰减曲线，且 (610-BA)/BB 两版本都落在表的 620 分封顶区，数值碰巧没变）；648 若在市区，正态排名第 5→第 4（4.9→4.0 人），借形状第 1 不变（0.7 人不变）；2026/2020 年等位分、&lt;code&gt;rows&lt;/code&gt; 对照表里所有基于 &lt;code&gt;inv(A,r)&lt;/code&gt;/&lt;code&gt;inv(D,r)&lt;/code&gt; 的行都要求值重新算一遍（不是手改数字，是改 BA/BB/mu/sigma 后让公式自己重新出数）。&lt;/li&gt;
+&lt;li&gt;已同步：&lt;code&gt;content/kao/suihua-zhongkao-648.html&lt;/code&gt;（模型常量 + 至少 8 处文字里的具体数字）、&lt;code&gt;content/posts/kao.md&lt;/code&gt;（N(532,37²) 那段）、&lt;code&gt;content/kao/重要统计数据.md&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;大庆一侧的数据（856/479/1607、N(551,34²)）完全不受影响。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="648-的位置"&gt;648 的位置&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;大庆（实测）&lt;/strong&gt;：&lt;code&gt;2004年大庆中考录取总表.csv&lt;/code&gt; 中高于 648 分 10 人，648 分 2 人，所以 648 排第 11。
+&lt;ul&gt;
+&lt;li&gt;分校名次：大庆一中第 4、铁人第 5、实验第 4，其余学校第 1。&lt;/li&gt;
+&lt;li&gt;大庆 648 分以上折合每 4923 人约 2.7 人。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;绥化市区（模型）&lt;/strong&gt;：正态约第 4（648 以上 4.0 人，比大庆人均还多），借形状约第 1（0.7 人）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一中 2004 级新生&lt;/strong&gt;：模拟中位数第 6（正态）或第 1（借形状）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;绥化全市&lt;/strong&gt;：无分布数据，不估。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="市区实物证据"&gt;市区实物证据&lt;/h2&gt;
+&lt;p&gt;九中苗丽萍校长访录（《绥化日报》2005 年 6 月 16 日，&lt;code&gt;references/2005年绥化九中校长采访.jpg&lt;/code&gt; 全景 + &lt;code&gt;references/2005年绥化九中-1.jpg&lt;/code&gt;、&lt;code&gt;-2.jpg&lt;/code&gt; 分页；2026-09-14 据报纸版面确认准确日期，此前误记&amp;quot;约 2005 年&amp;quot;、文件名误记 2004 年。完整复刻页：&lt;code&gt;2005年绥化九中苗丽萍校长访录.html&lt;/code&gt;）：&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/kao/%E5%AE%9E%E9%AA%8C%E7%8F%AD%E4%B8%AD%E8%80%83%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/kao/%E5%AE%9E%E9%AA%8C%E7%8F%AD%E4%B8%AD%E8%80%83%E6%88%90%E7%BB%A9%E5%88%86%E5%B8%83/</guid><description>&lt;title&gt;实验班中考成绩分布&lt;/title&gt;
 &lt;style&gt;
  @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap');
 
  :root {
- --plane: #f5f5f0;
- --surface: #fdfdfc;
+ color-scheme: light;
+ --plane: #F7F9F9;
+ --surface: #F7F9F9;
  --ink: #17170f;
  --ink-2: #56554d;
  --muted: #8b897f;
- --grid: #e6e4db;
- --axis: #cbc9bd;
- --bar: #2a78d6;
- --bar-top: #1f5fac;
+ --grid: #e1e6e7;
+ --axis: #c8d0d2;
+ --bar: #9AA8AB;
+ --bar-top: #9AA8AB;
  --rule: rgba(23,23,15,0.10);
  --ring: rgba(23,23,15,0.09);
  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.05);
@@ -22472,6 +23782,7 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
  }
  @media (prefers-color-scheme: dark) {
  :root:not([data-theme="light"]) {
+ color-scheme: dark;
  --plane: #0d0d0b;
  --surface: #1a1a18;
  --ink: #f3f3ec;
@@ -22479,14 +23790,15 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
  --muted: #928f84;
  --grid: #2c2c29;
  --axis: #3b3a36;
- --bar: #3987e5;
- --bar-top: #6da7ec;
+ --bar: #5a686b;
+ --bar-top: #6a797c;
  --rule: rgba(255,255,255,0.12);
  --ring: rgba(255,255,255,0.10);
  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.4);
  }
  }
  :root[data-theme="dark"] {
+ color-scheme: dark;
  --plane: #0d0d0b;
  --surface: #1a1a18;
  --ink: #f3f3ec;
@@ -22494,8 +23806,8 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
  --muted: #928f84;
  --grid: #2c2c29;
  --axis: #3b3a36;
- --bar: #3987e5;
- --bar-top: #6da7ec;
+ --bar: #5a686b;
+ --bar-top: #6a797c;
  --rule: rgba(255,255,255,0.12);
  --ring: rgba(255,255,255,0.10);
  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.4);
@@ -22608,7 +23920,8 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
  .seg button + button { border-left: 1px solid var(--ring); }
  .seg button[aria-pressed="true"] {
  background: var(--bar);
- color: #fff;
+ color: var(--ink);
+ font-weight: 600;
  }
  .seg button:focus-visible { outline: 2px solid var(--bar); outline-offset: -2px; }
 
@@ -22698,14 +24011,44 @@ $$\Sigma r_i - \Sigma a_i &gt; \delta$$&lt;p&gt;当用户潜意识预估（felt�
 &lt;li&gt;毕业生合计：549422人。按在校生比例，哈尔滨，128898人，绥化，99506人，齐齐哈尔，77005人，大庆，47754人，佳木斯，36046人，牡丹江，32131人，鸡西，31164人，黑河，23837人，双鸭山，21501人，伊春，16478人，鹤岗，15745人，七台河，13236人，大兴安岭，6121人&lt;/li&gt;
 &lt;li&gt;2004年哈市初中毕业生总人数为88633人，参加升学考试的准确报考人数是66537人。 据了解，在实际报考人数中，有哈市市区考生37811人，不参加此次初中升高中考试的22096人，有75%的人参加了中考&lt;/li&gt;
 &lt;li&gt;哈尔滨市考生66537人，大庆市考生21500人，绥化市区4923人&lt;/li&gt;
-&lt;li&gt;前15%的绥化市区考生去绥化一中，录取742人，600人以上174人&lt;/li&gt;
+&lt;li&gt;前15%的绥化市区考生去绥化一中，录取742人，600人以上165人（2026-09-13确认，此前误记174，见下方&amp;quot;600分以上人数订正&amp;quot;）&lt;/li&gt;
 &lt;li&gt;4%的大庆考生610分，去大庆实验前6%，铁人前4.5%&lt;/li&gt;
 &lt;li&gt;大庆大于等于610分的856人，大于等于620分的479人，大于等于600分约1607人&lt;/li&gt;
-&lt;li&gt;绥化市区大于等于610分的约856人，大于等于620的约43人，大约等于600分的约43人&lt;/li&gt;
-&lt;li&gt;总人数大庆比绥化市区多4.37倍，600人数多了9.24倍，610人数多了9.95倍，620人数多了11.14倍&lt;/li&gt;
+&lt;li&gt;绥化市区大于等于610分的约86人，大于等于620的约42人（原&amp;quot;856人&amp;quot;&amp;ldquo;43人&amp;quot;是与大庆行的复制粘贴错误，已修正；模型见下方N(533.5,36.3²)）&lt;/li&gt;
+&lt;li&gt;总人数大庆比绥化市区多4.37倍，600人数多了9.74倍，610人数多了9.92倍，620人数多了11.32倍&lt;/li&gt;
 &lt;li&gt;大庆市用 N(551, 34²) 总人数21500人来拟合，大约等于635分可以用 N(551, 19²) 来拟合&lt;/li&gt;
-&lt;li&gt;绥化市区用 N(532, 37²)，总人数4923人来拟合&lt;/li&gt;
+&lt;li&gt;绥化市区用 N(533.5, 36.3²)，总人数4923人来拟合（571→742、600→165 两点对齐得出，2026-09-13 由 N(532,37²) 重新校准）&lt;/li&gt;
 &lt;li&gt;绥棱县4100毕业生，约3100名考生，望奎约4600毕业生，约3300名考生&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="600分以上人数订正2026-09-13"&gt;600分以上人数订正（2026-09-13）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2004年绥化市区600分以上准确值为165人，此前记录的174人是误读（原始表格数据在装订缝处模糊不清导致的估读）&lt;/li&gt;
+&lt;li&gt;174和742（571分线）是此前两个模型（正态、借形状）唯一的两个真实校准锚点，165替换174后两个模型都需要重新校准&lt;/li&gt;
+&lt;li&gt;正态模型：N(532,37.5²) → N(533.5,36.3²)（用571→742、600→165两点对齐得出）&lt;/li&gt;
+&lt;li&gt;借形状模型（&lt;code&gt;suihua-zhongkao-648.html&lt;/code&gt;内）：系数 BA=239.4721,BB=0.59761 → BA=245.7105,BB=0.58636&lt;/li&gt;
+&lt;li&gt;下游连带更新的数字：610分以上正态估计92→86人（借形状53人不变）；648分若在市区正态排名第5→第4（借形状第1不变，4.9人→4.0人）；2026年前若干名折回2004年的分数区间随之微调（如第1名647–664→647–662）&lt;/li&gt;
+&lt;li&gt;已同步修改：&lt;code&gt;content/kao/suihua-zhongkao-648.html&lt;/code&gt;（正文多处 + 两个模型常量）、&lt;code&gt;content/posts/kao.md&lt;/code&gt;（N(532,37²)段落）、本文件上方三行&lt;/li&gt;
+&lt;li&gt;未变化：大庆自己的数据（N(551,34²)、856/479/1607等）完全不受影响，只有绥化市区一侧需要重算&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2020年与2026年互补关系借2026形状失败2026-09-14"&gt;2020年与2026年互补关系、借2026形状失败（2026-09-14）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;2020年一分一段表恰好在第57名（前1.05%）封顶，2026年前五十恰好止于第50名（前1.05%）——两者几乎无缝衔接：2020管前1.05%以下（620分以下逐分有人数），2026管前1.05%以内（前50名精确到人，50–220名线性插值）&lt;/li&gt;
+&lt;li&gt;在唯一重叠的窄带（前1.07%–4.63%）按同一2004百分位对比，2020年比2026年稳定高22–25分，且差距随百分位加深平滑扩大：第110名处22.4分、600分锚点（第159名附近）处23.4分、第220名处24.9分——说明两年赋分结构本身在漂移，折回2004年时应各自独立对齐锚点，不能互相借用&lt;/li&gt;
+&lt;li&gt;试过用2026年数据给610分以上重新拟合一条&amp;quot;借2026形状&amp;quot;曲线：用600分锚点（对应2026年第159名，610.8分）与610分衔接点（对应2026年第51名，629.3分）两点定线性系数（BA≈269.7，BB≈0.541），套到2026真实前15名，结果第1名只有约629分，比现有借形状模型的约647分低近18分，也不符大庆证据（648排大庆第11）&lt;/li&gt;
+&lt;li&gt;失败原因：两个定标点只相差约2个百分点，挤在曲线最陡处，斜率外推到15倍远的第一名很不稳定；更根本的是线性换算会把2026年真实数据里第1–3名相对第6–50名的断层式领先（高出10–25分，见前次分析）压平抹掉——这正是要保留的结构，不该用线性内插处理&lt;/li&gt;
+&lt;li&gt;结论：610分以上无法用这种方式收紧，未采用这条曲线；但断层若在2004年同样存在，只会让真实人数比正态、借形状两个模型都高，不会更低——这是对648位置估计方向性的补充判断，不是新的点估计&lt;/li&gt;
+&lt;li&gt;已同步：&lt;code&gt;content/kao/suihua-zhongkao-648.html&lt;/code&gt;（&amp;ldquo;各年的分数折回2004年&amp;quot;新增两段 + &amp;ldquo;口径与来源&amp;quot;新增一条&amp;quot;试过没用&amp;rdquo;）、&lt;code&gt;content/kao/suihua-zhongkao-2004-scale.md&lt;/code&gt;、memory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2005年肇东七中2005年肇东七中中考成绩榜csv--喜报验证高分段正态假设"&gt;2005年肇东七中（&lt;code&gt;2005年肇东七中中考成绩榜.csv&lt;/code&gt; + 喜报，验证高分段正态假设）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;肇东七中2005届全年级632人真实成绩（未截断）：均值513.5，标准差94.3，偏度-1.07（左偏，低分段拖长尾），中位数543.5，最高647分&lt;/li&gt;
+&lt;li&gt;分数段人数（CSV原始分）：≥600有101人，≥580有185人，≥560有273人；喜报公布600分以上105人、580分以上189人，比原始分各多约4人（估计是加分政策未反映在单科分数列里）&lt;/li&gt;
+&lt;li&gt;全市城乡前10名七中占7名，前20名占14名——七中一校近乎垄断肇东全市中考高分段&lt;/li&gt;
+&lt;li&gt;用全体632人的均值/标准差外推高分尾部严重失真：预测第10名716分、第1名792分，实际只有632.5、647，偏差80–145分；只用高分段子集（≥560或≥580）重新拟合正态再外推，第1–20名预测误差缩到3–10分——真实数据独立验证了&amp;quot;高分段正态优于全样本正态&amp;quot;的建模选择&lt;/li&gt;
+&lt;li&gt;肇东一中2005年录取线估计：喜报&amp;quot;历届情况对比&amp;quot;给出2005年七中&amp;quot;升入重点高中数&amp;quot;179人，对应七中校内第179名前后（578–582分一带有多人并列），估计&lt;strong&gt;肇东一中2005年线≈580–582分&lt;/strong&gt;（若有顶尖生外流，实际线可能更低一点）&lt;/li&gt;
+&lt;li&gt;对比绥化一中同期录取线（2004年571，2005年602，2006年610，2007年598，2008年590，2009年600）：肇东一中2005年线（≈581）比绥化一中同年（602）低约20分，说明绥化一中作为地区中心校，生源竞争强度明显高于县级市自己的一中&lt;/li&gt;
+&lt;li&gt;肇东2004年毕业生约12000人（绥棱约4100、望奎约4600的2.6–2.9倍），当年最高分651分——人口基数大，极值天然更高，不能直接当作&amp;quot;整体水平更高&amp;quot;的证据（顺序统计量 ≠ 条件均值）&lt;/li&gt;
+&lt;li&gt;历届七中&amp;quot;升入重点高中&amp;quot;人数/录取率：2001年73/230(31.7%)、2002年78/230(33.9%)、2003年120/304(39.5%)、2004年133/377(35.3%)、2005年179/632(28.3%，分母口径可能与前四年不同——前四年&amp;quot;考生人数&amp;quot;或许只是尖子班/实验班，2005年是全年级)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="2004年高等教育"&gt;2004年高等教育&lt;/h2&gt;
 &lt;ol&gt;
