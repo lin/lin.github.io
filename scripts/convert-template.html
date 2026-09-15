@@ -25,12 +25,10 @@
   --up-wash:rgba(194,83,33,.16); --down-wash:rgba(42,120,214,.16);
   /* 录取线分档：紫=清华，红=上海交大。已过 validate_palette（light, #fafbf8） */
   --qh:#6b3fa0; --jd:#b23a2b;
-  /* 位次图里按中学分色：橙=肇东一中，蓝=庆安一中，绿=绥棱一中，近黑=其他，白=绥化一中。
-     五色两两在 normal / protan / deutan / tritan 下 ΔE 均达标（最差 13.6）。
-     绿色偏亮，配深色字才够 4.5:1；其余配白字。两个主题共用一套。 */
-  --sch-zd:#b0591a; --sch-qa:#2166ad; --sch-sl:#57ad6b;
-  --sch-ot:#1e211e; --sch-hm:#ffffff; --sch-ink:#101210;
-  --you:#e11d48;                       /* 「你在这里」的星标 */
+  /* 位次图里按中学分色：橙=绥化一中，深绿=肇东一中，浅绿=绥棱一中，白=其他学校。
+     前三校均配白字，其余归入白底黑字。两个主题共用一套。 */
+  --sch-sh:#b0591a; --sch-zd:#1a5829; --sch-sl:#2ea043;
+  --sch-ot:#ffffff; --sch-hm:#ffffff; --sch-ink:#101210;
   --qh-wash:rgba(107,63,160,.13); --jd-wash:rgba(178,58,43,.13);
   --shadow:0 1px 2px rgba(16,18,16,.05), 0 8px 24px -12px rgba(16,18,16,.18);
   --focus:#2a78d6;
@@ -208,7 +206,6 @@ td.num,th.num{font-variant-numeric:tabular-nums}
 .sg-dot-y{fill:var(--sch-hm)}
 .sg-lab-o{fill:#fff;font-size:9.5px;font-weight:700;font-variant-numeric:tabular-nums}
 .sg-lab-y{fill:var(--sch-ink);font-size:9.5px;font-weight:700;font-variant-numeric:tabular-nums}
-.sg-you{fill:var(--you);stroke:var(--card);stroke-width:1.25;stroke-linejoin:round}
 .sg-none{fill:var(--ink-3);font-size:11px}
 .sgkey{display:flex;flex-wrap:wrap;gap:9px 22px;margin:0 0 16px;padding:0;list-style:none;
   font-size:12.5px;color:var(--ink-2);align-items:center}
@@ -495,14 +492,12 @@ footer strong{color:var(--ink-2);font-weight:500}
       越靠左越靠前；一个圆点就是一位考生，圈内数字是他当年的全市名次。具体分数见下方两张表。</p>
     <div class="card">
       <ul class="sgkey">
-        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot sg-dot-y"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-y">3</text></svg>绥化一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-sh)" stroke="var(--sch-sh)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>绥化一中</li>
         <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-zd)" stroke="var(--sch-zd)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>肇东一中</li>
-        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-qa)" stroke="var(--sch-qa)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>庆安一中</li>
-        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-sl)" stroke="var(--sch-sl)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-y">3</text></svg>绥棱一中</li>
-        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot sg-dot-o"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>其他中学（圈内数字为全市名次）</li>
-        <li><svg width="19" height="19" aria-hidden="true"><path class="sg-you" d="M9.5 1.5L11.4 6.6L16.6 6.6L12.6 9.9L14.1 15.1L9.5 12.1L4.9 15.1L6.4 9.9L2.4 6.6L7.6 6.6Z"/></svg>你输入的分数在该年的位次</li>
-        <li><span class="bar qh"></span>紫线＝清华线，左侧为已达清华</li>
-        <li><span class="bar jd"></span>红线＝<span id="sgSecond">交大／浙大</span>线，其间为达二档未达清华</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot" fill="var(--sch-sl)" stroke="var(--sch-sl)"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-o">3</text></svg>绥棱一中</li>
+        <li><svg width="17" height="17" aria-hidden="true"><circle cx="8.5" cy="8.5" r="7" class="sg-dot sg-dot-y"/><text x="8.5" y="12" text-anchor="middle" class="sg-lab-y">3</text></svg>其他学校（圈内数字为全市名次）</li>
+        <li><span class="bar qh"></span>紫线＝清华线</li>
+        <li><span class="bar jd"></span>红线＝<span id="sgSecond">交大／浙大</span>线</li>
       </ul>
       <div class="tblwrap"><table class="sg" id="shTable"></table></div>
       <p class="s-note" id="shNote"></p>
@@ -1254,30 +1249,19 @@ function drawHist(){
 
 /* ---------------------------------------------------------------- 对照表 */
 /* ------------------------------------------------------------ 绥化对照 */
-const SH = DATA.suihua || [];          // 逐年的两条录取线与绥化最高分
+const SH = (DATA.suihua || []).filter(r => r.year !== 2010); // 逐年的两条录取线与绥化最高分
 const SG = { w:1160, r0:15, r1:1500, pad:10, lane:19, rad:8, top:6, bot:4 };
 const sgX = r => SG.pad + Math.log(Math.max(SG.r0, Math.min(SG.r1, r)) / SG.r0) /
                  Math.log(SG.r1 / SG.r0) * (SG.w - SG.pad * 2);
 const SG_TICKS = [20, 50, 100, 200, 500, 1000];
 
-/* 上榜最多的几所中学各给一色，其余归入「其他中学」 */
+/* 上榜最多的几所中学各给一色，其余归入「其他学校」 */
 const SCHOOL_STYLE = {
-  "绥化一中": { cls:"sg-dot-y", lab:"y" },
+  "绥化一中": { fill:"var(--sch-sh)", lab:"o", ring:true },
   "肇东一中": { fill:"var(--sch-zd)", lab:"o", ring:true },
-  "庆安一中": { fill:"var(--sch-qa)", lab:"o", ring:true },
-  "绥棱一中": { fill:"var(--sch-sl)", lab:"y", ring:true },
-  _:          { cls:"sg-dot-o", lab:"o" }
+  "绥棱一中": { fill:"var(--sch-sl)", lab:"o", ring:true },
+  _:          { cls:"sg-dot-y", lab:"y" }
 };
-
-/* 五角星，外径与圆点半径相同，视觉大小一致 */
-function starPath(cx, cy, R){
-  const r = R * 0.44, p = [];
-  for (let i = 0; i < 10; i++){
-    const rad = i % 2 ? r : R, a = -Math.PI / 2 + i * Math.PI / 5;
-    p.push((cx + rad * Math.cos(a)).toFixed(1) + " " + (cy + rad * Math.sin(a)).toFixed(1));
-  }
-  return "M" + p.join("L") + "Z";
-}
 
 /* 圆点会撞在一起（2008 年前三名同为 677 分，位次完全相同），
    按 x 排序后逐个找最低的空闲泳道，撞了就往下挪一行。 */
@@ -1329,10 +1313,6 @@ function drawSuihua(){
     const known = CT.filter(r => r.year === rec.year).length;
     if (pts.length && pts.length < known) partial.push(rec.year);
 
-    // 用户输入的分数按同一百分位落到该年的位次；超出坐标轴范围就不画
-    const youRank = Math.max(1, Math.round(state.pct * y.total));
-    const you = youRank <= SG.r1 ? { x:sgX(youRank), rank:youRank, you:true } : null;
-    if (you) pts.push(you);
     const laneCount = pts.length ? layout(pts) : 1;
     const H = SG.top + laneCount * SG.lane + SG.bot;
     const qh = rec.qinghua != null ? sgX(rankOf(y, rec.qinghua).rank) : null;
@@ -1356,12 +1336,6 @@ function drawSuihua(){
 
     pts.forEach(pt => {
       const cy = SG.top + pt.lane * SG.lane + SG.lane / 2;
-      if (pt.you){
-        g += "<g><title>你：按同一累计百分位，" + rec.year + " 年约在全省第 " + fmt(pt.rank) +
-             " 名</title>" + '<path class="sg-you" d="' + starPath(pt.x, cy, SG.rad + 1) +
-             '"/></g>';
-        return;
-      }
       const tier = pt.rank <= (rec.qinghua != null ? rankOf(y, rec.qinghua).rank : -1) ? "达清华线"
                  : pt.rank <= (rec.second != null ? rankOf(y, rec.second).rank : -1)
                    ? "达" + (rec.secondName || "二档") + "线" : "两条线均未达到";
@@ -1386,10 +1360,7 @@ function drawSuihua(){
 
   const bits = ["横轴是全省位次的对数刻度（" + SG.r0 + "–" + fmt(SG.r1) +
     " 名），越靠左越靠前。共标出 " + dots + " 位考生；" +
-    "同分的人位次相同，圆点会上下错开避免重叠。鼠标悬停可看姓名以外的全部信息。",
-    "<b style=\"color:var(--you)\">红色五角星</b>是你在页面顶部输入的分数按同一累计百分位落到各年的位次" +
-    "（当前 " + BY.get(state.src).year + " 年 " + state.score + " 分，前 " + pctText(state.pct) +
-    "）；位次超出 " + fmt(SG.r1) + " 名的年份不显示。"];
+    "同分的人位次相同，圆点会上下错开避免重叠。鼠标悬停可看姓名以外的全部信息。"];
   if (partial.length)
     bits.push("<strong>" + partial.join("、") + "</strong> 年只有部分名次留下了分数，未留分数的人无法定位，图上没有圆点。");
   if (noTable.length)

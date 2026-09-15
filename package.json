@@ -6,7 +6,8 @@
     "build:widgets": "node scripts/build-widgets.js",
     "watch:widgets": "node scripts/build-widgets.js --watch",
     "dev": "npm run watch:widgets & hugo server -D -F",
-    "build": "npm run build:widgets && hugo"
+    "build": "npm run build:widgets && hugo",
+    "mobile-pdf": "python3 scripts/mobile-pdf.py"
   },
   "devDependencies": {
     "esbuild": "^0.19.0"

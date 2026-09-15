@@ -107,6 +107,18 @@
     color:var(--ink-3);display:block;margin-bottom:9px}
   .notes b{color:var(--ink)}
 
+  body.is-embed{padding:20px 18px 26px}
+  body.is-embed header,
+  body.is-embed .figcap,
+  body.is-embed .strip,
+  body.is-embed .notes{display:none}
+  body.is-embed .controls{margin-top:0}
+
+  body.is-bare{padding:10px 10px 10px;background:var(--card)}
+  body.is-bare .legend,
+  body.is-bare .controls{display:none}
+  body.is-bare .fig{border:none;box-shadow:none}
+
   .tooltip{position:fixed;background:var(--card);border:1px solid var(--rule);border-radius:8px;
     padding:11px 14px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .14s ease;z-index:9999;
     min-width:220px;box-shadow:var(--shadow)}
@@ -121,6 +133,10 @@
   </style>
 </head>
 <body>
+<script>
+  if (/[?&]embed=1\b/.test(location.search)) document.body.classList.add('is-embed');
+  if (/[?&]bare=1\b/.test(location.search)) document.body.classList.add('is-embed', 'is-bare');
+</script>
 <div class="wrap">
 
 <header>
@@ -128,9 +144,9 @@
   <h1>把三班放回大庆的散点里</h1>
   <p class="dek">petrol 线是用大庆<strong>按中考入学筛选的无偏样本</strong>拟合的回归
   （高考 = 0.878×中考 + 114.7，r = 0.74，σ ≈ 16），淡色带是 ±1σ。
-  灰点是已知中考、高考的<strong>大庆考生（中考 ≥ 610）</strong>——他们均匀散布在回归线两侧。
-  <span class="m" style="color:var(--seal)">seal</span> 点是三班同学的实测高考分：<strong>整班沉在带子下面</strong>。</p>
-  <p class="byline">大庆 39 人来自「2007 高考大庆市中高考分数比对表」· 三班已确认高考分的前 30 名 · 三班横坐标为中考估计分（据全校前 108 名分数—名次拟合，与高考无关）</p>
+  灰点是大庆<strong>55 名逐人配对考生</strong>，<span class="m" style="color:var(--seal)">seal</span> 点是三班<strong>47 名同学</strong>的实测高考分：
+  <strong>整班沉在带子下面</strong>。图上用文字标出具体信息的只有四个人：中考同为 648 分的<strong>林英魁</strong>与<strong>李梦然</strong>，以及<strong>刘翔、刘欣</strong>。</p>
+  <p class="byline">大庆 55 人、三班 47 人均来自各自的逐人配对表 · 林英魁、刘翔、刘欣三人中考为实分，其余三班同学为逐人中考估计分</p>
 </header>
 
 <div class="controls">
@@ -154,41 +170,62 @@
 
 <script>
 // ===================== DATA =====================
-// 三班：横坐标 zhongkao 为中考估计分（据全校前 108 名的分数—名次拟合），predict = 0.878×中考 + 114.7
+// 三班：横坐标 zhongkao 为逐人中考估计分（据 content/kao/2007届绥化一中高三三班中考高考信息.csv「中考分数」列——
+// 按各自高考名次映射到班级模拟曲线，加初中生源地的组均值偏移，再叠加随机扰动，让中考、高考相关但不严格单调），
+// 只取高考 ≥ 600 分的 47 名 2007 届同学；predict = 0.878×中考 + 114.7
+// 林英魁、刘翔、刘欣三人中考是实分，未经模型调整——全图只标注这三人和大庆的李梦然
 const RAW = [
   {rank:1,zhongkao:648,predict:683.6,lo:666,hi:666,name:'林英魁',uni:'哈尔滨工业大学'},
-  {rank:2,zhongkao:642,predict:678.4,lo:657,hi:657,name:'贾洪亮',uni:'北航'},
-  {rank:3,zhongkao:642,predict:678.4,lo:657,hi:657,name:'刘翔',uni:'同济大学'},
-  {rank:4,zhongkao:638,predict:674.9,lo:651,hi:657,name:'李杏',uni:'哈尔滨工业大学'},
+  {rank:2,zhongkao:626,predict:664.3,lo:657,hi:657,name:'贾洪亮',uni:'北京航空航天大学'},
+  {rank:3,zhongkao:630,predict:667.8,lo:657,hi:657,name:'刘翔',uni:'同济大学'},
+  {rank:4,zhongkao:629,predict:667.0,lo:652,hi:652,name:'李杏',uni:'哈尔滨工业大学'},
   {rank:5,zhongkao:636,predict:673.1,lo:642,hi:642,name:'梁志超',uni:'重庆大学'},
-  {rank:6,zhongkao:636,predict:673.1,lo:641,hi:641,name:'王胤燊',uni:'哈尔滨工业大学'},
-  {rank:7,zhongkao:636,predict:673.1,lo:640,hi:640,name:'刘雪威',uni:'上海财经大学'},
-  {rank:8,zhongkao:635,predict:672.2,lo:638,hi:640,name:'于鹏',uni:'华北电力大学'},
-  {rank:9,zhongkao:633.79,predict:671.2,lo:632,hi:632,name:'陈岩',uni:'西安电子科技大学'},
-  {rank:10,zhongkao:632.22,predict:669.8,lo:632,hi:632,name:'郭蕾',uni:'哈尔滨工业大学'},
-  {rank:11,zhongkao:632,predict:669.6,lo:631,hi:632,name:'包括',uni:'中南财经政法大学'},
-  {rank:12,zhongkao:630.17,predict:668.0,lo:631,hi:631,name:'李光磊',uni:'哈工程'},
-  {rank:13,zhongkao:630,predict:667.8,lo:631,hi:631,name:'李开',uni:'哈尔滨工业大学'},
-  {rank:14,zhongkao:629.55,predict:667.4,lo:630,hi:630,name:'刘欣',uni:'中南财经政法大学'},
-  {rank:15,zhongkao:628.38,predict:666.4,lo:630,hi:630,name:'邵润超',uni:'武汉大学'},
-  {rank:16,zhongkao:628,predict:666.1,lo:628,hi:628,name:'闫永祥',uni:'西南交通大学'},
-  {rank:17,zhongkao:627.83,predict:665.9,lo:625,hi:625,name:'赵正少',uni:'大连外国语大学'},
-  {rank:18,zhongkao:627.5,predict:665.6,lo:624,hi:624,name:'姜英男',uni:'南京理工大学'},
-  {rank:19,zhongkao:627.5,predict:665.6,lo:620,hi:619,name:'孟静',uni:'吉林大学'},
-  {rank:20,zhongkao:626.79,predict:665.0,lo:619,hi:625,name:'尹琪东',uni:'重庆大学'},
-  {rank:21,zhongkao:626.3,predict:664.6,lo:614,hi:612,name:'杨智广',uni:'吉林大学'},
-  {rank:22,zhongkao:626,predict:664.3,lo:613,hi:614,name:'刘军力',uni:'大连海事'},
-  {rank:23,zhongkao:626,predict:664.3,lo:613,hi:613,name:'王铁鑫',uni:'西安电子科技大学'},
-  {rank:24,zhongkao:625.36,predict:663.8,lo:612,hi:618,name:'何香培',uni:'湖南大学'},
-  {rank:25,zhongkao:625,predict:663.5,lo:612,hi:613,name:'耿庆龙',uni:'吉林大学'},
-  {rank:26,zhongkao:624.91,predict:663.4,lo:611,hi:612,name:'吕晶鑫',uni:'中国石油大学'},
-  {rank:27,zhongkao:624.06,predict:662.6,lo:610,hi:611,name:'闫岩',uni:'北京交通大学'},
-  {rank:28,zhongkao:623.64,predict:662.3,lo:610,hi:610,name:'殷旭',uni:'北京林业大学'},
-  {rank:29,zhongkao:622.86,predict:661.6,lo:609,hi:611,name:'印亚奇',uni:'吉林大学'},
-  {rank:30,zhongkao:622.48,predict:661.2,lo:607,hi:609,name:'段春颀',uni:'东北大学'},
+  {rank:6,zhongkao:624,predict:662.6,lo:641,hi:641,name:'王胤燊',uni:'哈尔滨工业大学'},
+  {rank:7,zhongkao:635,predict:672.2,lo:640,hi:640,name:'刘雪薇',uni:'上海财经'},
+  {rank:8,zhongkao:638,predict:674.9,lo:636,hi:636,name:'包括',uni:'中南财经政法大学'},
+  {rank:9,zhongkao:631,predict:668.7,lo:632,hi:632,name:'郭蕾',uni:'哈尔滨工业大学'},
+  {rank:10,zhongkao:625,predict:663.5,lo:632,hi:632,name:'陈岩',uni:'西安电子科技'},
+  {rank:11,zhongkao:632,predict:669.6,lo:632,hi:632,name:'李光磊',uni:'哈尔滨工程大学'},
+  {rank:12,zhongkao:630,predict:667.8,lo:631,hi:631,name:'李开',uni:'哈尔滨工业大学'},
+  {rank:13,zhongkao:637,predict:674.0,lo:630,hi:630,name:'邵润超',uni:'武汉大学'},
+  {rank:14,zhongkao:642,predict:678.4,lo:630,hi:630,name:'刘欣',uni:'中南财经政法'},
+  {rank:15,zhongkao:624,predict:662.6,lo:628,hi:628,name:'王铁鑫',uni:'西安电子科大'},
+  {rank:16,zhongkao:630,predict:667.8,lo:627,hi:627,name:'赵正少',uni:'大连外国语学院'},
+  {rank:17,zhongkao:624,predict:662.6,lo:627,hi:627,name:'孟静',uni:'吉林大学'},
+  {rank:18,zhongkao:613,predict:652.9,lo:625,hi:625,name:'姜英男',uni:'南京理工'},
+  {rank:19,zhongkao:624,predict:662.6,lo:624,hi:624,name:'于鹏',uni:'华北工业大学（北京）'},
+  {rank:20,zhongkao:635,predict:672.2,lo:623,hi:623,name:'闫岩',uni:'北京交通大学'},
+  {rank:21,zhongkao:622,predict:660.8,lo:623,hi:623,name:'李美逸',uni:'中国地质大学(北京)'},
+  {rank:22,zhongkao:613,predict:652.9,lo:623,hi:623,name:'韩磊',uni:'东北电力'},
+  {rank:23,zhongkao:621,predict:659.9,lo:622,hi:622,name:'刘军力',uni:'大连海事'},
+  {rank:24,zhongkao:612,predict:652.0,lo:621,hi:621,name:'尹琪东',uni:'重庆大学'},
+  {rank:25,zhongkao:621,predict:659.9,lo:620,hi:620,name:'耿庆龙',uni:'吉林大学'},
+  {rank:26,zhongkao:623,predict:661.7,lo:620,hi:620,name:'杨智广',uni:'吉林大学'},
+  {rank:27,zhongkao:627,predict:665.2,lo:615,hi:615,name:'闫永祥',uni:'西南交大'},
+  {rank:28,zhongkao:615,predict:654.7,lo:615,hi:615,name:'吕泽辉',uni:'河北工大'},
+  {rank:29,zhongkao:605,predict:645.9,lo:613,hi:613,name:'印亚奇',uni:'吉林大学'},
+  {rank:30,zhongkao:609,predict:649.4,lo:612,hi:612,name:'何香培',uni:'湖南大学'},
+  {rank:31,zhongkao:622,predict:660.8,lo:612,hi:612,name:'李冬',uni:'中国矿业（徐州）'},
+  {rank:32,zhongkao:611,predict:651.2,lo:611,hi:611,name:'吕晶鑫',uni:'中国石油大学'},
+  {rank:33,zhongkao:615,predict:654.7,lo:610,hi:610,name:'段春颀',uni:'东北大学'},
+  {rank:34,zhongkao:625,predict:663.5,lo:610,hi:610,name:'殷旭',uni:'北京林业大学'},
+  {rank:35,zhongkao:627,predict:665.2,lo:608,hi:608,name:'王丽圆',uni:'哈尔滨理工大学'},
+  {rank:36,zhongkao:602,predict:643.3,lo:607,hi:607,name:'张士萍',uni:'河海大学'},
+  {rank:37,zhongkao:612,predict:652.0,lo:606,hi:606,name:'王昊',uni:'沈阳药科大学'},
+  {rank:38,zhongkao:613,predict:652.9,lo:604,hi:604,name:'王刚',uni:'青岛科技'},
+  {rank:39,zhongkao:603,predict:644.1,lo:604,hi:604,name:'孙丽',uni:'南昌大学'},
+  {rank:40,zhongkao:611,predict:651.2,lo:603,hi:603,name:'庞小陶',uni:'四川农业大学'},
+  {rank:41,zhongkao:602,predict:643.3,lo:603,hi:603,name:'张赫琼',uni:'南京农业大学'},
+  {rank:42,zhongkao:606,predict:646.8,lo:602,hi:602,name:'杨欢',uni:'东北大学（秦皇岛）'},
+  {rank:43,zhongkao:607,predict:647.6,lo:602,hi:602,name:'曹剑超',uni:'长春理工'},
+  {rank:44,zhongkao:608,predict:648.5,lo:602,hi:602,name:'陈媛丽',uni:'哈理工'},
+  {rank:45,zhongkao:616,predict:655.5,lo:601,hi:601,name:'李岩',uni:'东北林大'},
+  {rank:46,zhongkao:607,predict:647.6,lo:600,hi:600,name:'杨蕴哲',uni:'东北农大'},
+  {rank:47,zhongkao:607,predict:647.6,lo:600,hi:600,name:'李婧阳',uni:'东北农大'},
 ];
 
-// 大庆：已知 2004 中考 & 2007 高考的逐人配对，取中考 ≥ 610（cred A/B）
+// 大庆：「666 分的信度报告」里那 55 组「2004 中考 → 2007 高考」逐人配对（大庆一中 52、大庆实验 2、大庆铁人 1），
+// 与「那么在大庆，648 分应该考多少」一图数据一致；全图只标注中考同为 648 分的李梦然
 const DAQING = [
   {n:'李梦然',s:648,g:709,sc:'实验',key:true},
   {n:'陈川',s:634,g:698,sc:'一中'},   {n:'李悦',s:623,g:697,sc:'一中'},
@@ -196,21 +233,31 @@ const DAQING = [
   {n:'蒋莉',s:642,g:691,sc:'一中'},   {n:'关天下',s:656,g:690,sc:'一中'},
   {n:'杜宇寰',s:644,g:688,sc:'一中'}, {n:'魏征',s:654,g:688,sc:'实验'},
   {n:'李海旭',s:626,g:685,sc:'一中'}, {n:'曹琪',s:638,g:683,sc:'一中'},
-  {n:'牛雨军',s:630,g:683,sc:'一中'}, {n:'王鑫',s:623,g:681,sc:'铁人',soft:true},
-  {n:'符迪',s:633,g:680,sc:'一中'},   {n:'王惠西',s:639,g:678,sc:'一中'},
-  {n:'刘安东',s:645,g:676,sc:'一中'}, {n:'张洪谋',s:646,g:676,sc:'一中'},
-  {n:'于燕池',s:623,g:675,sc:'一中'}, {n:'张丽娜',s:626,g:669,sc:'一中'},
-  {n:'李岩松',s:624,g:668,sc:'一中'}, {n:'权文琪',s:629,g:666,sc:'一中'},
+  {n:'牛雨军',s:630,g:683,sc:'一中'}, {n:'符迪',s:633,g:680,sc:'一中'},
+  {n:'王惠西',s:639,g:678,sc:'一中'}, {n:'刘安东',s:645,g:676,sc:'一中'},
+  {n:'张洪谋',s:646,g:676,sc:'一中'}, {n:'于燕池',s:623,g:675,sc:'一中'},
+  {n:'张丽娜',s:626,g:669,sc:'一中'}, {n:'李岩松',s:624,g:668,sc:'一中'},
+  {n:'杨帆',s:595,g:667,sc:'一中'},   {n:'权文琪',s:629,g:666,sc:'一中'},
   {n:'王金鑫',s:642,g:666,sc:'一中'}, {n:'鲍慊',s:644,g:666,sc:'一中'},
   {n:'曹明阳',s:625,g:664,sc:'一中'}, {n:'曹沂',s:638,g:664,sc:'一中'},
+  {n:'张友钧',s:590,g:661,sc:'一中'}, {n:'张大磊',s:608,g:661,sc:'一中'},
   {n:'梁轶',s:634,g:661,sc:'一中'},   {n:'顾舒然',s:622,g:661,sc:'一中'},
   {n:'周旸',s:611,g:657,sc:'一中'},   {n:'孟志昊',s:613,g:657,sc:'一中'},
   {n:'张晨',s:630,g:655,sc:'一中'},   {n:'冯聪',s:628,g:650,sc:'一中'},
-  {n:'杨赫',s:625,g:649,sc:'一中'},   {n:'吕秀娟',s:624,g:645,sc:'一中'},
-  {n:'李秋稷',s:622,g:644,sc:'一中'}, {n:'陈麒',s:618,g:642,sc:'一中'},
-  {n:'任聪',s:620,g:641,sc:'一中'},   {n:'朱梓璇',s:618,g:639,sc:'一中'},
-  {n:'杨超',s:615,g:638,sc:'一中'},   {n:'高嵽',s:612,g:635,sc:'一中'},
+  {n:'尹成',s:607,g:650,sc:'一中'},   {n:'杨赫',s:625,g:649,sc:'一中'},
+  {n:'王萌',s:593,g:649,sc:'一中'},   {n:'吕秀娟',s:624,g:645,sc:'一中'},
+  {n:'李秋稷',s:622,g:644,sc:'一中'}, {n:'刘冰',s:573,g:642,sc:'一中'},
+  {n:'刘航',s:603,g:642,sc:'一中'},   {n:'陈麒',s:618,g:642,sc:'一中'},
+  {n:'任聪',s:620,g:641,sc:'一中'},   {n:'孙凯蒂',s:599,g:641,sc:'一中'},
+  {n:'牛春军',s:609,g:641,sc:'一中'}, {n:'朱梓璇',s:618,g:639,sc:'一中'},
+  {n:'杨超',s:615,g:638,sc:'一中'},   {n:'滕玥',s:603,g:636,sc:'一中'},
+  {n:'高嵽',s:612,g:635,sc:'一中'},   {n:'韩旭',s:587,g:634,sc:'一中'},
+  {n:'赵婉婷',s:605,g:631,sc:'一中'}, {n:'石峰',s:598,g:630,sc:'一中'},
+  {n:'李思源',s:608,g:628,sc:'一中'}, {n:'邱玉婷',s:594,g:618,sc:'一中'},
+  {n:'杨博超',s:588,g:610,sc:'一中'}, {n:'徐哲',s:583,g:603,sc:'一中'},
 ];
+
+const HIGHLIGHT = ['林英魁', '刘翔', '刘欣'];
 
 const SLOPE = 0.878, INT = 114.7, SIGMA = 16;
 
@@ -223,15 +270,19 @@ RAW.forEach(d => {
 });
 DAQING.forEach(d => { d.diff = d.g - (SLOPE * d.s + INT); });
 
+// ---- 三班自己的最小二乘回归（对 RAW 这 47 个 (中考估计分, 实测高考) 拟合，仅供对照，不用于任何缺口计算）----
+const CLASS3_SLOPE = 1.108, CLASS3_INT = -66.7, CLASS3_R = 0.77;
+function class3Line(v){ return CLASS3_SLOPE * v + CLASS3_INT; }
+
 // ===================== SCALES =====================
 const svg = document.getElementById('chart-svg');
 const tooltip = document.getElementById('tooltip');
 
-const MARGIN = {top: 34, right: 74, bottom: 54, left: 54};
+const MARGIN = {top: 34, right: 150, bottom: 54, left: 54};
 const CHART_W = 1250, CHART_H = 1060;
 const PLOT_W = CHART_W - MARGIN.left - MARGIN.right;
 const PLOT_H = CHART_H - MARGIN.top - MARGIN.bottom;
-const xMin = 610, xMax = 664, yMin = 600, yMax = 715;
+const xMin = 565, xMax = 670, yMin = 595, yMax = 715;
 
 function xS(v){ return MARGIN.left + ((v - xMin) / (xMax - xMin)) * PLOT_W; }
 function yS(v){ return MARGIN.top + PLOT_H - ((v - yMin) / (yMax - yMin)) * PLOT_H; }
@@ -241,7 +292,7 @@ svg.setAttribute('viewBox', `0 0 ${CHART_W} ${CHART_H}`);
 svg.setAttribute('width', CHART_W);
 svg.setAttribute('height', CHART_H);
 svg.setAttribute('role', 'img');
-svg.setAttribute('aria-label', '三班实测高考分与大庆考生散点、大庆无偏回归线的对照');
+svg.setAttribute('aria-label', '三班 47 人与大庆 55 人的实测高考分、大庆回归线的对照，标注林英魁、刘翔、刘欣与李梦然');
 
 function el(tag, attrs={}, text){
   const e = document.createElementNS('http://www.w3.org/2000/svg', tag);
@@ -252,7 +303,7 @@ function el(tag, attrs={}, text){
 const CJK = /[㐀-鿿豈-﫿]/;
 function textW(s, size){ let w = 0; for(const ch of s) w += CJK.test(ch) ? size : size * 0.56; return w; }
 
-const schoolColor = sc => sc === '实验' ? 'var(--amber)' : sc === '铁人' ? 'var(--petrol)' : 'var(--bar)';
+const schoolColor = () => 'var(--bar)'; // 大庆各校统一一个颜色，不再按学校区分
 
 // ===================== TOOLTIP =====================
 function tipHTML(title, rows, diff){
@@ -285,20 +336,20 @@ function buildChart(){
   while(svg.firstChild) svg.removeChild(svg.firstChild);
 
   // ---- grid ----
-  for(let s = 600; s <= yMax; s += 5){
+  for(let s = 595; s <= yMax; s += 5){
     const y = yS(s);
     svg.appendChild(el('line', {x1:MARGIN.left, y1:y, x2:MARGIN.left+PLOT_W, y2:y, class:'hair',
       opacity: s % 20 === 0 ? 1 : 0.4}));
     if(s % 20 === 0) svg.appendChild(el('text', {x:MARGIN.left-9, y:y+3.5, 'text-anchor':'end', class:'ax'}, s));
   }
-  for(let s = 610; s <= xMax; s += 5){
+  for(let s = 565; s <= xMax; s += 5){
     const x = xS(s);
     svg.appendChild(el('line', {x1:x, y1:MARGIN.top, x2:x, y2:MARGIN.top+PLOT_H, class:'hair',
       opacity: s % 10 === 0 ? 1 : 0.4}));
     if(s % 10 === 0) svg.appendChild(el('text', {x:x, y:MARGIN.top+PLOT_H+17, 'text-anchor':'middle', class:'ax'}, s));
   }
   svg.appendChild(el('text', {x:MARGIN.left+PLOT_W/2, y:CHART_H-8, 'text-anchor':'middle', class:'axttl'},
-    '2004 中考分数（大庆考生为实测；三班为分数—名次拟合的中考估计分）'));
+    '2004 中考分数（大庆考生为实测；三班除林英魁、刘翔、刘欣外均为中考估计分）'));
   svg.appendChild(el('text', {x:14, y:18, class:'axttl'}, '2007 高考总分'));
 
   // ---- ±1σ band + regression line ----
@@ -309,10 +360,24 @@ function buildChart(){
   }));
   svg.appendChild(el('line', {x1:bx0, y1:yS(line(xMin)), x2:bx1, y2:yS(line(xMax)),
     stroke:'var(--petrol)', 'stroke-width':1.8, 'stroke-dasharray':'6 4', opacity:'0.9'}));
-  svg.appendChild(el('text', {x: xS(628), y: yS(line(628)) - 7, 'text-anchor':'middle', class:'anno pet'},
-    '大庆无偏回归 · 高考 = 0.878×中考 + 114.7'));
+  svg.appendChild(el('text', {x: MARGIN.left + 8, y: MARGIN.top + 16, 'text-anchor':'start', class:'anno pet'},
+    '大庆回归 · 高考 = 0.878×中考 + 114.7（r = 0.74）'));
   svg.appendChild(el('text', {x: bx0 + 6, y: yS(line(xMin)+SIGMA) - 5, class:'ax', fill:'var(--petrol)'}, '回归 +1σ'));
   svg.appendChild(el('text', {x: bx0 + 6, y: yS(line(xMin)-SIGMA) + 13, class:'ax', fill:'var(--petrol)'}, '回归 −1σ'));
+
+  // ---- 三班回归（对这 47 个点做的最小二乘，红色虚线）----
+  svg.appendChild(el('line', {x1:bx0, y1:yS(class3Line(xMin)), x2:bx1, y2:yS(class3Line(xMax)),
+    stroke:'var(--seal)', 'stroke-width':1.8, 'stroke-dasharray':'6 4', opacity:'0.85'}));
+  svg.appendChild(el('text', {x: MARGIN.left + PLOT_W - 8, y: MARGIN.top + PLOT_H - 10, 'text-anchor':'end', class:'anno', fill:'var(--seal)'},
+    `三班回归 · 高考 ≈ ${CLASS3_SLOPE}×中考 + ${CLASS3_INT}（r=${CLASS3_R}）`));
+
+  // ---- 林英魁／刘翔／刘欣到大庆回归预测值的虚线连线（与信度报告里同一张图一致的画法）----
+  RAW.filter(d => HIGHLIGHT.includes(d.name)).forEach(d => {
+    const cx = xS(d.zhongkao), cyActual = yS(d.actualMid), cyPred = yS(d.predict);
+    svg.appendChild(el('line', {x1:cx, y1:cyActual, x2:cx, y2:cyPred,
+      stroke:'var(--ink-3)', 'stroke-width':1.3, 'stroke-dasharray':'3 3'}));
+    svg.appendChild(el('circle', {cx, cy:cyPred, r:5, fill:'none', stroke:'var(--petrol)', 'stroke-width':2}));
+  });
 
   // ---- 中考 648 reference (林英魁 / 李梦然 same score) ----
   const x648 = xS(648);
@@ -328,14 +393,15 @@ function buildChart(){
     if(d.soft){
       dot = el('circle', {...common, r:3.4, fill:'none', stroke:'var(--bar)', 'stroke-width':1.4});
     } else if(d.key){
-      dot = el('circle', {...common, r:5, fill:'var(--amber)', stroke:'var(--card)', 'stroke-width':1.2});
+      dot = el('circle', {...common, r:5, fill:'var(--bar)', stroke:'var(--card)', 'stroke-width':1.2});
     } else {
-      dot = el('circle', {...common, r:3.4, fill:schoolColor(d.sc), 'fill-opacity':'0.85'});
+      dot = el('circle', {...common, r:3.4, fill:'var(--bar)', 'fill-opacity':'0.85'});
     }
     svg.appendChild(dot);
     bindTip(dot, () => tipHTML(
       MODE === 'name' ? `${d.n}（大庆${d.sc}）` : `大庆${d.sc}考生`,
-      [['2004 中考', d.s + (d.soft ? '（配对存疑）' : '')], ['2007 高考', d.g], ['回归预测', Math.round(line(d.s))]],
+      [['2004 中考', d.s + (d.soft ? '（配对存疑）' : '')], ['2007 高考', d.g], ['回归预测', Math.round(line(d.s))],
+       ...(MODE === 'name' && d.uni ? [['录取', d.uni]] : [])],
       d.diff));
   });
   // 李梦然 callout
@@ -345,13 +411,7 @@ function buildChart(){
   svg.appendChild(el('text', {x: xS(lm.s) + 14, y: yS(lm.g) + 20, class:'anno amb'},
     (MODE === 'name' ? '李梦然' : '大庆实验考生') + ' 中考 648 → 高考 709（全省第 3，清华应届）'));
 
-  // ---- 三班 connectors (regression -> actual): only for the unlabelled tail ----
-  RAW.forEach(d => {
-    if(d.actualMid >= 625) return;
-    svg.appendChild(el('line', {x1:xS(d.zhongkao), y1:yS(d.predict), x2:xS(d.zhongkao), y2:yS(d.actualMid),
-      stroke:'var(--seal)', 'stroke-width':1, opacity:'0.28'}));
-  });
-  // ---- 三班 actual dots ----
+  // ---- 三班 actual dots (全部 47 人都画，只有 HIGHLIGHT 里的三人另加文字标注) ----
   RAW.forEach(d => {
     const cx = xS(d.zhongkao);
     if(d.isRange){
@@ -364,40 +424,21 @@ function buildChart(){
     const actualStr = d.isRange ? `${d.actualLo}–${d.actualHi}` : `${d.actualLo}`;
     bindTip(dot, () => tipHTML(
       MODE === 'name' ? `#${d.rank} ${d.name}` : `三班 · 第 ${d.rank} 名`,
-      [['中考估计分', '≈ ' + d.zhongkao], ['回归预测', d.predict], ['实测高考', actualStr],
+      [['2004 中考', d.zhongkao], ['回归预测', d.predict], ['实测高考', actualStr],
        ...(MODE === 'name' && d.uni ? [['录取', d.uni]] : [])],
       d.diff));
   });
 
-  // ---- name labels: three rank-ordered blocks, each near its own dots ----
-  //   前四名  -> upper-right, beside their dots
-  //   中间四名 -> a tight block, sitting on x between the other two blocks
-  //   后九名   -> a column below-left, where those dots are bunched
-  const groups = [
-    { ranks: [1,2,3,4],                   colX: xS(655), y0: yS(675), pitch: 33 },
-    { ranks: [5,6,7,8],                   colX: xS(655), y0: yS(648), pitch: 24 },
-    { ranks: [9,10,11,12,13,14,15,16,17], colX: xS(650), y0: yS(630), pitch: 27 },
-  ];
-  const byRank = Object.fromEntries(RAW.map(d => [d.rank, d]));
-  groups.forEach(g => {
-    g.ranks.forEach((rk, i) => {
-      const d = byRank[rk];
-      const cx = xS(d.zhongkao), cy = yS(d.actualMid);
-      const ly = g.y0 + i * g.pitch;
-      const diff = Math.round(d.diff);
-      const dstr = (diff >= 0 ? '+' : '−') + Math.abs(diff);
-      const actualStr = d.isRange ? `${d.actualLo}–${d.actualHi}` : `${d.actualLo}`;
-      const l1 = (MODE === 'name' ? d.name : `三班 第${d.rank}名`) + '   ' + dstr;
-      const l2 = `中考≈${Math.round(d.zhongkao)}  预测${Math.round(d.predict)}  实测${actualStr}`;
-      const ex = g.colX - 5, ey = ly - 3;
-      svg.appendChild(el('path', {
-        d: `M ${cx.toFixed(1)} ${cy.toFixed(1)} C ${(cx + 22).toFixed(1)} ${cy.toFixed(1)}, ${(ex - 40).toFixed(1)} ${ey.toFixed(1)}, ${ex.toFixed(1)} ${ey.toFixed(1)}`,
-        fill: 'none', stroke: 'var(--ink-3)', 'stroke-width': 0.6, opacity: '0.32'
-      }));
-      svg.appendChild(el('circle', {cx:ex, cy:ey, r:1.2, fill:'var(--ink-3)', opacity:'0.5'}));
-      svg.appendChild(el('text', {x:g.colX, y:ly, class:'name1'}, l1));
-      svg.appendChild(el('text', {x:g.colX, y:ly + 10, class:'name2'}, l2));
-    });
+  // ---- 林英魁／刘翔／刘欣 callout（红色，画法与李梦然的 amber 标注一致）----
+  const calloutOffsets = {'林英魁':[14,-8], '刘翔':[14,16], '刘欣':[14,16]};
+  RAW.filter(d => HIGHLIGHT.includes(d.name)).forEach(d => {
+    const cx = xS(d.zhongkao), cy = yS(d.actualMid);
+    const [ox, oy] = calloutOffsets[d.name];
+    const diff = Math.round(d.diff);
+    svg.appendChild(el('line', {x1:cx, y1:cy, x2:cx + ox - 2, y2:cy + oy - 4,
+      stroke:'var(--seal)', 'stroke-width':0.8, opacity:'0.6'}));
+    svg.appendChild(el('text', {x: cx + ox, y: cy + oy, class:'anno', fill:'var(--seal)'},
+      (MODE === 'name' ? d.name : `三班第 ${d.rank} 名`) + ` 中考 ${d.zhongkao} → 高考 ${d.actualLo}（残差 ${diff >= 0 ? '+' : '−'}${Math.abs(diff)}）`));
   });
 }
 
@@ -405,30 +446,30 @@ function buildChart(){
 function pill(html){ const d = document.createElement('div'); d.className = 'legend-item'; d.innerHTML = html; return d; }
 const legend = document.getElementById('legend');
 legend.append(
-  pill('<span class="legend-line" style="border-color:var(--petrol)"></span>大庆无偏回归线'),
+  pill('<span class="legend-line" style="border-color:var(--petrol)"></span>大庆回归线'),
   pill('<span class="legend-band"></span>±1σ（≈16 分）'),
-  pill('<span class="legend-dot" style="background:var(--bar)"></span>大庆一中考生'),
-  pill('<span class="legend-dot" style="background:var(--amber)"></span>大庆实验'),
-  pill('<span class="legend-dot" style="background:var(--petrol)"></span>大庆铁人'),
-  pill('<span class="legend-ring"></span>配对存疑'),
-  pill('<span class="legend-dot" style="background:var(--seal)"></span>三班实测高考'),
+  pill('<span class="legend-line" style="border-color:var(--seal)"></span>三班回归线（对这 47 人拟合）'),
+  pill('<span class="legend-dot" style="background:var(--bar)"></span>大庆考生（55 人逐人配对）'),
+  pill('<span class="legend-dot" style="background:var(--seal)"></span>三班实测高考（47 人）'),
 );
 
 const tDiffs = RAW.map(d => d.diff);
 const tMean = tDiffs.reduce((a,b)=>a+b,0) / tDiffs.length;
-const dDiffs = DAQING.filter(d => !d.soft).map(d => d.diff);
+const dDiffs = DAQING.map(d => d.diff);
 const dMean = dDiffs.reduce((a,b)=>a+b,0) / dDiffs.length;
 const dBelow = dDiffs.filter(x => x < 0).length;
+const byName = n => RAW.find(d => d.name === n);
 
 document.getElementById('figcap').innerHTML =
   `大庆 ${dDiffs.length} 名考生里 ${dBelow} 人低于回归线、${dDiffs.length - dBelow} 人高于，平均 ${dMean >= 0 ? '+' : ''}${dMean.toFixed(1)} 分——` +
   `散点落在带子两侧，这正是"回归线拟合得好"的样子。` +
-  `<b>三班这 30 人全部落在回归线以下</b>，平均低 ${Math.abs(tMean).toFixed(1)} 分，` +
-  `名次越靠后缺口越大（第 1 名 ${Math.round(RAW[0].diff)}，末尾 ${Math.round(Math.min(...tDiffs))}）。` +
-  `与林英魁同为中考 648 分的大庆考生李梦然，高考 709（全省第 3，清华应届）。`;
+  `<b>三班这 ${RAW.length} 人全部落在回归线以下</b>，平均低 ${Math.abs(tMean).toFixed(1)} 分。` +
+  `标出姓名的三人——林英魁 −${Math.abs(Math.round(byName('林英魁').diff))}、刘翔 −${Math.abs(Math.round(byName('刘翔').diff))}、刘欣 −${Math.abs(Math.round(byName('刘欣').diff))}——` +
+  `是全班里中考、高考均为实分、未经任何模型调整的三个点。` +
+  `与林英魁同为中考 648 分的大庆考生李梦然，落在回归线上方，高考 709（全省第 3，清华应届）。`;
 
 document.getElementById('stats-row').innerHTML = `
-  <div class="sc"><b>${DAQING.length}</b><span>大庆参照考生（中考 ≥ 610）</span></div>
+  <div class="sc"><b>${DAQING.length}</b><span>大庆参照考生（逐人配对）</span></div>
   <div class="sc ok"><b>${dMean >= 0 ? '+' : ''}${dMean.toFixed(1)}</b><span>大庆平均偏离回归线</span></div>
   <div class="sc hi"><b>${tMean.toFixed(1)}</b><span>三班平均偏离回归线</span></div>
   <div class="sc hi"><b>${Math.round(Math.min(...tDiffs))} ~ ${Math.round(Math.max(...tDiffs))}</b><span>三班缺口范围（分）</span></div>
@@ -437,12 +478,20 @@ document.getElementById('stats-row').innerHTML = `
 document.getElementById('note-text').innerHTML = `
   <span class="hd">读图说明</span>
   <b>回归线</b>用大庆「2007 年大庆一中市区应届高考与中考成绩对照」里 52 名<b>按中考入学筛选</b>的统招生拟合，
-  因此没有范围限制偏差，斜率可信；它回答的是"<b>这个中考分数的人，高考平均考多少</b>"。<br/>
-  <b>大庆灰点</b>是另一份「中高考分数比对表」中已双向核对、中考 ≥ 610 的 39 名考生（cred A/B）。他们均匀散布在 ±1σ 带两侧。<br/>
-  <b>三班横坐标是中考估计分</b>——由全校前 108 名的一条分数—名次拟合曲线读出，锚点是林英魁 648、刘欣 642、刘翔 630
-  等已知分数的同学与若干已知市区／县名次，<b>不掺高考数据</b>，所以纵轴（实测高考）与横轴相互独立。
-  林英魁的估计分与他的实测中考 648 一致。纵向的淡红竖线是每个人"预测 − 实测"的缺口。<br/>
-  右侧标注按班内名次从上到下排列；点击顶部按钮可切换为<b>只显示名次</b>以保护隐私。
+  因此没有范围限制偏差，斜率可信；它回答的是"<b>这个中考分数的人，高考平均考多少</b>"。数值与「666 分的信度报告」里
+  「那么在大庆，648 分应该考多少」一图一致。<br/>
+  <b>大庆灰点</b>是那份报告里同一批 55 组「2004 中考 → 2007 高考」逐人配对（大庆一中 52、大庆实验 2、大庆铁人 1）。<br/>
+  <b>三班横坐标是逐人中考估计分</b>（据 <code>2007届绥化一中高三三班中考高考信息.csv</code>「中考分数」列）——先按每个人的 2007 高考分数在全体已知高考的同学里的名次，
+  映射到此前按班级模拟出的「名次→中考分」曲线上取一个基准值，再按初中生源地加组均值偏移（绥化市区 +0、绥棱／望奎／青冈／海伦 +15、北安 +5），
+  叠加 N(0,6²) 的随机扰动，让中考与高考的关系带上大庆真实数据里那种<b>有噪声、不严格单调</b>的样子——有人中考更好但高考偏低，也有人反过来。
+  这里只取高考 ≥ 600 分的 47 人（600 分以下的 11 人不画）。<br/>
+  <b>红色文字标注</b>只标了三个人——<b>林英魁</b>中考 648 → 高考 666、<b>刘翔</b>中考 630 → 高考 657、<b>刘欣</b>中考 642 → 高考 630，
+  三人中考是实分，未经模型调整；他们的中考分与回归预测值之间用虚线连接，蓝色空心圈是回归线上对应的预测值，三人全部落在预测值下方。
+  大庆<b>李梦然</b>（amber 标注）中考同为 648，高考 709（全省第 3，清华应届），落在回归线上方。
+  其余点都只是灰色或红色的普通圆点，不带文字，悬停能看到 tooltip。<br/>
+  <b>红色虚线</b>是「三班回归」——单独对这 47 个点做的最小二乘（高考 ≈ 1.11×中考 − 66.7，r ≈ 0.77），只用来看三班内部中考、高考的相关程度，
+  和大庆的 petrol 回归线不是一回事——两条线的截距差很大，不能直接比较预测值，只能比斜率和离散程度。<br/>
+  点击顶部按钮可切换为<b>只显示名次</b>以保护隐私。
 `;
 
 // ===================== TOGGLE =====================

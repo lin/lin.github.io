@@ -102,6 +102,20 @@
     font-size:12.5px;line-height:1.78;color:var(--ink-2);max-width:84ch}
   .notes .hd{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
     color:var(--ink-3);display:block;margin-bottom:10px}
+
+  body.is-embed{padding:20px 18px 26px}
+  body.is-embed header,
+  body.is-embed .figcap,
+  body.is-embed .strip,
+  body.is-embed .notes{display:none}
+  body.is-embed .subhead:first-of-type{margin-top:0}
+
+  body.is-bare{padding:10px 10px 10px;background:var(--card)}
+  body.is-bare .legend,
+  body.is-bare .subhead{display:none}
+  body.is-bare .fig{border:none;box-shadow:none}
+  body.only-1 .fig:has(#chart-gk){display:none}
+  body.only-2 .fig:has(#chart){display:none}
   .notes p{margin:0 0 10px}
   .notes p:last-child{margin-bottom:0}
   .notes b{color:var(--ink)}
@@ -118,24 +132,31 @@
   </style>
 </head>
 <body>
+<script>
+  if (/[?&]embed=1\b/.test(location.search)) document.body.classList.add('is-embed');
+  if (/[?&]bare=1\b/.test(location.search)) document.body.classList.add('is-embed', 'is-bare');
+  var onlyM = location.search.match(/[?&]only=(\d)\b/);
+  if (onlyM) document.body.classList.add('only-' + onlyM[1]);
+</script>
 <div class="wrap">
 
 <header>
   <p class="kicker">2004 中考 · 大庆实验中学 ↔ 绥化一中高三三班</p>
   <h1>648 分的两条路：一个分数，两座城的门槛</h1>
   <p class="dek">2004 年黑龙江中考，绥化与大庆考的是<b>同一张省统一命题卷</b>（文化课 660 ＋ 体育 30 ＝ 总分 690），
-  分数可以直接比。下面两张<b>镜像图</b>是同一套画法——<b>向上</b>是大庆实验中学，<b>向下</b>是
-  <b>绥化一中高三三班</b>（2004 级 / 2007 届）：<b>图①</b>看 2004 年的中考起点，<b>图②</b>看 2007 年的高考落点。
+  分数可以直接比。下面两张<b>镜像图</b>是同一套画法——<b>向上</b>是
+  <b>绥化一中高三三班</b>（2004 级 / 2007 届），<b>向下</b>是大庆实验中学：<b>图①</b>看 2004 年的中考起点，<b>图②</b>看 2007 年的高考落点。
   当年大庆各校禁收市外考生，本可上大庆实验的绥化学生只能留在绥化。</p>
-  <p class="byline">数据：2004 年大庆实验中学中考录取名单（447 人）· 三班中考名次与分数由本人整理推算 · 分数为总分（含体育 30）</p>
+  <p class="byline">数据：2004 年大庆实验中学中考录取名单（447 人）· 三班据 <code>2007届绥化一中高三三班中考高考信息.csv</code> 整理推算 · 分数为总分（含体育 30）</p>
 </header>
 
 <h2 class="subhead"><span class="n">①</span>十五岁 · 2004 中考：同一条起跑线</h2>
 <div class="legend">
-  <div class="legend-item"><span class="lg-col"></span>大庆实验 2004 录取（447 人）</div>
   <div class="legend-item"><span class="lg-dot"></span>三班 · 姓名去向确认（林英魁 / 刘翔 / 刘欣，实心）</div>
-  <div class="legend-item"><span class="lg-hollow"></span>三班 · 班内前 30 名（petrol 空心，对应图②）</div>
-  <div class="legend-item"><span class="lg-hollow" style="border-color:var(--bar)"></span>三班 · 班内 30 名开外（灰空心，图② 里没有）</div>
+  <div class="legend-item"><span class="lg-hollow"></span>三班 · 2007 届，有高考分（空心，55 人，对应图②）</div>
+  <div class="legend-item"><span class="lg-hollow"></span>三班 · 2008 届，当年无高考数据（同样空心，8 人，图② 里没有）</div>
+  <div class="legend-item"><span class="lg-dot"></span><span class="lg-dot" style="background:var(--amber);border-color:var(--amber)"></span>三班 · 点的颜色＝初中生源地（青色绥化市区 50 人 · 琥珀色外市县 16 人：绥棱／望奎／青冈／海伦／北安）</div>
+  <div class="legend-item"><span class="lg-col"></span>大庆实验 2004 录取（447 人）</div>
   <div class="legend-item"><span class="lg-line"></span>大庆各校统招录取线</div>
 </div>
 
@@ -146,10 +167,11 @@
 
 <h2 class="subhead"><span class="n">②</span>十八岁 · 2007 高考：三年之后</h2>
 <div class="legend">
-  <div class="legend-item"><span class="lg-col"></span>大庆实验 2007 高考理科 · 市区应届估算（分档折算）</div>
   <div class="legend-item"><span class="lg-dot"></span>高三三班 · 姓名去向确认（林英魁 / 刘翔 / 刘欣，实心）</div>
-  <div class="legend-item"><span class="lg-hollow"></span>高三三班 · 其余 27 个实测高考点（空心）</div>
-  <div class="legend-item"><span class="lg-line"></span>二本 526 / 一本 588 / 哈工大 631 / 上海交大 665 / 清华 687</div>
+  <div class="legend-item"><span class="lg-hollow"></span>高三三班 · 其余 55 个实测高考点（空心）</div>
+  <div class="legend-item"><span class="lg-dot"></span><span class="lg-dot" style="background:var(--amber);border-color:var(--amber)"></span>高三三班 · 点的颜色＝初中生源地（青色绥化市区 · 琥珀色外市县，与图① 一致）</div>
+  <div class="legend-item"><span class="lg-col"></span>大庆实验 2007 高考理科 · 市区应届估算（分档折算）</div>
+  <div class="legend-item"><span class="lg-line"></span>二本 526 / 重本 588 / 哈工大 631 / 上海交大 665 / 清华 687</div>
 </div>
 
 <div class="fig">
@@ -165,8 +187,9 @@
 // ---- 大庆实验中学 2004 录取名单：447 名统招生的中考总分（降序）----
 const DAQING = [655,654,654,648,647,645,645,645,644,643,643,643,643,643,642,642,641,641,641,641,641,640,640,640,640,639,639,639,638,638,638,638,638,638,638,638,637,637,637,637,636,636,636,636,636,636,636,635,635,635,635,635,635,634,634,634,634,634,633,633,633,633,633,633,632,632,632,632,632,631,631,631,630,630,630,630,630,630,630,630,630,630,630,630,630,629,629,629,629,629,629,629,629,628,628,628,627,627,627,627,627,627,627,627,627,627,627,627,627,627,626,626,626,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,624,624,624,624,624,624,624,624,624,624,623,623,623,623,623,623,623,623,623,623,622,622,622,622,622,622,622,622,622,622,622,621,621,621,621,621,621,621,621,621,621,621,621,621,621,621,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,620,619,619,619,619,619,619,619,619,619,619,619,619,619,619,618,618,618,618,618,618,618,618,618,618,618,618,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,617,616,616,616,616,616,616,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,615,614,614,614,614,614,614,614,614,614,614,614,614,614,614,614,614,613,613,613,613,613,613,613,613,613,613,613,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,612,611,611,611,611,611,611,611,611,611,611,611,611,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,610,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,609,608,608,608,608,608,608,608,608,608,608,608,608,608,608,608,607,607,607,607,607,607,607,607,607,607,607,607,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,606,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,605,604,604,604,604,604,604,604,604,604,604,604,604,604,603,603,603,603,603,603,603,603,603,603,603,603];
 
-// ---- 绥化一中高三三班：中考估计分（据全校前 108 名分数—名次拟合；[姓名, 估计分, 高考分|null]，姓名按 2007 高考排名）----
-const CLASS3_EST = [["林英魁",648,"666"],["贾洪亮",642,"657"],["刘翔",642,"657"],["李杏",638,"651"],["梁志超",636,"642"],["王胤燊",636,"641"],["刘雪威",636,"640"],["于鹏",635,"638"],["陈岩",633.79,"632"],["郭蕾",632.22,"632"],["包括",632,"631"],["李光磊",630.17,"631"],["李开",630,"631"],["刘欣",629.55,"630"],["邵润超",628.38,"630"],["闫永祥",628,"628"],["赵正少",627.83,"625"],["姜英男",627.5,"624"],["孟静",627.5,"620"],["尹琪东",626.79,"619"],["杨智广",626.3,"614"],["刘军力",626,"613"],["王铁鑫",626,"613"],["何香培",625.36,"612"],["耿庆龙",625,"612"],["吕晶鑫",624.91,"611"],["闫岩",624.06,"610"],["殷旭",623.64,"610"],["印亚奇",622.86,"605"],["段春颀",622.48,"604"],["李冬",622,"603"],["张赫琼",621.75,"601"],["张士萍",621.39,"597"],["侯雨薇",620.71,"593"],["王丽圆",620.38,"588"],["王晓薇",619.74,"588"],["陈媛丽",619.43,"588"],["邹笑天",619,"588"],["孙新宇",618.83,null],["王刚",618.53,null],["杨蕴哲",617.96,null],["李靖阳",617.15,null],["王昊",616.88,null],["李美逸",616.37,null],["孙俪",615.62,null],["庞晓陶",615.38,null],["王小杭",614.91,null],["韩磊",614.68,null],["曹剑超",614.23,null],["董琳",614.01,null],["张伟宇",613.58,null],["吕泽辉",613.36,null],["高珊",612.95,null],["李星曌",612.74,null],["高阳",612.34,null],["韩富成",612.14,null],["刘淑波",611.75,null],["贾伟宇",611.56,null],["李岩",611.18,null],["张国会",611.0,null],["郭宝玲",610.63,null],["于洪泽",610.46,null],["李佳滨",610.1,null],["牟月",609.93,null],["赵涌涵",609.59,null]];
+// ---- 绥化一中高三三班：中考估计分（据 content/kao/2007届绥化一中高三三班中考高考信息.csv「中考分数」列——
+// 按各自高考名次映射班级模拟曲线、加生源地组均值偏移、叠加随机扰动得到；[姓名, 中考估计分, 高考分|null（2008届当年没有高考分）]，按中考估计分降序）----
+const CLASS3_EST = [["林英魁",648,666],["刘欣",642,630],["张国会",642,null],["侯雨薇",641,598],["包括",638,636],["邵润超",637,630],["梁志超",636,642],["刘雪薇",635,640],["闫岩",635,623],["郭宝玲",633,null],["李光磊",632,632],["郭蕾",631,632],["刘翔",630,657],["李开",630,631],["赵正少",630,627],["李杏",629,652],["闫永祥",627,615],["王丽圆",627,608],["贾洪亮",626,657],["陈岩",625,632],["殷旭",625,610],["王胤燊",624,641],["王铁鑫",624,628],["孟静",624,627],["于鹏",624,624],["李佳滨",624,null],["杨智广",623,620],["李美逸",622,623],["李冬",622,612],["刘军力",621,622],["耿庆龙",621,620],["李岩",616,601],["贾伟宇",616,null],["吕泽辉",615,615],["段春颀",615,610],["刘淑波",615,588],["姜英男",613,625],["韩磊",613,623],["王刚",613,604],["尹琪东",612,621],["王昊",612,606],["于洪泽",612,null],["牟月",612,null],["吕晶鑫",611,611],["庞小陶",611,603],["何香培",609,612],["陈媛丽",608,602],["曹剑超",607,602],["杨蕴哲",607,600],["李婧阳",607,600],["赵希龙",607,null],["杨欢",606,602],["董琳",606,591],["高珊",606,590],["张维宇",606,567],["印亚奇",605,613],["王晓薇",605,583],["韩富城",604,571],["李星曌",603,544],["孙丽",603,604],["高阳",603,565],["张赫琼",602,603],["赵涌涵",602,null],["张士萍",602,607],["王晓航",602,555],["孙新宇",602,538]];
 
 // ---- 高三三班：已知的中考实分 ----
 const REAL = [
@@ -174,6 +197,15 @@ const REAL = [
   {name:"刘欣",   zk:642, gk:630, from:"北林区秦家（第一名）", uni:"中南财经政法"},
   {name:"刘翔",   zk:630, gk:657, from:"绥棱五中（全县第十三）", uni:"同济大学"},
 ];
+
+// ---- 高三三班：初中生源地（据 content/kao/2007届绥化一中高三三班中考高考信息.csv「初中生源地」列——
+// 未列出的默认为绥化市区；这里列出的都是外市县，16 人）----
+const ORIGIN_OUTSIDE = {
+  "张国会":"青冈县", "林英魁":"绥棱县", "闫岩":"绥棱县", "刘翔":"绥棱县", "王丽圆":"绥棱县",
+  "梁志超":"海伦市",
+  "侯雨薇":"望奎县", "包括":"望奎县", "郭宝玲":"望奎县", "李光磊":"望奎县", "邵润超":"望奎县", "王胤燊":"望奎县",
+  "李佳滨":"北安市", "殷旭":"北安市", "段春颀":"北安市", "王刚":"北安市",
+};
 
 // ---- 录取线（总分，含体育 30；2004 省统一命题）----
 const THR = [
@@ -205,21 +237,73 @@ const DQ_GK_CUM = (() => {
 })();
 const DQ_GK_TOTAL = DQ_GK_CUM[DQ_GK_CUM.length - 1][1];
 
-// 高三三班：只画已确认高考分的前 30 名（其余 35 人无可靠高考分，不画）
-// known:1 = 姓名、去向、分数都硬核实（与图① 的实心三人对应）；其余为按录取院校反推、名次对应存疑
+// 高三三班：全部 58 名 2007 届、有实测/推算高考分的同学（与图①的空心 + 实心同一批；2008 届不在这里）
+// known:1 = 姓名、去向、分数都硬核实（与图① 的实心三人对应）；其余为按录取院校反推
 const CLASS3_GK = [
-  {n:'林英魁',g:666,uni:'哈尔滨工业大学',known:1},{n:'贾洪亮',g:657,uni:'北航'},{n:'刘翔',g:657,uni:'同济大学',known:1},{n:'李杏',g:654,uni:'哈尔滨工业大学'},{n:'梁志超',g:642,uni:'重庆大学'},
-  {n:'王胤燊',g:641,uni:'哈尔滨工业大学'},{n:'刘雪威',g:640,uni:'上海财经大学'},{n:'于鹏',g:639,uni:'华北电力大学'},{n:'陈岩',g:632,uni:'西安电子科技大学'},{n:'郭蕾',g:632,uni:'哈尔滨工业大学'},
-  {n:'包括',g:631.5,uni:'中南财经政法大学'},{n:'李光磊',g:631,uni:'哈工程'},{n:'李开',g:631,uni:'哈尔滨工业大学'},{n:'刘欣',g:630,uni:'中南财经政法大学',known:1},{n:'邵润超',g:630,uni:'武汉大学'},
-  {n:'闫永祥',g:628,uni:'西南交通大学'},{n:'赵正少',g:625,uni:'大连外国语大学'},{n:'姜英男',g:624,uni:'南京理工大学'},{n:'孟静',g:619.5,uni:'吉林大学'},{n:'尹琪东',g:622,uni:'重庆大学'},
-  {n:'杨智广',g:613,uni:'吉林大学'},{n:'刘军力',g:613.5,uni:'大连海事'},{n:'王铁鑫',g:613,uni:'西安电子科技大学'},{n:'何香培',g:615,uni:'湖南大学'},{n:'耿庆龙',g:612.5,uni:'吉林大学'},
-  {n:'吕晶鑫',g:611.5,uni:'中国石油大学'},{n:'闫岩',g:610.5,uni:'北京交通大学'},{n:'殷旭',g:610,uni:'北京林业大学'},{n:'印亚奇',g:610,uni:'吉林大学'},{n:'段春颀',g:608,uni:'东北大学'},
+  {n:'林英魁',g:666,uni:'哈尔滨工业大学',known:1},
+  {n:'贾洪亮',g:657,uni:'北京航空航天大学'},
+  {n:'刘翔',g:657,uni:'同济大学',known:1},
+  {n:'李杏',g:652,uni:'哈尔滨工业大学'},
+  {n:'梁志超',g:642,uni:'重庆大学'},
+  {n:'王胤燊',g:641,uni:'哈尔滨工业大学'},
+  {n:'刘雪薇',g:640,uni:'上海财经'},
+  {n:'包括',g:636,uni:'中南财经政法大学'},
+  {n:'郭蕾',g:632,uni:'哈尔滨工业大学'},
+  {n:'陈岩',g:632,uni:'西安电子科技'},
+  {n:'李光磊',g:632,uni:'哈尔滨工程大学'},
+  {n:'李开',g:631,uni:'哈尔滨工业大学'},
+  {n:'邵润超',g:630,uni:'武汉大学'},
+  {n:'刘欣',g:630,uni:'中南财经政法',known:1},
+  {n:'王铁鑫',g:628,uni:'西安电子科大'},
+  {n:'赵正少',g:627,uni:'大连外国语学院'},
+  {n:'孟静',g:627,uni:'吉林大学'},
+  {n:'姜英男',g:625,uni:'南京理工'},
+  {n:'于鹏',g:624,uni:'华北工业大学（北京）'},
+  {n:'闫岩',g:623,uni:'北京交通大学'},
+  {n:'李美逸',g:623,uni:'中国地质大学(北京)'},
+  {n:'韩磊',g:623,uni:'东北电力'},
+  {n:'刘军力',g:622,uni:'大连海事'},
+  {n:'尹琪东',g:621,uni:'重庆大学'},
+  {n:'耿庆龙',g:620,uni:'吉林大学'},
+  {n:'杨智广',g:620,uni:'吉林大学'},
+  {n:'闫永祥',g:615,uni:'西南交大'},
+  {n:'吕泽辉',g:615,uni:'河北工大'},
+  {n:'印亚奇',g:613,uni:'吉林大学'},
+  {n:'何香培',g:612,uni:'湖南大学'},
+  {n:'李冬',g:612,uni:'中国矿业（徐州）'},
+  {n:'吕晶鑫',g:611,uni:'中国石油大学'},
+  {n:'段春颀',g:610,uni:'东北大学'},
+  {n:'殷旭',g:610,uni:'北京林业大学'},
+  {n:'王丽圆',g:608,uni:'哈尔滨理工大学'},
+  {n:'张士萍',g:607,uni:'河海大学'},
+  {n:'王昊',g:606,uni:'沈阳药科大学'},
+  {n:'王刚',g:604,uni:'青岛科技'},
+  {n:'孙丽',g:604,uni:'南昌大学'},
+  {n:'庞小陶',g:603,uni:'四川农业大学'},
+  {n:'张赫琼',g:603,uni:'南京农业大学'},
+  {n:'杨欢',g:602,uni:'东北大学（秦皇岛）'},
+  {n:'曹剑超',g:602,uni:'长春理工'},
+  {n:'陈媛丽',g:602,uni:'哈理工'},
+  {n:'李岩',g:601,uni:'东北林大'},
+  {n:'杨蕴哲',g:600,uni:'东北农大'},
+  {n:'李婧阳',g:600,uni:'东北农大'},
+  {n:'侯雨薇',g:598,uni:'江西财经大学'},
+  {n:'董琳',g:591,uni:'北京二外'},
+  {n:'高珊',g:590,uni:'天津商大'},
+  {n:'刘淑波',g:588,uni:'山东财经大学'},
+  {n:'王晓薇',g:583,uni:'哈尔滨理工大学'},
+  {n:'韩富城',g:571,uni:'黑龙江大学'},
+  {n:'张维宇',g:567,uni:'长沙理工'},
+  {n:'高阳',g:565,uni:'重庆师大'},
+  {n:'王晓航',g:555,uni:'三峡大学（南昌）'},
+  {n:'李星曌',g:544,uni:'防灾科技学院'},
+  {n:'孙新宇',g:538,uni:'黑龙江八一农垦'},
 ];
 
 // 2007 黑龙江理科各类分数线（竖红虚线）
 const THR_GK = [
   {x:526, label:"二本线 526"},
-  {x:588, label:"一本线 588"},
+  {x:588, label:"重本线 588"},
   {x:631, label:"哈工大 631"},
   {x:665, label:"上海交大 665"},
   {x:687, label:"清华大学 687"},
@@ -237,25 +321,26 @@ function el(tag, attrs={}, text){
 }
 const daqingRankAtLeast = v => DAQING.reduce((n,x)=> n + (x >= v ? 1 : 0), 0);
 
-// ---------- geometry (mirrored: 大庆实验 直方图向上 · 高三三班 点阵向下) ----------
-const CW = 1000, CH = 560;
-const M = {top:52, right:26, bottom:56, left:48};
+// ---------- geometry (mirrored: 高三三班 点阵向上 · 大庆实验 直方图向下) ----------
+const CW = 1000, CH = 446;
+const M = {top:40, right:26, bottom:56, left:48};
 const PW = CW - M.left - M.right;
-const X_MIN = 570, X_MAX = 660;
-const BINW = 2;
-const AXIS_Y = M.top + 300;              // 共用的横轴基线
-const UP_H = AXIS_Y - M.top;             // 直方图区高
+const X_MIN = 560, X_MAX = 660;
+const BINW = 1;
+const AXIS_Y = 220;                      // 共用的横轴基线
+const DOWN_H = 170;                      // 大庆实验直方图区高（向下，比原来矮）
+const BOTTOM_EDGE = AXIS_Y + DOWN_H;
 const xS = v => M.left + ((v - X_MIN) / (X_MAX - X_MIN)) * PW;
 
 svg.setAttribute('viewBox', `0 0 ${CW} ${CH}`);
 
-// --- 大庆实验 447 录取生：每 2 分一柱（人数）---
+// --- 大庆实验 447 录取生：每 1 分一柱（人数）---
 const bins = [];
 for(let lo = 602; lo < 656; lo += BINW){
   bins.push({lo, hi:lo+BINW, n: DAQING.reduce((c,x)=> c + (x>=lo && x<lo+BINW ? 1 : 0), 0)});
 }
 const yMax = Math.ceil(Math.max(...bins.map(b=>b.n)) / 10) * 10;   // 40
-const yUp = n => AXIS_Y - (n / yMax) * UP_H;
+const yDown = n => AXIS_Y + (n / yMax) * DOWN_H;
 
 // --- 高三三班：按分数分箱的点阵（每点 1 人）---
 const REAL_NAMES = new Set(REAL.map(r => r.name));
@@ -269,42 +354,42 @@ CLASS3_EST.forEach(([name, est, gk], idx) => {
   const lo = Math.floor(est / BINW) * BINW;
   (cols[lo] ||= []).push({name, score:est, real:false, est, gk, rank: idx + 1});
 });
-// 组内排序：已知三人 → 前 30 名 → 30 名开外
-const tier = d => d.real ? 0 : (d.rank <= 30 ? 1 : 2);
+// 组内排序：已知三人 → 2007 届（有高考分，对应图②）→ 2008 届（当年无高考数据）
+const tier = d => d.real ? 0 : (d.gk != null ? 1 : 2);
 Object.values(cols).forEach(list => list.sort((a,b) => tier(a) - tier(b)));
 
-const DOT_R = 3.2, DOT_V = 7.6;
-const COL_TOP = AXIS_Y + 22;              // 第一排点的中心
+const DOT_R = 3.6, DOT_V = 15;            // 点阵拉开、点变大，比原来更显眼
+const COL_BASE = AXIS_Y - 26;             // 第一排点的中心（紧贴横轴上方）
 const maxDepth = Math.max(...Object.values(cols).map(l => l.length));
-const DOWN_BOTTOM = COL_TOP + (maxDepth - 1) * DOT_V + DOT_R;
+const UP_TOP = COL_BASE - (maxDepth - 1) * DOT_V - DOT_R;
 
 // ---------- grid + axes ----------
 for(let g = 0; g <= yMax; g += 10){
-  svg.appendChild(el('line', {x1:M.left, y1:yUp(g), x2:M.left+PW, y2:yUp(g), class:'hair'}));
-  svg.appendChild(el('text', {x:M.left-9, y:yUp(g)+3.5, 'text-anchor':'end', class:'ax'}, g));
+  svg.appendChild(el('line', {x1:M.left, y1:yDown(g), x2:M.left+PW, y2:yDown(g), class:'hair'}));
+  svg.appendChild(el('text', {x:M.left-9, y:yDown(g)+3.5, 'text-anchor':'end', class:'ax'}, g));
 }
-// faint vertical guides + x labels (labels below the down region)
-for(let t = 570; t <= 660; t += 10){
-  svg.appendChild(el('line', {x1:xS(t), y1:M.top-2, x2:xS(t), y2:DOWN_BOTTOM+6, class:'hair'}));
-  svg.appendChild(el('text', {x:xS(t), y:DOWN_BOTTOM+16, 'text-anchor':'middle', class:'ax'}, t));
+// faint vertical guides + x labels (labels below the 大庆 histogram)
+for(let t = 560; t <= 660; t += 10){
+  svg.appendChild(el('line', {x1:xS(t), y1:M.top-2, x2:xS(t), y2:BOTTOM_EDGE+6, class:'hair'}));
+  svg.appendChild(el('text', {x:xS(t), y:BOTTOM_EDGE+16, 'text-anchor':'middle', class:'ax'}, t));
 }
 // shared axis line
 svg.appendChild(el('line', {x1:M.left, y1:AXIS_Y, x2:M.left+PW, y2:AXIS_Y,
   stroke:'var(--rule)', 'stroke-width':1.6}));
 svg.appendChild(el('text', {x:M.left+PW/2, y:CH-6, 'text-anchor':'middle', class:'axttl'},
   '中考总分（含体育 · 2004 黑龙江省统一命题 · 满分 690）'));
-svg.appendChild(el('text', {x:14, y:16, class:'axttl'}, '↑ 大庆实验录取人数 / 每 2 分'));
-svg.appendChild(el('text', {x:14, y:32, class:'axttl'}, '↓ 高三三班 · 每点 = 1 名学生'));
+svg.appendChild(el('text', {x:14, y:16, class:'axttl'}, '↑ 高三三班 · 每点 = 1 名学生'));
+svg.appendChild(el('text', {x:14, y:32, class:'axttl'}, '↓ 大庆实验录取人数 / 每 1 分'));
 
-// ---------- 大庆实验 直方图（向上）----------
+// ---------- 大庆实验 直方图（向下）----------
 bins.forEach(b => {
   if(b.n === 0) return;
   const x = xS(b.lo) + 1;
   const w = Math.max(1, xS(b.hi) - xS(b.lo) - 2);
-  const y = yUp(b.n);
-  const r = el('rect', {x:x.toFixed(1), y:y.toFixed(1), width:w.toFixed(1),
-    height:(AXIS_Y - y).toFixed(1), rx:1.5, class:'col'});
-  r.addEventListener('mouseenter', e => showTip(e, `${b.lo}–${b.hi-1} 分`,
+  const y = yDown(b.n);
+  const r = el('rect', {x:x.toFixed(1), y:AXIS_Y.toFixed(1), width:w.toFixed(1),
+    height:(y - AXIS_Y).toFixed(1), rx:1.5, class:'col'});
+  r.addEventListener('mouseenter', e => showTip(e, `${b.lo} 分`,
     [['这一段录取', `${b.n} 人`], [`≥ ${b.lo} 分累计`, `${daqingRankAtLeast(b.lo)} 人`]]));
   r.addEventListener('mousemove', moveTip);
   r.addEventListener('mouseleave', hideTip);
@@ -314,54 +399,54 @@ bins.forEach(b => {
 // ---------- threshold lines（贯穿上下）----------
 THR.forEach((t, i) => {
   const x = xS(t.x);
-  svg.appendChild(el('line', {x1:x, y1:M.top-4, x2:x, y2:DOWN_BOTTOM,
+  svg.appendChild(el('line', {x1:x, y1:M.top-4, x2:x, y2:BOTTOM_EDGE,
     stroke:'var(--seal)', 'stroke-width':1.3, 'stroke-dasharray':'4 4', opacity:.7}));
-  svg.appendChild(el('text', {x:x+4, y:M.top + 10 + (i % 2) * 15, class:'thr'}, t.label));
+  svg.appendChild(el('text', {x:x+4, y:M.top + 10 - (i % 2) * 15, class:'thr'}, t.label));
 });
 
-// ---------- 高三三班 点阵（向下）· 三类样式 ----------
+// ---------- 高三三班 点阵（向上）· 实心/空心两类样式 × 生源地两种颜色 ----------
 Object.keys(cols).map(Number).sort((a,b)=>a-b).forEach(lo => {
   const cx = xS(lo + BINW/2);
   cols[lo].forEach((d, k) => {
-    const cy = COL_TOP + k * DOT_V;
-    let attrs;
-    if(d.real){                                    // ① 已知姓名去向的三人
-      attrs = {cx, cy, r:DOT_R+1.4, fill:'var(--petrol)', stroke:'var(--card)', 'stroke-width':1.4};
-    } else if(d.rank <= 30){                        // ② 班内前 30 名（对应图②）
-      attrs = {cx, cy, r:DOT_R, fill:'none', stroke:'var(--petrol)', 'stroke-width':1.6, opacity:.9};
-    } else {                                        // ③ 班内 30 名开外（图② 里没有）
-      attrs = {cx, cy, r:DOT_R-0.7, fill:'none', stroke:'var(--bar)', 'stroke-width':1.1, opacity:.5};
-    }
+    const cy = COL_BASE - k * DOT_V;
+    const outside = ORIGIN_OUTSIDE[d.name];
+    const hue = outside ? 'var(--amber)' : 'var(--petrol)';
+    // 已知姓名去向的三人实心；其余（2007 届有高考分 / 2008 届当年无高考数据）统一空心——
+    // 颜色另按初中生源地区分：绥化市区＝青色，外市县（绥棱/望奎/青冈/海伦/北安）＝琥珀色
+    const attrs = d.real
+      ? {cx, cy, r:DOT_R+1.4, fill:hue, stroke:'var(--card)', 'stroke-width':1.4}
+      : {cx, cy, r:DOT_R, fill:'none', stroke:hue, 'stroke-width':1.6, opacity:.9};
     const c = el('circle', attrs);
     c.setAttribute('style', 'cursor:pointer');
     c.addEventListener('mouseenter', e => showTip(e,
       d.real ? `${d.name} · 中考实分`
-             : `${d.name} · 中考估计分（班内约第 ${d.rank} 名${d.rank > 30 ? ' · 30 名开外' : ' · 前 30'}）`,
+             : `${d.name} · 中考估计分（全班按分数第 ${d.rank} 名${d.gk != null ? ' · 2007届，见图②' : ' · 2008届，无高考数据'}）`,
       d.real
         ? [['中考总分', d.score + ' 分'], ['放进大庆实验', '第 ' + daqingRankAtLeast(d.score) + ' 名 / 447'],
-           ['初中', d.from], ['2007 高考', d.gk + ' 分 → ' + d.uni]]
-        : [['中考估计分', d.est.toFixed(1)], ['放进大庆实验', '第 ' + daqingRankAtLeast(d.est) + ' 名 / 447'],
-           ['2007 高考', d.rank <= 30 ? '见图②' : '无记录'],
-           ['来源', '分数—名次拟合，非实测']]));
+           ['初中', d.from], ['生源地', outside || '绥化市区'], ['2007 高考', d.gk + ' 分 → ' + d.uni]]
+        : [['中考估计分', d.est], ['放进大庆实验', '第 ' + daqingRankAtLeast(d.est) + ' 名 / 447'],
+           ['生源地', outside || '绥化市区'],
+           ['2007 高考', d.gk != null ? d.gk + ' 分（见图②）' : '无记录（2008 届）'],
+           ['来源', '按高考名次映射班级曲线，非中考实测']]));
     c.addEventListener('mousemove', moveTip);
     c.addEventListener('mouseleave', hideTip);
     svg.appendChild(c);
   });
 });
 
-// 已知实分三人的姓名标注（竖直引线，重叠时错开两行）
+// 已知实分三人的姓名标注（竖直引线，重叠时错开两行；标在点阵上方）
 const realLayout = REAL.map(r => ({...r, x: xS(Math.floor(r.zk/BINW)*BINW + BINW/2),
   rank: daqingRankAtLeast(r.zk)})).sort((a,b) => a.x - b.x);
-const LBL_Y = DOWN_BOTTOM + 26, ROW_H = 30, MIN_SEP = 104;
+const LBL_Y = UP_TOP - 26, ROW_H = 30, MIN_SEP = 104;
 realLayout.forEach((r, i) => {
   r.row = (i > 0 && r.x - realLayout[i-1].x < MIN_SEP && realLayout[i-1].row === 0) ? 1 : 0;
 });
 realLayout.forEach(r => {
-  const ly = LBL_Y + r.row * ROW_H;
-  svg.appendChild(el('line', {x1:r.x, y1:DOWN_BOTTOM+2, x2:r.x, y2:ly-11,
+  const ly = LBL_Y - r.row * ROW_H;
+  svg.appendChild(el('line', {x1:r.x, y1:UP_TOP-2, x2:r.x, y2:ly+11,
     stroke:'var(--petrol)', 'stroke-width':.9, opacity:.5}));
   svg.appendChild(el('text', {x:r.x, y:ly, 'text-anchor':'middle', class:'name'}, `${r.name} ${r.zk}`));
-  svg.appendChild(el('text', {x:r.x, y:ly+12, 'text-anchor':'middle', class:'sub'}, `大庆实验 #${r.rank}`));
+  svg.appendChild(el('text', {x:r.x, y:ly-12, 'text-anchor':'middle', class:'sub'}, `大庆实验 #${r.rank}`));
 });
 
 // ---------- tooltip plumbing ----------
@@ -383,12 +468,13 @@ const dqMin = Math.min(...DAQING), dqMax = Math.max(...DAQING), dqN = DAQING.len
 const median = DAQING[Math.floor(dqN/2)];
 
 document.getElementById('figcap').innerHTML =
-  `上下共用一条分数轴：<b>向上</b>是大庆实验录取的 447 人（每 2 分一柱），<b>向下</b>是高三三班 65 人的点阵，每个点一名学生。` +
-  ` 两组人数差近 7 倍，看形状、看落点，不要比柱高和点深。三班的点分三类：` +
-  `<b>实心</b>是三名中考实分已知的同学（林英魁 648、刘欣 642、刘翔 630）；` +
-  `<b>petrol 空心</b>是班内前 30 名——<b>图② 里的就是这批人</b>，两图对着看；` +
-  `<b>灰色空心</b>是班内 30 名开外的 35 人，图② 里查不到他们的高考分。` +
-  ` 全班中考估计分从第 1 名的 648 递减到第 65 名的约 610，都在大庆实验统招线（603）之上，但末段只高出七八分。`;
+  `上下共用一条分数轴：<b>向上</b>是高三三班 66 人的点阵，每个点一名学生；<b>向下</b>是大庆实验录取的 447 人（每 1 分一柱）。` +
+  ` 两组人数差近 7 倍，看形状、看落点，不要比柱高和点深。三班的点分两类：` +
+  `<b>实心</b>是三名中考实分已知的同学（林英魁 648、刘欣 640、刘翔 630）；` +
+  `<b>空心</b>是其余 63 人——55 人是 2007 届、有高考分，<b>图② 里的就是这批人</b>，两图对着看；` +
+  `另外 8 人是 2008 届、当年没有高考数据，画法相同，图② 里查不到他们。` +
+  ` 点的颜色另按初中生源地区分：<b>青色</b>是绥化市区（50 人），<b>琥珀色</b>是外市县——绥棱／望奎／青冈／海伦／北安（16 人）。` +
+  ` 全班中考估计分从最高的 648 到最低的 602，绝大多数人在大庆实验统招线（603）之上，只有 5 人卡在这条线下一分（602 分）。`;
 
 document.getElementById('strip').innerHTML = `
   <div class="sc"><b>${dqN}</b><span>大庆实验 2004 录取统招生</span></div>
@@ -403,29 +489,34 @@ document.getElementById('notes').innerHTML = `
   <span class="hd">读图说明与口径</span>
   <p><b>同一张卷子。</b>2004 年绥化、大庆同用黑龙江省统一命题卷（文化课 660 ＋ 体育 30 ＝ 总分 690），
   跨市分数可直接比较；只有哈尔滨市自主命题、不可比。图中所有分数均为<b>含体育的总分</b>，
-  大庆各校录取线（绥化一中 571 / 大庆一中 583 / 大庆实验 603 / 铁人 607）取自当年教育局公告与省重点录取线表。</p>
+  大庆各校录取线（绥化一中 571 / 大庆一中 583 / 大庆实验 603 / 铁人 607）取自当年教育局公告与省重点录取线表，
+  图① 里四条都画了出来。</p>
   <p><b>大庆实验名单的截断。</b>447 人全部是统招生，最低分 603 即统招线；自费 / 择校生分数更低但不在此表，
   所以直方图左侧是被人为切掉的，不是真实的能力下限。</p>
-  <p><b>三班的三类点。</b>图① 里，<b>实心</b>是林英魁 648、刘欣 642、刘翔 630——三个中考实分硬核实的人；
-  <b>petrol 空心</b>是班内前 30 名，<b>图② 画的就是这 30 人</b>，两图对着看能看清谁掉了、掉多少；
-  <b>灰色空心</b>是班内 30 名开外的 35 人，图② 里查不到他们的高考。
-  所有空心点的横坐标都是<b>中考估计分</b>——把全校前 108 名按名次排开、以已知分数的同学和已知市区／县名次为锚点拟合一条名次→分数曲线读出，
-  不掺高考数据，因此这张图的横轴与"两条路"的高考结局相互独立；但锚点稀疏、末段外推，个人分数误差可达数分。</p>
+  <p><b>三班的两类点。</b>图① 里，<b>实心</b>是林英魁 648、刘欣 642、刘翔 630——三个中考实分硬核实的人；
+  <b>空心</b>是其余 63 人，画法相同，分两批：55 人是 2007 届、有高考分，<b>图② 画的就是这 55 人</b>，两图对着看能看清谁掉了、掉多少；
+  另外 8 人是 2008 届、当年没有高考数据，图② 里查不到他们。
+  所有空心点的横坐标都是<b>逐人中考估计分</b>——先按各自 2007 高考分数在全体已知高考的同学里的名次，映射到此前按班级模拟出的
+  「名次→中考分」曲线取基准值，再按初中生源地加组均值偏移（绥化市区 +0、绥棱／望奎／青冈／海伦 +15、北安 +5），叠加 N(0,6²) 的随机扰动，
+  让中考、高考的关系带有噪声、不严格单调（有人中考更好但高考偏低，也有人反过来），比单纯按高考名次给分更接近真实情况；
+  估计结果见 <code>content/kao/2007届绥化一中高三三班中考高考信息.csv</code>「中考分数」列，个人分数仍是模型估计，不是中考实测分。
+  图① 里点的颜色就是这条偏移线的依据：<b>青色</b>是绥化市区（50 人，偏移 0），<b>琥珀色</b>是外市县共 16 人——绥棱／望奎／青冈／海伦 12 人偏移 +15，北安 4 人偏移 +5。</p>
   <p><b>为什么两条路。</b>2004 年大庆市禁止市外考生就读大庆各高中。你以 648 分、大庆市第 11 名的成绩，
   与名单中同样 648 分、同为市第 11 名的<b>李梦然</b>（六十九中 → 大庆实验 → 2007 年大庆市理科状元、清华）
   处在完全相同的起点，却因户籍政策只能就读绥化一中。图① 量的就是那道门槛：
   你的分数在大庆实验能排到前四，而门是锁着的。</p>
-  <p><b>图② 画 30 个点，两种。</b>三班 65 人里只有前 30 名（班内名次）能查到高考分，其余 35 人没有可靠高考分，<b>不画</b>。
-  这 30 个点里，<b>实心</b>只有三人——林英魁（本人）、刘翔、刘欣，姓名、初中、录取去向、分数都逐条核实过，和图① 的实心三人是同一批；
-  其余 27 个是<b>空心</b>：能在高考录取名单里查到院校，分数按院校当年在黑龙江的录取区间反推，名次与人的对应仍有出入。中位约 630，横跨 608–666。</p>
+  <p><b>图② 画 58 个点，两种。</b>三班 66 人里，2007 届、有实测/推算高考分的有 58 人，这里全画；
+  2008 届当年没有高考数据的 8 人，<b>不画</b>。这 58 个点里，<b>实心</b>只有三人——林英魁（本人）、刘翔、刘欣，
+  姓名、初中、录取去向、分数都逐条核实过，和图① 的实心三人是同一批；其余 55 个是<b>空心</b>：能在高考录取名单里查到院校，
+  分数按院校当年在黑龙江的录取区间反推。中位约 613，横跨 538–666。</p>
   <p><b>为什么图② 的人数要缩小，还要分档。</b>图① 那 447 人是 2004 年大庆实验录取的<b>市区应届统招生</b>；
   三年后的 2007 高考高分段榜单却把<b>外县市借读生</b>（约 40 人，几乎全在高分段）<b>和往届复读生</b>也算了进去。
   这批"外来"高分生越往高分越密，所以折算系数按分数段递减：<b>≥680 ÷4，665–680 ÷3，650–665 ÷2，630–650 ÷1.6，600–630 ÷1.2</b>，
   各段向上取整（≥600 分原始 489 人 → 约 315 人）。除数在 650、665、680 处跳变，直方图柱高在那里就有台阶——这是折算方式带来的，不是真实的分布断层。
   整套系数是毛估的，看趋势不看零头。</p>
-  <p><b>五条竖线（图②）。</b>2007 年黑龙江理科：二本约 526、一本约 588、哈工大约 631、上海交大约 665、清华约 687。
+  <p><b>五条竖线（图②）。</b>2007 年黑龙江理科：二本约 526、重本约 588、哈工大约 631、上海交大约 665、清华约 687。
   折算后，大庆实验市区应届过清华线的约 7 人、过上海交大线的约 30 人、过哈工大线的约 144 人；
-  三班 30 个实测点里，只有林英魁 666 分压着上海交大线过了一分，<b>无人过清华线</b>。
+  三班 58 个实测点里，只有林英魁 666 分压着上海交大线过了一分，<b>无人过清华线</b>。
   林英魁最终去了哈工大——把 666 分花在了一条 631 的线上。</p>
 `;
 
@@ -444,12 +535,13 @@ document.getElementById('notes').innerHTML = `
     return DQ_GK_CUM[DQ_GK_CUM.length-1][1];
   };
 
-  const CW = 1000, CH = 512;
-  const M = {top:52, right:26, bottom:56, left:48};
+  const CW = 1000, CH = 426;
+  const M = {top:40, right:26, bottom:56, left:48};
   const PW = CW - M.left - M.right;
-  const XN = 500, XX = 730, BW = 2;
-  const AXIS_Y = M.top + 268;
-  const UP_H = AXIS_Y - M.top;
+  const XN = 515, XX = 720, BW = 2;
+  const AXIS_Y = 220;
+  const DOWN_H = 150;                    // 大庆实验直方图区高（向下，比原来矮）
+  const BOTTOM_EDGE = AXIS_Y + DOWN_H;
   const xS = v => M.left + ((v - XN) / (XX - XN)) * PW;
   svg2.setAttribute('viewBox', `0 0 ${CW} ${CH}`);
 
@@ -457,42 +549,42 @@ document.getElementById('notes').innerHTML = `
   const dens = DQ_GK_BANDS.map(b => ({...b, d: b.n / ((b.hi - b.lo) / 5)}));
   const yMax = Math.max(10, Math.ceil(Math.max(...dens.map(b => b.d)) / 5) * 5);
   const yStep = yMax <= 20 ? 5 : 10;
-  const yUp = d => AXIS_Y - (d / yMax) * UP_H;
+  const yDown = d => AXIS_Y + (d / yMax) * DOWN_H;
 
-  // 三班点阵（每点 1 人）—— 已确认高考分的 30 人；known 三人实心，其余空心
+  // 三班点阵（每点 1 人）—— 已确认高考分的 58 人；known 三人实心，其余空心
   const cols = {};
   CLASS3_GK.forEach(o => {
     const lo = Math.floor(o.g / BW) * BW;
     (cols[lo] ||= []).push(o);
   });
   Object.values(cols).forEach(l => l.sort((a,b) => (b.known?1:0) - (a.known?1:0)));
-  const DOT_R = 3.4, DOT_V = 8, COL_TOP = AXIS_Y + 22;
+  const DOT_R = 3.8, DOT_V = 15;          // 点阵拉开、点变大，比原来更显眼
+  const COL_BASE = AXIS_Y - 26;           // 第一排点的中心（紧贴横轴上方）
   const maxDepth = Math.max(...Object.values(cols).map(l => l.length));
-  const DOWN_BOTTOM = COL_TOP + (maxDepth - 1) * DOT_V + DOT_R;
+  const UP_TOP = COL_BASE - (maxDepth - 1) * DOT_V - DOT_R;
 
   // grid + axes
   for(let g = 0; g <= yMax; g += yStep){
-    svg2.appendChild(el('line', {x1:M.left, y1:yUp(g), x2:M.left+PW, y2:yUp(g), class:'hair'}));
-    svg2.appendChild(el('text', {x:M.left-9, y:yUp(g)+3.5, 'text-anchor':'end', class:'ax'}, g));
+    svg2.appendChild(el('line', {x1:M.left, y1:yDown(g), x2:M.left+PW, y2:yDown(g), class:'hair'}));
+    svg2.appendChild(el('text', {x:M.left-9, y:yDown(g)+3.5, 'text-anchor':'end', class:'ax'}, g));
   }
-  for(let t = 500; t <= 730; t += 10){
-    svg2.appendChild(el('line', {x1:xS(t), y1:M.top-2, x2:xS(t), y2:DOWN_BOTTOM+6, class:'hair',
-      opacity: t % 20 === 0 ? 1 : 0.4}));
-    if(t % 20 === 0) svg2.appendChild(el('text', {x:xS(t), y:DOWN_BOTTOM+16, 'text-anchor':'middle', class:'ax'}, t));
+  for(let t = XN; t <= XX; t += 10){
+    svg2.appendChild(el('line', {x1:xS(t), y1:M.top-2, x2:xS(t), y2:BOTTOM_EDGE+6, class:'hair'}));
+    svg2.appendChild(el('text', {x:xS(t), y:BOTTOM_EDGE+16, 'text-anchor':'middle', class:'ax'}, t));
   }
   svg2.appendChild(el('line', {x1:M.left, y1:AXIS_Y, x2:M.left+PW, y2:AXIS_Y, stroke:'var(--rule)', 'stroke-width':1.6}));
   svg2.appendChild(el('text', {x:M.left+PW/2, y:CH-6, 'text-anchor':'middle', class:'axttl'},
     '2007 高考总分（黑龙江理科 · 满分 750）'));
-  svg2.appendChild(el('text', {x:14, y:16, class:'axttl'}, '↑ 大庆实验市区应届理科（分档折算）/ 每 5 分'));
-  svg2.appendChild(el('text', {x:14, y:32, class:'axttl'}, '↓ 高三三班 · 每点 = 1 名学生'));
+  svg2.appendChild(el('text', {x:14, y:16, class:'axttl'}, '↑ 高三三班 · 每点 = 1 名学生'));
+  svg2.appendChild(el('text', {x:14, y:32, class:'axttl'}, '↓ 大庆实验市区应届理科（分档折算）/ 每 5 分'));
 
-  // 直方图（向上）
+  // 直方图（向下）
   dens.forEach(b => {
     const x = xS(b.lo) + 1;
     const w = Math.max(1, xS(b.hi) - xS(b.lo) - 2);
-    const y = yUp(b.d);
-    const r = el('rect', {x:x.toFixed(1), y:y.toFixed(1), width:w.toFixed(1),
-      height:(AXIS_Y - y).toFixed(1), rx:1.5, class:'col'});
+    const y = yDown(b.d);
+    const r = el('rect', {x:x.toFixed(1), y:AXIS_Y.toFixed(1), width:w.toFixed(1),
+      height:(y - AXIS_Y).toFixed(1), rx:1.5, class:'col'});
     r.addEventListener('mouseenter', e => showTip(e, `${b.lo}–${b.hi} 分`,
       [['原始榜单', `${b.raw} 人`], [`÷${b.div} 折算`, `${b.n} 人`], [`≥ ${b.lo} 折算累计`, `${gkRankAtLeast(b.lo)} 人`]]));
     r.addEventListener('mousemove', moveTip);
@@ -503,23 +595,26 @@ document.getElementById('notes').innerHTML = `
   // 三条录取线（贯穿上下）
   THR_GK.forEach((t, i) => {
     const x = xS(t.x);
-    svg2.appendChild(el('line', {x1:x, y1:M.top-4, x2:x, y2:DOWN_BOTTOM,
+    svg2.appendChild(el('line', {x1:x, y1:M.top-4, x2:x, y2:BOTTOM_EDGE,
       stroke:'var(--seal)', 'stroke-width':1.3, 'stroke-dasharray':'4 4', opacity:.65}));
-    svg2.appendChild(el('text', {x:x+4, y:M.top + 10 + (i % 2) * 15, class:'thr'}, t.label));
+    svg2.appendChild(el('text', {x:x+4, y:M.top + 10 - (i % 2) * 15, class:'thr'}, t.label));
   });
 
-  // 三班点阵（向下）—— 30 个实测点（known 三人实心，其余空心）
+  // 三班点阵（向上）—— 58 个实测点（known 三人实心，其余空心）；颜色按初中生源地区分，与图① 一致
   Object.keys(cols).map(Number).sort((a,b)=>a-b).forEach(lo => {
     const cx = xS(lo + BW/2);
     cols[lo].forEach((d, k) => {
-      const cy = COL_TOP + k * DOT_V;
+      const cy = COL_BASE - k * DOT_V;
+      const outside = ORIGIN_OUTSIDE[d.n];
+      const hue = outside ? 'var(--amber)' : 'var(--petrol)';
       const c = el('circle', d.known
-        ? {cx, cy, r:DOT_R+1.4, fill:'var(--petrol)', stroke:'var(--card)', 'stroke-width':1.4}
-        : {cx, cy, r:DOT_R, fill:'none', stroke:'var(--petrol)', 'stroke-width':1.5, opacity:.7});
+        ? {cx, cy, r:DOT_R+1.4, fill:hue, stroke:'var(--card)', 'stroke-width':1.4}
+        : {cx, cy, r:DOT_R, fill:'none', stroke:hue, 'stroke-width':1.5, opacity:.7});
       c.setAttribute('style', 'cursor:pointer');
       c.addEventListener('mouseenter', e => showTip(e,
         d.known ? `${d.n} · 姓名与去向确认` : `${d.n} · 按录取院校反推`,
         [['2007 高考', d.g + ' 分'], ['大庆实验市区应届理科', '约第 ' + gkRankAtLeast(d.g) + ' 名'],
+         ['生源地', outside || '绥化市区'],
          ...(d.uni ? [['录取', d.uni]] : []),
          ...(d.known ? [] : [['提醒', '分数由院校反推，名次对应存疑']])]));
       c.addEventListener('mousemove', moveTip);
@@ -528,20 +623,20 @@ document.getElementById('notes').innerHTML = `
     });
   });
 
-  // 林英魁 / 刘翔 / 刘欣 姓名标注（竖直引线，重叠时错开两行；与图① 对称）
+  // 林英魁 / 刘翔 / 刘欣 姓名标注（竖直引线，重叠时错开两行；标在点阵上方，与图① 对称）
   const marks = [{n:'林英魁',g:666},{n:'刘翔',g:657},{n:'刘欣',g:630}]
     .map(m => ({...m, x: xS(Math.floor(m.g/BW)*BW + BW/2), rank: gkRankAtLeast(m.g)}))
     .sort((a,b) => a.x - b.x);
-  const LBL_Y = DOWN_BOTTOM + 26, ROW_H = 30, MIN_SEP = 104;
+  const LBL_Y = UP_TOP - 26, ROW_H = 30, MIN_SEP = 104;
   marks.forEach((m, i) => {
     m.row = (i > 0 && m.x - marks[i-1].x < MIN_SEP && marks[i-1].row === 0) ? 1 : 0;
   });
   marks.forEach(m => {
-    const ly = LBL_Y + m.row * ROW_H;
-    svg2.appendChild(el('line', {x1:m.x, y1:DOWN_BOTTOM+2, x2:m.x, y2:ly-11,
+    const ly = LBL_Y - m.row * ROW_H;
+    svg2.appendChild(el('line', {x1:m.x, y1:UP_TOP-2, x2:m.x, y2:ly+11,
       stroke:'var(--petrol)', 'stroke-width':.9, opacity:.5}));
     svg2.appendChild(el('text', {x:m.x, y:ly, 'text-anchor':'middle', class:'name'}, `${m.n} ${m.g}`));
-    svg2.appendChild(el('text', {x:m.x, y:ly+12, 'text-anchor':'middle', class:'sub'},
+    svg2.appendChild(el('text', {x:m.x, y:ly-12, 'text-anchor':'middle', class:'sub'},
       `实验应届 #${m.rank}`));
   });
 
@@ -550,9 +645,10 @@ document.getElementById('notes').innerHTML = `
   const medMeas = meas[Math.floor(meas.length/2)];
   document.getElementById('figcap-gk').innerHTML =
     `同一套镜像画法，横轴换成 2007 高考分（只取理科），并与图① 一样在左侧空白处标出各条分数线。` +
-    `三班 65 人里只有前 30 名能查到高考分，这里画这 30 个：<b>实心</b>是姓名、去向、分数都硬核实的林英魁 / 刘翔 / 刘欣，` +
-    `<b>空心</b>是其余 27 人（分数由录取院校反推、名次对应存疑）。30 人中位 ${medMeas} 分，从 608 拖到 666。<br>` +
-    `<b>向上</b>是大庆实验理科：官方高分段榜单含外县市生（约 40 人，几乎都在高分段）和复读生。` +
+    `三班 66 人里，2007 届、有实测/推算高考分的有 58 人，这里全画：<b>实心</b>是姓名、去向、分数都硬核实的林英魁 / 刘翔 / 刘欣，` +
+    `<b>空心</b>是其余 55 人（分数由录取院校反推）。58 人中位 ${medMeas} 分，从 538 拖到 666。` +
+    ` 点的颜色仍按初中生源地区分，与图① 一致：<b>青色</b>绥化市区，<b>琥珀色</b>外市县。<br>` +
+    `<b>向下</b>是大庆实验理科：官方高分段榜单含外县市生（约 40 人，几乎都在高分段）和复读生。` +
     `折算到图① 那批「2004 市区应届」量级时按分数段分档缩小——<b>≥680 ÷4，665–680 ÷3，650–665 ÷2，630–650 ÷1.6，600–630 ÷1.2</b>` +
     `（≥600 分原始 489 人 → 约 ${DQ_GK_TOTAL} 人）。除数在 650、665、680 处跳变，柱高也就在那里有台阶。` +
     `600–650 段官方只有 10 分粒度，按每 5 分摊平。<br>` +

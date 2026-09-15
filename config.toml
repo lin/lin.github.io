@@ -45,7 +45,24 @@ weight = 3
   # 交给 Hugo 会被套进主题模板变成嵌套页面，所以不参与站点构建。
   # 发布版本在 static/gaokao-convert/index.html。
   # README 是给自己看的数据说明，同样不该变成一个页面。
-  excludeFiles = ["2007/convert/index.html", "2007/convert/README.md"]
+  # 下面几个图表页同理：完整/自成一体的 HTML 文档，发布版本在
+  # static/kao/daqing-shiyan-2004-vs-suihua-class3/index.html、
+  # static/kao/suihua-class3-2007/index.html、
+  # static/kao/suihua-zhongkao-648/index.html，kao.md 用 iframe 嵌入前两个。
+  # static/kao/2007-heilongjiang-admissions/index.html 是 2007 年黑龙江高考录取分数查询工具。
+  # 下面两个是报纸复刻页（老报纸样式，图片走 /kao/references/ 绝对路径），
+  # 发布版本分别在 static/kao/2004年绥化市属高中招生计划/index.html、
+  # static/kao/2005年绥化九中苗丽萍校长访录/index.html。此前"招生计划"这个
+  # 没排除，被 Hugo 套进主题模板丢光了样式，2026-09-14 一并修好。
+  excludeFiles = [
+    "2007/convert/index.html", "2007/convert/README.md",
+    "kao/daqing-shiyan-2004-vs-suihua-class3.html",
+    "kao/suihua-class3-2007.html",
+    "kao/suihua-zhongkao-648.html",
+    "kao/2007-heilongjiang-admissions.html",
+    "kao/2004年绥化市属高中招生计划.html",
+    "kao/2005年绥化九中苗丽萍校长访录.html",
+  ]
 
 [[module.mounts]]
   source = "static"

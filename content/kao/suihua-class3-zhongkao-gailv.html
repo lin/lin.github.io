@@ -1,0 +1,380 @@
+<title>三班中考分数段的概率校准</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --page:#e6eaeb; --card:#f7f9f9; --sunk:#dde3e4; --band:#eef2f2;
+  --ink:#10171a; --ink-2:#48555a; --ink-3:#6c797f;
+  --rule:#c9d1d3; --hair:#dbe1e2; --grid:#e1e6e7;
+  --c04:#a5342a; --c04-w:rgba(165,52,42,.13);
+  --c20:#6b3fa0; --c20-w:rgba(107,63,160,.10);
+  --c26:#0081a0; --c26-w:rgba(0,129,160,.12);
+  --shadow:0 1px 2px rgba(16,23,26,.05),0 14px 34px -22px rgba(16,23,26,.38);
+  --focus:#0081a0;
+  --serif:"Noto Serif SC","Songti SC","STSong",Georgia,serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+    --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+    --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+    --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+    --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+    --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+    --focus:#00a0a8;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0b0f10; --card:#151a1c; --sunk:#101416; --band:#1a2022;
+  --ink:#e9eeee; --ink-2:#a8b3b6; --ink-3:#808c90;
+  --rule:#2c3436; --hair:#21282a; --grid:#20272a;
+  --c04:#d95a48; --c04-w:rgba(217,90,72,.17);
+  --c20:#9b78e6; --c20-w:rgba(155,120,230,.13);
+  --c26:#00a0a8; --c26-w:rgba(0,160,168,.15);
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 14px 34px -22px rgba(0,0,0,.9);
+  --focus:#00a0a8;
+}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:52px 88px}
+p{margin:0}
+.kicker{font:500 11.5px/1.4 var(--mono);letter-spacing:.2em;color:var(--ink-3);margin:0 0 20px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(28px,5vw,44px);line-height:1.22;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1 em{font-style:normal;font-family:var(--mono);font-weight:600;color:var(--c04);letter-spacing:-.03em}
+.lede{max-width:40em;font-size:16.5px;color:var(--ink-2);margin-top:20px}
+.lede b{color:var(--ink);font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin-top:28px}
+.stat{background:var(--page);padding:14px 16px 14px 0}
+.stat+.stat{padding-left:16px}
+.stat b{display:block;font:600 25px/1.15 var(--mono);color:var(--ink);letter-spacing:-.01em}
+.stat b.hot{color:var(--c04)}
+.stat span{display:block;margin-top:6px;font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat,.stat+.stat{padding:14px 12px}}
+section{margin-top:64px}
+.sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;border-top:2px solid var(--ink);padding-top:12px}
+.sh h2{font-family:var(--serif);font-weight:700;font-size:clamp(20px,3vw,24px);line-height:1.35;margin:0;text-wrap:balance}
+.sh .src{font:500 11px/1.4 var(--mono);letter-spacing:.1em;color:var(--ink-3)}
+.prose{max-width:40em;color:var(--ink-2);margin-top:14px;display:grid;gap:10px}
+.prose b{color:var(--ink);font-weight:700}
+.fig{background:var(--card);border-radius:6px;box-shadow:var(--shadow);padding:18px 20px 14px;margin:22px 0 0}
+.fig-h{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.fig-h h3{font-family:var(--serif);font-weight:600;font-size:16px;margin:0;text-wrap:balance}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;color:var(--ink-2);line-height:1.6}
+.legend span{white-space:nowrap}
+.dt{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle;margin-right:6px}
+.ring{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.6px solid;vertical-align:middle;margin-right:6px;background:var(--card)}
+.dm{display:inline-block;width:8px;height:8px;transform:rotate(45deg);vertical-align:middle;margin:0 8px 0 2px}
+.bar{display:inline-block;width:16px;height:3px;border-radius:2px;vertical-align:middle;margin-right:6px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+svg.chart{display:block;width:100%;height:auto;min-width:600px}
+.cap{font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.65}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+svg .lab{font-family:var(--sans);font-size:12.5px;fill:var(--ink)}
+svg .lab2{font-family:var(--sans);font-size:12px;fill:var(--ink-2)}
+.gr{stroke:var(--grid);stroke-width:1}
+.ax{stroke:var(--rule);stroke-width:1}
+.guide{stroke:var(--rule);stroke-width:1;stroke-dasharray:4 4}
+.hit{fill:transparent;cursor:pointer}
+svg :focus{outline:none}
+svg :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.tbl-wrap{margin-top:14px;background:var(--card);border-radius:6px;box-shadow:var(--shadow)}
+.ctbl{width:100%;border-collapse:collapse;font-size:13.5px;min-width:420px}
+.ctbl th,.ctbl td{padding:8px 14px;text-align:right;border-bottom:1px solid var(--hair);white-space:nowrap;font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink)}
+.ctbl th{font:500 11px/1.4 var(--mono);letter-spacing:.04em;color:var(--ink-3);background:var(--band);vertical-align:bottom}
+.ctbl th:first-child,.ctbl td:first-child,.ctbl th:nth-child(2),.ctbl td:nth-child(2){text-align:left;font-family:var(--sans)}
+.ctbl tbody tr:last-child td{border-bottom:0}
+.mm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:8px}
+.mm{background:var(--sunk);border-radius:5px;padding:12px 14px 10px}
+.mm h4{font:600 13px/1.4 var(--sans);margin:0 0 2px;color:var(--ink)}
+.mm .sub{font:11px/1.4 var(--mono);color:var(--ink-3);margin-bottom:8px}
+.verdict{margin-top:20px;padding:14px 18px;border-left:3px solid var(--c04);background:var(--c04-w);border-radius:0 4px 4px 0;max-width:46em;font-size:15px;color:var(--ink)}
+.notes{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px;max-width:48em}
+.notes li{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:12px;color:var(--ink-2);font-size:13.5px;line-height:1.7}
+.tag{font:500 10.5px/1.3 var(--mono);letter-spacing:.06em;padding:3px 0;border-top:1.5px solid currentColor;align-self:start;margin-top:4px}
+.tag.real{color:var(--c26)} .tag.model{color:var(--c04)} .tag.open{color:var(--ink-3)}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);font:12px/1.6 var(--mono);color:var(--ink-3)}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--ink);color:var(--card);font:12px/1.6 var(--mono);padding:8px 11px;border-radius:4px;max-width:280px;box-shadow:0 10px 26px -10px rgba(0,0,0,.5)}
+#tip b{font-weight:600}
+#tip .h{font-family:var(--sans);font-weight:700;margin-bottom:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<main class="wrap">
+  <header>
+    <p class="kicker">高三三班 · 中考分数分布的概率校准</p>
+    <h1>三班市区生的中考分数，<em>该多高</em>才算合理</h1>
+    <p class="lede">接着 <code>suihua-zhongkao-648.html</code> 的模型和 <code>kao.md</code> 的分班细节往下算：市区前 5 或前 10 名进一班，其余市区生按名次轮流分进一、二、三班，高二二班的理科生并入三班。把这两条规则叠加全市中考分数的两种模型（借形状、正态），可以倒算出<b>三班的市区生，各个分数段该有几个人</b>，再拿现在 <code>高三三班已知信息.csv</code> 里的数字去对照。</p>
+    <div class="stats">
+      <div class="stat"><b>50</b><span>三班市区生人数<br>（15 名外县生另算）</span></div>
+      <div class="stat"><b>1/3</b><span>全市排名前 10 以外的市区生<br>落进三班的估计概率</span></div>
+      <div class="stat"><b class="hot">3 人</b><span>真实（非模型）中考分：<br>林英魁 648、刘翔 630、刘欣 642</span></div>
+      <div class="stat"><b class="hot">642</b><span>刘欣真实分数不在一班，<br>说明"前 10 进一班"是软规则</span></div>
+    </div>
+  </header>
+
+  <section id="rank">
+    <div class="sh"><h2>三班 66 人的中考分排序</h2><span class="src">高三三班已知信息.csv · 按中考分数排序</span></div>
+    <div class="prose">
+      <p>下面把 CSV 里能确定来源的 66 人都画出来，按中考分数从高到低排。空心点是真实分数（林英魁、刘翔、刘欣），实心点是按高考名次读模拟曲线、再加噪声得到的估算值。外县生（紫色）整体比市区生（红色）高一截，符合班里"外县生均分比市区生高一截"的说法。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>66 人中考分（估算 vs 真实）</h3>
+        <div class="legend">
+          <span><i class="dt" style="background:var(--c04)"></i>市区生 · 估算</span>
+          <span><i class="ring" style="border-color:var(--c04);color:var(--c04)"></i>市区生 · 真实</span>
+          <span><i class="dt" style="background:var(--c20)"></i>外县生 · 估算</span>
+          <span><i class="ring" style="border-color:var(--c20);color:var(--c20)"></i>外县生 · 真实</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="rank-chart" class="chart" viewBox="0 0 920 380" role="img" aria-label="三班66人按中考分数从高到低排序的散点图，市区与外县分色，真实分数用空心点"></svg></div>
+      <p class="cap">虚线是 630 / 635 / 640 / 645 / 650 五条分段线，对应下一节的分析。悬停或点按每个点可以看名字和来源。</p>
+    </figure>
+  </section>
+
+  <section id="county">
+    <div class="sh"><h2>外县生在自己县里排第几</h2><span class="src">绥棱／望奎／青冈／海伦 ~ N(532,37²) · 北安 ~ N(522,37²)</span></div>
+    <div class="prose">
+      <p>换一条思路：外县生的中考分不是拿市区曲线加偏移凑出来的，而是假设每个县自己的中考分服从正态分布——绥棱、望奎、青冈、海伦用 N(532, 37²)，北安整体低 10 分，用 N(522, 37²)。把每个人的分数换成 z 分数、查正态上尾概率，再乘以"全县当年中考考生数"（不知道确切数字，按 3000–5000 人给一个区间），就能倒推出这个人在自己县里大概排第几。</p>
+      <p>两个真实锚点对上了：刘翔算出来约第 13–21 名，和 kao.md 里"绥棱五中第六，绥棱县十三"在 3000 人口径下正好是第 13；林英魁算出来约第 3–5 名，和"县第三"那个版本也基本吻合。这算是给 N(532,37²) 这条假设做了一次交叉验证。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>16 名外县生的全县排名区间</h3>
+        <div class="legend">
+          <span><i class="bar" style="background:var(--c20)"></i>排名区间（3000 人—5000 人口径）</span>
+          <span><i class="dm" style="background:var(--c26)"></i>已知真实排名（刘翔第 13、林英魁约第 3）</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="county-chart" class="chart" viewBox="0 0 920 460" role="img" aria-label="16名外县生按中考分数算出的全县排名区间"></svg></div>
+      <p class="cap">排名越小越靠前，横轴用对数刻度。悬停看具体分数、z 分数和排名区间。</p>
+    </figure>
+    <div class="tbl-wrap scroll">
+      <table class="ctbl">
+        <thead><tr><th>姓名</th><th>县</th><th>中考分</th><th>z</th><th>排名区间</th></tr></thead>
+        <tbody id="county-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="bands">
+    <div class="sh"><h2>五个分数段：模型区间 vs CSV 实际人数</h2><span class="src">借形状 / 正态两种全市曲线 · 刨掉前 10 进一班 · ×1/3 落进三班</span></div>
+    <div class="prose">
+      <p>每个分数段先算全市（4923 人）该有多少市区生，再刨掉"排名前 10 以内、已经进了一班"的部分，剩下的乘以 1/3，得到三班里这个分数段的期望人数。<b>下界</b>是按借形状模型、严格排除前 10 的结果；<b>上界</b>是按正态模型、完全不排除前 10 的结果（相当于把"前 10 进一班"这条软规则当作不存在）——真实区间应该落在两者之间，具体偏哪边，取决于这条规则到底有多硬。</p>
+      <p>刘欣真实 642 分却在三班，直接说明这条规则不是精确的分数线：按两种模型算，642 分怎么都该在全市前 10 以内。所以 640 分以上不能读成"不可能"，只能读成"很少见、一旦出现大概率是例外"。</p>
+    </div>
+    <figure class="fig">
+      <div class="fig-h">
+        <h3>各分数段：模型区间与 CSV 现状</h3>
+        <div class="legend">
+          <span><i class="bar" style="background:var(--ink-3)"></i>模型区间（下界—上界）</span>
+          <span><i class="dm" style="background:var(--c04)"></i>CSV 现在的人数</span>
+        </div>
+      </div>
+      <div class="scroll"><svg id="band-chart" class="chart" viewBox="0 0 920 260" role="img" aria-label="五个分数段的模型期望人数区间，与CSV当前实际人数的对比"></svg></div>
+      <p class="cap">630–635 分这一档，模型区间明显宽，因为借形状和正态在这个位置分歧最大。</p>
+    </figure>
+  </section>
+
+  <section id="poisson">
+    <div class="sh"><h2>三个分数段的概率分布</h2><span class="src">泊松近似 · λ 取模型区间的中段估计</span></div>
+    <div class="prose">
+      <p>把期望人数当泊松分布的 λ，就能算出"这个分数段恰好有 0、1、2…人"的概率。645 分以上两档期望人数太接近 0，画不出什么，直接说结论：<b>645–650 分</b>期望约 0.15 人，650 分以上约 0.05 人，出现 1 个都已经是小概率事件，出现 2 个基本可以认为估算出了问题。</p>
+    </div>
+    <div class="mm-grid" id="mm-grid"></div>
+    <p class="cap">每张小图的红色柱是 CSV 现在这个分数段的实际人数；灰色柱是模型给出的其他可能取值。三档都落在灰色柱覆盖的常见区间内，没有一档是小概率的异常值。</p>
+  </section>
+
+  <section id="verdict">
+    <div class="sh"><h2>怎么看这份估算</h2><span class="src">结论</span></div>
+    <div class="verdict">
+      630–635 分（3 人）、635–640 分（1 人）、640–645 分（1 人，真实）——三个分数段的实际人数都落在模型给出的常见范围内，没有哪一段是统计上的异常值。630–635 那 3 人略偏模型区间上沿，如果想更保守，可以把其中一人往下压几分；不改也说得过去。
+    </div>
+    <ul class="notes">
+      <li><span class="tag real">已知</span><span>林英魁 648、刘翔 630、刘欣 642 是真实中考分，不参与任何模拟或概率计算，图中用空心点标出。</span></li>
+      <li><span class="tag model">模型</span><span>全市人数曲线（借形状 D、正态 A）与两个实锚点（571 分 742 人、600 分 174 人）来自 <code>suihua-zhongkao-648.html</code>；分班规则（前 5/10 进一班、其余轮流分班、二班理科生并入三班）来自 <code>kao.md</code>。1/3 的最终概率＝三分之二轮转进二/三班 × 二班三班合并后二分之一被抽中三班。</span></li>
+      <li><span class="tag open">局限</span><span>"前 5/10 进一班"是回忆性的近似说法，一班里还有关系户占位，所以这条线本身是软的；本页把它当一条近似边界处理，不是精确约束。</span></li>
+      <li><span class="tag model">模型</span><span>外县生的县内排名改用各县自己的正态分布：绥棱／望奎／青冈／海伦 N(532,37²)，北安 N(522,37²)，全县考生数未知，按 3000–5000 人给区间，不是精确值。</span></li>
+    </ul>
+    <footer>数据整理自仓库 content/kao/高三三班已知信息.csv、content/kao/suihua-zhongkao-648.html、content/posts/kao.md</footer>
+  </section>
+</main>
+<div id="tip" role="tooltip" hidden></div>
+
+<script>
+(()=>{
+const NS='http://www.w3.org/2000/svg';
+const $=s=>document.querySelector(s);
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+function tx(p,x,y,s,a){const e=el('text',Object.assign({x,y},a||{}),p);e.textContent=s;return e}
+
+/* ---- tooltip ---- */
+const tip=$('#tip');
+function tipAt(x,y,html){tip.innerHTML=html;tip.hidden=false;const w=tip.offsetWidth,h=tip.offsetHeight;let L=x+14,T=y+14;if(L+w>innerWidth-8)L=x-w-14;if(T+h>innerHeight-8)T=y-h-14;tip.style.left=Math.max(8,L)+'px';tip.style.top=Math.max(8,T)+'px'}
+function tipHide(){tip.hidden=true}
+function bindTip(node,html){
+  node.addEventListener('pointerenter',e=>tipAt(e.clientX,e.clientY,html()));
+  node.addEventListener('pointermove',e=>tipAt(e.clientX,e.clientY,html()));
+  node.addEventListener('pointerleave',tipHide);
+}
+
+/* ---- data: 66 人，来自 高三三班已知信息.csv ---- */
+const PEOPLE=[
+["林英魁","绥棱县",648,1],["贾洪亮","市区",626,0],["刘翔","绥棱县",630,1],["李杏","市区",629,0],
+["梁志超","海伦市",636,0],["王胤燊","望奎县",624,0],["刘雪薇","市区",635,0],["包括","望奎县",638,0],
+["郭蕾","市区",631,0],["陈岩","市区",625,0],["李光磊","望奎县",632,0],["李开","市区",630,0],
+["邵润超","望奎县",637,0],["刘欣","市区",642,1],["王铁鑫","市区",624,0],["赵正少","市区",630,0],
+["孟静","市区",624,0],["姜英男","市区",613,0],["于鹏","市区",624,0],["闫岩","绥棱县",635,0],
+["李美逸","市区",622,0],["韩磊","市区",613,0],["刘军力","市区",621,0],["尹琪东","市区",612,0],
+["耿庆龙","市区",621,0],["杨智广","市区",623,0],["闫永祥","市区",627,0],["吕泽辉","市区",615,0],
+["印亚奇","市区",605,0],["何香培","市区",609,0],["李冬","市区",622,0],["吕晶鑫","市区",611,0],
+["段春颀","北安市",615,0],["殷旭","北安市",625,0],["王丽圆","绥棱县",627,0],["张士萍","市区",597,0],
+["王昊","市区",612,0],["王刚","北安市",613,0],["孙丽","市区",600,0],["庞小陶","市区",611,0],
+["张赫琼","市区",602,0],["杨欢","市区",606,0],["曹剑超","市区",607,0],["陈媛丽","市区",608,0],
+["李岩","市区",616,0],["杨蕴哲","市区",607,0],["李婧阳","市区",607,0],["侯雨薇","望奎县",641,0],
+["董琳","市区",606,0],["高珊","市区",606,0],["刘淑波","市区",615,0],["王晓薇","市区",605,0],
+["韩富城","市区",604,0],["张维宇","市区",606,0],["高阳","市区",599,0],["王晓航","市区",597,0],
+["李星曌","市区",603,0],["孙新宇","市区",596,0],["于洪泽","市区",612,0],["赵涌涵","市区",602,0],
+["张国会","青冈县",642,0],["郭宝玲","望奎县",633,0],["李佳滨","北安市",624,0],["赵希龙","市区",607,0],
+["贾伟宇","市区",616,0],["牟月","市区",612,0]
+];
+PEOPLE.sort((a,b)=>b[2]-a[2]);
+const isCity=o=>o==='市区';
+
+/* ---- rank chart ---- */
+function drawRank(){
+  const svg=$('#rank-chart');svg.textContent='';
+  const W=920,H=380,ml=44,mr=20,mt=20,mb=34,pw=W-ml-mr,ph=H-mt-mb;
+  const n=PEOPLE.length,x0=590,x1=655;
+  const X=i=>ml+(i/(n-1))*pw, Y=s=>mt+(1-(s-x0)/(x1-x0))*ph;
+  [590,600,610,620,630,640,650].forEach(v=>{el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'gr'},svg);tx(svg,ml-8,Y(v)+4,v,{'text-anchor':'end'})});
+  [630,635,640,645,650].forEach(v=>el('line',{x1:ml,x2:ml+pw,y1:Y(v),y2:Y(v),class:'guide'},svg));
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  tx(svg,ml+pw/2,H-6,'班内名次（按中考分排序）',{'text-anchor':'middle',class:'lab2'});
+  tx(svg,ml-8,mt-6,'中考分',{'text-anchor':'end',class:'lab2'});
+  PEOPLE.forEach((p,i)=>{
+    const[name,origin,score,real]=p;
+    const color=isCity(origin)?'var(--c04)':'var(--c20)';
+    const cx=X(i),cy=Y(score);
+    const g=el('g',{},svg);
+    if(real){el('circle',{cx,cy,r:5,fill:'var(--card)',stroke:color,'stroke-width':1.8},g)}
+    else{el('circle',{cx,cy,r:3.6,fill:color,stroke:'var(--card)','stroke-width':1.2},g)}
+    const hit=el('circle',{cx,cy,r:9,class:'hit',tabindex:0,'aria-label':`${name} ${score}分`},svg);
+    bindTip(hit,()=>`<div class="h">${name}</div>${origin} · ${score} 分${real?'（真实）':'（估算）'}`);
+  });
+}
+
+/* ---- county rank: N(532,37²) for 绥棱/望奎/青冈/海伦, N(522,37²) for 北安 ---- */
+function erfc(x){const z=Math.abs(x),t=1/(1+.5*z);const r=t*Math.exp(-z*z-1.26551223+t*(1.00002368+t*(.37409196+t*(.09678418+t*(-.18628806+t*(.27886807+t*(-1.13520398+t*(1.48851587+t*(-.82215223+t*.17087277)))))))));return x>=0?r:2-r}
+const Qn=z=>.5*erfc(z/Math.SQRT2);
+const COUNTY=[
+  ["林英魁","绥棱",648,532,3],["刘翔","绥棱",630,532,13],["闫岩","绥棱",632,532,null],["王丽圆","绥棱",627,532,null],
+  ["王胤燊","望奎",624,532,null],["包括","望奎",638,532,null],["李光磊","望奎",632,532,null],["邵润超","望奎",631,532,null],
+  ["侯雨薇","望奎",641,532,null],["郭宝玲","望奎",633,532,null],["梁志超","海伦",636,532,null],["张国会","青冈",630,532,null],
+  ["段春颀","北安",615,522,null],["殷旭","北安",625,522,null],["王刚","北安",613,522,null],["李佳滨","北安",624,522,null]
+].map(([name,county,score,mean,known])=>{
+  const z=(score-mean)/37, q=Qn(z);
+  return{name,county,score,z,lo:q*3000,hi:q*5000,known};
+});
+COUNTY.sort((a,b)=>b.score-a.score);
+
+function drawCounty(){
+  const svg=$('#county-chart');svg.textContent='';
+  const W=920,H=460,ml=112,mr=24,mt=16,mb=34,pw=W-ml-mr,ph=H-mt-mb;
+  const rows=COUNTY.length,rh=ph/rows;
+  const x0=2,x1=40,L0=Math.log10(x0),L1=Math.log10(x1);
+  const X=v=>ml+(Math.log10(Math.max(v,x0))-L0)/(L1-L0)*pw;
+  [3,5,10,20,40].forEach(v=>{el('line',{x1:X(v),x2:X(v),y1:mt,y2:mt+ph,class:'gr'},svg);tx(svg,X(v),mt+ph+18,'第'+v+'名',{'text-anchor':'middle'})});
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  COUNTY.forEach((p,i)=>{
+    const cy=mt+rh*i+rh/2;
+    tx(svg,ml-12,cy+4,`${p.name}·${p.county}`,{'text-anchor':'end',class:'lab'});
+    el('line',{x1:X(p.lo),x2:X(p.hi),y1:cy,y2:cy,stroke:'var(--c20)','stroke-width':6,'stroke-linecap':'round'},svg);
+    if(p.known!=null){
+      const d=7,kx=X(p.known);
+      el('path',{d:`M${kx-d},${cy}L${kx},${cy-d}L${kx+d},${cy}L${kx},${cy+d}Z`,fill:'var(--c26)',stroke:'var(--card)','stroke-width':1.4},svg);
+    }
+    const hit=el('rect',{x:ml,y:mt+rh*i,width:pw,height:rh,class:'hit',tabindex:0,'aria-label':`${p.name} ${p.county} ${p.score}分，全县约第${Math.round(p.lo)}到第${Math.round(p.hi)}名`},svg);
+    bindTip(hit,()=>`<div class="h">${p.name} · ${p.county}</div>${p.score} 分 · z=${p.z.toFixed(2)}<br>全县约第 ${Math.round(p.lo)}–${Math.round(p.hi)} 名${p.known!=null?`<br>已知真实约第 ${p.known} 名`:''}`);
+  });
+}
+function fillCountyTable(){
+  const tb=$('#county-tbody');tb.innerHTML='';
+  COUNTY.forEach(p=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${p.name}</td><td>${p.county}</td><td>${p.score}</td><td>${p.z.toFixed(2)}</td><td>约第 ${Math.round(p.lo)}–${Math.round(p.hi)} 名${p.known!=null?`（已知约第${p.known}）`:''}</td>`;
+    tb.appendChild(tr);
+  });
+}
+
+/* ---- band chart ---- */
+const BANDS=[
+  {lab:'650 以上',lo:0,hi:1.36,act:0},
+  {lab:'645–650',lo:0,hi:0.77,act:0},
+  {lab:'640–645',lo:0,hi:1.15,act:1},
+  {lab:'635–640',lo:0,hi:1.67,act:1},
+  {lab:'630–635',lo:1.16,hi:2.43,act:3}
+];
+function drawBands(){
+  const svg=$('#band-chart');svg.textContent='';
+  const W=920,H=260,ml=110,mr=30,mt=16,mb=34,pw=W-ml-mr,ph=H-mt-mb;
+  const rows=BANDS.length,rh=ph/rows;
+  const xmax=3.2, X=v=>ml+(v/xmax)*pw;
+  [0,1,2,3].forEach(v=>{el('line',{x1:X(v),x2:X(v),y1:mt,y2:mt+ph,class:'gr'},svg);tx(svg,X(v),mt+ph+18,v,{'text-anchor':'middle'})});
+  el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+  tx(svg,ml+pw/2,H-2,'三班市区生人数',{'text-anchor':'middle',class:'lab2'});
+  BANDS.forEach((b,i)=>{
+    const cy=mt+rh*i+rh/2;
+    tx(svg,ml-12,cy+4,b.lab,{'text-anchor':'end',class:'lab'});
+    el('line',{x1:X(b.lo),x2:X(b.hi),y1:cy,y2:cy,stroke:'var(--ink-3)','stroke-width':6,'stroke-linecap':'round'},svg);
+    const d=8;
+    el('path',{d:`M${X(b.act)-d},${cy}L${X(b.act)},${cy-d}L${X(b.act)+d},${cy}L${X(b.act)},${cy+d}Z`,fill:'var(--c04)',stroke:'var(--card)','stroke-width':1.5},svg);
+    const hit=el('rect',{x:ml,y:mt+rh*i,width:pw,height:rh,class:'hit',tabindex:0,'aria-label':`${b.lab}分：模型区间${b.lo}到${b.hi}人，实际${b.act}人`},svg);
+    bindTip(hit,()=>`<div class="h">${b.lab} 分</div>模型区间 ${b.lo.toFixed(2)}–${b.hi.toFixed(2)} 人<br>CSV 实际 <b>${b.act}</b> 人`);
+  });
+}
+
+/* ---- poisson mini charts ---- */
+function poisson(lam,k){let f=1;for(let i=2;i<=k;i++)f*=i;return Math.exp(-lam)*Math.pow(lam,k)/f}
+const MM=[
+  {lab:'630–635 分',lam:1.8,act:3,kmax:7},
+  {lab:'635–640 分',lam:1.0,act:1,kmax:6},
+  {lab:'640–645 分',lam:0.4,act:1,kmax:5}
+];
+function drawMM(){
+  const grid=$('#mm-grid');grid.innerHTML='';
+  MM.forEach(m=>{
+    const wrap=document.createElement('div');wrap.className='mm';
+    wrap.innerHTML=`<h4>${m.lab}</h4><div class="sub">λ ≈ ${m.lam}，CSV 实际 ${m.act} 人</div>`;
+    const svg=el('svg',{viewBox:'0 0 260 140',class:'chart',style:'min-width:0',role:'img','aria-label':`${m.lab}的泊松概率分布`});
+    const W=260,H=140,ml=26,mr=8,mt=8,mb=22,pw=W-ml-mr,ph=H-mt-mb;
+    const ks=[];for(let k=0;k<=m.kmax;k++)ks.push(k);
+    const probs=ks.map(k=>poisson(m.lam,k));
+    const pmax=Math.max(...probs);
+    const bw=pw/ks.length;
+    ks.forEach((k,i)=>{
+      const h=(probs[i]/pmax)*ph;
+      const x=ml+i*bw+bw*0.15,w=bw*0.7;
+      const y=mt+ph-h;
+      const isAct=k===m.act;
+      const rect=el('rect',{x,y,width:w,height:Math.max(h,1),rx:2,fill:isAct?'var(--c04)':'var(--ink-3)',opacity:isAct?1:.45},svg);
+      const hit=el('rect',{x,y:mt,width:w,height:ph,class:'hit',tabindex:0,'aria-label':`${k}人的概率约${(probs[i]*100).toFixed(1)}%`},svg);
+      bindTip(hit,()=>`<div class="h">${k} 人</div>概率约 ${(probs[i]*100).toFixed(1)}%${isAct?'（CSV 现状）':''}`);
+      tx(svg,x+w/2,mt+ph+14,k,{'text-anchor':'middle'});
+    });
+    el('line',{x1:ml,x2:ml+pw,y1:mt+ph,y2:mt+ph,class:'ax'},svg);
+    wrap.appendChild(svg);
+    grid.appendChild(wrap);
+  });
+}
+
+drawRank();drawCounty();fillCountyTable();drawBands();drawMM();
+})();
+</script>
