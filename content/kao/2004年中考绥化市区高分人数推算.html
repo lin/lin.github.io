@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2004年中考绥化市区高分人数推算：基于大庆基准与极值正态模型的推演</title>
+  <meta name="description" content="2004年中考大庆市与绥化市区高分段学生分布推算。基于大庆市教育局43所高中录取名册实录，结合分位数平移与极值正态模型，推算绥化市区620至660分以上各区间考生人数。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #f7f9fa;
+      --card: #ffffff;
+      --sunk: #eef2f4;
+      --band: #f0f4f6;
+      --ink: #11181c;
+      --ink-2: #455259;
+      --ink-3: #687780;
+      --rule: #d7e0e4;
+      --hair: #e6edf0;
+      --grid: #e2e9ec;
+      
+      /* 2004年大庆四中实验班经典历史配色 */
+      --retro-blue: #99ccff;
+      --retro-red: #990000;
+      --retro-red-dark: #7a0000;
+      --retro-lime: #f0ffd9;
+      --retro-lime-tint: #e5f7cb;
+      --retro-yellow: #fff2cc;
+      --retro-accent-blue: #0000ff;
+
+      --shadow-sm: 0 1px 3px rgba(17,24,28,0.05);
+      --shadow-md: 0 8px 24px -12px rgba(17,24,28,0.12);
+      --shadow-lg: 0 16px 36px -16px rgba(17,24,28,0.18);
+
+      --serif: "Newsreader", "Noto Serif SC", "Songti SC", STSong, Georgia, serif;
+      --sans: "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --mono: "IBM Plex Mono", Menlo, Consolas, Monaco, monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0c1012;
+        --card: #151b1e;
+        --sunk: #111618;
+        --band: #192124;
+        --ink: #ecf1f3;
+        --ink-2: #a2b0b6;
+        --ink-3: #708188;
+        --rule: #273338;
+        --hair: #1c2529;
+        --grid: #1e282c;
+        
+        --retro-blue: #3d6a99;
+        --retro-red: #992222;
+        --retro-red-dark: #661111;
+        --retro-lime: #1f2d18;
+        --retro-lime-tint: #2a3d21;
+        --retro-yellow: #3d3419;
+        --retro-accent-blue: #66b3ff;
+
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+        --shadow-md: 0 8px 24px -12px rgba(0,0,0,0.6);
+        --shadow-lg: 0 16px 36px -16px rgba(0,0,0,0.8);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: clamp(24px, 4.5vw, 56px) clamp(16px, 3.5vw, 36px) 80px;
+    }
+
+    /* Header & Article Intro */
+    header {
+      margin-bottom: 36px;
+    }
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-family: var(--mono);
+      font-weight: 500;
+      background: var(--band);
+      color: var(--ink-2);
+      border: 1px solid var(--rule);
+    }
+    .tag.highlight {
+      background: rgba(153, 0, 0, 0.08);
+      color: var(--retro-red);
+      border-color: rgba(153, 0, 0, 0.25);
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(26px, 4.2vw, 42px);
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .lead {
+      font-size: 16.5px;
+      color: var(--ink-2);
+      line-height: 1.75;
+      max-width: 78ch;
+    }
+    .lead b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* KPI Tiles Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 14px;
+      margin: 32px 0 44px;
+    }
+    .kpi-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .kpi-label {
+      font-size: 12px;
+      color: var(--ink-3);
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .kpi-value {
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .kpi-value.red { color: var(--retro-red); }
+    .kpi-value.blue { color: var(--retro-accent-blue); }
+    .kpi-note {
+      font-size: 11.5px;
+      color: var(--ink-3);
+      margin-top: 5px;
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: clamp(20px, 3.5vw, 32px);
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--ink-2);
+      margin-bottom: 22px;
+      max-width: 80ch;
+    }
+
+    /* Interactive Switcher / Pills */
+    .controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--hair);
+    }
+    .view-pills {
+      display: inline-flex;
+      background: var(--band);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .pill-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: var(--sans);
+    }
+    .pill-btn:hover {
+      color: var(--ink);
+    }
+    .pill-btn.active {
+      background: var(--card);
+      color: var(--retro-red);
+      font-weight: 600;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .pill-legend {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 12.5px;
+      color: var(--ink-2);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* Historical Styled Table Wrapper */
+    .table-container {
+      overflow-x: auto;
+      border: 2px solid var(--retro-blue);
+      border-radius: 8px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 16px;
+    }
+    table.retro-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      background-color: var(--retro-lime);
+      color: #111111;
+    }
+    @media (prefers-color-scheme: dark) {
+      table.retro-table {
+        color: #e5ebe7;
+      }
+    }
+    table.retro-table thead tr {
+      background-color: var(--retro-red);
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    table.retro-table th {
+      border: 1px solid #b33939;
+      padding: 10px 8px;
+      font-size: 13.5px;
+      line-height: 1.35;
+    }
+    table.retro-table th.th-highlight {
+      background-color: var(--retro-red-dark);
+    }
+    table.retro-table td {
+      border: 1px solid #c2e29e;
+      padding: 8.5px 8px;
+      transition: background-color 0.12s ease;
+    }
+    @media (prefers-color-scheme: dark) {
+      table.retro-table td {
+        border-color: #2f4526;
+      }
+    }
+    /* Alternating row styles */
+    table.retro-table tbody tr.row-even {
+      background-color: var(--retro-lime);
+    }
+    table.retro-table tbody tr.row-odd {
+      background-color: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      table.retro-table tbody tr.row-odd {
+        background-color: #151d1e;
+      }
+    }
+    table.retro-table tbody tr:hover td {
+      background-color: var(--retro-lime-tint) !important;
+    }
+    /* Cell Specific Highlights */
+    .cell-num {
+      font-weight: 600;
+      color: var(--retro-red);
+    }
+    .cell-blue {
+      font-weight: 600;
+      color: var(--retro-accent-blue);
+    }
+    .cell-dim {
+      color: var(--ink-3);
+      font-size: 11.5px;
+    }
+    .row-summary {
+      background-color: var(--retro-yellow) !important;
+      font-weight: bold;
+    }
+    .row-summary td {
+      border: 2px solid #e6b800 !important;
+      color: var(--retro-red);
+      padding: 10px 8px;
+    }
+
+    /* Chart Card & SVG */
+    .chart-box {
+      margin-top: 14px;
+      position: relative;
+    }
+    svg.visual-chart {
+      width: 100%;
+      height: auto;
+      display: block;
+      overflow: visible;
+    }
+    .chart-grid { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 4,4; }
+    .chart-axis { stroke: var(--rule); stroke-width: 1.5; }
+    .chart-tick { fill: var(--ink-3); font-size: 11px; font-family: var(--mono); }
+    
+    .line-dq { fill: none; stroke: #990000; stroke-width: 3; }
+    .line-m1 { fill: none; stroke: #0e8a16; stroke-width: 2.2; stroke-dasharray: 5,4; }
+    .line-m2 { fill: none; stroke: #b60205; stroke-width: 2.2; stroke-dasharray: 2,2; }
+    .line-mid { fill: none; stroke: #0052cc; stroke-width: 3.2; }
+    
+    .chart-tip {
+      position: absolute;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      line-height: 1.4;
+      pointer-events: none;
+      opacity: 0;
+      transform: translate(-50%, -100%);
+      transition: opacity 0.12s ease;
+      z-index: 10;
+      white-space: nowrap;
+      box-shadow: var(--shadow-md);
+    }
+    .chart-tip.show { opacity: 1; }
+
+    /* Analysis Prose */
+    .prose h3 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 600;
+      margin: 28px 0 10px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .prose p {
+      margin-bottom: 14px;
+      color: var(--ink-2);
+    }
+    .prose ul, .prose ol {
+      margin: 0 0 16px 22px;
+      color: var(--ink-2);
+    }
+    .prose li {
+      margin-bottom: 6px;
+    }
+    .callout {
+      background: var(--band);
+      border-left: 4px solid var(--retro-red);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 18px 0 24px;
+      font-size: 14px;
+      color: var(--ink);
+    }
+    .callout b {
+      color: var(--retro-red);
+    }
+
+    /* Math Formula Block */
+    .formula-block {
+      background: var(--sunk);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin: 16px 0;
+      font-family: var(--mono);
+      font-size: 13.5px;
+      color: var(--ink);
+      overflow-x: auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      font-size: 13px;
+      color: var(--ink-3);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="badge-bar">
+      <span class="tag highlight">2004 中考专题</span>
+      <span class="tag">大庆档案实录 · archive.db</span>
+      <span class="tag">极值正态模型对比</span>
+      <span class="tag">黑龙江中考历史数据</span>
+    </div>
+    <h1>2004年中考绥化市区高分人数推算</h1>
+    <p class="lead">
+      在 2004 年中考中，虽然大庆市的考生总数（<b>21,500 人</b>）是绥化市区（<b>4,923 人</b>）的 <b>4.367 倍</b>，但大庆高分群体的密度优势随分数提高不断放大。本文基于大庆市教育局 43 份官方中考录取名册与正态极值拟合，全面推算绥化市区从 <b>620 分至 660+ 分</b> 的各分段考生规模。
+    </p>
+  </header>
+
+  <!-- KPI Tiles -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">大庆考生基数</div>
+      <div class="kpi-value">21,500</div>
+      <div class="kpi-note">大庆一中喜报官载总数</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">绥化市区基数</div>
+      <div class="kpi-value">4,923</div>
+      <div class="kpi-note">人口与同届考生规模</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">同分位均值分差</div>
+      <div class="kpi-value red">+12.3<span style="font-size:16px">分</span></div>
+      <div class="kpi-note">大庆同等排位稳定领先</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">绥化 ≥620分 实况</div>
+      <div class="kpi-value">约 42 <span style="font-size:16px">人</span></div>
+      <div class="kpi-note">大庆是绥化密度 2.59倍</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">绥化 ≥635分 推荐</div>
+      <div class="kpi-value red">10～18 <span style="font-size:16px">人</span></div>
+      <div class="kpi-note">多模型几何/算术中值</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">绥化状元期望分</div>
+      <div class="kpi-value blue">654 <span style="font-size:16px">分</span></div>
+      <div class="kpi-note">大庆市状元 663分 (李璐)</div>
+    </div>
+  </div>
+
+  <!-- Main Comparison Section -->
+  <section class="section-card">
+    <h2 class="section-title">大庆与绥化市区高分段密度全景对照表</h2>
+    <p class="section-desc">
+      表格统一折算为 <b>“大庆市每 4,923 名考生中个数”</b>（与绥化市区等规模横向对标），样式完整复刻 2004 年大庆四中北师大英语实验班公布页的经典历史配色（#99ccff 外框、#990000 绛红表头、#f0ffd9 嫩绿底色与 #ffffff 白交替）。
+    </p>
+
+    <div class="controls-row">
+      <div class="view-pills" id="viewPills">
+        <button class="pill-btn active" data-view="all">全部对照视图</button>
+        <button class="pill-btn" data-view="m1">模型一 (σ=19 紧致)</button>
+        <button class="pill-btn" data-view="m2">模型二 (σ=34 宽幅)</button>
+        <button class="pill-btn" data-view="mid">中间值推荐视图</button>
+      </div>
+      <div class="pill-legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#990000;"></span> 大庆实录每4923人</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#0000ff;"></span> 密度优势比</div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table class="retro-table" id="mainTable">
+        <thead>
+          <tr>
+            <th>分数区间</th>
+            <th>大庆市实录<br><span style="font-size:11px;font-weight:normal;opacity:0.85;">(21,500人基数)</span></th>
+            <th class="th-highlight">大庆市每 4,923 名<br>考生中个数 (实际)</th>
+            <th class="col-m1">模型一<br><span style="font-size:11px;font-weight:normal;opacity:0.85;">(σ=19 保守)</span></th>
+            <th class="col-m2">模型二<br><span style="font-size:11px;font-weight:normal;opacity:0.85;">(σ=34 激进)</span></th>
+            <th class="col-mid th-highlight">中间值模型<br><span style="font-size:11px;font-weight:normal;opacity:0.85;">(算术 / 几何)</span></th>
+            <th>绥化市四舍五入<br>最终推荐区间</th>
+            <th>大庆实际对绥化<br>折中密度比</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 600-610 Baseline -->
+          <tr class="row-even">
+            <td><b>600 - 610 分</b></td>
+            <td>751 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">171.97 人</td>
+            <td class="col-m1">84.45 人</td>
+            <td class="col-m2">164.54 人</td>
+            <td class="col-mid cell-num">124.5 / 117.9 人</td>
+            <td class="cell-num">约 79 人 <span class="cell-dim">(基准实录)</span></td>
+            <td class="cell-blue">2.18 倍</td>
+          </tr>
+          <!-- 610-620 Baseline -->
+          <tr class="row-odd">
+            <td><b>610 - 620 分</b></td>
+            <td>377 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">86.32 人</td>
+            <td class="col-m1">45.81 人</td>
+            <td class="col-m2">99.13 人</td>
+            <td class="col-mid cell-num">72.5 / 67.4 人</td>
+            <td class="cell-num">约 44 人 <span class="cell-dim">(基准实录)</span></td>
+            <td class="cell-blue">1.96 倍</td>
+          </tr>
+          <!-- 620-630 Key -->
+          <tr class="row-even" style="background-color:#fff9e6;">
+            <td style="color:var(--retro-red);"><b>620 - 630 分</b></td>
+            <td><b>260 人</b></td>
+            <td class="cell-num" style="background-color: #ffe599;"><b>59.53 人</b></td>
+            <td class="col-m1"><b>33.16 人</b></td>
+            <td class="col-m2"><b>54.81 人</b></td>
+            <td class="col-mid cell-num"><b>44.0 / 42.6 人</b></td>
+            <td class="cell-num" style="background-color:#fff2cc;"><b>23 ～ 33 人</b> <span class="cell-dim">(42人守恒约束)</span></td>
+            <td class="cell-blue"><b>1.35 ～ 1.80 倍</b></td>
+          </tr>
+          <!-- 630-635 -->
+          <tr class="row-odd">
+            <td><b>630 - 635 分</b></td>
+            <td>90 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">20.61 人</td>
+            <td class="col-m1">5.16 人</td>
+            <td class="col-m2">16.40 人</td>
+            <td class="col-mid cell-num">10.8 / 9.2 人</td>
+            <td class="cell-num">9 ～ 11 人</td>
+            <td class="cell-blue">1.91 ～ 2.24 倍</td>
+          </tr>
+          <!-- 635-640 -->
+          <tr class="row-even">
+            <td><b>635 - 640 分</b></td>
+            <td>69 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">15.80 人</td>
+            <td class="col-m1">2.25 人</td>
+            <td class="col-m2">11.41 人</td>
+            <td class="col-mid cell-num">6.8 / 5.1 人</td>
+            <td class="cell-num">5 ～ 7 人</td>
+            <td class="cell-blue">2.31 ～ 3.12 倍</td>
+          </tr>
+          <!-- 640-645 -->
+          <tr class="row-odd">
+            <td><b>640 - 645 分</b></td>
+            <td>34 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">7.79 人</td>
+            <td class="col-m1">0.91 人</td>
+            <td class="col-m2">7.77 人</td>
+            <td class="col-mid cell-num">4.3 / 2.7 人</td>
+            <td class="cell-num">3 ～ 4 人</td>
+            <td class="cell-blue">1.79 ～ 2.92 倍</td>
+          </tr>
+          <!-- 645-650 -->
+          <tr class="row-even">
+            <td><b>645 - 650 分</b></td>
+            <td>18 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">4.12 人</td>
+            <td class="col-m1">0.35 人</td>
+            <td class="col-m2">5.18 人</td>
+            <td class="col-mid cell-num">2.8 / 1.3 人</td>
+            <td class="cell-num">1 ～ 3 人</td>
+            <td class="cell-blue">1.49 ～ 3.08 倍</td>
+          </tr>
+          <!-- 650-655 -->
+          <tr class="row-odd">
+            <td><b>650 - 655 分</b></td>
+            <td>4 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">0.92 人</td>
+            <td class="col-m1">0.12 人</td>
+            <td class="col-m2">3.38 人</td>
+            <td class="col-mid cell-num">1.8 / 0.6 人</td>
+            <td class="cell-num">1 ～ 2 人</td>
+            <td class="cell-blue">0.52 ～ 1.43 倍</td>
+          </tr>
+          <!-- 655-660 -->
+          <tr class="row-even">
+            <td><b>655 - 660 分</b></td>
+            <td>3 人</td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">0.69 人</td>
+            <td class="col-m1">0.04 人</td>
+            <td class="col-m2">2.16 人</td>
+            <td class="col-mid cell-num">1.1 / 0.3 人</td>
+            <td class="cell-num">0 ～ 1 人</td>
+            <td class="cell-blue">0.62 ～ 2.29 倍</td>
+          </tr>
+          <!-- 660+ -->
+          <tr class="row-odd">
+            <td><b>660+ 分</b></td>
+            <td>1 人 <span class="cell-dim">(李璐 663)</span></td>
+            <td class="cell-num" style="background-color: var(--retro-lime-tint);">0.23 人</td>
+            <td class="col-m1">0.02 人</td>
+            <td class="col-m2">3.31 人</td>
+            <td class="col-mid cell-num">1.7 / 0.2 人</td>
+            <td class="cell-num">0 ～ 1 人</td>
+            <td class="cell-blue">0.14 ～ 0.95 倍</td>
+          </tr>
+          <!-- Summary >= 635 -->
+          <tr class="row-summary">
+            <td><b>≥ 635 分合计</b></td>
+            <td>129 人</td>
+            <td>29.54 人</td>
+            <td class="col-m1">3.69 人</td>
+            <td class="col-m2">33.20 人</td>
+            <td class="col-mid">18.5 / 10.3 人</td>
+            <td>约 10 ～ 18 人</td>
+            <td>1.60 ～ 2.88 倍</td>
+          </tr>
+          <!-- Summary >= 620 -->
+          <tr class="row-summary" style="background-color:#ffe8cc !important;">
+            <td><b>≥ 620 分合计</b></td>
+            <td>479 人</td>
+            <td>109.68 人</td>
+            <td class="col-m1">42.01 人</td>
+            <td class="col-m2">104.42 人</td>
+            <td class="col-mid">73.2 / 62.1 人</td>
+            <td>约 42 人 <span class="cell-dim">(真实已知)</span></td>
+            <td>2.59 倍 <span class="cell-dim">(客观事实)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Interactive SVG Chart -->
+    <div class="chart-box">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+        <h3 style="font-size:15px;font-weight:600;">高分尾部密度曲线对比与相交点 (Fat-Tail Crossing)</h3>
+        <span style="font-size:12px;color:var(--ink-3);font-family:var(--mono);">相交分水岭：641.6 分</span>
+      </div>
+      <svg class="visual-chart" id="tailChart" viewBox="0 0 920 320" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="chart-tip" id="chartTip"></div>
+    </div>
+  </section>
+
+  <!-- Deep Mathematical & Historical Analysis -->
+  <section class="section-card prose">
+    <h2 class="section-title">数理机制与教育学启示</h2>
+
+    <h3>1. 数据源头考据：大庆市教育局 43 所高中录取名册实录</h3>
+    <p>
+      在数据库 <code>archive.db</code> 中，完整抓取并解析了 2004 年 7 月大庆市教育局公布的 43 所初中升高中录取名册（Capture ID: 6347～6420）。经逐名考生（包括大庆实验中学、大庆一中、大庆铁人中学、大庆四中等）清洗比对：
+    </p>
+    <ul>
+      <li>大庆市 <b>600分以上</b> 考生共计 <b>1,607 人</b>；</li>
+      <li>大庆市 <b>610分以上</b> 考生共计 <b>856 人</b>；</li>
+      <li>大庆市 <b>620分以上</b> 考生共计 <b>479 人</b>；</li>
+      <li>大庆市 <b>635分以上</b> 极高分考生共计 <b>129 人</b>，中考状元为大庆一中李璐（<b>663 分</b>）。</li>
+    </ul>
+
+    <h3>2. 同分位数落差：稳定 +12.3 分的分数平移定理</h3>
+    <p>
+      对比大庆与绥化市区在 600、610、620 分处的相对排位（Percentile Rank）：
+    </p>
+    <div class="formula-block">
+      绥化市区 ≥600 分 (前 3.35%) 对应大庆前 3.35% 分数线：613.0 分 (差值 +13.0 分)<br>
+      绥化市区 ≥610 分 (前 1.75%) 对应大庆前 1.75% 分数线：623.0 分 (差值 +13.0 分)<br>
+      绥化市区 ≥620 分 (前 0.85%) 对应大庆前 0.85% 分数线：631.0 分 (差值 +11.0 分)<br>
+      整体高分段平移均值：Δμ = 12.32 分
+    </div>
+
+    <h3>3. 为什么“635分以上极高分区间”分布会特殊？</h3>
+    <p>
+      该现象揭示了统计学中著名的<b>厚尾（Fat-Tail）交叉效应</b>：
+    </p>
+    <ul>
+      <li><b>大庆极高分紧致收敛（σ=19）</b>：大庆在 635 分以上的考生高度契合 $N(587, 19^2)$，离散度较小，高分上限在 650 分以上急剧收敛，李璐以 663 分成为绝对孤峰。</li>
+      <li><b>若绥化采用宽分散度（σ=34）</b>：在 $N(551, 34^2)$ 下，由于方差过大，曲线右侧的下落速度远慢于大庆。两条概率密度曲线在 <b>641.64 分</b> 发生相交。超过 642 分后，宽方差模型预测出的绥化高分密度甚至反常反超了大庆。</li>
+    </ul>
+
+    <h3>4. 620 - 630 分段的承上启下作用与 42 人守恒约束</h3>
+    <p>
+      已知绥化市区 ≥620 分的学生总数约为 <b>42 人</b>。扣除 630 分以上考生后，<b>620 - 630 分段集中了 23 ～ 33 人</b>，占到了全市区 ≥620 分全部顶尖学生的 <b>55% ～ 79%</b>，是大庆与绥化顶尖优等生最为密集的基石蓄水池。
+    </p>
+
+    <div class="callout">
+      <b>核心综合结论：</b><br>
+      取两个模型的<b>几何中间值</b>最为契合客观现实——既消除了模型二在 645+ 的异常反超，又弥补了模型一在 640+ 过早断崖的失真。推算 2004 年绥化市区 <b>≥635 分人数在 10 ～ 18 人</b> 之间，<b>620 - 630 分集中了 23 ～ 33 人</b>，中考状元分数期望大约在 <b>653 ～ 656 分</b>。
+    </div>
+  </section>
+
+  <footer>
+    <div>来源页面：林迎奎个人文集 / 考录文献库 (content/kao)</div>
+    <div>数据版本：2004年大庆市初中升高中录取名册实录 · 绥化一中历史档案</div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  // Table View Filtering
+  const pills = document.querySelectorAll('#viewPills .pill-btn');
+  const table = document.getElementById('mainTable');
+
+  pills.forEach(btn => {
+    btn.addEventListener('click', () => {
+      pills.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const view = btn.getAttribute('data-view');
+      
+      const m1Cols = table.querySelectorAll('.col-m1');
+      const m2Cols = table.querySelectorAll('.col-m2');
+      const midCols = table.querySelectorAll('.col-mid');
+
+      if(view === 'm1'){
+        m1Cols.forEach(c => c.style.display = '');
+        m2Cols.forEach(c => c.style.display = 'none');
+        midCols.forEach(c => c.style.display = 'none');
+      } else if(view === 'm2'){
+        m1Cols.forEach(c => c.style.display = 'none');
+        m2Cols.forEach(c => c.style.display = '');
+        midCols.forEach(c => c.style.display = 'none');
+      } else if(view === 'mid'){
+        m1Cols.forEach(c => c.style.display = 'none');
+        m2Cols.forEach(c => c.style.display = 'none');
+        midCols.forEach(c => c.style.display = '');
+      } else {
+        m1Cols.forEach(c => c.style.display = '');
+        m2Cols.forEach(c => c.style.display = '');
+        midCols.forEach(c => c.style.display = '');
+      }
+    });
+  });
+
+  // SVG Chart Rendering
+  const svg = document.getElementById('tailChart');
+  const tip = document.getElementById('chartTip');
+  const W = 920, H = 320, ml = 55, mr = 30, mt = 20, mb = 45;
+  const pw = W - ml - mr, ph = H - mt - mb;
+
+  const minX = 615, maxX = 665;
+  const maxY = 35; // head count per 4923
+
+  const X = v => ml + (v - minX) / (maxX - minX) * pw;
+  const Y = count => mt + ph - (count / maxY) * ph;
+
+  // Gridlines & Axis
+  let svgHTML = '';
+  for(let c = 0; c <= maxY; c += 10){
+    const y = Y(c);
+    svgHTML += `<line x1="${ml}" x2="${W-mr}" y1="${y}" y2="${y}" class="chart-grid" />`;
+    svgHTML += `<text x="${ml-10}" y="${y+4}" text-anchor="end" class="chart-tick">${c}</text>`;
+  }
+
+  for(let s = 620; s <= 660; s += 5){
+    const x = X(s);
+    svgHTML += `<line x1="${x}" x2="${x}" y1="${mt}" y2="${mt+ph}" class="chart-grid" />`;
+    svgHTML += `<text x="${x}" y="${mt+ph+20}" text-anchor="middle" class="chart-tick">${s}分</text>`;
+  }
+
+  // Normal curves calculation
+  function normPDF(x, mu, s){
+    const z = (x - mu) / s;
+    return (1 / (s * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * z * z);
+  }
+
+  // Bin 5-pt counts converted to continuous height
+  const ptsDq = [], ptsM1 = [], ptsM2 = [], ptsMid = [];
+  for(let score = minX; score <= maxX; score += 0.5){
+    const yDq = normPDF(score, 587, 19) * 4923 * 5; // Daqing per 4923 density
+    const yM1 = normPDF(score, 574.68, 19) * 4923 * 5;
+    const yM2 = normPDF(score, 551, 34) * 4923 * 5;
+    const yMid = Math.sqrt(Math.max(0.0001, yM1) * Math.max(0.0001, yM2));
+
+    ptsDq.push(`${X(score).toFixed(1)},${Y(yDq).toFixed(1)}`);
+    ptsM1.push(`${X(score).toFixed(1)},${Y(yM1).toFixed(1)}`);
+    ptsM2.push(`${X(score).toFixed(1)},${Y(yM2).toFixed(1)}`);
+    ptsMid.push(`${X(score).toFixed(1)},${Y(yMid).toFixed(1)}`);
+  }
+
+  svgHTML += `<path d="M ${ptsDq.join(' L ')}" class="line-dq" />`;
+  svgHTML += `<path d="M ${ptsM1.join(' L ')}" class="line-m1" />`;
+  svgHTML += `<path d="M ${ptsM2.join(' L ')}" class="line-m2" />`;
+  svgHTML += `<path d="M ${ptsMid.join(' L ')}" class="line-mid" />`;
+
+  // Crossing Point (x=641.64)
+  const cx = X(641.64);
+  const cyDq = Y(normPDF(641.64, 587, 19) * 4923 * 5);
+  svgHTML += `
+    <line x1="${cx}" x2="${cx}" y1="${mt}" y2="${mt+ph}" stroke="#990000" stroke-width="1.5" stroke-dasharray="3,3" />
+    <circle cx="${cx}" cy="${cyDq}" r="6" fill="#990000" stroke="#fff" stroke-width="2" />
+    <text x="${cx+8}" y="${cyDq-10}" font-size="12" font-weight="600" fill="#990000" font-family="var(--sans)">641.6分 肥尾反超交点</text>
+  `;
+
+  // Legends inside chart
+  svgHTML += `
+    <g transform="translate(${W-240}, ${mt+15})">
+      <rect width="210" height="95" rx="8" fill="var(--card)" stroke="var(--rule)" opacity="0.92" />
+      <line x1="15" x2="35" y1="20" y2="20" class="line-dq" />
+      <text x="45" y="24" font-size="12" fill="var(--ink)" font-weight="500">大庆实录归一化 (587,19)</text>
+      
+      <line x1="15" x2="35" y1="42" y2="42" class="line-mid" />
+      <text x="45" y="46" font-size="12" fill="var(--ink)" font-weight="600">推荐中间值 (几何对数)</text>
+
+      <line x1="15" x2="35" y1="64" y2="64" class="line-m1" />
+      <text x="45" y="68" font-size="11.5" fill="var(--ink-2)">模型一 (σ=19 紧致)</text>
+
+      <line x1="15" x2="35" y1="82" y2="82" class="line-m2" />
+      <text x="45" y="86" font-size="11.5" fill="var(--ink-2)">模型二 (σ=34 肥尾)</text>
+    </g>
+  `;
+
+  // Hit test overlay
+  svgHTML += `<rect x="${ml}" y="${mt}" width="${pw}" height="${ph}" fill="transparent" id="chartHit" style="cursor:crosshair;" />`;
+
+  svg.innerHTML = svgHTML;
+
+  // Chart interactivity
+  const hit = document.getElementById('chartHit');
+  hit.addEventListener('mousemove', e => {
+    const rect = svg.getBoundingClientRect();
+    const clientX = e.clientX - rect.left;
+    const clientY = e.clientY - rect.top;
+
+    const normX = clientX / rect.width * W;
+    if(normX < ml || normX > W - mr){
+      tip.classList.remove('show');
+      return;
+    }
+    const score = minX + (normX - ml) / pw * (maxX - minX);
+    const yDq = (normPDF(score, 587, 19) * 4923 * 5).toFixed(1);
+    const yMid = (Math.sqrt(normPDF(score, 574.68, 19) * normPDF(score, 551, 34)) * 4923 * 5).toFixed(1);
+
+    tip.style.left = `${clientX}px`;
+    tip.style.top = `${clientY - 10}px`;
+    tip.innerHTML = `<b>${score.toFixed(1)} 分</b><br>大庆归一化: <b>${yDq} 人/5分</b><br>绥化中间值: <b>${yMid} 人/5分</b>`;
+    tip.classList.add('show');
+  });
+
+  hit.addEventListener('mouseleave', () => {
+    tip.classList.remove('show');
+  });
+
+})();
+</script>
+
+</body>
+</html>
