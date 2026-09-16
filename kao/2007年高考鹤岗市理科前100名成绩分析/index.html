@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2007年鹤岗市理科前100名成绩系统分析</title>
+<meta name="description" content="2007年鹤岗市理科高考前100余名考生（实际104人，含并列）的总分与分科成绩系统可视化分析：描述性统计、相关系数、分数直方图、按总分排名展开的分科成绩曲线、总分前N名的分科平均分曲线、四科占满分比例箱线图对比，并将个人高考成绩放入这一体系中评价。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  color-scheme: light;
+  --paper:#e8ecec; --card:#f7f9f9; --sunk:#dfe4e4; --band:#eef2f2;
+  --ink:#0e1416; --ink-2:#48565a; --ink-3:#7c8a8e;
+  --rule:#c8d0d0; --hair:#dbe1e1;
+  --petrol:#0e5b68; --petrol-w:rgba(14,91,104,.10);
+  --seal:#a5342a; --seal-w:rgba(165,52,42,.09);
+  --amber:#8f5d09; --amber-w:rgba(143,93,9,.11);
+  --bar:#9aa8ab;
+  --shadow:0 1px 2px rgba(14,20,22,.05),0 12px 30px -20px rgba(14,20,22,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+    --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+    --rule:#28302f; --hair:#202727;
+    --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
+    --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
+    --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
+    --bar:#4a5658;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --paper:#0b0f10; --card:#151a1b; --sunk:#101516; --band:#1b2223;
+  --ink:#e9eeee; --ink-2:#a6b2b5; --ink-3:#748084;
+  --rule:#28302f; --hair:#202727;
+  --petrol:#4fa7b6; --petrol-w:rgba(79,167,182,.13);
+  --seal:#dc6553; --seal-w:rgba(220,101,83,.14);
+  --amber:#d99a2e; --amber-w:rgba(217,154,46,.14);
+  --bar:#4a5658;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 12px 30px -20px rgba(0,0,0,.9);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.page-wrap{max-width:1020px;margin:0 auto;padding:52px 22px 96px}
+:focus-visible{outline:2px solid var(--petrol);outline-offset:2px}
+a{color:var(--petrol)}
+b{color:var(--ink)}
+.seal{color:var(--seal)}.pet{color:var(--petrol)}.amb{color:var(--amber)}
+
+.hero{margin-bottom:36px}
+.hero-tag{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:18px}
+h1{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;font-size:clamp(26px,4.6vw,40px);
+  line-height:1.18;margin:0 0 14px;letter-spacing:.01em;color:var(--ink);text-wrap:balance}
+h1 em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--seal)}
+.hero-sub{color:var(--ink-2);font-size:15px;max-width:640px}
+
+.score-banner{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin-bottom:8px}
+.score-card{background:var(--card);padding:14px 15px 13px}
+.score-card .value{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:25px;line-height:1.15;
+  color:var(--ink);font-variant-numeric:tabular-nums}
+.score-card.hi .value{color:var(--seal)}
+.score-card .label{font-size:11.5px;color:var(--ink-3);margin-top:4px;letter-spacing:.03em}
+
+.section-title{font-family:"Noto Serif SC","Songti SC",serif;font-weight:700;font-size:21px;color:var(--ink);
+  letter-spacing:.01em;margin:58px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+
+p.lede{color:var(--ink-2);font-size:13.5px;line-height:1.9;margin-bottom:12px;max-width:78ch}
+p.lede:last-child{margin-bottom:0}
+p.lede b{color:var(--ink);font-weight:600}
+p.lede a{color:var(--petrol)}
+.note-box{background:var(--sunk);border:1px solid var(--rule);padding:20px 24px}
+
+.stats-table-wrap{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:720px}
+thead th{background:var(--band);color:var(--ink-3);font-weight:500;font-size:10.5px;letter-spacing:.05em;
+  padding:10px 9px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap;
+  font-family:"IBM Plex Mono",monospace}
+thead th:first-child{text-align:left}
+tbody tr{border-bottom:1px solid var(--hair)}
+tbody tr:last-child{border-bottom:none}
+tbody tr:nth-of-type(even) td{background:var(--band)}
+td{padding:9px;text-align:right;color:var(--ink-2);white-space:nowrap;
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+td:first-child{text-align:left;font-weight:600;color:var(--ink);font-family:"Noto Sans SC",sans-serif;white-space:normal}
+td.mine{color:var(--seal);font-weight:700}
+.stats-explain{margin-top:14px;font-size:12.5px;color:var(--ink-2);line-height:1.9}
+.stats-explain dt{display:inline;font-weight:600;color:var(--ink)}
+.stats-explain dd{display:inline;margin:0}
+.stats-explain .row{margin-bottom:6px}
+
+.field{margin-top:56px;padding-top:2px}
+.field:first-child{margin-top:0}
+.field-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:10px}
+.field-head h3{font-family:"Noto Serif SC","Songti SC",serif;font-size:19px;font-weight:700;color:var(--ink)}
+.field-head .field-mine{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--seal);font-weight:700}
+.field-summary{font-size:13px;color:var(--ink-2);margin-bottom:18px;max-width:78ch}
+.field-summary b{color:var(--ink);font-weight:600}
+
+.chart-block{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);
+  padding:20px 20px 16px;margin-bottom:16px}
+.chart-block h4{font-family:"Noto Serif SC","Songti SC",serif;font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.chart-desc{font-size:12px;color:var(--ink-3);margin-bottom:14px;line-height:1.7}
+.chart-canvas{position:relative;height:340px}
+@media(max-width:560px){.chart-canvas{height:280px}}
+.chart-canvas.tall{height:400px}
+.curve-note{margin-top:12px;font-size:12.5px;color:var(--ink-2);line-height:1.75;padding-top:12px;border-top:1px dashed var(--rule)}
+.curve-note b{color:var(--seal)}
+
+.corr-table td,.corr-table th{text-align:right}
+.corr-table td.diag{color:var(--ink-3)}
+.corr-table td.hi{color:var(--seal);font-weight:700}
+
+.verdict{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--seal);
+  box-shadow:var(--shadow);padding:26px 28px;font-size:13.5px;line-height:1.9;color:var(--ink)}
+.verdict h4{font-family:"Noto Serif SC","Songti SC",serif;font-size:15px;font-weight:600;margin:20px 0 8px;color:var(--ink)}
+.verdict h4:first-child{margin-top:0}
+.verdict p{color:var(--ink-2)}
+.verdict ul{margin:6px 0 6px 20px;color:var(--ink-2)}
+.verdict li{margin-bottom:6px}
+.verdict .hi{color:var(--seal);font-weight:700}
+
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-size:12px;color:var(--ink-3);
+  font-family:"IBM Plex Mono",monospace;line-height:1.9}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="hero">
+    <p class="hero-tag">2007 · 鹤岗市高考 · 理科前100（含并列共104人）</p>
+    <h1>把分数放进鹤岗前<em>100名</em>的体系里</h1>
+    <p class="hero-sub">总分与语文/数学/英语/理综四科：描述性统计、相关系数、分数直方图、按总分名次展开的分科成绩曲线、总分前N名的分科平均分曲线、四科占满分比例箱线图对比，并标出个人分数在其中的位置</p>
+  </div>
+
+  <div class="score-banner">
+    <div class="score-card hi"><div class="value">666</div><div class="label">总分 · 满分 750</div></div>
+    <div class="score-card"><div class="value">125</div><div class="label">语文 · 满分 150</div></div>
+    <div class="score-card"><div class="value">135</div><div class="label">数学 · 满分 150</div></div>
+    <div class="score-card"><div class="value">141</div><div class="label">英语 · 满分 150</div></div>
+    <div class="score-card"><div class="value">265</div><div class="label">理综 · 满分 300</div></div>
+  </div>
+
+  <div class="section-title">数据与方法说明</div>
+  <div class="note-box">
+    <p class="lede">数据来自「2007年高考鹤岗市理科前100名各科成绩单」，实际收录 <b>104</b> 人——第100名（632分）之后仍有3人同为632分，公示时一并列入，名次即表中原始的总分名次。更聚焦核心层的<b>总分650分以上共42人</b>版本见<a href="/kao/2007年高考鹤岗市理科总分650分以上42人成绩分析/">《把分数放进鹤岗前42名（650分以上）的体系里》</a>。</p>
+    <p class="lede">2007年黑龙江省高考理科使用全省统一试卷、统一评分标准，鹤岗（本页数据）与绥化（考场）考生做的是同一份卷子，原始分数可以直接对比，不需要换算。</p>
+    <p class="lede"><b>关于"按名次看某科成绩"的口径：</b>下面每科的第二张图，横轴都是<b>总分名次</b>（第1~104名，即表格原始顺序），而不是把这一科单独重新排序。也就是说，图上第20名的点，看的是"总分排第20的这位同学，他语文/数学/英语/理综考了多少分"，而不是"语文单科第20名考了多少分"。</p>
+    <p class="lede"><b>关于"总分前N名的平均分"：</b>把总分从高到低前N名（N=1~104，按总分名次，不按该科重排）这些同学在该科的分数取平均，画成一条随N变化的曲线——曲线段落在参考分数<b>之上</b>（前N名平均更高）涂成<b class="seal">浅红色</b>，段落在参考分数<b>之下</b>（前N名平均更低）涂成<b class="pet">浅绿色</b>。</p>
+    <p class="lede"><b>关于占比箱线图：</b>语文/数学/英语满分150，理综满分300，总分满分750，原始分不能直接放到同一张图里比较，所以把每科都换算成"占该科满分的比例"再画箱线图：箱体是这104人该科成绩的 Q1~Q3（中间一半人的范围），箱体中间的粗横线是中位数，上下须线到最小值/最大值，红色菱形是参考分数换算成比例后的位置。</p>
+    <p class="lede"><b>但要注意：</b>这104人已经是鹤岗市理科分数最高的一批考生，下面每科的均值/标准差只描述这个尖子群体内部的分布形状，<u>不能</u>据此反推鹤岗市全体理科考生的分布——那样会明显低估真实的标准差（尖子群体是被"掐头"截断过的样本）。</p>
+  </div>
+
+  <div class="section-title">描述性统计总览</div>
+  <div class="stats-table-wrap">
+    <table>
+      <thead><tr>
+        <th>科目</th><th>人数</th><th>均值</th><th>标准差</th><th>中位数</th><th>Q1</th><th>Q3</th><th>最低</th><th>最高</th>
+        <th>我的分数</th><th>我的名次</th><th>超过比例</th><th>z 分数</th>
+      </tr></thead>
+      <tbody id="stats-table"></tbody>
+    </table>
+  </div>
+  <div class="stats-explain" id="stats-explain"></div>
+
+  <div class="section-title">科目间相关系数</div>
+  <div class="note-box">
+    <p class="lede" id="corr-lede">在这104人内部，总分与各科（以及各科两两之间）的皮尔逊相关系数如下——系数越接近1，说明这两科（或某科与总分）的分数在这批人里"同涨同落"得越一致，也就是这一科的个体差异对总分名次的影响越大；越接近0，说明这一科考多少分和总分名次几乎没关系。</p>
+  </div>
+  <div class="stats-table-wrap" style="margin-top:14px">
+    <table class="corr-table">
+      <thead><tr><th></th><th>总分</th><th>语文</th><th>数学</th><th>英语</th><th>理综</th></tr></thead>
+      <tbody id="corr-table"></tbody>
+    </table>
+  </div>
+
+  <div class="section-title">四科占满分比例箱线图对比</div>
+  <div class="chart-block">
+    <h4>总分与四科：占各自满分比例的分布</h4>
+    <div class="chart-desc">纵轴统一为"占该科满分的比例"；灰色箱体为这104人的 Q1~Q3，粗横线为中位数，须线到最小/最大值；红色菱形为参考分数换算比例后的位置</div>
+    <div class="chart-canvas tall"><canvas id="box-all"></canvas></div>
+    <div class="curve-note" id="box-note"></div>
+  </div>
+
+  <div class="section-title">各科可视化分析</div>
+  <div id="field-sections"></div>
+
+  <div class="section-title">总体评价</div>
+  <div class="verdict" id="verdict"></div>
+
+  <footer>
+    数据来源：2007年高考鹤岗市理科前100名各科成绩单（104人，含并列）。分析方法：均值/标准差/中位数/四分位数为描述性统计；相关系数为皮尔逊积矩相关系数；分科成绩曲线按总分名次展开，而非按该科单独排序；总分前N名平均分曲线为总分前N名（N=1~104）该科累计平均分，按与参考分数的高低用红/绿两色区分；箱线图先把各科换算成占满分比例再比较。<br/>
+    个人成绩来自绥化一中，与鹤岗数据同属2007年黑龙江省理科统一试卷，故可直接比较原始分。
+  </footer>
+
+</div>
+
+<script>
+const DATA = [{"rank":1,"name":"解斌","chinese":130,"math":144,"english":141,"comp":288,"total":703,"school":"鹤岗市第一中学"},{"rank":2,"name":"王弘轩","chinese":124,"math":146,"english":138,"comp":294,"total":702,"school":"鹤岗市第一中学"},{"rank":3,"name":"邱林","chinese":129,"math":144,"english":134,"comp":294,"total":701,"school":"鹤岗市第一中学"},{"rank":4,"name":"李明飞","chinese":129,"math":147,"english":134,"comp":276,"total":686,"school":"鹤岗市第三中学"},{"rank":5,"name":"宋显明","chinese":122,"math":143,"english":135,"comp":283,"total":683,"school":"鹤岗市第一中学"},{"rank":6,"name":"么江涛","chinese":129,"math":149,"english":132,"comp":271,"total":681,"school":"鹤岗市第一中学"},{"rank":7,"name":"赵伟","chinese":123,"math":140,"english":138,"comp":279,"total":680,"school":"鹤岗市第一中学"},{"rank":8,"name":"朱慧","chinese":119,"math":135,"english":130,"comp":292,"total":676,"school":"鹤岗市第一中学"},{"rank":9,"name":"王鹏志","chinese":108,"math":136,"english":140,"comp":290,"total":674,"school":"鹤岗市第一中学"},{"rank":10,"name":"陈会林","chinese":125,"math":137,"english":137,"comp":273,"total":672,"school":"鹤岗市第一中学"},{"rank":11,"name":"赵国庆","chinese":115,"math":132,"english":140,"comp":284,"total":671,"school":"鹤岗市第一中学"},{"rank":12,"name":"李诗妍","chinese":129,"math":137,"english":128,"comp":277,"total":671,"school":"鹤岗市第一中学"},{"rank":13,"name":"张雷","chinese":123,"math":135,"english":133,"comp":280,"total":671,"school":"绥缤县一中"},{"rank":14,"name":"于泽","chinese":123,"math":142,"english":133,"comp":272,"total":670,"school":"鹤岗市第一中学"},{"rank":15,"name":"边伟","chinese":122,"math":127,"english":135,"comp":285,"total":669,"school":"鹤岗市第一中学"},{"rank":16,"name":"彭博","chinese":130,"math":115,"english":133,"comp":290,"total":668,"school":"鹤岗市第一中学"},{"rank":17,"name":"李广宇","chinese":126,"math":136,"english":140,"comp":265,"total":667,"school":"鹤岗市第一中学"},{"rank":18,"name":"林德宇","chinese":111,"math":142,"english":133,"comp":281,"total":667,"school":"鹤岗市第三中学"},{"rank":19,"name":"王金成","chinese":120,"math":135,"english":127,"comp":284,"total":666,"school":"鹤岗市第一中学"},{"rank":20,"name":"门雪莹","chinese":113,"math":137,"english":133,"comp":283,"total":666,"school":"鹤岗市第一中学"},{"rank":21,"name":"佟艾悯","chinese":123,"math":130,"english":135,"comp":278,"total":666,"school":"鹤岗市第一中学"},{"rank":22,"name":"穆玉玲","chinese":125,"math":129,"english":132,"comp":279,"total":665,"school":"鹤岗市第一中学"},{"rank":23,"name":"姜宝森","chinese":125,"math":136,"english":130,"comp":274,"total":665,"school":"鹤岗市第一中学"},{"rank":24,"name":"杨爽","chinese":117,"math":124,"english":136,"comp":284,"total":661,"school":"鹤岗市第一中学"},{"rank":25,"name":"周雪","chinese":124,"math":126,"english":134,"comp":277,"total":661,"school":"鹤岗市第一中学"},{"rank":26,"name":"郭宏伟","chinese":122,"math":128,"english":130,"comp":279,"total":659,"school":"鹤岗市第一中学"},{"rank":27,"name":"张昕","chinese":127,"math":137,"english":131,"comp":264,"total":659,"school":"鹤岗市第一中学"},{"rank":28,"name":"徐臻","chinese":116,"math":136,"english":121,"comp":285,"total":658,"school":"鹤岗市第一中学"},{"rank":29,"name":"杜鹃","chinese":116,"math":126,"english":133,"comp":283,"total":658,"school":"鹤岗市第一中学"},{"rank":30,"name":"刘唯","chinese":122,"math":135,"english":136,"comp":264,"total":657,"school":"鹤岗市第一中学"},{"rank":31,"name":"周厚财","chinese":122,"math":143,"english":128,"comp":263,"total":656,"school":"鹤岗市第一中学"},{"rank":32,"name":"赵九州","chinese":115,"math":137,"english":132,"comp":271,"total":655,"school":"鹤岗市第一中学"},{"rank":33,"name":"赵慧颖","chinese":113,"math":134,"english":131,"comp":276,"total":654,"school":"鹤岗市第一中学"},{"rank":34,"name":"刘佳博","chinese":125,"math":135,"english":134,"comp":260,"total":654,"school":"鹤岗市第一中学"},{"rank":35,"name":"蔡莹","chinese":127,"math":128,"english":142,"comp":257,"total":654,"school":"鹤岗市第一中学"},{"rank":36,"name":"田爽","chinese":111,"math":128,"english":131,"comp":284,"total":654,"school":"鹤岗市第三中学"},{"rank":37,"name":"王大鹏","chinese":114,"math":139,"english":125,"comp":276,"total":654,"school":"鹤岗市第三中学"},{"rank":38,"name":"李海涛","chinese":119,"math":128,"english":125,"comp":281,"total":653,"school":"鹤岗市第一中学"},{"rank":39,"name":"谢慕哲","chinese":114,"math":121,"english":129,"comp":286,"total":650,"school":"鹤岗市第一中学"},{"rank":40,"name":"沙鸥","chinese":112,"math":126,"english":129,"comp":283,"total":650,"school":"鹤岗市第一中学"},{"rank":41,"name":"赵江江","chinese":126,"math":130,"english":129,"comp":265,"total":650,"school":"鹤岗市第一中学"},{"rank":42,"name":"孙学文","chinese":122,"math":137,"english":135,"comp":256,"total":650,"school":"鹤岗市第一中学"},{"rank":43,"name":"吉海威","chinese":114,"math":137,"english":129,"comp":269,"total":649,"school":"鹤岗市第一中学"},{"rank":44,"name":"刘秋晨","chinese":117,"math":147,"english":129,"comp":256,"total":649,"school":"鹤岗市第一中学"},{"rank":45,"name":"郭永刚","chinese":105,"math":141,"english":127,"comp":276,"total":649,"school":"鹤岗市第三中学"},{"rank":46,"name":"杨海洋","chinese":109,"math":138,"english":126,"comp":275,"total":648,"school":"鹤岗市第一中学"},{"rank":47,"name":"洪峰","chinese":127,"math":126,"english":139,"comp":256,"total":648,"school":"鹤岗市第一中学"},{"rank":48,"name":"杜鑫","chinese":122,"math":131,"english":133,"comp":261,"total":647,"school":"鹤岗市第一中学"},{"rank":49,"name":"桑瑜","chinese":125,"math":130,"english":139,"comp":253,"total":647,"school":"鹤岗市第一中学"},{"rank":50,"name":"龚莹","chinese":126,"math":145,"english":130,"comp":245,"total":646,"school":"鹤岗市第一中学"},{"rank":51,"name":"刘思","chinese":122,"math":125,"english":135,"comp":264,"total":646,"school":"鹤岗市第三中学"},{"rank":52,"name":"王根源","chinese":117,"math":131,"english":129,"comp":268,"total":645,"school":"鹤岗市第一中学"},{"rank":53,"name":"陈昭","chinese":119,"math":134,"english":127,"comp":265,"total":645,"school":"鹤岗市第一中学"},{"rank":54,"name":"常龙","chinese":122,"math":133,"english":127,"comp":263,"total":645,"school":"鹤岗市第一中学"},{"rank":55,"name":"杨深","chinese":119,"math":134,"english":135,"comp":257,"total":645,"school":"鹤岗市第一中学"},{"rank":56,"name":"刘金鹏","chinese":117,"math":131,"english":127,"comp":269,"total":644,"school":"鹤岗市第一中学"},{"rank":57,"name":"赵元","chinese":124,"math":120,"english":132,"comp":268,"total":644,"school":"鹤岗市第一中学"},{"rank":58,"name":"吴海燕","chinese":123,"math":128,"english":132,"comp":261,"total":644,"school":"鹤岗市第一中学"},{"rank":59,"name":"刘洋","chinese":120,"math":138,"english":131,"comp":254,"total":643,"school":"鹤岗市第一中学"},{"rank":60,"name":"王瑞龙","chinese":118,"math":122,"english":132,"comp":270,"total":642,"school":"鹤岗市第一中学"},{"rank":61,"name":"张德良","chinese":117,"math":125,"english":132,"comp":268,"total":642,"school":"鹤岗市第一中学"},{"rank":62,"name":"张秀家","chinese":110,"math":132,"english":124,"comp":276,"total":642,"school":"鹤岗市第三中学"},{"rank":63,"name":"周春红","chinese":117,"math":123,"english":130,"comp":271,"total":641,"school":"鹤岗市第一中学"},{"rank":64,"name":"陆姗姗","chinese":124,"math":126,"english":126,"comp":265,"total":641,"school":"绥滨县职业高中"},{"rank":65,"name":"董鹤鸣","chinese":111,"math":128,"english":117,"comp":285,"total":641,"school":"鹤岗市第三中学"},{"rank":66,"name":"施宏虹","chinese":121,"math":113,"english":141,"comp":265,"total":640,"school":"鹤岗市第一中学"},{"rank":67,"name":"闫雪梅","chinese":120,"math":128,"english":131,"comp":261,"total":640,"school":"鹤岗市第一中学"},{"rank":68,"name":"荣倩","chinese":115,"math":141,"english":128,"comp":256,"total":640,"school":"鹤岗市第三中学"},{"rank":69,"name":"孟凡超","chinese":126,"math":129,"english":132,"comp":253,"total":640,"school":"鹤岗市第三中学"},{"rank":70,"name":"马帼嵘","chinese":113,"math":139,"english":116,"comp":271,"total":639,"school":"鹤岗市第一中学"},{"rank":71,"name":"刘博通","chinese":122,"math":119,"english":139,"comp":259,"total":639,"school":"鹤岗市第一中学"},{"rank":72,"name":"张欣欣","chinese":120,"math":130,"english":131,"comp":258,"total":639,"school":"鹤岗市第一中学"},{"rank":73,"name":"庞宇","chinese":123,"math":127,"english":131,"comp":258,"total":639,"school":"鹤岗市第一中学"},{"rank":74,"name":"韩智猛","chinese":114,"math":129,"english":127,"comp":268,"total":638,"school":"鹤岗市第一中学"},{"rank":75,"name":"张作霖","chinese":120,"math":126,"english":138,"comp":254,"total":638,"school":"鹤岗市第一中学"},{"rank":76,"name":"王鑫","chinese":116,"math":129,"english":142,"comp":251,"total":638,"school":"鹤岗市第一中学"},{"rank":77,"name":"何薇","chinese":121,"math":136,"english":140,"comp":241,"total":638,"school":"鹤岗市第一中学"},{"rank":78,"name":"王冰清","chinese":115,"math":122,"english":123,"comp":278,"total":638,"school":"萝北县高级中学"},{"rank":79,"name":"张辰公","chinese":113,"math":125,"english":129,"comp":270,"total":637,"school":"鹤岗市第一中学"},{"rank":80,"name":"于婷婷","chinese":121,"math":123,"english":140,"comp":253,"total":637,"school":"鹤岗市第一中学"},{"rank":81,"name":"秦飞","chinese":120,"math":124,"english":133,"comp":260,"total":637,"school":"绥缤县一中"},{"rank":82,"name":"宋杨","chinese":113,"math":125,"english":126,"comp":272,"total":636,"school":"鹤岗市第一中学"},{"rank":83,"name":"雷磊","chinese":118,"math":124,"english":130,"comp":264,"total":636,"school":"鹤岗市第一中学"},{"rank":84,"name":"孙佳宇","chinese":116,"math":132,"english":131,"comp":257,"total":636,"school":"绥缤县一中"},{"rank":85,"name":"唐明宇","chinese":120,"math":120,"english":130,"comp":266,"total":636,"school":"鹤岗市第三中学"},{"rank":86,"name":"苏婉璐","chinese":106,"math":131,"english":135,"comp":263,"total":635,"school":"鹤岗市第一中学"},{"rank":87,"name":"殷旭","chinese":117,"math":120,"english":138,"comp":260,"total":635,"school":"鹤岗市第一中学"},{"rank":88,"name":"王成龙","chinese":118,"math":126,"english":133,"comp":258,"total":635,"school":"鹤岗市第三中学"},{"rank":89,"name":"缑月","chinese":124,"math":114,"english":133,"comp":263,"total":634,"school":"鹤岗市第一中学"},{"rank":90,"name":"张月平","chinese":114,"math":131,"english":129,"comp":260,"total":634,"school":"鹤岗市第一中学"},{"rank":91,"name":"胡佩涛","chinese":119,"math":126,"english":129,"comp":260,"total":634,"school":"鹤岗市第一中学"},{"rank":92,"name":"朱晓明","chinese":120,"math":131,"english":133,"comp":250,"total":634,"school":"鹤岗市第一中学"},{"rank":93,"name":"冀相斌","chinese":115,"math":133,"english":131,"comp":254,"total":633,"school":"鹤岗市第一中学"},{"rank":94,"name":"黄莹","chinese":116,"math":132,"english":126,"comp":259,"total":633,"school":"鹤岗市第三中学"},{"rank":95,"name":"卢艳","chinese":116,"math":116,"english":121,"comp":279,"total":632,"school":"鹤岗市第一中学"},{"rank":96,"name":"柏璐","chinese":117,"math":120,"english":129,"comp":266,"total":632,"school":"鹤岗市第一中学"},{"rank":97,"name":"田野","chinese":119,"math":119,"english":128,"comp":266,"total":632,"school":"鹤岗市第一中学"},{"rank":98,"name":"张洋洋","chinese":109,"math":128,"english":131,"comp":264,"total":632,"school":"鹤岗市第一中学"},{"rank":99,"name":"王欢","chinese":130,"math":117,"english":121,"comp":264,"total":632,"school":"鹤岗市第一中学"},{"rank":100,"name":"李明翼","chinese":125,"math":124,"english":132,"comp":251,"total":632,"school":"鹤岗市第一中学"},{"rank":101,"name":"王保宏","chinese":113,"math":112,"english":135,"comp":272,"total":632,"school":"鹤岗市第三中学"},{"rank":102,"name":"李晓平","chinese":113,"math":122,"english":131,"comp":266,"total":632,"school":"鹤岗市第三中学"},{"rank":103,"name":"井文","chinese":119,"math":125,"english":129,"comp":259,"total":632,"school":"鹤岗市第三中学"},{"rank":104,"name":"韩方龙","chinese":111,"math":136,"english":130,"comp":255,"total":632,"school":"鹤岗市第三中学"}];
+
+const FIELDS = [
+  {key:'total',   label:'总分', max:750, binWidth:5, mine:666},
+  {key:'chinese', label:'语文', max:150, binWidth:2, mine:125},
+  {key:'math',    label:'数学', max:150, binWidth:3, mine:135},
+  {key:'english', label:'英语', max:150, binWidth:2, mine:141},
+  {key:'comp',    label:'理综', max:300, binWidth:4, mine:265},
+];
+const N=DATA.length;
+
+function cv(name){return getComputedStyle(document.documentElement).getPropertyValue(name).trim();}
+const COLOR = {
+  ink:cv('--ink'), ink2:cv('--ink-2'), ink3:cv('--ink-3'),
+  rule:cv('--rule'), hair:cv('--hair'), card:cv('--card'), paper:cv('--paper'),
+  seal:cv('--seal'), sealW:cv('--seal-w'), petrol:cv('--petrol'), petrolW:cv('--petrol-w'),
+  bar:cv('--bar')
+};
+Chart.defaults.color=COLOR.ink3;
+Chart.defaults.font.family="'Noto Sans SC',system-ui,sans-serif";
+Chart.defaults.font.size=11;
+Chart.defaults.borderColor=COLOR.hair;
+const MONO="'IBM Plex Mono',ui-monospace,monospace";
+
+function mean(a){return a.reduce((x,y)=>x+y,0)/a.length}
+function pstd(a){const m=mean(a);return Math.sqrt(a.reduce((s,v)=>s+(v-m)**2,0)/a.length)}
+function percentile(sortedAsc,p){
+  const idx=(p/100)*(sortedAsc.length-1);
+  const lo=Math.floor(idx),hi=Math.ceil(idx);
+  if(lo===hi) return sortedAsc[lo];
+  return sortedAsc[lo]+(sortedAsc[hi]-sortedAsc[lo])*(idx-lo);
+}
+function describe(vals){
+  const sorted=[...vals].sort((a,b)=>a-b);
+  return {
+    n:vals.length, mean:mean(vals), std:pstd(vals),
+    median:percentile(sorted,50), q1:percentile(sorted,25), q3:percentile(sorted,75),
+    min:sorted[0], max:sorted[sorted.length-1]
+  };
+}
+function myPosition(vals,mineVal){
+  const better=vals.filter(v=>v>mineVal).length;
+  const equal=vals.filter(v=>v===mineVal).length;
+  const worse=vals.length-better-equal;
+  return {better,equal,worse,rankLo:better+1,rankHi:better+equal,pctBeat:worse/vals.length*100,rankMid:better+(equal+1)/2};
+}
+function pearson(x,y){
+  const mx=mean(x),my=mean(y);
+  let sxy=0,sxx=0,syy=0;
+  for(let i=0;i<x.length;i++){ const dx=x[i]-mx, dy=y[i]-my; sxy+=dx*dy; sxx+=dx*dx; syy+=dy*dy; }
+  return sxy/Math.sqrt(sxx*syy);
+}
+function histogram(vals,binWidth,extra){
+  const all=[...vals,extra];
+  const start=Math.floor(Math.min(...all)/binWidth)*binWidth;
+  const top=Math.max(...all);
+  const bins=[];
+  for(let b=start;b<=top;b+=binWidth) bins.push({lo:b,hi:b+binWidth,count:0});
+  vals.forEach(v=>{
+    let i=Math.floor((v-start)/binWidth);
+    if(i>=bins.length) i=bins.length-1;
+    if(i<0) i=0;
+    bins[i].count++;
+  });
+  let mineBin=Math.floor((extra-start)/binWidth);
+  if(mineBin>=bins.length) mineBin=bins.length-1;
+  if(mineBin<0) mineBin=0;
+  return {bins,mineBin};
+}
+function cumAvgByTotalRank(arrInTotalRankOrder){
+  const out=[]; let s=0;
+  arrInTotalRankOrder.forEach((v,i)=>{ s+=v; out.push(s/(i+1)); });
+  return out;
+}
+function interpAt(arr,x){
+  const lo=Math.floor(x), hi=Math.ceil(x);
+  const loV=arr[Math.min(Math.max(lo,1),arr.length)-1];
+  const hiV=arr[Math.min(Math.max(hi,1),arr.length)-1];
+  if(lo===hi) return loV;
+  return loV+(hiV-loV)*(x-lo);
+}
+function firstCrossing(cum,ref){
+  let first=null,count=0;
+  for(let i=1;i<cum.length;i++){
+    const prev=cum[i-1]-ref, cur=cum[i]-ref;
+    if(prev===0) continue;
+    if((prev<0&&cur>=0)||(prev>0&&cur<=0)){ count++; if(first===null) first=i+1; }
+  }
+  return {first,count};
+}
+
+// hook defaults to 'afterDraw' (line drawn on top — fine for a chart with no marker to hide);
+// pass 'beforeDatasetsDraw' when a data point sits ON the reference value, so the point stays on top instead of the dashed line cutting across it.
+function refLinePlugin(lines,hook){
+  hook=hook||'afterDraw';
+  const plugin={id:'refLines_'+Math.random().toString(36).slice(2)};
+  plugin[hook]=function(chart){
+    const {ctx,scales}=chart;
+    if(!scales.x||!scales.y) return;
+    lines.forEach(ln=>{
+      ctx.save();
+      if(ln.axis==='x'){
+        const x=scales.x.getPixelForValue(ln.value);
+        if(x<scales.x.left-1||x>scales.x.right+1){ctx.restore();return;}
+        ctx.strokeStyle=ln.color; ctx.lineWidth=1.2; ctx.setLineDash(ln.dash||[3,3]);
+        ctx.beginPath(); ctx.moveTo(x,scales.y.top); ctx.lineTo(x,scales.y.bottom); ctx.stroke();
+      } else {
+        const y=scales.y.getPixelForValue(ln.value);
+        if(y<scales.y.top-1||y>scales.y.bottom+1){ctx.restore();return;}
+        ctx.strokeStyle=ln.color; ctx.lineWidth=1.2; ctx.setLineDash(ln.dash||[3,3]);
+        ctx.beginPath(); ctx.moveTo(scales.x.left,y); ctx.lineTo(scales.x.right,y); ctx.stroke();
+        ctx.setLineDash([]);
+        if(ln.label){ ctx.fillStyle=ln.color; ctx.font="600 10.5px "+MONO; ctx.fillText(ln.label,scales.x.right+6,y+3); }
+      }
+      ctx.restore();
+    });
+  };
+  return plugin;
+}
+
+// draws whiskers/median right after the box (dataset 0) so the "参考分数" diamond (dataset 1), drawn next, ends up on top instead of being cut by the median line.
+function boxWhiskerPlugin(stats){
+  return {
+    id:'boxWhisker',
+    afterDatasetDraw(chart,args){
+      if(args.index!==0) return;
+      const meta=chart.getDatasetMeta(0);
+      const {ctx,scales}=chart;
+      meta.data.forEach((bar,i)=>{
+        const s=stats[i]; if(!s) return;
+        const x=bar.x;
+        const halfW=Math.min(bar.width,40)/2*0.55;
+        const yMin=scales.y.getPixelForValue(s.min);
+        const yMax=scales.y.getPixelForValue(s.max);
+        const yMed=scales.y.getPixelForValue(s.median);
+        ctx.save();
+        ctx.strokeStyle=COLOR.ink3; ctx.lineWidth=1.2;
+        ctx.beginPath(); ctx.moveTo(x,yMax); ctx.lineTo(x,yMin); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x-halfW,yMax); ctx.lineTo(x+halfW,yMax); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(x-halfW,yMin); ctx.lineTo(x+halfW,yMin); ctx.stroke();
+        ctx.strokeStyle=COLOR.ink; ctx.lineWidth=2;
+        ctx.beginPath(); ctx.moveTo(bar.x-bar.width/2,yMed); ctx.lineTo(bar.x+bar.width/2,yMed); ctx.stroke();
+        ctx.restore();
+      });
+    }
+  };
+}
+
+// ---- Stats table + explanation ----
+(function(){
+  const tbody=document.getElementById('stats-table');
+  FIELDS.forEach(f=>{
+    const vals=DATA.map(d=>d[f.key]);
+    const d=describe(vals);
+    const p=myPosition(vals,f.mine);
+    const z=(f.mine-d.mean)/d.std;
+    const tr=document.createElement('tr');
+    const rankTxt=p.equal>1?`第${p.rankLo}~${p.rankHi}名`:`第${p.rankLo}名`;
+    tr.innerHTML=`<td>${f.label}</td><td>${d.n}</td><td>${d.mean.toFixed(1)}</td><td>${d.std.toFixed(1)}</td>`+
+      `<td>${d.median.toFixed(1)}</td><td>${d.q1.toFixed(1)}</td><td>${d.q3.toFixed(1)}</td>`+
+      `<td>${d.min}</td><td>${d.max}</td><td class="mine">${f.mine}</td><td class="mine">${rankTxt}</td>`+
+      `<td class="mine">${p.pctBeat.toFixed(1)}%</td><td class="mine">${z.toFixed(2)}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('stats-explain').innerHTML = `
+    <p class="row"><dt>均值 / 标准差：</dt><dd>&nbsp;这104人在该科的平均分，以及分数围绕平均分的离散程度。标准差越大，说明这批尖子生在这一科上拉开的差距越大；标准差越小，说明大家在这一科考得都差不多，很难靠这科拉开名次。</dd></p>
+    <p class="row"><dt>中位数 / Q1 / Q3：</dt><dd>&nbsp;把104人按这科分数从高到低排开，中位数是正中间那个人的分数，Q1、Q3 分别是前1/4和前3/4位置的分数，比均值更能反映大多数人的真实水平，不受极端高低分影响。</dd></p>
+    <p class="row"><dt>我的名次 / 超过比例：</dt><dd>&nbsp;把我的分数插进这104人的该科分数里能排第几名、超过百分之多少人——注意这仍然是相对"这批鹤岗尖子生"而言，不是相对鹤岗全体考生或全省考生。</dd></p>
+    <p class="row"><dt>z 分数：</dt><dd>&nbsp;(我的分数 − 均值) / 标准差，衡量我的分数偏离这104人均值多少个标准差。z 为正说明高于这批人的平均水平，为负说明低于；数值越大偏离越明显。</dd></p>
+  `;
+})();
+
+// ---- Correlation table ----
+(function(){
+  const order=['total','chinese','math','english','comp'];
+  const series={}; order.forEach(k=>series[k]=DATA.map(d=>d[k]));
+  const R={};
+  order.forEach(a=>{ R[a]={}; order.forEach(b=>{ R[a][b]=a===b?1:pearson(series[a],series[b]); }); });
+  const tbody=document.getElementById('corr-table');
+  const labelOf={total:'总分',chinese:'语文',math:'数学',english:'英语',comp:'理综'};
+  order.forEach(a=>{
+    const tr=document.createElement('tr');
+    let cells=`<td style="text-align:left;font-weight:600;color:var(--ink);font-family:'Noto Sans SC',sans-serif">${labelOf[a]}</td>`;
+    order.forEach(b=>{
+      const v=R[a][b];
+      const cls=a===b?'diag':(Math.abs(v)>=0.5?'hi':'');
+      cells+=`<td class="${cls}">${v.toFixed(2)}</td>`;
+    });
+    tr.innerHTML=cells;
+    tbody.appendChild(tr);
+  });
+  const subjOrder=['chinese','math','english','comp'].map(k=>({k,r:R.total[k]})).sort((a,b)=>Math.abs(b.r)-Math.abs(a.r));
+  const txt=subjOrder.map(o=>`${labelOf[o.k]}（r=${o.r.toFixed(2)}）`).join(' > ');
+  document.getElementById('corr-lede').innerHTML += `<br/><br/>按与总分相关系数从高到低排列：<b>${txt}</b>——相关系数最高的那一科，是这104人里"总分名次的主要摆动来源"；最低的那一科，则说明大家在这一科上考得比较接近，单看这科很难判断总分名次。`;
+})();
+
+// ---- Box plot (all fields, as % of full score) ----
+(function(){
+  const labels=FIELDS.map(f=>f.label);
+  const stats=FIELDS.map(f=>{
+    const pct=DATA.map(d=>d[f.key]/f.max*100);
+    return describe(pct);
+  });
+  const minePct=FIELDS.map(f=>f.mine/f.max*100);
+  const globalMin=Math.min(...stats.map(s=>s.min),...minePct);
+  const yMin=Math.max(0,Math.floor(globalMin/5)*5-5);
+
+  new Chart(document.getElementById('box-all'),{
+    type:'bar',
+    data:{
+      labels,
+      datasets:[
+        {label:'Q1~Q3',data:stats.map(s=>[s.q1,s.q3]),backgroundColor:COLOR.bar,borderColor:COLOR.ink3,borderWidth:1,borderRadius:2,barPercentage:0.5},
+        {label:'参考分数',type:'line',showLine:false,data:minePct,pointStyle:'rectRot',pointRadius:8,pointBackgroundColor:COLOR.seal,pointBorderColor:COLOR.card,pointBorderWidth:1.5}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{backgroundColor:COLOR.ink,titleColor:COLOR.paper,bodyColor:COLOR.paper,titleFont:{family:MONO},bodyFont:{family:MONO},callbacks:{
+          title:c=>c[0].label,
+          label:c=>{
+            const i=c.dataIndex, f=FIELDS[i], s=stats[i];
+            if(c.dataset.label==='参考分数') return ` ${f.mine}分：占满分 ${minePct[i].toFixed(1)}%`;
+            return [` Q1~Q3：${s.q1.toFixed(1)}% ~ ${s.q3.toFixed(1)}%`,` 中位数：${s.median.toFixed(1)}%`,` 最低~最高：${s.min.toFixed(1)}% ~ ${s.max.toFixed(1)}%`];
+          }
+        }}
+      },
+      scales:{
+        x:{grid:{display:false},ticks:{font:{size:11.5,family:"'Noto Sans SC',sans-serif"},color:COLOR.ink2}},
+        y:{min:yMin,max:100,grid:{color:COLOR.hair},ticks:{callback:v=>v+'%',font:{size:10,family:MONO},color:COLOR.ink3},border:{display:false},title:{display:true,text:'占该科满分的比例',font:{size:10,family:"'Noto Sans SC',sans-serif"},color:COLOR.ink3}}
+      }
+    },
+    plugins:[boxWhiskerPlugin(stats)]
+  });
+
+  const zs=FIELDS.map((f,i)=>({label:f.label,z:(minePct[i]-stats[i].mean)/stats[i].std}));
+  const best=zs.reduce((a,b)=>b.z>a.z?b:a);
+  const worst=zs.reduce((a,b)=>b.z<a.z?b:a);
+  document.getElementById('box-note').innerHTML=
+    `把总分和四科都换算成占满分比例后再比较：<b class="seal">${best.label}</b>相对这${N}人偏离最大（z=${best.z.toFixed(2)}，在图上红色菱形明显高出箱体），<b>${worst.label}</b>相对这${N}人偏离最小甚至偏低（z=${worst.z.toFixed(2)}）。`;
+})();
+
+// ---- Field sections ----
+const container=document.getElementById('field-sections');
+const totalVals=DATA.map(d=>d.total);
+const totalPos=myPosition(totalVals,666);
+const myRankX=totalPos.rankMid; // shared x-position for the reference point on every rank-based chart
+
+FIELDS.forEach(f=>{
+  const vals=DATA.map(d=>d[f.key]); // in TOTAL-rank order (CSV order), NOT resorted by this field
+  const d=describe(vals);
+  const p=myPosition(vals,f.mine);
+  const z=(f.mine-d.mean)/d.std;
+  const rankTxt=p.equal>1?`第${p.rankLo}~${p.rankHi}名（并列${p.equal}人）`:`第${p.rankLo}名`;
+
+  const block=document.createElement('div');
+  block.className='field';
+  block.innerHTML=`
+    <div class="field-head">
+      <h3>${f.label}（满分${f.max}）</h3>
+      <span class="field-mine">${f.mine}分</span>
+    </div>
+    <p class="field-summary">在这${N}人的<b>${f.label}</b>分数中，${f.mine}分可以排到<b>${rankTxt}</b>，超过其中 <b>${p.pctBeat.toFixed(1)}%</b> 的人，均值 ${d.mean.toFixed(1)} 分、标准差 ${d.std.toFixed(1)} 分，我的 z 分数为 <b>${z.toFixed(2)}</b>。</p>
+
+    <div class="chart-block">
+      <h4>分数分布直方图</h4>
+      <div class="chart-desc">柱宽 ${f.binWidth} 分，纵轴为该分数区间的人数；红色柱为 ${f.mine} 分所在区间</div>
+      <div class="chart-canvas"><canvas id="hist-${f.key}"></canvas></div>
+    </div>
+
+    <div class="chart-block">
+      <h4>按总分名次展开的${f.label}成绩</h4>
+      <div class="chart-desc">横轴是总分名次（第1~${N}名，即表格原始顺序），纵轴是"总分排在这个名次的同学，${f.label}考了多少分"——不是把${f.label}单独重新排名。红点是参考分数：横坐标取总分名次（约第${myRankX.toFixed(1)}名），纵坐标是 ${f.mine} 分。</div>
+      <div class="chart-canvas"><canvas id="rank-${f.key}"></canvas></div>
+    </div>
+
+    <div class="chart-block">
+      <h4>总分前N名的${f.label}平均分</h4>
+      <div class="chart-desc">横轴N=1~${N}，纵轴是"总分前N名这些同学，${f.label}平均考多少分"；红色虚线是参考分数 ${f.mine} 分，曲线高于虚线的区间填浅红（前N名平均更高），低于虚线的区间填浅绿（前N名平均更低）</div>
+      <div class="chart-canvas"><canvas id="cum-${f.key}"></canvas></div>
+      <div class="curve-note" id="note-${f.key}"></div>
+    </div>
+  `;
+  container.appendChild(block);
+
+  // 1) Histogram
+  const {bins,mineBin}=histogram(vals,f.binWidth,f.mine);
+  new Chart(document.getElementById('hist-'+f.key),{
+    type:'bar',
+    data:{
+      labels:bins.map(b=>`${b.lo}-${b.hi}`),
+      datasets:[{
+        data:bins.map(b=>b.count),
+        backgroundColor:bins.map((b,i)=>i===mineBin?COLOR.seal:COLOR.bar),
+        borderColor:bins.map((b,i)=>i===mineBin?COLOR.seal:COLOR.ink3),
+        borderWidth:1,borderRadius:2,borderSkipped:false
+      }]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{backgroundColor:COLOR.ink,titleColor:COLOR.paper,bodyColor:COLOR.paper,titleFont:{family:MONO},bodyFont:{family:MONO},callbacks:{label:c=>` ${c.raw} 人`}}},
+      scales:{
+        x:{grid:{display:false},ticks:{font:{size:9.5,family:MONO},maxRotation:55,minRotation:55,color:COLOR.ink3}},
+        y:{grid:{color:COLOR.hair},ticks:{precision:0,font:{size:9.5,family:MONO},color:COLOR.ink3},border:{display:false}}
+      }
+    }
+  });
+
+  // 2) Rank (total-order) scatter of this field's score
+  new Chart(document.getElementById('rank-'+f.key),{
+    type:'line',
+    data:{
+      labels:vals.map((_,i)=>i+1),
+      datasets:[
+        {label:f.label,data:vals,borderColor:COLOR.rule,backgroundColor:COLOR.bar,
+         borderWidth:1,pointRadius:2.2,pointBackgroundColor:COLOR.bar,pointBorderWidth:0,tension:0.2},
+        {label:'参考分数',data:[{x:myRankX,y:f.mine}],type:'scatter',showLine:false,
+         pointRadius:5.5,pointBackgroundColor:COLOR.seal,pointBorderColor:COLOR.card,pointBorderWidth:1.5}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      layout:{padding:{right:44}},
+      plugins:{legend:{display:false},tooltip:{backgroundColor:COLOR.ink,titleColor:COLOR.paper,bodyColor:COLOR.paper,titleFont:{family:MONO},bodyFont:{family:MONO},callbacks:{
+        label:c=>c.dataset.label==='参考分数'?` ${f.mine}分（总分第${myRankX.toFixed(1)}名附近）`:` 总分第${c.label}名：${f.label} ${c.raw}分`
+      }}},
+      scales:{
+        x:{type:'linear',min:1,max:N,title:{display:true,text:'总分名次',font:{size:10,family:"'Noto Sans SC',sans-serif"},color:COLOR.ink3},grid:{color:COLOR.hair},ticks:{font:{size:9.5,family:MONO},color:COLOR.ink3}},
+        y:{grid:{color:COLOR.hair},ticks:{font:{size:9.5,family:MONO},color:COLOR.ink3},border:{display:false}}
+      }
+    },
+    // beforeDatasetsDraw: the reference line must sit BEHIND the "参考分数" point (same y-value), or the dashed stroke cuts across the solid dot.
+    plugins:[refLinePlugin([{axis:'y',value:f.mine,color:COLOR.seal,dash:[3,3],label:f.mine+'分'}],'beforeDatasetsDraw')]
+  });
+
+  // 3) Cumulative average of top-N (by TOTAL rank) in this field, shaded red/green against the reference score
+  const cum=cumAvgByTotalRank(vals);
+  new Chart(document.getElementById('cum-'+f.key),{
+    type:'line',
+    data:{
+      labels:cum.map((_,i)=>i+1),
+      datasets:[{
+        data:cum,borderColor:COLOR.ink3,borderWidth:1.8,pointRadius:0,tension:0.15,fill:{target:{value:f.mine}},
+        segment:{
+          backgroundColor:ctx=>{
+            const y0=ctx.p0.parsed.y, y1=ctx.p1.parsed.y;
+            return (y0+y1)/2 > f.mine ? COLOR.sealW : COLOR.petrolW;
+          }
+        }
+      }]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      layout:{padding:{right:44}},
+      plugins:{legend:{display:false},tooltip:{backgroundColor:COLOR.ink,titleColor:COLOR.paper,bodyColor:COLOR.paper,titleFont:{family:MONO},bodyFont:{family:MONO},callbacks:{label:c=>` 总分前${c.label}名 ${f.label}均分：${c.raw.toFixed(1)}`}}},
+      scales:{
+        x:{type:'linear',min:1,max:N,title:{display:true,text:'总分前 N 名',font:{size:10,family:"'Noto Sans SC',sans-serif"},color:COLOR.ink3},grid:{color:COLOR.hair},ticks:{font:{size:9.5,family:MONO},color:COLOR.ink3}},
+        y:{grid:{color:COLOR.hair},ticks:{font:{size:9.5,family:MONO},color:COLOR.ink3},border:{display:false}}
+      }
+    },
+    plugins:[refLinePlugin([
+      {axis:'y',value:f.mine,color:COLOR.seal,dash:[3,3],label:f.mine+'分'},
+      {axis:'x',value:myRankX,color:COLOR.seal,dash:[2,3]}
+    ])]
+  });
+
+  const atMyRank=interpAt(cum,myRankX);
+  const diffAtRank=f.mine-atMyRank;
+  const diffTxt=diffAtRank>=0?`高出 <b>${diffAtRank.toFixed(1)}</b> 分`:`低了 <b>${Math.abs(diffAtRank).toFixed(1)}</b> 分`;
+  const {first,count}=firstCrossing(cum,f.mine);
+  const belowAll=cum.every(c=>c>=f.mine-1e-9);
+  const aboveAll=cum.every(c=>c<=f.mine+1e-9);
+  let shapeTxt;
+  if(belowAll){
+    shapeTxt=`而且在总分前1~${N}名的整个范围内，前N名${f.label}平均分从未低于 ${f.mine} 分——不管把统计范围放多大，${f.mine}分都没有追上过这批人的平均水平（图上全程浅红）。`;
+  } else if(aboveAll){
+    shapeTxt=`而且在总分前1~${N}名的整个范围内，前N名${f.label}平均分从未高于 ${f.mine} 分——不管把统计范围放多大，${f.mine}分都保持在这批人的平均水平之上（图上全程浅绿）。`;
+  } else if(first && count<=1){
+    const afterBelow=cum[cum.length-1]<f.mine;
+    shapeTxt=`大约从总分前${first}名开始，前N名${f.label}平均分转为${afterBelow?'持续低于':'持续高于'} ${f.mine} 分，此后基本保持这个关系。`;
+  } else if(first){
+    shapeTxt=`前N名${f.label}平均分从总分前${first}名附近开始，与 ${f.mine} 分有多次交叉（共${count}次），说明${f.label}是这批考生水平最接近、很难拉开差距的一科。`;
+  } else {
+    shapeTxt='';
+  }
+  document.getElementById('note-'+f.key).innerHTML=
+    `总分前${myRankX.toFixed(1)}名（也就是总分名次所在的位置）的${f.label}平均分约为 <b>${atMyRank.toFixed(1)}</b> 分；参考分数 ${f.mine} 分，比这个数字${diffTxt}。${shapeTxt}`;
+});
+
+// ---- Verdict ----
+(function(){
+  const results={};
+  FIELDS.forEach(f=>{
+    const vals=DATA.map(d=>d[f.key]);
+    const p=myPosition(vals,f.mine);
+    const d=describe(vals);
+    results[f.key]={...p,z:(f.mine-d.mean)/d.std,label:f.label};
+  });
+  const order=Object.keys(results).sort((a,b)=>results[b].pctBeat-results[a].pctBeat);
+  const rankedTxt=order.map(k=>`${results[k].label}（超过${results[k].pctBeat.toFixed(0)}%，z=${results[k].z.toFixed(2)}）`).join(' > ');
+
+  const subjKeys=['chinese','math','english','comp'];
+  const best=subjKeys.reduce((a,b)=>results[b].z>results[a].z?b:a);
+  const worst=subjKeys.reduce((a,b)=>results[b].z<results[a].z?b:a);
+
+  document.getElementById('verdict').innerHTML=`
+    <h4>放进鹤岗前${N}名体系里，大致在什么位置</h4>
+    <p>总分 <span class="hi">666</span> 分在这${N}人中排在<span class="hi">第${results.total.rankLo}~${results.total.rankHi}名</span>，超过其中 <span class="hi">${results.total.pctBeat.toFixed(1)}%</span> 的考生——如果放到鹤岗考生里，凭这个总分足以进入全市理科前${results.total.rankHi}名。</p>
+
+    <h4>四科相对强弱（按超过比例从高到低）</h4>
+    <p>${rankedTxt}</p>
+    <ul>
+      <li><b>最突出的单科是${results[best].label}</b>：${FIELDS.find(f=>f.key===best).mine}分排到${results[best].equal>1?`第${results[best].rankLo}~${results[best].rankHi}名（并列${results[best].equal}人）`:`第${results[best].rankLo}名`}，超过${results[best].pctBeat.toFixed(1)}%的人，z分数达到${results[best].z.toFixed(2)}。</li>
+      <li><b>相对最弱的单科是${results[worst].label}</b>：${FIELDS.find(f=>f.key===worst).mine}分排到${results[worst].equal>1?`第${results[worst].rankLo}~${results[worst].rankHi}名（并列${results[worst].equal}人）`:`第${results[worst].rankLo}名`}，超过${results[worst].pctBeat.toFixed(1)}%的人，z分数为${results[worst].z.toFixed(2)}${results[worst].z<0?`，是四科里唯一低于这${N}人均值的成绩`:''}。</li>
+    </ul>
+
+    <h4>方法论提醒</h4>
+    <p>这${N}人已经是鹤岗市理科分数最高的一批考生，上面的均值、标准差、z分数、相关系数都只是相对"这批鹤岗尖子生"而言的相对定位，不代表相对"鹤岗全体理科考生"或"黑龙江全省考生"的位置——用截断后的尖子样本去拟合全体分布会明显低估真实的离散程度。按总分名次展开的散点图、"总分前N名平均分"曲线和占比箱线图，都只用来刻画这个高分段内部、以总分名次为参照系的相对水平，不做总体外推。更聚焦核心层（总分650分以上共42人）的同一套分析见<a href="/kao/2007年高考鹤岗市理科总分650分以上42人成绩分析/">这里</a>。</p>
+  `;
+})();
+</script>
+</body>
+</html>
