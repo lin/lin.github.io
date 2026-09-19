@@ -2,13 +2,18 @@
 """
 Generate a mobile-reading PDF for one or more posts in this Hugo site.
 
-Each post becomes a PDF whose pages are phone-width (default 390 CSS px, the
-iPhone 12 Pro logical width) and where every `## ` (H2) section starts on its
-own page. Each page is exactly as tall as that section renders -- no internal
-pagination, no trailing whitespace.
+By default (`--format mobile`) each post becomes a PDF whose pages are
+phone-width (default 390 CSS px, the iPhone 12 Pro logical width) and where
+every `## ` (H2) section starts on its own page. Each page is exactly as tall
+as that section renders -- no internal pagination, no trailing whitespace.
+
+With `--format a4` the post is instead rendered onto standard A4 paper
+(210mm wide, real print margins) with normal, printer-friendly pagination --
+suitable for printing or sharing as a regular document.
 
 USAGE
     scripts/mobile-pdf.py kao                 # -> content/posts/我的中高考-手机版.pdf  (named from the post title)
+    scripts/mobile-pdf.py kao --format a4      # -> content/posts/我的中高考-A4版.pdf
     scripts/mobile-pdf.py content/posts/liuxiang.md -o ~/Desktop/lx.pdf
     scripts/mobile-pdf.py kao liuxiang irresponsible
     scripts/mobile-pdf.py all                 # every published post in content/posts/
@@ -19,9 +24,10 @@ USAGE
 OPTIONS
     -o, --output PATH   Output file. Only valid with a single post.
     --outdir DIR        Directory for outputs (default: next to each source .md).
-    --width PX          Page width in CSS px (default 390).
+    -f, --format {mobile,a4}  Page style (default mobile).
+    --width PX          Page width in CSS px (default 390 for mobile, 794 for a4).
     --scale N           Image render scale / device pixel ratio (default 2).
-    --split {h2,h1,none}  Where to break pages (default h2). `none` = one tall page.
+    --split {h2,h1,none}  Where to break pages (default h2 for mobile, none for a4).
     --drafts           Include draft / future-dated posts (for `all`).
     --port N            Local static-server port (default 8899).
     --no-build         Reuse an existing ./public build instead of building fresh.
@@ -49,8 +55,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 DEFAULT_WIDTH = 390
+A4_WIDTH = 794  # CSS px, 210mm @ 96dpi
 DEFAULT_SCALE = 2
-SUFFIX = "手机版"  # <base>-手机版.pdf
+SUFFIX = {"mobile": "手机版", "a4": "A4版"}  # <base>-手机版.pdf / <base>-A4版.pdf
 
 
 # --------------------------------------------------------------------------- #
@@ -231,6 +238,13 @@ OVERRIDE_CSS = """
 </style>
 """
 
+# a4 pages get real print margins from page.pdf(), so drop the mobile body padding
+A4_OVERRIDE_CSS = """
+<style id="mobile-pdf-a4-override">
+  body{padding:0!important;}
+</style>
+"""
+
 CANONICAL_ORIGIN = "https://yingkui.com"
 
 # Runs on the live post page before we extract HTML: rewrite every in-site link
@@ -298,16 +312,16 @@ def header_html(title: str, date: str, canonical_href: str, canonical_text: str)
     )
 
 
-def build_doc(url: str, head_html: str, header: str, inner: str) -> str:
+def build_doc(url: str, head_html: str, header: str, inner: str, extra_css: str = "") -> str:
     return (
-        f"<!doctype html><html><head><base href='{url}'>{head_html}{OVERRIDE_CSS}"
+        f"<!doctype html><html><head><base href='{url}'>{head_html}{OVERRIDE_CSS}{extra_css}"
         f"</head><body><div class='container wrapper'><div class='post'>"
         f"{header}"
         f"<div class='markdown'>{inner}</div></div></div></body></html>"
     )
 
 
-def render_post(page, url, out_path: Path, width: int, split: str, workdir: Path):
+def render_post(page, url, out_path: Path, width: int, split: str, fmt: str, workdir: Path):
     from urllib.parse import urlsplit
 
     page.set_viewport_size({"width": width, "height": 900})
@@ -327,21 +341,31 @@ def render_post(page, url, out_path: Path, width: int, split: str, workdir: Path
     header = header_html(data["title"], data["date"], canonical_href, canonical_text)
 
     page.emulate_media(media="screen")
+    extra_css = A4_OVERRIDE_CSS if fmt == "a4" else ""
     parts = []
     for i, inner in enumerate(sections, 1):
-        page.set_content(build_doc(url, head_html, header if i == 1 else "", inner),
+        page.set_content(build_doc(url, head_html, header if i == 1 else "", inner, extra_css),
                          wait_until="networkidle")
         page.wait_for_timeout(700)
-        h = page.evaluate("Math.ceil(document.body.getBoundingClientRect().height) + 4")
         part = workdir / f"{out_path.stem}-{i:02d}.pdf"
-        page.pdf(
-            path=str(part),
-            width=f"{width}px",
-            height=f"{h}px",
-            print_background=True,
-            margin={"top": "0", "bottom": "0", "left": "0", "right": "0"},
-            prefer_css_page_size=False,
-        )
+        if fmt == "a4":
+            # standard A4 paper with real margins; Chrome paginates normally
+            page.pdf(
+                path=str(part),
+                format="A4",
+                print_background=True,
+                margin={"top": "18mm", "bottom": "18mm", "left": "16mm", "right": "16mm"},
+            )
+        else:
+            h = page.evaluate("Math.ceil(document.body.getBoundingClientRect().height) + 4")
+            page.pdf(
+                path=str(part),
+                width=f"{width}px",
+                height=f"{h}px",
+                print_background=True,
+                margin={"top": "0", "bottom": "0", "left": "0", "right": "0"},
+                prefer_css_page_size=False,
+            )
         parts.append(part)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -370,14 +394,24 @@ def main():
                     help="post slug(s), path(s) to .md, or the literal 'all'")
     ap.add_argument("-o", "--output", type=Path, help="output file (single post only)")
     ap.add_argument("--outdir", type=Path, help="output directory (default: beside source)")
-    ap.add_argument("--width", type=int, default=DEFAULT_WIDTH)
+    ap.add_argument("-f", "--format", choices=["mobile", "a4"], default="mobile",
+                    help="mobile = phone-width borderless pages (default); "
+                         "a4 = standard A4 print pages")
+    ap.add_argument("--width", type=int, default=None,
+                    help=f"page width in CSS px (default {DEFAULT_WIDTH} for mobile, "
+                         f"{A4_WIDTH} for a4)")
     ap.add_argument("--scale", type=int, default=DEFAULT_SCALE)
-    ap.add_argument("--split", choices=["h2", "h1", "none"], default="h2")
+    ap.add_argument("--split", choices=["h2", "h1", "none"], default=None,
+                    help="where to break pages (default h2 for mobile, none for a4)")
     ap.add_argument("--drafts", action="store_true")
     ap.add_argument("--port", type=int, default=8899)
     ap.add_argument("--no-build", action="store_true")
     ap.add_argument("--keep", action="store_true")
     args = ap.parse_args()
+    if args.width is None:
+        args.width = A4_WIDTH if args.format == "a4" else DEFAULT_WIDTH
+    if args.split is None:
+        args.split = "none" if args.format == "a4" else "h2"
 
     need("hugo")
     need("pdfunite", "install poppler (brew install poppler)")
@@ -424,9 +458,9 @@ def main():
                 out_path = args.output
             else:
                 out_dir = args.outdir or src.parent
-                out_path = out_dir / f"{stem}-{SUFFIX}.pdf"
+                out_path = out_dir / f"{stem}-{SUFFIX[args.format]}.pdf"
             print(f"→ {stem}  ({url})")
-            n = render_post(page, url, out_path, args.width, args.split, workdir)
+            n = render_post(page, url, out_path, args.width, args.split, args.format, workdir)
             size = out_path.stat().st_size / 1e6
             print(f"  {n} page(s), {size:.1f} MB  -> {out_path}")
             made.append(out_path)
