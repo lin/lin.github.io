@@ -89,7 +89,7 @@ def load_post_index() -> list[dict]:
     for row in rows:
         if row.get("kind") != "page":
             continue
-        if row.get("section") != "posts":
+        if row.get("section") not in ("posts", "pages"):
             continue
         posts.append(row)
     return posts
