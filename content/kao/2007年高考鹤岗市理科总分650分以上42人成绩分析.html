@@ -481,7 +481,7 @@ FIELDS.forEach(f=>{
 
     <div class="chart-block">
       <h4>按总分名次展开的${f.label}成绩</h4>
-      <div class="chart-desc">横轴是总分名次（第1~${N}名，即表格原始顺序），纵轴是"总分排在这个名次的同学，${f.label}考了多少分"——不是把${f.label}单独重新排名。红点是参考分数：横坐标取总分名次（约第${myRankX.toFixed(1)}名），纵坐标是 ${f.mine} 分。</div>
+      <div class="chart-desc">横轴是总分名次（第1~${N}名，即表格原始顺序），纵轴是"总分排在这个名次的同学，${f.label}考了多少分"——不是把${f.label}单独重新排名。红色曲线是各名次的分数，蓝点和蓝色虚线是参考分数：横坐标取总分名次（约第${myRankX.toFixed(1)}名），纵坐标是 ${f.mine} 分。</div>
       <div class="chart-canvas"><canvas id="rank-${f.key}"></canvas></div>
     </div>
 
@@ -523,10 +523,10 @@ FIELDS.forEach(f=>{
     data:{
       labels:vals.map((_,i)=>i+1),
       datasets:[
-        {label:f.label,data:vals,borderColor:COLOR.rule,backgroundColor:COLOR.bar,
-         borderWidth:1,pointRadius:2.8,pointBackgroundColor:COLOR.bar,pointBorderWidth:0,tension:0.2},
+        {label:f.label,data:vals,borderColor:COLOR.seal,backgroundColor:COLOR.seal,
+         borderWidth:2,pointRadius:3,pointBackgroundColor:COLOR.seal,pointBorderWidth:0,tension:0.2},
         {label:'参考分数',data:[{x:myRankX,y:f.mine}],type:'scatter',showLine:false,
-         pointRadius:5.5,pointBackgroundColor:COLOR.seal,pointBorderColor:COLOR.card,pointBorderWidth:1.5}
+         pointRadius:5.5,pointBackgroundColor:COLOR.petrol,pointBorderColor:COLOR.card,pointBorderWidth:1.5}
       ]
     },
     options:{
@@ -541,7 +541,7 @@ FIELDS.forEach(f=>{
       }
     },
     // beforeDatasetsDraw: the reference line must sit BEHIND the "参考分数" point (same y-value), or the dashed stroke cuts across the solid dot.
-    plugins:[refLinePlugin([{axis:'y',value:f.mine,color:COLOR.seal,dash:[3,3],label:f.mine+'分'}],'beforeDatasetsDraw')]
+    plugins:[refLinePlugin([{axis:'y',value:f.mine,color:COLOR.petrol,dash:[3,3],label:f.mine+'分'}],'beforeDatasetsDraw')]
   });
 
   // 3) Cumulative average of top-N (by TOTAL rank) in this field, shaded red/green against the reference score

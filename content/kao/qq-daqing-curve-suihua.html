@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>大庆Q-Q预测曲线下的绥化一中</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#e8ecec;--card:#f7f9f9;--ink:#0e1416;--ink-2:#48565a;--ink-3:#7c8a8e;--rule:#c8d0d0;--hair:#dbe1e1;
+  --petrol:#0e5b68;--seal:#a5342a;--amber:#8f5d09;--band:#eef2f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:15px;line-height:1.72;padding:44px 22px 88px}
+.wrap{max-width:1100px;margin:0 auto}
+.m{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;color:var(--ink-3);margin-bottom:14px}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(24px,4.2vw,36px);line-height:1.2}
+.dek{margin-top:16px;max-width:68ch;color:var(--ink-2)}
+.byline{margin-top:20px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);border-top:2px solid var(--ink);padding-top:11px}
+h2{font-family:"Noto Serif SC",serif;font-size:18px;margin:38px 0 8px}
+.controls{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 10px;font-size:13px;color:var(--ink-2)}
+.controls label{cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.card{background:var(--card);border:1px solid var(--rule);padding:12px}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-3)}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12px;line-height:1.5;padding:6px 9px;display:none;z-index:9;max-width:260px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--rule);padding:10px 14px}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:22px}
+.stat span{font-size:12px;color:var(--ink-3)}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card)}
+th,td{padding:5px 9px;border-bottom:1px solid var(--hair);text-align:right}
+th{font-weight:500;color:var(--ink-3);background:var(--band);position:sticky;top:0}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+.pos{color:var(--petrol)}.neg{color:var(--seal)}
+.scroll{max-height:460px;overflow:auto;border:1px solid var(--rule)}
+.note{font-size:13px;color:var(--ink-2);max-width:74ch;margin-top:8px}
+.note li{margin-left:1.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker">Q-Q 分布预测 · 2004 中考 → 2007 高考</div>
+<h1>把绥化一中放到大庆的 Q-Q 预测曲线下</h1>
+<p class="dek">用大庆市区 2004 中考位次与 2007 黑龙江理科一分一段做 Q-Q 对应：某个中考分数在市区排第几，就假设他在全省高考理科排同等比例的位次，再查一分一段表得到预测高考分。红线即预测。图上每个点是一个班的“第 N 名中考分数 → 第 N 名高考分数”，只看班级整体：点在红线上方，说明该班同名次的高考分数比大庆曲线的预测更高。</p>
+<div class="byline">数据：content/kao/qq · 大庆市区 61 档（中考 600–660）· 高三三班（高考≥600）· 高三一班前五</div>
+
+<div class="controls">
+  <label><input type="checkbox" id="c3" checked> 高三三班（高考≥600）</label>
+  <label><input type="checkbox" id="c1" checked> 高三一班前五名（高考分已知）</label>
+  <label><input type="checkbox" id="c1g" checked> 高三一班全部（含猜测的高考分，≥600）</label>
+  <label><input type="checkbox" id="lin"> 显示线性简化曲线</label>
+  <label><input type="checkbox" id="fit" checked> 三班中考&lt;630 的拟合线</label>
+</div>
+<div class="card"><svg id="chart" viewBox="0 0 1040 560"></svg></div>
+<div class="tip" id="tip"></div>
+
+<div class="stats" id="stats"></div>
+
+<h2>参考名次线：清华 687 / 北大医学部 674 / 上海交大 665 / 南京大学 653 / 上海财经大学 640</h2>
+<p class="note" style="margin:0 0 10px">高考分先按 2007 理科一分一段表换成全省位次，再用大庆曲线反查所需中考分。分科预测不够准，分科图上不画这三条线。</p>
+<div class="scroll" style="max-height:none;margin-bottom:6px"><table id="tref"></table></div>
+<h2>分科 Q-Q：用中考预测理综、数学、语文、英语，以及数语外之和</h2>
+<p class="note" style="margin:0 0 10px">中考分 → 大庆市区位次 → 对应的全省高考位次 → 鹤岗应届前 100 名里“该位次附近的该科成绩”。做法：鹤岗 89 人按总分的全省位次从小到大排，某一科单独从高到低排，第 i 个位次对第 i 高的成绩，形成位次到该科成绩的 Q-Q 对应；位次之间按对数位次线性内插。青点是三班已知的单科成绩。“数语外”一图把每人的语文+数学+英语相加后，再单独排序做 Q-Q（红线）；虚线是三科各自曲线直接相加，作为对照。</p>
+<div id="subj"></div>
+<h2>预测曲线读数</h2>
+<div class="scroll" style="max-height:300px"><table id="curve"></table></div>
+
+<h2>高三三班（高考 600 分以上）</h2>
+<div class="scroll"><table id="t3"></table></div>
+<h2>高三一班前五名</h2>
+<div class="scroll"><table id="t1"></table></div>
+
+<h2>怎么读、别读过头</h2>
+<ul class="note">
+<li>主图横轴从中考 604 起（红线在这里已接近高考 640），纵轴保留全部三班点。线性简化线只针对高考≥640 的区间（中考 606–660）对红线做最小二乘：<b>高考分 ≈ 1.2776 × 中考分 − 136.23</b>，R² = 0.995，比原表“线性简化分”那条 1.2101 的直线更贴红线；这一段的预测相对更可靠。</li>
+<li>曲线是大庆市区的“中考位次 → 全省高考位次”映射，不是绥化的映射。</li>
+<li>每个点是一个班的 Q-Q 点：第 N 名的中考分数，对应同一个班高考第 N 名的分数。点里没有具体的人，两个分数各自单独排序。比如中考第三的分数，去预测该班高考第三的分数。曲线上的预测是用同一个中考分数查大庆曲线得到的。</li>
+<li>三班拟合线只用中考&lt;630 的名次点，并延长到第 1 名的点，斜率明显比曲线陡：两个分数各自排序后必然同增同减，Q-Q 点天然近似单调，R² 很高不说明中考预测了高考；它的用处是看整体比曲线低多少、斜率差多大。</li>
+<li>分科曲线用的是鹤岗应届前 100 名的单科排序，不是全省的单科分布；只覆盖全省位次约 9–3637，且单科在总分附近波动很大，曲线只反映鹤岗这 89 人。三班的点是给定的已知值，每科只有两三个，只看它们和曲线的大致关系。</li>
+<li>“一班全部”里除前五名外的高考分是从原区间取中点得到的猜测值，空心菱形表示；这些点只反映区间中点，不能当作个人成绩。图上只画高考≥600 的点（共 38 个名次）。</li>
+<li>两个班的中考分都是推断值，只看整体相对曲线的位置，个体得失没有意义。三班只含高考≥600 的 46 人，一班为前五名。</li>
+<li>高三一班的中考分是“按高考排名”倒推出来的，本身就来自同一条 Q-Q 关系，所以差值接近 0 是构造使然，只能说明倒推自洽，不是独立验证。</li>
+<li>高三三班的中考分多为 copula 重排的估计，已知的极少，逐名次的差值噪声很大；看整体均值和走势更可信。</li>
+<li>只取高考≥600 的样本，是对高考分数的截断，会使差值均值偏正；不能据此断言绥化一中“超预期”。</li>
+<li>预测取值在中考 600–660 内插值；范围外的点不画。</li>
+</ul>
+</div>
+<script>
+const D={"cur": [[660, 2, 9, 703.1, 706.4], [659, 2, 9, 703.1, 705.1], [658, 2, 9, 703.1, 703.9], [657, 2, 9, 703.1, 702.7], [656, 3, 13, 700.7, 701.5], [655, 4, 17, 699.4, 700.3], [654, 5, 21, 698.1, 699.1], [653, 7, 28, 696.4, 697.9], [652, 7, 28, 696.4, 696.7], [651, 8, 32, 695.6, 695.5], [650, 8, 32, 695.6, 694.3], [649, 9, 35, 694.9, 693.0], [648, 10, 39, 694.4, 691.8], [647, 12, 46, 693.5, 690.6], [646, 14, 53, 692.7, 689.4], [645, 19, 70, 691.1, 688.2], [644, 25, 90, 689.3, 687.0], [643, 31, 110, 687.3, 685.8], [642, 38, 133, 685.4, 684.6], [641, 44, 152, 684.0, 683.4], [640, 50, 171, 682.8, 682.2], [639, 58, 195, 681.5, 680.9], [638, 69, 229, 679.8, 679.7], [637, 87, 283, 677.2, 678.5], [636, 95, 307, 676.2, 677.3], [635, 110, 351, 674.6, 676.1], [634, 127, 400, 673.0, 674.9], [633, 138, 432, 672.0, 673.7], [632, 158, 489, 670.5, 672.5], [631, 173, 531, 669.3, 671.3], [630, 188, 573, 668.1, 670.1], [629, 215, 648, 666.1, 668.8], [628, 229, 687, 665.2, 667.6], [627, 241, 720, 664.4, 666.4], [626, 267, 790, 662.9, 665.2], [625, 285, 839, 661.9, 664.0], [624, 326, 949, 659.9, 662.8], [623, 351, 1015, 658.6, 661.6], [622, 377, 1084, 657.3, 660.4], [621, 402, 1150, 656.2, 659.2], [620, 436, 1239, 654.8, 658.0], [619, 474, 1337, 653.4, 656.7], [618, 513, 1437, 652.0, 655.5], [617, 539, 1504, 651.2, 654.3], [616, 571, 1586, 650.2, 653.1], [615, 608, 1679, 649.0, 651.9], [614, 655, 1798, 647.6, 650.7], [613, 691, 1888, 646.6, 649.5], [612, 729, 1983, 645.6, 648.3], [611, 768, 2080, 644.6, 647.1], [610, 804, 2169, 643.7, 645.8], [609, 852, 2287, 642.6, 644.6], [608, 892, 2385, 641.7, 643.4], [607, 933, 2486, 640.9, 642.2], [606, 973, 2583, 640.1, 641.0], [605, 1013, 2680, 639.3, 639.8], [604, 1054, 2779, 638.4, 638.6], [603, 1081, 2844, 637.9, 637.4], [602, 1116, 2928, 637.2, 636.2], [601, 1140, 2986, 636.7, 635.0], [600, 1164, 3044, 636.3, 633.7]], "c1": [{"z": 646, "g": 687}, {"z": 638, "g": 681}, {"z": 637, "g": 679}, {"z": 635, "g": 671}, {"z": 634, "g": 669}], "c3": [{"z": 630, "g": 640, "known": true}, {"z": 630, "g": 632, "known": true}, {"z": 629, "g": 652, "known": false}, {"z": 629, "g": 621, "known": false}, {"z": 627, "g": 626, "known": false}, {"z": 626, "g": 632, "known": false}, {"z": 625, "g": 622, "known": false}, {"z": 624, "g": 615, "known": false}, {"z": 623, "g": 657, "known": true}, {"z": 623, "g": 623, "known": false}, {"z": 622, "g": 631, "known": true}, {"z": 622, "g": 625, "known": false}, {"z": 621, "g": 612, "known": false}, {"z": 620, "g": 621, "known": false}, {"z": 620, "g": 614, "known": false}, {"z": 619, "g": 632, "known": true}, {"z": 618, "g": 612, "known": false}, {"z": 618, "g": 613, "known": false}, {"z": 617, "g": 615, "known": false}, {"z": 616, "g": 611, "known": false}, {"z": 615, "g": 620, "known": false}, {"z": 615, "g": 617, "known": false}, {"z": 614, "g": 602, "known": false}, {"z": 614, "g": 608, "known": false}, {"z": 613, "g": 603, "known": false}, {"z": 613, "g": 600, "known": false}, {"z": 612, "g": 601, "known": false}, {"z": 612, "g": 630, "known": true}, {"z": 610, "g": 602, "known": false}, {"z": 611, "g": 604, "known": false}, {"z": 610, "g": 606, "known": false}, {"z": 609, "g": 607, "known": false}, {"z": 608, "g": 603, "known": false}, {"z": 608, "g": 602, "known": false}, {"z": 608, "g": 600, "known": false}, {"z": 648, "g": 666, "known": true}, {"z": 628, "g": 620, "known": false}, {"z": 630, "g": 657, "known": true}, {"z": 631, "g": 608, "known": false}, {"z": 632, "g": 642, "known": true}, {"z": 635, "g": 636, "known": false}, {"z": 630, "g": 641, "known": true}, {"z": 634, "g": 632, "known": false}, {"z": 632, "g": 630, "known": true}, {"z": 624, "g": 610, "known": true}, {"z": 629, "g": 610, "known": false}], "c1g": [{"z": 646, "g": 687}, {"z": 638, "g": 681}, {"z": 637, "g": 679}, {"z": 635, "g": 671}, {"z": 634, "g": 669}, {"z": 633, "g": 650}, {"z": 633, "g": 630}, {"z": 632, "g": 629}, {"z": 631, "g": 652}, {"z": 631, "g": 646}, {"z": 629, "g": 644}, {"z": 628, "g": 642}, {"z": 627, "g": 640}, {"z": 625, "g": 627}, {"z": 624, "g": 625}, {"z": 623, "g": 610}, {"z": 622, "g": 608}, {"z": 621, "g": 606}, {"z": 620, "g": 613}, {"z": 619, "g": 611}, {"z": 618, "g": 608}, {"z": 617, "g": 606}, {"z": 616, "g": 604}, {"z": 616, "g": 637}, {"z": 615, "g": 618}, {"z": 614, "g": 612}, {"z": 614, "g": 608}, {"z": 613, "g": 618}, {"z": 612, "g": 606}, {"z": 612, "g": 612}, {"z": 611, "g": 623}, {"z": 611, "g": 608}, {"z": 609, "g": 610}, {"z": 609, "g": 610}, {"z": 608, "g": 603}, {"z": 608, "g": 597}, {"z": 607, "g": 604}, {"z": 607, "g": 614}, {"z": 606, "g": 612}, {"z": 606, "g": 595}], "subj": {"理综": {"lz": [[9, 292], [125, 290], [167, 290], [312, 288], [368, 286], [433, 285], [470, 285], [470, 285], [470, 284], [510, 284], [542, 284], [577, 284], [613, 283], [613, 283], [652, 283], [652, 283], [652, 281], [693, 281], [693, 280], [886, 279], [886, 279], [993, 278], [1047, 278], [1047, 277], [1104, 277], [1164, 276], [1227, 276], [1293, 276], [1293, 276], [1293, 275], [1293, 274], [1364, 273], [1598, 272], [1598, 272], [1598, 272], [1677, 271], [1677, 271], [1761, 271], [1761, 270], [1848, 270], [1848, 269], [1940, 268], [1940, 268], [2036, 266], [2036, 266], [2036, 266], [2036, 266], [2137, 265], [2137, 265], [2137, 265], [2354, 265], [2354, 264], [2471, 264], [2471, 264], [2471, 264], [2594, 263], [2594, 263], [2594, 263], [2594, 263], [2709, 261], [2709, 261], [2709, 261], [2709, 260], [2827, 260], [2827, 260], [2827, 260], [2951, 259], [2951, 259], [2951, 259], [3078, 258], [3078, 258], [3078, 258], [3078, 257], [3211, 257], [3211, 257], [3211, 256], [3348, 256], [3348, 256], [3348, 256], [3490, 255], [3490, 254], [3637, 254], [3637, 253], [3637, 253], [3637, 253], [3637, 251], [3637, 250], [3637, 245], [3637, 241]], "pts": [[648, 265], [632, 244], [630, 241]], "full": 300}, "数学": {"lz": [[9, 147], [125, 147], [167, 145], [312, 144], [368, 143], [433, 143], [470, 142], [470, 142], [470, 141], [510, 141], [542, 139], [577, 139], [613, 138], [613, 137], [652, 137], [652, 137], [652, 137], [693, 137], [693, 136], [886, 136], [886, 136], [993, 136], [1047, 136], [1047, 136], [1104, 135], [1164, 135], [1227, 135], [1293, 135], [1293, 135], [1293, 134], [1293, 134], [1364, 133], [1598, 133], [1598, 132], [1598, 132], [1677, 132], [1677, 132], [1761, 131], [1761, 131], [1848, 131], [1848, 131], [1940, 131], [1940, 130], [2036, 130], [2036, 130], [2036, 129], [2036, 129], [2137, 128], [2137, 128], [2137, 128], [2354, 128], [2354, 128], [2471, 128], [2471, 128], [2471, 128], [2594, 127], [2594, 127], [2594, 126], [2594, 126], [2709, 126], [2709, 126], [2709, 126], [2709, 126], [2827, 126], [2827, 126], [2827, 125], [2951, 125], [2951, 125], [2951, 125], [3078, 124], [3078, 124], [3078, 124], [3078, 124], [3211, 123], [3211, 123], [3211, 122], [3348, 122], [3348, 122], [3348, 121], [3490, 120], [3490, 120], [3637, 120], [3637, 120], [3637, 119], [3637, 119], [3637, 115], [3637, 114], [3637, 113], [3637, 112]], "pts": [[648, 135], [632, 141], [630, 129]], "full": 150}, "英语": {"lz": [[9, 142], [125, 141], [167, 141], [312, 140], [368, 140], [433, 140], [470, 140], [470, 140], [470, 139], [510, 139], [542, 139], [577, 138], [613, 138], [613, 137], [652, 136], [652, 136], [652, 135], [693, 135], [693, 135], [886, 135], [886, 135], [993, 135], [1047, 135], [1047, 135], [1104, 134], [1164, 134], [1227, 134], [1293, 133], [1293, 133], [1293, 133], [1293, 133], [1364, 133], [1598, 133], [1598, 133], [1598, 133], [1677, 133], [1677, 133], [1761, 133], [1761, 132], [1848, 132], [1848, 132], [1940, 132], [1940, 132], [2036, 132], [2036, 132], [2036, 131], [2036, 131], [2137, 131], [2137, 131], [2137, 131], [2354, 131], [2354, 131], [2471, 131], [2471, 130], [2471, 130], [2594, 130], [2594, 130], [2594, 130], [2594, 130], [2709, 130], [2709, 130], [2709, 129], [2709, 129], [2827, 129], [2827, 129], [2827, 129], [2951, 129], [2951, 129], [2951, 129], [3078, 128], [3078, 128], [3078, 128], [3078, 128], [3211, 127], [3211, 127], [3211, 127], [3348, 127], [3348, 127], [3348, 126], [3490, 126], [3490, 126], [3637, 126], [3637, 125], [3637, 125], [3637, 124], [3637, 123], [3637, 121], [3637, 117], [3637, 116]], "pts": [[648, 141], [632, 139], [630, 139]], "full": 150}, "语文": {"lz": [[9, 130], [125, 130], [167, 129], [312, 129], [368, 127], [433, 127], [470, 126], [470, 126], [470, 126], [510, 125], [542, 125], [577, 125], [613, 125], [613, 125], [652, 125], [652, 124], [652, 124], [693, 124], [693, 124], [886, 123], [886, 123], [993, 123], [1047, 123], [1047, 123], [1104, 122], [1164, 122], [1227, 122], [1293, 122], [1293, 122], [1293, 122], [1293, 122], [1364, 122], [1598, 122], [1598, 122], [1598, 121], [1677, 121], [1677, 121], [1761, 120], [1761, 120], [1848, 120], [1848, 120], [1940, 120], [1940, 120], [2036, 120], [2036, 119], [2036, 119], [2036, 119], [2137, 119], [2137, 119], [2137, 119], [2354, 119], [2354, 118], [2471, 118], [2471, 118], [2471, 117], [2594, 117], [2594, 117], [2594, 117], [2594, 117], [2709, 117], [2709, 117], [2709, 116], [2709, 116], [2827, 116], [2827, 116], [2827, 115], [2951, 115], [2951, 115], [2951, 115], [3078, 115], [3078, 114], [3078, 114], [3078, 113], [3211, 113], [3211, 113], [3211, 113], [3348, 113], [3348, 113], [3348, 112], [3490, 111], [3490, 111], [3637, 111], [3637, 111], [3637, 110], [3637, 109], [3637, 109], [3637, 108], [3637, 106], [3637, 105]], "pts": [[648, 125], [632, 118], [630, 123]], "full": 150}, "数语外": {"lz": [[9, 415], [125, 410], [167, 402], [312, 401], [368, 400], [433, 399], [470, 398], [470, 397], [470, 397], [510, 394], [542, 394], [577, 394], [613, 394], [613, 393], [652, 393], [652, 393], [652, 392], [693, 391], [693, 391], [886, 388], [886, 388], [993, 387], [1047, 387], [1047, 386], [1104, 386], [1164, 386], [1227, 384], [1293, 384], [1293, 384], [1293, 384], [1293, 384], [1364, 384], [1598, 384], [1598, 384], [1598, 384], [1677, 383], [1677, 383], [1761, 382], [1761, 382], [1848, 382], [1848, 381], [1940, 381], [1940, 381], [2036, 380], [2036, 380], [2036, 380], [2036, 379], [2137, 379], [2137, 379], [2137, 378], [2354, 378], [2354, 377], [2471, 377], [2471, 377], [2471, 377], [2594, 377], [2594, 376], [2594, 376], [2594, 375], [2709, 375], [2709, 375], [2709, 375], [2709, 374], [2827, 374], [2827, 373], [2827, 373], [2951, 373], [2951, 373], [2951, 372], [3078, 372], [3078, 372], [3078, 372], [3078, 371], [3211, 370], [3211, 370], [3211, 370], [3348, 368], [3348, 368], [3348, 367], [3490, 367], [3490, 366], [3637, 366], [3637, 366], [3637, 366], [3637, 364], [3637, 364], [3637, 360], [3637, 360], [3637, 356]], "pts": [[648, 401], [632, 398], [630, 391]], "full": 450}}, "refs": [{"n": "清华大学", "g": 687, "r": 113}, {"n": "北京大学医学部", "g": 674, "r": 368}, {"n": "上海交大", "g": 665, "r": 693}, {"n": "南京大学", "g": 653, "r": 1364}, {"n": "上海财经大学", "g": 640, "r": 2594}]};
+const cur=D.cur; // [中考,市区位次,全省位次,QQ分,线性分]
+const lo=600,hi=660;
+function pred(x){ // 线性内插一分一段预测
+  let a=cur.find(r=>r[0]===Math.round(x));
+  if(a) return a[3];
+  return null;
+}
+function rec(x){return cur.find(r=>r[0]===x)}
+function zAtRank(rk){ // 由全省位次反查中考分；超出 600–660 返回 null
+  const a=cur.slice().sort((p,q)=>p[2]-q[2]);
+  if(rk<a[0][2]||rk>a[a.length-1][2])return null;
+  let i=1;while(a[i][2]<rk)i++;const w=(Math.log(rk)-Math.log(a[i-1][2]))/(Math.log(a[i][2])-Math.log(a[i-1][2]));
+  return a[i-1][0]+w*(a[i][0]-a[i-1][0])}
+const REFS=D.refs;REFS.forEach(r=>{r.z=zAtRank(r.r);r.ext=r.z===null;if(r.ext)r.z=(r.g+92.294)/1.21007});
+function refLines(e,sx,sy,yOf,Wd,Hd,unit,showZ){ // yOf(ref)→纵轴值
+  REFS.forEach(r=>{const y=sy(yOf(r));
+    e('line',{x1:L,x2:Wd-R,y1:y,y2:y,stroke:'var(--ink-2)','stroke-width':1,'stroke-dasharray':'1 4'});
+    if(r.z>=MX0){e('line',{x1:sx(r.z),x2:sx(r.z),y1:y,y2:Hd-B,stroke:'var(--ink-2)','stroke-width':1,'stroke-dasharray':'1 4'})}
+    const zt='需中考 ≈ '+r.z.toFixed(1)+(r.ext?'（线性简化外推）':'');
+    const left=r.n==='清华大学'||r.n==='北京大学医学部'||r.n==='上海交大';
+    e('text',{x:left?L+8:Wd-R-4,y:y-5,'text-anchor':left?'start':'end',style:'fill:var(--ink-2)'}).textContent=`${r.n} · 全省第 ${r.r} 名 · ${unit(r)}${showZ?' · '+zt:''}`})}
+function qq(a){const zs=a.map(p=>p.z).sort((x,y)=>y-x),gs=a.map(p=>p.g).sort((x,y)=>y-x);
+  return zs.map((z,i)=>({n:i+1,z,g:gs[i]})).filter(p=>rec(p.z)).map(p=>({...p,p:rec(p.z)[3],rk:rec(p.z)[2]}))}
+const c3=qq(D.c3);
+const c1=qq(D.c1);
+const c1g=qq(D.c1g).filter(p=>p.g>=600);c1g.forEach(p=>p.d=p.g-p.p);
+c3.forEach(p=>p.d=p.g-p.p);c1.forEach(p=>p.d=p.g-p.p);
+const mean=a=>a.reduce((s,v)=>s+v,0)/a.length;
+function ols(a){const n=a.length,mx=mean(a.map(p=>p.z)),my=mean(a.map(p=>p.g));
+  let sxy=0,sxx=0,syy=0;a.forEach(p=>{sxy+=(p.z-mx)*(p.g-my);sxx+=(p.z-mx)**2;syy+=(p.g-my)**2});
+  const b=sxy/sxx;return{n,b,a:my-b*mx,r2:sxy*sxy/(sxx*syy),x0:Math.min(...a.map(p=>p.z)),x1:Math.max(...a.map(p=>p.z))}}
+const CURV=cur.filter(r=>r[3]>=640); // 只看高考≥640 的区间
+const LIN=(()=>{const n=CURV.length,mx=mean(CURV.map(r=>r[0])),my=mean(CURV.map(r=>r[3]));let sxy=0,sxx=0,syy=0;
+  CURV.forEach(r=>{sxy+=(r[0]-mx)*(r[3]-my);sxx+=(r[0]-mx)**2;syy+=(r[3]-my)**2});const b=sxy/sxx;
+  return{b,a:my-b*mx,r2:sxy*sxy/(sxx*syy),x0:Math.min(...CURV.map(r=>r[0])),x1:Math.max(...CURV.map(r=>r[0]))}})();
+const sub=c3.filter(p=>p.z<630),F=ols(sub);F.x1=Math.max(...c3.map(p=>p.z));
+const W=1040,H=560,L=62,R=24,T=18,B=52;
+const X0=598,X1=662,MX0=604,Y0=590,Y1=712;
+const sx=x=>L+(x-MX0)/(X1-MX0)*(W-L-R), sy=y=>H-B-(y-Y0)/(Y1-Y0)*(H-T-B);
+const svg=document.getElementById('chart'),tip=document.getElementById('tip');
+const NS='http://www.w3.org/2000/svg';
+function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
+function draw(){
+  svg.innerHTML='';
+  for(let y=Y0+10;y<=Y1;y+=10){el('line',{x1:L,x2:W-R,y1:sy(y),y2:sy(y),stroke:'var(--hair)'});el('text',{x:L-8,y:sy(y)+4,'text-anchor':'end'}).textContent=y}
+  for(let x=610;x<=660;x+=10){el('line',{x1:sx(x),x2:sx(x),y1:T,y2:H-B,stroke:'var(--hair)'});el('text',{x:sx(x),y:H-B+18,'text-anchor':'middle'}).textContent=x}
+  el('text',{x:(L+W-R)/2,y:H-8,'text-anchor':'middle'}).textContent='2004 中考文体总分（大庆市区口径）';
+  el('text',{x:14,y:(T+H-B)/2,transform:`rotate(-90 14 ${(T+H-B)/2})`,'text-anchor':'middle'}).textContent='2007 高考总分（理科）';
+  el('line',{x1:L,x2:W-R,y1:H-B,y2:H-B,stroke:'var(--ink-3)'});el('line',{x1:L,x2:L,y1:T,y2:H-B,stroke:'var(--ink-3)'});
+  const path=i=>cur.filter(r=>r[0]>=MX0).reverse().map((r,k)=>(k?'L':'M')+sx(r[0])+' '+sy(r[i])).join('');
+  if(lin.checked)el('line',{x1:sx(LIN.x0),x2:sx(LIN.x1),y1:sy(LIN.a+LIN.b*LIN.x0),y2:sy(LIN.a+LIN.b*LIN.x1),fill:'none',stroke:'var(--amber)','stroke-width':1.6,'stroke-dasharray':'5 4'});
+  el('path',{d:path(3),fill:'none',stroke:'var(--seal)','stroke-width':2.4});
+  if(fit.checked)el('line',{x1:sx(F.x0),x2:sx(F.x1),y1:sy(F.a+F.b*F.x0),y2:sy(F.a+F.b*F.x1),stroke:'var(--petrol)','stroke-width':2.2,'stroke-dasharray':'2 3'});
+  refLines((n,a)=>el(n,a),sx,sy,r=>r.g,W,H,r=>'高考 '+r.g,true);
+  const pts=[];
+  if(c3cb.checked)c3.forEach(p=>pts.push([p,'var(--petrol)',c3cb,p.known?'circle':'ring',3]));
+  if(c1gcb.checked)c1g.forEach(p=>pts.push([p,'var(--amber)',c1gcb,'dring',4]));
+  if(c1cb.checked)c1.forEach(p=>pts.push([p,'var(--amber)',c1cb,'diamond',1]));
+  pts.forEach(([p,col,_,shape,cls])=>{
+    const x=sx(p.z),y=sy(p.g);let e;
+    if(shape==='diamond')e=el('path',{d:`M${x} ${y-7}L${x+7} ${y}L${x} ${y+7}L${x-7} ${y}Z`,fill:col,stroke:'var(--card)'});
+    else if(shape==='dring')e=el('path',{d:`M${x} ${y-6}L${x+6} ${y}L${x} ${y+6}L${x-6} ${y}Z`,fill:'var(--card)',stroke:col,'stroke-width':1.6});
+    else e=el('circle',{cx:x,cy:y,r:4.2,fill:shape==='ring'?'var(--card)':col,stroke:col,'stroke-width':1.6});
+    e.style.cursor='pointer';
+    e.onmousemove=ev=>{tip.style.display='block';tip.style.left=ev.clientX+14+'px';tip.style.top=ev.clientY+14+'px';
+      tip.innerHTML=`<b>${cls===3?'三班':cls===4?'一班（含猜测）':'一班'}中考第${p.n}名 → 高考第${p.n}名</b><br>中考第${p.n}名 ${p.z} 分 → 预测 ${p.p.toFixed(1)}<br>高考第${p.n}名 ${p.g} 分 · 差 ${p.d>0?'+':''}${p.d.toFixed(1)}<br>预测全省位次 ${p.rk}`};
+    e.onmouseleave=()=>tip.style.display='none';
+  });
+  // legend
+  if(fit.checked){const ly=T+(lin.checked?50:32);el('line',{x1:L+14,x2:L+44,y1:ly,y2:ly,stroke:'var(--petrol)','stroke-width':2.2,'stroke-dasharray':'2 3'});el('text',{x:L+50,y:ly+4}).textContent=`三班拟合（中考<630）：高考 = ${F.b.toFixed(4)} × 中考 ${F.a<0?'−':'+'} ${Math.abs(F.a).toFixed(2)}，R²=${F.r2.toFixed(3)}`}
+  el('line',{x1:L+14,x2:L+44,y1:T+14,y2:T+14,stroke:'var(--seal)','stroke-width':2.4});el('text',{x:L+50,y:T+18}).textContent='Q-Q 预测（一分一段）';
+  if(lin.checked){el('line',{x1:L+14,x2:L+44,y1:T+32,y2:T+32,stroke:'var(--amber)','stroke-dasharray':'5 4'});el('text',{x:L+50,y:T+36}).textContent=`线性拟合（高考≥640）：高考 = ${LIN.b.toFixed(4)} × 中考 ${LIN.a<0?'−':'+'} ${Math.abs(LIN.a).toFixed(2)}，R²=${LIN.r2.toFixed(3)}`}
+}
+const c3cb=document.getElementById('c3'),c1cb=document.getElementById('c1'),c1gcb=document.getElementById('c1g'),lin=document.getElementById('lin'),fit=document.getElementById('fit');
+[c3cb,c1cb,c1gcb,lin,fit].forEach(e=>e.onchange=draw);draw();
+const med=a=>{const s=[...a].sort((x,y)=>x-y),n=s.length;return n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2};
+const st=(n,a)=>`<div class="stat"><span>${n} · ${a.length} 个名次</span><b>${mean(a.map(p=>p.d)).toFixed(1)}</b><span>平均差（同名次高考−预测），中位 ${med(a.map(p=>p.d)).toFixed(1)}；高于预测的名次 ${a.filter(p=>p.d>0).length}/${a.length}</span></div>`;
+document.getElementById('stats').innerHTML=st('高三三班',c3)+st('高三一班前五（已知）',c1)+st('高三一班全部（含猜测）',c1g);
+const cls=d=>d>=0?'pos':'neg',f=d=>(d>0?'+':'')+d.toFixed(1);
+document.getElementById('curve').innerHTML='<tr><th>中考</th><th>市区位次</th><th>预测全省位次</th><th>预测高考分</th><th>线性简化</th></tr>'+cur.map(r=>`<tr class="m"><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3].toFixed(1)}</td><td>${r[4].toFixed(1)}</td></tr>`).join('');
+const row=p=>`<tr class="m"><td>${p.n}</td><td>${p.z}</td><td>${p.p.toFixed(1)}</td><td>${p.g}</td><td class="${cls(p.d)}">${f(p.d)}</td></tr>`;
+const hd='<tr><th>班内名次 N</th><th>中考第N名分数(估)</th><th>预测高考第N名</th><th>实际高考第N名</th><th>差</th></tr>';
+document.getElementById('t3').innerHTML=hd+c3.map(row).join('');
+document.getElementById('t1').innerHTML=hd+c1.map(row).join('');
+
+// ---- 分科 Q-Q ----
+setTimeout(()=>{},0);
+function lzAt(LZ,rk){const lx=Math.log(rk);const xs=LZ.map(a=>Math.log(a[0])),ys=LZ.map(a=>a[1]);
+  if(lx<=xs[0])return ys[0];if(lx>=xs[xs.length-1])return ys[ys.length-1];
+  let i=1;while(xs[i]<lx)i++;const w=(lx-xs[i-1])/(xs[i]-xs[i-1]);return ys[i-1]+w*(ys[i]-ys[i-1])}
+const W2=1040,H2=380;
+Object.entries(D.subj).forEach(([name,S])=>{
+  const LZ=S.lz,pts=S.pts;
+  const lzc=cur.map(r=>({z:r[0],q:lzAt(LZ,r[2])}));
+  const alt=name==='数语外'?cur.map(r=>({z:r[0],q:['语文','数学','英语'].reduce((s,k)=>s+lzAt(D.subj[k].lz,r[2]),0)})):null;
+  const all=lzc.map(a=>a.q).concat(pts.map(a=>a[1]),alt?alt.map(a=>a.q):[]);
+  const Y20=Math.floor(Math.min(...all)/5)*5-5,Y21=Math.ceil(Math.max(...all)/5)*5+5;
+  const wrap=document.createElement('div');
+  wrap.innerHTML=`<h3 style="font-family:'Noto Serif SC',serif;font-size:16px;margin:22px 0 8px">${name}（满分 ${S.full}）</h3><div class="card"><svg viewBox="0 0 ${W2} ${H2}"></svg></div><div class="scroll" style="max-height:none;margin-top:10px"><table></table></div>`;
+  document.getElementById('subj').appendChild(wrap);
+  const s2=wrap.querySelector('svg');
+  const sx2=x=>L+(x-X0)/(X1-X0)*(W2-L-R),sy2=y=>H2-B-(y-Y20)/(Y21-Y20)*(H2-T-B);
+  const e2=(n,a)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);s2.appendChild(e);return e};
+  for(let y=Y20;y<=Y21;y+=5){e2('line',{x1:L,x2:W2-R,y1:sy2(y),y2:sy2(y),stroke:'var(--hair)'});e2('text',{x:L-8,y:sy2(y)+4,'text-anchor':'end'}).textContent=y}
+  for(let x=600;x<=660;x+=10){e2('line',{x1:sx2(x),x2:sx2(x),y1:T,y2:H2-B,stroke:'var(--hair)'});e2('text',{x:sx2(x),y:H2-B+18,'text-anchor':'middle'}).textContent=x}
+  e2('text',{x:(L+W2-R)/2,y:H2-8,'text-anchor':'middle'}).textContent='2004 中考文体总分（大庆市区口径）';
+  e2('text',{x:14,y:(T+H2-B)/2,transform:`rotate(-90 14 ${(T+H2-B)/2})`,'text-anchor':'middle'}).textContent='2007 高考'+name;
+  e2('line',{x1:L,x2:W2-R,y1:H2-B,y2:H2-B,stroke:'var(--ink-3)'});e2('line',{x1:L,x2:L,y1:T,y2:H2-B,stroke:'var(--ink-3)'});
+  e2('path',{d:lzc.slice().reverse().map((r,k)=>(k?'L':'M')+sx2(r.z)+' '+sy2(r.q)).join(''),fill:'none',stroke:'var(--seal)','stroke-width':2.4});
+  if(alt)e2('path',{d:alt.slice().reverse().map((r,k)=>(k?'L':'M')+sx2(r.z)+' '+sy2(r.q)).join(''),fill:'none',stroke:'var(--amber)','stroke-width':1.8,'stroke-dasharray':'5 4'});
+  pts.forEach(([z,q])=>{const r=rec(z),pq=lzAt(LZ,r[2]),x=sx2(z),y=sy2(q);
+    e2('line',{x1:x,x2:x,y1:y,y2:sy2(pq),stroke:'var(--ink-3)','stroke-dasharray':'3 3'});
+    const e=e2('circle',{cx:x,cy:y,r:5,fill:'var(--petrol)',stroke:'var(--card)'});e.style.cursor='pointer';
+    e.onmousemove=ev=>{tip.style.display='block';tip.style.left=ev.clientX+14+'px';tip.style.top=ev.clientY+14+'px';tip.innerHTML=`<b>三班 中考 ${z}</b><br>${name} ${q} · 预测 ${pq.toFixed(1)} · 差 ${(q-pq).toFixed(1)}`};
+    e.onmouseleave=()=>tip.style.display='none'});
+  e2('line',{x1:L+14,x2:L+44,y1:T+14,y2:T+14,stroke:'var(--seal)','stroke-width':2.4});e2('text',{x:L+50,y:T+18}).textContent='中考 → '+name+' Q-Q 预测';
+  if(alt){e2('line',{x1:L+14,x2:L+44,y1:T+50,y2:T+50,stroke:'var(--amber)','stroke-dasharray':'5 4'});e2('text',{x:L+50,y:T+54}).textContent='对照：语文、数学、英语三条曲线相加'}
+  e2('circle',{cx:L+29,cy:T+32,r:5,fill:'var(--petrol)'});e2('text',{x:L+50,y:T+36}).textContent='三班已知的'+name+'（'+pts.map(a=>a[0]).join(' / ')+'）';
+  wrap.querySelector('table').innerHTML='<tr><th>三班中考</th><th>预测全省高考位次</th><th>预测'+name+'</th><th>实际'+name+'</th><th>差</th></tr>'+pts.map(([z,q])=>{const r=rec(z),pq=lzAt(LZ,r[2]),d=q-pq;return `<tr class="m"><td>${z}</td><td>${r[2]}</td><td>${pq.toFixed(1)}</td><td>${q}</td><td class="${cls(d)}">${f(d)}</td></tr>`}).join('')});
+(function(){const ks=[];
+  document.getElementById('tref').innerHTML='<tr><th>参考</th><th>高考分</th><th>全省位次</th><th>所需中考</th>'+ks.map(k=>'<th>'+k+'</th>').join('')+'</tr>'+REFS.map(r=>'<tr class="m"><td style="font-family:\'Noto Sans SC\'">'+r.n+'</td><td>'+r.g+'</td><td>'+r.r+'</td><td>'+('≈ '+r.z.toFixed(1)+(r.ext?'（线性简化外推）':''))+'</td>'+ks.map(k=>'<td>'+lzAt(D.subj[k].lz,r.r).toFixed(1)+'</td>').join('')+'</tr>').join('')})();
+</script>
+</body>
+</html>
