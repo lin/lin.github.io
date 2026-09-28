@@ -102,7 +102,6 @@
 ## 相关文件
 
 - `content/kao/重要统计数据.md` —— 通用统计数字草稿本
-- `content/kao/2004年绥化一中中考分数推断.csv` —— 逐人推断表
 - `content/kao/daqing-shiyan-2004-vs-suihua-class3.html`、`content/kao/suihua-class3-2007.html` —— 下游可视化
 - `content/kao/suihua-zhongkao-648.html` —— 本笔记对应的正式页面
 - `content/kao/2005年绥化九中苗丽萍校长访录.html`、`content/kao/2004年绥化市属高中招生计划.html` —— 老报纸复刻页（发布在 `static/kao/<同名>/index.html`，config.toml 里排除 Hugo 主题包装）
