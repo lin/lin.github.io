@@ -16,6 +16,7 @@ USAGE
     scripts/mobile-pdf.py kao --format a4      # -> content/posts/我的中高考-A4版.pdf
     scripts/mobile-pdf.py content/posts/liuxiang.md -o ~/Desktop/lx.pdf
     scripts/mobile-pdf.py kao liuxiang irresponsible
+    scripts/mobile-pdf.py kao -f a4 --chinese  # -> content/posts/我的中高考-A4版-正式.pdf  (仿宋/黑体)
     scripts/mobile-pdf.py all                 # every published post in content/posts/
     scripts/mobile-pdf.py all --drafts --outdir /tmp/pdfs
 
@@ -28,6 +29,9 @@ OPTIONS
     --width PX          Page width in CSS px (default 390 for mobile, 794 for a4).
     --scale N           Image render scale / device pixel ratio (default 2).
     --split {h2,h1,none}  Where to break pages (default h2 for mobile, none for a4).
+    -c, --chinese       Chinese document fonts: body STFangsong (English and digits in
+                        Times New Roman), title Noto Serif SC (weight 800), headings
+                        STHeiti. Adds "-正式" to the file name.
     --drafts           Include draft / future-dated posts (for `all`).
     --port N            Local static-server port (default 8899).
     --no-build         Reuse an existing ./public build instead of building fresh.
@@ -245,6 +249,22 @@ A4_OVERRIDE_CSS = """
 </style>
 """
 
+# --chinese: 公文-style fonts (all three ship with / are installed on macOS).
+# Body lists a Latin serif first: it has no CJK glyphs, so English and digits
+# render in Times while Chinese falls through to STFangsong.
+# KaTeX keeps its own fonts because .katex sets font-family explicitly.
+CHINESE_CSS = """
+<style id="mobile-pdf-chinese-override">
+  body,.markdown,.markdown p,.markdown li,.markdown blockquote,.markdown figcaption,
+  .markdown td,.markdown th,.pdf-head .pdf-meta{
+     font-family:"Times New Roman","Times","STFangsong","FangSong","FangSong_GB2312",serif!important;}
+  .pdf-head .pdf-title{font-family:"Noto Serif SC","Songti SC",serif!important;
+     font-weight:800!important;letter-spacing:2px!important;}
+  .markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{
+     font-family:"STHeiti","Heiti SC",sans-serif!important;}
+</style>
+"""
+
 CANONICAL_ORIGIN = "https://yingkui.com"
 
 # Runs on the live post page before we extract HTML: rewrite every in-site link
@@ -313,15 +333,19 @@ def header_html(title: str, date: str, canonical_href: str, canonical_text: str)
 
 
 def build_doc(url: str, head_html: str, header: str, inner: str, extra_css: str = "") -> str:
+    # lang=zh-CN so Chrome picks Simplified-Chinese glyphs (not the JP/KR forms
+    # of shared CJK code points) and SC font fallbacks
     return (
-        f"<!doctype html><html><head><base href='{url}'>{head_html}{OVERRIDE_CSS}{extra_css}"
+        f"<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>"
+        f"<base href='{url}'>{head_html}{OVERRIDE_CSS}{extra_css}"
         f"</head><body><div class='container wrapper'><div class='post'>"
         f"{header}"
         f"<div class='markdown'>{inner}</div></div></div></body></html>"
     )
 
 
-def render_post(page, url, out_path: Path, width: int, split: str, fmt: str, workdir: Path):
+def render_post(page, url, out_path: Path, width: int, split: str, fmt: str, workdir: Path,
+                chinese: bool = False):
     from urllib.parse import urlsplit
 
     page.set_viewport_size({"width": width, "height": 900})
@@ -342,6 +366,8 @@ def render_post(page, url, out_path: Path, width: int, split: str, fmt: str, wor
 
     page.emulate_media(media="screen")
     extra_css = A4_OVERRIDE_CSS if fmt == "a4" else ""
+    if chinese:
+        extra_css += CHINESE_CSS
     parts = []
     for i, inner in enumerate(sections, 1):
         page.set_content(build_doc(url, head_html, header if i == 1 else "", inner, extra_css),
@@ -403,6 +429,9 @@ def main():
     ap.add_argument("--scale", type=int, default=DEFAULT_SCALE)
     ap.add_argument("--split", choices=["h2", "h1", "none"], default=None,
                     help="where to break pages (default h2 for mobile, none for a4)")
+    ap.add_argument("-c", "--chinese", action="store_true",
+                    help="Chinese document fonts: body STFangsong (English/digits in Times "
+                         "New Roman), title Noto Serif SC 800, headings STHeiti")
     ap.add_argument("--drafts", action="store_true")
     ap.add_argument("--port", type=int, default=8899)
     ap.add_argument("--no-build", action="store_true")
@@ -449,6 +478,7 @@ def main():
         browser = p.chromium.launch(channel="chrome")
         ctx = browser.new_context(
             viewport={"width": args.width, "height": 900},
+            locale="zh-CN",
             device_scale_factor=args.scale,
         )
         page = ctx.new_page()
@@ -458,9 +488,11 @@ def main():
                 out_path = args.output
             else:
                 out_dir = args.outdir or src.parent
-                out_path = out_dir / f"{stem}-{SUFFIX[args.format]}.pdf"
+                tail = "-正式" if args.chinese else ""
+                out_path = out_dir / f"{stem}-{SUFFIX[args.format]}{tail}.pdf"
             print(f"→ {stem}  ({url})")
-            n = render_post(page, url, out_path, args.width, args.split, args.format, workdir)
+            n = render_post(page, url, out_path, args.width, args.split, args.format, workdir,
+                            args.chinese)
             size = out_path.stat().st_size / 1e6
             print(f"  {n} page(s), {size:.1f} MB  -> {out_path}")
             made.append(out_path)
