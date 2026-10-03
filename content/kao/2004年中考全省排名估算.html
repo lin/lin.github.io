@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2004 年中考全省排名估算</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#e8ecec;--card:#f7f9f9;--ink:#0e1416;--ink-2:#14181a;--ink-3:#262b2d;--rule:#2e3436;--hair:#c3c9ca;--grid:#d3d9da;
+  --petrol:#0e5b68;--seal:#a5342a;--amber:#8f5d09;--band:#eef2f2;
+  --c-dq:#a5342a;--c-hrb:#00a8ff;--c-rest:#4f7a2a;--surface:#f7f9f9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--grid:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223;--c-dq:#d95f50;--c-hrb:#2a9ad9;--c-rest:#68a23a;--surface:#151a1b}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--grid:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223;--c-dq:#d95f50;--c-hrb:#2a9ad9;--c-rest:#68a23a;--surface:#151a1b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:15px;line-height:1.72;padding:44px 22px 88px}
+.wrap{max-width:980px;margin:0 auto}
+.m{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;color:var(--ink-3);margin-bottom:14px}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(24px,4.2vw,36px);line-height:1.2}
+.dek{margin-top:16px;max-width:70ch;color:var(--ink-2)}
+.byline{margin-top:20px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);border-top:2px solid var(--ink);padding-top:11px}
+h2{font-family:"Noto Serif SC",serif;font-size:18px;margin:40px 0 10px}
+.card{background:var(--card);border:1px solid var(--rule);padding:14px 16px}
+/* 控制面板 */
+.ctl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 22px}
+.ctl label{display:block;font-size:12.5px;color:var(--ink-2);line-height:1.45}
+.ctl .v{float:right;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl input[type=range]{width:100%;margin-top:6px;accent-color:var(--seal)}
+.ctl input[type=number]{width:100%;margin-top:6px;font:inherit;font-family:"IBM Plex Mono",monospace;padding:4px 8px;border:1px solid var(--rule);background:var(--paper);color:var(--ink)}
+.ctl small{display:block;color:var(--ink-3);font-size:11.5px;line-height:1.4;margin-top:2px}
+.btns{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btns button{font:inherit;font-size:12.5px;padding:4px 12px;border:1px solid var(--rule);background:var(--card);color:var(--ink);cursor:pointer}
+.btns button:hover{background:var(--band)}
+/* 数字卡 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--rule);padding:10px 14px}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:26px;line-height:1.25}
+.stat span{font-size:12px;color:var(--ink-3)}
+.stat.hero b{color:var(--seal);font-size:34px}
+/* 堆叠条 */
+.bar{display:flex;gap:2px;height:30px;margin:12px 0 6px;background:var(--surface)}
+.bar i{display:block;min-width:3px;border-radius:3px;position:relative}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;background:var(--c);vertical-align:-1px}
+/* 图 */
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-3)}
+svg .lab{fill:var(--ink-2)}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12px;line-height:1.55;padding:7px 10px;display:none;z-index:9;max-width:280px}
+table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card)}
+th,td{padding:5px 9px;border-bottom:1px solid var(--hair);text-align:right}
+th{font-weight:500;color:var(--ink-3);background:var(--band);position:sticky;top:0}
+tr.hl td{background:var(--band);font-weight:600}
+.scroll{max-height:420px;overflow:auto;border:1px solid var(--rule)}
+details{margin-top:10px}
+summary{cursor:pointer;font-size:13px;color:var(--ink-2)}
+.note{font-size:13.5px;color:var(--ink-2);max-width:76ch;margin-top:8px}
+.note li{margin-left:1.2em;margin-top:4px}
+.formula{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--band);border-left:3px solid var(--rule);padding:10px 14px;margin:10px 0;overflow-x:auto;white-space:pre}
+@media (max-width:560px){body{padding:28px 14px 64px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker">2004 中考 · 全省排名估算</div>
+<h1>648 分，在 2004 年全省中考里排第几？</h1>
+<p class="dek">大庆市区的中考成绩单是完整的，全省其余地方只有零碎的名单和人数。这个页面把大庆的实测人数，按各地的考生数和「尖子密度比」折算，估计一个<strong>大庆卷分数</strong>在全省大约排第几名。
+结果是<strong>估计，不是实测</strong>：下面几个旋钮就是估计里最不确定的假设，拖一拖看看全省名次会怎么变。</p>
+<div class="byline">数据：大庆市区录取总表（逐人）· 哈尔滨/大庆/绥化考生数 · 全省毕业生数 · 绥化与大庆的同分数密度比（content/kao/2004年全省初中生数量相关重要统计数据.md）</div>
+
+<h2>你想看哪个分数？</h2>
+<div class="card">
+  <div class="ctl">
+    <div><label for="s">中考分（大庆卷，含体育）<span class="v" id="sv"></span></label>
+      <input type="number" id="s" min="625" max="663" step="1" value="648"><small>625–663。也可以点下面图里的任意位置</small></div>
+    <div><label for="kh">哈尔滨市区尖子比大庆「稀」几倍 <span class="v" id="khv"></span></label>
+      <input type="range" id="kh" min="1" max="3" step="0.1" value="1.5"><small>1 = 与大庆人均相同（等百分位假设）；越大，哈尔滨高分越少</small></div>
+    <div><label for="khc">哈尔滨县区比市区再稀几倍 <span class="v" id="khcv"></span></label>
+      <input type="range" id="khc" min="1" max="8" step="0.5" value="4"><small>哈尔滨 66537 考生里，市区 37811，其余是县</small></div>
+    <div><label for="rate">其余同卷地区的报考率 <span class="v" id="ratev"></span></label>
+      <input type="range" id="rate" min="0.55" max="0.95" step="0.01" value="0.75"><small>借哈尔滨的 75%（报考 66537 / 毕业 88633）</small></div>
+    <div><label for="kap">其余地区比绥化再稀几倍 <span class="v" id="kapv"></span></label>
+      <input type="range" id="kap" min="1" max="3" step="0.1" value="1.5"><small>1 = 与绥化市区人均相同；绥化已比大庆稀约 2.3–3.9 倍</small></div>
+  </div>
+  <div class="btns"><button type="button" id="reset">恢复默认</button><button type="button" id="opt">乐观（都取 1）</button><button type="button" id="cons">保守（都取 2）</button></div>
+</div>
+
+<div class="stats" id="stats"></div>
+
+<h2>这些人是从哪里来的？</h2>
+<div class="card">
+  <div class="note" style="margin:0 0 4px" id="compNote"></div>
+  <div class="bar" id="bar"></div>
+  <div class="legend" id="legend"></div>
+</div>
+
+<h2>全省名次随分数怎么变</h2>
+<div class="card"><svg id="chart" viewBox="0 0 760 372" role="img" aria-label="中考分与全省名次估计的关系图，纵轴为对数"></svg></div>
+<p class="note">线 = 当前设置下的估计；带 = 「哈尔滨和其余地区都稀 1 倍」（乐观）到「都稀 2 倍」（保守）之间的范围；竖虚线 = 你选的分数。鼠标移到图上看数字，点击图可以直接换分数。</p>
+<details><summary>表格视图（同样的数字）</summary>
+  <div class="scroll" style="margin-top:8px"><table id="tbl"></table></div>
+</details>
+
+<h2>怎么算的</h2>
+<div class="formula">全省名次(s) = 1 + 大庆市区比 s 高的人数 d(s) + 哈尔滨 H(s) + 其余同卷地区 R(s)
+
+人均(s) p(s) = d(s) / 21500                          （大庆市区：实测）
+H(s) = p(s) × [ 37811 / kH  +  28726 / (kH × 县倍数) ]  （哈尔滨：市区 + 县）
+R(s) = p(s) × N其余 / ( k绥(s) × κ )                    （其余同卷地区）
+N其余 = 报考率 × (55.07 万 − 8.86 万) − 21500           （全省毕业生 − 哈尔滨毕业生 − 大庆考生）</div>
+<ul class="note">
+  <li><b>d(s) 是实测的</b>：大庆市区 5760 人的逐人成绩单里，分数严格高于 s 的人数。648 分前面有 9 人，所以是大庆市区第 10 名（648 分本人有并列）。</li>
+  <li><b>k绥(s)</b>：同一个分数段上，大庆人均密度是绥化市区的几倍（600 以上 2.23、610 以上 2.27、620 以上 2.59、630–634 2.29、635–639 2.63、640–644 3.89、645 以上 2.97），中间线性插值，两端取平。用它代表「其余同卷地区比大庆稀多少」，再乘 κ 表示其余地区还可能比绥化更稀。</li>
+  <li><b>已知下限</b>：当前已知的、不在大庆名单里的高分：绥棱县最高分（660 多，按 660 记）、佳木斯三中的 659.5 和 655、肇东最高分 651。全省名次不可能比「大庆更高 + 已知更高」更靠前。</li>
+</ul>
+
+<h2>要小心的地方</h2>
+<ul class="note">
+  <li><b>其余同卷地区只用了一个参照（绥化）</b>。而且 629 分以上我们对绥化也只是假设（压缩的正态），所以这一块的不确定性最大。</li>
+  <li><b>报考率 75% 是借哈尔滨的</b>。大庆自己的毕业生数和考生数对不上，无法用大庆校准。</li>
+  <li><b>哈尔滨的卷子不同</b>（满分 590），这里按等百分位换算成大庆分，是假设。之前的检验显示它可能高估哈尔滨的顶端（把人数算多了），这会让全省名次偏后。</li>
+  <li><b>外县尖子被大庆吸收</b>（2003 年实验中学就招了 342 名外市县尖子），他们不在大庆名单里，这里是通过「其余地区」的人均密度间接算进去的，没有单独扣除。</li>
+  <li><b>往低分走越不准</b>：分数越低，人越多，各地的差别被放大，640 分以下的名次范围已经很宽。</li>
+</ul>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+// ---------- 数据 ----------
+// d(s)：大庆市区录取总表（5760 人，文化课+体育）中，分数严格高于 s 的人数
+const D = {"620":435,"621":401,"622":376,"623":350,"624":325,"625":284,"626":266,"627":240,"628":228,"629":214,"630":187,"631":172,"632":157,"633":137,"634":126,"635":109,"636":94,"637":86,"638":68,"639":57,"640":49,"641":43,"642":37,"643":30,"644":24,"645":18,"646":13,"647":11,"648":9,"649":8,"650":7,"651":7,"652":6,"653":6,"654":4,"655":3,"656":2,"657":1,"658":1,"659":1,"660":1,"661":1,"662":1,"663":0};
+const N_DQ = 21500, N_H = 66537, N_HC = 37811;          // 大庆市区、哈尔滨全市、哈尔滨市区考生数
+const GRAD_ALL = 550667, GRAD_H = 88633;                // 2004 年全省初中毕业生、哈尔滨毕业生
+const KSH = [[600,2.23],[610,2.27],[620,2.59],[630,2.29],[635,2.63],[640,3.89],[645,2.97]];  // 大庆 / 绥化 同分数密度比
+const KNOWN = [[660,'绥棱最高分（660 多）'],[659.5,'佳木斯三中最高分'],[655,'佳木斯三中第二'],[651,'肇东最高分']];
+const S_MIN = 625, S_MAX = 663;
+const DEFAULT = {s:648, kh:1.5, khc:4, rate:0.75, kap:1.5};
+
+const ksh = s => { if (s <= KSH[0][0]) return KSH[0][1]; for (let i = 1; i < KSH.length; i++) if (s <= KSH[i][0]) { const [x0,y0]=KSH[i-1],[x1,y1]=KSH[i]; return y0+(y1-y0)*(s-x0)/(x1-x0); } return KSH[KSH.length-1][1]; };
+
+// ---------- 模型 ----------
+function model(s, P) {
+  const d = D[s], p = d / N_DQ;
+  const harb = p * (N_HC / P.kh + (N_H - N_HC) / (P.kh * P.khc));
+  const nRest = P.rate * (GRAD_ALL - GRAD_H) - N_DQ;
+  const rest = p * nRest / (ksh(s) * P.kap);
+  const known = KNOWN.filter(k => k[0] > s).length;
+  return {d, harb, rest, rank: 1 + d + harb + rest, floor: 1 + d + known, known};
+}
+const withK = (P, k) => ({...P, kh: k, kap: k});          // 乐观 k=1 / 保守 k=2：哈尔滨和其余地区同时改
+
+// ---------- 状态 ----------
+const P = {...DEFAULT};
+const $ = id => document.getElementById(id);
+const fmt = (x, n=0) => x.toLocaleString('en-US', {minimumFractionDigits:n, maximumFractionDigits:n});
+const showN = r => (r < 10 && !Number.isInteger(r)) ? fmt(r, 1) : fmt(Math.round(r));
+
+function readInputs() {
+  P.s = Math.min(S_MAX, Math.max(S_MIN, Math.round(+$('s').value || DEFAULT.s)));
+  P.kh = +$('kh').value; P.khc = +$('khc').value; P.rate = +$('rate').value; P.kap = +$('kap').value;
+}
+function writeInputs() {
+  $('s').value = P.s; $('kh').value = P.kh; $('khc').value = P.khc; $('rate').value = P.rate; $('kap').value = P.kap;
+  $('sv').textContent = P.s + ' 分'; $('khv').textContent = '×' + P.kh.toFixed(1); $('khcv').textContent = '×' + P.khc.toFixed(1);
+  $('ratev').textContent = Math.round(P.rate * 100) + '%'; $('kapv').textContent = '×' + P.kap.toFixed(1);
+}
+
+// ---------- 渲染 ----------
+function render() {
+  writeInputs();
+  const m = model(P.s, P), lo = model(P.s, withK(P, 1)), hi = model(P.s, withK(P, 2));
+  const total = N_DQ + N_H + (P.rate * (GRAD_ALL - GRAD_H) - N_DQ);
+  $('stats').innerHTML =
+    `<div class="stat hero"><b>≈ ${showN(m.rank)}</b><span>${P.s} 分的全省名次（当前设置）</span></div>` +
+    `<div class="stat"><b>${showN(hi.rank)} – ${showN(lo.rank)}</b><span>范围：保守（都稀 2 倍）到乐观（都稀 1 倍）</span></div>` +
+    `<div class="stat"><b>≥ ${fmt(m.floor)}</b><span>已知下限：大庆 ${m.d} 人 + 其他已知高分 ${m.known} 人 + 自己</span></div>` +
+    `<div class="stat"><b>${(m.rank / total * 100).toFixed(3)}%</b><span>占全省同卷考生约 ${fmt(Math.round(total / 1000))} 千人（含哈尔滨，估计）</span></div>`;
+
+  // 堆叠条：名次的组成（不含「自己」的 1）
+  const parts = [['大庆市区（实测）', m.d, 'var(--c-dq)'], ['哈尔滨（折算）', m.harb, 'var(--c-hrb)'], ['其余同卷地区（折算）', m.rest, 'var(--c-rest)']];
+  const sum = parts.reduce((a, b) => a + b[1], 0) || 1;
+  $('compNote').textContent = `排在 ${P.s} 分前面的约 ${showN(sum)} 人（再加你自己，就是第 ${showN(m.rank)} 名）：`;
+  $('bar').innerHTML = parts.map(([n, v, c]) => `<i style="flex:${Math.max(v, 0.0001)};background:${c}" title="${n}：${showN(v)}"></i>`).join('');
+  $('legend').innerHTML = parts.map(([n, v, c]) => `<span style="--c:${c}">${n} <b class="m">${showN(v)}</b></span>`).join('');
+
+  drawChart(); drawTable();
+}
+
+// 图：x = 中考分，y = 全省名次（对数）
+const W = 760, H = 372, L = 58, R = 20, T = 30, B = 44;
+const sx = s => L + (s - S_MIN) / (S_MAX - S_MIN) * (W - L - R);
+const YMIN = 1, YMAX = 10000;
+const sy = r => T + (1 - (Math.log10(Math.max(r, YMIN)) - Math.log10(YMIN)) / (Math.log10(YMAX) - Math.log10(YMIN))) * (H - T - B);
+function el(tag, attrs, parent) { const e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) e.setAttribute(k, attrs[k]); (parent || $('chart')).appendChild(e); return e; }
+
+function drawChart() {
+  const svg = $('chart'); svg.innerHTML = '';
+  const S = []; for (let s = S_MIN; s <= S_MAX; s++) S.push(s);
+  // 网格与坐标轴
+  [1, 3, 10, 30, 100, 300, 1000, 3000, 10000].forEach(v => {
+    el('line', {x1: L, x2: W - R, y1: sy(v), y2: sy(v), stroke: 'var(--grid)', 'stroke-width': 1});
+    el('text', {x: L - 8, y: sy(v) + 4, 'text-anchor': 'end'}).textContent = fmt(v);
+  });
+  for (let s = 625; s <= 663; s += 5) {
+    el('line', {x1: sx(s), x2: sx(s), y1: H - B, y2: H - B + 4, stroke: 'var(--ink-3)'});
+    el('text', {x: sx(s), y: H - B + 18, 'text-anchor': 'middle'}).textContent = s;
+  }
+  el('text', {x: W / 2, y: H - 6, 'text-anchor': 'middle', class: 'lab'}).textContent = '中考分（大庆卷，含体育）';
+  el('text', {x: 10, y: 14, class: 'lab'}).textContent = '全省名次（对数轴）';
+  // 范围带
+  const lo = S.map(s => model(s, withK(P, 1)).rank), hi = S.map(s => model(s, withK(P, 2)).rank), mid = S.map(s => model(s, P).rank), fl = S.map(s => model(s, P).floor);
+  const band = S.map((s, i) => `${sx(s)},${sy(lo[i])}`).join(' ') + ' ' + S.map((s, i) => `${sx(s)},${sy(hi[i])}`).reverse().join(' ');
+  el('polygon', {points: band, fill: 'var(--seal)', 'fill-opacity': .14, stroke: 'none'});
+  // 已知下限（阶梯）
+  el('polyline', {points: S.map((s, i) => `${sx(s)},${sy(fl[i])}`).join(' '), fill: 'none', stroke: 'var(--ink-3)', 'stroke-width': 1.4, 'stroke-dasharray': '3 3'});
+  // 估计线
+  el('polyline', {points: S.map((s, i) => `${sx(s)},${sy(mid[i])}`).join(' '), fill: 'none', stroke: 'var(--seal)', 'stroke-width': 2, 'stroke-linejoin': 'round'});
+  // 选中的分数
+  const i0 = P.s - S_MIN;
+  el('line', {x1: sx(P.s), x2: sx(P.s), y1: T, y2: H - B, stroke: 'var(--ink)', 'stroke-width': 1, 'stroke-dasharray': '4 4'});
+  el('circle', {cx: sx(P.s), cy: sy(mid[i0]), r: 5, fill: 'var(--seal)', stroke: 'var(--surface)', 'stroke-width': 2});
+  const right = sx(P.s) < W * .72, lx = right ? sx(P.s) + 10 : sx(P.s) - 10;
+  el('text', {x: lx, y: Math.max(T + 12, sy(mid[i0]) - 12), 'text-anchor': right ? 'start' : 'end', class: 'lab',
+              style: 'font-weight:600;paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round'}).textContent = `${P.s} 分 ≈ 第 ${showN(mid[i0])} 名`;
+  // 图例（直接标注）
+  el('line', {x1: W - 230, x2: W - 206, y1: T + 10, y2: T + 10, stroke: 'var(--seal)', 'stroke-width': 2});
+  el('text', {x: W - 200, y: T + 14, class: 'lab'}).textContent = '估计（当前设置）';
+  el('rect', {x: W - 230, y: T + 22, width: 24, height: 8, fill: 'var(--seal)', 'fill-opacity': .14});
+  el('text', {x: W - 200, y: T + 31, class: 'lab'}).textContent = '范围（都稀 1–2 倍）';
+  el('line', {x1: W - 230, x2: W - 206, y1: T + 46, y2: T + 46, stroke: 'var(--ink-3)', 'stroke-width': 1.4, 'stroke-dasharray': '3 3'});
+  el('text', {x: W - 200, y: T + 50, class: 'lab'}).textContent = '已知下限';
+  // 悬停层
+  const cross = el('line', {y1: T, y2: H - B, stroke: 'var(--ink-3)', 'stroke-width': 1, visibility: 'hidden'});
+  const hit = el('rect', {x: L, y: T, width: W - L - R, height: H - T - B, fill: 'transparent', style: 'cursor:crosshair'});
+  const tip = $('tip');
+  const sAt = ev => { const r = svg.getBoundingClientRect(); const x = (ev.clientX - r.left) / r.width * W; return Math.min(S_MAX, Math.max(S_MIN, Math.round(S_MIN + (x - L) / (W - L - R) * (S_MAX - S_MIN)))); };
+  hit.addEventListener('mousemove', ev => {
+    const s = sAt(ev), m = model(s, P), a = model(s, withK(P, 1)), b = model(s, withK(P, 2));
+    cross.setAttribute('x1', sx(s)); cross.setAttribute('x2', sx(s)); cross.setAttribute('visibility', 'visible');
+    tip.style.display = 'block'; tip.style.left = Math.min(innerWidth - 300, ev.clientX + 14) + 'px'; tip.style.top = (ev.clientY + 14) + 'px';
+    tip.innerHTML = `<b>${s} 分</b> ≈ 第 ${showN(m.rank)} 名<br>范围 ${showN(b.rank)} – ${showN(a.rank)}　下限 ≥ ${m.floor}<br>大庆 ${m.d} · 哈尔滨 ${showN(m.harb)} · 其余 ${showN(m.rest)}`;
+  });
+  hit.addEventListener('mouseleave', () => { tip.style.display = 'none'; cross.setAttribute('visibility', 'hidden'); });
+  hit.addEventListener('click', ev => { P.s = sAt(ev); render(); });
+}
+
+function drawTable() {
+  let h = '<tr><th>中考分</th><th>大庆市区更高</th><th>哈尔滨</th><th>其余同卷</th><th>全省名次</th><th>范围</th><th>已知下限</th></tr>';
+  for (let s = S_MAX; s >= S_MIN; s--) {
+    const m = model(s, P), a = model(s, withK(P, 1)), b = model(s, withK(P, 2));
+    h += `<tr class="${s === P.s ? 'hl' : ''}"><td>${s}</td><td>${m.d}</td><td>${showN(m.harb)}</td><td>${showN(m.rest)}</td><td>${showN(m.rank)}</td><td>${showN(b.rank)} – ${showN(a.rank)}</td><td>≥ ${m.floor}</td></tr>`;
+  }
+  $('tbl').innerHTML = h;
+}
+
+// ---------- 交互 ----------
+['kh', 'khc', 'rate', 'kap'].forEach(id => $(id).addEventListener('input', () => { readInputs(); render(); }));
+$('s').addEventListener('change', () => { readInputs(); render(); });      // 数字框：输入完再更新，避免边打边被改回去
+$('reset').onclick = () => { Object.assign(P, DEFAULT); render(); };
+$('opt').onclick = () => { Object.assign(P, {kh: 1, khc: P.khc, kap: 1}); render(); };
+$('cons').onclick = () => { Object.assign(P, {kh: 2, khc: P.khc, kap: 2}); render(); };
+render();
+</script>
+</body>
+</html>
