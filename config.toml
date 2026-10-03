@@ -56,7 +56,8 @@ weight = 3
   # 没排除，被 Hugo 套进主题模板丢光了样式，2026-09-14 一并修好。
   excludeFiles = [
     "2007/convert/index.html", "2007/convert/README.md",
-    "kao/daqing-shiyan-2004-vs-suihua-class3.html",
+    "kao/2004年中考时大庆实验应届和绥化一中高三三班对比.html",
+    "kao/绥化一中高三三班中考和高考分位数对应图.html",
     "kao/suihua-class3-2007.html",
     "kao/suihua-zhongkao-648.html",
     "kao/2007-heilongjiang-admissions.html",

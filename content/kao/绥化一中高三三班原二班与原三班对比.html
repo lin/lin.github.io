@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>原二班与原三班对比</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#e8ecec;--card:#f7f9f9;--ink:#0e1416;--ink-2:#14181a;--ink-3:#262b2d;--rule:#2e3436;--hair:#c3c9ca;
+  --petrol:#0e5b68;--seal:#a5342a;--amber:#8f5d09;--band:#eef2f2;--moss:#4f7a2a;--sky:#00a8ff;--violet:#6a4c93}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223;--moss:#8fbf5a;--sky:#33b8ff;--violet:#c4a0e6}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0b0f10;--card:#151a1b;--ink:#e9eeee;--ink-2:#a6b2b5;--ink-3:#748084;--rule:#28302f;--hair:#202727;--petrol:#4fa7b6;--seal:#dc6553;--amber:#d99a2e;--band:#1b2223;--moss:#8fbf5a;--sky:#33b8ff;--violet:#c4a0e6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:15px;line-height:1.72;padding:44px 22px 88px}
+.wrap{max-width:1000px;margin:0 auto}
+.m{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.26em;color:var(--ink-3);margin-bottom:14px}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(22px,4vw,32px);line-height:1.25}
+.dek{margin-top:14px;max-width:70ch;color:var(--ink-2)}
+.byline{margin-top:18px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);border-top:2px solid var(--ink);padding-top:10px}
+h2{font-family:"Noto Serif SC",serif;font-size:19px;margin:44px 0 6px}
+h2 .n{color:var(--ink-3);font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:400;margin-left:6px}
+.lede{font-size:13.5px;color:var(--ink-2);max-width:74ch;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--rule);padding:14px}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink-3)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin:10px 2px 0;align-items:center}
+.legend .sw{display:inline-flex;gap:6px;align-items:center}
+.legend svg{width:34px;height:16px;display:inline-block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--rule);padding:9px 12px;border-left:3px solid var(--hair)}
+.stat.c2{border-left-color:var(--petrol)}
+.stat.c3{border-left-color:var(--amber)}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:19px}
+.stat span{font-size:11.5px;color:var(--ink-3)}
+.readout{font-size:13.5px;color:var(--ink-2);max-width:74ch;margin-top:10px}
+.readout b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--card)}
+th,td{padding:5px 9px;border-bottom:1px solid var(--hair);text-align:right}
+th{font-weight:500;color:var(--ink-3);background:var(--band);position:sticky;top:0}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}
+.scroll{max-height:360px;overflow:auto;border:1px solid var(--rule)}
+.tag2{color:var(--petrol);font-weight:600}
+.tag3{color:var(--amber);font-weight:600}
+.note{font-size:12.5px;color:var(--ink-3);max-width:74ch;margin-top:26px;border-top:1px solid var(--hair);padding-top:12px}
+.note li{margin-left:1.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">SUIHUA NO.1 · 高一原班级 · 2004中考 / 2007高考</div>
+  <h1>原二班、原三班，谁的高考表现更好？</h1>
+  <p class="dek">高一时的二班和三班，在高二文理分班后合并为现在通常说的"高三三班"。这里把 $59$ 位有高考分数记录的同学，按他们<b>高一时的原始班级</b>拆回二班、三班两组，分市区、外县市、整体三个角度看谁的高考表现更接近或超过了中考应有的水平。</p>
+  <p class="dek"><b>关于可信度：</b>实心点＝中考分数是本人确认或高度接近确认的（"已知"/"已知（接近）"），空心点＝中考分数是模型估算的，我并不真的知道。大部分数据仍是估算，只有下面表格里列出的十来个点是真正确认过的，其余请当作示意而非事实。</p>
+  <div class="byline">2026-09-30 · 源数据：content/kao/2004年中考和2007年高考绥化一中高三三班.csv</div>
+
+  <h2 id="h-city">1. 绥化市区：原二班 vs 原三班<span class="n"></span></h2>
+  <p class="lede">同为市区生源，起点（中考）差距不大的话，高考差距能不能全靠中考差距解释？</p>
+  <div class="card"><svg id="svg-city" viewBox="0 0 760 460"></svg></div>
+  <div id="legend-city" class="legend"></div>
+  <div id="stats-city" class="stats"></div>
+  <div id="readout-city" class="readout"></div>
+
+  <h2 id="h-county">2. 外县市：原二班 vs 原三班<span class="n"></span></h2>
+  <p class="lede">外县市的名额是学校挑出来的，如果学校真把更好的苗子往二班放，这里应该能看出来。</p>
+  <div class="card"><svg id="svg-county" viewBox="0 0 760 460"></svg></div>
+  <div id="legend-county" class="legend"></div>
+  <div id="stats-county" class="stats"></div>
+  <div id="readout-county" class="readout"></div>
+
+  <h2 id="h-all">3. 整体：原二班 vs 原三班（市区 + 外县市 合并）<span class="n"></span></h2>
+  <p class="lede">圆点＝市区，菱形＝外县市。合并看的数字容易被市区、外县市各自的模式互相掩盖，对照上面两张图一起看。</p>
+  <div class="card"><svg id="svg-all" viewBox="0 0 760 460"></svg></div>
+  <div id="legend-all" class="legend"></div>
+  <div id="stats-all" class="stats"></div>
+  <div id="readout-all" class="readout"></div>
+
+  <h2>真正"已知"的锚点</h2>
+  <p class="lede">下表只列中考或高考分数标记为"已知"/"已知（接近）"的人，其余的都还是模型猜的，谨慎参考。</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>姓名</th><th>原班级</th><th>生源地</th><th>中考</th><th>高考</th><th>中考可信度</th><th>高考可信度</th></tr></thead>
+      <tbody id="known-body"></tbody>
+    </table>
+  </div>
+
+  <p class="note">
+    <li>数据来自你自己回忆＋院校反推＋人口分布模型混合估算，"高一班级"这一栏是你 $2026$ 年新补的记忆，本身也可能有个别记错的。</li>
+    <li>样本有限（市区二班 $17$ 人、三班 $28$ 人；外县市二班、三班各 $7$ 人），外县市这组尤其小，单独几个人变动就能翻转结论。</li>
+    <li>2008 届（晚一届）的一两人虽然已知分数也画了进去，供参考，不纳入"届"相关的严格统计。</li>
+  </p>
+</div>
+
+<script>
+const DATA = [{"name": "林英魁", "cls": "二班", "region": "外县市", "src": "绥棱县", "z": 648, "g": 666, "zk": true, "gk": true}, {"name": "刘翔", "cls": "三班", "region": "外县市", "src": "绥棱县", "z": 630, "g": 657, "zk": true, "gk": true}, {"name": "贾洪亮", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 627, "g": 657, "zk": false, "gk": true}, {"name": "李杏", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 632, "g": 652, "zk": false, "gk": true}, {"name": "李佳滨", "cls": "三班", "region": "外县市", "src": "北安市", "z": 635, "g": 650, "zk": true, "gk": true}, {"name": "梁志超", "cls": "二班", "region": "外县市", "src": "海伦市", "z": 632, "g": 642, "zk": false, "gk": true}, {"name": "王胤燊", "cls": "二班", "region": "外县市", "src": "望奎县", "z": 630, "g": 642, "zk": false, "gk": true}, {"name": "于鹏", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 608, "g": 642, "zk": true, "gk": true}, {"name": "刘雪薇", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 633, "g": 640, "zk": false, "gk": true}, {"name": "包括", "cls": "三班", "region": "外县市", "src": "望奎县", "z": 636, "g": 636, "zk": false, "gk": false}, {"name": "李光磊", "cls": "三班", "region": "外县市", "src": "望奎县", "z": 634, "g": 632, "zk": false, "gk": false}, {"name": "郭蕾", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 632, "g": 632, "zk": false, "gk": true}, {"name": "陈岩", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 621, "g": 632, "zk": false, "gk": true}, {"name": "李开", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 625, "g": 631, "zk": false, "gk": true}, {"name": "邵润超", "cls": "二班", "region": "外县市", "src": "望奎县", "z": 635, "g": 630, "zk": false, "gk": true}, {"name": "刘欣", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 612, "g": 630, "zk": true, "gk": true}, {"name": "赵正少", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 615, "g": 626, "zk": true, "gk": true}, {"name": "姜英男", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 625, "g": 625, "zk": false, "gk": false}, {"name": "韩磊", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 626, "g": 623, "zk": false, "gk": false}, {"name": "刘军力", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 629, "g": 622, "zk": false, "gk": false}, {"name": "孟静", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 631, "g": 621, "zk": false, "gk": false}, {"name": "尹琪东", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 623, "g": 621, "zk": false, "gk": false}, {"name": "闫岩", "cls": "三班", "region": "外县市", "src": "绥棱县", "z": 628, "g": 620, "zk": false, "gk": false}, {"name": "杨智广", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 618, "g": 620, "zk": false, "gk": false}, {"name": "王铁鑫", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 617, "g": 617, "zk": false, "gk": false}, {"name": "吕泽辉", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 628, "g": 615, "zk": false, "gk": false}, {"name": "闫永祥", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 619, "g": 615, "zk": false, "gk": false}, {"name": "耿庆龙", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 605, "g": 614, "zk": true, "gk": true}, {"name": "印亚奇", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 620, "g": 613, "zk": false, "gk": false}, {"name": "何香培", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 624, "g": 612, "zk": false, "gk": false}, {"name": "李冬", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 621, "g": 612, "zk": false, "gk": true}, {"name": "吕晶鑫", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 618, "g": 611, "zk": false, "gk": false}, {"name": "段春颀", "cls": "二班", "region": "外县市", "src": "北安市", "z": 629, "g": 610, "zk": false, "gk": false}, {"name": "殷旭", "cls": "三班", "region": "外县市", "src": "北安市", "z": 624, "g": 610, "zk": false, "gk": true}, {"name": "王丽圆", "cls": "二班", "region": "外县市", "src": "绥棱县", "z": 631, "g": 608, "zk": false, "gk": false}, {"name": "李美逸", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 615, "g": 608, "zk": false, "gk": false}, {"name": "张士萍", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 610, "g": 607, "zk": false, "gk": false}, {"name": "王昊", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 612, "g": 606, "zk": false, "gk": false}, {"name": "孙丽", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 612, "g": 604, "zk": false, "gk": false}, {"name": "张赫琼", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 615, "g": 603, "zk": false, "gk": false}, {"name": "庞小陶", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 610, "g": 603, "zk": false, "gk": false}, {"name": "杨欢", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 616, "g": 602, "zk": false, "gk": false}, {"name": "陈媛丽", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 613, "g": 602, "zk": false, "gk": false}, {"name": "曹剑超", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 610, "g": 602, "zk": false, "gk": false}, {"name": "李岩", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 613, "g": 601, "zk": false, "gk": false}, {"name": "杨蕴喆", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 615, "g": 600, "zk": false, "gk": false}, {"name": "李婧阳", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 609, "g": 600, "zk": false, "gk": false}, {"name": "侯雨薇", "cls": "二班", "region": "外县市", "src": "望奎县", "z": 638, "g": 598, "zk": false, "gk": false}, {"name": "王刚", "cls": "三班", "region": "外县市", "src": "北安市", "z": 620, "g": 598, "zk": false, "gk": false}, {"name": "董琳", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 608, "g": 591, "zk": false, "gk": false}, {"name": "高珊", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 609, "g": 590, "zk": false, "gk": false}, {"name": "刘淑波", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 614, "g": 588, "zk": false, "gk": false}, {"name": "王晓薇", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 616, "g": 583, "zk": false, "gk": false}, {"name": "韩富城", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 611, "g": 571, "zk": false, "gk": false}, {"name": "张维宇", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 611, "g": 567, "zk": false, "gk": false}, {"name": "高阳", "cls": "二班", "region": "市区", "src": "绥化市区", "z": 609, "g": 565, "zk": false, "gk": false}, {"name": "王晓航", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 608, "g": 555, "zk": false, "gk": false}, {"name": "李星曌", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 608, "g": 544, "zk": false, "gk": false}, {"name": "孙新宇", "cls": "三班", "region": "市区", "src": "绥化市区", "z": 608, "g": 538, "zk": false, "gk": false}];
+
+function fmt(n){return n.toFixed(1)}
+function mean(a){return a.reduce((s,x)=>s+x,0)/a.length}
+function median(a){const b=[...a].sort((x,y)=>x-y);const m=b.length>>1;return b.length%2?b[m]:(b[m-1]+b[m])/2}
+
+function drawScatter(svgEl, pts, opts){
+  const W=760,H=460,ML=52,MR=16,MT=14,MB=38;
+  const pw=W-ML-MR, ph=H-MT-MB;
+  const zs=pts.map(p=>p.z), gs=pts.map(p=>p.g);
+  const x0=Math.floor(Math.min(...zs)/5)*5-5, x1=Math.ceil(Math.max(...zs)/5)*5+5;
+  const y0=Math.floor(Math.min(...gs)/10)*10-10, y1=Math.ceil(Math.max(...gs)/10)*10+10;
+  const X=v=>ML+(v-x0)/(x1-x0)*pw;
+  const Y=v=>MT+ph-(v-y0)/(y1-y0)*ph;
+  let s='';
+  // gridlines
+  for(let gx=Math.ceil(x0/10)*10; gx<=x1; gx+=10){
+    s+=`<line x1="${X(gx)}" y1="${MT}" x2="${X(gx)}" y2="${MT+ph}" stroke="var(--hair)" stroke-width="1"/>`;
+    s+=`<text x="${X(gx)}" y="${MT+ph+16}" text-anchor="middle">${gx}</text>`;
+  }
+  for(let gy=Math.ceil(y0/20)*20; gy<=y1; gy+=20){
+    s+=`<line x1="${ML}" y1="${Y(gy)}" x2="${ML+pw}" y2="${Y(gy)}" stroke="var(--hair)" stroke-width="1"/>`;
+    s+=`<text x="${ML-8}" y="${Y(gy)+4}" text-anchor="end">${gy}</text>`;
+  }
+  s+=`<text x="${ML+pw/2}" y="${H-4}" text-anchor="middle" font-size="11.5">中考分数</text>`;
+  s+=`<text x="14" y="${MT+ph/2}" text-anchor="middle" transform="rotate(-90 14 ${MT+ph/2})" font-size="11.5">高考分数</text>`;
+
+  // mean crosshairs per class
+  const colors={'二班':'var(--petrol)','三班':'var(--amber)'};
+  for(const cls of ['二班','三班']){
+    const sub=pts.filter(p=>p.cls===cls);
+    if(!sub.length) continue;
+    const mz=mean(sub.map(p=>p.z)), mg=mean(sub.map(p=>p.g));
+    s+=`<line x1="${X(mz)}" y1="${MT}" x2="${X(mz)}" y2="${MT+ph}" stroke="${colors[cls]}" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.55"/>`;
+    s+=`<line x1="${ML}" y1="${Y(mg)}" x2="${ML+pw}" y2="${Y(mg)}" stroke="${colors[cls]}" stroke-width="1.4" stroke-dasharray="5 4" opacity="0.55"/>`;
+  }
+
+  for(const p of pts){
+    const cx=X(p.z), cy=Y(p.g);
+    const col=colors[p.cls];
+    const r=(p.zk?6:4.3)+(p.gk?0.8:0);
+    const fill=p.zk?col:'var(--card)';
+    const sw=p.gk?2.4:1.2;
+    if(opts.shape && p.region==='外县市'){
+      const d=r*1.05;
+      s+=`<path d="M${cx} ${cy-d} L${cx+d} ${cy} L${cx} ${cy+d} L${cx-d} ${cy} Z" fill="${fill}" stroke="${col}" stroke-width="${sw}"><title>${p.name}（${p.cls}／${p.src}）中考${p.z}／高考${p.g}</title></path>`;
+    } else {
+      s+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" stroke="${col}" stroke-width="${sw}"><title>${p.name}（${p.cls}／${p.src}）中考${p.z}／高考${p.g}</title></circle>`;
+    }
+  }
+  svgEl.innerHTML=s;
+}
+
+function legendHTML(withShape){
+  const mk=(cls,zk,label)=>{
+    const col = cls==='二班'?'var(--petrol)':'var(--amber)';
+    const fill = zk?col:'var(--card)';
+    return `<span class="sw"><svg viewBox="0 0 34 16"><circle cx="17" cy="8" r="6" fill="${fill}" stroke="${col}" stroke-width="${zk?2.4:1.2}"/></svg>${label}</span>`;
+  };
+  let h = mk('二班',true,'二班・中考已知') + mk('二班',false,'二班・中考推测')
+        + mk('三班',true,'三班・中考已知') + mk('三班',false,'三班・中考推测');
+  if(withShape){
+    h += `<span class="sw"><svg viewBox="0 0 34 16"><circle cx="9" cy="8" r="5" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/></svg>市区</span>`;
+    h += `<span class="sw"><svg viewBox="0 0 34 16"><path d="M17 3 L22 8 L17 13 L12 8 Z" fill="none" stroke="var(--ink-3)" stroke-width="1.6"/></svg>外县市</span>`;
+  }
+  h += `<span class="sw" style="opacity:.75">点越大＝高考分数也已知</span>`;
+  return h;
+}
+
+function statsHTML(pts){
+  let h='';
+  for(const cls of ['二班','三班']){
+    const sub=pts.filter(p=>p.cls===cls);
+    if(!sub.length) continue;
+    const zk=sub.filter(p=>p.zk).length;
+    h += `<div class="stat c${cls==='二班'?2:3}"><b>${cls}　n=${sub.length}</b>
+      <span>中考均分 ${fmt(mean(sub.map(p=>p.z)))}（中位 ${median(sub.map(p=>p.z))}）</span><br>
+      <span>高考均分 ${fmt(mean(sub.map(p=>p.g)))}（中位 ${median(sub.map(p=>p.g))}）</span><br>
+      <span>中考已知 ${zk}/${sub.length} 人</span></div>`;
+  }
+  return h;
+}
+
+function readoutHTML(pts){
+  const b2=pts.filter(p=>p.cls==='二班'), b3=pts.filter(p=>p.cls==='三班');
+  if(!b2.length||!b3.length) return '';
+  const mz2=mean(b2.map(p=>p.z)), mz3=mean(b3.map(p=>p.z));
+  const mg2=mean(b2.map(p=>p.g)), mg3=mean(b3.map(p=>p.g));
+  const dz=mz2-mz3, dg=mg2-mg3;
+  return `二班比三班中考均分高 <b>${fmt(dz)}</b> 分，高考均分高 <b>${fmt(dg)}</b> 分。`+
+    (Math.abs(dg)>Math.abs(dz)+3
+      ? `高考差距明显超过中考差距，说明这一组里二班的相对表现确实更好，不只是起点更高。`
+      : (Math.abs(dg)<Math.abs(dz)-3
+        ? `高考差距反而小于中考差距，说明二班的中考优势在高考时被抹平了，看不出"二班更强"。`
+        : `高考差距和中考差距大致相当，看不出谁的相对表现更好，差距基本就是起点带来的。`));
+}
+
+function render(id, pts, shape){
+  drawScatter(document.getElementById('svg-'+id), pts, {shape});
+  document.getElementById('legend-'+id).innerHTML = legendHTML(shape);
+  document.getElementById('stats-'+id).innerHTML = statsHTML(pts);
+  document.getElementById('readout-'+id).innerHTML = readoutHTML(pts);
+}
+
+const city = DATA.filter(p=>p.region==='市区');
+const county = DATA.filter(p=>p.region==='外县市');
+render('city', city, false);
+render('county', county, false);
+render('all', DATA, true);
+
+document.querySelector('#h-city .n').textContent = `n=${city.length}`;
+document.querySelector('#h-county .n').textContent = `n=${county.length}`;
+document.querySelector('#h-all .n').textContent = `n=${DATA.length}`;
+
+const known = DATA.filter(p=>p.zk||p.gk).sort((a,b)=>b.g-a.g);
+document.getElementById('known-body').innerHTML = known.map(p=>
+  `<tr><td>${p.name}</td><td class="tag${p.cls==='二班'?2:3}">${p.cls}</td><td>${p.src}</td>`+
+  `<td class="m">${p.z}</td><td class="m">${p.g}</td>`+
+  `<td>${p.zk?'已知':'推测'}</td><td>${p.gk?'已知':'推测'}</td></tr>`
+).join('');
+</script>
+</body>
+</html>
