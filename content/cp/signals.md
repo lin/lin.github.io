@@ -4,7 +4,14 @@ isCJKLanguage: true
 math: true
 ---
 
-### Technique Signals
+## Time Complexity
+
+1. 10 => 2^n
+1. 10^3 => n^3
+1. 10^3 => n^2
+1. 10^5 => n
+
+###Technique Signals
 
 | Cue                                           | Response                         |
 | --------------------------------------------- | -------------------------------- |
