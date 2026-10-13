@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Science Related on Yingkui Lin</title><link>https://yingkui.com/cs/</link><description>Recent content in Computer Science Related on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/cs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/cs/annotatedturing/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/annotatedturing/readme/</guid><description>&lt;p&gt;&lt;code&gt;node --stack-size=8000 5.1&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Science Related on Yingkui Lin</title><link>https://yingkui.com/cs/</link><description>Recent content in Computer Science Related on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/cs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://yingkui.com/cs/archives/annotatedturing/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/annotatedturing/readme/</guid><description>&lt;p&gt;&lt;code&gt;node --stack-size=8000 5.1&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In the paper, Turing proposed a machine which he argued is capable to do whatever a human computer could do.&lt;/p&gt;
 &lt;p&gt;And this machine has some limitations. Notably no machine can determine whether a given machine ever prints a zero or not.&lt;/p&gt;
 &lt;p&gt;But in first order logic (FOL), we don&amp;rsquo;t have the limitation to construct such a formula (whether a machine ever prints a zero).&lt;/p&gt;
-&lt;p&gt;Then main argument goes:&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/node_modules/@babel/parser/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/node_modules/@babel/parser/changelog/</guid><description>&lt;h1 id="changelog"&gt;Changelog&lt;/h1&gt;
+&lt;p&gt;Then main argument goes:&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/babel-parser-lite/parser/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/babel-parser-lite/parser/changelog/</guid><description>&lt;h1 id="changelog"&gt;Changelog&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -146,7 +146,7 @@
 &lt;ul&gt;
 &lt;li&gt;Revert &amp;ldquo;Fix export default async function to be FunctionDeclaration&amp;rdquo; (&lt;a href="https://github.com/babel/babylon/pull/375"&gt;#375&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Need to modify Babel for this AST node change, so moving to 7.0.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/node_modules/@babel/parser/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/node_modules/@babel/parser/readme/</guid><description>&lt;h1 id="babelparser"&gt;@babel/parser&lt;/h1&gt;
+&lt;p&gt;Need to modify Babel for this AST node change, so moving to 7.0.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/babel-parser-lite/parser/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/babel-parser-lite/parser/readme/</guid><description>&lt;h1 id="babelparser"&gt;@babel/parser&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A JavaScript parser&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;See our website &lt;a href="https://babeljs.io/docs/en/next/babel-parser.html"&gt;@babel/parser&lt;/a&gt; for more information or the &lt;a href="https://github.com/babel/babel/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen"&gt;issues&lt;/a&gt; associated with this package.&lt;/p&gt;
@@ -155,267 +155,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or using yarn:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/node_modules/charcodes/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/node_modules/charcodes/readme/</guid><description>&lt;h2 id="exports"&gt;Exports&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Constant number &lt;code&gt;backSpace&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;tab&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lineFeed&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;carriageReturn&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;shiftOut&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;exclamationMark&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;quotationMark&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;numberSign&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;dollarSign&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;percentSign&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;ampersand&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;apostrophe&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;leftParenthesis&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;rightParenthesis&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;asterisk&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;plusSign&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;comma&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;dash&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;dot&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;slash&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit0&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit2&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit3&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit4&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit6&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit7&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit8&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;digit9&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;colon&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;semicolon&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lessThan&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;equalsTo&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;greaterThan&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;questionMark&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;atSign&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseA&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseB&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseC&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseD&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseE&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseF&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseG&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseH&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseI&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseJ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseK&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseL&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseM&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseN&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseO&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseP&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseQ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseR&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseS&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseT&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseU&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseV&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseW&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseX&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseY&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;uppercaseZ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;leftSquareBracket&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;backslash&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;rightSquareBracket&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;caret&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;underscore&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;graveAccent&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseA&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseB&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseC&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseD&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseE&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseF&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseG&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseH&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseI&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseJ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseK&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseL&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseM&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseN&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseO&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseP&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseQ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseR&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseS&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseT&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseU&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseV&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseW&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseX&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseY&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lowercaseZ&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;leftCurlyBrace&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;verticalBar&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;rightCurlyBrace&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;tilde&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;nonBreakingSpace&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;oghamSpaceMark&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;lineSeparator&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Constant number &lt;code&gt;paragraphSeparator&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;function &lt;code&gt;isDigit(code)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/parser/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/parser/changelog/</guid><description>&lt;h1 id="changelog"&gt;Changelog&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Tags:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;:boom: [Breaking Change]&lt;/li&gt;
-&lt;li&gt;:eyeglasses: [Spec Compliancy]&lt;/li&gt;
-&lt;li&gt;:rocket: [New Feature]&lt;/li&gt;
-&lt;li&gt;:bug: [Bug Fix]&lt;/li&gt;
-&lt;li&gt;:memo: [Documentation]&lt;/li&gt;
-&lt;li&gt;:house: [Internal]&lt;/li&gt;
-&lt;li&gt;:nail_care: [Polish]&lt;/li&gt;
-&lt;/ul&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Semver Policy: &lt;a href="https://github.com/babel/babel/tree/master/packages/babel-parser#semver"&gt;https://github.com/babel/babel/tree/master/packages/babel-parser#semver&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;em&gt;Note: Gaps between patch versions are faulty, broken or test releases.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/babel/babel/blob/master/CHANGELOG.md"&gt;Babel Changelog&lt;/a&gt; for the pre-6.8.0 version Changelog.&lt;/p&gt;
-&lt;h2 id="6171-2017-05-10"&gt;6.17.1 (2017-05-10)&lt;/h2&gt;
-&lt;h3 id="bug-bug-fix"&gt;:bug: Bug Fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix typo in flow spread operator error (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Fixed invalid number literal parsing (&lt;a href="https://github.com/babel/babylon/pull/473"&gt;#473&lt;/a&gt;) (Alex Kuzmenko)&lt;/li&gt;
-&lt;li&gt;Fix number parser (&lt;a href="https://github.com/babel/babylon/pull/433"&gt;#433&lt;/a&gt;) (Alex Kuzmenko)&lt;/li&gt;
-&lt;li&gt;Ensure non pattern shorthand props are checked for reserved words (&lt;a href="https://github.com/babel/babylon/pull/479"&gt;#479&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Remove jsx context when parsing arrow functions (&lt;a href="https://github.com/babel/babylon/pull/475"&gt;#475&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Allow super in class properties (&lt;a href="https://github.com/babel/babylon/pull/499"&gt;#499&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Allow flow class field to be named constructor (&lt;a href="https://github.com/babel/babylon/pull/510"&gt;#510&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="6170-2017-04-20"&gt;6.17.0 (2017-04-20)&lt;/h2&gt;
-&lt;h3 id="bug-bug-fix-1"&gt;:bug: Bug Fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Cherry-pick #418 to 6.x (&lt;a href="https://github.com/babel/babylon/pull/476"&gt;#476&lt;/a&gt;) (Sebastian McKenzie)&lt;/li&gt;
-&lt;li&gt;Add support for invalid escapes in tagged templates (&lt;a href="https://github.com/babel/babylon/pull/274"&gt;#274&lt;/a&gt;) (Kevin Gibbons)&lt;/li&gt;
-&lt;li&gt;Throw error if new.target is used outside of a function (&lt;a href="https://github.com/babel/babylon/pull/402"&gt;#402&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Fix parsing of class properties (&lt;a href="https://github.com/babel/babylon/pull/351"&gt;#351&lt;/a&gt;) (Kevin Gibbons)&lt;/li&gt;
-&lt;li&gt;Fix parsing yield with dynamicImport (&lt;a href="https://github.com/babel/babylon/pull/383"&gt;#383&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Ensure consistent start args for parseParenItem (&lt;a href="https://github.com/babel/babylon/pull/386"&gt;#386&lt;/a&gt;) (Brian Ng)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta8-2017-04-04"&gt;7.0.0-beta.8 (2017-04-04)&lt;/h2&gt;
-&lt;h3 id="new-feature"&gt;New Feature&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add support for flow type spread (#418) (Conrad Buck)&lt;/li&gt;
-&lt;li&gt;Allow statics in flow interfaces (#427) (Brian Ng)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="bug-fix"&gt;Bug Fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix predicate attachment to match flow parser (#428) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Add extra.raw back to JSXText and JSXAttribute (#344) (Alex Rattray)&lt;/li&gt;
-&lt;li&gt;Fix rest parameters with array and objects (#424) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Fix number parser (#433) (Alex Kuzmenko)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="docs"&gt;Docs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix CONTRIBUTING.md [skip ci] (#432) (Alex Kuzmenko)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="internal"&gt;Internal&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Use babel-register script when running babel smoke tests (#442) (Brian Ng)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta7-2017-03-22"&gt;7.0.0-beta.7 (2017-03-22)&lt;/h2&gt;
-&lt;h3 id="spec-compliancy"&gt;Spec Compliancy&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Remove babylon plugin for template revision since it&amp;rsquo;s stage-4 (#426) (Henry Zhu)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="bug-fix-1"&gt;Bug Fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix push-pop logic in flow (#405) (Daniel Tschinder)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta6-2017-03-21"&gt;7.0.0-beta.6 (2017-03-21)&lt;/h2&gt;
-&lt;h3 id="new-feature-1"&gt;New Feature&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add support for invalid escapes in tagged templates (#274) (Kevin Gibbons)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="polish"&gt;Polish&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Improves error message when super is called outside of constructor (#408) (Arshabh Kumar Agarwal)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="docs-1"&gt;Docs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[7.0] Moved value field in spec from ObjectMember to ObjectProperty as ObjectMethod&amp;rsquo;s don&amp;rsquo;t have it (#415) [skip ci] (James Browning)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta5-2017-03-21"&gt;7.0.0-beta.5 (2017-03-21)&lt;/h2&gt;
-&lt;h3 id="bug-fix-2"&gt;Bug Fix&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Throw error if new.target is used outside of a function (#402) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Fix parsing of class properties (#351) (Kevin Gibbons)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="other"&gt;Other&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Test runner: Detect extra property in &amp;lsquo;actual&amp;rsquo; but not in &amp;rsquo;expected&amp;rsquo;. (#407) (Andy)&lt;/li&gt;
-&lt;li&gt;Optimize travis builds (#419) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Update codecov to 2.0 (#412) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Fix spec for ClassMethod: It doesn&amp;rsquo;t have a function, it &lt;em&gt;is&lt;/em&gt; a function. (#406) [skip ci] (Andy)&lt;/li&gt;
-&lt;li&gt;Changed Non-existent RestPattern to RestElement which is what is actually parsed (#409) [skip ci] (James Browning)&lt;/li&gt;
-&lt;li&gt;Upgrade flow to 0.41 (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Fix watch command (#403) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Update yarn lock (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Fix watch command (#403) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;chore(package): update flow-bin to version 0.41.0 (#395) (greenkeeper[bot])&lt;/li&gt;
-&lt;li&gt;Add estree test for correct order of directives (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Add DoExpression to spec (#364) (Alex Kuzmenko)&lt;/li&gt;
-&lt;li&gt;Mention cloning of repository in CONTRIBUTING.md (#391) [skip ci] (Sumedh Nimkarde)&lt;/li&gt;
-&lt;li&gt;Explain how to run only one test (#389) [skip ci] (Aaron Ang)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta4-2017-03-01"&gt;7.0.0-beta.4 (2017-03-01)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Don&amp;rsquo;t consume async when checking for async func decl (#377) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;add &lt;code&gt;ranges&lt;/code&gt; option [skip ci] (Henry Zhu)&lt;/li&gt;
-&lt;li&gt;Don&amp;rsquo;t parse class properties without initializers when classProperties is disabled and Flow is enabled (#300) (Andrew Levine)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta3-2017-02-28"&gt;7.0.0-beta.3 (2017-02-28)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[7.0] Change RestProperty/SpreadProperty to RestElement/SpreadElement (#384)&lt;/li&gt;
-&lt;li&gt;Merge changes from 6.x&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta2-2017-02-20"&gt;7.0.0-beta.2 (2017-02-20)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;estree: correctly change literals in all cases (#368) (Daniel Tschinder)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta1-2017-02-20"&gt;7.0.0-beta.1 (2017-02-20)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Fix negative number literal typeannotations (#366) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Update contributing with more test info [skip ci] (#355) (Brian Ng)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="700-beta0-2017-02-15"&gt;7.0.0-beta.0 (2017-02-15)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Reintroduce Variance node (#333) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Rename NumericLiteralTypeAnnotation to NumberLiteralTypeAnnotation (#332) (Charles Pick)&lt;/li&gt;
-&lt;li&gt;[7.0] Remove ForAwaitStatement, add await flag to ForOfStatement (#349) (Brandon Dail)&lt;/li&gt;
-&lt;li&gt;chore(package): update ava to version 0.18.0 (#345) (greenkeeper[bot])&lt;/li&gt;
-&lt;li&gt;chore(package): update babel-plugin-istanbul to version 4.0.0 (#350) (greenkeeper[bot])&lt;/li&gt;
-&lt;li&gt;Change location of ObjectTypeIndexer to match flow (#228) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Rename flow AST Type ExistentialTypeParam to ExistsTypeAnnotation (#322) (Toru Kobayashi)&lt;/li&gt;
-&lt;li&gt;Revert &amp;ldquo;Temporary rollback for erroring on trailing comma with spread (#154)&amp;rdquo; (#290) (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Remove classConstructorCall plugin (#291) (Brian Ng)&lt;/li&gt;
-&lt;li&gt;Update yarn.lock (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;Update cross-env to 3.x (Daniel Tschinder)&lt;/li&gt;
-&lt;li&gt;[7.0] Remove node 0.10, 0.12 and 5 from Travis (#284) (Sergey Rubanov)&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;String.fromCodePoint&lt;/code&gt; shim (#279) (Mathias Bynens)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="6161-2017-02-23"&gt;6.16.1 (2017-02-23)&lt;/h2&gt;
-&lt;h3 id="bug-regression"&gt;:bug: Regression&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Revert &amp;ldquo;Fix export default async function to be FunctionDeclaration&amp;rdquo; (&lt;a href="https://github.com/babel/babylon/pull/375"&gt;#375&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Need to modify Babel for this AST node change, so moving to 7.0.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/parser/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/parser/readme/</guid><description>&lt;h1 id="babelparser"&gt;@babel/parser&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A JavaScript parser&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;See our website &lt;a href="https://babeljs.io/docs/en/next/babel-parser.html"&gt;@babel/parser&lt;/a&gt; for more information or the &lt;a href="https://github.com/babel/babel/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+label%3A%22pkg%3A+parser+%28babylon%29%22+is%3Aopen"&gt;issues&lt;/a&gt; associated with this package.&lt;/p&gt;
-&lt;h2 id="install"&gt;Install&lt;/h2&gt;
-&lt;p&gt;Using npm:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install --save-dev @babel/parser
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or using yarn:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yarn add @babel/parser --dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/babel-parser-lite/src/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/babel-parser-lite/src/note/</guid><description>&lt;h2 id="hard-part-about-babel-parser"&gt;Hard Part about Babel Parser&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/babel-parser-lite/src/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/babel-parser-lite/src/note/</guid><description>&lt;h2 id="hard-part-about-babel-parser"&gt;Hard Part about Babel Parser&lt;/h2&gt;
 &lt;h3 id="noin"&gt;noIn&lt;/h3&gt;
 &lt;p&gt;This is what means for noIn:&lt;/p&gt;
 &lt;p&gt;Not OK to say: &lt;code&gt;for (a in b;;) {}&lt;/code&gt;
@@ -428,7 +168,7 @@ or
 &lt;code&gt;x = {a, b}&lt;/code&gt;
 or
 &lt;code&gt;function func({ a, b = 3}) {}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;So &lt;code&gt;{a, b = 3}&lt;/code&gt; can be interpreted &lt;code&gt;{ expr -&amp;gt; exprList -&amp;gt; id, Assignment -&amp;gt; id, id = literal }&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/clrs/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/clrs/readme/</guid><description>&lt;h1 id="time-complexity"&gt;Time Complexity&lt;/h1&gt;
+&lt;p&gt;So &lt;code&gt;{a, b = 3}&lt;/code&gt; can be interpreted &lt;code&gt;{ expr -&amp;gt; exprList -&amp;gt; id, Assignment -&amp;gt; id, id = literal }&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/clrs/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/clrs/readme/</guid><description>&lt;h1 id="time-complexity"&gt;Time Complexity&lt;/h1&gt;
 &lt;h3 id="minheap"&gt;minHeap&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -499,89 +239,7 @@ or
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="stack-and-queue"&gt;Stack and Queue&lt;/h3&gt;
-&lt;p&gt;Everything (create, push, pop, empty) is O(1) or O(1)*&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/cp/lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/cp/lists/</guid><description>&lt;h2 id="good-problems"&gt;Good Problems&lt;/h2&gt;
-&lt;h3 id="selected"&gt;Selected&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc294/tasks/abc294_e]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="backtrack-with-tricks"&gt;Backtrack with tricks&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/partition-to-k-equal-sum-subsets/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="binary-search"&gt;Binary Search&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=""&gt;https://codeforces.com/contest/1794/problem/C&lt;/a&gt; : &lt;strong&gt;10^5&lt;/strong&gt; can be &lt;strong&gt;nlog(n)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;[https://leetcode.com/contest/weekly-contest-331/problems/house-robber-iv/] House Robber&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="enumerate-all"&gt;Enumerate All&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc289/tasks/abc289_c] set to cover them all.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="dsu-root-not-1-to-n"&gt;DSU root not 1 to n&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc277/tasks/abc277_c]&lt;/li&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc285/tasks/abc285_d]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="interval-covering"&gt;interval covering&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc294/tasks/abc294_e] AC-792 / LC-1310&lt;/li&gt;
-&lt;li&gt;[https://leetcode.com/contest/weekly-contest-336/problems/minimum-time-to-complete-all-tasks/] LC-2380&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="dp-knapsack--coin-change"&gt;DP Knapsack / Coin Change&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/number-of-ways-to-earn-points/] LC-1909&lt;/li&gt;
-&lt;li&gt;[https://atcoder.jp/contests/abc286/tasks/abc286_d] AC-607 / CF-1107&lt;/li&gt;
-&lt;li&gt;[https://leetcode.com/problems/coin-change-ii/]&lt;/li&gt;
-&lt;li&gt;[https://leetcode.com/problems/profitable-schemes/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="substring-patterns"&gt;Substring Patterns&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/contest/weekly-contest-332/problems/substring-xor-queries/] - reduce from N^2 to 30*N&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="dp-matrix-path"&gt;DP matrix path:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="modular-arithmetic"&gt;Modular Arithmetic&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="increasing-subsequence"&gt;Increasing Subsequence:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/count-increasing-quadruplets/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="subarray-contribution"&gt;Subarray Contribution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/contest/weekly-contest-266/problems/vowels-of-all-substrings/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="heap"&gt;Heap&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/maximum-subsequence-score/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="multi-step-dp"&gt;Multi-Step DP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/minimum-cost-for-tickets/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="dfs-to-collect-data-for-each-node"&gt;DFS to collect data for each node&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/contest/weekly-contest-264/problems/count-nodes-with-the-highest-score/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="prefix-sum-and-suffix-sum"&gt;prefix sum and suffix sum&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/contest/biweekly-contest-62/problems/maximum-number-of-ways-to-partition-an-array/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="hidden-prefix-sum"&gt;Hidden Prefix Sum&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="distance-in-tree"&gt;distance in tree&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[https://codeforces.com/contest/1805/problem/D]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="pair-distance"&gt;Pair Distance&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;[https://leetcode.com/problems/intervals-between-identical-elements/description/]&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/csapp/hasm/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/csapp/hasm/readme/</guid><description>&lt;ol&gt;
+&lt;p&gt;Everything (create, push, pop, empty) is O(1) or O(1)*&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/csapp/hasm/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/csapp/hasm/readme/</guid><description>&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;how to reduce IA32 to Hack Assembly&lt;/p&gt;
 &lt;/li&gt;
@@ -618,7 +276,7 @@ or
 &lt;hr&gt;
 &lt;p&gt;all other seems like simply encode and decode.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;D is for temp, can&amp;rsquo;t be referenced.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/csapp/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/csapp/note/</guid><description>&lt;h4 id="chapter-4-processor-design"&gt;Chapter 4: Processor Design&lt;/h4&gt;
+&lt;p&gt;D is for temp, can&amp;rsquo;t be referenced.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/csapp/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/csapp/note/</guid><description>&lt;h4 id="chapter-4-processor-design"&gt;Chapter 4: Processor Design&lt;/h4&gt;
 &lt;p&gt;4.1 Introduce a new ISA called Y86. (RISC, CISC)&lt;/p&gt;
 &lt;p&gt;4.2 Gates, ALU, Memory and Clock. Too little information. Talking too fast.&lt;/p&gt;
 &lt;p&gt;4.3 Implement this ISA using circuit logic. Introduce &lt;strong&gt;FDEMW&lt;/strong&gt; stages, and sequential process&lt;/p&gt;
@@ -628,7 +286,7 @@ or
 &lt;p&gt;Skipped. Read after all others have been read.&lt;/p&gt;
 &lt;h4 id="chapter-6-memory-hierarchy"&gt;Chapter 6: Memory Hierarchy&lt;/h4&gt;
 &lt;p&gt;6.1 Kinds of Physical Memory Device&lt;/p&gt;
-&lt;p&gt;6.2 &lt;strong&gt;Locality&lt;/strong&gt; (Less Jump through memory)&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/csapp/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/csapp/readme/</guid><description>&lt;h3 id="learning-by-implementing"&gt;Learning by Implementing&lt;/h3&gt;
+&lt;p&gt;6.2 &lt;strong&gt;Locality&lt;/strong&gt; (Less Jump through memory)&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/csapp/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/csapp/readme/</guid><description>&lt;h3 id="learning-by-implementing"&gt;Learning by Implementing&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;operand&lt;/code&gt;, 3.4.1 Operand Specifiers, CSAPP.2.169&lt;/p&gt;
@@ -642,7 +300,7 @@ or
 &lt;p&gt;base pointer is the base of the current stack&lt;/p&gt;
 &lt;p&gt;above the base is the params for the current stack provided by the callee&lt;/p&gt;
 &lt;p&gt;and on the stack is the locals used by current function&lt;/p&gt;
-&lt;p&gt;At the same time, function can access the higher level variables by scoping.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/godel/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/godel/python/</guid><description>&lt;h2 id="functions-for-primes"&gt;Functions for Primes&lt;/h2&gt;
+&lt;p&gt;At the same time, function can access the higher level variables by scoping.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/godel/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/godel/python/</guid><description>&lt;h2 id="functions-for-primes"&gt;Functions for Primes&lt;/h2&gt;
 &lt;p&gt;The following functions are normal Python functions that work with prime numbers.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;is_divisible&lt;/span&gt;(x, y):
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; any(x &lt;span style="color:#f92672"&gt;==&lt;/span&gt; y &lt;span style="color:#f92672"&gt;*&lt;/span&gt; z &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; z &lt;span style="color:#f92672"&gt;in&lt;/span&gt; range(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, x &lt;span style="color:#f92672"&gt;+&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;))
@@ -928,7 +586,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# S(1) =&amp;gt; True&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# S(3) =&amp;gt; False&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/gsap-light/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/gsap-light/readme/</guid><description>&lt;p&gt;Minified Logic:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/gsap-light/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/gsap-light/readme/</guid><description>&lt;p&gt;Minified Logic:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;let&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Timeline&lt;/span&gt;()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;add&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Tween&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;target&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;#square&amp;#39;&lt;/span&gt;, {&lt;span style="color:#a6e22e"&gt;duration&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;x&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;}))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;tl&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;add&lt;/span&gt;(&lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Tween&lt;/span&gt;(&lt;span style="color:#a6e22e"&gt;target&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;#circle&amp;#39;&lt;/span&gt;, {&lt;span style="color:#a6e22e"&gt;duration&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;, &lt;span style="color:#a6e22e"&gt;y&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;300&lt;/span&gt;}))
@@ -951,7 +609,7 @@ or
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;tick&lt;/span&gt;()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/katex-lite/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/katex-lite/builder/</guid><description>&lt;!DOCTYPE html&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/katex-lite/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/katex-lite/builder/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html lang="en" dir="ltr"&gt;
  &lt;head&gt;
  &lt;meta charset="utf-8"&gt;
@@ -999,12 +657,12 @@ or
  --&gt;&lt;span class="math"&gt;d&lt;/span&gt;&lt;!--
  --&gt;&lt;span class="math"&gt;x&lt;/span&gt;
  &lt;/body&gt;
-&lt;/html&gt;</description></item><item><title/><link>https://yingkui.com/cs/katex-lite/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/katex-lite/note/</guid><description>&lt;ol&gt;
+&lt;/html&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/katex-lite/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/katex-lite/note/</guid><description>&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;expand the macro is hard&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/katex-lite/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/katex-lite/readme/</guid><description>&lt;h1 id="katex-lite"&gt;katex-lite&lt;/h1&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/katex-lite/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/katex-lite/readme/</guid><description>&lt;h1 id="katex-lite"&gt;katex-lite&lt;/h1&gt;
 &lt;p&gt;KaTex Lite&lt;/p&gt;
 &lt;p&gt;Todo List:&lt;/p&gt;
 &lt;ol&gt;
@@ -1023,18 +681,7 @@ or
 &lt;li&gt;Sqrt&lt;/li&gt;
 &lt;li&gt;Integral&lt;/li&gt;
 &lt;li&gt;Sin / Cos / Log&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/leetcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/leetcode/</guid><description>&lt;h2 id="leetcode"&gt;Leetcode&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;CF 和 LC 的 rating 差大约是 650 ± 50&lt;/li&gt;
-&lt;li&gt;AC 和 CF 的 rating 差大约是 400&lt;/li&gt;
-&lt;li&gt;LC 的 Knight 大约是 CF 的 Pupil，LC比赛5000名以内&lt;/li&gt;
-&lt;li&gt;LC 的 Guardian 大约是 CF 的 Specialist，LC比赛1000以内&lt;/li&gt;
-&lt;li&gt;LC 要达到 Knight (美区 1850) 大约需要 半年&lt;/li&gt;
-&lt;li&gt;LC 要达到 Guardian (美区 2150) 大约再需要 一年&lt;/li&gt;
-&lt;li&gt;LC 比赛，前500，2400&lt;/li&gt;
-&lt;li&gt;LC 比赛，前1000，2250&lt;/li&gt;
-&lt;li&gt;LC 比赛，前2000，2000&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/mds/parsers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/mds/parsers/</guid><description>&lt;h3 id="1-grammar-that-is-slr1-but-not-lr0"&gt;1. Grammar that is &lt;code&gt;SLR(1)&lt;/code&gt;, but not &lt;code&gt;LR(0)&lt;/code&gt;&lt;/h3&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/mds/parsers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/mds/parsers/</guid><description>&lt;h3 id="1-grammar-that-is-slr1-but-not-lr0"&gt;1. Grammar that is &lt;code&gt;SLR(1)&lt;/code&gt;, but not &lt;code&gt;LR(0)&lt;/code&gt;&lt;/h3&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;S -&amp;gt; a A c | a B d.
 A -&amp;gt; z.
 B -&amp;gt; z.
@@ -1042,16 +689,16 @@ B -&amp;gt; z.
 &lt;p&gt;&lt;a href="http://smlweb.cpsc.ucalgary.ca/vital-stats.php?grammar=S+-%3E+a+A+c+%7C+a+B+d.%0D%0AA+-%3E+z.%0D%0AB+-%3E+z."&gt;Click for more about the above grammar&lt;/a&gt;, &lt;a href="http://smlweb.cpsc.ucalgary.ca/lr0.php?grammar=S+-%3E+a+A+c+%7C+a+B+d.%0AA+-%3E+z.%0AB+-%3E+z.&amp;amp;substs="&gt;LR(0) Item Sets&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://smlweb.cpsc.ucalgary.ca/lr0-automaton.php?grammar=S+-%3E+a+A+c+%7C+a+B+d.%0AA+-%3E+z.%0AB+-%3E+z.&amp;amp;substs=" alt="1"&gt;&lt;/p&gt;
 &lt;p&gt;The reason it&amp;rsquo;s not &lt;code&gt;LR(0)&lt;/code&gt; is that after reading the same token &lt;code&gt;a&lt;/code&gt;, and same token &lt;code&gt;z&lt;/code&gt;, you have two choices to reduce. (state 5)&lt;/p&gt;
-&lt;p&gt;But you can distinguish A and B by comparing the follow sets of A and B. where {c} for A and {d} for B.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/mds/unicode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/mds/unicode/</guid><description>&lt;p&gt;The first 128 chars are ASCII or Control Chars and Basic Latin, which is the most important part of the Unicode.&lt;/p&gt;
+&lt;p&gt;But you can distinguish A and B by comparing the follow sets of A and B. where {c} for A and {d} for B.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/mds/unicode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/mds/unicode/</guid><description>&lt;p&gt;The first 128 chars are ASCII or Control Chars and Basic Latin, which is the most important part of the Unicode.&lt;/p&gt;
 &lt;p&gt;Among the first 128, the first 32 are control chars, notably:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;10, 0x000A&lt;/code&gt; is New Line (NL) &lt;code&gt;\n&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;13, 0x000D&lt;/code&gt; is Carriage Return (CR) &lt;code&gt;\r&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Among the first 128, the next 96 are basic latin, notably:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;32, 0x0020&lt;/code&gt; is space, &lt;code&gt; &lt;/code&gt;. One of the most important charcodes.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;48, 0x0030&lt;/code&gt; is 0, between space and zero are: &lt;code&gt;!&amp;quot;#$%&amp;amp;'()*+,-./&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/next/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/next/1/</guid><description>&lt;h2 id="nextjs"&gt;Next.js&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;48, 0x0030&lt;/code&gt; is 0, between space and zero are: &lt;code&gt;!&amp;quot;#$%&amp;amp;'()*+,-./&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/next/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/next/1/</guid><description>&lt;h2 id="nextjs"&gt;Next.js&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;npm install -g pnpm&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/notes/algorithms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/notes/algorithms/</guid><description>&lt;ol&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/notes/algorithms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/notes/algorithms/</guid><description>&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;insertion sort&lt;/p&gt;
 &lt;/li&gt;
@@ -1067,15 +714,15 @@ B -&amp;gt; z.
 &lt;li&gt;
 &lt;p&gt;divide and conquer (nlgn)&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/notes/circuit-logic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/notes/circuit-logic/</guid><description>&lt;p&gt;The computer is a hardware implementation of Turing Machine.&lt;/p&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/notes/circuit-logic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/notes/circuit-logic/</guid><description>&lt;p&gt;The computer is a hardware implementation of Turing Machine.&lt;/p&gt;
 &lt;p&gt;The information is encoded by high and low voltage of transistors.&lt;/p&gt;
-&lt;p&gt;The elementaty of information transformation is presented by And Or Not gates, alternatively the three gates (NAND) can be made through Nand gates. By using these primative gates all transformation of f(\vec{a}) = \vec{b} can be realize, in the symbol set of {0, 1}. This is the combinatory logic part.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/notes/logic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/notes/logic/</guid><description>&lt;p&gt;The training purpose is:&lt;/p&gt;
+&lt;p&gt;The elementaty of information transformation is presented by And Or Not gates, alternatively the three gates (NAND) can be made through Nand gates. By using these primative gates all transformation of f(\vec{a}) = \vec{b} can be realize, in the symbol set of {0, 1}. This is the combinatory logic part.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/notes/logic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/notes/logic/</guid><description>&lt;p&gt;The training purpose is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Understand the concepts of SL and PL(First Order Logic)&lt;/li&gt;
 &lt;li&gt;Understand how Turing proved the decision problem.&lt;/li&gt;
 &lt;li&gt;Why Turing machine and Lambda Calculus is equivalent.&lt;/li&gt;
 &lt;li&gt;Understand how Godel proved the incompleteness theorem.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://yingkui.com/cs/rails/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/rails/web/</guid><description>&lt;h2 id="web-problems"&gt;Web Problems&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/rails/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/rails/web/</guid><description>&lt;h2 id="web-problems"&gt;Web Problems&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;How to deal with Routes so we can distinguish request&lt;/li&gt;
 &lt;li&gt;How to response according to a request&lt;/li&gt;
@@ -1088,7 +735,7 @@ B -&amp;gt; z.
 &lt;li&gt;Add seed data for react&lt;/li&gt;
 &lt;li&gt;Add interaction using react&lt;/li&gt;
 &lt;li&gt;Add api with react&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/basic/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;React&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;createElement&lt;/span&gt;(
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/react/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/react/basic/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;React&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;createElement&lt;/span&gt;(
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;h1&amp;#39;&lt;/span&gt;, &lt;span style="color:#75715e"&gt;// type
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; {}, &lt;span style="color:#75715e"&gt;// props
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;Hello, React!&amp;#39;&lt;/span&gt; &lt;span style="color:#75715e"&gt;// children
@@ -1103,7 +750,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// Cleanup code (componentWillUnmount)
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;&lt;/span&gt; };
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}, [&lt;span style="color:#a6e22e"&gt;someValue&lt;/span&gt;]); &lt;span style="color:#75715e"&gt;// Run again only if `someValue` changes
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/react/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/react/state/</guid><description>&lt;h3 id="react-state"&gt;React State&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/react/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/react/state/</guid><description>&lt;h3 id="react-state"&gt;React State&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;StateTestComponent&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; () =&amp;gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;const&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;dateWithoutState&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Date()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
@@ -1126,7 +773,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;lt;&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;/div&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; )
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/docker/</guid><description>&lt;h2 id="docker"&gt;Docker&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/docker/</guid><description>&lt;h2 id="docker"&gt;Docker&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;database and app should be treat separately.&lt;/li&gt;
 &lt;li&gt;app install ruby rails node yarn gems&lt;/li&gt;
@@ -1180,7 +827,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#75715e"&gt;# Copy the rest of your app&amp;#39;s source code from your host to your image filesystem.&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;COPY&lt;/span&gt; . /a23&lt;span style="color:#960050;background-color:#1e0010"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/git/</guid><description>&lt;h2 id="git"&gt;GIT&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/git/</guid><description>&lt;h2 id="git"&gt;GIT&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.name &lt;span style="color:#e6db74"&gt;&amp;#34;My Name&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global user.email my@gmail.com
@@ -1195,7 +842,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd /var/www
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone git@github.com:username/app.git
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd app
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/nginx-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/nginx-config/</guid><description>&lt;h3 id="config"&gt;Config&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/nginx-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/nginx-config/</guid><description>&lt;h3 id="config"&gt;Config&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;passenger-config about ruby-command
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# passenger_ruby /usr/share/rvm/gems/ruby-3.3.0/wrappers/ruby&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vim /etc/nginx/nginx.conf
@@ -1213,7 +860,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;passenger-status
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo passenger-config restart-app &lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;pwd&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/nginx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/nginx/</guid><description>&lt;h2 id="nginx"&gt;Nginx&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/nginx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/nginx/</guid><description>&lt;h2 id="nginx"&gt;Nginx&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# installation&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install nginx
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nginx -v 
@@ -1236,7 +883,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt; ! -f /etc/nginx/modules-enabled/50-mod-http-passenger.conf &lt;span style="color:#f92672"&gt;]&lt;/span&gt;; &lt;span style="color:#66d9ef"&gt;then&lt;/span&gt; sudo ln -s /usr/share/nginx/modules-available/mod-http-passenger.load /etc/nginx/modules-enabled/50-mod-http-passenger.conf ; &lt;span style="color:#66d9ef"&gt;fi&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ls /etc/nginx/conf.d/mod-http-passenger.conf
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo /usr/bin/passenger-config validate-install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/pg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/pg/</guid><description>&lt;h2 id="pg"&gt;PG&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/pg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/pg/</guid><description>&lt;h2 id="pg"&gt;PG&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install postgresql postgresql-contrib
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;psql --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="user"&gt;User&lt;/h3&gt;
@@ -1264,7 +911,7 @@ B -&amp;gt; z.
 &lt;li&gt;\d : list all tables&lt;/li&gt;
 &lt;li&gt;\d &amp;lt;table_name&amp;gt;: list&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Backup and restore&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/production/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/production/</guid><description>&lt;h2 id="production"&gt;Production&lt;/h2&gt;
+&lt;p&gt;Backup and restore&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/production/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/production/</guid><description>&lt;h2 id="production"&gt;Production&lt;/h2&gt;
 &lt;h3 id="initial"&gt;Initial&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install libpq-dev
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bundle install
@@ -1275,7 +922,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;production rake db:seed
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RAILS_ENV&lt;span style="color:#f92672"&gt;=&lt;/span&gt;production rake assets:precompile
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/rails/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/rails/</guid><description>&lt;h2 id="rails--v"&gt;Rails -v&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/rails/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/rails/</guid><description>&lt;h2 id="rails--v"&gt;Rails -v&lt;/h2&gt;
 &lt;h3 id="1-rvm--v"&gt;1. RVM -v&lt;/h3&gt;
 &lt;p&gt;Exactly based on &lt;a href=""&gt;https://github.com/rvm/ubuntu_rvm&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install software-properties-common
@@ -1320,7 +967,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;end
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# routes&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;root &lt;span style="color:#e6db74"&gt;&amp;#34;hello_world#greet&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/ssh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/ssh/</guid><description>&lt;h2 id="ssh-secure-shell"&gt;SSH (Secure Shell)&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/ssh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/ssh/</guid><description>&lt;h2 id="ssh-secure-shell"&gt;SSH (Secure Shell)&lt;/h2&gt;
 &lt;h3 id="create-a-new-user"&gt;Create a new user&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# create the user&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo adduser ubuntu 
@@ -1343,7 +990,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# remember to add a newline at the end of the file&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat ~/.ssh/id_rsa
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="change-pem-file-mode"&gt;Change pem file mode&lt;/h3&gt;
-&lt;p&gt;Private key should have permission 0600 while your public key have permission 0644.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/unix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/unix/</guid><description>&lt;h2 id="unix"&gt;UNIX&lt;/h2&gt;
+&lt;p&gt;Private key should have permission 0600 while your public key have permission 0644.&lt;/p&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/unix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/unix/</guid><description>&lt;h2 id="unix"&gt;UNIX&lt;/h2&gt;
 &lt;h3 id="file"&gt;File&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;ls&lt;/li&gt;
@@ -1382,7 +1029,7 @@ B -&amp;gt; z.
 &lt;li&gt;BSD, based on unix, 1978&lt;/li&gt;
 &lt;li&gt;FreeBSD, based on BSD, 1993&lt;/li&gt;
 &lt;li&gt;Darwin, based on bsd, 2000&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/server/vim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/server/vim/</guid><description>&lt;h2 id="vim"&gt;VIM&lt;/h2&gt;
+&lt;/ol&gt;</description></item><item><title/><link>https://yingkui.com/cs/archives/server/vim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/server/vim/</guid><description>&lt;h2 id="vim"&gt;VIM&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;h / j / k / l: Left Down Up Right&lt;/li&gt;
 &lt;li&gt;0: line begin&lt;/li&gt;
@@ -1396,7 +1043,7 @@ B -&amp;gt; z.
 &lt;li&gt;:q!: quite vim without saving&lt;/li&gt;
 &lt;li&gt;:/: search&lt;/li&gt;
 &lt;li&gt;:w: save&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/dp-bitmask/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# check&lt;/span&gt;
+&lt;/ol&gt;</description></item><item><title>DP Bitmask</title><link>https://yingkui.com/cs/archives/t/dp-bitmask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/t/dp-bitmask/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;&amp;amp;&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# check&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;^&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# remove&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mask &lt;span style="color:#f92672"&gt;|&lt;/span&gt; (&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#f92672"&gt;&amp;lt;&amp;lt;&lt;/span&gt;j) &lt;span style="color:#75715e"&gt;# set&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="arrangements-maxmincnt"&gt;Arrangements max/min/cnt&lt;/h4&gt;
@@ -1443,7 +1090,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; res
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; dp(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Sort</title><link>https://yingkui.com/cs/t/sort/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/sort/</guid><description>&lt;blockquote&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Sort</title><link>https://yingkui.com/cs/archives/t/sort/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/t/sort/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;Merge and Quick are more important&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id="bubble-switch-forwards"&gt;Bubble, switch, forwards&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;bubble&lt;/span&gt;(nums):
@@ -1591,7 +1238,7 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; res&lt;span style="color:#f92672"&gt;.&lt;/span&gt;append(hpop(heap))
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; res
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Sort Key</title><link>https://yingkui.com/cs/t/sort-key/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/t/sort-key/</guid><description>&lt;h3 id="cmp_to_key"&gt;cmp_to_key&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Sort Key</title><link>https://yingkui.com/cs/archives/t/sort-key/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/archives/t/sort-key/</guid><description>&lt;h3 id="cmp_to_key"&gt;cmp_to_key&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://leetcode.com/problems/largest-number/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Solution&lt;/span&gt;:
@@ -1634,122 +1281,4 @@ B -&amp;gt; z.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; teams&lt;span style="color:#f92672"&gt;.&lt;/span&gt;sort(key&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;lambda&lt;/span&gt; x:count[ord(x)&lt;span style="color:#f92672"&gt;-&lt;/span&gt;ord(&lt;span style="color:#e6db74"&gt;&amp;#39;A&amp;#39;&lt;/span&gt;)],reverse &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style="color:#f92672"&gt;.&lt;/span&gt;join(teams)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>题型信号</title><link>https://yingkui.com/cs/signals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://yingkui.com/cs/signals/</guid><description>&lt;h3 id="technique-signals"&gt;Technique Signals&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Cue&lt;/th&gt;
- &lt;th&gt;Response&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;Sum + Subarray&lt;/td&gt;
- &lt;td&gt;Prefix Sum&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Largest / Smallest / k-th in sorted&lt;/td&gt;
- &lt;td&gt;Heap / Quickselect&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Arrange to Find Max / Min&lt;/td&gt;
- &lt;td&gt;Heap / Sort with Compare&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Competing Choices / Select or Skip&lt;/td&gt;
- &lt;td&gt;Dynamic Programming&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Remember Seen&lt;/td&gt;
- &lt;td&gt;Hashset / Hashmap&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;String Prefix&lt;/td&gt;
- &lt;td&gt;Trie&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Pattern / Substring Matching&lt;/td&gt;
- &lt;td&gt;Rolling Hash / KMP&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Repeated Sorting&lt;/td&gt;
- &lt;td&gt;Sorted List / Ordered Set&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Binary Tree&lt;/td&gt;
- &lt;td&gt;Recursive Traverse / DFS&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Count Steps in Graph / Matrix&lt;/td&gt;
- &lt;td&gt;BFS&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Connectivity / Groups in Graph&lt;/td&gt;
- &lt;td&gt;Disjointed Set&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Cycle Detection in Graph&lt;/td&gt;
- &lt;td&gt;Disjointed Set&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Hash On or Off&lt;/td&gt;
- &lt;td&gt;Bitmask&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;DAG / Dependency / Causation&lt;/td&gt;
- &lt;td&gt;Topological Sort&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Next Greater / Smaller&lt;/td&gt;
- &lt;td&gt;Mono Stack&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;In-place&lt;/td&gt;
- &lt;td&gt;Swap / Sorting / Two Pointers&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Perm / Subset / Matrix Traverse / On or Off&lt;/td&gt;
- &lt;td&gt;Backtracking&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Find First / Last Good Candidate&lt;/td&gt;
- &lt;td&gt;Binary Search&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Given &lt;code&gt;k&lt;/code&gt;, find max / min&lt;/td&gt;
- &lt;td&gt;Binary Search&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Find kth Element&lt;/td&gt;
- &lt;td&gt;Binary Search&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Range Sum / Count in Rolling Sorted Array&lt;/td&gt;
- &lt;td&gt;Binary Index Tree / Segment Tree&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Range Max / Min&lt;/td&gt;
- &lt;td&gt;Segment Tree&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Balance / Last Few / Deletion&lt;/td&gt;
- &lt;td&gt;Stack&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Count / Min / Max Subarray&lt;/td&gt;
- &lt;td&gt;Sliding Window&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Count / Min / Max Subseq&lt;/td&gt;
- &lt;td&gt;Dynamic Programming&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Subseq Pattern Matching&lt;/td&gt;
- &lt;td&gt;Dynamic Programming&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Partition to k Subset / Knapsack&lt;/td&gt;
- &lt;td&gt;Dynamic Programming&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
