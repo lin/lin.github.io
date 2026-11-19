@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui Lin</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>高三三班高考之谜</title><link>https://yingkui.com/sanban/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/sanban/</guid><description>&lt;p&gt;今天是绥化一中建校 $80$ 周年的日子，而在 $60$ 周年校庆时，我正好是高三。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Yingkui Lin</title><link>https://yingkui.com/posts/</link><description>Recent content in Posts on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>37岁</title><link>https://yingkui.com/37/</link><pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/37/</guid><description>&lt;h2 id="过去十二年还原论的溃败"&gt;过去十二年，还原论的溃败&lt;/h2&gt;
+&lt;p&gt;在 GTA 4 出来的时候，而 GTA 5 出来的第二年，今天是 GTA 6 发售&lt;/p&gt;
+&lt;h2 id="贝叶斯统计和自由能原则"&gt;贝叶斯统计和自由能原则&lt;/h2&gt;
+&lt;h2 id="代理与词汇化"&gt;代理与词汇化&lt;/h2&gt;
+&lt;h2 id="系统论和成长阶段"&gt;系统论和成长阶段&lt;/h2&gt;
+&lt;h2 id="大一统理论和通用人工智能"&gt;大一统理论和通用人工智能&lt;/h2&gt;</description></item><item><title>深谈贝叶斯</title><link>https://yingkui.com/bayes/</link><pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/bayes/</guid><description>&lt;h2 id="写在前面"&gt;写在前面&lt;/h2&gt;
+&lt;p&gt;世界上最出名的公式是 $E=mc^2$，但体现更多的是娱乐价值，在日常中并没有那么实用。从狭义相对论出发，去推导理解 $E=mc^2$ 并不容易，但自打初中知道之后，我就几乎没有对这个公式有过什么更新，但是贝叶斯公式不同，我很快就理解了这个公式的意义，但是能内化贝叶斯原理，却用了十几年的时间，每次感悟都有所不同，而从质能方程到贝叶斯公式的偏爱转变，也反映着我自己对还原论的心理依赖到系统论的包容开放。&lt;/p&gt;
+&lt;p&gt;这篇文章会从多角度、深入的讨论贝叶斯公式中的每一项，也算是自我感悟的一次总结。&lt;/p&gt;
+&lt;h2 id="观测"&gt;观测 $o$&lt;/h2&gt;
+&lt;h2 id="隐藏"&gt;隐藏 $s$&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;被压缩的维度&lt;/li&gt;
+&lt;li&gt;流形和漏斗上的小球，都会落入&lt;/li&gt;
+&lt;li&gt;化简得到的简化形式&lt;/li&gt;
+&lt;li&gt;被压缩的&lt;/li&gt;
+&lt;li&gt;统计意义上的高频信号&lt;/li&gt;
+&lt;li&gt;PCA&lt;/li&gt;
+&lt;li&gt;机器学习和DNN&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;$s\rightarrow o \leftarrow s*$&lt;/h2&gt;
+&lt;h2 id="先验"&gt;先验 $p(s)$&lt;/h2&gt;
+&lt;h2 id="似然"&gt;似然 $p(o|s)$&lt;/h2&gt;
+&lt;h2 id="后验"&gt;后验 $p(s|o)$&lt;/h2&gt;
+&lt;h2 id="边缘"&gt;边缘 $p(o)$&lt;/h2&gt;
+&lt;h2 id="局限与近似"&gt;局限与近似&lt;/h2&gt;
+&lt;p&gt;无论是变分&lt;/p&gt;</description></item><item><title>高三三班高考之谜</title><link>https://yingkui.com/sanban/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/sanban/</guid><description>&lt;p&gt;今天是绥化一中建校 $80$ 周年的日子，而在 $60$ 周年校庆时，我正好是高三。&lt;/p&gt;
 &lt;p&gt;在 $2007$ 年高考，我在绥化一中的同班同学考得很不理想，原本可以达到极高分段（全省前 $0.5\%$）甚至最高分段（全省前 $0.1\%$）的同学比预期低了 $20$ 分以上，我一直困惑至今，经过大量的数据收集和分析，我觉得自己破解了这个谜题，简而言之：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$2007$ 年高考，发生了破天荒的重大命题事故，作为新课标命题元年，命题组错把我们从未使用过的新课标教材当成大纲版教材，从而出现了大量超纲题，且在关键压轴题有错题，这是最直接的原因&lt;/li&gt;
@@ -31,7 +56,7 @@
 &lt;p&gt;本文的数据和信息除了朋友的转述外，全部来自于教育部门以及学校官方对外公布的数据，或者是当年报纸、书籍、杂志内的已出版信息，有人出于隐私，不愿被提及，但又或许也有人也像我一样，想通过这些古早的数据，对过去有一个更清晰的解读，以便构建更为从容的自我，又或是仅仅是作为唤起追忆的引子。我无法分辨隐私或者渴求二者，我便尽可能地使用公开的信息，做事实的搬运工。&lt;/p&gt;
 &lt;h2 id="中考成绩并不差"&gt;中考成绩并不差&lt;/h2&gt;
 &lt;p&gt;我是在 $2004$ 年作为黑龙江省绥化市绥棱县第五中学的学生参加的中考，那时候除了哈尔滨，全省共用一张考卷，而从 $2005$ 年开始就有了试验区的说法，就不再全省统一命题。&lt;/p&gt;
-&lt;p&gt;$2004$ 年中考，&lt;a href="https://web.archive.org/web/20040830183238/http://202.97.254.98/sub1/newshow.php?id=2261"&gt;满分是 $690$ 分，其中体育 $30$ 分&lt;/a&gt;，大家提及中考成绩，常说那个去除体育 $30$ 分后的文化课成绩，而我的文化课总分是 $618$ 分，加上体育 $648$ 分，其中，语文 $103/120$ 分，数学 $110/120$ 分，英语 $118/120$ 分，体育 $30/30$ 分，物理 $98/100$ 分，化学 $93/100$ 分，政治 $96/100$ 分。&lt;/p&gt;</description></item><item><title>刘翔之死</title><link>https://yingkui.com/liuxiang/</link><pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/liuxiang/</guid><description>&lt;style&gt;
+&lt;p&gt;$2004$ 年中考，&lt;a href="https://web.archive.org/web/20040830183238/http://202.97.254.98/sub1/newshow.php?id=2261"&gt;满分是 $690$ 分，其中体育 $30$ 分&lt;/a&gt;，大家提及中考成绩，常说那个去除体育 $30$ 分后的文化课成绩，而我的文化课总分是 $618$ 分，加上体育 $648$ 分，其中，语文 $103/120$ 分，数学 $110/120$ 分，英语 $118/120$ 分，体育 $30/30$ 分，物理 $98/100$ 分，化学 $96/100$ 分，政治 $93/100$ 分。&lt;/p&gt;</description></item><item><title>刘翔之死</title><link>https://yingkui.com/liuxiang/</link><pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/liuxiang/</guid><description>&lt;style&gt;
  @media screen and (max-width: 480px) {
  blockquote p {
  font-size: 17px
@@ -66,7 +91,7 @@
 &lt;p&gt;我很早之前就已经百毒不侵了，今天要试一试最新练成的刀枪不入&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;刘翔哪里是百毒不侵，分明早已千疮百孔，这种毒素的积累是从他祖父那里就开始了。&lt;/p&gt;
 &lt;p&gt;刘翔1988年11月21日出生于黑龙江省绥棱县，刘翔从小就表现得非常聪明，他小学原本就读于绥棱五小，二年级的时候，因为他母亲工作原因，转入到绥棱一小的一班，初中的时候，在离家近的绥棱五中上学，刘翔中考630分（满分690）是绥棱五中的全校第六，绥棱县第十三名。&lt;/p&gt;
-&lt;p&gt;我和刘翔小学、初中、高中都是在同一所学校，而我第一次听说刘翔，是在初三，2002年12月，学校组织语数外理化生六科的竞赛，刘翔全部进入了学年组前十，一下全校就都记住了六班有个叫刘翔的传奇，后来刘翔在全国初中数学联赛中获得了黑龙江赛区三等奖。高中的时候，刘翔和我一样去了绥化一中，2007年高考，刘翔657分，是我们三班第二，被同济大学的给排水专业录取。&lt;/p&gt;
+&lt;p&gt;我和刘翔小学、初中、高中都是在同一所学校，而我第一次听说刘翔，是在初三，2002年12月，学校组织语数外理化生六科的竞赛，刘翔全部进入了学年组前十，一下全校就都记住了六班有个叫刘翔的传奇，后来，刘翔还在全国初中数学联赛中获得了黑龙江赛区三等奖。高中的时候，刘翔和我一样去了绥化一中，2007年高考，刘翔657分，全黑龙江省约1100名，前0.8%，是我们三班第二，被同济大学的给排水专业录取。&lt;/p&gt;
 &lt;p&gt;而刘翔的这样的学业成绩，并不完全是智力优势带来的副产品，也是带着血的自我压抑。2011年2月9日，刘翔去世后的半年，我去刘翔家看望他的父母，刘翔的父亲对我说了一件事：刘翔小时候，刘翔父亲害怕刘翔要钱，刘翔父亲就问刘翔要不要大烀饼，刘翔说要，他就给了刘翔一个大嘴巴子。&lt;/p&gt;
 &lt;p&gt;刘翔父亲挑这样一件事跟我说，应当是他对此很是愧疚。但类似的，给刘翔带来巨大心理创伤的事情还很多，小学二年级的时候，刘翔刚转学到一小，因为五小不重视作文，导致刘翔不会写作文，刘翔就急得大哭，看到自己儿子的脆弱，刘翔的父亲没有给他安慰和鼓励，反而撕掉了他的作文本。&lt;/p&gt;
 &lt;p&gt;和刘翔一样，刘翔父亲同样有着出色的学业成绩，即使不那么勤奋，刘翔父亲也考了当年的绥棱县中考第一，高中喜欢看大书闲书，大学在佳木斯农校就读。但同样，刘翔父亲也是家庭创伤的受害者。他在童年，目睹了刘翔爷爷家暴了刘翔奶奶一辈子，目睹了自己漂亮又老实的亲妹妹，仅仅因为考了第四，便受到家人冷漠，年仅15岁便选择喝农药自杀身亡，并不是刘翔的父亲不想有更好的共情能力，而是在这样一个充满戾气的家庭里，共情意味着打开了痛苦的水龙头。&lt;/p&gt;
@@ -957,7 +982,7 @@ table {
 &lt;li&gt;现在的婚礼策划，更像是在按部就班的完成婚礼套路，而不是真正的操办婚礼。大家在婚礼上有不少的支出，拿出时间精力准备也是合理的。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这次婚礼，从娱乐形式上，有演唱会般的开场演出，有幽默喜剧，有现场综艺，有建筑欣赏，有仪式观礼，有美食盛宴，有好友聚会，形式多样，轻松自然。&lt;/p&gt;
-&lt;p&gt;准备时间有限，也没有进行过真正意义上的彩排，但我确实做到了一个创业者对status quo（传统）的反思和革新，我不奢求大家体验非凡，记忆深刻，但只要大家回忆起我的婚礼，少了许多千篇一律的枯燥感，这次魁式婚礼的尝试就是非常成功的。&lt;/p&gt;</description></item><item><title>贝叶斯公式和贝叶斯模型的关系</title><link>https://yingkui.com/bayes/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://yingkui.com/bayes/</guid><description>&lt;h2 id="贝叶斯公式"&gt;贝叶斯公式&lt;/h2&gt;
+&lt;p&gt;准备时间有限，也没有进行过真正意义上的彩排，但我确实做到了一个创业者对status quo（传统）的反思和革新，我不奢求大家体验非凡，记忆深刻，但只要大家回忆起我的婚礼，少了许多千篇一律的枯燥感，这次魁式婚礼的尝试就是非常成功的。&lt;/p&gt;</description></item><item><title>贝叶斯公式和贝叶斯模型的关系</title><link>https://yingkui.com/bayesmodel/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://yingkui.com/bayesmodel/</guid><description>&lt;h2 id="贝叶斯公式"&gt;贝叶斯公式&lt;/h2&gt;
 $$p(\theta | y) \propto p(y | \theta)p(\theta)$$&lt;p&gt;初学贝叶斯公式时，一般的例子是这样的：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果全世界随便找一个人，他的投篮命中率概率分布如何？现在如果你知道了这个人是NBA球员，他的投篮命中率概率分布又如何？&lt;/li&gt;
