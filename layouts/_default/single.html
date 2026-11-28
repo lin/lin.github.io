@@ -20,6 +20,10 @@
 					<h1 class="title">{{ .Title }}</h1>
 				</div>
 			</div>
+
+			{{ if hugo.IsServer }}
+				{{ partial "dev-post-tools.html" . }}
+			{{ end }}
 					
 			<div class="markdown">
 				{{ .Content }}

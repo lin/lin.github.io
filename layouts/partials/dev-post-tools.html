@@ -1,0 +1,723 @@
+<div class="dev-post-tools" data-dev-tools>
+  <span class="dev-post-tools__badge">DEV</span>
+  <button type="button" class="dev-post-tools__btn" id="dev-copy-md-btn" title="复制本文的 Markdown 原文">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg>
+    <span class="dev-post-tools__label">复制 MD 原文</span>
+  </button>
+  <button type="button" class="dev-post-tools__btn dev-post-tools__btn--wechat" id="dev-copy-wechat-btn" title="复制适配微信公众号编辑器的富文本">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span class="dev-post-tools__label">复制公众号富文本</span>
+  </button>
+  <span class="dev-post-tools__status" id="dev-copy-status" aria-live="polite"></span>
+</div>
+
+<textarea id="dev-raw-md-source" hidden>{{ printf "# %s\n\n%s" .Title (strings.TrimLeft "\r\n" .RawContent) }}</textarea>
+
+<style>
+  .dev-post-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: -10px 0 28px 0;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+
+  .dev-post-tools__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 7px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #475569;
+    background: #e2e8f0;
+    border-radius: 999px;
+    user-select: none;
+  }
+
+  .dev-post-tools__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #0f172a;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .dev-post-tools__btn:hover:not(:disabled) {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+  }
+
+  .dev-post-tools__btn:active:not(:disabled) {
+    transform: translateY(0.5px);
+  }
+
+  .dev-post-tools__btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+  }
+
+  .dev-post-tools__btn--wechat {
+    color: #065f46;
+    border-color: #a7f3d0;
+    background: #ecfdf5;
+  }
+
+  .dev-post-tools__btn--wechat:hover:not(:disabled) {
+    background: #d1fae5;
+    border-color: #6ee7b7;
+  }
+
+  .dev-post-tools__btn.is-copied {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #86efac;
+  }
+
+  .dev-post-tools__status {
+    margin-left: auto;
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .dev-post-tools__status.is-error {
+    color: #dc2626;
+  }
+</style>
+
+<script>
+(function () {
+  var mdBtn = document.getElementById('dev-copy-md-btn');
+  var wechatBtn = document.getElementById('dev-copy-wechat-btn');
+  var statusEl = document.getElementById('dev-copy-status');
+  var rawMdEl = document.getElementById('dev-raw-md-source');
+
+  if (!mdBtn || !wechatBtn || !rawMdEl) return;
+
+  var statusTimer = null;
+  function setStatus(text, isError) {
+    if (!statusEl) return;
+    statusEl.textContent = text || '';
+    statusEl.classList.toggle('is-error', !!isError);
+    if (statusTimer) clearTimeout(statusTimer);
+    if (text) {
+      statusTimer = setTimeout(function () {
+        statusEl.textContent = '';
+        statusEl.classList.remove('is-error');
+      }, 4500);
+    }
+  }
+
+  function flashCopied(btn, originalText, doneText) {
+    var label = btn.querySelector('.dev-post-tools__label');
+    btn.classList.add('is-copied');
+    if (label) label.textContent = doneText;
+    setTimeout(function () {
+      btn.classList.remove('is-copied');
+      if (label) label.textContent = originalText;
+    }, 2200);
+  }
+
+  // ==================== 1. 复制 MD 原文 ====================
+  async function copyPlainText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+
+  mdBtn.addEventListener('click', async function () {
+    try {
+      await copyPlainText(rawMdEl.value);
+      flashCopied(mdBtn, '复制 MD 原文', '已复制 MD');
+      setStatus('已复制 Markdown 原文到剪贴板');
+    } catch (err) {
+      console.error(err);
+      setStatus('复制失败：' + (err && err.message ? err.message : '请检查浏览器剪贴板权限'), true);
+    }
+  });
+
+  // ==================== 2. 复制公众号富文本 ====================
+  var mathJaxPromise = null;
+  function loadMathJax() {
+    if (window.MathJax && typeof window.MathJax.tex2svgPromise === 'function') {
+      return Promise.resolve(window.MathJax);
+    }
+    if (mathJaxPromise) return mathJaxPromise;
+
+    mathJaxPromise = new Promise(function (resolve, reject) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        svg: {
+          fontCache: 'none'
+        },
+        startup: {
+          typeset: false,
+          ready: function () {
+            window.MathJax.startup.defaultReady();
+            resolve(window.MathJax);
+          }
+        }
+      };
+
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js';
+      script.async = true;
+      script.onerror = function () {
+        mathJaxPromise = null;
+        reject(new Error('MathJax CDN 加载失败'));
+      };
+      document.head.appendChild(script);
+    });
+
+    return mathJaxPromise;
+  }
+
+  function blobToDataUrl(blob) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onloadend = function () { resolve(reader.result); };
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  async function inlineLocalImage(img) {
+    var src = img.getAttribute('src');
+    if (!src || src.startsWith('data:')) return;
+
+    var absUrl;
+    try {
+      absUrl = new URL(src, window.location.href);
+    } catch (_) {
+      return;
+    }
+
+    // 仅将本地 dev 服务器图片转为 Base64，外部 https 图片保留原地址以便公众号自动抓取
+    var isLocal = absUrl.origin === window.location.origin ||
+      absUrl.hostname === 'localhost' ||
+      absUrl.hostname === '127.0.0.1';
+
+    if (!isLocal) {
+      img.setAttribute('src', absUrl.href);
+      return;
+    }
+
+    try {
+      var res = await fetch(absUrl.href);
+      if (!res.ok) return;
+      var blob = await res.blob();
+
+      // 公众号不支持 SVG data URI，转成 PNG
+      if (blob.type === 'image/svg+xml') {
+        var svgUrl = URL.createObjectURL(blob);
+        try {
+          var pngDataUrl = await new Promise(function (resolve, reject) {
+            var tmpImg = new Image();
+            tmpImg.onload = function () {
+              var canvas = document.createElement('canvas');
+              var scale = 2;
+              canvas.width = (tmpImg.naturalWidth || 800) * scale;
+              canvas.height = (tmpImg.naturalHeight || 400) * scale;
+              var ctx = canvas.getContext('2d');
+              ctx.scale(scale, scale);
+              ctx.drawImage(tmpImg, 0, 0);
+              resolve(canvas.toDataURL('image/png'));
+            };
+            tmpImg.onerror = reject;
+            tmpImg.src = svgUrl;
+          });
+          img.setAttribute('src', pngDataUrl);
+        } finally {
+          URL.revokeObjectURL(svgUrl);
+        }
+        return;
+      }
+
+      var dataUrl = await blobToDataUrl(blob);
+      img.setAttribute('src', dataUrl);
+    } catch (e) {
+      console.warn('图片内联失败:', absUrl.href, e);
+    }
+  }
+
+  function styleMathSvg(svg, isDisplay) {
+    svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svg.removeAttribute('role');
+    svg.removeAttribute('focusable');
+
+    // 将 currentColor 替换为明确颜色，避免公众号粘贴后继承异常
+    svg.querySelectorAll('[fill="currentColor"]').forEach(function (el) {
+      el.setAttribute('fill', '#333333');
+    });
+    svg.querySelectorAll('[stroke="currentColor"]').forEach(function (el) {
+      el.setAttribute('stroke', '#333333');
+    });
+
+    if (isDisplay) {
+      svg.style.maxWidth = '100%';
+      svg.style.height = 'auto';
+      svg.style.display = 'inline-block';
+      svg.style.verticalAlign = 'middle';
+    } else {
+      svg.style.maxWidth = '100%';
+      svg.style.display = 'inline-block';
+      if (!svg.style.verticalAlign) {
+        svg.style.verticalAlign = 'middle';
+      }
+    }
+    return svg;
+  }
+
+  async function convertMathNodes(root) {
+    var displayNodes = Array.from(root.querySelectorAll('.katex-display'));
+    var allKatex = Array.from(root.querySelectorAll('.katex'));
+    if (displayNodes.length === 0 && allKatex.length === 0) {
+      return { converted: 0, fallback: false };
+    }
+
+    var mj = null;
+    try {
+      setStatus('正在将数学公式转换为公众号 SVG...');
+      mj = await loadMathJax();
+    } catch (e) {
+      console.warn('MathJax 加载失败，降级为纯文本公式:', e);
+    }
+
+    var count = 0;
+
+    // 1. 先处理块级公式
+    for (var i = 0; i < displayNodes.length; i++) {
+      var node = displayNodes[i];
+      var ann = node.querySelector('annotation[encoding="application/x-tex"]');
+      var tex = ann ? ann.textContent.trim() : node.textContent.trim();
+      var wrapper = document.createElement('section');
+      wrapper.setAttribute('style', 'text-align: center; margin: 18px 0; overflow-x: auto; line-height: 1.6;');
+
+      if (mj && tex) {
+        try {
+          var mjx = await mj.tex2svgPromise(tex, { display: true });
+          var svg = mjx.querySelector('svg');
+          if (svg) {
+            wrapper.appendChild(styleMathSvg(svg, true));
+            node.replaceWith(wrapper);
+            count++;
+            continue;
+          }
+        } catch (err) {
+          console.warn('块级公式转换失败:', tex, err);
+        }
+      }
+
+      var fallback = document.createElement('span');
+      fallback.setAttribute('style', 'display: inline-block; padding: 8px 12px; background: #f8fafc; border-radius: 4px; font-family: Menlo, Consolas, monospace; font-size: 13px; color: #334155;');
+      fallback.textContent = tex;
+      wrapper.appendChild(fallback);
+      node.replaceWith(wrapper);
+      count++;
+    }
+
+    // 2. 再处理行内公式（跳过已在块级公式中被替换掉的节点）
+    var inlineNodes = Array.from(root.querySelectorAll('.katex'));
+    for (var j = 0; j < inlineNodes.length; j++) {
+      var inNode = inlineNodes[j];
+      var inAnn = inNode.querySelector('annotation[encoding="application/x-tex"]');
+      var inTex = inAnn ? inAnn.textContent.trim() : inNode.textContent.trim();
+      var span = document.createElement('span');
+      span.setAttribute('style', 'display: inline-block; vertical-align: middle; margin: 0 2px;');
+
+      if (mj && inTex) {
+        try {
+          var inMjx = await mj.tex2svgPromise(inTex, { display: false });
+          var inSvg = inMjx.querySelector('svg');
+          if (inSvg) {
+            span.appendChild(styleMathSvg(inSvg, false));
+            inNode.replaceWith(span);
+            count++;
+            continue;
+          }
+        } catch (err) {
+          console.warn('行内公式转换失败:', inTex, err);
+        }
+      }
+
+      var inFallback = document.createElement('span');
+      inFallback.setAttribute('style', 'font-family: Menlo, Consolas, monospace; font-size: 0.9em; background: #f3f4f6; padding: 1px 4px; border-radius: 3px; color: #334155;');
+      inFallback.textContent = inTex;
+      inNode.replaceWith(inFallback);
+      count++;
+    }
+
+    return { converted: count, fallback: !mj };
+  }
+
+  function applyWechatStyles(root) {
+    // 清理不需要的脚本和样式标签
+    root.querySelectorAll('script, style').forEach(function (el) { el.remove(); });
+
+    // 处理 iframe（公众号不支持 iframe）
+    root.querySelectorAll('iframe').forEach(function (iframe) {
+      var note = document.createElement('section');
+      note.setAttribute('style', 'margin: 16px 0; padding: 12px 16px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 6px; color: #64748b; font-size: 14px; text-align: center;');
+      note.textContent = '【此处为网页交互图表，请点击阅读原文查看】';
+      iframe.replaceWith(note);
+    });
+
+    // 收集外部链接（公众号正文不支持外链跳转，转为文末参考链接）
+    var externalLinks = [];
+    var linkIndexMap = Object.create(null);
+
+    root.querySelectorAll('a').forEach(function (a) {
+      var href = (a.getAttribute('href') || '').trim();
+      if (!href) return;
+
+      // 跳过脚注返回箭头
+      if (a.classList.contains('footnote-backref')) {
+        a.remove();
+        return;
+      }
+
+      // 脚注引用 [1] 保留上标文字，去掉锚点
+      if (a.classList.contains('footnote-ref') || href.startsWith('#fn:') || href.startsWith('#fnref:')) {
+        var refSpan = document.createElement('span');
+        refSpan.setAttribute('style', 'color: #3700ff; font-size: 12px; margin: 0 1px;');
+        refSpan.textContent = '[' + a.textContent.trim() + ']';
+        a.replaceWith(refSpan);
+        return;
+      }
+
+      // 公众号自身链接保持可点击
+      if (href.indexOf('mp.weixin.qq.com') !== -1) {
+        a.setAttribute('style', 'color: #576b95; text-decoration: none; border-bottom: 1px solid #576b95;');
+        return;
+      }
+
+      // 其他外部链接：转为高亮文字 + 编号，并在文末生成参考链接列表
+      if (/^https?:\/\//i.test(href)) {
+        var idx = linkIndexMap[href];
+        if (!idx) {
+          externalLinks.push({ text: a.textContent.trim() || href, href: href });
+          idx = externalLinks.length;
+          linkIndexMap[href] = idx;
+        }
+        var span = document.createElement('span');
+        span.setAttribute('style', 'color: #3700ff; border-bottom: 1px solid rgba(55, 0, 255, 0.35);');
+        span.innerHTML = a.innerHTML + '<sup style="font-size: 11px; color: #3700ff; margin-left: 2px;">[' + idx + ']</sup>';
+        a.replaceWith(span);
+        return;
+      }
+
+      // 站内相对链接
+      var plain = document.createElement('span');
+      plain.setAttribute('style', 'color: #3700ff;');
+      plain.innerHTML = a.innerHTML;
+      a.replaceWith(plain);
+    });
+
+    // 标题样式
+    root.querySelectorAll('h1').forEach(function (el) {
+      el.setAttribute('style', 'font-size: 22px; font-weight: 700; color: #111827; text-align: center; margin: 28px 0 18px; line-height: 1.4;');
+    });
+    root.querySelectorAll('h2').forEach(function (el) {
+      el.setAttribute('style', 'font-size: 19px; font-weight: 700; color: #111827; text-align: center; margin: 32px 0 18px; line-height: 1.45;');
+    });
+    root.querySelectorAll('h3').forEach(function (el) {
+      el.setAttribute('style', 'font-size: 17px; font-weight: 700; color: #1f2937; margin: 26px 0 12px; line-height: 1.45;');
+    });
+    root.querySelectorAll('h4, h5, h6').forEach(function (el) {
+      el.setAttribute('style', 'font-size: 16px; font-weight: 700; color: #1f2937; margin: 20px 0 10px; line-height: 1.5;');
+    });
+
+    // 段落样式
+    root.querySelectorAll('p').forEach(function (el) {
+      if (el.closest('blockquote')) {
+        el.setAttribute('style', 'margin: 6px 0; font-size: 15px; line-height: 1.75; color: #4b5563;');
+      } else if (el.closest('.footnotes')) {
+        el.setAttribute('style', 'margin: 4px 0; font-size: 13px; line-height: 1.65; color: #6b7280;');
+      } else {
+        el.setAttribute('style', 'margin: 0 0 16px; font-size: 16px; line-height: 1.8; color: #333333; letter-spacing: 0.02em;');
+      }
+    });
+
+    // 强调文本
+    root.querySelectorAll('strong, b').forEach(function (el) {
+      el.setAttribute('style', 'font-weight: 700; color: #111827;');
+    });
+    root.querySelectorAll('em, i').forEach(function (el) {
+      el.setAttribute('style', 'font-style: italic;');
+    });
+
+    // 引用块
+    root.querySelectorAll('blockquote').forEach(function (el) {
+      el.setAttribute('style', 'margin: 20px 0; padding: 12px 16px; border-left: 4px solid #3700ff; background-color: #f6f7f9; color: #4b5563; font-size: 15px; line-height: 1.75; border-radius: 0 4px 4px 0;');
+    });
+
+    // Notice 短代码块
+    root.querySelectorAll('.notice').forEach(function (el) {
+      var borderColor = '#94a3b8';
+      var bgColor = '#f8fafc';
+      var titleColor = '#334155';
+      if (el.classList.contains('notice-note')) {
+        borderColor = '#4285f4'; bgColor = '#e8f0fe'; titleColor = '#1a73e8';
+      } else if (el.classList.contains('notice-warning')) {
+        borderColor = '#fbbc04'; bgColor = '#fef7e0'; titleColor = '#b08800';
+      } else if (el.classList.contains('notice-tip')) {
+        borderColor = '#34a853'; bgColor = '#e6f4ea'; titleColor = '#1e8e3e';
+      }
+      el.setAttribute('style', 'margin: 18px 0; padding: 14px 16px; border-left: 4px solid ' + borderColor + '; background-color: ' + bgColor + '; border-radius: 4px;');
+      var titleEl = el.querySelector('.notice-title');
+      if (titleEl) {
+        titleEl.setAttribute('style', 'font-weight: 700; font-size: 13px; color: ' + titleColor + '; margin-bottom: 6px; letter-spacing: 0.04em;');
+      }
+    });
+
+    // 列表样式（解包 li 内唯一的 p，避免公众号多出空行）
+    root.querySelectorAll('ul').forEach(function (el) {
+      el.setAttribute('style', 'margin: 0 0 16px; padding-left: 22px; list-style-type: disc;');
+    });
+    root.querySelectorAll('ol').forEach(function (el) {
+      if (el.closest('.footnotes')) {
+        el.setAttribute('style', 'margin: 8px 0 0; padding-left: 20px; font-size: 13px; color: #6b7280;');
+      } else {
+        el.setAttribute('style', 'margin: 0 0 16px; padding-left: 22px; list-style-type: decimal;');
+      }
+    });
+    root.querySelectorAll('li').forEach(function (li) {
+      if (li.children.length === 1 && li.firstElementChild.tagName === 'P') {
+        li.innerHTML = li.firstElementChild.innerHTML;
+      }
+      if (li.closest('.footnotes')) {
+        li.setAttribute('style', 'margin-bottom: 6px; font-size: 13px; line-height: 1.65; color: #6b7280;');
+      } else {
+        li.setAttribute('style', 'margin-bottom: 8px; font-size: 16px; line-height: 1.8; color: #333333;');
+      }
+    });
+
+    // 代码块（Hugo Chroma 高亮已内联 token 颜色）
+    root.querySelectorAll('div.highlight').forEach(function (el) {
+      var section = document.createElement('section');
+      section.setAttribute('style', 'margin: 18px 0; border-radius: 6px; background-color: #272822; overflow-x: auto; -webkit-overflow-scrolling: touch;');
+      section.innerHTML = el.innerHTML;
+      el.replaceWith(section);
+    });
+
+    root.querySelectorAll('pre').forEach(function (pre) {
+      pre.setAttribute('style', 'margin: 0; padding: 14px 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; background-color: #272822; color: #f8f8f2; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.6; white-space: pre; word-wrap: normal; word-break: normal; border-radius: 6px;');
+      var code = pre.querySelector('code');
+      if (code) {
+        // 移除 Hugo Chroma 为每行生成的 <span style="display:flex;"><span>...</span></span>，
+        // 否则在微信手机端 flex 容器会把代码行强行挤压换行，无法横向滚动
+        Array.from(code.children).forEach(function (lineSpan) {
+          if (lineSpan.tagName === 'SPAN' && (lineSpan.getAttribute('style') || '').indexOf('flex') !== -1) {
+            var frag = document.createDocumentFragment();
+            if (lineSpan.children.length === 1 && lineSpan.firstElementChild.tagName === 'SPAN' && !lineSpan.firstElementChild.getAttribute('style')) {
+              var inner = lineSpan.firstElementChild;
+              while (inner.firstChild) frag.appendChild(inner.firstChild);
+            } else {
+              while (lineSpan.firstChild) frag.appendChild(lineSpan.firstChild);
+            }
+            lineSpan.replaceWith(frag);
+          }
+        });
+
+        code.setAttribute('style', 'display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: pre; word-wrap: normal; word-break: normal; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 13px; line-height: 1.6; background: transparent; padding: 0; color: inherit;');
+      }
+    });
+
+    // 行内代码
+    root.querySelectorAll('code').forEach(function (code) {
+      if (code.closest('pre')) return;
+      code.setAttribute('style', 'font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 0.9em; background-color: #f3f4f6; color: #d63384; padding: 2px 5px; border-radius: 3px; margin: 0 2px;');
+    });
+
+    // 表格
+    root.querySelectorAll('table').forEach(function (table) {
+      table.setAttribute('style', 'width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14px; line-height: 1.6; border: 1px solid #e5e7eb;');
+      table.querySelectorAll('th').forEach(function (th) {
+        th.setAttribute('style', 'background-color: #f9fafb; color: #374151; font-weight: 600; text-align: left; padding: 10px 12px; border: 1px solid #e5e7eb;');
+      });
+      table.querySelectorAll('tbody tr').forEach(function (tr, idx) {
+        var bg = idx % 2 === 1 ? '#f9fafb' : '#ffffff';
+        tr.querySelectorAll('td').forEach(function (td) {
+          td.setAttribute('style', 'padding: 10px 12px; border: 1px solid #e5e7eb; color: #333333; background-color: ' + bg + ';');
+        });
+      });
+    });
+
+    // 图片与 figure
+    root.querySelectorAll('figure').forEach(function (fig) {
+      fig.setAttribute('style', 'margin: 20px 0; text-align: center;');
+    });
+    root.querySelectorAll('figcaption').forEach(function (cap) {
+      cap.setAttribute('style', 'margin-top: 8px; font-size: 13px; color: #888888; text-align: center; line-height: 1.5;');
+    });
+    root.querySelectorAll('img').forEach(function (img) {
+      img.setAttribute('style', 'max-width: 100%; height: auto; display: block; margin: 12px auto; border-radius: 4px;');
+    });
+
+    // 分割线
+    root.querySelectorAll('hr').forEach(function (hr) {
+      hr.setAttribute('style', 'border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;');
+    });
+
+    // 脚注区域
+    root.querySelectorAll('.footnotes').forEach(function (fn) {
+      var section = document.createElement('section');
+      section.setAttribute('style', 'margin-top: 28px; padding-top: 14px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #6b7280;');
+      fn.querySelectorAll('hr').forEach(function (hr) { hr.remove(); });
+      var heading = document.createElement('p');
+      heading.setAttribute('style', 'margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #4b5563;');
+      heading.textContent = '注释与参考';
+      section.appendChild(heading);
+      while (fn.firstChild) section.appendChild(fn.firstChild);
+      fn.replaceWith(section);
+    });
+
+    // 追加外链参考区
+    if (externalLinks.length > 0) {
+      var refSec = document.createElement('section');
+      refSec.setAttribute('style', 'margin-top: 28px; padding-top: 14px; border-top: 1px solid #e5e7eb; font-size: 13px; color: #6b7280; line-height: 1.65;');
+      var refTitle = document.createElement('p');
+      refTitle.setAttribute('style', 'margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #4b5563;');
+      refTitle.textContent = '参考链接';
+      refSec.appendChild(refTitle);
+
+      externalLinks.forEach(function (item, i) {
+        var p = document.createElement('p');
+        p.setAttribute('style', 'margin: 4px 0; font-size: 12px; color: #6b7280; word-break: break-all;');
+        p.textContent = '[' + (i + 1) + '] ' + item.text + ': ' + item.href;
+        refSec.appendChild(p);
+      });
+      root.appendChild(refSec);
+    }
+
+    // 清理 class/id 等冗余属性，减少公众号编辑器清洗时的干扰
+    root.querySelectorAll('*').forEach(function (el) {
+      if (el.tagName && el.tagName.toLowerCase() === 'svg') return;
+      if (el.closest('svg')) return;
+      el.removeAttribute('class');
+      el.removeAttribute('id');
+    });
+  }
+
+  async function copyRichHtml(html, plainText) {
+    if (navigator.clipboard && window.ClipboardItem) {
+      try {
+        var item = new ClipboardItem({
+          'text/html': new Blob([html], { type: 'text/html' }),
+          'text/plain': new Blob([plainText], { type: 'text/plain' })
+        });
+        await navigator.clipboard.write([item]);
+        return;
+      } catch (e) {
+        console.warn('ClipboardItem 写入失败，回退到 execCommand:', e);
+      }
+    }
+
+    // 兼容回退方案：选中离屏 DOM 后 execCommand('copy')
+    var container = document.createElement('div');
+    container.setAttribute('contenteditable', 'true');
+    container.style.position = 'fixed';
+    container.style.left = '-99999px';
+    container.style.top = '0';
+    container.innerHTML = html;
+    document.body.appendChild(container);
+
+    var range = document.createRange();
+    range.selectNodeContents(container);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    var ok = document.execCommand('copy');
+    selection.removeAllRanges();
+    document.body.removeChild(container);
+    if (!ok) throw new Error('execCommand copy 返回 false');
+  }
+
+  wechatBtn.addEventListener('click', async function () {
+    var markdownEl = document.querySelector('.post .markdown');
+    if (!markdownEl) {
+      setStatus('未找到正文内容 (.markdown)', true);
+      return;
+    }
+
+    var label = wechatBtn.querySelector('.dev-post-tools__label');
+    wechatBtn.disabled = true;
+    if (label) label.textContent = '正在转换...';
+
+    try {
+      var clone = document.createElement('section');
+      clone.setAttribute(
+        'style',
+        'font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.8; color: #333333; letter-spacing: 0.02em; word-break: break-word;'
+      );
+      clone.innerHTML = markdownEl.innerHTML;
+
+      // 1. 转换数学公式为自包含 SVG
+      var mathResult = await convertMathNodes(clone);
+
+      // 2. 将本地图片内联为 Base64，确保粘贴到公众号时不会丢图
+      var imgs = Array.from(clone.querySelectorAll('img'));
+      if (imgs.length > 0) {
+        setStatus('正在处理 ' + imgs.length + ' 张图片...');
+        await Promise.all(imgs.map(inlineLocalImage));
+      }
+
+      // 3. 应用微信公众号内联样式
+      applyWechatStyles(clone);
+
+      var html = clone.outerHTML;
+      var plainText = clone.innerText || clone.textContent || '';
+
+      await copyRichHtml(html, plainText);
+      flashCopied(wechatBtn, '复制公众号富文本', '已复制富文本');
+
+      var summary = '已复制富文本，可直接粘贴到公众号编辑器';
+      if (mathResult.converted > 0) {
+        summary += mathResult.fallback
+          ? '（离线模式：' + mathResult.converted + ' 处公式已降级为文本）'
+          : '（已转换 ' + mathResult.converted + ' 处公式为 SVG）';
+      }
+      setStatus(summary);
+    } catch (err) {
+      console.error(err);
+      if (label) label.textContent = '复制公众号富文本';
+      setStatus('转换或复制失败：' + (err && err.message ? err.message : '未知错误'), true);
+    } finally {
+      wechatBtn.disabled = false;
+    }
+  });
+})();
+</script>
+

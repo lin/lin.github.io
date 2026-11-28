@@ -2,6 +2,7 @@
 title: "深谈贝叶斯"
 date: 2026-11-11
 math: true
+draft: true
 ---
 
 ## 写在前面
