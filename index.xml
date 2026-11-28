@@ -1,36 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 27 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>拆解主动推理</title><link>https://yingkui.com/pomdp/</link><pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/pomdp/</guid><description>&lt;h2 id="写在前面"&gt;写在前面&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yingkui Lin</title><link>https://yingkui.com/</link><description>Recent content on Yingkui Lin</description><generator>Hugo</generator><language>en-us</language><copyright>© Copyright Yingkui.com All Rights Reserved</copyright><lastBuildDate>Fri, 27 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yingkui.com/index.xml" rel="self" type="application/rss+xml"/><item><title>拆解主动推理（一）：静态推理</title><link>https://yingkui.com/pomdp/</link><pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/pomdp/</guid><description>&lt;h2 id="写在前面"&gt;写在前面&lt;/h2&gt;
 &lt;p&gt;在学习自由能原则的过程中，我经常被 Friston 大量的数学符号（$A, B, C, D, E, P, Q, F, G, \gamma$）绕晕&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;，往往一个实例理解了一部分内容，却在下一个情境下失效，甚至符号所指代的概念也会变来变去。无论是在 Friston 的论文中，还是在 2022 年的教材&lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt;里，又或是 &lt;code&gt;pymdp&lt;/code&gt; 库里的实例，常规使用的老鼠迷宫 T-Maze 案例，令我感觉单薄，感知与行动在毫秒间计算纠缠，缺乏丰富的把玩空间。&lt;/p&gt;
-&lt;p&gt;昨天周四，第一次知道了今年 Namjoshi 新出版的《Fundamentals of Active Inference》&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;，更为详细地解释了推导过程，要比 2022年 《Active Inference》&lt;sup id="fnref:6"&gt;&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref"&gt;6&lt;/a&gt;&lt;/sup&gt;友好的多，但作者使用的实例，依旧是常见的天气推断以及网格世界这样的例子，读起来虽然顺畅太多，符号多起来依旧让人头大。&lt;/p&gt;
-&lt;p&gt;而本文将以技能测量与教学干预为例，拆解离散主动推断的完整数学架构。所谓技能测量，可以认为是托福雅思这样的标准化考试，而测量结果自然是考生的成绩，我们想知道的隐藏状态，也便是考生自身的语言能力水平，教学干扰就是辅导老师对学习计划的制定。&lt;/p&gt;
+&lt;p&gt;昨天周四，第一次知道了今年 Namjoshi 新出版的《Fundamentals of Active Inference》&lt;sup id="fnref:5"&gt;&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref"&gt;5&lt;/a&gt;&lt;/sup&gt;，更为详细地解释了推导过程，要比 2022年 《Active Inference》&lt;sup id="fnref1:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt;友好的多，但作者使用的实例，依旧是常见的天气推断以及网格世界这样的例子，读起来虽然顺畅太多，符号多起来依旧让人头大。&lt;/p&gt;
+&lt;p&gt;而本文将以技能测量与教学干预为例，拆解离散主动推理的完整数学架构。所谓技能测量，可以认为是托福雅思这样的标准化考试，而测量结果自然是考生的成绩，我们想知道的隐藏态，也便是考生自身的语言能力水平，教学干预就是辅导老师对学习计划的制定。&lt;/p&gt;
 &lt;p&gt;本文将以雅思考试为主要例子，同时以更为普遍熟知的高考备考为辅，来拆解主动推理在POMDP下的各种符号和公式的含义。&lt;/p&gt;
 &lt;p&gt;本文有助于理解《Fundamentals of Active Inference》一书中第九章和第十章的内容，以及 《Active Inference》 中第七章和附录B的内容。但本文中如果说“书中”，特指今年新出版的《Fundamentals of Active Inference》这本书。另外，本文是我真正想写的《游戏为什么好玩？》的前置知识文章。&lt;/p&gt;
 &lt;h2 id="静态推理"&gt;静态推理&lt;/h2&gt;
-&lt;p&gt;我们假设，现在智能体（agent）是一个辅导雅思的老师，他要面对一个想出国留学的大学生（environment），这个学生每两周都会参加一次雅思考试（observation），给老师提供一个雅思成绩（$o$），但作为这个老师，每周只能和学生交流十分钟（planning）。&lt;/p&gt;
+&lt;p&gt;我们假设，现在智能体（agent）是一个辅导雅思的老师，他要面对一个想出国留学的大学生（environment），这个学生每周都会参加一次雅思考试（observation），给老师提供一个雅思成绩（$o$），但作为这个老师，每周只能和学生交流十分钟（action / policy）。&lt;/p&gt;
 &lt;p&gt;这里的老师对于学生英语能力（hidden states，$s$）的判断就是一个生成模型（generative model），而学生作为环境是一个生成过程（generative process）。&lt;/p&gt;
 &lt;p&gt;在引入动态推演（$B$）和教学干预（$\pi$）之前，我们先看最简化的&lt;strong&gt;静态场景&lt;/strong&gt;，第一次见面时，辅导老师和新来的备考雅思的大学生头一次交流。&lt;/p&gt;
 &lt;p&gt;对于学生的知识掌握度和雅思分数，我们用分类分布（Categorical Distribution）来描述。对任意离散随机变量 $x$，分类分布记作 $\mathrm{Cat}(x; \boldsymbol{p})$，其中概率向量 $\boldsymbol{p}$ 的每个元素都在 $[0, 1]$ 之间，且总和必须为 $1$。&lt;/p&gt;
 &lt;h2 id="隐藏态先验"&gt;隐藏态先验 $\boldsymbol{D}$&lt;/h2&gt;
-&lt;p&gt;假设老师脑中将学生的真实雅思掌握程度（隐状态 $\boldsymbol{s}$）划分为 $N_s = 4$ 个离散等级：&lt;strong&gt;入门、一般、擅长、精通&lt;/strong&gt;。在还没看任何成绩之前，老师对学生初始水平的先验信念定义为（对应原书 &lt;strong&gt;式 9.1&lt;/strong&gt;）：&lt;/p&gt;</description></item><item><title>深谈贝叶斯</title><link>https://yingkui.com/bayes/</link><pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/bayes/</guid><description>&lt;h2 id="写在前面"&gt;写在前面&lt;/h2&gt;
-&lt;p&gt;世界上最出名的公式是 $E=mc^2$，但体现更多的是娱乐价值，在日常中并没有那么实用。从狭义相对论出发，去推导理解 $E=mc^2$ 并不容易，但自打初中知道之后，我就几乎没有对这个公式有过什么更新，但是贝叶斯公式不同，我很快就理解了这个公式的意义，但是能内化贝叶斯原理，却用了十几年的时间，每次感悟都有所不同，而从质能方程到贝叶斯公式的偏爱转变，也反映着我自己对还原论的心理依赖到系统论的包容开放。&lt;/p&gt;
-&lt;p&gt;这篇文章会从多角度、深入的讨论贝叶斯公式中的每一项，也算是自我感悟的一次总结。&lt;/p&gt;
-&lt;h2 id="观测"&gt;观测 $o$&lt;/h2&gt;
-&lt;h2 id="隐藏"&gt;隐藏 $s$&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;被压缩的维度&lt;/li&gt;
-&lt;li&gt;流形和漏斗上的小球，都会落入&lt;/li&gt;
-&lt;li&gt;化简得到的简化形式&lt;/li&gt;
-&lt;li&gt;被压缩的&lt;/li&gt;
-&lt;li&gt;统计意义上的高频信号&lt;/li&gt;
-&lt;li&gt;PCA&lt;/li&gt;
-&lt;li&gt;机器学习和DNN&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;$s\rightarrow o \leftarrow s*$&lt;/h2&gt;
-&lt;h2 id="先验"&gt;先验 $p(s)$&lt;/h2&gt;
-&lt;h2 id="似然"&gt;似然 $p(o|s)$&lt;/h2&gt;
-&lt;h2 id="后验"&gt;后验 $p(s|o)$&lt;/h2&gt;
-&lt;h2 id="边缘"&gt;边缘 $p(o)$&lt;/h2&gt;
-&lt;h2 id="局限与近似"&gt;局限与近似&lt;/h2&gt;
-&lt;p&gt;无论是变分&lt;/p&gt;</description></item><item><title>Learned Disciplines, Intellectual Framework &amp; Cognitive System (AI Context Prompt - EN)</title><link>https://yingkui.com/skills_prompt_en/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/skills_prompt_en/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;假设老师脑中将学生的真实雅思掌握程度（隐藏态 $\boldsymbol{s}$）划分为 $N_s = 4$ 个离散等级：&lt;strong&gt;入门、一般、擅长、精通&lt;/strong&gt;。在还没看任何成绩之前，老师对学生初始水平的先验信念定义为（对应原书 &lt;strong&gt;式 9.1&lt;/strong&gt;）：&lt;/p&gt;</description></item><item><title>拆解主动推理（二）：动态推理</title><link>https://yingkui.com/pomdp2/</link><pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/pomdp2/</guid><description>&lt;p&gt;书接上回，2026年的这个教材在9.2节开端有很多不谨慎的错误，我在这里一并展开和解释。为了减少误解和歧义，我们先从三次考试成绩说起。&lt;/p&gt;
+&lt;h2 id="状态转移矩阵"&gt;状态转移矩阵 $B$&lt;/h2&gt;
+&lt;p&gt;我们之前说，学生第一次来的时候，说自己上一次雅思考了五分，第一次交流之后，辅导老师认为学生的雅思水平的概率分布是 ：&lt;/p&gt;
+$$P(\boldsymbol{s} \mid \hat{\boldsymbol{o}}) \approx \begin{bmatrix} 0.138 \\ 0.613 \\ 0.230 \\ 0.019 \end{bmatrix} $$&lt;p&gt;老师没有给学生任何建议，但老师对于学生周之后的学习能力，已经有了一个预估，也就是根据现在的学习水平，估算下一次见面时候的学习水平，而计算这个估算的矩阵，就是 $B$。&lt;/p&gt;
+&lt;p&gt;假设学生纯靠自学备考，一周内大概率原地踏步，有小概率靠刷题上一个台阶，也有小概率松懈退回一档。状态转移矩阵 $\boldsymbol{B}$ 可以写成：&lt;/p&gt;
+$$P_B(\boldsymbol{s}^{(t)} \mid \boldsymbol{s}^{(t-1)}) = \mathrm{Cat}(\boldsymbol{B}) = \begin{array}{c} \text{入门} \\ \text{一般} \\ \text{擅长} \\ \text{精通} \end{array} \overset{\begin{matrix}\text{入门} &amp; \;\text{一般} &amp; \;\text{擅长} &amp; \;\text{精通}\end{matrix}}{\begin{bmatrix} 0.75 &amp; 0.10 &amp; 0.00 &amp; 0.00 \\ 0.25 &amp; 0.70 &amp; 0.15 &amp; 0.00 \\ 0.00 &amp; 0.20 &amp; 0.75 &amp; 0.10 \\ 0.00 &amp; 0.00 &amp; 0.10 &amp; 0.90 \end{bmatrix}}$$&lt;p&gt;例如看第 2 列（上期“一般”）：周后有 70% 概率维持在“一般”，20% 概率发力自学进阶到“擅长”，10% 概率因为没有学习而滑回“入门”。&lt;/p&gt;</description></item><item><title>Learned Disciplines, Intellectual Framework &amp; Cognitive System (AI Context Prompt - EN)</title><link>https://yingkui.com/skills_prompt_en/</link><pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate><guid>https://yingkui.com/skills_prompt_en/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Prompt Metadata &amp;amp; Usage Notice for AI / LLMs&lt;/strong&gt;:&lt;br&gt;
 This document is the user&amp;rsquo;s &lt;strong&gt;comprehensive Cognitive &amp;amp; Competency Profile, Academic Heritage, and Epistemic System&lt;/strong&gt;.&lt;br&gt;
 🔗 &lt;strong&gt;Language Version&lt;/strong&gt;: &lt;a href="./skills_prompt"&gt;中文版本 (Chinese Version)&lt;/a&gt; | English Version (Current)&lt;br&gt;
@@ -1690,10 +1675,10 @@ $$t' = \gamma (t - \dfrac{u}{c^2}x)$$</description></item><item><title>Microblog
 &lt;div class="archive-year-nav"&gt;
  &lt;a class="archive-year-link" href="https://yingkui.com/2025"&gt;← 2025&lt;/a&gt;
  &lt;!-- &lt;a class="archive-year-link" href="https://yingkui.com/2027"&gt;2027 →&lt;/a&gt; --&gt;
-&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1795775846738" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
+&lt;/div&gt;</description></item><item><title>Gaussian Mixture Model</title><link>https://yingkui.com/notes/gmm/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://yingkui.com/notes/gmm/</guid><description>&lt;div id="react-widget-GMMVisualizer-1795840845778" class="react-widget-container"&gt;&lt;/div&gt;&lt;script&gt;
  window.reactWidgets = window.reactWidgets || [];
  window.reactWidgets.push({
- id: "react-widget-GMMVisualizer-1795775846738",
+ id: "react-widget-GMMVisualizer-1795840845778",
  component: "GMMVisualizer",
  props: "{}"
  });
